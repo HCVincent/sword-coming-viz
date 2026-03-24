@@ -1,0 +1,19 @@
+[project]
+name = "swordcoming-viz"
+version = "0.1.0"
+description = "Offline visualization and writer analysis toolkit for Sword Coming."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "langchain>=1.0.0",
+    "langchain-community>=0.4.0",
+    "langchain-core>=1.2.0",
+    "langchain-deepseek>=1.0.0",
+    "matplotlib>=3.10.3",
+    "nbformat>=5.10.4",
+    "plotly>=6.2.0",
+    "pywin32>=310; platform_system == 'Windows'",
+    "pytest>=9.0.2",
+    "tqdm>=4.66.0",
+]

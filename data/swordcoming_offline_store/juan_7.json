@@ -1,0 +1,1383 @@
+{
+  "7-1-0": {
+    "juan_index": 7,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！",
+      "杏花巷有口水井，名叫铁锁井，一根粗如青壮手臂的铁链，年复一年，垂挂于井口内，何时有此水井有此铁锁，又是何人做此无聊事奇怪事，早已无人知晓真相，就连小镇岁数最大的老人，也说不出个子丑寅卯来。",
+      "传闻小镇曾经有好事者，试图检验铁链到底有多长，不顾老人们的劝阻，对于“拽铁锁出井口者，每出一尺，折寿一年”，这条口口相传的老规矩，那人根本没当回事，结果使劲拉扯了一炷香后，拔出一大堆铁链，仍是没有看到尽头的迹象，那人已是精疲力尽，便任由那些拽出井口的铁链，盘曲在水井轱辘旁，说是明天再来，他就偏偏不信这个邪了。",
+      "此人回到家后，当天便七窍流血，暴毙在床上，而且死不瞑目，不管家人如何费劲折腾，尸体就是闭不上眼睛，最后有一个世世代代住在水井附近的老人，让那户人家抬着尸体到水井旁边，“眼睁睁”看着老人将那些铁链放回水井，等到整条铁链重新笔直没入井口深水中，那具尸体终于闭眼了。",
+      "一老一小缓缓走向那口铁锁井，小家伙，是个还挂着两条鼻涕虫的孩子，可是说起这个故事来，口齿清晰，有条不紊，根本不像是个才蒙学半年的乡野小娃娃，此时孩子正仰起头，大大的眼睛，像两颗黑葡萄，轻轻抽了抽鼻子，两条鼻涕小蛇就缩回去，孩子望着那个一手托着大白碗的说书先生，努努嘴，说道：“我说完了，你也该给我看看你碗里装着啥了吧？",
+      "”"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 1
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "杏花巷有口水井，名叫铁锁井，一根粗如青壮手臂的铁链，年复一年，垂挂于井口内，何时有此水井有此铁锁，又是何人做此无聊事奇怪事，早已无人知晓真相，就连小镇岁数最大的老人，也说不出个子丑寅卯来。 传闻小镇曾经有好事者，试图检验铁链到底有多长，不顾老人们的劝阻，对于“拽铁锁出井口者，每出一尺，折寿一年”，这条口口相传的老规矩，那人根本没当回事，结果使劲拉扯了一炷香后，拔出一大堆铁链，仍是没有看到尽头的迹象，那人已是精疲力尽，便任由那些拽出井口的铁链，盘曲在水井轱辘旁，说是明天再来，他就偏偏不信这个邪了。 【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.323688",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-3-0": {
+    "juan_index": 7,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "”",
+      "老人感慨道：“不愧是人杰地灵，钟灵毓秀。",
+      "”",
+      "孩子突然停下脚步，皱眉道：“你骂人不是？",
+      "我知道有些人喜欢把好话反着说，比如宋集薪！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋集薪",
+        "alias": [
+          "宋睦"
+        ],
+        "original_description_in_book": "我知道有些人喜欢把好话反着说，比如宋集薪！",
+        "description": "与陈平安形成强烈对照关系的小镇少年，承接大骊身份暗线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 宋集薪剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋集薪"
+        ],
+        "description": "我知道有些人喜欢把好话反着说，比如宋集薪！ ” 老人感慨道：“不愧是人杰地灵，钟灵毓秀。",
+        "background": "",
+        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.323688",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-4-0": {
+    "juan_index": 7,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "老人连忙否认，然后岔开话题，问道：“小镇上是不是经常发生一些怪事？",
+      "”",
+      "孩子点点头。",
+      "老人问道：“说说看。",
+      "”",
+      "孩子指了指老人，一本正经道：“比如说你拎个大白碗，又不肯让人放铜钱进去。"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 7,
+        "segment_index": 4
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "老人连忙否认，然后岔开话题，问道：“小镇上是不是经常发生一些怪事？ ” 孩子点点头。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.323688",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-5-0": {
+    "juan_index": 7,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "你还没说完故事的时候，我娘就说你讲得不坏，云里雾里，一看就是坑蒙拐骗惯了的，所以让我给你送几文钱，你死活不要，碗里到底有啥？",
+      "”",
+      "老人哭笑不得。",
+      "原来是先前在老槐树下说完故事的说书先生，让这个孩子领着自己去杏花巷看那口水井，孩子起先不乐意，老人就说他这大白碗可有大讲究，装着了不得的稀罕玩意儿。",
+      "那孩子天生活泼好动，被爹娘说成是个投胎的时候忘了长屁股的，他很小就喜欢跟着刘羡阳那帮浪荡子四处瞎逛，但是为了钓上一条黄鳝或是泥鳅，这小屁孩也能够在太阳底下暴晒半个时辰，一动不动，耐心惊人。",
+      "所以当老人说那白碗里装着什么，孩子立即就咬饵上钩。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘羡阳",
+        "alias": [],
+        "original_description_in_book": "那孩子天生活泼好动，被爹娘说成是个投胎的时候忘了长屁股的，他很小就喜欢跟着刘羡阳那帮浪荡子四处瞎逛，但是为了钓上一条黄鳝或是泥鳅，这小屁孩也能够在太阳底下暴晒半个时辰，一动不动，耐心惊人。",
+        "description": "陈平安的少年好友，是小镇线与成长线的重要支点人物。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 刘羡阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘羡阳"
+        ],
+        "description": "那孩子天生活泼好动，被爹娘说成是个投胎的时候忘了长屁股的，他很小就喜欢跟着刘羡阳那帮浪荡子四处瞎逛，但是为了钓上一条黄鳝或是泥鳅，这小屁孩也能够在太阳底下暴晒半个时辰，一动不动，耐心惊人。 你还没说完故事的时候，我娘就说你讲得不坏，云里雾里，一看就是坑蒙拐骗惯了的，所以让我给你送几文钱，你死活不要，碗里到底有啥？ ”",
+        "background": "",
+        "significance": "对应刘羡阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 5
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.323688",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-6-0": {
+    "juan_index": 7,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "哪怕老人一开始提了个古怪要求，说要试试提起他，看他到底有多沉，想知道有没有四十斤重，孩子毫不犹豫点头答应了，反正给人提几下也不会掉块肉。",
+      "但是让孩子一次次翻白眼的事情发生了，左手掌心托碗的老人，卯足劲用右手足足提了他五六次，可一次也没能把他成功提起来，孩子最后斜瞥了眼老人的细胳膊细腿，摇了摇头，心想同样是瘦杆子，陈平安那个穷光蛋的力气，就比这个老头子大多了。",
+      "只是想着自己还没瞧见白碗里头的光景，仿佛天生早早开窍的孩子，就忍着没说一些会让老人下不来台的言语，要知道，在泥瓶巷杏花巷这一带，论吵架骂街，尤其是阴阳怪气说话，这个孩子能排第三，第二是读书人宋集薪，第一则是这个孩子他娘。",
+      "老人来到水井旁，但是没有去坐在井口上。",
+      "古井由青砖堆砌，",
+      "无形之中，老人呼吸沉重起来。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈平安",
+        "alias": [],
+        "original_description_in_book": "但是让孩子一次次翻白眼的事情发生了，左手掌心托碗的老人，卯足劲用右手足足提了他五六次，可一次也没能把他成功提起来，孩子最后斜瞥了眼老人的细胳膊细腿，摇了摇头，心想同样是瘦杆子，陈平安那个穷光蛋的力气，就比这个老头子大多了。",
+        "description": "《剑来》主角，小镇出身少年，是前三季叙事的绝对核心视角人物。",
+        "power": "泥瓶巷",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 7,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "宋集薪",
+        "alias": [
+          "宋睦"
+        ],
+        "original_description_in_book": "只是想着自己还没瞧见白碗里头的光景，仿佛天生早早开窍的孩子，就忍着没说一些会让老人下不来台的言语，要知道，在泥瓶巷杏花巷这一带，论吵架骂街，尤其是阴阳怪气说话，这个孩子能排第三，第二是读书人宋集薪，第一则是这个孩子他娘。",
+        "description": "与陈平安形成强烈对照关系的小镇少年，承接大骊身份暗线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 6
+      }
+    ],
+    "locations": [
+      {
+        "name": "泥瓶巷",
+        "alias": [],
+        "type": "街巷",
+        "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [
+          "宋集薪"
+        ],
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 6
+      }
+    ],
+    "events": [
+      {
+        "name": "墙头对话",
+        "time": null,
+        "location": "泥瓶巷",
+        "participants": [
+          "陈平安",
+          "宋集薪"
+        ],
+        "description": "但是让孩子一次次翻白眼的事情发生了，左手掌心托碗的老人，卯足劲用右手足足提了他五六次，可一次也没能把他成功提起来，孩子最后斜瞥了眼老人的细胳膊细腿，摇了摇头，心想同样是瘦杆子，陈平安那个穷光蛋的力气，就比这个老头子大多了。 只是想着自己还没瞧见白碗里头的光景，仿佛天生早早开窍的孩子，就忍着没说一些会让老人下不来台的言语，要知道，在泥瓶巷杏花巷这一带，论吵架骂街，尤其是阴阳怪气说话，这个孩子能排第三，第二是读书人宋集薪，第一则是这个孩子他娘。 哪怕老人一开始提了个古怪要求，说要试试提起他，看他到底有多沉，想知道有没有四十斤重，孩子毫不犹豫点头答应了，反正给人提几下也不会掉块肉。",
+        "background": "",
+        "significance": "建立陈平安与宋集薪之间的早期对照关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第七章 碗水 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 6
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "哪怕老人一开始提了个古怪要求，说要试试提起他，看他到底有多沉，想知道有没有四十斤重，孩子毫不犹豫点头答应了，反正给人提几下也不会掉块肉。 但是让孩子一次次翻白眼的事情发生了，左手掌心托碗的老人，卯足劲用右手足足提了他五六次，可一次也没能把他成功提起来，孩子最后斜瞥了眼老人的细胳膊细腿，摇了摇头，心想同样是瘦杆子，陈平安那个穷光蛋的力气，就比这个老头子大多了。 只是想着自己还没瞧见白碗里头的光景，仿佛天生早早开窍的孩子，就忍着没说一些会让老人下不来台的言语，要知道，在泥瓶巷杏花巷这一带，论吵架骂街，尤其是阴阳怪气说话，这个孩子能排第三，第二是读书人宋集薪，第一则是这个孩子他娘。 老人来到水井旁，但是没有去坐在井口上。 古井由青砖堆砌， 无形之中，老人呼吸沉重起来。",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-24T15:41:29.323688",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-12-0": {
+    "juan_index": 7,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "他突然闭上嘴巴，有些惊讶，片刻后，孩子的脸色已经从震惊变成茫然，再然后，孩子开始恐惧，猛然回过神，一下子跳下井口，往自己家逃去。",
+      "原来，老人用那只白碗倒入水井的分量，早就一大水缸都不止了。",
+      "可是一直有水从白碗向外倒出。",
+      "孩子觉得自己肯定是白天见鬼了。",
+      "刘羡阳随手从路边折了一根刚抽芽的树枝，开始练剑，整个人跟滚动的车轱辘似的，癫狂旋转，根本不心疼脚上那双新靴子，小路上扬起无数尘土。",
+      "高大少年出了小镇，一路由北向南走，只要走过宋大人出钱建造的廊桥，再走三四里路，就到了阮家父女开办的那座铁匠铺，刘羡阳其实一向心高气傲，但是阮师傅只用一句话，就让少年佩服得五体投地，“我们来这里，只为开炉铸剑。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘羡阳",
+        "alias": [],
+        "original_description_in_book": "刘羡阳随手从路边折了一根刚抽芽的树枝，开始练剑，整个人跟滚动的车轱辘似的，癫狂旋转，根本不心疼脚上那双新靴子，小路上扬起无数尘土。 高大少年出了小镇，一路由北向南走，只要走过宋大人出钱建造的廊桥，再走三四里路，就到了阮家父女开办的那座铁匠铺，刘羡阳其实一向心高气傲，但是阮师傅只用一句话，就让少年佩服得五体投地，“我们来这里，只为开炉铸剑。",
+        "description": "陈平安的少年好友，是小镇线与成长线的重要支点人物。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "阮邛",
+        "alias": [
+          "阮师"
+        ],
+        "original_description_in_book": "高大少年出了小镇，一路由北向南走，只要走过宋大人出钱建造的廊桥，再走三四里路，就到了阮家父女开办的那座铁匠铺，刘羡阳其实一向心高气傲，但是阮师傅只用一句话，就让少年佩服得五体投地，“我们来这里，只为开炉铸剑。",
+        "description": "铸剑名家，牵动龙泉地界和山上势力线。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 12
+      }
+    ],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [
+          "刘羡阳",
+          "阮邛"
+        ],
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 12
+      },
+      {
+        "name": "廊桥",
+        "alias": [],
+        "type": "桥梁",
+        "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [
+          "刘羡阳",
+          "阮邛"
+        ],
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 12
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安",
+          "刘羡阳",
+          "阮邛"
+        ],
+        "description": "刘羡阳随手从路边折了一根刚抽芽的树枝，开始练剑，整个人跟滚动的车轱辘似的，癫狂旋转，根本不心疼脚上那双新靴子，小路上扬起无数尘土。 高大少年出了小镇，一路由北向南走，只要走过宋大人出钱建造的廊桥，再走三四里路，就到了阮家父女开办的那座铁匠铺，刘羡阳其实一向心高气傲，但是阮师傅只用一句话，就让少年佩服得五体投地，“我们来这里，只为开炉铸剑。 他突然闭上嘴巴，有些惊讶，片刻后，孩子的脸色已经从震惊变成茫然，再然后，孩子开始恐惧，猛然回过神，一下子跳下井口，往自己家逃去。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.324691",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-13-0": {
+    "juan_index": 7,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "”",
+      "铸剑好啊，刘羡阳一想到自己将来就能有一把真剑，就忍不住兴奋起来，丢了树枝，开始边跑边喊，鬼哭狼嚎。",
+      "刘羡阳想着阮师傅私下传授的那几个拳架子，就开始练习起来，倒也有模有样，虎虎生风。",
+      "少年与廊桥越来越近。",
+      "廊桥北端的台阶上，坐着四个人，姿态婀娜的丰腴美妇，怀里抱着一个大红袍子的男孩，他高高扬起下巴，像是一场刚刚获得大捷的将军，台阶那一头，坐着个满头霜雪的高大老人身边，老人正在小声安慰一位气鼓鼓的小女孩，她粉雕玉琢，宛如世上最精巧的瓷娃娃，她的稚嫩肌肤在阳光照耀下，晶莹剔透，以至于能够清晰看到皮肤下的一条条青筋脉络。",
+      "两个孩子刚刚吵完架，小女孩泫然欲泣，小男孩愈发得意，"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘羡阳",
+        "alias": [],
+        "original_description_in_book": "铸剑好啊，刘羡阳一想到自己将来就能有一把真剑，就忍不住兴奋起来，丢了树枝，开始边跑边喊，鬼哭狼嚎。 刘羡阳想着阮师傅私下传授的那几个拳架子，就开始练习起来，倒也有模有样，虎虎生风。",
+        "description": "陈平安的少年好友，是小镇线与成长线的重要支点人物。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "阮邛",
+        "alias": [
+          "阮师"
+        ],
+        "original_description_in_book": "刘羡阳想着阮师傅私下传授的那几个拳架子，就开始练习起来，倒也有模有样，虎虎生风。",
+        "description": "铸剑名家，牵动龙泉地界和山上势力线。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 13
+      }
+    ],
+    "locations": [
+      {
+        "name": "廊桥",
+        "alias": [],
+        "type": "桥梁",
+        "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 13
+      }
+    ],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 刘羡阳与阮邛在廊桥指点",
+        "time": null,
+        "location": "廊桥",
+        "participants": [
+          "刘羡阳",
+          "阮邛"
+        ],
+        "description": "铸剑好啊，刘羡阳一想到自己将来就能有一把真剑，就忍不住兴奋起来，丢了树枝，开始边跑边喊，鬼哭狼嚎。 刘羡阳想着阮师傅私下传授的那几个拳架子，就开始练习起来，倒也有模有样，虎虎生风。 少年与廊桥越来越近。",
+        "background": "",
+        "significance": "在廊桥推动刘羡阳与阮邛之间的指点线。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第七章 碗水 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 13
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘羡阳"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "指点",
+        "context": "刘羡阳想着阮师傅私下传授的那几个拳架子，就开始练习起来，倒也有模有样，虎虎生风。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第七章 碗水 · 刘羡阳与阮邛在廊桥指点",
+        "location": "廊桥",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-24T15:41:29.324691",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-14-0": {
+    "juan_index": 7,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "老人身材魁梧，如同一座小山，旁边的妇人投来一个致歉的眼神，威严老人对此视而不见。",
+      "台阶底下，还站着个姓卢的年轻人，正是卢氏家主的嫡长孙，叫卢正淳，兴许是真的一方水土，能够养育一方人，在小镇土生土长的人物，皮囊相貌总要生得比别处男女更好些。",
+      "只不过卢正淳早就被酒色掏空了底子，落在台阶坐着的四人眼中，就更是不堪入目。",
+      "卢家拥有的龙窑，无论数目还是规模，都冠绝于小镇，也是族内子弟走出小镇，去外地开枝散叶最多的一个姓氏。",
+      "可是以往在小镇威风八面的卢正淳，神色拘谨，脸色苍白，整个人都紧绷起来，好像稍有纰漏就会被人抄家诛九族。",
+      "男孩说着小镇百姓听不懂的话，“娘亲，这个姓刘的小虫子，祖上真是那位……”"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 14
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "台阶底下，还站着个姓卢的年轻人，正是卢氏家主的嫡长孙，叫卢正淳，兴许是真的一方水土，能够养育一方人，在小镇土生土长的人物，皮囊相貌总要生得比别处男女更好些。 卢家拥有的龙窑，无论数目还是规模，都冠绝于小镇，也是族内子弟走出小镇，去外地开枝散叶最多的一个姓氏。 可是以往在小镇威风八面的卢正淳，神色拘谨，脸色苍白，整个人都紧绷起来，好像稍有纰漏就会被人抄家诛九族。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-17-0": {
+    "juan_index": 7,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "”",
+      "男孩突然变换嬉笑脸色，从妇人怀中站起身后，眼神怜悯地俯视小女孩，像是学塾先生在训斥幼稚蒙童，“大道长生，逆天行事，只在争字。",
+      "你连这点道理都不懂，以后如何继承家业，又如何恪守祖训？",
+      "你们正阳山后裔，历代子孙务必每隔三十年，就需要拔高正阳山至少一百丈，臭丫头，你以为从你爷爷到你爹，做得很轻松不成？",
+      "”",
+      "小女孩有些输了气势，神色萎靡，耷拉着脑袋，不敢正视那个男孩。"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "正阳山",
+        "alias": [],
+        "type": "宗门",
+        "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 7,
+        "segment_index": 17
+      }
+    ],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 正阳山剧情推进",
+        "time": null,
+        "location": "正阳山",
+        "participants": [],
+        "description": "你们正阳山后裔，历代子孙务必每隔三十年，就需要拔高正阳山至少一百丈，臭丫头，你以为从你爷爷到你爹，做得很轻松不成？ ” 男孩突然变换嬉笑脸色，从妇人怀中站起身后，眼神怜悯地俯视小女孩，像是学塾先生在训斥幼稚蒙童，“大道长生，逆天行事，只在争字。",
+        "background": "",
+        "significance": "对应正阳山相关的关键剧情推进场景。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-18-0": {
+    "juan_index": 7,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "满头霜雪的魁梧老人沉声道：“夫人，虽说童言无忌，但是万一害得我家少主道心蒙尘，你们自己掂量后果。",
+      "”",
+      "妇人妩媚一笑，重新将脸色阴沉的幼子拽回怀中，绵里藏针道：“孩子吵架拌嘴而已，猿前辈何须如此上纲上线，莫要坏了咱们两家的千年友谊。",
+      "”",
+      "不曾想老人脾气刚烈至极，直接顶回去一句，“我正阳山，开山两千六百年，有恩报恩，虽千年不忘，有怨报怨，从无过夜仇！",
+      "”"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "正阳山",
+        "alias": [],
+        "type": "宗门",
+        "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 18
+      }
+    ],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 正阳山立势",
+        "time": null,
+        "location": "正阳山",
+        "participants": [],
+        "description": "不曾想老人脾气刚烈至极，直接顶回去一句，“我正阳山，开山两千六百年，有恩报恩，虽千年不忘，有怨报怨，从无过夜仇！ 满头霜雪的魁梧老人沉声道：“夫人，虽说童言无忌，但是万一害得我家少主道心蒙尘，你们自己掂量后果。 ”",
+        "background": "",
+        "significance": "对应正阳山相关的关键立势场景。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-19-0": {
+    "juan_index": 7,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "妇人笑了笑，没有做意气之争。",
+      "此次小镇之行，人人身负重任，尤其是她，更是将自己的身家性命、儿子的前程、娘家的底蕴，三者都孤注一掷，豪赌一场。",
+      "这位妇人，虽然衣裳朴素，却气态雍容，只是小镇百姓没有见过世面，不知其中关窍玄机。",
+      "从头到尾，卢正淳始终背对着廊桥台阶。",
+      "之前第一次在卢氏大宅见到这些贵客，自己的那个亲弟弟，不过是年轻气盛，定力不够，这才暂时忘却祖父的告诫，忍不住偷瞄了一眼美妇人的胸脯，便被气得浑身发抖的祖父让人拖下去，活活杖杀在庭院中，好像行刑的时候嘴里塞满了棉布，所以继续陪着祖父在大堂议事的卢正淳，既听不到弟弟的凄惨哀嚎，也见不到血肉模糊的画面。",
+      "等到商议完毕，一起出门寻找那个姓刘的少年，卢正淳跨出大堂门槛，才发现庭院当中，血迹早已清洗干净。"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 19
+      },
+      {
+        "name": "廊桥",
+        "alias": [],
+        "type": "桥梁",
+        "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 7,
+        "segment_index": 19
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "此次小镇之行，人人身负重任，尤其是她，更是将自己的身家性命、儿子的前程、娘家的底蕴，三者都孤注一掷，豪赌一场。 这位妇人，虽然衣裳朴素，却气态雍容，只是小镇百姓没有见过世面，不知其中关窍玄机。 从头到尾，卢正淳始终背对着廊桥台阶。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-21-0": {
+    "juan_index": 7,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "祖父在去年年关，带他们兄弟走入一间密室，告诉他们一个消息，卢家很快就要为某些贵人办事，是天大的福分，一定要小心办事，做成了，卢家会将报酬变成栽培兄弟二人的敲门砖，只要贵人愿意点点头，那么以后他们兄弟脚下，就会出现一条阳关大道，平步青云，最终获得无法想象的荣华富贵。",
+      "那个时候，他才明白为何自己和弟弟，需要从小就学习那么多种稀奇古怪的方言。",
+      "卢正淳看着那个越来越靠近廊桥的刘阳羡，他突然开始无比仇恨这个人，这个曾经被自己带人堵在小巷里的穷光蛋，死狗一般躺在地上，如果不是某个小王八蛋跑到巷口那边喊死人了，他和几个死党原本已经按照约定，正要脱裤子，给地上那个不识抬举的少年，当头降下一场甘霖。",
+      "卢正淳直到现在，也不明白什么这些高高在上的贵人，为何会对刘羡阳刮目相看，至于他们所谓的什么宝甲、剑经，什么正阳山，长生大道，还有什么争机缘抢气运等等，卢正淳好像都听得懂，其实又都听不懂。",
+      "但是卢正淳能够很确定一件事，就是他无比希望刘羡阳死在这里。",
+      "至于真正的原因，卢正淳不敢承认，也不愿深思。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘羡阳",
+        "alias": [],
+        "original_description_in_book": "卢正淳直到现在，也不明白什么这些高高在上的贵人，为何会对刘羡阳刮目相看，至于他们所谓的什么宝甲、剑经，什么正阳山，长生大道，还有什么争机缘抢气运等等，卢正淳好像都听得懂，其实又都听不懂。 但是卢正淳能够很确定一件事，就是他无比希望刘羡阳死在这里。",
+        "description": "陈平安的少年好友，是小镇线与成长线的重要支点人物。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 21
+      }
+    ],
+    "locations": [
+      {
+        "name": "廊桥",
+        "alias": [],
+        "type": "桥梁",
+        "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 7,
+        "segment_index": 21
+      },
+      {
+        "name": "正阳山",
+        "alias": [],
+        "type": "宗门",
+        "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [
+          "刘羡阳"
+        ],
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 7,
+        "segment_index": 21
+      }
+    ],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 刘羡阳在廊桥剧情推进",
+        "time": null,
+        "location": "廊桥",
+        "participants": [
+          "刘羡阳"
+        ],
+        "description": "卢正淳看着那个越来越靠近廊桥的刘阳羡，他突然开始无比仇恨这个人，这个曾经被自己带人堵在小巷里的穷光蛋，死狗一般躺在地上，如果不是某个小王八蛋跑到巷口那边喊死人了，他和几个死党原本已经按照约定，正要脱裤子，给地上那个不识抬举的少年，当头降下一场甘霖。 卢正淳直到现在，也不明白什么这些高高在上的贵人，为何会对刘羡阳刮目相看，至于他们所谓的什么宝甲、剑经，什么正阳山，长生大道，还有什么争机缘抢气运等等，卢正淳好像都听得懂，其实又都听不懂。 但是卢正淳能够很确定一件事，就是他无比希望刘羡阳死在这里。",
+        "background": "",
+        "significance": "对应刘羡阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-22-0": {
+    "juan_index": 7,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "在内心深处，卢正淳绝对不希望卑贱如狗的刘羡阳，见到自己这位锦衣玉食的卢家大少，竟然沦落到跟他姓刘的一个鸟样。",
+      "奇耻大辱，莫过于此。",
+      "美妇人望着那个喃喃道：“来了。",
+      "”",
+      "高大少年一路打拳而来，到后来出拳迅猛，越打越快，以至于少年的身形都被拳势裹挟，有些踉跄。",
+      "在行家眼中，初具雏形的拳意当中，已经透出一丝刚柔并济的大成风范。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘羡阳",
+        "alias": [],
+        "original_description_in_book": "在内心深处，卢正淳绝对不希望卑贱如狗的刘羡阳，见到自己这位锦衣玉食的卢家大少，竟然沦落到跟他姓刘的一个鸟样。",
+        "description": "陈平安的少年好友，是小镇线与成长线的重要支点人物。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 7,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 刘羡阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘羡阳"
+        ],
+        "description": "在内心深处，卢正淳绝对不希望卑贱如狗的刘羡阳，见到自己这位锦衣玉食的卢家大少，竟然沦落到跟他姓刘的一个鸟样。 奇耻大辱，莫过于此。 美妇人望着那个喃喃道：“来了。",
+        "background": "",
+        "significance": "对应刘羡阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 22
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-24-0": {
+    "juan_index": 7,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "卢正淳转过身的同时，就已经低头躬身，同样用小镇百姓绝对听天书的某种方言，回答道：“是，夫人。",
+      "”",
+      "妇人淡然道：“记住，你与那少年说话的时候，要和颜悦色，注意分寸。",
+      "”",
+      "男孩伸出手指，居高临下，厉色道：“坏了大事，本公子就将你剥皮抽筋，再把你的魂魄炼制成为灯芯，要你灯灭之前，时时刻刻生不如死！",
+      "”"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 7,
+        "segment_index": 24
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "卢正淳转过身的同时，就已经低头躬身，同样用小镇百姓绝对听天书的某种方言，回答道：“是，夫人。 ” 妇人淡然道：“记住，你与那少年说话的时候，要和颜悦色，注意分寸。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 24
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-26-0": {
+    "juan_index": 7,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "一袭鲜艳红袍的男孩，咬牙切齿，死死盯住女孩，脸色阴森，但是也没有什么撂狠话，最后反而展颜一笑，很是灿烂。",
+      "妇人更是视线始终放在前方道路上，脸色云淡风轻，至于她是否心生芥蒂，天晓得。",
+      "小女孩冷哼一声，跑下台阶，蹲在溪边，低头望向水里的游鱼。",
+      "偶尔有成群结队的鲤鱼，在她视线里游曳而过，数目不等，红青两色皆有。",
+      "一些个小镇上了岁数的老人，在老槐树底下闲聊的时候，经常说在雷雨天气里，他们经过廊桥的时候，都曾看到桥底下游出过一尾金灿灿的鲤鱼。",
+      "只是有老人说那条金色鳞片的鲤鱼，大小不过手掌长短，也有人说那条奇怪鲤鱼，大得很，最少也有半人长，简直就是快成精了。"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 26
+      },
+      {
+        "name": "廊桥",
+        "alias": [],
+        "type": "桥梁",
+        "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 26
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "一些个小镇上了岁数的老人，在老槐树底下闲聊的时候，经常说在雷雨天气里，他们经过廊桥的时候，都曾看到桥底下游出过一尾金灿灿的鲤鱼。 一袭鲜艳红袍的男孩，咬牙切齿，死死盯住女孩，脸色阴森，但是也没有什么撂狠话，最后反而展颜一笑，很是灿烂。 妇人更是视线始终放在前方道路上，脸色云淡风轻，至于她是否心生芥蒂，天晓得。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.325694",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-29-0": {
+    "juan_index": 7,
+    "segment_index": 29,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "在小女孩这边始终慈眉善目的老人，第一次流露出威严长辈的神色，伸手轻轻按住女孩的脑袋，沉声道：“小姐，切记，这‘万一’二字，委实是我辈头号死敌，决不可心存侥幸！",
+      "小姐你虽是金枝玉叶之身……”",
+      "小女孩抽出一只手，使劲挥动，娇憨抱怨道：“知道啦知道啦，猿爷爷，我的耳朵要起茧子啦。",
+      "”",
+      "老人说道：“小姐，我去盯着那边的动静了，对方虽然是咱们正阳山台面上的盟友，但是那一大家子人的秉性品行，呵，不提也罢，省得脏了小姐的耳朵。",
+      "”"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "正阳山",
+        "alias": [],
+        "type": "宗门",
+        "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 7,
+        "segment_index": 29
+      }
+    ],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第七章 碗水 · 正阳山对话",
+        "time": null,
+        "location": "正阳山",
+        "participants": [],
+        "description": "老人说道：“小姐，我去盯着那边的动静了，对方虽然是咱们正阳山台面上的盟友，但是那一大家子人的秉性品行，呵，不提也罢，省得脏了小姐的耳朵。 在小女孩这边始终慈眉善目的老人，第一次流露出威严长辈的神色，伸手轻轻按住女孩的脑袋，沉声道：“小姐，切记，这‘万一’二字，委实是我辈头号死敌，决不可心存侥幸！ 小姐你虽是金枝玉叶之身……”",
+        "background": "",
+        "significance": "对应正阳山相关的关键对话场景。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段29",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 29
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.326698",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-30-0": {
+    "juan_index": 7,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "她只是挥手赶人。",
+      "他只好无奈离去。",
+      "这位身份像是家奴的魁梧老人，双手垂膝，走路之时，后背微驼，如负重而行。",
+      "岸边的女孩，突然使劲揉了揉眼睛。",
+      "她发现小溪里的水位，分明开始缓缓上涨，肉眼可见！",
+      "若是在小镇之外，例如在正阳山，或是在家乡任何地方，哪怕是整条小溪流水瞬间干涸，她也不会有半点惊奇。"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "小镇",
+        "alias": [],
+        "type": "聚落",
+        "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 30
+      },
+      {
+        "name": "正阳山",
+        "alias": [],
+        "type": "宗门",
+        "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 30
+      }
+    ],
+    "events": [
+      {
+        "name": "阿良过境",
+        "time": null,
+        "location": "小镇",
+        "participants": [
+          "阿良",
+          "陈平安"
+        ],
+        "description": "若是在小镇之外，例如在正阳山，或是在家乡任何地方，哪怕是整条小溪流水瞬间干涸，她也不会有半点惊奇。 她只是挥手赶人。 他只好无奈离去。",
+        "background": "",
+        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.326698",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "7-31-0": {
+    "juan_index": 7,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第七章 碗水",
+    "source_sentences": [
+      "小女孩疑惑道：“不是说在这里天然封禁一切玄术、神通和道法吗？",
+      "而且越是修为高深，反噬越是厉害吗？",
+      "猿爷爷就说过，哪怕是传说中的那个人，在这里待得时间久了，如今差不多也是泥菩萨过江的艰难处境，很难真正阻止谁动手争夺……”",
+      "她最后晃了晃脑袋，懒得再想这个谜题了。",
+      "小女孩转头望去，看着猿爷爷的高大背影。",
+      "她欢快想着，等到这里彻底开禁之后，她就请求猿爷爷将那座名叫披云山的山峰搬走。"
+    ],
+    "entities": [],
+    "locations": [
+      {
+        "name": "披云山",
+        "alias": [],
+        "type": "山岳",
+        "description": "魏檗坐镇之地，是陈平安和落魄山的重要支援场。",
+        "modern_name": "",
+        "coordinates": null,
+        "related_entities": [],
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 31
+      }
+    ],
+    "events": [
+      {
+        "name": "魏檗现身",
+        "time": null,
+        "location": "披云山",
+        "participants": [
+          "魏檗",
+          "陈平安"
+        ],
+        "description": "她欢快想着，等到这里彻底开禁之后，她就请求猿爷爷将那座名叫披云山的山峰搬走。 小女孩疑惑道：“不是说在这里天然封禁一切玄术、神通和道法吗？ 而且越是修为高深，反噬越是厉害吗？",
+        "background": "",
+        "significance": "把陈平安与山水神灵、落魄山经营线相连。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第七章 碗水 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 7,
+        "segment_index": 31
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-24T15:41:29.326698",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  }
+}
