@@ -122,7 +122,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.732123",
+    "extracted_at": "2026-03-25T01:03:30.828988",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -226,7 +226,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.732123",
+    "extracted_at": "2026-03-25T01:03:30.828988",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -277,16 +277,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 李宝瓶与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "林守一"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李宝瓶突然问道：“文圣老先生，你为什么要给我小师叔买那几本书籍，真的很粗浅啊，就连我和林守一都能教的，不是浪费钱吗？ 好山好水好风景，书上是有描写，可比不得自己收入眼底。 ”",
         "background": "",
-        "significance": "推动李宝瓶与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -315,7 +317,7 @@
         "action": "对话",
         "context": "李宝瓶突然问道：“文圣老先生，你为什么要给我小师叔买那几本书籍，真的很粗浅啊，就连我和林守一都能教的，不是浪费钱吗？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 李宝瓶与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -325,7 +327,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.732123",
+    "extracted_at": "2026-03-25T01:03:30.828988",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -387,7 +389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.732123",
+    "extracted_at": "2026-03-25T01:03:30.828988",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -449,7 +451,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.732123",
+    "extracted_at": "2026-03-25T01:03:30.829992",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -529,7 +531,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.732123",
+    "extracted_at": "2026-03-25T01:03:30.829992",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -562,6 +564,19 @@
         "sentence_indexes_in_segment": [
           1,
           5
+        ],
+        "juan_index": 157,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "时辰还早，许多酒楼尚未开张做生意，好在老秀才在一条街拐角处找到家酒肆，油渍邋遢的，好在三人都不讲究这个，如果崔瀺于禄谢谢三人在场，恐怕就要皱眉头了，一个眼界高，一个洁癖，一个自幼养尊处优，估计这辈子都不会在这种场合喝酒。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
         ],
         "juan_index": 157,
         "segment_index": 7
@@ -640,6 +655,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "至于李槐是最愿意有什么说什么的，只可惜大多是无理取闹，不等陈平安说什么，就已经被李宝瓶打压得厉害，所以这一路求学，从未出现过不可调和的分歧，维持着一种微妙的平衡，之后朱河朱鹿父女离开，在野夫关外，崔瀺带着两人闯入队伍，让之前的四人愈发同仇敌忾，反而关系变得更加紧密。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 157,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "至于李槐是最愿意有什么说什么的，只可惜大多是无理取闹，不等陈平安说什么，就已经被李宝瓶打压得厉害，所以这一路求学，从未出现过不可调和的分歧，维持着一种微妙的平衡，之后朱河朱鹿父女离开，在野夫关外，崔瀺带着两人闯入队伍，让之前的四人愈发同仇敌忾，反而关系变得更加紧密。",
@@ -655,18 +683,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 李槐与陈平安迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "李槐",
-          "陈平安",
           "李宝瓶",
-          "朱鹿"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "时辰还早，许多酒楼尚未开张做生意，好在老秀才在一条街拐角处找到家酒肆，油渍邋遢的，好在三人都不讲究这个，如果崔瀺于禄谢谢三人在场，恐怕就要皱眉头了，一个眼界高，一个洁癖，一个自幼养尊处优，估计这辈子都不会在这种场合喝酒。 老人点了一斤散酒和一碟盐水花生，陈平安依然坚持习武之人不可喝酒，李宝瓶其实有点想喝，但是有小师叔在身边，哪里敢提这个要求，便只是有些眼馋地盯着老秀才喝酒。 跟陈平安相处这么久，从李宝瓶到林守一和李槐，一路上耳濡目染，对于什么可以做，什么不可以做，大抵上都心知肚明，李宝瓶有些时候其实也会觉得小师叔太严肃了，但是看一看漂漂亮亮的小书箱和厚实柔软的小草鞋，就不再多说什么了。",
         "background": "",
-        "significance": "推动李槐与陈平安之间的迁移关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -697,7 +725,7 @@
         "action": "别离",
         "context": "至于李槐是最愿意有什么说什么的，只可惜大多是无理取闹，不等陈平安说什么，就已经被李宝瓶打压得厉害，所以这一路求学，从未出现过不可调和的分歧，维持着一种微妙的平衡，之后朱河朱鹿父女离开，在野夫关外，崔瀺带着两人闯入队伍，让之前的四人愈发同仇敌忾，反而关系变得更加紧密。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 李槐与陈平安迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -717,7 +745,7 @@
         "action": "别离",
         "context": "至于李槐是最愿意有什么说什么的，只可惜大多是无理取闹，不等陈平安说什么，就已经被李宝瓶打压得厉害，所以这一路求学，从未出现过不可调和的分歧，维持着一种微妙的平衡，之后朱河朱鹿父女离开，在野夫关外，崔瀺带着两人闯入队伍，让之前的四人愈发同仇敌忾，反而关系变得更加紧密。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 李槐与陈平安迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -732,12 +760,12 @@
           "李槐"
         ],
         "to_roles": [
-          "朱鹿"
+          "朱河"
         ],
         "action": "别离",
         "context": "至于李槐是最愿意有什么说什么的，只可惜大多是无理取闹，不等陈平安说什么，就已经被李宝瓶打压得厉害，所以这一路求学，从未出现过不可调和的分歧，维持着一种微妙的平衡，之后朱河朱鹿父女离开，在野夫关外，崔瀺带着两人闯入队伍，让之前的四人愈发同仇敌忾，反而关系变得更加紧密。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 李槐与陈平安迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -747,7 +775,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.829992",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -824,7 +852,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.830995",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -924,7 +952,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.830995",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1028,7 +1056,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.830995",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1091,7 +1119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.831998",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1168,7 +1196,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.831998",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1231,7 +1259,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.831998",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1294,7 +1322,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.733126",
+    "extracted_at": "2026-03-25T01:03:30.831998",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1342,6 +1370,19 @@
         ],
         "juan_index": 157,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "陈平安开玩笑道：“怕什么，以后你好好读书，争取讲道理就赢过他们，如果这还不行的话，小师叔从今天起就会更加努力练拳练剑，到时候小师叔御剑飞行，咻一下从万里之外来到你身边，你想啊，所有人都仰着头，瞪大眼睛看着你的小师叔，就像当时我们看到风雪庙魏晋差不多，到时候你就跟人说，这是我的小师叔唉，帅气不帅气？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 157,
+        "segment_index": 19
       }
     ],
     "locations": [
@@ -1353,7 +1394,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -1364,16 +1406,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 陈平安与李宝瓶在风雪庙对话",
+        "name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 陈平安与魏晋在风雪庙对话",
         "time": null,
         "location": "风雪庙",
         "participants": [
           "陈平安",
-          "李宝瓶"
+          "魏晋"
         ],
         "description": "陈平安笑道：“老先生，你吓唬我们就算了，喝酒装醉为了不付钱，是不是有点过分了？ 李宝瓶还有些心有余悸，抓住陈平安的袖子。 陈平安开玩笑道：“怕什么，以后你好好读书，争取讲道理就赢过他们，如果这还不行的话，小师叔从今天起就会更加努力练拳练剑，到时候小师叔御剑飞行，咻一下从万里之外来到你身边，你想啊，所有人都仰着头，瞪大眼睛看着你的小师叔，就像当时我们看到风雪庙魏晋差不多，到时候你就跟人说，这是我的小师叔唉，帅气不帅气？",
         "background": "",
-        "significance": "在风雪庙推动陈平安与李宝瓶之间的对话线。",
+        "significance": "在风雪庙推动陈平安与魏晋之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -1397,27 +1439,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "李宝瓶"
+          "魏晋"
         ],
         "action": "对话",
-        "context": "陈平安笑道：“老先生，你吓唬我们就算了，喝酒装醉为了不付钱，是不是有点过分了？ ” 老秀才脑袋瞬间一歪，鼾声如雷。 李宝瓶还有些心有余悸，抓住陈平安的袖子。 陈平安开玩笑道：“怕什么，以后你好好读书，争取讲道理就赢过他们，如果这还不行的话，小师叔从今天起就会更加努力练拳练剑，到时候小师叔御剑飞行，咻一下从万里之外来到你身边，你想啊，所有人都仰着头，瞪大眼睛看着你的小师叔，就像当时我们看到风雪庙魏晋差不多，到时候你就跟人说，这是我的小师叔唉，帅气不帅气？ 厉害不厉害？",
+        "context": "陈平安开玩笑道：“怕什么，以后你好好读书，争取讲道理就赢过他们，如果这还不行的话，小师叔从今天起就会更加努力练拳练剑，到时候小师叔御剑飞行，咻一下从万里之外来到你身边，你想啊，所有人都仰着头，瞪大眼睛看着你的小师叔，就像当时我们看到风雪庙魏晋差不多，到时候你就跟人说，这是我的小师叔唉，帅气不帅气？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 陈平安与李宝瓶在风雪庙对话",
+        "event_name": "第二卷山水郎 第一百五十七章 自古圣贤皆寂寞 · 陈平安与魏晋在风雪庙对话",
         "location": "风雪庙",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          4
         ],
         "juan_index": 157,
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.831998",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

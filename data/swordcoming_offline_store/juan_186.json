@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -120,7 +120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -184,7 +184,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -249,7 +249,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -315,7 +315,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -422,7 +422,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -561,7 +561,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -627,7 +627,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -709,7 +709,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -843,7 +843,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -946,7 +946,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1010,7 +1010,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1073,7 +1073,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1138,7 +1138,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1221,7 +1221,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.961458",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1242,6 +1242,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "之前如果不是李希圣，陈平安即便是在泥瓶巷的自家门口，恐怕就要吃大亏。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 186,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1268,6 +1281,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李希圣",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1283,7 +1297,8 @@
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "之前如果不是李希圣，陈平安即便是在泥瓶巷的自家门口，恐怕就要吃大亏。 陈平安脑袋往侧面一晃荡，猛然伸手捂住嘴，鲜血从指缝间渗透而出。 陈平安大口呼吸，摊开手心，一滩猩红。",
         "background": "",
@@ -1303,7 +1318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.819288",
+    "extracted_at": "2026-03-25T01:03:30.962462",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1384,7 +1399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.962462",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1468,7 +1483,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.962462",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1531,7 +1546,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.962462",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1661,7 +1676,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.962462",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1777,7 +1792,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.962462",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2001,7 +2016,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2129,7 +2144,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2222,7 +2237,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2273,6 +2288,32 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄，谢灵越，那更是天之骄子。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 186,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "但是通过崔东山的只言片语，以及阮秀的闲聊当中，陈平安大抵上晓得了一件事情，即便是成功上山，做了老百姓眼中的神仙，其实仍然会被分出三六九等，等级森严。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 186,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "阮秀",
         "alias": [],
         "original_description_in_book": "但是通过崔东山的只言片语，以及阮秀的闲聊当中，陈平安大抵上晓得了一件事情，即便是成功上山，做了老百姓眼中的神仙，其实仍然会被分出三六九等，等级森严。",
@@ -2288,17 +2329,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十六章 守夜 · 陈平安与林守一等待",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "阮秀"
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安当时更多是在思考有关“山上”的事情。 陈平安知道，只要能够成为修行中人，就没有谁是简简单单的。 他自己身边就有林守一。",
         "background": "",
-        "significance": "推动陈平安与林守一之间的等待关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十六章 守夜 · 段27",
         "sentence_indexes_in_segment": [
@@ -2314,7 +2356,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.820292",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2448,7 +2490,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2586,7 +2628,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2663,7 +2705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.963465",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2701,7 +2743,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十六章 守夜 · 陈平安等待",
+        "name": "第三卷金错刀 第一百八十六章 守夜 · 陈平安试探",
         "time": null,
         "location": null,
         "participants": [
@@ -2709,7 +2751,7 @@
         ],
         "description": "陈平安无奈道：“我就随口一说，你们不喜欢就算了。 ” 粉裙女童也轻轻点头，认可了青衣小童的看法。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键等待节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十六章 守夜 · 段31",
         "sentence_indexes_in_segment": [
@@ -2725,7 +2767,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2830,7 +2872,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2952,7 +2994,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3016,7 +3058,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3079,7 +3121,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3141,7 +3183,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3206,7 +3248,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.821295",
+    "extracted_at": "2026-03-25T01:03:30.964469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

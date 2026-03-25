@@ -16,6 +16,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "少年对此并不意外，开始循循善诱，“我晓得先生你老人家不放心，觉得我是心怀叵测之辈，但是你可以考察我一段时间，再来决定要不要收下我做开山大弟子，我崔东山呢，修为如今是不高，但是见多识广，学问还是有一些的，对于大隋的风土人情，更是了如指掌，此去大隋，有我在和没有我在，必然是一个天一个地的境况。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 133,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -50,16 +63,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺在泥瓶巷会见",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 崔东山与崔瀺在泥瓶巷会见",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "崔东山",
           "崔瀺"
         ],
-        "description": "眼见着泥瓶巷少年依旧无动于衷，崔瀺毫不气馁，滔滔不绝道：“再说了，我这趟拜师学艺，并非空手登门，而是带了一笔极其丰厚的拜师礼，比如那中五境修士游历天下，几乎一手一册的泽被精怪图，我这一册更是珍稀贵重，天然孕育出了五六种精魅。 少年对此并不意外，开始循循善诱，“我晓得先生你老人家不放心，觉得我是心怀叵测之辈，但是你可以考察我一段时间，再来决定要不要收下我做开山大弟子，我崔东山呢，修为如今是不高，但是见多识广，学问还是有一些的，对于大隋的风土人情，更是了如指掌，此去大隋，有我在和没有我在，必然是一个天一个地的境况。 ”",
+        "description": "少年对此并不意外，开始循循善诱，“我晓得先生你老人家不放心，觉得我是心怀叵测之辈，但是你可以考察我一段时间，再来决定要不要收下我做开山大弟子，我崔东山呢，修为如今是不高，但是见多识广，学问还是有一些的，对于大隋的风土人情，更是了如指掌，此去大隋，有我在和没有我在，必然是一个天一个地的境况。 眼见着泥瓶巷少年依旧无动于衷，崔瀺毫不气馁，滔滔不绝道：“再说了，我这趟拜师学艺，并非空手登门，而是带了一笔极其丰厚的拜师礼，比如那中五境修士游历天下，几乎一手一册的泽被精怪图，我这一册更是珍稀贵重，天然孕育出了五六种精魅。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动崔东山与崔瀺之间的会见线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -73,8 +89,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.669792",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "师承",
+        "context": "少年对此并不意外，开始循循善诱，“我晓得先生你老人家不放心，觉得我是心怀叵测之辈，但是你可以考察我一段时间，再来决定要不要收下我做开山大弟子，我崔东山呢，修为如今是不高，但是见多识广，学问还是有一些的，对于大隋的风土人情，更是了如指掌，此去大隋，有我在和没有我在，必然是一个天一个地的境况。 ” 眼见着泥瓶巷少年依旧无动于衷，崔瀺毫不气馁，滔滔不绝道：“再说了，我这趟拜师学艺，并非空手登门，而是带了一笔极其丰厚的拜师礼，比如那中五境修士游历天下，几乎一手一册的泽被精怪图，我这一册更是珍稀贵重，天然孕育出了五六种精魅。 ” 少年掰着手指头，一一道来，“再有一套文房四宝，笔是那藏着一条吃墨鱼的紫管笔，写字也好，绘画也罢，用完后便无需清洗，那条小鱼儿会自行帮忙吃干抹净。 如何，是不是很神奇？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔东山与崔瀺在泥瓶巷会见",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.745665",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -176,7 +218,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.669792",
+    "extracted_at": "2026-03-25T01:03:30.745665",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -257,6 +299,19 @@
         ],
         "juan_index": 133,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "陈平安虽然始终没有从少年身上，察觉到类似云霞山仙子蔡金简的杀意杀心，但是陈平安绝对信不过此人，希望能够敬而远之，哪里想到如今都快走到了大骊边境，还给少年死皮赖脸追了上来。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -308,7 +363,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -410,7 +466,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.745665",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -552,7 +608,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.745665",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -661,7 +717,7 @@
         "to_roles": [
           "陈平安"
         ],
-        "action": "师承",
+        "action": "试探",
         "context": "崔瀺仔细打量着陈平安，觉得眼前少年神色不似作伪，“好吧，那我只好使出杀手锏了，不过事先说好，陈平安，我拜师如此心诚，你却如此推脱，那么接下来我的拜师礼，就要减半了。",
         "result": null,
         "event_name": "袁家祖宅密谈",
@@ -714,7 +770,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.745665",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -776,6 +832,19 @@
         ],
         "juan_index": 133,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "很快林守一就神色古怪地来到陈平安身边，窃窃私语道：“阴神前辈说杨家铺子的杨老头，要你相信这个叫崔东山的家伙，不会暗中使坏，去往大隋书院的路上，大大方方让他做牛做马，随意驱使便是了，这样的弟子门生，不收白不收，不用白不用。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 7
       }
     ],
     "locations": [],
@@ -787,14 +856,16 @@
         "participants": [
           "林守一",
           "陈平安",
-          "杨老头"
+          "杨老头",
+          "崔东山"
         ],
         "description": "很快林守一就神色古怪地来到陈平安身边，窃窃私语道：“阴神前辈说杨家铺子的杨老头，要你相信这个叫崔东山的家伙，不会暗中使坏，去往大隋书院的路上，大大方方让他做牛做马，随意驱使便是了，这样的弟子门生，不收白不收，不用白不用。 陈平安点了点头，问道：“他们是？ 那尊阴神没有显露真身，能够滞留言语声音的黑色棋子，在空中砰然碎裂，瞬间化作齑粉。",
         "background": "",
         "significance": "推动林守一与陈平安之间的对话关系。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2
         ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段7",
         "sentence_indexes_in_segment": [
@@ -849,9 +920,29 @@
         ],
         "juan_index": 133,
         "segment_index": 7
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "师承",
+        "context": "很快林守一就神色古怪地来到陈平安身边，窃窃私语道：“阴神前辈说杨家铺子的杨老头，要你相信这个叫崔东山的家伙，不会暗中使坏，去往大隋书院的路上，大大方方让他做牛做马，随意驱使便是了，这样的弟子门生，不收白不收，不用白不用。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 林守一与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.746669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -890,6 +981,20 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "崔瀺笑逐颜开，“他们啊，傻大个叫于禄，福禄的禄，小黑妞叫谢谢，姓谢名谢，也不知道谁给她取的这个名字，真是绝了。 随后崔瀺露出瞎子也不会当真的悲苦脸色，唉声叹气道：“两个都是卢氏王朝的刑徒遗民，身世可怜得很，谢谢之前就曾在山崖书院求学过一段日子，于禄运气差一点，离乡没多久，我们大骊就发起了那场大战，两人只得各自返回家乡，如今家国破灭，书院学生的身份，便成了他们的保命符，如果我不把他们带出来，以后肯定会死在你们龙泉县西边的大山里，要么被某位山上神仙一个不顺眼就给打死，要么每天风餐露宿，早早气力衰竭，不到三十岁就活活累死。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 133,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "崔瀺笑逐颜开，“他们啊，傻大个叫于禄，福禄的禄，小黑妞叫谢谢，姓谢名谢，也不知道谁给她取的这个名字，真是绝了。 随后崔瀺露出瞎子也不会当真的悲苦脸色，唉声叹气道：“两个都是卢氏王朝的刑徒遗民，身世可怜得很，谢谢之前就曾在山崖书院求学过一段日子，于禄运气差一点，离乡没多久，我们大骊就发起了那场大战，两人只得各自返回家乡，如今家国破灭，书院学生的身份，便成了他们的保命符，如果我不把他们带出来，以后肯定会死在你们龙泉县西边的大山里，要么被某位山上神仙一个不顺眼就给打死，要么每天风餐露宿，早早气力衰竭，不到三十岁就活活累死。",
@@ -913,7 +1018,8 @@
         "coordinates": null,
         "related_entities": [
           "崔瀺",
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -932,7 +1038,8 @@
         "coordinates": null,
         "related_entities": [
           "崔瀺",
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -952,7 +1059,8 @@
         "coordinates": null,
         "related_entities": [
           "崔瀺",
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -963,16 +1071,17 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与谢谢在山崖书院揭示",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与于禄在山崖书院揭示",
         "time": null,
         "location": "山崖书院",
         "participants": [
           "崔瀺",
+          "于禄",
           "谢谢"
         ],
         "description": "崔瀺笑逐颜开，“他们啊，傻大个叫于禄，福禄的禄，小黑妞叫谢谢，姓谢名谢，也不知道谁给她取的这个名字，真是绝了。 随后崔瀺露出瞎子也不会当真的悲苦脸色，唉声叹气道：“两个都是卢氏王朝的刑徒遗民，身世可怜得很，谢谢之前就曾在山崖书院求学过一段日子，于禄运气差一点，离乡没多久，我们大骊就发起了那场大战，两人只得各自返回家乡，如今家国破灭，书院学生的身份，便成了他们的保命符，如果我不把他们带出来，以后肯定会死在你们龙泉县西边的大山里，要么被某位山上神仙一个不顺眼就给打死，要么每天风餐露宿，早早气力衰竭，不到三十岁就活活累死。 ”",
         "background": "",
-        "significance": "在山崖书院推动崔瀺与谢谢之间的揭示线。",
+        "significance": "在山崖书院推动崔瀺与于禄之间的揭示线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段8",
         "sentence_indexes_in_segment": [
@@ -988,7 +1097,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.746669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1009,6 +1118,19 @@
       "林守一缓了缓，好像又得到阴神暗中传授的锦囊妙计，轻声说道：“杨老头说这两人，咱们最好是收下，百利而无一害。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "好在于禄没有雪上加霜，微笑道：“我还是继续喊公子吧，习惯了。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -1078,7 +1200,7 @@
           "谢谢",
           "林守一"
         ],
-        "description": "崔瀺转头呵呵笑道：“谢谢姑娘啊，我谢谢你啊。 林守一缓了缓，好像又得到阴神暗中传授的锦囊妙计，轻声说道：“杨老头说这两人，咱们最好是收下，百利而无一害。 ”",
+        "description": "好在于禄没有雪上加霜，微笑道：“我还是继续喊公子吧，习惯了。 崔瀺转头呵呵笑道：“谢谢姑娘啊，我谢谢你啊。 林守一缓了缓，好像又得到阴神暗中传授的锦囊妙计，轻声说道：“杨老头说这两人，咱们最好是收下，百利而无一害。",
         "background": "",
         "significance": "揭示小镇暗线与大骊布局。",
         "related_action_indices": [
@@ -1140,7 +1262,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.746669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1234,7 +1356,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.746669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,6 +1418,20 @@
         ],
         "juan_index": 133,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。 于禄背着沉重行囊，发现了李槐的视线后，这位卢氏王朝的太子殿下，笑着点头行礼。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -1336,23 +1472,26 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "林守一苦笑道：“可能是吧，其实我和李宝瓶都不清楚山崖书院的真正情况，当初马老夫子带着我们离开小镇，也没说过这些。 李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。 于禄背着沉重行囊，发现了李槐的视线后，这位卢氏王朝的太子殿下，笑着点头行礼。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
           2,
-          3
+          3,
+          4,
+          5,
+          6
         ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段11",
         "sentence_indexes_in_segment": [
@@ -1379,7 +1518,7 @@
         "action": "对话",
         "context": "林守一苦笑道：“可能是吧，其实我和李宝瓶都不清楚山崖书院的真正情况，当初马老夫子带着我们离开小镇，也没说过这些。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1394,12 +1533,32 @@
           "李槐"
         ],
         "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 11
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
           "李宝瓶"
         ],
         "action": "对话",
         "context": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1419,7 +1578,47 @@
         "action": "对话",
         "context": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 11
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "李宝瓶"
+        ],
+        "action": "对话",
+        "context": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 11
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "林守一"
+        ],
+        "action": "对话",
+        "context": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1439,7 +1638,7 @@
         "action": "对话",
         "context": "李槐一直偷看那个名叫于禄的高大少年，觉得像是个容易打交道的家伙，肯定比脾气暴躁的李宝瓶，以及性情冷淡的林守一，要更好说话。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1449,7 +1648,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.670796",
+    "extracted_at": "2026-03-25T01:03:30.746669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1526,26 +1725,43 @@
         ],
         "juan_index": 133,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与崔瀺对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "崔瀺",
-          "谢谢"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "与那次遇上目盲老道人师徒三人，情况刚好相反，李宝瓶对昵称酒儿的圆脸小姑娘，一下子就看对眼，对于这个姓名古怪的少女，则一点都喜欢不起来。 谢谢虽然面带笑意，看不出任何真实情绪，可是对于矮自己大半个脑袋的李宝瓶，少女内心亦是不喜。 陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段12",
         "sentence_indexes_in_segment": [
@@ -1572,7 +1788,27 @@
         "action": "对话",
         "context": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与崔瀺对话",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1592,7 +1828,27 @@
         "action": "对话",
         "context": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与崔瀺对话",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1612,7 +1868,27 @@
         "action": "对话",
         "context": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与崔瀺对话",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "对话",
+        "context": "陈平安望向崔瀺，说道：“于禄和谢谢，可以加入我们，但是你不行。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1622,7 +1898,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.747672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1668,6 +1944,19 @@
         ],
         "juan_index": 133,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄扭头望向后边，远处尘土飞扬，马蹄整齐踩踏地面，地面传来一阵阵沉闷的震颤，大地如同被狠狠鞭打的贱民身躯，奄奄一息，只能默默承受。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 13
       }
     ],
     "locations": [
@@ -1690,19 +1979,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与李槐在大骊对话",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
-        "description": "陈平安答道：“因为我觉得你不是好人。 驿路这边，没有一个人觉得这句话滑稽可笑，哪怕是最没心没肺的李槐，都感受到一股山雨欲来的压力。 一股大骊铁骑的浑厚军威，扑面而来，哪怕是只是三四十轻骑的队伍，仍是散发出一种粗粝慑人的杀伐气息。",
+        "description": "陈平安答道：“因为我觉得你不是好人。 驿路这边，没有一个人觉得这句话滑稽可笑，哪怕是最没心没肺的李槐，都感受到一股山雨欲来的压力。 于禄扭头望向后边，远处尘土飞扬，马蹄整齐踩踏地面，地面传来一阵阵沉闷的震颤，大地如同被狠狠鞭打的贱民身躯，奄奄一息，只能默默承受。",
         "background": "",
-        "significance": "在大骊推动陈平安与李槐之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1716,34 +2005,8 @@
         "segment_index": 13
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "李槐"
-        ],
-        "action": "对话",
-        "context": "” 陈平安答道：“因为我觉得你不是好人。 ” 驿路这边，没有一个人觉得这句话滑稽可笑，哪怕是最没心没肺的李槐，都感受到一股山雨欲来的压力。 于禄扭头望向后边，远处尘土飞扬，马蹄整齐踩踏地面，地面传来一阵阵沉闷的震颤，大地如同被狠狠鞭打的贱民身躯，奄奄一息，只能默默承受。 一股大骊铁骑的浑厚军威，扑面而来，哪怕是只是三四十轻骑的队伍，仍是散发出一种粗粝慑人的杀伐气息。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与李槐在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 133,
-        "segment_index": 13
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.747672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,6 +2045,19 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "这边崔瀺伸出双掌，做了一个气沉丹田的姿势，尽量心平气和道：“我之所以来这里，是有个老秀才一定要我跟你学做人，你不收我做学生，没关系，我就以于禄和谢谢的公子，以这个身份，跟随你们一起远游求学就是了，你们当我不存在，咋样？",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "这边崔瀺伸出双掌，做了一个气沉丹田的姿势，尽量心平气和道：“我之所以来这里，是有个老秀才一定要我跟你学做人，你不收我做学生，没关系，我就以于禄和谢谢的公子，以这个身份，跟随你们一起远游求学就是了，你们当我不存在，咋样？",
@@ -1810,18 +2086,21 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与谢谢迁移",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与于禄迁移",
         "time": null,
         "location": null,
         "participants": [
           "崔瀺",
+          "于禄",
           "谢谢"
         ],
         "description": "这边崔瀺伸出双掌，做了一个气沉丹田的姿势，尽量心平气和道：“我之所以来这里，是有个老秀才一定要我跟你学做人，你不收我做学生，没关系，我就以于禄和谢谢的公子，以这个身份，跟随你们一起远游求学就是了，你们当我不存在，咋样？ 陈平安点头道：“只要你别来惹我，不说什么先生学生的怪话，都可以。 崔瀺刚要说话。",
         "background": "",
-        "significance": "推动崔瀺与谢谢之间的迁移关系。",
+        "significance": "推动崔瀺与于禄之间的迁移关系。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段14",
         "sentence_indexes_in_segment": [
@@ -1843,12 +2122,52 @@
           "崔瀺"
         ],
         "to_roles": [
+          "于禄"
+        ],
+        "action": "同行",
+        "context": "这边崔瀺伸出双掌，做了一个气沉丹田的姿势，尽量心平气和道：“我之所以来这里，是有个老秀才一定要我跟你学做人，你不收我做学生，没关系，我就以于禄和谢谢的公子，以这个身份，跟随你们一起远游求学就是了，你们当我不存在，咋样？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与于禄迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
           "谢谢"
         ],
         "action": "同行",
         "context": "这边崔瀺伸出双掌，做了一个气沉丹田的姿势，尽量心平气和道：“我之所以来这里，是有个老秀才一定要我跟你学做人，你不收我做学生，没关系，我就以于禄和谢谢的公子，以这个身份，跟随你们一起远游求学就是了，你们当我不存在，咋样？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与谢谢迁移",
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与于禄迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "同行",
+        "context": "这边崔瀺伸出双掌，做了一个气沉丹田的姿势，尽量心平气和道：“我之所以来这里，是有个老秀才一定要我跟你学做人，你不收我做学生，没关系，我就以于禄和谢谢的公子，以这个身份，跟随你们一起远游求学就是了，你们当我不存在，咋样？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与于禄迁移",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1858,7 +2177,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.747672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1879,6 +2198,19 @@
       "李槐只觉得这一幕真是惨不忍睹，小声道：“惨是惨了点。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "一直观察这支骑军所有细节的于禄早已低头，还不忘用手臂遮挡风沙尘土。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "谢谢",
@@ -1945,17 +2277,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与谢谢在大骊剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺",
-          "谢谢",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
-        "description": "大骊骑军带着轰鸣声一闪而过， 少女谢谢更是早早挪步到驿路外。 眉心一粒朱砂痣的少年崔瀺，恰好还穿着一袭纤尘不染的白衣。",
+        "description": "大骊骑军带着轰鸣声一闪而过， 一直观察这支骑军所有细节的于禄早已低头，还不忘用手臂遮挡风沙尘土。 少女谢谢更是早早挪步到驿路外。",
         "background": "",
-        "significance": "在大骊推动崔瀺与谢谢之间的剧情推进线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段15",
         "sentence_indexes_in_segment": [
@@ -1971,7 +2304,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.748676",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2006,6 +2339,19 @@
         ],
         "juan_index": 133,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "风雷园修士刘灞桥在地界外降下飞剑，付过银子，乘坐驿站专门提供给修士的豪奢车马，赶赴县城，找到龙尾郡陈氏开办的新学塾，发现好友陈松风正在亲自为十数位蒙童授课，陈松风发现站在窗外的刘灞桥后，就想要找人帮自己给孩子们授课，刘灞桥赶紧摆手，示意自己等着就是了。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -2047,15 +2393,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 阮邛在大骊剧情推进",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 阮邛与陈松风在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
-          "阮邛"
+          "阮邛",
+          "陈松风"
         ],
-        "description": "按照阮邛订立的规矩，如今闲散修士过境，若无大骊朝廷的特赦，只要是经过原先骊珠洞天的上空，一律不可凌空而渡或是御剑飞行。 在那拨声名赫赫的练气士，付出了一条条性命之后，如今大骊诸多山上势力，都默认了这个不太讲理的规矩。 ”",
+        "description": "按照阮邛订立的规矩，如今闲散修士过境，若无大骊朝廷的特赦，只要是经过原先骊珠洞天的上空，一律不可凌空而渡或是御剑飞行。 在那拨声名赫赫的练气士，付出了一条条性命之后，如今大骊诸多山上势力，都默认了这个不太讲理的规矩。 风雷园修士刘灞桥在地界外降下飞剑，付过银子，乘坐驿站专门提供给修士的豪奢车马，赶赴县城，找到龙尾郡陈氏开办的新学塾，发现好友陈松风正在亲自为十数位蒙童授课，陈松风发现站在窗外的刘灞桥后，就想要找人帮自己给孩子们授课，刘灞桥赶紧摆手，示意自己等着就是了。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动阮邛与陈松风之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段16",
         "sentence_indexes_in_segment": [
@@ -2071,7 +2418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.748676",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2091,7 +2438,35 @@
       "刘灞桥越说越气，“我去找宋长镜讨要说法，你知道怎么样，宋长镜只是让人递话给我，说有本事自己去找杨花，把符箓抢回来。",
       "我这辈子就没见过不要脸的止境宗师！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "半个时辰后，先生陈松风在蒙童们的作揖礼敬后，快步走出课堂，和刘灞桥并肩而行，看了眼佩剑，好奇道：“这把就是数一数二的道家符剑，大骊京城锁龙井里的那把‘符箓’？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 133,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "刘灞桥翻了个大白眼，双手抱住后脑勺，“宋长镜这个王八蛋，说好的将符剑留给我，等着我去拔出来，结果我这北行一路上，全是在说大骊京城有人拿走了符剑的消息，我还不信，以为是宋长镜使出了兵书上的障眼法，故意帮我铺路呢，结果等我到了京城，好嘛，已经被一个叫杨花的厉害娘们，当真给捷足先登了！ 刘灞桥越说越气，“我去找宋长镜讨要说法，你知道怎么样，宋长镜只是让人递话给我，说有本事自己去找杨花，把符箓抢回来。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 17
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2102,7 +2477,10 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风",
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0,
           2
@@ -2113,14 +2491,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与宋长镜在大骊同行",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "半个时辰后，先生陈松风在蒙童们的作揖礼敬后，快步走出课堂，和刘灞桥并肩而行，看了眼佩剑，好奇道：“这把就是数一数二的道家符剑，大骊京城锁龙井里的那把‘符箓’？ 刘灞桥翻了个大白眼，双手抱住后脑勺，“宋长镜这个王八蛋，说好的将符剑留给我，等着我去拔出来，结果我这北行一路上，全是在说大骊京城有人拿走了符剑的消息，我还不信，以为是宋长镜使出了兵书上的障眼法，故意帮我铺路呢，结果等我到了京城，好嘛，已经被一个叫杨花的厉害娘们，当真给捷足先登了！ ”",
+        "participants": [
+          "陈松风",
+          "宋长镜"
+        ],
+        "description": "半个时辰后，先生陈松风在蒙童们的作揖礼敬后，快步走出课堂，和刘灞桥并肩而行，看了眼佩剑，好奇道：“这把就是数一数二的道家符剑，大骊京城锁龙井里的那把‘符箓’？ 刘灞桥翻了个大白眼，双手抱住后脑勺，“宋长镜这个王八蛋，说好的将符剑留给我，等着我去拔出来，结果我这北行一路上，全是在说大骊京城有人拿走了符剑的消息，我还不信，以为是宋长镜使出了兵书上的障眼法，故意帮我铺路呢，结果等我到了京城，好嘛，已经被一个叫杨花的厉害娘们，当真给捷足先登了！ 刘灞桥越说越气，“我去找宋长镜讨要说法，你知道怎么样，宋长镜只是让人递话给我，说有本事自己去找杨花，把符箓抢回来。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动陈松风与宋长镜之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -2134,8 +2517,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "同行",
+        "context": "半个时辰后，先生陈松风在蒙童们的作揖礼敬后，快步走出课堂，和刘灞桥并肩而行，看了眼佩剑，好奇道：“这把就是数一数二的道家符剑，大骊京城锁龙井里的那把‘符箓’？ ” 刘灞桥翻了个大白眼，双手抱住后脑勺，“宋长镜这个王八蛋，说好的将符剑留给我，等着我去拔出来，结果我这北行一路上，全是在说大骊京城有人拿走了符剑的消息，我还不信，以为是宋长镜使出了兵书上的障眼法，故意帮我铺路呢，结果等我到了京城，好嘛，已经被一个叫杨花的厉害娘们，当真给捷足先登了！ ” 刘灞桥越说越气，“我去找宋长镜讨要说法，你知道怎么样，宋长镜只是让人递话给我，说有本事自己去找杨花，把符箓抢回来。 我这辈子就没见过不要脸的止境宗师！",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与宋长镜在大骊同行",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.748676",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2155,7 +2564,21 @@
       "”",
       "刘灞桥摇头晃脑道：“我刘灞桥是那样的人吗？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风愣了愣，“你这趟来龙泉县城，是想从那位水神手里拿回符箓？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "龙泉",
@@ -2167,7 +2590,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -2177,13 +2602,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 龙泉剧情推进",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在龙泉剧情推进",
         "time": null,
         "location": "龙泉",
-        "participants": [],
+        "participants": [
+          "陈松风"
+        ],
         "description": "陈松风愣了愣，“你这趟来龙泉县城，是想从那位水神手里拿回符箓？ 后来听小道消息说，如今这娘们就在你们这边的铁符江，当了一位享受香火祭祀的江水正神。 这就是命啊。",
         "background": "",
-        "significance": "对应龙泉相关的关键剧情推进场景。",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段18",
         "sentence_indexes_in_segment": [
@@ -2199,7 +2626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.748676",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2219,7 +2646,21 @@
       "刘灞桥叹气道：“不过是返回风雷园的路上，稍稍绕路，就到了这里，之前听说了一些关于这个龙泉县的很多事情，其中就有你们龙尾郡陈氏在此开设学塾，就想着来见你一面。",
       "我还真不是冲着杨花和那把符箓去的。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风更加疑惑，“不是为了见那个女子水神，那你来龙泉县做什么？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 133,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "龙泉",
@@ -2231,7 +2672,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           2,
           4
@@ -2242,13 +2685,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 龙泉剧情推进",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在龙泉剧情推进",
         "time": null,
         "location": "龙泉",
-        "participants": [],
+        "participants": [
+          "陈松风"
+        ],
         "description": "陈松风更加疑惑，“不是为了见那个女子水神，那你来龙泉县做什么？ 刘灞桥叹气道：“不过是返回风雷园的路上，稍稍绕路，就到了这里，之前听说了一些关于这个龙泉县的很多事情，其中就有你们龙尾郡陈氏在此开设学塾，就想着来见你一面。 ！",
         "background": "",
-        "significance": "对应龙泉相关的关键剧情推进场景。",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段19",
         "sentence_indexes_in_segment": [
@@ -2264,7 +2709,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.748676",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2284,7 +2729,21 @@
       "对了，之前那场起始于红烛镇一带、止于大骊京城的变故？",
       "你听说了吗？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风微笑道：“如今我在这边为蒙学授业解惑，起先很不适应，恨不得一拍桌子就拂袖离开，如今倒是好一些了，经常告诉自己，就当是砥砺心性好了。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 20
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2305,13 +2764,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 大骊对话",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "对了，之前那场起始于红烛镇一带、止于大骊京城的变故？ ” 陈松风微笑道：“如今我在这边为蒙学授业解惑，起先很不适应，恨不得一拍桌子就拂袖离开，如今倒是好一些了，经常告诉自己，就当是砥砺心性好了。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风微笑道：“如今我在这边为蒙学授业解惑，起先很不适应，恨不得一拍桌子就拂袖离开，如今倒是好一些了，经常告诉自己，就当是砥砺心性好了。 对了，之前那场起始于红烛镇一带、止于大骊京城的变故？ ”",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段20",
         "sentence_indexes_in_segment": [
@@ -2327,7 +2788,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.671799",
+    "extracted_at": "2026-03-25T01:03:30.748676",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2347,7 +2808,22 @@
       "”",
       "陈松风摇头道：“不想。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风点头道：“当然有收到各种传闻，但是家族内部众说纷纭，不同渠道传来的内幕消息，相互矛盾，到最后也说不出一个所以然来。 陈松风摇头道：“不想。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2368,13 +2844,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 大骊对话",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "刘灞桥嘿嘿笑道：“你难道忘了，我当时可就在大骊京城，你想不想知道真相？ ” 陈松风点头道：“当然有收到各种传闻，但是家族内部众说纷纭，不同渠道传来的内幕消息，相互矛盾，到最后也说不出一个所以然来。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风点头道：“当然有收到各种传闻，但是家族内部众说纷纭，不同渠道传来的内幕消息，相互矛盾，到最后也说不出一个所以然来。 刘灞桥嘿嘿笑道：“你难道忘了，我当时可就在大骊京城，你想不想知道真相？ 陈松风摇头道：“不想。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段21",
         "sentence_indexes_in_segment": [
@@ -2390,7 +2868,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2413,6 +2891,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风之前也曾负笈游学，跟随游人登高作赋不是一次两次了，不算是文弱书生，可当初跟随颍阴陈氏女子一起进山，到最后他的脚力和体力，连一个陋巷少年都不如，以至于被陈对嫌弃地踢出队伍。 陈松风大笑道：“喂喂喂，打人不打脸啊，揭人伤疤算什么英雄好汉？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "陈松风之前也曾负笈游学，跟随游人登高作赋不是一次两次了，不算是文弱书生，可当初跟随颍阴陈氏女子一起进山，到最后他的脚力和体力，连一个陋巷少年都不如，以至于被陈对嫌弃地踢出队伍。 卖了个关子却没有人捧场，刘灞桥当然不太开心，揭短道：“年纪轻轻，暮气沉沉，活该你被陈对那个小娘们瞧不起。",
@@ -2429,16 +2921,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 陈对对话",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与陈对对话",
         "time": null,
         "location": null,
         "participants": [
+          "陈松风",
           "陈对"
         ],
-        "description": "陈松风之前也曾负笈游学，跟随游人登高作赋不是一次两次了，不算是文弱书生，可当初跟随颍阴陈氏女子一起进山，到最后他的脚力和体力，连一个陋巷少年都不如，以至于被陈对嫌弃地踢出队伍。 卖了个关子却没有人捧场，刘灞桥当然不太开心，揭短道：“年纪轻轻，暮气沉沉，活该你被陈对那个小娘们瞧不起。 我又不是修行中人，对于你们的长视久生之事，也没什么兴趣。",
+        "description": "陈松风之前也曾负笈游学，跟随游人登高作赋不是一次两次了，不算是文弱书生，可当初跟随颍阴陈氏女子一起进山，到最后他的脚力和体力，连一个陋巷少年都不如，以至于被陈对嫌弃地踢出队伍。 卖了个关子却没有人捧场，刘灞桥当然不太开心，揭短道：“年纪轻轻，暮气沉沉，活该你被陈对那个小娘们瞧不起。 陈松风大笑道：“喂喂喂，打人不打脸啊，揭人伤疤算什么英雄好汉？",
         "background": "",
-        "significance": "对应陈对在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈松风与陈对之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -2452,8 +2947,91 @@
         "segment_index": 22
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "同行",
+        "context": "陈松风之前也曾负笈游学，跟随游人登高作赋不是一次两次了，不算是文弱书生，可当初跟随颍阴陈氏女子一起进山，到最后他的脚力和体力，连一个陋巷少年都不如，以至于被陈对嫌弃地踢出队伍。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与陈对对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 133,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.749679",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "133-23-0": {
+    "juan_index": 133,
+    "segment_index": 23,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百三十三章 同行",
+    "source_sentences": [
+      "”",
+      "刘灞桥一脸神神秘秘，压低嗓音，“那你想不想知道有关倒悬山的一个惊天大消息？",
+      "”",
+      "陈松风毫不犹豫道：“说！",
+      "”",
+      "刘灞桥打趣道：“啧啧，你才说过自己不是修行中人，也会好奇这个？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风毫不犹豫道：“说！",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 23
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风毫不犹豫道：“说！ ” 刘灞桥一脸神神秘秘，压低嗓音，“那你想不想知道有关倒悬山的一个惊天大消息？",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百三十三章 同行 · 段23",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 23
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2473,7 +3051,21 @@
       "”",
       "刘灞桥对此亦是无能为力，各有各的身份立场，有些时候旁人的安慰，再好听，终究有一些站着说话不腰疼的嫌疑，刘灞桥也不愿意当这种言语上的朋友，在这位风雷园剑修心目中，真正的朋友，就是你飞黄腾达的时候，见不着我刘灞桥的影子，可当你有了大麻烦，需要有人站出来的时候，甚至不用你说什么，我刘灞桥就已经站在你身边了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风神色疲惫，字斟句酌，缓缓道：“倒悬山传出的任何消息，只会跟那座天下有关。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 24
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -2492,13 +3084,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 宝瓶洲揭示",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在宝瓶洲揭示",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "哪怕我们宝瓶洲只是被最小的涟漪波及，我们早一点知道，说不定就能早些做出一点正确应对，哪怕最终只是获利一点点，也好过什么都不做。 ” 陈松风神色疲惫，字斟句酌，缓缓道：“倒悬山传出的任何消息，只会跟那座天下有关。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风神色疲惫，字斟句酌，缓缓道：“倒悬山传出的任何消息，只会跟那座天下有关。 哪怕我们宝瓶洲只是被最小的涟漪波及，我们早一点知道，说不定就能早些做出一点正确应对，哪怕最终只是获利一点点，也好过什么都不做。 ”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键揭示场景。",
+        "significance": "对应陈松风在叙事中的关键揭示节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段24",
         "sentence_indexes_in_segment": [
@@ -2514,7 +3108,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2534,7 +3128,21 @@
       "陈松风笑道：“如蝗过境？",
       "这可不是什么好说法。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风笑道：“如蝗过境？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 25
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -2567,13 +3175,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 骊珠洞天对话",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
-        "description": "刘灞桥伸手指了指东北方向，“其实我也不知道太多，只知道位于咱们天下最东北的那个大洲，算是剑修最后的地盘了，几乎大半剑修，在当地两位大剑仙的号召之下，火速赶赴倒悬山，不知为何，这些剑修只在经过骊珠洞天上空的时候，两位大剑仙短暂撤去了气机遮蔽，才让我们东宝瓶洲得以惊鸿一瞥，见识到剑修如蝗群过境的绝世风采。 事后，麻烦解决了，不用道谢。 若是我刘灞桥死于这场麻烦了，你都不用愧疚。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "刘灞桥伸手指了指东北方向，“其实我也不知道太多，只知道位于咱们天下最东北的那个大洲，算是剑修最后的地盘了，几乎大半剑修，在当地两位大剑仙的号召之下，火速赶赴倒悬山，不知为何，这些剑修只在经过骊珠洞天上空的时候，两位大剑仙短暂撤去了气机遮蔽，才让我们东宝瓶洲得以惊鸿一瞥，见识到剑修如蝗群过境的绝世风采。 陈松风笑道：“如蝗过境？ 事后，麻烦解决了，不用道谢。",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键对话场景。",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段25",
         "sentence_indexes_in_segment": [
@@ -2589,7 +3199,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2612,6 +3222,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风犹豫了一下，仍是坦诚相待，说出一个秘密，“陈对曾经说过，那里大约每过百年，就会有一场大战发生在那堵城墙之下。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "陈松风犹豫了一下，仍是坦诚相待，说出一个秘密，“陈对曾经说过，那里大约每过百年，就会有一场大战发生在那堵城墙之下。",
@@ -2627,16 +3250,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 陈对对话",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与陈对对话",
         "time": null,
         "location": null,
         "participants": [
+          "陈松风",
           "陈对"
         ],
         "description": "陈松风犹豫了一下，仍是坦诚相待，说出一个秘密，“陈对曾经说过，那里大约每过百年，就会有一场大战发生在那堵城墙之下。 ” 刘灞桥哈哈笑道：“不中听怎么了，你想啊，有比这个更恰当的说法吗？",
         "background": "",
-        "significance": "对应陈对在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈松风与陈对之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -2650,8 +3276,34 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "” 刘灞桥哈哈笑道：“不中听怎么了，你想啊，有比这个更恰当的说法吗？ 蝗群过境，寸草不生，气势多足啊。 ” 陈松风犹豫了一下，仍是坦诚相待，说出一个秘密，“陈对曾经说过，那里大约每过百年，就会有一场大战发生在那堵城墙之下。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与陈对对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2672,6 +3324,20 @@
       "陈松风摇头道：“不在了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风幸灾乐祸地大笑起来。 陈松风摇头道：“不在了。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 27
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2711,12 +3377,15 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
-        "description": "刘灞桥突然问道：“那个叫陈平安的家伙还在小镇吗？ 刘灞桥点了点头，显然之前就知晓此事，“所以我想着去出一份力，退一步说，也存了以战养剑的私心，结果风雷园很快就回信飞剑一把，从师祖到师父再到师兄，全部把我骂得狗血淋头。 ”",
+        "description": "陈松风幸灾乐祸地大笑起来。 刘灞桥突然问道：“那个叫陈平安的家伙还在小镇吗？ 陈松风摇头道：“不在了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -2730,8 +3399,34 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "刘灞桥点了点头，显然之前就知晓此事，“所以我想着去出一份力，退一步说，也存了以战养剑的私心，结果风雷园很快就回信飞剑一把，从师祖到师父再到师兄，全部把我骂得狗血淋头。 ” 陈松风幸灾乐祸地大笑起来。 刘灞桥突然问道：“那个叫陈平安的家伙还在小镇吗？ ” 陈松风摇头道：“不在了。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2751,7 +3446,21 @@
       "”",
       "陈松风没好气道：“你顿顿吃腌菜试试看，看你会不会想念大骊京城的山珍海味！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风没好气道：“你顿顿吃腌菜试试看，看你会不会想念大骊京城的山珍海味！",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 28
+      }
+    ],
     "locations": [
       {
         "name": "落魄山",
@@ -2776,7 +3485,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           0,
           3,
@@ -2788,13 +3499,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 落魄山立势",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风在落魄山会见",
         "time": null,
         "location": "落魄山",
-        "participants": [],
+        "participants": [
+          "陈松风"
+        ],
         "description": "如今这少年可了不得，据说一人独占了四座山头，其中名叫落魄山的地方，还有大骊朝廷刚刚敕封的一位山神坐镇其中，是货真价实的大财主了。 刘灞桥抹了抹嘴，道：“他带的腌菜是真不错，当时差点咸死老子，但我在大骊京城顿顿吃着山珍海味，越吃越怀念那腌菜的滋味。 陈松风没好气道：“你顿顿吃腌菜试试看，看你会不会想念大骊京城的山珍海味！",
         "background": "",
-        "significance": "对应落魄山相关的关键立势场景。",
+        "significance": "对应陈松风在叙事中的关键会见节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段28",
         "sentence_indexes_in_segment": [
@@ -2810,7 +3523,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "extracted_at": "2026-03-25T01:03:30.749679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2830,7 +3543,34 @@
       "”",
       "刘灞桥用心想了想，“可能是怕她一见到我，就不喜欢我了吧。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风问道：“我一直想不明白，以你刘灞桥的家世和修为，那正阳山苏稼再出类拔萃，一旦抛开风雷园和正阳山的世仇关系，你跟她怎么都算是般配吧，为何你连跟她打一声招呼都不敢？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "陈松风问道：“我一直想不明白，以你刘灞桥的家世和修为，那正阳山苏稼再出类拔萃，一旦抛开风雷园和正阳山的世仇关系，你跟她怎么都算是般配吧，为何你连跟她打一声招呼都不敢？",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 29
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -2839,7 +3579,10 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风",
+          "苏稼"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -2849,14 +3592,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 正阳山对话",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与苏稼在正阳山对话",
         "time": null,
         "location": "正阳山",
-        "participants": [],
+        "participants": [
+          "陈松风",
+          "苏稼"
+        ],
         "description": "陈松风问道：“我一直想不明白，以你刘灞桥的家世和修为，那正阳山苏稼再出类拔萃，一旦抛开风雷园和正阳山的世仇关系，你跟她怎么都算是般配吧，为何你连跟她打一声招呼都不敢？ ” 刘灞桥笑道：“那还是顿顿大鱼大肉好了，偶尔来一餐腌菜就行，要不然面黄肌瘦的，以后万一真见着了我家苏仙子，我怕吓着她，那多尴尬。",
         "background": "",
-        "significance": "对应正阳山相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动陈松风与苏稼之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -2870,8 +3618,135 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "苏稼"
+        ],
+        "action": "对话",
+        "context": "陈松风问道：“我一直想不明白，以你刘灞桥的家世和修为，那正阳山苏稼再出类拔萃，一旦抛开风雷园和正阳山的世仇关系，你跟她怎么都算是般配吧，为何你连跟她打一声招呼都不敢？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与苏稼在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.750683",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "133-30-0": {
+    "juan_index": 133,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百三十三章 同行",
+    "source_sentences": [
+      "”",
+      "陈松风愈发纳闷，“但是你和苏稼如果连面都不见，她不一样没有喜欢你？",
+      "”",
+      "刘灞桥转过头对着陈松风挤眉弄眼，笑嘻嘻道：“不一样的，只要一天没见面，我就对将来的那次见面，充满期待和希望。",
+      "”",
+      "陈松风摇头道：“你真是无聊啊。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风愈发纳闷，“但是你和苏稼如果连面都不见，她不一样没有喜欢你？ 刘灞桥转过头对着陈松风挤眉弄眼，笑嘻嘻道：“不一样的，只要一天没见面，我就对将来的那次见面，充满期待和希望。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "陈松风愈发纳闷，“但是你和苏稼如果连面都不见，她不一样没有喜欢你？",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与苏稼会见",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风",
+          "苏稼"
+        ],
+        "description": "陈松风愈发纳闷，“但是你和苏稼如果连面都不见，她不一样没有喜欢你？ 刘灞桥转过头对着陈松风挤眉弄眼，笑嘻嘻道：“不一样的，只要一天没见面，我就对将来的那次见面，充满期待和希望。 陈松风摇头道：“你真是无聊啊。",
+        "background": "",
+        "significance": "推动陈松风与苏稼之间的会见关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第二卷山水郎 第一百三十三章 同行 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 30
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "苏稼"
+        ],
+        "action": "会见",
+        "context": "” 陈松风愈发纳闷，“但是你和苏稼如果连面都不见，她不一样没有喜欢你？ ” 刘灞桥转过头对着陈松风挤眉弄眼，笑嘻嘻道：“不一样的，只要一天没见面，我就对将来的那次见面，充满期待和希望。 ” 陈松风摇头道：“你真是无聊啊。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 陈松风与苏稼会见",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.750683",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2891,7 +3766,34 @@
       "童言无忌，童言无忌……老天爷别搭理这家伙，月老更别当真啊……”",
       "过了边境野夫关，就算离开大骊国境了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "就不怕下次见面，你是去参加苏稼苏仙子的婚礼？",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 133,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "刘灞桥如遭雷击，伸手搂过陈松风的脖子，凶神恶煞道：“陈松风你找死啊？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 133,
+        "segment_index": 31
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2912,14 +3814,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 大骊迁移",
+        "name": "第二卷山水郎 第一百三十三章 同行 · 苏稼与陈松风在大骊迁移",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "过了边境野夫关，就算离开大骊国境了。 就不怕下次见面，你是去参加苏稼苏仙子的婚礼？ ”",
+        "participants": [
+          "苏稼",
+          "陈松风"
+        ],
+        "description": "就不怕下次见面，你是去参加苏稼苏仙子的婚礼？ 刘灞桥如遭雷击，伸手搂过陈松风的脖子，凶神恶煞道：“陈松风你找死啊？ 过了边境野夫关，就算离开大骊国境了。",
         "background": "",
-        "significance": "对应大骊相关的关键迁移场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动苏稼与陈松风之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -2933,8 +3840,34 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苏稼"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "会见",
+        "context": "就不怕下次见面，你是去参加苏稼苏仙子的婚礼？ ” 刘灞桥如遭雷击，伸手搂过陈松风的脖子，凶神恶煞道：“陈松风你找死啊？ ！ 童言无忌，童言无忌……老天爷别搭理这家伙，月老更别当真啊……” 过了边境野夫关，就算离开大骊国境了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十三章 同行 · 苏稼与陈松风在大骊迁移",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.750683",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2955,6 +3888,20 @@
       "谢谢唯独不愿跟李宝瓶说话，当然后者同样如此。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "一辆马车缓缓跟在一支队伍后头，车夫是高大少年于禄，崔瀺一天到晚坐在车厢内闷头大睡。 少女谢谢，已经完全融入那支陈平安领头的求学队伍，反而与于禄崔瀺的关系越来越疏远，她能够跟林守一切磋棋术，说是切磋，其实就是碾压，其貌不扬的少女下棋杀力极大，动辄屠龙，杀得林守一几乎局局丢盔弃甲。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 32
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -3072,16 +4019,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 谢谢与李宝瓶在大骊对话",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
-          "谢谢",
-          "李宝瓶"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "相较于大骊市井百姓喜欢说大骊官话，对于宝瓶洲的正统雅言，往往并不熟稔，文风更加浓郁的大隋和黄庭国，几乎人人都会说本洲雅言，差别只在地方口音轻重而已。 一辆马车缓缓跟在一支队伍后头，车夫是高大少年于禄，崔瀺一天到晚坐在车厢内闷头大睡。 少女谢谢，已经完全融入那支陈平安领头的求学队伍，反而与于禄崔瀺的关系越来越疏远，她能够跟林守一切磋棋术，说是切磋，其实就是碾压，其貌不扬的少女下棋杀力极大，动辄屠龙，杀得林守一几乎局局丢盔弃甲。",
         "background": "",
-        "significance": "在大骊推动谢谢与李宝瓶之间的对话线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -3110,7 +4059,7 @@
         "action": "对话",
         "context": "谢谢唯独不愿跟李宝瓶说话，当然后者同样如此。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 谢谢与李宝瓶在大骊对话",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3120,7 +4069,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.672803",
+    "extracted_at": "2026-03-25T01:03:30.750683",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3158,6 +4107,20 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "陈平安对她和于禄都客客气气，对那个姓崔的白衣少年则始终不搭理，这一路行来，崔瀺用尽了法子，撒泼打滚耍无赖，只差没有抱住陈平安的大腿嚎啕大哭了，还试图用礼物诱使李槐等人，让这三位“开国元老”帮忙求情，凑到陈平安跟前嘘寒问暖，晓之以理动之以情，更是三番五次，都吃了闭门羹。 黄昏临近，马车缓缓行驶于山岭道路上，白衣少年难得掀起车帘，坐在车夫于禄身后，朗声道：“前边那位陈平安陈大哥陈大爷陈老祖宗！",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 133,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -3183,22 +4146,36 @@
         ],
         "juan_index": 133,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "最后气急败坏的少年，不是没有威胁过陈平安，说再不答应收他做徒弟，他就要跟陈平安玉石俱焚了，结果陈平安撂下一句，“你可以试试看，你叫崔东山，我叫陈平安，墓碑只会有一块，谁活下来，谁帮忙写对方的名字”，这让白衣少年立即吃瘪，差点憋出内伤来。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 陈平安与崔瀺剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "崔瀺",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安对她和于禄都客客气气，对那个姓崔的白衣少年则始终不搭理，这一路行来，崔瀺用尽了法子，撒泼打滚耍无赖，只差没有抱住陈平安的大腿嚎啕大哭了，还试图用礼物诱使李槐等人，让这三位“开国元老”帮忙求情，凑到陈平安跟前嘘寒问暖，晓之以理动之以情，更是三番五次，都吃了闭门羹。 最后气急败坏的少年，不是没有威胁过陈平安，说再不答应收他做徒弟，他就要跟陈平安玉石俱焚了，结果陈平安撂下一句，“你可以试试看，你叫崔东山，我叫陈平安，墓碑只会有一块，谁活下来，谁帮忙写对方的名字”，这让白衣少年立即吃瘪，差点憋出内伤来。 黄昏临近，马车缓缓行驶于山岭道路上，白衣少年难得掀起车帘，坐在车夫于禄身后，朗声道：“前边那位陈平安陈大哥陈大爷陈老祖宗！",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段33",
         "sentence_indexes_in_segment": [
@@ -3214,7 +4191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "extracted_at": "2026-03-25T01:03:30.750683",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3294,6 +4271,20 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。 于禄今天很奇怪，竟然主动开口请求和林守一手谈一局，林守一自然不会拒绝，而且感觉很有意思，先前与谢谢对坐而弈，大概是棋力悬殊较大，就像是大山压顶，林守一虽然情绪心态控制得很好，但每次谢谢离开后，少年独自复盘的时候，还是会有些沮丧。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。 于禄今天很奇怪，竟然主动开口请求和林守一手谈一局，林守一自然不会拒绝，而且感觉很有意思，先前与谢谢对坐而弈，大概是棋力悬殊较大，就像是大山压顶，林守一虽然情绪心态控制得很好，但每次谢谢离开后，少年独自复盘的时候，还是会有些沮丧。",
@@ -3310,18 +4301,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
           "林守一",
-          "谢谢",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安心一紧，在嫁衣女鬼闹了那么一次之后，如今他一听到鬼怪神灵，难免就会有些一朝被蛇咬十年怕井绳。 其实不仅仅是陈平安，李宝瓶李槐和林守一，甚至是那尊阴神，就没有谁敢掉以轻心。 一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
         "background": "",
-        "significance": "推动李宝瓶与林守一之间的迁移关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -3329,7 +4320,9 @@
           3,
           4,
           5,
-          6
+          6,
+          7,
+          8
         ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段34",
         "sentence_indexes_in_segment": [
@@ -3356,7 +4349,27 @@
         "action": "同行",
         "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 133,
+        "segment_index": 34
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "同行",
+        "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3376,7 +4389,7 @@
         "action": "同行",
         "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3388,15 +4401,15 @@
       {
         "time": null,
         "from_roles": [
-          "李宝瓶"
+          "林守一"
         ],
         "to_roles": [
-          "李槐"
+          "于禄"
         ],
         "action": "同行",
         "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3416,7 +4429,7 @@
         "action": "同行",
         "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3428,39 +4441,59 @@
       {
         "time": null,
         "from_roles": [
-          "林守一"
+          "于禄"
         ],
         "to_roles": [
-          "李槐"
-        ],
-        "action": "同行",
-        "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 133,
-        "segment_index": 34
-      },
-      {
-        "time": null,
-        "from_roles": [
           "谢谢"
         ],
-        "to_roles": [
-          "李槐"
-        ],
         "action": "同行",
         "context": "一顿简陋却温饱的晚饭之后，李宝瓶借着篝火的光亮，开始翻阅那本最喜爱的山水游记，林守一一般不会当着于禄谢谢的面拿出那本云上琅琅书，只会打开目盲老道人赠送的搜山图，欣赏那些惟妙惟肖的山精鬼怪，而李槐就要继续捣鼓那些小玩意儿了，往往只有谢谢愿意陪他一起，今天也不例外。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
           4
+        ],
+        "juan_index": 133,
+        "segment_index": 34
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "林守一"
+        ],
+        "action": "对话",
+        "context": "于禄今天很奇怪，竟然主动开口请求和林守一手谈一局，林守一自然不会拒绝，而且感觉很有意思，先前与谢谢对坐而弈，大概是棋力悬殊较大，就像是大山压顶，林守一虽然情绪心态控制得很好，但每次谢谢离开后，少年独自复盘的时候，还是会有些沮丧。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 133,
+        "segment_index": 34
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "对话",
+        "context": "于禄今天很奇怪，竟然主动开口请求和林守一手谈一局，林守一自然不会拒绝，而且感觉很有意思，先前与谢谢对坐而弈，大概是棋力悬殊较大，就像是大山压顶，林守一虽然情绪心态控制得很好，但每次谢谢离开后，少年独自复盘的时候，还是会有些沮丧。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 133,
         "segment_index": 34
@@ -3476,7 +4509,7 @@
         "action": "对话",
         "context": "于禄今天很奇怪，竟然主动开口请求和林守一手谈一局，林守一自然不会拒绝，而且感觉很有意思，先前与谢谢对坐而弈，大概是棋力悬殊较大，就像是大山压顶，林守一虽然情绪心态控制得很好，但每次谢谢离开后，少年独自复盘的时候，还是会有些沮丧。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 李宝瓶与林守一迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3486,7 +4519,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "extracted_at": "2026-03-25T01:03:30.750683",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3507,6 +4540,21 @@
       "林守一抬起头微笑道：“等你先当了陈平安的学生再说吧。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "但是跟性情温和的于禄下棋，发现这位卢氏遗民出身的高大少年，下棋下得跟他性格差不多，温温吞吞，既没有不堪入目的昏招，也没有让人眼前一亮的神仙手，四平八稳，下了两盘，林守一都输了，都像是棋差一招而已，两次都是在于禄最后一手落子之前，棋盘上仍是势均力敌，胜负晦暗不明。 在两位少年对弈的时候，白衣少年崔瀺双手负后，瞥了眼棋局，翻了个白眼，就不愿再看，可是兜了一圈，又实在没有去处，便只好一次次重新回到棋局附近，要么是站在林守一身后翻白眼，要么就是站在于禄身后，白眼翻得如出一辙，最后实在是受不了，对默默复盘的林守一说道：“于禄那个貌似忠良的小坏蛋，这是故意遛狗呢，你小子就半点察觉不出来？",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 133,
+        "segment_index": 35
+      },
       {
         "entity_type": "person",
         "name": "林守一",
@@ -3567,20 +4615,23 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺",
+          "李宝瓶",
           "林守一",
-          "陈平安"
+          "李槐",
+          "于禄"
         ],
         "description": "但是跟性情温和的于禄下棋，发现这位卢氏遗民出身的高大少年，下棋下得跟他性格差不多，温温吞吞，既没有不堪入目的昏招，也没有让人眼前一亮的神仙手，四平八稳，下了两盘，林守一都输了，都像是棋差一招而已，两次都是在于禄最后一手落子之前，棋盘上仍是势均力敌，胜负晦暗不明。 在两位少年对弈的时候，白衣少年崔瀺双手负后，瞥了眼棋局，翻了个白眼，就不愿再看，可是兜了一圈，又实在没有去处，便只好一次次重新回到棋局附近，要么是站在林守一身后翻白眼，要么就是站在于禄身后，白眼翻得如出一辙，最后实在是受不了，对默默复盘的林守一说道：“于禄那个貌似忠良的小坏蛋，这是故意遛狗呢，你小子就半点察觉不出来？ 你想不想下赢于禄和谢谢？",
         "background": "",
-        "significance": "推动崔瀺与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "source": "第二卷山水郎 第一百三十三章 同行 · 段35",
         "sentence_indexes_in_segment": [
@@ -3607,7 +4658,47 @@
         "action": "对话",
         "context": "在两位少年对弈的时候，白衣少年崔瀺双手负后，瞥了眼棋局，翻了个白眼，就不愿再看，可是兜了一圈，又实在没有去处，便只好一次次重新回到棋局附近，要么是站在林守一身后翻白眼，要么就是站在于禄身后，白眼翻得如出一辙，最后实在是受不了，对默默复盘的林守一说道：“于禄那个貌似忠良的小坏蛋，这是故意遛狗呢，你小子就半点察觉不出来？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与林守一对话",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 35
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "在两位少年对弈的时候，白衣少年崔瀺双手负后，瞥了眼棋局，翻了个白眼，就不愿再看，可是兜了一圈，又实在没有去处，便只好一次次重新回到棋局附近，要么是站在林守一身后翻白眼，要么就是站在于禄身后，白眼翻得如出一辙，最后实在是受不了，对默默复盘的林守一说道：“于禄那个貌似忠良的小坏蛋，这是故意遛狗呢，你小子就半点察觉不出来？",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 133,
+        "segment_index": 35
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "在两位少年对弈的时候，白衣少年崔瀺双手负后，瞥了眼棋局，翻了个白眼，就不愿再看，可是兜了一圈，又实在没有去处，便只好一次次重新回到棋局附近，要么是站在林守一身后翻白眼，要么就是站在于禄身后，白眼翻得如出一辙，最后实在是受不了，对默默复盘的林守一说道：“于禄那个貌似忠良的小坏蛋，这是故意遛狗呢，你小子就半点察觉不出来？",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3627,7 +4718,7 @@
         "action": "对话",
         "context": "林守一抬起头微笑道：“等你先当了陈平安的学生再说吧。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十三章 同行 · 崔瀺与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3637,7 +4728,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "extracted_at": "2026-03-25T01:03:30.751686",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3715,7 +4806,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "extracted_at": "2026-03-25T01:03:30.751686",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

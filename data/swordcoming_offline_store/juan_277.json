@@ -61,11 +61,37 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 277,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "林守一",
         "alias": [],
         "original_description_in_book": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
         "description": "李宝瓶同行的重要少年角色，承接书院求学与成长线。",
         "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 277,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "高煊",
+        "alias": [],
+        "original_description_in_book": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
+        "description": "大骊人物群中的重要成员，能补足王朝线与龙泉线之间的角色层次。",
+        "power": "大骊",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -85,7 +111,9 @@
           "陈平安",
           "宋集薪",
           "齐静春",
-          "林守一"
+          "赵繇",
+          "林守一",
+          "高煊"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -136,6 +164,7 @@
         "participants": [
           "陈平安",
           "宋集薪",
+          "赵繇",
           "林守一"
         ],
         "description": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。 少年主动对陈平安举起酒碗，笑道：“我叫曹慈，中土大端人氏。 陈平安只好跟着拿起酒碗，“我叫陈平安，宝瓶洲大骊人氏。",
@@ -144,7 +173,10 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第四卷剑气近 第二百七十六章 最强之间 · 段1",
         "sentence_indexes_in_segment": [
@@ -186,7 +218,47 @@
           "陈平安"
         ],
         "to_roles": [
+          "赵繇"
+        ],
+        "action": "同行",
+        "context": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 277,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "林守一"
+        ],
+        "action": "同行",
+        "context": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 277,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "赵繇"
         ],
         "action": "同行",
         "context": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
@@ -219,9 +291,29 @@
         ],
         "juan_index": 277,
         "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "赵繇"
+        ],
+        "to_roles": [
+          "林守一"
+        ],
+        "action": "同行",
+        "context": "陈平安见过不少相貌好的同龄人，泥瓶巷的邻居宋集薪，曾经在学塾跟随齐先生读书的赵繇，林守一，再就是桂花岛上那位雌雄难辨的红妆男子，大隋皇子高煊，可是都不如黄粱酒铺这位少年。",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 277,
+        "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.121363",
+    "extracted_at": "2026-03-25T01:03:31.392042",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -314,7 +406,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.121363",
+    "extracted_at": "2026-03-25T01:03:31.392042",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -378,7 +470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.121363",
+    "extracted_at": "2026-03-25T01:03:31.392042",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -478,7 +570,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.121363",
+    "extracted_at": "2026-03-25T01:03:31.392042",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -539,7 +631,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.392042",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -601,7 +693,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.393045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -663,7 +755,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.393045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,7 +816,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.393045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -785,7 +877,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.393045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -846,7 +938,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.393045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -921,7 +1013,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.393045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -985,7 +1077,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.394049",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1140,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.122367",
+    "extracted_at": "2026-03-25T01:03:31.394049",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1109,7 +1201,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.394049",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1157,21 +1249,36 @@
         ],
         "juan_index": 277,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "结果在客栈所在的小巷口子上，陈平安就遇到了满脸焦急的桂夫人，以及闷闷不乐的金粟。 看到了安然无恙的陈平安，桂夫人如释重负，没有说什么重话，甚至没有询问陈平安为何迟迟未归，只是与那位陈平安所说的“宁姑娘”打了声招呼，就返回捉放渡口的桂花岛，一大摊子生意，她忙得焦头烂额，加上玉圭宗姜氏公子的那档子事情，很是烦心。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 277,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十六章 最强之间 · 陈平安与宁姚迁移",
+        "name": "第四卷剑气近 第二百七十六章 最强之间 · 陈平安与桂夫人迁移",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "桂夫人",
           "宁姚"
         ],
         "description": "出了铺子，宁姚问过了鹳雀客栈位置后，就带着陈平安往捉放渡那个方向走去。 结果在客栈所在的小巷口子上，陈平安就遇到了满脸焦急的桂夫人，以及闷闷不乐的金粟。 看到了安然无恙的陈平安，桂夫人如释重负，没有说什么重话，甚至没有询问陈平安为何迟迟未归，只是与那位陈平安所说的“宁姑娘”打了声招呼，就返回捉放渡口的桂花岛，一大摊子生意，她忙得焦头烂额，加上玉圭宗姜氏公子的那档子事情，很是烦心。",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的迁移关系。",
+        "significance": "推动陈平安与桂夫人之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十六章 最强之间 · 段22",
         "sentence_indexes_in_segment": [
@@ -1187,7 +1294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.394049",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1250,7 +1357,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.394049",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1273,6 +1380,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "发生在剑气长城的诸多内幕，桂夫人不愿意跟这位得意弟子多说，所以金粟只是大略知道先前那场荡气回肠的十三之战，哪怕身边的少女姓宁，也只敢将她认为是剑气长城宁家的嫡传子弟之一，这趟出行，可能是背负着家族任务。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 277,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "金粟之所以不敢往最夸张的那个“真相”去靠，原因很简单，她们身边还有个陈平安。",
@@ -1293,7 +1413,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "桂夫人"
+        ],
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -1305,16 +1427,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十六章 最强之间 · 陈平安在剑气长城揭示",
+        "name": "第四卷剑气近 第二百七十六章 最强之间 · 桂夫人与陈平安在剑气长城揭示",
         "time": null,
         "location": "剑气长城",
         "participants": [
+          "桂夫人",
           "陈平安"
         ],
         "description": "这位年纪不大的宁姑娘，自称来自剑气长城。 外人从倒悬山进入剑气长城，有钱就行，可剑气长城的剑修想要进入倒悬山，听说战功彪炳的剑仙都难。 发生在剑气长城的诸多内幕，桂夫人不愿意跟这位得意弟子多说，所以金粟只是大略知道先前那场荡气回肠的十三之战，哪怕身边的少女姓宁，也只敢将她认为是剑气长城宁家的嫡传子弟之一，这趟出行，可能是背负着家族任务。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
-        "related_action_indices": [],
+        "significance": "在剑气长城推动桂夫人与陈平安之间的揭示线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十六章 最强之间 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1328,8 +1453,34 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "桂夫人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "这位年纪不大的宁姑娘，自称来自剑气长城。 外人从倒悬山进入剑气长城，有钱就行，可剑气长城的剑修想要进入倒悬山，听说战功彪炳的剑仙都难。 怪不得金粟遐想连篇，事实上她想得没有错，宁姑娘的姓氏，起了大作用。 但是金粟只猜对了一半。 发生在剑气长城的诸多内幕，桂夫人不愿意跟这位得意弟子多说，所以金粟只是大略知道先前那场荡气回肠的十三之战，哪怕身边的少女姓宁，也只敢将她认为是剑气长城宁家的嫡传子弟之一，这趟出行，可能是背负着家族任务。 金粟之所以不敢往最夸张的那个“真相”去靠，原因很简单，她们身边还有个陈平安。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十六章 最强之间 · 桂夫人与陈平安在剑气长城揭示",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 277,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.395052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1432,7 +1583,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.395052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1538,7 +1689,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.395052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1614,7 +1765,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.395052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1676,7 +1827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,7 +1933,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.123370",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1858,7 +2009,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.124374",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1976,7 +2127,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.124374",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2080,7 +2231,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.124374",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2185,7 +2336,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.124374",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2267,7 +2418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.124374",
+    "extracted_at": "2026-03-25T01:03:31.396056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2346,7 +2497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.124374",
+    "extracted_at": "2026-03-25T01:03:31.397059",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

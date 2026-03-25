@@ -71,7 +71,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.356801",
+    "extracted_at": "2026-03-25T01:03:30.328327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -136,7 +136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.356801",
+    "extracted_at": "2026-03-25T01:03:30.328327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -233,7 +233,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.356801",
+    "extracted_at": "2026-03-25T01:03:30.328327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -281,6 +281,19 @@
         ],
         "juan_index": 24,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "她先是来到自己少爷的房间，斜瞥一眼书页内容，看到“曹曦”两个字就嫌烦，便帮少爷向后翻了几页，看到有关“谢实”的篇幅后，才开心笑了笑。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 24,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -304,21 +317,19 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "宋集薪",
           "稚圭"
         ],
         "description": "少年此时正在翻阅一页人物传，描述了一个叫曹曦的生平事迹，笔墨吝啬，是这本县志的又一特色，宋集薪翻来覆去看了最少七八遍，对于这本书早已滚瓜烂熟，所以如今闲暇时翻阅，只会拣选一些光怪陆离的人物故事，当做一位说书先生描述的演义传奇，真实性如何无从考据，宋集薪当然也不在意，他只记得那个身穿官服的男人，在赴京述职离开小镇之前，深夜独自来此，男人以一种无比郑重的态度，告诉少年要牢记一件事情，就是背诵记住书中每一个出现过的人名，以及成百上千个人数，和他们身后祖辈们在小镇的各自根脚，尤其是跟四姓十族的关系脉络。 此时宋集薪纹丝不动，就像小镇东南那些个破碎不堪的泥塑神像，一座座随意倒在草丛中、泥地里，无论风吹雨打，只是岿然不动。 这栋宅子里，唯一能动的人和物，是婢女稚圭和那条不起眼的四脚蛇，她很早就察觉到异样，脑海中第一个冒出的想法，是去隔壁院子，找那个面瘫少女，骂她个狗血淋头，但是当婢女意识到那柄剑的存在后，便打消了这个诱人的念头。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第二十四章 相赠 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -331,33 +342,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "稚圭"
-        ],
-        "action": "别离",
-        "context": "少年此时正在翻阅一页人物传，描述了一个叫曹曦的生平事迹，笔墨吝啬，是这本县志的又一特色，宋集薪翻来覆去看了最少七八遍，对于这本书早已滚瓜烂熟，所以如今闲暇时翻阅，只会拣选一些光怪陆离的人物故事，当做一位说书先生描述的演义传奇，真实性如何无从考据，宋集薪当然也不在意，他只记得那个身穿官服的男人，在赴京述职离开小镇之前，深夜独自来此，男人以一种无比郑重的态度，告诉少年要牢记一件事情，就是背诵记住书中每一个出现过的人名，以及成百上千个人数，和他们身后祖辈们在小镇的各自根脚，尤其是跟四姓十族的关系脉络。 此时宋集薪纹丝不动，就像小镇东南那些个破碎不堪的泥塑神像，一座座随意倒在草丛中、泥地里，无论风吹雨打，只是岿然不动。 从窗户透过洒在书桌上的光线，保持一种反常的静止状态。 这栋宅子里，唯一能动的人和物，是婢女稚圭和那条不起眼的四脚蛇，她很早就察觉到异样，脑海中第一个冒出的想法，是去隔壁院子，找那个面瘫少女，骂她个狗血淋头，但是当婢女意识到那柄剑的存在后，便打消了这个诱人的念头。 她先是来到自己少爷的房间，斜瞥一眼书页内容，看到“曹曦”两个字就嫌烦，便帮少爷向后翻了几页，看到有关“谢实”的篇幅后，才开心笑了笑。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ],
-        "juan_index": 24,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.329330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -435,7 +421,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "extracted_at": "2026-03-25T01:03:30.329330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -499,7 +485,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "extracted_at": "2026-03-25T01:03:30.329330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -563,7 +549,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "extracted_at": "2026-03-25T01:03:30.329330",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "24-10-0": {
+    "juan_index": 24,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第二十四章 相赠",
+    "source_sentences": [
+      "少女偷着笑，嘴上说饿，其实手上动作没有丝毫减弱，刹那之间灵犀一动，少女大喝一声后，竭尽全力一锤砸下，鬼使神差道：“给我出来！",
+      "”",
+      "这一次溅射出来的火星，极其繁多，尤为刺眼。",
+      "汉子脸上不露声色，心道：“成了。",
+      "”",
+      "顾粲家的院子，妇人缓缓醒来，头疼如裂，在孩子的搀扶下坐回长凳，截江真君刘志茂正在闭目养神，袖中拇指食指缓缓掐动。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "顾粲家的院子，妇人缓缓醒来，头疼如裂，在孩子的搀扶下坐回长凳，截江真君刘志茂正在闭目养神，袖中拇指食指缓缓掐动。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 24,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第二十四章 相赠 · 刘志茂剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "顾粲家的院子，妇人缓缓醒来，头疼如裂，在孩子的搀扶下坐回长凳，截江真君刘志茂正在闭目养神，袖中拇指食指缓缓掐动。 少女偷着笑，嘴上说饿，其实手上动作没有丝毫减弱，刹那之间灵犀一动，少女大喝一声后，竭尽全力一锤砸下，鬼使神差道：“给我出来！ ”",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第二十四章 相赠 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 24,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.329330",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "24-12-0": {
+    "juan_index": 24,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第二十四章 相赠",
+    "source_sentences": [
+      "刘志茂突然咦了一声，惊讶出声，睁眼低头观看掌心纹路，好似岔开出来一条新路，自言自语道：“这是为何？",
+      "不应该啊。",
+      "少年没死，反倒是那仙家子弟，莫名其妙死了？",
+      "”",
+      "老人不得不站起身，在院中缓缓踱步，掐指飞快，“废物！",
+      "栽在一个市井少年的手里，云霞山辛苦积攒下来的千年声望，就此毁于一旦。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "刘志茂突然咦了一声，惊讶出声，睁眼低头观看掌心纹路，好似岔开出来一条新路，自言自语道：“这是为何？",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 24,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第二十四章 相赠 · 刘志茂剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "刘志茂突然咦了一声，惊讶出声，睁眼低头观看掌心纹路，好似岔开出来一条新路，自言自语道：“这是为何？ 不应该啊。 少年没死，反倒是那仙家子弟，莫名其妙死了？",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第二十四章 相赠 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 24,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.329330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -625,7 +735,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "extracted_at": "2026-03-25T01:03:30.329330",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "24-16-0": {
+    "juan_index": 24,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第二十四章 相赠",
+    "source_sentences": [
+      "先前眼见妇人还算有些别致风韵，刚刚有了将她收为贴身奴婢的念头，她便表现得如此俗不可耐，活该她错过一份有望步入修行门槛的福气。",
+      "老人突然如临大敌，环顾四周，果然此方天地被人为静止为“止境”了，止境是世间诸多小洞天的一种，陆地神仙、金身罗汉也休想开辟而成。",
+      "这种大神通，可谓登峰造极，虽说很大程度上归功于那座大阵，但依然让人倍感敬畏敬畏。",
+      "试想一下，只要身处此方天地当中，任你是仙佛神魔鬼怪，来此皆需向我磕头，那是何种感受？",
+      "截江真君刘志茂做梦都想要达到此等高度。",
+      "术高莫用？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "截江真君刘志茂做梦都想要达到此等高度。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 24,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第二十四章 相赠 · 刘志茂剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "截江真君刘志茂做梦都想要达到此等高度。 先前眼见妇人还算有些别致风韵，刚刚有了将她收为贴身奴婢的念头，她便表现得如此俗不可耐，活该她错过一份有望步入修行门槛的福气。 老人突然如临大敌，环顾四周，果然此方天地被人为静止为“止境”了，止境是世间诸多小洞天的一种，陆地神仙、金身罗汉也休想开辟而成。",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第二十四章 相赠 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 24,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.330334",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -646,6 +818,21 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "刘志茂恨不得有此小洞天之后，将佛陀、道祖、儒教教主这三位的第三代弟子，全部拉进来，不敢说要他们低头弯腰，好歹大家一起平起平坐，同辈相称。 刘志茂毫无征兆地吐出一口鲜血，手心也鲜血溅射，像是被人用利器使劲割出一条血槽。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 24,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -670,12 +857,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "刘志茂"
         ],
-        "description": "老人没有丝毫犹豫，手心叠在手背，身为道家旁门中人，却以儒家作揖行礼，一弯到底，虔诚至极，颤声道：“书简湖青峡岛岛主刘志茂，恳请齐先生怜悯晚辈赤忱求道之心，若有冒犯之处，还望先生大人……圣人不记小人过！ 去你的鬼吧！ 刘志茂恨不得有此小洞天之后，将佛陀、道祖、儒教教主这三位的第三代弟子，全部拉进来，不敢说要他们低头弯腰，好歹大家一起平起平坐，同辈相称。",
+        "description": "刘志茂恨不得有此小洞天之后，将佛陀、道祖、儒教教主这三位的第三代弟子，全部拉进来，不敢说要他们低头弯腰，好歹大家一起平起平坐，同辈相称。 刘志茂毫无征兆地吐出一口鲜血，手心也鲜血溅射，像是被人用利器使劲割出一条血槽。 老人没有丝毫犹豫，手心叠在手背，身为道家旁门中人，却以儒家作揖行礼，一弯到底，虔诚至极，颤声道：“书简湖青峡岛岛主刘志茂，恳请齐先生怜悯晚辈赤忱求道之心，若有冒犯之处，还望先生大人……圣人不记小人过！",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第二十四章 相赠 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -689,8 +879,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘志茂"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "同行",
+        "context": "去你的鬼吧！ 刘志茂恨不得有此小洞天之后，将佛陀、道祖、儒教教主这三位的第三代弟子，全部拉进来，不敢说要他们低头弯腰，好歹大家一起平起平坐，同辈相称。 刘志茂毫无征兆地吐出一口鲜血，手心也鲜血溅射，像是被人用利器使劲割出一条血槽。 另外一只手上，也不由自主地显现出那只白碗，水面波纹混乱，黑线乱窜，四处撞壁。 老人没有丝毫犹豫，手心叠在手背，身为道家旁门中人，却以儒家作揖行礼，一弯到底，虔诚至极，颤声道：“书简湖青峡岛岛主刘志茂，恳请齐先生怜悯晚辈赤忱求道之心，若有冒犯之处，还望先生大人……圣人不记小人过！ ”",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 24,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.330334",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -710,7 +926,21 @@
       "”",
       "一直以晚辈自居的老人记起一事，小心问道：“敢问先生，晚辈身上这两袋子金精铜钱，应该如何处置？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "刘志茂狂喜道：“先生放心，晚辈这就携带顾氏母子离开小镇。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 24,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -719,7 +949,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "刘志茂"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -729,16 +961,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安"
+          "顾璨",
+          "陈平安",
+          "刘志茂"
         ],
         "description": "刘志茂狂喜道：“先生放心，晚辈这就携带顾氏母子离开小镇。 良久之后。 “速速离去！",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十四章 相赠 · 段18",
         "sentence_indexes_in_segment": [
@@ -754,7 +987,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "extracted_at": "2026-03-25T01:03:30.330334",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -775,6 +1008,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "刘志茂如释重负，这次总算没有那般谄媚，故意行儒生揖礼，而只是打了个庄重的道家稽首，“长者赐不敢辞，齐先生的大恩大德，晚辈铭感五内，没齿难忘！",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 24,
+        "segment_index": 19
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -799,12 +1045,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "刘志茂"
         ],
         "description": "刘志茂如释重负，这次总算没有那般谄媚，故意行儒生揖礼，而只是打了个庄重的道家稽首，“长者赐不敢辞，齐先生的大恩大德，晚辈铭感五内，没齿难忘！ ” 威严嗓音再度响起，“一人一物，刚好是两份机缘，留在院中即可。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第二十四章 相赠 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -818,8 +1067,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘志茂"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "别离",
+        "context": "” 威严嗓音再度响起，“一人一物，刚好是两份机缘，留在院中即可。 三十年内，你不许离开书简湖半步。 ” 刘志茂如释重负，这次总算没有那般谄媚，故意行儒生揖礼，而只是打了个庄重的道家稽首，“长者赐不敢辞，齐先生的大恩大德，晚辈铭感五内，没齿难忘！ ”",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 24,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.330334",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -854,6 +1129,20 @@
         ],
         "juan_index": 24,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "在这之后，齐静春的声音并未出现，止境也很快随之消失，刘志茂不废话，立即让顾氏带着顾粲随他离开小镇，顾氏正要说话，就被刘志茂一个凶狠至极的眼神瞪过去，吓得妇人噤若寒蝉，刘志茂掏出两只袋子，虽然心中有些恋恋不舍，但是这位志在一个名副其实真君头衔的旁门道人，仍是毫不犹豫地放在了长凳上，只是刚走到小院的时候，刘志茂突然问道：“你们家有没有留下什么老物件？ 刘志茂眼前一亮，二话不说就让妇人带路，去一探究竟。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 24,
+        "segment_index": 20
       }
     ],
     "locations": [
@@ -865,7 +1154,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "齐静春"
+          "齐静春",
+          "刘志茂"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -876,17 +1166,21 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
+          "顾璨",
+          "陈平安",
           "齐静春",
-          "陈平安"
+          "刘志茂"
         ],
-        "description": "在这之后，齐静春的声音并未出现，止境也很快随之消失，刘志茂不废话，立即让顾氏带着顾粲随他离开小镇，顾氏正要说话，就被刘志茂一个凶狠至极的眼神瞪过去，吓得妇人噤若寒蝉，刘志茂掏出两只袋子，虽然心中有些恋恋不舍，但是这位志在一个名副其实真君头衔的旁门道人，仍是毫不犹豫地放在了长凳上，只是刚走到小院的时候，刘志茂突然问道：“你们家有没有留下什么老物件？ ” 顾氏茫然，鬼头鬼脑的顾粲立即提醒道：“爹不是留下个多宝阁嘛，就是藏在床底下吃灰的那个？",
+        "description": "在这之后，齐静春的声音并未出现，止境也很快随之消失，刘志茂不废话，立即让顾氏带着顾粲随他离开小镇，顾氏正要说话，就被刘志茂一个凶狠至极的眼神瞪过去，吓得妇人噤若寒蝉，刘志茂掏出两只袋子，虽然心中有些恋恋不舍，但是这位志在一个名副其实真君头衔的旁门道人，仍是毫不犹豫地放在了长凳上，只是刚走到小院的时候，刘志茂突然问道：“你们家有没有留下什么老物件？ 刘志茂眼前一亮，二话不说就让妇人带路，去一探究竟。 ”",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第二十四章 相赠 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -900,8 +1194,29 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.357804",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "刘志茂"
+        ],
+        "action": "对话",
+        "context": "在这之后，齐静春的声音并未出现，止境也很快随之消失，刘志茂不废话，立即让顾氏带着顾粲随他离开小镇，顾氏正要说话，就被刘志茂一个凶狠至极的眼神瞪过去，吓得妇人噤若寒蝉，刘志茂掏出两只袋子，虽然心中有些恋恋不舍，但是这位志在一个名副其实真君头衔的旁门道人，仍是毫不犹豫地放在了长凳上，只是刚走到小院的时候，刘志茂突然问道：“你们家有没有留下什么老物件？",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 24,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.330334",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -997,7 +1312,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.330334",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1046,6 +1361,32 @@
         ],
         "juan_index": 24,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
       }
     ],
     "locations": [
@@ -1082,18 +1423,25 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "齐静春",
           "陈平安"
         ],
         "description": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。 至于之后云霞山、老龙城和截江真君三方势力，我不敢说他们永远不会找你的麻烦，但是十年内肯定不会来寻你的麻烦，运气好的话，你就一直是个市井平民，也能够三十年安然无恙。 齐静春笑道：“也无需对小镇心存忌讳，以后……过不了多久，应该就再没有那些算计了。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第一卷笼中雀 第二十四章 相赠 · 段22",
         "sentence_indexes_in_segment": [
@@ -1120,7 +1468,107 @@
         "action": "对话",
         "context": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 24,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "走到一条巷口，齐静春对陈平安说道：“蔡金简和苻南华，就交由我处置。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
         "location": "老龙城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1130,7 +1578,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.331337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1211,7 +1659,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.331337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1326,7 +1774,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.331337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1410,7 +1858,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.331337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1503,7 +1951,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.331337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1573,7 +2021,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.358808",
+    "extracted_at": "2026-03-25T01:03:30.331337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

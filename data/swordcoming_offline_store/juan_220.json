@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -120,7 +120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,7 +182,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -244,7 +244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -306,7 +306,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -368,7 +368,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -416,6 +416,19 @@
         ],
         "juan_index": 220,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "哪怕宁姚真再好商量，答应自己给往下降一降，估计怎么也得是风雪庙魏晋那种剑仙境界吧？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 220,
+        "segment_index": 8
       }
     ],
     "locations": [
@@ -427,7 +440,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宁姚"
+          "宁姚",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -443,14 +457,13 @@
         "location": "风雪庙",
         "participants": [
           "陈平安",
-          "宁姚"
+          "宁姚",
+          "魏晋"
         ],
         "description": "陈平安欲言又止。 哪怕宁姚真再好商量，答应自己给往下降一降，估计怎么也得是风雪庙魏晋那种剑仙境界吧？ 陈平安叹了口气，突然提醒道：“婆婆，菜好了。",
         "background": "",
         "significance": "在风雪庙推动陈平安与宁姚之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十章 山水印 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -464,34 +477,8 @@
         "segment_index": 8
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "宁姚"
-        ],
-        "action": "对话",
-        "context": "陈平安欲言又止。 宁姑娘所谓的大剑仙，肯定最少最少也是十二境啊！ 哪怕宁姚真再好商量，答应自己给往下降一降，估计怎么也得是风雪庙魏晋那种剑仙境界吧？ 陈平安叹了口气，突然提醒道：“婆婆，菜好了。 ” 老妪赶紧起身，掀开锅盖，很快一道色香味俱全的山珍野味就进了菜盘，让陈平安端着那盘下酒菜，送去三进院子的正房大堂，还让他送完这碟菜就不用回来，就在那边吃菜喝酒，之后她来端菜送酒便是，陈平安一溜烟跑去又跑回，看到老妪佯装生气的模样，陈平安笑问道：“老婆婆，我来拿酒，而且我跟杨老爷打过招呼了，他答应送我酒喝……”",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百二十章 山水印 · 陈平安与宁姚在风雪庙对话",
-        "location": "风雪庙",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 220,
-        "segment_index": 8
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.141581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -554,7 +541,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.141581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -614,7 +601,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.141581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -676,7 +663,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.141581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -739,7 +726,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.141581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -802,7 +789,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.141581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -864,7 +851,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.142584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -927,7 +914,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.142584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1085,7 +1072,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.929340",
+    "extracted_at": "2026-03-25T01:03:31.142584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1176,15 +1163,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十章 山水印 · 陈平安在大骊冲突",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "大骊",
+        "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安"
         ],
         "description": "陈平安伸出手，递过去七八颗雪花钱，“大骊龙泉与彩衣国，路途遥远，这是到时候老婆婆你寄信的钱。 寄信去往宝瓶洲最北边的大骊王朝，当然花钱不少，可却也绝对不需要耗费七颗雪花钱的夸张地步。 有些善意，就跟春寒料峭的阳光一样，虽说在与不在，差别不是很大，可为什么要拒绝呢？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十章 山水印 · 段23",
         "sentence_indexes_in_segment": [
@@ -1200,7 +1188,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.142584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1263,7 +1251,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.142584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1303,7 +1291,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十章 山水印 · 陈平安迁移",
+        "name": "第三卷金错刀 第二百二十章 山水印 · 陈平安会见",
         "time": null,
         "location": null,
         "participants": [
@@ -1311,7 +1299,7 @@
         ],
         "description": "一行人到了胭脂郡城的太守府，郡守大人正在官厅那边处理政务，大髯刀客和道士张山峰坐在素雅简朴的客厅，喝着婢女送来的茶水，刘高华则带着陈平安一路去往他爹的书房，做贼似的，因为陈平安跟他讨要了一幅胭脂郡堪舆图，而且必须是朝廷盖章的那种地图，刘高华虽然不明就里，但是想着这次能够或者离开古宅，还亲眼见识过了精怪鬼魅，还他娘的跟她坐在一张酒桌上喝了酒，一想到这个，刘高华就豪气冲天，看谁谁顺眼，便拍胸脯答应下来，要帮陈平安偷出一幅彩衣国胭脂郡的堪舆图，结果陈平安二话不说给了他五十两银子，刘高华原本想要说一场患难之交，谈钱伤感情，结果一看那些沉甸甸的银锭，顿时觉得伤感情就伤感情吧，反正以后重逢见面的机会也不大了。 刘高华蹑手蹑脚领着陈平安来到书房，关上门后，一阵翻箱倒柜，好不容易抽出一幅老旧卷轴，正是古色古香的一幅胭脂郡堪舆图，是一幅候补图，这也正常，这类朝廷钦天监绘制的形势图，两幅正选图，一幅必然悬在官衙大堂，另一幅则是交由当地武将保管，只有这幅候补图才会放起来吃灰尘。 陈平安确认无误后，点头道：“是这个了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "对应陈平安在叙事中的关键会见节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十章 山水印 · 段26",
         "sentence_indexes_in_segment": [
@@ -1327,7 +1315,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.142584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1455,7 +1443,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.143587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1518,7 +1506,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.143587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1557,16 +1545,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "神诰宗赵鎏当时正带着一行小祖宗离开小镇，瞬间感知到了这番天地变色的异样。 淫祠山神所在的那座山神庙，瞬间崩塌，秦姓山神金身粉碎。 哪怕神诰宗的老道人已经放过他一马，与他私下会晤，传授锦囊妙计，这让山神喜出望外，只觉得真是否极泰来，自己终于要行大运了！",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十章 山水印 · 段29",
         "sentence_indexes_in_segment": [
@@ -1582,7 +1570,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.143587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1640,7 +1628,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.930343",
+    "extracted_at": "2026-03-25T01:03:31.143587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

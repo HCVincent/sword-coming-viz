@@ -42,8 +42,17 @@ export function useUnifiedVisualizationData(
   unitRange?: [number, number],
   progressRange?: [number | null, number | null]
 ) {
-  const { nodes, links } = useMemo(() => {
-    if (!kb) return { nodes: [], links: [] };
+  const { allNodes, linkedNodes, isolatedNodes, links, totalRoleCount, linkedRoleCount } = useMemo(() => {
+    if (!kb) {
+      return {
+        allNodes: [],
+        linkedNodes: [],
+        isolatedNodes: [],
+        links: [],
+        totalRoleCount: 0,
+        linkedRoleCount: 0,
+      };
+    }
     return unifiedNetworkGraphData(kb, unitRange, progressRange ?? [null, null]);
   }, [kb, unitRange, progressRange]);
 
@@ -63,8 +72,12 @@ export function useUnifiedVisualizationData(
   }, [kb, unitRange, progressRange]);
 
   return {
-    nodes,
+    nodes: allNodes,
+    networkNodes: linkedNodes,
+    isolatedNodes,
     links,
+    totalRoleCount,
+    linkedRoleCount,
     timelineEvents,
     locations,
     powerDistribution,

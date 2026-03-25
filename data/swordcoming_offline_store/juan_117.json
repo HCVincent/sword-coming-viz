@@ -100,7 +100,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -266,7 +266,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -391,7 +391,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -521,7 +521,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -603,7 +603,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -666,7 +666,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +730,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.688973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -762,6 +762,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           2
+        ],
+        "juan_index": 117,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "比如那个赵繇？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 117,
         "segment_index": 8
@@ -806,12 +819,15 @@
         "location": "骊珠洞天",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
-        "description": "栾巨子也摇摇头，不置可否，记起一事，问道：“齐静春在骊珠洞天，不是还收了一些学生弟子吗？ 好像除此之外，宝瓶洲兵家跟道家还争夺过一个姓马的孩子。 出身于阴阳家陆氏的老人摇头笑道，“一枝可以独秀，但难成林。",
+        "description": "栾巨子也摇摇头，不置可否，记起一事，问道：“齐静春在骊珠洞天，不是还收了一些学生弟子吗？ 比如那个赵繇？ 好像除此之外，宝瓶洲兵家跟道家还争夺过一个姓马的孩子。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -825,8 +841,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "对话",
+        "context": "出身于阴阳家陆氏的老人摇头笑道，“一枝可以独秀，但难成林。 ” 栾巨子也摇摇头，不置可否，记起一事，问道：“齐静春在骊珠洞天，不是还收了一些学生弟子吗？ 比如那个赵繇？ 好像除此之外，宝瓶洲兵家跟道家还争夺过一个姓马的孩子。 ”",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -888,7 +930,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.629654",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -952,7 +994,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1056,7 +1098,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1157,7 +1199,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1240,7 +1282,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1305,7 +1347,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1439,7 +1481,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.689977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1542,7 +1584,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.690980",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1645,7 +1687,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.690980",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1751,7 +1793,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.630657",
+    "extracted_at": "2026-03-25T01:03:30.690980",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1878,7 +1920,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.690980",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2021,7 +2063,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.690980",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2053,6 +2095,19 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           0,
+          2
+        ],
+        "juan_index": 117,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "他国师崔瀺，和藩王宋长镜，还有那些六部主官，则都属于后者。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
           2
         ],
         "juan_index": 117,
@@ -2109,17 +2164,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与大骊皇帝在大骊剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宋长镜在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
           "崔瀺",
+          "宋长镜",
           "大骊皇帝",
           "宋集薪"
         ],
         "description": "崔瀺私下认为，一座王朝的庙堂之上，始终需要两件东西，不起眼的垫脚地砖，和撑起殿阁的栋梁廊柱，缺一不可。 他国师崔瀺，和藩王宋长镜，还有那些六部主官，则都属于后者。 所以就有了那个名叫杨花的心腹大将，被强行担任铁符江江神一事，其实那名宫女虽然确实天赋异禀，可是正常情况下，绝对不至于如此仓促上位，以大骊皇帝的勤俭精明，一定会更好地利用她的潜力。",
         "background": "",
-        "significance": "在大骊推动崔瀺与大骊皇帝之间的剧情推进线。",
+        "significance": "在大骊推动崔瀺与宋长镜之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段22",
         "sentence_indexes_in_segment": [
@@ -2135,7 +2191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.690980",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2281,7 +2337,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2381,7 +2437,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2465,7 +2521,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2529,7 +2585,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2594,7 +2650,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2662,7 +2718,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2727,7 +2783,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2811,7 +2867,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.631661",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2891,7 +2947,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.691984",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2954,7 +3010,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3055,7 +3111,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3119,7 +3175,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3182,7 +3238,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3245,7 +3301,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3328,7 +3384,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3391,7 +3447,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3489,7 +3545,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.692987",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3552,7 +3608,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.632664",
+    "extracted_at": "2026-03-25T01:03:30.693991",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3614,7 +3670,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.633668",
+    "extracted_at": "2026-03-25T01:03:30.693991",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

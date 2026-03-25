@@ -43,6 +43,19 @@
       },
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "负剑男人带着马苦玄快步前行，摇头道：“正阳山搬山猿之所以悍然出手，不惜破坏规矩，那部剑经本身珍贵是一部分原因，但最重要的原因，仍是正阳山和风雷园的陈年旧怨，如果不是风雷园陈松风前后脚就来到小镇，那头搬山猿绝不至于出手行凶。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 57,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -67,6 +80,7 @@
         "coordinates": null,
         "related_entities": [
           "马苦玄",
+          "陈松风",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -85,7 +99,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "马苦玄"
+          "马苦玄",
+          "陈松风"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -103,12 +118,14 @@
           "齐静春",
           "陈平安",
           "马苦玄",
-          "刘羡阳"
+          "陈松风"
         ],
         "description": "临近小镇，真武山兵家修士松开马苦玄的肩头，马苦玄有些头晕目眩，晃了晃脑袋，问道：“知道是谁出问题吗？ 难不成是我爹或者大伯，家里的宝贝给外边的人看上眼，一个不愿意给，一个强行索要，结果就跟刘羡阳差不多，惹出大麻烦来了？ 负剑男人带着马苦玄快步前行，摇头道：“正阳山搬山猿之所以悍然出手，不惜破坏规矩，那部剑经本身珍贵是一部分原因，但最重要的原因，仍是正阳山和风雷园的陈年旧怨，如果不是风雷园陈松风前后脚就来到小镇，那头搬山猿绝不至于出手行凶。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十七章 养剑葫 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -122,8 +139,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马苦玄"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "冲突",
+        "context": "负剑男人带着马苦玄快步前行，摇头道：“正阳山搬山猿之所以悍然出手，不惜破坏规矩，那部剑经本身珍贵是一部分原因，但最重要的原因，仍是正阳山和风雷园的陈年旧怨，如果不是风雷园陈松风前后脚就来到小镇，那头搬山猿绝不至于出手行凶。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 57,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.455105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -189,7 +227,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.455105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -251,7 +289,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.455105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -314,7 +352,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.455105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -379,7 +417,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.456108",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -441,7 +479,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.456108",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -462,6 +500,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "窑务监造衙署，龙尾郡陈氏子弟陈松风，正在一间宽敞屋内埋头翻阅档案，脚边搁放着一口朱漆木箱，里边堆了大半箱子的泛黄古籍。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 57,
+        "segment_index": 7
+      },
       {
         "entity_type": "person",
         "name": "陈对",
@@ -500,12 +551,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "陈松风",
           "陈对"
         ],
-        "description": "女子陈对从木箱随手拎了本，站在不远处的临窗位置，一页页缓缓翻阅过去。 衙署老管事正坐在屋内一把椅子上喝茶，风雷园剑修刘灞桥坐在对面跟老人客套寒暄，精神矍铄的老管事笑道：“也亏得事情巧了，李家宅子那边的李虹，亲自登门咱们衙署，开口讨要咱们小镇几支陈氏的档案，而且只要最近三四百年的户籍档案，王爷点头答应了，我便让李虹让人带走了箱子上边的那七八十本籍书，下边剩下的籍书，年岁更大，刚好是陈公子你们想要的老黄历，话说回来，若非每年衙署要求在夏秋时节，各晒书一次，早就给虫子蛀烂吃光喽。 ”",
+        "description": "窑务监造衙署，龙尾郡陈氏子弟陈松风，正在一间宽敞屋内埋头翻阅档案，脚边搁放着一口朱漆木箱，里边堆了大半箱子的泛黄古籍。 女子陈对从木箱随手拎了本，站在不远处的临窗位置，一页页缓缓翻阅过去。 衙署老管事正坐在屋内一把椅子上喝茶，风雷园剑修刘灞桥坐在对面跟老人客套寒暄，精神矍铄的老管事笑道：“也亏得事情巧了，李家宅子那边的李虹，亲自登门咱们衙署，开口讨要咱们小镇几支陈氏的档案，而且只要最近三四百年的户籍档案，王爷点头答应了，我便让李虹让人带走了箱子上边的那七八十本籍书，下边剩下的籍书，年岁更大，刚好是陈公子你们想要的老黄历，话说回来，若非每年衙署要求在夏秋时节，各晒书一次，早就给虫子蛀烂吃光喽。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十七章 养剑葫 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -519,8 +573,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "” 金光消散，不见神将。 窑务监造衙署，龙尾郡陈氏子弟陈松风，正在一间宽敞屋内埋头翻阅档案，脚边搁放着一口朱漆木箱，里边堆了大半箱子的泛黄古籍。 女子陈对从木箱随手拎了本，站在不远处的临窗位置，一页页缓缓翻阅过去。 衙署老管事正坐在屋内一把椅子上喝茶，风雷园剑修刘灞桥坐在对面跟老人客套寒暄，精神矍铄的老管事笑道：“也亏得事情巧了，李家宅子那边的李虹，亲自登门咱们衙署，开口讨要咱们小镇几支陈氏的档案，而且只要最近三四百年的户籍档案，王爷点头答应了，我便让李虹让人带走了箱子上边的那七八十本籍书，下边剩下的籍书，年岁更大，刚好是陈公子你们想要的老黄历，话说回来，若非每年衙署要求在夏秋时节，各晒书一次，早就给虫子蛀烂吃光喽。 ”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 57,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.456108",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -631,7 +711,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.456108",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -711,7 +791,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -744,6 +824,20 @@
         ],
         "juan_index": 57,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈对一笑置之，转移视线，望向正襟危坐的陈松风，冷声道：“实在不行，就把箱子翻个底朝天，从最下边那些籍书看起，薛管事刚才的话，你没听到吗？ 陈松风额头渗出细密的汗水，嘴唇微白，竟是不敢反驳一个字，连忙从椅子上起身，去弯腰翻箱子搬书。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 57,
+        "segment_index": 10
       }
     ],
     "locations": [
@@ -770,9 +864,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "陈松风",
           "陈对"
         ],
-        "description": "陈对一笑置之，转移视线，望向正襟危坐的陈松风，冷声道：“实在不行，就把箱子翻个底朝天，从最下边那些籍书看起，薛管事刚才的话，你没听到吗？ 小镇千年以来，档案籍书只与另外一支陈氏有关，如果我没有记错，这一支小镇陈氏，与你们龙尾郡陈氏可算同一个远祖，怎么，翻来覆去，一本本族谱从头到尾，那些个名字不是奴婢就是丫鬟，好玩吗？ 老管事笑逐颜开道：“陈小姐谬赞了，像我们这种人，只是知道自己的那点斤两，所以唯有尽心尽力而已，劳碌命，劳碌命罢了。",
+        "description": "陈对一笑置之，转移视线，望向正襟危坐的陈松风，冷声道：“实在不行，就把箱子翻个底朝天，从最下边那些籍书看起，薛管事刚才的话，你没听到吗？ 小镇千年以来，档案籍书只与另外一支陈氏有关，如果我没有记错，这一支小镇陈氏，与你们龙尾郡陈氏可算同一个远祖，怎么，翻来覆去，一本本族谱从头到尾，那些个名字不是奴婢就是丫鬟，好玩吗？ 陈松风额头渗出细密的汗水，嘴唇微白，竟是不敢反驳一个字，连忙从椅子上起身，去弯腰翻箱子搬书。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -790,7 +885,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -813,6 +908,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "刘灞桥实在看不下去，陈松风性子软绵不假，可好歹是龙尾郡陈氏的未来家主，不管你陈对什么来历背景，是不是同宗同族，最少也应该给予必要的尊重，所以刘灞桥沉声道：“陈对，我没有眼瞎的话，看得出陈松风现在是给你帮忙，你就算不领情，也别说话这么难听！ 陈松风赶紧抬头对刘灞桥使眼色，后者睁大眼睛瞪回去，“连皇帝也有几个穷亲戚，怎么，有人例外啊？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 57,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "刘灞桥实在看不下去，陈松风性子软绵不假，可好歹是龙尾郡陈氏的未来家主，不管你陈对什么来历背景，是不是同宗同族，最少也应该给予必要的尊重，所以刘灞桥沉声道：“陈对，我没有眼瞎的话，看得出陈松风现在是给你帮忙，你就算不领情，也别说话这么难听！",
@@ -828,16 +937,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十七章 养剑葫 · 陈对剧情推进",
+        "name": "第一卷笼中雀 第五十七章 养剑葫 · 陈松风与陈对对话",
         "time": null,
         "location": null,
         "participants": [
+          "陈松风",
           "陈对"
         ],
-        "description": "刘灞桥实在看不下去，陈松风性子软绵不假，可好歹是龙尾郡陈氏的未来家主，不管你陈对什么来历背景，是不是同宗同族，最少也应该给予必要的尊重，所以刘灞桥沉声道：“陈对，我没有眼瞎的话，看得出陈松风现在是给你帮忙，你就算不领情，也别说话这么难听！ 衙署老管事立即绷直腰杆后背，再无半点忙里偷闲的轻松意味。 ”",
+        "description": "刘灞桥实在看不下去，陈松风性子软绵不假，可好歹是龙尾郡陈氏的未来家主，不管你陈对什么来历背景，是不是同宗同族，最少也应该给予必要的尊重，所以刘灞桥沉声道：“陈对，我没有眼瞎的话，看得出陈松风现在是给你帮忙，你就算不领情，也别说话这么难听！ 陈松风赶紧抬头对刘灞桥使眼色，后者睁大眼睛瞪回去，“连皇帝也有几个穷亲戚，怎么，有人例外啊？ 衙署老管事立即绷直腰杆后背，再无半点忙里偷闲的轻松意味。",
         "background": "",
-        "significance": "对应陈对在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈松风与陈对之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十七章 养剑葫 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -851,8 +963,29 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "刘灞桥实在看不下去，陈松风性子软绵不假，可好歹是龙尾郡陈氏的未来家主，不管你陈对什么来历背景，是不是同宗同族，最少也应该给予必要的尊重，所以刘灞桥沉声道：“陈对，我没有眼瞎的话，看得出陈松风现在是给你帮忙，你就算不领情，也别说话这么难听！",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十七章 养剑葫 · 陈松风与陈对对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 57,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -875,6 +1008,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风满脸苦涩。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 57,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "陈对愣了一下，微笑道：“有道理。",
@@ -890,16 +1036,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十七章 养剑葫 · 陈对对话",
+        "name": "第一卷笼中雀 第五十七章 养剑葫 · 陈松风与陈对对话",
         "time": null,
         "location": null,
         "participants": [
+          "陈松风",
           "陈对"
         ],
-        "description": "陈对愣了一下，微笑道：“有道理。 ” 直来直去。",
+        "description": "陈松风满脸苦涩。 陈对愣了一下，微笑道：“有道理。 ”",
         "background": "",
-        "significance": "对应陈对在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈松风与陈对之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十七章 养剑葫 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -913,8 +1062,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.446979",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "” 直来直去。 这就是风雷园刘灞桥的本性本心。 陈松风满脸苦涩。 老管事低下头喝茶，视而不见，听而不闻。 陈对愣了一下，微笑道：“有道理。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十七章 养剑葫 · 陈松风与陈对对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 57,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -977,7 +1152,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1013,6 +1188,19 @@
         ],
         "juan_index": 57,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "一大一小，用的是东宝瓶洲的正统雅言官话，陈对听得懂，否则她也不会来到这座小镇，只不过说起来比较生涩，所以与陈松风刘灞桥一路行来，就很沉默寡言，当然她不想说话的主要理由，还是觉得跟陈松风刘灞桥说不到一块去，不愿意开口。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 57,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -1024,7 +1212,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈对"
+          "陈对",
+          "陈松风"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -1040,7 +1229,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈对"
+          "陈对",
+          "陈松风"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -1057,12 +1247,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "陈对"
+          "陈对",
+          "陈松风"
         ],
         "description": "陈对看到一大一小两个背影，坐在牌坊的白石台阶上窃窃私语。 为了落下一个偷听的嫌疑，陈对在走上两人身后台阶的时候，就故意轻轻咳嗽一声，不曾想两人一个说的起劲，一个听得认真，仿佛对陈对的出现浑然不觉。 陈对对此也不以为意，她大大方方坐在台阶的最远处，虽然她闲散随意而坐，但是坐姿无形中散发出来的韵味，仍然给人一种端正感觉。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十七章 养剑葫 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1076,8 +1269,29 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈对"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "一大一小，用的是东宝瓶洲的正统雅言官话，陈对听得懂，否则她也不会来到这座小镇，只不过说起来比较生涩，所以与陈松风刘灞桥一路行来，就很沉默寡言，当然她不想说话的主要理由，还是觉得跟陈松风刘灞桥说不到一块去，不愿意开口。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 57,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1098,6 +1312,19 @@
       "衣衫富贵的少年和瓷娃娃似的精致小女孩，正是泥瓶巷宋集薪和正阳山陶紫。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "刘灞桥表面上玩世不恭，但骨子里专注于剑道，看似有趣其实乏味，陈松风则一心重振家风，看似质朴其实多思，两位所谓的东宝瓶洲顶尖俊彦，都跟她不是一路人。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 57,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "陈对",
@@ -1136,7 +1363,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1178,19 +1407,18 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十七章 养剑葫 · 陈对与宋集薪在宝瓶洲对话",
+        "name": "第一卷笼中雀 第五十七章 养剑葫 · 陈对与陈松风在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
           "陈对",
+          "陈松风",
           "宋集薪"
         ],
         "description": "刘灞桥表面上玩世不恭，但骨子里专注于剑道，看似有趣其实乏味，陈松风则一心重振家风，看似质朴其实多思，两位所谓的东宝瓶洲顶尖俊彦，都跟她不是一路人。 陈对安安静静坐在那里，没有开口说话的迹象。 不过之前惊鸿一瞥，发现小女孩捧着一只光泽晶莹的翠绿葫芦，陈对眼光何其老辣，一看就知道不是俗物。",
         "background": "",
-        "significance": "在宝瓶洲推动陈对与宋集薪之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在宝瓶洲推动陈对与陈松风之间的剧情推进线。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第五十七章 养剑葫 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1204,34 +1432,8 @@
         "segment_index": 15
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈对"
-        ],
-        "to_roles": [
-          "宋集薪"
-        ],
-        "action": "对话",
-        "context": "刘灞桥表面上玩世不恭，但骨子里专注于剑道，看似有趣其实乏味，陈松风则一心重振家风，看似质朴其实多思，两位所谓的东宝瓶洲顶尖俊彦，都跟她不是一路人。 道不同不相为谋，就是如此。 少年瞥了眼约莫比自己大十岁的女子，印象实在一般。 陈对安安静静坐在那里，没有开口说话的迹象。 不过之前惊鸿一瞥，发现小女孩捧着一只光泽晶莹的翠绿葫芦，陈对眼光何其老辣，一看就知道不是俗物。 衣衫富贵的少年和瓷娃娃似的精致小女孩，正是泥瓶巷宋集薪和正阳山陶紫。",
-        "result": null,
-        "event_name": "第一卷笼中雀 第五十七章 养剑葫 · 陈对与宋集薪在宝瓶洲对话",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 57,
-        "segment_index": 15
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.457112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1266,6 +1468,20 @@
           1,
           3,
           5
+        ],
+        "juan_index": 57,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋集薪之前和宋长镜去李宅慰问，一眼看到小丫头就喜欢上了，因为他从小就喜欢精致华美的事物，粗犷质朴之物，则不入法眼。 陶紫也对宋集薪很有眼缘，两人莫名其妙就成了好朋友，关键是年龄悬殊，还能聊到一块去，宋集薪甚至都没觉得自己敷衍应酬，以至于他最后请求叔叔宋长镜强行让李家放行，带着陶紫来监造衙署这边玩耍，宋集薪不管李家人如丧考妣的凄惨模样，牵着小女孩的手离开了李宅大门。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1
         ],
         "juan_index": 57,
         "segment_index": 16
@@ -1338,18 +1554,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "大骊",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "宋集薪",
-          "稚圭"
+          "宋长镜"
         ],
         "description": "宋集薪之前和宋长镜去李宅慰问，一眼看到小丫头就喜欢上了，因为他从小就喜欢精致华美的事物，粗犷质朴之物，则不入法眼。 陶紫也对宋集薪很有眼缘，两人莫名其妙就成了好朋友，关键是年龄悬殊，还能聊到一块去，宋集薪甚至都没觉得自己敷衍应酬，以至于他最后请求叔叔宋长镜强行让李家放行，带着陶紫来监造衙署这边玩耍，宋集薪不管李家人如丧考妣的凄惨模样，牵着小女孩的手离开了李宅大门。 与此同时，让人捎话给小宅里的婢女稚圭，让她找出箱子里的翠绿葫芦，送给了陶紫当见面礼。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0
         ],
@@ -1373,27 +1589,22 @@
           "宋集薪"
         ],
         "to_roles": [
-          "稚圭"
+          "宋长镜"
         ],
-        "action": "对话",
-        "context": "宋集薪之前和宋长镜去李宅慰问，一眼看到小丫头就喜欢上了，因为他从小就喜欢精致华美的事物，粗犷质朴之物，则不入法眼。 陶紫也对宋集薪很有眼缘，两人莫名其妙就成了好朋友，关键是年龄悬殊，还能聊到一块去，宋集薪甚至都没觉得自己敷衍应酬，以至于他最后请求叔叔宋长镜强行让李家放行，带着陶紫来监造衙署这边玩耍，宋集薪不管李家人如丧考妣的凄惨模样，牵着小女孩的手离开了李宅大门。 与此同时，让人捎话给小宅里的婢女稚圭，让她找出箱子里的翠绿葫芦，送给了陶紫当见面礼。 小女孩跟宋集薪亲昵得很，撒娇问道：“搬柴哥哥，你刚说到了十二种牌坊里的学宫书院坊，我来这里之前，听爷爷跟人聊天的时候说起，你们大骊的那座山崖书院，如今混得很惨啊，你知道他们山崖书院的牌坊上写了啥吗？ ” 因为宋集薪名字里的后两个字，陶紫给他取了个搬柴哥哥的绰号，宋集薪对此无所谓，此时不再关心那个外乡女子的去留，低头对小女孩笑道：“不知道啊，我这辈子还没走出过小镇子，书读得也不多，跟你聊了这么久，肚子差不多已经掏空啦。",
+        "action": "别离",
+        "context": "陶紫也对宋集薪很有眼缘，两人莫名其妙就成了好朋友，关键是年龄悬殊，还能聊到一块去，宋集薪甚至都没觉得自己敷衍应酬，以至于他最后请求叔叔宋长镜强行让李家放行，带着陶紫来监造衙署这边玩耍，宋集薪不管李家人如丧考妣的凄惨模样，牵着小女孩的手离开了李宅大门。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
         ],
         "juan_index": 57,
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1499,7 +1710,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1605,7 +1816,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1698,7 +1909,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1778,7 +1989,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.447983",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1885,7 +2096,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.448986",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1945,7 +2156,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.448986",
+    "extracted_at": "2026-03-25T01:03:30.458115",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

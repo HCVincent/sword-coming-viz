@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.562357",
+    "extracted_at": "2026-03-25T01:03:30.605183",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.562357",
+    "extracted_at": "2026-03-25T01:03:30.605183",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -180,7 +180,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.562357",
+    "extracted_at": "2026-03-25T01:03:30.605183",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -244,7 +244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.562357",
+    "extracted_at": "2026-03-25T01:03:30.605183",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -343,7 +343,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.562357",
+    "extracted_at": "2026-03-25T01:03:30.605183",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -363,7 +363,23 @@
       "宋长镜挥师而过，如入无人之境。",
       "第一件事情，就是亲自去此人坟头敬酒上香，事后大骊礼部非议，被宋长镜一份折子就打得满脸肿，“岂是唯我大骊有豪杰？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "当年宋长镜有次差点战死战阵之中，不知道多少回大骂叶庆是冥顽不化的老匹夫。 宋长镜挥师而过，如入无人之境。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 8
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -374,7 +390,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1,
           5
@@ -385,13 +403,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 大骊剧情推进",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 宋长镜在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "为卢氏王朝镇守边关三十年，硬生生挡住大骊边军的三次大型攻势。 第一件事情，就是亲自去此人坟头敬酒上香，事后大骊礼部非议，被宋长镜一份折子就打得满脸肿，“岂是唯我大骊有豪杰？ 大将军叶庆，国之忠良，国之栋梁。",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "为卢氏王朝镇守边关三十年，硬生生挡住大骊边军的三次大型攻势。 当年宋长镜有次差点战死战阵之中，不知道多少回大骂叶庆是冥顽不化的老匹夫。 宋长镜挥师而过，如入无人之境。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段8",
         "sentence_indexes_in_segment": [
@@ -407,7 +427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.606187",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -488,7 +508,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.606187",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -610,7 +630,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.606187",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -630,7 +650,21 @@
       "妇人嗤笑道：“那个不过武夫五境的家伙，不值一提。",
       "李家更没有胆子在我的眼皮子底下捣乱。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "王毅甫问道：“有没有可能是那个叫朱河的李家扈从，其实深藏不露？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -651,13 +685,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 大骊对话",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 朱河在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "这涉及到了大骊朝政最高层的暗流涌动。 说到这里就停下，年轻女子不再说话。 王毅甫问道：“有没有可能是那个叫朱河的李家扈从，其实深藏不露？",
+        "participants": [
+          "朱河"
+        ],
+        "description": "这涉及到了大骊朝政最高层的暗流涌动。 王毅甫问道：“有没有可能是那个叫朱河的李家扈从，其实深藏不露？ 说到这里就停下，年轻女子不再说话。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应朱河在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段12",
         "sentence_indexes_in_segment": [
@@ -673,7 +709,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.606187",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -773,18 +809,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
-          "齐静春",
-          "陈平安",
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "这件事，终究是别人先坏了大骊的规矩，那么皇帝陛下是愿意为她出头的。 李宝瓶有了崭新的小书箱，背篓里的大小物件就要挪窝，一大一小两人借此机会，在休息的时候，找了个远离李槐等人的僻静地方，偷偷摸摸清点家当，以防遗失或是损坏。 陈平安也摘下自己的背篓。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段14",
         "sentence_indexes_in_segment": [
@@ -800,7 +836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.606187",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -904,7 +940,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.606187",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1001,7 +1037,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1095,7 +1131,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1196,7 +1232,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.563361",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1262,16 +1298,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李槐有些急了，决定退让一步，“那跟李宝瓶那小书箱一样大就行，这总行了吧？ 陈平安无意间发现李槐的靴子，已经破烂不堪，露出了脚指，说道：“回头给你做两双草鞋。 李槐大怒，跳脚道：“我稀罕那破草鞋，我要的是书箱！",
         "background": "",
-        "significance": "推动陈平安与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1300,7 +1338,7 @@
         "action": "对话",
         "context": "陈平安无意间发现李槐的靴子，已经破烂不堪，露出了脚指，说道：“回头给你做两双草鞋。",
         "result": null,
-        "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与李槐对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1310,7 +1348,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.564364",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1435,7 +1473,7 @@
         "to_roles": [
           "陈平安"
         ],
-        "action": "别离",
+        "action": "试探",
         "context": "李槐愕然，仔细打量着陈平安的脸色，两人对视后，李槐突然有些害怕心虚，这个天不怕地不怕的小孩，破天荒没有还嘴骂人，悻悻然离开，只是跑出去几步，转头理直气壮道：“草鞋别忘了啊，要两双，可以换着穿。",
         "result": null,
         "event_name": "齐静春现身",
@@ -1448,7 +1486,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.564364",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1583,7 +1621,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.564364",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1678,18 +1716,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "阿良",
-          "陈平安",
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "其实阿良憋得很辛苦，很想告诉这一大一小，如果不是咱们小宝瓶足够可爱，就这颜色装扮，能够让人笑话死。 李宝瓶突然说道：“这个李槐，有点像小师叔你们泥瓶巷的那个鼻涕虫啊。 陈平安愣了一下，好像从来没有把两个字放在一起比较过，仔细想了想，摇头道：“不像的，以后如果有机会见到顾粲，你就会明白了。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1718,7 +1756,7 @@
         "action": "对话",
         "context": "李宝瓶突然说道：“这个李槐，有点像小师叔你们泥瓶巷的那个鼻涕虫啊。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1728,7 +1766,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.564364",
+    "extracted_at": "2026-03-25T01:03:30.607190",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1842,18 +1880,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与李宝瓶在大骊剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
-          "陈平安",
           "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "小姑娘哦了一声，反正也只是随口一提，很快就去想象大骊驿路到底是如何的。 陈平安其实跟李宝瓶一样，起先也有些觉得鼻涕虫顾粲和李槐有些像，但是相处久了，就会发现两者差别很大。 李槐跟顾粲看着差不多的性格，嘴里跟长了一窝蜈蚣蝎子似的，毒的很，能够一句话把人气得够呛，在陈平安眼中，其实大不一样，同样是没心没肺，同样穷苦出身，顾粲看似贼兮兮，转起眼珠子来比谁都快，但顾粲身上那股超乎年纪的精明，更多是一种自保，李槐则是纯粹的小刺猬一个，逮着谁都要刺一下，这是因为李槐到底父母健在，上边还有个姐姐，心性其实不复杂，而且上过学塾读过书，身边的同窗蒙童是李宝瓶，林守一，石春嘉这些稍大的孩子，大体上李槐是没吃过大苦头的。",
         "background": "",
-        "significance": "在大骊推动陈平安与李宝瓶之间的剧情推进线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段23",
         "sentence_indexes_in_segment": [
@@ -1868,7 +1906,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.564364",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1906,6 +1944,32 @@
       },
       {
         "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "陈平安有些担心，他当然希望顾粲在外边过得比谁都好，但同时打心底不希望顾粲成为蔡金简、苻南华那样的神仙人物。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "陈平安有些担心，他当然希望顾粲在外边过得比谁都好，但同时打心底不希望顾粲成为蔡金简、苻南华那样的神仙人物。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "看着心不在焉的小师叔，李宝瓶问道：“怎么了？",
@@ -1921,19 +1985,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与李宝瓶对话",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与蔡金简对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "蔡金简",
+          "苻南华",
           "李宝瓶"
         ],
         "description": "当然，那个给了他两脚的汉子，顾粲记得死死的，叫什么名字，住什么巷弄，家里有谁，顾粲全部一清二楚，私底下跟陈平安独处的时候，总是嚷嚷着要把那人的祖坟给刨了，还说那人有个女儿，等她长大了，一定要睡她，往死里欺负她。 陈平安至今记忆犹新，孩子不过四岁多，那张稚嫩的小脸，脸庞狰狞，满是凶光，眼神狠厉。 陈平安有些担心，他当然希望顾粲在外边过得比谁都好，但同时打心底不希望顾粲成为蔡金简、苻南华那样的神仙人物。",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与蔡金简之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1947,34 +2011,8 @@
         "segment_index": 24
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "李宝瓶"
-        ],
-        "action": "对话",
-        "context": "也更加记仇，心里头有个小账本，一笔笔账，记得很清楚，谁今天泼妇骂街骂过了他娘亲，哪家不要脸的汉子嘴花花调戏了他娘亲，他全记得，可能随着岁数增长，有些事情和细节已经忘了，但是对某个人的憎恶印象，顾粲肯定不会忘。 当然，那个给了他两脚的汉子，顾粲记得死死的，叫什么名字，住什么巷弄，家里有谁，顾粲全部一清二楚，私底下跟陈平安独处的时候，总是嚷嚷着要把那人的祖坟给刨了，还说那人有个女儿，等她长大了，一定要睡她，往死里欺负她。 大概那个时候的孩子，根本就不知道睡是什么意思，只知道很多婆姨汉子喜欢“开玩笑”，与他娘亲相关的言语，妇人说偷人二字，汉子则往往都带着个睡字。 陈平安至今记忆犹新，孩子不过四岁多，那张稚嫩的小脸，脸庞狰狞，满是凶光，眼神狠厉。 陈平安有些担心，他当然希望顾粲在外边过得比谁都好，但同时打心底不希望顾粲成为蔡金简、苻南华那样的神仙人物。 看着心不在焉的小师叔，李宝瓶问道：“怎么了？",
-        "result": null,
-        "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与李宝瓶对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 93,
-        "segment_index": 24
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2096,7 +2134,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2172,7 +2210,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2235,7 +2273,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2282,6 +2320,19 @@
         ],
         "juan_index": 93,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "陈平安练拳完毕，擦了擦额头汗水，问道：“阿良，你不是那个什么神仙台魏晋吧？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 28
       }
     ],
     "locations": [],
@@ -2292,13 +2343,16 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "魏晋"
         ],
         "description": "阿良点点头，“但是一件没意思的事情，有意思的人可以做得很有意思。 陈平安练拳完毕，擦了擦额头汗水，问道：“阿良，你不是那个什么神仙台魏晋吧？ 你这么练拳，问题不大。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段28",
         "sentence_indexes_in_segment": [
@@ -2333,9 +2387,49 @@
         ],
         "juan_index": 93,
         "segment_index": 28
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "陈平安练拳完毕，擦了擦额头汗水，问道：“阿良，你不是那个什么神仙台魏晋吧？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 28
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "陈平安练拳完毕，擦了擦额头汗水，问道：“阿良，你不是那个什么神仙台魏晋吧？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2396,6 +2490,19 @@
         ],
         "juan_index": 93,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阿良白眼道：“自然都是魏晋的。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 29
       }
     ],
     "locations": [],
@@ -2450,7 +2557,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2554,7 +2661,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.608194",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2659,7 +2766,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2790,7 +2897,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2841,6 +2948,19 @@
       },
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "你们东宝瓶洲是个小地方，阮邛不觉得在这里有太过吓人的高手，能够瞬间斩杀魏晋不说，还能够快到连魏晋的本命飞剑都来不及联系。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 93,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安惊讶道：“小地方？",
@@ -2862,7 +2982,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -2896,7 +3017,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "description": "阿良找了个地方坐在，晃了晃银白色的小葫芦，“葫芦里的本命剑气犹在，且无残缺，这意味着主人尚存，神魂体魄皆全。 你们东宝瓶洲是个小地方，阮邛不觉得在这里有太过吓人的高手，能够瞬间斩杀魏晋不说，还能够快到连魏晋的本命飞剑都来不及联系。 陈平安惊讶道：“小地方？",
         "background": "",
@@ -2916,7 +3038,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.565368",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2947,6 +3069,19 @@
         "sentence_indexes_in_segment": [
           0,
           4
+        ],
+        "juan_index": 93,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河说过练武之人，不能喝酒。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 93,
         "segment_index": 34
@@ -2991,9 +3126,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
-        "description": "阿良扭头把酒壶丢给身边站着的少年，“你也知道是‘走‘的啊，来来来，喝口酒，男人不会喝酒，就是白走一遭了。 ”陈平安小心接过酒葫芦，坐在阿良身边，递还给他，阿良却没接，陈平安只好小心翼翼捧在怀里，望着河水，轻声感慨道：“也是，我见过踩在剑上飞来飞去的神仙，从咱们小镇头顶上飞过去，很多。 ”",
+        "description": "阿良扭头把酒壶丢给身边站着的少年，“你也知道是‘走‘的啊，来来来，喝口酒，男人不会喝酒，就是白走一遭了。 朱河说过练武之人，不能喝酒。 ”陈平安小心接过酒葫芦，坐在阿良身边，递还给他，阿良却没接，陈平安只好小心翼翼捧在怀里，望着河水，轻声感慨道：“也是，我见过踩在剑上飞来飞去的神仙，从咱们小镇头顶上飞过去，很多。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -3011,7 +3147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3049,11 +3185,38 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "阿良现在一听到朱河就有些烦，偏偏身边这家伙喜欢拿自己跟朱河比较。 那你岂不是要比朱河还要厉害？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安笑问道：“阿良，你真能教魏晋剑术？",
         "description": "《剑来》主角，小镇出身少年，是前三季叙事的绝对核心视角人物。",
         "power": "泥瓶巷",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 93,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "陈平安笑问道：“阿良，你真能教魏晋剑术？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
         "sentence_indexes_in_segment": [
           1
         ],
@@ -3069,13 +3232,16 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "魏晋"
         ],
-        "description": "阿良现在一听到朱河就有些烦，偏偏身边这家伙喜欢拿自己跟朱河比较。 陈平安笑问道：“阿良，你真能教魏晋剑术？ 阿良叹了口气，“我也就是脾气好，不跟你一般见识。",
+        "description": "阿良现在一听到朱河就有些烦，偏偏身边这家伙喜欢拿自己跟朱河比较。 陈平安笑问道：“阿良，你真能教魏晋剑术？ 那你岂不是要比朱河还要厉害？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段35",
         "sentence_indexes_in_segment": [
@@ -3110,9 +3276,49 @@
         ],
         "juan_index": 93,
         "segment_index": 35
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "陈平安笑问道：“阿良，你真能教魏晋剑术？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 93,
+        "segment_index": 35
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "陈平安笑问道：“阿良，你真能教魏晋剑术？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 93,
+        "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3159,6 +3365,19 @@
         ],
         "juan_index": 93,
         "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "陈平安哈哈大笑，转头看着一脸郁闷的斗笠汉子，眨眨眼，嘿嘿道：“其实我知道你比朱河厉害很多。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 36
       }
     ],
     "locations": [],
@@ -3169,7 +3388,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "陈平安是真的很好奇这件事，打破砂锅问到底，“难道还要厉害很多？ 阿良一把抢过酒葫芦，仰头灌了一口酒，满脸嫌弃道：“滚滚滚。 陈平安哈哈大笑，转头看着一脸郁闷的斗笠汉子，眨眨眼，嘿嘿道：“其实我知道你比朱河厉害很多。",
         "background": "",
@@ -3189,7 +3409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3236,6 +3456,19 @@
         ],
         "juan_index": 93,
         "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "陈平安马上补了一句，语气诚恳道：“我觉得两个朱河都未必打得过你。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 37
       }
     ],
     "locations": [],
@@ -3246,7 +3479,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "阿良总算好受一些。 陈平安马上补了一句，语气诚恳道：“我觉得两个朱河都未必打得过你。 阿良无奈道：“你如果真想拍马屁，有点诚意行不行，好歹把‘未必’两个字去掉啊。",
         "background": "",
@@ -3266,7 +3500,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3423,7 +3657,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.609197",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3514,7 +3748,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3576,7 +3810,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3681,7 +3915,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3745,7 +3979,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3808,7 +4042,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3884,7 +4118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.566371",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3963,7 +4197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.567375",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4064,7 +4298,7 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.567375",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4141,7 +4375,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.567375",
+    "extracted_at": "2026-03-25T01:03:30.610201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4242,7 +4476,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.567375",
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4305,7 +4539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.567375",
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4411,7 +4645,7 @@
         "segment_index": 50
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.567375",
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4460,6 +4694,19 @@
         ],
         "juan_index": 93,
         "segment_index": 51
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河手持一串红色铃铛，急促响动，往陈平安和阿良这边飞奔而来，脸色沉重道：“这是老祖宗留给我的震妖铃，一旦有妖魅山精靠近铃铛百丈之内，便会无风自响，阿良前辈，陈平安，我们最好小心一些，先离开这河畔石崖，以免发生不必要的冲突。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 51
       }
     ],
     "locations": [],
@@ -4470,13 +4717,16 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "就在此时，陈平安蓦然瞪大眼睛，发现铁符河下游的河面上，竟然有四五人联袂踏水而行，有白发苍苍的蓑衣老人高歌“自古名山待圣人”，有衣裳艳丽的妖娆女子娇笑连连，还有身穿道袍的小童子手持竹杖，老气横秋。 陈平安瞪大眼睛，喃喃道：“神仙？ 阿良连正眼也没瞧一下。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段51",
         "sentence_indexes_in_segment": [
@@ -4492,6 +4742,46 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "朱河手持一串红色铃铛，急促响动，往陈平安和阿良这边飞奔而来，脸色沉重道：“这是老祖宗留给我的震妖铃，一旦有妖魅山精靠近铃铛百丈之内，便会无风自响，阿良前辈，陈平安，我们最好小心一些，先离开这河畔石崖，以免发生不必要的冲突。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 51
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "阿良"
+        ],
+        "action": "冲突",
+        "context": "朱河手持一串红色铃铛，急促响动，往陈平安和阿良这边飞奔而来，脸色沉重道：“这是老祖宗留给我的震妖铃，一旦有妖魅山精靠近铃铛百丈之内，便会无风自响，阿良前辈，陈平安，我们最好小心一些，先离开这河畔石崖，以免发生不必要的冲突。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 51
+      },
       {
         "time": null,
         "from_roles": [
@@ -4513,7 +4803,7 @@
         "segment_index": 51
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.567842",
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4561,6 +4851,19 @@
         ],
         "juan_index": 93,
         "segment_index": 52
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河有些焦急，“阿良前辈，咱们大骊朝廷对于山野妖魅的管束，一向极为宽松，只要不闹出人命，一般是从来不插手的……”",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 93,
+        "segment_index": 52
       }
     ],
     "locations": [
@@ -4574,6 +4877,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "朱河",
           "阿良"
         ],
         "sentence_indexes_in_segment": [
@@ -4590,14 +4894,13 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "陈平安想了想，就要起身。 阿良根本不看河面那边的奇异景象，拔出酒塞子，对两人晃了晃，笑道：“我喝过这口酒就走，很快的。 朱河有些焦急，“阿良前辈，咱们大骊朝廷对于山野妖魅的管束，一向极为宽松，只要不闹出人命，一般是从来不插手的……”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段52",
         "sentence_indexes_in_segment": [
           0,
@@ -4611,34 +4914,8 @@
         "segment_index": 52
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "阿良"
-        ],
-        "action": "对话",
-        "context": "陈平安想了想，就要起身。 阿良根本不看河面那边的奇异景象，拔出酒塞子，对两人晃了晃，笑道：“我喝过这口酒就走，很快的。 ” 朱河有些焦急，“阿良前辈，咱们大骊朝廷对于山野妖魅的管束，一向极为宽松，只要不闹出人命，一般是从来不插手的……” 阿良啊了一声，说着这样啊，赶紧起身，就要跟他们一起离开石崖，给那拨不速之客让路。 但是河面之上，那五位神异非凡的家伙，各自的境界修为，高下立判，道行最高的蓑衣老叟第一个像是被天雷劈在脑门上，止住身形，一动不动，之后四位皆是如出一辙。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 93,
-        "segment_index": 52
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.567842",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4672,6 +4949,19 @@
         ],
         "juan_index": 93,
         "segment_index": 53
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河咽了口唾沫。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 53
       }
     ],
     "locations": [],
@@ -4682,12 +4972,15 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
-        "description": "阿良一脸假得不能再假的狐疑神色，还带着坏笑。 他试探性问道：“阿良前辈，这是？ 再然后，又是满身仙气的老叟第一个掉头，撒腿狂奔，这次可顾不上什么神仙风采了，恨不得手脚并用，之后四人仍是如此。",
+        "description": "阿良一脸假得不能再假的狐疑神色，还带着坏笑。 朱河咽了口唾沫。 他试探性问道：“阿良前辈，这是？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段53",
         "sentence_indexes_in_segment": [
           0,
@@ -4701,8 +4994,34 @@
         "segment_index": 53
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.567842",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "再然后，又是满身仙气的老叟第一个掉头，撒腿狂奔，这次可顾不上什么神仙风采了，恨不得手脚并用，之后四人仍是如此。 阿良一脸假得不能再假的狐疑神色，还带着坏笑。 朱河咽了口唾沫。 手中铃铛已经寂静不动。 他试探性问道：“阿良前辈，这是？ ”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 53
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4803,7 +5122,7 @@
         "segment_index": 54
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.567842",
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4851,6 +5170,19 @@
         ],
         "juan_index": 93,
         "segment_index": 55
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "阿良仍然跟朱河勾肩搭背，低声问道：“朱河，你是武夫第五境，对吧？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 93,
+        "segment_index": 55
       }
     ],
     "locations": [],
@@ -4861,7 +5193,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "阿良突然松开手，让陈平安先回去。 阿良仍然跟朱河勾肩搭背，低声问道：“朱河，你是武夫第五境，对吧？ 你是怎么含蓄得让陈平安觉得你是高手的？",
         "background": "",
@@ -4889,27 +5222,22 @@
           "阿良"
         ],
         "to_roles": [
-          "陈平安"
+          "朱河"
         ],
         "action": "对话",
-        "context": "” 阿良突然松开手，让陈平安先回去。 草鞋少年小跑离去。 阿良仍然跟朱河勾肩搭背，低声问道：“朱河，你是武夫第五境，对吧？ 你是怎么含蓄得让陈平安觉得你是高手的？ 不如教教我，否则我费了这么大力气，白白摆了那么多高手架子，那小子也照样睁眼瞎啊。",
+        "context": "阿良仍然跟朱河勾肩搭背，低声问道：“朱河，你是武夫第五境，对吧？",
         "result": null,
         "event_name": "阿良过境",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 93,
         "segment_index": 55
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.567842",
+    "extracted_at": "2026-03-25T01:03:30.611204",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4930,6 +5258,20 @@
       "朱河哭丧着脸，“阿良前辈，我真不知道。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河身体僵硬，忐忑不安道：“阿良前辈，这个我真不知道啊。 朱河哭丧着脸，“阿良前辈，我真不知道。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 56
+      },
       {
         "entity_type": "person",
         "name": "阿良",
@@ -4954,7 +5296,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "朱河身体僵硬，忐忑不安道：“阿良前辈，这个我真不知道啊。 阿良怒道：“这就没劲了啊。 朱河哭丧着脸，“阿良前辈，我真不知道。",
         "background": "",
@@ -4974,7 +5317,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.567842",
+    "extracted_at": "2026-03-25T01:03:30.612208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5038,7 +5381,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.568378",
+    "extracted_at": "2026-03-25T01:03:30.612208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092441",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -118,7 +118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092441",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -220,7 +220,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.092957",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -298,7 +298,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092957",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -435,7 +435,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.092957",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -497,7 +497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092957",
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -558,7 +558,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092957",
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -591,6 +591,19 @@
         ],
         "juan_index": 267,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "之前觉得风雪庙魏晋破开嫁衣女鬼的夜幕一剑，已经是世上飞剑的极致。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 267,
+        "segment_index": 10
       }
     ],
     "locations": [
@@ -601,7 +614,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -611,15 +626,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安在风雪庙剧情推进",
+        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安与魏晋在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "魏晋"
         ],
         "description": "陈平安脚下被殃及池鱼的一叶扁舟，随波起伏，颠簸不已。 之前觉得风雪庙魏晋破开嫁衣女鬼的夜幕一剑，已经是世上飞剑的极致。 从大海之中，掀起百丈巨浪，一道比整座桂花岛还要粗壮的磅礴剑气，以光柱形态冲霄而起，硬生生将那尊金身法相给瞬间打碎。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在风雪庙推动陈平安与魏晋之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段10",
         "sentence_indexes_in_segment": [
@@ -635,7 +651,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093471",
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -712,7 +728,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093471",
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -776,7 +792,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093471",
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -842,7 +858,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093471",
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -923,7 +939,9 @@
         "description": "那位潇洒御风远游、不为天地拘束的剑修，突然停下身形，在一个陈平安注定无法看到他的地方，回头望去。 男子眼中所见，是大骊少年。 那人曾说，我也不愿找你当陈平安的护道人，也知道师兄你多半不会答应。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -937,8 +955,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093471",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "守护",
+        "context": "那位潇洒御风远游、不为天地拘束的剑修，突然停下身形，在一个陈平安注定无法看到他的地方，回头望去。 男子眼中所见，是大骊少年。 但是心中所想，却是一位故人。 那人曾说，我也不愿找你当陈平安的护道人，也知道师兄你多半不会答应。 可是我齐静春这辈子，就没几个朋友，整个天下，我只能找你了。 就只能找你了！",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 267,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.350899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1045,7 +1089,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.093985",
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1110,7 +1154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093985",
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1145,21 +1189,37 @@
         ],
         "juan_index": 267,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "两人一起乘坐小舟，泛海而游，很快就赶上桂花岛，停船靠岸，桂夫人独自站在渡口，满脸歉意，对陈平安说道：“今日之事，我会向范氏祠堂禀明清楚，陈公子救命之恩，我没齿难忘！",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 267,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安对话",
+        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 桂夫人与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "桂夫人",
           "陈平安"
         ],
         "description": "在匆忙赶路的一叶扁舟和缓缓前行的桂花岛之间，有位其实已经身受重伤的老人，在海上等待陈平安。 陈平安咧嘴一笑，是那个神通广大的舟子老汉。 两人一起乘坐小舟，泛海而游，很快就赶上桂花岛，停船靠岸，桂夫人独自站在渡口，满脸歉意，对陈平安说道：“今日之事，我会向范氏祠堂禀明清楚，陈公子救命之恩，我没齿难忘！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动桂夫人与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1173,8 +1233,29 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093985",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "桂夫人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "两人一起乘坐小舟，泛海而游，很快就赶上桂花岛，停船靠岸，桂夫人独自站在渡口，满脸歉意，对陈平安说道：“今日之事，我会向范氏祠堂禀明清楚，陈公子救命之恩，我没齿难忘！",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 桂夫人与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 267,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1209,21 +1290,38 @@
         ],
         "juan_index": 267,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "桂夫人无言以对，叹了口气，与一老一少并肩走上桂花岛山巅。 老舟子需要静养，与陈平安告别，去了自己住处，陈平安跟桂夫人一起走到了圭脉小院，桂夫人犹豫了一下，解释道：“马致在先前守护桂花岛的大战之中，身先士卒，所以也受了伤，近期可能无法陪你试剑了，让我捎话，希望陈公子见谅。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 267,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安与桂夫人同行",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
-        "description": "陈平安笑意苦涩，摇头道：“自救而已。 老舟子需要静养，与陈平安告别，去了自己住处，陈平安跟桂夫人一起走到了圭脉小院，桂夫人犹豫了一下，解释道：“马致在先前守护桂花岛的大战之中，身先士卒，所以也受了伤，近期可能无法陪你试剑了，让我捎话，希望陈公子见谅。 陈平安点头道：“当然是马前辈养伤要紧。",
+        "description": "陈平安笑意苦涩，摇头道：“自救而已。 桂夫人无言以对，叹了口气，与一老一少并肩走上桂花岛山巅。 老舟子需要静养，与陈平安告别，去了自己住处，陈平安跟桂夫人一起走到了圭脉小院，桂夫人犹豫了一下，解释道：“马致在先前守护桂花岛的大战之中，身先士卒，所以也受了伤，近期可能无法陪你试剑了，让我捎话，希望陈公子见谅。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与桂夫人之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1237,8 +1335,29 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093985",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "桂夫人"
+        ],
+        "action": "同行",
+        "context": "老舟子需要静养，与陈平安告别，去了自己住处，陈平安跟桂夫人一起走到了圭脉小院，桂夫人犹豫了一下，解释道：“马致在先前守护桂花岛的大战之中，身先士卒，所以也受了伤，近期可能无法陪你试剑了，让我捎话，希望陈公子见谅。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安与桂夫人同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 267,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1261,6 +1380,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "桂夫人有些无奈，“如今桂花岛形势有些微妙，我实在不放心外人进入这座院子，哪怕是金粟都不妥，如果陈公子不嫌弃的话，就由我来负责圭脉小院的饮食起居。 桂夫人笑着告辞，“诸多事务，需要解决，陈公子你好好休息，有事直接吩咐我便是，院子附近，会有一位桂花小娘专门等候公子。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 267,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安连忙摆手道：“不用不用，只需要像先前那样，送来一日三餐就行了，如果不是这边没有灶房，我其实都可以自己烧饭做菜。",
@@ -1276,16 +1409,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安等待",
+        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 桂夫人与陈平安等待",
         "time": null,
         "location": null,
         "participants": [
+          "桂夫人",
           "陈平安"
         ],
-        "description": "陈平安连忙摆手道：“不用不用，只需要像先前那样，送来一日三餐就行了，如果不是这边没有灶房，我其实都可以自己烧饭做菜。 ” 桂夫人有些无奈，“如今桂花岛形势有些微妙，我实在不放心外人进入这座院子，哪怕是金粟都不妥，如果陈公子不嫌弃的话，就由我来负责圭脉小院的饮食起居。",
+        "description": "桂夫人有些无奈，“如今桂花岛形势有些微妙，我实在不放心外人进入这座院子，哪怕是金粟都不妥，如果陈公子不嫌弃的话，就由我来负责圭脉小院的饮食起居。 陈平安连忙摆手道：“不用不用，只需要像先前那样，送来一日三餐就行了，如果不是这边没有灶房，我其实都可以自己烧饭做菜。 桂夫人笑着告辞，“诸多事务，需要解决，陈公子你好好休息，有事直接吩咐我便是，院子附近，会有一位桂花小娘专门等候公子。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键等待节点。",
-        "related_action_indices": [],
+        "significance": "推动桂夫人与陈平安之间的等待关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1299,8 +1435,34 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.093985",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "桂夫人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "等待",
+        "context": "” 桂夫人有些无奈，“如今桂花岛形势有些微妙，我实在不放心外人进入这座院子，哪怕是金粟都不妥，如果陈公子不嫌弃的话，就由我来负责圭脉小院的饮食起居。 ” 陈平安连忙摆手道：“不用不用，只需要像先前那样，送来一日三餐就行了，如果不是这边没有灶房，我其实都可以自己烧饭做菜。 ” 桂夫人笑着告辞，“诸多事务，需要解决，陈公子你好好休息，有事直接吩咐我便是，院子附近，会有一位桂花小娘专门等候公子。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 桂夫人与陈平安等待",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 267,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1334,20 +1496,34 @@
         ],
         "juan_index": 267,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "很快有人敲门，是一位桂花小娘在门外柔声道：“陈公子，有两位来自皑皑洲的客人，见与不见，桂夫人先前说只看公子的意思。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 267,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安与桂夫人剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
-        "description": "陈平安独自坐在院中石凳上，开始闭目养神。 陈平安起身去开门，除了桂花岛少女，还有一位满脸笑意的绿衣少年，一位脸色肃穆的白发老妪。 ”",
+        "description": "陈平安独自坐在院中石凳上，开始闭目养神。 很快有人敲门，是一位桂花小娘在门外柔声道：“陈公子，有两位来自皑皑洲的客人，见与不见，桂夫人先前说只看公子的意思。 陈平安起身去开门，除了桂花岛少女，还有一位满脸笑意的绿衣少年，一位脸色肃穆的白发老妪。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与桂夫人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段22",
         "sentence_indexes_in_segment": [
@@ -1363,7 +1539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1426,7 +1602,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.351903",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1489,7 +1665,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1553,7 +1729,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1617,7 +1793,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1679,7 +1855,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1741,7 +1917,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.094494",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1775,21 +1951,37 @@
         ],
         "juan_index": 267,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "老人笑道：“如何说不得，其实就是桂夫人的真身。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 267,
+        "segment_index": 29
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安对话",
+        "name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安与桂夫人对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
-        "description": "陈平安问道：“桂花岛到底是什么，老前辈可以说吗？ 陈平安恍然大悟。 老人叹了口气，灌了一大口酒。",
+        "description": "陈平安问道：“桂花岛到底是什么，老前辈可以说吗？ 老人笑道：“如何说不得，其实就是桂夫人的真身。 陈平安恍然大悟。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与桂夫人之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -1803,8 +1995,34 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095010",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "桂夫人"
+        ],
+        "action": "对话",
+        "context": "老人叹了口气，灌了一大口酒。 陈平安问道：“桂花岛到底是什么，老前辈可以说吗？ ” 老人笑道：“如何说不得，其实就是桂夫人的真身。 ” 陈平安恍然大悟。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十六章 磨损心中万古刀 · 陈平安与桂夫人对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 267,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1866,7 +2084,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095010",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1929,7 +2147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095010",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1991,7 +2209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095010",
+    "extracted_at": "2026-03-25T01:03:31.352906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2053,7 +2271,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095010",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2132,7 +2350,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095010",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2211,7 +2429,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2309,7 +2527,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2371,7 +2589,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2434,7 +2652,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2497,7 +2715,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2559,7 +2777,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2621,7 +2839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.095531",
+    "extracted_at": "2026-03-25T01:03:31.353910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2728,7 +2946,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.096044",
+    "extracted_at": "2026-03-25T01:03:31.354913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2806,7 +3024,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.096044",
+    "extracted_at": "2026-03-25T01:03:31.354913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2868,7 +3086,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.096044",
+    "extracted_at": "2026-03-25T01:03:31.354913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

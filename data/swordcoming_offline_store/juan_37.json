@@ -69,7 +69,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.370311",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -132,7 +132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.370311",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -194,7 +194,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.370311",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -275,7 +275,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -378,7 +378,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -455,7 +455,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -517,7 +517,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -596,7 +596,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -649,7 +649,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第三十七章 拳谱 · 宁姚与陈平安剧情推进",
+        "name": "第一卷笼中雀 第三十七章 拳谱 · 宁姚与陈平安讥讽",
         "time": null,
         "location": null,
         "participants": [
@@ -658,8 +658,10 @@
         ],
         "description": "把宁姚给看得一直想笑，这么本书搁在桌面上，还能自己长脚跑了啊，还是你陈平安怕它会摔跤？ 陈平安右手在衣襟上狠狠搓了搓，这才翻开书页，序文一字字看过去，之后图文并茂，反正草鞋少年看得云里雾里。 宁姚侧身而坐，手肘抵在桌面上，望着少年的侧脸，调侃道：“是不是觉得自己发大财了？",
         "background": "",
-        "significance": "推动宁姚与陈平安之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动宁姚与陈平安之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第三十七章 拳谱 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -673,8 +675,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.386281",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "讥讽",
+        "context": "把宁姚给看得一直想笑，这么本书搁在桌面上，还能自己长脚跑了啊，还是你陈平安怕它会摔跤？ 陈平安右手在衣襟上狠狠搓了搓，这才翻开书页，序文一字字看过去，之后图文并茂，反正草鞋少年看得云里雾里。 宁姚侧身而坐，手肘抵在桌面上，望着少年的侧脸，调侃道：“是不是觉得自己发大财了？ 以后砍柴要用金斧头、吃饭要用金饭碗？ ” 少年没有抬头，仔细琢磨那些图画和天书一般的文字内容，直言不讳道：“其实方才我看到你的眼神，就知道这本拳谱不会太好，不过没关系，对我来说，它已经足够好了。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第三十七章 拳谱 · 宁姚与陈平安讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 37,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -751,7 +779,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.371315",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -827,7 +855,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -933,7 +961,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1039,7 +1067,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1102,7 +1130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1206,7 +1234,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1240,6 +1268,19 @@
         ],
         "juan_index": 37,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "打个比方，这趟进来小镇的两股势力，云霞山的蔡金简，她的云霞山，有‘观云海’一事，云海滔滔，云雾霞光尤为特殊，蕴藉灵气，被你们东宝瓶洲炼气士誉为‘天上尤物’，有些能够自行幻化成历代祖师爷，若有机缘者，就能与之会晤交流，而正阳山之巅的浓郁剑气，据说阴差阳错，因缘际会，也会出现正阳各峰老祖的剑灵，演化剑道，至于能否看到，只看福分大小，不看身份贵贱，不看修为高低。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 37,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -1250,7 +1291,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1264,7 +1307,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           1,
           4
@@ -1279,7 +1324,9 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1310,12 +1357,15 @@
         "location": "小镇",
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "description": "宁姚叹了口气，“至于最后一种，是只可意会了，不可言传，连说也说不得，说也无法说。 打个比方，这趟进来小镇的两股势力，云霞山的蔡金简，她的云霞山，有‘观云海’一事，云海滔滔，云雾霞光尤为特殊，蕴藉灵气，被你们东宝瓶洲炼气士誉为‘天上尤物’，有些能够自行幻化成历代祖师爷，若有机缘者，就能与之会晤交流，而正阳山之巅的浓郁剑气，据说阴差阳错，因缘际会，也会出现正阳各峰老祖的剑灵，演化剑道，至于能否看到，只看福分大小，不看身份贵贱，不看修为高低。 宁姚最后说道：“当然了，三种方式也无绝对高低划分，第一种方式，若是将文字刻在玉碟之上，或是七十二福地之一的竹海福地，专门出产一种玄之又玄的洗字竹，就要另当别论了，除此之外，还有不计其数的古怪物品，你只要走得够远，就总能遇到惊喜。",
         "background": "",
         "significance": "引入陈平安后续最关键的人物关系线。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第三十七章 拳谱 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1329,8 +1379,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "宁姚叹了口气，“至于最后一种，是只可意会了，不可言传，连说也说不得，说也无法说。 打个比方，这趟进来小镇的两股势力，云霞山的蔡金简，她的云霞山，有‘观云海’一事，云海滔滔，云雾霞光尤为特殊，蕴藉灵气，被你们东宝瓶洲炼气士誉为‘天上尤物’，有些能够自行幻化成历代祖师爷，若有机缘者，就能与之会晤交流，而正阳山之巅的浓郁剑气，据说阴差阳错，因缘际会，也会出现正阳各峰老祖的剑灵，演化剑道，至于能否看到，只看福分大小，不看身份贵贱，不看修为高低。 ” 宁姚最后说道：“当然了，三种方式也无绝对高低划分，第一种方式，若是将文字刻在玉碟之上，或是七十二福地之一的竹海福地，专门出产一种玄之又玄的洗字竹，就要另当别论了，除此之外，还有不计其数的古怪物品，你只要走得够远，就总能遇到惊喜。 大千世界，无奇不有，你以后，最好还是要出去走走，不说奢望离开东宝瓶洲，离开这座天下，好歹争取走到大骊王朝的版图边境上。 ”",
+        "result": null,
+        "event_name": "宁姚坠入小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 37,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,7 +1464,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.387276",
+    "extracted_at": "2026-03-25T01:03:30.372319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

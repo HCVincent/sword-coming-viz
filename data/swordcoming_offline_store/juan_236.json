@@ -13,7 +13,22 @@
       "与人言语之时，哪怕是少年这样隔着无数辈分的晚辈，谢实还是会这般郑重其事，绝不会左看右晃，心不在焉。",
       "少年如今还不知道这份气度的意义所在，更多还是想着老祖宗的道家天君头衔，想着此次南下返乡的千秋大业，以及沉浸在谢家必然崛起的巨大喜悦当中，对于这类细枝末节，毕竟年少，反而没有太大感觉。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "天君谢实点了点头，放下手中书籍。 与人言语之时，哪怕是少年这样隔着无数辈分的晚辈，谢实还是会这般郑重其事，绝不会左看右晃，心不在焉。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 1
+      }
+    ],
     "locations": [
       {
         "name": "龙泉",
@@ -54,9 +69,10 @@
         "location": "龙泉",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
-        "description": "龙泉郡，小镇谢家。 一位手中拿着几本书的长眉少年跑入院子，开心道：“老祖宗，今天我学跟师父学了一门新剑诀。 ”",
+        "description": "龙泉郡，小镇谢家。 天君谢实点了点头，放下手中书籍。 与人言语之时，哪怕是少年这样隔着无数辈分的晚辈，谢实还是会这般郑重其事，绝不会左看右晃，心不在焉。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -74,7 +90,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.191351",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -94,7 +110,23 @@
       "”",
       "谢实虽然相貌粗朴，跟小镇庄稼汉相差无异，可事实上却是博览全书，通晓三教学问，待在谢家老宅这段时日，就是在小院看书，长眉儿每天在阮家铺子那边打铁、铸剑归来，都会捎带几本小镇新开书铺购买而来的书籍，谢实早就告诉长眉儿少年，不必拘泥于道家典籍，什么书都可以买。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实接过那几本书，放在石桌上，伸手示意少年落座。 谢实轻轻拍了拍书籍，笑道：“怎么会入不得，我若是去考取功名，会试资格都悬乎。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -103,7 +135,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -118,9 +152,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
-        "description": "谢实虽然相貌粗朴，跟小镇庄稼汉相差无异，可事实上却是博览全书，通晓三教学问，待在谢家老宅这段时日，就是在小院看书，长眉儿每天在阮家铺子那边打铁、铸剑归来，都会捎带几本小镇新开书铺购买而来的书籍，谢实早就告诉长眉儿少年，不必拘泥于道家典籍，什么书都可以买。 谢实接过那几本书，放在石桌上，伸手示意少年落座。 少年轻轻坐下后，问道：“老祖宗，可入得法眼？",
+        "description": "谢实接过那几本书，放在石桌上，伸手示意少年落座。 谢实轻轻拍了拍书籍，笑道：“怎么会入不得，我若是去考取功名，会试资格都悬乎。 谢实虽然相貌粗朴，跟小镇庄稼汉相差无异，可事实上却是博览全书，通晓三教学问，待在谢家老宅这段时日，就是在小院看书，长眉儿每天在阮家铺子那边打铁、铸剑归来，都会捎带几本小镇新开书铺购买而来的书籍，谢实早就告诉长眉儿少年，不必拘泥于道家典籍，什么书都可以买。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -138,7 +173,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.191867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -159,6 +194,21 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实突然站起身，长眉少年自然而然跟着起身，一大一小就这么站了约莫半炷香功夫。 等到妇人离开后，谢实正要说话，就被登门拜访的莲花冠道人伸手示意坐下。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -185,7 +235,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -196,16 +247,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉在宝瓶洲会见",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉在宝瓶洲会见",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "谢实",
           "陆沉"
         ],
-        "description": "等到妇人离开后，谢实正要说话，就被登门拜访的莲花冠道人伸手示意坐下。 陆沉一屁股坐在石凳上，以手掌作扇子，缓缓扇动清风，像是跟人拉家常一般，与谢实吩咐道：“等到宝瓶洲事了，你返回俱芦洲的之后一甲子，贺小凉那边你多看着点，也不用如何帮她，只需保证她别死了就行。 谢实突然站起身，长眉少年自然而然跟着起身，一大一小就这么站了约莫半炷香功夫。",
+        "description": "谢实突然站起身，长眉少年自然而然跟着起身，一大一小就这么站了约莫半炷香功夫。 等到妇人离开后，谢实正要说话，就被登门拜访的莲花冠道人伸手示意坐下。 陆沉一屁股坐在石凳上，以手掌作扇子，缓缓扇动清风，像是跟人拉家常一般，与谢实吩咐道：“等到宝瓶洲事了，你返回俱芦洲的之后一甲子，贺小凉那边你多看着点，也不用如何帮她，只需保证她别死了就行。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动谢实与陆沉之间的会见线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -219,8 +273,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "会见",
+        "context": "等到妇人离开后，谢实正要说话，就被登门拜访的莲花冠道人伸手示意坐下。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉在宝瓶洲会见",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 236,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.191867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -243,6 +318,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实再次起身，拱手行礼道：“谨遵掌教法旨！",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 236,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -260,16 +348,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉讥讽",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陆沉"
         ],
-        "description": "陆沉调侃一句，转头对少年笑眯眯道：“长眉儿，来来来，给你一样临别赠礼。 谢实再次起身，拱手行礼道：“谨遵掌教法旨！ ”",
+        "description": "谢实再次起身，拱手行礼道：“谨遵掌教法旨！ 陆沉调侃一句，转头对少年笑眯眯道：“长眉儿，来来来，给你一样临别赠礼。 ”",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动谢实与陆沉之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -283,8 +374,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "讥讽",
+        "context": "谢实再次起身，拱手行礼道：“谨遵掌教法旨！ ” “你这古板脾气，真是不讨喜啊。 ” 陆沉调侃一句，转头对少年笑眯眯道：“长眉儿，来来来，给你一样临别赠礼。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.191867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -307,6 +424,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "长眉少年战战兢兢，既有雀跃也有敬畏，赶紧望向老祖谢实。 谢实点了点头，示意他放心收下赏赐便是。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -324,15 +456,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陆沉"
         ],
-        "description": "但是掌教陆沉，送人东西当然是好是坏，早有定数，绝无差池。 长眉少年战战兢兢，既有雀跃也有敬畏，赶紧望向老祖谢实。 谢实点了点头，示意他放心收下赏赐便是。",
+        "description": "长眉少年战战兢兢，既有雀跃也有敬畏，赶紧望向老祖谢实。 谢实点了点头，示意他放心收下赏赐便是。 但是掌教陆沉，送人东西当然是好是坏，早有定数，绝无差池。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
+        "significance": "推动谢实与陆沉之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段5",
         "sentence_indexes_in_segment": [
@@ -348,7 +481,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.192377",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -384,20 +517,34 @@
         ],
         "juan_index": 236,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实刚刚坐下，又一次猛然起身，对少年沉声道：“还不跪下谢恩！",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉与谢实剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
-        "description": "陆沉手腕翻转，手心很快多出一座玲珑剔透的七彩宝塔，光彩流转，妙不可言。 这次陆沉倒是没有勉强，由着怀捧小塔的少年迷迷糊糊跪下去，砰砰砰磕了三个响头。 这也算少年的莫大福气。",
+        "description": "陆沉手腕翻转，手心很快多出一座玲珑剔透的七彩宝塔，光彩流转，妙不可言。 谢实刚刚坐下，又一次猛然起身，对少年沉声道：“还不跪下谢恩！ 这次陆沉倒是没有勉强，由着怀捧小塔的少年迷迷糊糊跪下去，砰砰砰磕了三个响头。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
+        "significance": "推动陆沉与谢实之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段6",
         "sentence_indexes_in_segment": [
@@ -413,7 +560,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.192377",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -517,7 +664,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.192377",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -540,6 +687,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "对了，谢实，记得帮这孩子找一件好点的咫尺物，不拔苗助长是好事，可当长辈的，太过吝啬抠门，也不好。 谢实又要起身领命。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -557,16 +718,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉对话",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉对话",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陆沉"
         ],
-        "description": "陆沉气笑道：“信不信一巴掌拍死你，还没完没了了！ 佛家有个说法，叫做自了汉，挺有意思。 对了，谢实，记得帮这孩子找一件好点的咫尺物，不拔苗助长是好事，可当长辈的，太过吝啬抠门，也不好。",
+        "description": "对了，谢实，记得帮这孩子找一件好点的咫尺物，不拔苗助长是好事，可当长辈的，太过吝啬抠门，也不好。 谢实又要起身领命。 陆沉气笑道：“信不信一巴掌拍死你，还没完没了了！",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢实与陆沉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -580,8 +744,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "对话",
+        "context": "佛家有个说法，叫做自了汉，挺有意思。 对了，谢实，记得帮这孩子找一件好点的咫尺物，不拔苗助长是好事，可当长辈的，太过吝啬抠门，也不好。 ” 谢实又要起身领命。 陆沉气笑道：“信不信一巴掌拍死你，还没完没了了！ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与陆沉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.192377",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -604,6 +794,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实只得乖乖坐在原地。 陆沉想了想，沉默片刻，站起身，再没有笑意，郑重其事道：“以后记得保护好李希圣，如果出了问题，贫道就算坏了两边的规矩，也要从白玉京返回这座浩然天下，唯你谢实是问！",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -617,21 +822,39 @@
         ],
         "juan_index": 236,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "陆沉想了想，沉默片刻，站起身，再没有笑意，郑重其事道：“以后记得保护好李希圣，如果出了问题，贫道就算坏了两边的规矩，也要从白玉京返回这座浩然天下，唯你谢实是问！",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉护持",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉与李希圣护持",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "李希圣",
+          "谢实"
         ],
-        "description": "陆沉想了想，沉默片刻，站起身，再没有笑意，郑重其事道：“以后记得保护好李希圣，如果出了问题，贫道就算坏了两边的规矩，也要从白玉京返回这座浩然天下，唯你谢实是问！ 陆沉一拍额头，“有你这么些不开窍的徒子徒孙，难怪贫道这一脉道统香火不旺啊。 谢实只得乖乖坐在原地。",
+        "description": "谢实只得乖乖坐在原地。 陆沉想了想，沉默片刻，站起身，再没有笑意，郑重其事道：“以后记得保护好李希圣，如果出了问题，贫道就算坏了两边的规矩，也要从白玉京返回这座浩然天下，唯你谢实是问！ 已经吃过挂落的谢实，当下坐也不是站也不是。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键护持节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与李希圣之间的护持关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -645,8 +868,49 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "守护",
+        "context": "陆沉想了想，沉默片刻，站起身，再没有笑意，郑重其事道：“以后记得保护好李希圣，如果出了问题，贫道就算坏了两边的规矩，也要从白玉京返回这座浩然天下，唯你谢实是问！",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉与李希圣护持",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "守护",
+        "context": "陆沉想了想，沉默片刻，站起身，再没有笑意，郑重其事道：“以后记得保护好李希圣，如果出了问题，贫道就算坏了两边的规矩，也要从白玉京返回这座浩然天下，唯你谢实是问！",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉与李希圣护持",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.192836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -682,20 +946,34 @@
         ],
         "juan_index": 236,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实脸色微变，赶紧顺着掌教老爷的视线，抬头望去。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 236,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 陆沉与谢实剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
-        "description": "陆沉抬起头，抬起手臂，屈指轻弹那顶莲花冠，面带笑意，轻声道：“喂喂喂，七十，在不在，在的话，麻烦你开门送客啦！ 陆沉一闪而逝。 ”",
+        "description": "陆沉抬起头，抬起手臂，屈指轻弹那顶莲花冠，面带笑意，轻声道：“喂喂喂，七十，在不在，在的话，麻烦你开门送客啦！ 谢实脸色微变，赶紧顺着掌教老爷的视线，抬头望去。 陆沉一闪而逝。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
+        "significance": "推动陆沉与谢实之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段10",
         "sentence_indexes_in_segment": [
@@ -711,7 +989,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.192836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -822,7 +1100,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.962023",
+    "extracted_at": "2026-03-25T01:03:31.192836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -843,6 +1121,20 @@
       "之前有陆沉身在小镇，谢实其实很忐忑，唯恐哪里做得不对，一不小心就会被那位掌教老爷看在眼里，记在心里。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实在掌教陆沉离开这座天下后，不得不承认，虽然十分失落，但是整个人的心境，明显轻松了许多。 之前有陆沉身在小镇，谢实其实很忐忑，唯恐哪里做得不对，一不小心就会被那位掌教老爷看在眼里，记在心里。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -869,7 +1161,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -880,18 +1173,21 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
+          "谢实",
           "陆沉"
         ],
         "description": "谢实在掌教陆沉离开这座天下后，不得不承认，虽然十分失落，但是整个人的心境，明显轻松了许多。 之前有陆沉身在小镇，谢实其实很忐忑，唯恐哪里做得不对，一不小心就会被那位掌教老爷看在眼里，记在心里。 ”",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -905,8 +1201,29 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "别离",
+        "context": "谢实在掌教陆沉离开这座天下后，不得不承认，虽然十分失落，但是整个人的心境，明显轻松了许多。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.193348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -927,6 +1244,21 @@
       "谢实拍了拍少年肩头，“陪我去一个地方。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实轻轻呼出一口气，气势浑然一变，站在院子里，遥望西边大山里的梧桐山渡口，很快那边就会出现一艘冠绝北俱芦洲的巨大渡船，上边会有数位名动一洲的大人物，此次打醮山鲲船在宝瓶洲中部被人击毁，除了打醮山的数位祖师倾巢出动，还有几大势力一起南下，名义上是联手调查此地沉船事件，至于真相如何，除了势力最小的打醮山，从头到尾被蒙在鼓里，谢实知道，大骊国师崔瀺知道，新渡船上的两位大佬也心知肚明。 这一切，都是为了让谢实顺理成章地走出第二步，让这位北俱芦洲的道家天君，亲自去往观湖书院以北地带，坐镇其中，彻底掐断宝瓶洲南北双方的联系，不让大骊吞并整个宝瓶洲北方的“大势”，出现任何意外。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -952,6 +1284,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "崔瀺"
         ],
         "sentence_indexes_in_segment": [
@@ -971,6 +1304,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "崔瀺"
         ],
         "sentence_indexes_in_segment": [
@@ -983,16 +1317,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 崔瀺在宝瓶洲迁移",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与崔瀺在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "谢实",
           "崔瀺"
         ],
-        "description": "谢实轻轻呼出一口气，气势浑然一变，站在院子里，遥望西边大山里的梧桐山渡口，很快那边就会出现一艘冠绝北俱芦洲的巨大渡船，上边会有数位名动一洲的大人物，此次打醮山鲲船在宝瓶洲中部被人击毁，除了打醮山的数位祖师倾巢出动，还有几大势力一起南下，名义上是联手调查此地沉船事件，至于真相如何，除了势力最小的打醮山，从头到尾被蒙在鼓里，谢实知道，大骊国师崔瀺知道，新渡船上的两位大佬也心知肚明。 这一切，都是为了让谢实顺理成章地走出第二步，让这位北俱芦洲的道家天君，亲自去往观湖书院以北地带，坐镇其中，彻底掐断宝瓶洲南北双方的联系，不让大骊吞并整个宝瓶洲北方的“大势”，出现任何意外。 剑瓮先生是最关键的那枚棋子，是死士。",
+        "description": "谢实轻轻呼出一口气，气势浑然一变，站在院子里，遥望西边大山里的梧桐山渡口，很快那边就会出现一艘冠绝北俱芦洲的巨大渡船，上边会有数位名动一洲的大人物，此次打醮山鲲船在宝瓶洲中部被人击毁，除了打醮山的数位祖师倾巢出动，还有几大势力一起南下，名义上是联手调查此地沉船事件，至于真相如何，除了势力最小的打醮山，从头到尾被蒙在鼓里，谢实知道，大骊国师崔瀺知道，新渡船上的两位大佬也心知肚明。 这一切，都是为了让谢实顺理成章地走出第二步，让这位北俱芦洲的道家天君，亲自去往观湖书院以北地带，坐镇其中，彻底掐断宝瓶洲南北双方的联系，不让大骊吞并整个宝瓶洲北方的“大势”，出现任何意外。 谢实拍了拍少年肩头，“陪我去一个地方。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动谢实与崔瀺之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1006,8 +1343,29 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "同行",
+        "context": "谢实轻轻呼出一口气，气势浑然一变，站在院子里，遥望西边大山里的梧桐山渡口，很快那边就会出现一艘冠绝北俱芦洲的巨大渡船，上边会有数位名动一洲的大人物，此次打醮山鲲船在宝瓶洲中部被人击毁，除了打醮山的数位祖师倾巢出动，还有几大势力一起南下，名义上是联手调查此地沉船事件，至于真相如何，除了势力最小的打醮山，从头到尾被蒙在鼓里，谢实知道，大骊国师崔瀺知道，新渡船上的两位大佬也心知肚明。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与崔瀺在宝瓶洲迁移",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 236,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.193348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1042,6 +1400,20 @@
         ],
         "juan_index": 236,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "付出的，同样是天君谢实一个承诺。 回到家中小院，谢实便跟少年说了关于鲲船失事的大致脉络。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -1062,16 +1434,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头在宝瓶洲对话",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与谢实在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "杨老头"
+          "杨老头",
+          "谢实"
         ],
-        "description": "长眉少年跟随自家老祖宗走到了杨家铺子，走出来的时候身上就多了一件所谓的“咫尺物”，以及那个杨老头的一个承诺。 少年看到老祖神色凝重的面容，好奇问道：“老祖宗，既然咱们宝瓶洲是浩然天下最小的一个洲，而老祖又是北俱芦洲这么一个大洲的道主，还需要担心什么吗？ ”",
+        "description": "长眉少年跟随自家老祖宗走到了杨家铺子，走出来的时候身上就多了一件所谓的“咫尺物”，以及那个杨老头的一个承诺。 付出的，同样是天君谢实一个承诺。 回到家中小院，谢实便跟少年说了关于鲲船失事的大致脉络。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动杨老头与谢实之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1085,8 +1460,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "” 长眉少年跟随自家老祖宗走到了杨家铺子，走出来的时候身上就多了一件所谓的“咫尺物”，以及那个杨老头的一个承诺。 付出的，同样是天君谢实一个承诺。 回到家中小院，谢实便跟少年说了关于鲲船失事的大致脉络。 少年看到老祖神色凝重的面容，好奇问道：“老祖宗，既然咱们宝瓶洲是浩然天下最小的一个洲，而老祖又是北俱芦洲这么一个大洲的道主，还需要担心什么吗？ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与谢实在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.193348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1107,6 +1508,33 @@
       "长眉少年心事重重，谢实哑然失笑，“就算发生最坏的结果，也不是一年半载就能出现的，你操心什么？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实摇头笑道：“你把天下事想得太简单了，以后注定会有无数人叫嚣着‘这是俱芦洲欺负我宝瓶洲无人吗？ 长眉少年心事重重，谢实哑然失笑，“就算发生最坏的结果，也不是一年半载就能出现的，你操心什么？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "’这些人物当中，大半只会摇旗呐喊，隔岸观火，小半会蠢蠢欲动，小半人数之中，又会有一拨人，因为各种各样的原因和初衷，从四面八方赶过去，这拨人中会隐藏着真正的高手，比如……一些个类似风雪庙魏晋的人物，而且这类人，到最后会越来越多。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 236,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "阮邛",
@@ -1131,7 +1559,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1145,7 +1575,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1155,15 +1587,17 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 阮邛在宝瓶洲对话",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 谢实与魏晋在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "谢实",
+          "魏晋",
           "阮邛"
         ],
         "description": "谢实摇头笑道：“你把天下事想得太简单了，以后注定会有无数人叫嚣着‘这是俱芦洲欺负我宝瓶洲无人吗？ ’这些人物当中，大半只会摇旗呐喊，隔岸观火，小半会蠢蠢欲动，小半人数之中，又会有一拨人，因为各种各样的原因和初衷，从四面八方赶过去，这拨人中会隐藏着真正的高手，比如……一些个类似风雪庙魏晋的人物，而且这类人，到最后会越来越多。 不过你暂时只需要拭目以待，总之这件事，无论以后发展到何种态势，你在成为上五境练气士之前，都不要插手，安心跟随阮邛修行剑道。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
+        "significance": "在宝瓶洲推动谢实与魏晋之间的对话线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段17",
         "sentence_indexes_in_segment": [
@@ -1179,7 +1613,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.193348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1199,7 +1633,22 @@
       "在谢实和少年前脚走出杨家铺子没多久，曹曦后脚就找到了药铺子，店里边的伙计都没当回事，如今小镇繁华，有钱人见多了，不差这个胖子。",
       "曹曦笑着询问杨老前辈可是住在后院，一位年轻伙计正在药柜那边称量药材，瞥了眼身材臃肿的富家翁，朝悬挂竹帘子的大堂后门，扬了扬下巴，懒得多说什么。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实独自坐在石桌旁，闭目养神，默默计算推演宝瓶洲的大势走向。 在谢实和少年前脚走出杨家铺子没多久，曹曦后脚就找到了药铺子，店里边的伙计都没当回事，如今小镇繁华，有钱人见多了，不差这个胖子。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1208,7 +1657,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1222,7 +1673,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1237,7 +1690,8 @@
         "location": "宝瓶洲",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "谢实独自坐在石桌旁，闭目养神，默默计算推演宝瓶洲的大势走向。 在谢实和少年前脚走出杨家铺子没多久，曹曦后脚就找到了药铺子，店里边的伙计都没当回事，如今小镇繁华，有钱人见多了，不差这个胖子。 ”",
         "background": "",
@@ -1257,7 +1711,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.193348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1383,17 +1837,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "杨老头"
         ],
         "description": "对面正房外，杨老头正坐在板凳上抽旱烟，青竹烟杆早已摩挲得泛黄古旧，透过烟雾，老人看着那位从南婆娑洲跨海而来的剑仙，双方当然认识，曹曦离开小镇的时候年纪已经不小，只是曹曦对这个躲在药铺后边，年复一年坐井观天的杨老头，记忆极为淡薄，不过相信杨老头对他曹曦绝不陌生，说不定当年成功走出骊珠洞天，都有老人的幕后安排。 曹曦来此当然不是为了报恩，他从来不是什么滴水之恩涌泉相报的人，就算杨老头找上门，曹曦都未必愿意搭理，杨老头在骊珠洞天或者说龙泉郡，谁都要卖几分面子，可是曹曦做完了这次的一锤子买卖，就要返回婆娑洲，厚着脸皮跟颍阴陈氏老祖讨要报酬，杨老头的身份再神秘，未来在东宝瓶洲再牛气，管他曹曦屁事。 至于那支留在大骊王朝的上柱国曹氏，将来是福是祸，看他们自己的造化，曹曦最多离开之前，象征性帮衬一二，至于大骊宋氏皇帝领不领情，无所谓。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段19",
         "sentence_indexes_in_segment": [
@@ -1409,7 +1863,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.193348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1488,7 +1942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1552,7 +2006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1616,7 +2070,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1680,7 +2134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1744,7 +2198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1779,21 +2233,37 @@
         ],
         "juan_index": 236,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "杨老头缓缓道：“有个丫头，叫李柳，跟随她爹娘一起去了北边的俱芦洲，你父母的魂魄如今都在她身上。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与李柳同行",
         "time": null,
         "location": null,
         "participants": [
-          "杨老头"
+          "杨老头",
+          "李柳"
         ],
         "description": "杨老头缓缓道：“有个丫头，叫李柳，跟随她爹娘一起去了北边的俱芦洲，你父母的魂魄如今都在她身上。 ” 你要愿意公平买卖，我就跟你做生意，保证没有纰漏，到时候全须全尾儿交给你。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动杨老头与李柳之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1807,8 +2277,29 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.963026",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "李柳"
+        ],
+        "action": "同行",
+        "context": "杨老头缓缓道：“有个丫头，叫李柳，跟随她爹娘一起去了北边的俱芦洲，你父母的魂魄如今都在她身上。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与李柳同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1843,20 +2334,34 @@
         ],
         "juan_index": 236,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "要老子将这把本命飞剑送给那李柳？",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与李柳剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "杨老头"
+          "杨老头",
+          "李柳"
         ],
-        "description": "杨老头用烟杆指了指曹曦的手腕。 好吧，你可以开价了。 ”",
+        "description": "杨老头用烟杆指了指曹曦的手腕。 要老子将这把本命飞剑送给那李柳？ 好吧，你可以开价了。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键剧情推进节点。",
+        "significance": "推动杨老头与李柳之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段26",
         "sentence_indexes_in_segment": [
@@ -1872,7 +2377,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1909,21 +2414,39 @@
         ],
         "juan_index": 236,
         "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "杨老头斜眼瞥去，继续道：“你炼化这条大江之前的那把飞剑，一直留着吧，可以拿出来赠送给李柳，记得连你的剑诀一并传授给她。 杨老头冷笑道：“别觉得吃亏，你这辈子就没收到过好的徒弟，我等于无偿帮你找到一个，说不定将来所有人提及你曹曦的时候，就都会是这么一种说法，‘曹曦啊，就是李柳的师父’。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 27
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头对话",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与李柳对话",
         "time": null,
         "location": null,
         "participants": [
-          "杨老头"
+          "杨老头",
+          "李柳"
         ],
         "description": "杨老头，你失心疯了吧？ 杨老头斜眼瞥去，继续道：“你炼化这条大江之前的那把飞剑，一直留着吧，可以拿出来赠送给李柳，记得连你的剑诀一并传授给她。 杨老头冷笑道：“别觉得吃亏，你这辈子就没收到过好的徒弟，我等于无偿帮你找到一个，说不定将来所有人提及你曹曦的时候，就都会是这么一种说法，‘曹曦啊，就是李柳的师父’。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动杨老头与李柳之间的对话关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -1937,8 +2460,49 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "李柳"
+        ],
+        "action": "指点",
+        "context": "杨老头斜眼瞥去，继续道：“你炼化这条大江之前的那把飞剑，一直留着吧，可以拿出来赠送给李柳，记得连你的剑诀一并传授给她。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与李柳对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 236,
+        "segment_index": 27
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "李柳"
+        ],
+        "action": "对话",
+        "context": "杨老头冷笑道：“别觉得吃亏，你这辈子就没收到过好的徒弟，我等于无偿帮你找到一个，说不定将来所有人提及你曹曦的时候，就都会是这么一种说法，‘曹曦啊，就是李柳的师父’。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与李柳对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2002,7 +2566,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.194342",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2066,7 +2630,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2119,7 +2683,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与马苦玄剧情推进",
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与马苦玄守护",
         "time": null,
         "location": null,
         "participants": [
@@ -2128,8 +2692,10 @@
         ],
         "description": "杨老头开始吞云吐雾，“不要拉倒。 你去找到真武山马苦玄，当他的护道人，最近二十年里，不用时时刻刻盯着，你曹曦只要凑够十年时间就够了。 ”",
         "background": "",
-        "significance": "推动杨老头与马苦玄之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动杨老头与马苦玄之间的守护关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -2143,8 +2709,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "马苦玄"
+        ],
+        "action": "守护",
+        "context": "” 曹曦愕然，随即翻白眼道：“免谈免谈，送我都不要。 ” 杨老头开始吞云吐雾，“不要拉倒。 那就换一个。 你去找到真武山马苦玄，当他的护道人，最近二十年里，不用时时刻刻盯着，你曹曦只要凑够十年时间就够了。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 杨老头与马苦玄守护",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2227,7 +2819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2291,7 +2883,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2355,7 +2947,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2434,7 +3026,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2455,6 +3047,19 @@
       "但是不管如何，阿良的那一拳，彻底打乱了他这一脉阴阳家，长达数十年处心积虑的深远布局。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "那位阴阳家大修士，在京城被皇叔宋长镜捶杀之前，曾经私底下找到过他，有过一番惊世骇俗的言论。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 35
+      },
       {
         "entity_type": "person",
         "name": "大骊皇帝",
@@ -2535,7 +3140,7 @@
           "大骊皇帝",
           "宋集薪"
         ],
-        "description": "老人甚至坦言了自己对大骊现任皇帝的那桩天大阴谋，让皇帝陛下擅自修行，违反儒家圣人订立的规矩，以皇帝身份偷偷跻身中五境不说，甚至一路势如破竹，达到了第十境。 皇帝是为了亲眼看到大骊王朝吞并一洲，而阴阳家大修士，是为了将大骊皇帝，也就是宋集薪的父亲，制成一只牵线木偶，因为大骊皇帝正式闭关冲刺上五境门槛的时候，就是彻底失去灵智沦为傀儡的时刻。 阿良的到来，打断了大骊皇帝的长生桥，让他在长生桥断裂破碎之际，极有可能看到蛛丝马迹，那些原本隐藏在桥身之中的种种机关和伏笔，极有可能已经泄露，虽然大骊皇帝当时在白玉楼外的广场上，掩饰得极好，可是皇帝到底没有想到，他在宋集薪身上也动了手脚。",
+        "description": "那位阴阳家大修士，在京城被皇叔宋长镜捶杀之前，曾经私底下找到过他，有过一番惊世骇俗的言论。 老人甚至坦言了自己对大骊现任皇帝的那桩天大阴谋，让皇帝陛下擅自修行，违反儒家圣人订立的规矩，以皇帝身份偷偷跻身中五境不说，甚至一路势如破竹，达到了第十境。 皇帝是为了亲眼看到大骊王朝吞并一洲，而阴阳家大修士，是为了将大骊皇帝，也就是宋集薪的父亲，制成一只牵线木偶，因为大骊皇帝正式闭关冲刺上五境门槛的时候，就是彻底失去灵智沦为傀儡的时刻。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2553,7 +3158,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2660,7 +3265,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.964029",
+    "extracted_at": "2026-03-25T01:03:31.195346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2740,7 +3345,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.196349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2793,6 +3398,19 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "仍是主仆的二人，一起走过了小镇的街街巷巷，在齐先生教书的老旧学塾，后院下棋的石桌，宋集薪伸手抹过冰凉的桌面，次次坐在北边，赵繇坐在南边，当时不知道为何如此安排，如今水落石出，才知道是原来如此，宋集薪笑道：“不知道赵繇过得如何了。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 236,
+        "segment_index": 38
+      },
+      {
+        "entity_type": "person",
         "name": "稚圭",
         "alias": [],
         "original_description_in_book": "到了这边，稚圭有些沉默寡言。",
@@ -2829,6 +3447,7 @@
         "related_entities": [
           "齐静春",
           "宋集薪",
+          "赵繇",
           "马苦玄"
         ],
         "sentence_indexes_in_segment": [
@@ -2841,17 +3460,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "齐静春",
+          "顾璨",
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "赵繇"
         ],
         "description": "仍是主仆的二人，一起走过了小镇的街街巷巷，在齐先生教书的老旧学塾，后院下棋的石桌，宋集薪伸手抹过冰凉的桌面，次次坐在北边，赵繇坐在南边，当时不知道为何如此安排，如今水落石出，才知道是原来如此，宋集薪笑道：“不知道赵繇过得如何了。 到了这边，稚圭有些沉默寡言。 杏花巷的那只黑猫，好像跟着闷葫芦似的傻子马苦玄，一起离开了小镇。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0
         ],
@@ -2872,15 +3492,15 @@
       {
         "time": null,
         "from_roles": [
-          "齐静春"
+          "宋集薪"
         ],
         "to_roles": [
-          "宋集薪"
+          "赵繇"
         ],
         "action": "对话",
         "context": "仍是主仆的二人，一起走过了小镇的街街巷巷，在齐先生教书的老旧学塾，后院下棋的石桌，宋集薪伸手抹过冰凉的桌面，次次坐在北边，赵繇坐在南边，当时不知道为何如此安排，如今水落石出，才知道是原来如此，宋集薪笑道：“不知道赵繇过得如何了。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2890,7 +3510,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.196349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3018,7 +3638,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.196349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3147,7 +3767,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.196349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3167,7 +3787,21 @@
       "他将在小镇的两栋老宅卖了一栋，在新郡城那边买了崭新的大宅子，离着风凉山不过十几里路。",
       "馄饨摊从一大早开到黄昏，没个准时，只要有客人，天色再晚，少年也会等着客人慢慢吃完，才收拾摊子，推车返回。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "一个名叫董水井的少年在那边摆摊子，只卖馄饨。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 236,
+        "segment_index": 41
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -3192,9 +3826,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "董水井"
         ],
-        "description": "山脚有一座集市，贩卖各种茶酒面食和花鸟鱼虫，应有尽有，以至于小镇这边许多孩子，一听说爹娘要去那边烧香，就开心得很，不比过年差多少，因为那边有卖香喷喷新鲜出炉的肉饼，还有捏面人的老头儿，许多孩子新年收到了压岁钱，就偷偷结伴而行，去那边玩了个痛快，结果一回家，大多被爹娘狠狠拾掇了一顿。 他将在小镇的两栋老宅卖了一栋，在新郡城那边买了崭新的大宅子，离着风凉山不过十几里路。 一个名叫董水井的少年在那边摆摊子，只卖馄饨。",
+        "description": "山脚有一座集市，贩卖各种茶酒面食和花鸟鱼虫，应有尽有，以至于小镇这边许多孩子，一听说爹娘要去那边烧香，就开心得很，不比过年差多少，因为那边有卖香喷喷新鲜出炉的肉饼，还有捏面人的老头儿，许多孩子新年收到了压岁钱，就偷偷结伴而行，去那边玩了个痛快，结果一回家，大多被爹娘狠狠拾掇了一顿。 一个名叫董水井的少年在那边摆摊子，只卖馄饨。 他将在小镇的两栋老宅卖了一栋，在新郡城那边买了崭新的大宅子，离着风凉山不过十几里路。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -3212,7 +3847,195 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.196349",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-42-0": {
+    "juan_index": 236,
+    "segment_index": 42,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "郡城如今不设夜禁，处处是尘土飞扬的热闹场景，若是在风凉山之巅的山神庙，夜间眺望郡城，就像一盏大灯笼搁在大地上。",
+      "这天夜幕降临，身材高大的少年董水井，已经开始收拾馄饨摊子，准备打道回府。",
+      "不曾想从远方走来一位奇怪的男子，不挎剑不背剑，而是横剑在身后，走到摊子旁，笑问道：“店家，还卖馄饨不？",
+      "”",
+      "董水井咧嘴笑道：“卖！",
+      "怎么不卖！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "这天夜幕降临，身材高大的少年董水井，已经开始收拾馄饨摊子，准备打道回府。 董水井咧嘴笑道：“卖！",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 42
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井"
+        ],
+        "description": "这天夜幕降临，身材高大的少年董水井，已经开始收拾馄饨摊子，准备打道回府。 董水井咧嘴笑道：“卖！ 郡城如今不设夜禁，处处是尘土飞扬的热闹场景，若是在风凉山之巅的山神庙，夜间眺望郡城，就像一盏大灯笼搁在大地上。",
+        "background": "",
+        "significance": "对应董水井在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段42",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 42
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.196349",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-43-0": {
+    "juan_index": 236,
+    "segment_index": 43,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "就是得烧水，客人要稍等会儿。",
+      "”",
+      "男人笑着坐在桌旁，擦拭得干干净净，没有半点油腻污渍，桌上摆着自制竹筒，插满了修长的绿竹筷子，原来还是个手巧的小掌柜。",
+      "男人等来了一大碗热腾腾的馄饨，飘在红汤上的葱花，瞧着就很诱人，董水井问他能不能吃辣，男人说越辣越好，少年就递过去满满一碟辣椒酱，男人拿出一双筷子，不急着下筷子，低下头去，闭上眼睛闻了闻香味，啧啧道：“这味儿，对头！",
+      "”",
+      "男人随口问道：“知不知道墨家？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "男人等来了一大碗热腾腾的馄饨，飘在红汤上的葱花，瞧着就很诱人，董水井问他能不能吃辣，男人说越辣越好，少年就递过去满满一碟辣椒酱，男人拿出一双筷子，不急着下筷子，低下头去，闭上眼睛闻了闻香味，啧啧道：“这味儿，对头！",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 43
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井"
+        ],
+        "description": "男人等来了一大碗热腾腾的馄饨，飘在红汤上的葱花，瞧着就很诱人，董水井问他能不能吃辣，男人说越辣越好，少年就递过去满满一碟辣椒酱，男人拿出一双筷子，不急着下筷子，低下头去，闭上眼睛闻了闻香味，啧啧道：“这味儿，对头！ 就是得烧水，客人要稍等会儿。 ”",
+        "background": "",
+        "significance": "对应董水井在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段43",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 43
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.196349",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-44-0": {
+    "juan_index": 236,
+    "segment_index": 44,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "”",
+      "坐在不远处的董水井点头道：“当然，以前先生说过，墨家曾经是四大显学之一，所推崇的学问很了不起，就是知不易行更难，很考验学派弟子的心性，再就是比较容易钻牛角尖，先生说比较……可爱。",
+      "”",
+      "说到这里，董水井挠挠头，憨憨一笑，“是我家先生说的。",
+      "”",
+      "男人嚼着一颗馄饨，使劲点头道：“说得真好。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "坐在不远处的董水井点头道：“当然，以前先生说过，墨家曾经是四大显学之一，所推崇的学问很了不起，就是知不易行更难，很考验学派弟子的心性，再就是比较容易钻牛角尖，先生说比较……可爱。 说到这里，董水井挠挠头，憨憨一笑，“是我家先生说的。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 236,
+        "segment_index": 44
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井"
+        ],
+        "description": "坐在不远处的董水井点头道：“当然，以前先生说过，墨家曾经是四大显学之一，所推崇的学问很了不起，就是知不易行更难，很考验学派弟子的心性，再就是比较容易钻牛角尖，先生说比较……可爱。 说到这里，董水井挠挠头，憨憨一笑，“是我家先生说的。 ”",
+        "background": "",
+        "significance": "对应董水井在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段44",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 44
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.196349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3233,6 +4056,19 @@
       "这个齐先生真没有说过。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "董水井一脸茫然，轻轻摇头。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 45
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -3257,12 +4093,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "董水井"
         ],
-        "description": "这个齐先生真没有说过。 ” 他又问道：“那你有没有听说过，墨家游侠当中的赊刀人？",
+        "description": "董水井一脸茫然，轻轻摇头。 这个齐先生真没有说过。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段45",
         "sentence_indexes_in_segment": [
           0,
@@ -3276,8 +4115,34 @@
         "segment_index": 45
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "董水井"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "” 他又问道：“那你有没有听说过，墨家游侠当中的赊刀人？ 赊的赊欠，刀剑的刀。 ” 董水井一脸茫然，轻轻摇头。 这个齐先生真没有说过。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 45
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.196349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3298,6 +4163,20 @@
       "就像董水井，这么大年纪，就知道找到阮秀姑娘，让她帮着以一个天价卖出小镇老宅，然后迅速去郡城那边买下大宅子，不是一座，而是一整条街！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "董水井眼神一凝，很快就恢复正常，笑着摇头，“卖馄饨挺好的，能挣钱，还安稳。 就像董水井，这么大年纪，就知道找到阮秀姑娘，让她帮着以一个天价卖出小镇老宅，然后迅速去郡城那边买下大宅子，不是一座，而是一整条街！",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 46
+      },
       {
         "entity_type": "person",
         "name": "李宝瓶",
@@ -3396,6 +4275,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "董水井",
           "阮秀"
         ],
         "sentence_indexes_in_segment": [
@@ -3407,18 +4287,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
-          "齐静春",
-          "陈平安",
           "李宝瓶",
-          "林守一"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
-        "description": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。 就像董水井，这么大年纪，就知道找到阮秀姑娘，让她帮着以一个天价卖出小镇老宅，然后迅速去郡城那边买下大宅子，不是一座，而是一整条街！ 男人放下筷子，拍了拍肚子，重重呼出一口气，很是惬意，然后笑道：“那你想不想当赊刀人？",
+        "description": "董水井眼神一凝，很快就恢复正常，笑着摇头，“卖馄饨挺好的，能挣钱，还安稳。 当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。 就像董水井，这么大年纪，就知道找到阮秀姑娘，让她帮着以一个天价卖出小镇老宅，然后迅速去郡城那边买下大宅子，不是一座，而是一整条街！",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -3452,7 +4332,7 @@
         "action": "同行",
         "context": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3472,7 +4352,7 @@
         "action": "同行",
         "context": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3492,7 +4372,7 @@
         "action": "同行",
         "context": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3512,7 +4392,7 @@
         "action": "同行",
         "context": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3532,7 +4412,7 @@
         "action": "同行",
         "context": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3552,7 +4432,7 @@
         "action": "同行",
         "context": "当初他，李宝瓶，林守一，李槐，石春嘉，五个学塾弟子，一起把真实身份是大骊死士的车夫，骗得团团转，虽说出谋划策和查漏补缺的是李宝瓶和林守一，但事实上任何一个人，只要露出丝毫马脚，就会前功尽弃，所以最终正式成为齐静春嫡传弟子的五个孩子，没有一个是省油的灯。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3562,7 +4442,173 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.197353",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-47-0": {
+    "juan_index": 236,
+    "segment_index": 47,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "天上掉下的大钱，有它的花钱法子，钱能生钱。",
+      "养家糊口的小钱，也该有它的挣钱法子，不花钱就等于是在挣钱了。",
+      "两者并不冲突。",
+      "“不用着急回答我。",
+      "”",
+      "男人摆摆手，微笑道：“至于为何选择你，董水井，我已经观察你挺长时间了，方方面面，都谈不上最好，但是都没有什么问题。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "男人摆摆手，微笑道：“至于为何选择你，董水井，我已经观察你挺长时间了，方方面面，都谈不上最好，但是都没有什么问题。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 47
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井"
+        ],
+        "description": "男人摆摆手，微笑道：“至于为何选择你，董水井，我已经观察你挺长时间了，方方面面，都谈不上最好，但是都没有什么问题。 天上掉下的大钱，有它的花钱法子，钱能生钱。 养家糊口的小钱，也该有它的挣钱法子，不花钱就等于是在挣钱了。",
+        "background": "",
+        "significance": "对应董水井在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段47",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 47
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.197353",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-48-0": {
+    "juan_index": 236,
+    "segment_index": 48,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "这就足够了。",
+      "”",
+      "董水井无奈道：“你是？",
+      "”",
+      "男人没有藏掖，开门见山道：“我叫许弱，墨家子弟，来自中土神洲，我当然不是赊刀人。",
+      "但是我有一个很要好的朋友，他死前要我答应他，帮他选一个合适的弟子继承衣钵，他是墨家上一代赊刀人的祖师爷，是一个很厉害的家伙。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "董水井无奈道：“你是？",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 236,
+        "segment_index": 48
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "男人没有藏掖，开门见山道：“我叫许弱，墨家子弟，来自中土神洲，我当然不是赊刀人。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 48
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井与许弱师承",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井",
+          "许弱"
+        ],
+        "description": "董水井无奈道：“你是？ 男人没有藏掖，开门见山道：“我叫许弱，墨家子弟，来自中土神洲，我当然不是赊刀人。 这就足够了。",
+        "background": "",
+        "significance": "推动董水井与许弱之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段48",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 48
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "董水井"
+        ],
+        "to_roles": [
+          "许弱"
+        ],
+        "action": "师承",
+        "context": "这就足够了。 ” 董水井无奈道：“你是？ ” 男人没有藏掖，开门见山道：“我叫许弱，墨家子弟，来自中土神洲，我当然不是赊刀人。 但是我有一个很要好的朋友，他死前要我答应他，帮他选一个合适的弟子继承衣钵，他是墨家上一代赊刀人的祖师爷，是一个很厉害的家伙。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井与许弱师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 48
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.197353",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3627,7 +4673,238 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.965033",
+    "extracted_at": "2026-03-25T01:03:31.197353",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-50-0": {
+    "juan_index": 236,
+    "segment_index": 50,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "”",
+      "“啥？",
+      "！",
+      "”",
+      "董水井蒙了，这是什么跟什么啊。",
+      "男人站起身，“我下次再来，你好好琢磨琢磨。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "董水井蒙了，这是什么跟什么啊。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 50
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井"
+        ],
+        "description": "董水井蒙了，这是什么跟什么啊。 ” “啥？",
+        "background": "",
+        "significance": "对应董水井在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段50",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 50
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.197353",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-51-0": {
+    "juan_index": 236,
+    "segment_index": 51,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "”",
+      "董水井突然喊道：“等会儿！",
+      "”",
+      "男人微笑道：“这碗馄饨的钱先欠着，说不定以后你答应做赊刀人……”",
+      "董水井坚持道：“这哪里行，只要是做买卖，就要亲兄弟明算账。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "董水井突然喊道：“等会儿！ 董水井坚持道：“这哪里行，只要是做买卖，就要亲兄弟明算账。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 236,
+        "segment_index": 51
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 董水井对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "董水井"
+        ],
+        "description": "董水井突然喊道：“等会儿！ 董水井坚持道：“这哪里行，只要是做买卖，就要亲兄弟明算账。 ”",
+        "background": "",
+        "significance": "对应董水井在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段51",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 51
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.197353",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "236-52-0": {
+    "juan_index": 236,
+    "segment_index": 52,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十五章 故乡黄花黄",
+    "source_sentences": [
+      "男人点了点头，掏出几颗铜钱，“哈哈，真像是赊刀人的风格。",
+      "”",
+      "夕阳西下，许弱扬长而去。",
+      "董水井坐在原地，目送墨家游侠儿远去，抬起手臂，擦了擦额头汗水。",
+      "之所以壮着胆子要那几颗铜钱，可不是董水井一根筋，是什么不知天高地厚的愣头青，而是一种充满市井气息的试探人心。",
+      "董水井默默坐在桌旁，一动不动发着呆，没有什么天上掉馅饼的狂喜情绪，反而有些茫然。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "夕阳西下，许弱扬长而去。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 236,
+        "segment_index": 52
+      },
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "董水井坐在原地，目送墨家游侠儿远去，抬起手臂，擦了擦额头汗水。 之所以壮着胆子要那几颗铜钱，可不是董水井一根筋，是什么不知天高地厚的愣头青，而是一种充满市井气息的试探人心。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 52
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 许弱与董水井试探",
+        "time": null,
+        "location": null,
+        "participants": [
+          "许弱",
+          "董水井"
+        ],
+        "description": "夕阳西下，许弱扬长而去。 董水井坐在原地，目送墨家游侠儿远去，抬起手臂，擦了擦额头汗水。 之所以壮着胆子要那几颗铜钱，可不是董水井一根筋，是什么不知天高地厚的愣头青，而是一种充满市井气息的试探人心。",
+        "background": "",
+        "significance": "推动许弱与董水井之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 段52",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 52
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "许弱"
+        ],
+        "to_roles": [
+          "董水井"
+        ],
+        "action": "试探",
+        "context": "男人点了点头，掏出几颗铜钱，“哈哈，真像是赊刀人的风格。 ” 夕阳西下，许弱扬长而去。 董水井坐在原地，目送墨家游侠儿远去，抬起手臂，擦了擦额头汗水。 之所以壮着胆子要那几颗铜钱，可不是董水井一根筋，是什么不知天高地厚的愣头青，而是一种充满市井气息的试探人心。 董水井默默坐在桌旁，一动不动发着呆，没有什么天上掉馅饼的狂喜情绪，反而有些茫然。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十五章 故乡黄花黄 · 许弱与董水井试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 236,
+        "segment_index": 52
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.197353",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

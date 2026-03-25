@@ -154,7 +154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.845052",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -249,7 +249,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.845052",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -312,7 +312,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.845052",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -467,7 +467,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.845052",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -572,7 +572,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.845052",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -634,7 +634,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.845052",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -715,7 +715,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.846056",
+    "extracted_at": "2026-03-25T01:03:30.995576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -791,7 +791,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.846056",
+    "extracted_at": "2026-03-25T01:03:30.996580",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -811,7 +811,21 @@
       "”",
       "曹峻啧啧道：“给那少女折腾没啦？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "曹曦不以为意道：“骊珠洞天很难出香火小人是一回事，她没说谎，不过以我和谢实的成就，还是应该剩下一两位的，比如桃叶巷的谢家，就是靠着一对香火小人，维持家风数百年，才勉强保住了香火子嗣，要不然早就跟咱们家这栋破房子一样，人都死绝了。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 194,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -820,7 +834,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -834,7 +850,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -844,13 +862,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 骊珠洞天对话",
+        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 谢实在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
+        "participants": [
+          "谢实"
+        ],
         "description": "曹曦不以为意道：“骊珠洞天很难出香火小人是一回事，她没说谎，不过以我和谢实的成就，还是应该剩下一两位的，比如桃叶巷的谢家，就是靠着一对香火小人，维持家风数百年，才勉强保住了香火子嗣，要不然早就跟咱们家这栋破房子一样，人都死绝了。 曹峻笑问道：“老曹，咋回事？ 在婆娑洲那边，以你的成就，香火小人的数量，都能在门楣、匾额上扎堆打仗了吧？",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键对话场景。",
+        "significance": "对应谢实在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十四章 降妖和除魔 · 段9",
         "sentence_indexes_in_segment": [
@@ -866,7 +886,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.846056",
+    "extracted_at": "2026-03-25T01:03:30.996580",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -943,7 +963,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.846056",
+    "extracted_at": "2026-03-25T01:03:30.996580",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1044,7 +1064,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.846056",
+    "extracted_at": "2026-03-25T01:03:30.996580",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1097,7 +1117,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 陈平安与宋集薪剧情推进",
+        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 陈平安与宋集薪试探",
         "time": null,
         "location": null,
         "participants": [
@@ -1106,8 +1126,10 @@
         ],
         "description": "陈平安一脸茫然道：“我不知道啊。 少女仔细打量着少年，她突然粲然一笑，不再刨根问底，但是她伸出两根手指，比划了一下，“现在宋睦比你高这么多了。 她答非所问，“我家那笼母鸡和鸡崽儿呢？",
         "background": "",
-        "significance": "推动陈平安与宋集薪之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋集薪之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十四章 降妖和除魔 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1121,8 +1143,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "试探",
+        "context": "她答非所问，“我家那笼母鸡和鸡崽儿呢？ ” 陈平安一脸茫然道：“我不知道啊。 ” 少女仔细打量着少年，她突然粲然一笑，不再刨根问底，但是她伸出两根手指，比划了一下，“现在宋睦比你高这么多了。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 陈平安与宋集薪试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 194,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.996580",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1199,7 +1247,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "extracted_at": "2026-03-25T01:03:30.996580",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1276,7 +1324,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "extracted_at": "2026-03-25T01:03:30.997583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1392,7 +1440,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "extracted_at": "2026-03-25T01:03:30.997583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1456,7 +1504,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "extracted_at": "2026-03-25T01:03:30.997583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1519,7 +1567,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "extracted_at": "2026-03-25T01:03:30.997583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1624,7 +1672,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.847059",
+    "extracted_at": "2026-03-25T01:03:30.998587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1745,7 +1793,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.848062",
+    "extracted_at": "2026-03-25T01:03:30.998587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1780,21 +1828,37 @@
         ],
         "juan_index": 194,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "除了这些，陈平安当下心中最大的遗憾，是暂时无法驾驭剑灵赠送的那件方寸物，虽说把大部分家底放在铁匠铺子也放心，但终究是不方便的，崔东山和青衣小童的咫尺物、方寸物，让陈平安见识到了这类宝贝的珍贵实用，难怪山上神仙都不是人人都有。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 194,
+        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 陈平安冲突",
+        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 陈平安与崔东山冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
         "description": "陈平安爱钱，是因为自幼知道赚钱的不容易，不代表陈平安有了钱之后，就会死死捂住钱袋子。 画符一事，因为本身就等于是另一种方式的武道修行，前者重在体魄锻造，后者倾向气府窍穴的内在淬炼，双方并不冲突，反而是相辅相成的好事，陈平安无非是将走桩立桩的一部分时间，划拨给画符，但是画符就需要符纸，符纸就是真金白银，这让陈平安难免有点发虚犯怵。 除了这些，陈平安当下心中最大的遗憾，是暂时无法驾驭剑灵赠送的那件方寸物，虽说把大部分家底放在铁匠铺子也放心，但终究是不方便的，崔东山和青衣小童的咫尺物、方寸物，让陈平安见识到了这类宝贝的珍贵实用，难怪山上神仙都不是人人都有。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十四章 降妖和除魔 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1808,8 +1872,34 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.848062",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "冲突",
+        "context": "陈平安爱钱，是因为自幼知道赚钱的不容易，不代表陈平安有了钱之后，就会死死捂住钱袋子。 剑，要练，但是在确定应当如何练剑之前，再着急都没用。 撼山拳当然要继续勤加苦练，毕竟说好的一百万拳还早。 画符一事，因为本身就等于是另一种方式的武道修行，前者重在体魄锻造，后者倾向气府窍穴的内在淬炼，双方并不冲突，反而是相辅相成的好事，陈平安无非是将走桩立桩的一部分时间，划拨给画符，但是画符就需要符纸，符纸就是真金白银，这让陈平安难免有点发虚犯怵。 说到底，钱还是挣得少了。 除了这些，陈平安当下心中最大的遗憾，是暂时无法驾驭剑灵赠送的那件方寸物，虽说把大部分家底放在铁匠铺子也放心，但终究是不方便的，崔东山和青衣小童的咫尺物、方寸物，让陈平安见识到了这类宝贝的珍贵实用，难怪山上神仙都不是人人都有。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 陈平安与崔东山冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 194,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.998587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1891,7 +1981,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.848062",
+    "extracted_at": "2026-03-25T01:03:30.998587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1941,6 +2031,19 @@
         ],
         "juan_index": 194,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "今天国师走出驿站，不让剑客许弱跟随，独自远行。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 194,
+        "segment_index": 26
       }
     ],
     "locations": [
@@ -1987,14 +2090,13 @@
         "participants": [
           "阿良",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "许弱"
         ],
         "description": "陈平安刹那之间就变得满脸通红，开始遭罪了。 陈平安深呼吸一口气，来不及去往屋内，只好以剑炉立桩应对剑胚的迅猛报复。 距离小镇最近的驿站那边，大骊王朝的国师崔瀺，最近一直在此下榻，既没有大肆宣扬，也没有刻意隐蔽行踪。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十四章 降妖和除魔 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -2008,34 +2110,8 @@
         "segment_index": 26
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "崔瀺"
-        ],
-        "action": "同行",
-        "context": "陈平安刹那之间就变得满脸通红，开始遭罪了。 陈平安深呼吸一口气，来不及去往屋内，只好以剑炉立桩应对剑胚的迅猛报复。 苦不堪言。 距离小镇最近的驿站那边，大骊王朝的国师崔瀺，最近一直在此下榻，既没有大肆宣扬，也没有刻意隐蔽行踪。 今天国师走出驿站，不让剑客许弱跟随，独自远行。 崔瀺每跨出一步，就是三四里路外，最后他站在一条羊肠小道的中间，拦住了一位衣衫褴褛的老人。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 194,
-        "segment_index": 26
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.848062",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.998587",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2120,7 +2196,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.848062",
+    "extracted_at": "2026-03-25T01:03:30.999590",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2163,7 +2239,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 崔瀺剧情推进",
+        "name": "第三卷金错刀 第一百九十四章 降妖和除魔 · 崔瀺冲突",
         "time": null,
         "location": null,
         "participants": [
@@ -2171,7 +2247,7 @@
         ],
         "description": "崔瀺神色悲苦，自嘲道：“恍若隔世，不是恍若，分明就是啊。 衣衫破败的老人伸手一把推开崔瀺的肩膀，径直向前走去，“你让开，别耽误我找瀺儿，我要找他先生，问他我新取的名字，到底好不好。 崔瀺站在原地，没有阻拦。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "对应崔瀺在叙事中的关键冲突节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十四章 降妖和除魔 · 段29",
         "sentence_indexes_in_segment": [
@@ -2187,7 +2263,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.849066",
+    "extracted_at": "2026-03-25T01:03:30.999590",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

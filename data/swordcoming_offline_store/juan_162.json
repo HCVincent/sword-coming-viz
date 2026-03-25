@@ -88,18 +88,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 陈平安与崔瀺迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "崔瀺",
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安走出城门外，在行人络绎不绝的官道旁，站着休息，不远处就是一个茶水摊。 陈平安犹豫了一下，去买了一碗茶水，坐着喝茶。 就像崔瀺所说，万一宝瓶他们给人欺负了，他又不在身边，怎么办？",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的迁移关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段1",
         "sentence_indexes_in_segment": [
@@ -115,7 +115,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.854074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -232,7 +232,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.854074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -311,7 +311,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.854074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -362,16 +362,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李宝瓶与李槐剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "副山主越说越气，“还有那小丫头李宝瓶，更是无法无天，上课的时候，经常神游万里，完全不知道尊师重道，不是看那本翻烂了的山水游记，就是在书上画小人儿，嘿，好嘛，还是那武夫蛮子的技击架势！ 副山主继续道：“年纪最小的李槐……倒是老实本分，不逃课，不捣蛋，先生交代下去的课业，次次都做，可这悟性实在是……怎么感觉像是个不开窍的榆木疙瘩？ ”",
         "background": "",
-        "significance": "推动李宝瓶与李槐之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段4",
         "sentence_indexes_in_segment": [
@@ -387,7 +389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.854074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -410,6 +412,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "国字脸老人心情略微好转，点头道：“有，奇了怪了，倒是于禄和谢谢这两个少年少女，出类拔萃，更像是咱们儒家纯粹的读书种子，待人接物，都很正常，平时还算尊师重道，尤其是于禄这少年，温良恭俭，简直就是咱们大隋顶尖豪阀里的俊彦子弟，似乎更值得重点栽培。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 162,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "国字脸老人心情略微好转，点头道：“有，奇了怪了，倒是于禄和谢谢这两个少年少女，出类拔萃，更像是咱们儒家纯粹的读书种子，待人接物，都很正常，平时还算尊师重道，尤其是于禄这少年，温良恭俭，简直就是咱们大隋顶尖豪阀里的俊彦子弟，似乎更值得重点栽培。",
@@ -425,16 +440,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢对话",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄与谢谢对话",
         "time": null,
         "location": null,
         "participants": [
+          "于禄",
           "谢谢"
         ],
         "description": "国字脸老人心情略微好转，点头道：“有，奇了怪了，倒是于禄和谢谢这两个少年少女，出类拔萃，更像是咱们儒家纯粹的读书种子，待人接物，都很正常，平时还算尊师重道，尤其是于禄这少年，温良恭俭，简直就是咱们大隋顶尖豪阀里的俊彦子弟，似乎更值得重点栽培。 矮小老人爽朗大笑，侧身放下茶杯后，问道：“就没有点好消息？ 再这样，下次我可不敢来了。",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动于禄与谢谢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -448,8 +466,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "对话",
+        "context": "矮小老人爽朗大笑，侧身放下茶杯后，问道：“就没有点好消息？ 再这样，下次我可不敢来了。 ” 国字脸老人心情略微好转，点头道：“有，奇了怪了，倒是于禄和谢谢这两个少年少女，出类拔萃，更像是咱们儒家纯粹的读书种子，待人接物，都很正常，平时还算尊师重道，尤其是于禄这少年，温良恭俭，简直就是咱们大隋顶尖豪阀里的俊彦子弟，似乎更值得重点栽培。 ” 矮小老人依然不急着下定论，笑眯眯望向某个一直偷偷打盹的高大老人，“茅老，怎么说？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄与谢谢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.854074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -515,7 +559,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.854074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -648,7 +692,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.855078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +774,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.855078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -795,7 +839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.855078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -857,7 +901,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.855078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -922,7 +966,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.855078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -985,7 +1029,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.855078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1047,7 +1091,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1109,7 +1153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1217,7 +1261,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1280,7 +1324,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.749182",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1342,7 +1386,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1405,7 +1449,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1467,7 +1511,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1490,6 +1534,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄点头笑道：“有意思啊。 于禄笑着给出答案，“鱼上钩了会开心，哪怕最后鱼跑了，还是会开心。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 162,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "谢谢问道：“有趣在什么地方？",
@@ -1505,16 +1563,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢对话",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄与谢谢对话",
         "time": null,
         "location": null,
         "participants": [
+          "于禄",
           "谢谢"
         ],
-        "description": "谢谢问道：“有趣在什么地方？ 于禄点头笑道：“有意思啊。 ”",
+        "description": "于禄点头笑道：“有意思啊。 谢谢问道：“有趣在什么地方？ 于禄笑着给出答案，“鱼上钩了会开心，哪怕最后鱼跑了，还是会开心。",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动于禄与谢谢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -1528,8 +1589,34 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "对话",
+        "context": "于禄点头笑道：“有意思啊。 ” 谢谢问道：“有趣在什么地方？ ” 于禄笑着给出答案，“鱼上钩了会开心，哪怕最后鱼跑了，还是会开心。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄与谢谢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.856081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1562,20 +1649,35 @@
         ],
         "juan_index": 162,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄凝视着湖面，忍住笑，一语道破天机，“好好好，我说实话，我是在习武呢。 于禄缓缓解释道：“且不说持竿，只说我这坐姿，是有讲究的。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 162,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢剧情推进",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄与谢谢剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "于禄",
           "谢谢"
         ],
-        "description": "谢谢隐约有些怒气。 于禄凝视着湖面，忍住笑，一语道破天机，“好好好，我说实话，我是在习武呢。 ”",
+        "description": "谢谢隐约有些怒气。 于禄凝视着湖面，忍住笑，一语道破天机，“好好好，我说实话，我是在习武呢。 于禄缓缓解释道：“且不说持竿，只说我这坐姿，是有讲究的。",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键剧情推进节点。",
+        "significance": "推动于禄与谢谢之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段32",
         "sentence_indexes_in_segment": [
@@ -1591,7 +1693,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1624,20 +1726,34 @@
         ],
         "juan_index": 162,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄从头到尾都没有去看少女，“你要说我从不曾练武，没有错，我从来没有练习过拳桩架势，但你要说我一直在习武，也没有错，我吃饭的时候，睡觉的时候，走路的时候，还有现在钓鱼的时候，都在想那些武术秘籍里的东西。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 162,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢剧情推进",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
-        "description": "谢谢将信将疑。 有本武学秘籍上，说一静则无有不静，一动百骸皆相随。 所以我这么钓鱼，能够濡筋骨、充元气。",
+        "description": "谢谢将信将疑。 于禄从头到尾都没有去看少女，“你要说我从不曾练武，没有错，我从来没有练习过拳桩架势，但你要说我一直在习武，也没有错，我吃饭的时候，睡觉的时候，走路的时候，还有现在钓鱼的时候，都在想那些武术秘籍里的东西。 有本武学秘籍上，说一静则无有不静，一动百骸皆相随。",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键剧情推进节点。",
+        "significance": "推动谢谢与于禄之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段33",
         "sentence_indexes_in_segment": [
@@ -1653,7 +1769,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1687,21 +1803,37 @@
         ],
         "juan_index": 162,
         "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄委屈道：“喂喂喂，谢姑娘，没你这么揭人伤疤的啊。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 162,
+        "segment_index": 34
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢对话",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄对话",
         "time": null,
         "location": null,
         "participants": [
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
-        "description": "谢谢坐在地上，抱住膝盖，望向那根纤细修长的鱼竿，“你不去山上修行，太可惜了。 谢谢沉默片刻，说道：“终于过上了太平日子，心里头反而不安稳了。 ”",
+        "description": "谢谢坐在地上，抱住膝盖，望向那根纤细修长的鱼竿，“你不去山上修行，太可惜了。 于禄委屈道：“喂喂喂，谢姑娘，没你这么揭人伤疤的啊。 谢谢沉默片刻，说道：“终于过上了太平日子，心里头反而不安稳了。",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢谢与于禄之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -1715,8 +1847,97 @@
         "segment_index": 34
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢谢"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "” 谢谢坐在地上，抱住膝盖，望向那根纤细修长的鱼竿，“你不去山上修行，太可惜了。 ” 于禄委屈道：“喂喂喂，谢姑娘，没你这么揭人伤疤的啊。 ” 谢谢沉默片刻，说道：“终于过上了太平日子，心里头反而不安稳了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 34
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.857085",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "162-35-0": {
+    "juan_index": 162,
+    "segment_index": 35,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们",
+    "source_sentences": [
+      "你呢？",
+      "”",
+      "少女自问自答，“你于禄肯定在哪里都无所谓，这一点，我的确远不如你。",
+      "”",
+      "于禄毫无征兆地转过头，摇头道：“我喜欢一个人对着火堆守夜的时候。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "少女自问自答，“你于禄肯定在哪里都无所谓，这一点，我的确远不如你。 于禄毫无征兆地转过头，摇头道：“我喜欢一个人对着火堆守夜的时候。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 162,
+        "segment_index": 35
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄等待",
+        "time": null,
+        "location": null,
+        "participants": [
+          "于禄"
+        ],
+        "description": "少女自问自答，“你于禄肯定在哪里都无所谓，这一点，我的确远不如你。 于禄毫无征兆地转过头，摇头道：“我喜欢一个人对着火堆守夜的时候。 你呢？",
+        "background": "",
+        "significance": "对应于禄在叙事中的关键等待节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段35",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 35
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1750,21 +1971,37 @@
         ],
         "juan_index": 162,
         "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄重新转回头，盯着湖面，“不知道啊，就是喜欢。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 162,
+        "segment_index": 36
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢对话",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄对话",
         "time": null,
         "location": null,
         "participants": [
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
-        "description": "谢谢疑惑道：“为什么？ 谢谢笑道：“那你喜不喜欢她，那个差点成为太子妃的女子？ ”",
+        "description": "谢谢疑惑道：“为什么？ 于禄重新转回头，盯着湖面，“不知道啊，就是喜欢。 谢谢笑道：“那你喜不喜欢她，那个差点成为太子妃的女子？",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢谢与于禄之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段36",
         "sentence_indexes_in_segment": [
           0,
@@ -1778,8 +2015,34 @@
         "segment_index": 36
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢谢"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "谢谢疑惑道：“为什么？ ” 于禄重新转回头，盯着湖面，“不知道啊，就是喜欢。 ” 谢谢笑道：“那你喜不喜欢她，那个差点成为太子妃的女子？ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 36
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1800,6 +2063,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄先是面无表情，很快展颜一笑，答非所问道：“谢姑娘，在这里，我们要慎言，慎行。 于禄微笑道：“你不也没有，我没有不奇怪啊，可你没有就不对了，这么漂亮的一个大姑娘唉。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 162,
+        "segment_index": 37
+      },
       {
         "entity_type": "person",
         "name": "谢谢",
@@ -1830,16 +2107,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "谢谢",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
-        "description": "谢谢皮笑肉不笑道：“李槐之前找过我，显摆他的那根玉簪子，你竟然没有？ 于禄先是面无表情，很快展颜一笑，答非所问道：“谢姑娘，在这里，我们要慎言，慎行。 ”",
+        "description": "于禄先是面无表情，很快展颜一笑，答非所问道：“谢姑娘，在这里，我们要慎言，慎行。 谢谢皮笑肉不笑道：“李槐之前找过我，显摆他的那根玉簪子，你竟然没有？ 于禄微笑道：“你不也没有，我没有不奇怪啊，可你没有就不对了，这么漂亮的一个大姑娘唉。",
         "background": "",
-        "significance": "推动谢谢与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1868,7 +2147,7 @@
         "action": "对话",
         "context": "谢谢皮笑肉不笑道：“李槐之前找过我，显摆他的那根玉簪子，你竟然没有？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与李槐对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1878,7 +2157,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1911,21 +2190,37 @@
         ],
         "juan_index": 162,
         "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄猛然一抖手腕，鱼竿弯出一个漂亮至极的弧度，高大少年哈哈笑道：“上钩！",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 162,
+        "segment_index": 38
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢对话",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄对话",
         "time": null,
         "location": null,
         "participants": [
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
-        "description": "谢谢黑着脸道：“请慎言！ ” 于禄猛然一抖手腕，鱼竿弯出一个漂亮至极的弧度，高大少年哈哈笑道：“上钩！",
+        "description": "谢谢黑着脸道：“请慎言！ 于禄猛然一抖手腕，鱼竿弯出一个漂亮至极的弧度，高大少年哈哈笑道：“上钩！ ”",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢谢与于禄之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段38",
         "sentence_indexes_in_segment": [
           0,
@@ -1939,8 +2234,34 @@
         "segment_index": 38
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢谢"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "谢谢黑着脸道：“请慎言！ ” 于禄猛然一抖手腕，鱼竿弯出一个漂亮至极的弧度，高大少年哈哈笑道：“上钩！ ” 少女起身离去，“男人就没一个好东西！ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢与于禄对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 38
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1963,6 +2284,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄一边小心翼翼遛鱼，一边望向少女背影，“我是不是好东西，不好说，可某人是真的很好，嗯，就是稍稍有点偏心，书箱没有，簪子没有，就只有谁都有的草鞋，唉，着实让人有些失落。 谢谢转过身，大踏步走向于禄。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 162,
+        "segment_index": 39
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "谢谢转过身，大踏步走向于禄。 谢谢拿起岸边那根尚未被鱼拖远的鱼竿，使劲丢向湖中央，这才拍拍手离去。",
@@ -1979,15 +2316,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 谢谢剧情推进",
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 于禄与谢谢剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "于禄",
           "谢谢"
         ],
-        "description": "谢谢转过身，大踏步走向于禄。 谢谢拿起岸边那根尚未被鱼拖远的鱼竿，使劲丢向湖中央，这才拍拍手离去。 于禄一边小心翼翼遛鱼，一边望向少女背影，“我是不是好东西，不好说，可某人是真的很好，嗯，就是稍稍有点偏心，书箱没有，簪子没有，就只有谁都有的草鞋，唉，着实让人有些失落。",
+        "description": "于禄一边小心翼翼遛鱼，一边望向少女背影，“我是不是好东西，不好说，可某人是真的很好，嗯，就是稍稍有点偏心，书箱没有，簪子没有，就只有谁都有的草鞋，唉，着实让人有些失落。 谢谢转过身，大踏步走向于禄。 于禄赶紧亡羊补牢，“我没别的意思，咱们都一样，不患寡而患不均而已，你别误会……”",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键剧情推进节点。",
+        "significance": "推动于禄与谢谢之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段39",
         "sentence_indexes_in_segment": [
@@ -2003,7 +2341,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.857085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2024,6 +2362,19 @@
       "一路行去，极为醒目。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄目瞪口呆，这次是真的有些火冒三丈，低声愤愤道：“换成是陈平安的鱼竿，你试试看，你要是还敢这么泼辣？",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 162,
+        "segment_index": 40
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2072,16 +2423,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 林守一与陈平安在山崖书院剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "李宝瓶",
           "林守一",
-          "陈平安"
+          "李槐",
+          "于禄"
         ],
         "description": "于禄目瞪口呆，这次是真的有些火冒三丈，低声愤愤道：“换成是陈平安的鱼竿，你试试看，你要是还敢这么泼辣？ 林守一，发髻上别着一支质地平平的黄玉簪子，少年肤色微黑，但是难掩俊朗面容，虽然在山崖书院给人印象是性情冷峻，不苟言笑，可是林守一仍然很受女子的欢迎，大隋女子虽然无法考取功名，但是不耽误她们可以正大光明地求学，嫁人之前，都可以待在各大书院。 林守一依旧像往常那样，遇到不喜欢的课程，就去藏书楼看书。",
         "background": "",
-        "significance": "在山崖书院推动林守一与陈平安之间的剧情推进线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段40",
         "sentence_indexes_in_segment": [
@@ -2097,7 +2450,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.750185",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2178,7 +2531,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2233,16 +2586,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 林守一与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
           "林守一",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "每逢雷雨天气，就会亲自带着林守一，去往大隋京城内最高的铁树山，至于其中缘由，书院外人除了看热闹，也试图看到门道。 天底下没有不漏风的墙，董静也有自己的至交好友，又是出了名的酒疯子，很快几顿好酒下去，就吐露出一些蛛丝马迹，那林守一是百年难遇的修行天才，一旦养育出浩然气，辅以五雷正法，必然是中五境起步的神仙人物，而且有望在二十五岁之前跻身第六境。 说简单一点，这意味着林守一这个修道天才，有资格冲刺一下第十境，这已经大大超出寻常天才的范畴。",
         "background": "",
-        "significance": "推动林守一与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -2271,7 +2626,7 @@
         "action": "对话",
         "context": "每逢雷雨天气，就会亲自带着林守一，去往大隋京城内最高的铁树山，至于其中缘由，书院外人除了看热闹，也试图看到门道。 天底下没有不漏风的墙，董静也有自己的至交好友，又是出了名的酒疯子，很快几顿好酒下去，就吐露出一些蛛丝马迹，那林守一是百年难遇的修行天才，一旦养育出浩然气，辅以五雷正法，必然是中五境起步的神仙人物，而且有望在二十五岁之前跻身第六境。 说简单一点，这意味着林守一这个修道天才，有资格冲刺一下第十境，这已经大大超出寻常天才的范畴。 突然一个气喘吁吁的孩子，一路跑到林守一面前，是李槐，看到林守一后，立即哭得伤心欲绝，哽咽道：“林守一，我的彩绘木偶不见了，有人偷走它了！ ” 林守一问道：“不是丢了？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 林守一与李槐对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2286,7 +2641,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2348,7 +2703,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2401,16 +2756,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与林守一剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "李槐还是摇头。 林守一皱紧眉头，最后他带着李槐返回自己学舍，从书箱底下拿出几张银票，递给李槐，这些钱，他家族当初寄到了红烛镇枕头驿，那天林守一收到家书后的脸色，可谓难看至极。 李槐慌张道：“干啥？",
         "background": "",
-        "significance": "推动李槐与林守一之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段44",
         "sentence_indexes_in_segment": [
@@ -2426,7 +2783,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2477,16 +2834,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 林守一与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
           "林守一",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "林守一说道：“你回到学舍后，就跟舍友说，你把彩绘木偶丢在了……总之你随便说个地方，谁能帮你捡回来，你就给他这些钱。 李槐茫然道：“这都能行？ 我只要彩绘木偶，我又不要钱！",
         "background": "",
-        "significance": "推动林守一与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -2515,7 +2874,7 @@
         "action": "对话",
         "context": "我只要彩绘木偶，我又不要钱！ ” 林守一说道：“你回到学舍后，就跟舍友说，你把彩绘木偶丢在了……总之你随便说个地方，谁能帮你捡回来，你就给他这些钱。 ” 李槐茫然道：“这都能行？ ”",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 林守一与李槐对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2530,7 +2889,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2583,16 +2942,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 林守一与李槐剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
           "林守一",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "林守一无奈道：“先这么试试看。 第二天，李槐欢天喜地找到了林守一，“那法子还真行！ 林守一没好气道：“以后锁好箱子，别总显摆你的那些小破烂。",
         "background": "",
-        "significance": "推动林守一与李槐之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段46",
         "sentence_indexes_in_segment": [
@@ -2608,7 +2969,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.858088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2661,16 +3022,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与林守一剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "李槐怒道：“感谢归感谢，以后我肯定会还你钱，但是不许你这么说它们！ 林守一伸手一巴掌拍在这兔崽子脑袋上，“少烦我，我要去书楼。 ”李槐朝林守一做了个鬼脸，一溜烟跑了。",
         "background": "",
-        "significance": "推动李槐与林守一之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段47",
         "sentence_indexes_in_segment": [
@@ -2686,7 +3049,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2738,16 +3101,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "过不了几天，李槐又哭丧着脸找到林守一，耷拉着脑袋，怯生生不敢开口说话。 被堵在书楼门口的林守一叹了口气，“怎么回事？ 彩绘木偶又被偷了？",
         "background": "",
-        "significance": "推动李槐与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -2776,7 +3141,7 @@
         "action": "对话",
         "context": "过不了几天，李槐又哭丧着脸找到林守一，耷拉着脑袋，怯生生不敢开口说话。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2786,7 +3151,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2848,7 +3213,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.751189",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2914,16 +3279,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与李宝瓶对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐突然抬起头，牵强笑道：“算了，我自己再找找看，说不定它们自己就跑回来啦。 不等林守一挽留，李槐已经跑出去，喊了孩子也不听。 李槐跟李宝瓶今天刚好一起上课，下课后李宝瓶找到故意躲着自己的李槐，发现他嘴角红肿忍不住问道：“咋了？",
         "background": "",
-        "significance": "推动李槐与李宝瓶之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -2952,7 +3319,7 @@
         "action": "对话",
         "context": "李槐跟李宝瓶今天刚好一起上课，下课后李宝瓶找到故意躲着自己的李槐，发现他嘴角红肿忍不住问道：“咋了？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与李宝瓶对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2962,7 +3329,7 @@
         "segment_index": 50
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.752192",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3014,16 +3381,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与李宝瓶剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐缩了缩脖子，“摔了一跤。 李宝瓶瞪眼：“说！ 李槐撅起嘴，就要哭出声，竭力忍住，愈发可怜，“跟人吵架，打不过人家。",
         "background": "",
-        "significance": "推动李槐与李宝瓶之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段51",
         "sentence_indexes_in_segment": [
@@ -3039,7 +3408,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.752192",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3121,7 +3490,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.752192",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3175,16 +3544,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与李宝瓶剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐默默走到学舍门槛外头，蹲在那里画圈圈，没过多久，李槐就看着气势汹汹赶来的李宝瓶，手里拎着那把名叫祥符的狭刀…… 李槐吓得差点没能站起身，好不容易站起，有些腿软，咽了口唾沫，低声道：“宝瓶，咱们打架需要带刀吗？ 李宝瓶怒目相向，一把推开李槐，独自大步闯入学舍，“打架不需要，难道挨揍需要？",
         "background": "",
-        "significance": "推动李槐与李宝瓶之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段54",
         "sentence_indexes_in_segment": [
@@ -3200,7 +3571,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.752192",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3255,16 +3626,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与李宝瓶剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐虽然吓得直冒汗，仍是一咬牙，快步跟上她，喊道：“李宝瓶，你等等我啊！ 李宝瓶看着那三个家伙，举起在鞘的狭刀，冷声道：“谁偷了李槐的泥人儿，拿出来！ 李宝瓶怒气更盛，“谁打了李槐，站出来！",
         "background": "",
-        "significance": "推动李槐与李宝瓶之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段55",
         "sentence_indexes_in_segment": [
@@ -3280,7 +3653,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.752192",
+    "extracted_at": "2026-03-25T01:03:30.859092",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3347,16 +3720,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李宝瓶与陈平安冲突",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "陈平安"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李宝瓶拎着狭刀，对那三个小王八蛋就是一顿饱揍。 别看李宝瓶个子不算高，可气力那是从小实打实熬出来的，加上好歹跟着陈平安一路练拳，一起跋山涉水，对付几个绣花枕头都不如的同龄人，手到擒来，加上两军对垒，气势很重要，李宝瓶第一招就足够惊世骇俗，出手极快，刀鞘横扫，狠狠拍中一个约莫十岁大男孩的脸颊，直接把他扇得原地打转，然后一刀鞘当头劈下，砸得第二个可怜虫哇哇大哭，第三个哪里敢还手，赶紧跑，被李宝瓶追上，飞起身来，一脚踹在后心，整个人撞向床铺，又痛又怕，干脆趴在那里装死了。 李宝瓶视线扫去，用刀鞘尾端指向他们，“今天就乖乖把那套泥人儿拿回来，交给李槐！",
         "background": "",
-        "significance": "推动李宝瓶与陈平安之间的冲突关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -3385,7 +3760,7 @@
         "action": "冲突",
         "context": "别看李宝瓶个子不算高，可气力那是从小实打实熬出来的，加上好歹跟着陈平安一路练拳，一起跋山涉水，对付几个绣花枕头都不如的同龄人，手到擒来，加上两军对垒，气势很重要，李宝瓶第一招就足够惊世骇俗，出手极快，刀鞘横扫，狠狠拍中一个约莫十岁大男孩的脸颊，直接把他扇得原地打转，然后一刀鞘当头劈下，砸得第二个可怜虫哇哇大哭，第三个哪里敢还手，赶紧跑，被李宝瓶追上，飞起身来，一脚踹在后心，整个人撞向床铺，又痛又怕，干脆趴在那里装死了。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李宝瓶与陈平安冲突",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3395,7 +3770,7 @@
         "segment_index": 56
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.752822",
+    "extracted_at": "2026-03-25T01:03:30.860095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3448,16 +3823,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李宝瓶与李槐讥讽",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "我李宝瓶说到做到！ 李宝瓶看到一个悄悄抬头望向自己的家伙，她扬起手臂就要一刀鞘砸过去，吓得那家伙赶紧后退。 李宝瓶冷笑连连，愤而转身，结果看到站在门槛内的李槐，气不打一处来，“李槐！",
         "background": "",
-        "significance": "推动李宝瓶与李槐之间的讥讽关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -3486,7 +3863,7 @@
         "action": "讥讽",
         "context": "李宝瓶冷笑连连，愤而转身，结果看到站在门槛内的李槐，气不打一处来，“李槐！",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李宝瓶与李槐讥讽",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3496,7 +3873,7 @@
         "segment_index": 57
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.752822",
+    "extracted_at": "2026-03-25T01:03:30.860095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3548,16 +3925,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 李槐与李宝瓶剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "好似被戳中了伤心处，李槐蹲在地上，抱着脑袋呜咽起来。 斜瞥一眼李槐，李宝瓶像是比来的时候更加生气，手持狭刀，就这么气呼呼离去。 ”",
         "background": "",
-        "significance": "推动李槐与李宝瓶之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段58",
         "sentence_indexes_in_segment": [
@@ -3573,7 +3952,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.752822",
+    "extracted_at": "2026-03-25T01:03:30.860095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3634,7 +4013,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.752822",
+    "extracted_at": "2026-03-25T01:03:30.860095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

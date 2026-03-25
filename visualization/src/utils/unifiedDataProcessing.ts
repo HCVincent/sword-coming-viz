@@ -70,26 +70,64 @@ function relationOverlapsProgressRange(
   return rangeOverlaps([relation.progress_start, relation.progress_end], progressRange);
 }
 
+function countRoleMentionsInUnitRange(role: UnifiedRole, unitRange?: [number, number]) {
+  if (!unitRange) return role.total_mentions;
+  const [start, end] = unitRange;
+  return role.occurrences.filter((occurrence) => occurrence.juan_index >= start && occurrence.juan_index <= end).length;
+}
+
+function roleMatchesProgressRange(
+  kb: UnifiedKnowledgeBase,
+  role: UnifiedRole,
+  unitRange: [number, number] | undefined,
+  progressRange: [number | null, number | null]
+) {
+  if (progressRange[0] === null && progressRange[1] === null) return true;
+
+  const names = new Set([role.canonical_name, ...(role.all_names ?? [])]);
+  const eventMatch = Object.values(kb.events).some(
+    (event) =>
+      inUnitRange(getEventUnits(event), unitRange) &&
+      eventOverlapsProgressRange(event, progressRange) &&
+      event.participants.some((participant) => names.has(participant))
+  );
+  if (eventMatch) return true;
+
+  return Object.values(kb.relations).some(
+    (relation) =>
+      inUnitRange(getRelationUnits(relation), unitRange) &&
+      relationOverlapsProgressRange(relation, progressRange) &&
+      (names.has(relation.from_entity) || names.has(relation.to_entity))
+  );
+}
+
+function toRoleNode(role: UnifiedRole, unitRange?: [number, number], isIsolated: boolean = false): RoleNodeUnified {
+  return {
+    id: role.id,
+    name: role.canonical_name,
+    power: role.primary_power,
+    description: role.description,
+    appearances: countRoleMentionsInUnitRange(role, unitRange),
+    units: getRoleUnits(role),
+    aliases: Array.from(role.all_names).filter((n) => n !== role.canonical_name),
+    relatedEntities: Array.from(role.related_entities),
+    isIsolated,
+  };
+}
+
 export function unifiedRolesToNodes(
   kb: UnifiedKnowledgeBase,
-  unitRange?: [number, number]
+  unitRange?: [number, number],
+  progressRange: [number | null, number | null] = [null, null]
 ): RoleNodeUnified[] {
   const nodes: RoleNodeUnified[] = [];
 
   for (const role of Object.values(kb.roles)) {
     const units = getRoleUnits(role);
     if (!inUnitRange(units, unitRange)) continue;
+    if (!roleMatchesProgressRange(kb, role, unitRange, progressRange)) continue;
 
-    nodes.push({
-      id: role.id,
-      name: role.canonical_name,
-      power: role.primary_power,
-      description: role.description,
-      appearances: role.total_mentions,
-      units,
-      aliases: Array.from(role.all_names).filter((n) => n !== role.canonical_name),
-      relatedEntities: Array.from(role.related_entities),
-    });
+    nodes.push(toRoleNode(role, unitRange));
   }
 
   return nodes.sort((a, b) => b.appearances - a.appearances);
@@ -99,7 +137,14 @@ export function unifiedNetworkGraphData(
   kb: UnifiedKnowledgeBase,
   unitRange?: [number, number],
   progressRange: [number | null, number | null] = [null, null]
-): { nodes: RoleNodeUnified[]; links: RoleLinkUnified[] } {
+): {
+  allNodes: RoleNodeUnified[];
+  linkedNodes: RoleNodeUnified[];
+  isolatedNodes: RoleNodeUnified[];
+  links: RoleLinkUnified[];
+  totalRoleCount: number;
+  linkedRoleCount: number;
+} {
   const links: RoleLinkUnified[] = [];
 
   for (const relation of Object.values(kb.relations)) {
@@ -126,30 +171,31 @@ export function unifiedNetworkGraphData(
     });
   }
 
+  const allNodes = unifiedRolesToNodes(kb, unitRange, progressRange);
   const nodeIds = new Set<string>();
   for (const link of links) {
     nodeIds.add(link.source);
     nodeIds.add(link.target);
   }
 
-  const nodes: RoleNodeUnified[] = [];
-  for (const roleId of nodeIds) {
-    const role = kb.roles[roleId];
-    if (!role) continue;
-    nodes.push({
-      id: role.id,
-      name: role.canonical_name,
-      power: role.primary_power,
-      description: role.description,
-      appearances: role.total_mentions,
-      units: getRoleUnits(role),
-      aliases: Array.from(role.all_names).filter((n) => n !== role.canonical_name),
-      relatedEntities: Array.from(role.related_entities),
-    });
-  }
+  const linkedNodes = allNodes
+    .filter((node) => nodeIds.has(node.id))
+    .map((node) => ({ ...node, isIsolated: false }))
+    .sort((a, b) => b.appearances - a.appearances);
 
-  nodes.sort((a, b) => b.appearances - a.appearances);
-  return { nodes, links };
+  const isolatedNodes = allNodes
+    .filter((node) => !nodeIds.has(node.id))
+    .map((node) => ({ ...node, isIsolated: true }))
+    .sort((a, b) => b.appearances - a.appearances);
+
+  return {
+    allNodes,
+    linkedNodes,
+    isolatedNodes,
+    links,
+    totalRoleCount: allNodes.length,
+    linkedRoleCount: linkedNodes.length,
+  };
 }
 
 export function unifiedEventsToTimeline(

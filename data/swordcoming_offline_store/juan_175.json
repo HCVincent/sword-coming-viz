@@ -127,7 +127,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.792831",
+    "extracted_at": "2026-03-25T01:03:30.921320",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -191,7 +191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.792831",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -254,7 +254,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.792831",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -317,7 +317,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.792831",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -399,7 +399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.792831",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -431,6 +431,32 @@
           3,
           4,
           5
+        ],
+        "juan_index": 175,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 175,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 175,
         "segment_index": 6
@@ -472,6 +498,8 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
+          "蔡金简",
+          "苻南华",
           "马苦玄",
           "朱鹿"
         ],
@@ -484,21 +512,25 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安与马苦玄在老龙城冲突",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "陈平安",
-          "马苦玄",
-          "朱鹿"
+          "蔡金简"
         ],
         "description": "陈平安在发现青衣小童的拘谨惶恐之后，就知道事情不妙，但是事已至此，陈平安反而不去多想什么，只是屏气凝神，随时应对男子和他侍女的暴起杀人。 山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。 男人喝了口酒，眼神清明如月华，望向陈平安，开门见山地笑道：“公子的武道境界不高，拳意却很扎实，实属不易，若是能够坚持下去，止境可期。",
         "background": "",
-        "significance": "在老龙城推动陈平安与马苦玄之间的冲突线。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第二卷山水郎 第一百七十五章 敕令 · 段6",
         "sentence_indexes_in_segment": [
@@ -520,12 +552,12 @@
           "陈平安"
         ],
         "to_roles": [
-          "马苦玄"
+          "蔡金简"
         ],
         "action": "冲突",
         "context": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安与马苦玄在老龙城冲突",
+        "event_name": "老龙城暗流角力",
         "location": "老龙城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -540,12 +572,12 @@
           "陈平安"
         ],
         "to_roles": [
-          "朱鹿"
+          "苻南华"
         ],
         "action": "冲突",
         "context": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安与马苦玄在老龙城冲突",
+        "event_name": "老龙城暗流角力",
         "location": "老龙城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -557,15 +589,75 @@
       {
         "time": null,
         "from_roles": [
-          "马苦玄"
+          "陈平安"
         ],
         "to_roles": [
-          "朱鹿"
+          "马苦玄"
         ],
         "action": "冲突",
         "context": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安与马苦玄在老龙城冲突",
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 175,
+        "segment_index": 6
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "冲突",
+        "context": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 175,
+        "segment_index": 6
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "马苦玄"
+        ],
+        "action": "冲突",
+        "context": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 175,
+        "segment_index": 6
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "马苦玄"
+        ],
+        "action": "冲突",
+        "context": "山上神仙也好，精魅妖怪也罢，好坏难测，一旦大敌当前，往往生死立判，陈平安对此并不陌生，小巷对峙蔡金简、老龙城苻南华，之后与搬山猿纠缠厮杀，在神仙坟跟马苦玄打了一场，棋墩山对敌白蟒，枕头驿面对朱鹿的刺杀，等等，一系列风波，陈平安之所以能够活到现在，心定二字，至关重要。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
         "location": "老龙城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -575,7 +667,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.793834",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -638,7 +730,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.793834",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -700,7 +792,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.793834",
+    "extracted_at": "2026-03-25T01:03:30.922322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -762,7 +854,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.793834",
+    "extracted_at": "2026-03-25T01:03:30.923326",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -870,7 +962,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.793834",
+    "extracted_at": "2026-03-25T01:03:30.923326",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -949,7 +1041,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.793834",
+    "extracted_at": "2026-03-25T01:03:30.923326",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

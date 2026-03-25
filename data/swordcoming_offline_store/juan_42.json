@@ -16,6 +16,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "与此同时，福禄街和桃叶巷那边，许多高门大户里的这一辈年轻子弟，开始悄然离开小镇，多是少年早发的聪慧俊彦，也有籍籍无名偏房庶子，或是忠心耿耿的家生子，世家子赵繇便在此列。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 42,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "至于泥瓶巷的孩童顾粲，被截江真君刘志茂一眼相中，算是一个例外。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 42,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安去刘羡阳家拿了箩筐鱼篓，离开小镇去往小溪，在人多的时候，陈平安当然不会练习撼山谱的走桩，出了小镇，四下无人，陈平安才开始默念口诀，回忆宁姑娘走桩之时的步伐、身姿和气势，每个细节都不愿错过，一遍一遍走出那六步。 陈平安当时在泥瓶巷的屋子里，第一次模仿宁姚的时候，那么拙劣滑稽，比起常人还不如，其实少年少女的认知，出现了一个鬼使神差的误会，陈平安一直知道自己有个毛病，从烧瓷窑工开始就发现自己眼疾，手却慢，准确说是由于少年的眼神、眼力过于出彩，导致手脚根本跟不上，这就意味着换成别人来模仿宁姚的走桩，可能第一遍就有三四分相似，粗糙蹩脚，但好歹不至于像陈平安这么一两分相似，这恰恰是因为陈平安看得太明白真切，对于每一个环节太过苛刻，才过犹不及，手脚跟不上之后，就显得格外可笑，而且九分不像之下，暗藏着一分难能可贵的神似。",
@@ -64,6 +90,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "赵繇",
           "陈平安",
           "刘羡阳"
         ],
@@ -82,7 +109,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -96,7 +125,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -111,6 +142,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "刘志茂",
           "陈平安",
           "宁姚"
         ],
@@ -173,7 +205,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.396402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -296,7 +328,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.396402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -337,6 +369,22 @@
       },
       {
         "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "虽然这段日子里，陈平安不曾流露出什么异样情绪，但是陆道长临行前的泄露天机，将云霞山蔡金简的阴毒手段一一道破，仍是让这位少年倍感沉重。 有一件事情，陈平安对陆道长和宁姑娘都不曾提及，那就是在蔡金简对他一戳眉心和一拍心口之后，少年当时在泥瓶巷子里，就已经隐隐约约感受到身体的不对劲，所以他才会在自家院门口停留那么长时间，为的就是让自己下定决心，大不了破罐子破摔，也要跟蔡金简拼命。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "juan_index": 42,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -361,7 +409,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -372,16 +421,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十二章 天才 · 陈平安与陆沉在泥瓶巷指点",
+        "name": "第一卷笼中雀 第四十二章 天才 · 蔡金简与陈平安在泥瓶巷指点",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陈平安",
-          "陆沉"
+          "蔡金简",
+          "陈平安"
         ],
         "description": "虽然这段日子里，陈平安不曾流露出什么异样情绪，但是陆道长临行前的泄露天机，将云霞山蔡金简的阴毒手段一一道破，仍是让这位少年倍感沉重。 有一件事情，陈平安对陆道长和宁姑娘都不曾提及，那就是在蔡金简对他一戳眉心和一拍心口之后，少年当时在泥瓶巷子里，就已经隐隐约约感受到身体的不对劲，所以他才会在自家院门口停留那么长时间，为的就是让自己下定决心，大不了破罐子破摔，也要跟蔡金简拼命。 毕竟那时候的陈平安，按照年轻道人陆沉的说法，就是太死气沉沉了，完全不像一个本该朝气勃勃的少年，对于生死之事，陈平安当时看得比绝大多数人都要轻。",
         "background": "",
-        "significance": "在泥瓶巷推动陈平安与陆沉之间的指点线。",
+        "significance": "在泥瓶巷推动蔡金简与陈平安之间的指点线。",
         "related_action_indices": [
           0
         ],
@@ -402,30 +451,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "蔡金简"
         ],
         "to_roles": [
-          "陆沉"
+          "陈平安"
         ],
         "action": "指点",
-        "context": "虽然这段日子里，陈平安不曾流露出什么异样情绪，但是陆道长临行前的泄露天机，将云霞山蔡金简的阴毒手段一一道破，仍是让这位少年倍感沉重。 有一件事情，陈平安对陆道长和宁姑娘都不曾提及，那就是在蔡金简对他一戳眉心和一拍心口之后，少年当时在泥瓶巷子里，就已经隐隐约约感受到身体的不对劲，所以他才会在自家院门口停留那么长时间，为的就是让自己下定决心，大不了破罐子破摔，也要跟蔡金简拼命。 毕竟那时候的陈平安，按照年轻道人陆沉的说法，就是太死气沉沉了，完全不像一个本该朝气勃勃的少年，对于生死之事，陈平安当时看得比绝大多数人都要轻。 蔡金简以武道手段“指点”，让草鞋少年强行开窍，使得陈平安的身体，就像一座没有院门屋门的宅子，确实可以搬进、吸纳更多物件，但是每逢风雪雨水天气，宅子便会垮得会格外厉害、迅速。 所以陆沉才会断言，如无例外，没有大病大灾的话，陈平安也只能够活到三四十岁。 之后她在陈平安心口一拍，坏了他的修行根本，心为修行之人的重镇要隘，城门塌陷后，蔡金简等于几乎封死了这处关隘的正常运转，这不单单是断绝了陈平安的修行大道，也愈发加速了陈平安身躯腐朽的速度。",
+        "context": "蔡金简以武道手段“指点”，让草鞋少年强行开窍，使得陈平安的身体，就像一座没有院门屋门的宅子，确实可以搬进、吸纳更多物件，但是每逢风雪雨水天气，宅子便会垮得会格外厉害、迅速。",
         "result": null,
-        "event_name": "第一卷笼中雀 第四十二章 天才 · 陈平安与陆沉在泥瓶巷指点",
+        "event_name": "第一卷笼中雀 第四十二章 天才 · 蔡金简与陈平安在泥瓶巷指点",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 42,
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.396402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -446,6 +490,19 @@
       "走在错误的方向上，你越聪明越努力，只会做越多错越多。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简这先后两手，真正可怕之处，在于门户大开之后，一方面陈平安已经无法修行长生之法，就意味着无法以术法神通去弥补门户，无法培本固元，另一方面，哪怕少年侥幸在武学登堂入室，的确能够依靠淬炼体魄来强身健体，但是对陈平安而言，巨大风险将会一直伴随着机遇，一着不慎，就会身陷“练外家拳容易招邪”的怪圈，就又是延年益寿不成、反而早夭的可怜下场。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 42,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -479,16 +536,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十二章 天才 · 陈平安与宁姚剧情推进",
+        "name": "第一卷笼中雀 第四十二章 天才 · 陈平安与蔡金简剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "蔡金简",
           "宁姚"
         ],
         "description": "蔡金简这先后两手，真正可怕之处，在于门户大开之后，一方面陈平安已经无法修行长生之法，就意味着无法以术法神通去弥补门户，无法培本固元，另一方面，哪怕少年侥幸在武学登堂入室，的确能够依靠淬炼体魄来强身健体，但是对陈平安而言，巨大风险将会一直伴随着机遇，一着不慎，就会身陷“练外家拳容易招邪”的怪圈，就又是延年益寿不成、反而早夭的可怜下场。 当务之急，陈平安是需要一门能够细水流长、滋养元气的武学，这门武学是不是招式凌厉、霸道绝伦，是不是让人武道境界一日千里，反而不重要。 陈平安的希望，全部在宁姚看不上眼的那部撼山谱当中，比如她说过，走桩之后还有站桩“剑炉”，和睡桩“千秋”。",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的剧情推进关系。",
+        "significance": "推动陈平安与蔡金简之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十二章 天才 · 段4",
         "sentence_indexes_in_segment": [
@@ -504,7 +562,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.396402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -629,7 +687,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.397405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -751,7 +809,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.397405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -864,7 +922,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.397405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -955,7 +1013,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.397405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1032,7 +1090,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.397405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1124,7 +1182,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.397405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1228,7 +1286,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.398409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1345,7 +1403,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.398409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1450,7 +1508,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.398409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1573,7 +1631,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.397310",
+    "extracted_at": "2026-03-25T01:03:30.398409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1682,7 +1740,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.398409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1832,7 +1890,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.398409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1913,7 +1971,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.399412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2018,7 +2076,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.399412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2080,7 +2138,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.399412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2157,7 +2215,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.399412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2235,7 +2293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.398314",
+    "extracted_at": "2026-03-25T01:03:30.399412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

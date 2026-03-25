@@ -71,7 +71,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "extracted_at": "2026-03-25T01:03:30.560470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -92,6 +92,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "“选中你作为我的主人，你今后不可因为此事而骄傲自满，也绝不可妄自菲薄，八千年岁月，我见识过太多惊才绝艳的天之骄子，最近一些的，例如曹曦谢实，以及马苦玄等人，都不曾入我之眼，所以选中你，自然不是大限将至，迫于无奈的选择。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 85,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "马苦玄",
@@ -124,16 +137,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十五章 大考落幕 · 马苦玄在泥瓶巷冲突",
+        "name": "第二卷山水郎 第八十五章 大考落幕 · 谢实与马苦玄在泥瓶巷冲突",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "谢实",
           "马苦玄"
         ],
         "description": "“选中你作为我的主人，你今后不可因为此事而骄傲自满，也绝不可妄自菲薄，八千年岁月，我见识过太多惊才绝艳的天之骄子，最近一些的，例如曹曦谢实，以及马苦玄等人，都不曾入我之眼，所以选中你，自然不是大限将至，迫于无奈的选择。 “虽然暂时无法随你征战厮杀，可见面礼还是有的，三千年之前那场屠龙大战，我闲来无事，就看着他们小孩子打架，热闹倒是热闹，东西丢了一地，我就捡了一块品相不错的白玉牌，看着比较素雅顺眼而已，并无雕饰，小巧玲珑，可以用来收纳物件，属于有些岁数的咫尺之物了，比起如今风靡天下的方寸武库、方寸剑冢之流，要品秩更高，空间大小如你泥瓶巷祖宅差不多，而且不用悬佩示人，可以温养在窍穴当中，我已经让你跟它神意相同，你手触一物，只需心意一动，就能纳那块玉牌所在的窍穴当中，除非飞升境修士以强力破开，否则不会折损丝毫。 ”",
         "background": "",
-        "significance": "对应马苦玄在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动谢实与马苦玄之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第八十五章 大考落幕 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -147,8 +163,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "马苦玄"
+        ],
+        "action": "会见",
+        "context": "” “选中你作为我的主人，你今后不可因为此事而骄傲自满，也绝不可妄自菲薄，八千年岁月，我见识过太多惊才绝艳的天之骄子，最近一些的，例如曹曦谢实，以及马苦玄等人，都不曾入我之眼，所以选中你，自然不是大限将至，迫于无奈的选择。 ” “虽然暂时无法随你征战厮杀，可见面礼还是有的，三千年之前那场屠龙大战，我闲来无事，就看着他们小孩子打架，热闹倒是热闹，东西丢了一地，我就捡了一块品相不错的白玉牌，看着比较素雅顺眼而已，并无雕饰，小巧玲珑，可以用来收纳物件，属于有些岁数的咫尺之物了，比起如今风靡天下的方寸武库、方寸剑冢之流，要品秩更高，空间大小如你泥瓶巷祖宅差不多，而且不用悬佩示人，可以温养在窍穴当中，我已经让你跟它神意相同，你手触一物，只需心意一动，就能纳那块玉牌所在的窍穴当中，除非飞升境修士以强力破开，否则不会折损丝毫。 坏消息就是唯有等你跻身中五境修士，才能驾驭使用玉佩。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第八十五章 大考落幕 · 谢实与马苦玄在泥瓶巷冲突",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 85,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.560470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -202,16 +244,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "陈平安怔怔出神。 自己不过是想要离开小镇之前，能够回到自己家里点灯熬到天明，为的是提前补上，今年大年三十那次注定无法做到的守岁。 陈平安头大如斗。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第八十五章 大考落幕 · 段3",
         "sentence_indexes_in_segment": [
@@ -227,7 +269,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "extracted_at": "2026-03-25T01:03:30.560470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -280,6 +322,19 @@
       },
       {
         "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "宁姚曾经无意间说过，打坏一个人的根骨窍穴很容易，就像蔡金简这样“指点”陈平安，强行为他开窍，但想要重塑完整体魄，尤其是适合修行的身躯，比登天还难。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 85,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "其实陈平安最怕的地方，在于答应李宝瓶护送她去山崖书院，必然路途遥远，自己能不能活着回到家乡还难说，怎么就又多出一个百年之约？",
@@ -319,6 +374,7 @@
         "participants": [
           "宁姚",
           "陈平安",
+          "蔡金简",
           "李宝瓶"
         ],
         "description": "别说练气士中五境和十楼，陈平安当下这副身体已经八面漏风，就像风雨飘摇里的破败茅屋，藏风聚气何其难，所以如何修行练气当神仙？ 陈平安不但注定无法修行，而且想要活命，还需要靠练拳来滋养体魄才行。 宁姚曾经无意间说过，打坏一个人的根骨窍穴很容易，就像蔡金简这样“指点”陈平安，强行为他开窍，但想要重塑完整体魄，尤其是适合修行的身躯，比登天还难。",
@@ -326,7 +382,8 @@
         "significance": "引入陈平安后续最关键的人物关系线。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2
         ],
         "source": "第二卷山水郎 第八十五章 大考落幕 · 段4",
         "sentence_indexes_in_segment": [
@@ -342,6 +399,26 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "指点",
+        "context": "宁姚曾经无意间说过，打坏一个人的根骨窍穴很容易，就像蔡金简这样“指点”陈平安，强行为他开窍，但想要重塑完整体魄，尤其是适合修行的身躯，比登天还难。",
+        "result": null,
+        "event_name": "宁姚坠入小镇",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 85,
+        "segment_index": 4
+      },
       {
         "time": null,
         "from_roles": [
@@ -383,7 +460,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -447,7 +524,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -511,7 +588,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -672,7 +749,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.532775",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -752,7 +829,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -863,17 +940,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "李宝瓶"
         ],
         "description": "陈平安点燃三炷香后，面朝坟头拜了三拜，然后插在坟头之前，这才打开那壶酒，轻轻倒在身前。 最后陈平安站起身，闭上眼睛双手合十，跟爹娘他们说着心里话。 比如这次带着叫李宝瓶的红棉袄小姑娘，一起出门远游，不知道要离开家乡几千几万里。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0
         ],
@@ -902,7 +979,7 @@
         "action": "同行",
         "context": "陈平安点燃三炷香后，面朝坟头拜了三拜，然后插在坟头之前，这才打开那壶酒，轻轻倒在身前。 最后陈平安站起身，闭上眼睛双手合十，跟爹娘他们说着心里话。 比如这次带着叫李宝瓶的红棉袄小姑娘，一起出门远游，不知道要离开家乡几千几万里。 一位清秀少年站在路旁小庙之中，抬头望着墙壁上一个个用炭笔写就的名字，密密麻麻，歪歪扭扭，大大小小。 可能在小镇百姓眼中，那些小孩子的玩闹不值一提，可是在此时少年眼中，就像一条历史岁月里的璀璨银河。 位于东宝瓶洲大骊版图上空的骊珠洞天，是三十六小洞天最小的一个，千里山河而已，如果没有术法禁制，对于御风凌空的练气士而言，那点风景真不够看。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -917,7 +994,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1045,7 +1122,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.561473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1167,7 +1244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1307,7 +1384,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1426,7 +1503,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1525,7 +1602,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1645,7 +1722,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.533778",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1728,7 +1805,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1891,7 +1968,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.562477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1999,7 +2076,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2080,7 +2157,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2177,7 +2254,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2288,7 +2365,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2381,7 +2458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2446,7 +2523,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2583,7 +2660,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.563481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2784,7 +2861,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.564483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2893,7 +2970,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.564483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3004,7 +3081,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.534781",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3171,7 +3248,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.536272",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3287,7 +3364,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3408,7 +3485,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3520,7 +3597,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3603,7 +3680,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3701,7 +3778,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.565487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3776,7 +3853,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3838,7 +3915,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3931,7 +4008,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4036,7 +4113,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.536284",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4166,7 +4243,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4270,7 +4347,7 @@
         "segment_index": 39
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4374,7 +4451,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4474,7 +4551,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.566491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4555,7 +4632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4711,7 +4788,7 @@
         "segment_index": 43
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4817,7 +4894,7 @@
         "segment_index": 44
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4881,7 +4958,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4983,7 +5060,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5079,7 +5156,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5207,7 +5284,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.537273",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5288,7 +5365,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.567494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5372,7 +5449,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5476,7 +5553,7 @@
         "segment_index": 51
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5586,7 +5663,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5680,7 +5757,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5782,7 +5859,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5889,7 +5966,7 @@
         "segment_index": 55
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6023,7 +6100,7 @@
         "segment_index": 56
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6106,7 +6183,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.568497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6171,7 +6248,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.538276",
+    "extracted_at": "2026-03-25T01:03:30.569501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6233,7 +6310,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.539280",
+    "extracted_at": "2026-03-25T01:03:30.569501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6295,7 +6372,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.539280",
+    "extracted_at": "2026-03-25T01:03:30.569501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

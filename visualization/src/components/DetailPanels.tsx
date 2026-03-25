@@ -638,3 +638,128 @@ export function RelationDetail({
     </div>
   );
 }
+
+interface NetworkRoleRelationGroup {
+  counterpartId: string;
+  counterpartName: string;
+  relations: RoleLinkUnified[];
+  totalWeight: number;
+  actionTypes: string[];
+  sourceUnits: number[];
+  earliestProgress: number | null;
+}
+
+interface NetworkRoleRelationsDetailProps {
+  role: RoleNodeUnified | null;
+  relationGroups: NetworkRoleRelationGroup[];
+  onClose: () => void;
+  onRelationClick?: (sourceId: string, targetId: string) => void;
+  onEntityClick?: (entityName: string) => void;
+  kb: UnifiedKnowledgeBase | null;
+}
+
+export function NetworkRoleRelationsDetail({
+  role,
+  relationGroups,
+  onClose,
+  onRelationClick,
+  onEntityClick,
+  kb,
+}: NetworkRoleRelationsDetailProps) {
+  if (!role) return null;
+
+  const unitLabel = kb?.unit_label ?? '章节';
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={onClose}>
+      <div
+        className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 p-6 max-h-[80vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex justify-between items-start mb-4">
+          <div>
+            <h2 className="text-xl font-bold text-[#8b4513]">{role.name}的人物关系</h2>
+            <p className="text-sm text-gray-500 mt-1">
+              当前范围内共 {relationGroups.length} 个关系对象，优先列出和他直接形成关系边的人物。
+            </p>
+          </div>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl leading-none">
+            ×
+          </button>
+        </div>
+
+        <div className="space-y-3">
+          {relationGroups.length > 0 ? (
+            relationGroups.map((group) => (
+              <div key={`${role.id}-${group.counterpartId}`} className="rounded-xl border border-[#d4c5b5] bg-[#faf8f5] p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <button
+                      onClick={() => onRelationClick?.(role.id, group.counterpartId)}
+                      className="text-left text-lg font-semibold text-[#5d2e0c] hover:underline"
+                    >
+                      {role.name} × {group.counterpartName}
+                    </button>
+                    <div className="mt-2 flex flex-wrap gap-2 text-xs">
+                      <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white">
+                        关系记录 {group.relations.length}
+                      </span>
+                      <span className="px-2 py-1 rounded-full bg-[#d4a574] text-white">
+                        互动权重 {group.totalWeight}
+                      </span>
+                      {group.earliestProgress !== null && (
+                        <span className="px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513]">
+                          最早进度 {group.earliestProgress}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-end gap-2">
+                    <button
+                      onClick={() => onRelationClick?.(role.id, group.counterpartId)}
+                      className="px-3 py-2 rounded-lg bg-[#8b4513] text-white text-sm hover:bg-[#6e360f] transition-colors"
+                    >
+                      查看关系详情
+                    </button>
+                    <button
+                      onClick={() => {
+                        onClose();
+                        onEntityClick?.(group.counterpartName);
+                      }}
+                      className="text-xs text-[#8b4513] hover:underline"
+                    >
+                      在图中聚焦 {group.counterpartName}
+                    </button>
+                  </div>
+                </div>
+
+                {group.actionTypes.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {group.actionTypes.map((type) => (
+                      <span
+                        key={`${group.counterpartId}-${type}`}
+                        className="px-2 py-1 rounded-full border border-[#d4a574] bg-white text-xs text-[#8b4513]"
+                      >
+                        {type}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {group.sourceUnits.length > 0 && (
+                  <div className="mt-3 text-sm text-gray-600">
+                    出现{unitLabel}：{formatUnitSpan(group.sourceUnits, unitLabel)}
+                  </div>
+                )}
+              </div>
+            ))
+          ) : (
+            <div className="rounded-xl border border-[#d4c5b5] bg-[#faf8f5] p-4 text-sm text-gray-500">
+              当前范围内，这个人物还没有形成可展示的关系边。
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}

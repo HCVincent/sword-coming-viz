@@ -45,6 +45,20 @@
       },
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安神游万里，突然想起崔东山说起过宋集薪的事情，站起身，拿出宋集薪离开小镇之际，偷偷丢在自家院子的那串钥匙，跑去打开隔壁宅子的院门屋门，果然在书房桌上看到三本叠放的书籍，《小学》，《礼乐》，《观止》。 这趟远游求学的后半段，跟崔东山同行，经常会听他诵读经典，才知道《小学》的不简单，只看书名，乍看之下，可能觉得这就是一门“很小的学问”，可按照崔东山闲聊时的说法，在世俗学塾和教书先生之中，《小学》绝不会被当做蒙学典籍，大概也只有齐先生能够将这么艰深晦涩的圣贤心血，传道解惑得如此深入浅出，以至于李宝瓶他们从没觉得那部《小学》之大。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -113,6 +127,7 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
+          "崔东山",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -130,7 +145,7 @@
         "participants": [
           "陈平安",
           "宋集薪",
-          "齐静春",
+          "崔东山",
           "李宝瓶"
         ],
         "description": "陈平安回到泥瓶巷祖宅的时候，粉裙女童在拎着扫帚打扫院子，青衣小童趴在小水缸边沿上，对着水面张大嘴巴，还隔着两尺距离，却有一条水柱逆流而上，被吸入青衣小童的嘴里，这幅画面，如龙汲水。 陈平安坐在门槛上，粉裙女童发现自家老爷有些异样，善解人意地开没有开口打扰。 其实院子早就被阮秀清扫得很干净，只是粉裙女童总觉得如果不做点什么，就会良心难安，对不住老爷慷慨馈赠的蛇胆石。",
@@ -138,7 +153,8 @@
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2
         ],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段1",
         "sentence_indexes_in_segment": [
@@ -154,6 +170,26 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "别离",
+        "context": "陈平安神游万里，突然想起崔东山说起过宋集薪的事情，站起身，拿出宋集薪离开小镇之际，偷偷丢在自家院子的那串钥匙，跑去打开隔壁宅子的院门屋门，果然在书房桌上看到三本叠放的书籍，《小学》，《礼乐》，《观止》。",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 182,
+        "segment_index": 1
+      },
       {
         "time": null,
         "from_roles": [
@@ -177,7 +213,7 @@
       {
         "time": null,
         "from_roles": [
-          "齐静春"
+          "崔东山"
         ],
         "to_roles": [
           "李宝瓶"
@@ -195,7 +231,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.944399",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -423,7 +459,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -590,7 +626,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -683,7 +719,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -777,7 +813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -839,7 +875,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -982,7 +1018,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1044,7 +1080,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.945402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1077,20 +1113,34 @@
         ],
         "juan_index": 182,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣略带愧疚道：“我忘记说了，先前送你那些书，书页空白处，多有我个人感悟的注解和疑问，墨批为一些粗浅的注疏心得，朱批则是一些很希望当面询问圣贤的问题。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 182,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安揭示",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安与李希圣揭示",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "陈平安已经揭开谜底，生怕青衣小童闹出幺蛾子，走到院门口。 ” “李大哥，你怎么来了？",
+        "description": "陈平安已经揭开谜底，生怕青衣小童闹出幺蛾子，走到院门口。 李希圣略带愧疚道：“我忘记说了，先前送你那些书，书页空白处，多有我个人感悟的注解和疑问，墨批为一些粗浅的注疏心得，朱批则是一些很希望当面询问圣贤的问题。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "推动陈平安与李希圣之间的揭示关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段9",
         "sentence_indexes_in_segment": [
@@ -1106,7 +1156,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.808886",
+    "extracted_at": "2026-03-25T01:03:30.946406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1139,20 +1189,34 @@
         ],
         "juan_index": 182,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣笑着转头望向青衣小童，轻声道：“开玩笑没关系，但是切记言多必失。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 182,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "陈平安点头道：“我记下了。 ” ”",
+        "description": "陈平安点头道：“我记下了。 李希圣笑着转头望向青衣小童，轻声道：“开玩笑没关系，但是切记言多必失。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段10",
         "sentence_indexes_in_segment": [
@@ -1168,7 +1232,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.809890",
+    "extracted_at": "2026-03-25T01:03:30.946406",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "182-11-0": {
+    "juan_index": 182,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十二章 道理就在剑鞘里",
+    "source_sentences": [
+      "大道就在其中。",
+      "”",
+      "青衣小童仰着头目不转睛，盯着这个莫名其妙跑出来的读书人，一肚子冷嘲热讽，就是没有脱口而出，忍得有点辛苦。",
+      "如果不是在铁匠铺子那边刚刚吃过苦头，青衣小童都想开口询问你这家伙如此好为人师，怎么不去儒家当学宫书院当圣人啊？",
+      "李希圣仿佛一眼看穿了青衣小童的想法，甚至直接听到了他的心声，笑容和煦，耐心解释道：道：“佛家有次第之说，道家有长生桥一阶阶、登天梯一步步的讲法，我们儒家则有循序渐进的规矩，所以我得先参加科举，至于以后能否成为儒家圣人，太过遥远，不敢奢望。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣仿佛一眼看穿了青衣小童的想法，甚至直接听到了他的心声，笑容和煦，耐心解释道：道：“佛家有次第之说，道家有长生桥一阶阶、登天梯一步步的讲法，我们儒家则有循序渐进的规矩，所以我得先参加科举，至于以后能否成为儒家圣人，太过遥远，不敢奢望。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 182,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣仿佛一眼看穿了青衣小童的想法，甚至直接听到了他的心声，笑容和煦，耐心解释道：道：“佛家有次第之说，道家有长生桥一阶阶、登天梯一步步的讲法，我们儒家则有循序渐进的规矩，所以我得先参加科举，至于以后能否成为儒家圣人，太过遥远，不敢奢望。 大道就在其中。 ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.946406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1224,15 +1350,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安在龙泉对话",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安"
         ],
         "description": "青衣小童如丧考妣，不敢再看那个读书人，只是转过头，求助地望向陈平安，神色凄凉，生无可恋，竟是一个字都不敢说了。 感觉像是在跟自家老爷诉苦，这龙泉郡，实在太可怕了，随随便便一个人走过来坐在竹椅上，就是个兵家圣人，又随随便便一个人跑来站在巷子里，就是能看穿自己心思的儒家君子？ 贤人？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段12",
         "sentence_indexes_in_segment": [
@@ -1248,7 +1375,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.809890",
+    "extracted_at": "2026-03-25T01:03:30.946406",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "182-13-0": {
+    "juan_index": 182,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十二章 道理就在剑鞘里",
+    "source_sentences": [
+      "”",
+      "李希圣略微惊讶，望向娇小可爱的粉裙女童，心中有所了然，流露出一丝赞赏，这位李家读书人弯下腰，对着她眨了眨眼睛，轻轻放低嗓音，半真半假道：“因为在某时某刻，某些文字被某些圣人偷偷借走了呀。",
+      "”",
+      "粉裙女童有些生气，她在书籍学问一事上，会有一种特别的执拗，竟是破天荒教训起了别人，“先生若是不知道正确答案，就不要胡乱解惑，天底下哪里会有这种不可理喻的事情！",
+      "知之为知之不知为不知，是知也……”",
+      "越往后，粉裙女童气势越弱，嗓音越来越低，以至于最后细弱蚊蝇，恐怕连她自己都听不见了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣略微惊讶，望向娇小可爱的粉裙女童，心中有所了然，流露出一丝赞赏，这位李家读书人弯下腰，对着她眨了眨眼睛，轻轻放低嗓音，半真半假道：“因为在某时某刻，某些文字被某些圣人偷偷借走了呀。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 182,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣略微惊讶，望向娇小可爱的粉裙女童，心中有所了然，流露出一丝赞赏，这位李家读书人弯下腰，对着她眨了眨眼睛，轻轻放低嗓音，半真半假道：“因为在某时某刻，某些文字被某些圣人偷偷借走了呀。 ” ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.946406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1283,6 +1472,21 @@
         ],
         "juan_index": 182,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "陈平安笑着拍了拍粉裙女童的小脑袋，对李希圣说道：“李大哥，别生气，她一般情况不这样的。 李希圣爽朗大笑，开怀道：“这样才好。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 182,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -1294,7 +1498,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -1305,16 +1510,20 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安在泥瓶巷对话",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安与李希圣在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "陈平安笑着拍了拍粉裙女童的小脑袋，对李希圣说道：“李大哥，别生气，她一般情况不这样的。 听说陈平安要去往别处，李希圣就跟着一起离开泥瓶巷。 陈平安突然发现前方巷子里，站着一个双手负后的年轻……剑客？",
+        "description": "陈平安笑着拍了拍粉裙女童的小脑袋，对李希圣说道：“李大哥，别生气，她一般情况不这样的。 李希圣爽朗大笑，开怀道：“这样才好。 听说陈平安要去往别处，李希圣就跟着一起离开泥瓶巷。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动陈平安与李希圣之间的对话线。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1328,8 +1537,49 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.810760",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "陈平安笑着拍了拍粉裙女童的小脑袋，对李希圣说道：“李大哥，别生气，她一般情况不这样的。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安与李希圣在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 182,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "同行",
+        "context": "听说陈平安要去往别处，李希圣就跟着一起离开泥瓶巷。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安与李希圣在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 182,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.946406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1392,7 +1642,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.810760",
+    "extracted_at": "2026-03-25T01:03:30.946406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1465,15 +1715,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安在大骊对话",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "大骊",
+        "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安"
         ],
         "description": "陈平安脸色看不出丝毫变化，问道：“怎么了，房子破了，不应该修吗？ 年轻剑客摇头笑道：“修得好不好，且不去说，但是‘太岁头上动土’这个说法，在你们大骊龙泉郡，有没有的？ 虽然那个年轻剑客一直在笑，可是陈平安一点都不敢掉以轻心，甚至觉得心头直冒寒气。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段16",
         "sentence_indexes_in_segment": [
@@ -1489,7 +1740,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.810760",
+    "extracted_at": "2026-03-25T01:03:30.946406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1512,6 +1763,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣突然一步跨出，伸手拦住身后的陈平安三人，轻声道：“站在我身后，接下来不要说不要做，看着就是了。 李希圣笑道：“道理可以好好讲，剑，不要随便出鞘。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "李希圣突然一步跨出，伸手拦住身后的陈平安三人，轻声道：“站在我身后，接下来不要说不要做，看着就是了。 年轻剑客笑意更浓，双手扶住长短不一的佩剑剑柄，摇了摇脑袋，试图寻找青衫读书人身后的陈平安，最后站定，“怎么，这么巧，刚好被我遇到正主啦？",
@@ -1528,16 +1793,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安对话",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "李希圣",
           "陈平安"
         ],
-        "description": "李希圣突然一步跨出，伸手拦住身后的陈平安三人，轻声道：“站在我身后，接下来不要说不要做，看着就是了。 年轻剑客笑意更浓，双手扶住长短不一的佩剑剑柄，摇了摇脑袋，试图寻找青衫读书人身后的陈平安，最后站定，“怎么，这么巧，刚好被我遇到正主啦？ ”",
+        "description": "李希圣突然一步跨出，伸手拦住身后的陈平安三人，轻声道：“站在我身后，接下来不要说不要做，看着就是了。 年轻剑客笑意更浓，双手扶住长短不一的佩剑剑柄，摇了摇脑袋，试图寻找青衫读书人身后的陈平安，最后站定，“怎么，这么巧，刚好被我遇到正主啦？ 李希圣笑道：“道理可以好好讲，剑，不要随便出鞘。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动李希圣与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1551,8 +1819,220 @@
         "segment_index": 17
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "李希圣突然一步跨出，伸手拦住身后的陈平安三人，轻声道：“站在我身后，接下来不要说不要做，看着就是了。 ” 年轻剑客笑意更浓，双手扶住长短不一的佩剑剑柄，摇了摇脑袋，试图寻找青衫读书人身后的陈平安，最后站定，“怎么，这么巧，刚好被我遇到正主啦？ 至于你，是想要做什么，找死？ ” 李希圣笑道：“道理可以好好讲，剑，不要随便出鞘。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.947409",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "182-18-0": {
+    "juan_index": 182,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十二章 道理就在剑鞘里",
+    "source_sentences": [
+      "”",
+      "年轻剑客耸耸肩，一脸无辜笑容，“可在下的道理，就在剑鞘里啊。",
+      "”",
+      "李希圣云淡风轻地哦了一声，伸手指了指自己，恍然道：“原来醉翁之意不在酒，在我？",
+      "”",
+      "年轻剑客笑道：“没你想的那么复杂，我连你姓甚名甚都不知道。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣云淡风轻地哦了一声，伸手指了指自己，恍然道：“原来醉翁之意不在酒，在我？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 182,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣云淡风轻地哦了一声，伸手指了指自己，恍然道：“原来醉翁之意不在酒，在我？ ” 年轻剑客耸耸肩，一脸无辜笑容，“可在下的道理，就在剑鞘里啊。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 18
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.810760",
+    "extracted_at": "2026-03-25T01:03:30.947409",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "182-19-0": {
+    "juan_index": 182,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十二章 道理就在剑鞘里",
+    "source_sentences": [
+      "我只是第一眼看到你，就不顺眼，听了你一通胡说八道之后，更加不舒服了。",
+      "刚好歪打正着，一箭双雕，连你和那个小家伙一起教训了，岂不美哉？",
+      "”",
+      "年轻剑客手心抵住短剑的剑柄，笑道：“放心，我曹峻出剑，很少杀人。",
+      "”",
+      "李希圣皱眉问道：“你家先祖是剑仙曹曦？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣皱眉问道：“你家先祖是剑仙曹曦？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣皱眉问道：“你家先祖是剑仙曹曦？ 我只是第一眼看到你，就不顺眼，听了你一通胡说八道之后，更加不舒服了。 刚好歪打正着，一箭双雕，连你和那个小家伙一起教训了，岂不美哉？",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.947409",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "182-21-0": {
+    "juan_index": 182,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十二章 道理就在剑鞘里",
+    "source_sentences": [
+      "不过你们放心，关于剑胚，我会出价的，而且价格绝对不低。",
+      "至于你们会不会觉得强买强卖，就不关我的事情了。",
+      "”",
+      "李希圣问道：“在你准备动手之前，我能否问你一句，你如今的境界是？",
+      "”",
+      "“哪有打架之前问这个的，不过你既然这么有趣，我还真就不介意回答你。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣问道：“在你准备动手之前，我能否问你一句，你如今的境界是？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 182,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣问道：“在你准备动手之前，我能否问你一句，你如今的境界是？ 不过你们放心，关于剑胚，我会出价的，而且价格绝对不低。 至于你们会不会觉得强买强卖，就不关我的事情了。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.947409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1575,6 +2055,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣点点头，“知道了。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 182,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安袖中的那块剑胚，逐渐滚烫起来，陈平安把左手绕到背后，拧转手腕，死死握住它。",
@@ -1590,16 +2083,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣与陈平安讥讽",
         "time": null,
         "location": null,
         "participants": [
+          "李希圣",
           "陈平安"
         ],
-        "description": "陈平安袖中的那块剑胚，逐渐滚烫起来，陈平安把左手绕到背后，拧转手腕，死死握住它。 ”年轻剑客眯眼成缝，嗤笑出声，言语轻佻的他在提及剑道和境界的时候，一下子变得惜字如金，“剑，八，九，之间。 ”",
+        "description": "李希圣点点头，“知道了。 陈平安袖中的那块剑胚，逐渐滚烫起来，陈平安把左手绕到背后，拧转手腕，死死握住它。 ”年轻剑客眯眼成缝，嗤笑出声，言语轻佻的他在提及剑道和境界的时候，一下子变得惜字如金，“剑，八，九，之间。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动李希圣与陈平安之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -1613,8 +2109,34 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "讥讽",
+        "context": "”年轻剑客眯眼成缝，嗤笑出声，言语轻佻的他在提及剑道和境界的时候，一下子变得惜字如金，“剑，八，九，之间。 ” 李希圣点点头，“知道了。 ” 陈平安袖中的那块剑胚，逐渐滚烫起来，陈平安把左手绕到背后，拧转手腕，死死握住它。 ————",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 李希圣与陈平安讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.947409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1694,7 +2216,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.947409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1729,6 +2251,19 @@
         ],
         "juan_index": 182,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "阮邛点点头，泄露天机道：“他祖辈中出过一个名叫曹曦的剑仙，跟你的老祖宗谢实，算是咱们宝瓶洲屈指可数的人物，在别的大洲，都能站稳脚跟，开宗立派，割据一方，确实了得。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 182,
+        "segment_index": 24
       }
     ],
     "locations": [
@@ -1740,7 +2275,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -1751,16 +2287,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 阮邛在宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 阮邛与谢实在宝瓶洲冲突",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "阮邛"
+          "阮邛",
+          "谢实"
         ],
         "description": "阮邛点点头，泄露天机道：“他祖辈中出过一个名叫曹曦的剑仙，跟你的老祖宗谢实，算是咱们宝瓶洲屈指可数的人物，在别的大洲，都能站稳脚跟，开宗立派，割据一方，确实了得。 长眉少年看着那个悬佩长短剑的年轻男子，伸手指了指，“师父，是他吗？ ”",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动阮邛与谢实之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1774,8 +2313,34 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "冲突",
+        "context": "长眉少年看着那个悬佩长短剑的年轻男子，伸手指了指，“师父，是他吗？ ” 阮邛点点头，泄露天机道：“他祖辈中出过一个名叫曹曦的剑仙，跟你的老祖宗谢实，算是咱们宝瓶洲屈指可数的人物，在别的大洲，都能站稳脚跟，开宗立派，割据一方，确实了得。 ” 长眉少年对此似乎不太感兴趣，只是盯着河水上的画面，“师父，怎么说？ 你要不要阻拦那个曹氏子弟。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 阮邛与谢实在宝瓶洲冲突",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 182,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.947409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1816,7 +2381,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 阮邛对话",
+        "name": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 阮邛冲突",
         "time": null,
         "location": null,
         "participants": [
@@ -1824,7 +2389,7 @@
         ],
         "description": "阮邛冷笑道：“等他打伤了人，我就打死他，这才合规矩。 长眉少年问过了这场冲突的原因，阮邛大略说过之后，少年讶异道：“在师父你的眼皮子底下，那曹峻见财起意，还敢强买强卖，外边的人，都这么蛮横无理吗？ ”",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
+        "significance": "对应阮邛在叙事中的关键冲突节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十二章 道理就在剑鞘里 · 段25",
         "sentence_indexes_in_segment": [
@@ -1840,7 +2405,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.947409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1904,7 +2469,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.948413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1968,7 +2533,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.948413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2051,7 +2616,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.948413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2212,7 +2777,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.948413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2312,7 +2877,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.948413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2408,7 +2973,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.811268",
+    "extracted_at": "2026-03-25T01:03:30.948413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

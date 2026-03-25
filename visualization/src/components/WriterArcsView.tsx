@@ -1,5 +1,10 @@
 import { useMemo, useState } from 'react';
-import type { WriterCharacterArc, WriterCuratedRelationship, WriterSeasonOverview } from '../types/writerInsights';
+import type {
+  WriterCharacterArc,
+  WriterCuratedRelationship,
+  WriterInsightEventRef,
+  WriterSeasonOverview,
+} from '../types/writerInsights';
 
 interface WriterArcsViewProps {
   seasonOverviews: WriterSeasonOverview[];
@@ -11,6 +16,18 @@ interface WriterArcsViewProps {
   onEventClick?: (eventId: string) => void;
   onLocationClick?: (locationName: string) => void;
   onRelationClick?: (sourceId: string, targetId: string) => void;
+}
+
+function joinNames(items: string[], fallback = '待补充'): string {
+  return items.length > 0 ? items.join('、') : fallback;
+}
+
+function renderEventMeta(event: WriterInsightEventRef): string {
+  const parts = [event.season_name ?? '当前范围', `章节 ${event.unit_index ?? '—'}`];
+  if (event.location) {
+    parts.push(event.location);
+  }
+  return parts.join(' · ');
 }
 
 export function WriterArcsView({
@@ -25,13 +42,17 @@ export function WriterArcsView({
   onRelationClick,
 }: WriterArcsViewProps) {
   const [searchQuery, setSearchQuery] = useState('');
+
   const spotlightArc = useMemo(
     () => arcs.find((arc) => arc.spotlight || (spotlightRoleName ? arc.role_name === spotlightRoleName : false)) ?? null,
     [arcs, spotlightRoleName]
   );
+
   const spotlightRelationships = useMemo(() => {
     const spotlightName = spotlightArc?.role_name ?? spotlightRoleName ?? null;
-    if (!spotlightName) return curatedRelationships.slice(0, 6);
+    if (!spotlightName) {
+      return curatedRelationships.slice(0, 6);
+    }
     return curatedRelationships
       .filter(
         (relationship) =>
@@ -41,8 +62,10 @@ export function WriterArcsView({
   }, [curatedRelationships, spotlightArc?.role_name, spotlightRoleName]);
 
   const filteredArcs = useMemo(() => {
-    if (!searchQuery.trim()) return arcs;
     const query = searchQuery.trim().toLowerCase();
+    if (!query) {
+      return arcs;
+    }
     return arcs.filter((arc) => {
       if (arc.role_name.toLowerCase().includes(query)) return true;
       if (arc.summary.toLowerCase().includes(query)) return true;
@@ -84,12 +107,12 @@ export function WriterArcsView({
             <div className="grid grid-cols-2 gap-3 text-sm text-[#5d2e0c]">
               <div className="rounded-xl bg-white/80 p-3">
                 <div className="text-xs text-gray-500">关键地点</div>
-                <div className="mt-1 font-semibold">{spotlightArc.key_locations.slice(0, 3).join('、') || '待补充'}</div>
+                <div className="mt-1 font-semibold">{joinNames(spotlightArc.key_locations.slice(0, 3))}</div>
               </div>
               <div className="rounded-xl bg-white/80 p-3">
                 <div className="text-xs text-gray-500">关系重心</div>
                 <div className="mt-1 font-semibold">
-                  {spotlightArc.relationship_phases.slice(0, 3).map((phase) => phase.counterpart_name).join('、') || '待补充'}
+                  {joinNames(spotlightArc.relationship_phases.slice(0, 3).map((phase) => phase.counterpart_name))}
                 </div>
               </div>
             </div>
@@ -102,10 +125,11 @@ export function WriterArcsView({
           <div className="flex items-center justify-between gap-3 mb-4">
             <div>
               <h4 className="text-lg font-bold text-[#2c1810]">分季总览</h4>
-              <p className="text-sm text-gray-500">先看每一季的主线冲突、重点人物和出场密度，再进入角色弧光细读。</p>
+              <p className="text-sm text-gray-500">先看每一季该抓哪条线，再进入具体角色和关系卡。</p>
             </div>
             <div className="text-xs text-gray-500">当前命中 {seasonOverviews.length} 个季别卡片</div>
           </div>
+
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
             {seasonOverviews.map((overview) => (
               <article key={overview.season_name} className="rounded-2xl border border-[#eadfd2] bg-[#faf8f5] p-4">
@@ -113,18 +137,123 @@ export function WriterArcsView({
                   <div>
                     <h5 className="text-lg font-bold text-[#8b4513]">{overview.season_name}</h5>
                     <div className="mt-1 text-xs text-gray-500">
-                      章节 {overview.unit_range[0]} - {overview.unit_range[1]} · 进度 {overview.progress_range[0]} - {overview.progress_range[1]}
+                      章节 {overview.unit_range[0]} - {overview.unit_range[1]} · 进度 {overview.progress_range[0]} -{' '}
+                      {overview.progress_range[1]}
                     </div>
                   </div>
-                  <span className="px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513] text-xs">
-                    主线总览
-                  </span>
+                  <span className="px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513] text-xs">主线总览</span>
                 </div>
 
                 <p className="mt-3 text-sm text-gray-700">{overview.summary}</p>
                 {overview.spotlight_summary && (
                   <p className="mt-2 text-sm text-[#5d2e0c] bg-white rounded-xl p-3">{overview.spotlight_summary}</p>
                 )}
+
+                <div className="mt-4">
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">三拍结构</div>
+                  <div className="space-y-2">
+                    {overview.story_beats.length > 0 ? (
+                      overview.story_beats.map((beat) => (
+                        <div
+                          key={`${overview.season_name}-${beat.beat_type}`}
+                          className="rounded-xl bg-white p-3 border border-[#eadfd2]"
+                        >
+                          <div className="flex items-center justify-between gap-3">
+                            <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white text-xs">
+                              {beat.label}
+                            </span>
+                            {beat.event?.event_type && (
+                              <span className="text-xs px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513]">
+                                {beat.event.event_type}
+                              </span>
+                            )}
+                          </div>
+                          {beat.event ? (
+                            <button
+                              onClick={() => onEventClick?.(beat.event!.event_id)}
+                              className="mt-2 text-left font-medium text-[#5d2e0c] hover:underline"
+                            >
+                              {beat.event.name}
+                            </button>
+                          ) : (
+                            <div className="mt-2 font-medium text-gray-400">待补充季别锚点</div>
+                          )}
+                          {beat.event && <div className="mt-1 text-xs text-gray-500">{renderEventMeta(beat.event)}</div>}
+                          <p className="mt-2 text-sm text-gray-700">{beat.summary}</p>
+                        </div>
+                      ))
+                    ) : (
+                      <div className="text-sm text-gray-400">当前范围暂无可用的三拍结构。</div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">本季必保留戏</div>
+                  <div className="space-y-2">
+                    {overview.must_keep_scenes.length > 0 ? (
+                      overview.must_keep_scenes.map((scene) => (
+                        <div key={scene.scene_id} className="rounded-xl bg-white p-3 border border-[#eadfd2]">
+                          <div className="flex items-center justify-between gap-3">
+                            <span className="px-2 py-1 rounded-full bg-[#5d2e0c] text-white text-xs">
+                              {scene.label}
+                            </span>
+                            {scene.event?.event_type && (
+                              <span className="text-xs px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513]">
+                                {scene.event.event_type}
+                              </span>
+                            )}
+                          </div>
+                          {scene.event ? (
+                            <button
+                              onClick={() => onEventClick?.(scene.event!.event_id)}
+                              className="mt-2 text-left font-medium text-[#5d2e0c] hover:underline"
+                            >
+                              {scene.event.name}
+                            </button>
+                          ) : (
+                            <div className="mt-2 font-medium text-gray-400">待补充场景锚点</div>
+                          )}
+                          {scene.focus_roles.length > 0 && (
+                            <div className="mt-2 flex flex-wrap gap-2">
+                              {scene.focus_roles.map((roleName) => (
+                                <button
+                                  key={`${scene.scene_id}-${roleName}`}
+                                  onClick={() => onRoleClick?.(roleName)}
+                                  className="px-2 py-1 rounded-full border border-[#d4c5b5] bg-[#faf8f5] text-xs text-[#5d2e0c] hover:bg-[#f3e7d8]"
+                                >
+                                  {roleName}
+                                </button>
+                              ))}
+                            </div>
+                          )}
+                          {scene.related_relationship_titles.length > 0 && (
+                            <div className="mt-2 text-xs text-[#8b4513]">
+                              关联关系：{scene.related_relationship_titles.join('、')}
+                            </div>
+                          )}
+                          <p className="mt-2 text-sm text-gray-700">{scene.adaptation_reason}</p>
+                        </div>
+                      ))
+                    ) : (
+                      <div className="text-sm text-gray-400">当前范围暂无整理好的必保留戏。</div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">改编抓手</div>
+                  <div className="space-y-2">
+                    {overview.adaptation_hooks.map((hook, index) => (
+                      <div
+                        key={`${overview.season_name}-hook-${index}`}
+                        className="rounded-xl bg-white p-3 border border-[#eadfd2]"
+                      >
+                        <p className="text-sm text-gray-700">{hook}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
                 <div className="mt-4">
                   <div className="text-sm font-semibold text-[#2c1810] mb-2">角色出场密度</div>
@@ -147,6 +276,30 @@ export function WriterArcsView({
                         </div>
                       </div>
                     ))}
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">优先关系</div>
+                  <div className="flex flex-wrap gap-2">
+                    {overview.priority_relationships.length > 0 ? (
+                      overview.priority_relationships.map((relationship) => (
+                        <button
+                          key={relationship.relationship_id}
+                          onClick={() => {
+                            const curated = curatedRelationships.find((item) => item.id === relationship.relationship_id);
+                            if (curated) {
+                              onRelationClick?.(curated.source_role_id, curated.target_role_id);
+                            }
+                          }}
+                          className="px-2 py-1 rounded-full border border-[#d4c5b5] bg-white text-sm text-[#5d2e0c] hover:bg-[#f3e7d8]"
+                        >
+                          {relationship.title}
+                        </button>
+                      ))
+                    ) : (
+                      <span className="text-sm text-gray-400">当前范围暂无优先关系卡。</span>
+                    )}
                   </div>
                 </div>
 
@@ -175,7 +328,34 @@ export function WriterArcsView({
                         </button>
                       ))
                     ) : (
-                      <span className="text-sm text-gray-400">当前范围暂无明确主线冲突卡片</span>
+                      <span className="text-sm text-gray-400">当前范围暂无明确主线冲突卡片。</span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">锚点事件</div>
+                  <div className="space-y-2">
+                    {overview.anchor_events.length > 0 ? (
+                      overview.anchor_events.slice(0, 3).map((event) => (
+                        <div key={event.event_id} className="rounded-xl bg-white p-3 border border-[#eadfd2]">
+                          <div className="flex items-center justify-between gap-3">
+                            <button
+                              onClick={() => onEventClick?.(event.event_id)}
+                              className="text-left font-medium text-[#5d2e0c] hover:underline"
+                            >
+                              {event.name}
+                            </button>
+                            <span className="px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513] text-xs">
+                              {event.event_type}
+                            </span>
+                          </div>
+                          <div className="mt-1 text-xs text-gray-500">{renderEventMeta(event)}</div>
+                          <p className="mt-2 text-sm text-gray-700">{event.significance || event.description}</p>
+                        </div>
+                      ))
+                    ) : (
+                      <div className="text-sm text-gray-400">当前范围暂无可用锚点事件。</div>
                     )}
                   </div>
                 </div>
@@ -194,7 +374,7 @@ export function WriterArcsView({
                         </button>
                       ))
                     ) : (
-                      <span className="text-sm text-gray-400">当前范围暂无高频地点</span>
+                      <span className="text-sm text-gray-400">当前范围暂无高频地点。</span>
                     )}
                   </div>
                 </div>
@@ -209,10 +389,13 @@ export function WriterArcsView({
           <div className="flex items-center justify-between gap-3 mb-4">
             <div>
               <h4 className="text-lg font-bold text-[#2c1810]">主线关系校订</h4>
-              <p className="text-sm text-gray-500">把陈平安主线优先整理成编剧可直接参考的关系卡，减少在原始冲突链里来回翻找。</p>
+              <p className="text-sm text-gray-500">
+                把主角线优先整理成可直接参考的关系卡，减少在原始冲突链里来回翻找。
+              </p>
             </div>
             <div className="text-xs text-gray-500">已校订 {spotlightRelationships.length} 条核心关系</div>
           </div>
+
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
             {spotlightRelationships.map((relationship) => (
               <article key={relationship.id} className="rounded-2xl border border-[#eadfd2] bg-[#faf8f5] p-4">
@@ -233,7 +416,9 @@ export function WriterArcsView({
                       >
                         {relationship.target_role_name}
                       </button>
-                      <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white text-xs">{relationship.kind}</span>
+                      <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white text-xs">
+                        {relationship.kind}
+                      </span>
                     </div>
                   </div>
                   <button
@@ -249,7 +434,10 @@ export function WriterArcsView({
 
                 <div className="mt-4 flex flex-wrap gap-2">
                   {relationship.phase_labels.map((phase) => (
-                    <span key={`${relationship.id}-${phase}`} className="px-2 py-1 rounded-full bg-[#d4a574] text-white text-xs">
+                    <span
+                      key={`${relationship.id}-${phase}`}
+                      className="px-2 py-1 rounded-full bg-[#d4a574] text-white text-xs"
+                    >
                       {phase}
                     </span>
                   ))}
@@ -319,7 +507,9 @@ export function WriterArcsView({
                           {event.season_name ?? '当前范围'}
                         </span>
                       </div>
-                      <p className="mt-1 text-sm text-gray-600 line-clamp-2">{event.significance || event.description}</p>
+                      <p className="mt-1 text-sm text-gray-600 line-clamp-2">
+                        {event.significance || event.description}
+                      </p>
                     </button>
                   ))}
                 </div>
@@ -334,9 +524,7 @@ export function WriterArcsView({
           <article
             key={arc.role_id}
             className={`rounded-2xl border p-4 transition-colors ${
-              selectedRoleId === arc.role_id
-                ? 'border-[#8b4513] bg-[#fff9f2] shadow-lg'
-                : 'border-[#eadfd2] bg-[#fffdfb]'
+              selectedRoleId === arc.role_id ? 'border-[#8b4513] bg-[#fff9f2] shadow-lg' : 'border-[#eadfd2] bg-[#fffdfb]'
             }`}
           >
             <div className="flex items-start justify-between gap-3">
@@ -384,7 +572,7 @@ export function WriterArcsView({
                     </button>
                   ))
                 ) : (
-                  <span className="text-sm text-gray-400">当前范围暂无重点地点</span>
+                  <span className="text-sm text-gray-400">当前范围暂无重点地点。</span>
                 )}
               </div>
             </div>
@@ -404,10 +592,7 @@ export function WriterArcsView({
                         {event.event_type}
                       </span>
                     </div>
-                    <div className="mt-1 text-xs text-gray-500">
-                      {event.season_name ?? '当前范围'} · 章节 {event.unit_index ?? '—'}
-                      {event.location ? ` · ${event.location}` : ''}
-                    </div>
+                    <div className="mt-1 text-xs text-gray-500">{renderEventMeta(event)}</div>
                     <p className="mt-1 text-sm text-gray-600 line-clamp-2">{event.significance || event.description}</p>
                   </button>
                 ))}
@@ -418,7 +603,10 @@ export function WriterArcsView({
               <div className="text-sm font-semibold text-[#2c1810] mb-2">关系变化</div>
               <div className="space-y-2">
                 {arc.relationship_phases.slice(0, 6).map((phase) => (
-                  <div key={`${phase.relation_id}-${phase.phase_label}-${phase.unit_index}`} className="rounded-xl bg-[#faf8f5] p-3">
+                  <div
+                    key={`${phase.relation_id}-${phase.phase_label}-${phase.unit_index}`}
+                    className="rounded-xl bg-[#faf8f5] p-3"
+                  >
                     <div className="flex items-center justify-between gap-3">
                       <button
                         onClick={() => onRoleClick?.(phase.counterpart_name)}
@@ -426,7 +614,9 @@ export function WriterArcsView({
                       >
                         {phase.counterpart_name}
                       </button>
-                      <span className="text-xs px-2 py-1 rounded-full bg-[#d4a574] text-white">{phase.phase_label}</span>
+                      <span className="text-xs px-2 py-1 rounded-full bg-[#d4a574] text-white">
+                        {phase.phase_label}
+                      </span>
                     </div>
                     <div className="mt-1 text-xs text-gray-500">
                       章节 {phase.unit_index ?? '—'}

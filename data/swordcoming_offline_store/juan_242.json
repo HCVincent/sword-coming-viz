@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.977075",
+    "extracted_at": "2026-03-25T01:03:31.217423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -118,7 +118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.977075",
+    "extracted_at": "2026-03-25T01:03:31.217423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -141,6 +141,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "老剑圣宋雨烧现身露面，宋凤山作为老人嫡孙，竟是最后一位站起身，语气没有半点情绪波动，缓缓道：“爷爷这次出门有些短暂，孙儿本以为只有等到庄子这边清净下来，没了任何客人，爷爷才愿意回来。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 242,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老人环顾四周，撂下一句意味深长的“乌烟瘴气”，就陪着陈平安一起转身离去，什么梳水国中流砥柱小重山韩氏，什么横刀山庄，全然不顾，仿佛全不入他法眼，老庄主的眼皮子都不愿意搭一下。",
@@ -156,16 +169,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安遭遇",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
-        "description": "老人环顾四周，撂下一句意味深长的“乌烟瘴气”，就陪着陈平安一起转身离去，什么梳水国中流砥柱小重山韩氏，什么横刀山庄，全然不顾，仿佛全不入他法眼，老庄主的眼皮子都不愿意搭一下。 ” 少女性情活泼，毫无怯场，跟随哥哥依葫芦画瓢，作揖却不低头，直直望向那位如雷贯耳的江湖老神仙，稚声稚气道：“小重山韩氏子弟韩元学，见过老庄主。",
+        "description": "老剑圣宋雨烧现身露面，宋凤山作为老人嫡孙，竟是最后一位站起身，语气没有半点情绪波动，缓缓道：“爷爷这次出门有些短暂，孙儿本以为只有等到庄子这边清净下来，没了任何客人，爷爷才愿意回来。 老人环顾四周，撂下一句意味深长的“乌烟瘴气”，就陪着陈平安一起转身离去，什么梳水国中流砥柱小重山韩氏，什么横刀山庄，全然不顾，仿佛全不入他法眼，老庄主的眼皮子都不愿意搭一下。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -179,8 +195,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "” 少女性情活泼，毫无怯场，跟随哥哥依葫芦画瓢，作揖却不低头，直直望向那位如雷贯耳的江湖老神仙，稚声稚气道：“小重山韩氏子弟韩元学，见过老庄主。 ” 老剑圣宋雨烧现身露面，宋凤山作为老人嫡孙，竟是最后一位站起身，语气没有半点情绪波动，缓缓道：“爷爷这次出门有些短暂，孙儿本以为只有等到庄子这边清净下来，没了任何客人，爷爷才愿意回来。 ” 老人环顾四周，撂下一句意味深长的“乌烟瘴气”，就陪着陈平安一起转身离去，什么梳水国中流砥柱小重山韩氏，什么横刀山庄，全然不顾，仿佛全不入他法眼，老庄主的眼皮子都不愿意搭一下。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.217423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -203,6 +245,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧与陈平安并肩而行，背对众人才显得有些神色落寞，走出一里路后，自嘲道：“家风歪斜得厉害，还不如一条瀑布，让你见笑了。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 242,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "宋雨烧与陈平安并肩而行，背对众人才显得有些神色落寞，走出一里路后，自嘲道：“家风歪斜得厉害，还不如一条瀑布，让你见笑了。 陈平安不知道如何接话，只好说些不痛不痒的客套话，“庄子里的人其实还好，没老前辈说得这么过分。",
@@ -219,16 +274,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安同行",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
         "description": "宋雨烧与陈平安并肩而行，背对众人才显得有些神色落寞，走出一里路后，自嘲道：“家风歪斜得厉害，还不如一条瀑布，让你见笑了。 陈平安不知道如何接话，只好说些不痛不痒的客套话，“庄子里的人其实还好，没老前辈说得这么过分。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -242,8 +300,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "宋雨烧与陈平安并肩而行，背对众人才显得有些神色落寞，走出一里路后，自嘲道：“家风歪斜得厉害，还不如一条瀑布，让你见笑了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 242,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.217423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -305,7 +384,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "extracted_at": "2026-03-25T01:03:31.217423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -328,6 +407,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧转头看了眼神色真诚的少年，既在意料之外，又在情理之中，笑道：“这种话，老夫这个岁数的老头子来说，是可以的，半截身子入了土，万事皆休，还能如何？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 242,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安没有反驳什么，一拳之后，心中萦绕不去的积郁清减许多，这就足够。",
@@ -343,16 +435,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安对话",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
-        "description": "陈平安没有反驳什么，一拳之后，心中萦绕不去的积郁清减许多，这就足够。 宋雨烧转头看了眼神色真诚的少年，既在意料之外，又在情理之中，笑道：“这种话，老夫这个岁数的老头子来说，是可以的，半截身子入了土，万事皆休，还能如何？ 你一个十五六岁的小娃儿，老气横秋太无趣。",
+        "description": "宋雨烧转头看了眼神色真诚的少年，既在意料之外，又在情理之中，笑道：“这种话，老夫这个岁数的老头子来说，是可以的，半截身子入了土，万事皆休，还能如何？ 陈平安没有反驳什么，一拳之后，心中萦绕不去的积郁清减许多，这就足够。 你一个十五六岁的小娃儿，老气横秋太无趣。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -366,8 +461,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "宋雨烧转头看了眼神色真诚的少年，既在意料之外，又在情理之中，笑道：“这种话，老夫这个岁数的老头子来说，是可以的，半截身子入了土，万事皆休，还能如何？ 你一个十五六岁的小娃儿，老气横秋太无趣。 ” 陈平安没有反驳什么，一拳之后，心中萦绕不去的积郁清减许多，这就足够。 他记起一事，轻声提醒道：“古寺里自称梳水国四煞的嬷嬷，跟一名魁梧汉子一起进了你们庄子，老前辈要小心些。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.217423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -390,6 +511,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧哈哈大笑道：“这算什么，加上方才水榭里的那位韩氏贵公子，恶名昭彰的梳水国四煞，已经凑齐了。 宋雨烧摇头苦笑，“不说也罢。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 242,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安疑惑道：“剩下的那个魔头？",
@@ -405,16 +540,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安对话",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
-        "description": "陈平安疑惑道：“剩下的那个魔头？ 宋雨烧哈哈大笑道：“这算什么，加上方才水榭里的那位韩氏贵公子，恶名昭彰的梳水国四煞，已经凑齐了。 ”",
+        "description": "宋雨烧哈哈大笑道：“这算什么，加上方才水榭里的那位韩氏贵公子，恶名昭彰的梳水国四煞，已经凑齐了。 陈平安疑惑道：“剩下的那个魔头？ 宋雨烧摇头苦笑，“不说也罢。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -428,8 +566,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "宋雨烧哈哈大笑道：“这算什么，加上方才水榭里的那位韩氏贵公子，恶名昭彰的梳水国四煞，已经凑齐了。 ” 陈平安疑惑道：“剩下的那个魔头？ ” 宋雨烧摇头苦笑，“不说也罢。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.218426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -464,21 +628,37 @@
         ],
         "juan_index": 242,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "陈平安并不知道，宋雨烧在江湖上，除了越来越响亮的剑圣头衔，还有同辈中人赠予的“铁疙瘩”的绰号，说的就是宋雨烧不苟言笑，在家族是如此，在家外的江湖更是如此。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安立势",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧立势",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
         "description": "陈平安喝了口酒，想着事情。 陈平安哭笑不得，这位老前辈也太耿直了些。 陈平安并不知道，宋雨烧在江湖上，除了越来越响亮的剑圣头衔，还有同辈中人赠予的“铁疙瘩”的绰号，说的就是宋雨烧不苟言笑，在家族是如此，在家外的江湖更是如此。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键立势节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的立势关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -492,8 +672,100 @@
         "segment_index": 12
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "会见",
+        "context": "陈平安喝了口酒，想着事情。 老人心中了然，坦诚相见道：“此次邀请你们来此做客，并无任何算计的意思，只是纯粹希望这么个庄子，别尽是一些人模狗样的混账货色，这座剑水山庄，毕竟是老夫亲手经营出来的地方，不想处处是狗屎，这里一坨那里一滩的，害得老夫在自家走路都嫌恶心。 有你们在家中做客，老夫就顺眼许多了。 ” 陈平安哭笑不得，这位老前辈也太耿直了些。 陈平安并不知道，宋雨烧在江湖上，除了越来越响亮的剑圣头衔，还有同辈中人赠予的“铁疙瘩”的绰号，说的就是宋雨烧不苟言笑，在家族是如此，在家外的江湖更是如此。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧立势",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.218426",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "242-13-0": {
+    "juan_index": 242,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛",
+    "source_sentences": [
+      "若说宋凤山半点不随宋雨烧的性格，还真是冤枉了小剑仙，只不过宋雨烧身上的老辈江湖气，古板迂腐，束手束脚，一心追求剑道极致的宋凤山不屑奉行而已。",
+      "宋雨烧这么一位古稀之年的老人，见识过太多的江湖风浪和人心险恶，愈发笃定一件事，道理只需说给讲道理的人听，否则腰间那把锈迹斑斑的老铁剑，就是他宋雨烧的道理。",
+      "宋雨烧喜欢一人一剑游历江湖，这些年见过许多锋芒肆意的后起之秀，天赋那是真好，可武德是真不咋的，但是一样混得风生水起，仰慕他们的江湖人物，多如过江之鲫，宋雨烧不太明白，三十年，或是五十年后，江湖就要交到这些人手上，那还有啥盼头？",
+      "只是宋雨烧的剑术再高，也只是一人而已，同辈老人一个个走了，带着那些晚辈不爱听的老话老规矩，一起埋进了泥地里，如今连亦敌亦友更是前辈的彩衣国老剑神都死了，宋雨烧便有些提不起兴致。",
+      "觉得如今的江湖，清汤寡水的，全然没了酒味。",
+      "一老一小闲来无事散着步，宋雨烧突然说道：“瀑布水榭那帮人眼拙，看不出你的拳意高低，老夫却看得清楚，所以多嘴说一句，你当下的心境有些问题，三境破四境，是我辈武人的第一道大门槛，你底子打得越结实，一旦带着心结破镜，反而越容易出现纰漏，一座大雪山崩塌的声势，可要比小山头的泥石流，可怕千百倍。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "若说宋凤山半点不随宋雨烧的性格，还真是冤枉了小剑仙，只不过宋雨烧身上的老辈江湖气，古板迂腐，束手束脚，一心追求剑道极致的宋凤山不屑奉行而已。 宋雨烧这么一位古稀之年的老人，见识过太多的江湖风浪和人心险恶，愈发笃定一件事，道理只需说给讲道理的人听，否则腰间那把锈迹斑斑的老铁剑，就是他宋雨烧的道理。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "若说宋凤山半点不随宋雨烧的性格，还真是冤枉了小剑仙，只不过宋雨烧身上的老辈江湖气，古板迂腐，束手束脚，一心追求剑道极致的宋凤山不屑奉行而已。 宋雨烧这么一位古稀之年的老人，见识过太多的江湖风浪和人心险恶，愈发笃定一件事，道理只需说给讲道理的人听，否则腰间那把锈迹斑斑的老铁剑，就是他宋雨烧的道理。 宋雨烧喜欢一人一剑游历江湖，这些年见过许多锋芒肆意的后起之秀，天赋那是真好，可武德是真不咋的，但是一样混得风生水起，仰慕他们的江湖人物，多如过江之鲫，宋雨烧不太明白，三十年，或是五十年后，江湖就要交到这些人手上，那还有啥盼头？",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 13
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "extracted_at": "2026-03-25T01:03:31.218426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -526,20 +798,34 @@
         ],
         "juan_index": 242,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧略作思量，说了一些看似题外话的言语，“先前收拳，是你做人厚道不假，但是对于你的破境一事，反而不美。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 242,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安悚然醒悟，伸手抹了抹额头汗水，沉思片刻，转头道：“谢过老前辈提点。 小娃儿，你当下要留神啊！ ”",
+        "description": "陈平安悚然醒悟，伸手抹了抹额头汗水，沉思片刻，转头道：“谢过老前辈提点。 宋雨烧略作思量，说了一些看似题外话的言语，“先前收拳，是你做人厚道不假，但是对于你的破境一事，反而不美。 小娃儿，你当下要留神啊！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与宋雨烧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段14",
         "sentence_indexes_in_segment": [
@@ -555,7 +841,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "extracted_at": "2026-03-25T01:03:31.218426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -588,21 +874,38 @@
         ],
         "juan_index": 242,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧其实一直在仔细打量少年神色变化，观其神色从容，眼神清澈，老人暗暗点头。 虽然暂时不好说谁对谁错，谁能走得更快更远，但是宋雨烧个人觉得，背剑游历却剑术蹩脚的外乡少年，要更对自己的胃口。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧试探",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安笑了笑，并没有后悔，又说了一句很有老气横秋嫌疑的话，“没有关系，该是我的，跑不掉，不该是我的，抓不来。 ” ”",
+        "description": "陈平安笑了笑，并没有后悔，又说了一句很有老气横秋嫌疑的话，“没有关系，该是我的，跑不掉，不该是我的，抓不来。 宋雨烧其实一直在仔细打量少年神色变化，观其神色从容，眼神清澈，老人暗暗点头。 虽然暂时不好说谁对谁错，谁能走得更快更远，但是宋雨烧个人觉得，背剑游历却剑术蹩脚的外乡少年，要更对自己的胃口。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -616,8 +919,97 @@
         "segment_index": 15
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "试探",
+        "context": "” 陈平安笑了笑，并没有后悔，又说了一句很有老气横秋嫌疑的话，“没有关系，该是我的，跑不掉，不该是我的，抓不来。 ” 宋雨烧其实一直在仔细打量少年神色变化，观其神色从容，眼神清澈，老人暗暗点头。 眼前少年与自己孙子宋凤山信奉的剑道，天差地别。 虽然暂时不好说谁对谁错，谁能走得更快更远，但是宋雨烧个人觉得，背剑游历却剑术蹩脚的外乡少年，要更对自己的胃口。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.218426",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "242-16-0": {
+    "juan_index": 242,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛",
+    "source_sentences": [
+      "在教育子孙这件事上，书香门第确实比江湖门派更有能耐，对此宋雨烧心悦诚服，早年潜心剑道，对于家族门风的栽培塑造，灯下黑了，或者说也是无从下手，最多不过是打骂二字而已，如今回头再看，老人唯有愧疚遗憾了。",
+      "老人其实不觉得自己比横刀山庄的王毅然，好到哪里去。",
+      "礼出世族，法出宗门。",
+      "礼仪规矩，真正的世族子弟自幼耳濡目染。",
+      "神仙术法，山上仙家自古传承有序。",
+      "宋雨烧对此深有感触，他曾经远游南涧国，与那边的名士有过交往，哪怕性格各异，可确实各有风采，哪怕只是手无缚鸡之力的读书人，一样让人自惭形秽。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "在教育子孙这件事上，书香门第确实比江湖门派更有能耐，对此宋雨烧心悦诚服，早年潜心剑道，对于家族门风的栽培塑造，灯下黑了，或者说也是无从下手，最多不过是打骂二字而已，如今回头再看，老人唯有愧疚遗憾了。 宋雨烧对此深有感触，他曾经远游南涧国，与那边的名士有过交往，哪怕性格各异，可确实各有风采，哪怕只是手无缚鸡之力的读书人，一样让人自惭形秽。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "在教育子孙这件事上，书香门第确实比江湖门派更有能耐，对此宋雨烧心悦诚服，早年潜心剑道，对于家族门风的栽培塑造，灯下黑了，或者说也是无从下手，最多不过是打骂二字而已，如今回头再看，老人唯有愧疚遗憾了。 宋雨烧对此深有感触，他曾经远游南涧国，与那边的名士有过交往，哪怕性格各异，可确实各有风采，哪怕只是手无缚鸡之力的读书人，一样让人自惭形秽。 老人其实不觉得自己比横刀山庄的王毅然，好到哪里去。",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 16
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "extracted_at": "2026-03-25T01:03:31.218426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -640,6 +1032,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧显然对这座行亭情有独钟，拉上陈平安坐在亭内长椅上，相对而坐，老人横剑在膝，少年背剑在后，一个被江湖誉为剑术入圣，一个如今连出剑都没信心。 宋雨烧在此静坐，也不故意跟少年客套寒暄，只是想着心事。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 242,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "宋雨烧显然对这座行亭情有独钟，拉上陈平安坐在亭内长椅上，相对而坐，老人横剑在膝，少年背剑在后，一个被江湖誉为剑术入圣，一个如今连出剑都没信心。",
@@ -655,15 +1061,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
-        "description": "宋雨烧显然对这座行亭情有独钟，拉上陈平安坐在亭内长椅上，相对而坐，老人横剑在膝，少年背剑在后，一个被江湖誉为剑术入圣，一个如今连出剑都没信心。 在瀑布和剑水山庄之间的路旁，有一座翘檐可爱的精美行亭，悬挂匾额“山水”，楹联是“石白嶙嶙，水清潺潺”，简单且别致。 视野开阔，远山如黛。",
+        "description": "宋雨烧显然对这座行亭情有独钟，拉上陈平安坐在亭内长椅上，相对而坐，老人横剑在膝，少年背剑在后，一个被江湖誉为剑术入圣，一个如今连出剑都没信心。 宋雨烧在此静坐，也不故意跟少年客套寒暄，只是想着心事。 在瀑布和剑水山庄之间的路旁，有一座翘檐可爱的精美行亭，悬挂匾额“山水”，楹联是“石白嶙嶙，水清潺潺”，简单且别致。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动宋雨烧与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段17",
         "sentence_indexes_in_segment": [
@@ -679,7 +1086,72 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "extracted_at": "2026-03-25T01:03:31.218426",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "242-18-0": {
+    "juan_index": 242,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛",
+    "source_sentences": [
+      "梳水国四煞这个说法，是近十年才有，在江湖上流传不广，一般只有到了王毅然这个位置的江湖宗师，才有所耳闻。",
+      "为首之人，是此次与那位魔头“嬷嬷”一起登门的魁梧男子，有一件仙家法宝的银戟，在梳水国创建了一座魔教门派，排第二的，是古寺内的妖魔女子，之后就是水榭里那位不显山不露水的小重山韩氏子弟，出身名门，却修行魔道术法，笼络控制了许多身居高位的梳水国封疆大吏。",
+      "四煞垫底之人，远在天边近在眼前，正是宋雨烧的孙媳妇。",
+      "在宋雨烧一次出门远行期间，她“无意间”认识了宋凤山，两人便背着宋雨烧结为夫妇，昭告天下，等到宋雨烧回到山庄，木已成舟，最无奈的是鬼迷心窍的宋凤山，坦言知晓妻子的魔头身份，那一次，宋雨烧出剑了，一剑砍断了嫡长孙的原先佩剑，又一剑洞穿了女子的腹部，宋凤山失心疯一般要跟自己爷爷拼命，宋雨烧怒急之下，一剑就要挑断这个不肖子孙的手筋，彻底断去他的剑道前程，省得以后遗祸世人，不料女子就那么挡在宋凤山身前，任由老人一剑贯穿心脏，虽然没有当场毙命，却也真真正正断了长生桥，从此沦为一个连春寒都受不住的病罐子。",
+      "这些个狗屁倒灶的家门破事，宋雨烧晓之以理动之以情，不管用，最后都出了数剑，却还是没能说清楚道理，成了一笔没头没尾的糊涂账。",
+      "宋雨烧喟然长叹。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "四煞垫底之人，远在天边近在眼前，正是宋雨烧的孙媳妇。 在宋雨烧一次出门远行期间，她“无意间”认识了宋凤山，两人便背着宋雨烧结为夫妇，昭告天下，等到宋雨烧回到山庄，木已成舟，最无奈的是鬼迷心窍的宋凤山，坦言知晓妻子的魔头身份，那一次，宋雨烧出剑了，一剑砍断了嫡长孙的原先佩剑，又一剑洞穿了女子的腹部，宋凤山失心疯一般要跟自己爷爷拼命，宋雨烧怒急之下，一剑就要挑断这个不肖子孙的手筋，彻底断去他的剑道前程，省得以后遗祸世人，不料女子就那么挡在宋凤山身前，任由老人一剑贯穿心脏，虽然没有当场毙命，却也真真正正断了长生桥，从此沦为一个连春寒都受不住的病罐子。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "四煞垫底之人，远在天边近在眼前，正是宋雨烧的孙媳妇。 在宋雨烧一次出门远行期间，她“无意间”认识了宋凤山，两人便背着宋雨烧结为夫妇，昭告天下，等到宋雨烧回到山庄，木已成舟，最无奈的是鬼迷心窍的宋凤山，坦言知晓妻子的魔头身份，那一次，宋雨烧出剑了，一剑砍断了嫡长孙的原先佩剑，又一剑洞穿了女子的腹部，宋凤山失心疯一般要跟自己爷爷拼命，宋雨烧怒急之下，一剑就要挑断这个不肖子孙的手筋，彻底断去他的剑道前程，省得以后遗祸世人，不料女子就那么挡在宋凤山身前，任由老人一剑贯穿心脏，虽然没有当场毙命，却也真真正正断了长生桥，从此沦为一个连春寒都受不住的病罐子。 这些个狗屁倒灶的家门破事，宋雨烧晓之以理动之以情，不管用，最后都出了数剑，却还是没能说清楚道理，成了一笔没头没尾的糊涂账。",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -713,21 +1185,37 @@
         ],
         "juan_index": 242,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧二话不说，随口答应道：“有何不可，我这就放话出去，从山水亭到瀑布那边，已是剑水山庄的禁地，越界者死。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 242,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安对话",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安突然问道：“宋老前辈，我接下来能够在瀑布那边练拳吗？ 陈平安挠挠头，有点过意不去，“我晚上趁着没人赏景的时候，再去练拳就行了，白天不用封禁道路，不然也太不近人情了。 山水亭山水亭，山嶙嶙水潺潺，倒是风景秀美，可世事如风波，不遂人心愿啊。",
+        "description": "陈平安突然问道：“宋老前辈，我接下来能够在瀑布那边练拳吗？ 宋雨烧二话不说，随口答应道：“有何不可，我这就放话出去，从山水亭到瀑布那边，已是剑水山庄的禁地，越界者死。 陈平安挠挠头，有点过意不去，“我晚上趁着没人赏景的时候，再去练拳就行了，白天不用封禁道路，不然也太不近人情了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -741,8 +1229,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "对话",
+        "context": "山水亭山水亭，山嶙嶙水潺潺，倒是风景秀美，可世事如风波，不遂人心愿啊。 陈平安突然问道：“宋老前辈，我接下来能够在瀑布那边练拳吗？ ” 宋雨烧二话不说，随口答应道：“有何不可，我这就放话出去，从山水亭到瀑布那边，已是剑水山庄的禁地，越界者死。 ” 陈平安挠挠头，有点过意不去，“我晚上趁着没人赏景的时候，再去练拳就行了，白天不用封禁道路，不然也太不近人情了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安与宋雨烧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -765,6 +1279,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧摇头大笑道：“小娃儿，你也太不爽利了，老夫在自家地盘划出一块没狗屎的地儿，还需要跟外人讲道理？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 242,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安只好说道：“如果山庄需要我出手帮忙，老前辈只管吩咐一声。",
@@ -780,16 +1307,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 陈平安对话",
+        "name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
-        "description": "陈平安只好说道：“如果山庄需要我出手帮忙，老前辈只管吩咐一声。 ” 宋雨烧摇头大笑道：“小娃儿，你也太不爽利了，老夫在自家地盘划出一块没狗屎的地儿，还需要跟外人讲道理？",
+        "description": "宋雨烧摇头大笑道：“小娃儿，你也太不爽利了，老夫在自家地盘划出一块没狗屎的地儿，还需要跟外人讲道理？ 陈平安只好说道：“如果山庄需要我出手帮忙，老前辈只管吩咐一声。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -803,8 +1333,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.978078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 宋雨烧摇头大笑道：“小娃儿，你也太不爽利了，老夫在自家地盘划出一块没狗屎的地儿，还需要跟外人讲道理？ ” 陈平安只好说道：“如果山庄需要我出手帮忙，老前辈只管吩咐一声。 ” 老人拍了怕膝上铁剑，没好气道：“老夫的剑，跟你背着的两把，不一样。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十一章 喝过剑仙的酒好吹牛 · 宋雨烧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 242,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -866,7 +1422,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.979081",
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -930,7 +1486,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.979081",
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -994,7 +1550,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.979081",
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1057,7 +1613,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.979081",
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1136,7 +1692,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.219429",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1198,7 +1754,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1264,7 +1820,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1326,7 +1882,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,7 +1944,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1451,7 +2007,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1529,7 +2085,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

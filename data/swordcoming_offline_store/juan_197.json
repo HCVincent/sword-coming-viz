@@ -69,7 +69,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -90,6 +90,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "藩王宋长镜曾经在小镇衙署内，同样什么都没有做，就能够让境界不俗的剑修刘灞桥，都觉得全身肌肤在被针扎。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 197,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -113,7 +126,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -128,12 +143,15 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "description": "藩王宋长镜曾经在小镇衙署内，同样什么都没有做，就能够让境界不俗的剑修刘灞桥，都觉得全身肌肤在被针扎。 陈平安刚要有所动作，以防不测，结果整个人就已经倒飞出去，狠狠撞在竹楼墙壁上，瘫软在地，挣扎了两下，只能背靠墙根，如何都站不起身，嘴角有鲜血渗出。 一脚踹中陈平安腹部的老人，双臂环胸，居高临下望着那个凄惨的草鞋少年，冷笑道：“与人对峙，还敢分心！",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -147,8 +165,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "藩王宋长镜曾经在小镇衙署内，同样什么都没有做，就能够让境界不俗的剑修刘灞桥，都觉得全身肌肤在被针扎。 砰然一声巨响。 陈平安刚要有所动作，以防不测，结果整个人就已经倒飞出去，狠狠撞在竹楼墙壁上，瘫软在地，挣扎了两下，只能背靠墙根，如何都站不起身，嘴角有鲜血渗出。 一脚踹中陈平安腹部的老人，双臂环胸，居高临下望着那个凄惨的草鞋少年，冷笑道：“与人对峙，还敢分心！ 真是找死！ ”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 197,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -211,7 +255,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -234,6 +278,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河之流的世俗武夫，若是能够得到这样的评价，恐怕会当场激动得泪流满面。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 197,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安尚未理解这些曲折内幕，只是颤声道：“受教了。 老人心思一动，但是没有理睬这些外物，死死盯住陈平安，道破天机：“泥胚境，在于找到那一口先天之气，搭建武道茅庐的框架，气为栋梁，气为高墙！",
@@ -245,20 +302,35 @@
         ],
         "juan_index": 197,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "老人一步踏出，整栋竹楼随之微微一晃，李希圣那些画符在绿竹之上的无形文字，微微显形，流淌出一阵不易察觉的素洁光辉，如当初那只月光瓶倾泻在溪涧水面上的场景，尤为动人。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 197,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 陈平安与朱河剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "朱河",
+          "李希圣"
         ],
-        "description": "陈平安尚未理解这些曲折内幕，只是颤声道：“受教了。 老人心思一动，但是没有理睬这些外物，死死盯住陈平安，道破天机：“泥胚境，在于找到那一口先天之气，搭建武道茅庐的框架，气为栋梁，气为高墙！ 朱河之流的世俗武夫，若是能够得到这样的评价，恐怕会当场激动得泪流满面。",
+        "description": "朱河之流的世俗武夫，若是能够得到这样的评价，恐怕会当场激动得泪流满面。 陈平安尚未理解这些曲折内幕，只是颤声道：“受教了。 老人一步踏出，整栋竹楼随之微微一晃，李希圣那些画符在绿竹之上的无形文字，微微显形，流淌出一阵不易察觉的素洁光辉，如当初那只月光瓶倾泻在溪涧水面上的场景，尤为动人。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与朱河之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 段4",
         "sentence_indexes_in_segment": [
@@ -274,7 +346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -336,7 +408,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -399,7 +471,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -503,7 +575,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -565,7 +637,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.856090",
+    "extracted_at": "2026-03-25T01:03:31.011631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -627,7 +699,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -704,7 +776,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -768,7 +840,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -830,7 +902,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -893,7 +965,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -956,7 +1028,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1018,7 +1090,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1081,7 +1153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1182,7 +1254,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.012635",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1289,7 +1361,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1353,7 +1425,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1409,15 +1481,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 陈平安在龙泉剧情推进",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安"
         ],
         "description": "陈平安叹了口气，推门而入，青衣小童咽了咽口水，帮着轻轻关上门，连看都不敢看那糟老头子一眼。 想我在御江叱咤江湖数百年，在整个黄庭国都是响当当的豪杰，呼风唤雨，高朋满座，为什么到了这屁大的一座龙泉郡，就处处碰壁？ 青衣小童关门之后，跳上栏杆坐着，十分惆怅。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 段20",
         "sentence_indexes_in_segment": [
@@ -1433,7 +1506,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.857094",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1519,7 +1592,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1582,7 +1655,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1644,7 +1717,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1706,7 +1779,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1740,6 +1813,19 @@
           2,
           3,
           4
+        ],
+        "juan_index": 197,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "练拳之时，除了听朱河说过练武初期，不可喝酒伤身之外，还曾多次听说一口气不可坠，陈平安好不容易知道一点拳理，无比珍惜，直到今天，仍是坚持不懈。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 197,
         "segment_index": 25
@@ -1780,6 +1866,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "林守一"
         ],
         "description": "做好最坏打算的陈平安，起先还有些惊讶，觉得老人出拳并不沉重，打在身上完全可以承受。 然后一瞬间，陈平安蓦然七窍流血，倒地不起，开始打滚。 陈平安死死咬住嘴唇，不让自己痛哭出声。",
@@ -1800,7 +1887,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.013638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1902,7 +1989,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1965,7 +2052,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2000,21 +2087,37 @@
         ],
         "juan_index": 197,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "他当时跟随崔东山从大隋返回黄庭国，途径一座大水之地，雾气升腾，十分壮观，从崔东山文绉绉的言语之中，知道了那叫云蒸大泽的魏巍气象。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 197,
+        "segment_index": 30
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 陈平安对话",
+        "name": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 陈平安与崔东山对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
-        "description": "老人悄无声息地站在少年身旁，一脚踩在陈平安腹部，冷笑道：“起不来，躺着便是！ 陈平安气海之中，轰然一声，仿佛迎来一场天翻地覆的剧变。 但是美景是美景，承受了老人那一次迅猛踩踏，在自己体内经受这幅画卷带来的跌宕起伏，那真是名副其实“欲仙欲死”，老人一脚踩得陈平安位于下丹田的那座气海，暴涨上浮，陈平安感觉肝肠寸断，下一刻就要把五脏六腑全部都吐出喉咙。",
+        "description": "老人悄无声息地站在少年身旁，一脚踩在陈平安腹部，冷笑道：“起不来，躺着便是！ 陈平安气海之中，轰然一声，仿佛迎来一场天翻地覆的剧变。 他当时跟随崔东山从大隋返回黄庭国，途径一座大水之地，雾气升腾，十分壮观，从崔东山文绉绉的言语之中，知道了那叫云蒸大泽的魏巍气象。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -2028,8 +2131,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "对话",
+        "context": "老人悄无声息地站在少年身旁，一脚踩在陈平安腹部，冷笑道：“起不来，躺着便是！ 老夫一样能让你知晓这一拳的妙处！ ” 陈平安气海之中，轰然一声，仿佛迎来一场天翻地覆的剧变。 他当时跟随崔东山从大隋返回黄庭国，途径一座大水之地，雾气升腾，十分壮观，从崔东山文绉绉的言语之中，知道了那叫云蒸大泽的魏巍气象。 但是美景是美景，承受了老人那一次迅猛踩踏，在自己体内经受这幅画卷带来的跌宕起伏，那真是名副其实“欲仙欲死”，老人一脚踩得陈平安位于下丹田的那座气海，暴涨上浮，陈平安感觉肝肠寸断，下一刻就要把五脏六腑全部都吐出喉咙。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 陈平安与崔东山对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 197,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2094,7 +2223,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2157,7 +2286,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.858097",
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2220,7 +2349,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2323,7 +2452,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.014642",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2430,7 +2559,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.015645",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2492,7 +2621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.015645",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2555,7 +2684,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.015645",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2618,7 +2747,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.015645",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2697,7 +2826,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.015645",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2762,7 +2891,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2830,7 +2959,9 @@
         "description": "陈平安愈发沉默，往往一整天清醒的时候，都不说一句话。 偶尔粉裙女童询问什么，或是想要让自家老爷开心一些，陈平安起先是笑着摇头什么的，后来就是皱着眉头了，最后有一次竟是满脸怒意，虽然看得出来，陈平安在克制压抑，但是青衣小童和粉裙女童都被惊吓得无以复加。 当时陈平安欲言又止，嘴唇微动，可是始终没有说什么，去床铺上躺着，闭上眼睛，不知是睡是醒，甚至会让人觉得不知是生是死。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十七章 陈平安喝酒了 · 段46",
         "sentence_indexes_in_segment": [
           0,
@@ -2844,8 +2975,29 @@
         "segment_index": 46
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.859101",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏檗"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "试探",
+        "context": "青衣小童曾经试探性询问魏檗，到底陈平安在挨揍的时候，有多少痛苦。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 197,
+        "segment_index": 46
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2984,7 +3136,7 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3120,7 +3272,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3227,7 +3379,7 @@
         "segment_index": 49
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3293,7 +3445,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3355,7 +3507,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3481,7 +3633,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.016649",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3587,7 +3739,7 @@
         "segment_index": 53
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.017652",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3649,7 +3801,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.860104",
+    "extracted_at": "2026-03-25T01:03:31.017652",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

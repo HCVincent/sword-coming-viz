@@ -44,7 +44,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与谢谢剧情推进",
+        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与谢谢讥讽",
         "time": null,
         "location": null,
         "participants": [
@@ -53,8 +53,10 @@
         ],
         "description": "半山腰，练习剑炉的陈平安心神一动，低头望去，地面上有人拎着一根树枝姗姗而来，是名叫谢谢的卢氏遗民。 浑身酒气的男人打着酒嗝，颤颤悠悠，仰头灌了口酒，大半洒落在身上和地面。 周围好友不断调侃打趣，更有酒壮色人胆，有人扬言说要将这位青娘娘神像抱下来，今夜就要抱着神像同眠，神人共春梦一场，这才算真正的美谈。",
         "background": "",
-        "significance": "推动陈平安与谢谢之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与谢谢之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -68,8 +70,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "讥讽",
+        "context": "浑身酒气的男人打着酒嗝，颤颤悠悠，仰头灌了口酒，大半洒落在身上和地面。 周围好友不断调侃打趣，更有酒壮色人胆，有人扬言说要将这位青娘娘神像抱下来，今夜就要抱着神像同眠，神人共春梦一场，这才算真正的美谈。 这番大不敬的言语，惹来更大的欢畅笑声。 小庙内一声叹息，悄不可闻。 一阵微风飘拂，众人喝酒正酣，并无察觉异常。 半山腰，练习剑炉的陈平安心神一动，低头望去，地面上有人拎着一根树枝姗姗而来，是名叫谢谢的卢氏遗民。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与谢谢讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.751686",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -174,7 +202,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "extracted_at": "2026-03-25T01:03:30.751686",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -207,21 +235,38 @@
         ],
         "juan_index": 134,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "她将手中树枝横放在腿上，开门见山道：“崔东山估计实在是走投无路了，逮着一座小庙就胡乱烧香，他私底下找到我，说只要能帮他在你面前讲几句好话，哪怕你依旧不答应收他做学生，也会送我一件宝贝。 我当然眼馋他的那柄无主飞剑，崔东山不肯，只愿意在事成之后，送给我一支竹笛，他给我看了一眼笛子模样，是名副其实的鱼虫笛，曾是卢氏王朝的宫中秘藏，是一座山门最早与卢氏开国皇帝结盟的契约信物之一。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 134,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安对话",
+        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与崔东山对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
-        "description": "陈平安问道：“谢姑娘为什么要跟我说这些？ ” 她将手中树枝横放在腿上，开门见山道：“崔东山估计实在是走投无路了，逮着一座小庙就胡乱烧香，他私底下找到我，说只要能帮他在你面前讲几句好话，哪怕你依旧不答应收他做学生，也会送我一件宝贝。",
+        "description": "陈平安问道：“谢姑娘为什么要跟我说这些？ 她将手中树枝横放在腿上，开门见山道：“崔东山估计实在是走投无路了，逮着一座小庙就胡乱烧香，他私底下找到我，说只要能帮他在你面前讲几句好话，哪怕你依旧不答应收他做学生，也会送我一件宝贝。 我当然眼馋他的那柄无主飞剑，崔东山不肯，只愿意在事成之后，送给我一支竹笛，他给我看了一眼笛子模样，是名副其实的鱼虫笛，曾是卢氏王朝的宫中秘藏，是一座山门最早与卢氏开国皇帝结盟的契约信物之一。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -235,8 +280,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "对话",
+        "context": "陈平安问道：“谢姑娘为什么要跟我说这些？ ” 她将手中树枝横放在腿上，开门见山道：“崔东山估计实在是走投无路了，逮着一座小庙就胡乱烧香，他私底下找到我，说只要能帮他在你面前讲几句好话，哪怕你依旧不答应收他做学生，也会送我一件宝贝。 我当然眼馋他的那柄无主飞剑，崔东山不肯，只愿意在事成之后，送给我一支竹笛，他给我看了一眼笛子模样，是名副其实的鱼虫笛，曾是卢氏王朝的宫中秘藏，是一座山门最早与卢氏开国皇帝结盟的契约信物之一。 我是女人嘛，当然喜欢世上一切漂亮养眼的东西。 这不就来找你了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与崔东山对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.751686",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -282,6 +353,19 @@
         ],
         "juan_index": 134,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "之前聊纯粹武夫和山上修士的差异，不过是生怕冷场，想要抛砖引玉来着，说实话，崔东山一次次在你这边撞墙碰鼻子，我平时冷眼旁观，会觉得很解气，真轮到自己跟你谈事情，就头疼了，唯恐你什么都不听就拒绝我，那么即将到手的鱼虫笛子，可就要长翅膀飞走喽。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 134,
+        "segment_index": 5
       }
     ],
     "locations": [],
@@ -292,14 +376,13 @@
         "location": null,
         "participants": [
           "陈平安",
-          "谢谢"
+          "谢谢",
+          "崔东山"
         ],
-        "description": "有人打搅，陈平安就不再练习立桩，跟她一样坐在树枝上，坐姿端正，与她对视，“谢姑娘你继续说，我在听。 谢谢笑道：“已经说完了啊。 ”",
+        "description": "有人打搅，陈平安就不再练习立桩，跟她一样坐在树枝上，坐姿端正，与她对视，“谢姑娘你继续说，我在听。 谢谢笑道：“已经说完了啊。 之前聊纯粹武夫和山上修士的差异，不过是生怕冷场，想要抛砖引玉来着，说实话，崔东山一次次在你这边撞墙碰鼻子，我平时冷眼旁观，会觉得很解气，真轮到自己跟你谈事情，就头疼了，唯恐你什么都不听就拒绝我，那么即将到手的鱼虫笛子，可就要长翅膀飞走喽。",
         "background": "",
         "significance": "推动陈平安与谢谢之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -313,34 +396,8 @@
         "segment_index": 5
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "谢谢"
-        ],
-        "action": "对话",
-        "context": "” 有人打搅，陈平安就不再练习立桩，跟她一样坐在树枝上，坐姿端正，与她对视，“谢姑娘你继续说，我在听。 ” 谢谢笑道：“已经说完了啊。 之前聊纯粹武夫和山上修士的差异，不过是生怕冷场，想要抛砖引玉来着，说实话，崔东山一次次在你这边撞墙碰鼻子，我平时冷眼旁观，会觉得很解气，真轮到自己跟你谈事情，就头疼了，唯恐你什么都不听就拒绝我，那么即将到手的鱼虫笛子，可就要长翅膀飞走喽。 ”",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与谢谢对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 134,
-        "segment_index": 5
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.673806",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -373,21 +430,37 @@
         ],
         "juan_index": 134,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安点头道：“如果崔东山问起，我会证明谢姑娘你已经求过情。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 134,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安剧情推进",
+        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与崔东山试探",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
         "description": "陈平安点头道：“如果崔东山问起，我会证明谢姑娘你已经求过情。 如果可以的话，谢姑娘能不能说一些关于武道的事情？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -401,8 +474,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "试探",
+        "context": "陈平安点头道：“如果崔东山问起，我会证明谢姑娘你已经求过情。 如果可以的话，谢姑娘能不能说一些关于武道的事情？ ” 少女眯眼打量着少年的脸庞，像是要一眼看穿这位少年的根脚，柔声道：“武学一事，我就是道听途说而已，没什么不可以说的。 之所以晓得这些皮毛，还是因为练气士的下五境，养气炼气，其实仍是没能逃出皮肉筋骨体的范畴，这也是为何被称为‘下五境’的理由。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与崔东山试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -465,7 +564,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -546,7 +645,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.752690",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "134-9-0": {
+    "juan_index": 134,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百三十四章 这一年",
+    "source_sentences": [
+      "”",
+      "“之前崔东山所谓的那把本命飞剑，是说我们练气士当中的剑修，在本命窍穴之中温养出来的飞剑，与剑修神魂融为一体，本命飞剑出窍杀敌，即是实质之剑，返回窍穴，便化为虚无之物，很是玄妙。",
+      "我师父曾经说过，其实人的气府窍穴，可以视为天底下的洞天福地，先天具有‘方寸’神通，于是后天苦修，一经打通其中关节，本命飞剑也好，其它法宝也罢，任你体型大如山峦，一样都可以容纳其中。",
+      "”",
+      "“你们武道的第二境，就在于以本命窍穴作为起始点，开始向四周拓展道路，将一条条原本崎岖狭窄的经脉，变作宽敞的驿路官道，为何世间有那么多武学门类？",
+      "就在于这开山开道的法门不一样，起始于何处，走哪条道路，如何走捷径，各家皆有密不外传的秘笈，比如武人练拳所开经脉，与刀枪剑戟是大不相同的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "“之前崔东山所谓的那把本命飞剑，是说我们练气士当中的剑修，在本命窍穴之中温养出来的飞剑，与剑修神魂融为一体，本命飞剑出窍杀敌，即是实质之剑，返回窍穴，便化为虚无之物，很是玄妙。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 134,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百三十四章 这一年 · 崔东山立势",
+        "time": null,
+        "location": null,
+        "participants": [
+          "崔东山"
+        ],
+        "description": "“之前崔东山所谓的那把本命飞剑，是说我们练气士当中的剑修，在本命窍穴之中温养出来的飞剑，与剑修神魂融为一体，本命飞剑出窍杀敌，即是实质之剑，返回窍穴，便化为虚无之物，很是玄妙。 ” 我师父曾经说过，其实人的气府窍穴，可以视为天底下的洞天福地，先天具有‘方寸’神通，于是后天苦修，一经打通其中关节，本命飞剑也好，其它法宝也罢，任你体型大如山峦，一样都可以容纳其中。",
+        "background": "",
+        "significance": "对应崔东山在叙事中的关键立势节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百三十四章 这一年 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 9
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -609,7 +770,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -723,7 +884,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -786,7 +947,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.752690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -821,21 +982,37 @@
         ],
         "juan_index": 134,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "被蔡金简以歹毒手法，暗中打烂了长生桥后，除了修行之路阻塞断绝，唇亡齿寒，陈平安这副体魄也不好受。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 134,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安对话",
+        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与蔡金简对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "description": "其实准确说来，陈平安是在用练拳来吊命。 被蔡金简以歹毒手法，暗中打烂了长生桥后，除了修行之路阻塞断绝，唇亡齿寒，陈平安这副体魄也不好受。 之后棋墩山一役，折损严重，好不容易增加出来的那点寿命，一扫而空，好在之后一路南下，靠着每日大量的走桩站桩，陈平安又积攒下一些家底，已经能够清晰感受到身体的好转，如同一栋破屋子四面漏风的身躯，缝缝补补，终究还是有用的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与蔡金简之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -849,8 +1026,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "其实准确说来，陈平安是在用练拳来吊命。 被蔡金简以歹毒手法，暗中打烂了长生桥后，除了修行之路阻塞断绝，唇亡齿寒，陈平安这副体魄也不好受。 之后棋墩山一役，折损严重，好不容易增加出来的那点寿命，一扫而空，好在之后一路南下，靠着每日大量的走桩站桩，陈平安又积攒下一些家底，已经能够清晰感受到身体的好转，如同一栋破屋子四面漏风的身躯，缝缝补补，终究还是有用的。 少女笑道：“习武进展快慢，因人而异吧。 你如果觉得稳扎稳打更好，我想也没有问题。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与蔡金简对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -883,6 +1086,21 @@
         ],
         "juan_index": 134,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "谢谢作为练气士，对于习武之事，本就是一知半解，很多时候会习惯将修行套用在练武上，虽然她的眼界比朱河更高，但是诸多细微，肯定不如身为五境武夫朱河，来得准确透彻。 更何况朱河被福禄街李氏老祖亲口称赞为“明师”，评价远在名师之上，足可见朱河的厉害。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 134,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -893,7 +1111,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "朱河"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -907,7 +1127,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "朱河"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -923,6 +1145,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "谢谢"
         ],
         "description": "谢谢作为练气士，对于习武之事，本就是一知半解，很多时候会习惯将修行套用在练武上，虽然她的眼界比朱河更高，但是诸多细微，肯定不如身为五境武夫朱河，来得准确透彻。 更何况朱河被福禄街李氏老祖亲口称赞为“明师”，评价远在名师之上，足可见朱河的厉害。 不过朱河受限于偏居一隅的小镇李氏底蕴，与山下江湖绝大多数武人一样，坚信第九境的武道宗师，已经走到了尽头，所以把第九境誉为止境。",
@@ -943,7 +1166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1003,6 +1226,32 @@
         ],
         "juan_index": 134,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "当初在小镇上，宁姚提醒过他，云霞山蔡金简、老龙城苻南华这些人，哪怕在小镇被术法禁绝的规矩束缚，可是体魄坚韧的程度，远超俗人，一拳打死他陈平安很轻松，而他陈平安如果不是打在要害，就很难击杀对方。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "当初在小镇上，宁姚提醒过他，云霞山蔡金简、老龙城苻南华这些人，哪怕在小镇被术法禁绝的规矩束缚，可是体魄坚韧的程度，远超俗人，一拳打死他陈平安很轻松，而他陈平安如果不是打在要害，就很难击杀对方。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 15
       }
     ],
     "locations": [
@@ -1015,6 +1264,8 @@
         "coordinates": null,
         "related_entities": [
           "宁姚",
+          "蔡金简",
+          "苻南华",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1032,6 +1283,8 @@
         "coordinates": null,
         "related_entities": [
           "宁姚",
+          "蔡金简",
+          "苻南华",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1043,20 +1296,23 @@
     ],
     "events": [
       {
-        "name": "宁姚坠入小镇",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "小镇",
+        "location": "老龙城",
         "participants": [
-          "宁姚",
+          "谢谢",
+          "苻南华",
           "陈平安",
-          "谢谢"
+          "宁姚"
         ],
         "description": "陈平安好奇问道：“谢谢姑娘，你们练气士，作为逍遥自在的山上神仙，也需要跟习武之人一样，锻炼体魄？ 当初在小镇上，宁姚提醒过他，云霞山蔡金简、老龙城苻南华这些人，哪怕在小镇被术法禁绝的规矩束缚，可是体魄坚韧的程度，远超俗人，一拳打死他陈平安很轻松，而他陈平安如果不是打在要害，就很难击杀对方。 这一辈子能有什么大出息大气候？",
         "background": "",
-        "significance": "引入陈平安后续最关键的人物关系线。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段15",
         "sentence_indexes_in_segment": [
@@ -1083,11 +1339,51 @@
         "action": "对话",
         "context": "陈平安好奇问道：“谢谢姑娘，你们练气士，作为逍遥自在的山上神仙，也需要跟习武之人一样，锻炼体魄？",
         "result": null,
-        "event_name": "宁姚坠入小镇",
+        "event_name": "老龙城暗流角力",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 134,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "指点",
+        "context": "当初在小镇上，宁姚提醒过他，云霞山蔡金简、老龙城苻南华这些人，哪怕在小镇被术法禁绝的规矩束缚，可是体魄坚韧的程度，远超俗人，一拳打死他陈平安很轻松，而他陈平安如果不是打在要害，就很难击杀对方。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "指点",
+        "context": "当初在小镇上，宁姚提醒过他，云霞山蔡金简、老龙城苻南华这些人，哪怕在小镇被术法禁绝的规矩束缚，可是体魄坚韧的程度，远超俗人，一拳打死他陈平安很轻松，而他陈平安如果不是打在要害，就很难击杀对方。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 134,
         "segment_index": 15
@@ -1103,7 +1399,7 @@
         "action": "指点",
         "context": "当初在小镇上，宁姚提醒过他，云霞山蔡金简、老龙城苻南华这些人，哪怕在小镇被术法禁绝的规矩束缚，可是体魄坚韧的程度，远超俗人，一拳打死他陈平安很轻松，而他陈平安如果不是打在要害，就很难击杀对方。",
         "result": null,
-        "event_name": "宁姚坠入小镇",
+        "event_name": "老龙城暗流角力",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1113,7 +1409,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1176,7 +1472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.674810",
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1294,7 +1590,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1372,7 +1668,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1433,7 +1729,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.753693",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,6 +1774,19 @@
           1,
           2,
           3,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安点头道：“崔东山说这座横山，极有可能存在精魅，这么晚了，谢姑娘你自己小心一些。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 134,
@@ -1535,7 +1844,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.754697",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1597,7 +1906,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.754697",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1715,7 +2024,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.754697",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1827,7 +2136,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.754697",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1921,7 +2230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.754697",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1956,21 +2265,37 @@
         ],
         "juan_index": 134,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "崔瀺一手负后，一手拧转手腕，“于禄比你聪明讨喜太多了。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 134,
+        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百三十四章 这一年 · 崔瀺与于禄对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "于禄"
         ],
         "description": "崔瀺一手负后，一手拧转手腕，“于禄比你聪明讨喜太多了。 至于你这种只能随波逐流的小家伙，死了都没人立碑上坟的可怜虫，我现在如果真的想碾死你，就是一脚的事情。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与于禄之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1984,8 +2309,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "至于你这种只能随波逐流的小家伙，死了都没人立碑上坟的可怜虫，我现在如果真的想碾死你，就是一脚的事情。 ” 少女默然。 崔瀺一手负后，一手拧转手腕，“于禄比你聪明讨喜太多了。 ” 少女再不敢胡乱说话。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 崔瀺与于禄对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 134,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2085,7 +2436,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2147,7 +2498,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.675813",
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2251,7 +2602,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2301,6 +2652,19 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "唯独于禄守着那辆马车，没有靠近篝火这边。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 134,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安有些发愣，这到底是什么情况？ 李槐快步跑到陈平安身边，小声道：“这位姐姐，很光明磊落的，一见面就坦白自己是来自山顶青娘娘庙的鬼魅，因为生前最喜欢下棋，加上现在小庙那边，聚集了一大堆探幽寻奇、饮酒作乐的文人雅士，她被吵得心烦意乱，就往山下散步，刚好看到林守一在那里复盘之后，就忍不住想要对弈一局，她愿意拿出一部孤本棋谱，赠送给林守一，作为酬谢。",
@@ -2330,17 +2694,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 李槐与陈平安会见",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "陈平安",
-          "林守一"
+          "于禄"
         ],
-        "description": "李宝瓶也蹲在一旁，小姑娘可没有观棋不语的觉悟，不管是林守一还是陌生女子，谁落子她都要点评一二。 陈平安有些发愣，这到底是什么情况？ 李槐快步跑到陈平安身边，小声道：“这位姐姐，很光明磊落的，一见面就坦白自己是来自山顶青娘娘庙的鬼魅，因为生前最喜欢下棋，加上现在小庙那边，聚集了一大堆探幽寻奇、饮酒作乐的文人雅士，她被吵得心烦意乱，就往山下散步，刚好看到林守一在那里复盘之后，就忍不住想要对弈一局，她愿意拿出一部孤本棋谱，赠送给林守一，作为酬谢。",
+        "description": "李宝瓶也蹲在一旁，小姑娘可没有观棋不语的觉悟，不管是林守一还是陌生女子，谁落子她都要点评一二。 唯独于禄守着那辆马车，没有靠近篝火这边。 陈平安有些发愣，这到底是什么情况？",
         "background": "",
-        "significance": "推动李槐与陈平安之间的会见关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -2371,7 +2736,7 @@
         "action": "会见",
         "context": "李槐快步跑到陈平安身边，小声道：“这位姐姐，很光明磊落的，一见面就坦白自己是来自山顶青娘娘庙的鬼魅，因为生前最喜欢下棋，加上现在小庙那边，聚集了一大堆探幽寻奇、饮酒作乐的文人雅士，她被吵得心烦意乱，就往山下散步，刚好看到林守一在那里复盘之后，就忍不住想要对弈一局，她愿意拿出一部孤本棋谱，赠送给林守一，作为酬谢。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 李槐与陈平安会见",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2391,7 +2756,7 @@
         "action": "会见",
         "context": "李槐快步跑到陈平安身边，小声道：“这位姐姐，很光明磊落的，一见面就坦白自己是来自山顶青娘娘庙的鬼魅，因为生前最喜欢下棋，加上现在小庙那边，聚集了一大堆探幽寻奇、饮酒作乐的文人雅士，她被吵得心烦意乱，就往山下散步，刚好看到林守一在那里复盘之后，就忍不住想要对弈一局，她愿意拿出一部孤本棋谱，赠送给林守一，作为酬谢。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 李槐与陈平安会见",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2411,7 +2776,7 @@
         "action": "会见",
         "context": "李槐快步跑到陈平安身边，小声道：“这位姐姐，很光明磊落的，一见面就坦白自己是来自山顶青娘娘庙的鬼魅，因为生前最喜欢下棋，加上现在小庙那边，聚集了一大堆探幽寻奇、饮酒作乐的文人雅士，她被吵得心烦意乱，就往山下散步，刚好看到林守一在那里复盘之后，就忍不住想要对弈一局，她愿意拿出一部孤本棋谱，赠送给林守一，作为酬谢。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 李槐与陈平安会见",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2421,7 +2786,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2485,21 +2850,36 @@
         ],
         "juan_index": 134,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "陈平安下棋没有悟性，加上因为怕出错，还喜欢下得慢，所以林守一有了谢谢和于禄两位棋友之后，就不爱找陈平安手谈了。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 134,
+        "segment_index": 30
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "林守一"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安下棋没有悟性，加上因为怕出错，还喜欢下得慢，所以林守一有了谢谢和于禄两位棋友之后，就不爱找陈平安手谈了。 陈平安清楚自己不是下棋的料，也就不去精深研习了，倒是林守一，经常在休息的时候，独自打谱，枯寂得像是得道老僧，一看就是家学熏陶出来的。 陈平安走到篝火旁，没有靠近棋局，添了一把柴禾，但是哪怕是正在对局的林守一，也抬起头望向陈平安，冷峻少年的脸色带着些歉意，毕竟跟随他们一起远游的阴神，在嫁衣女鬼那场风波之后，给他们详细解释过，不被朝廷纳入山河谱牒的一切各路香火神灵，修为再高，口碑再好，都只能被划入鬼魅阴物一类，比他这种无依无靠的孤魂野鬼，好不到哪里去。",
         "background": "",
-        "significance": "推动陈平安与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -2528,7 +2908,7 @@
         "action": "同行",
         "context": "陈平安走到篝火旁，没有靠近棋局，添了一把柴禾，但是哪怕是正在对局的林守一，也抬起头望向陈平安，冷峻少年的脸色带着些歉意，毕竟跟随他们一起远游的阴神，在嫁衣女鬼那场风波之后，给他们详细解释过，不被朝廷纳入山河谱牒的一切各路香火神灵，修为再高，口碑再好，都只能被划入鬼魅阴物一类，比他这种无依无靠的孤魂野鬼，好不到哪里去。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2538,7 +2918,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2639,17 +3019,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 陈平安与林守一在大骊剧情推进",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "大骊",
+        "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安",
           "林守一",
           "杨老头"
         ],
         "description": "显而易见，女鬼的棋力不会太高，要不然不至于被林守一稳占上风。 陈平安独自坐在距离篝火稍远的地方，偷偷瞥了眼阴神那边，后者微笑点头，示意不用担心，这位女子掀不起风波。 陈平安这才彻底放下心来。",
         "background": "",
-        "significance": "在大骊推动陈平安与林守一之间的剧情推进线。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段31",
         "sentence_indexes_in_segment": [
@@ -2665,7 +3046,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.755701",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2730,7 +3111,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.756704",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2836,7 +3217,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.756704",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2944,7 +3325,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.756704",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3003,6 +3384,19 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "于禄十四岁。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 134,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "谢谢十三岁。",
@@ -3018,18 +3412,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十四章 这一年 · 林守一与李宝瓶剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "林守一",
           "李宝瓶",
+          "林守一",
           "李槐",
-          "谢谢"
+          "于禄"
         ],
-        "description": "林守一十二岁，李宝瓶九岁，李槐七岁。 谢谢十三岁。 于禄十四岁。",
+        "description": "林守一十二岁，李宝瓶九岁，李槐七岁。 于禄十四岁。 谢谢十三岁。",
         "background": "",
-        "significance": "推动林守一与李宝瓶之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十四章 这一年 · 段35",
         "sentence_indexes_in_segment": [
@@ -3042,7 +3436,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.676816",
+    "extracted_at": "2026-03-25T01:03:30.756704",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

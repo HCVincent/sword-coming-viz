@@ -16,6 +16,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "没有了崔东山先后两次的故意牵引，陈平安在之后这一路走的，其实就走在了江湖里，而不是神神怪怪的山上。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 172,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "没有了崔东山先后两次的故意牵引，陈平安在之后这一路走的，其实就走在了江湖里，而不是神神怪怪的山上。 只不过陈平安浑然不知，只是有些遗憾，再没能遇上让人大开眼界的那些精怪鬼魅。",
@@ -67,19 +80,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 陈平安与李宝瓶在大骊迁移",
+        "name": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 陈平安与崔东山在大骊迁移",
         "time": null,
         "location": "大骊",
         "participants": [
           "陈平安",
+          "崔东山",
           "李宝瓶"
         ],
         "description": "没有了崔东山先后两次的故意牵引，陈平安在之后这一路走的，其实就走在了江湖里，而不是神神怪怪的山上。 只不过陈平安浑然不知，只是有些遗憾，再没能遇上让人大开眼界的那些精怪鬼魅。 如今已经不需要惦记李宝瓶他们的游学安危，身边又有得道成精的一双蛇蟒护驾，陈平安希望多碰到一些古怪事，当然前提最好是远远旁观，既能长见识，又不用身陷险境。",
         "background": "",
-        "significance": "在大骊推动陈平安与李宝瓶之间的迁移线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在大骊推动陈平安与崔东山之间的迁移线。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -93,34 +105,8 @@
         "segment_index": 1
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "李宝瓶"
-        ],
-        "action": "别离",
-        "context": "没有了崔东山先后两次的故意牵引，陈平安在之后这一路走的，其实就走在了江湖里，而不是神神怪怪的山上。 只不过陈平安浑然不知，只是有些遗憾，再没能遇上让人大开眼界的那些精怪鬼魅。 如今已经不需要惦记李宝瓶他们的游学安危，身边又有得道成精的一双蛇蟒护驾，陈平安希望多碰到一些古怪事，当然前提最好是远远旁观，既能长见识，又不用身陷险境。 可惜一直快要离开黄庭国地界，仍是走得十分平淡无奇。 这一天暮色，在水蛇背脊上练完走桩，陈平安就在一条幽静山路旁的破庙里歇脚，开始生火做饭。 虽然陈平安刻意拣选荒郊野岭返回大骊，可还是遇上不少行走于林莽间的男男女女，多是貂裘锦衣，挎刀佩剑，一身的江湖气概，也有些生得颇为凶神恶煞，满脸横肉，一看就不是正道人物，但是好在碰到陈平安三人后，最多几个斜眼，并无真正的风波。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 陈平安与李宝瓶在大骊迁移",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 172,
-        "segment_index": 1
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.785306",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.910281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -184,7 +170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.785306",
+    "extracted_at": "2026-03-25T01:03:30.911285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -246,7 +232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.785306",
+    "extracted_at": "2026-03-25T01:03:30.911285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -308,7 +294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786310",
+    "extracted_at": "2026-03-25T01:03:30.911285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -371,7 +357,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.912288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -435,7 +421,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -496,7 +482,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -558,7 +544,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -620,7 +606,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -683,7 +669,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -746,7 +732,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.786816",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -809,7 +795,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -872,7 +858,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -934,7 +920,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.913291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -997,7 +983,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.914295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1060,7 +1046,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.914295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1122,7 +1108,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.914295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1186,7 +1172,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.914295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

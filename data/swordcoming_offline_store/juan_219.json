@@ -13,7 +13,21 @@
       "江湖经验不够的神诰宗少年有些懵，一时间没了跋扈气焰。",
       "显而易见，是给“龙虎山天师府”给震慑到了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "火龙真人",
+        "alias": [],
+        "original_description_in_book": "道士张山愤怒道：“小道姓张名山，来自俱芦洲，师从凌霄派火龙真人，小道更是族谱有据可查的龙虎山张家子弟！",
+        "description": "道家高位人物，可补足陆沉之外的道门关系层次。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 219,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -32,13 +46,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 宝瓶洲迁移",
+        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 火龙真人在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "此次远游四方，来到宝瓶洲磨砺道心，是为了完成龙虎山山门的考验，只要小道返回家乡，就能够成为天师府金玉谱牒的在册道士！ 道士张山愤怒道：“小道姓张名山，来自俱芦洲，师从凌霄派火龙真人，小道更是族谱有据可查的龙虎山张家子弟！ 你们神诰宗，好大的威风，竟敢如此欺辱龙虎山张家人！",
+        "participants": [
+          "火龙真人"
+        ],
+        "description": "道士张山愤怒道：“小道姓张名山，来自俱芦洲，师从凌霄派火龙真人，小道更是族谱有据可查的龙虎山张家子弟！ 此次远游四方，来到宝瓶洲磨砺道心，是为了完成龙虎山山门的考验，只要小道返回家乡，就能够成为天师府金玉谱牒的在册道士！ 你们神诰宗，好大的威风，竟敢如此欺辱龙虎山张家人！",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键迁移场景。",
+        "significance": "对应火龙真人在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段2",
         "sentence_indexes_in_segment": [
@@ -54,7 +70,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.925326",
+    "extracted_at": "2026-03-25T01:03:31.136563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +133,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.925326",
+    "extracted_at": "2026-03-25T01:03:31.136563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -179,7 +195,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.925326",
+    "extracted_at": "2026-03-25T01:03:31.136563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -241,7 +257,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.925326",
+    "extracted_at": "2026-03-25T01:03:31.136563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -302,7 +318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.926329",
+    "extracted_at": "2026-03-25T01:03:31.136563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -364,7 +380,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.926329",
+    "extracted_at": "2026-03-25T01:03:31.137566",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -439,7 +455,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.926329",
+    "extracted_at": "2026-03-25T01:03:31.137566",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -500,7 +516,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.926329",
+    "extracted_at": "2026-03-25T01:03:31.137566",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -562,7 +578,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.926329",
+    "extracted_at": "2026-03-25T01:03:31.138570",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -625,7 +641,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.138570",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -687,7 +703,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.138570",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -749,7 +765,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.138570",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -812,7 +828,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.138570",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -875,7 +891,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.138570",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -938,7 +954,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1001,7 +1017,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1064,7 +1080,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1127,7 +1143,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1190,7 +1206,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1253,7 +1269,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.927333",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1316,7 +1332,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1380,7 +1396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1442,7 +1458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.139573",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1506,7 +1522,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1569,7 +1585,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.928336",
+    "extracted_at": "2026-03-25T01:03:31.140577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

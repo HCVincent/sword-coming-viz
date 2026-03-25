@@ -27,6 +27,19 @@
         ],
         "juan_index": 270,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "结果这位正郁闷的桂花小娘，看到那背剑少年朝咧嘴一笑，似乎看穿了她的小心思，金粟狠狠瞪了一眼，少年跟桂夫人老舟子三位老神仙挥手告别，似乎不敢金粟眼神对峙，已经转身快步跑向渡口。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 270,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -65,16 +78,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安在宝瓶洲冲突",
+        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安与桂夫人在宝瓶洲冲突",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
-        "description": "站在桂花岛山脚渡口处，陈平安轻轻跨出一脚，便踏上了倒悬山。 桂姨事先就跟陈平安说好，在桂花岛靠岸的那一刻，就是渡船最繁忙的时分，那些来自宝瓶洲、俱芦洲和桐叶洲的货物卸载，不能有丝毫差错，否则老龙城范家的金字招牌就要砸了，所以她和老舟子以及马致三人，需要亲自盯着每一手货物的交易，没办法带他去倒悬山客栈下榻，原本桂姨想让金粟领着陈平安，去往那间与桂花岛世代交好的客栈下榻，被陈平安婉拒，惹来金粟心中微微埋怨，这座倒悬山，无奇不有，让人游历再多次都会觉得新鲜。 （万字章节，补上昨天的请假。",
+        "description": "站在桂花岛山脚渡口处，陈平安轻轻跨出一脚，便踏上了倒悬山。 桂姨事先就跟陈平安说好，在桂花岛靠岸的那一刻，就是渡船最繁忙的时分，那些来自宝瓶洲、俱芦洲和桐叶洲的货物卸载，不能有丝毫差错，否则老龙城范家的金字招牌就要砸了，所以她和老舟子以及马致三人，需要亲自盯着每一手货物的交易，没办法带他去倒悬山客栈下榻，原本桂姨想让金粟领着陈平安，去往那间与桂花岛世代交好的客栈下榻，被陈平安婉拒，惹来金粟心中微微埋怨，这座倒悬山，无奇不有，让人游历再多次都会觉得新鲜。 结果这位正郁闷的桂花小娘，看到那背剑少年朝咧嘴一笑，似乎看穿了她的小心思，金粟狠狠瞪了一眼，少年跟桂夫人老舟子三位老神仙挥手告别，似乎不敢金粟眼神对峙，已经转身快步跑向渡口。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动陈平安与桂夫人之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -88,8 +104,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.101700",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "桂夫人"
+        ],
+        "action": "冲突",
+        "context": "（万字章节，补上昨天的请假。 s：本章的章节名借自一位读者。 ） 站在桂花岛山脚渡口处，陈平安轻轻跨出一脚，便踏上了倒悬山。 桂姨事先就跟陈平安说好，在桂花岛靠岸的那一刻，就是渡船最繁忙的时分，那些来自宝瓶洲、俱芦洲和桐叶洲的货物卸载，不能有丝毫差错，否则老龙城范家的金字招牌就要砸了，所以她和老舟子以及马致三人，需要亲自盯着每一手货物的交易，没办法带他去倒悬山客栈下榻，原本桂姨想让金粟领着陈平安，去往那间与桂花岛世代交好的客栈下榻，被陈平安婉拒，惹来金粟心中微微埋怨，这座倒悬山，无奇不有，让人游历再多次都会觉得新鲜。 结果这位正郁闷的桂花小娘，看到那背剑少年朝咧嘴一笑，似乎看穿了她的小心思，金粟狠狠瞪了一眼，少年跟桂夫人老舟子三位老神仙挥手告别，似乎不敢金粟眼神对峙，已经转身快步跑向渡口。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安与桂夫人在宝瓶洲冲突",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 270,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.363944",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -167,7 +209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.101700",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -229,7 +271,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.101700",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -291,7 +333,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102208",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -353,7 +395,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102208",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -417,7 +459,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102208",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -480,7 +522,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102208",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -542,7 +584,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102208",
+    "extracted_at": "2026-03-25T01:03:31.364949",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -604,7 +646,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102208",
+    "extracted_at": "2026-03-25T01:03:31.365952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,7 +711,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102713",
+    "extracted_at": "2026-03-25T01:03:31.365952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -733,7 +775,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102759",
+    "extracted_at": "2026-03-25T01:03:31.365952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -828,7 +870,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102759",
+    "extracted_at": "2026-03-25T01:03:31.365952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -893,7 +935,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102759",
+    "extracted_at": "2026-03-25T01:03:31.365952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -956,7 +998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.102759",
+    "extracted_at": "2026-03-25T01:03:31.365952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1037,7 +1079,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.366956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1071,20 +1113,34 @@
         ],
         "juan_index": 270,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "实在不行，就只能原路返回捉放渡，去跟桂夫人讨要金粟了，请这位桂花小娘帮着带路。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 270,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安遭遇",
+        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安与桂夫人遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
-        "description": "陈平安站在熙熙攘攘的街道上，四顾茫然，摘下养剑葫，只得站在原地借酒浇愁。 至于会不会被“大仇得报”的金粟冷嘲热讽，陈平安倒是无所谓。 实在不行，就只能原路返回捉放渡，去跟桂夫人讨要金粟了，请这位桂花小娘帮着带路。",
+        "description": "陈平安站在熙熙攘攘的街道上，四顾茫然，摘下养剑葫，只得站在原地借酒浇愁。 实在不行，就只能原路返回捉放渡，去跟桂夫人讨要金粟了，请这位桂花小娘帮着带路。 至于会不会被“大仇得报”的金粟冷嘲热讽，陈平安倒是无所谓。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
+        "significance": "推动陈平安与桂夫人之间的遭遇关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 段20",
         "sentence_indexes_in_segment": [
@@ -1100,7 +1156,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.366956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1136,6 +1192,19 @@
         ],
         "juan_index": 270,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "到最后金粟开开心心走下桂花岛，领着“灰头土脸”的陈平安一起去往鹳雀客栈，她下山之前，桂夫人给了她三颗小暑钱，要她省着点花。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 270,
+        "segment_index": 21
       }
     ],
     "locations": [
@@ -1158,16 +1227,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安在宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安与桂夫人在宝瓶洲同行",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
         "description": "陈平安又逮住一个知晓宝瓶洲雅言的路人，后者虽然依旧不知客栈地点，却知晓敬剑阁与猿蹂府，而且说起这两处地方的时候，陈平安询问的是“先生可知敬剑阁在何方”，那人的回答竟是“哦，你说那猿蹂府旁边的敬剑阁啊，好走，离此不算太远。 于是陈平安直接转头，去往捉放渡口，那位路人看着少年背影，满是遗憾，若是借此机会，自己能够跟猿蹂府搭上丁点儿关系，哪怕只是混个熟脸也好。 到最后金粟开开心心走下桂花岛，领着“灰头土脸”的陈平安一起去往鹳雀客栈，她下山之前，桂夫人给了她三颗小暑钱，要她省着点花。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动陈平安与桂夫人之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1181,8 +1253,29 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "桂夫人"
+        ],
+        "action": "同行",
+        "context": "到最后金粟开开心心走下桂花岛，领着“灰头土脸”的陈平安一起去往鹳雀客栈，她下山之前，桂夫人给了她三颗小暑钱，要她省着点花。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安与桂夫人在宝瓶洲同行",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 270,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.366956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1261,7 +1354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.366956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1308,6 +1401,19 @@
         ],
         "juan_index": 270,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "陈平安想起了阿良赠送给小宝瓶的银色养剑葫，当然还有正阳山苏稼仙子曾经悬佩的那枚紫金养剑葫，以及方才不久那家伙自称的“养剑葫老祖宗”。",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 270,
+        "segment_index": 23
       }
     ],
     "locations": [
@@ -1320,7 +1426,8 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "阿良"
+          "阿良",
+          "苏稼"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -1336,14 +1443,13 @@
         "location": "正阳山",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "苏稼"
         ],
         "description": "陈平安想起了阿良赠送给小宝瓶的银色养剑葫，当然还有正阳山苏稼仙子曾经悬佩的那枚紫金养剑葫，以及方才不久那家伙自称的“养剑葫老祖宗”。 陈平安突然问道：“金粟姑娘，猿蹂府在倒悬山很有名吗？ 道听途说而来的金粟，一样不能免俗。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1357,34 +1463,8 @@
         "segment_index": 23
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "阿良"
-        ],
-        "action": "对话",
-        "context": "道听途说而来的金粟，一样不能免俗。 实则执掌倒悬山“金科玉律”的道老二这一脉道人，关于养剑葫和为天下剑仙养剑一事，从来不会泄露半点天机，只说灵芝斋并无此等奇事，切勿多想，莫要以讹传讹。 陈平安想起了阿良赠送给小宝瓶的银色养剑葫，当然还有正阳山苏稼仙子曾经悬佩的那枚紫金养剑葫，以及方才不久那家伙自称的“养剑葫老祖宗”。 陈平安突然问道：“金粟姑娘，猿蹂府在倒悬山很有名吗？ ” 金粟点头道：“当然，皑皑洲刘家名下的猿蹂府，是倒悬山四大私宅之一，占地很大，名声更大，刘氏在皑皑洲是第一大姓氏，而且口碑极好，几乎所有皑皑洲的君主皇帝、地仙修士，都要跟刘氏打好关系，而且咱们练气士最多使用的雪花钱，就是按照刘家打造的钱模子铸造的，而那条玉矿山脉，刘氏一家就占了一成，别觉得一成听上去很不起眼，实在是不能再多了！",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "正阳山",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 270,
-        "segment_index": 23
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.366956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1417,6 +1497,19 @@
         ],
         "juan_index": 270,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "这些话，是老龙城孙嘉树亲口告诉她的，当时金粟从小财神孙嘉树的眼中，看到了一丝憧憬。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 270,
+        "segment_index": 24
       }
     ],
     "locations": [
@@ -1427,7 +1520,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1437,15 +1532,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安在老龙城剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "陈平安有些震惊。 这些话，是老龙城孙嘉树亲口告诉她的，当时金粟从小财神孙嘉树的眼中，看到了一丝憧憬。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 段24",
         "sentence_indexes_in_segment": [
@@ -1461,7 +1557,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.366956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1524,7 +1620,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1588,7 +1684,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1697,7 +1793,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1778,7 +1874,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.103271",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1842,7 +1938,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1920,7 +2016,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1984,7 +2080,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.367958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2018,20 +2114,34 @@
         ],
         "juan_index": 270,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "陈平安注视的一方水字印，灵气如水雾轻盈，化作一条溪涧，萦绕印章，印章底部篆刻有“银河垂落”四字，陈平安因为有一本李希圣注解详细的丹书真迹，对于古篆字已经认得不少。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 270,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安立势",
+        "name": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 陈平安与李希圣立势",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "陈平安在二楼一间水字印屋，久久停留，不愿离去，金粟便自己去别处逛荡，约好一个时辰后在法印堂门口碰头。 陈平安注视的一方水字印，灵气如水雾轻盈，化作一条溪涧，萦绕印章，印章底部篆刻有“银河垂落”四字，陈平安因为有一本李希圣注解详细的丹书真迹，对于古篆字已经认得不少。 听金粟说，法印堂的印章只收不出，不会卖给任何人。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键立势节点。",
+        "significance": "推动陈平安与李希圣之间的立势关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十九章 我有小事大如斗 · 段32",
         "sentence_indexes_in_segment": [
@@ -2047,7 +2157,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.368962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2109,7 +2219,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.368962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2173,7 +2283,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.368962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2236,7 +2346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.368962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2302,7 +2412,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.368962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2367,7 +2477,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.104265",
+    "extracted_at": "2026-03-25T01:03:31.368962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2446,7 +2556,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.105269",
+    "extracted_at": "2026-03-25T01:03:31.369965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

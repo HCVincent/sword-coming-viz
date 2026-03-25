@@ -123,7 +123,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.469056",
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -237,7 +237,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.469056",
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -346,7 +346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.469056",
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -458,7 +458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.469780",
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -511,17 +511,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十四章 三陈 · 陈平安与宁姚剧情推进",
+        "name": "第一卷笼中雀 第六十四章 三陈 · 宁姚与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "宁姚"
+          "宁姚",
+          "陈平安"
         ],
         "description": "陈平安默默走到她身边，帮她重新煎药，动作娴熟。 宁姚嘴唇微动，仍是没有阻拦，只是趁陈平安不注意的时候抹了把脸。 宁姚冷哼一声，“想笑就笑！",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动宁姚与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十四章 三陈 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -535,8 +537,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.469780",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "宁姚嘴唇微动，仍是没有阻拦，只是趁陈平安不注意的时候抹了把脸。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十四章 三陈 · 宁姚与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 64,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -662,7 +685,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.469780",
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -699,6 +722,19 @@
       },
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "陈平安发现此人看待自己的眼神，很古怪，既不像正阳山搬山猿、老龙城苻南华，那么自恃高人一等，也不像陆道长和宁姑娘这样。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 64,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "宁姚皱眉道：“一看就是冲着你来的，怎么回事？",
@@ -720,7 +756,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -736,7 +773,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -747,16 +785,18 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十四章 三陈 · 陈平安与宁姚在正阳山剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "正阳山",
+        "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "陈平安",
           "宁姚"
         ],
         "description": "陈平安发现此人看待自己的眼神，很古怪，既不像正阳山搬山猿、老龙城苻南华，那么自恃高人一等，也不像陆道长和宁姑娘这样。 宁姚皱眉道：“一看就是冲着你来的，怎么回事？ 陈平安也纳闷，摇头道：“不明白。",
         "background": "",
-        "significance": "在正阳山推动陈平安与宁姚之间的剧情推进线。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十四章 三陈 · 段7",
         "sentence_indexes_in_segment": [
@@ -772,7 +812,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.487216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -829,6 +869,19 @@
         "power": "小镇",
         "sentence_indexes_in_segment": [
           4
+        ],
+        "juan_index": 64,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "听陈姐姐说，陈松风好像跟你这一支陈氏，算是好几百年前的远房亲戚吧，至于陈姐姐，跟你们哪怕往上推一两千年，也没啥关系。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 64,
         "segment_index": 8
@@ -898,7 +951,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.488220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1061,7 +1114,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.488220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1144,6 +1197,19 @@
         "original_description_in_book": "陈对和陈松风其实第一眼看到少女，俱是眼前一亮，",
         "description": "大骊线的重要人物，与陈平安和王朝布局线存在稳定交集。",
         "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 64,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈对和陈松风其实第一眼看到少女，俱是眼前一亮，",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1259,7 +1325,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.488220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1322,7 +1388,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.488220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1508,7 +1574,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.488220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1653,7 +1719,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.488220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1684,6 +1750,19 @@
         "sentence_indexes_in_segment": [
           0,
           5
+        ],
+        "juan_index": 64,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈对和陈松风联袂离去。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 64,
         "segment_index": 14
@@ -1752,8 +1831,8 @@
         "participants": [
           "刘羡阳",
           "陈对",
-          "阮秀",
-          "陈平安"
+          "陈松风",
+          "阮秀"
         ],
         "description": "陈对和陈松风联袂离去。 阮秀笑道：“我去跟我爹说一声。 陈平安在给宁姚煎完药后，去找刘羡阳。",
         "background": "",
@@ -1773,7 +1852,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.470059",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1882,7 +1961,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2004,7 +2083,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2100,7 +2179,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2190,7 +2269,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2304,7 +2383,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2426,7 +2505,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2473,6 +2552,19 @@
       },
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "除了宁姚和赶来凑热闹的风雷园剑修刘灞桥，其余三人，别洲陈对，本洲龙尾郡陈松风，小镇泥瓶巷陈平安。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 64,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "除了宁姚和赶来凑热闹的风雷园剑修刘灞桥，其余三人，别洲陈对，本洲龙尾郡陈松风，小镇泥瓶巷陈平安。",
@@ -2510,6 +2602,7 @@
         "related_entities": [
           "宁姚",
           "陈对",
+          "陈松风",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -2528,6 +2621,7 @@
         "related_entities": [
           "宁姚",
           "陈对",
+          "陈松风",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -2545,7 +2639,8 @@
         "participants": [
           "宁姚",
           "陈平安",
-          "陈对"
+          "陈对",
+          "陈松风"
         ],
         "description": "两拨人在廊桥南端碰头。 除了宁姚和赶来凑热闹的风雷园剑修刘灞桥，其余三人，别洲陈对，本洲龙尾郡陈松风，小镇泥瓶巷陈平安。 春雷震动，蛰虫惊而出走。",
         "background": "",
@@ -2563,7 +2658,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.489223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

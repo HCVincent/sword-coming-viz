@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.703035",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -133,7 +133,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.703035",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -211,7 +211,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.703035",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -312,7 +312,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.703035",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -379,7 +379,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.703035",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -502,7 +502,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.703035",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -551,6 +551,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           3,
+          5
+        ],
+        "juan_index": 148,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "但是如何都没有想到，齐静春真正选中的嫡传弟子，不是送出春字印的赵繇，不是送出仅剩书籍的宋集薪，甚至不是林守一这些少年读书种子。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 148,
@@ -642,22 +655,23 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "齐静春",
+          "顾璨",
           "陈平安",
-          "崔瀺",
-          "宋集薪"
+          "齐静春",
+          "崔瀺"
         ],
         "description": "当初小镇之行，是国师崔瀺自认为的收官之战，因为涉及到证道契机，他不惜神魂对半剥离，寄居于另外一副身躯皮囊，以少年形象大大方方离开大骊京城。 原来以为哪怕断不掉文圣先生、师弟齐静春这一脉文运，也能够以泥瓶巷少年作为观想对象，借他山之石可以攻玉，砥砺心性，补齐最欠缺的心境，从而帮助自己一鼓作气破开十境，便有望重新返回十二境巅峰修为，甚至借助大骊推广自己的学识，只要他年自己的事功学问，能够遍及半洲版图，可以百尺竿头更进一步，若是一洲之地的儒家门生，皆是我崔瀺之门生弟子，裨益之丰，无法想象。 在当时看来，不管如何计算，崔瀺都能够立于不败之地，无非是获利大小的区别。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段8",
         "sentence_indexes_in_segment": [
@@ -684,11 +698,31 @@
         "action": "师承",
         "context": "原来以为哪怕断不掉文圣先生、师弟齐静春这一脉文运，也能够以泥瓶巷少年作为观想对象，借他山之石可以攻玉，砥砺心性，补齐最欠缺的心境，从而帮助自己一鼓作气破开十境，便有望重新返回十二境巅峰修为，甚至借助大骊推广自己的学识，只要他年自己的事功学问，能够遍及半洲版图，可以百尺竿头更进一步，若是一洲之地的儒家门生，皆是我崔瀺之门生弟子，裨益之丰，无法想象。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "顾璨离开小镇",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 148,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "师承",
+        "context": "但是如何都没有想到，齐静春真正选中的嫡传弟子，不是送出春字印的赵繇，不是送出仅剩书籍的宋集薪，甚至不是林守一这些少年读书种子。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 148,
         "segment_index": 8
@@ -704,7 +738,7 @@
         "action": "师承",
         "context": "但是如何都没有想到，齐静春真正选中的嫡传弟子，不是送出春字印的赵繇，不是送出仅剩书籍的宋集薪，甚至不是林守一这些少年读书种子。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -724,7 +758,7 @@
         "action": "师承",
         "context": "但是如何都没有想到，齐静春真正选中的嫡传弟子，不是送出春字印的赵繇，不是送出仅剩书籍的宋集薪，甚至不是林守一这些少年读书种子。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -734,7 +768,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.792829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -885,7 +919,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1060,7 +1094,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1139,7 +1173,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1238,7 +1272,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1344,7 +1378,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1464,7 +1498,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1574,7 +1608,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.704026",
+    "extracted_at": "2026-03-25T01:03:30.793832",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1639,7 +1673,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1718,7 +1752,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1811,7 +1845,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1879,17 +1913,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "杨老头"
         ],
         "description": "在更早的时候，在草鞋少年离开小镇之前。 那次在杨老头的提醒下，陈平安拿着雨伞离开杨家铺子，去把伞那位登门拜访杨老头、以及送给他两方山水印的学塾先生。 第七声之后，再无声响。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0
         ],
@@ -1918,7 +1952,7 @@
         "action": "会见",
         "context": "那次在杨老头的提醒下，陈平安拿着雨伞离开杨家铺子，去把伞那位登门拜访杨老头、以及送给他两方山水印的学塾先生。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1928,7 +1962,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1983,17 +2017,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "崔瀺"
         ],
         "description": "在少年带着小姑娘一起离开小镇时。 连同那柄雷部司印镜一起，少年崔瀺被狠狠砸回井底，整个人蜷缩在一起，躺在干燥至极的青石地板上，尽量躲在镜面底下。 说完这句话后，双鬓霜白的读书人，难得不像在学塾传授学问时那么古板严肃，眨了眨眼，望向少年，和煦笑着。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段21",
         "sentence_indexes_in_segment": [
@@ -2009,7 +2043,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2075,7 +2109,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2141,7 +2175,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.794835",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2219,7 +2253,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.795839",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2324,7 +2358,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.705030",
+    "extracted_at": "2026-03-25T01:03:30.795839",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2403,7 +2437,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.706033",
+    "extracted_at": "2026-03-25T01:03:30.795839",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2462,7 +2496,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.706033",
+    "extracted_at": "2026-03-25T01:03:30.795839",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

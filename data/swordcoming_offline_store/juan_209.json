@@ -88,7 +88,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.068327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -111,6 +111,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "崔姓老前辈的一拳出去，地动山摇，风雪庙剑仙魏晋，人未至剑先来，天地大放光明……",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 209,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "发现陈平安好像在修行，春水赶紧默默转身，一声不吭，返回正厅的时候还有意放轻了脚步。",
@@ -131,7 +144,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -157,15 +172,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零九章 也是木剑 · 陈平安在风雪庙剧情推进",
+        "name": "第三卷金错刀 第二百零九章 也是木剑 · 魏晋与陈平安在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "魏晋",
           "陈平安"
         ],
         "description": "崔姓老前辈的一拳出去，地动山摇，风雪庙剑仙魏晋，人未至剑先来，天地大放光明…… 久等不至，加上之前剧烈震动，惹来鲲船上上下下的惶恐不安，春水害怕观景台那边出现意外，冒着惹来贵客恶感的风险，穿过书房来到门槛附近，发现那位与大骊北岳正神交好的修士，已经消失不见，春水忍不住腹诽，这家伙真是神出鬼没。 发现陈平安好像在修行，春水赶紧默默转身，一声不吭，返回正厅的时候还有意放轻了脚步。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在风雪庙推动魏晋与陈平安之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零九章 也是木剑 · 段2",
         "sentence_indexes_in_segment": [
@@ -181,7 +197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.069330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -243,7 +259,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.069330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -323,7 +339,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.069330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -386,7 +402,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.070333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,7 +503,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.070333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -552,7 +568,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.070333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -630,7 +646,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.070333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -708,7 +724,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.070333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -770,7 +786,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.071337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -875,7 +891,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.071337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -938,7 +954,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.071337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1041,7 +1057,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.071337",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1107,7 +1123,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.072340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1187,7 +1203,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.072340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1287,7 +1303,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.072340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1350,7 +1366,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.903027",
+    "extracted_at": "2026-03-25T01:03:31.072340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1412,7 +1428,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.904040",
+    "extracted_at": "2026-03-25T01:03:31.072340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1470,7 +1486,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.904040",
+    "extracted_at": "2026-03-25T01:03:31.072340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

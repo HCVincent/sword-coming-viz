@@ -27,6 +27,19 @@
         ],
         "juan_index": 48,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "陈平安之所以是来李家，而非卢正淳所在的小镇头姓卢家，在于少年离开衙署的时候，一路相送的年迈管事，有意无意聊了一些家长里短，什么这条街上赵家的那位读书种子，赵繇已经离开小镇，以后指定是状元郎当大官的命，什么隔壁宋家有位小姐，到了出嫁岁数，连女红也做不好，只喜欢舞刀弄枪，哪里像一位千金小姐，你说好笑不好笑？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 48,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -69,7 +82,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
         "sentence_indexes_in_segment": [
           3,
@@ -82,17 +96,20 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "阿良",
-          "陈平安"
+          "顾璨",
+          "陈平安",
+          "赵繇"
         ],
         "description": "草鞋少年这些天经常往福禄街桃叶巷送家书，几乎家家户户的门房都认识了这位送信人，所以并不显得突兀，加上少年神色自若，像往常一般小跑在青石板街道上，哪怕有行人看到也不会当回事。 陈平安在临近一栋宅门，门前摆放有一尊用以镇邪止煞的石敢当，半人高，武将模样，陈平安知道这里是李家大宅，大富大贵的福禄街上，几乎家家户户的辟邪法子都不一样，就连大门张贴的门神都分文武，所以很容易分辨。 他迅速环顾四周，继续前行，再往前就是宋家，宋家过后便是窑务监造衙署了，在李宋两家毗邻的大宅交界处的外墙，生长有一棵槐树，老干虬枝，枝繁叶茂，虽然比不得小镇那棵老槐沧桑气象，但也让人一见不俗。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十八章 放纸鸢 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -106,8 +123,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.421893",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "别离",
+        "context": "陈平安之所以是来李家，而非卢正淳所在的小镇头姓卢家，在于少年离开衙署的时候，一路相送的年迈管事，有意无意聊了一些家长里短，什么这条街上赵家的那位读书种子，赵繇已经离开小镇，以后指定是状元郎当大官的命，什么隔壁宋家有位小姐，到了出嫁岁数，连女红也做不好，只喜欢舞刀弄枪，哪里像一位千金小姐，你说好笑不好笑？",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 48,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.419482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -248,7 +286,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.419482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -341,7 +379,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.419482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -459,7 +497,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.419482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -573,7 +611,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.419482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -650,7 +688,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.420485",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -711,7 +749,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.420485",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -750,16 +788,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "猿爷爷提醒过她，风雷园的人也到了小镇，在他摆平之前，她不要离开这座院子。 她倒是没有擅自离开院子，让下人们为难。 小女孩虽然年幼，但是从小耳濡目染山上修行的云波诡谲，危机四伏，而且家教极严，故而不是那种让长辈不省心的顽劣孩子。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十八章 放纸鸢 · 段8",
         "sentence_indexes_in_segment": [
@@ -775,7 +813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.420485",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -839,7 +877,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.420485",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -900,7 +938,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.420485",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -961,7 +999,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.422896",
+    "extracted_at": "2026-03-25T01:03:30.420485",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1053,7 +1091,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1114,7 +1152,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1134,7 +1172,21 @@
       "还是衙署宋长镜的谋划？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "还是衙署宋长镜的谋划？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 48,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -1153,13 +1205,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十八章 放纸鸢 · 正阳山剧情推进",
+        "name": "第一卷笼中雀 第四十八章 放纸鸢 · 宋长镜在正阳山剧情推进",
         "time": null,
         "location": "正阳山",
-        "participants": [],
-        "description": "正阳山护山猿陷入沉思，呢喃道：“是风雷园那小子借机寻衅？ ” 李氏家主连忙作揖致歉，惶恐不安道：“猿老祖这是折煞李家啊。",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "正阳山护山猿陷入沉思，呢喃道：“是风雷园那小子借机寻衅？ 还是衙署宋长镜的谋划？ ”",
         "background": "",
-        "significance": "对应正阳山相关的关键剧情推进场景。",
+        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十八章 放纸鸢 · 段21",
         "sentence_indexes_in_segment": [
@@ -1175,7 +1229,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1236,7 +1290,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1311,7 +1365,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1403,7 +1457,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1466,7 +1520,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1527,7 +1581,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.421489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1588,7 +1642,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1666,7 +1720,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.423900",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1728,7 +1782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -44,6 +44,34 @@
         ],
         "juan_index": 271,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "先前在师刀房那堵影壁上，贴满了密密麻麻的榜单，陈平安当时找到了三个熟悉的名字，崔瀺，许弱，宋长镜。 墨家许弱和大骊藩王各一张，理由都很奇怪，悬赏许弱之人，是一位署名“峥嵘湖碧水元君刘柔玺”的女子，字里行间，满满的恨意，以及情意。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 271,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "先前在师刀房那堵影壁上，贴满了密密麻麻的榜单，陈平安当时找到了三个熟悉的名字，崔瀺，许弱，宋长镜。 至于悬赏宋长镜的那个人，署名为金甲洲韩万斩，此人可能是钱太多了没地方花，理由竟然是觉得小小宝瓶洲，根本就不配拥有一位武道止境大宗师。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 271,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -56,7 +84,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "许弱"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -70,7 +100,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -85,7 +117,9 @@
         "location": "大骊",
         "participants": [
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "许弱",
+          "宋长镜"
         ],
         "description": "这天去过了师刀房后，陈平安和金粟最后去了敬剑阁，如此一来，今日行程绕路最少，不用走太多冤枉路。 先前在师刀房那堵影壁上，贴满了密密麻麻的榜单，陈平安当时找到了三个熟悉的名字，崔瀺，许弱，宋长镜。 其中崔瀺次数最多，有六张之多，发榜人来自四个不同的大洲，可想而知，这位昔年的文圣首徒在浩然天下，是何等不受待见。",
         "background": "",
@@ -105,7 +139,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.105269",
+    "extracted_at": "2026-03-25T01:03:31.369965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -144,7 +178,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十章 好久不见,宁姑娘 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百七十章 好久不见,宁姑娘 · 陈平安试探",
         "time": null,
         "location": null,
         "participants": [
@@ -152,7 +186,7 @@
         ],
         "description": "陈平安忍不住多看了一眼，因为那个女子实在太高了，满头青丝扎成了一条马尾辫，身材匀称，腰间悬挂着一把无鞘长剑，像是新鲜出炉的新剑，阳光映照下，高大女子在行走之间，长剑折射出一阵阵雪白清亮的光线。 其实不光是陈平安，街道两侧众人几乎无一例外，都在打量这位奇怪女子。 一位英俊男子与她并肩而行，窃窃私语，女子偶尔点头，极少说话。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十章 好久不见,宁姑娘 · 段2",
         "sentence_indexes_in_segment": [
@@ -168,7 +202,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.105269",
+    "extracted_at": "2026-03-25T01:03:31.369965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -206,7 +240,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十章 好久不见,宁姑娘 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百七十章 好久不见,宁姑娘 · 陈平安试探",
         "time": null,
         "location": null,
         "participants": [
@@ -214,7 +248,7 @@
         ],
         "description": "陈平安倒是没有怎么留意，很快就走自己的路，小口小口喝着酒，只是想起了家乡的石拱桥而已，当然想着想着，也想到了天上的那座金色拱桥，云海之中，一望无垠。 虽然那女子始终没说话，没有华美衣饰，甚至没有倾国倾城的姿色，可是金粟就是羡慕这样的女子，说不清道不明。 有些人总是这么不一样，看了一眼，就能让人记住很多年。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十章 好久不见,宁姑娘 · 段3",
         "sentence_indexes_in_segment": [
@@ -230,7 +264,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.105269",
+    "extracted_at": "2026-03-25T01:03:31.369965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -307,7 +341,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.105269",
+    "extracted_at": "2026-03-25T01:03:31.370969",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -387,7 +421,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.105269",
+    "extracted_at": "2026-03-25T01:03:31.370969",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -524,7 +558,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.370969",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -588,7 +622,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.370969",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -650,7 +684,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.370969",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -714,7 +748,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.370969",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -793,7 +827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.371972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -932,7 +966,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.371972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1009,7 +1043,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.371972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1086,7 +1120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.371972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1149,7 +1183,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.371972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1255,7 +1289,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.106272",
+    "extracted_at": "2026-03-25T01:03:31.371972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

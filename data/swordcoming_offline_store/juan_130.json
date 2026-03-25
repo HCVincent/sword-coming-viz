@@ -51,15 +51,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安在龙泉剧情推进",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安"
         ],
         "description": "你以为那个叫陈平安的少年，为何要借助驿站寄信回龙泉县城，贫道估计如果到了那什么太岁、草头铺子，是为师而不是你亲手拿出石子的话，咱们在那边的日子就不好过喽，未必会遭人刁难，但是别想顺顺当当站稳脚跟，更别提找到一座山头，去寄人篱下修行了。 老人轻声道：“小跛子，这是你的缘分，师父拿不走的，真拿了，反而不是好事。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段2",
         "sentence_indexes_in_segment": [
@@ -75,7 +76,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -194,7 +195,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -214,7 +215,21 @@
       "”",
       "小姑娘有些后知后觉，好奇问道：“既然师父晓得他们有高手保护，那为啥要多此一举，告诉他们三枝山厉鬼的情形，他们根本就不用担心啊。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "目盲老道人嗤笑道：“要不然那风雪庙剑仙魏晋，破关第一件事，就是前来相救？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 130,
+        "segment_index": 4
+      }
+    ],
     "locations": [
       {
         "name": "风雪庙",
@@ -223,7 +238,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -233,13 +250,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 风雪庙对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 魏晋在风雪庙对话",
         "time": null,
         "location": "风雪庙",
-        "participants": [],
+        "participants": [
+          "魏晋"
+        ],
         "description": "目盲老道人嗤笑道：“要不然那风雪庙剑仙魏晋，破关第一件事，就是前来相救？ 再说了，这些孩子身边有一尊阴神担任扈从，竟然能够威胁到那个凶狠女鬼的山根水源，这些孩子就没一个是省油的灯。 ”",
         "background": "",
-        "significance": "对应风雪庙相关的关键对话场景。",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段4",
         "sentence_indexes_in_segment": [
@@ -255,7 +274,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -317,7 +336,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.735631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -379,7 +398,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.735631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -461,17 +480,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 林守一与杨老头对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
           "林守一",
-          "杨老头",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安欲言又止。 阴神望向陈平安，笑道：“我们能不能单独谈一下？ 陈平安点头，让林守一三人先行。",
         "background": "",
-        "significance": "推动林守一与杨老头之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -502,7 +522,7 @@
         "action": "对话",
         "context": "阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 林守一与杨老头对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -522,7 +542,7 @@
         "action": "对话",
         "context": "阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 林守一与杨老头对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -542,7 +562,7 @@
         "action": "对话",
         "context": "阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 林守一与杨老头对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -552,7 +572,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.735631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -614,6 +634,34 @@
       },
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。 曾经有一次，李二找到杨老头，说他媳妇给人欺负了，他要出山找那户人家的老祖宗算账，一定要离开骊珠洞天，杨老头犟不过，只好答应了。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4
+        ],
+        "juan_index": 130,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 130,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "杨老头",
         "alias": [
           "杨掌柜"
@@ -637,6 +685,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "杨老头"
         ],
         "sentence_indexes_in_segment": [
@@ -652,7 +701,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李二"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -662,18 +713,24 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与林守一在骊珠洞天对话",
+        "name": "书院同行南下",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "陈平安",
-          "林守一"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安挠挠头，“我还以为你是来保护宝瓶或是林守一。 这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。 曾经有一次，李二找到杨老头，说他媳妇给人欺负了，他要出山找那户人家的老祖宗算账，一定要离开骊珠洞天，杨老头犟不过，只好答应了。",
         "background": "",
-        "significance": "在骊珠洞天推动陈平安与林守一之间的对话线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段12",
         "sentence_indexes_in_segment": [
@@ -700,7 +757,7 @@
         "action": "守护",
         "context": "陈平安挠挠头，“我还以为你是来保护宝瓶或是林守一。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与林守一在骊珠洞天对话",
+        "event_name": "书院同行南下",
         "location": "骊珠洞天",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -708,9 +765,89 @@
         ],
         "juan_index": 130,
         "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "对话",
+        "context": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 130,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 130,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 130,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "别离",
+        "context": "曾经有一次，李二找到杨老头，说他媳妇给人欺负了，他要出山找那户人家的老祖宗算账，一定要离开骊珠洞天，杨老头犟不过，只好答应了。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 130,
+        "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.735631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -747,6 +884,21 @@
       },
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "不都说李二是小镇西边最没出息的男人吗？ 陈平安疑惑问道：“为什么李二不告诉李槐？",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 130,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "甚至连他儿子李槐，也从来这么认为啊。 陈平安疑惑问道：“为什么李二不告诉李槐？",
@@ -769,7 +921,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李二"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -779,19 +933,21 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "小镇",
+        "location": "龙泉",
         "participants": [
-          "阿良",
+          "李二",
           "陈平安",
           "李槐"
         ],
         "description": "陈平安张大嘴巴。 不都说李二是小镇西边最没出息的男人吗？ 甚至连他儿子李槐，也从来这么认为啊。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段13",
         "sentence_indexes_in_segment": [
@@ -813,12 +969,52 @@
           "陈平安"
         ],
         "to_roles": [
+          "李二"
+        ],
+        "action": "对话",
+        "context": "陈平安疑惑问道：“为什么李二不告诉李槐？",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 130,
+        "segment_index": 13
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "李槐"
         ],
         "action": "对话",
         "context": "陈平安疑惑问道：“为什么李二不告诉李槐？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "李二照面陈平安",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 130,
+        "segment_index": 13
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "对话",
+        "context": "陈平安疑惑问道：“为什么李二不告诉李槐？",
+        "result": null,
+        "event_name": "李二照面陈平安",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -828,7 +1024,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.735631",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -942,7 +1138,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -990,6 +1186,19 @@
         ],
         "juan_index": 130,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 130,
+        "segment_index": 15
       }
     ],
     "locations": [
@@ -1001,6 +1210,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1012,16 +1222,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐在泥瓶巷揭示",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "泥瓶巷",
+        "location": "龙泉",
         "participants": [
-          "陈平安",
-          "李槐"
+          "李二",
+          "陈平安"
         ],
         "description": "陈平安向前缓缓而行，“有关我自己的事情，我觉得是对的，当然可以自己做决定。 可李槐他爹既然不愿意告诉自己儿子，我一个外人，凭什么告诉李槐真相？ 难道就因为我觉得这样李槐会开心一点？",
         "background": "",
-        "significance": "在泥瓶巷推动陈平安与李槐之间的揭示线。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
           0
         ],
@@ -1042,30 +1252,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "李二"
         ],
         "to_roles": [
-          "李槐"
+          "陈平安"
         ],
         "action": "同行",
-        "context": "陈平安向前缓缓而行，“有关我自己的事情，我觉得是对的，当然可以自己做决定。 可李槐他爹既然不愿意告诉自己儿子，我一个外人，凭什么告诉李槐真相？ 难道就因为我觉得这样李槐会开心一点？ 这样不好。 ” 阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
+        "context": "阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐在泥瓶巷揭示",
+        "event_name": "李二照面陈平安",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 130,
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1165,7 +1370,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1257,18 +1462,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与林守一在泥瓶巷剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陈平安",
-          "林守一",
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "不过一想到这一路陈平安的表现，阴神就又释然，大概这也是陈平安能够服众的原因所在。 哪怕林守一如今已经跻身中五境，成为真正的山上神仙，李宝瓶还是不会听他的，李槐也一样，至于阴神自己，恐怕一样不会例外，林守一在他眼中，终究还只是一个极其聪明、资质很好的少年晚辈而已。 好像泥瓶巷少年身上，有一种能让人感到“心安理得”和“天经地义”的气质。",
         "background": "",
-        "significance": "在泥瓶巷推动陈平安与林守一之间的剧情推进线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段17",
         "sentence_indexes_in_segment": [
@@ -1284,7 +1489,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1348,16 +1553,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 李槐与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "他甚至从来没有把李槐当做不懂事的孩子，也愿意跟林守一待在一起聊天，听后者说外边天地的事情。 陈平安小跑向前，扭头笑道：“我如果不相信前辈，这个问题就不会问了啊。 但是更奇怪的地方，在于少年从来没有刻意炫耀过自己的任何长处。",
         "background": "",
-        "significance": "推动李槐与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1386,7 +1593,7 @@
         "action": "同行",
         "context": "他甚至从来没有把李槐当做不懂事的孩子，也愿意跟林守一待在一起聊天，听后者说外边天地的事情。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 李槐与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1396,7 +1603,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1501,7 +1708,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1553,6 +1760,21 @@
       },
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "黄昏中，陈平安停下来搭灶烧饭，李槐熟门熟路地跑去拾取回一大捧干枯树枝，然后蹲在一旁，跟陈平安告状道：“陈平安，我觉得风雪庙魏晋没阿良好。 李槐去自己书箱拎出彩绘木偶和一个泥人儿，用木偶狠狠欺负那个持剑的小泥人，再让后者摆出跪地求饶的姿势，嘴里喊着“女鬼大人，饶命饶命，我魏晋知道错啦……”",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 130,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "阿良",
         "alias": [],
         "original_description_in_book": "黄昏中，陈平安停下来搭灶烧饭，李槐熟门熟路地跑去拾取回一大捧干枯树枝，然后蹲在一旁，跟陈平安告状道：“陈平安，我觉得风雪庙魏晋没阿良好。",
@@ -1576,6 +1798,7 @@
         "related_entities": [
           "陈平安",
           "李槐",
+          "魏晋",
           "阿良"
         ],
         "sentence_indexes_in_segment": [
@@ -1593,6 +1816,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "魏晋",
           "李槐"
         ],
         "description": "黄昏中，陈平安停下来搭灶烧饭，李槐熟门熟路地跑去拾取回一大捧干枯树枝，然后蹲在一旁，跟陈平安告状道：“陈平安，我觉得风雪庙魏晋没阿良好。 陈平安没搭理他。 李槐去自己书箱拎出彩绘木偶和一个泥人儿，用木偶狠狠欺负那个持剑的小泥人，再让后者摆出跪地求饶的姿势，嘴里喊着“女鬼大人，饶命饶命，我魏晋知道错啦……”",
@@ -1613,7 +1837,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.663771",
+    "extracted_at": "2026-03-25T01:03:30.736634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1662,6 +1886,19 @@
       },
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "林守一坐在不远处一块石头上，正在翻看那幅搜山图，抬头说道：“如果我没有看错的话，魏晋好像看不起你，或者说，最不看好你。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 130,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "正在默默收拾小书箱的李宝瓶大怒，“还有这种事情？",
@@ -1677,18 +1914,21 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 李槐与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "李槐",
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "李槐翻了个白眼，双手乱动，继续让彩绘木偶蹂躏泥人。 林守一坐在不远处一块石头上，正在翻看那幅搜山图，抬头说道：“如果我没有看错的话，魏晋好像看不起你，或者说，最不看好你。 正在默默收拾小书箱的李宝瓶大怒，“还有这种事情？",
         "background": "",
-        "significance": "推动李槐与林守一之间的对话关系。",
-        "related_action_indices": [],
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1702,8 +1942,29 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "林守一坐在不远处一块石头上，正在翻看那幅搜山图，抬头说道：“如果我没有看错的话，魏晋好像看不起你，或者说，最不看好你。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 130,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1751,21 +2012,34 @@
         ],
         "juan_index": 130,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "陈平安有条不紊地忙碌起来，自顾自说道：“魏晋那么厉害的人，还被称为陆地剑仙，可是跟我们说话的时候，还是和和气气，愿意跟我们这些孩子摆事实讲道理，你以为所有山上的神仙，都是这样的吗？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 130,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与魏晋对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "李槐"
+          "魏晋"
         ],
         "description": "撅着屁股趴在地上，缓缓点燃柴火堆后，陈平安蹲着准备煮饭，“看不起我，跟他是不是好人，有什么关系？ 李槐一脸震惊，“陈平安，你咋想的，看不起我的人，还能是很好的好人？ 陈平安有条不紊地忙碌起来，自顾自说道：“魏晋那么厉害的人，还被称为陆地剑仙，可是跟我们说话的时候，还是和和气气，愿意跟我们这些孩子摆事实讲道理，你以为所有山上的神仙，都是这样的吗？",
         "background": "",
-        "significance": "推动陈平安与李槐之间的对话关系。",
+        "significance": "推动陈平安与魏晋之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -1789,27 +2063,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "李槐"
+          "魏晋"
         ],
         "action": "对话",
-        "context": "撅着屁股趴在地上，缓缓点燃柴火堆后，陈平安蹲着准备煮饭，“看不起我，跟他是不是好人，有什么关系？ ” 李槐一脸震惊，“陈平安，你咋想的，看不起我的人，还能是很好的好人？ 肯定是没那么好的好人啊！ ” 陈平安有条不紊地忙碌起来，自顾自说道：“魏晋那么厉害的人，还被称为陆地剑仙，可是跟我们说话的时候，还是和和气气，愿意跟我们这些孩子摆事实讲道理，你以为所有山上的神仙，都是这样的吗？",
+        "context": "陈平安有条不紊地忙碌起来，自顾自说道：“魏晋那么厉害的人，还被称为陆地剑仙，可是跟我们说话的时候，还是和和气气，愿意跟我们这些孩子摆事实讲道理，你以为所有山上的神仙，都是这样的吗？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐对话",
+        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与魏晋对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 130,
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1848,16 +2117,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "我在离开小镇之前，就遇到过杀人只看自己心情、只讲自己道理的神仙，而且还不止一个。 不是的。 ”",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段23",
         "sentence_indexes_in_segment": [
@@ -1873,7 +2142,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1940,17 +2209,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "陈平安看了眼他们，“这是在我们家乡。 以后等到宝瓶到了大隋书院，如果读书很厉害，还有林守一，年纪不大就成了练气士，当然能够让人看得起，你李槐……的话，等年纪大一点再说，现在不用急。 李槐急眼了，“陈平安你不着急，可我着急啊！",
         "background": "",
-        "significance": "推动陈平安与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段24",
         "sentence_indexes_in_segment": [
@@ -1966,7 +2236,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2043,7 +2313,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2103,6 +2373,19 @@
         ],
         "juan_index": 130,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阿良说是没有，早知道魏晋走之前，我该问问他有没有的，万一阿良没有他有呢？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 130,
+        "segment_index": 26
       }
     ],
     "locations": [],
@@ -2114,7 +2397,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "李槐"
+          "李槐",
+          "魏晋"
         ],
         "description": "陈平安无奈道：“现在知道自己年纪小了？ 李槐目瞪口呆，想了半天，还是没有答案。 最后在大伙儿一起围坐吃饭的时候，李槐夹了块腌菜，一大口饭下肚后，问道：“你们说，世上有没有一蹴而就的捷径法门啊，比如今天练了、明天就能变成神仙的本事？",
         "background": "",
@@ -2134,7 +2418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2238,7 +2522,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2304,17 +2588,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 李槐与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "李槐",
+          "李宝瓶",
           "林守一",
-          "陈平安"
+          "李槐",
+          "于禄"
         ],
         "description": "李槐咽了咽口水，望向林守一，然后默默转头望向陈平安，最后李槐有些伤心，突然灵光乍现，他赶紧从地上捡起那只彩绘木偶，“它吃！ 没办法，个子最大，最漂亮好看，还是资历最老的功勋，随我李槐征战四方的日子最长嘛，之后那五个脏兮兮的小泥人儿，就只能排到乙丙丁午己了。 林守一笑问道：“那夹在那本断水大崖书里的小东西呢？",
         "background": "",
-        "significance": "推动李槐与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段28",
         "sentence_indexes_in_segment": [
@@ -2330,7 +2615,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.737638",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2382,16 +2667,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 李槐与李宝瓶剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐摇头道：“它们？ 李宝瓶一语道破天机，“你是因为不喜欢读书吧，所以不乐意看到它们，因为需要你先翻开书页。 李槐一脸你说什么我没听清楚的表情。",
         "background": "",
-        "significance": "推动李槐与李宝瓶之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段29",
         "sentence_indexes_in_segment": [
@@ -2407,7 +2694,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.738641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2500,7 +2787,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.664775",
+    "extracted_at": "2026-03-25T01:03:30.738641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2604,7 +2891,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.665778",
+    "extracted_at": "2026-03-25T01:03:30.738641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2705,7 +2992,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.665778",
+    "extracted_at": "2026-03-25T01:03:30.738641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2823,7 +3110,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.665778",
+    "extracted_at": "2026-03-25T01:03:30.738641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2921,18 +3208,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安",
           "李宝瓶",
-          "林守一"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "经过一座小镇集市后，李宝瓶买了五六本杂书，有山水游记，有佛道经典，有文人笔记。 林守一买了一副棋，教了陈平安规则之后，只要有空就经常对弈，因为李宝瓶坐不住，恨不得一口气在棋盘上丢下七八颗棋子，还总嫌弃林守一下棋太慢了。 至于李槐那纯粹就是懒得动脑筋。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段34",
         "sentence_indexes_in_segment": [
@@ -2948,7 +3235,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.665778",
+    "extracted_at": "2026-03-25T01:03:30.738641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3027,7 +3314,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.665778",
+    "extracted_at": "2026-03-25T01:03:30.739644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

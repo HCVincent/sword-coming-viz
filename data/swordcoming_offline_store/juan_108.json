@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.608016",
+    "extracted_at": "2026-03-25T01:03:30.656862",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -119,7 +119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.657865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -155,20 +155,34 @@
         ],
         "juan_index": 108,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "这些是李槐偷偷攒下的所有余粮了，大半是从舅舅家偷出来的，小半是姐姐李柳的私房钱。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 108,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零八章 春蒐 · 李槐剧情推进",
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李槐与李柳剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "李槐"
+          "李槐",
+          "李柳"
         ],
         "description": "这些是李槐偷偷攒下的所有余粮了，大半是从舅舅家偷出来的，小半是姐姐李柳的私房钱。 这让李槐很意外。 虽然当时他说会看，事实上买下之后，看当然会看，随手翻阅打发时间而已，李槐对这本断水大崖其实没太大兴趣。",
         "background": "",
-        "significance": "对应李槐在叙事中的关键剧情推进节点。",
+        "significance": "推动李槐与李柳之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零八章 春蒐 · 段10",
         "sentence_indexes_in_segment": [
@@ -184,7 +198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.657865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -308,18 +322,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "朱鹿"
+          "于禄"
         ],
         "description": "李槐不傻。 一双双草鞋，还未打造好的书箱，加上这本断水大崖，欠了人家这么多，所以李槐觉得要是不为陈平安做点什么，自己会过意不去，心里堵得慌。 其实李槐不喜欢朱鹿，甚至连患难与共的林守一，也不是如何喜欢，反而是在学塾就经常欺负自己的李宝瓶，觉得还不错。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零八章 春蒐 · 段11",
         "sentence_indexes_in_segment": [
@@ -335,7 +349,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.657865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -397,7 +411,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.657865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -430,21 +444,37 @@
         ],
         "juan_index": 108,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "风流儒雅的年轻公子哥，在确定二人离开小巷后，便不复见之前的恬淡闲适，略显恭敬局促，抱拳轻声道：“冲澹江李锦，拜见郎中大人。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 108,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零八章 春蒐 · 李槐对话",
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李槐与李锦对话",
         "time": null,
         "location": null,
         "participants": [
-          "李槐"
+          "李槐",
+          "李锦"
         ],
         "description": "程昇二话不说拉着李槐，掉头就走。 风流儒雅的年轻公子哥，在确定二人离开小巷后，便不复见之前的恬淡闲适，略显恭敬局促，抱拳轻声道：“冲澹江李锦，拜见郎中大人。 ”",
         "background": "",
-        "significance": "对应李槐在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动李槐与李锦之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百零八章 春蒐 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -458,8 +488,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "李锦"
+        ],
+        "action": "对话",
+        "context": "程昇二话不说拉着李槐，掉头就走。 风流儒雅的年轻公子哥，在确定二人离开小巷后，便不复见之前的恬淡闲适，略显恭敬局促，抱拳轻声道：“冲澹江李锦，拜见郎中大人。 ” 白发苍苍的老人一手负背后，一手提灯笼，点了点头，径直跨过书铺门槛，侧身让出道路的年轻人尾随其后，老人随手将灯笼握柄插入书墙高处的书籍低端，转头看着面如冠玉的年轻人，感慨道：“四十年前你我初次见面，你就是这般容颜，如今再见，依然如此，羡煞旁人啊。 ” 年轻人握紧折扇，微笑道：“对我们这些异类而言，能够生而为人，才是天大的幸事。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百零八章 春蒐 · 李槐与李锦对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.657865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -523,7 +579,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.657865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -543,7 +599,24 @@
       "李锦通过路过红烛镇的官宦商贾，得知老人坐上这个位置后，寄去数封书信，无一不是泥牛入海，杳无音信，李锦不敢造次，只得遗憾作罢。",
       "化名李锦的“年轻人”在百年以来，苦心孤诣，竭力谋求冲澹江江水正神的位置，用了许多门路香火，全部无功而返。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦在四十年前，作为这间书铺的主人，曾经赠予一位进京赶考的寒酸士子两本典籍，没有想到之后那位寒士一路升迁，成为了大骊礼部祠祭清吏司的郎中，清贵且权重。 但是对不在庙堂远在江湖的李锦而言，礼部祠祭清吏司还有另外一层意义，就是这座小衙门，据说许多京城官员连门都找不到，却暗中掌管着天下山水正神的筛选评定，虽无最终的勘定权，却有至关重要的举荐权。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 16
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -554,7 +627,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李锦"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -564,13 +639,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零八章 春蒐 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "李锦在四十年前，作为这间书铺的主人，曾经赠予一位进京赶考的寒酸士子两本典籍，没有想到之后那位寒士一路升迁，成为了大骊礼部祠祭清吏司的郎中，清贵且权重。 一位具体负责一国祭祀大典，许多时候君王都要问策于此人，这名品秩不高的文官，往往是儒家学宫、学院出身。 眼前这位貌不惊人的老人，正是其中之一。",
+        "participants": [
+          "李锦"
+        ],
+        "description": "李锦在四十年前，作为这间书铺的主人，曾经赠予一位进京赶考的寒酸士子两本典籍，没有想到之后那位寒士一路升迁，成为了大骊礼部祠祭清吏司的郎中，清贵且权重。 但是对不在庙堂远在江湖的李锦而言，礼部祠祭清吏司还有另外一层意义，就是这座小衙门，据说许多京城官员连门都找不到，却暗中掌管着天下山水正神的筛选评定，虽无最终的勘定权，却有至关重要的举荐权。 李锦通过路过红烛镇的官宦商贾，得知老人坐上这个位置后，寄去数封书信，无一不是泥牛入海，杳无音信，李锦不敢造次，只得遗憾作罢。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应李锦在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零八章 春蒐 · 段16",
         "sentence_indexes_in_segment": [
@@ -586,7 +663,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.658869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -736,7 +813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.658869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -756,7 +833,22 @@
       "”",
       "李锦被震撼得无以复加，“在大骊境内，摆出这么大的阵仗做什么？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "至于你李锦，若非当年那点赠书的情分，我绝不会将这个消息告知于你。 李锦被震撼得无以复加，“在大骊境内，摆出这么大的阵仗做什么？",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -767,7 +859,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李锦"
+        ],
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -779,13 +873,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零八章 春蒐 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "老人收敛笑意，道：“以红烛镇为中心，方圆千里之内，所有大骊朝廷敕封的山水正神、以及候补的土地、河婆，近期全部需要待命，随时准备参与一场围剿。 除此之外，大骊野夫关在内的南方边镇，出动了大量精锐骑军，撒出了不计其数的斥候侦骑。 李锦被震撼得无以复加，“在大骊境内，摆出这么大的阵仗做什么？",
+        "participants": [
+          "李锦"
+        ],
+        "description": "老人收敛笑意，道：“以红烛镇为中心，方圆千里之内，所有大骊朝廷敕封的山水正神、以及候补的土地、河婆，近期全部需要待命，随时准备参与一场围剿。 除此之外，大骊野夫关在内的南方边镇，出动了大量精锐骑军，撒出了不计其数的斥候侦骑。 至于你李锦，若非当年那点赠书的情分，我绝不会将这个消息告知于你。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应李锦在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零八章 春蒐 · 段19",
         "sentence_indexes_in_segment": [
@@ -801,7 +897,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.609019",
+    "extracted_at": "2026-03-25T01:03:30.658869",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "108-20-0": {
+    "juan_index": 108,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百零八章 春蒐",
+    "source_sentences": [
+      "到底是在围剿什么？",
+      "”",
+      "老人直言相告，“一个人。",
+      "”",
+      "李锦望向老人的眼眸，不似作伪，缓缓问道：“郎中大人，需要我做什么？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦望向老人的眼眸，不似作伪，缓缓问道：“郎中大人，需要我做什么？",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 108,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李锦"
+        ],
+        "description": "李锦望向老人的眼眸，不似作伪，缓缓问道：“郎中大人，需要我做什么？ 到底是在围剿什么？ ”",
+        "background": "",
+        "significance": "对应李锦在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百零八章 春蒐 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 20
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.658869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -821,7 +979,22 @@
       "”",
       "李锦自嘲笑道：“是我以小人之心度君子之腹了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦脸色不太好看。 李锦自嘲笑道：“是我以小人之心度君子之腹了。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -845,9 +1018,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李锦"
         ],
-        "description": "老人笑道：“一点力所能及的小事情，只需要帮忙盯住一个刚到红烛镇的男人，因为我知道走出冲澹江后两百余年，你在红烛镇上经营得很好，比城隍他们更熟悉水路，比两位江神又更熟悉小镇的风吹草动，而且如果京城档案没有记录错误的话，你豢养有几尾珍稀的青冥鱼，来自古书，最适合小范围内侦查、传递消息。 ” 李锦脸色不太好看。",
+        "description": "老人笑道：“一点力所能及的小事情，只需要帮忙盯住一个刚到红烛镇的男人，因为我知道走出冲澹江后两百余年，你在红烛镇上经营得很好，比城隍他们更熟悉水路，比两位江神又更熟悉小镇的风吹草动，而且如果京城档案没有记录错误的话，你豢养有几尾珍稀的青冥鱼，来自古书，最适合小范围内侦查、传递消息。 李锦脸色不太好看。 李锦自嘲笑道：“是我以小人之心度君子之腹了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -865,7 +1039,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.658869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -959,7 +1133,257 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.658869",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "108-23-0": {
+    "juan_index": 108,
+    "segment_index": 23,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百零八章 春蒐",
+    "source_sentences": [
+      "李锦瞠目结舌，“那人之前来过我这铺子。",
+      "”",
+      "老人目光如电。",
+      "李锦小心说道：“巧合而已。",
+      "”",
+      "老人摆摆手，叮嘱道：“无所谓了，从现在起，切记不要露出马脚，哪怕无功，也好过有过。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦瞠目结舌，“那人之前来过我这铺子。 李锦小心说道：“巧合而已。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 108,
+        "segment_index": 23
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李锦"
+        ],
+        "description": "李锦瞠目结舌，“那人之前来过我这铺子。 李锦小心说道：“巧合而已。 ”",
+        "background": "",
+        "significance": "对应李锦在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百零八章 春蒐 · 段23",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 23
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.658869",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "108-24-0": {
+    "juan_index": 108,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百零八章 春蒐",
+    "source_sentences": [
+      "如果因为你的纰漏，不小心打草惊蛇，你也不用担心，因为你那个时候肯定已经死了，那个人不杀你，我也会亲自动手。",
+      "”",
+      "“但是如果这件事情成了，我不敢保证你成为冲澹江江神，但是我可以让皇帝陛下先记住你的名字。",
+      "”",
+      "李锦自嘲道：“这算不算简在帝心？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦自嘲道：“这算不算简在帝心？",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 108,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李锦"
+        ],
+        "description": "李锦自嘲道：“这算不算简在帝心？ 如果因为你的纰漏，不小心打草惊蛇，你也不用担心，因为你那个时候肯定已经死了，那个人不杀你，我也会亲自动手。 ”",
+        "background": "",
+        "significance": "对应李锦在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百零八章 春蒐 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 24
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.658869",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "108-25-0": {
+    "juan_index": 108,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百零八章 春蒐",
+    "source_sentences": [
+      "老人停下随手抽书翻阅的动作，转头问道：“怎么，不愿意？",
+      "”",
+      "李锦哈哈笑道：“富贵险中求，更何况又不需要我亲自陷阵，稳赚不赔的买卖，做了！",
+      "”",
+      "他打了一个响指，肩头附近，浮现出两条尾巴极其纤长的玲珑小鱼，它们与他神意相同，鱼目所见，即是李锦目之所及。",
+      "它们摇曳长尾，瞬间消失。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦哈哈笑道：“富贵险中求，更何况又不需要我亲自陷阵，稳赚不赔的买卖，做了！ 他打了一个响指，肩头附近，浮现出两条尾巴极其纤长的玲珑小鱼，它们与他神意相同，鱼目所见，即是李锦目之所及。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 108,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李锦"
+        ],
+        "description": "李锦哈哈笑道：“富贵险中求，更何况又不需要我亲自陷阵，稳赚不赔的买卖，做了！ 他打了一个响指，肩头附近，浮现出两条尾巴极其纤长的玲珑小鱼，它们与他神意相同，鱼目所见，即是李锦目之所及。 老人停下随手抽书翻阅的动作，转头问道：“怎么，不愿意？",
+        "background": "",
+        "significance": "对应李锦在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百零八章 春蒐 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 25
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.659872",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "108-26-0": {
+    "juan_index": 108,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百零八章 春蒐",
+    "source_sentences": [
+      "老人离去之前，笑着感慨道：“你铺子的书，价格还是这么贵啊。",
+      "”",
+      "李锦只有在这一刻，才觉得老人依稀有几分当初那位年轻寒士的风采。",
+      "老人取回灯笼，离开铺子。",
+      "老人走出小巷，拐角处站着一个双臂环胸的魁梧男子，两人并肩而行，后者问道：“就不怕画蛇添足？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "李锦只有在这一刻，才觉得老人依稀有几分当初那位年轻寒士的风采。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 108,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 李锦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李锦"
+        ],
+        "description": "李锦只有在这一刻，才觉得老人依稀有几分当初那位年轻寒士的风采。 老人离去之前，笑着感慨道：“你铺子的书，价格还是这么贵啊。 ”",
+        "background": "",
+        "significance": "对应李锦在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百零八章 春蒐 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 108,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.659872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -982,6 +1406,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "老人随意道：“其实这场围猎，收网到了这个地步，那李锦就算突然失心疯，跑到那个叫阿良的男人面前，说破一切真相，都无关紧要了。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 108,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "阿良",
         "alias": [],
         "original_description_in_book": "老人随意道：“其实这场围猎，收网到了这个地步，那李锦就算突然失心疯，跑到那个叫阿良的男人面前，说破一切真相，都无关紧要了。",
@@ -1002,7 +1439,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李锦"
         ],
         "description": "老人随意道：“其实这场围猎，收网到了这个地步，那李锦就算突然失心疯，跑到那个叫阿良的男人面前，说破一切真相，都无关紧要了。 ” 男人没好气道：“归根结底，还是要还他当年的赠书人情？",
         "background": "",
@@ -1022,7 +1460,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.659872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1059,6 +1497,21 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱鹿说要吃冰糖葫芦，朱河虽然有些好奇，自家闺女怎么突然喜欢上了甜食，可这点要求根本算不得什么，就带着少女一起去找摊子。 朱河不喜此物，朱鹿一口气买下三串，朱河有些疑惑，少女笑着说自己吃一串，其余两串可以给小姐和陈平安。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 108,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "朱河不喜此物，朱鹿一口气买下三串，朱河有些疑惑，少女笑着说自己吃一串，其余两串可以给小姐和陈平安。 父女两人回到驿站，得知陈平安和李宝瓶已经返回枕头驿。",
@@ -1088,18 +1541,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零八章 春蒐 · 朱鹿与陈平安迁移",
+        "name": "第二卷山水郎 第一百零八章 春蒐 · 朱鹿与朱河迁移",
         "time": null,
         "location": null,
         "participants": [
           "朱鹿",
-          "陈平安",
-          "李宝瓶"
+          "朱河"
         ],
-        "description": "朱鹿说要吃冰糖葫芦，朱河虽然有些好奇，自家闺女怎么突然喜欢上了甜食，可这点要求根本算不得什么，就带着少女一起去找摊子。 朱河不喜此物，朱鹿一口气买下三串，朱河有些疑惑，少女笑着说自己吃一串，其余两串可以给小姐和陈平安。 父女两人回到驿站，得知陈平安和李宝瓶已经返回枕头驿。",
+        "description": "朱鹿说要吃冰糖葫芦，朱河虽然有些好奇，自家闺女怎么突然喜欢上了甜食，可这点要求根本算不得什么，就带着少女一起去找摊子。 朱河不喜此物，朱鹿一口气买下三串，朱河有些疑惑，少女笑着说自己吃一串，其余两串可以给小姐和陈平安。 朱河如释重负，开怀至极。",
         "background": "",
-        "significance": "推动朱鹿与陈平安之间的迁移关系。",
-        "related_action_indices": [],
+        "significance": "推动朱鹿与朱河之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百零八章 春蒐 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -1113,8 +1567,29 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "朱鹿"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "同行",
+        "context": "朱鹿说要吃冰糖葫芦，朱河虽然有些好奇，自家闺女怎么突然喜欢上了甜食，可这点要求根本算不得什么，就带着少女一起去找摊子。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百零八章 春蒐 · 朱鹿与朱河迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 108,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.659872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1161,6 +1636,19 @@
         ],
         "juan_index": 108,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河大步离去，心里有些好笑，这丫头脸皮子也太薄了些，跟人低头认个错而已，有什么丢人的。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 108,
+        "segment_index": 29
       }
     ],
     "locations": [],
@@ -1173,7 +1661,7 @@
           "朱鹿",
           "陈平安"
         ],
-        "description": "朱鹿一串冰糖葫芦还未吃完，挑了甲等驿舍后边的院子，让父亲帮他给陈平安捎句话，说跟陈平安约在这里见面。 没过多久，草鞋少年出现在彩绘廊道那一头，看到坐在另一端长椅上的朱鹿后，少年微微加快步伐。 朱河大步离去，心里有些好笑，这丫头脸皮子也太薄了些，跟人低头认个错而已，有什么丢人的。",
+        "description": "朱鹿一串冰糖葫芦还未吃完，挑了甲等驿舍后边的院子，让父亲帮他给陈平安捎句话，说跟陈平安约在这里见面。 朱河大步离去，心里有些好笑，这丫头脸皮子也太薄了些，跟人低头认个错而已，有什么丢人的。 没过多久，草鞋少年出现在彩绘廊道那一头，看到坐在另一端长椅上的朱鹿后，少年微微加快步伐。",
         "background": "",
         "significance": "推动朱鹿与陈平安之间的会见关系。",
         "related_action_indices": [
@@ -1214,7 +1702,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.659872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

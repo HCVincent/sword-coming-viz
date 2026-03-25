@@ -58,7 +58,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -227,7 +227,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -377,7 +377,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -398,6 +398,19 @@
       "年轻夫妇二人，妇人在家做些针线活，操持家务，每天给婆婆骂得脑袋就没抬起过。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "不知道范二在老龙城有没有遇上心仪的姑娘。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 307,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -422,7 +435,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "范二"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -432,15 +447,16 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安在老龙城剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与范二在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "范二"
         ],
         "description": "不知道范二在老龙城有没有遇上心仪的姑娘。 陈平安竟然想着心事，就这么睡着了。 有飞剑初一十五在养剑葫内，其实陈平安这一路风餐露宿，并不太过担忧。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在老龙城推动陈平安与范二之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段4",
         "sentence_indexes_in_segment": [
@@ -456,7 +472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -518,7 +534,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -583,7 +599,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -648,7 +664,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -757,7 +773,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.507441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -851,7 +867,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -915,7 +931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -978,7 +994,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.194960",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1058,7 +1074,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1121,7 +1137,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1186,7 +1202,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1250,7 +1266,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.508445",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1315,7 +1331,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1377,7 +1393,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1439,7 +1455,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1503,7 +1519,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1565,7 +1581,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1627,7 +1643,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1689,7 +1705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.195963",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1752,7 +1768,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.509448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1814,7 +1830,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1877,7 +1893,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1939,7 +1955,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2001,7 +2017,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2063,7 +2079,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2127,7 +2143,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2189,7 +2205,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2251,7 +2267,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2314,7 +2330,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.510452",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2376,7 +2392,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.196967",
+    "extracted_at": "2026-03-25T01:03:31.511455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2439,7 +2455,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.197971",
+    "extracted_at": "2026-03-25T01:03:31.511455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

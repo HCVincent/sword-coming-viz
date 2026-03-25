@@ -61,6 +61,19 @@
         ],
         "juan_index": 255,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "除此之外，孙嘉树也让人拿来了山海龟和桂花岛两艘渡船的详细档案，说是让陈平安多了解一下途径航道的内幕，跨洲航行数百万里，风云难测，不是小事。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -120,18 +133,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "阿良",
+          "孙嘉树",
           "陈平安",
           "郑大风",
           "杨老头"
         ],
         "description": "果然在天黑前，陈平安就得到了灰尘药铺的确切消息，除了内城地址，还有药铺掌柜姓郑，铺子是老龙城五大姓之一范家的祖业，郑掌柜北方大骊口音，表面上性情粗鄙，喜好美色，每天守着小巷铺子混吃等死，实则此人曾经两次进入过范府，范家对其十分重视，极有可能是范家嫡孙范高水的武道明师，至于此人容貌绘画，还要明天才能拿到。 陈平安神色古怪，根本不用花心思去猜了，就是家乡小镇的看门人郑大风。 至于范家如此礼重于郑大风，陈平安不觉得意外，一个经常要过手袋袋金精铜钱的汉子，哪怕瞧着再不正经，真实身份肯定不简单。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段1",
         "sentence_indexes_in_segment": [
@@ -147,7 +160,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.284655",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -168,6 +181,20 @@
       "破四境，找药铺，挑渡船，接连了去三桩大小心事的陈平安吃过了晚餐，中午那道海味硬菜，换成了山珍河鲜的煲汤，陈平安这下子吃得很欢实，下筷如飞，难得吃了一次十分饱，陈平安便沿着河岸散步，夕阳西下，风景宜人，陈平安觉得这里是自己的一块福地，以后若是还有机会，一定要再来。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "渡船，其中夹杂有一封孙嘉树仓促写就的亲笔信，大致意思就是：这趟去往倒悬山，渡船，你陈平安坐我孙家的，但是桂花岛渡船相较山海龟的优劣，我也都与你说清楚。 这看似是一件很多此一举的事情，而且容易画蛇添足，但是陈平安看完信后，略作思量，便有些佩服孙嘉树的经商之道。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -206,15 +233,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "渡船，其中夹杂有一封孙嘉树仓促写就的亲笔信，大致意思就是：这趟去往倒悬山，渡船，你陈平安坐我孙家的，但是桂花岛渡船相较山海龟的优劣，我也都与你说清楚。 这看似是一件很多此一举的事情，而且容易画蛇添足，但是陈平安看完信后，略作思量，便有些佩服孙嘉树的经商之道。 设身处地，自己若是货物需要在老龙城周转的商贾，也愿意与这样的孙家合作。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段2",
         "sentence_indexes_in_segment": [
@@ -230,7 +258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.284655",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -293,7 +321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.284655",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -359,7 +387,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.284655",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -442,7 +470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.284655",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -505,7 +533,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.284655",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -570,7 +598,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "extracted_at": "2026-03-25T01:03:31.284655",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-9-0": {
+    "juan_index": 255,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "看那少年一览无余的拳法真意，浑厚无匹，绝不是练气士了，所以必然是纯粹武夫，可到底是第四境，还是第七境，四人又有争执，这次三人坚信是第七境，所以家主孙嘉树才愿意请人来到孙氏祖宅，结下一份香火情，而且三境破四境，如何都引不来这份云龙降落的巍峨气象，只有一人坚信少年只是刚刚跻身第四境。",
+      "突然那位樵夫苦笑道：“先别争这个几境了，咱们不应扼腕痛惜，那个少年的不可理喻错失良机吗？",
+      "”",
+      "三人恍然，俱是喟叹。",
+      "少年观景，引来异象，是为玄之又玄的天人感应。",
+      "世间纯粹武夫朝思暮想的大机缘，就这样给少年一通王八拳给打过了回去……"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "看那少年一览无余的拳法真意，浑厚无匹，绝不是练气士了，所以必然是纯粹武夫，可到底是第四境，还是第七境，四人又有争执，这次三人坚信是第七境，所以家主孙嘉树才愿意请人来到孙氏祖宅，结下一份香火情，而且三境破四境，如何都引不来这份云龙降落的巍峨气象，只有一人坚信少年只是刚刚跻身第四境。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "看那少年一览无余的拳法真意，浑厚无匹，绝不是练气士了，所以必然是纯粹武夫，可到底是第四境，还是第七境，四人又有争执，这次三人坚信是第七境，所以家主孙嘉树才愿意请人来到孙氏祖宅，结下一份香火情，而且三境破四境，如何都引不来这份云龙降落的巍峨气象，只有一人坚信少年只是刚刚跻身第四境。 突然那位樵夫苦笑道：“先别争这个几境了，咱们不应扼腕痛惜，那个少年的不可理喻错失良机吗？ ”",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 9
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -604,21 +694,37 @@
         ],
         "juan_index": 255,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "在孙嘉树中午回到祖宅后，见到陈平安之前，一位孙氏老祖私底下对现任家主打趣笑道：“你请了一位神仙来做客。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "连食之无味弃之可惜的鸡肋都不如，陈平安学他拳法，就不该走此捷径，若是光脚老人看到此时此景，一定会开怀大笑，觉得少年做得好，这才是“陈十一”会做的“蠢事”。 在孙嘉树中午回到祖宅后，见到陈平安之前，一位孙氏老祖私底下对现任家主打趣笑道：“你请了一位神仙来做客。 然后四人都觉得匪夷所思，如此惊艳的武学天才，难道传道恩师就没有跟他讲过这种最粗浅的事宜？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -632,8 +738,29 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "在孙嘉树中午回到祖宅后，见到陈平安之前，一位孙氏老祖私底下对现任家主打趣笑道：“你请了一位神仙来做客。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -654,6 +781,20 @@
       "给他们发现了蛛丝马迹？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树好奇询问，在此隐居三百余年的老祖便将那场风波说出，孙嘉树手掌拍在额头，无奈道：“真神仙也。 一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥……",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -687,16 +828,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥…… 陈平安误以为是早上那次拳打游龙，给孙氏祖宅带来了麻烦，担忧问道：“怎么了？ 是我早上出拳，惊动了老龙城苻家？",
+        "description": "孙嘉树好奇询问，在此隐居三百余年的老祖便将那场风波说出，孙嘉树手掌拍在额头，无奈道：“真神仙也。 一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥…… 陈平安误以为是早上那次拳打游龙，给孙氏祖宅带来了麻烦，担忧问道：“怎么了？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -710,8 +854,29 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "同行",
+        "context": "一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥……",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -732,6 +897,21 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树笑着摇头道：“老龙城练气士和武夫宗师万万千，奇怪事多了去，涉及到孙氏祖宅，怪事就不显得奇怪，而且别人不太敢无礼窥探此地，所以你这次出拳，没有什么问题……” 说到这里，孙嘉树觉得自己有点违心，也替陈平安感到心疼，犹豫不决，要不要告诉少年真相。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -756,7 +936,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -766,16 +948,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "孙嘉树笑着摇头道：“老龙城练气士和武夫宗师万万千，奇怪事多了去，涉及到孙氏祖宅，怪事就不显得奇怪，而且别人不太敢无礼窥探此地，所以你这次出拳，没有什么问题……” 说到这里，孙嘉树觉得自己有点违心，也替陈平安感到心疼，犹豫不决，要不要告诉少年真相。 孙嘉树纠结半天，最后还是坦诚相见，将真相告诉了全然不知错过什么的陈平安。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -789,8 +974,29 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "孙嘉树纠结半天，最后还是坦诚相见，将真相告诉了全然不知错过什么的陈平安。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -813,6 +1019,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树气笑道：“你觉得呢？ 孙嘉树看着陈平安，玩笑道：“怎么，想着今晚再去河边钓鱼，然后等着明天日出？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安跟着叹了口气，喝了一大口酒，感慨道：“吃了读书少的亏啊。 孙嘉树看着陈平安，玩笑道：“怎么，想着今晚再去河边钓鱼，然后等着明天日出？",
@@ -829,16 +1049,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "陈平安跟着叹了口气，喝了一大口酒，感慨道：“吃了读书少的亏啊。 孙嘉树看着陈平安，玩笑道：“怎么，想着今晚再去河边钓鱼，然后等着明天日出？ 孙嘉树气笑道：“你觉得呢？",
+        "description": "孙嘉树气笑道：“你觉得呢？ 陈平安跟着叹了口气，喝了一大口酒，感慨道：“吃了读书少的亏啊。 孙嘉树看着陈平安，玩笑道：“怎么，想着今晚再去河边钓鱼，然后等着明天日出？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -852,8 +1075,29 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "孙嘉树看着陈平安，玩笑道：“怎么，想着今晚再去河边钓鱼，然后等着明天日出？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -887,20 +1131,36 @@
         ],
         "juan_index": 255,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "陈平安惊讶道：“孙嘉树，你难道看得到人心？ 孙嘉树哭笑不得，摆手道：“我可没这份能耐，不过听说咱们商家的老祖宗，还真有。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安迁移",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "陈平安惊讶道：“孙嘉树，你难道看得到人心？ 之后陈平安又带着鱼竿去了河边，孙嘉树跟着在旁边提鱼篓，路上跟陈平安说了灰尘药铺的事情，陈平安也说了自己破四境，去不去灰尘药铺已经没那么重要，但是他还是想要去见一见那个熟人，孙嘉树自无不可，说明天就可以动身，只需要到时候稍作准备，他肯定无法随行，反而容易好心办坏事，但是会让家族一位金丹境供奉随行扈从。 ”",
+        "description": "陈平安惊讶道：“孙嘉树，你难道看得到人心？ 孙嘉树哭笑不得，摆手道：“我可没这份能耐，不过听说咱们商家的老祖宗，还真有。 之后陈平安又带着鱼竿去了河边，孙嘉树跟着在旁边提鱼篓，路上跟陈平安说了灰尘药铺的事情，陈平安也说了自己破四境，去不去灰尘药铺已经没那么重要，但是他还是想要去见一见那个熟人，孙嘉树自无不可，说明天就可以动身，只需要到时候稍作准备，他肯定无法随行，反而容易好心办坏事，但是会让家族一位金丹境供奉随行扈从。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段14",
         "sentence_indexes_in_segment": [
@@ -916,7 +1176,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "extracted_at": "2026-03-25T01:03:31.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -939,6 +1199,23 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树作为一家之主，手头有办不完的事情，自然不可能陪着陈平安枯坐河边，他孙家要钓的鱼，都很大。 孙嘉树很快就走回祖宅处理家族事务，坐在桌后，摊开一摞摞账本，身前摆着一张古色古香的老算盘，算盘瞧着并不出奇，真正出奇之处，在于算盘四周蹲坐着数位拇指大小的金色小人，与传说中的银虫一脉相承，诞生于金库，它们身后长有羽翅，金光灿灿，没事的时候就喜欢滚来滚去嬉戏打闹，寓意着财运滚滚。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "孙嘉树作为一家之主，手头有办不完的事情，自然不可能陪着陈平安枯坐河边，他孙家要钓的鱼，都很大。",
@@ -954,15 +1231,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "孙嘉树作为一家之主，手头有办不完的事情，自然不可能陪着陈平安枯坐河边，他孙家要钓的鱼，都很大。 孙嘉树很快就走回祖宅处理家族事务，坐在桌后，摊开一摞摞账本，身前摆着一张古色古香的老算盘，算盘瞧着并不出奇，真正出奇之处，在于算盘四周蹲坐着数位拇指大小的金色小人，与传说中的银虫一脉相承，诞生于金库，它们身后长有羽翅，金光灿灿，没事的时候就喜欢滚来滚去嬉戏打闹，寓意着财运滚滚。 当孙嘉树心中快速默念数字之时，就会有金色小人飞掠到算盘珠子上，迅速推动。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段15",
         "sentence_indexes_in_segment": [
@@ -978,7 +1256,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "extracted_at": "2026-03-25T01:03:31.286662",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-16-0": {
+    "juan_index": 255,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "身为中五境练气士的他，最后一次远望天色，突然以心声传告自家老祖之外的祖宅供奉，“小赌怡情，三位敢不敢与我赌一把？",
+      "我输了，既然是小赌怡情，就拿出一枚谷雨钱，若是三位输了，就再为孙氏祖宅看顾百年？",
+      "当然，每年孙家该给的薪水俸禄，照旧。",
+      "”",
+      "那位樵夫笑道：“孙嘉树，这谁敢赌？",
+      "太不公平了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "那位樵夫笑道：“孙嘉树，这谁敢赌？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "那位樵夫笑道：“孙嘉树，这谁敢赌？ 身为中五境练气士的他，最后一次远望天色，突然以心声传告自家老祖之外的祖宅供奉，“小赌怡情，三位敢不敢与我赌一把？ 我输了，既然是小赌怡情，就拿出一枚谷雨钱，若是三位输了，就再为孙氏祖宅看顾百年？",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.286662",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-17-0": {
+    "juan_index": 255,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "”",
+      "孙嘉树笑道：“我是要赌这位少年此次守夜，还能等来天地异象，如此一来，你们赌不赌？",
+      "”",
+      "“赌！",
+      "”",
+      "三位老神仙异口同声，笑声爽朗。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树笑道：“我是要赌这位少年此次守夜，还能等来天地异象，如此一来，你们赌不赌？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树笑道：“我是要赌这位少年此次守夜，还能等来天地异象，如此一来，你们赌不赌？ ” ”",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.286662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -998,7 +1400,22 @@
       "”",
       "三人也不客气，纷纷运用神通术法，三枚谷雨钱凭空消失。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "想必那三人也知道其中关节，只是三位都不觉得孙嘉树会赢而已。 孙嘉树然后笑着从袖中掏出三枚谷雨钱，依次排开放在窗台上，自嘲道：“突然发现，三位可以拿走谷雨钱了。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1017,13 +1434,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 老龙城剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "而且对于一枚谷雨钱，三人早已不痛不痒，而是要想亲自赌赢一回老龙城小财神罢了。 输了不过是三枚谷雨钱，赢了，孙家未来百年就多出三位金丹境，运气好的，三人之中，会出现一位第九境元婴境的修士大佬。 想必那三人也知道其中关节，只是三位都不觉得孙嘉树会赢而已。",
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "想必那三人也知道其中关节，只是三位都不觉得孙嘉树会赢而已。 而且对于一枚谷雨钱，三人早已不痛不痒，而是要想亲自赌赢一回老龙城小财神罢了。 孙嘉树然后笑着从袖中掏出三枚谷雨钱，依次排开放在窗台上，自嘲道：“突然发现，三位可以拿走谷雨钱了。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段18",
         "sentence_indexes_in_segment": [
@@ -1039,7 +1458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "extracted_at": "2026-03-25T01:03:31.286662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1060,6 +1479,21 @@
       "三位老神仙显然心情舒畅，纷纷调侃孙嘉树。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树微笑不语，不再返回座位，站在窗口，安静等待陈平安从立桩中睁眼抬头的那一刻，那些价值连城的金色童子翘首以盼，小家伙们都有些疑惑，为何这个主人今天如此不爱挣钱了。 输了三枚谷雨钱的孙嘉树笑了笑，不以为意。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 19
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1092,16 +1526,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城等待",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "孙嘉树微笑不语，不再返回座位，站在窗口，安静等待陈平安从立桩中睁眼抬头的那一刻，那些价值连城的金色童子翘首以盼，小家伙们都有些疑惑，为何这个主人今天如此不爱挣钱了。 东方天空，先是银灰色，继而鱼肚白，最后朝霞万里，红灿灿耀眼，照彻老龙城。 修为最高，却是最后取走那枚谷雨钱的老人，正是最有望跻身元婴境的练气士。",
+        "description": "孙嘉树微笑不语，不再返回座位，站在窗口，安静等待陈平安从立桩中睁眼抬头的那一刻，那些价值连城的金色童子翘首以盼，小家伙们都有些疑惑，为何这个主人今天如此不爱挣钱了。 东方天空，先是银灰色，继而鱼肚白，最后朝霞万里，红灿灿耀眼，照彻老龙城。 输了三枚谷雨钱的孙嘉树笑了笑，不以为意。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键等待节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1115,8 +1552,29 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "等待",
+        "context": "孙嘉树微笑不语，不再返回座位，站在窗口，安静等待陈平安从立桩中睁眼抬头的那一刻，那些价值连城的金色童子翘首以盼，小家伙们都有些疑惑，为何这个主人今天如此不爱挣钱了。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.286662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1137,6 +1595,19 @@
       "孙氏老祖笑着点头，望向老算盘上的那些个金色小人儿，老人神色有些自傲，苻家是比孙家有钱，可要说这些品相最高的招财童子，苻家不过一双孪生金身童子而已，勉强算他苻家有三只好了，孙家却有四位之多，其余老龙城四大姓，最多也就是范家从一个大王朝的亡国皇帝手中，侥幸购买了一只。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树唉声叹气，突然想起一事，走向屋门，与老祖告辞一声，笑道：“我去祖宅灶房老宋说一声，今天早餐，做得平常一些，不要再挥霍那些山珍海味了，反正陈平安那小子也吃不出好坏，说不定寻常腌菜馒头他还更喜欢，我就不抛媚眼给瞎子看了，省钱省钱！",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 20
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1169,16 +1640,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "孙嘉树唉声叹气，突然想起一事，走向屋门，与老祖告辞一声，笑道：“我去祖宅灶房老宋说一声，今天早餐，做得平常一些，不要再挥霍那些山珍海味了，反正陈平安那小子也吃不出好坏，说不定寻常腌菜馒头他还更喜欢，我就不抛媚眼给瞎子看了，省钱省钱！ 孙氏老祖笑着点头，望向老算盘上的那些个金色小人儿，老人神色有些自傲，苻家是比孙家有钱，可要说这些品相最高的招财童子，苻家不过一双孪生金身童子而已，勉强算他苻家有三只好了，孙家却有四位之多，其余老龙城四大姓，最多也就是范家从一个大王朝的亡国皇帝手中，侥幸购买了一只。 那位孙氏老祖来到书房，身为元婴境大佬，大手一挥，暂时隔绝书房与外方天地的联系，笑着安慰道：“如何？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1192,8 +1666,29 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.050720",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "孙嘉树唉声叹气，突然想起一事，走向屋门，与老祖告辞一声，笑道：“我去祖宅灶房老宋说一声，今天早餐，做得平常一些，不要再挥霍那些山珍海味了，反正陈平安那小子也吃不出好坏，说不定寻常腌菜馒头他还更喜欢，我就不抛媚眼给瞎子看了，省钱省钱！",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.286662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1229,6 +1724,21 @@
         ],
         "juan_index": 255,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "早餐，看着陈平安狼吞虎咽那些米粥馒头就腌菜，果然比起先前胃口要好很多，孙嘉树坐在桌对面，细嚼慢咽，胃口比起往日也要好上一些。 中午吃过一顿鱼宴，孙嘉树在让陈平安覆上一张易容面皮后，再叮嘱一番，再让陈平安跟随那位元婴老祖来到祖宅外边的一口池塘，孙氏老祖拂袖之后，池水如镜，里边出现一间屋子的景象，老人示意陈平安只管走上池塘水面，收起养剑葫、只背负剑匣示人的陈平安，毫不犹豫地一脚踏出，并未坠入池塘水底，而是踩在了镜面之上，只是脚底下的涟漪荡漾开来，走出数步之后，身形骤然消失，如同走入了镜面之内。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 21
       }
     ],
     "locations": [
@@ -1257,7 +1767,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1267,16 +1779,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城遭遇",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "早餐，看着陈平安狼吞虎咽那些米粥馒头就腌菜，果然比起先前胃口要好很多，孙嘉树坐在桌对面，细嚼慢咽，胃口比起往日也要好上一些。 之后陈平安返回河边真正钓起了鱼，斩获颇丰，半鱼篓老龙城俗称白条的河鱼，其余半篓，是黄辣丁、趴地虎在内的杂鱼。 中午吃过一顿鱼宴，孙嘉树在让陈平安覆上一张易容面皮后，再叮嘱一番，再让陈平安跟随那位元婴老祖来到祖宅外边的一口池塘，孙氏老祖拂袖之后，池水如镜，里边出现一间屋子的景象，老人示意陈平安只管走上池塘水面，收起养剑葫、只背负剑匣示人的陈平安，毫不犹豫地一脚踏出，并未坠入池塘水底，而是踩在了镜面之上，只是脚底下的涟漪荡漾开来，走出数步之后，身形骤然消失，如同走入了镜面之内。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1290,8 +1805,29 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "中午吃过一顿鱼宴，孙嘉树在让陈平安覆上一张易容面皮后，再叮嘱一番，再让陈平安跟随那位元婴老祖来到祖宅外边的一口池塘，孙氏老祖拂袖之后，池水如镜，里边出现一间屋子的景象，老人示意陈平安只管走上池塘水面，收起养剑葫、只背负剑匣示人的陈平安，毫不犹豫地一脚踏出，并未坠入池塘水底，而是踩在了镜面之上，只是脚底下的涟漪荡漾开来，走出数步之后，身形骤然消失，如同走入了镜面之内。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.286662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1314,6 +1850,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 老人又直指人心，询问孙嘉树，“那你呢？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 孙嘉树想了想，坦言道：“到底不是相逢于患难，不如刘灞桥和陈平安。",
@@ -1330,15 +1881,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安遭遇",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 孙嘉树想了想，坦言道：“到底不是相逢于患难，不如刘灞桥和陈平安。 ”",
+        "description": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 老人又直指人心，询问孙嘉树，“那你呢？ 孙嘉树想了想，坦言道：“到底不是相逢于患难，不如刘灞桥和陈平安。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段22",
         "sentence_indexes_in_segment": [
@@ -1354,7 +1906,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.287666",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1480,7 +2032,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.287666",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1501,6 +2053,19 @@
       "这些跟杨老头有没关系？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "如果我没有记错，你跟少城主苻南华是深仇大恨，就不怕露馅？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 24
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1533,19 +2098,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安与杨老头冲突",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻南华与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "苻南华",
           "陈平安",
           "杨老头"
         ],
-        "description": "陈平安问了三个问题，“当年是谁告诉我爹本命瓷的事情？ 这些跟杨老头有没关系？ 如果我没有记错，你跟少城主苻南华是深仇大恨，就不怕露馅？",
+        "description": "如果我没有记错，你跟少城主苻南华是深仇大恨，就不怕露馅？ 陈平安问了三个问题，“当年是谁告诉我爹本命瓷的事情？ 这些跟杨老头有没关系？",
         "background": "",
-        "significance": "推动陈平安与杨老头之间的冲突关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动苻南华与陈平安之间的冲突关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1559,34 +2123,8 @@
         "segment_index": 24
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "杨老头"
-        ],
-        "action": "冲突",
-        "context": "如果我没有记错，你跟少城主苻南华是深仇大恨，就不怕露馅？ 到时候孙家可以把自己摘干净，你难道以为我会出手救你？ ” 陈平安问了三个问题，“当年是谁告诉我爹本命瓷的事情？ 是谁害死我爹？ 这些跟杨老头有没关系？",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安与杨老头冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 255,
-        "segment_index": 24
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.287666",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1641,7 +2179,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与陈平安对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
@@ -1650,7 +2188,7 @@
         ],
         "description": "郑大风脸色平淡，笑着反问道：“如果跟老头子有关系，你觉得我会告诉你吗？ 陈平安默不作声。 郑大风用那本书扇动清风，“不管你信不信，这件事情，老头子没掺和其中，但是我可以直白无误告诉你，老头子最早的时候肯定看到了，只是大概觉得没意义，不值得，就懒得插手。",
         "background": "",
-        "significance": "推动郑大风与陈平安之间的对话关系。",
+        "significance": "推动郑大风与陈平安之间的冲突关系。",
         "related_action_indices": [
           0
         ],
@@ -1676,10 +2214,10 @@
         "to_roles": [
           "陈平安"
         ],
-        "action": "对话",
+        "action": "冲突",
         "context": "” 郑大风脸色平淡，笑着反问道：“如果跟老头子有关系，你觉得我会告诉你吗？ ” 陈平安默不作声。 郑大风用那本书扇动清风，“不管你信不信，这件事情，老头子没掺和其中，但是我可以直白无误告诉你，老头子最早的时候肯定看到了，只是大概觉得没意义，不值得，就懒得插手。 你要是因此怨恨老头子当初没出手阻拦，是你陈平安的事情，我一样不拦着你。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与陈平安对话",
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与陈平安冲突",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1694,7 +2232,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.287666",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1830,7 +2368,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.287666",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1882,6 +2420,19 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "郑大风扇着风，“当初那些孩子当中，且不提各自传承和阵营，我最看好杏花巷马苦玄和福禄街赵繇，以及泥瓶巷宋集薪，我师兄李二，也就是李柳李槐他们爹，猪油蒙心，最喜欢你，后来你离开骊珠洞天的种种际遇，我大致上有所了解，才发现我既看错了你，也看错了师兄，以前我觉得你们俩都是缺心眼的傻子，如今才发现是我郑大风眼瞎。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -1889,6 +2440,33 @@
         "original_description_in_book": "郑大风扇着风，“当初那些孩子当中，且不提各自传承和阵营，我最看好杏花巷马苦玄和福禄街赵繇，以及泥瓶巷宋集薪，我师兄李二，也就是李柳李槐他们爹，猪油蒙心，最喜欢你，后来你离开骊珠洞天的种种际遇，我大致上有所了解，才发现我既看错了你，也看错了师兄，以前我觉得你们俩都是缺心眼的傻子，如今才发现是我郑大风眼瞎。",
         "description": "与陈平安形成强烈对照关系的小镇少年，承接大骊身份暗线。",
         "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "郑大风扇着风，“当初那些孩子当中，且不提各自传承和阵营，我最看好杏花巷马苦玄和福禄街赵繇，以及泥瓶巷宋集薪，我师兄李二，也就是李柳李槐他们爹，猪油蒙心，最喜欢你，后来你离开骊珠洞天的种种际遇，我大致上有所了解，才发现我既看错了你，也看错了师兄，以前我觉得你们俩都是缺心眼的傻子，如今才发现是我郑大风眼瞎。 郑大风其实想说，其实他李二和你陈平安，才是顶聪明的人。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "郑大风扇着风，“当初那些孩子当中，且不提各自传承和阵营，我最看好杏花巷马苦玄和福禄街赵繇，以及泥瓶巷宋集薪，我师兄李二，也就是李柳李槐他们爹，猪油蒙心，最喜欢你，后来你离开骊珠洞天的种种际遇，我大致上有所了解，才发现我既看错了你，也看错了师兄，以前我觉得你们俩都是缺心眼的傻子，如今才发现是我郑大风眼瞎。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1949,7 +2527,10 @@
         "related_entities": [
           "郑大风",
           "马苦玄",
+          "赵繇",
           "宋集薪",
+          "李二",
+          "李柳",
           "李槐"
         ],
         "sentence_indexes_in_segment": [
@@ -1968,7 +2549,10 @@
         "related_entities": [
           "郑大风",
           "马苦玄",
+          "赵繇",
           "宋集薪",
+          "李二",
+          "李柳",
           "李槐"
         ],
         "sentence_indexes_in_segment": [
@@ -1988,7 +2572,10 @@
         "related_entities": [
           "郑大风",
           "马苦玄",
+          "赵繇",
           "宋集薪",
+          "李二",
+          "李柳",
           "李槐"
         ],
         "sentence_indexes_in_segment": [
@@ -2086,7 +2673,7 @@
           "郑大风"
         ],
         "to_roles": [
-          "宋集薪"
+          "赵繇"
         ],
         "action": "别离",
         "context": "郑大风扇着风，“当初那些孩子当中，且不提各自传承和阵营，我最看好杏花巷马苦玄和福禄街赵繇，以及泥瓶巷宋集薪，我师兄李二，也就是李柳李槐他们爹，猪油蒙心，最喜欢你，后来你离开骊珠洞天的种种际遇，我大致上有所了解，才发现我既看错了你，也看错了师兄，以前我觉得你们俩都是缺心眼的傻子，如今才发现是我郑大风眼瞎。",
@@ -2106,7 +2693,7 @@
           "郑大风"
         ],
         "to_roles": [
-          "李槐"
+          "宋集薪"
         ],
         "action": "别离",
         "context": "郑大风扇着风，“当初那些孩子当中，且不提各自传承和阵营，我最看好杏花巷马苦玄和福禄街赵繇，以及泥瓶巷宋集薪，我师兄李二，也就是李柳李槐他们爹，猪油蒙心，最喜欢你，后来你离开骊珠洞天的种种际遇，我大致上有所了解，才发现我既看错了你，也看错了师兄，以前我觉得你们俩都是缺心眼的傻子，如今才发现是我郑大风眼瞎。",
@@ -2141,7 +2728,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2236,7 +2823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2334,7 +2921,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2492,7 +3079,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2558,7 +3145,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.051724",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2662,7 +3249,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2769,7 +3356,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.288669",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2835,7 +3422,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2868,6 +3455,19 @@
         ],
         "juan_index": 255,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "陈平安摇头道：“你不是知道我跟苻南华的过节吗？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 35
       }
     ],
     "locations": [
@@ -2888,15 +3488,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "陈平安"
         ],
         "description": "陈平安摇头道：“你不是知道我跟苻南华的过节吗？ 我哪里敢摘下来，光明正大地逛这老龙城内城，天晓得苻家有什么术法可以查看城内动静，比如类似神人以手掌观山河？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段35",
         "sentence_indexes_in_segment": [
@@ -2912,7 +3514,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3047,7 +3649,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3126,7 +3728,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3273,7 +3875,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3353,7 +3955,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3515,7 +4117,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.053000",
+    "extracted_at": "2026-03-25T01:03:31.289672",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3594,7 +4196,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3673,7 +4275,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3739,7 +4341,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3803,7 +4405,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3905,7 +4507,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3942,6 +4544,32 @@
         ],
         "juan_index": 255,
         "segment_index": 46
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "男人微笑道：“老龙城孙嘉树的面子，就只值一张遮遮掩掩的面皮。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 46
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "郑大风转头瞥了眼男人，“苻畦，你连老龙袍都没有穿，看来不是来下逐客令的。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 46
       }
     ],
     "locations": [
@@ -3952,7 +4580,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -3962,15 +4592,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在老龙城对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与孙嘉树在老龙城对话",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "郑大风"
+          "郑大风",
+          "孙嘉树",
+          "苻畦"
         ],
         "description": "男人走到郑大风身边，年轻女子站在男人身后，对那个坐在板凳上用书扇风的药铺掌柜，她充满了好奇。 男人微笑道：“老龙城孙嘉树的面子，就只值一张遮遮掩掩的面皮。 郑掌柜，看得很准。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键对话节点。",
+        "significance": "在老龙城推动郑大风与孙嘉树之间的对话线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段46",
         "sentence_indexes_in_segment": [
@@ -3986,7 +4618,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4007,6 +4639,21 @@
       "郑大风狠狠剐了几眼女子的美腿，这才转过头，继续对着大街来来往往的人流，“苻畦你口气这么大，怎么不一口气把云海吸进肚子里？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "示威是说在老龙城，苻畦不用亲自出手，就能够驱赶你郑大风。 示弱则是身为老龙城城主的苻畦，愿意投其所好，带上一位双腿很长的女子，来到郑大掌柜眼前。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 47
+      },
       {
         "entity_type": "person",
         "name": "郑大风",
@@ -4033,6 +4680,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻畦",
           "郑大风"
         ],
         "sentence_indexes_in_segment": [
@@ -4046,16 +4694,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在老龙城冲突",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与郑大风在老龙城冲突",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "苻畦",
           "郑大风"
         ],
         "description": "男人笑着伸手指了指身后，“我穿不穿老龙袍，在老龙城都无所谓，带着她来，才是真正诚意所在。 示威是说在老龙城，苻畦不用亲自出手，就能够驱赶你郑大风。 示弱则是身为老龙城城主的苻畦，愿意投其所好，带上一位双腿很长的女子，来到郑大掌柜眼前。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动苻畦与郑大风之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段47",
         "sentence_indexes_in_segment": [
           0,
@@ -4069,8 +4720,29 @@
         "segment_index": 47
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "冲突",
+        "context": "示威是说在老龙城，苻畦不用亲自出手，就能够驱赶你郑大风。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与郑大风在老龙城冲突",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 47
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.290675",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4093,6 +4765,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦脸色难堪，然后伸手握住了悬挂腰间的一枚玉佩，这才脸色平缓下来。 苻畦一笑置之，“既然郑掌柜现在心情不好，那么有些事情，苻畦稍后再提。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 48
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -4111,16 +4797,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与郑大风对话",
         "time": null,
         "location": null,
         "participants": [
+          "苻畦",
           "郑大风"
         ],
-        "description": "郑大风冷笑道：“同样是生意人，你也配跟我比？ 苻畦一笑置之，“既然郑掌柜现在心情不好，那么有些事情，苻畦稍后再提。 ”",
+        "description": "苻畦脸色难堪，然后伸手握住了悬挂腰间的一枚玉佩，这才脸色平缓下来。 郑大风冷笑道：“同样是生意人，你也配跟我比？ 苻畦一笑置之，“既然郑掌柜现在心情不好，那么有些事情，苻畦稍后再提。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动苻畦与郑大风之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段48",
         "sentence_indexes_in_segment": [
           0,
@@ -4134,8 +4823,34 @@
         "segment_index": 48
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "对话",
+        "context": "” 苻畦脸色难堪，然后伸手握住了悬挂腰间的一枚玉佩，这才脸色平缓下来。 女子战战兢兢，这是她第一次感受到父亲如此明显的怒意。 郑大风冷笑道：“同样是生意人，你也配跟我比？ ” 苻畦一笑置之，“既然郑掌柜现在心情不好，那么有些事情，苻畦稍后再提。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与郑大风对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 48
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.291679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4258,7 +4973,7 @@
         "segment_index": 49
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.291679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4323,7 +5038,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.291679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4388,7 +5103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.291679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4452,7 +5167,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.053993",
+    "extracted_at": "2026-03-25T01:03:31.291679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4473,6 +5188,32 @@
       "郑大风闭上眼睛，不再偷窥女子身段的汉子，这一刻有些神色落寞。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "都求了这么多年了，难怪老头子说我机关算尽太聪明，也就只剩下聪明了，光是跟李二就打了多少次架？",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 53
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜不过是跟师兄打了一架，就破境了，我其实一开始就明白的，求不来的，只是偷偷摸摸心存侥幸罢了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 53
+      },
       {
         "entity_type": "person",
         "name": "郑大风",
@@ -4507,15 +5248,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在老龙城剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 李二与宋长镜在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "李二",
+          "宋长镜",
           "郑大风"
         ],
-        "description": "哈哈，如今在这老龙城每天看看美人儿，就在八境等死好了……” 郑大风闭上眼睛，不再偷窥女子身段的汉子，这一刻有些神色落寞。 这个汉子，仿佛是将书中的圣人教诲，当做了耳边风。",
+        "description": "都求了这么多年了，难怪老头子说我机关算尽太聪明，也就只剩下聪明了，光是跟李二就打了多少次架？ 宋长镜不过是跟师兄打了一架，就破境了，我其实一开始就明白的，求不来的，只是偷偷摸摸心存侥幸罢了。 哈哈，如今在这老龙城每天看看美人儿，就在八境等死好了……”",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
+        "significance": "在老龙城推动李二与宋长镜之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段53",
         "sentence_indexes_in_segment": [
@@ -4531,7 +5274,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "extracted_at": "2026-03-25T01:03:31.291679",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-54-0": {
+    "juan_index": 255,
+    "segment_index": 54,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "一位身材堪称“雄武”的年轻女子，脸上涂满了脂粉，穿得花枝招展，她那大脸盘子就能够镇宅辟邪，当她停下脚步，看到汉子这般模样后，觉得有些心疼，心想多半是想要与自己告白，又不好意思，不然自己就不再淑女矜持了，先开口说了，省得自己情郎难为情？",
+      "只是她刚咳嗽一声，想要润润嗓子。",
+      "那汉子就已经猛然睁眼，拎着板凳就跑回巷子。",
+      "她叹息一声，摸着自己的脸颊，自怨自艾起来，要怪就怪自己的姿容，还是这般动人，倾国倾城。",
+      "她猛然惊觉，哎呦一声，原来脸上脂粉给手指搓了下来，她赶紧使劲抹回去。",
+      "苻畦没有以神通带着女儿返回符城，而是就这么悠闲逛街回去，身后一驾马车缓缓跟随。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦没有以神通带着女儿返回符城，而是就这么悠闲逛街回去，身后一驾马车缓缓跟随。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 54
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苻畦"
+        ],
+        "description": "苻畦没有以神通带着女儿返回符城，而是就这么悠闲逛街回去，身后一驾马车缓缓跟随。 一位身材堪称“雄武”的年轻女子，脸上涂满了脂粉，穿得花枝招展，她那大脸盘子就能够镇宅辟邪，当她停下脚步，看到汉子这般模样后，觉得有些心疼，心想多半是想要与自己告白，又不好意思，不然自己就不再淑女矜持了，先开口说了，省得自己情郎难为情？ 只是她刚咳嗽一声，想要润润嗓子。",
+        "background": "",
+        "significance": "对应苻畦在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段54",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 54
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.291679",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4551,7 +5356,37 @@
       "苻春花犹豫了半天，终于忍不住问道：“爹，为什么带我来见此人，而不是南华？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。 苻春花也已将近三百岁，与兄长苻东海都是成名已久的金丹境，而且擅长搏杀，各自护送一艘渡船去往倒悬山百余年，历练丰富，遭遇深海大妖，生死一线的险境，早已不是一两次了。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 55
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。 既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 55
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -4560,7 +5395,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           1,
           3
@@ -4571,14 +5408,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 宝瓶洲对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与苻畦在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。 关键是苻家子弟跻身金丹境，就意味着能够驾驭半仙兵，所以宝瓶洲一直流传这个说法，苻家练气士的真实境界，需要往上提高半个境界才准确。 女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。",
+        "participants": [
+          "苻春花",
+          "苻畦"
+        ],
+        "description": "女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。 既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。 苻春花也已将近三百岁，与兄长苻东海都是成名已久的金丹境，而且擅长搏杀，各自护送一艘渡船去往倒悬山百余年，历练丰富，遭遇深海大妖，生死一线的险境，早已不是一两次了。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动苻春花与苻畦之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段55",
         "sentence_indexes_in_segment": [
           0,
@@ -4592,8 +5434,34 @@
         "segment_index": 55
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻春花"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "对话",
+        "context": "女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。 既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。 苻春花也已将近三百岁，与兄长苻东海都是成名已久的金丹境，而且擅长搏杀，各自护送一艘渡船去往倒悬山百余年，历练丰富，遭遇深海大妖，生死一线的险境，早已不是一两次了。 关键是苻家子弟跻身金丹境，就意味着能够驾驭半仙兵，所以宝瓶洲一直流传这个说法，苻家练气士的真实境界，需要往上提高半个境界才准确。 苻春花犹豫了半天，终于忍不住问道：“爹，为什么带我来见此人，而不是南华？ ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与苻畦在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 55
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.292652",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4616,6 +5484,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦笑道：“不是早就说过了吗，是为了表示苻家诚意，这位郑掌柜，喜好长腿美人。 哪怕她是有望继承家主之位的候选人，但是她也好，兄长苻东海以及弟弟苻南华也罢，都知道一点，他们苦心经营的人脉关系，远远不足以知晓宝瓶洲山顶的真正风景，而且身处父亲苻畦羽翼庇护之下，既是乘凉，也是拘束，他们往往不敢太过越界，以免遭受苻畦的猜忌。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 56
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -4625,6 +5507,19 @@
         "power": "落魄山",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 255,
+        "segment_index": 56
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "哪怕她是有望继承家主之位的候选人，但是她也好，兄长苻东海以及弟弟苻南华也罢，都知道一点，他们苦心经营的人脉关系，远远不足以知晓宝瓶洲山顶的真正风景，而且身处父亲苻畦羽翼庇护之下，既是乘凉，也是拘束，他们往往不敢太过越界，以免遭受苻畦的猜忌。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 255,
         "segment_index": 56
@@ -4638,7 +5533,10 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -4662,16 +5560,22 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在宝瓶洲对话",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "宝瓶洲",
+        "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
+          "苻畦",
           "郑大风"
         ],
         "description": "苻畦笑道：“不是早就说过了吗，是为了表示苻家诚意，这位郑掌柜，喜好长腿美人。 哪怕她是有望继承家主之位的候选人，但是她也好，兄长苻东海以及弟弟苻南华也罢，都知道一点，他们苦心经营的人脉关系，远远不足以知晓宝瓶洲山顶的真正风景，而且身处父亲苻畦羽翼庇护之下，既是乘凉，也是拘束，他们往往不敢太过越界，以免遭受苻畦的猜忌。 老龙城苻家，看似人人自由散漫，但那些只是无望染指老龙袍的家族废物，早就死心了，也被排斥在家族决策圈之外，事实上，苻家的规矩森严，其实半点不比帝王之家逊色。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段56",
         "sentence_indexes_in_segment": [
           0,
@@ -4685,8 +5589,49 @@
         "segment_index": 56
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "对话",
+        "context": "苻畦笑道：“不是早就说过了吗，是为了表示苻家诚意，这位郑掌柜，喜好长腿美人。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 56
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "守护",
+        "context": "哪怕她是有望继承家主之位的候选人，但是她也好，兄长苻东海以及弟弟苻南华也罢，都知道一点，他们苦心经营的人脉关系，远远不足以知晓宝瓶洲山顶的真正风景，而且身处父亲苻畦羽翼庇护之下，既是乘凉，也是拘束，他们往往不敢太过越界，以免遭受苻畦的猜忌。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 56
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.292652",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4706,7 +5651,64 @@
       "人家哪怕境界不如你，可好歹是孙家的一家之主，你一个金丹境练气士，凭什么敲打他？",
       "他家祖宅可还有一位元婴境的孙氏老祖，另外那位有希望跻身元婴的金丹练气士，你哥哥辛苦拉拢了几十年，至今才有所松动，苻家若是这个时候敲打孙嘉树，你觉得那名金丹境，还有脸面离开孙氏祖宅来到咱们苻家吗？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "最近百年，苻东海负责北俱芦洲的关系经营，她苻春花则负责东南那个大洲的秘密谋划，而原本寂寂无闻、碌碌无为的苻南华，直到那次出人意料地被选中去往骊珠洞天，之后才迅猛崛起，家族倾斜了大量的人力物力给她这个弟弟，显而易见，家主苻畦对她和苻东海这一百年的生意，并不满意。 苻春花知道已经问不出结果，就换了一个话题，“要不要我去提醒一声孙嘉树？",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 57
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "最近百年，苻东海负责北俱芦洲的关系经营，她苻春花则负责东南那个大洲的秘密谋划，而原本寂寂无闻、碌碌无为的苻南华，直到那次出人意料地被选中去往骊珠洞天，之后才迅猛崛起，家族倾斜了大量的人力物力给她这个弟弟，显而易见，家主苻畦对她和苻东海这一百年的生意，并不满意。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 57
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "最近百年，苻东海负责北俱芦洲的关系经营，她苻春花则负责东南那个大洲的秘密谋划，而原本寂寂无闻、碌碌无为的苻南华，直到那次出人意料地被选中去往骊珠洞天，之后才迅猛崛起，家族倾斜了大量的人力物力给她这个弟弟，显而易见，家主苻畦对她和苻东海这一百年的生意，并不满意。 苻畦笑道：“孙嘉树？",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 57
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "苻春花知道已经问不出结果，就换了一个话题，“要不要我去提醒一声孙嘉树？ 苻畦笑道：“孙嘉树？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 57
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -4715,7 +5717,11 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻春花",
+          "苻南华",
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -4725,14 +5731,21 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 骊珠洞天对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与孙嘉树在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
-        "description": "最近百年，苻东海负责北俱芦洲的关系经营，她苻春花则负责东南那个大洲的秘密谋划，而原本寂寂无闻、碌碌无为的苻南华，直到那次出人意料地被选中去往骊珠洞天，之后才迅猛崛起，家族倾斜了大量的人力物力给她这个弟弟，显而易见，家主苻畦对她和苻东海这一百年的生意，并不满意。 苻春花知道已经问不出结果，就换了一个话题，“要不要我去提醒一声孙嘉树？ ”",
+        "participants": [
+          "苻春花",
+          "孙嘉树",
+          "苻畦"
+        ],
+        "description": "最近百年，苻东海负责北俱芦洲的关系经营，她苻春花则负责东南那个大洲的秘密谋划，而原本寂寂无闻、碌碌无为的苻南华，直到那次出人意料地被选中去往骊珠洞天，之后才迅猛崛起，家族倾斜了大量的人力物力给她这个弟弟，显而易见，家主苻畦对她和苻东海这一百年的生意，并不满意。 苻春花知道已经问不出结果，就换了一个话题，“要不要我去提醒一声孙嘉树？ 苻畦笑道：“孙嘉树？",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在骊珠洞天推动苻春花与孙嘉树之间的对话线。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段57",
         "sentence_indexes_in_segment": [
           0,
@@ -4746,8 +5759,49 @@
         "segment_index": 57
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻春花"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "指点",
+        "context": "苻春花知道已经问不出结果，就换了一个话题，“要不要我去提醒一声孙嘉树？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与孙嘉树在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 57
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "对话",
+        "context": "苻畦笑道：“孙嘉树？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与孙嘉树在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 57
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.293156",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4770,6 +5824,47 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花脸色惨白，生怕父亲误以为自己是在坑害兄长。 苻春花问道：“难道孙嘉树就不怕那个少年死在我们手上？",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 58
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦微笑道：“不用紧张，我知道你的性子。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 58
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "其实这次孙嘉树顺势而为，押注在陈平安身上，也是想要试探我们苻家，估摸着就怕我们不出手敲打他，一旦被孙家得逞，然后回到祖宅，摆出一副被苻家仗势欺压的模样，你信不信，根本不需要孙嘉树劝说什么，那名前途远大的金丹境，当年本就是受恩于孙家，经此一役，便板上钉钉留在孙氏祖宅那边了。 苻春花问道：“难道孙嘉树就不怕那个少年死在我们手上？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 58
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "其实这次孙嘉树顺势而为，押注在陈平安身上，也是想要试探我们苻家，估摸着就怕我们不出手敲打他，一旦被孙家得逞，然后回到祖宅，摆出一副被苻家仗势欺压的模样，你信不信，根本不需要孙嘉树劝说什么，那名前途远大的金丹境，当年本就是受恩于孙家，经此一役，便板上钉钉留在孙氏祖宅那边了。",
@@ -4785,16 +5880,21 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "孙嘉树",
+          "陈平安",
+          "苻春花"
         ],
-        "description": "其实这次孙嘉树顺势而为，押注在陈平安身上，也是想要试探我们苻家，估摸着就怕我们不出手敲打他，一旦被孙家得逞，然后回到祖宅，摆出一副被苻家仗势欺压的模样，你信不信，根本不需要孙嘉树劝说什么，那名前途远大的金丹境，当年本就是受恩于孙家，经此一役，便板上钉钉留在孙氏祖宅那边了。 ” 苻春花脸色惨白，生怕父亲误以为自己是在坑害兄长。",
+        "description": "苻春花脸色惨白，生怕父亲误以为自己是在坑害兄长。 苻畦微笑道：“不用紧张，我知道你的性子。 其实这次孙嘉树顺势而为，押注在陈平安身上，也是想要试探我们苻家，估摸着就怕我们不出手敲打他，一旦被孙家得逞，然后回到祖宅，摆出一副被苻家仗势欺压的模样，你信不信，根本不需要孙嘉树劝说什么，那名前途远大的金丹境，当年本就是受恩于孙家，经此一役，便板上钉钉留在孙氏祖宅那边了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段58",
         "sentence_indexes_in_segment": [
           0,
@@ -4808,8 +5908,126 @@
         "segment_index": 58
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "其实这次孙嘉树顺势而为，押注在陈平安身上，也是想要试探我们苻家，估摸着就怕我们不出手敲打他，一旦被孙家得逞，然后回到祖宅，摆出一副被苻家仗势欺压的模样，你信不信，根本不需要孙嘉树劝说什么，那名前途远大的金丹境，当年本就是受恩于孙家，经此一役，便板上钉钉留在孙氏祖宅那边了。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 58
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻春花"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "对话",
+        "context": "苻春花问道：“难道孙嘉树就不怕那个少年死在我们手上？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 58
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.293162",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-59-0": {
+    "juan_index": 255,
+    "segment_index": 59,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "”",
+      "苻畦抬头看了眼天幕，“你会这么想，也是人之常情，只是哪天你穿了老龙袍，才有机会知道一些真正的头顶事。",
+      "”",
+      "苻春花下意识抬头看了眼那片云海。",
+      "苻畦笑了笑，“还要更高一些。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦抬头看了眼天幕，“你会这么想，也是人之常情，只是哪天你穿了老龙袍，才有机会知道一些真正的头顶事。 苻畦笑了笑，“还要更高一些。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 59
+      },
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花下意识抬头看了眼那片云海。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 59
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与苻春花剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苻畦",
+          "苻春花"
+        ],
+        "description": "苻畦抬头看了眼天幕，“你会这么想，也是人之常情，只是哪天你穿了老龙袍，才有机会知道一些真正的头顶事。 苻春花下意识抬头看了眼那片云海。 苻畦笑了笑，“还要更高一些。",
+        "background": "",
+        "significance": "推动苻畦与苻春花之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段59",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 59
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "extracted_at": "2026-03-25T01:03:31.293162",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4830,6 +6048,45 @@
       "你去找到南华，就说陈平安就在孙家祖宅，我想知道，他的选择。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花心神微颤，仰头望去，充满了憧憬。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 60
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦突然说了一句，“比起孙家和孙嘉树，我苻家和苻畦，还是要魄力大一些的。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 60
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "苻畦突然说了一句，“比起孙家和孙嘉树，我苻家和苻畦，还是要魄力大一些的。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 60
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -4862,15 +6119,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城迁移",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "孙嘉树",
+          "陈平安",
+          "苻春花",
+          "苻畦"
         ],
-        "description": "我现在需要离开老龙城，去迎接几位北方贵客。 你去找到南华，就说陈平安就在孙家祖宅，我想知道，他的选择。 苻春花心神微颤，仰头望去，充满了憧憬。",
+        "description": "苻春花心神微颤，仰头望去，充满了憧憬。 苻畦突然说了一句，“比起孙家和孙嘉树，我苻家和苻畦，还是要魄力大一些的。 我现在需要离开老龙城，去迎接几位北方贵客。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段60",
         "sentence_indexes_in_segment": [
@@ -4886,7 +6146,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "extracted_at": "2026-03-25T01:03:31.293162",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4906,7 +6166,34 @@
       "”",
       "苻春花听命行事，父亲已经拔地而起，潇洒掠入那座云海大阵，应该是往北方而去。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦摆摆手，“你上车回城。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 61
+      },
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花听命行事，父亲已经拔地而起，潇洒掠入那座云海大阵，应该是往北方而去。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 61
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -4926,14 +6213,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 老龙城迁移",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与苻春花在老龙城迁移",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "这会决定他能否成为老龙城城主，当然也会决定你有没有希望穿上老龙袍。 希望我回到老龙城的时候，已经做出了正确选择。 ”",
+        "participants": [
+          "苻畦",
+          "苻春花"
+        ],
+        "description": "这会决定他能否成为老龙城城主，当然也会决定你有没有希望穿上老龙袍。 希望我回到老龙城的时候，已经做出了正确选择。 苻畦摆摆手，“你上车回城。",
         "background": "",
-        "significance": "对应老龙城相关的关键迁移场景。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动苻畦与苻春花之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段61",
         "sentence_indexes_in_segment": [
           0,
@@ -4947,8 +6239,34 @@
         "segment_index": 61
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "苻春花"
+        ],
+        "action": "归属",
+        "context": "这会决定他能否成为老龙城城主，当然也会决定你有没有希望穿上老龙袍。 希望我回到老龙城的时候，已经做出了正确选择。 ” 苻畦摆摆手，“你上车回城。 ” 苻春花听命行事，父亲已经拔地而起，潇洒掠入那座云海大阵，应该是往北方而去。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与苻春花在老龙城迁移",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 61
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.293162",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4971,6 +6289,51 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花顾不得是什么贵客，值得老龙城城主出城迎接，她坐入车厢后，就开始仔细思考这个问题。 苻春花发现自己一团乱麻，好像不管做什么，都能挣到一点，但是距离自己的最佳预期，始终很远。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 62
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "弟弟苻南华又会如何选择？ 到了弟弟苻南华私邸，苻春花仍是没有头绪，便字斟句酌，小心翼翼说出了父亲苻畦的那番话，其中有删有减，有添有加。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 62
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "到了弟弟苻南华私邸，苻春花仍是没有头绪，便字斟句酌，小心翼翼说出了父亲苻畦的那番话，其中有删有减，有添有加。 苻南华当然不会全信，但是苻畦的大致意思，苻春花不敢胡说，苻南华从头到尾，仔细听过了姐姐苻春花的诉说，刚要起身习惯性踱步思考问题，猛然坐回椅子，淡然道：“我已经想好了，做掉陈平安！",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 62
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "苻南华当然不会全信，但是苻畦的大致意思，苻春花不敢胡说，苻南华从头到尾，仔细听过了姐姐苻春花的诉说，刚要起身习惯性踱步思考问题，猛然坐回椅子，淡然道：“我已经想好了，做掉陈平安！",
@@ -4991,7 +6354,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻春花"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -5001,15 +6366,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安在老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "谢谢",
+          "苻南华",
+          "苻春花",
+          "苻畦"
         ],
-        "description": "苻春花顾不得是什么贵客，值得老龙城城主出城迎接，她坐入车厢后，就开始仔细思考这个问题。 苻南华当然不会全信，但是苻畦的大致意思，苻春花不敢胡说，苻南华从头到尾，仔细听过了姐姐苻春花的诉说，刚要起身习惯性踱步思考问题，猛然坐回椅子，淡然道：“我已经想好了，做掉陈平安！ 她接下来应该如何选择，才能获利最丰？",
+        "description": "苻春花顾不得是什么贵客，值得老龙城城主出城迎接，她坐入车厢后，就开始仔细思考这个问题。 弟弟苻南华又会如何选择？ 苻春花发现自己一团乱麻，好像不管做什么，都能挣到一点，但是距离自己的最佳预期，始终很远。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段62",
         "sentence_indexes_in_segment": [
@@ -5025,7 +6393,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "extracted_at": "2026-03-25T01:03:31.293162",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5048,6 +6416,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花开始笑着扳手指头，“灰尘药铺的郑掌柜，最少七境巅峰的武夫，甚至有可能是八境大宗师，与之交好的内城范家，再加上孙嘉树的孙家，其中有一位祖宅的元婴境孙氏老祖，虽说其余三位金丹，不是祖宅受难，无需出手，但是到了万不得已的地步，孙嘉树多半可以说服三人出手，加上内城的孙氏供奉客卿，南华，你当真不再考虑考虑？ 苻春花又笑道：“你大婚在即，不怕出了变数？",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 63
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -5057,6 +6439,32 @@
         "power": "落魄山",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 255,
+        "segment_index": 63
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "苻春花开始笑着扳手指头，“灰尘药铺的郑掌柜，最少七境巅峰的武夫，甚至有可能是八境大宗师，与之交好的内城范家，再加上孙嘉树的孙家，其中有一位祖宅的元婴境孙氏老祖，虽说其余三位金丹，不是祖宅受难，无需出手，但是到了万不得已的地步，孙嘉树多半可以说服三人出手，加上内城的孙氏供奉客卿，南华，你当真不再考虑考虑？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 63
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华脸色淡漠，“我只想如何以最小的代价，宰掉那个大骊少年。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 255,
         "segment_index": 63
@@ -5072,7 +6480,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -5082,16 +6492,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在大骊对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与孙嘉树在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "郑大风"
+          "苻春花",
+          "孙嘉树"
         ],
-        "description": "苻春花开始笑着扳手指头，“灰尘药铺的郑掌柜，最少七境巅峰的武夫，甚至有可能是八境大宗师，与之交好的内城范家，再加上孙嘉树的孙家，其中有一位祖宅的元婴境孙氏老祖，虽说其余三位金丹，不是祖宅受难，无需出手，但是到了万不得已的地步，孙嘉树多半可以说服三人出手，加上内城的孙氏供奉客卿，南华，你当真不再考虑考虑？ 苻南华脸色淡漠，“我只想如何以最小的代价，宰掉那个大骊少年。 ”",
+        "description": "苻春花开始笑着扳手指头，“灰尘药铺的郑掌柜，最少七境巅峰的武夫，甚至有可能是八境大宗师，与之交好的内城范家，再加上孙嘉树的孙家，其中有一位祖宅的元婴境孙氏老祖，虽说其余三位金丹，不是祖宅受难，无需出手，但是到了万不得已的地步，孙嘉树多半可以说服三人出手，加上内城的孙氏供奉客卿，南华，你当真不再考虑考虑？ 苻南华脸色淡漠，“我只想如何以最小的代价，宰掉那个大骊少年。 苻春花又笑道：“你大婚在即，不怕出了变数？",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动苻春花与孙嘉树之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段63",
         "sentence_indexes_in_segment": [
           0,
@@ -5105,8 +6518,29 @@
         "segment_index": 63
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻春花"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "冲突",
+        "context": "苻春花开始笑着扳手指头，“灰尘药铺的郑掌柜，最少七境巅峰的武夫，甚至有可能是八境大宗师，与之交好的内城范家，再加上孙嘉树的孙家，其中有一位祖宅的元婴境孙氏老祖，虽说其余三位金丹，不是祖宅受难，无需出手，但是到了万不得已的地步，孙嘉树多半可以说服三人出手，加上内城的孙氏供奉客卿，南华，你当真不再考虑考虑？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与孙嘉树在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 63
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.293162",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5136,6 +6570,34 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 255,
+        "segment_index": 64
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华只是深思不语。 苻春花最后嫣然一笑，“苻南华，你最后想一想，姐姐说这些，到底是希望你毅然出手，还是想着你不要一意孤行呢？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 64
+      },
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花最后嫣然一笑，“苻南华，你最后想一想，姐姐说这些，到底是希望你毅然出手，还是想着你不要一意孤行呢？",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 255,
         "segment_index": 64
@@ -5195,16 +6657,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 大骊皇帝在骊珠洞天冲突",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "骊珠洞天",
+        "location": "老龙城",
         "participants": [
-          "大骊皇帝"
+          "谢谢",
+          "苻南华",
+          "苻春花"
         ],
-        "description": "而且那少年既然是出身骊珠洞天，就算是大骊子民，不怕此事意义深远，坏了老龙城苻家在大骊皇帝心目中的印象？ ” 苻南华只是深思不语。",
+        "description": "而且那少年既然是出身骊珠洞天，就算是大骊子民，不怕此事意义深远，坏了老龙城苻家在大骊皇帝心目中的印象？ 苻南华只是深思不语。 苻春花最后嫣然一笑，“苻南华，你最后想一想，姐姐说这些，到底是希望你毅然出手，还是想着你不要一意孤行呢？",
         "background": "",
-        "significance": "对应大骊皇帝在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段64",
         "sentence_indexes_in_segment": [
           0,
@@ -5218,8 +6684,29 @@
         "segment_index": 64
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.054997",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻春花"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "冲突",
+        "context": "苻春花最后嫣然一笑，“苻南华，你最后想一想，姐姐说这些，到底是希望你毅然出手，还是想着你不要一意孤行呢？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 64
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.294157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5239,7 +6726,36 @@
       "苻春花咧嘴一笑，“好弟弟，等我或是苻东海当了城主，一定好好养着你。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花脸上的笑意越来越清减，最后干脆没了丝毫笑意，冷冷望向这个横空出世的弟弟，一个吃掉家族整座金山银山也才第六境的废物而已，也敢奢望老龙城城主宝座？ 苻南华收回思绪，缓缓起身，动作如行云流水，气度雍容，他微微一笑，“苻春花，你和苻东海那点龌龊事情，可不止你娘亲一人知道，不过我很好奇，苻东海跟你贴身侍女的那点龌龊事情，你又知不知道？",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 65
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华收回思绪，缓缓起身，动作如行云流水，气度雍容，他微微一笑，“苻春花，你和苻东海那点龌龊事情，可不止你娘亲一人知道，不过我很好奇，苻东海跟你贴身侍女的那点龌龊事情，你又知不知道？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 65
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -5248,7 +6764,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻春花"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -5258,13 +6776,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "苻春花脸上的笑意越来越清减，最后干脆没了丝毫笑意，冷冷望向这个横空出世的弟弟，一个吃掉家族整座金山银山也才第六境的废物而已，也敢奢望老龙城城主宝座？ 也配跟自己和苻东海两位金丹境争抢那件袍子？ 苻南华收回思绪，缓缓起身，动作如行云流水，气度雍容，他微微一笑，“苻春花，你和苻东海那点龌龊事情，可不止你娘亲一人知道，不过我很好奇，苻东海跟你贴身侍女的那点龌龊事情，你又知不知道？",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "苻春花"
+        ],
+        "description": "苻春花脸上的笑意越来越清减，最后干脆没了丝毫笑意，冷冷望向这个横空出世的弟弟，一个吃掉家族整座金山银山也才第六境的废物而已，也敢奢望老龙城城主宝座？ 苻南华收回思绪，缓缓起身，动作如行云流水，气度雍容，他微微一笑，“苻春花，你和苻东海那点龌龊事情，可不止你娘亲一人知道，不过我很好奇，苻东海跟你贴身侍女的那点龌龊事情，你又知不知道？ 苻春花咧嘴一笑，“好弟弟，等我或是苻东海当了城主，一定好好养着你。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段65",
         "sentence_indexes_in_segment": [
@@ -5280,7 +6802,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.294157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5303,6 +6825,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华仿佛完全没有听明白其中的威胁，洒然笑道：“在那之前，咱们姐弟还是要精诚合作，谋划一下如何杀掉陈平安才是，对吧？ 苻南华站起身后，转头望向大门方向，在心中默默道：“孙嘉树，你为了一个元婴境，就卖掉一个差点杀掉我的陈平安，这笔买卖，值得吗？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 66
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "苻南华仿佛完全没有听明白其中的威胁，洒然笑道：“在那之前，咱们姐弟还是要精诚合作，谋划一下如何杀掉陈平安才是，对吧？ 苻南华站起身后，转头望向大门方向，在心中默默道：“孙嘉树，你为了一个元婴境，就卖掉一个差点杀掉我的陈平安，这笔买卖，值得吗？",
@@ -5314,21 +6850,51 @@
         ],
         "juan_index": 255,
         "segment_index": 66
+      },
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻春花眯起眼，神色阴沉。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 66
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "苻南华站起身后，转头望向大门方向，在心中默默道：“孙嘉树，你为了一个元婴境，就卖掉一个差点杀掉我的陈平安，这笔买卖，值得吗？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 66
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "孙嘉树",
+          "陈平安",
+          "苻南华"
         ],
-        "description": "苻南华仿佛完全没有听明白其中的威胁，洒然笑道：“在那之前，咱们姐弟还是要精诚合作，谋划一下如何杀掉陈平安才是，对吧？ 苻南华站起身后，转头望向大门方向，在心中默默道：“孙嘉树，你为了一个元婴境，就卖掉一个差点杀掉我的陈平安，这笔买卖，值得吗？ 毕竟你现在根本猜不透父亲的心思，不清楚我这个抉择，到底是走向家主之位，还是远离，更何况此事，父亲考验我的同时，也在考验你，好姐姐，你可千万要小心应对啊！",
+        "description": "苻南华仿佛完全没有听明白其中的威胁，洒然笑道：“在那之前，咱们姐弟还是要精诚合作，谋划一下如何杀掉陈平安才是，对吧？ 苻春花眯起眼，神色阴沉。 苻南华站起身后，转头望向大门方向，在心中默默道：“孙嘉树，你为了一个元婴境，就卖掉一个差点杀掉我的陈平安，这笔买卖，值得吗？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段66",
         "sentence_indexes_in_segment": [
           0,
@@ -5342,8 +6908,29 @@
         "segment_index": 66
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "苻南华仿佛完全没有听明白其中的威胁，洒然笑道：“在那之前，咱们姐弟还是要精诚合作，谋划一下如何杀掉陈平安才是，对吧？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 66
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.294157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5363,7 +6950,74 @@
       "苻畦独自御风北去，在千里之外，停下身影，最终落在一艘来自大骊龙泉梧桐山的渡船之上。",
       "上边一位墨家豪侠许弱，横剑在身后，还有一位老蛟出身的林鹿书院副山长。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "想到这里，苻南华轻轻摇头，不可能，孙嘉树又不是疯子。 苻南华直到这一刻，才开始犹豫起来，心中越来越烦躁。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 67
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "想到这里，苻南华轻轻摇头，不可能，孙嘉树又不是疯子。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 67
+      },
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "而苻春花望向这个看着长大、却突然变得陌生的弟弟，终于有了一丝忌惮。",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 67
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦独自御风北去，在千里之外，停下身影，最终落在一艘来自大骊龙泉梧桐山的渡船之上。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 67
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "上边一位墨家豪侠许弱，横剑在身后，还有一位老蛟出身的林鹿书院副山长。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 67
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -5374,7 +7028,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -5391,7 +7047,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -5401,13 +7059,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 大骊迁移",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻南华与孙嘉树在大骊迁移",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "苻畦独自御风北去，在千里之外，停下身影，最终落在一艘来自大骊龙泉梧桐山的渡船之上。 想到这里，苻南华轻轻摇头，不可能，孙嘉树又不是疯子。 可如果万一？",
+        "participants": [
+          "苻南华",
+          "孙嘉树",
+          "苻春花",
+          "苻畦"
+        ],
+        "description": "想到这里，苻南华轻轻摇头，不可能，孙嘉树又不是疯子。 苻南华直到这一刻，才开始犹豫起来，心中越来越烦躁。 而苻春花望向这个看着长大、却突然变得陌生的弟弟，终于有了一丝忌惮。",
         "background": "",
-        "significance": "对应大骊相关的关键迁移场景。",
+        "significance": "在大骊推动苻南华与孙嘉树之间的迁移线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段67",
         "sentence_indexes_in_segment": [
@@ -5423,7 +7086,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.294157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5472,6 +7135,47 @@
         ],
         "juan_index": 255,
         "segment_index": 68
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？ 苻畦在亲自为大骊这一行客人安排好下榻之处后，来到苻南华私邸，发现这个儿子神色萎靡地背靠一根龙绕梁。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻畦在亲自为大骊这一行客人安排好下榻之处后，来到苻南华私邸，发现这个儿子神色萎靡地背靠一根龙绕梁。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 68
       }
     ],
     "locations": [
@@ -5485,7 +7189,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宋集薪"
+          "宋集薪",
+          "苻畦",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -5503,7 +7209,9 @@
         "coordinates": null,
         "related_entities": [
           "稚圭",
-          "宋集薪"
+          "宋集薪",
+          "苻畦",
+          "许弱"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -5514,18 +7222,25 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 稚圭与宋集薪在大骊对话",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "大骊",
+        "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "稚圭",
           "宋集薪"
         ],
         "description": "两人护送之人，是一对少年少女，准确说来，是大骊皇子宋睦一人。 少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？ 苻畦在亲自为大骊这一行客人安排好下榻之处后，来到苻南华私邸，发现这个儿子神色萎靡地背靠一根龙绕梁。",
         "background": "",
-        "significance": "在大骊推动稚圭与宋集薪之间的对话线。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段68",
         "sentence_indexes_in_segment": [
@@ -5552,7 +7267,107 @@
         "action": "同行",
         "context": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 稚圭与宋集薪在大骊对话",
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "稚圭"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "同行",
+        "context": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "稚圭"
+        ],
+        "to_roles": [
+          "许弱"
+        ],
+        "action": "同行",
+        "context": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "同行",
+        "context": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "许弱"
+        ],
+        "action": "同行",
+        "context": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 68
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "许弱"
+        ],
+        "action": "同行",
+        "context": "少女名为稚圭，她低眉顺眼跟在自家公子“宋集薪”身后，从头到尾，少女都没有看苻畦一眼，可能是苻畦没有身穿老龙袍，加上这位老龙城城主也没有如何自报名号，与剑仙许弱一起站在船头寒暄客套起来，所以她没有认出？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
         "location": "老龙城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -5562,7 +7377,7 @@
         "segment_index": 68
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.294157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5582,7 +7397,49 @@
       "”",
       "苻南华满脸呆滞。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华抬起头，望向父亲，“我想了很多很多，好像怎么做都是错的。 苻南华突然笑了起来，“那你知不知道，其实不管你做什么，你都是下一任老龙城城主？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 69
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "苻家，老龙城，大骊，骊珠洞天，孙嘉树，苻东海苻春花……”",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 69
+      },
+      {
+        "entity_type": "person",
+        "name": "苻春花",
+        "alias": [],
+        "original_description_in_book": "苻家，老龙城，大骊，骊珠洞天，孙嘉树，苻东海苻春花……”",
+        "description": "老龙城苻氏相关人物，适合强化家族网与城池势力网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 69
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -5591,7 +7448,11 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树",
+          "苻春花",
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           2,
           3
@@ -5608,7 +7469,10 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树",
+          "苻春花"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -5622,7 +7486,10 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树",
+          "苻春花"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -5632,13 +7499,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "苻家，老龙城，大骊，骊珠洞天，孙嘉树，苻东海苻春花……” 苻南华突然笑了起来，“那你知不知道，其实不管你做什么，你都是下一任老龙城城主？ ”",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "孙嘉树",
+          "苻春花"
+        ],
+        "description": "苻南华抬起头，望向父亲，“我想了很多很多，好像怎么做都是错的。 苻家，老龙城，大骊，骊珠洞天，孙嘉树，苻东海苻春花……” 苻南华突然笑了起来，“那你知不知道，其实不管你做什么，你都是下一任老龙城城主？",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段69",
         "sentence_indexes_in_segment": [
@@ -5654,7 +7526,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.294157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5677,12 +7549,51 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦侧过身，低下头，好似在毕恭毕敬迎接某人。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 70
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
         ],
         "original_description_in_book": "没办法，我暂时还打不过他们中某些人，臭道士，阮邛，宋长镜，那位深不可测的墨家巨子，剑修许弱，等等等等……唉，总之挺多人，算了，不提这些。",
         "description": "铸剑名家，牵动龙泉地界和山上势力线。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 70
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "没办法，我暂时还打不过他们中某些人，臭道士，阮邛，宋长镜，那位深不可测的墨家巨子，剑修许弱，等等等等……唉，总之挺多人，算了，不提这些。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 70
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "没办法，我暂时还打不过他们中某些人，臭道士，阮邛，宋长镜，那位深不可测的墨家巨子，剑修许弱，等等等等……唉，总之挺多人，算了，不提这些。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
         "power": "风雪庙",
         "sentence_indexes_in_segment": [
           5
@@ -5709,15 +7620,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阮邛在骊珠洞天剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与阮邛在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "阮邛"
+          "苻畦",
+          "阮邛",
+          "宋长镜",
+          "许弱"
         ],
-        "description": "她踢掉靴子，盘腿坐在椅子上，披着那件太过宽松的龙袍，显得有些滑稽，她皱着脸委屈道：“没了骊珠洞天的禁制之后，还要假装自己是一只蝼蚁，好辛苦啊。 没办法，我暂时还打不过他们中某些人，臭道士，阮邛，宋长镜，那位深不可测的墨家巨子，剑修许弱，等等等等……唉，总之挺多人，算了，不提这些。 苻畦侧过身，低下头，好似在毕恭毕敬迎接某人。",
+        "description": "苻畦侧过身，低下头，好似在毕恭毕敬迎接某人。 她踢掉靴子，盘腿坐在椅子上，披着那件太过宽松的龙袍，显得有些滑稽，她皱着脸委屈道：“没了骊珠洞天的禁制之后，还要假装自己是一只蝼蚁，好辛苦啊。 没办法，我暂时还打不过他们中某些人，臭道士，阮邛，宋长镜，那位深不可测的墨家巨子，剑修许弱，等等等等……唉，总之挺多人，算了，不提这些。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
+        "significance": "在骊珠洞天推动苻畦与阮邛之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段70",
         "sentence_indexes_in_segment": [
@@ -5733,7 +7647,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.295161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5753,7 +7667,22 @@
       "她环顾四周，“为了顺利来到这里，我受了好多委屈啊。",
       "但是最委屈的是，所谓的顺利，还是那个臭道士施舍给我的……”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华看着少女那张挺熟悉的稚气面孔，然后再转头看看满脸平静的父亲，最后再使劲盯着那件祖传老龙袍。 苻南华发现之前差点疯了一回的自己，这次是真的要疯了。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 71
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -5772,13 +7701,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻南华在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "还是这里好，不愧是当初登陆宝瓶洲的第一处风水宝地……龙气经过这么多年维护，还剩下不少，你们苻家做得不坏，以后肯定有赏，大大有赏！ ” 苻南华看着少女那张挺熟悉的稚气面孔，然后再转头看看满脸平静的父亲，最后再使劲盯着那件祖传老龙袍。",
+        "participants": [
+          "苻南华"
+        ],
+        "description": "还是这里好，不愧是当初登陆宝瓶洲的第一处风水宝地……龙气经过这么多年维护，还剩下不少，你们苻家做得不坏，以后肯定有赏，大大有赏！ 苻南华看着少女那张挺熟悉的稚气面孔，然后再转头看看满脸平静的父亲，最后再使劲盯着那件祖传老龙袍。 苻南华发现之前差点疯了一回的自己，这次是真的要疯了。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应苻南华在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段71",
         "sentence_indexes_in_segment": [
@@ -5794,7 +7725,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.295161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5817,6 +7748,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "她突然伸手指向苻南华，厉色道：“你这只蝼蚁，听说你连一个陈平安都不敢杀！",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 255,
+        "segment_index": 72
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "她突然伸手指向苻南华，厉色道：“你这只蝼蚁，听说你连一个陈平安都不敢杀！",
@@ -5827,20 +7771,36 @@
         ],
         "juan_index": 255,
         "segment_index": 72
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "少女转头望向苻畦，“你们姓什么来着？ 苻畦恭敬回道：“启禀小姐，我们姓苻。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 255,
+        "segment_index": 72
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦与苻南华剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "苻畦",
+          "苻南华",
           "陈平安"
         ],
-        "description": "她突然伸手指向苻南华，厉色道：“你这只蝼蚁，听说你连一个陈平安都不敢杀！ 你根本就不配姓……” 少女转头望向苻畦，“你们姓什么来着？",
+        "description": "她突然伸手指向苻南华，厉色道：“你这只蝼蚁，听说你连一个陈平安都不敢杀！ 少女转头望向苻畦，“你们姓什么来着？ 苻畦恭敬回道：“启禀小姐，我们姓苻。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动苻畦与苻南华之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段72",
         "sentence_indexes_in_segment": [
@@ -5856,7 +7816,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.295161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5876,7 +7836,21 @@
       "她视线下移，喃喃道：“低端的云海差了点。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华距离崩溃，只差一线之隔。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 73
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -5895,13 +7869,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻南华在宝瓶洲试探",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "少女低头打量着老龙袍，“历史上九位宝瓶洲皇帝的筋骨气血，嗯，还不错。 少女有些悻悻然，气焰全无，慵懒缩在椅子里，或者说是蜷缩在那件龙袍之中。 苻南华距离崩溃，只差一线之隔。",
+        "participants": [
+          "苻南华"
+        ],
+        "description": "苻南华距离崩溃，只差一线之隔。 少女低头打量着老龙袍，“历史上九位宝瓶洲皇帝的筋骨气血，嗯，还不错。 少女有些悻悻然，气焰全无，慵懒缩在椅子里，或者说是蜷缩在那件龙袍之中。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应苻南华在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段73",
         "sentence_indexes_in_segment": [
@@ -5917,7 +7893,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.295161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5937,7 +7913,21 @@
       "”",
       "她最后醉眼朦胧，像是一个醉酒汉，“到了这里，真不想再挪窝啊。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "好似猜中少女心思，苻畦苦笑道：“小姐，老龙城上空的那片云海，近期还不能收入龙袍之中，否则万众瞩目之下，动静太大，有心人很容易发现端倪。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 74
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -5946,7 +7936,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -5956,13 +7948,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 老龙城对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻畦在老龙城对话",
         "time": null,
         "location": "老龙城",
-        "participants": [],
+        "participants": [
+          "苻畦"
+        ],
         "description": "好似猜中少女心思，苻畦苦笑道：“小姐，老龙城上空的那片云海，近期还不能收入龙袍之中，否则万众瞩目之下，动静太大，有心人很容易发现端倪。 她眼睛一亮，露出一双金色瞳孔的诡谲眼眸。 ”",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
+        "significance": "对应苻畦在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段74",
         "sentence_indexes_in_segment": [
@@ -5978,7 +7972,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.056035",
+    "extracted_at": "2026-03-25T01:03:31.295161",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-75-0": {
+    "juan_index": 255,
+    "segment_index": 75,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "”",
+      "她猛然跳下椅子，轻轻一抖，原本巨大如被褥的老龙袍，立即变得无比合身，她站在大堂上，望向门外，她似乎在犹豫什么。",
+      "孙氏祖宅，老祖听到现任家主的计划后，苦笑道：“当真值得吗？",
+      "就不怕此战之后，一蹶不振，被苻家联手四家一起吞并了咱们？",
+      "”",
+      "孙嘉树脸色如常，“我只恨孙家家底不够大，我孙嘉树只能赌这么大。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树脸色如常，“我只恨孙家家底不够大，我孙嘉树只能赌这么大。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 75
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树脸色如常，“我只恨孙家家底不够大，我孙嘉树只能赌这么大。 ” 她猛然跳下椅子，轻轻一抖，原本巨大如被褥的老龙袍，立即变得无比合身，她站在大堂上，望向门外，她似乎在犹豫什么。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段75",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 75
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.295161",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-76-0": {
+    "juan_index": 255,
+    "segment_index": 76,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "”",
+      "孙氏老祖沉默许久，问道：“如果被那少年知晓我们孙家的初衷？",
+      "”",
+      "孙嘉树眼神坚毅道：“他不会知道的，就算退一万步说，他知道了真相，可我孙家为了他付出这么大的代价，以后的回报，注定只多不少。",
+      "”",
+      "孙氏老祖再问，“如此急功近利，当真合适吗？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树眼神坚毅道：“他不会知道的，就算退一万步说，他知道了真相，可我孙家为了他付出这么大的代价，以后的回报，注定只多不少。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 76
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树眼神坚毅道：“他不会知道的，就算退一万步说，他知道了真相，可我孙家为了他付出这么大的代价，以后的回报，注定只多不少。 ” 孙氏老祖沉默许久，问道：“如果被那少年知晓我们孙家的初衷？",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段76",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 76
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.295161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5998,7 +8116,21 @@
       "这位孙家的元婴老祖唯有叹息，不再劝说什么。",
       "在那之后，少年从内城高楼那间屋子，走回孙氏祖宅的池塘。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树摇头道：“我孙嘉树一个人，当然能等，可是东宝瓶洲和天下大势，不能等！",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 77
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -6007,7 +8139,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -6017,13 +8151,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
+        "participants": [
+          "孙嘉树"
+        ],
         "description": "孙嘉树摇头道：“我孙嘉树一个人，当然能等，可是东宝瓶洲和天下大势，不能等！ 就不能像那少年的三境破四境，顺其自然，水到渠成？ ”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段77",
         "sentence_indexes_in_segment": [
@@ -6039,7 +8175,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.295161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6062,6 +8198,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树还是隔三差五回来一趟祖宅。 最终孙嘉树赌了四次，输了四次，在那之后孙嘉树就不再下注了。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 78
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "而那个陈平安，依旧每天会去守夜钓鱼，然后等待旭日东升朝霞万丈的那一刻。 在陈平安住在孙氏祖宅的第二十天，孙嘉树还在以道家一门坐忘术深入睡眠，结果就听陈平安在远处大声喊道：“孙嘉树，快看！",
@@ -6078,16 +8229,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 陈平安等待",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "而那个陈平安，依旧每天会去守夜钓鱼，然后等待旭日东升朝霞万丈的那一刻。 在陈平安住在孙氏祖宅的第二十天，孙嘉树还在以道家一门坐忘术深入睡眠，结果就听陈平安在远处大声喊道：“孙嘉树，快看！ 之后竟然风和日丽，天下太平。",
+        "description": "孙嘉树还是隔三差五回来一趟祖宅。 最终孙嘉树赌了四次，输了四次，在那之后孙嘉树就不再下注了。 而那个陈平安，依旧每天会去守夜钓鱼，然后等待旭日东升朝霞万丈的那一刻。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键等待节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段78",
         "sentence_indexes_in_segment": [
           0,
@@ -6101,8 +8255,97 @@
         "segment_index": 78
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "等待",
+        "context": "之后竟然风和日丽，天下太平。 孙嘉树还是隔三差五回来一趟祖宅。 还是每次回来，都要住上一夜，然后跟三位金丹境供奉赌上一次，最早一次是一枚谷雨钱，第二次是两枚，第三次是四枚，第四次是八枚。 最终孙嘉树赌了四次，输了四次，在那之后孙嘉树就不再下注了。 而那个陈平安，依旧每天会去守夜钓鱼，然后等待旭日东升朝霞万丈的那一刻。 在陈平安住在孙氏祖宅的第二十天，孙嘉树还在以道家一门坐忘术深入睡眠，结果就听陈平安在远处大声喊道：“孙嘉树，快看！",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 78
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.295161",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "255-79-0": {
+    "juan_index": 255,
+    "segment_index": 79,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十四章 精诚动人也伤人",
+    "source_sentences": [
+      "”",
+      "孙嘉树猛然起身，靴子也不穿，推开窗户，眺望天空。",
+      "只见东方云海之中，又有十数条金色蛟龙汹涌而下，然后又被那个背剑少年以古老拳架一一打回，次次出拳酣畅淋漓，毫不犹豫。",
+      "孙嘉树在这一刻，怅然若失。",
+      "道心失守，几近崩溃。",
+      "所幸孙氏老祖赶紧来到他身边，伸手重重按住他的肩膀，“嘉树，无需如此，嘉树可以四季常青，人却绝无事事如意，当年为你取这个名字，正是为了今天。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树猛然起身，靴子也不穿，推开窗户，眺望天空。 孙嘉树在这一刻，怅然若失。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 79
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树猛然起身，靴子也不穿，推开窗户，眺望天空。 孙嘉树在这一刻，怅然若失。 ”",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段79",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 79
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.296164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6123,6 +8366,19 @@
       "老龙城内城，灰尘药铺外的街巷口子上，郑大风望了一眼东方朝霞，心神恍惚之间，赶紧掏出那本书籍，翻到一页，不断那篇精诚篇，默默朗诵，当天地异象结束之后，郑大风震碎书籍，不留下任何蛛丝马迹，走回巷子，哭丧着脸道：“传道人，哈哈，竟是我郑大风的传道人……”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树脸色发白，喃喃道：“只差一次。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 80
+      },
       {
         "entity_type": "person",
         "name": "郑大风",
@@ -6160,15 +8416,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在老龙城剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 孙嘉树与郑大风在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "郑大风"
         ],
-        "description": "就好像失去了一整座老龙城。 老龙城内城，灰尘药铺外的街巷口子上，郑大风望了一眼东方朝霞，心神恍惚之间，赶紧掏出那本书籍，翻到一页，不断那篇精诚篇，默默朗诵，当天地异象结束之后，郑大风震碎书籍，不留下任何蛛丝马迹，走回巷子，哭丧着脸道：“传道人，哈哈，竟是我郑大风的传道人……” ”",
+        "description": "孙嘉树脸色发白，喃喃道：“只差一次。 就好像失去了一整座老龙城。 老龙城内城，灰尘药铺外的街巷口子上，郑大风望了一眼东方朝霞，心神恍惚之间，赶紧掏出那本书籍，翻到一页，不断那篇精诚篇，默默朗诵，当天地异象结束之后，郑大风震碎书籍，不留下任何蛛丝马迹，走回巷子，哭丧着脸道：“传道人，哈哈，竟是我郑大风的传道人……”",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
+        "significance": "在老龙城推动孙嘉树与郑大风之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段80",
         "sentence_indexes_in_segment": [
@@ -6184,7 +8441,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.296164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

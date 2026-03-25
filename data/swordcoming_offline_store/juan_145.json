@@ -27,21 +27,37 @@
         ],
         "juan_index": 145,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "再说了，我就会那么一点蛮力，真要打架，打得过你崔东山？",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔东山对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
-        "description": "井口上的陈平安说道：“你上来。 陈平安心平气和道：“我们好好聊聊，先讲道理，不会一开始就打打杀杀。 ”",
+        "description": "井口上的陈平安说道：“你上来。 陈平安心平气和道：“我们好好聊聊，先讲道理，不会一开始就打打杀杀。 再说了，我就会那么一点蛮力，真要打架，打得过你崔东山？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -55,8 +71,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.695454",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "对话",
+        "context": "井口上的陈平安说道：“你上来。 ” 井底的白衣少年摇头道：“我不。 ” 陈平安心平气和道：“我们好好聊聊，先讲道理，不会一开始就打打杀杀。 再说了，我就会那么一点蛮力，真要打架，打得过你崔东山？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔东山对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.782794",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -135,7 +177,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.695454",
+    "extracted_at": "2026-03-25T01:03:30.782794",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +240,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.695454",
+    "extracted_at": "2026-03-25T01:03:30.782794",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -307,7 +349,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.695454",
+    "extracted_at": "2026-03-25T01:03:30.782794",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -385,7 +427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.695454",
+    "extracted_at": "2026-03-25T01:03:30.782794",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -500,7 +542,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.782794",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -580,7 +622,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -645,7 +687,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,6 +766,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "李宝瓶虽然嘴上不说什么，可是朱河朱鹿这对父女的事情，让小丫头有些受伤，而且她一路行来，是负笈游学最名副其实的一个，经常会思考一些稀奇古怪的问题，而且相较已是练气士的林守一，以及天赋异禀的李槐，李宝瓶才是求学路上最吃苦头的那个人。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "李宝瓶虽然嘴上不说什么，可是朱河朱鹿这对父女的事情，让小丫头有些受伤，而且她一路行来，是负笈游学最名副其实的一个，经常会思考一些稀奇古怪的问题，而且相较已是练气士的林守一，以及天赋异禀的李槐，李宝瓶才是求学路上最吃苦头的那个人。",
@@ -756,18 +811,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 林守一与陈平安在大骊剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": "大骊",
         "participants": [
+          "李宝瓶",
           "林守一",
-          "陈平安",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "陈平安一直不信任白衣少年，对这个人戒心很重。 比如这次入住秋芦客栈，姓崔的先以那座城隍庙为引子，水到渠成地牵扯出秋芦客栈，看似好心好意的言语，实则用林守一的修行抛出诱饵，让他陈平安主动要求寻找老城隍旧址。 出了大骊野夫关后，这一路上，相较之前的磕磕碰碰，实在太过顺遂。",
         "background": "",
-        "significance": "在大骊推动林守一与陈平安之间的剧情推进线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段9",
         "sentence_indexes_in_segment": [
@@ -783,7 +838,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -811,6 +866,20 @@
         "original_description_in_book": "至于谢谢和于禄，本就是白衣少年带入队伍的，另当别论。 李宝瓶也曾无意间说起过，姓崔的下棋，很厉害，她和林守一最多推算后边几步棋，但是姓崔的可以计算得很深远，远到让她、林守一、谢谢和于禄都无法想象，跟他们这些人下棋的时候，姓崔的很可能在起手的时候，就想到了中盘，甚至是收官。",
         "description": "老龙城线的重要女性角色，牵连家族、城池和海上局势。",
         "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "至于谢谢和于禄，本就是白衣少年带入队伍的，另当别论。 李宝瓶也曾无意间说起过，姓崔的下棋，很厉害，她和林守一最多推算后边几步棋，但是姓崔的可以计算得很深远，远到让她、林守一、谢谢和于禄都无法想象，跟他们这些人下棋的时候，姓崔的很可能在起手的时候，就想到了中盘，甚至是收官。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0,
           5
@@ -874,27 +943,41 @@
         ],
         "juan_index": 145,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "今夜在凉亭那边，林守一离开之前，提醒了一句，说崔东山此人，想要从你陈平安身上索取的东西，不一定非是实物，可能是一些很大很空的东西，涉及到修行之人的大道。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与朱鹿冲突",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "朱鹿",
           "李宝瓶",
-          "林守一"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "至于谢谢和于禄，本就是白衣少年带入队伍的，另当别论。 陈平安虽然一天到晚比谁都忙碌，除了照顾三人的衣食住行，赶路的时候，需要不断走桩练拳，有空闲的时候，就以立桩剑炉滋养身躯，缝补漏洞。 但是陈平安不管是在棋墩山的厮杀之中，还是朱鹿在红烛镇枕头驿内的阴险刺杀，或是遭遇嫁衣女鬼后的身陷险境，以及之后黄庭国的跋山涉水。",
         "background": "",
-        "significance": "推动陈平安与朱鹿之间的冲突关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段10",
         "sentence_indexes_in_segment": [
@@ -921,7 +1004,7 @@
         "action": "冲突",
         "context": "但是陈平安不管是在棋墩山的厮杀之中，还是朱鹿在红烛镇枕头驿内的阴险刺杀，或是遭遇嫁衣女鬼后的身陷险境，以及之后黄庭国的跋山涉水。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与朱鹿冲突",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -941,11 +1024,31 @@
         "action": "守护",
         "context": "陈平安始终没有忘记一件事，他是在护送李宝瓶三人去往大隋求学。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与朱鹿冲突",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 145,
+        "segment_index": 10
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "指点",
+        "context": "今夜在凉亭那边，林守一离开之前，提醒了一句，说崔东山此人，想要从你陈平安身上索取的东西，不一定非是实物，可能是一些很大很空的东西，涉及到修行之人的大道。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 145,
         "segment_index": 10
@@ -961,7 +1064,7 @@
         "action": "指点",
         "context": "今夜在凉亭那边，林守一离开之前，提醒了一句，说崔东山此人，想要从你陈平安身上索取的东西，不一定非是实物，可能是一些很大很空的东西，涉及到修行之人的大道。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与朱鹿冲突",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -971,7 +1074,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1052,17 +1155,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "林守一"
         ],
         "description": "陈平安在林守一离开凉亭后，看着那口老井，他就越觉得心结难解。 陈平安想来想去，非但没有捋清楚脉络，反而脑子里一团乱麻，最后他实在没办法，开始尝试着把所有繁琐复杂的事情都暂且搁置，把一切都倒推回到最开始的地方。 比如说家乡小镇。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0
         ],
@@ -1091,7 +1194,7 @@
         "action": "别离",
         "context": "陈平安在林守一离开凉亭后，看着那口老井，他就越觉得心结难解。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1101,7 +1204,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1209,7 +1312,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1230,6 +1333,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "我崔东山保证不会伤害李宝瓶、李槐、林守一他们三个小屁孩！ “崔东山。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 145,
+        "segment_index": 13
+      },
       {
         "entity_type": "person",
         "name": "李宝瓶",
@@ -1286,18 +1403,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 李宝瓶与李槐剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "李槐",
           "林守一",
-          "陈平安"
+          "李槐",
+          "于禄"
         ],
-        "description": "我崔东山保证不会伤害李宝瓶、李槐、林守一他们三个小屁孩！ 陈平安犹豫片刻，“你是认真的？ ”",
+        "description": "我崔东山保证不会伤害李宝瓶、李槐、林守一他们三个小屁孩！ “崔东山。 陈平安犹豫片刻，“你是认真的？",
         "background": "",
-        "significance": "推动李宝瓶与李槐之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段13",
         "sentence_indexes_in_segment": [
@@ -1313,7 +1430,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.783797",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1377,7 +1494,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.696458",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1468,7 +1585,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1573,7 +1690,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1640,16 +1757,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "小姑娘滔滔不绝道：“小师叔，我们离开小镇，走了快有小半年，根据地图显示，咱们路程已经走过大半，时间走得真快啊，比我跑得还要快了，对吧？ “唉，大隋如果在咱们宝瓶洲的最南边就好了，我还能跟小师叔看看大海的光景。 听我大哥说那边有座老龙城，在城头上望南边望去，那浪头高到十几层楼，你说吓不吓人？",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段17",
         "sentence_indexes_in_segment": [
@@ -1665,7 +1782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1769,7 +1886,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1832,7 +1949,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1936,7 +2053,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2031,7 +2148,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2125,7 +2242,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.784801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2228,7 +2345,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.785804",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2310,7 +2427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.785804",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2390,7 +2507,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.697462",
+    "extracted_at": "2026-03-25T01:03:30.785804",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2515,7 +2632,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.698496",
+    "extracted_at": "2026-03-25T01:03:30.785804",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2611,7 +2728,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.698496",
+    "extracted_at": "2026-03-25T01:03:30.785804",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2697,7 +2814,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.698496",
+    "extracted_at": "2026-03-25T01:03:30.785804",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2811,7 +2928,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.698496",
+    "extracted_at": "2026-03-25T01:03:30.786808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2876,7 +2993,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.698496",
+    "extracted_at": "2026-03-25T01:03:30.786808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2937,7 +3054,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.698496",
+    "extracted_at": "2026-03-25T01:03:30.786808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2998,7 +3115,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.699009",
+    "extracted_at": "2026-03-25T01:03:30.786808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3062,7 +3179,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.699009",
+    "extracted_at": "2026-03-25T01:03:30.786808",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "145-37-0": {
+    "juan_index": 145,
+    "segment_index": 37,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十五章 草灰蛇线",
+    "source_sentences": [
+      "朱衣童子赶紧双手扶好那块“半人高的巨石”，好奇问道：“谁给你的？",
+      "为啥他不直接送给化名李锦的那条锦鲤？",
+      "”",
+      "汉子摇头道：“当时懒得问，现在懒得猜。",
+      "”",
+      "朱衣童子双手捧脸，欲哭无泪，“苍天老爷啊，我怎么摊上这么个不知上进的主人啊，天可怜见，作为补偿，赏给我一个活泼可爱、国色天香、知书达理、出身高门的小姑娘做媳妇吧？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "为啥他不直接送给化名李锦的那条锦鲤？",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 145,
+        "segment_index": 37
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 李锦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李锦"
+        ],
+        "description": "为啥他不直接送给化名李锦的那条锦鲤？ 朱衣童子赶紧双手扶好那块“半人高的巨石”，好奇问道：“谁给你的？ ”",
+        "background": "",
+        "significance": "对应李锦在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段37",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 37
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.786808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3125,7 +3304,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.699009",
+    "extracted_at": "2026-03-25T01:03:30.787812",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3188,7 +3367,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.699009",
+    "extracted_at": "2026-03-25T01:03:30.787812",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3251,7 +3430,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.699009",
+    "extracted_at": "2026-03-25T01:03:30.787812",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3312,7 +3491,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.788815",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3477,7 +3656,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.788815",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3510,20 +3689,34 @@
         ],
         "juan_index": 145,
         "segment_index": 53
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安轻轻跨上井口边沿，微微前倾，望向幽幽的水井底下，喊了一声：“崔东山。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 53
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安揭示",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔东山揭示",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
         "description": "陈平安轻轻跨上井口边沿，微微前倾，望向幽幽的水井底下，喊了一声：“崔东山。 这是最大的筹码，其实也是唯一的筹码。 老城隍旧址，秋芦客栈。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "推动陈平安与崔东山之间的揭示关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段53",
         "sentence_indexes_in_segment": [
@@ -3539,7 +3732,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.788815",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3645,7 +3838,7 @@
         "segment_index": 54
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.788815",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

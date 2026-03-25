@@ -71,7 +71,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.391289",
+    "extracted_at": "2026-03-25T01:03:30.379343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -193,7 +193,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.391289",
+    "extracted_at": "2026-03-25T01:03:30.379343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -268,16 +268,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "后来又断断续续见到过几次，有次小女孩趴在铁锁井井口，往里头偷偷丢过石子，被陈平安无意间撞见她的顽劣举动，小女孩吓得赶紧就跑，跑出去十数步才记得糖葫芦落在井口上，实在熬不过嘴馋，就又跑回铁锁井，这一去一回，太过仓促，结果啪唧一下，整个人扑倒在地上，站起身后一把抓过糖葫芦，然后猛然停下脚步，张开嘴巴，伸手拔下那颗摇摇欲坠的牙齿，放入兜里，她不哭不闹，二话不说继续跑路。 那一幕看得陈平安满头冷汗。 最后一次见到她，是在荒草丛生的那片神像破败之地，是去年秋天的一个黄昏，陈平安离开龙窑回到小镇，四处闲逛，结果看到忙着捉蟋蟀的她，在草丛里四处打滚、蹦跳、飞扑，她看到陈平安后，显然也认出了陈平安，又是一阵清风远遁而去。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十章 还礼 · 段3",
         "sentence_indexes_in_segment": [
@@ -293,7 +293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.391289",
+    "extracted_at": "2026-03-25T01:03:30.379343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -355,7 +355,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.391289",
+    "extracted_at": "2026-03-25T01:03:30.379343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -420,7 +420,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.379343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -498,7 +498,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.379343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -561,7 +561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -666,7 +666,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -728,7 +728,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -762,20 +762,48 @@
         ],
         "juan_index": 40,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "像对于苻南华蔡金简，又像对陆道长和宁姑娘。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 40,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "像对于苻南华蔡金简，又像对陆道长和宁姑娘。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 40,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十章 还礼 · 陈平安对话",
+        "name": "第一卷笼中雀 第四十章 还礼 · 陈平安与苻南华对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "苻南华",
+          "蔡金简"
         ],
-        "description": "陈平安听着小女孩的言语，笑容灿烂，向这位观感极好的年轻道姑弯腰致谢。 陈平安又拿出一颗蛇胆石，再次递给她。 她听完小女孩的解释后，略作思量，接过石头，缓缓说道：“来此之前，我刚好遇到离开的小师叔，他要去南涧国参加一座道统宗门的重要典礼，下次何时见面，还真不好说，但是只要见到陆小师叔，我一定帮你转送给他。",
+        "description": "陈平安听着小女孩的言语，笑容灿烂，向这位观感极好的年轻道姑弯腰致谢。 像对于苻南华蔡金简，又像对陆道长和宁姑娘。 陈平安又拿出一颗蛇胆石，再次递给她。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "推动陈平安与苻南华之间的对话关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十章 还礼 · 段11",
         "sentence_indexes_in_segment": [
@@ -791,7 +819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -868,7 +896,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -946,7 +974,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1010,7 +1038,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1040,6 +1068,19 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 40,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "同样是仙子，这位年轻女冠的含金量，远不是云霞山蔡金简能够媲美的，几乎是仙家金精之于世俗金子。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
         ],
         "juan_index": 40,
         "segment_index": 15
@@ -1084,9 +1125,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
-        "description": "陈平安背起箩筐，跟年轻道姑告辞离去，朝小女孩挥了挥手，独自小跑返回小镇。 东宝瓶洲的道家门派，多如牛毛，每三十年都会选出一对“金童玉女”，他和师姐贺小凉便是这一届的天生道侣，只不过让人惊讶的事情出现了，金童的资质不比以往逊色，但是那位玉女的机缘之好，简直是好到令人发指，出生之时，便有祥瑞之一的白鹿，主动走出山野大泽，来到她身边认主，之后涉足修行大道，好像从无坎坷，一路顺风顺水，甚至有人扬言她只有等到跻身上五境之后，才会遇到第一个瓶颈。 同样是仙子，这位年轻女冠的含金量，远不是云霞山蔡金简能够媲美的，几乎是仙家金精之于世俗金子。",
+        "description": "陈平安背起箩筐，跟年轻道姑告辞离去，朝小女孩挥了挥手，独自小跑返回小镇。 同样是仙子，这位年轻女冠的含金量，远不是云霞山蔡金简能够媲美的，几乎是仙家金精之于世俗金子。 东宝瓶洲的道家门派，多如牛毛，每三十年都会选出一对“金童玉女”，他和师姐贺小凉便是这一届的天生道侣，只不过让人惊讶的事情出现了，金童的资质不比以往逊色，但是那位玉女的机缘之好，简直是好到令人发指，出生之时，便有祥瑞之一的白鹿，主动走出山野大泽，来到她身边认主，之后涉足修行大道，好像从无坎坷，一路顺风顺水，甚至有人扬言她只有等到跻身上五境之后，才会遇到第一个瓶颈。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1104,7 +1146,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.380346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1239,7 +1281,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.392293",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1301,7 +1343,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1362,7 +1404,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1426,7 +1468,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1533,7 +1575,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1598,7 +1640,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1709,7 +1751,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.381350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1829,7 +1871,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.382353",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1925,7 +1967,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.382353",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2005,7 +2047,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.382353",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2064,7 +2106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.382353",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

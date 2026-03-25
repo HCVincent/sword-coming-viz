@@ -54,7 +54,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.864118",
+    "extracted_at": "2026-03-25T01:03:31.022670",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -74,7 +74,34 @@
       "又比如北边的大隋，动荡不安，不断有大修士悄然离开国境，选择向南“游历”，据说是为了避其锋芒，躲避大骊那座虚虚实实的白玉京飞剑楼。",
       "至于被摘掉七十二书院头衔的山崖书院，去年在大隋京城扎根，算不得什么大消息。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "二是兵家祖庭之一的真武山，在去年新收取的一名弟子，一年之内连破三境，使得原本声势略输风雪庙的真武山，一下子声势大涨，隐约有压过风雪庙的迹象，要知道这还是建立在风雪庙魏晋跻身陆地剑仙的前提下，由此可见那名少年的天赋之高。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 199,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "其余几件事，比不得前三桩那么惊人，而且多是以讹传讹的小道消息，暂时真假难测，例如一洲最南边的老龙城，少城主苻南华要与南涧国一位豪阀嫡女联姻，女子所在家族，是宝瓶洲掰手指就数得着的大族，但是传闻那名女子奇丑无比，是个三十岁的老姑娘了。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 199,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "风雪庙",
@@ -83,7 +110,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -114,7 +143,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -128,7 +159,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -152,14 +185,20 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十九章 黄雀去又返 · 风雪庙迁移",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "风雪庙",
-        "participants": [],
+        "location": "老龙城",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "魏晋"
+        ],
         "description": "二是兵家祖庭之一的真武山，在去年新收取的一名弟子，一年之内连破三境，使得原本声势略输风雪庙的真武山，一下子声势大涨，隐约有压过风雪庙的迹象，要知道这还是建立在风雪庙魏晋跻身陆地剑仙的前提下，由此可见那名少年的天赋之高。 三是一个小道消息，说是北方蛮子的大骊王朝，失心疯了要在疆域南边的某座山峰，升格为一国北岳，顿时议论纷纷，多是讥讽嘲笑，说那土鳖宋氏不但学问浅薄，原来连东南西北都拎不清。 其余几件事，比不得前三桩那么惊人，而且多是以讹传讹的小道消息，暂时真假难测，例如一洲最南边的老龙城，少城主苻南华要与南涧国一位豪阀嫡女联姻，女子所在家族，是宝瓶洲掰手指就数得着的大族，但是传闻那名女子奇丑无比，是个三十岁的老姑娘了。",
         "background": "",
-        "significance": "对应风雪庙相关的关键迁移场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -173,8 +212,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.864118",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏晋"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "讥讽",
+        "context": "二是兵家祖庭之一的真武山，在去年新收取的一名弟子，一年之内连破三境，使得原本声势略输风雪庙的真武山，一下子声势大涨，隐约有压过风雪庙的迹象，要知道这还是建立在风雪庙魏晋跻身陆地剑仙的前提下，由此可见那名少年的天赋之高。 三是一个小道消息，说是北方蛮子的大骊王朝，失心疯了要在疆域南边的某座山峰，升格为一国北岳，顿时议论纷纷，多是讥讽嘲笑，说那土鳖宋氏不但学问浅薄，原来连东南西北都拎不清。 唯独观湖书院，严禁书院学子议论此事，值得玩味。 其余几件事，比不得前三桩那么惊人，而且多是以讹传讹的小道消息，暂时真假难测，例如一洲最南边的老龙城，少城主苻南华要与南涧国一位豪阀嫡女联姻，女子所在家族，是宝瓶洲掰手指就数得着的大族，但是传闻那名女子奇丑无比，是个三十岁的老姑娘了。 又比如北边的大隋，动荡不安，不断有大修士悄然离开国境，选择向南“游历”，据说是为了避其锋芒，躲避大骊那座虚虚实实的白玉京飞剑楼。 至于被摘掉七十二书院头衔的山崖书院，去年在大隋京城扎根，算不得什么大消息。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "风雪庙",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 199,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.022670",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -267,7 +332,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.864118",
+    "extracted_at": "2026-03-25T01:03:31.022670",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -400,7 +465,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.864118",
+    "extracted_at": "2026-03-25T01:03:31.022670",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -471,6 +536,32 @@
       },
       {
         "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "从山神庙离开，崔瀺让宋煜章去往披云山，与魏檗商议妖物入山一事，让身边两位扈从许弱和刘狱返回小镇，继续盯着谢实曹曦。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 199,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "从山神庙离开，崔瀺让宋煜章去往披云山，与魏檗商议妖物入山一事，让身边两位扈从许弱和刘狱返回小镇，继续盯着谢实曹曦。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 199,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "青衣小童最近修行勤勉，潜心打坐，日夜不歇，除了背陈平安离开二楼，几乎就没有离开过山崖畔，两耳不闻山外事。",
@@ -493,7 +584,9 @@
         "coordinates": null,
         "related_entities": [
           "崔瀺",
-          "魏檗"
+          "魏檗",
+          "许弱",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -527,7 +620,9 @@
         "coordinates": null,
         "related_entities": [
           "崔瀺",
-          "魏檗"
+          "魏檗",
+          "许弱",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -562,13 +657,16 @@
         "participants": [
           "魏檗",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "许弱"
         ],
         "description": "在这当中，阮邛名下的神秀山，包袱斋所在的牛角山，肯定是重中之重，吴鸢不得不得让分别担任县令和窑务督造官的袁、曹两位大公子，分别先行入驻两地，以免招待不周，出了纰漏。 至于披云山，更不用说，很快皇帝陛下就会御驾亲临，果不其然，国师崔瀺在披云山那边短暂居住了两天，看过了北岳祠庙以及新书院选址，期间一张面孔的出现，全程陪同在国师身边，引发轩然大波，竟然是黄庭国的老侍郎“程水东”，这惹来诸多揣测，难道作为大隋附属藩国的黄庭国洪氏，已经背弃了盟约？ 最后崔瀺走到最南边的落魄山，登上了山神庙，宋煜章现出金身，宋煜章在年少求学之时，便对这位国师推崇至极，如今不但得以见到近距离真容，还能聊上几句道德学问，这让已成山水神祇的宋煜章仍是激动万分。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段5",
         "sentence_indexes_in_segment": [
@@ -603,9 +701,49 @@
         ],
         "juan_index": 199,
         "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "许弱"
+        ],
+        "action": "别离",
+        "context": "从山神庙离开，崔瀺让宋煜章去往披云山，与魏檗商议妖物入山一事，让身边两位扈从许弱和刘狱返回小镇，继续盯着谢实曹曦。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 199,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "别离",
+        "context": "从山神庙离开，崔瀺让宋煜章去往披云山，与魏檗商议妖物入山一事，让身边两位扈从许弱和刘狱返回小镇，继续盯着谢实曹曦。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 199,
+        "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.864118",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -697,7 +835,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -780,7 +918,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -886,7 +1024,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -939,6 +1077,19 @@
         ],
         "juan_index": 199,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "至于那个分去我一半魂魄的少年，如今倒是选择了一个跟山有关的新名字，崔东山，我看叫崔巉才贴切。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 199,
+        "segment_index": 9
       }
     ],
     "locations": [
@@ -986,14 +1137,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "崔东山"
         ],
         "description": "崔瀺淡然道：“为了自己的大道，我找了一副上古遗蜕的大仙皮囊，分出一半魂魄装入其中，一分为二，以少年相貌行走骊珠洞天，结果算计齐静春不成，反而被他害得大跌境界，神魂不稳，之后跟此地一位活了极其悠久的余孽刑徒，做了笔买卖，学了一门秘术，这才好不容易稳住心神。 之后老秀才来了趟这里，他选中了少年皮囊的我，舍弃了身在大骊京城的我，切断神魂联系，彻彻底底一分为二，世上便有两个崔瀺了……” 老人亦是神色冷漠，双手握拳搁在膝盖上，眺望远方，“错了，是崔瀺巉。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -1007,34 +1157,8 @@
         "segment_index": 9
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "别离",
-        "context": "崔瀺淡然道：“为了自己的大道，我找了一副上古遗蜕的大仙皮囊，分出一半魂魄装入其中，一分为二，以少年相貌行走骊珠洞天，结果算计齐静春不成，反而被他害得大跌境界，神魂不稳，之后跟此地一位活了极其悠久的余孽刑徒，做了笔买卖，学了一门秘术，这才好不容易稳住心神。 之后老秀才来了趟这里，他选中了少年皮囊的我，舍弃了身在大骊京城的我，切断神魂联系，彻彻底底一分为二，世上便有两个崔瀺了……” 老人亦是神色冷漠，双手握拳搁在膝盖上，眺望远方，“错了，是崔瀺巉。 ” 崔瀺对此不置可否，“我是崔瀺，从离开家乡的那一刻起，就是如此。 至于那个分去我一半魂魄的少年，如今倒是选择了一个跟山有关的新名字，崔东山，我看叫崔巉才贴切。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 199,
-        "segment_index": 9
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1110,7 +1234,7 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十九章 黄雀去又返 · 崔瀺在宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第一百九十九章 黄雀去又返 · 崔瀺在宝瓶洲会见",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
@@ -1118,7 +1242,7 @@
         ],
         "description": "崔瀺，崔巉，山水不分家，山水有重逢，还能讨个好兆头。 崔瀺自嘲道：“二十岁离家，二十四岁去往中土神洲，之后百余年间，大起大落，叛出师门后又浪荡三十余载，云游天下，重返宝瓶洲后，在这大骊王朝还待了这么多年，两百岁的人了，不年轻了。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "对应崔瀺在叙事中的关键会见节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段10",
         "sentence_indexes_in_segment": [
@@ -1134,7 +1258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1198,7 +1322,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1277,7 +1401,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1361,7 +1485,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.023673",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1443,7 +1567,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1508,7 +1632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1529,6 +1653,20 @@
       "谢实一直在等大骊皇帝的确切消息，三个人，神诰宗贺小凉，真武山马苦玄，小镇李希圣，最后到底能交出几个。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实懒得介绍身份，曹曦又不愿自吹自捧，谢家上下就没能知道这位富家翁，竟是婆娑洲的陆地剑仙。 谢实一直在等大骊皇帝的确切消息，三个人，神诰宗贺小凉，真武山马苦玄，小镇李希圣，最后到底能交出几个。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 199,
+        "segment_index": 16
+      },
       {
         "entity_type": "person",
         "name": "大骊皇帝",
@@ -1554,6 +1692,19 @@
         ],
         "juan_index": 199,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "谢实一直在等大骊皇帝的确切消息，三个人，神诰宗贺小凉，真武山马苦玄，小镇李希圣，最后到底能交出几个。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 199,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -1565,8 +1716,10 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "大骊皇帝",
-          "马苦玄"
+          "马苦玄",
+          "李希圣"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -1600,8 +1753,10 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "大骊皇帝",
-          "马苦玄"
+          "马苦玄",
+          "李希圣"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -1618,15 +1773,13 @@
         "participants": [
           "阿良",
           "陈平安",
-          "大骊皇帝",
-          "马苦玄"
+          "谢实",
+          "大骊皇帝"
         ],
-        "description": "开始寻觅小镇某人的气机。 小镇桃叶巷，谢家老宅。 谢实一直在等大骊皇帝的确切消息，三个人，神诰宗贺小凉，真武山马苦玄，小镇李希圣，最后到底能交出几个。",
+        "description": "开始寻觅小镇某人的气机。 小镇桃叶巷，谢家老宅。 谢实懒得介绍身份，曹曦又不愿自吹自捧，谢家上下就没能知道这位富家翁，竟是婆娑洲的陆地剑仙。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1640,21 +1793,58 @@
         "segment_index": 16
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.024677",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "199-17-0": {
+    "juan_index": 199,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十九章 黄雀去又返",
+    "source_sentences": [
+      "虽然不最清楚曹曦的底细，但既然是谢实这位老祖宗的“朋友”，谢家仍是不敢丝毫怠慢。",
+      "在大堂，曹曦喝着茶水，斜眼瞥向一对玲珑可爱的香火小人，就躲在匾额里头，朝他探头探脑。",
+      "谢实不耐烦曹曦的作态，刚要准备赶人，两人几乎同时望向西南方向。",
+      "曹曦眯起眼，有点幸灾乐祸。",
+      "谢实脸色自若，但是心底已经有些震撼。",
+      "九境巅峰的武夫气势。"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "虽然不最清楚曹曦的底细，但既然是谢实这位老祖宗的“朋友”，谢家仍是不敢丝毫怠慢。 谢实不耐烦曹曦的作态，刚要准备赶人，两人几乎同时望向西南方向。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 199,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十九章 黄雀去又返 · 谢实剧情推进",
         "time": null,
-        "from_roles": [
-          "大骊皇帝"
+        "location": null,
+        "participants": [
+          "谢实"
         ],
-        "to_roles": [
-          "马苦玄"
-        ],
-        "action": "会见",
-        "context": "老人闭上眼睛。 开始寻觅小镇某人的气机。 小镇桃叶巷，谢家老宅。 曹曦登门拜访。 谢实懒得介绍身份，曹曦又不愿自吹自捧，谢家上下就没能知道这位富家翁，竟是婆娑洲的陆地剑仙。 谢实一直在等大骊皇帝的确切消息，三个人，神诰宗贺小凉，真武山马苦玄，小镇李希圣，最后到底能交出几个。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "小镇",
-        "is_commentary": false,
+        "description": "虽然不最清楚曹曦的底细，但既然是谢实这位老祖宗的“朋友”，谢家仍是不敢丝毫怠慢。 谢实不耐烦曹曦的作态，刚要准备赶人，两人几乎同时望向西南方向。 谢实脸色自若，但是心底已经有些震撼。",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段17",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -1664,10 +1854,11 @@
           5
         ],
         "juan_index": 199,
-        "segment_index": 16
+        "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.865121",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1687,7 +1878,34 @@
       "他在宝瓶洲名声不显。",
       "但是在中土神洲，却是大名鼎鼎。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "最终死死盯住谢实。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 199,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "还有一位不知何时悄然出现在桃叶巷的“年轻”剑客，正是墨家豪侠许弱，横剑在身后，悠然散步。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 199,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -1710,7 +1928,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "许弱"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1739,9 +1959,11 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实",
+          "许弱"
         ],
-        "description": "由西南大山那边的某个地方，有人以肆无忌惮的方式，“巡视”整座小镇。 还有一位不知何时悄然出现在桃叶巷的“年轻”剑客，正是墨家豪侠许弱，横剑在身后，悠然散步。 他在宝瓶洲名声不显。",
+        "description": "由西南大山那边的某个地方，有人以肆无忌惮的方式，“巡视”整座小镇。 最终死死盯住谢实。 还有一位不知何时悄然出现在桃叶巷的“年轻”剑客，正是墨家豪侠许弱，横剑在身后，悠然散步。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1759,7 +1981,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.866125",
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,6 +2004,33 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "但即便是中土神洲，世人仍然大多只知道墨家豪侠许弱的剑，重防御而不重攻势，剑招古朴，剑气深远，剑意厚重，以防御著称于世，但是并不清楚，许弱的通神剑术，到底还是用来杀敌的，怎么可能是为了“执剑即不败”？",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 199,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "现在突然冒出一个最少九境巅峰的纯粹武夫，蠢蠢欲动，对谢实不怀好意。 谢实喝了口茶水，环顾四周。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 199,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
@@ -1799,15 +2048,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十九章 黄雀去又返 · 阮邛剧情推进",
+        "name": "第三卷金错刀 第一百九十九章 黄雀去又返 · 谢实与许弱剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
+          "许弱",
           "阮邛"
         ],
-        "description": "再加上一个暂时立场不明的圣人阮邛。 但即便是中土神洲，世人仍然大多只知道墨家豪侠许弱的剑，重防御而不重攻势，剑招古朴，剑气深远，剑意厚重，以防御著称于世，但是并不清楚，许弱的通神剑术，到底还是用来杀敌的，怎么可能是为了“执剑即不败”？ 墨家游侠，横行天下，虽然宗旨是为了锄强扶弱，可无论是江湖还是沙场，墨家子弟，杀力绝对不低。",
+        "description": "但即便是中土神洲，世人仍然大多只知道墨家豪侠许弱的剑，重防御而不重攻势，剑招古朴，剑气深远，剑意厚重，以防御著称于世，但是并不清楚，许弱的通神剑术，到底还是用来杀敌的，怎么可能是为了“执剑即不败”？ 现在突然冒出一个最少九境巅峰的纯粹武夫，蠢蠢欲动，对谢实不怀好意。 再加上一个暂时立场不明的圣人阮邛。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
+        "significance": "推动谢实与许弱之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十九章 黄雀去又返 · 段19",
         "sentence_indexes_in_segment": [
@@ -1823,7 +2074,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.866125",
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1844,6 +2095,20 @@
       "许弱一声叹息，松开了握住剑柄的那只手，觉得自己的剑，出不出，结果都是一样的，还是太慢。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "在谢实就要将那只茶杯放回桌面的前一刻。 小巧可爱的黄雀，停在谢实肩头，轻啄汉子的衣衫。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 199,
+        "segment_index": 20
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1868,6 +2133,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 199,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "许弱一声叹息，松开了握住剑柄的那只手，觉得自己的剑，出不出，结果都是一样的，还是太慢。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 199,
         "segment_index": 20
@@ -1899,9 +2177,11 @@
         "location": "小镇",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "谢实",
+          "许弱"
         ],
-        "description": "这只黄雀，陈平安见过，齐静春见过，事实上许多小镇百姓都见过。 在谢实就要将那只茶杯放回桌面的前一刻。 从天井处，一只小黄雀嗖一下破空而至，屋顶天井那边涟漪阵阵，很快就恢复平静。",
+        "description": "在谢实就要将那只茶杯放回桌面的前一刻。 小巧可爱的黄雀，停在谢实肩头，轻啄汉子的衣衫。 这只黄雀，陈平安见过，齐静春见过，事实上许多小镇百姓都见过。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1919,7 +2199,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.866125",
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1990,7 +2270,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.866125",
+    "extracted_at": "2026-03-25T01:03:31.024677",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

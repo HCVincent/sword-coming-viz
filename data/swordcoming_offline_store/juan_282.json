@@ -88,7 +88,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.140272",
+    "extracted_at": "2026-03-25T01:03:31.418132",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -109,6 +109,19 @@
       "吞宝鲸在一旬后起航，陈平安就在鹳雀客栈订了一间屋子。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "例如骊珠洞天走出去修道天才，就有俱芦洲谢实、婆娑洲曹曦，以及帮助宋氏延续国祚的大骊双璧等等。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 282,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -149,7 +162,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           0,
           1
@@ -164,7 +179,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           0,
           1
@@ -191,15 +208,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十一章 天真 · 陈平安在宝瓶洲迁移",
+        "name": "第四卷剑气近 第二百八十一章 天真 · 陈平安与谢实在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "宝瓶洲大骊王朝上空的骊珠洞天，虽然是三十六小洞天里，占地最小的一座，方圆千里之地而已，可之所以引人瞩目，就在于这座小洞天的人物，资质之好，匪夷所思，寻常市井男女的成亲生子，就有望诞下洞天之外，两位地仙眷侣苦心孤诣的结果。 例如骊珠洞天走出去修道天才，就有俱芦洲谢实、婆娑洲曹曦，以及帮助宋氏延续国祚的大骊双璧等等。 陈平安回到鹳雀客栈，得知桂花岛已经返航回去老龙城，陈平安跟年轻掌柜问过了去往桐叶洲中部的渡船有哪些，大致是在倒悬山哪个方向的渡口登船。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "在宝瓶洲推动陈平安与谢实之间的迁移线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十一章 天真 · 段4",
         "sentence_indexes_in_segment": [
@@ -215,7 +233,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.140272",
+    "extracted_at": "2026-03-25T01:03:31.419136",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -276,7 +294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.140272",
+    "extracted_at": "2026-03-25T01:03:31.419136",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -356,7 +374,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.140272",
+    "extracted_at": "2026-03-25T01:03:31.419136",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -522,7 +540,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.140272",
+    "extracted_at": "2026-03-25T01:03:31.419136",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -558,6 +576,19 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "小宝瓶李槐和于禄，不需要，前两者都不算修行中人，年纪还小，于禄跟自己一样是纯粹武夫。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 282,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安当下又不缺钱。 陈平安在鹳雀客栈买了书籍之后，就去往灵芝斋，第一次跟金粟来此游览，走马观花，看得不够仔细，多是当神仙宝贝在那边欣赏，这次陈平安带了目的，就更加明确针对，价值连城、并且对练气士境界有门槛的法宝，看也不用去看一眼，陈平安希望找一样适合修行雷法的道书或是灵器，要不然就是当初张山峰机缘获得的甘露碗，能够日积月累，帮助修行之人收集天地灵气。",
@@ -575,16 +606,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十一章 天真 · 陈平安与李槐剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "小宝瓶李槐和于禄，不需要，前两者都不算修行中人，年纪还小，于禄跟自己一样是纯粹武夫。 陈平安当下又不缺钱。 陈平安在鹳雀客栈买了书籍之后，就去往灵芝斋，第一次跟金粟来此游览，走马观花，看得不够仔细，多是当神仙宝贝在那边欣赏，这次陈平安带了目的，就更加明确针对，价值连城、并且对练气士境界有门槛的法宝，看也不用去看一眼，陈平安希望找一样适合修行雷法的道书或是灵器，要不然就是当初张山峰机缘获得的甘露碗，能够日积月累，帮助修行之人收集天地灵气。",
         "background": "",
-        "significance": "推动陈平安与李槐之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十一章 天真 · 段8",
         "sentence_indexes_in_segment": [
@@ -600,7 +633,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.419136",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -662,7 +695,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.419136",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,7 +757,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -803,7 +836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -907,7 +940,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -986,7 +1019,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1049,7 +1082,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1111,7 +1144,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1241,7 +1274,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,7 +1329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.141275",
+    "extracted_at": "2026-03-25T01:03:31.420139",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -16,6 +16,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "铁符河水面上那些个已经化为人形、稳固魂魄的大妖，不知为何要仓皇撤退，朱河手中铜铃的铃声自然而然随之停歇，只是朱河担心那些光天化日就敢行走人间的大妖，使了什么障眼法，便让阿良前辈暂时不急于沿着河水南下，他高高提起那串篆文古朴的铜铃，在铁符河下游方向，不断反复跨越河面，大踏步四处游荡，以防妖魅隐匿在暗处伺机害人。 于是陈平安一行人就这么收拾好行礼后，全部待在原地，眼睁睁看着朱河无头苍蝇似的乱窜李槐乐不可支，林守一是满怀好奇心，而朱鹿则觉得丢人现眼，恨不得把爹拽回来，别再这么瞎折腾给人笑话了，到底是脸皮子薄的少女。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 96,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "阿良",
         "alias": [],
         "original_description_in_book": "铁符河水面上那些个已经化为人形、稳固魂魄的大妖，不知为何要仓皇撤退，朱河手中铜铃的铃声自然而然随之停歇，只是朱河担心那些光天化日就敢行走人间的大妖，使了什么障眼法，便让阿良前辈暂时不急于沿着河水南下，他高高提起那串篆文古朴的铜铃，在铁符河下游方向，不断反复跨越河面，大踏步四处游荡，以防妖魅隐匿在暗处伺机害人。 陈平安无意间发现阿良神色平静，丝毫没有像以往那般调侃打趣朱河，看到陈平安的视线后，阿良摘下酒葫芦，笑问道：“真不喝？",
@@ -88,18 +103,22 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "铁符河水面上那些个已经化为人形、稳固魂魄的大妖，不知为何要仓皇撤退，朱河手中铜铃的铃声自然而然随之停歇，只是朱河担心那些光天化日就敢行走人间的大妖，使了什么障眼法，便让阿良前辈暂时不急于沿着河水南下，他高高提起那串篆文古朴的铜铃，在铁符河下游方向，不断反复跨越河面，大踏步四处游荡，以防妖魅隐匿在暗处伺机害人。 于是陈平安一行人就这么收拾好行礼后，全部待在原地，眼睁睁看着朱河无头苍蝇似的乱窜李槐乐不可支，林守一是满怀好奇心，而朱鹿则觉得丢人现眼，恨不得把爹拽回来，别再这么瞎折腾给人笑话了，到底是脸皮子薄的少女。 陈平安无意间发现阿良神色平静，丝毫没有像以往那般调侃打趣朱河，看到陈平安的视线后，阿良摘下酒葫芦，笑问道：“真不喝？",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段1",
         "sentence_indexes_in_segment": [
@@ -126,7 +145,47 @@
         "action": "对话",
         "context": "陈平安无意间发现阿良神色平静，丝毫没有像以往那般调侃打趣朱河，看到陈平安的视线后，阿良摘下酒葫芦，笑问道：“真不喝？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 96,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "陈平安无意间发现阿良神色平静，丝毫没有像以往那般调侃打趣朱河，看到陈平安的视线后，阿良摘下酒葫芦，笑问道：“真不喝？",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 96,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "陈平安无意间发现阿良神色平静，丝毫没有像以往那般调侃打趣朱河，看到陈平安的视线后，阿良摘下酒葫芦，笑问道：“真不喝？",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -136,7 +195,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.616222",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -215,18 +274,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "林守一不知为何，估计是生平第一次遇到传说中的妖物，大开眼界，少年心中有些意动，破天荒点头道：“喝一口试试看。 阿良斜瞥一眼陈平安，总算恢复玩世不恭的常态，“看看人家，有口福了，你小子就没躺着享福的命。 林守一接过银色小葫芦，仰头轻轻抿了一口，瞬间满脸通红，养尊处优的少年本就皮肤白皙，愈发红光满面，少年赶紧用手心捂住嘴巴，免得一口喷出来，喉咙滚烫，入肚后，五脏六腑都像是在燃烧，整个人都在打颤，第一次喝酒就来了个下马威，少年狼狈不堪，眼见着李槐捧腹大笑，自尊心极强的林守一咬咬牙，就要再喝一口，不曾想阿良已经伸手拿回小葫芦，一手轻轻按住少年肩膀，笑眯眯道：“喝酒不贪杯才有乐趣，以后每天给你喝一口，保证这世上从此多出一个逍遥忘忧人。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段2",
         "sentence_indexes_in_segment": [
@@ -242,7 +301,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.617225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -310,18 +369,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "李槐"
+          "李槐",
+          "于禄"
         ],
         "description": "李槐人小鬼精，笑着拆穿阿良，“不舍得给林守一多喝就直说。 阿良从林守一肩膀上缩回手，叹了口气，“能不心疼嘛，我这酒来历极大，价格极贵，关键是有价无市。 林守一是撞了大运。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段3",
         "sentence_indexes_in_segment": [
@@ -337,7 +396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.617225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -430,7 +489,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.617225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -499,19 +558,21 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "阿良哎呦一声，随即瞥了眼气势汹汹的小屁孩，心想难怪，小小年纪就能够跟上大队伍的脚步，脚底板连个水泡也没长过，身体明显比林守一还要强上不少，应该就是这药酒打熬体魄的缘故了。 阿良头一回饶有兴致地仔细打量起李槐，不看不知道，一看吓一跳，竟然是被人以相当不俗的武学神通，故意遮掩了孩子的体内气象，如今阿良想要看，自然便没了那些迷障，于是在斗笠汉子的视野中，便呈现出一副玄妙另类的山水形势图，去其皮肉，只看全身窍穴景象和气血游走，隐约有淡紫气升腾，山脉雄健且牢固，水势汹涌且平稳，最终在一座窍穴内百川汇流，气蒸大泽，不容小觑。 阿良啧啧称奇道：“真没想到我路边随便认了个老丈人，还挺不一般啊，李槐，你爹姓甚名甚，说不定我这边的朋友认得。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -525,8 +586,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "试探",
+        "context": "阿良头一回饶有兴致地仔细打量起李槐，不看不知道，一看吓一跳，竟然是被人以相当不俗的武学神通，故意遮掩了孩子的体内气象，如今阿良想要看，自然便没了那些迷障，于是在斗笠汉子的视野中，便呈现出一副玄妙另类的山水形势图，去其皮肉，只看全身窍穴景象和气血游走，隐约有淡紫气升腾，山脉雄健且牢固，水势汹涌且平稳，最终在一座窍穴内百川汇流，气蒸大泽，不容小觑。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 96,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.617225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -576,6 +658,19 @@
       },
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "林守一低声解释道：“李槐他爹名叫李二，是小镇出了名的酒鬼混子，一年到头不务正业，以前在学塾，李槐没少因为他爹被人嘲笑，一开始李槐也跟人吵架，好像还打过几次，后来估摸着是觉得他爹是真没出息，久而久之，就无所谓了。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 96,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "阿良",
         "alias": [],
         "original_description_in_book": "阿良忍俊不禁道：“小崽子身在福中不知福啊。",
@@ -583,6 +678,19 @@
         "power": "剑气长城",
         "sentence_indexes_in_segment": [
           2
+        ],
+        "juan_index": 96,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "约莫半个时辰后，朱河终于返回，笑道：“方圆十里之内，铜铃没有异样，咱们可以动身了。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 96,
         "segment_index": 6
@@ -598,7 +706,8 @@
         "coordinates": null,
         "related_entities": [
           "林守一",
-          "李槐"
+          "李槐",
+          "李二"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -636,7 +745,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.618229",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -672,6 +781,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河接过水壶，大大咧咧回复一句，“小姐，这本就是分内事。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 96,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "朱鹿看在眼中，眼神晦暗，转过头，望向铁符河的瀑布大水，她咬着嘴唇，默不作声。",
@@ -687,19 +809,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十六章 山水有神怪 · 李宝瓶与朱鹿对话",
+        "name": "第二卷山水郎 第九十六章 山水有神怪 · 李宝瓶与朱河对话",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
+          "朱河",
           "朱鹿"
         ],
-        "description": "李宝瓶递过去一只水壶，笑道：“朱叔叔辛苦了。 朱鹿看在眼中，眼神晦暗，转过头，望向铁符河的瀑布大水，她咬着嘴唇，默不作声。 ”",
+        "description": "李宝瓶递过去一只水壶，笑道：“朱叔叔辛苦了。 朱河接过水壶，大大咧咧回复一句，“小姐，这本就是分内事。 朱鹿看在眼中，眼神晦暗，转过头，望向铁符河的瀑布大水，她咬着嘴唇，默不作声。",
         "background": "",
-        "significance": "推动李宝瓶与朱鹿之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动李宝瓶与朱河之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -713,34 +834,8 @@
         "segment_index": 7
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李宝瓶"
-        ],
-        "to_roles": [
-          "朱鹿"
-        ],
-        "action": "对话",
-        "context": "” 李宝瓶递过去一只水壶，笑道：“朱叔叔辛苦了。 ” 朱河接过水壶，大大咧咧回复一句，“小姐，这本就是分内事。 ” 朱鹿看在眼中，眼神晦暗，转过头，望向铁符河的瀑布大水，她咬着嘴唇，默不作声。",
-        "result": null,
-        "event_name": "第二卷山水郎 第九十六章 山水有神怪 · 李宝瓶与朱鹿对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 96,
-        "segment_index": 7
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.618229",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -775,21 +870,40 @@
         ],
         "juan_index": 96,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "陈平安目不转睛看着朱河手中那只震妖铃。 除了宁姑娘那把能够自己飞来飞去的剑，朱河手中的铜铃，是陈平安近距离亲眼见过的第二样法宝，所以就看得格外专注。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 96,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安指点",
+        "name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与朱河指点",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
-        "description": "陈平安目不转睛看着朱河手中那只震妖铃。 除了宁姑娘那把能够自己飞来飞去的剑，朱河手中的铜铃，是陈平安近距离亲眼见过的第二样法宝，所以就看得格外专注。 陈平安小心翼翼抓住铜铃把手，朱河牵马与之并肩而行，“大者为钟，小者为铃，如果是仙家器物，大多有辟邪护宅的作用。",
+        "description": "陈平安目不转睛看着朱河手中那只震妖铃。 除了宁姑娘那把能够自己飞来飞去的剑，朱河手中的铜铃，是陈平安近距离亲眼见过的第二样法宝，所以就看得格外专注。 朱河不是小气人，大大方方就将那只铜铃交给少年，解释道：“是出门前老祖宗赏赐下来的宝贝，老祖宗说此物在仙家法宝当中，品秩算不得高，只是每有幻化人形的妖魅精怪靠近，铃铛便会无风自响，震荡出阵阵清音，使人不受魅惑，也有警戒提醒的功效，老祖宗还笑称那阵阵铃声，有凝神清心之效，如果胆子大一点的修行之人，大可以与妖物相邻而居，借此铃声修养心性，当然，前提是做邻居的妖物无伤人之心，同时还要能够承受铃声的不断袭扰，如此修为高、脾气好的妖物不好找，故而老祖宗也只是权当笑谈而已。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与朱河之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -803,8 +917,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "同行",
+        "context": "陈平安小心翼翼抓住铜铃把手，朱河牵马与之并肩而行，“大者为钟，小者为铃，如果是仙家器物，大多有辟邪护宅的作用。",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与朱河指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 96,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.618229",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -825,6 +960,20 @@
       "陈平安一边盯着小姑娘，一边好奇问道：“朱叔叔，河上那些妖精不会害人吗？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河看到少年轻轻摇晃铜铃，朱河哈哈大笑道：“若无妖物靠近，里边两颗铃铛不易撼动，所以就不会有铃声传出了，要不然白白让主人整天疑神疑鬼，岂不是遭了大罪？ 陈平安也想通其中关节，正要把珍贵异常的震妖铃交还给朱河，发现袖子一扯，红棉袄小姑娘满脸期待神色，看到朱河笑着点头后，就交给李宝瓶，她双手抓住铜铃，翻来倒去，仔细研究起来，时不时伸手使劲扯动里头的铃铛，看得陈平安一阵心慌，不断提醒她小心些，别扯坏了。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 96,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -856,18 +1005,20 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与李宝瓶对话",
+        "name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与朱河对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "朱河",
           "李宝瓶"
         ],
-        "description": "陈平安也想通其中关节，正要把珍贵异常的震妖铃交还给朱河，发现袖子一扯，红棉袄小姑娘满脸期待神色，看到朱河笑着点头后，就交给李宝瓶，她双手抓住铜铃，翻来倒去，仔细研究起来，时不时伸手使劲扯动里头的铃铛，看得陈平安一阵心慌，不断提醒她小心些，别扯坏了。 陈平安一边盯着小姑娘，一边好奇问道：“朱叔叔，河上那些妖精不会害人吗？ 寻常百姓家宅喜欢在檐下悬挂风铃，自然更多是装饰，如果是专程从寺庙道观请来，经由高功大德之士的经文护持，应该确实可以遮挡煞气，蓄留福荫。",
+        "description": "朱河看到少年轻轻摇晃铜铃，朱河哈哈大笑道：“若无妖物靠近，里边两颗铃铛不易撼动，所以就不会有铃声传出了，要不然白白让主人整天疑神疑鬼，岂不是遭了大罪？ 陈平安也想通其中关节，正要把珍贵异常的震妖铃交还给朱河，发现袖子一扯，红棉袄小姑娘满脸期待神色，看到朱河笑着点头后，就交给李宝瓶，她双手抓住铜铃，翻来倒去，仔细研究起来，时不时伸手使劲扯动里头的铃铛，看得陈平安一阵心慌，不断提醒她小心些，别扯坏了。 陈平安一边盯着小姑娘，一边好奇问道：“朱叔叔，河上那些妖精不会害人吗？",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的对话关系。",
+        "significance": "推动陈平安与朱河之间的对话关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段9",
         "sentence_indexes_in_segment": [
@@ -889,12 +1040,32 @@
           "陈平安"
         ],
         "to_roles": [
+          "朱河"
+        ],
+        "action": "指点",
+        "context": "陈平安也想通其中关节，正要把珍贵异常的震妖铃交还给朱河，发现袖子一扯，红棉袄小姑娘满脸期待神色，看到朱河笑着点头后，就交给李宝瓶，她双手抓住铜铃，翻来倒去，仔细研究起来，时不时伸手使劲扯动里头的铃铛，看得陈平安一阵心慌，不断提醒她小心些，别扯坏了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与朱河对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 96,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "李宝瓶"
         ],
         "action": "指点",
         "context": "陈平安也想通其中关节，正要把珍贵异常的震妖铃交还给朱河，发现袖子一扯，红棉袄小姑娘满脸期待神色，看到朱河笑着点头后，就交给李宝瓶，她双手抓住铜铃，翻来倒去，仔细研究起来，时不时伸手使劲扯动里头的铃铛，看得陈平安一阵心慌，不断提醒她小心些，别扯坏了。",
         "result": null,
-        "event_name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与李宝瓶对话",
+        "event_name": "第二卷山水郎 第九十六章 山水有神怪 · 陈平安与朱河对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -904,7 +1075,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.618229",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -924,7 +1095,21 @@
       "“咱们老祖宗便说过，跟我们小镇不一样，外边天地，只要不是太过偏远闭塞的东宝瓶洲人氏，对此多有所耳闻，虽然未必人人亲眼目睹，但是往往听多了稗官野史、神仙志怪，以至于很多市井百姓坚信，在那些人迹罕至的深山古寺里，往往住着妖艳动人的小狐娘子，等着进京赶考的穷书生。",
       "又或是哪里有妖精作祟害人，只需书信一封给龙虎山，必有天师府的真人腾云驾鹤而至，为当地百姓斩妖除魔。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河不是信口开河之辈，只拣选自己从老祖宗那边亲口听来的话说，娓娓道来，“咱们东宝瓶洲幅员辽阔，仅是人口超过一千万户的庞大王朝，就多达十数个，名山大川更是不计其数，种种妙不可言的因缘际会之下，那些个山鬼精魅妖怪，侥幸化形，踏足修行之路，不常见，却也算不得如何罕见。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 96,
+        "segment_index": 10
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -949,7 +1134,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "朱河"
+        ],
         "sentence_indexes_in_segment": [
           2,
           4
@@ -979,7 +1166,8 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "我们大骊有很多这样的奇怪存在吗？ 朱河不是信口开河之辈，只拣选自己从老祖宗那边亲口听来的话说，娓娓道来，“咱们东宝瓶洲幅员辽阔，仅是人口超过一千万户的庞大王朝，就多达十数个，名山大川更是不计其数，种种妙不可言的因缘际会之下，那些个山鬼精魅妖怪，侥幸化形，踏足修行之路，不常见，却也算不得如何罕见。 “咱们老祖宗便说过，跟我们小镇不一样，外边天地，只要不是太过偏远闭塞的东宝瓶洲人氏，对此多有所耳闻，虽然未必人人亲眼目睹，但是往往听多了稗官野史、神仙志怪，以至于很多市井百姓坚信，在那些人迹罕至的深山古寺里，往往住着妖艳动人的小狐娘子，等着进京赶考的穷书生。",
         "background": "",
@@ -999,7 +1187,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.618229",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1019,7 +1207,21 @@
       "”",
       "朱河这番话说得通俗易懂，趣味十足。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河这番话说得通俗易懂，趣味十足。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 96,
+        "segment_index": 11
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1040,13 +1242,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十六章 山水有神怪 · 大骊立势",
+        "name": "第二卷山水郎 第九十六章 山水有神怪 · 朱河在大骊立势",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "老祖宗说妖物一旦化作人形，而不是用一些障眼法迷惑人眼的话，那么便等同于半个修行之人了，大骊朝廷对此乐见其成，非但不会打压排挤，反而破例准许在版图上开山立派，只需要在礼部挂案即可，不过碍于某些约定俗成的规矩，大骊朝堂尚未吸纳妖魅精怪跻身其中，倒是边境沙场，传言多有妖修为大骊建功立业，平时日常起居，风俗人情，看上去跟人已无差异。 以至于有井水处必有稚童口口传颂：有妖魔鬼怪作祟处，必有天师府真人。 ”",
+        "participants": [
+          "朱河"
+        ],
+        "description": "老祖宗说妖物一旦化作人形，而不是用一些障眼法迷惑人眼的话，那么便等同于半个修行之人了，大骊朝廷对此乐见其成，非但不会打压排挤，反而破例准许在版图上开山立派，只需要在礼部挂案即可，不过碍于某些约定俗成的规矩，大骊朝堂尚未吸纳妖魅精怪跻身其中，倒是边境沙场，传言多有妖修为大骊建功立业，平时日常起居，风俗人情，看上去跟人已无差异。 朱河这番话说得通俗易懂，趣味十足。 以至于有井水处必有稚童口口传颂：有妖魔鬼怪作祟处，必有天师府真人。",
         "background": "",
-        "significance": "对应大骊相关的关键立势场景。",
+        "significance": "对应朱河在叙事中的关键立势节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段11",
         "sentence_indexes_in_segment": [
@@ -1062,7 +1266,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.618229",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1152,18 +1356,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "陈平安听得津津有味，李槐林守一更是竖起耳朵，一个字也不肯错过。 唯有走在最前头的阿良，戴着斗笠牵着毛驴，手心轻轻拍打刀柄，轻轻哼着走调的异乡小曲儿。 走在队伍最后的少女朱鹿，更是心不在焉，好似离乡越远，思乡越浓。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段12",
         "sentence_indexes_in_segment": [
@@ -1179,7 +1383,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1321,7 +1525,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1417,7 +1621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,7 +1685,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1561,7 +1765,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1663,7 +1867,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.572392",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1727,7 +1931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.573395",
+    "extracted_at": "2026-03-25T01:03:30.619232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

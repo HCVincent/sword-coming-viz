@@ -1,4 +1,67 @@
 {
+  "256-1-0": {
+    "juan_index": 256,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "（元婴境为练气士第十境，金丹是第九境。",
+      "之前有笔误，特此说明。",
+      "）",
+      "孙嘉树这一晚，本该要宴请一位东南大洲的某位大人物，可是年轻家主临时起意，让内城孙府推掉这次接风宴，虽然很不合适，以至于那边的管事破天荒提出了异议，但是孙嘉树没有任何解释，在书房已经掐断老宅与孙府的联系，然后去往后边的小祠堂。",
+      "那边的管事有些束手无策，孙氏元婴老祖不愿孙府为难，已经百年光阴不在孙府那边现身的老人，亲自向那位管事面授机宜，这才让孙府上下吃了一颗定心丸。",
+      "之后一番沐浴更衣的孙嘉树，独自站在祠堂内，敬香后，如同面壁思过，沉默不语。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树这一晚，本该要宴请一位东南大洲的某位大人物，可是年轻家主临时起意，让内城孙府推掉这次接风宴，虽然很不合适，以至于那边的管事破天荒提出了异议，但是孙嘉树没有任何解释，在书房已经掐断老宅与孙府的联系，然后去往后边的小祠堂。 之后一番沐浴更衣的孙嘉树，独自站在祠堂内，敬香后，如同面壁思过，沉默不语。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树这一晚，本该要宴请一位东南大洲的某位大人物，可是年轻家主临时起意，让内城孙府推掉这次接风宴，虽然很不合适，以至于那边的管事破天荒提出了异议，但是孙嘉树没有任何解释，在书房已经掐断老宅与孙府的联系，然后去往后边的小祠堂。 之后一番沐浴更衣的孙嘉树，独自站在祠堂内，敬香后，如同面壁思过，沉默不语。 （元婴境为练气士第十境，金丹是第九境。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.296164",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "256-2-0": {
     "juan_index": 256,
     "segment_index": 2,
@@ -13,7 +76,23 @@
       "那位有望跻身元婴的金丹供奉，其实愿意陪你赌这四次，本就倾向于留在孙氏祖宅，而不是被苻东海拉拢过去。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "祠堂除了灵位，墙上还悬挂有一幅幅孙家历代已逝家主的画像，多是如今孙嘉树这般不起眼的装束，这一代孙氏家主之位，属于爷传孙的隔代传承，孙嘉树爷爷在卸任家主之后，就去游历中土神洲，当年孙嘉树以弱冠之龄，继承如此大的一份家业，孙嘉树这些年可谓甘苦自知。 孙嘉树望着那些挂像，有人在家族危难之际力挽狂澜，有人开辟出新的商路，有人为家族结识拉拢了上五境修士的至交好友，有人一生碌碌无为，连累孙家在老龙城抬不起头，有人决策失误，害得孙家不断让出外城地盘，祖宗家业不断被蚕食分割，有人误入歧途，潜心修道，家族大权旁落外戚之手……",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -22,7 +101,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -32,13 +113,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 老龙城遭遇",
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树在老龙城遭遇",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "孙嘉树望着那些挂像，有人在家族危难之际力挽狂澜，有人开辟出新的商路，有人为家族结识拉拢了上五境修士的至交好友，有人一生碌碌无为，连累孙家在老龙城抬不起头，有人决策失误，害得孙家不断让出外城地盘，祖宗家业不断被蚕食分割，有人误入歧途，潜心修道，家族大权旁落外戚之手…… 祠堂除了灵位，墙上还悬挂有一幅幅孙家历代已逝家主的画像，多是如今孙嘉树这般不起眼的装束，这一代孙氏家主之位，属于爷传孙的隔代传承，孙嘉树爷爷在卸任家主之后，就去游历中土神洲，当年孙嘉树以弱冠之龄，继承如此大的一份家业，孙嘉树这些年可谓甘苦自知。 孙嘉树很想知道将来自己被挂在墙上，后世子孙又是如何看待自己，是振臂奋发的中兴之祖，还是埋下家族祸根的罪魁祸首，亦或是一个错失千载难逢良机的蠢货？",
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "祠堂除了灵位，墙上还悬挂有一幅幅孙家历代已逝家主的画像，多是如今孙嘉树这般不起眼的装束，这一代孙氏家主之位，属于爷传孙的隔代传承，孙嘉树爷爷在卸任家主之后，就去游历中土神洲，当年孙嘉树以弱冠之龄，继承如此大的一份家业，孙嘉树这些年可谓甘苦自知。 孙嘉树望着那些挂像，有人在家族危难之际力挽狂澜，有人开辟出新的商路，有人为家族结识拉拢了上五境修士的至交好友，有人一生碌碌无为，连累孙家在老龙城抬不起头，有人决策失误，害得孙家不断让出外城地盘，祖宗家业不断被蚕食分割，有人误入歧途，潜心修道，家族大权旁落外戚之手…… 孙嘉树很想知道将来自己被挂在墙上，后世子孙又是如何看待自己，是振臂奋发的中兴之祖，还是埋下家族祸根的罪魁祸首，亦或是一个错失千载难逢良机的蠢货？",
         "background": "",
-        "significance": "对应老龙城相关的关键遭遇场景。",
+        "significance": "对应孙嘉树在叙事中的关键遭遇节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段2",
         "sentence_indexes_in_segment": [
@@ -54,7 +137,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.296164",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-3-0": {
+    "juan_index": 256,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "孙嘉树没有转身，依旧抬头凝望着一幅画像，点头道：“这一点，我已经想通了，并无太多心结。",
+      "在押注这件事上，事情没有变得更好，也没变得更差，结果我能够接受。",
+      "退一步说，我孙家还不至于少了一位未来元婴境，就要死要活。",
+      "”",
+      "孙氏老祖欲言又止，涉及到孙嘉树的大道根本，哪怕是他，也不好随便询问。",
+      "这就像孙氏祖宅三位供奉，不管与孙嘉树个人关系如何好，再好奇那名少年的境界修为，也绝不会主动开口问，而只是当一个乐子在那边猜测。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树没有转身，依旧抬头凝望着一幅画像，点头道：“这一点，我已经想通了，并无太多心结。 孙氏老祖欲言又止，涉及到孙嘉树的大道根本，哪怕是他，也不好随便询问。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树没有转身，依旧抬头凝望着一幅画像，点头道：“这一点，我已经想通了，并无太多心结。 孙氏老祖欲言又止，涉及到孙嘉树的大道根本，哪怕是他，也不好随便询问。 这就像孙氏祖宅三位供奉，不管与孙嘉树个人关系如何好，再好奇那名少年的境界修为，也绝不会主动开口问，而只是当一个乐子在那边猜测。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.296164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -75,6 +222,21 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树摊开一只手掌，“我与陈平安相处，从头到尾，都只是在做生意。 不是我不把刘灞桥当朋友，而是陈平安此人，太过奇怪，我忍不住要在他身上搏一把大的，没办法，我孙嘉树是商人，是孙家家主。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -100,6 +262,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "孙嘉树",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -111,15 +274,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安在老龙城剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "孙嘉树摊开一只手掌，“我与陈平安相处，从头到尾，都只是在做生意。 不是我不把刘灞桥当朋友，而是陈平安此人，太过奇怪，我忍不住要在他身上搏一把大的，没办法，我孙嘉树是商人，是孙家家主。 孙嘉树转过头，举起那只手掌，“等到陈平安第二次打退朝霞金龙，等到苻家的按兵不动，让我一切谋划落空，反受其害，我才知道自己这次捞偏门，错得离谱，以至于我眼睁睁看着自己失去了……一座老龙城。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段4",
         "sentence_indexes_in_segment": [
@@ -135,7 +299,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.296164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -156,6 +320,21 @@
       "老人只能一言不发，静待下文。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "但是老人无比确定，孙嘉树看到的，就是最终的真相。 孙嘉树满脸悲怆神色，“若只是少了陈平安一个本就不是朋友的朋友，失去一座老龙城，我孙嘉树打落牙齿和血吞，其实我照样能忍！",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -179,6 +358,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "孙嘉树",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -190,15 +370,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安在老龙城揭示",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "孙嘉树满脸悲怆神色，“若只是少了陈平安一个本就不是朋友的朋友，失去一座老龙城，我孙嘉树打落牙齿和血吞，其实我照样能忍！ 哪怕是被世间誉为地仙的一位元婴老祖，也看不出年轻人那只手掌有任何异样。 但是老人无比确定，孙嘉树看到的，就是最终的真相。",
+        "description": "但是老人无比确定，孙嘉树看到的，就是最终的真相。 孙嘉树满脸悲怆神色，“若只是少了陈平安一个本就不是朋友的朋友，失去一座老龙城，我孙嘉树打落牙齿和血吞，其实我照样能忍！ 钱跑了，再挣就是，赚钱的能耐，我孙嘉树绝不会比任何人差！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段5",
         "sentence_indexes_in_segment": [
@@ -214,7 +395,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.296164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -237,6 +418,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树收起手掌，握紧拳头，颤声道：“可是经过这番波折，我发现自己的取财之道，原本一直坚信堂堂正正，是毋庸置疑的商家大道，最为契合正大光明、源远流长八字祖训，但是却被才认识不到一个月的陈平安，验证为偏门小道，商家老祖早就遗言后世，偏财如流水，来去皆快，兴勃焉亡也忽焉，故而绝不可取。 孙嘉树转过头去，不让老祖看到自己的面容。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "孙嘉树收起手掌，握紧拳头，颤声道：“可是经过这番波折，我发现自己的取财之道，原本一直坚信堂堂正正，是毋庸置疑的商家大道，最为契合正大光明、源远流长八字祖训，但是却被才认识不到一个月的陈平安，验证为偏门小道，商家老祖早就遗言后世，偏财如流水，来去皆快，兴勃焉亡也忽焉，故而绝不可取。",
@@ -252,15 +448,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "孙嘉树收起手掌，握紧拳头，颤声道：“可是经过这番波折，我发现自己的取财之道，原本一直坚信堂堂正正，是毋庸置疑的商家大道，最为契合正大光明、源远流长八字祖训，但是却被才认识不到一个月的陈平安，验证为偏门小道，商家老祖早就遗言后世，偏财如流水，来去皆快，兴勃焉亡也忽焉，故而绝不可取。 ” 孙嘉树转过头去，不让老祖看到自己的面容。",
+        "description": "孙嘉树收起手掌，握紧拳头，颤声道：“可是经过这番波折，我发现自己的取财之道，原本一直坚信堂堂正正，是毋庸置疑的商家大道，最为契合正大光明、源远流长八字祖训，但是却被才认识不到一个月的陈平安，验证为偏门小道，商家老祖早就遗言后世，偏财如流水，来去皆快，兴勃焉亡也忽焉，故而绝不可取。 孙嘉树转过头去，不让老祖看到自己的面容。 元婴境老人缓缓走到孙嘉树身边，“事已至此，难道你就此心灰意冷，什么事情也不做了？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段6",
         "sentence_indexes_in_segment": [
@@ -276,7 +473,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.297168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -299,6 +496,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树双手放在嘴边轻轻呵气，“苻家莫名其妙地没有动作，里外不是人的，只有我孙嘉树。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 256,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "关键是我现在还不确定，陈平安认为我是怎么样一个人，他又到底是怎么样一个人，这才是问题症结所在。 老人皱眉道：“陈平安对你如何，不好说。",
@@ -315,15 +525,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "关键是我现在还不确定，陈平安认为我是怎么样一个人，他又到底是怎么样一个人，这才是问题症结所在。 老人皱眉道：“陈平安对你如何，不好说。 孙嘉树双手放在嘴边轻轻呵气，“苻家莫名其妙地没有动作，里外不是人的，只有我孙嘉树。",
+        "description": "孙嘉树双手放在嘴边轻轻呵气，“苻家莫名其妙地没有动作，里外不是人的，只有我孙嘉树。 关键是我现在还不确定，陈平安认为我是怎么样一个人，他又到底是怎么样一个人，这才是问题症结所在。 老人皱眉道：“陈平安对你如何，不好说。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段7",
         "sentence_indexes_in_segment": [
@@ -339,7 +550,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.297168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -360,6 +571,21 @@
       "那我今天便不以老祖身份，不对一位孙氏家主指手画脚，只以长辈对晚辈多说一句，抛开种种算计，家族荣辱，以及那宝瓶洲大势，你到底还是孙嘉树，是刘灞桥最好的朋友，陈平安又是刘灞桥介绍给你的朋友，你不妨以简简单单的朋友之道，与之相处，暂时就不要考虑什么家族了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树无奈道：“之前我觉得已经看透，所以哪怕事后他知道了真相，孙家该有的，陈平安不会少了一分，大不了以后形同陌路，老死不相往来。 老人拍了拍孙嘉树的肩膀，“嘉树，你很聪明，又有天赋，当个孙氏家主，没有任何问题，哪怕是现在捅出这么个篓子，我还是这么认为。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -385,6 +611,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "孙嘉树",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -396,15 +623,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安在宝瓶洲揭示",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "孙嘉树无奈道：“之前我觉得已经看透，所以哪怕事后他知道了真相，孙家该有的，陈平安不会少了一分，大不了以后形同陌路，老死不相往来。 我不确定陈平安对人对己，是否完全一致。 那我今天便不以老祖身份，不对一位孙氏家主指手画脚，只以长辈对晚辈多说一句，抛开种种算计，家族荣辱，以及那宝瓶洲大势，你到底还是孙嘉树，是刘灞桥最好的朋友，陈平安又是刘灞桥介绍给你的朋友，你不妨以简简单单的朋友之道，与之相处，暂时就不要考虑什么家族了。",
+        "description": "孙嘉树无奈道：“之前我觉得已经看透，所以哪怕事后他知道了真相，孙家该有的，陈平安不会少了一分，大不了以后形同陌路，老死不相往来。 我不确定陈平安对人对己，是否完全一致。 老人拍了拍孙嘉树的肩膀，“嘉树，你很聪明，又有天赋，当个孙氏家主，没有任何问题，哪怕是现在捅出这么个篓子，我还是这么认为。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段8",
         "sentence_indexes_in_segment": [
@@ -420,7 +648,255 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.057001",
+    "extracted_at": "2026-03-25T01:03:31.297168",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-9-0": {
+    "juan_index": 256,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "”",
+      "孙嘉树转过头，疑惑道：“可行？",
+      "”",
+      "老人笑道：“不妨试试看，反正事情已经不能再糟糕了。",
+      "而有些事，不是你想躲就躲得掉的。",
+      "人生在世，遇到一个坎不怕，努力走过去就是了，过不过得去，两说，你好歹尝试过。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树转过头，疑惑道：“可行？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树转过头，疑惑道：“可行？ ” ”",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 9
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.297168",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-10-0": {
+    "juan_index": 256,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "如你所言，孙家还扛得住。",
+      "”",
+      "孙嘉树还有些犹豫狐疑，“那我试试看？",
+      "”",
+      "老人转头望向祠堂外的天色，“去吧。",
+      "别忘了，今天就是山海龟起航的日子。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树还有些犹豫狐疑，“那我试试看？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树还有些犹豫狐疑，“那我试试看？ 如你所言，孙家还扛得住。 ”",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.297168",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-11-0": {
+    "juan_index": 256,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "”",
+      "孙嘉树深呼吸一口气，转身离开祠堂，虽然下定决心，年轻人的步伐并不轻松。",
+      "“这次嘉树这孩子是真输惨了，输怕了。",
+      "一口气接连输了三次，输谷雨钱，错失一位有望元婴的百年供奉。",
+      "输给不动如山的苻家，最后输道心，本心开始动摇，最是致命。",
+      "换成是我站在他这个位置上，恐怕只会比他更差，心境早已崩碎，连挽回的机会都没有。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树深呼吸一口气，转身离开祠堂，虽然下定决心，年轻人的步伐并不轻松。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树深呼吸一口气，转身离开祠堂，虽然下定决心，年轻人的步伐并不轻松。 ” “这次嘉树这孩子是真输惨了，输怕了。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.297168",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-12-0": {
+    "juan_index": 256,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "”",
+      "老人不再凝视孙嘉树的背影，重新望向那些挂像，笑了笑，“有此一劫，也算好事。",
+      "总好过将来闯下大祸，再难亡羊补牢。",
+      "太过顺风顺水，一直自负于聪明才智，终归不是长久之道。",
+      "诸位以为然？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "老人不再凝视孙嘉树的背影，重新望向那些挂像，笑了笑，“有此一劫，也算好事。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "老人不再凝视孙嘉树的背影，重新望向那些挂像，笑了笑，“有此一劫，也算好事。 ” 总好过将来闯下大祸，再难亡羊补牢。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.297168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -454,6 +930,19 @@
           1,
           2,
           4
+        ],
+        "juan_index": 256,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "老龙城与大骊的买卖，早于苻南华进入骊珠洞天就已经敲定，宋集薪此行，不过是以大骊皇子宋睦的身份，象征性抛头露面。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 256,
         "segment_index": 13
@@ -496,6 +985,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻南华",
           "宋集薪",
           "稚圭"
         ],
@@ -517,6 +1007,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻南华",
           "宋集薪",
           "崔瀺",
           "稚圭"
@@ -537,6 +1028,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻南华",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -569,17 +1061,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 宋集薪与崔瀺在老龙城迁移",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "宋集薪",
-          "崔瀺",
-          "稚圭"
+          "崔瀺"
         ],
         "description": "符城内，宋集薪身边时刻跟随有那名林鹿书院副山长。 老龙城与大骊的买卖，早于苻南华进入骊珠洞天就已经敲定，宋集薪此行，不过是以大骊皇子宋睦的身份，象征性抛头露面。 这一切，既是大骊国师崔瀺的运筹帷幄，更是皇帝陛下的旨意。",
         "background": "",
-        "significance": "在老龙城推动宋集薪与崔瀺之间的迁移线。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段13",
         "sentence_indexes_in_segment": [
@@ -595,7 +1088,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "extracted_at": "2026-03-25T01:03:31.297168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -646,6 +1139,19 @@
         ],
         "juan_index": 256,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "宋集薪知道这些他知道的蛛丝马迹，和尚未水落石出的伏线千里，已经编织成一张大网，最终会形成一个南下一个北上的局面，加上大隋高氏愿意退让一大步，与大骊宋氏结盟，宝瓶洲中部有北俱芦洲天君谢实，拦腰斩断观湖书院对北方地带的严密控制，虽然书院第一次出手就雷霆万钧，扼杀了彩衣国梳水国在内中部十数国蠢蠢欲动的战争苗头，但是宋集薪依稀看出了一条大骊铁骑的推进路径，势如破竹，长驱南下，策马扬鞭于南海之滨……",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -659,7 +1165,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宋集薪"
+          "宋集薪",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -676,7 +1183,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宋集薪"
+          "宋集薪",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -688,16 +1196,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 稚圭与宋集薪在大骊冲突",
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 宋集薪与谢实在大骊冲突",
         "time": null,
         "location": "大骊",
         "participants": [
-          "稚圭",
-          "宋集薪"
+          "宋集薪",
+          "谢实"
         ],
         "description": "稚圭，王朱为珠。 宋集薪知道这些他知道的蛛丝马迹，和尚未水落石出的伏线千里，已经编织成一张大网，最终会形成一个南下一个北上的局面，加上大隋高氏愿意退让一大步，与大骊宋氏结盟，宝瓶洲中部有北俱芦洲天君谢实，拦腰斩断观湖书院对北方地带的严密控制，虽然书院第一次出手就雷霆万钧，扼杀了彩衣国梳水国在内中部十数国蠢蠢欲动的战争苗头，但是宋集薪依稀看出了一条大骊铁骑的推进路径，势如破竹，长驱南下，策马扬鞭于南海之滨…… 宋集薪对此默不作声，只是看在眼中，放在肚里。",
         "background": "",
-        "significance": "在大骊推动稚圭与宋集薪之间的冲突线。",
+        "significance": "在大骊推动宋集薪与谢实之间的冲突线。",
         "related_action_indices": [
           0
         ],
@@ -718,30 +1226,25 @@
       {
         "time": null,
         "from_roles": [
-          "稚圭"
-        ],
-        "to_roles": [
           "宋集薪"
         ],
-        "action": "会见",
-        "context": "稚圭，王朱为珠。 宋集薪知道这些他知道的蛛丝马迹，和尚未水落石出的伏线千里，已经编织成一张大网，最终会形成一个南下一个北上的局面，加上大隋高氏愿意退让一大步，与大骊宋氏结盟，宝瓶洲中部有北俱芦洲天君谢实，拦腰斩断观湖书院对北方地带的严密控制，虽然书院第一次出手就雷霆万钧，扼杀了彩衣国梳水国在内中部十数国蠢蠢欲动的战争苗头，但是宋集薪依稀看出了一条大骊铁骑的推进路径，势如破竹，长驱南下，策马扬鞭于南海之滨…… 宋集薪对此默不作声，只是看在眼中，放在肚里。 宝瓶洲形势如何有利于大骊宋氏，不等于有利于他宋集薪，不提他跟庙堂重臣、柱国功勋们毫无交集，长春宫还有一个同胞弟弟，以及一位死心塌地偏爱幼子的娘娘，当初他去了一趟长春宫，名义上是骨肉分离多年，儿子认祖归宗后，应当主动问候娘亲，但是不管那位娘娘在长春宫，表现得如何伤心，宋集薪内心深处，发现自己很难感同身受，就像在看一位陌生人在那边痛彻心扉，而他毫无恻隐之心，宋集薪当时就像一个没有七情六欲的木头人，除了挤出一点泪水，跟那位被打入冷宫的权贵妇人，就再没有更多的言语，只是她问一句，宋集薪答一句，不像是母子重聚，反而像是一场生搬硬套的君臣奏对。 再加上一个弟弟宋和在旁边流泪，那次见面，母子三人应该都很别扭。 宋集薪独自走在苻家的庭院廊道之中，他说想要自己散步逛逛，林鹿书院副山长便不再跟随。",
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "冲突",
+        "context": "宋集薪知道这些他知道的蛛丝马迹，和尚未水落石出的伏线千里，已经编织成一张大网，最终会形成一个南下一个北上的局面，加上大隋高氏愿意退让一大步，与大骊宋氏结盟，宝瓶洲中部有北俱芦洲天君谢实，拦腰斩断观湖书院对北方地带的严密控制，虽然书院第一次出手就雷霆万钧，扼杀了彩衣国梳水国在内中部十数国蠢蠢欲动的战争苗头，但是宋集薪依稀看出了一条大骊铁骑的推进路径，势如破竹，长驱南下，策马扬鞭于南海之滨……",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十五章 传道人传道 · 稚圭与宋集薪在大骊冲突",
+        "event_name": "第四卷剑气近 第二百五十五章 传道人传道 · 宋集薪与谢实在大骊冲突",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
         ],
         "juan_index": 256,
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -793,6 +1296,19 @@
         ],
         "juan_index": 256,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "剑仙许弱也不知所踪，这个人，据说在中土神洲都有偌大名头的墨家豪侠，宋集薪一直想要结交示好，但是总觉得对谁都和颜悦色的许弱，其实最不好说话，双方很难交心，也许哪天等自己走到那个位置上，才会好一些？",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 15
       }
     ],
     "locations": [
@@ -821,8 +1337,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "宋集薪",
-          "稚圭"
+          "许弱",
+          "宋集薪"
         ],
         "description": "宋集薪一路上遇见了不少俊朗男子和丫鬟婢女，没有人知道他的身份，只不过宋集薪腰间的那对老龙翻云佩和老龙布雨佩，足够让他在苻家畅通无阻。 今天稚圭又不知道跑到哪里去玩了。 剑仙许弱也不知所踪，这个人，据说在中土神洲都有偌大名头的墨家豪侠，宋集薪一直想要结交示好，但是总觉得对谁都和颜悦色的许弱，其实最不好说话，双方很难交心，也许哪天等自己走到那个位置上，才会好一些？",
         "background": "",
@@ -847,30 +1363,25 @@
       {
         "time": null,
         "from_roles": [
-          "宋集薪"
+          "许弱"
         ],
         "to_roles": [
-          "稚圭"
+          "宋集薪"
         ],
         "action": "对话",
-        "context": "宋集薪一路上遇见了不少俊朗男子和丫鬟婢女，没有人知道他的身份，只不过宋集薪腰间的那对老龙翻云佩和老龙布雨佩，足够让他在苻家畅通无阻。 今天稚圭又不知道跑到哪里去玩了。 剑仙许弱也不知所踪，这个人，据说在中土神洲都有偌大名头的墨家豪侠，宋集薪一直想要结交示好，但是总觉得对谁都和颜悦色的许弱，其实最不好说话，双方很难交心，也许哪天等自己走到那个位置上，才会好一些？ 宋集薪便忍着，以免适得其反。 一路行去，宋集薪欣赏着苻家精心打造的山水园林和亭台楼阁，看多了，便有些无聊。 以前他在小镇那些街巷瞎逛，不管身边有没有带着婢女稚圭，都没觉得风景如此不耐看。",
+        "context": "剑仙许弱也不知所踪，这个人，据说在中土神洲都有偌大名头的墨家豪侠，宋集薪一直想要结交示好，但是总觉得对谁都和颜悦色的许弱，其实最不好说话，双方很难交心，也许哪天等自己走到那个位置上，才会好一些？",
         "result": null,
         "event_name": "阿良过境",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 256,
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -983,7 +1494,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1064,7 +1575,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1087,11 +1598,55 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "今天苻畦亲自领着一位客人登台观景，此外只有嫡子苻南华作陪，再无他人。 而且最奇怪的地方，是苻畦在登龙台脚就停下身影，只让那位客人独自登上高台。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "今天苻畦亲自领着一位客人登台观景，此外只有嫡子苻南华作陪，再无他人。 金丹境练气士跟苻畦恭敬打过招呼之后，多看了眼苻南华，就返回茅屋，继续感悟大海潮汐，用以砥砺神魂。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "苻畦轻声道：“南华，你之前没有选择对陈平安出手，是不是认为孙嘉树那么聪明的人，只会做出比你更聪明的举动？",
         "description": "《剑来》主角，小镇出身少年，是前三季叙事的绝对核心视角人物。",
         "power": "泥瓶巷",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "苻畦轻声道：“南华，你之前没有选择对陈平安出手，是不是认为孙嘉树那么聪明的人，只会做出比你更聪明的举动？",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1107,7 +1662,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1117,16 +1674,22 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安在老龙城冲突",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "孙嘉树",
+          "陈平安",
+          "苻畦"
         ],
-        "description": "苻畦轻声道：“南华，你之前没有选择对陈平安出手，是不是认为孙嘉树那么聪明的人，只会做出比你更聪明的举动？ 苻南华老老实实回答：“除此之外，我始终在扪心自问，若是以老龙城城主的身份，对待此事，我应该如何做。 今天苻畦亲自领着一位客人登台观景，此外只有嫡子苻南华作陪，再无他人。",
+        "description": "今天苻畦亲自领着一位客人登台观景，此外只有嫡子苻南华作陪，再无他人。 而且最奇怪的地方，是苻畦在登龙台脚就停下身影，只让那位客人独自登上高台。 金丹境练气士跟苻畦恭敬打过招呼之后，多看了眼苻南华，就返回茅屋，继续感悟大海潮汐，用以砥砺神魂。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1140,8 +1703,69 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "苻畦轻声道：“南华，你之前没有选择对陈平安出手，是不是认为孙嘉树那么聪明的人，只会做出比你更聪明的举动？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 18
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "冲突",
+        "context": "苻畦轻声道：“南华，你之前没有选择对陈平安出手，是不是认为孙嘉树那么聪明的人，只会做出比你更聪明的举动？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 18
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "冲突",
+        "context": "苻畦轻声道：“南华，你之前没有选择对陈平安出手，是不是认为孙嘉树那么聪明的人，只会做出比你更聪明的举动？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1161,7 +1785,35 @@
       "”",
       "苻南华一狠心，咬牙道：“父亲，但是我如今境界低微，将来如何能够名正言顺继承城主？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华神色尴尬，不再说下去。 苻南华一狠心，咬牙道：“父亲，但是我如今境界低微，将来如何能够名正言顺继承城主？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦赞赏道：“如此看来，那天我跟你说的那些话，你是真听进去了。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1180,14 +1832,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 老龙城揭示",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "苻家子孙，不能等到当了城主的那一天，才开始以城主身份行事，这点视野眼界都没有的话，哪怕是家族最强者，只知道为了一己私欲，打打杀杀，横行无忌，一旦遇上真正的上五境仙人，莫说是苻家，整座老龙城，又算个什么东西？ 是公器私用，还是……” 苻南华神色尴尬，不再说下去。",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "苻畦"
+        ],
+        "description": "苻南华神色尴尬，不再说下去。 苻畦赞赏道：“如此看来，那天我跟你说的那些话，你是真听进去了。 苻家子孙，不能等到当了城主的那一天，才开始以城主身份行事，这点视野眼界都没有的话，哪怕是家族最强者，只知道为了一己私欲，打打杀杀，横行无忌，一旦遇上真正的上五境仙人，莫说是苻家，整座老龙城，又算个什么东西？",
         "background": "",
-        "significance": "对应老龙城相关的关键揭示场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1201,8 +1859,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.058004",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "冲突",
+        "context": "是公器私用，还是……” 苻南华神色尴尬，不再说下去。 苻畦赞赏道：“如此看来，那天我跟你说的那些话，你是真听进去了。 苻家子孙，不能等到当了城主的那一天，才开始以城主身份行事，这点视野眼界都没有的话，哪怕是家族最强者，只知道为了一己私欲，打打杀杀，横行无忌，一旦遇上真正的上五境仙人，莫说是苻家，整座老龙城，又算个什么东西？ ” 苻南华一狠心，咬牙道：“父亲，但是我如今境界低微，将来如何能够名正言顺继承城主？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1222,7 +1906,21 @@
       "我所消耗的天材地宝，都够买下孙家在城外的三百里长街。",
       "在那之后，又是如何一步步走到十境巅峰？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦哑然失笑，“如何？",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 20
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1241,13 +1939,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 老龙城剧情推进",
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 苻畦在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "用钱砸啊，老龙城苻家别的不说，钱是真不少。 ” 苻畦哑然失笑，“如何？",
+        "participants": [
+          "苻畦"
+        ],
+        "description": "苻畦哑然失笑，“如何？ 用钱砸啊，老龙城苻家别的不说，钱是真不少。 ”",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "对应苻畦在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段20",
         "sentence_indexes_in_segment": [
@@ -1263,7 +1963,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.298171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1283,7 +1983,34 @@
       "苻畦双手负后，抬头望向那个步步登高的清瘦身影，微笑道：“我看好你之外，她的意见，哪怕只是一句无心之言，还是最重要，形容为一锤定音也不夸张。",
       "老龙城苻家有些人和事，你目前无法接触，但是接下来你会了解得越来越多，宝瓶洲山巅的真正风景，也会逐一呈现在你眼前。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华目瞪口呆。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦双手负后，抬头望向那个步步登高的清瘦身影，微笑道：“我看好你之外，她的意见，哪怕只是一句无心之言，还是最重要，形容为一锤定音也不夸张。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1316,14 +2043,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 老龙城对话",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "老龙城苻家有些人和事，你目前无法接触，但是接下来你会了解得越来越多，宝瓶洲山巅的真正风景，也会逐一呈现在你眼前。 除了还算勤勉修行，更多还是用钱堆出来的，不然你以为？ ”",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "苻畦"
+        ],
+        "description": "苻南华目瞪口呆。 苻畦双手负后，抬头望向那个步步登高的清瘦身影，微笑道：“我看好你之外，她的意见，哪怕只是一句无心之言，还是最重要，形容为一锤定音也不夸张。 老龙城苻家有些人和事，你目前无法接触，但是接下来你会了解得越来越多，宝瓶洲山巅的真正风景，也会逐一呈现在你眼前。",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1337,8 +2070,110 @@
         "segment_index": 21
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "对话",
+        "context": "除了还算勤勉修行，更多还是用钱堆出来的，不然你以为？ ” 苻南华目瞪口呆。 就这么简单？ 苻畦双手负后，抬头望向那个步步登高的清瘦身影，微笑道：“我看好你之外，她的意见，哪怕只是一句无心之言，还是最重要，形容为一锤定音也不夸张。 老龙城苻家有些人和事，你目前无法接触，但是接下来你会了解得越来越多，宝瓶洲山巅的真正风景，也会逐一呈现在你眼前。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.299175",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-22-0": {
+    "juan_index": 256,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "”",
+      "苻南华眼神炙热起来。",
+      "苻畦笑意晦暗，“然后总有一天，你就会发现四周全是血腥味。",
+      "”",
+      "那个拾级而上的外乡人，是一位少女，她走上登龙台后，她满脸血污，不断有血泪从金黄眼眸中流淌而下。",
+      "她茕茕孑立，形单影只，环顾四周。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华眼神炙热起来。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "苻畦笑意晦暗，“然后总有一天，你就会发现四周全是血腥味。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 苻南华与苻畦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苻南华",
+          "苻畦"
+        ],
+        "description": "苻南华眼神炙热起来。 苻畦笑意晦暗，“然后总有一天，你就会发现四周全是血腥味。 ”",
+        "background": "",
+        "significance": "推动苻南华与苻畦之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 22
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.299175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1377,6 +2212,20 @@
       },
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "陈平安收起鱼竿鱼篓，返回孙家祖宅，结果看到孙嘉树在河边等待自己。 他在等陈平安，其实陈平安也在等他孙嘉树。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -1394,16 +2243,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与郑大风等待",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "郑大风"
+          "孙嘉树",
+          "陈平安"
         ],
         "description": "这一天陈平安依旧守夜钓鱼，然后掐着时辰，开始练习剑炉立桩，等到天亮后，又一次睁眼望向东边的海面上空。 只是这次陈平安没有再惹来金色气流的下坠，但是陈平安咧嘴笑，站起身朝那边挥挥手，像是在跟熟人打招呼。 陈平安收起鱼竿鱼篓，返回孙家祖宅，结果看到孙嘉树在河边等待自己。",
         "background": "",
-        "significance": "推动陈平安与郑大风之间的等待关系。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [
           0
         ],
@@ -1427,27 +2276,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "郑大风"
+          "孙嘉树"
         ],
         "action": "等待",
-        "context": "九大洲，五湖四海，山上山下，尽是坟冢，皆是仇寇！ 这一天陈平安依旧守夜钓鱼，然后掐着时辰，开始练习剑炉立桩，等到天亮后，又一次睁眼望向东边的海面上空。 只是这次陈平安没有再惹来金色气流的下坠，但是陈平安咧嘴笑，站起身朝那边挥挥手，像是在跟熟人打招呼。 陈平安收起鱼竿鱼篓，返回孙家祖宅，结果看到孙嘉树在河边等待自己。 他在等陈平安，其实陈平安也在等他孙嘉树。 郑大风当初在内城小巷，怂恿自己摘掉那张遮掩容貌的面皮，之后更有阴神对郑大风从中作梗。",
+        "context": "陈平安收起鱼竿鱼篓，返回孙家祖宅，结果看到孙嘉树在河边等待自己。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与郑大风等待",
+        "event_name": "孙嘉树结识陈平安",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 256,
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.299175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,20 +2325,34 @@
         ],
         "juan_index": 256,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "刘灞桥介绍孙嘉树给自己认识，肯定是好心好意，所以愿不愿意来到孙氏祖宅，是陈平安自己的选择，归根结底，还是趋利避害的本能，只是回头来看，这个选择可能不是最差的，但也不是最好的。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
         "description": "看似与孙家无关的只言片语，陈平安稍作咀嚼，就能尝出里头的暗藏杀机。 刘灞桥介绍孙嘉树给自己认识，肯定是好心好意，所以愿不愿意来到孙氏祖宅，是陈平安自己的选择，归根结底，还是趋利避害的本能，只是回头来看，这个选择可能不是最差的，但也不是最好的。 失望？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段24",
         "sentence_indexes_in_segment": [
@@ -1510,7 +2368,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.299175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1533,6 +2391,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树在闲聊之中，其实已经透露过一些。 陈平安对孙嘉树的印象再次模糊起来，而且内心已经充满了戒备和审视。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安对孙嘉树的印象再次模糊起来，而且内心已经充满了戒备和审视。",
@@ -1548,16 +2420,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "陈平安对孙嘉树的印象再次模糊起来，而且内心已经充满了戒备和审视。 苻家和孙家信奉的商贾之道，学问宗旨是什么？ 孙嘉树在闲聊之中，其实已经透露过一些。",
+        "description": "孙嘉树在闲聊之中，其实已经透露过一些。 陈平安对孙嘉树的印象再次模糊起来，而且内心已经充满了戒备和审视。 苻家和孙家信奉的商贾之道，学问宗旨是什么？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1571,8 +2446,29 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "试探",
+        "context": "陈平安对孙嘉树的印象再次模糊起来，而且内心已经充满了戒备和审视。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.299175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1608,21 +2504,41 @@
         ],
         "juan_index": 256,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树看着那个愈行愈近的背剑少年，深呼吸一口气，先什么都没有说，只是作揖赔礼。 陈平安挪开脚步，避让了孙嘉树这个看似无缘无故的赔罪。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "这些浅显的东西，陈平安根本不用书上告诉他，市井巷弄的鸡飞狗跳，街坊邻居的鸡毛蒜皮，龙窑学徒的勾心斗角，不都在讲这些？ 陈平安挪开脚步，避让了孙嘉树这个看似无缘无故的赔罪。 孙嘉树起身后，对此不以为意，苦笑道：“陈平安，我已经帮你安排了范家的桂花岛渡船，我孙家已经没有颜面请你登上山海龟。",
+        "description": "这些浅显的东西，陈平安根本不用书上告诉他，市井巷弄的鸡飞狗跳，街坊邻居的鸡毛蒜皮，龙窑学徒的勾心斗角，不都在讲这些？ 孙嘉树看着那个愈行愈近的背剑少年，深呼吸一口气，先什么都没有说，只是作揖赔礼。 陈平安挪开脚步，避让了孙嘉树这个看似无缘无故的赔罪。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -1636,8 +2552,49 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "孙嘉树起身后，对此不以为意，苦笑道：“陈平安，我已经帮你安排了范家的桂花岛渡船，我孙家已经没有颜面请你登上山海龟。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 256,
+        "segment_index": 26
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "对话",
+        "context": "陈平安问道：“孙嘉树，这是为什么？",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.299175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1658,6 +2615,33 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树犹豫片刻，干脆蹲下身，面朝河水，捡起脚边的一粒粒石子，轻轻丢入水中，“我之前想要富贵险中求，捞取一笔大偏财。 故意隐瞒苻家对老龙城的掌控力度，只让你带上那张不足以遮掩所有真相的面皮，然后从那栋苻家盯得很紧的高楼走出，赌的就是性情执拗的苻南华咽不下那口气，要兴师动众带人杀你，在那之后，我会拼了半个孙家不要，也要保住你陈平安，事后你安然乘船去往倒悬山，就会觉得欠我孙嘉树一个天大人情，我相信迟早有一天，孙家的回报，只会比失去的更多。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "故意隐瞒苻家对老龙城的掌控力度，只让你带上那张不足以遮掩所有真相的面皮，然后从那栋苻家盯得很紧的高楼走出，赌的就是性情执拗的苻南华咽不下那口气，要兴师动众带人杀你，在那之后，我会拼了半个孙家不要，也要保住你陈平安，事后你安然乘船去往倒悬山，就会觉得欠我孙嘉树一个天大人情，我相信迟早有一天，孙家的回报，只会比失去的更多。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 27
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1682,7 +2666,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "苻南华",
+          "陈平安",
+          "孙嘉树"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -1693,15 +2679,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安在老龙城揭示",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "孙嘉树",
+          "陈平安",
+          "苻南华"
         ],
-        "description": "故意隐瞒苻家对老龙城的掌控力度，只让你带上那张不足以遮掩所有真相的面皮，然后从那栋苻家盯得很紧的高楼走出，赌的就是性情执拗的苻南华咽不下那口气，要兴师动众带人杀你，在那之后，我会拼了半个孙家不要，也要保住你陈平安，事后你安然乘船去往倒悬山，就会觉得欠我孙嘉树一个天大人情，我相信迟早有一天，孙家的回报，只会比失去的更多。 陈平安还是那么提着鱼竿拎着鱼篓，站在原地，问了一个关键问题，“你怎么确定保得住我的性命？ ”",
+        "description": "孙嘉树犹豫片刻，干脆蹲下身，面朝河水，捡起脚边的一粒粒石子，轻轻丢入水中，“我之前想要富贵险中求，捞取一笔大偏财。 故意隐瞒苻家对老龙城的掌控力度，只让你带上那张不足以遮掩所有真相的面皮，然后从那栋苻家盯得很紧的高楼走出，赌的就是性情执拗的苻南华咽不下那口气，要兴师动众带人杀你，在那之后，我会拼了半个孙家不要，也要保住你陈平安，事后你安然乘船去往倒悬山，就会觉得欠我孙嘉树一个天大人情，我相信迟早有一天，孙家的回报，只会比失去的更多。 陈平安还是那么提着鱼竿拎着鱼篓，站在原地，问了一个关键问题，“你怎么确定保得住我的性命？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段27",
         "sentence_indexes_in_segment": [
@@ -1717,7 +2705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.299175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1738,6 +2726,48 @@
       "孙嘉树又丢出一颗石子，“孙家这些年声势正盛，表面上与苻家有了一争高下的实力，但是我看得稍微远一点，除了一门心思投靠大骊王朝的苻家，五大姓氏中，范家紧随苻家其后，其余三家也各有依附，有观湖书院，有北俱芦洲的仙家府邸，有东南大洲的顶尖豪阀，都找到了靠山和退路，唯独我孙家，一直举棋不定，因为我也看中了大骊宋氏，只是我找不到门路，早些年我让一位金丹境家族供奉去往大骊京城，别说是大骊皇帝，就连藩王宋长镜的王府大门都进不去，一个买卖人，提着猪头找不到庙的感觉，实在太让人绝望了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树头也不回，伸手指了指头顶，“有些人间最高处的人和事，苻南华没资格知道，但是我孙嘉树作为孙家家主，知道，老龙城城主苻畦当然更知道。 你陈平安当然只会有惊无险，不会死，而我孙嘉树就能够趁机跟你成为患难之交。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "孙嘉树头也不回，伸手指了指头顶，“有些人间最高处的人和事，苻南华没资格知道，但是我孙嘉树作为孙家家主，知道，老龙城城主苻畦当然更知道。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 256,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "孙嘉树头也不回，伸手指了指头顶，“有些人间最高处的人和事，苻南华没资格知道，但是我孙嘉树作为孙家家主，知道，老龙城城主苻畦当然更知道。 这场晚辈之间的意气之争，我只要押上全部家当，摆出不惜与苻家玉石俱焚的姿态，那么苻畦就会在狠狠敲打一番孙家之后，在某个火候主动收手。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 28
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1764,6 +2794,19 @@
         ],
         "juan_index": 256,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "孙嘉树又丢出一颗石子，“孙家这些年声势正盛，表面上与苻家有了一争高下的实力，但是我看得稍微远一点，除了一门心思投靠大骊王朝的苻家，五大姓氏中，范家紧随苻家其后，其余三家也各有依附，有观湖书院，有北俱芦洲的仙家府邸，有东南大洲的顶尖豪阀，都找到了靠山和退路，唯独我孙家，一直举棋不定，因为我也看中了大骊宋氏，只是我找不到门路，早些年我让一位金丹境家族供奉去往大骊京城，别说是大骊皇帝，就连藩王宋长镜的王府大门都进不去，一个买卖人，提着猪头找不到庙的感觉，实在太让人绝望了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 28
       }
     ],
     "locations": [
@@ -1774,7 +2817,11 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树",
+          "苻南华",
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1791,7 +2838,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "大骊皇帝"
+          "孙嘉树",
+          "大骊皇帝",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -1802,18 +2851,21 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与大骊皇帝在老龙城归属",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安",
-          "大骊皇帝"
+          "大骊皇帝",
+          "宋长镜"
         ],
-        "description": "孙嘉树头也不回，伸手指了指头顶，“有些人间最高处的人和事，苻南华没资格知道，但是我孙嘉树作为孙家家主，知道，老龙城城主苻畦当然更知道。 你陈平安当然只会有惊无险，不会死，而我孙嘉树就能够趁机跟你成为患难之交。 直到这一刻，陈平安才满腔怒火，脸色阴沉，悄然运转气机，将那股怒意死死压在心湖。",
+        "description": "孙嘉树头也不回，伸手指了指头顶，“有些人间最高处的人和事，苻南华没资格知道，但是我孙嘉树作为孙家家主，知道，老龙城城主苻畦当然更知道。 这场晚辈之间的意气之争，我只要押上全部家当，摆出不惜与苻家玉石俱焚的姿态，那么苻畦就会在狠狠敲打一番孙家之后，在某个火候主动收手。 你陈平安当然只会有惊无险，不会死，而我孙嘉树就能够趁机跟你成为患难之交。",
         "background": "",
-        "significance": "在老龙城推动陈平安与大骊皇帝之间的归属线。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段28",
         "sentence_indexes_in_segment": [
@@ -1832,30 +2884,45 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "孙嘉树"
         ],
         "to_roles": [
           "大骊皇帝"
         ],
         "action": "归属",
-        "context": "孙嘉树头也不回，伸手指了指头顶，“有些人间最高处的人和事，苻南华没资格知道，但是我孙嘉树作为孙家家主，知道，老龙城城主苻畦当然更知道。 这场晚辈之间的意气之争，我只要押上全部家当，摆出不惜与苻家玉石俱焚的姿态，那么苻畦就会在狠狠敲打一番孙家之后，在某个火候主动收手。 你陈平安当然只会有惊无险，不会死，而我孙嘉树就能够趁机跟你成为患难之交。 ” 直到这一刻，陈平安才满腔怒火，脸色阴沉，悄然运转气机，将那股怒意死死压在心湖。 孙嘉树又丢出一颗石子，“孙家这些年声势正盛，表面上与苻家有了一争高下的实力，但是我看得稍微远一点，除了一门心思投靠大骊王朝的苻家，五大姓氏中，范家紧随苻家其后，其余三家也各有依附，有观湖书院，有北俱芦洲的仙家府邸，有东南大洲的顶尖豪阀，都找到了靠山和退路，唯独我孙家，一直举棋不定，因为我也看中了大骊宋氏，只是我找不到门路，早些年我让一位金丹境家族供奉去往大骊京城，别说是大骊皇帝，就连藩王宋长镜的王府大门都进不去，一个买卖人，提着猪头找不到庙的感觉，实在太让人绝望了。",
+        "context": "孙嘉树又丢出一颗石子，“孙家这些年声势正盛，表面上与苻家有了一争高下的实力，但是我看得稍微远一点，除了一门心思投靠大骊王朝的苻家，五大姓氏中，范家紧随苻家其后，其余三家也各有依附，有观湖书院，有北俱芦洲的仙家府邸，有东南大洲的顶尖豪阀，都找到了靠山和退路，唯独我孙家，一直举棋不定，因为我也看中了大骊宋氏，只是我找不到门路，早些年我让一位金丹境家族供奉去往大骊京城，别说是大骊皇帝，就连藩王宋长镜的王府大门都进不去，一个买卖人，提着猪头找不到庙的感觉，实在太让人绝望了。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与大骊皇帝在老龙城归属",
-        "location": "老龙城",
+        "event_name": "孙嘉树结识陈平安",
+        "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 28
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "归属",
+        "context": "孙嘉树又丢出一颗石子，“孙家这些年声势正盛，表面上与苻家有了一争高下的实力，但是我看得稍微远一点，除了一门心思投靠大骊王朝的苻家，五大姓氏中，范家紧随苻家其后，其余三家也各有依附，有观湖书院，有北俱芦洲的仙家府邸，有东南大洲的顶尖豪阀，都找到了靠山和退路，唯独我孙家，一直举棋不定，因为我也看中了大骊宋氏，只是我找不到门路，早些年我让一位金丹境家族供奉去往大骊京城，别说是大骊皇帝，就连藩王宋长镜的王府大门都进不去，一个买卖人，提着猪头找不到庙的感觉，实在太让人绝望了。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 256,
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.300178",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1888,20 +2955,35 @@
         ],
         "juan_index": 256,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树肚子里早就想好的千言万语，竟然没有一句能够回答这个问题。 孙嘉树满脸苦涩望向河水。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 29
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "陈平安问了第二个问题，“你不把我陈平安当朋友，很正常，那么刘灞桥呢？ ” ”",
+        "description": "陈平安问了第二个问题，“你不把我陈平安当朋友，很正常，那么刘灞桥呢？ 孙嘉树肚子里早就想好的千言万语，竟然没有一句能够回答这个问题。 孙嘉树满脸苦涩望向河水。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段29",
         "sentence_indexes_in_segment": [
@@ -1917,7 +2999,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.300178",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1940,6 +3022,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "暗中观察此处对话的孙氏老祖，都为孙嘉树捏了一把汗。 孙嘉树微微低头，双手托住腮帮，既然再无应对良策，这个聪明至极的生意人，便干脆顺着本心自言自语道：“我当然是把他当朋友的，但是可能这一次之后，只会多了你陈平安一个敌人，少了刘灞桥一个朋友。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "孙嘉树微微低头，双手托住腮帮，既然再无应对良策，这个聪明至极的生意人，便干脆顺着本心自言自语道：“我当然是把他当朋友的，但是可能这一次之后，只会多了你陈平安一个敌人，少了刘灞桥一个朋友。 陈平安问了第三个问题，“之所以说这些，是不敢杀我？",
@@ -1956,15 +3052,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "孙嘉树微微低头，双手托住腮帮，既然再无应对良策，这个聪明至极的生意人，便干脆顺着本心自言自语道：“我当然是把他当朋友的，但是可能这一次之后，只会多了你陈平安一个敌人，少了刘灞桥一个朋友。 陈平安问了第三个问题，“之所以说这些，是不敢杀我？ 暗中观察此处对话的孙氏老祖，都为孙嘉树捏了一把汗。",
+        "description": "暗中观察此处对话的孙氏老祖，都为孙嘉树捏了一把汗。 孙嘉树微微低头，双手托住腮帮，既然再无应对良策，这个聪明至极的生意人，便干脆顺着本心自言自语道：“我当然是把他当朋友的，但是可能这一次之后，只会多了你陈平安一个敌人，少了刘灞桥一个朋友。 陈平安问了第三个问题，“之所以说这些，是不敢杀我？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段30",
         "sentence_indexes_in_segment": [
@@ -1980,7 +3077,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.300178",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2001,6 +3098,20 @@
       "孙嘉树站起身，像是卸下了万斤重担，不再那么神色萎靡，终于恢复了几分老龙城孙嘉树的风采，“该说的，不该说的，我都说了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树摇头道：“我不想杀你。 孙嘉树站起身，像是卸下了万斤重担，不再那么神色萎靡，终于恢复了几分老龙城孙嘉树的风采，“该说的，不该说的，我都说了。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 31
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2024,7 +3135,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -2034,15 +3147,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安在老龙城剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "他转过头，强颜欢笑，“陈平安，这句话，你信不信？ 陈平安没有回答。 孙嘉树站起身，像是卸下了万斤重担，不再那么神色萎靡，终于恢复了几分老龙城孙嘉树的风采，“该说的，不该说的，我都说了。",
+        "description": "孙嘉树摇头道：“我不想杀你。 他转过头，强颜欢笑，“陈平安，这句话，你信不信？ 陈平安没有回答。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段31",
         "sentence_indexes_in_segment": [
@@ -2058,7 +3172,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.059008",
+    "extracted_at": "2026-03-25T01:03:31.300178",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2092,20 +3206,35 @@
         ],
         "juan_index": 256,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "之后不管你陈平安做什么，我都不会后悔，这点担当，我孙嘉树还是有的。 孙嘉树点头道：“好。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安剧情推进",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "之后不管你陈平安做什么，我都不会后悔，这点担当，我孙嘉树还是有的。 陈平安叹了口气，“拿了行李，我就会去内城灰尘药铺，之后乘坐范家桂花岛去往倒悬山。 ”",
+        "description": "之后不管你陈平安做什么，我都不会后悔，这点担当，我孙嘉树还是有的。 陈平安叹了口气，“拿了行李，我就会去内城灰尘药铺，之后乘坐范家桂花岛去往倒悬山。 孙嘉树点头道：“好。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段32",
         "sentence_indexes_in_segment": [
@@ -2121,7 +3250,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.300178",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2155,21 +3284,37 @@
         ],
         "juan_index": 256,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树独自吃着早餐，还是腌菜米粥馒头，孙氏老祖坐在对面，刚要说话，孙嘉树已经说道：“这件事的来龙去脉，我会尽快跟刘灞桥说清楚。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安对话",
+        "name": "孙嘉树结识陈平安",
         "time": null,
         "location": null,
         "participants": [
+          "孙嘉树",
           "陈平安"
         ],
-        "description": "两人一前一后，默默走回孙氏祖宅，陈平安果真挎好包裹，就凭借记忆，走上那条黄泥土路。 老人问道：“是怕陈平安抢先告发，到时候更加为难？ 孙嘉树独自吃着早餐，还是腌菜米粥馒头，孙氏老祖坐在对面，刚要说话，孙嘉树已经说道：“这件事的来龙去脉，我会尽快跟刘灞桥说清楚。",
+        "description": "两人一前一后，默默走回孙氏祖宅，陈平安果真挎好包裹，就凭借记忆，走上那条黄泥土路。 孙嘉树独自吃着早餐，还是腌菜米粥馒头，孙氏老祖坐在对面，刚要说话，孙嘉树已经说道：“这件事的来龙去脉，我会尽快跟刘灞桥说清楚。 老人问道：“是怕陈平安抢先告发，到时候更加为难？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -2183,8 +3328,223 @@
         "segment_index": 33
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "对话",
+        "context": "两人一前一后，默默走回孙氏祖宅，陈平安果真挎好包裹，就凭借记忆，走上那条黄泥土路。 孙嘉树独自吃着早餐，还是腌菜米粥馒头，孙氏老祖坐在对面，刚要说话，孙嘉树已经说道：“这件事的来龙去脉，我会尽快跟刘灞桥说清楚。 ” 老人问道：“是怕陈平安抢先告发，到时候更加为难？ 还是自己良心难安，不吐不快？ ”",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.300178",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-34-0": {
+    "juan_index": 256,
+    "segment_index": 34,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "孙嘉树停下筷子，用心想了想，坦诚道：“好像都有。",
+      "”",
+      "老人试探性问道：“为什么不一不做二不休，在桃花岛渡船上做点手脚？",
+      "”",
+      "孙嘉树解开心结后，精神振作不少，笑着摇头：“不能以一个错去掩盖另一个错，我是再也不敢心存侥幸了。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树停下筷子，用心想了想，坦诚道：“好像都有。 孙嘉树解开心结后，精神振作不少，笑着摇头：“不能以一个错去掩盖另一个错，我是再也不敢心存侥幸了。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 34
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树停下筷子，用心想了想，坦诚道：“好像都有。 孙嘉树解开心结后，精神振作不少，笑着摇头：“不能以一个错去掩盖另一个错，我是再也不敢心存侥幸了。 ”",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段34",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 34
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.300178",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-35-0": {
+    "juan_index": 256,
+    "segment_index": 35,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "听到这个答复后，老人好像比孙嘉树如释重负，笑道：“那这个闷亏，孙家就算没白吃。",
+      "大势之下，先行一步，当然是最好，但是能够始终不犯大错，一样不容易。",
+      "已经有了大家大业，就不能总想着孤注一掷，要不得啊。",
+      "”",
+      "孙嘉树笑道：“家有一老，如有一宝！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "听到这个答复后，老人好像比孙嘉树如释重负，笑道：“那这个闷亏，孙家就算没白吃。 孙嘉树笑道：“家有一老，如有一宝！",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 35
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "听到这个答复后，老人好像比孙嘉树如释重负，笑道：“那这个闷亏，孙家就算没白吃。 孙嘉树笑道：“家有一老，如有一宝！ 大势之下，先行一步，当然是最好，但是能够始终不犯大错，一样不容易。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段35",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 35
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.300178",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "256-36-0": {
+    "juan_index": 256,
+    "segment_index": 36,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十五章 传道人传道",
+    "source_sentences": [
+      "老人站起身，“你慢慢吃，好好调整心态，近期不要再有太大的情绪起伏。",
+      "”",
+      "孙嘉树放下手中筷子，起身恭送，等到老人走出屋子，他才重新坐下，继续埋头吃早餐。",
+      "苦味难当。",
+      "至于孙嘉树若是应对不当，就要被孙氏老祖强行剥夺家主身份，这一点，先前相对而坐的一老一小，心知肚明，而且双方都不会觉得有任何不妥。",
+      "走出孙氏祖宅的地盘，来到一处繁华市井，问过了路，雇佣一辆普通马车驶向内城，这一次开销，就很正常，毕竟不用跟种种飞禽走兽、蛟龙属裔的骏马豪车，在那条大街上同行三百里。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "孙嘉树放下手中筷子，起身恭送，等到老人走出屋子，他才重新坐下，继续埋头吃早餐。 至于孙嘉树若是应对不当，就要被孙氏老祖强行剥夺家主身份，这一点，先前相对而坐的一老一小，心知肚明，而且双方都不会觉得有任何不妥。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 36
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 孙嘉树揭示",
+        "time": null,
+        "location": null,
+        "participants": [
+          "孙嘉树"
+        ],
+        "description": "孙嘉树放下手中筷子，起身恭送，等到老人走出屋子，他才重新坐下，继续埋头吃早餐。 至于孙嘉树若是应对不当，就要被孙氏老祖强行剥夺家主身份，这一点，先前相对而坐的一老一小，心知肚明，而且双方都不会觉得有任何不妥。 老人站起身，“你慢慢吃，好好调整心态，近期不要再有太大的情绪起伏。",
+        "background": "",
+        "significance": "对应孙嘉树在叙事中的关键揭示节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段36",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 256,
+        "segment_index": 36
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.301226",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2282,7 +3642,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.301226",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2333,6 +3693,19 @@
         ],
         "juan_index": 256,
         "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "时不时斜眼瞥一下那个沉闷少年，月有阴晴圆缺，盈亏自有定数，随着骊珠洞天的破碎下坠，如今这小子的运道不算太差了，只说陈平安这次进入老龙城的时机，若非大骊渡口和云林姜氏的先后到来，苻畦未必会如此好说话。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 256,
+        "segment_index": 38
       }
     ],
     "locations": [
@@ -2344,7 +3717,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "苻畦"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -2360,7 +3734,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "苻畦"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -2378,7 +3753,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "苻畦"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -2389,16 +3765,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与郑大风在骊珠洞天对话",
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与苻畦在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
           "陈平安",
-          "郑大风"
+          "苻畦"
         ],
         "description": "陈平安坐在自己屋子门口，说了准备乘坐桂花岛渡船一事，郑大风点头说很容易，保证把他陈平安当自家老祖宗供奉起来。 郑大风百无聊赖抽着旱烟，实在不知道老头子为何好这一口，根本没啥滋味嘛。 时不时斜眼瞥一下那个沉闷少年，月有阴晴圆缺，盈亏自有定数，随着骊珠洞天的破碎下坠，如今这小子的运道不算太差了，只说陈平安这次进入老龙城的时机，若非大骊渡口和云林姜氏的先后到来，苻畦未必会如此好说话。",
         "background": "",
-        "significance": "在骊珠洞天推动陈平安与郑大风之间的对话线。",
+        "significance": "在骊珠洞天推动陈平安与苻畦之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -2422,27 +3798,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "郑大风"
+          "苻畦"
         ],
         "action": "对话",
-        "context": "陈平安坐在自己屋子门口，说了准备乘坐桂花岛渡船一事，郑大风点头说很容易，保证把他陈平安当自家老祖宗供奉起来。 然后各自不对脾气的两个家伙，两两无言，一个抽旱烟，一个喝着酒。 这让门帘后头那些个脑袋，觉得好生无趣，很快纷纷散去。 郑大风百无聊赖抽着旱烟，实在不知道老头子为何好这一口，根本没啥滋味嘛。 时不时斜眼瞥一下那个沉闷少年，月有阴晴圆缺，盈亏自有定数，随着骊珠洞天的破碎下坠，如今这小子的运道不算太差了，只说陈平安这次进入老龙城的时机，若非大骊渡口和云林姜氏的先后到来，苻畦未必会如此好说话。 陈平安则是想着如何将那五文钱的事情。",
+        "context": "时不时斜眼瞥一下那个沉闷少年，月有阴晴圆缺，盈亏自有定数，随着骊珠洞天的破碎下坠，如今这小子的运道不算太差了，只说陈平安这次进入老龙城的时机，若非大骊渡口和云林姜氏的先后到来，苻畦未必会如此好说话。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与郑大风在骊珠洞天对话",
+        "event_name": "第四卷剑气近 第二百五十五章 传道人传道 · 陈平安与苻畦在骊珠洞天对话",
         "location": "骊珠洞天",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          4
         ],
         "juan_index": 256,
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.301226",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2561,7 +3932,7 @@
         "segment_index": 39
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2668,7 +4039,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2763,7 +4134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2861,7 +4232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.060011",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2958,7 +4329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3020,7 +4391,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3115,7 +4486,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3215,7 +4586,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.301739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3318,7 +4689,7 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.302733",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3365,6 +4736,19 @@
         "power": "落魄山",
         "sentence_indexes_in_segment": [
           1,
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 48
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "哪怕陈平安将李希圣许多提笔写在竹楼墙壁上的美好诗词、文章佳句，竭尽可能记起，大声说出，郑大风还是摇头，此事这位远游境武夫已经再也说不出半个字，只能在空中踉跄出拳，尽量以此维持头脑中的最后一丝清明。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
           2
         ],
         "juan_index": 256,
@@ -3422,7 +4806,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.302733",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3458,20 +4842,50 @@
         ],
         "juan_index": 256,
         "segment_index": 49
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "郑大风这一切都知道，所以才会羡慕那个整天浑浑噩噩的师兄李二，才会嫉妒那个一次生死大战就跻身十境的宋长镜！ 他与李二私底下的交手，差点被打死的次数，一只手都数不过来！",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 256,
+        "segment_index": 49
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "郑大风这一切都知道，所以才会羡慕那个整天浑浑噩噩的师兄李二，才会嫉妒那个一次生死大战就跻身十境的宋长镜！ 为何一个四十岁左右的宋长镜都可以，偏偏他一路攀升、势如破竹直达第八境的郑大风，就不行？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 256,
+        "segment_index": 49
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 郑大风剧情推进",
+        "name": "第四卷剑气近 第二百五十五章 传道人传道 · 郑大风与李二剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风"
+          "郑大风",
+          "李二",
+          "宋长镜"
         ],
-        "description": "郑大风这一切都知道，所以才会羡慕那个整天浑浑噩噩的师兄李二，才会嫉妒那个一次生死大战就跻身十境的宋长镜！ 为何一个四十岁左右的宋长镜都可以，偏偏他一路攀升、势如破竹直达第八境的郑大风，就不行？ 他与李二私底下的交手，差点被打死的次数，一只手都数不过来！",
+        "description": "郑大风这一切都知道，所以才会羡慕那个整天浑浑噩噩的师兄李二，才会嫉妒那个一次生死大战就跻身十境的宋长镜！ 他与李二私底下的交手，差点被打死的次数，一只手都数不过来！ 为何一个四十岁左右的宋长镜都可以，偏偏他一路攀升、势如破竹直达第八境的郑大风，就不行？",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
+        "significance": "推动郑大风与李二之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十五章 传道人传道 · 段49",
         "sentence_indexes_in_segment": [
@@ -3487,7 +4901,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.302733",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3596,7 +5010,7 @@
         "segment_index": 50
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.302733",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3722,7 +5136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.302733",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3790,7 +5204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.061015",
+    "extracted_at": "2026-03-25T01:03:31.302733",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3870,7 +5284,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.062018",
+    "extracted_at": "2026-03-25T01:03:31.303736",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

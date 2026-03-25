@@ -146,7 +146,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.144591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -226,7 +226,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.144591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -260,21 +260,37 @@
         ],
         "juan_index": 221,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安挠挠头，低头喝了口茶，但是心里想着的，却是后悔连同信一起寄给“崔东山”的那两千两银票，跟当过仙人的学生弟子这么客气，不讲究，这不是侮辱人嘛。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 221,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十一章 看热闹 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百二十一章 看热闹 · 陈平安与崔东山同行",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
         "description": "陈平安挠挠头，低头喝了口茶，但是心里想着的，却是后悔连同信一起寄给“崔东山”的那两千两银票，跟当过仙人的学生弟子这么客气，不讲究，这不是侮辱人嘛。 因为伥鬼杨晃多次提及柳筋境，说成是“留人境”，大髯汉子便着重给陈平安这个外行解释了一番，说起来津津有味，充满了纯粹武夫对山上神仙的调侃，让刚好停滞在三境的年轻道士十分无奈。 练气士的下五境，登山五境，铜皮境，草根境，柳筋境，骨气境，筑庐境，其中前四境，分别修炼皮肉筋骨，说是练气士，其实养育出一副坚韧的体魄，也很重视，道理倒也浅显，人身若是一只水碗，炼出一斤气，若是水碗只能装下八两，其余二两就成了空谈。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百二十一章 看热闹 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -288,8 +304,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "同行",
+        "context": "陈平安挠挠头，低头喝了口茶，但是心里想着的，却是后悔连同信一起寄给“崔东山”的那两千两银票，跟当过仙人的学生弟子这么客气，不讲究，这不是侮辱人嘛。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百二十一章 看热闹 · 陈平安与崔东山同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 221,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.144591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -309,7 +346,22 @@
       "这个宋长镜，是咱们宝瓶洲纯粹武夫里头的这个！",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "那大骊藩王宋长镜，你们几个十境练气士敢在他面前横？ 这个宋长镜，是咱们宝瓶洲纯粹武夫里头的这个！",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 221,
+        "segment_index": 10
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -320,7 +372,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -334,7 +388,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -344,13 +400,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十一章 看热闹 · 大骊对话",
+        "name": "第三卷金错刀 第二百二十一章 看热闹 · 宋长镜在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "宋长镜"
+        ],
         "description": "那大骊藩王宋长镜，你们几个十境练气士敢在他面前横？ 这个宋长镜，是咱们宝瓶洲纯粹武夫里头的这个！ ”",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十一章 看热闹 · 段10",
         "sentence_indexes_in_segment": [
@@ -366,7 +424,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.144591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -397,6 +455,20 @@
         "sentence_indexes_in_segment": [
           3,
           4
+        ],
+        "juan_index": 221,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "藩王宋长镜，可不就是宋集薪的亲叔叔，曾经在泥瓶巷路过，陈平安还跟宋长镜还打过照面来着。 再说了，跟宋长镜差不多境界的纯粹武夫，只是家乡小镇，就还有李槐他爹，更别提还有崔瀺的爷爷……",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4,
+          5
         ],
         "juan_index": 221,
         "segment_index": 11
@@ -454,6 +526,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪",
           "陈平安"
         ],
@@ -471,6 +544,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "李槐",
           "崔瀺"
         ],
@@ -489,8 +563,8 @@
         "participants": [
           "陈平安",
           "宋集薪",
-          "李槐",
-          "崔瀺"
+          "宋长镜",
+          "李槐"
         ],
         "description": "陈平安脸色古怪。 藩王宋长镜，可不就是宋集薪的亲叔叔，曾经在泥瓶巷路过，陈平安还跟宋长镜还打过照面来着。 再说了，跟宋长镜差不多境界的纯粹武夫，只是家乡小镇，就还有李槐他爹，更别提还有崔瀺的爷爷……",
         "background": "",
@@ -510,7 +584,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.144591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -574,7 +648,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.144591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -630,7 +704,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

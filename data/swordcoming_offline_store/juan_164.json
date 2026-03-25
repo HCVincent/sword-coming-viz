@@ -96,7 +96,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.755203",
+    "extracted_at": "2026-03-25T01:03:30.864109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -212,7 +212,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.755203",
+    "extracted_at": "2026-03-25T01:03:30.864109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -318,7 +318,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.755203",
+    "extracted_at": "2026-03-25T01:03:30.864109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -429,16 +429,17 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十四章 近朱者赤 · 崔瀺与陈平安在龙泉剧情推进",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "崔瀺",
-          "陈平安"
+          "李二",
+          "陈平安",
+          "崔瀺"
         ],
         "description": "这还没说几个字，崔瀺就杀心四起，只想着干脆一巴掌拍死那青衣小童，来个眼不见心不烦，毕竟按照龙泉县城的谋划，能够与那条老蛟搭上关系，就已经足够，眼前这火蟒水蛇，道行不高，化蛟都未完成，远远比不得大水府的寒食江水神，说到底它们的捕获，不过是锦上添花的小添头而已，一开始是如今方寸物里的宝库打开不了，就想着给“自家先生”降伏两个小家伙，哪怕没大用，以后养在身边，帮忙看护山头，加上骊珠洞天的特殊出身，勉强可行。 所以他崔瀺还真不在乎它们的死活，如今先生已经是先生，学生已经是学生，崔瀺无比清楚陈平安的性格，真是茅坑里的石头，又臭又硬，不认可自己，就是给他一万条火蟒水蛇都没用，如今认可了自己，没了两个无足轻重的小家伙，根本不碍事。 想到这里，崔瀺有些百感交集，跟陈平安打交道，说累那是真的心累，感觉比搬动五岳还吃力，但是当自己跨过谋道无形的门槛后，就又有一种很奇怪的感觉，竟然能会让大骊国师如此老谋深算的人，生出一些……心安。",
         "background": "",
-        "significance": "在龙泉推动崔瀺与陈平安之间的剧情推进线。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十四章 近朱者赤 · 段4",
         "sentence_indexes_in_segment": [
@@ -454,7 +455,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.755203",
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -538,7 +539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.756206",
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -654,7 +655,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.756206",
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -708,7 +709,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十四章 近朱者赤 · 陈平安与崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百六十四章 近朱者赤 · 陈平安与崔瀺归属",
         "time": null,
         "location": null,
         "participants": [
@@ -717,8 +718,10 @@
         ],
         "description": "粉裙女孩眼前一亮，对着陈平安弯腰拜了一拜，满脸喜气，“奴婢愿意追随先生。 陈平安揉了揉额头，瞥了眼崔瀺，难道是物以类聚？ ”",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔瀺之间的归属关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十四章 近朱者赤 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -732,8 +735,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.756206",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "归属",
+        "context": "” 粉裙女孩眼前一亮，对着陈平安弯腰拜了一拜，满脸喜气，“奴婢愿意追随先生。 ” 青衣小童更加干脆利落，扑通一声，跪下磕头，砰砰作响，“老爷，缺不缺暖被窝的美妇丫鬟啊，我认识好些，便是修行中人都不乏其人，只要老爷点个头，我这就给老爷掳抢……哦不，是给老爷用八抬大轿请过来。 ” 陈平安揉了揉额头，瞥了眼崔瀺，难道是物以类聚？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十四章 近朱者赤 · 陈平安与崔瀺归属",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 164,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -826,18 +855,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十四章 近朱者赤 · 陈平安与李槐剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "李槐",
+          "李宝瓶",
           "林守一",
-          "崔瀺"
+          "李槐",
+          "于禄"
         ],
         "description": "反观自己身边，宝瓶，李槐和林守一，都很正经。 被老秀才斩断神魂联系之后，崔瀺如今虽然是少年皮囊，而且少年心性居多，但是眼界、眼光、城府都还在，对于陈平安的心思，通过这一瞥，崔瀺便猜了个七七八八，有些无奈，李宝瓶这些孩子哪里就正常了？ 退一万步说，你陈平安就正常？",
         "background": "",
-        "significance": "推动陈平安与李槐之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十四章 近朱者赤 · 段8",
         "sentence_indexes_in_segment": [
@@ -853,7 +882,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.756206",
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -960,7 +989,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1116,7 +1145,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.865113",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1211,7 +1240,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.866117",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1276,7 +1305,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.866117",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1384,7 +1413,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.866117",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1470,7 +1499,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.866117",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1535,7 +1564,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.866117",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1637,7 +1666,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.866117",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1720,7 +1749,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1802,7 +1831,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1903,7 +1932,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.757209",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1968,7 +1997,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.758213",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2032,7 +2061,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.758213",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2097,7 +2126,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.758213",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2177,7 +2206,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.758213",
+    "extracted_at": "2026-03-25T01:03:30.867120",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2239,7 +2268,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.758213",
+    "extracted_at": "2026-03-25T01:03:30.868123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2300,7 +2329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.758213",
+    "extracted_at": "2026-03-25T01:03:30.868123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

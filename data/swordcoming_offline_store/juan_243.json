@@ -72,7 +72,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -106,21 +106,38 @@
         ],
         "juan_index": 243,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "这当然不是老管事被江湖义气四个字，冲昏了头脑，半点不晓得交浅言深的忌讳，而是宋老剑圣私底下叮嘱过他，对待三人，尤其是背剑少年陈平安，可以当做他宋雨烧的忘年好友对待，山庄不用有任何提防。 这是宋雨烧老一辈人推崇的江湖道义，楚老管事追随梳水国剑圣已经一甲子光阴，为山庄出生入死，荣辱与共，未尝不是被宋雨烧的这份江湖气所感染，才能如此兢兢业业，无怨无悔。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 243,
+        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧归属",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "这当然不是老管事被江湖义气四个字，冲昏了头脑，半点不晓得交浅言深的忌讳，而是宋老剑圣私底下叮嘱过他，对待三人，尤其是背剑少年陈平安，可以当做他宋雨烧的忘年好友对待，山庄不用有任何提防。 在张山峰的屋内，三人吃过一顿满是山珍野味的丰盛晚餐，陈平安就要去往瀑布练拳，突然被张山峰喊住，让陈平安等会儿，大髯汉子一条腿踩在长凳上，用竹签剔牙缝，问张山峰要不要避讳什么，年轻道士一边跑去打开行囊，一边说不用。 老管事说有的，因为少庄主宋凤山在原本佩剑损毁后，就曾亲自去过一趟渡口，带回来了那把如今时刻悬挂腰间的短剑。",
+        "description": "这当然不是老管事被江湖义气四个字，冲昏了头脑，半点不晓得交浅言深的忌讳，而是宋老剑圣私底下叮嘱过他，对待三人，尤其是背剑少年陈平安，可以当做他宋雨烧的忘年好友对待，山庄不用有任何提防。 这是宋雨烧老一辈人推崇的江湖道义，楚老管事追随梳水国剑圣已经一甲子光阴，为山庄出生入死，荣辱与共，未尝不是被宋雨烧的这份江湖气所感染，才能如此兢兢业业，无怨无悔。 在张山峰的屋内，三人吃过一顿满是山珍野味的丰盛晚餐，陈平安就要去往瀑布练拳，突然被张山峰喊住，让陈平安等会儿，大髯汉子一条腿踩在长凳上，用竹签剔牙缝，问张山峰要不要避讳什么，年轻道士一边跑去打开行囊，一边说不用。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的归属关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -134,8 +151,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "归属",
+        "context": "老管事说有的，因为少庄主宋凤山在原本佩剑损毁后，就曾亲自去过一趟渡口，带回来了那把如今时刻悬挂腰间的短剑。 老管事可谓知无不言言无不尽，不但泄露了这些梳水国内幕，甚至连宋凤山为了购买那把名为“沧水”的仙家神兵，耗费掉九百枚山上雪花钱，几乎是山庄半数的金银积蓄了，竹筒倒豆子，将这些密事一并说给了三人听。 这当然不是老管事被江湖义气四个字，冲昏了头脑，半点不晓得交浅言深的忌讳，而是宋老剑圣私底下叮嘱过他，对待三人，尤其是背剑少年陈平安，可以当做他宋雨烧的忘年好友对待，山庄不用有任何提防。 一诺千金，生死相交，朋友二字重若山岳。 这是宋雨烧老一辈人推崇的江湖道义，楚老管事追随梳水国剑圣已经一甲子光阴，为山庄出生入死，荣辱与共，未尝不是被宋雨烧的这份江湖气所感染，才能如此兢兢业业，无怨无悔。 在张山峰的屋内，三人吃过一顿满是山珍野味的丰盛晚餐，陈平安就要去往瀑布练拳，突然被张山峰喊住，让陈平安等会儿，大髯汉子一条腿踩在长凳上，用竹签剔牙缝，问张山峰要不要避讳什么，年轻道士一边跑去打开行囊，一边说不用。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧归属",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +241,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.220432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -260,7 +303,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -323,7 +366,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -386,7 +429,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.980085",
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -464,7 +507,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.981088",
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -527,7 +570,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.981088",
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -590,7 +633,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.981088",
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -653,7 +696,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.981088",
+    "extracted_at": "2026-03-25T01:03:31.221436",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "243-11-0": {
+    "juan_index": 243,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹",
+    "source_sentences": [
+      "你小子该不会真是喜欢男人吧？",
+      "”",
+      "————",
+      "在剑水山庄大堂主厅，推杯换盏，宾主尽欢，酒香醉人。",
+      "大堂铺有大幅的彩色地毯，是出自彩衣国织女郡的独有“地衣”。",
+      "老庄主宋雨烧仍是不愿露面迎客，少庄主宋凤山就坐在了主位上，身边是他那位操持山庄内外事务的贤惠妻子，年轻妇人虽然持家有道，但是分寸拿捏极好，待人接物，滴水不漏不说，而且从不会遮掩丈夫的半点光彩，以至于哪怕宋凤山常年闭关悟剑，可这位小剑仙在梳水国江湖上的名声，却越来越大，最后大到了能够召开武林大会的地步。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "老庄主宋雨烧仍是不愿露面迎客，少庄主宋凤山就坐在了主位上，身边是他那位操持山庄内外事务的贤惠妻子，年轻妇人虽然持家有道，但是分寸拿捏极好，待人接物，滴水不漏不说，而且从不会遮掩丈夫的半点光彩，以至于哪怕宋凤山常年闭关悟剑，可这位小剑仙在梳水国江湖上的名声，却越来越大，最后大到了能够召开武林大会的地步。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 宋雨烧剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "老庄主宋雨烧仍是不愿露面迎客，少庄主宋凤山就坐在了主位上，身边是他那位操持山庄内外事务的贤惠妻子，年轻妇人虽然持家有道，但是分寸拿捏极好，待人接物，滴水不漏不说，而且从不会遮掩丈夫的半点光彩，以至于哪怕宋凤山常年闭关悟剑，可这位小剑仙在梳水国江湖上的名声，却越来越大，最后大到了能够召开武林大会的地步。 你小子该不会真是喜欢男人吧？ ”",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.221436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -676,6 +781,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "而老剑圣宋雨烧直言不讳，他此生无望武神境界。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "如果陈平安知道这些，可能又要瞠目结舌了。 毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
@@ -683,6 +801,45 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 243,
@@ -712,6 +869,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "朱河",
+          "宋长镜",
+          "李二",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -723,16 +883,23 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安在宝瓶洲指点",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "宝瓶洲",
+        "location": "龙泉",
         "participants": [
-          "陈平安"
+          "李二",
+          "陈平安",
+          "朱河",
+          "宋长镜"
         ],
-        "description": "对于梳水国这一带的宝瓶洲中部而言，武道六境，就是纯粹武夫的极致，再往上，数百年来，早已无人知晓那个境界的风光，可算是世间无敌的“大武神”了。 如果陈平安知道这些，可能又要瞠目结舌了。 毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "description": "对于梳水国这一带的宝瓶洲中部而言，武道六境，就是纯粹武夫的极致，再往上，数百年来，早已无人知晓那个境界的风光，可算是世间无敌的“大武神”了。 而老剑圣宋雨烧直言不讳，他此生无望武神境界。 如果陈平安知道这些，可能又要瞠目结舌了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -746,8 +913,69 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.981088",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "指点",
+        "context": "毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "指点",
+        "context": "毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "毕竟同样是骊珠洞天走出来的四境武人朱河，都知道九境才是武道止境，当然，朱河一样不曾窥得武道全貌，事实上，不久之后，宋长镜和李二先后成功跻身十境，而第十一境，才是真正的武道顶点，才是真正名副其实的武神，而传授陈平安“最强三境”的崔姓老人，恰好又与十一境失之交臂。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -856,15 +1084,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安在骊珠洞天剧情推进",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "骊珠洞天",
+        "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安"
         ],
         "description": "陈平安的家乡骊珠洞天，如今的大骊龙泉郡，就属于整座宝瓶洲水最深、山最高、局势最浑的古怪地方。 陈平安其实自己也不知道答案，就像是一点点熬过来的。 水有深浅，山有高低。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段21",
         "sentence_indexes_in_segment": [
@@ -880,7 +1109,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.981088",
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -959,7 +1188,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1000,7 +1229,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安试探",
         "time": null,
         "location": null,
         "participants": [
@@ -1008,7 +1237,7 @@
         ],
         "description": "行走外乡山水间，别惹事，别怕事，然后一切小心为上，保命第一，这就是陈平安的江湖。 陈平安再次踩在临水的栏杆上，刚要借力跃向那条声势惊人的瀑布，想了想，还是向前走出一步，踩在石头台基上，免得由于全力出拳，不小心一脚踩断了木栏杆，哪怕宋前辈肯定不要自己赔钱，可终究不是个事儿。 陈平安深呼吸一口气，鞋底摩挲着地面，手腕轻轻拧转几下。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段23",
         "sentence_indexes_in_segment": [
@@ -1024,7 +1253,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1107,7 +1336,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1163,7 +1392,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与杨老头剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与杨老头冲突",
         "time": null,
         "location": null,
         "participants": [
@@ -1172,8 +1401,10 @@
         ],
         "description": "再次从水面露头，返回水榭外沿站定身形，陈平安这次没有转换那一口迅猛流转的气息，硬憋着这口如火龙巡狩四方的真气，一鼓作气，再次向瀑布递出十分气力气势的一拳。 这次，陈平安的拳头，成功砸在瀑布水帘尽头的冰凉石壁上，但是轻微无力，别说是打出一个坑洼，恐怕连丁点儿痕迹都没能留下。 丹田气海激荡难平的陈平安，只得吐出一口浊气，以杨老头吐纳术缓缓呼吸，十八停剑气流转，熟能生巧，早已成为陈平安的本能，不用刻意驾驭，就能自行流淌，迅猛经过十数座连命名都与当今气府名称不同的窍穴。",
         "background": "",
-        "significance": "推动陈平安与杨老头之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与杨老头之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1187,8 +1418,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "冲突",
+        "context": "再次从水面露头，返回水榭外沿站定身形，陈平安这次没有转换那一口迅猛流转的气息，硬憋着这口如火龙巡狩四方的真气，一鼓作气，再次向瀑布递出十分气力气势的一拳。 这次，陈平安的拳头，成功砸在瀑布水帘尽头的冰凉石壁上，但是轻微无力，别说是打出一个坑洼，恐怕连丁点儿痕迹都没能留下。 月色下。 丹田气海激荡难平的陈平安，只得吐出一口浊气，以杨老头吐纳术缓缓呼吸，十八停剑气流转，熟能生巧，早已成为陈平安的本能，不用刻意驾驭，就能自行流淌，迅猛经过十数座连命名都与当今气府名称不同的窍穴。 先前卡在六七停之间，如今又卡在十二、十三之间，就像被鸿沟阻拦，寸步难前。 陈平安屏气凝神，朝着瀑布第四次出拳。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与杨老头冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.223444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1380,7 +1637,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1444,7 +1701,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1510,7 +1767,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1618,7 +1875,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1685,7 +1942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.982092",
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1748,7 +2005,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,21 +2039,37 @@
         ],
         "juan_index": 243,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "快步走上台阶，相对而坐，一直侧望向瀑布的宋雨烧收回视线，打量着陈平安，点头赞赏道：“有点苗头了，让人叹为观止。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 243,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 宋雨烧与陈平安试探",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
         "description": "陈平安今天临近水榭的时候，发现宋老前辈早早坐在长椅上。 快步走上台阶，相对而坐，一直侧望向瀑布的宋雨烧收回视线，打量着陈平安，点头赞赏道：“有点苗头了，让人叹为观止。 鹅蛋脸少女便打趣伙伴，这位公子虽然模样不如少庄主，可也清清秀秀的，你喜欢不喜欢？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -1810,8 +2083,29 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "试探",
+        "context": "快步走上台阶，相对而坐，一直侧望向瀑布的宋雨烧收回视线，打量着陈平安，点头赞赏道：“有点苗头了，让人叹为观止。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 宋雨烧与陈平安试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 243,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.224447",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1845,21 +2139,38 @@
         ],
         "juan_index": 243,
         "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧问道：“老夫庄子自酿的酒水，滋味是不是要好一些？ 宋雨烧忍俊不禁，“怎么，你都会缺银子？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 34
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安对话",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安咧嘴一笑。 陈平安挠头道：“好喝多了，就是以后买酒的时候，我要头疼。 宋雨烧问道：“老夫庄子自酿的酒水，滋味是不是要好一些？",
+        "description": "陈平安咧嘴一笑。 宋雨烧问道：“老夫庄子自酿的酒水，滋味是不是要好一些？ 陈平安挠头道：“好喝多了，就是以后买酒的时候，我要头疼。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -1873,8 +2184,34 @@
         "segment_index": 34
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "对话",
+        "context": "陈平安咧嘴一笑。 宋雨烧问道：“老夫庄子自酿的酒水，滋味是不是要好一些？ ” 陈平安挠头道：“好喝多了，就是以后买酒的时候，我要头疼。 ” 宋雨烧忍俊不禁，“怎么，你都会缺银子？",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 34
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1908,21 +2245,37 @@
         ],
         "juan_index": 243,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧调侃道：“你又不是个嫁了人的娘们，大老爷们有钱喝酒，喝最好的酒，天经地义，还讲啥持家有道？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 243,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧讥讽",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安想了想，实诚道：“如今不缺钱，但是喝酒这种事情，好像无益于练拳，我就会觉得花这个钱，是冤枉钱，只是喝着喝着就喝习惯了，如果身边酒壶里没了酒，一定会空落落的。 陈平安使劲摇头道：“花钱还是要省着点，如今喝酒成习惯了，没办法改，可如果再养成大手大脚的习惯，我得悔死。 ”",
+        "description": "陈平安想了想，实诚道：“如今不缺钱，但是喝酒这种事情，好像无益于练拳，我就会觉得花这个钱，是冤枉钱，只是喝着喝着就喝习惯了，如果身边酒壶里没了酒，一定会空落落的。 宋雨烧调侃道：“你又不是个嫁了人的娘们，大老爷们有钱喝酒，喝最好的酒，天经地义，还讲啥持家有道？ 陈平安使劲摇头道：“花钱还是要省着点，如今喝酒成习惯了，没办法改，可如果再养成大手大脚的习惯，我得悔死。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -1936,8 +2289,34 @@
         "segment_index": 35
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "讥讽",
+        "context": "” 陈平安想了想，实诚道：“如今不缺钱，但是喝酒这种事情，好像无益于练拳，我就会觉得花这个钱，是冤枉钱，只是喝着喝着就喝习惯了，如果身边酒壶里没了酒，一定会空落落的。 ” 宋雨烧调侃道：“你又不是个嫁了人的娘们，大老爷们有钱喝酒，喝最好的酒，天经地义，还讲啥持家有道？ ” 陈平安使劲摇头道：“花钱还是要省着点，如今喝酒成习惯了，没办法改，可如果再养成大手大脚的习惯，我得悔死。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 35
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1960,6 +2339,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧伸手指点了点少年，“一辈子当不了享福的富贵汉。 宋雨烧被少年的情绪感染，也有了些笑意，“那谁给你做饭，谁给你买酒？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安灿烂笑道：“顿顿有饭，餐餐有酒，已经很好了。",
@@ -1975,16 +2368,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安对话",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 宋雨烧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
-        "description": "陈平安灿烂笑道：“顿顿有饭，餐餐有酒，已经很好了。 ” 宋雨烧伸手指点了点少年，“一辈子当不了享福的富贵汉。",
+        "description": "宋雨烧伸手指点了点少年，“一辈子当不了享福的富贵汉。 陈平安灿烂笑道：“顿顿有饭，餐餐有酒，已经很好了。 宋雨烧被少年的情绪感染，也有了些笑意，“那谁给你做饭，谁给你买酒？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段36",
         "sentence_indexes_in_segment": [
           0,
@@ -1998,8 +2394,34 @@
         "segment_index": 36
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 宋雨烧伸手指点了点少年，“一辈子当不了享福的富贵汉。 ” 陈平安灿烂笑道：“顿顿有饭，餐餐有酒，已经很好了。 ” 宋雨烧被少年的情绪感染，也有了些笑意，“那谁给你做饭，谁给你买酒？",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 宋雨烧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 36
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2032,20 +2454,34 @@
         ],
         "juan_index": 243,
         "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧呸了一声，瞪眼道：“瓜皮！",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 243,
+        "segment_index": 37
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安脱口而出道：“有了媳妇，也还是我做饭，我买酒！ ” ”",
+        "description": "陈平安脱口而出道：“有了媳妇，也还是我做饭，我买酒！ 宋雨烧呸了一声，瞪眼道：“瓜皮！ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与宋雨烧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段37",
         "sentence_indexes_in_segment": [
@@ -2061,7 +2497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2124,7 +2560,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2158,20 +2594,35 @@
         ],
         "juan_index": 243,
         "segment_index": 39
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧看着神游万里的少年，无奈道：“原来真是个瓜怂撒子。 宋雨烧懒得再给少年灌输江湖好汉要降得住媳妇的念头，收敛神色，肃穆道：“由三破四，除了武夫体魄身躯的杂质，需要一点一滴被淬炼祛除之外，要开始讲究心境了，拳法，要通明无碍，悟得通透二字精髓，坚定所向披靡之心，生出一夫当关万夫莫开之气势！",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 243,
+        "segment_index": 39
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安傻呵呵直乐。 陈平安，你当真已经坚定本心？ 宋雨烧看着神游万里的少年，无奈道：“原来真是个瓜怂撒子。",
+        "description": "陈平安傻呵呵直乐。 宋雨烧看着神游万里的少年，无奈道：“原来真是个瓜怂撒子。 宋雨烧懒得再给少年灌输江湖好汉要降得住媳妇的念头，收敛神色，肃穆道：“由三破四，除了武夫体魄身躯的杂质，需要一点一滴被淬炼祛除之外，要开始讲究心境了，拳法，要通明无碍，悟得通透二字精髓，坚定所向披靡之心，生出一夫当关万夫莫开之气势！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与宋雨烧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段39",
         "sentence_indexes_in_segment": [
@@ -2187,7 +2638,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2210,6 +2661,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "说到最后，宋雨烧神色凌厉，嗓音极大，几乎是怒目瞪向陈平安。 宋雨烧站起身，浑身气势磅礴无匹，如同一阵如瀑布的剑气压向眼前少年，“好大的口气，说得如此轻巧！",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 243,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "说到最后，宋雨烧神色凌厉，嗓音极大，几乎是怒目瞪向陈平安。 陈平安人与心，岿然不动，点头道：“我认定的一件事，从来不会改。",
@@ -2227,15 +2692,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "说到最后，宋雨烧神色凌厉，嗓音极大，几乎是怒目瞪向陈平安。 陈平安人与心，岿然不动，点头道：“我认定的一件事，从来不会改。 我看你陈平安根本就不曾真正通透！",
+        "description": "说到最后，宋雨烧神色凌厉，嗓音极大，几乎是怒目瞪向陈平安。 陈平安人与心，岿然不动，点头道：“我认定的一件事，从来不会改。 宋雨烧站起身，浑身气势磅礴无匹，如同一阵如瀑布的剑气压向眼前少年，“好大的口气，说得如此轻巧！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与宋雨烧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段40",
         "sentence_indexes_in_segment": [
@@ -2251,7 +2717,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.225450",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2285,20 +2751,34 @@
         ],
         "juan_index": 243,
         "segment_index": 41
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧骤然怒喝道：“既然如此，此时不出拳，更待何时？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 243,
+        "segment_index": 41
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安紧随其后站起身，眼神明亮，“宋老前辈，其实你说的心境，无碍，通透，这些词汇的真意，我其实都不是很理解，但是我只是觉得……” 陈平安说到这里，转过头，伸手指向那条仙人袖垂剑气似的瀑布，“我一定要一拳打穿整条瀑布，在石壁上打出一个拳印，我甚至觉得迟早有一天，我会一拳打得瀑布倒流，打得大水爆炸，再也不能压下我的脑袋半点！ ”",
+        "description": "陈平安紧随其后站起身，眼神明亮，“宋老前辈，其实你说的心境，无碍，通透，这些词汇的真意，我其实都不是很理解，但是我只是觉得……” 陈平安说到这里，转过头，伸手指向那条仙人袖垂剑气似的瀑布，“我一定要一拳打穿整条瀑布，在石壁上打出一个拳印，我甚至觉得迟早有一天，我会一拳打得瀑布倒流，打得大水爆炸，再也不能压下我的脑袋半点！ 宋雨烧骤然怒喝道：“既然如此，此时不出拳，更待何时？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与宋雨烧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段41",
         "sentence_indexes_in_segment": [
@@ -2314,7 +2794,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.226453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2350,20 +2830,34 @@
         ],
         "juan_index": 243,
         "segment_index": 42
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "哪怕梳水国剑圣宋雨就在水榭，烧陈平安眼中却早已没了宋雨烧，甚至连整座水榭都没有了，天地之间，唯有拳头所向的对手，从天垂落人间的瀑布！",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 243,
+        "segment_index": 42
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安迁移",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
         "description": "几乎是纯粹的本能，陈平安侧过身，面对水榭外的那道瀑布，后撤数步，站在台阶顶部那边，摆出一个崔姓老人从未提及名字的古老拳架，作为起手式，一气呵成。 哪怕梳水国剑圣宋雨就在水榭，烧陈平安眼中却早已没了宋雨烧，甚至连整座水榭都没有了，天地之间，唯有拳头所向的对手，从天垂落人间的瀑布！ 陈平安南下之行，六步走桩都求慢，更慢。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "推动陈平安与宋雨烧之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段42",
         "sentence_indexes_in_segment": [
@@ -2379,7 +2873,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.226453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2442,7 +2936,61 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.983095",
+    "extracted_at": "2026-03-25T01:03:31.226453",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "243-44-0": {
+    "juan_index": 243,
+    "segment_index": 44,
+    "chunk_start_index": 0,
+    "chunk_end_index": 2,
+    "segment_start_time": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹",
+    "source_sentences": [
+      "双手负后站在水榭中的宋雨烧，激荡罡风扑面而来，吹拂双鬓，双袖更是猎猎作响，老人仰头往向那条人力为之的彩虹，畅快大笑道：“壮哉！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "双手负后站在水榭中的宋雨烧，激荡罡风扑面而来，吹拂双鬓，双袖更是猎猎作响，老人仰头往向那条人力为之的彩虹，畅快大笑道：“壮哉！",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 243,
+        "segment_index": 44
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 宋雨烧对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "双手负后站在水榭中的宋雨烧，激荡罡风扑面而来，吹拂双鬓，双袖更是猎猎作响，老人仰头往向那条人力为之的彩虹，畅快大笑道：“壮哉！ ”",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段44",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 243,
+        "segment_index": 44
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.226453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

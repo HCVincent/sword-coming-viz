@@ -33,6 +33,32 @@
       },
       {
         "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "当初与蔡金简、苻南华生死相搏，陈平安其实越是接近他们，就越心如止水。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 81,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "当初与蔡金简、苻南华生死相搏，陈平安其实越是接近他们，就越心如止水。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 81,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "马苦玄",
         "alias": [],
         "original_description_in_book": "唯一一次记忆深刻的紧张，是与杏花巷的同龄人马苦玄，在神仙坟那场势均力敌的交手，陈平安其实当时手心满是汗水。",
@@ -128,7 +154,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.517965",
+    "extracted_at": "2026-03-25T01:03:30.540400",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -269,7 +295,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.517965",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -399,7 +425,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.517965",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -420,6 +446,32 @@
       "这个绰号绣虎的崔瀺，也是如此。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "谈吐见识也好，风雅气度也罢，比起龙尾郡嫡长孙陈松风和老龙城少主苻南华，只好不差。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 81,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "谈吐见识也好，风雅气度也罢，比起龙尾郡嫡长孙陈松风和老龙城少主苻南华，只好不差。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 81,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -498,7 +550,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风",
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -514,8 +569,8 @@
         "participants": [
           "崔瀺",
           "杨老头",
-          "陈平安",
-          "宁姚"
+          "陈松风",
+          "苻南华"
         ],
         "description": "谈吐见识也好，风雅气度也罢，比起龙尾郡嫡长孙陈松风和老龙城少主苻南华，只好不差。 在陈平安印象中，他所认识的所有人当中，其中一小撮人很特别，比如窑头姚老头，常年沉默寡言，偶尔说话多半就是在骂人，但是每次姚老头进山后，整个人的精神气就格外好，会给人一种比青壮男子还体魄雄健的错觉。 又比如杨家药铺的杨老头，很公道，跟你关系再差，也不会对你如何，但是跟你关系再好，也不会故意多给你什么。",
         "background": "",
@@ -535,7 +590,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.517965",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -556,6 +611,32 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "就像是比苻南华蔡金简这拨神仙子弟，更高高在上的存在，陈平安甚至觉得哪怕截江真君在他面前，崔瀺的眼神脸色一样是这么漫不经心。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 81,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "就像是比苻南华蔡金简这拨神仙子弟，更高高在上的存在，陈平安甚至觉得哪怕截江真君在他面前，崔瀺的眼神脸色一样是这么漫不经心。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 81,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -653,7 +734,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.517965",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -773,7 +854,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.517965",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -897,7 +978,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -959,7 +1040,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1022,7 +1103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.541403",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1117,7 +1198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1222,7 +1303,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1315,7 +1396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1393,7 +1474,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1472,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1535,7 +1616,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1650,7 +1731,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1712,7 +1793,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1818,7 +1899,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.518726",
+    "extracted_at": "2026-03-25T01:03:30.542407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1955,7 +2036,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.519730",
+    "extracted_at": "2026-03-25T01:03:30.543410",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2082,7 +2163,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.519730",
+    "extracted_at": "2026-03-25T01:03:30.543410",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2162,7 +2243,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.519730",
+    "extracted_at": "2026-03-25T01:03:30.543410",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2296,7 +2377,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.519730",
+    "extracted_at": "2026-03-25T01:03:30.543410",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2425,7 +2506,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.519730",
+    "extracted_at": "2026-03-25T01:03:30.543410",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2519,7 +2600,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.519730",
+    "extracted_at": "2026-03-25T01:03:30.543410",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

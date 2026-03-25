@@ -16,6 +16,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。 恐怕就只有那位自幼寡言的长眉少年，心境相对安稳，因为谢实大致跟他解释过了外边的世界，并且让少年暂时跟随阮邛铸剑打铁就是，机缘一事，不是跟着自家老祖作威作福就会更好。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
@@ -39,12 +55,16 @@
         "time": null,
         "location": null,
         "participants": [
-          "阮邛"
+          "阮邛",
+          "谢实"
         ],
-        "description": "恐怕就只有那位自幼寡言的长眉少年，心境相对安稳，因为谢实大致跟他解释过了外边的世界，并且让少年暂时跟随阮邛铸剑打铁就是，机缘一事，不是跟着自家老祖作威作福就会更好。 长眉少年心性坚韧，哪怕得知老祖谢实马上就是北边俱芦洲的首位天君，无论修为还是地位，其实都要超出师父阮邛一筹，少年仍是没有流露出丝毫改换门庭的想法，这让谢实在心中微微赞赏，这才是谢家子孙该有的度量。 少年注定不会知晓，若是他这位长眉儿稍稍心志不定，谢实就会放弃栽培他的念头，甚至会主动对阮邛言语一二，免得家门不幸，遗祸绵延。",
+        "description": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。 恐怕就只有那位自幼寡言的长眉少年，心境相对安稳，因为谢实大致跟他解释过了外边的世界，并且让少年暂时跟随阮邛铸剑打铁就是，机缘一事，不是跟着自家老祖作威作福就会更好。 长眉少年心性坚韧，哪怕得知老祖谢实马上就是北边俱芦洲的首位天君，无论修为还是地位，其实都要超出师父阮邛一筹，少年仍是没有流露出丝毫改换门庭的想法，这让谢实在心中微微赞赏，这才是谢家子孙该有的度量。",
         "background": "",
         "significance": "对应龙泉线的重要山上势力节点。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -58,8 +78,49 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.871893",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "同行",
+        "context": "恐怕就只有那位自幼寡言的长眉少年，心境相对安稳，因为谢实大致跟他解释过了外边的世界，并且让少年暂时跟随阮邛铸剑打铁就是，机缘一事，不是跟着自家老祖作威作福就会更好。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "师承",
+        "context": "长眉少年心性坚韧，哪怕得知老祖谢实马上就是北边俱芦洲的首位天君，无论修为还是地位，其实都要超出师父阮邛一筹，少年仍是没有流露出丝毫改换门庭的想法，这让谢实在心中微微赞赏，这才是谢家子孙该有的度量。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.030202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -79,7 +140,22 @@
       "所以老话又有天无绝人之路的说法。",
       "当然，谢实的地位崇高，眼光自然高远，其实以长眉少年的资质天赋，在宝瓶洲的仙家门派当中，都会是极为抢手的修道胚子，什么都不管，肯定先收了做弟子再说，山门里头每多出一位中五境神仙，无论是用来震慑世俗王朝的帝王将相，还是与周边山上“邻里”的微妙关系，都会是极大的助力，哪里会如谢天君这般吹毛求疵。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "只不过大道三千，登山之路并无定数，故而各有各的缘法，天君谢实不喜欢的性情，落在别家圣贤或是旁门左道眼中，就有可能是一块良材璞玉。 当然，谢实的地位崇高，眼光自然高远，其实以长眉少年的资质天赋，在宝瓶洲的仙家门派当中，都会是极为抢手的修道胚子，什么都不管，肯定先收了做弟子再说，山门里头每多出一位中五境神仙，无论是用来震慑世俗王朝的帝王将相，还是与周边山上“邻里”的微妙关系，都会是极大的助力，哪里会如谢天君这般吹毛求疵。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -88,7 +164,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -98,13 +176,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "当然，谢实的地位崇高，眼光自然高远，其实以长眉少年的资质天赋，在宝瓶洲的仙家门派当中，都会是极为抢手的修道胚子，什么都不管，肯定先收了做弟子再说，山门里头每多出一位中五境神仙，无论是用来震慑世俗王朝的帝王将相，还是与周边山上“邻里”的微妙关系，都会是极大的助力，哪里会如谢天君这般吹毛求疵。 山上仙师收取弟子，尤其是道教的陆地神仙，极其重视修心，往往不是几年就能敲定的事情，更多是云游四方数十载，才能找到一个能够继承香火的满意弟子。 在这期间，很多仙师都会给予种种考验，富贵，生死，情爱，诸多俗世头等事，皆是修道登天的关隘，是继续待在江河里做杂鱼，还是鲤鱼跳龙门，可能只在一念之间的取舍。",
+        "participants": [
+          "谢实"
+        ],
+        "description": "只不过大道三千，登山之路并无定数，故而各有各的缘法，天君谢实不喜欢的性情，落在别家圣贤或是旁门左道眼中，就有可能是一块良材璞玉。 当然，谢实的地位崇高，眼光自然高远，其实以长眉少年的资质天赋，在宝瓶洲的仙家门派当中，都会是极为抢手的修道胚子，什么都不管，肯定先收了做弟子再说，山门里头每多出一位中五境神仙，无论是用来震慑世俗王朝的帝王将相，还是与周边山上“邻里”的微妙关系，都会是极大的助力，哪里会如谢天君这般吹毛求疵。 山上仙师收取弟子，尤其是道教的陆地神仙，极其重视修心，往往不是几年就能敲定的事情，更多是云游四方数十载，才能找到一个能够继承香火的满意弟子。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段2",
         "sentence_indexes_in_segment": [
@@ -120,7 +200,132 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.871893",
+    "extracted_at": "2026-03-25T01:03:31.030202",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-3-0": {
+    "juan_index": 201,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "谢实缓缓喝着酒，面有愁容。",
+      "“老祖宗，有心事吗？",
+      "”长眉少年坐在桌对面，一对品相极高的香火小人，眼见着没有外人在家，便从大堂匾额跃下，在少年肩头、脑袋上追逐打闹，欢快嬉戏。",
+      "长眉少年对此早已习以为常。",
+      "谢实喝着闷酒，“问心有愧罢了。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实缓缓喝着酒，面有愁容。 谢实喝着闷酒，“问心有愧罢了。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实缓缓喝着酒，面有愁容。 谢实喝着闷酒，“问心有愧罢了。 “老祖宗，有心事吗？",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.030202",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-4-0": {
+    "juan_index": 201,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "长眉少年错愕道：“老祖宗这么厉害，还需要做违心的事情？",
+      "”",
+      "谢实笑了笑，“你以后一样会如此不爽快，用不着大惊小怪。",
+      "你的性子，憨直多于灵动，学剑挺好的，道家修清净，听上去是一潭死水的性子，其实不然，最是需要扪心自问，条条道道，并不轻松。",
+      "”",
+      "谢家长眉儿点点头。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实笑了笑，“你以后一样会如此不爽快，用不着大惊小怪。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实笑了笑，“你以后一样会如此不爽快，用不着大惊小怪。 长眉少年错愕道：“老祖宗这么厉害，还需要做违心的事情？ ”",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.030202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -140,7 +345,23 @@
       "谢实闭目养神，呼吸绵绵，坐忘神游。",
       "曹曦离开桃叶巷后，随便溜达起来，行走在大街小巷，笑眯眯的富家翁，外人不知他的显赫身份，曹曦倒是跟谁都能唠嗑几句。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实看着略显稚嫩的脸庞，心中喟叹。 谢实挥挥手，示意少年可以离开。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "桃叶巷",
@@ -159,13 +380,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 桃叶巷迁移",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实在桃叶巷迁移",
         "time": null,
         "location": "桃叶巷",
-        "participants": [],
-        "description": "曹曦离开桃叶巷后，随便溜达起来，行走在大街小巷，笑眯眯的富家翁，外人不知他的显赫身份，曹曦倒是跟谁都能唠嗑几句。 谢实看着略显稚嫩的脸庞，心中喟叹。 乱世将至，群雄逐鹿，注定会精彩纷呈，但同样会多出许多无可奈何的生离死别，山上山下差不离的。",
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实看着略显稚嫩的脸庞，心中喟叹。 谢实挥挥手，示意少年可以离开。 谢实闭目养神，呼吸绵绵，坐忘神游。",
         "background": "",
-        "significance": "对应桃叶巷相关的关键迁移场景。",
+        "significance": "对应谢实在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段5",
         "sentence_indexes_in_segment": [
@@ -181,7 +404,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.871893",
+    "extracted_at": "2026-03-25T01:03:31.030202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -275,7 +498,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.871893",
+    "extracted_at": "2026-03-25T01:03:31.031198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -338,7 +561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.871893",
+    "extracted_at": "2026-03-25T01:03:31.031198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -446,7 +669,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.871893",
+    "extracted_at": "2026-03-25T01:03:31.031198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -509,7 +732,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.872896",
+    "extracted_at": "2026-03-25T01:03:31.031198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -573,7 +796,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.872896",
+    "extracted_at": "2026-03-25T01:03:31.031198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -634,7 +857,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.872896",
+    "extracted_at": "2026-03-25T01:03:31.031198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -695,7 +918,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.872896",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -853,7 +1076,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -955,7 +1178,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1101,7 +1324,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1166,7 +1389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1265,7 +1488,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1330,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.032201",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1413,7 +1636,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.873900",
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1474,7 +1697,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.874903",
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1538,7 +1761,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.874903",
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1576,6 +1799,19 @@
       },
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "道姑正是被陆沉从神诰宗拐骗而来的贺小凉，那个让风雪庙魏晋喝了一壶壶断肠酒的绝情女子。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "马苦玄",
         "alias": [],
         "original_description_in_book": "走的时候，他们没能成功带走马苦玄，她反而多出一块漂亮的蛇胆石，没办法，她的福缘之深厚，一洲瞩目，像是随便走在哪里，好东西都喜欢主动往她身上凑，挡都挡不住。",
@@ -1597,7 +1833,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陆沉"
+          "陆沉",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -1636,19 +1873,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与马苦玄在风雪庙揭示",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与魏晋在风雪庙揭示",
         "time": null,
         "location": "风雪庙",
         "participants": [
           "陆沉",
+          "魏晋",
           "马苦玄"
         ],
         "description": "道姑正是被陆沉从神诰宗拐骗而来的贺小凉，那个让风雪庙魏晋喝了一壶壶断肠酒的绝情女子。 她其实之前也曾以玉女的身份，和金童一起代表宝瓶洲道统来此，取回祖师爷留在骊珠洞天的那件压胜法宝。 走的时候，他们没能成功带走马苦玄，她反而多出一块漂亮的蛇胆石，没办法，她的福缘之深厚，一洲瞩目，像是随便走在哪里，好东西都喜欢主动往她身上凑，挡都挡不住。",
         "background": "",
-        "significance": "在风雪庙推动陆沉与马苦玄之间的揭示线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在风雪庙推动陆沉与魏晋之间的揭示线。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -1662,34 +1898,8 @@
         "segment_index": 30
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陆沉"
-        ],
-        "to_roles": [
-          "马苦玄"
-        ],
-        "action": "同行",
-        "context": "总之这‘一个加一个还是一个，再加一个更是一个’的师兄，从来就比贫道厉害。 ” 道姑正是被陆沉从神诰宗拐骗而来的贺小凉，那个让风雪庙魏晋喝了一壶壶断肠酒的绝情女子。 她其实之前也曾以玉女的身份，和金童一起代表宝瓶洲道统来此，取回祖师爷留在骊珠洞天的那件压胜法宝。 走的时候，他们没能成功带走马苦玄，她反而多出一块漂亮的蛇胆石，没办法，她的福缘之深厚，一洲瞩目，像是随便走在哪里，好东西都喜欢主动往她身上凑，挡都挡不住。 道姑犹豫了一下。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与马苦玄在风雪庙揭示",
-        "location": "风雪庙",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 201,
-        "segment_index": 30
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.874903",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1789,7 +1999,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.875907",
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1809,7 +2019,35 @@
       "我谢实可以死在龙泉县，但是你大骊得先掂量一下后果。",
       "当时李二在大隋皇宫，亦是同理。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实为何胆敢单枪匹马来到小镇，便是这个道理。 我谢实可以死在龙泉县，但是你大骊得先掂量一下后果。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "当时李二在大隋皇宫，亦是同理。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 32
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -1818,7 +2056,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1835,7 +2075,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1851,7 +2093,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1861,16 +2105,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "小镇",
+        "location": "龙泉",
         "participants": [
-          "阿良",
-          "陈平安"
+          "李二",
+          "陈平安",
+          "谢实"
         ],
-        "description": "谢实为何胆敢单枪匹马来到小镇，便是这个道理。 我谢实可以死在龙泉县，但是你大骊得先掂量一下后果。 打赢一个上五境，与打死一个上五境，是天壤之别。",
+        "description": "谢实为何胆敢单枪匹马来到小镇，便是这个道理。 我谢实可以死在龙泉县，但是你大骊得先掂量一下后果。 当时李二在大隋皇宫，亦是同理。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段32",
         "sentence_indexes_in_segment": [
@@ -1886,7 +2131,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.875907",
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2015,7 +2260,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.875907",
+    "extracted_at": "2026-03-25T01:03:31.033205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2035,7 +2280,21 @@
       "说到这里，年轻道人突然转头望向身后的贺小凉，笑问道：“凡俗夫子的心心念念，你听得见吗？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "“说来奇妙，同样是一个小镇走出去的人，同时回到家乡，谢实做了一辈子好神仙，却要去做一件亏心事。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 35
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -2044,7 +2303,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -2059,7 +2320,8 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "“说来奇妙，同样是一个小镇走出去的人，同时回到家乡，谢实做了一辈子好神仙，却要去做一件亏心事。 ” 曹曦做了一辈子王八蛋，却做了一件厚道事。",
         "background": "",
@@ -2079,7 +2341,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.875907",
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2114,6 +2376,19 @@
         ],
         "juan_index": 201,
         "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "类似李希圣当时在入山途中，直呼白泽二字，立即就能够让那位远在宝瓶洲西海之滨的白老爷听见，而身边学生崔赐恐怕张开嘴，破口大骂一百遍，白老爷都听不到，或者说听见了也不在意。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 38
       }
     ],
     "locations": [
@@ -2124,7 +2399,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -2134,16 +2411,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉在宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与李希圣在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陆沉"
+          "陆沉",
+          "李希圣"
         ],
         "description": "陆沉有些失落，又不想说话了。 类似李希圣当时在入山途中，直呼白泽二字，立即就能够让那位远在宝瓶洲西海之滨的白老爷听见，而身边学生崔赐恐怕张开嘴，破口大骂一百遍，白老爷都听不到，或者说听见了也不在意。 ”",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动陆沉与李希圣之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段38",
         "sentence_indexes_in_segment": [
           0,
@@ -2157,8 +2437,34 @@
         "segment_index": 38
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.875907",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "” 贺小凉可不会溜须拍马，“我觉得是小师叔道法高深的关系。 ” 陆沉有些失落，又不想说话了。 类似李希圣当时在入山途中，直呼白泽二字，立即就能够让那位远在宝瓶洲西海之滨的白老爷听见，而身边学生崔赐恐怕张开嘴，破口大骂一百遍，白老爷都听不到，或者说听见了也不在意。 当然，万一他一个较真，隔着十万八千里，崔赐必然会“无缘无故”暴毙当场。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与李希圣在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 38
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2258,7 +2564,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.876910",
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2338,7 +2644,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.876910",
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2448,7 +2754,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.876910",
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2548,7 +2854,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.876910",
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2632,7 +2938,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.876910",
+    "extracted_at": "2026-03-25T01:03:31.034208",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2696,7 +3002,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.876910",
+    "extracted_at": "2026-03-25T01:03:31.035212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

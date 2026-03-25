@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.788815",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -186,7 +186,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.788815",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -264,7 +264,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.789818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -458,7 +458,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "extracted_at": "2026-03-25T01:03:30.789818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -522,6 +522,19 @@
         ],
         "juan_index": 146,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安看阴神对待崔姓少年的态度，从头到尾，疏离而平静，最少没有把白衣少年当做敌人，陈平安就放心了一些，觉得崔东山也好，棋士绣虎也罢，不管贪图自己什么，终究是“两人之间的捉对厮杀”，哪怕自己“下棋”输了，大不了祭出剑气，来个玉石俱焚，一缕不够，就再来一缕，万一两缕剑气用光，都杀不掉白衣少年，那陈平安就只能听天由命。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 146,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -570,12 +583,14 @@
         "participants": [
           "宁姚",
           "陈平安",
-          "李宝瓶"
+          "崔东山"
         ],
         "description": "因为眉心有痣的少年，之前在牌坊楼下自报姓名的时候，少年说了两字姓名，少年自己还说第二字很晦涩生僻，所以陈平安从头到尾只确定了一个崔字。 后来陈平安想起一件事，宁姚姑娘曾经无意间说起过，大骊有一个绰号绣虎的家伙，下棋很厉害，是唯一能够让大隋国手视为大敌的人物。 陈平安问过李宝瓶三人，可曾听说过“绣虎”，三个跟他一样在小镇长大的孩子，俱是摇头不知。",
         "background": "",
         "significance": "引入陈平安后续最关键的人物关系线。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十六章 靠山和帮手 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -589,8 +604,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.700002",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "冲突",
+        "context": "陈平安看阴神对待崔姓少年的态度，从头到尾，疏离而平静，最少没有把白衣少年当做敌人，陈平安就放心了一些，觉得崔东山也好，棋士绣虎也罢，不管贪图自己什么，终究是“两人之间的捉对厮杀”，哪怕自己“下棋”输了，大不了祭出剑气，来个玉石俱焚，一缕不够，就再来一缕，万一两缕剑气用光，都杀不掉白衣少年，那陈平安就只能听天由命。",
+        "result": null,
+        "event_name": "宁姚坠入小镇",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 146,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.789818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -721,7 +757,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.701005",
+    "extracted_at": "2026-03-25T01:03:30.789818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -821,18 +857,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安在小镇，就已经亲身经历过修行之人的冷酷无情。 陈平安实在无法想象，一旦可爱的李宝瓶、胆小的李槐和聪明的林守一，死在自己眼前身边，而自己又无能为力，到时候自己心中会有多少悔恨？ 陈平安下棋的水平，下得又慢又不灵气，自认给林守一提鞋都不配。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十六章 靠山和帮手 · 段7",
         "sentence_indexes_in_segment": [
@@ -848,7 +884,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.701005",
+    "extracted_at": "2026-03-25T01:03:30.789818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -955,7 +991,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.701005",
+    "extracted_at": "2026-03-25T01:03:30.789818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1032,7 +1068,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.701005",
+    "extracted_at": "2026-03-25T01:03:30.790821",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -95,7 +95,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.323309",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -131,6 +131,19 @@
         ],
         "juan_index": 22,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "齐静春转瞬之间来到巷弄，他先去看了倒在血泊中的女子，云霞山的蔡金简，三魂七魄晃荡消散，如风中残烛。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 22,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -156,7 +169,8 @@
         "location": "老龙城",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "description": "齐静春转瞬之间来到巷弄，他先去看了倒在血泊中的女子，云霞山的蔡金简，三魂七魄晃荡消散，如风中残烛。 齐静春停留片刻之后，他终于来到两人身旁。 高冠大袖的老龙城少城主，身体有些后倾，目瞪口呆，肌肤如玉的英俊脸庞上，神色复杂，交织着震惊、疑惑和绝望。",
         "background": "",
@@ -176,7 +190,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.323309",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -312,7 +326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.323309",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -350,6 +364,34 @@
         ],
         "juan_index": 22,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "齐静春微微讶异，上前一步，定睛望去，轻轻点头，原来气势如虹的贫寒少年，对于这次扑杀看似势在必得，不杀苻南华决不罢休，但其实按照目前的姿态来看，最后少年只是手腕重重砸在苻南华脖子上，比起蔡金简的下场，要好太多了。 苻南华应该是被重重一击，整个人横着摔向墙壁，然后被少年一手掐住脖子，一手以瓷片抵住腹部。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 22,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "齐静春微微讶异，上前一步，定睛望去，轻轻点头，原来气势如虹的贫寒少年，对于这次扑杀看似势在必得，不杀苻南华决不罢休，但其实按照目前的姿态来看，最后少年只是手腕重重砸在苻南华脖子上，比起蔡金简的下场，要好太多了。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 22,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -360,7 +402,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -370,16 +414,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "齐静春",
-          "陈平安"
+          "蔡金简"
         ],
-        "description": "久而久之，齐静春如同高高在上的神像，既不享受香火，也不承人情，只是袖手端坐，对世事不闻不问。 齐静春微微讶异，上前一步，定睛望去，轻轻点头，原来气势如虹的贫寒少年，对于这次扑杀看似势在必得，不杀苻南华决不罢休，但其实按照目前的姿态来看，最后少年只是手腕重重砸在苻南华脖子上，比起蔡金简的下场，要好太多了。 齐静春有些好奇，为何少年这次没有痛下杀手，大好机会，稍纵即逝，后患无穷。",
+        "description": "久而久之，齐静春如同高高在上的神像，既不享受香火，也不承人情，只是袖手端坐，对世事不闻不问。 齐静春微微讶异，上前一步，定睛望去，轻轻点头，原来气势如虹的贫寒少年，对于这次扑杀看似势在必得，不杀苻南华决不罢休，但其实按照目前的姿态来看，最后少年只是手腕重重砸在苻南华脖子上，比起蔡金简的下场，要好太多了。 苻南华应该是被重重一击，整个人横着摔向墙壁，然后被少年一手掐住脖子，一手以瓷片抵住腹部。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十二章 止境 · 段4",
         "sentence_indexes_in_segment": [
@@ -395,7 +441,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.323309",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -496,7 +542,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.324313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -516,7 +562,25 @@
       "苻南华很难想象，比自己矮一个头的瘦弱少年，为何五指力道如此巨大，尤其是腹部瓷片的锋利和冰冷，让老龙城少城主再次感受到死亡的逼近，一线之隔，就是阴阳之隔。",
       "苻南华当然不会知道，一个年幼时分就需要漫山遍野去寻找草药的稚童，因为某个比自己求生更强烈的执念，所迸发出来的无穷潜力，是何等惊人。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "少年手腕“终于”重重砸在苻南华脖子上，后者脑袋一晃，横摔向小巷墙壁，被巨大的劲道摔得七荤八素，落地后的少年，迅猛贴身靠近，一记肘击轰在苻南华腹部。 苻南华并未站直背靠墙壁，少年肘击打得他几乎吐出苦水来，身体本能弯曲起来。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 22,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -525,7 +589,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -535,13 +601,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十二章 止境 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "苻南华很难想象，比自己矮一个头的瘦弱少年，为何五指力道如此巨大，尤其是腹部瓷片的锋利和冰冷，让老龙城少城主再次感受到死亡的逼近，一线之隔，就是阴阳之隔。 之前止境，悄然破碎。 少年手腕“终于”重重砸在苻南华脖子上，后者脑袋一晃，横摔向小巷墙壁，被巨大的劲道摔得七荤八素，落地后的少年，迅猛贴身靠近，一记肘击轰在苻南华腹部。",
+        "participants": [
+          "谢谢",
+          "苻南华"
+        ],
+        "description": "少年手腕“终于”重重砸在苻南华脖子上，后者脑袋一晃，横摔向小巷墙壁，被巨大的劲道摔得七荤八素，落地后的少年，迅猛贴身靠近，一记肘击轰在苻南华腹部。 苻南华并未站直背靠墙壁，少年肘击打得他几乎吐出苦水来，身体本能弯曲起来。 少年一手掐住苻南华脖子，一手瓷片抵住这位高冠公子哥的腹部。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十二章 止境 · 段6",
         "sentence_indexes_in_segment": [
@@ -557,7 +626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.324313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -577,7 +646,22 @@
       "你不杀我，还是难逃一死！",
       "小杂种，总归你是死定了！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "在小镇之外，苻南华随便施展一点仙家术法，就能够肆意碾压一百个、一千个少年，但是选择在小镇内与之生死相向，还真是好运气到了尽头，脚踢到了铁板。 苻南华被剧痛和耻辱双重打击，冲昏了头脑，脸色狰狞道：“你杀了我，你是死路一条！",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 22,
+        "segment_index": 7
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -586,7 +670,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -601,9 +687,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
-        "description": "在小镇之外，苻南华随便施展一点仙家术法，就能够肆意碾压一百个、一千个少年，但是选择在小镇内与之生死相向，还真是好运气到了尽头，脚踢到了铁板。 当那个少年误食草药而在小巷，而绞痛得满地打滚的时候，那种执念，甚至能够让一个原本该在乡塾蒙学的孩子，想着便是爬也爬回家中，要将那竹篓救命草药放回家中。 之后砍柴烧炭、烧瓷拉坯、挖泥尝土等等，没有哪件事情，不需要考验少年的体力和耐力。",
+        "description": "在小镇之外，苻南华随便施展一点仙家术法，就能够肆意碾压一百个、一千个少年，但是选择在小镇内与之生死相向，还真是好运气到了尽头，脚踢到了铁板。 苻南华被剧痛和耻辱双重打击，冲昏了头脑，脸色狰狞道：“你杀了我，你是死路一条！ 当那个少年误食草药而在小巷，而绞痛得满地打滚的时候，那种执念，甚至能够让一个原本该在乡塾蒙学的孩子，想着便是爬也爬回家中，要将那竹篓救命草药放回家中。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -621,7 +708,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.324313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -654,21 +741,37 @@
         ],
         "juan_index": 22,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华狞笑道：“小杂种，也配跟我苻南华讲道理？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 22,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十二章 止境 · 陈平安对话",
+        "name": "第一卷笼中雀 第二十二章 止境 · 陈平安与苻南华对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
-        "description": "陈平安微微仰头，盯着这个满脸癫狂神色的男人，说道：“你知道，我不想杀你，我跟你无冤无仇，只是你想害我，我才还手的。 ” ”",
+        "description": "陈平安微微仰头，盯着这个满脸癫狂神色的男人，说道：“你知道，我不想杀你，我跟你无冤无仇，只是你想害我，我才还手的。 苻南华狞笑道：“小杂种，也配跟我苻南华讲道理？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与苻南华之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第二十二章 止境 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -682,8 +785,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "” 陈平安微微仰头，盯着这个满脸癫狂神色的男人，说道：“你知道，我不想杀你，我跟你无冤无仇，只是你想害我，我才还手的。 ” 苻南华狞笑道：“小杂种，也配跟我苻南华讲道理？ ！ ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第二十二章 止境 · 陈平安与苻南华对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 22,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.324313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -716,21 +845,37 @@
         ],
         "juan_index": 22,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "当苻南华看到黝黑少年的那双眼眸，他突然冷静下来。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 22,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十二章 止境 · 陈平安对话",
+        "name": "第一卷笼中雀 第二十二章 止境 · 陈平安与苻南华对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
-        "description": "陈平安沉默片刻，问道：“你是不是一定要杀我？ 他竭力加重语气道，“你配吗？ ！",
+        "description": "陈平安沉默片刻，问道：“你是不是一定要杀我？ 当苻南华看到黝黑少年的那双眼眸，他突然冷静下来。 他竭力加重语气道，“你配吗？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与苻南华之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第二十二章 止境 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -744,8 +889,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "他竭力加重语气道，“你配吗？ ！ ” 陈平安沉默片刻，问道：“你是不是一定要杀我？ ” 当苻南华看到黝黑少年的那双眼眸，他突然冷静下来。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第二十二章 止境 · 陈平安与苻南华对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 22,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.324313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -768,6 +939,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "被掐住脖子的苻南华满脸涨红，很快就又变青再转紫，其实少年五指力道并未加重，但是足够让一个青壮男子窒息致死。 苻南华艰难道：“我说我不杀你，你信不信？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 22,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安摇了摇头。",
@@ -783,15 +969,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十二章 止境 · 陈平安剧情推进",
+        "name": "第一卷笼中雀 第二十二章 止境 · 苻南华与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "苻南华",
           "陈平安"
         ],
-        "description": "陈平安摇了摇头。 被掐住脖子的苻南华满脸涨红，很快就又变青再转紫，其实少年五指力道并未加重，但是足够让一个青壮男子窒息致死。 苻南华艰难道：“我说我不杀你，你信不信？",
+        "description": "被掐住脖子的苻南华满脸涨红，很快就又变青再转紫，其实少年五指力道并未加重，但是足够让一个青壮男子窒息致死。 苻南华艰难道：“我说我不杀你，你信不信？ 但是少年几乎同时就加重力道，让苻南华五指微动的一条手臂颓然下垂。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动苻南华与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十二章 止境 · 段10",
         "sentence_indexes_in_segment": [
@@ -807,7 +994,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.324313",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "22-11-0": {
+    "juan_index": 22,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第二十二章 止境",
+    "source_sentences": [
+      "苻南华愈发头晕目眩，虽然心中恨不得一巴掌拍碎这个杂种的头颅，但是表面上仍然尽量和颜悦色，补充了一句，“如果我对天发誓呢？",
+      "我们这种人，是不可以随便发誓的。",
+      "”",
+      "苻南华耍了一个心机，佛家发大宏愿，和修士心头起誓，确实有着极大约束力，但是显而易见，苻南华只说了一半真话，他哪怕发誓，也只会在嘴上信誓旦旦，并非“不立文字、却无异于刻字丹室心壁”的沉重心誓，所以事后遵守与否，只看心情。",
+      "再者，修行之人的心誓，也不是没有破解之法，代价大小而已。",
+      "大体上，代价大小与修士境界高低、发誓内容的轻重，有着绝对关系。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华愈发头晕目眩，虽然心中恨不得一巴掌拍碎这个杂种的头颅，但是表面上仍然尽量和颜悦色，补充了一句，“如果我对天发誓呢？ 苻南华耍了一个心机，佛家发大宏愿，和修士心头起誓，确实有着极大约束力，但是显而易见，苻南华只说了一半真话，他哪怕发誓，也只会在嘴上信誓旦旦，并非“不立文字、却无异于刻字丹室心壁”的沉重心誓，所以事后遵守与否，只看心情。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 22,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第二十二章 止境 · 苻南华剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苻南华"
+        ],
+        "description": "苻南华愈发头晕目眩，虽然心中恨不得一巴掌拍碎这个杂种的头颅，但是表面上仍然尽量和颜悦色，补充了一句，“如果我对天发誓呢？ 苻南华耍了一个心机，佛家发大宏愿，和修士心头起誓，确实有着极大约束力，但是显而易见，苻南华只说了一半真话，他哪怕发誓，也只会在嘴上信誓旦旦，并非“不立文字、却无异于刻字丹室心壁”的沉重心誓，所以事后遵守与否，只看心情。 我们这种人，是不可以随便发誓的。",
+        "background": "",
+        "significance": "对应苻南华在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第二十二章 止境 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 22,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.324313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -827,7 +1077,34 @@
       "那么当这个噩耗传回老龙城，会不会成为全城上下的笑谈？",
       "他甚至都没有机会，伸手去触发腰间玉带的隐秘机关，他腰间所系的白玉腰带，实则是一条地蛟之属的残余精魄，"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "越来越呼吸困难的苻南华，已经失去讨价还价的精气神，没来由有些神情恍惚。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 22,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "跟蔡金简那个可怜虫一般无二，还是死在一个小贱种的手里？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 22,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -846,13 +1123,17 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十二章 止境 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "那么当这个噩耗传回老龙城，会不会成为全城上下的笑谈？ 不料草鞋少年竟然还是摇头。 越来越呼吸困难的苻南华，已经失去讨价还价的精气神，没来由有些神情恍惚。",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "越来越呼吸困难的苻南华，已经失去讨价还价的精气神，没来由有些神情恍惚。 跟蔡金简那个可怜虫一般无二，还是死在一个小贱种的手里？ 那么当这个噩耗传回老龙城，会不会成为全城上下的笑谈？",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十二章 止境 · 段12",
         "sentence_indexes_in_segment": [
@@ -868,7 +1149,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.353289",
+    "extracted_at": "2026-03-25T01:03:30.325316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -889,6 +1170,19 @@
       "后者微笑不语。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "一个天嗓音两人耳畔响起，对于苻南华而言等于是天籁之音，只不过他正好晕厥过去，不确定是不是自己的幻觉。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 22,
+        "segment_index": 13
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -926,9 +1220,10 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
-        "description": "陈平安愕然转头。 结果看到一个满身雪亮、虚无缥缈的齐先生。 “可以了。",
+        "description": "一个天嗓音两人耳畔响起，对于苻南华而言等于是天籁之音，只不过他正好晕厥过去，不确定是不是自己的幻觉。 陈平安愕然转头。 结果看到一个满身雪亮、虚无缥缈的齐先生。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -946,7 +1241,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.354293",
+    "extracted_at": "2026-03-25T01:03:30.325316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1026,7 +1321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.354293",
+    "extracted_at": "2026-03-25T01:03:30.325316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1123,7 +1418,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.354293",
+    "extracted_at": "2026-03-25T01:03:30.325316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

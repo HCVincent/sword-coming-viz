@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.899013",
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -118,7 +118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -171,6 +171,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "而此时此刻，男人没了行走江湖的斗笠，没了银色养剑葫，甚至连竹刀都没有了，当他突兀地出现在陈平安身前，二境的时候，陈平安看不出阿良的深浅，甚至会觉得朱河和阿良都能过过招。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 208,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -194,6 +207,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "崔瀺"
         ],
         "description": "他就是阿良。 这跟当时牵着毛驴腰佩竹刀的那个男人，很不一样，那会儿自称阿良的男人，吊儿郎当，说着不着调的言语，总给人喜欢吹牛、靠不住的无赖感觉。 而此时此刻，男人没了行走江湖的斗笠，没了银色养剑葫，甚至连竹刀都没有了，当他突兀地出现在陈平安身前，二境的时候，陈平安看不出阿良的深浅，甚至会觉得朱河和阿良都能过过招。",
@@ -214,7 +228,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -262,6 +276,19 @@
         ],
         "juan_index": 208,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "阿良站在视野开阔的观景台上，瞧见了春水谢实这一双孪生姐妹，眼睛一亮，立即斜靠栏杆，摆出一个自认潇洒绝伦的姿势，伸手按住额头，然后往上一抹，捋了捋头发，“姑娘，你们好，我叫阿良，我是一名剑客。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 208,
+        "segment_index": 4
       }
     ],
     "locations": [],
@@ -272,14 +299,13 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "能够这么快就再次看到阿良，陈平安笑得……很想喝酒了。 阿良站在视野开阔的观景台上，瞧见了春水谢实这一双孪生姐妹，眼睛一亮，立即斜靠栏杆，摆出一个自认潇洒绝伦的姿势，伸手按住额头，然后往上一抹，捋了捋头发，“姑娘，你们好，我叫阿良，我是一名剑客。 说完这些，少女嗤笑道：“还阿良，怎的，你就是天上掉下来的那个大神仙呀，如果真是，你答不答应收我为徒弟？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百零八章 去也 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -293,34 +319,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阿良"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "能够这么快就再次看到阿良，陈平安笑得……很想喝酒了。 阿良站在视野开阔的观景台上，瞧见了春水谢实这一双孪生姐妹，眼睛一亮，立即斜靠栏杆，摆出一个自认潇洒绝伦的姿势，伸手按住额头，然后往上一抹，捋了捋头发，“姑娘，你们好，我叫阿良，我是一名剑客。 ” 春水性情沉稳，一言不发，妹妹秋实却是泼辣一些的脾气，而且是眼前男人违例在前，名为“秋实”却身材纤细的苗条少女，底气十足，皱着眉头问道：“我不管你是谁，咱们这艘鲲船，除非在云海之中遇见突发状况，否则不允许任何乘客使用术法，更不允许擅自闯入别人房间！ ” 说完这些，少女嗤笑道：“还阿良，怎的，你就是天上掉下来的那个大神仙呀，如果真是，你答不答应收我为徒弟？",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 208,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -424,7 +424,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -526,7 +526,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -664,7 +664,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.065316",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -744,7 +744,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -807,7 +807,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -870,7 +870,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -972,7 +972,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.900017",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1049,7 +1049,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1152,7 +1152,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1230,7 +1230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1336,7 +1336,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.066319",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1450,7 +1450,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.067323",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1555,7 +1555,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.067323",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1649,7 +1649,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.067323",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1754,7 +1754,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.901020",
+    "extracted_at": "2026-03-25T01:03:31.068327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1854,7 +1854,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.068327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1936,7 +1936,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.068327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2029,7 +2029,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.902024",
+    "extracted_at": "2026-03-25T01:03:31.068327",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

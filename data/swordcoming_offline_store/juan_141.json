@@ -42,6 +42,19 @@
       },
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "虽说天色昏暗，其实时辰并不算晚，加上秋芦客栈这栋院子，布置得精巧雅致，李槐东摸摸西捏捏，就没有半点睡意，趁着陈平安雕刻玉簪，孩子干脆搬出那只棋墩山土地爷赠送的木匣，横放在桌上，将彩绘木偶，连同风雪庙剑仙魏晋赠送的五个泥人儿，全部放入其中，再把那本购自红烛镇的《断水大崖》也丢进去。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 141,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "魏檗",
         "alias": [
           "魏山君"
@@ -66,7 +79,8 @@
         "coordinates": null,
         "related_entities": [
           "李槐",
-          "陈平安"
+          "陈平安",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -83,7 +97,8 @@
         "participants": [
           "魏檗",
           "陈平安",
-          "李槐"
+          "李槐",
+          "魏晋"
         ],
         "description": "虽说天色昏暗，其实时辰并不算晚，加上秋芦客栈这栋院子，布置得精巧雅致，李槐东摸摸西捏捏，就没有半点睡意，趁着陈平安雕刻玉簪，孩子干脆搬出那只棋墩山土地爷赠送的木匣，横放在桌上，将彩绘木偶，连同风雪庙剑仙魏晋赠送的五个泥人儿，全部放入其中，再把那本购自红烛镇的《断水大崖》也丢进去。 “搬家”之后，这只由娇黄阴沉木打造的长匣，犹有空闲余地，木匣呈现出红色，棋墩山魏檗说是因为在泥土里埋了无数年，色泽由黄逐渐变红，木头非但没有腐朽，反而生出异香。 （上个星期都在国外旅游，所以更新实在是一塌糊涂。",
         "background": "",
@@ -103,7 +118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.771756",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -168,6 +183,19 @@
         ],
         "juan_index": 141,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "李槐一拍脑袋，记起一事，赶紧伸手探入领口，摸到一处姐姐李柳亲手缝制的口袋，捻出一只油纸袋，朝陈平安晃了晃，咧嘴笑道：“陈平安，知道这是啥吗？",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 141,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -198,7 +226,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "李槐"
+          "李槐",
+          "李柳"
         ],
         "description": "李槐此时把脑袋凑到木匣上，仔细闻了闻，那股清香照旧，未曾减淡，不比在枕头驿拿出来闻的时候差。 李槐开始掰手指，离开家乡小镇，远游求学，一路风餐露宿，他李槐靠着吃苦耐劳，还是小有收获的，除了墙角边那只最珍贵的绿竹小书箱，还有这娇黄木匣和木偶、泥人，其实那本《断水大崖》书里头，还豢养着几只很值钱的蠹鱼，以及被阿良一巴掌拍进书里的那尾青冥鱼，只不过李槐不爱读书，很少翻阅这本花了陈平安将近十两银子的书。 这会儿看着聚精会神在簪子上雕琢文字的陈平安，李槐想到自己花了人家这么多钱，却没有怎么翻书，买书的时候，还信誓旦旦告诉陈平安的，这让孩子有些愧疚，于是从木匣里拿出那本貌似崭新的《断水大崖》，随便翻开一页，开始默念文字，李槐打算让自己的良心好受一些。",
         "background": "",
@@ -206,7 +235,9 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4
         ],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段2",
         "sentence_indexes_in_segment": [
@@ -268,6 +299,46 @@
           "李槐"
         ],
         "to_roles": [
+          "李柳"
+        ],
+        "action": "对话",
+        "context": "李槐一拍脑袋，记起一事，赶紧伸手探入领口，摸到一处姐姐李柳亲手缝制的口袋，捻出一只油纸袋，朝陈平安晃了晃，咧嘴笑道：“陈平安，知道这是啥吗？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 141,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "李槐一拍脑袋，记起一事，赶紧伸手探入领口，摸到一处姐姐李柳亲手缝制的口袋，捻出一只油纸袋，朝陈平安晃了晃，咧嘴笑道：“陈平安，知道这是啥吗？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 141,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李柳"
+        ],
+        "to_roles": [
           "陈平安"
         ],
         "action": "对话",
@@ -283,7 +354,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.771756",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -348,6 +419,19 @@
       },
       {
         "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "李槐满脸得意洋洋，从油纸袋里抽出一张折叠整齐的纸张，解释道：“当初学塾里不断有人离开，最后只剩下我、李宝瓶、林守一、石春嘉和董水井五个，先生在最后一堂课，给了我们一人一张字帖，上头就写了一个齐字，要我们用心临摹，说是功课。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 141,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -365,21 +449,22 @@
     "locations": [],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "齐静春",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐满脸得意洋洋，从油纸袋里抽出一张折叠整齐的纸张，解释道：“当初学塾里不断有人离开，最后只剩下我、李宝瓶、林守一、石春嘉和董水井五个，先生在最后一堂课，给了我们一人一张字帖，上头就写了一个齐字，要我们用心临摹，说是功课。 后来先生也没把原帖收回去，这趟游学，我娘亲觉得先生这个字吧，虽然写得整齐凑合，还不如隔壁家春联上头的大字，来得墨水重、劲道足，可好歹我和齐先生师徒一场，留下来算是当个念想，就让我姐偷偷在衣服里边缝了口袋，装进油纸包。 我后来问李宝瓶和林守一，李宝瓶说早不知道丢在哪里去了，林守一说在家里放好了，怕带出来容易遗失毁坏。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2
         ],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段3",
         "sentence_indexes_in_segment": [
@@ -406,7 +491,7 @@
         "action": "别离",
         "context": "李槐满脸得意洋洋，从油纸袋里抽出一张折叠整齐的纸张，解释道：“当初学塾里不断有人离开，最后只剩下我、李宝瓶、林守一、石春嘉和董水井五个，先生在最后一堂课，给了我们一人一张字帖，上头就写了一个齐字，要我们用心临摹，说是功课。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -426,7 +511,27 @@
         "action": "别离",
         "context": "李槐满脸得意洋洋，从油纸袋里抽出一张折叠整齐的纸张，解释道：“当初学塾里不断有人离开，最后只剩下我、李宝瓶、林守一、石春嘉和董水井五个，先生在最后一堂课，给了我们一人一张字帖，上头就写了一个齐字，要我们用心临摹，说是功课。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 141,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "董水井"
+        ],
+        "action": "别离",
+        "context": "李槐满脸得意洋洋，从油纸袋里抽出一张折叠整齐的纸张，解释道：“当初学塾里不断有人离开，最后只剩下我、李宝瓶、林守一、石春嘉和董水井五个，先生在最后一堂课，给了我们一人一张字帖，上头就写了一个齐字，要我们用心临摹，说是功课。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -436,7 +541,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.771756",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -574,7 +679,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.771756",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -656,18 +761,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 陈平安与李槐揭示",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "李槐",
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "相比于李槐一路走狗屎运的大丰收，林守一其实也不差，一大摞品秩有高有低、材质有优有劣的古老符箓，一部《云上琅琅书》，一副绘有百余种山精鬼怪的《搜山图》，是那位目盲老道人赠送，因为陈平安送给跛脚少年一颗品相极佳的蛇胆石，作为礼尚往来，老道便拿出了这幅自称是师门祖传的宝物，又被陈平安转赠给林守一。 至于李宝瓶，更有名刀祥符和银色养剑葫，东西不多，就两件，但皆是世间修士垂涎三尺的仙家重器。 唯独出力最多的陈平安，好像到头来，反而就只有那颗略显枯萎干瘪的淡金色莲子，如今都不知道它有什么用处，如今更是跟白衣少年欠下了一屁股债。",
         "background": "",
-        "significance": "推动陈平安与李槐之间的揭示关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段5",
         "sentence_indexes_in_segment": [
@@ -683,7 +788,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -749,16 +854,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 李宝瓶与陈平安对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "陈平安"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李槐没来由冒出一句，“好人和老实人就是吃亏，我爹是这样，你也是这样，陈平安，要不然以后你还是别当老好人了，以后多为自己想想，用不着事事忍让别人。 否则你没怎么样，认你做小师叔的李宝瓶就先气死了。 提起李宝瓶，陈平安忍不住笑问道：“宝瓶总欺负你，你怎么从不还手？",
         "background": "",
-        "significance": "推动李宝瓶与陈平安之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -787,7 +894,7 @@
         "action": "对话",
         "context": "提起李宝瓶，陈平安忍不住笑问道：“宝瓶总欺负你，你怎么从不还手？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十一章 百怪 上 · 李宝瓶与陈平安对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -797,7 +904,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -866,17 +973,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与陈平安对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "陈平安",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐一脸天经地义地脱口而出道：“我不敢啊，我又打不过她！ 陈平安哈哈大笑，辛苦雕琢文字的那份疲惫，顿时一扫而空。 李槐看着快乐大笑的陈平安，孩子也跟着开心笑起来，因为印象中陈平安是不太这么笑的，平时的陈平安，不论做什么说什么，总是很收敛拘谨，生怕说错做错什么。",
         "background": "",
-        "significance": "推动李槐与陈平安之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -907,7 +1015,7 @@
         "action": "对话",
         "context": "李槐犹豫了一下，还是打算跟陈平安说一点藏在心底的心里话，脑袋搁在桌面上的孩子，伸了伸脖子，压低嗓音，神秘兮兮问道：“知道我为什么总让着李宝瓶吗？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与陈平安对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -927,7 +1035,7 @@
         "action": "对话",
         "context": "李槐犹豫了一下，还是打算跟陈平安说一点藏在心底的心里话，脑袋搁在桌面上的孩子，伸了伸脖子，压低嗓音，神秘兮兮问道：“知道我为什么总让着李宝瓶吗？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与陈平安对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -947,7 +1055,7 @@
         "action": "对话",
         "context": "李槐犹豫了一下，还是打算跟陈平安说一点藏在心底的心里话，脑袋搁在桌面上的孩子，伸了伸脖子，压低嗓音，神秘兮兮问道：“知道我为什么总让着李宝瓶吗？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与陈平安对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -957,7 +1065,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.688274",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1016,22 +1124,37 @@
         ],
         "juan_index": 141,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "再说了，我又不是林守一和董水井，两个色胚，每次我姐来学堂帮我带东西，那两个家伙眼珠子都瞪得掉地上了。 尤其是董水井，每次找借口去我家玩，我姐不在的时候，就病恹恹的，我姐一回家，董水井就跟打了鸡血似的，恨不得给我家挑满两大水缸的水。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 141,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 陈平安与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "陈平安开玩笑道：“你喜欢她？ 李槐翻了个白眼，“怎么可能，我才这么点年纪！ 再说了，我又不是林守一和董水井，两个色胚，每次我姐来学堂帮我带东西，那两个家伙眼珠子都瞪得掉地上了。",
         "background": "",
-        "significance": "推动陈平安与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段8",
         "sentence_indexes_in_segment": [
@@ -1047,7 +1170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1068,6 +1191,20 @@
       "她虽然会嫌我吵，喜欢有事没事就揍我。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "我娘呢，喜欢董水井一些，觉得人老实，跟我爹一样，我姐呢，估计应该是更喜欢林守一，斯斯文文，更像个读书人嘛。 说过了林守一跟董水井的坏话，李槐脸色黯然地转回正题：“学塾里边，所有人都笑话我爹，说我爹是小镇最窝囊废的男人，是入赘，没出息，成天不务正业吃软饭，更没出息，傻里傻气的，龙生龙凤生凤老鼠儿子会打洞，所以他的儿子，也就是我，读书果然最没用，每次先生考试，我都是垫底。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 141,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "林守一",
@@ -1121,6 +1258,7 @@
         "coordinates": null,
         "related_entities": [
           "林守一",
+          "董水井",
           "李槐"
         ],
         "sentence_indexes_in_segment": [
@@ -1132,18 +1270,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "我娘呢，喜欢董水井一些，觉得人老实，跟我爹一样，我姐呢，估计应该是更喜欢林守一，斯斯文文，更像个读书人嘛。 说过了林守一跟董水井的坏话，李槐脸色黯然地转回正题：“学塾里边，所有人都笑话我爹，说我爹是小镇最窝囊废的男人，是入赘，没出息，成天不务正业吃软饭，更没出息，傻里傻气的，龙生龙凤生凤老鼠儿子会打洞，所以他的儿子，也就是我，读书果然最没用，每次先生考试，我都是垫底。 李槐咧嘴，笑眯起眼，“李宝瓶的家世是学塾最好的，但是连同林守一在内，她跟谁都不一起玩，每天就跟一阵风似的，飞来飞去，永远是最晚一个来上课，下课第一个消失。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -1174,7 +1312,7 @@
         "action": "同行",
         "context": "李槐咧嘴，笑眯起眼，“李宝瓶的家世是学塾最好的，但是连同林守一在内，她跟谁都不一起玩，每天就跟一阵风似的，飞来飞去，永远是最晚一个来上课，下课第一个消失。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1194,7 +1332,7 @@
         "action": "同行",
         "context": "李槐咧嘴，笑眯起眼，“李宝瓶的家世是学塾最好的，但是连同林守一在内，她跟谁都不一起玩，每天就跟一阵风似的，飞来飞去，永远是最晚一个来上课，下课第一个消失。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1214,7 +1352,7 @@
         "action": "同行",
         "context": "李槐咧嘴，笑眯起眼，“李宝瓶的家世是学塾最好的，但是连同林守一在内，她跟谁都不一起玩，每天就跟一阵风似的，飞来飞去，永远是最晚一个来上课，下课第一个消失。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1224,7 +1362,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1289,17 +1427,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 李宝瓶与陈平安剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "陈平安",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "但是她从来不笑话我爹，有次我爹来学塾找我，所有人都嫌弃，只有李宝瓶愿意给我爹带路，还喊他李叔叔，让我爹开心了好多天呢。 每次有人故意当着我面，拿我爹当笑话讲，李宝瓶总会阻止他们，不许他们说我爹的坏话。 陈平安感慨道：“原来是这样啊。",
         "background": "",
-        "significance": "推动李宝瓶与陈平安之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段10",
         "sentence_indexes_in_segment": [
@@ -1315,7 +1454,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1380,17 +1519,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与陈平安对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "陈平安",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "李槐愣住，“没有啊，每次回到家，吃一只香喷喷的肥腻大鸡腿，听我娘亲用鸡毛蒜皮的事情训斥我爹和我姐，我所有的不开心就没啦。 陈平安直接用手指捻了捻灯芯，让灯火更明亮一些，笑道：“你厉害。 李槐疑惑道：“我有什么厉害的？",
         "background": "",
-        "significance": "推动李槐与陈平安之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段11",
         "sentence_indexes_in_segment": [
@@ -1406,7 +1546,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.772759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1483,7 +1623,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1547,16 +1687,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "李槐问道：“那幅《搜山图》你怎么送给林守一？ 陈平安举起一支玉簪子，借着灯光，仔细凝视簪子上的细微纹路，“我怕好东西我拿不住，你们又不是外人，送给你们，我不心疼。 ”",
         "background": "",
-        "significance": "推动李槐与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1585,7 +1727,7 @@
         "action": "对话",
         "context": "李槐问道：“那幅《搜山图》你怎么送给林守一？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十一章 百怪 上 · 李槐与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1595,7 +1737,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1703,7 +1845,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1752,24 +1894,36 @@
         ],
         "juan_index": 141,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "林守一挑了一个不尴尬的话题，“那个崔东山跟我借了一张符箓，就打破客栈的规矩，走出这座凉亭，跳入那口老水井，消失不见了。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 141,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 陈平安与林守一对话",
+        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 林守一与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "林守一",
           "陈平安",
-          "林守一"
+          "崔东山"
         ],
         "description": "陈平安不敢四处乱逛，走向那座凉亭，看到林守一意料之中坐在那边，不敢打搅这位队伍之中最早脱颖而出的山上神仙，远观了一段时间，正要转身离去，就看到林守一站起身，朝他招了招手。 陈平安走入凉亭，相较于走入秋芦客栈之前的俊朗少年，当下的林守一好像多了些飘逸风采。 林守一挑了一个不尴尬的话题，“那个崔东山跟我借了一张符箓，就打破客栈的规矩，走出这座凉亭，跳入那口老水井，消失不见了。",
         "background": "",
-        "significance": "推动陈平安与林守一之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动林守一与陈平安之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1783,34 +1937,8 @@
         "segment_index": 15
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "林守一"
-        ],
-        "action": "对话",
-        "context": "因为这个家伙，一路走来，走过那么多的山山水水，光是陪着胆小的自己去远处撒尿拉屎，然后站在不远的地方陪自己说话，就不知道多少回了。 ———— 陈平安不敢四处乱逛，走向那座凉亭，看到林守一意料之中坐在那边，不敢打搅这位队伍之中最早脱颖而出的山上神仙，远观了一段时间，正要转身离去，就看到林守一站起身，朝他招了招手。 陈平安走入凉亭，相较于走入秋芦客栈之前的俊朗少年，当下的林守一好像多了些飘逸风采。 林守一挑了一个不尴尬的话题，“那个崔东山跟我借了一张符箓，就打破客栈的规矩，走出这座凉亭，跳入那口老水井，消失不见了。 ”",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百四十一章 百怪 上 · 陈平安与林守一对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 141,
-        "segment_index": 15
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.689278",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1847,6 +1975,19 @@
       },
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安轻声道：“崔东山是死是活，我管不着，也不会管。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 141,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "林守一",
         "alias": [],
         "original_description_in_book": "林守一憋了半天，转头望向水井那边，“下榻秋芦客栈一事，我知道你是好心好意，但你应该事先跟我打招呼的。",
@@ -1862,16 +2003,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 陈平安与林守一剧情推进",
+        "name": "第二卷山水郎 第一百四十一章 百怪 上 · 陈平安与崔东山剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "崔东山",
           "林守一"
         ],
         "description": "陈平安轻声道：“崔东山是死是活，我管不着，也不会管。 林守一憋了半天，转头望向水井那边，“下榻秋芦客栈一事，我知道你是好心好意，但你应该事先跟我打招呼的。 陈平安点头道：“以后我会的。",
         "background": "",
-        "significance": "推动陈平安与林守一之间的剧情推进关系。",
+        "significance": "推动陈平安与崔东山之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十一章 百怪 上 · 段16",
         "sentence_indexes_in_segment": [
@@ -1887,7 +2029,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.690281",
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1992,7 +2134,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.690281",
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2099,7 +2241,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.690281",
+    "extracted_at": "2026-03-25T01:03:30.773763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2162,7 +2304,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.690281",
+    "extracted_at": "2026-03-25T01:03:30.774766",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

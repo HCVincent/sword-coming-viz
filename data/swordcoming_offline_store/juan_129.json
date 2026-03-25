@@ -71,7 +71,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.731617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -134,7 +134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.731617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -261,7 +261,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -325,7 +325,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -388,7 +388,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -451,7 +451,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.660761",
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -472,6 +472,19 @@
       "老道人再无初见时的故弄玄虚，挤出笑脸问道：“敢问风雪庙魏大剑仙何在？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "在魏晋潇洒骑驴离去没多久，陈平安身后就传来急匆匆的喊声，嚷嚷着恩人请留步，转头望去，是那目盲老道师徒三人，正在追赶他们的步伐。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 129,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -504,16 +517,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百二十九章 山上 · 陈平安在风雪庙遭遇",
+        "name": "第二卷山水郎 第一百二十九章 山上 · 魏晋与陈平安在风雪庙遭遇",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "魏晋",
           "陈平安"
         ],
         "description": "在魏晋潇洒骑驴离去没多久，陈平安身后就传来急匆匆的喊声，嚷嚷着恩人请留步，转头望去，是那目盲老道师徒三人，正在追赶他们的步伐。 老道人再无初见时的故弄玄虚，挤出笑脸问道：“敢问风雪庙魏大剑仙何在？ 老道人久经风雨，当然知道这一伙来历不明的孩子，才是自己安然离开此山的关键，天晓得那个性情古怪的女鬼会不会临了反悔，把他们师徒抓去给洗脸锥心？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "在风雪庙推动魏晋与陈平安之间的遭遇线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百二十九章 山上 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -527,8 +543,29 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏晋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "在魏晋潇洒骑驴离去没多久，陈平安身后就传来急匆匆的喊声，嚷嚷着恩人请留步，转头望去，是那目盲老道师徒三人，正在追赶他们的步伐。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百二十九章 山上 · 魏晋与陈平安在风雪庙遭遇",
+        "location": "风雪庙",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 129,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -590,7 +627,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.732620",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -613,6 +650,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋这等隐龙一般的上五境仙人，老道人自知斤两，真到了那位风雪庙剑修身前，恐怕除了徒惹人厌之外，根本讨不到半点好。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 129,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安快步向前，轻轻拉住干瘦小姑娘的胳膊，笑道：“不用不用。",
@@ -633,7 +683,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -643,16 +695,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百二十九章 山上 · 陈平安在风雪庙遭遇",
+        "name": "第二卷山水郎 第一百二十九章 山上 · 魏晋与陈平安在风雪庙遭遇",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "魏晋",
           "陈平安"
         ],
         "description": "魏晋这等隐龙一般的上五境仙人，老道人自知斤两，真到了那位风雪庙剑修身前，恐怕除了徒惹人厌之外，根本讨不到半点好。 陈平安快步向前，轻轻拉住干瘦小姑娘的胳膊，笑道：“不用不用。 山上练气士，相对山下百姓，当然能算是凤毛麟角，可修士之间，相逢是缘，这不假，只是缘份有善恶之分，因果有好坏之别，老道人一路降妖除魔，为自己积攒阴德，大大小小四五十场交手，能够活蹦乱跳走到今天，可不是只靠练气士第五境修为，以及那剑走偏锋的旁门雷法。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "在风雪庙推动魏晋与陈平安之间的遭遇线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百二十九章 山上 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -666,8 +721,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏晋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "魏晋这等隐龙一般的上五境仙人，老道人自知斤两，真到了那位风雪庙剑修身前，恐怕除了徒惹人厌之外，根本讨不到半点好。 山上练气士，相对山下百姓，当然能算是凤毛麟角，可修士之间，相逢是缘，这不假，只是缘份有善恶之分，因果有好坏之别，老道人一路降妖除魔，为自己积攒阴德，大大小小四五十场交手，能够活蹦乱跳走到今天，可不是只靠练气士第五境修为，以及那剑走偏锋的旁门雷法。 眼见着有些冷场，老道人赶紧左右而顾，笑眯眯道：“小酒儿，小跛子，还不快给恩人们磕头道谢！ ” 圆脸小姑娘闻言后就要下跪，手持满是泥浆幡子的跛脚少年，满脸阴郁神色。 陈平安快步向前，轻轻拉住干瘦小姑娘的胳膊，笑道：“不用不用。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百二十九章 山上 · 魏晋与陈平安在风雪庙遭遇",
+        "location": "风雪庙",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 129,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -766,7 +847,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -828,7 +909,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -848,7 +929,21 @@
       "贫道家乡是那享誉一洲的南涧国，道法为尊，边境上有一座宗字头的道家大脉，是宝瓶洲道门的执牛耳者。",
       "占据着天下七十二福地之一的清潭福地，宗主被奉为南涧国国师不说，由于道法玄妙，神通广大，以至于附近数国君主皆亲自登山，共同尊奉这位宗主为一国头号真君，故而这位道教神仙身兼着四国真君头衔，是我们宝瓶洲公认的十大仙师之一，实不相瞒，若是风雪庙魏大剑仙在破境之前，遇到了这位仙师，魏前辈还真没办法与之平起平坐。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "只不过有之前难兄难弟的可怜遭遇打底子，又有魏晋这样的陆地剑仙收尾，老道人就不计较这些了，小心斟酌之后，缓缓道：“说来话长，恩人们别嫌弃贫道唠叨便是。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 129,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -882,13 +977,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百二十九章 山上 · 宝瓶洲剧情推进",
+        "name": "第二卷山水郎 第一百二十九章 山上 · 魏晋在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "贫道家乡是那享誉一洲的南涧国，道法为尊，边境上有一座宗字头的道家大脉，是宝瓶洲道门的执牛耳者。 占据着天下七十二福地之一的清潭福地，宗主被奉为南涧国国师不说，由于道法玄妙，神通广大，以至于附近数国君主皆亲自登山，共同尊奉这位宗主为一国头号真君，故而这位道教神仙身兼着四国真君头衔，是我们宝瓶洲公认的十大仙师之一，实不相瞒，若是风雪庙魏大剑仙在破境之前，遇到了这位仙师，魏前辈还真没办法与之平起平坐。 不知隶属何门何派？",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "只不过有之前难兄难弟的可怜遭遇打底子，又有魏晋这样的陆地剑仙收尾，老道人就不计较这些了，小心斟酌之后，缓缓道：“说来话长，恩人们别嫌弃贫道唠叨便是。 贫道家乡是那享誉一洲的南涧国，道法为尊，边境上有一座宗字头的道家大脉，是宝瓶洲道门的执牛耳者。 占据着天下七十二福地之一的清潭福地，宗主被奉为南涧国国师不说，由于道法玄妙，神通广大，以至于附近数国君主皆亲自登山，共同尊奉这位宗主为一国头号真君，故而这位道教神仙身兼着四国真君头衔，是我们宝瓶洲公认的十大仙师之一，实不相瞒，若是风雪庙魏大剑仙在破境之前，遇到了这位仙师，魏前辈还真没办法与之平起平坐。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百二十九章 山上 · 段19",
         "sentence_indexes_in_segment": [
@@ -904,7 +1001,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -953,6 +1050,19 @@
       },
       {
         "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "尤其是“真君”这个说法，小镇上出现的那个刘志茂，不就是号称截江真君？",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 129,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "李宝瓶和李槐可就没这么专心致志了。 李宝瓶时不时打量那个圆脸小姑娘，后者怯生生躲在目盲道人一侧，不敢见人的羞赧模样。",
@@ -987,7 +1097,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "刘志茂"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -997,18 +1109,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安",
           "李宝瓶",
-          "林守一"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "陈平安和林守一听得极其认真，不愿错过一个字。 尤其是“真君”这个说法，小镇上出现的那个刘志茂，不就是号称截江真君？ 李宝瓶和李槐可就没这么专心致志了。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百二十九章 山上 · 段20",
         "sentence_indexes_in_segment": [
@@ -1024,7 +1136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1123,7 +1235,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1185,7 +1297,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.733624",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1247,7 +1359,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1309,7 +1421,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.661764",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1371,7 +1483,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1488,17 +1600,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "阿良",
+          "李二",
           "陈平安",
           "阮秀"
         ],
         "description": "林守一扯了扯陈平安袖子，后者会心，收下了这幅搜山图，但是陈平安也掏出身上仅剩的那颗蛇胆石，送给了跛脚少年，只说是家乡的特产，不值钱，但数量不多。 跛脚少年想拒绝，目盲老道人赶紧让他收下，说是恩人的一番好意，极为内向的跛脚少年只得默默收下，欲言又止，终究是没好意思说出谢谢二字。 陈平安最后笑道：“你们过了红烛镇和棋墩山后，到了龙泉县城，可以去草头或者压岁铺子那边，找到一个叫阮秀的姑娘，向她出示这颗蛇胆石，她就知道你们是我的朋友了，说不定可以帮你忙在小镇安顿下来。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
           0
         ],
@@ -1527,7 +1639,7 @@
         "action": "对话",
         "context": "陈平安最后笑道：“你们过了红烛镇和棋墩山后，到了龙泉县城，可以去草头或者压岁铺子那边，找到一个叫阮秀的姑娘，向她出示这颗蛇胆石，她就知道你们是我的朋友了，说不定可以帮你忙在小镇安顿下来。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "李二照面陈平安",
         "location": "龙泉",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1537,7 +1649,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1593,7 +1705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.662768",
+    "extracted_at": "2026-03-25T01:03:30.734627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

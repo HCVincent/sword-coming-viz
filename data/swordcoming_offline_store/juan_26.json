@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.335351",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -148,7 +148,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.335351",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,6 +198,32 @@
         ],
         "juan_index": 26,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "少女很是灰心丧气，本来意气风发的神采，锋芒锐减，没好气道：“比如你救了我一命，我事后自会帮你杀掉老龙城的苻南华，或是书简湖的刘志茂，但是你想要两个都杀的话，永绝后患，就得破财消灾，因为咱俩一场萍水相逢，可没那么深厚的情分，所以你需要用一袋子金精铜钱，作为报酬。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 26,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "少女很是灰心丧气，本来意气风发的神采，锋芒锐减，没好气道：“比如你救了我一命，我事后自会帮你杀掉老龙城的苻南华，或是书简湖的刘志茂，但是你想要两个都杀的话，永绝后患，就得破财消灾，因为咱俩一场萍水相逢，可没那么深厚的情分，所以你需要用一袋子金精铜钱，作为报酬。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 26,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -208,7 +234,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "刘志茂"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -223,7 +252,9 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "苻南华",
+          "刘志茂"
         ],
         "description": "只可惜陈平安隔壁，就住着位学识不浅的读书种子，几乎每天清晨黄昏两次，邻居就要诵读圣贤书以明志，按照宋集薪自己的说法则是“吾善养浩然气”。 所以陈平安没吃过猪肉也见过猪跑，对于读书人文绉绉的那套说法，并不陌生，即便有些晦涩词语，通过上下文来解析，也能猜个八九不离十。 少女死死盯着陈平安，试图从少年脸上寻找出震惊、仰慕和疑惑，可陈平安偏偏是一脸“我听明白了，姑娘你接着说”的欠揍表情。",
         "background": "",
@@ -243,7 +274,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.335351",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -264,6 +295,19 @@
       "少女顿时有些恼羞成怒，境界低下，一直被她引以为耻，陈平安这种“姑娘你再给我解释解释”的痴呆模样，无疑是戳中了少女的最伤心处。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "当然，如果我早早死在刘志茂手里，一切休提，毕竟我现在修为不高，武道九境，才刚刚跻身第六境，作为纯粹武夫的体魄坚韧程度，还不成大气候，至于修行登山的十五重楼，十五层境界，更是只到达中五境里的龙门境，丹室之内，我有六幅图案，尚未成功画龙点睛，也未让天女飞天……”",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 26,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -297,15 +341,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十六章 好说话 · 陈平安在老龙城剧情推进",
+        "name": "第一卷笼中雀 第二十六章 好说话 · 陈平安与刘志茂在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘志茂"
         ],
-        "description": "接下来少女微微扬起下巴，“如果在做成这笔买卖之外，你愿意支付给我两袋子铜钱，我就帮你摆平老龙城和云霞山。 这下子陈平安是真的听迷糊了，一头雾水。 少女顿时有些恼羞成怒，境界低下，一直被她引以为耻，陈平安这种“姑娘你再给我解释解释”的痴呆模样，无疑是戳中了少女的最伤心处。",
+        "description": "接下来少女微微扬起下巴，“如果在做成这笔买卖之外，你愿意支付给我两袋子铜钱，我就帮你摆平老龙城和云霞山。 当然，如果我早早死在刘志茂手里，一切休提，毕竟我现在修为不高，武道九境，才刚刚跻身第六境，作为纯粹武夫的体魄坚韧程度，还不成大气候，至于修行登山的十五重楼，十五层境界，更是只到达中五境里的龙门境，丹室之内，我有六幅图案，尚未成功画龙点睛，也未让天女飞天……” 这下子陈平安是真的听迷糊了，一头雾水。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在老龙城推动陈平安与刘志茂之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十六章 好说话 · 段5",
         "sentence_indexes_in_segment": [
@@ -321,7 +366,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.335351",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -367,6 +412,19 @@
         ],
         "juan_index": 26,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "我宁姚的一条性命，哪里是刘志茂之流可以媲美的，所以是我不对，你就当我什么都没有说，等我离开小镇之后，我会尽力而为，争取帮你解决那些后顾之忧，但是我丑话说在前头，我宁姚只会量力而为，不会心知必死依然去跟人拼命……换命。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 26,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -378,7 +436,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宁姚"
+          "宁姚",
+          "刘志茂"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -394,7 +453,8 @@
         "location": "小镇",
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "刘志茂"
         ],
         "description": "看到少女阴沉的脸色，陈平安就是傻子也知道形势不妙，赶紧转移话题，“为何姑娘你先前伤得那么重，现在就像痊愈大半了？ 我宁姚的一条性命，哪里是刘志茂之流可以媲美的，所以是我不对，你就当我什么都没有说，等我离开小镇之后，我会尽力而为，争取帮你解决那些后顾之忧，但是我丑话说在前头，我宁姚只会量力而为，不会心知必死依然去跟人拼命……换命。 ”",
         "background": "",
@@ -419,30 +479,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
           "宁姚"
         ],
-        "action": "守护",
-        "context": "看到少女阴沉的脸色，陈平安就是傻子也知道形势不妙，赶紧转移话题，“为何姑娘你先前伤得那么重，现在就像痊愈大半了？ ” 少女眉目低敛些许，双手环胸，嗓音沙哑道：“当时的确是快死了，如果陆道长没有救下我，我就要……反正我欠了你一个天大人情，我更不该趁火打劫，让你拿出三袋子金精铜钱。 我宁姚的一条性命，哪里是刘志茂之流可以媲美的，所以是我不对，你就当我什么都没有说，等我离开小镇之后，我会尽力而为，争取帮你解决那些后顾之忧，但是我丑话说在前头，我宁姚只会量力而为，不会心知必死依然去跟人拼命……换命。 ” 大概是少女的低头认错，太过稀罕难得，所以她心情极其失落。",
+        "to_roles": [
+          "刘志茂"
+        ],
+        "action": "别离",
+        "context": "我宁姚的一条性命，哪里是刘志茂之流可以媲美的，所以是我不对，你就当我什么都没有说，等我离开小镇之后，我会尽力而为，争取帮你解决那些后顾之忧，但是我丑话说在前头，我宁姚只会量力而为，不会心知必死依然去跟人拼命……换命。",
         "result": null,
         "event_name": "宁姚坠入小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 26,
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.335351",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -506,7 +561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -568,7 +623,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -645,7 +700,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -708,7 +763,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.361818",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -771,7 +826,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -851,7 +906,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -983,7 +1038,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1045,7 +1100,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1108,7 +1163,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1170,7 +1225,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.336354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1262,7 +1317,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1324,7 +1379,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1403,7 +1458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1531,7 +1586,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1622,7 +1677,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.362822",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1699,7 +1754,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1807,7 +1862,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.337358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1871,7 +1926,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.338361",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2008,7 +2063,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.338361",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2041,6 +2096,32 @@
         ],
         "juan_index": 26,
         "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "黑衣少女点头道：“老人和女娃娃，来自正阳山，算是你们东宝瓶洲的名门正派，老人非人……总之，他比起苻南华或是蔡金简，要厉害百倍。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 26,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "黑衣少女点头道：“老人和女娃娃，来自正阳山，算是你们东宝瓶洲的名门正派，老人非人……总之，他比起苻南华或是蔡金简，要厉害百倍。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 26,
+        "segment_index": 27
       }
     ],
     "locations": [
@@ -2051,7 +2132,10 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -2065,7 +2149,10 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -2075,15 +2162,17 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第二十六章 好说话 · 陈平安在正阳山对话",
+        "name": "第一卷笼中雀 第二十六章 好说话 · 陈平安与苻南华在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "苻南华",
+          "蔡金简"
         ],
         "description": "陈平安听到这一切后如临大敌，“你要小心，卢正淳和那些外乡人，不好惹！ 黑衣少女点头道：“老人和女娃娃，来自正阳山，算是你们东宝瓶洲的名门正派，老人非人……总之，他比起苻南华或是蔡金简，要厉害百倍。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "在正阳山推动陈平安与苻南华之间的对话线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第二十六章 好说话 · 段27",
         "sentence_indexes_in_segment": [
@@ -2099,7 +2188,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.338361",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2236,7 +2325,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.338361",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2365,7 +2454,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.338361",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2471,7 +2560,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.363825",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2549,7 +2638,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.364829",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2653,7 +2742,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.364829",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2729,7 +2818,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.364829",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2834,7 +2923,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.364829",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2938,7 +3027,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.364829",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3026,7 +3115,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.364829",
+    "extracted_at": "2026-03-25T01:03:30.339365",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

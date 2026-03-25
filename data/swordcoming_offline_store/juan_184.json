@@ -1,4 +1,66 @@
 {
+  "184-1-0": {
+    "juan_index": 184,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。",
+      "曹峻看出一丝端倪，佩服道：“你下棋一定很厉害，而且肯定精通阴阳家的卜卦。",
+      "”",
+      "因为以六境练气士的修为，青衫书生除非是三教鼻祖级别的谪仙转世，才能够一口气驾驭那么多的物件，但是眼前书生明显是投机取巧了，每次防御白鱼飞剑的穿刺，都大致算出了飞剑的轨迹和突破口，所以除了维持春叶、秋风诸物不坠，书生真正需要灌注灵气的区域，并不算太大。",
+      "这就像一场城池攻守之战，曹峻一方战力强悍，但是兵力不够，只能专攻一面城墙，书生看似在四面城墙上都布满了守城甲士，实则三面都是空架子，他只需要未卜先知，次次算准曹峻的进攻方向，防守起来就显得游刃有余。",
+      "曹峻心意一动，雪白飞剑撤出战场，回到主人身前，曹峻轻轻瞥了一眼，剑尖和剑刃都有些磨损，损耗比预期要多，好在白鱼短剑蕴含的剑意，在数百次砥砺打磨之下，剑意有所提升，说到底还是做了一笔赚钱买卖。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 184,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。 曹峻看出一丝端倪，佩服道：“你下棋一定很厉害，而且肯定精通阴阳家的卜卦。 ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.950420",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "184-2-0": {
     "juan_index": 184,
     "segment_index": 2,
@@ -41,6 +103,19 @@
         ],
         "juan_index": 184,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣笑着反问道：“你有本事当缩头乌龟？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -72,14 +147,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "大骊皇帝"
+          "大骊皇帝",
+          "李希圣"
         ],
-        "description": "曹峻内心有些纠结，大骊皇帝是不敢为了一个齐静春，跟三教幕后势力掰手腕，但是为了一个有望跻身上五境的自家练气士，跟早已在别洲扎根立业的曹氏撕破脸皮，多半愿意。 曹峻破天荒有些犹豫不决，将白鱼收回剑鞘，同时握住了另外一把佩剑的剑柄，剑名墨螭。 他故意一脸恼火，道：“有本事别当缩头乌龟！",
+        "description": "曹峻内心有些纠结，大骊皇帝是不敢为了一个齐静春，跟三教幕后势力掰手腕，但是为了一个有望跻身上五境的自家练气士，跟早已在别洲扎根立业的曹氏撕破脸皮，多半愿意。 李希圣笑着反问道：“你有本事当缩头乌龟？ 曹峻破天荒有些犹豫不决，将白鱼收回剑鞘，同时握住了另外一把佩剑的剑柄，剑名墨螭。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -93,21 +167,56 @@
         "segment_index": 2
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.951423",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-3-0": {
+    "juan_index": 184,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "曹峻被噎得不行，他曾经是被一洲剑仙寄予厚望的天才剑修，追求的是天下无匹的锐气和杀力，当然没本事也没兴趣跟眼前青衫书生一样，打不还手骂不还口，就靠着一大堆稀奇古怪的破烂货，死守城墙，坚决不主动出击。",
+      "曾有人形容剑修本身是轻骑，来去如风，风驰电掣，飞剑则像弓弩，与人狭路相逢，小规模厮杀，往往一个照面，敌人就死了。",
+      "至于一位上五境陆地剑仙的飞剑，搁在沙场上的杀伤力，就像是一架床子弩，哪怕它只是被安静摆放在城头而已，可对于敌人而言，就是一种巨大的威慑力。",
+      "兵家修士是重骑，一旦被他将气势和精气神提升到巅峰，就等于是展开冲锋的重骑兵，攻守兼备，破阵无敌。",
+      "至于被山上视为大道无望的纯粹武夫，只是笨重且杀力一般的重甲步卒，哪怕是第八境远游境的宗师，能够御风而行，如果在短距离爆发中，没有成功毙敌，那么一旦被练气士拉开距离，陷入持久战，远远无法媲美练气士。",
+      "李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣遭遇",
         "time": null,
-        "from_roles": [
-          "大骊皇帝"
+        "location": null,
+        "participants": [
+          "李希圣"
         ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "曹峻内心有些纠结，大骊皇帝是不敢为了一个齐静春，跟三教幕后势力掰手腕，但是为了一个有望跻身上五境的自家练气士，跟早已在别洲扎根立业的曹氏撕破脸皮，多半愿意。 曹峻破天荒有些犹豫不决，将白鱼收回剑鞘，同时握住了另外一把佩剑的剑柄，剑名墨螭。 他故意一脸恼火，道：“有本事别当缩头乌龟！ ” 李希圣笑着反问道：“你有本事当缩头乌龟？ ”",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "大骊",
-        "is_commentary": false,
+        "description": "李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。 曹峻被噎得不行，他曾经是被一洲剑仙寄予厚望的天才剑修，追求的是天下无匹的锐气和杀力，当然没本事也没兴趣跟眼前青衫书生一样，打不还手骂不还口，就靠着一大堆稀奇古怪的破烂货，死守城墙，坚决不主动出击。 曾有人形容剑修本身是轻骑，来去如风，风驰电掣，飞剑则像弓弩，与人狭路相逢，小规模厮杀，往往一个照面，敌人就死了。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段3",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -117,10 +226,73 @@
           5
         ],
         "juan_index": 184,
-        "segment_index": 2
+        "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.951423",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-4-0": {
+    "juan_index": 184,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "”",
+      "言下之意，他愿意听一听那把墨螭的道理。",
+      "曹峻双手轻轻揉了揉脸颊，“你这人说话真是不中听，不过我承认你有这个资格，我有个建议，你可以考虑一下，咱们来一场生死之战，所有后果自负，与家国无关，如何？",
+      "敢不敢跟我赌一把？",
+      "”",
+      "李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。 ” 言下之意，他愿意听一听那把墨螭的道理。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.951423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -201,7 +373,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "extracted_at": "2026-03-25T01:03:30.951423",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-7-0": {
+    "juan_index": 184,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "”",
+      "曹峻一脸云淡风轻，点头道：“这就对了。",
+      "是老王八蛋的口气。",
+      "”",
+      "李希圣不管这些，“如果不打，就请让路。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣不管这些，“如果不打，就请让路。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣不管这些，“如果不打，就请让路。 ” 曹峻一脸云淡风轻，点头道：“这就对了。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 7
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.951423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -265,7 +499,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "extracted_at": "2026-03-25T01:03:30.951423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -285,7 +519,21 @@
       "那只皮毛鲜红的狐狸绕着曹峻打转，幸灾乐祸道：“吃苦头了吧？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "就是不知道神仙台魏晋，会不会给人惊喜？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "风雪庙",
@@ -304,13 +552,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 风雪庙剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 魏晋在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
-        "participants": [],
-        "description": "曹峻顿时如同一颗流星倒掠出去，最后等他好不容易停下身形，已经是数百里之外，之前已经在云海之中翻滚了无数次，在空中盘腿而坐，呕血不止，曹峻面如金纸，没有恼羞成怒或是气急败坏，反而泛起那张习惯性的笑脸，“从风雪庙出来的家伙，果然一个个脾气都不太好。 结果砰然一声巨响。 就是不知道神仙台魏晋，会不会给人惊喜？",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "曹峻顿时如同一颗流星倒掠出去，最后等他好不容易停下身形，已经是数百里之外，之前已经在云海之中翻滚了无数次，在空中盘腿而坐，呕血不止，曹峻面如金纸，没有恼羞成怒或是气急败坏，反而泛起那张习惯性的笑脸，“从风雪庙出来的家伙，果然一个个脾气都不太好。 就是不知道神仙台魏晋，会不会给人惊喜？ 结果砰然一声巨响。",
         "background": "",
-        "significance": "对应风雪庙相关的关键剧情推进场景。",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段9",
         "sentence_indexes_in_segment": [
@@ -326,7 +576,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "extracted_at": "2026-03-25T01:03:30.951423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -390,7 +640,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "extracted_at": "2026-03-25T01:03:30.951423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -454,7 +704,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "extracted_at": "2026-03-25T01:03:30.952427",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,21 +737,37 @@
         ],
         "juan_index": 184,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "陈平安快步跑到李希圣身边，忧心忡忡道：“没事吧？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣讥讽",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "陈平安快步跑到李希圣身边，忧心忡忡道：“没事吧？ 狐狸又开始作妖，讥讽道：“哇，咱们南婆娑洲一百年前的那个头号剑仙胚子，如今的九境大剑修，今天突然这么听话？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与李希圣之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -515,8 +781,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "讥讽",
+        "context": "狐狸又开始作妖，讥讽道：“哇，咱们南婆娑洲一百年前的那个头号剑仙胚子，如今的九境大剑修，今天突然这么听话？ ” “年纪轻轻”曹峻，原来早已百岁高龄，他此时举目远望，嘴唇抿起，对于那头狐狸在耳边的挖苦，置若罔闻。 ———— 陈平安快步跑到李希圣身边，忧心忡忡道：“没事吧？ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.952427",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -537,6 +829,19 @@
       "果然猜得没错，一不小心走在路上，就要被人打死的，小镇待不得，待不得啊，老爷，你行行好，放我滚去落魄山修行吧，我保证，我发誓从今天起，一定勤勉修行，日夜不歇，别说是餐霞饮露，就是在落魄山吃草根嚼烂泥，我都干！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣微笑道：“头一回打架，于是遇上了剑修，其实心里挺慌的，不过结果还不错。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 184,
+        "segment_index": 18
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -589,12 +894,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "李希圣"
         ],
-        "description": "陈平安如释重负。 青衣小童突然一个飞身直扑，抱住陈平安的腰，“太可怕了太可怕了！ 果然猜得没错，一不小心走在路上，就要被人打死的，小镇待不得，待不得啊，老爷，你行行好，放我滚去落魄山修行吧，我保证，我发誓从今天起，一定勤勉修行，日夜不歇，别说是餐霞饮露，就是在落魄山吃草根嚼烂泥，我都干！",
+        "description": "李希圣微笑道：“头一回打架，于是遇上了剑修，其实心里挺慌的，不过结果还不错。 陈平安如释重负。 青衣小童突然一个飞身直扑，抱住陈平安的腰，“太可怕了太可怕了！",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -608,8 +916,34 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.813268",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "李希圣微笑道：“头一回打架，于是遇上了剑修，其实心里挺慌的，不过结果还不错。 ” 陈平安如释重负。 袖中那枚银锭剑胚已经恢复寂静，在曹峻离去之后，就不再滚烫颤动。 青衣小童突然一个飞身直扑，抱住陈平安的腰，“太可怕了太可怕了！ 果然猜得没错，一不小心走在路上，就要被人打死的，小镇待不得，待不得啊，老爷，你行行好，放我滚去落魄山修行吧，我保证，我发誓从今天起，一定勤勉修行，日夜不歇，别说是餐霞饮露，就是在落魄山吃草根嚼烂泥，我都干！",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.952427",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -630,6 +964,20 @@
       "大不了我还你一颗普通蛇胆石，行不行？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣忍俊不禁，赶忙安慰道：“曹峻之流，终究是极少数。 青衣小童没有理会李希圣，只顾着跟陈平安哀求不已，被陈平安推开脑袋后，就转为死死抱住他的一条胳膊，身体后倾倒去，死活不让陈平安继续前行，“老爷，发发善心，求你啦！",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 19
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -667,9 +1015,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "我虽然不曾走出小镇，不过可以确定，曹峻这样修为高、脾气怪的人物，屈指可数，你不用太紧张。 青衣小童没有理会李希圣，只顾着跟陈平安哀求不已，被陈平安推开脑袋后，就转为死死抱住他的一条胳膊，身体后倾倒去，死活不让陈平安继续前行，“老爷，发发善心，求你啦！ ”",
+        "description": "李希圣忍俊不禁，赶忙安慰道：“曹峻之流，终究是极少数。 我虽然不曾走出小镇，不过可以确定，曹峻这样修为高、脾气怪的人物，屈指可数，你不用太紧张。 青衣小童没有理会李希圣，只顾着跟陈平安哀求不已，被陈平安推开脑袋后，就转为死死抱住他的一条胳膊，身体后倾倒去，死活不让陈平安继续前行，“老爷，发发善心，求你啦！",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -687,7 +1036,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.952427",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -781,7 +1130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.952427",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -862,7 +1211,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.952427",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -924,7 +1273,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -986,7 +1335,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1397,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1126,7 +1475,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1205,7 +1554,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1266,7 +1615,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1312,6 +1661,20 @@
         ],
         "juan_index": 184,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "泥瓶巷那边，既然不用去刘羡阳家了，陈平安就把李希圣送到巷口。 李希圣停下身形，犹豫片刻，仍是说道：“接下来这些话，可能现在说，为时过早，但是就跟我送你那些书上的批注，你只需要看过就算数，那么这些话你也只需要听过就行。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 28
       }
     ],
     "locations": [
@@ -1324,7 +1687,8 @@
         "coordinates": null,
         "related_entities": [
           "刘羡阳",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -1335,19 +1699,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 刘羡阳与陈平安在泥瓶巷对话",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣与刘羡阳在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "李希圣",
           "刘羡阳",
           "陈平安"
         ],
-        "description": "泥瓶巷那边，既然不用去刘羡阳家了，陈平安就把李希圣送到巷口。 粉裙女童咧嘴一笑。 青衣小童挺起胸膛，“走，带路！",
+        "description": "泥瓶巷那边，既然不用去刘羡阳家了，陈平安就把李希圣送到巷口。 李希圣停下身形，犹豫片刻，仍是说道：“接下来这些话，可能现在说，为时过早，但是就跟我送你那些书上的批注，你只需要看过就算数，那么这些话你也只需要听过就行。 粉裙女童咧嘴一笑。",
         "background": "",
-        "significance": "在泥瓶巷推动刘羡阳与陈平安之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在泥瓶巷推动李希圣与刘羡阳之间的对话线。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -1361,34 +1724,8 @@
         "segment_index": 28
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "刘羡阳"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "粉裙女童咧嘴一笑。 青衣小童挺起胸膛，“走，带路！ 打道回府！ ” 泥瓶巷那边，既然不用去刘羡阳家了，陈平安就把李希圣送到巷口。 李希圣停下身形，犹豫片刻，仍是说道：“接下来这些话，可能现在说，为时过早，但是就跟我送你那些书上的批注，你只需要看过就算数，那么这些话你也只需要听过就行。",
-        "result": null,
-        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 刘羡阳与陈平安在泥瓶巷对话",
-        "location": "泥瓶巷",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 184,
-        "segment_index": 28
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.953430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1425,6 +1762,19 @@
       },
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣缓缓道：“白马非马这桩公案，可曾听说过？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "陈平安挠头道：“求学路上，宝瓶和李槐曾经为此吵过架，我越听越迷糊。",
@@ -1440,16 +1790,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李槐剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "李希圣",
           "李槐"
         ],
-        "description": "陈平安点头道：“李大哥，你说。 陈平安挠头道：“求学路上，宝瓶和李槐曾经为此吵过架，我越听越迷糊。 ”",
+        "description": "陈平安点头道：“李大哥，你说。 李希圣缓缓道：“白马非马这桩公案，可曾听说过？ 陈平安挠头道：“求学路上，宝瓶和李槐曾经为此吵过架，我越听越迷糊。",
         "background": "",
-        "significance": "推动陈平安与李槐之间的剧情推进关系。",
+        "significance": "推动陈平安与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段29",
         "sentence_indexes_in_segment": [
@@ -1465,7 +1816,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "extracted_at": "2026-03-25T01:03:30.954434",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1488,6 +1839,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣笑了笑，思量片刻，“那就先不作深处想，我换一个说法，一粒沙子加一粒沙子，是几粒？ 李希圣笑道：“当然是。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安疑惑道：“不是两粒吗？",
@@ -1503,16 +1868,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安对话",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "李希圣",
           "陈平安"
         ],
-        "description": "陈平安疑惑道：“不是两粒吗？ ” 李希圣笑了笑，思量片刻，“那就先不作深处想，我换一个说法，一粒沙子加一粒沙子，是几粒？",
+        "description": "李希圣笑了笑，思量片刻，“那就先不作深处想，我换一个说法，一粒沙子加一粒沙子，是几粒？ 陈平安疑惑道：“不是两粒吗？ 李希圣笑道：“当然是。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动李希圣与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -1526,8 +1894,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 李希圣笑了笑，思量片刻，“那就先不作深处想，我换一个说法，一粒沙子加一粒沙子，是几粒？ ” 陈平安疑惑道：“不是两粒吗？ ” 李希圣笑道：“当然是。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.954434",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1561,21 +1955,37 @@
         ],
         "juan_index": 184,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣拍了拍陈平安的肩头，“传言远古圣人发明文字的时候，天地间的鬼神为之惊惧哭泣。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安对话",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "陈平安试探性说道：“还是一堆吧？ 李希圣拍了拍陈平安的肩头，“传言远古圣人发明文字的时候，天地间的鬼神为之惊惧哭泣。 那么一堆沙子加一堆沙子，是几堆沙子？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与李希圣之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -1589,8 +1999,34 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.814271",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "那么一堆沙子加一堆沙子，是几堆沙子？ ” 陈平安试探性说道：“还是一堆吧？ ” 李希圣拍了拍陈平安的肩头，“传言远古圣人发明文字的时候，天地间的鬼神为之惊惧哭泣。 这当然是一桩莫大的功德。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.954434",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1623,20 +2059,34 @@
         ],
         "juan_index": 184,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣安慰道：“慢慢来，不要急。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "陈平安听得云遮雾绕，一阵头疼，就跟先前翻阅那本《小学》差不多，茫茫然之间，觉得前路已无，退无可退。 但是你要明白一个道理，文字在有些时候，恰恰会是我们认识这个世界的无形障碍。 所以你以后读书的时候，不要时时刻刻都去咬文嚼字，若是遇到了瓶颈，不妨先退一步，再登高数步，尽量往高处走一走，不登山峰，不显平地。",
+        "description": "陈平安听得云遮雾绕，一阵头疼，就跟先前翻阅那本《小学》差不多，茫茫然之间，觉得前路已无，退无可退。 李希圣安慰道：“慢慢来，不要急。 但是你要明白一个道理，文字在有些时候，恰恰会是我们认识这个世界的无形障碍。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段32",
         "sentence_indexes_in_segment": [
@@ -1652,7 +2102,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.954434",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1685,6 +2135,19 @@
         ],
         "juan_index": 184,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "没了一只袖管的李希圣，独自走回福禄街大宅，府上仆役丫鬟看到这位大少爷的窘况后，都有些莫名其妙。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 33
       }
     ],
     "locations": [
@@ -1695,7 +2158,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1705,16 +2170,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安在福禄街剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣在福禄街同行",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "陈平安嗯了一声，“明白了。 没了一只袖管的李希圣，独自走回福禄街大宅，府上仆役丫鬟看到这位大少爷的窘况后，都有些莫名其妙。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在福禄街推动陈平安与李希圣之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -1728,8 +2196,34 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "同行",
+        "context": "陈平安嗯了一声，“明白了。 ” ———— 没了一只袖管的李希圣，独自走回福禄街大宅，府上仆役丫鬟看到这位大少爷的窘况后，都有些莫名其妙。 大少爷长这么大，除了跟随长辈一起上坟之外，几乎从不出门，怎么好不容易出去散个步，就这么坎坷？ 总不会是跟人打架了吧？",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣在福禄街同行",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.954434",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1749,7 +2243,22 @@
       "李希圣轻轻关上门，坐在桌后的椅子上，桌上三方印章，都只缺少一个字，铜印篆刻有“降伏外”，末尾少了一个道字。",
       "黄玉印章篆刻有“都天主”，中间少了一个法字。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣回到自己院子，先看过了相安无事的螃蟹和过山鲫，再去换上一件衣衫，然后“结庐”书斋看了一会儿书，最后去了一间经常锁住门的屋子，开锁推门，当李希圣这个主人举目望去，视野之中，全是贴墙竖立的一架架高大百宝阁，而百宝阁上头，没有任何古董珍玩或是龙泉郡盛产的精美瓷器，而是一方方高高低低、大小不一、材质不同的印章。 李希圣轻轻关上门，坐在桌后的椅子上，桌上三方印章，都只缺少一个字，铜印篆刻有“降伏外”，末尾少了一个道字。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 34
+      }
+    ],
     "locations": [
       {
         "name": "龙泉",
@@ -1761,7 +2270,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1771,13 +2282,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 龙泉迁移",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣在龙泉迁移",
         "time": null,
         "location": "龙泉",
-        "participants": [],
-        "description": "李希圣回到自己院子，先看过了相安无事的螃蟹和过山鲫，再去换上一件衣衫，然后“结庐”书斋看了一会儿书，最后去了一间经常锁住门的屋子，开锁推门，当李希圣这个主人举目望去，视野之中，全是贴墙竖立的一架架高大百宝阁，而百宝阁上头，没有任何古董珍玩或是龙泉郡盛产的精美瓷器，而是一方方高高低低、大小不一、材质不同的印章。 屋内除了堆满印章的百宝阁，就只有一张桌子和一张椅子。 桌面放有三枚尚未完工的印章，材质分别是木，黄玉和青铜。",
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣回到自己院子，先看过了相安无事的螃蟹和过山鲫，再去换上一件衣衫，然后“结庐”书斋看了一会儿书，最后去了一间经常锁住门的屋子，开锁推门，当李希圣这个主人举目望去，视野之中，全是贴墙竖立的一架架高大百宝阁，而百宝阁上头，没有任何古董珍玩或是龙泉郡盛产的精美瓷器，而是一方方高高低低、大小不一、材质不同的印章。 李希圣轻轻关上门，坐在桌后的椅子上，桌上三方印章，都只缺少一个字，铜印篆刻有“降伏外”，末尾少了一个道字。 屋内除了堆满印章的百宝阁，就只有一张桌子和一张椅子。",
         "background": "",
-        "significance": "对应龙泉相关的关键迁移场景。",
+        "significance": "对应李希圣在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段34",
         "sentence_indexes_in_segment": [
@@ -1793,7 +2306,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-35-0": {
+    "juan_index": 184,
+    "segment_index": 35,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "木印篆刻有“气化生”，最开始少了一个青字。",
+      "刻印如画符，讲究一气呵成。",
+      "李希圣显然不是这样。",
+      "他非但没有捉刀刻字，反而闭上眼睛，开始睡觉，呼吸绵延，如溪涧潺潺，细水流长。",
+      "小小房间，别有洞天。",
+      "————"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣显然不是这样。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 35
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣显然不是这样。 木印篆刻有“气化生”，最开始少了一个青字。 刻印如画符，讲究一气呵成。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段35",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 35
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1848,7 +2423,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

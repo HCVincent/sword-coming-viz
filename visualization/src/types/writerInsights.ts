@@ -157,15 +157,45 @@ export interface WriterSeasonOverviewConflict {
   tension_score: number;
 }
 
+export interface WriterSeasonOverviewRelationship {
+  relationship_id: string;
+  title: string;
+  source_role_name: string;
+  target_role_name: string;
+  kind: string;
+}
+
+export interface WriterSeasonStoryBeat {
+  beat_type: 'opening' | 'midpoint' | 'payoff';
+  label: string;
+  summary: string;
+  event: WriterInsightEventRef | null;
+}
+
+export interface WriterSeasonMustKeepScene {
+  scene_id: string;
+  beat_type: 'opening' | 'midpoint' | 'payoff';
+  label: string;
+  event: WriterInsightEventRef | null;
+  focus_roles: string[];
+  related_relationship_titles: string[];
+  adaptation_reason: string;
+}
+
 export interface WriterSeasonOverview {
   season_name: string;
   unit_range: [number, number];
   progress_range: [number, number];
   summary: string;
   spotlight_summary?: string | null;
+  adaptation_hooks: string[];
+  story_beats: WriterSeasonStoryBeat[];
+  must_keep_scenes: WriterSeasonMustKeepScene[];
   top_roles: WriterSeasonOverviewRole[];
   top_locations: WriterSeasonOverviewLocation[];
   main_conflicts: WriterSeasonOverviewConflict[];
+  priority_relationships: WriterSeasonOverviewRelationship[];
+  anchor_events: WriterInsightEventRef[];
 }
 
 export interface WriterInsightsPayload {

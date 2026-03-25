@@ -53,7 +53,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.345882",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -120,7 +120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.345882",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -186,7 +186,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.345882",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -265,7 +265,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.345882",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -285,7 +285,21 @@
       "金袍老者伸出一双手掌，翻了一下，“最少二十颗。",
       "你有吗？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "若是灵气盎然的头等蛇胆石，对于我们而言，不亚于一块斩龙台对一名剑修的重要性，元婴之下的蛟龙之属，一颗就是换取稳稳当当的一境提升，容我算一下，一座桂花岛，一位桂夫人，两千条练气士的人命……小子，除非你有一大堆蛇胆石才行啊。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 266,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -318,13 +332,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十五章 大师兄姓左 · 宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百六十五章 大师兄姓左 · 桂夫人在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "金袍老蛟愣了一下，“你是说宝瓶洲背部上空的那座骊珠洞天？ ” 若是灵气盎然的头等蛇胆石，对于我们而言，不亚于一块斩龙台对一名剑修的重要性，元婴之下的蛟龙之属，一颗就是换取稳稳当当的一境提升，容我算一下，一座桂花岛，一位桂夫人，两千条练气士的人命……小子，除非你有一大堆蛇胆石才行啊。",
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "金袍老蛟愣了一下，“你是说宝瓶洲背部上空的那座骊珠洞天？ 若是灵气盎然的头等蛇胆石，对于我们而言，不亚于一块斩龙台对一名剑修的重要性，元婴之下的蛟龙之属，一颗就是换取稳稳当当的一境提升，容我算一下，一座桂花岛，一位桂夫人，两千条练气士的人命……小子，除非你有一大堆蛇胆石才行啊。 ”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应桂夫人在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十五章 大师兄姓左 · 段5",
         "sentence_indexes_in_segment": [
@@ -340,7 +356,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -403,7 +419,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -484,7 +500,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -547,7 +563,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -611,7 +627,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.090273",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -674,7 +690,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,20 +723,34 @@
         ],
         "juan_index": 266,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "我问一个问题，范家和桂夫人跟你订了什么规矩，可以让你理直气壮地杀掉两千多人？",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 266,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十五章 大师兄姓左 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十五章 大师兄姓左 · 陈平安与桂夫人剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "桂夫人"
         ],
-        "description": "陈平安咧咧嘴，“跟某些家伙讲话，拳头不硬，再好的道理都听不进去。 先前那道斩锁符，就是明证，由此可见，我自己琢磨出来的这个道理，对你们是管用的。 我问一个问题，范家和桂夫人跟你订了什么规矩，可以让你理直气壮地杀掉两千多人？",
+        "description": "陈平安咧咧嘴，“跟某些家伙讲话，拳头不硬，再好的道理都听不进去。 我问一个问题，范家和桂夫人跟你订了什么规矩，可以让你理直气壮地杀掉两千多人？ 先前那道斩锁符，就是明证，由此可见，我自己琢磨出来的这个道理，对你们是管用的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与桂夫人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十五章 大师兄姓左 · 段12",
         "sentence_indexes_in_segment": [
@@ -736,7 +766,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -798,7 +828,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.346886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -860,7 +890,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.347889",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -922,7 +952,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.347889",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1019,7 +1049,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.347889",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1113,7 +1143,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.347889",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1175,7 +1205,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.348893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1236,7 +1266,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.348893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1353,7 +1383,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.348893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1415,7 +1445,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.091276",
+    "extracted_at": "2026-03-25T01:03:31.348893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,7 +1508,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092441",
+    "extracted_at": "2026-03-25T01:03:31.348893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1540,7 +1570,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092441",
+    "extracted_at": "2026-03-25T01:03:31.348893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1602,7 +1632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.092441",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1700,7 +1730,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.092441",
+    "extracted_at": "2026-03-25T01:03:31.349896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

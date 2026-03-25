@@ -54,7 +54,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.403426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -74,7 +74,21 @@
       "卢正淳弯腰极低，双手作揖高过头顶，感激涕零道：“卢正淳绝不敢忘记许夫人大恩大德，日后到了那座名动天下的清风城，必当为许夫人做牛做马，并且卢正淳发誓，此生只忠心于夫人一人！",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "哪怕是眼高于顶的大骊藩王宋长镜，也坦言能够在一年内就立下灭国之功，功劳簿上有你们卢氏皇室一半。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 44,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -85,7 +99,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -114,7 +130,8 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "description": "哪怕是眼高于顶的大骊藩王宋长镜，也坦言能够在一年内就立下灭国之功，功劳簿上有你们卢氏皇室一半。 当然了，你们这支小镇卢氏，运气不太好，跟主支卢氏，一荣未必俱荣，一损倒真是俱损，所以这次我们清风城给你这个千载难逢的机会，不要错过了，要好好把握住。 说到这里，妇人自顾自嫣然而笑，“要我看啊，如果你爷爷是卢氏掌舵人，卢氏王朝未必会这么快崩塌。",
         "background": "",
@@ -134,7 +151,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.403426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -213,7 +230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.403426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -284,16 +301,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "卢正淳后退着离开水榭，下了台阶才缓缓转身，这位曾经在小镇呼风唤雨的天字号纨绔，在妇人跟前，好像腰杆就从来没有直起过。 小镇之外的卢氏，作为一座大王朝的掌国之姓，在被大骊边军重创之后，可谓大伤元气，一蹶不振，短期之内很难东山再起，从上到下，卢氏嫡系和旁支以及远房，只得夹着尾巴做人。 否则，以清风城的家底和声望，绝对不敢如此在小镇卢氏宅子，做起鸠占鹊巢的勾当，还敢居高临下，对卢氏子弟呼来喝去。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十四章 水落石出 · 段4",
         "sentence_indexes_in_segment": [
@@ -309,7 +326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.403426",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -373,7 +390,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -453,7 +470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -473,7 +490,21 @@
       "孩子眼神炙热，“我爹最擅长攻伐之道，杀力之大，不比那大骊宋长镜逊色太多，只可惜一直受困于先天身体孱弱，最怕对手与他以伤换伤的无赖打法，这才无法扬名，还沦为笑柄，就连清风城的自家人也敢在背地里取笑我们，娘亲，是不是我爹得了这具宝甲之后，就能够攻防皆备，可以与那宋长镜一较高低？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "孩子眼神炙热，“我爹最擅长攻伐之道，杀力之大，不比那大骊宋长镜逊色太多，只可惜一直受困于先天身体孱弱，最怕对手与他以伤换伤的无赖打法，这才无法扬名，还沦为笑柄，就连清风城的自家人也敢在背地里取笑我们，娘亲，是不是我爹得了这具宝甲之后，就能够攻防皆备，可以与那宋长镜一较高低？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 44,
+        "segment_index": 7
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -484,7 +515,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -494,13 +527,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十四章 水落石出 · 大骊剧情推进",
+        "name": "第一卷笼中雀 第四十四章 水落石出 · 宋长镜在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "宋长镜"
+        ],
         "description": "孩子眼神炙热，“我爹最擅长攻伐之道，杀力之大，不比那大骊宋长镜逊色太多，只可惜一直受困于先天身体孱弱，最怕对手与他以伤换伤的无赖打法，这才无法扬名，还沦为笑柄，就连清风城的自家人也敢在背地里取笑我们，娘亲，是不是我爹得了这具宝甲之后，就能够攻防皆备，可以与那宋长镜一较高低？ 男孩皱眉，等着答案。 妇人眨了眨眼睛，“那具瘊子甲，内有玄机，简单而言，就是不比那部剑经差。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十四章 水落石出 · 段7",
         "sentence_indexes_in_segment": [
@@ -516,7 +551,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.402327",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -586,17 +621,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "刘羡阳"
         ],
         "description": "男孩笑过之后，很快冷静下来，突然想起一事，问道：“娘亲你这么戏耍正阳山，真是耍猴了，就不怕那头蠢猿万一回过神，离开小镇后就对我们大打出手？ 还有一件事，我始终没想明白，那个姓刘的，既然早早有了买瓷人，本身就根骨极好，加上有宝甲有剑经，这样的香饽饽，简直是少之又少，就连我也不得不承认，对他需要刮目相看，那么买瓷人为何迟迟不愿露面，使得娘亲你能够浑水摸鱼，还让那正阳山老猿帮咱们解决掉了烂摊子，他一拳打死刘羡阳后，什么都清净了，天大麻烦由正阳山来兜着，至于我们清风城，便有了极大的回旋余地。 ”",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十四章 水落石出 · 段9",
         "sentence_indexes_in_segment": [
@@ -612,7 +647,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -711,7 +746,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -792,7 +827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -887,7 +922,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.404430",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -907,7 +942,34 @@
       "孩子想了想，“小心驶得万年船，娘亲，我会注意的。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "不是这样的，老龙城的苻南华，几乎道心崩碎，云霞山的蔡金简更是人间蒸发，生死不知。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 44,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "不是这样的，老龙城的苻南华，几乎道心崩碎，云霞山的蔡金简更是人间蒸发，生死不知。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 44,
+        "segment_index": 13
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -916,7 +978,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -940,13 +1005,17 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十四章 水落石出 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
         "description": "不是这样的，老龙城的苻南华，几乎道心崩碎，云霞山的蔡金简更是人间蒸发，生死不知。 还有一名资质不俗的后辈，在廊桥那边看似福至心灵，便作水观，给人坏了心境，无异于在心湖底部，被人硬生生砸出一个大坑，使得湖水下降。 这类事情，不会到此为止，反而接下来只会越来越多，所以说，修行路上，无一个逍遥人。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十四章 水落石出 · 段13",
         "sentence_indexes_in_segment": [
@@ -962,7 +1031,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1028,7 +1097,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1094,7 +1163,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1230,7 +1299,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1291,7 +1360,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

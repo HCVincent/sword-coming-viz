@@ -16,6 +16,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "高煊",
+        "alias": [],
+        "original_description_in_book": "高煊赠送的那辆马车姗姗来迟，在很晚的暮色中，才赶到陈平安这边，马夫是那个面白无须的老者，曾经跟随大隋皇子一起去往骊珠洞天，与陈平安有过两面之缘，只是比起高煊的热络殷勤，老人神色冷淡，交过马车后，便徒步返回京城，老宦官回头多看了眼崔瀺，崔瀺忙着打量那匹骏马的丰姿，啧啧称奇，对于老人的审视目光，浑然不觉。",
+        "description": "大骊人物群中的重要成员，能补足王朝线与龙泉线之间的角色层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 161,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "高煊赠送的那辆马车姗姗来迟，在很晚的暮色中，才赶到陈平安这边，马夫是那个面白无须的老者，曾经跟随大隋皇子一起去往骊珠洞天，与陈平安有过两面之缘，只是比起高煊的热络殷勤，老人神色冷淡，交过马车后，便徒步返回京城，老宦官回头多看了眼崔瀺，崔瀺忙着打量那匹骏马的丰姿，啧啧称奇，对于老人的审视目光，浑然不觉。 崔瀺跳上马车，主动担负起车夫的职责，对陈平安招手道：“先生，马车没动手脚，咱俩安心上路。",
@@ -56,6 +69,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "高煊",
           "陈平安",
           "崔瀺"
         ],
@@ -68,18 +82,20 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与崔瀺在骊珠洞天同行",
+        "name": "第二卷山水郎 第一百六十一章 山水终有一别 · 高煊与陈平安在骊珠洞天试探",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
+          "高煊",
           "陈平安",
           "崔瀺"
         ],
         "description": "高煊赠送的那辆马车姗姗来迟，在很晚的暮色中，才赶到陈平安这边，马夫是那个面白无须的老者，曾经跟随大隋皇子一起去往骊珠洞天，与陈平安有过两面之缘，只是比起高煊的热络殷勤，老人神色冷淡，交过马车后，便徒步返回京城，老宦官回头多看了眼崔瀺，崔瀺忙着打量那匹骏马的丰姿，啧啧称奇，对于老人的审视目光，浑然不觉。 崔瀺跳上马车，主动担负起车夫的职责，对陈平安招手道：“先生，马车没动手脚，咱俩安心上路。 崔瀺给了自己一耳光，“什么上路，太晦气了，赶路赶路。",
         "background": "",
-        "significance": "在骊珠洞天推动陈平安与崔瀺之间的同行线。",
+        "significance": "在骊珠洞天推动高煊与陈平安之间的试探线。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百六十一章 山水终有一别 · 段1",
         "sentence_indexes_in_segment": [
@@ -98,15 +114,35 @@
       {
         "time": null,
         "from_roles": [
+          "高煊"
+        ],
+        "to_roles": [
           "陈平安"
+        ],
+        "action": "试探",
+        "context": "高煊赠送的那辆马车姗姗来迟，在很晚的暮色中，才赶到陈平安这边，马夫是那个面白无须的老者，曾经跟随大隋皇子一起去往骊珠洞天，与陈平安有过两面之缘，只是比起高煊的热络殷勤，老人神色冷淡，交过马车后，便徒步返回京城，老宦官回头多看了眼崔瀺，崔瀺忙着打量那匹骏马的丰姿，啧啧称奇，对于老人的审视目光，浑然不觉。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 高煊与陈平安在骊珠洞天试探",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 161,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "高煊"
         ],
         "to_roles": [
           "崔瀺"
         ],
-        "action": "同行",
+        "action": "试探",
         "context": "高煊赠送的那辆马车姗姗来迟，在很晚的暮色中，才赶到陈平安这边，马夫是那个面白无须的老者，曾经跟随大隋皇子一起去往骊珠洞天，与陈平安有过两面之缘，只是比起高煊的热络殷勤，老人神色冷淡，交过马车后，便徒步返回京城，老宦官回头多看了眼崔瀺，崔瀺忙着打量那匹骏马的丰姿，啧啧称奇，对于老人的审视目光，浑然不觉。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与崔瀺在骊珠洞天同行",
+        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 高煊与陈平安在骊珠洞天试探",
         "location": "骊珠洞天",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -116,7 +152,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.744164",
+    "extracted_at": "2026-03-25T01:03:30.847050",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -197,7 +233,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.744164",
+    "extracted_at": "2026-03-25T01:03:30.847050",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -251,6 +287,19 @@
       },
       {
         "entity_type": "person",
+        "name": "高煊",
+        "alias": [],
+        "original_description_in_book": "上了车，将背篓放在车厢，陈平安这才发现角落放着堆积成小山的瓶瓶罐罐，只是光线昏暗，看不清为何物，驾车的崔瀺笑道：“有几坛子好酒，有道家炼气、疗伤的丹药，连胭脂水粉都有，这个高煊也是够好玩的，说实话不谈敌我阵营，同样是皇子殿下，高煊比你朋友宋集薪的亲弟弟，也就是我曾经的弟子，要更……礼贤下士？",
+        "description": "大骊人物群中的重要成员，能补足王朝线与龙泉线之间的角色层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 161,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -275,7 +324,8 @@
         "participants": [
           "陈平安",
           "宋集薪",
-          "崔瀺"
+          "崔瀺",
+          "高煊"
         ],
         "description": "最后连“我有一头老毛驴，从来也不骑”也给念叨上了，听到这里，坚持了将近一个时辰的陈平安吐出一口浊气，停下走桩，出声道：“我上车休息会儿。 上了车，将背篓放在车厢，陈平安这才发现角落放着堆积成小山的瓶瓶罐罐，只是光线昏暗，看不清为何物，驾车的崔瀺笑道：“有几坛子好酒，有道家炼气、疗伤的丹药，连胭脂水粉都有，这个高煊也是够好玩的，说实话不谈敌我阵营，同样是皇子殿下，高煊比你朋友宋集薪的亲弟弟，也就是我曾经的弟子，要更……礼贤下士？ 陈平安坐在崔瀺身后，侧身而坐，双腿挂在外边，摇头道：“宋集薪从来不是我的朋友。",
         "background": "",
@@ -283,7 +333,10 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第二卷山水郎 第一百六十一章 山水终有一别 · 段3",
         "sentence_indexes_in_segment": [
@@ -325,7 +378,47 @@
           "陈平安"
         ],
         "to_roles": [
+          "高煊"
+        ],
+        "action": "对话",
+        "context": "上了车，将背篓放在车厢，陈平安这才发现角落放着堆积成小山的瓶瓶罐罐，只是光线昏暗，看不清为何物，驾车的崔瀺笑道：“有几坛子好酒，有道家炼气、疗伤的丹药，连胭脂水粉都有，这个高煊也是够好玩的，说实话不谈敌我阵营，同样是皇子殿下，高煊比你朋友宋集薪的亲弟弟，也就是我曾经的弟子，要更……礼贤下士？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 161,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "宋集薪"
+        ],
+        "action": "对话",
+        "context": "上了车，将背篓放在车厢，陈平安这才发现角落放着堆积成小山的瓶瓶罐罐，只是光线昏暗，看不清为何物，驾车的崔瀺笑道：“有几坛子好酒，有道家炼气、疗伤的丹药，连胭脂水粉都有，这个高煊也是够好玩的，说实话不谈敌我阵营，同样是皇子殿下，高煊比你朋友宋集薪的亲弟弟，也就是我曾经的弟子，要更……礼贤下士？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 161,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "高煊"
         ],
         "action": "对话",
         "context": "上了车，将背篓放在车厢，陈平安这才发现角落放着堆积成小山的瓶瓶罐罐，只是光线昏暗，看不清为何物，驾车的崔瀺笑道：“有几坛子好酒，有道家炼气、疗伤的丹药，连胭脂水粉都有，这个高煊也是够好玩的，说实话不谈敌我阵营，同样是皇子殿下，高煊比你朋友宋集薪的亲弟弟，也就是我曾经的弟子，要更……礼贤下士？",
@@ -358,9 +451,29 @@
         ],
         "juan_index": 161,
         "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "高煊"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "上了车，将背篓放在车厢，陈平安这才发现角落放着堆积成小山的瓶瓶罐罐，只是光线昏暗，看不清为何物，驾车的崔瀺笑道：“有几坛子好酒，有道家炼气、疗伤的丹药，连胭脂水粉都有，这个高煊也是够好玩的，说实话不谈敌我阵营，同样是皇子殿下，高煊比你朋友宋集薪的亲弟弟，也就是我曾经的弟子，要更……礼贤下士？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 161,
+        "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.848054",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -434,6 +547,19 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "他在离开泥瓶巷之前，齐静春送给赵繇一方‘天下迎春’印章，送给他宋集薪的则是六本书，三本杂书，术算精微，棋谱桃李，散文集山海策，三本齐静春挑选出来的蒙学书籍，礼乐，观止，小学，宋集薪呢，对先生你的态度很复杂，他大概为了求一个心安，走的时候在屋子里桌上留下了后边三本书，本意是送给你陈平安，但人心复杂就在于，宋集薪其实心知肚明，哪怕先生你拿到了丢在你家院子里的房门钥匙，你也绝对不会私自拿走书籍，却不耽误他宋集薪良心过去一个小坎，先生，这个家伙是不是很聪明？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 161,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "他在离开泥瓶巷之前，齐静春送给赵繇一方‘天下迎春’印章，送给他宋集薪的则是六本书，三本杂书，术算精微，棋谱桃李，散文集山海策，三本齐静春挑选出来的蒙学书籍，礼乐，观止，小学，宋集薪呢，对先生你的态度很复杂，他大概为了求一个心安，走的时候在屋子里桌上留下了后边三本书，本意是送给你陈平安，但人心复杂就在于，宋集薪其实心知肚明，哪怕先生你拿到了丢在你家院子里的房门钥匙，你也绝对不会私自拿走书籍，却不耽误他宋集薪良心过去一个小坎，先生，这个家伙是不是很聪明？ 他猜测书的事情，其实是齐静春早早料定的，宋集薪会瞧不上那三本蒙学，会选择留下来送给陈平安。",
@@ -457,6 +583,7 @@
         "coordinates": null,
         "related_entities": [
           "齐静春",
+          "赵繇",
           "宋集薪",
           "陈平安"
         ],
@@ -475,14 +602,16 @@
         "participants": [
           "陈平安",
           "宋集薪",
-          "齐静春"
+          "齐静春",
+          "赵繇"
         ],
         "description": "崔瀺拆台道：“那如今已经改名为宋睦的宋集薪，可就要伤心喽。 他在离开泥瓶巷之前，齐静春送给赵繇一方‘天下迎春’印章，送给他宋集薪的则是六本书，三本杂书，术算精微，棋谱桃李，散文集山海策，三本齐静春挑选出来的蒙学书籍，礼乐，观止，小学，宋集薪呢，对先生你的态度很复杂，他大概为了求一个心安，走的时候在屋子里桌上留下了后边三本书，本意是送给你陈平安，但人心复杂就在于，宋集薪其实心知肚明，哪怕先生你拿到了丢在你家院子里的房门钥匙，你也绝对不会私自拿走书籍，却不耽误他宋集薪良心过去一个小坎，先生，这个家伙是不是很聪明？ 崔瀺说了一大通不为人知的秘密，但是有一件事他没说出口。",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2
         ],
         "source": "第二卷山水郎 第一百六十一章 山水终有一别 · 段4",
         "sentence_indexes_in_segment": [
@@ -498,6 +627,26 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "别离",
+        "context": "他在离开泥瓶巷之前，齐静春送给赵繇一方‘天下迎春’印章，送给他宋集薪的则是六本书，三本杂书，术算精微，棋谱桃李，散文集山海策，三本齐静春挑选出来的蒙学书籍，礼乐，观止，小学，宋集薪呢，对先生你的态度很复杂，他大概为了求一个心安，走的时候在屋子里桌上留下了后边三本书，本意是送给你陈平安，但人心复杂就在于，宋集薪其实心知肚明，哪怕先生你拿到了丢在你家院子里的房门钥匙，你也绝对不会私自拿走书籍，却不耽误他宋集薪良心过去一个小坎，先生，这个家伙是不是很聪明？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 161,
+        "segment_index": 4
+      },
       {
         "time": null,
         "from_roles": [
@@ -539,7 +688,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.848054",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -659,7 +808,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.849057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -754,7 +903,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.849057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -905,7 +1054,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.849057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -999,7 +1148,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.849057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1078,6 +1227,19 @@
         ],
         "juan_index": 161,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "崔瀺打趣道：“宋集薪又没往你肩膀的担子上加石头，事实上，宋集薪可能内心深处，很希望跟你成为朋友的，因为他足够聪明，无比清楚应该跟什么人做朋友，比如他打心眼瞧不起不如自己聪明的赵繇，可一样会拉关系套近乎。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 161,
+        "segment_index": 9
       }
     ],
     "locations": [],
@@ -1110,7 +1272,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.745168",
+    "extracted_at": "2026-03-25T01:03:30.850061",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1217,7 +1379,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.850061",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,7 +1458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.850061",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1428,7 +1590,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.850061",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1493,7 +1655,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.851065",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1557,7 +1719,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.851065",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1636,7 +1798,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.851065",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1796,7 +1958,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.851065",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1875,7 +2037,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.851065",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1978,7 +2140,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.852068",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2056,7 +2218,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.746172",
+    "extracted_at": "2026-03-25T01:03:30.852068",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2141,18 +2303,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与李宝瓶迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
           "李宝瓶",
+          "林守一",
           "李槐",
-          "崔瀺"
+          "于禄"
         ],
         "description": "那辆马车已经连车带马一起卖出去，崔瀺卖出了一千五百两的高价，然后给自己添置了一个精美书箱，把原本车厢里的值钱东西都给装了进去。 相较之前的求学远游，陈平安可以更多的闲暇时间来练习撼山拳，以及用水磨工夫去砥砺十八停的运气法门。 只要不是大雨天气，每天早晚两次，陈平安的走桩会格外缓慢，就像是仍然带着李宝瓶李槐他们一起练拳。",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的迁移关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
@@ -2184,7 +2346,7 @@
         "action": "同行",
         "context": "只要不是大雨天气，每天早晚两次，陈平安的走桩会格外缓慢，就像是仍然带着李宝瓶李槐他们一起练拳。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与李宝瓶迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2204,7 +2366,7 @@
         "action": "同行",
         "context": "只要不是大雨天气，每天早晚两次，陈平安的走桩会格外缓慢，就像是仍然带着李宝瓶李槐他们一起练拳。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与李宝瓶迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2224,7 +2386,7 @@
         "action": "同行",
         "context": "只要不是大雨天气，每天早晚两次，陈平安的走桩会格外缓慢，就像是仍然带着李宝瓶李槐他们一起练拳。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与李宝瓶迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2244,7 +2406,7 @@
         "action": "别离",
         "context": "两人不再像那夜大隋京城外的官道，那样说着真正的心里话，更多时候，是一天到晚的两两无言，崔瀺偶尔会悄然离开陈平安的视野，回来的时候心情有好有坏，陈平安也从不追究。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十一章 山水终有一别 · 陈平安与李宝瓶迁移",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2254,7 +2416,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.852068",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2382,7 +2544,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.852068",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2478,7 +2640,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.852068",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2603,7 +2765,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.853071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2709,7 +2871,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.853071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2816,7 +2978,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.853071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2916,7 +3078,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.747175",
+    "extracted_at": "2026-03-25T01:03:30.853071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3023,7 +3185,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.853071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3105,7 +3267,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.748178",
+    "extracted_at": "2026-03-25T01:03:30.853071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

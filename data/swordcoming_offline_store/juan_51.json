@@ -13,7 +13,21 @@
       "也见识过大如山峰的本命飞剑，一剑劈下，江河断绝。",
       "老猿凝神思量之后，这才继续前行，入山后先是杂草丛生，然后是一片竹林，地上多是去年秋冬积攒下来的枯叶，只不过由于最为靠近小镇，竹林并不显得荒芜杂乱。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "返回福禄镇后，跟大骊藩王宋长镜进行了一场蜻蜓点水的切磋，正阳山老猿并未在李宅待太久，飞奔出镇，在草鞋少年入山的地方，稍作停留后，老人仍是退回自己先前出拳之处，仔细观察少年在泥地上的脚印深浅。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 51,
+        "segment_index": 1
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -24,7 +38,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -38,7 +54,9 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1,
           2,
@@ -83,7 +101,8 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "description": "返回福禄镇后，跟大骊藩王宋长镜进行了一场蜻蜓点水的切磋，正阳山老猿并未在李宅待太久，飞奔出镇，在草鞋少年入山的地方，稍作停留后，老人仍是退回自己先前出拳之处，仔细观察少年在泥地上的脚印深浅。 除此之外，老猿视野当中，还有一连串成人的浅淡脚印，老猿猜测多半是风雷园那个年轻剑修留下，自己对泥瓶巷少年出拳之时，那人分明是想趁火打劫，出现过一刹那的剑气外溢，虽然稍纵即逝，隐藏颇深，但老猿本就身经百战，又在“剑气纵横破宝瓶”的正阳山，足足修行了千年岁月，对于剑气剑意，实在太过熟悉。 这头正阳山护山猿活得太久，所以太过见多识广，见识过擅长养育上乘飞剑的剑仙，其中拥有数十把玲珑袖珍的飞剑，皆微小如细发牛毛。",
         "background": "",
@@ -103,7 +122,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.433530",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,7 +201,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.433530",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -262,6 +281,32 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "宁姚天生剑心通明，夜间视物，轻而易举，便发现破败墙壁上满是稚童的炭笔涂鸦，大多是人名，低处多半已经斑驳不清，或是被人涂抹篡改，或是重重叠叠，只是高一些的地方，还有一些清晰可见的名字，宋集薪，稚圭，赵繇，谢实，曹曦……很长一大串，估计是当年骑在脖子上，甚至是站在小伙伴的肩膀上写的，宁姚甚至看到了刘羡阳和陈平安、顾粲三人的名字，聚在左上角最高的地方，显得不太合群。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 51,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "宁姚天生剑心通明，夜间视物，轻而易举，便发现破败墙壁上满是稚童的炭笔涂鸦，大多是人名，低处多半已经斑驳不清，或是被人涂抹篡改，或是重重叠叠，只是高一些的地方，还有一些清晰可见的名字，宋集薪，稚圭，赵繇，谢实，曹曦……很长一大串，估计是当年骑在脖子上，甚至是站在小伙伴的肩膀上写的，宁姚甚至看到了刘羡阳和陈平安、顾粲三人的名字，聚在左上角最高的地方，显得不太合群。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 51,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "刘羡阳",
         "alias": [],
         "original_description_in_book": "宁姚天生剑心通明，夜间视物，轻而易举，便发现破败墙壁上满是稚童的炭笔涂鸦，大多是人名，低处多半已经斑驳不清，或是被人涂抹篡改，或是重重叠叠，只是高一些的地方，还有一些清晰可见的名字，宋集薪，稚圭，赵繇，谢实，曹曦……很长一大串，估计是当年骑在脖子上，甚至是站在小伙伴的肩膀上写的，宁姚甚至看到了刘羡阳和陈平安、顾粲三人的名字，聚在左上角最高的地方，显得不太合群。",
@@ -320,7 +365,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.433530",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -381,7 +426,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.434534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -527,7 +572,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.434534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -605,7 +650,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.434534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -710,7 +755,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.434534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -848,7 +893,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.434534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -911,7 +956,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.434534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -974,7 +1019,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1096,7 +1141,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1200,7 +1245,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1321,7 +1366,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1440,7 +1485,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.431928",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1546,7 +1591,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.432931",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1623,7 +1668,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.432931",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1716,7 +1761,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.432931",
+    "extracted_at": "2026-03-25T01:03:30.435537",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

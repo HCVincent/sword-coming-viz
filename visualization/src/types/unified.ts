@@ -185,6 +185,7 @@ export interface RoleNodeUnified {
   units: number[];
   aliases: string[];
   relatedEntities: string[];
+  isIsolated?: boolean;
 }
 
 export interface RoleLinkUnified {

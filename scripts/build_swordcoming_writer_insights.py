@@ -1070,6 +1070,393 @@ def build_foreshadowing_threads(
     return threads
 
 
+def focused_event_score(
+    event_ref: dict,
+    *,
+    writer_focus: dict,
+    priority_pair_scores: Dict[frozenset[str], int],
+    spotlight_role: Optional[str],
+) -> int:
+    score = event_score(
+        event_ref,
+        role_name=spotlight_role,
+        writer_focus=writer_focus,
+        priority_pair_scores=priority_pair_scores,
+        spotlight_role=spotlight_role,
+    )
+    participants = [str(name).strip() for name in event_ref.get("participants", []) if str(name).strip()]
+    participant_count = len(participants)
+    priority_characters = {
+        str(name).strip()
+        for name in writer_focus.get("priority_characters", [])
+        if str(name).strip()
+    }
+    if participant_count == 0:
+        score -= 2
+    elif participant_count <= 4:
+        score += 4
+    elif participant_count <= 8:
+        score += 2
+    elif participant_count <= 12:
+        score -= 4
+    elif participant_count <= 20:
+        score -= 14
+    else:
+        score -= 28
+
+    type_bonus = {
+        "冲突": 4,
+        "揭示": 4,
+        "立势": 4,
+        "师承": 3,
+        "迁移": 3,
+        "遭遇": 3,
+        "护持": 3,
+        "指点": 2,
+        "会见": 1,
+        "对话": 1,
+    }
+    score += type_bonus.get(str(event_ref.get("event_type", "")), 0)
+
+    if spotlight_role and spotlight_role in participants:
+        score += 3
+    elif spotlight_role:
+        score -= 3
+
+    priority_hits = [name for name in participants if name in priority_characters]
+    score += min(len(priority_hits), 3) * 3
+
+    strongest_pair_bonus = 0
+    for index, left in enumerate(priority_hits):
+        for right in priority_hits[index + 1 :]:
+            strongest_pair_bonus = max(
+                strongest_pair_bonus,
+                get_pair_priority(left, right, priority_pair_scores),
+            )
+    score += min(strongest_pair_bonus, 10)
+
+    if event_ref.get("location"):
+        score += 1
+
+    return score
+
+
+def extract_focus_roles(
+    event_ref: dict,
+    *,
+    writer_focus: dict,
+    spotlight_role: Optional[str],
+    limit: int = 3,
+) -> List[str]:
+    participants = [str(name).strip() for name in event_ref.get("participants", []) if str(name).strip()]
+    priority_characters = [
+        str(name).strip()
+        for name in writer_focus.get("priority_characters", [])
+        if str(name).strip()
+    ]
+
+    ordered: List[str] = []
+    if spotlight_role and spotlight_role in participants:
+        ordered.append(spotlight_role)
+    for name in priority_characters:
+        if name in participants and name not in ordered:
+            ordered.append(name)
+        if len(ordered) >= limit:
+            return ordered[:limit]
+    for name in participants:
+        if name not in ordered:
+            ordered.append(name)
+        if len(ordered) >= limit:
+            break
+    return ordered[:limit]
+
+
+def match_relationships_for_event(
+    event_ref: dict,
+    *,
+    curated_relationships: Sequence[dict],
+    priority_pair_scores: Dict[frozenset[str], int],
+    spotlight_role: Optional[str],
+    limit: int = 3,
+) -> List[dict]:
+    participants = {
+        str(name).strip()
+        for name in event_ref.get("participants", [])
+        if str(name).strip()
+    }
+    ranked: List[Tuple[int, dict]] = []
+
+    for item in curated_relationships:
+        source_name = str(item.get("source_role_name", "")).strip()
+        target_name = str(item.get("target_role_name", "")).strip()
+        pair = {source_name, target_name}
+        overlap = len(pair & participants)
+        if overlap == 0:
+            continue
+
+        score = 0
+        if overlap == 2:
+            score += 10
+        elif spotlight_role and spotlight_role in participants and spotlight_role in pair:
+            score += 5
+        else:
+            continue
+
+        score += get_pair_priority(source_name, target_name, priority_pair_scores)
+        if item.get("spotlight"):
+            score += 3
+        ranked.append((score, item))
+
+    ranked.sort(key=lambda pair: (-pair[0], pair[1].get("title", "")))
+    return [item for _, item in ranked[:limit]]
+
+
+def screenplay_event_score(
+    event_ref: dict,
+    *,
+    season_curated: Sequence[dict],
+    writer_focus: dict,
+    priority_pair_scores: Dict[frozenset[str], int],
+    spotlight_role: Optional[str],
+) -> int:
+    score = focused_event_score(
+        event_ref,
+        writer_focus=writer_focus,
+        priority_pair_scores=priority_pair_scores,
+        spotlight_role=spotlight_role,
+    )
+    matched_relationships = match_relationships_for_event(
+        event_ref,
+        curated_relationships=season_curated,
+        priority_pair_scores=priority_pair_scores,
+        spotlight_role=spotlight_role,
+        limit=3,
+    )
+    if matched_relationships:
+        score += len(matched_relationships) * 4
+        if any(item.get("spotlight") for item in matched_relationships):
+            score += 3
+    return score
+
+
+def build_story_beat_summary(
+    *,
+    beat_type: str,
+    event_ref: dict,
+    spotlight_role: Optional[str],
+) -> str:
+    participants = [str(name).strip() for name in event_ref.get("participants", []) if str(name).strip()]
+    location = event_ref.get("location")
+    focus_pair = None
+    if spotlight_role and spotlight_role in participants:
+        counterparts = [name for name in participants if name != spotlight_role]
+        if counterparts:
+            focus_pair = f"{spotlight_role}与{counterparts[0]}"
+        else:
+            focus_pair = spotlight_role
+    elif len(participants) >= 2:
+        focus_pair = f"{participants[0]}与{participants[1]}"
+    elif participants:
+        focus_pair = participants[0]
+    elif location:
+        focus_pair = location
+    else:
+        focus_pair = "本季主线"
+
+    if beat_type == "opening":
+        return f"建议用“{event_ref['name']}”做开场钩子，先把{focus_pair}在{location or '当前场域'}立住。"
+    if beat_type == "midpoint":
+        return f"建议把“{event_ref['name']}”作为中段转折，推动{focus_pair}进入新的关系或处境阶段。"
+    return f"建议用“{event_ref['name']}”承接后段收束，让{focus_pair}在{location or '关键场域'}形成落点。"
+
+
+def build_story_beats(
+    *,
+    season_events: Sequence[dict],
+    season_curated: Sequence[dict],
+    writer_focus: dict,
+    priority_pair_scores: Dict[frozenset[str], int],
+    spotlight_role: Optional[str],
+) -> List[dict]:
+    if not season_events:
+        return []
+
+    ranked_events = sorted(
+        season_events,
+        key=lambda ref: (
+            -screenplay_event_score(
+                ref,
+                season_curated=season_curated,
+                writer_focus=writer_focus,
+                priority_pair_scores=priority_pair_scores,
+                spotlight_role=spotlight_role,
+            ),
+            ref.get("progress_start") if ref.get("progress_start") is not None else 10**12,
+            ref.get("unit_index") if ref.get("unit_index") is not None else 10**12,
+            ref.get("name", ""),
+        ),
+    )
+
+    progress_values = [ref.get("progress_start") for ref in season_events if ref.get("progress_start") is not None]
+    if progress_values:
+        start = min(progress_values)
+        end = max(progress_values)
+    else:
+        unit_values = [ref.get("unit_index") for ref in season_events if ref.get("unit_index") is not None]
+        start = min(unit_values) if unit_values else 0
+        end = max(unit_values) if unit_values else start
+
+    span = max(end - start, 1)
+
+    def event_position(event_ref: dict) -> float:
+        value = event_ref.get("progress_start")
+        if value is None:
+            value = event_ref.get("unit_index")
+        if value is None:
+            return float(start)
+        return float(value)
+
+    windows = [
+        ("opening", "开场钩子", lambda pos: pos <= start + span * 0.3),
+        ("midpoint", "中段转折", lambda pos: start + span * 0.3 < pos < start + span * 0.7),
+        ("payoff", "收束落点", lambda pos: pos >= start + span * 0.7),
+    ]
+
+    selected_ids = set()
+    beats: List[dict] = []
+    for beat_type, label, predicate in windows:
+        candidates = [
+            ref
+            for ref in ranked_events
+            if ref.get("event_id") not in selected_ids and predicate(event_position(ref))
+        ]
+        if not candidates:
+            candidates = [ref for ref in ranked_events if ref.get("event_id") not in selected_ids]
+        if not candidates:
+            beats.append({"beat_type": beat_type, "label": label, "summary": "当前范围暂无合适锚点。", "event": None})
+            continue
+
+        chosen = candidates[0]
+        selected_ids.add(chosen.get("event_id"))
+        beats.append(
+            {
+                "beat_type": beat_type,
+                "label": label,
+                "summary": build_story_beat_summary(
+                    beat_type=beat_type,
+                    event_ref=chosen,
+                    spotlight_role=spotlight_role,
+                ),
+                "event": chosen,
+            }
+        )
+
+    return beats
+
+
+def build_must_keep_scene_reason(
+    *,
+    beat_type: str,
+    event_ref: Optional[dict],
+    focus_roles: Sequence[str],
+    matched_relationships: Sequence[dict],
+) -> str:
+    if event_ref is None:
+        return "当前范围暂无足够明确的季别锚点，建议后续人工补一场主线场景。"
+
+    role_text = "、".join(focus_roles) if focus_roles else "核心角色"
+    relationship_text = "、".join(item["title"] for item in matched_relationships[:2])
+    location = event_ref.get("location") or "关键场域"
+
+    if beat_type == "opening":
+        return (
+            f"适合拿来立人、立场和立场域，先把{role_text}在{location}的关系张力交代清楚。"
+            if not relationship_text
+            else f"适合做季初立戏，先把{relationship_text}在{location}的底色拍稳。"
+        )
+    if beat_type == "midpoint":
+        return (
+            f"适合承担季中的转折推进，让{role_text}的处境或关系在这一场里发生偏移。"
+            if not relationship_text
+            else f"适合做中段转折戏，把{relationship_text}从静态关系推到新的冲突或选择。"
+        )
+    return (
+        f"适合拿来收束本季阶段目标，让{role_text}在{location}形成明确落点。"
+        if not relationship_text
+        else f"适合做季终落点戏，让{relationship_text}在{location}完成阶段性回响。"
+    )
+
+
+def build_must_keep_scenes(
+    *,
+    season_name: str,
+    story_beats: Sequence[dict],
+    season_curated: Sequence[dict],
+    writer_focus: dict,
+    priority_pair_scores: Dict[frozenset[str], int],
+    spotlight_role: Optional[str],
+) -> List[dict]:
+    label_map = {
+        "opening": "开场必保留戏",
+        "midpoint": "中段必保留戏",
+        "payoff": "收束必保留戏",
+    }
+    scenes: List[dict] = []
+    for beat in story_beats:
+        event_ref = beat.get("event")
+        focus_roles = (
+            extract_focus_roles(
+                event_ref,
+                writer_focus=writer_focus,
+                spotlight_role=spotlight_role,
+                limit=3,
+            )
+            if event_ref
+            else []
+        )
+        matched_relationships = (
+            match_relationships_for_event(
+                event_ref,
+                curated_relationships=season_curated,
+                priority_pair_scores=priority_pair_scores,
+                spotlight_role=spotlight_role,
+                limit=2,
+            )
+            if event_ref
+            else []
+        )
+        if event_ref and matched_relationships:
+            participants = set(focus_roles)
+            strict_relationships = [
+                item
+                for item in matched_relationships
+                if {
+                    str(item.get("source_role_name", "")).strip(),
+                    str(item.get("target_role_name", "")).strip(),
+                }.issubset(participants)
+            ]
+            if strict_relationships:
+                matched_relationships = strict_relationships
+        scene_id_suffix = str(beat.get("beat_type", "scene"))
+        scenes.append(
+            {
+                "scene_id": f"{season_name}-{scene_id_suffix}",
+                "beat_type": scene_id_suffix,
+                "label": label_map.get(scene_id_suffix, str(beat.get("label", "必保留戏"))),
+                "event": event_ref,
+                "focus_roles": focus_roles,
+                "related_relationship_titles": [item["title"] for item in matched_relationships],
+                "adaptation_reason": build_must_keep_scene_reason(
+                    beat_type=scene_id_suffix,
+                    event_ref=event_ref,
+                    focus_roles=focus_roles,
+                    matched_relationships=matched_relationships,
+                ),
+            }
+        )
+    return scenes
+
+
 def build_season_overviews(
     *,
     seasons: Sequence[dict],
@@ -1080,6 +1467,8 @@ def build_season_overviews(
     conflict_chains: Sequence[dict],
     curated_relationships: Sequence[dict],
     role_name_to_id: Dict[str, str],
+    writer_focus: dict,
+    priority_pair_scores: Dict[frozenset[str], int],
     spotlight_role: Optional[str],
 ) -> List[dict]:
     overviews: List[dict] = []
@@ -1186,6 +1575,67 @@ def build_season_overviews(
             )[:4]
         ]
 
+        priority_relationships = [
+            {
+                "relationship_id": item["id"],
+                "title": item["title"],
+                "source_role_name": item["source_role_name"],
+                "target_role_name": item["target_role_name"],
+                "kind": item["kind"],
+            }
+            for item in sorted(
+                season_curated,
+                key=lambda item: (
+                    0 if item.get("spotlight") else 1,
+                    0
+                    if get_pair_priority(
+                        item["source_role_name"],
+                        item["target_role_name"],
+                        priority_pair_scores,
+                    )
+                    > 0
+                    else 1,
+                    -get_pair_priority(
+                        item["source_role_name"],
+                        item["target_role_name"],
+                        priority_pair_scores,
+                    ),
+                    item["title"],
+                ),
+            )[:3]
+        ]
+
+        season_anchor_events = sorted(
+            season_events,
+            key=lambda ref: (
+                -screenplay_event_score(
+                    ref,
+                    season_curated=season_curated,
+                    writer_focus=writer_focus,
+                    priority_pair_scores=priority_pair_scores,
+                    spotlight_role=spotlight_role,
+                ),
+                ref["progress_start"] if ref["progress_start"] is not None else 10**12,
+                ref["unit_index"] if ref["unit_index"] is not None else 10**12,
+                ref["name"],
+            ),
+        )[:4]
+        story_beats = build_story_beats(
+            season_events=season_events,
+            season_curated=season_curated,
+            writer_focus=writer_focus,
+            priority_pair_scores=priority_pair_scores,
+            spotlight_role=spotlight_role,
+        )
+        must_keep_scenes = build_must_keep_scenes(
+            season_name=season_name,
+            story_beats=story_beats,
+            season_curated=season_curated,
+            writer_focus=writer_focus,
+            priority_pair_scores=priority_pair_scores,
+            spotlight_role=spotlight_role,
+        )
+
         top_role_names = [item["role_name"] for item in top_roles[:3]]
         top_location_names = [item["location_name"] for item in top_locations[:3]]
         conflict_titles = [item["title"] for item in main_conflicts[:2]]
@@ -1212,6 +1662,21 @@ def build_season_overviews(
                 f"关键落点集中在{('、'.join(top_location_names) if top_location_names else '多处场景')}。"
             )
 
+        adaptation_hooks = [
+            (
+                f"人物抓手：优先抓{('、'.join(top_role_names) if top_role_names else '当季核心人物')}的出场密度与关系变化，"
+                f"其中{spotlight_role if spotlight_role else (top_role_names[0] if top_role_names else '核心角色')}应作为叙事主轴。"
+            ),
+            (
+                f"关系抓手：重点保留{('、'.join(item['title'] for item in priority_relationships) if priority_relationships else '当季主要关系推进')}，"
+                f"并让{('、'.join(conflict_titles) if conflict_titles else '主线冲突')}承担阶段转折。"
+            ),
+            (
+                f"场景抓手：优先把{('、'.join(top_location_names) if top_location_names else '关键场域')}拍出明确层次，"
+                f"再用{('、'.join(event['name'] for event in season_anchor_events[:2]) if season_anchor_events else '锚点事件')}做结构落点。"
+            ),
+        ]
+
         overviews.append(
             {
                 "season_name": season_name,
@@ -1219,9 +1684,14 @@ def build_season_overviews(
                 "progress_range": season["progress_range"],
                 "summary": summary,
                 "spotlight_summary": spotlight_summary,
+                "adaptation_hooks": adaptation_hooks,
+                "story_beats": story_beats,
                 "top_roles": top_roles[:5],
                 "top_locations": top_locations,
                 "main_conflicts": main_conflicts,
+                "priority_relationships": priority_relationships,
+                "anchor_events": season_anchor_events,
+                "must_keep_scenes": must_keep_scenes,
             }
         )
 
@@ -1358,11 +1828,13 @@ def build_writer_insights_payload(
         conflict_chains=conflict_chains,
         curated_relationships=curated_relationships,
         role_name_to_id=role_name_to_id,
+        writer_focus=writer_focus,
+        priority_pair_scores=priority_pair_scores,
         spotlight_role=spotlight_role,
     )
 
     return {
-        "version": "swordcoming-writer-insights-v2",
+        "version": "swordcoming-writer-insights-v3",
         "generated_at": datetime.now().isoformat(),
         "book_id": kb.book_id,
         "unit_label": kb.unit_label,

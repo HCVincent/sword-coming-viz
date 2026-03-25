@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.891461",
+    "extracted_at": "2026-03-25T01:03:31.052272",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -121,7 +121,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.891461",
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.891461",
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -262,7 +262,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.891461",
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -360,7 +360,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.891461",
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,7 +487,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -614,7 +614,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -635,6 +635,19 @@
       "浩然天下，自古就有规矩约束君王，中五境练气士一律不得担任一国之主，下五境练气士，不可坐龙椅超过一甲子。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "我本就需要为敕封大骊北岳一事，亲自露面，其实来的半路上，墨家许弱就不惜以本命飞剑传讯，劝我最好不要在掌教真人面前出现，国师也是差不多的意思，两人话说得都很直接，半点不客气，尤其是咱们那位大骊国师，最清楚我的脾气，怕我一个破罐子破摔，就冒犯了掌教真人。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 10
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -704,6 +717,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "许弱",
           "崔瀺",
           "陆沉",
           "大骊皇帝",
@@ -726,13 +740,15 @@
         "participants": [
           "陆沉",
           "大骊皇帝",
-          "崔瀺",
           "阿良"
         ],
         "description": "我本就需要为敕封大骊北岳一事，亲自露面，其实来的半路上，墨家许弱就不惜以本命飞剑传讯，劝我最好不要在掌教真人面前出现，国师也是差不多的意思，两人话说得都很直接，半点不客气，尤其是咱们那位大骊国师，最清楚我的脾气，怕我一个破罐子破摔，就冒犯了掌教真人。 陆沉随意打量了一下病入膏肓的大骊皇帝，啧啧道：“贫道很好奇一件事情，阿良那一拳打断了你的长生桥，既帮你摆脱了傀儡命运，却也让你命不久矣，你是感激，还是怨恨？ 大骊皇帝坦诚道：“两者皆有，甚至说不上感激多还是怨恨多。",
         "background": "",
         "significance": "串联道家高层与大骊王朝线。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -746,8 +762,49 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "大骊皇帝"
+        ],
+        "action": "试探",
+        "context": "陆沉随意打量了一下病入膏肓的大骊皇帝，啧啧道：“贫道很好奇一件事情，阿良那一拳打断了你的长生桥，既帮你摆脱了傀儡命运，却也让你命不久矣，你是感激，还是怨恨？",
+        "result": null,
+        "event_name": "陆沉会大骊皇帝",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 206,
+        "segment_index": 10
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "阿良"
+        ],
+        "action": "试探",
+        "context": "陆沉随意打量了一下病入膏肓的大骊皇帝，啧啧道：“贫道很好奇一件事情，阿良那一拳打断了你的长生桥，既帮你摆脱了傀儡命运，却也让你命不久矣，你是感激，还是怨恨？",
+        "result": null,
+        "event_name": "陆沉会大骊皇帝",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 206,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.053274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -860,7 +917,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -958,7 +1015,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1059,7 +1116,9 @@
         "description": "大骊皇帝突然流露出一丝侥幸和忐忑，“掌教真人在此，我能否逃过一劫？ 陆沉笑着摇头，“流淌在人间的璀璨星河之中，你本就属于比较明亮的那种，贫道当然能够延长你的寿命，别说是十年百年，千年都不难，但是只要贫道出手改变命数，恐怕你就得放弃祖业，跟着贫道去往别处天下，才能真的活命，否则你真当礼圣的规矩是摆设，文庙里头的那些个神像，一个个全是死人？ 大骊皇帝叹息一声，久久无言。",
         "background": "",
         "significance": "串联道家高层与大骊王朝线。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1073,8 +1132,29 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "试探",
+        "context": "陆沉斜眼打量那位神色古板的少年，笑呵呵道：“宋集薪，或者喊你宋睦？",
+        "result": null,
+        "event_name": "陆沉会大骊皇帝",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1180,7 +1260,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,7 +1376,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1427,7 +1507,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1526,7 +1606,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1636,7 +1716,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.892465",
+    "extracted_at": "2026-03-25T01:03:31.054278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1750,7 +1830,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.055281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1814,7 +1894,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.055281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1879,7 +1959,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.055281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1911,6 +1991,19 @@
           3,
           4,
           5
+        ],
+        "juan_index": 206,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "李槐想要去，结果喊来喊去，只喊动了于禄一人，李宝瓶说大隋京城的犄角旮旯都走遍了，这会儿去山下哪里是看灯，分明是看人，没劲，再说了她还欠着授业先生的好几篇罚抄文章，她得挑灯夜战！",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 206,
         "segment_index": 24
@@ -1954,6 +2047,19 @@
         ],
         "juan_index": 206,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "林守一说他要继续去藏书楼看书，谢谢如今成了谢灵越，还摇身一变，成了崔东山的徒子徒孙，吉星高照，一大堆神仙才能用的法宝，李槐纠缠不休，谢谢便拿出来给他瞧过，李槐真的看过之后，就觉得那就那样呗，还不如自己的彩绘木偶可爱呢，他就半点不艳羡了。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 24
       }
     ],
     "locations": [
@@ -1974,18 +2080,21 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李槐与李宝瓶在山崖书院指点",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "山崖书院的求学读书人，那晚几乎都纷纷下山去凑热闹了，书院夫子先生们对此并不反感。 李槐想要去，结果喊来喊去，只喊动了于禄一人，李宝瓶说大隋京城的犄角旮旯都走遍了，这会儿去山下哪里是看灯，分明是看人，没劲，再说了她还欠着授业先生的好几篇罚抄文章，她得挑灯夜战！ 林守一说他要继续去藏书楼看书，谢谢如今成了谢灵越，还摇身一变，成了崔东山的徒子徒孙，吉星高照，一大堆神仙才能用的法宝，李槐纠缠不休，谢谢便拿出来给他瞧过，李槐真的看过之后，就觉得那就那样呗，还不如自己的彩绘木偶可爱呢，他就半点不艳羡了。",
         "background": "",
-        "significance": "在山崖书院推动李槐与李宝瓶之间的指点线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段24",
         "sentence_indexes_in_segment": [
@@ -2007,12 +2116,32 @@
           "李槐"
         ],
         "to_roles": [
+          "于禄"
+        ],
+        "action": "指点",
+        "context": "李槐想要去，结果喊来喊去，只喊动了于禄一人，李宝瓶说大隋京城的犄角旮旯都走遍了，这会儿去山下哪里是看灯，分明是看人，没劲，再说了她还欠着授业先生的好几篇罚抄文章，她得挑灯夜战！",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 206,
+        "segment_index": 24
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
           "李宝瓶"
         ],
         "action": "指点",
         "context": "李槐想要去，结果喊来喊去，只喊动了于禄一人，李宝瓶说大隋京城的犄角旮旯都走遍了，这会儿去山下哪里是看灯，分明是看人，没劲，再说了她还欠着授业先生的好几篇罚抄文章，她得挑灯夜战！",
         "result": null,
-        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李槐与李宝瓶在山崖书院指点",
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2022,7 +2151,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.055281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2045,6 +2174,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "到最后，就只有最好说话又最没事情做的于禄，跟着李槐一起下山。 结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "到最后，就只有最好说话又最没事情做的于禄，跟着李槐一起下山。 李槐为此专程别上了那根刻有“槐荫”的墨玉簪子，走路的时候高高挺起胸膛，趾高气昂。",
@@ -2055,6 +2199,20 @@
           3,
           4,
           5
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "高煊",
+        "alias": [],
+        "original_description_in_book": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。 于禄和高煊一左一右护在李槐身边，倒不是害怕如今还有人欺负李槐，不过是李槐这个小兔崽子，好像天生就有一种奇怪的独有气质，土鳖归土鳖，可就是运气好，比如像现在，能够让一位昔年卢氏王朝的太子殿下，一个如今的大隋洪氏皇子，为他保驾护航。",
+        "description": "大骊人物群中的重要成员，能补足王朝线与龙泉线之间的角色层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
         ],
         "juan_index": 206,
         "segment_index": 25
@@ -2095,8 +2253,10 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "高煊",
           "林守一",
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -2107,18 +2267,26 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 林守一与谢谢在山崖书院同行",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "李宝瓶",
           "林守一",
-          "谢谢"
+          "李槐",
+          "于禄"
         ],
         "description": "到最后，就只有最好说话又最没事情做的于禄，跟着李槐一起下山。 结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。 李槐为此专程别上了那根刻有“槐荫”的墨玉簪子，走路的时候高高挺起胸膛，趾高气昂。",
         "background": "",
-        "significance": "在山崖书院推动林守一与谢谢之间的同行线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
         ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段25",
         "sentence_indexes_in_segment": [
@@ -2137,6 +2305,86 @@
       {
         "time": null,
         "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "对话",
+        "context": "到最后，就只有最好说话又最没事情做的于禄，跟着李槐一起下山。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "高煊"
+        ],
+        "to_roles": [
+          "林守一"
+        ],
+        "action": "同行",
+        "context": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "高煊"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "同行",
+        "context": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "高煊"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "同行",
+        "context": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "time": null,
+        "from_roles": [
           "林守一"
         ],
         "to_roles": [
@@ -2145,7 +2393,47 @@
         "action": "同行",
         "context": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
         "result": null,
-        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 林守一与谢谢在山崖书院同行",
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "同行",
+        "context": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 206,
+        "segment_index": 25
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "谢谢"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "同行",
+        "context": "结果山脚遇到了大隋皇子高煊，三人结伴而行，高煊之前就经常来山崖书院逛荡，聊来聊去，高煊实在跟不上红棉袄小姑娘的思路，林守一又是冷冷清清的性子，而谢谢经常被那位“蔡家老祖宗”呼来喝去，端茶送水，洗衣扫地，哪里像是一个修行天才该有的待遇，简直比丫鬟婢女还不如，于是高煊就跟于禄最熟悉了，时不时会陪着于禄一起在湖边钓鱼。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2155,7 +2443,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.055281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2225,16 +2513,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 林守一与李宝瓶在山崖书院剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "山崖书院的书楼内，林守一挑灯夜读书，突然有些心神不宁，叹息一声，放下书本，走到窗口，想起了一位杨柳依依的动人少女。 林守一默默告诉自己，要好好读书，好好修行，将来…… 一想到某些美好的场景，平日里不苟言笑的林守一，整张脸庞都漾起了温暖笑意。",
         "background": "",
-        "significance": "在山崖书院推动林守一与李宝瓶之间的剧情推进线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段26",
         "sentence_indexes_in_segment": [
@@ -2250,7 +2540,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.056285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2314,7 +2604,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.056285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2359,6 +2649,20 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 206,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "一栋幽静别院内，白衣少年崔东山坐在檐下，听着新挂上去的一串檐下铁马，在安静祥和的春风夜幕里，叮咚作响。 崔东山突然转头望向跪坐于一旁的少女谢谢，“你有爷爷吗？",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
         ],
         "juan_index": 206,
         "segment_index": 28
@@ -2424,7 +2728,7 @@
           "崔瀺",
           "大骊皇帝"
         ],
-        "description": "以少年皮囊示人的书院崔瀺，先前找过他谈了一次，再去找大骊皇帝谈了一次，最后找那名说书先生的十一境练气士谈了一次，找茅小冬的时候，老人劝他不要痴心妄想，这么早就抖搂身份，小心死在大隋京城，到时候连累书院被殃及池鱼，茅小冬说得很直接，如果大隋误以为山崖书院参与其中，然后双方没能谈拢，那么他茅小冬第一个出手杀人，将大骊国师绞杀于大隋国境之内。 崔东山突然转头望向跪坐于一旁的少女谢谢，“你有爷爷吗？ 茅小冬喟叹道：“读书人，怎么就成了生意人了呢？",
+        "description": "以少年皮囊示人的书院崔瀺，先前找过他谈了一次，再去找大骊皇帝谈了一次，最后找那名说书先生的十一境练气士谈了一次，找茅小冬的时候，老人劝他不要痴心妄想，这么早就抖搂身份，小心死在大隋京城，到时候连累书院被殃及池鱼，茅小冬说得很直接，如果大隋误以为山崖书院参与其中，然后双方没能谈拢，那么他茅小冬第一个出手杀人，将大骊国师绞杀于大隋国境之内。 一栋幽静别院内，白衣少年崔东山坐在檐下，听着新挂上去的一串檐下铁马，在安静祥和的春风夜幕里，叮咚作响。 崔东山突然转头望向跪坐于一旁的少女谢谢，“你有爷爷吗？",
         "background": "",
         "significance": "在大骊推动崔瀺与大骊皇帝之间的冲突线。",
         "related_action_indices": [
@@ -2465,7 +2769,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.893468",
+    "extracted_at": "2026-03-25T01:03:31.056285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2488,6 +2792,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "她觉得肯定是一场考验心志的陷阱，正当少女小心酝酿措辞的时候，崔东山哈哈笑道：“原来你也有啊？",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 206,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "谢谢有些无言以对。",
@@ -2503,16 +2820,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 谢谢对话",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 崔东山与谢谢对话",
         "time": null,
         "location": null,
         "participants": [
+          "崔东山",
           "谢谢"
         ],
-        "description": "谢谢有些无言以对。 少女愕然，这个问题怎么回答？ 难道暗藏玄机？",
+        "description": "她觉得肯定是一场考验心志的陷阱，正当少女小心酝酿措辞的时候，崔东山哈哈笑道：“原来你也有啊？ 谢谢有些无言以对。 少女愕然，这个问题怎么回答？",
         "background": "",
-        "significance": "对应谢谢在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔东山与谢谢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -2526,8 +2846,34 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894472",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "对话",
+        "context": "少女愕然，这个问题怎么回答？ 难道暗藏玄机？ 要不然天底下谁会没有爷爷？ 她觉得肯定是一场考验心志的陷阱，正当少女小心酝酿措辞的时候，崔东山哈哈笑道：“原来你也有啊？ ” 谢谢有些无言以对。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 崔东山与谢谢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.056285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2550,6 +2896,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "作为李家主妇，家主李虹的妻子，也就是李希圣三兄妹的母亲，算不得如何好说话，但是赏罚分明，在家族内极有威信，已经是十境神仙的李氏老祖，对这位持家有道的儿媳妇，也从不拿捏架子，挑不出毛病。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "富贵且内敛的李家大宅内，仆役丫鬟众多，各种姓氏的家生子都有，祖祖辈辈都是李氏的体己人，而且李氏历代当家人，对于下人从来都体恤有加，先前朱河朱鹿这对父女，就是一个例子，以至于有府上老人打趣朱鹿是丫鬟身子，小姐的命。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "富贵且内敛的李家大宅内，仆役丫鬟众多，各种姓氏的家生子都有，祖祖辈辈都是李氏的体己人，而且李氏历代当家人，对于下人从来都体恤有加，先前朱河朱鹿这对父女，就是一个例子，以至于有府上老人打趣朱鹿是丫鬟身子，小姐的命。",
@@ -2565,15 +2937,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 朱鹿剧情推进",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与朱河剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "李希圣",
+          "朱河",
           "朱鹿"
         ],
-        "description": "富贵且内敛的李家大宅内，仆役丫鬟众多，各种姓氏的家生子都有，祖祖辈辈都是李氏的体己人，而且李氏历代当家人，对于下人从来都体恤有加，先前朱河朱鹿这对父女，就是一个例子，以至于有府上老人打趣朱鹿是丫鬟身子，小姐的命。 好冷的笑话。 最后两人一起抬头望向夜空。",
+        "description": "作为李家主妇，家主李虹的妻子，也就是李希圣三兄妹的母亲，算不得如何好说话，但是赏罚分明，在家族内极有威信，已经是十境神仙的李氏老祖，对这位持家有道的儿媳妇，也从不拿捏架子，挑不出毛病。 富贵且内敛的李家大宅内，仆役丫鬟众多，各种姓氏的家生子都有，祖祖辈辈都是李氏的体己人，而且李氏历代当家人，对于下人从来都体恤有加，先前朱河朱鹿这对父女，就是一个例子，以至于有府上老人打趣朱鹿是丫鬟身子，小姐的命。 好冷的笑话。",
         "background": "",
-        "significance": "对应朱鹿在叙事中的关键剧情推进节点。",
+        "significance": "推动李希圣与朱河之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段30",
         "sentence_indexes_in_segment": [
@@ -2589,7 +2963,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894472",
+    "extracted_at": "2026-03-25T01:03:31.056285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2612,6 +2986,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "家主李虹是万事不上心的人，喜欢收藏瓷片和读书注疏，除了跟长子李希圣偶尔聊天，不太露面，操持家族大小事务的当家妇人，她没有读过多少书，识得字，因为需要查账。 对于长子李希圣和次子李宝箴，下人们看不出明显的私心，李虹也跟李希圣一起看书，也跟李宝箴没大没小一起喝酒。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "李家上下，都知道家主李虹最偏爱幼女李宝瓶，皇帝爱长子，百姓爱幺儿嘛。",
@@ -2627,16 +3015,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李宝瓶遭遇",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与李宝瓶遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "李希圣",
           "李宝瓶"
         ],
-        "description": "李家上下，都知道家主李虹最偏爱幼女李宝瓶，皇帝爱长子，百姓爱幺儿嘛。 家主李虹是万事不上心的人，喜欢收藏瓷片和读书注疏，除了跟长子李希圣偶尔聊天，不太露面，操持家族大小事务的当家妇人，她没有读过多少书，识得字，因为需要查账。 李家有个传承已久的习俗，就是每当逢年过节，蒙童岁数的孩子，就要死记硬背带某个字的成语俗语，若是李家长辈见到的时候问起，孩子们能够顺畅地回答出来，就可以拿到一封喜钱，去年除夕是嘉字，今年元宵则是桃字。",
+        "description": "家主李虹是万事不上心的人，喜欢收藏瓷片和读书注疏，除了跟长子李希圣偶尔聊天，不太露面，操持家族大小事务的当家妇人，她没有读过多少书，识得字，因为需要查账。 李家上下，都知道家主李虹最偏爱幼女李宝瓶，皇帝爱长子，百姓爱幺儿嘛。 对于长子李希圣和次子李宝箴，下人们看不出明显的私心，李虹也跟李希圣一起看书，也跟李宝箴没大没小一起喝酒。",
         "background": "",
-        "significance": "对应李宝瓶在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动李希圣与李宝瓶之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -2650,8 +3041,34 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894472",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "李宝瓶"
+        ],
+        "action": "对话",
+        "context": "家主李虹是万事不上心的人，喜欢收藏瓷片和读书注疏，除了跟长子李希圣偶尔聊天，不太露面，操持家族大小事务的当家妇人，她没有读过多少书，识得字，因为需要查账。 李家有个传承已久的习俗，就是每当逢年过节，蒙童岁数的孩子，就要死记硬背带某个字的成语俗语，若是李家长辈见到的时候问起，孩子们能够顺畅地回答出来，就可以拿到一封喜钱，去年除夕是嘉字，今年元宵则是桃字。 当家妇人在元宵节这天，让贴身丫鬟拿着一摞红包喜钱，路上遇见了“守株待兔”的孩子，便会开口笑问，然后就有了孩子们早就准备好的答案，一个个稚声稚气，清脆悦耳，让气度雍容的妇人微笑不已，比如桃李不言下自成蹊，桃之夭夭，桃腮杏脸，等等，都是很美好动人的说法，哪怕有一个孩子，脱口而出了一个不知道从哪里听来的“凡桃俗李”，是一个很贬义的成语，妇人也没生气，一样笑着给出喜钱。 只是当妇人听到投桃报李的时候，笑容似乎有些牵强，听到李代桃僵之后，分明是一个略带褒义的说辞，虽然寓意算不得如何美满，但比起凡桃俗李，其实还是要强上一些的，可妇人满脸怒气，吓得那个孩子不知所措，语气生硬地问过了孩子姓氏后，姓陈，妇人虽然最后还是让丫鬟给了孩子喜钱，可是离去的时候，她脸色冷若冰霜，并不常见。 李家上下，都知道家主李虹最偏爱幼女李宝瓶，皇帝爱长子，百姓爱幺儿嘛。 对于长子李希圣和次子李宝箴，下人们看不出明显的私心，李虹也跟李希圣一起看书，也跟李宝箴没大没小一起喝酒。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与李宝瓶遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.056285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2671,7 +3088,22 @@
       "老人率先走向屋内，“去你书房说。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "不过李虹妻子可能因为李宝箴是小儿子的缘故，加上李宝箴又是天生讨喜的性子，对谁都知冷知暖，反观李希圣则沉默古板许多，从小就不太爱说话，所以妇人跟李宝箴就要亲近许多。 今天李希圣从学塾返回，回到自己院子，发现爷爷站在小水池旁，像是等了好一会儿，连忙快步走去。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 206,
+        "segment_index": 32
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2692,13 +3124,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 大骊迁移",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣在大骊迁移",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "自从李宝箴离家远游京城后，妇人就经常寄信去往京城，询问何时回家，家书往来频繁，每当李宝箴说起了京城趣事，妇人拿着书信就会笑出声，只是每当放下书信后，又会惆怅忧心，总担心小儿子会在大骊京城那么个大地方受委屈。 不过李虹妻子可能因为李宝箴是小儿子的缘故，加上李宝箴又是天生讨喜的性子，对谁都知冷知暖，反观李希圣则沉默古板许多，从小就不太爱说话，所以妇人跟李宝箴就要亲近许多。 一封封次子寄回家中的书信，都会整整齐齐叠放在红漆小匣内，李虹为此还调侃过妻子，就宝箴那么聪明的孩子，哪怕出门在外，也是万万吃不了亏的，你担心别人才对。",
+        "participants": [
+          "李希圣"
+        ],
+        "description": "不过李虹妻子可能因为李宝箴是小儿子的缘故，加上李宝箴又是天生讨喜的性子，对谁都知冷知暖，反观李希圣则沉默古板许多，从小就不太爱说话，所以妇人跟李宝箴就要亲近许多。 自从李宝箴离家远游京城后，妇人就经常寄信去往京城，询问何时回家，家书往来频繁，每当李宝箴说起了京城趣事，妇人拿着书信就会笑出声，只是每当放下书信后，又会惆怅忧心，总担心小儿子会在大骊京城那么个大地方受委屈。 今天李希圣从学塾返回，回到自己院子，发现爷爷站在小水池旁，像是等了好一会儿，连忙快步走去。",
         "background": "",
-        "significance": "对应大骊相关的关键迁移场景。",
+        "significance": "对应李希圣在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段32",
         "sentence_indexes_in_segment": [
@@ -2714,7 +3148,112 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894472",
+    "extracted_at": "2026-03-25T01:03:31.056285",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-33-0": {
+    "juan_index": 206,
+    "segment_index": 33,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "到了布置素洁的“结庐”小书斋，老人示意李希圣一同坐下说话，笑道：“宝箴性子太跳脱，离开家乡那么远，又是小儿子，你娘亲担心他是人之常情，你别觉得她偏心，为此伤感。",
+      "”",
+      "李希圣微笑道：“当然不会。",
+      "”",
+      "老人缓缓道：“那谢实点名要三个人，其中有你，我并不奇怪，你爹不晓得你的天赋，那是他眼瞎，我甚至觉得你半点不比那个神诰宗贺小凉差，一洲道统的玉女怎么了，了不起啊？",
+      "我孙子也就是没有宗门栽培，否则说不定你就是金童了，到时候结成神仙眷侣，呵呵，这倒是不错……”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "到了布置素洁的“结庐”小书斋，老人示意李希圣一同坐下说话，笑道：“宝箴性子太跳脱，离开家乡那么远，又是小儿子，你娘亲担心他是人之常情，你别觉得她偏心，为此伤感。 李希圣微笑道：“当然不会。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 206,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "老人缓缓道：“那谢实点名要三个人，其中有你，我并不奇怪，你爹不晓得你的天赋，那是他眼瞎，我甚至觉得你半点不比那个神诰宗贺小凉差，一洲道统的玉女怎么了，了不起啊？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 33
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与谢实对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣",
+          "谢实"
+        ],
+        "description": "到了布置素洁的“结庐”小书斋，老人示意李希圣一同坐下说话，笑道：“宝箴性子太跳脱，离开家乡那么远，又是小儿子，你娘亲担心他是人之常情，你别觉得她偏心，为此伤感。 李希圣微笑道：“当然不会。 老人缓缓道：“那谢实点名要三个人，其中有你，我并不奇怪，你爹不晓得你的天赋，那是他眼瞎，我甚至觉得你半点不比那个神诰宗贺小凉差，一洲道统的玉女怎么了，了不起啊？",
+        "background": "",
+        "significance": "推动李希圣与谢实之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段33",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 33
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "到了布置素洁的“结庐”小书斋，老人示意李希圣一同坐下说话，笑道：“宝箴性子太跳脱，离开家乡那么远，又是小儿子，你娘亲担心他是人之常情，你别觉得她偏心，为此伤感。 ” 李希圣微笑道：“当然不会。 ” 老人缓缓道：“那谢实点名要三个人，其中有你，我并不奇怪，你爹不晓得你的天赋，那是他眼瞎，我甚至觉得你半点不比那个神诰宗贺小凉差，一洲道统的玉女怎么了，了不起啊？ 我孙子也就是没有宗门栽培，否则说不定你就是金童了，到时候结成神仙眷侣，呵呵，这倒是不错……”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与谢实对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.057288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2737,6 +3276,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣有些无奈。 为了成为骊珠洞天四大姓十族当中，第一位十境修士，这次破境过程其实相当凶险，可是谁劝都没用，李希圣同样劝不动，若非偷偷算卦，算出了一个上中卦，李希圣还真不敢就由着爷爷一头撞进去，闭生死关。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 206,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
         "name": "马苦玄",
         "alias": [],
         "original_description_in_book": "老人冷笑道：“至于马苦玄那个小子，真不是我背后说人坏话，他家本来就是一窝子贼胚坏种，哼，我可不觉得他有大出息，上善若水，至刚易折，自古而然，半点不懂得藏拙，锋芒毕露，一年破三境咋了，有本事到了观海境后，再来一次连破三境！",
@@ -2757,7 +3310,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -2767,16 +3322,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 马苦玄在骊珠洞天对话",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与马苦玄在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
+          "李希圣",
           "马苦玄"
         ],
-        "description": "为了成为骊珠洞天四大姓十族当中，第一位十境修士，这次破境过程其实相当凶险，可是谁劝都没用，李希圣同样劝不动，若非偷偷算卦，算出了一个上中卦，李希圣还真不敢就由着爷爷一头撞进去，闭生死关。 老人冷笑道：“至于马苦玄那个小子，真不是我背后说人坏话，他家本来就是一窝子贼胚坏种，哼，我可不觉得他有大出息，上善若水，至刚易折，自古而然，半点不懂得藏拙，锋芒毕露，一年破三境咋了，有本事到了观海境后，再来一次连破三境！ 说到最后，老人自己乐呵起来。",
+        "description": "李希圣有些无奈。 为了成为骊珠洞天四大姓十族当中，第一位十境修士，这次破境过程其实相当凶险，可是谁劝都没用，李希圣同样劝不动，若非偷偷算卦，算出了一个上中卦，李希圣还真不敢就由着爷爷一头撞进去，闭生死关。 老人冷笑道：“至于马苦玄那个小子，真不是我背后说人坏话，他家本来就是一窝子贼胚坏种，哼，我可不觉得他有大出息，上善若水，至刚易折，自古而然，半点不懂得藏拙，锋芒毕露，一年破三境咋了，有本事到了观海境后，再来一次连破三境！",
         "background": "",
-        "significance": "对应马苦玄在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在骊珠洞天推动李希圣与马苦玄之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -2790,8 +3348,34 @@
         "segment_index": 34
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894472",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "马苦玄"
+        ],
+        "action": "对话",
+        "context": "说到最后，老人自己乐呵起来。 李希圣有些无奈。 爷爷这喜欢跟人较劲的脾气，是改不掉了。 为了成为骊珠洞天四大姓十族当中，第一位十境修士，这次破境过程其实相当凶险，可是谁劝都没用，李希圣同样劝不动，若非偷偷算卦，算出了一个上中卦，李希圣还真不敢就由着爷爷一头撞进去，闭生死关。 老人冷笑道：“至于马苦玄那个小子，真不是我背后说人坏话，他家本来就是一窝子贼胚坏种，哼，我可不觉得他有大出息，上善若水，至刚易折，自古而然，半点不懂得藏拙，锋芒毕露，一年破三境咋了，有本事到了观海境后，再来一次连破三境！ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与马苦玄在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 34
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.057288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2814,6 +3398,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣沉默不语。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老人突然问道：“你怎么把那支‘风雪小锥’和那些符纸，一并送给陈平安了？",
@@ -2829,16 +3426,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 陈平安对话",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "李希圣",
           "陈平安"
         ],
-        "description": "老人突然问道：“你怎么把那支‘风雪小锥’和那些符纸，一并送给陈平安了？ 李希圣沉默不语。 ”",
+        "description": "李希圣沉默不语。 老人突然问道：“你怎么把那支‘风雪小锥’和那些符纸，一并送给陈平安了？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动李希圣与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -2852,8 +3452,221 @@
         "segment_index": 35
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "李希圣沉默不语。 老人突然问道：“你怎么把那支‘风雪小锥’和那些符纸，一并送给陈平安了？ ” 老人气笑道：“你倒是留一半给自己啊！ 你信不信，那小子根本就不知道那些纸笔的金贵？ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 35
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.057288",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-36-0": {
+    "juan_index": 206,
+    "segment_index": 36,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "李希圣笑道：“看来爷爷其实还不算心疼宝瓶。",
+      "”",
+      "老人吃瘪，恼羞成怒道：“谁说的？",
+      "！",
+      "我不心疼小瓶子谁心疼？",
+      "行了，送了就送了，我不过就是随口一提，你看我会让你把东西要回来吗？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣笑道：“看来爷爷其实还不算心疼宝瓶。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 36
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣笑道：“看来爷爷其实还不算心疼宝瓶。 ” 老人吃瘪，恼羞成怒道：“谁说的？",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段36",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 36
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894472",
+    "extracted_at": "2026-03-25T01:03:31.057288",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-37-0": {
+    "juan_index": 206,
+    "segment_index": 37,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "”",
+      "李希圣会心一笑。",
+      "老人瞅见了嫡长孙的笑意，伸出手指凌空点了两下，“传家宝说送就送，爷爷不拦着，也不会逼着你反悔，但是不耽误我骂你一句败家子。",
+      "”",
+      "李希圣嘴角满是笑意。",
+      "老人双手放在椅把手上，有些疲惫，感慨道：““爷爷就这么点本事，当初拼了老命不要，也才惊险万分地跻身十境，上五境根本不用奢望，希圣，以后爷爷就没办法为你做什么了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣会心一笑。 李希圣嘴角满是笑意。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 37
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣会心一笑。 李希圣嘴角满是笑意。 ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段37",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 37
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.057288",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-38-0": {
+    "juan_index": 206,
+    "segment_index": 38,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "”",
+      "李希圣赶紧站起身，轻声道：“爷爷，别这么想。",
+      "已经做得不能再好了。",
+      "”",
+      "老人站起身，绕过桌子，帮着这个嫡长孙正了正衣襟，“不管是不是去了俱芦洲，不管你以后是不是会弃儒从道，你都是爷爷的好孙子，天底下做人的道理讲不尽，可我相信我的孙子，做人会很正，一直会！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣赶紧站起身，轻声道：“爷爷，别这么想。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 206,
+        "segment_index": 38
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣赶紧站起身，轻声道：“爷爷，别这么想。 ” 已经做得不能再好了。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段38",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 38
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.057288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2873,7 +3686,21 @@
       "唯独漏掉了一个公认最聪慧的李宝箴。",
       "大骊长春宫，这是大骊王朝唯一一个女子修士居多的顶尖门派。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣有些眼睛发涩，使劲点了点头，后退两步，长揖到底，朗声道：“言传身教，诚心正意，我李家不输任何人！",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 39
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2894,13 +3721,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 大骊剧情推进",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李希圣在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "大骊长春宫，这是大骊王朝唯一一个女子修士居多的顶尖门派。 李希圣有些眼睛发涩，使劲点了点头，后退两步，长揖到底，朗声道：“言传身教，诚心正意，我李家不输任何人！ ”",
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣有些眼睛发涩，使劲点了点头，后退两步，长揖到底，朗声道：“言传身教，诚心正意，我李家不输任何人！ 大骊长春宫，这是大骊王朝唯一一个女子修士居多的顶尖门派。 ”",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段39",
         "sentence_indexes_in_segment": [
@@ -2916,7 +3745,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894987",
+    "extracted_at": "2026-03-25T01:03:31.057288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3016,7 +3845,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894987",
+    "extracted_at": "2026-03-25T01:03:31.057288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3036,7 +3865,22 @@
       "然后在新年味道还很浓郁的正月十五，就在元宵节的晚上，在万人空巷、家家户户出去赶灯会的嘉庆时节，大骊京城迎来了一场毫无征兆的变故，宫城，皇城，内城，外城，整个大骊京城，在一些个富贵华丽的豪阀宅门外，一些个不起眼的市井百姓人家，还有诸多老字号的酒楼、店铺和道观，几乎同时涌现出一拨拨大骊精锐将士，擅长近身搏杀的高品武秘书郎，礼部衙门秘密豢养的死士，以及钦天监在内众多练气士，每一处都是联袂出现，强行闯入，若有人胆敢阻挡，杀无赦，斩立决，若是无人露面，就在钦天监官员的指点下，开始拆去各种物件，高高矗立的牌坊，悬挂门外的桃符，门口的石狮子，祠堂的匾额、牌位，等等，五花八门，什么都有。",
       "藩王宋长镜那一夜，从夜幕降临到天亮时分，亲自坐镇于外城走马道之上，放了张椅子，大马金刀坐在那里闭目养神。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "藩王宋长镜本就在军中威望极高，如今竟然都堂而皇之“监国”了，还是陛下自己的意思，这简直就是让人感到匪夷所思。 藩王宋长镜那一夜，从夜幕降临到天亮时分，亲自坐镇于外城走马道之上，放了张椅子，大马金刀坐在那里闭目养神。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 41
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -3058,13 +3902,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 大骊指点",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 宋长镜在大骊指点",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "而群星荟萃的大骊朝堂之上，还真没有一个疯癫傻子。 然后在新年味道还很浓郁的正月十五，就在元宵节的晚上，在万人空巷、家家户户出去赶灯会的嘉庆时节，大骊京城迎来了一场毫无征兆的变故，宫城，皇城，内城，外城，整个大骊京城，在一些个富贵华丽的豪阀宅门外，一些个不起眼的市井百姓人家，还有诸多老字号的酒楼、店铺和道观，几乎同时涌现出一拨拨大骊精锐将士，擅长近身搏杀的高品武秘书郎，礼部衙门秘密豢养的死士，以及钦天监在内众多练气士，每一处都是联袂出现，强行闯入，若有人胆敢阻挡，杀无赦，斩立决，若是无人露面，就在钦天监官员的指点下，开始拆去各种物件，高高矗立的牌坊，悬挂门外的桃符，门口的石狮子，祠堂的匾额、牌位，等等，五花八门，什么都有。 藩王宋长镜本就在军中威望极高，如今竟然都堂而皇之“监国”了，还是陛下自己的意思，这简直就是让人感到匪夷所思。",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "藩王宋长镜本就在军中威望极高，如今竟然都堂而皇之“监国”了，还是陛下自己的意思，这简直就是让人感到匪夷所思。 而群星荟萃的大骊朝堂之上，还真没有一个疯癫傻子。 然后在新年味道还很浓郁的正月十五，就在元宵节的晚上，在万人空巷、家家户户出去赶灯会的嘉庆时节，大骊京城迎来了一场毫无征兆的变故，宫城，皇城，内城，外城，整个大骊京城，在一些个富贵华丽的豪阀宅门外，一些个不起眼的市井百姓人家，还有诸多老字号的酒楼、店铺和道观，几乎同时涌现出一拨拨大骊精锐将士，擅长近身搏杀的高品武秘书郎，礼部衙门秘密豢养的死士，以及钦天监在内众多练气士，每一处都是联袂出现，强行闯入，若有人胆敢阻挡，杀无赦，斩立决，若是无人露面，就在钦天监官员的指点下，开始拆去各种物件，高高矗立的牌坊，悬挂门外的桃符，门口的石狮子，祠堂的匾额、牌位，等等，五花八门，什么都有。",
         "background": "",
-        "significance": "对应大骊相关的关键指点场景。",
+        "significance": "对应宋长镜在叙事中的关键指点节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段41",
         "sentence_indexes_in_segment": [
@@ -3080,7 +3926,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894987",
+    "extracted_at": "2026-03-25T01:03:31.058292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3100,7 +3946,24 @@
       "京城之内，人人自危。",
       "距离大骊京城并不远的长春宫，陆陆续续有祖师辈分的大练气士，从京城返回门内，虽然一身血腥味和凶煞气，但是人人神色自若，所以长春宫大体上依旧安详如旧。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜身边还站着那位离开白玉楼的墨家巨子。 宋长镜当晚唯一一次出手，是截杀试图潜逃的一抹虹光，大骊藩王一拳砸散了那道白虹。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "juan_index": 206,
+        "segment_index": 42
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -3111,7 +3974,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1,
           3,
@@ -3127,7 +3992,9 @@
         "description": "魏檗坐镇之地，是陈平安和落魄山的重要支援场。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -3142,9 +4009,10 @@
         "location": "大骊",
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "宋长镜当晚唯一一次出手，是截杀试图潜逃的一抹虹光，大骊藩王一拳砸散了那道白虹。 这场惊天动地的大战之后，皇帝陛下已经去往披云山的大骊京城，变得气氛微妙至极，恐怕就算当天藩王突然派人昭告全城，即日起我宋长镜就是大骊新帝，都不会有太多中枢重臣感到震撼。 距离大骊京城并不远的长春宫，陆陆续续有祖师辈分的大练气士，从京城返回门内，虽然一身血腥味和凶煞气，但是人人神色自若，所以长春宫大体上依旧安详如旧。",
+        "description": "宋长镜身边还站着那位离开白玉楼的墨家巨子。 宋长镜当晚唯一一次出手，是截杀试图潜逃的一抹虹光，大骊藩王一拳砸散了那道白虹。 之后宋长镜与那抹身影在西北外城一带，酣战一场，拳罡恢弘，一阵阵宝光四起，照彻夜幕，甚至比起万千灯火加在一起还要光明，一战过后，房屋建筑毁去千余栋，死伤近万人，哀嚎遍地。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
         "related_action_indices": [],
@@ -3162,7 +4030,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.894987",
+    "extracted_at": "2026-03-25T01:03:31.058292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3225,7 +4093,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.895501",
+    "extracted_at": "2026-03-25T01:03:31.058292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3286,7 +4154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.895501",
+    "extracted_at": "2026-03-25T01:03:31.058292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3350,7 +4218,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.895501",
+    "extracted_at": "2026-03-25T01:03:31.058292",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-54-0": {
+    "juan_index": 206,
+    "segment_index": 54,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "老修士无奈笑道：“我们不会如此行事。",
+      "”",
+      "汉子不再说话，走回自己房门前，敲了敲女儿故意栓上、用来安慰娘亲的屋门，说道：“柳儿，是爹。",
+      "”",
+      "少女脚步轻盈地打开房门，汉子进屋后就带上了门，妇人快步上前，脸上还有泪痕，“李二，怎么样，没被人欺负吧？",
+      "有没有哪里被打了？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "少女脚步轻盈地打开房门，汉子进屋后就带上了门，妇人快步上前，脸上还有泪痕，“李二，怎么样，没被人欺负吧？",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 54
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李二对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李二"
+        ],
+        "description": "少女脚步轻盈地打开房门，汉子进屋后就带上了门，妇人快步上前，脸上还有泪痕，“李二，怎么样，没被人欺负吧？ 老修士无奈笑道：“我们不会如此行事。 ”",
+        "background": "",
+        "significance": "对应李二在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段54",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 54
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.059295",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-55-0": {
+    "juan_index": 206,
+    "segment_index": 55,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "需不需要擦点药膏？",
+      "”",
+      "汉子挠挠头，憨憨笑道：“没呢，船上那边管事情的人刚好路过，我就赶紧把事儿跟人家一说，嘿，你猜怎么着，人家很讲道理，就把那些人赶走了，还要他们以后不许靠近咱们仨，所以没事了，我就说嘛，出门在外，还是好人多一些。",
+      "”",
+      "少女李柳忍住笑意。",
+      "爹这趟远游没白走，都学会满嘴瞎话了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "少女李柳忍住笑意。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 55
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李柳对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李柳"
+        ],
+        "description": "少女李柳忍住笑意。 需不需要擦点药膏？ ”",
+        "background": "",
+        "significance": "对应李柳在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段55",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 55
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.059295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3371,6 +4363,20 @@
       "她当初在山崖书院对大骊国师做出那个挑衅动作，不是少女不知天高地厚，而恰恰是少女最知道天高地厚。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "少女李柳站在栏杆旁，远眺那轮圆月。 那就是李柳生而知之。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 57
+      },
       {
         "entity_type": "person",
         "name": "杨老头",
@@ -3453,17 +4459,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 杨老头与李槐在山崖书院剧情推进",
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李柳与杨老头在山崖书院剧情推进",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "李柳",
           "杨老头",
           "李槐",
           "崔瀺"
         ],
-        "description": "杨老头曾经说过，她天资好，李槐有洪福。 她当初在山崖书院对大骊国师做出那个挑衅动作，不是少女不知天高地厚，而恰恰是少女最知道天高地厚。 晚上，海上生明月。",
+        "description": "少女李柳站在栏杆旁，远眺那轮圆月。 杨老头曾经说过，她天资好，李槐有洪福。 那就是李柳生而知之。",
         "background": "",
-        "significance": "在山崖书院推动杨老头与李槐之间的剧情推进线。",
+        "significance": "在山崖书院推动李柳与杨老头之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段57",
         "sentence_indexes_in_segment": [
@@ -3479,7 +4486,386 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.896012",
+    "extracted_at": "2026-03-25T01:03:31.059295",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-58-0": {
+    "juan_index": 206,
+    "segment_index": 58,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "在少女单独房间的隔壁。",
+      "妇人也是个心大的，事情过去后，立即就没觉得啥委屈了，该吃吃该睡睡，这会儿就已经呼呼大睡了。",
+      "李二躺在她身边，听着听着妇人的鼾声如雷，轻轻握住她的手。",
+      "汉子缓缓闭上眼睛。",
+      "从来不会说什么腻人的情话，他也说不出口那些，好在媳妇也不爱听那些。",
+      "媳妇好，儿子好，女儿好，就是他这个当爹的不咋的，汉子闭着眼睛笑起来，偷着乐呢。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "李二躺在她身边，听着听着妇人的鼾声如雷，轻轻握住她的手。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 206,
+        "segment_index": 58
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 李二剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李二"
+        ],
+        "description": "李二躺在她身边，听着听着妇人的鼾声如雷，轻轻握住她的手。 在少女单独房间的隔壁。 妇人也是个心大的，事情过去后，立即就没觉得啥委屈了，该吃吃该睡睡，这会儿就已经呼呼大睡了。",
+        "background": "",
+        "significance": "对应李二在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段58",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 58
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.059295",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-59-0": {
+    "juan_index": 206,
+    "segment_index": 59,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "以灵气充沛著称于世的书简湖，碧波万里，风景宜人，湖内有千余岛屿，星罗棋布，约莫半数都有品秩高低不一的练气士占据或是租借，而最大的一座青峡岛，是截江真君刘志茂的府邸所在。",
+      "刘志茂修的是旁门道法，他的真君头衔，虽然不是王朝的正统敕封而来，仅是山上朋友的吹捧，但是刘志茂的道法高深，早已在一次次生死大战中得到证明，由于刘志茂的口碑实在不堪，所谓的道上朋友有很多，却只能算是泛泛之交，而门内弟子，良莠不齐，并无冒出可以扛起大梁的年轻俊彦，可刘志茂仍然能够占据书简湖的青峡岛，完全可以说是以一己之力，在虎狼环视当中，屹立不倒。",
+      "刘志茂在那趟北上远游之后，可谓春风得意。",
+      "因为他带回了一位对外宣称是关门弟子的小家伙，屁大一个孩子，虎头虎脑的，一开始谁都把他当做一只走了狗屎运的小土鳖，孩子也嘻嘻哈哈，仿佛浑然不觉那些或鄙夷或阴森的眼神视线。",
+      "尤其是刘志茂的开山大弟子，对这个师父的关门弟子，最是不顺眼。",
+      "后来青峡岛上上下下，跟孩子相处久了，才知道是个一肚子坏水的小坏种，不但小小年纪就擅长装痴扮傻，而且极其记仇，颇有师父刘志茂的风范，验了那句老话，上梁不正下梁歪。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "以灵气充沛著称于世的书简湖，碧波万里，风景宜人，湖内有千余岛屿，星罗棋布，约莫半数都有品秩高低不一的练气士占据或是租借，而最大的一座青峡岛，是截江真君刘志茂的府邸所在。 刘志茂修的是旁门道法，他的真君头衔，虽然不是王朝的正统敕封而来，仅是山上朋友的吹捧，但是刘志茂的道法高深，早已在一次次生死大战中得到证明，由于刘志茂的口碑实在不堪，所谓的道上朋友有很多，却只能算是泛泛之交，而门内弟子，良莠不齐，并无冒出可以扛起大梁的年轻俊彦，可刘志茂仍然能够占据书简湖的青峡岛，完全可以说是以一己之力，在虎狼环视当中，屹立不倒。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 59
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 刘志茂迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "以灵气充沛著称于世的书简湖，碧波万里，风景宜人，湖内有千余岛屿，星罗棋布，约莫半数都有品秩高低不一的练气士占据或是租借，而最大的一座青峡岛，是截江真君刘志茂的府邸所在。 刘志茂修的是旁门道法，他的真君头衔，虽然不是王朝的正统敕封而来，仅是山上朋友的吹捧，但是刘志茂的道法高深，早已在一次次生死大战中得到证明，由于刘志茂的口碑实在不堪，所谓的道上朋友有很多，却只能算是泛泛之交，而门内弟子，良莠不齐，并无冒出可以扛起大梁的年轻俊彦，可刘志茂仍然能够占据书简湖的青峡岛，完全可以说是以一己之力，在虎狼环视当中，屹立不倒。 刘志茂在那趟北上远游之后，可谓春风得意。",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段59",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 59
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.059295",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-60-0": {
+    "juan_index": 206,
+    "segment_index": 60,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "在去年年末，青峡岛就惹出了一桩惊动整个书简湖的大祸事，而这个孩子正是罪魁祸首之一。",
+      "青峡岛上虽然是刘志茂一家独大，但是也有几个附庸小门派，除此之外，截江真君还盛情邀请了一些臭味相投的客卿供奉，终年享乐，可一旦出手，必然斩草除根。",
+      "至于附近几座岛屿的岛主，也是一拨正邪不定的狠辣货色，全是硬生生杀出血路的野修散修，名叫顾粲的孩子身边，还跟着他的娘亲，是个资质平平、无法修行的寻常妇人，但是生得委实诱人，于是刘志茂的客卿当中，就有人起了花花心思，想要收取妇人做通房女子，那名尖嘴猴腮的年老客卿，战力极强，百余年经营拉拢，隐约之间自成山头，便是刘志茂都要忍让三分。",
+      "此人生平最喜欢以美妇双峰作为取暖火炉，所以他的婢女，所穿衣衫与其她女子都不一样，衣襟领口处开得极大，以便他伸手入内，那些妩媚女子，被笑称为“开襟小娘”。",
+      "刘志茂对此表现得十分微妙，既不拒绝也没赞成，就装聋作哑。",
+      "然后一天借着酒劲，此人大步闯入妇人所在的宅院，一脚踹开大门，入了屋子，扛起妇人就要回家云雨快活一番，肆意大笑，无人胆敢阻拦。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "青峡岛上虽然是刘志茂一家独大，但是也有几个附庸小门派，除此之外，截江真君还盛情邀请了一些臭味相投的客卿供奉，终年享乐，可一旦出手，必然斩草除根。 至于附近几座岛屿的岛主，也是一拨正邪不定的狠辣货色，全是硬生生杀出血路的野修散修，名叫顾粲的孩子身边，还跟着他的娘亲，是个资质平平、无法修行的寻常妇人，但是生得委实诱人，于是刘志茂的客卿当中，就有人起了花花心思，想要收取妇人做通房女子，那名尖嘴猴腮的年老客卿，战力极强，百余年经营拉拢，隐约之间自成山头，便是刘志茂都要忍让三分。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 206,
+        "segment_index": 60
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 刘志茂冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "青峡岛上虽然是刘志茂一家独大，但是也有几个附庸小门派，除此之外，截江真君还盛情邀请了一些臭味相投的客卿供奉，终年享乐，可一旦出手，必然斩草除根。 至于附近几座岛屿的岛主，也是一拨正邪不定的狠辣货色，全是硬生生杀出血路的野修散修，名叫顾粲的孩子身边，还跟着他的娘亲，是个资质平平、无法修行的寻常妇人，但是生得委实诱人，于是刘志茂的客卿当中，就有人起了花花心思，想要收取妇人做通房女子，那名尖嘴猴腮的年老客卿，战力极强，百余年经营拉拢，隐约之间自成山头，便是刘志茂都要忍让三分。 刘志茂对此表现得十分微妙，既不拒绝也没赞成，就装聋作哑。",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段60",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 60
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.059295",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-61-0": {
+    "juan_index": 206,
+    "segment_index": 61,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "那会儿，刘志茂的大弟子，刚好找了个由头将妇人的独子顾粲支开，骗到了青峡岛后山，说是要在瀑布处代师授艺，要传授给他一门密不外传的道家高深口诀。",
+      "结果当那名老客卿刚扛着美妇人返回豪宅大院，正要将肉感十足的美人丢到床上生吞活剥了。",
+      "那一刻，不仅仅是他，甚至不光是青峡岛，整个书简湖的大练气士，都察觉到了异样。",
+      "一时间湖水翻腾，大浪拍天，气机絮乱，骇人至极。",
+      "以至于两位闭关已久的九境修士，都不得不破关而出，去查看到底是何方神圣，竟敢不惜犯众怒，兴风作浪，打乱书简湖浑厚异常的山水大气运。",
+      "然后所有练气士都目瞪口呆望向青峡岛那边，心神震撼。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "那会儿，刘志茂的大弟子，刚好找了个由头将妇人的独子顾粲支开，骗到了青峡岛后山，说是要在瀑布处代师授艺，要传授给他一门密不外传的道家高深口诀。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 61
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 刘志茂指点",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "那会儿，刘志茂的大弟子，刚好找了个由头将妇人的独子顾粲支开，骗到了青峡岛后山，说是要在瀑布处代师授艺，要传授给他一门密不外传的道家高深口诀。 结果当那名老客卿刚扛着美妇人返回豪宅大院，正要将肉感十足的美人丢到床上生吞活剥了。 那一刻，不仅仅是他，甚至不光是青峡岛，整个书简湖的大练气士，都察觉到了异样。",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键指点节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段61",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 61
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.060298",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-64-0": {
+    "juan_index": 206,
+    "segment_index": 64,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "截江真君刘志茂突然出现在山巅，和颜悦色道：“你的大师兄虽然有错，但是师父会好好责罚他的，你就放他一条生路吧？",
+      "”",
+      "顾粲笑了，“师父，你要么打死我，然后由着小泥鳅在这里胡闹，要么就少个徒弟而已，师父你老人家弟子几十个，差一个不算什么嘛，以后我有帮着师父扬名立万，莫说是死了个大师兄，便是二师姐一起没了，也不重要嘛。",
+      "”",
+      "笑脸灿烂的孩子，高高扬起脑袋，直直跟老人对视，笑问道：“师父，你说呢？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "截江真君刘志茂突然出现在山巅，和颜悦色道：“你的大师兄虽然有错，但是师父会好好责罚他的，你就放他一条生路吧？",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 206,
+        "segment_index": 64
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 刘志茂对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "截江真君刘志茂突然出现在山巅，和颜悦色道：“你的大师兄虽然有错，但是师父会好好责罚他的，你就放他一条生路吧？ ” 顾粲笑了，“师父，你要么打死我，然后由着小泥鳅在这里胡闹，要么就少个徒弟而已，师父你老人家弟子几十个，差一个不算什么嘛，以后我有帮着师父扬名立万，莫说是死了个大师兄，便是二师姐一起没了，也不重要嘛。",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段64",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 64
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.060298",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "206-65-0": {
+    "juan_index": 206,
+    "segment_index": 65,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百零六章 月儿圆月儿弯",
+    "source_sentences": [
+      "刘志茂脸色阴沉不定，最后蓦然哈哈大笑，脸色慈祥地摸了摸孩子的脑袋，“你这孩子，有师父当年的风采，好，很好。",
+      "”",
+      "顾粲笑眯起眼，“放心，师父，你以后想要杀谁，我是你的关门弟子，肯定都听师父的，反正小泥鳅也喜欢吃人，尤其是山上的神仙，吃起来特别大补，小泥鳅高兴得很呢。",
+      "唉，小泥鳅也真是的，出了家乡就长得这么快，就连师父你老人家的那只大白碗也住不下了，只能放养在大湖里，师父，你还有没有更大的碗啊？",
+      "”",
+      "刘志茂笑着摇头。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "刘志茂脸色阴沉不定，最后蓦然哈哈大笑，脸色慈祥地摸了摸孩子的脑袋，“你这孩子，有师父当年的风采，好，很好。 刘志茂笑着摇头。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 65
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 刘志茂剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘志茂"
+        ],
+        "description": "刘志茂脸色阴沉不定，最后蓦然哈哈大笑，脸色慈祥地摸了摸孩子的脑袋，“你这孩子，有师父当年的风采，好，很好。 刘志茂笑着摇头。 ”",
+        "background": "",
+        "significance": "对应刘志茂在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百零六章 月儿圆月儿弯 · 段65",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 206,
+        "segment_index": 65
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.060298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3559,7 +4945,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.896012",
+    "extracted_at": "2026-03-25T01:03:31.060298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3674,7 +5060,7 @@
         "segment_index": 69
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.896012",
+    "extracted_at": "2026-03-25T01:03:31.060298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3737,7 +5123,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.060298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3872,7 +5258,7 @@
         "segment_index": 72
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.061302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3949,7 +5335,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.061302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4046,7 +5432,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.061302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4186,7 +5572,7 @@
         "segment_index": 75
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.061302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4249,7 +5635,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.061302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4312,7 +5698,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.061302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4375,7 +5761,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.062305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4438,7 +5824,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.897006",
+    "extracted_at": "2026-03-25T01:03:31.062305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4501,7 +5887,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.898010",
+    "extracted_at": "2026-03-25T01:03:31.062305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4563,7 +5949,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.898010",
+    "extracted_at": "2026-03-25T01:03:31.062305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4625,7 +6011,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.898010",
+    "extracted_at": "2026-03-25T01:03:31.062305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4688,7 +6074,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.898010",
+    "extracted_at": "2026-03-25T01:03:31.062305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4750,7 +6136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.898010",
+    "extracted_at": "2026-03-25T01:03:31.063309",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4812,7 +6198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.898010",
+    "extracted_at": "2026-03-25T01:03:31.063309",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -119,7 +119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -216,7 +216,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -298,7 +298,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -331,6 +331,19 @@
         ],
         "juan_index": 288,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "闲来无事，陆台便聊了些桐叶洲和宝瓶洲不太一样的风土人情，宝瓶洲是小地方，如果不是神诰宗祁真跻身十二境仙人境，获得中土上宗赐下的天君头衔，明面上一个仙人境都没有，所以陈平安在师刀房那堵墙壁上，看到有人悬赏大骊藩王宋长镜，理由只是觉得宝瓶洲不配冒出一个十境武夫，其实可笑也不可笑。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 288,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -342,7 +355,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -361,7 +375,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -372,16 +387,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安在宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安与宋长镜在宝瓶洲别离",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "description": "这座位于桐叶洲中部的扶乩宗，既然是宗字头仙家，意味着最少都有一位玉璞境修，而且比起版图最小的宝瓶洲，桐叶洲的山顶仙家更有分量和底蕴。 闲来无事，陆台便聊了些桐叶洲和宝瓶洲不太一样的风土人情，宝瓶洲是小地方，如果不是神诰宗祁真跻身十二境仙人境，获得中土上宗赐下的天君头衔，明面上一个仙人境都没有，所以陈平安在师刀房那堵墙壁上，看到有人悬赏大骊藩王宋长镜，理由只是觉得宝瓶洲不配冒出一个十境武夫，其实可笑也不可笑。 加上南北各有桐叶宗、玉圭宗，分别掐住这块陆地的两端，好似占据了桐叶洲半壁江山的气运，所以在桐叶洲还能够脱颖而出的宗门，往往都是杀出一条血路的强大势力。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动陈平安与宋长镜之间的别离线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百八十七章 北行 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -395,8 +413,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "别离",
+        "context": "这座位于桐叶洲中部的扶乩宗，既然是宗字头仙家，意味着最少都有一位玉璞境修，而且比起版图最小的宝瓶洲，桐叶洲的山顶仙家更有分量和底蕴。 加上南北各有桐叶宗、玉圭宗，分别掐住这块陆地的两端，好似占据了桐叶洲半壁江山的气运，所以在桐叶洲还能够脱颖而出的宗门，往往都是杀出一条血路的强大势力。 闲来无事，陆台便聊了些桐叶洲和宝瓶洲不太一样的风土人情，宝瓶洲是小地方，如果不是神诰宗祁真跻身十二境仙人境，获得中土上宗赐下的天君头衔，明面上一个仙人境都没有，所以陈平安在师刀房那堵墙壁上，看到有人悬赏大骊藩王宋长镜，理由只是觉得宝瓶洲不配冒出一个十境武夫，其实可笑也不可笑。 反观桐叶洲，桐叶宗和玉圭宗的当家大佬，都是在仙人境趴了好几百年的老王八。 扶乩宗有两位玉璞境修士，一男一女，是一对道侣，羡煞旁人。 相传扶乩宗之所以会有那条熙熙攘攘的喊天街，就在于那位玉璞境女修喜好饲养精魅，哪怕当年成为地仙后，还是愿意经常露面，下山专程收集种种精怪，扶乩宗宗主便干脆大手一挥，倾尽私人财力，打造了喊天街，只为了让道侣近水楼台，不用多跑那几步路。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十七章 北行 · 陈平安与宋长镜在宝瓶洲别离",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 288,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -512,7 +556,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -588,7 +632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -650,7 +694,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +774,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -784,7 +828,7 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安在宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安在宝瓶洲试探",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
@@ -792,7 +836,7 @@
         ],
         "description": "陆台解释说桐叶宗跟零零碎碎的宝瓶洲很不一样，山头数目不多，但很多都是庞然大物，在这里不是随便扯一杆破烂旗帜就能自封山大王的，桐叶宗的王朝和江湖，这两股势力不容小觑。 可像观湖书院以南的宝瓶洲，几乎国国有仙府的景象，在桐叶洲肯定没有。 两人在宽阔道路一侧并肩而行，其实十分惹眼，来往车辆的女子，无论是仙师还是富家千金，都乐意抛来好奇打量的视线，略带惊艳，主要还是归功于风度翩翩的陆台，仙气书卷气都很出彩，这就很难得了，陈平安站在他身边，更多起到了绿叶的作用。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十七章 北行 · 段11",
         "sentence_indexes_in_segment": [
@@ -808,7 +852,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -871,7 +915,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -933,7 +977,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.448237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -996,7 +1040,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1059,7 +1103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1122,7 +1166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1186,7 +1230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1252,7 +1296,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1315,7 +1359,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.156829",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1377,7 +1421,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1439,7 +1483,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1504,7 +1548,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.449240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1567,7 +1611,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1631,7 +1675,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1697,7 +1741,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1732,20 +1776,34 @@
         ],
         "juan_index": 288,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "独自打谱，那种风采，陈平安在崔东山身上见到过。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 288,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安与崔东山剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
         "description": "偶尔拣选一部从书肆淘来的古书，一手持书，明明很慵懒的翻书姿态，可落在陈平安眼中，总觉得读书人就该如此。 陆台只要在客栈停留，他几乎每天都会给自己煮上一壶茶，也从不喊陈平安喝茶，独自坐在那边，一言不发，只是饮茶。 独自打谱，那种风采，陈平安在崔东山身上见到过。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与崔东山之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十七章 北行 · 段26",
         "sentence_indexes_in_segment": [
@@ -1761,7 +1819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1824,7 +1882,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1847,6 +1905,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "范二的灿烂心性，陈平安学不来，陆台的潇洒写意，陈平安觉得自己还是学不来。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 288,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "范二的灿烂心性，陈平安学不来，陆台的潇洒写意，陈平安觉得自己还是学不来。 这天陈平安站在一棵高树上居高远眺，竟然发现在人烟罕至的雄山峻岭之间，有一处城堡。",
@@ -1864,16 +1935,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十七章 北行 · 陈平安对话",
+        "name": "第四卷剑气近 第二百八十七章 北行 · 范二与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "范二",
           "陈平安"
         ],
         "description": "范二的灿烂心性，陈平安学不来，陆台的潇洒写意，陈平安觉得自己还是学不来。 这天陈平安站在一棵高树上居高远眺，竟然发现在人烟罕至的雄山峻岭之间，有一处城堡。 陈平安本来不想告诉陆台那边有座城堡，只希望埋头赶路，可是一直对山水景象不感兴趣的陆台，今天破天荒掠上枝头，摇动竹扇，哈哈笑道：“不错不错，是一处杀人越货然后栽赃嫁祸的风水宝地。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动范二与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百八十七章 北行 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -1887,8 +1961,34 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "范二"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "范二的灿烂心性，陈平安学不来，陆台的潇洒写意，陈平安觉得自己还是学不来。 这天陈平安站在一棵高树上居高远眺，竟然发现在人烟罕至的雄山峻岭之间，有一处城堡。 在这之前，两人沿途没有遇上任何山水精怪。 此处距离桐叶洲中部一家独大的扶乩宗，已有千里之遥。 陈平安本来不想告诉陆台那边有座城堡，只希望埋头赶路，可是一直对山水景象不感兴趣的陆台，今天破天荒掠上枝头，摇动竹扇，哈哈笑道：“不错不错，是一处杀人越货然后栽赃嫁祸的风水宝地。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十七章 北行 · 范二与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 288,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1952,7 +2052,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2014,7 +2114,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.157832",
+    "extracted_at": "2026-03-25T01:03:31.450244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

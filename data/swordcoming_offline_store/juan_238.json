@@ -1,4 +1,66 @@
 {
+  "238-1-0": {
+    "juan_index": 238,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在",
+    "source_sentences": [
+      "貌似少女的魔头脸色阴晴不定，“宋雨烧，你今日铁了心要与本仙掰掰腕子？",
+      "”",
+      "黑衣老人从怀中掏出一本老黄历，翻开一页，手指抵住一处，默念道：“宜斋戒，宜求财。",
+      "”",
+      "老人收起老黄历，握住那把青铜古剑，收入鞘中，向少女伸手道：“容你破财消灾。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "貌似少女的魔头脸色阴晴不定，“宋雨烧，你今日铁了心要与本仙掰掰腕子？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 238,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 宋雨烧剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "貌似少女的魔头脸色阴晴不定，“宋雨烧，你今日铁了心要与本仙掰掰腕子？ ” 黑衣老人从怀中掏出一本老黄历，翻开一页，手指抵住一处，默念道：“宜斋戒，宜求财。",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.199360",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "238-2-0": {
     "juan_index": 238,
     "segment_index": 2,
@@ -16,6 +78,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "这位名叫宋雨烧的剑道宗师，屈指轻弹，有一缕缕清风如箭矢，分别击中大髯汉子和年轻道士的心口几处窍穴，原本两人受了女魔头的暗算，被点穴定身，口不言能、身不能动，随着时间的推移，也能自行冲破禁制，但是如果老人没有出现的话，短时间内仍是只能靠陈平安一人对敌。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "这位名叫宋雨烧的剑道宗师，屈指轻弹，有一缕缕清风如箭矢，分别击中大髯汉子和年轻道士的心口几处窍穴，原本两人受了女魔头的暗算，被点穴定身，口不言能、身不能动，随着时间的推移，也能自行冲破禁制，但是如果老人没有出现的话，短时间内仍是只能靠陈平安一人对敌。",
@@ -31,16 +106,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安会见",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 宋雨烧与陈平安会见",
         "time": null,
         "location": null,
         "participants": [
+          "宋雨烧",
           "陈平安"
         ],
         "description": "这位名叫宋雨烧的剑道宗师，屈指轻弹，有一缕缕清风如箭矢，分别击中大髯汉子和年轻道士的心口几处窍穴，原本两人受了女魔头的暗算，被点穴定身，口不言能、身不能动，随着时间的推移，也能自行冲破禁制，但是如果老人没有出现的话，短时间内仍是只能靠陈平安一人对敌。 少女很清楚眼前这位老怪胎的江湖规矩，她二话不说从袖中掏出一枚黄玉铜钱，正面篆刻有“出梅入伏”，反面则是“雷轰天顶”。 这种玉钱，跟雪花钱一样，都是山上神仙用来做买卖的货币，少女手心这枚玉钱，昵称为“小暑钱”，雪花钱与之相比，价值就像市井坊间的铜钱对比银两，相差很大。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与陈平安之间的会见关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -54,8 +132,29 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.966036",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "这位名叫宋雨烧的剑道宗师，屈指轻弹，有一缕缕清风如箭矢，分别击中大髯汉子和年轻道士的心口几处窍穴，原本两人受了女魔头的暗算，被点穴定身，口不言能、身不能动，随着时间的推移，也能自行冲破禁制，但是如果老人没有出现的话，短时间内仍是只能靠陈平安一人对敌。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 宋雨烧与陈平安会见",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.199360",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -132,7 +231,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.966036",
+    "extracted_at": "2026-03-25T01:03:31.199360",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "238-4-0": {
+    "juan_index": 238,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在",
+    "source_sentences": [
+      "但是近期传出一个惊人噩耗，老剑神竟然死于仇家报复，在周边江湖上掀起了一阵惊涛骇浪，人心浮动。",
+      "然后就是眼前这位黑衣老人，身为梳水国剑水山庄的老庄主，性情古怪，比起彩衣国剑神要晚一个辈分，有剑圣美誉，佩剑铁水，创立了剑水山庄，是梳水国第一大江湖门派，现任庄主是宋雨烧的嫡长孙，剑术造诣，同样惊才绝艳。",
+      "古榆国则涌现出一位大名鼎鼎的剑尊，杀力极大，武德极差，是一位居无定所的江湖散仙，并无开创门派，独来独往，传闻跟古榆国皇帝关系不错，佩剑绿珠。",
+      "松溪国还有一位年纪最轻的后起之秀，自封青竹剑仙。",
+      "这四位剑道宗师，群星璀璨，闪亮于彩衣国在内十数国的江湖上空，便是山上仙家，都不敢小觑。",
+      "黑衣老人蓦然睁开眼睛，冷笑道：“鬼鬼祟祟，给我显形！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "然后就是眼前这位黑衣老人，身为梳水国剑水山庄的老庄主，性情古怪，比起彩衣国剑神要晚一个辈分，有剑圣美誉，佩剑铁水，创立了剑水山庄，是梳水国第一大江湖门派，现任庄主是宋雨烧的嫡长孙，剑术造诣，同样惊才绝艳。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 238,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 宋雨烧对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "然后就是眼前这位黑衣老人，身为梳水国剑水山庄的老庄主，性情古怪，比起彩衣国剑神要晚一个辈分，有剑圣美誉，佩剑铁水，创立了剑水山庄，是梳水国第一大江湖门派，现任庄主是宋雨烧的嫡长孙，剑术造诣，同样惊才绝艳。 但是近期传出一个惊人噩耗，老剑神竟然死于仇家报复，在周边江湖上掀起了一阵惊涛骇浪，人心浮动。 古榆国则涌现出一位大名鼎鼎的剑尊，杀力极大，武德极差，是一位居无定所的江湖散仙，并无开创门派，独来独往，传闻跟古榆国皇帝关系不错，佩剑绿珠。",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.199360",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -194,7 +355,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.199360",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -217,6 +378,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚在少女魔头出手后，就变得异常沉默，始终蹲在篝火旁，一声不吭，伸出双掌，低头烤火。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 238,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安不动声色地将这幅画面收入眼帘，大开眼界。",
@@ -232,16 +406,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安冲突",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
-        "description": "陈平安不动声色地将这幅画面收入眼帘，大开眼界。 柳赤诚在少女魔头出手后，就变得异常沉默，始终蹲在篝火旁，一声不吭，伸出双掌，低头烤火。 “好好一处佛门清净地，岂容你这等小妖玷污！",
+        "description": "柳赤诚在少女魔头出手后，就变得异常沉默，始终蹲在篝火旁，一声不吭，伸出双掌，低头烤火。 陈平安不动声色地将这幅画面收入眼帘，大开眼界。 “好好一处佛门清净地，岂容你这等小妖玷污！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -255,8 +432,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "柳赤诚在少女魔头出手后，就变得异常沉默，始终蹲在篝火旁，一声不吭，伸出双掌，低头烤火。 “好好一处佛门清净地，岂容你这等小妖玷污！ ” 黑衣老人脸色冷硬，手腕一抖，只见青铜剑尖轻颤，瞬间就从剑尖激射出一抹刺眼白芒，像是山上仙师的缚妖索，扭扭曲曲，很快在空中撒开，像是一张天道浩荡的恢恢法网，对着那只被断定为妖物的胆怯少女当头罩下。 陈平安不动声色地将这幅画面收入眼帘，大开眼界。 本该细致入微的剑气，竟然也能如此娴熟驾驭，变化万千？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.199360",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -337,7 +540,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -360,6 +563,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚缓缓抬起头，深邃眼眸中金光流转，嘴角有些冷漠笑意，还有些阅尽人世的无奈叹息，只觉得人生再过千年，还是这般无趣。 就在柳赤诚正准备站起身的时候。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 238,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安站起身，轻轻颠了颠背后剑匣，突然开口问道：“宋老前辈，如果这头狐仙，刚好是那一头被冤枉的妖魅，又该如何？",
@@ -375,16 +592,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安对话",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
-        "description": "陈平安站起身，轻轻颠了颠背后剑匣，突然开口问道：“宋老前辈，如果这头狐仙，刚好是那一头被冤枉的妖魅，又该如何？ 年幼狐仙已经无力辩解什么，身体抽搐，衣衫破碎，浑身浴血，一双原本黑黝黝异常发亮的水灵眼眸，已经黯淡无光，只是在弥留之际，少女只是并未怨恨老人的凶狠出手，只是痴痴望向古寺大门，像是在等待一位穷酸秀才的登门拜访，然后她就可以又吓唬他们一下，一次得逞的话，就能让她开心好几个月。 柳赤诚缓缓抬起头，深邃眼眸中金光流转，嘴角有些冷漠笑意，还有些阅尽人世的无奈叹息，只觉得人生再过千年，还是这般无趣。",
+        "description": "柳赤诚缓缓抬起头，深邃眼眸中金光流转，嘴角有些冷漠笑意，还有些阅尽人世的无奈叹息，只觉得人生再过千年，还是这般无趣。 就在柳赤诚正准备站起身的时候。 陈平安站起身，轻轻颠了颠背后剑匣，突然开口问道：“宋老前辈，如果这头狐仙，刚好是那一头被冤枉的妖魅，又该如何？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -398,8 +618,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "年幼狐仙已经无力辩解什么，身体抽搐，衣衫破碎，浑身浴血，一双原本黑黝黝异常发亮的水灵眼眸，已经黯淡无光，只是在弥留之际，少女只是并未怨恨老人的凶狠出手，只是痴痴望向古寺大门，像是在等待一位穷酸秀才的登门拜访，然后她就可以又吓唬他们一下，一次得逞的话，就能让她开心好几个月。 柳赤诚缓缓抬起头，深邃眼眸中金光流转，嘴角有些冷漠笑意，还有些阅尽人世的无奈叹息，只觉得人生再过千年，还是这般无趣。 就在柳赤诚正准备站起身的时候。 陈平安站起身，轻轻颠了颠背后剑匣，突然开口问道：“宋老前辈，如果这头狐仙，刚好是那一头被冤枉的妖魅，又该如何？ ” 老人扯了扯嘴角，笑道：“那正好，可以确定之前九十九头，之后九十九头，都板上钉钉是祸害百姓的作祟妖魔了，因此老夫出剑，只会更加爽利。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -462,7 +708,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -524,7 +770,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.200363",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "238-12-0": {
+    "juan_index": 238,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在",
+    "source_sentences": [
+      "黑衣老人宋雨烧站起身，沉声道：“念在娃儿你也是个用剑的江湖中人，老夫就把本该斩杀狐仙的那一剑，用来对付你，你如果接得住，古寺此间事就算了了，这头狐仙将来是作孽还是行善，善恶报应，以后就由你来承担因果，若是接不住，死于老夫剑下，就怨你本事不够强出头，咋样？",
+      "”",
+      "徐远霞和张山峰也都站起身，如临大敌。",
+      "宋雨烧哈哈笑道：“没关系，你们两个要出手，老夫大不了就多出两剑，还是一样的规矩。",
+      "”",
+      "老人笑声洪亮，中气十足，震得古寺内一根根腐朽梁木随之颤抖，洒落无数灰尘。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "黑衣老人宋雨烧站起身，沉声道：“念在娃儿你也是个用剑的江湖中人，老夫就把本该斩杀狐仙的那一剑，用来对付你，你如果接得住，古寺此间事就算了了，这头狐仙将来是作孽还是行善，善恶报应，以后就由你来承担因果，若是接不住，死于老夫剑下，就怨你本事不够强出头，咋样？ 宋雨烧哈哈笑道：“没关系，你们两个要出手，老夫大不了就多出两剑，还是一样的规矩。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 238,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 宋雨烧对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋雨烧"
+        ],
+        "description": "黑衣老人宋雨烧站起身，沉声道：“念在娃儿你也是个用剑的江湖中人，老夫就把本该斩杀狐仙的那一剑，用来对付你，你如果接得住，古寺此间事就算了了，这头狐仙将来是作孽还是行善，善恶报应，以后就由你来承担因果，若是接不住，死于老夫剑下，就怨你本事不够强出头，咋样？ 宋雨烧哈哈笑道：“没关系，你们两个要出手，老夫大不了就多出两剑，还是一样的规矩。 ”",
+        "background": "",
+        "significance": "对应宋雨烧在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -586,7 +895,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -622,21 +931,37 @@
         ],
         "juan_index": 238,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "出自李希圣所赠《丹书真迹》的方寸符，玄妙神奇，但属于一次性消耗物品，陈平安祭出此符后，已经出现在两丈外的空地，但是当他发现剑气原来继续斩向狐魅之后，来不及再掏出一张方寸符箓，只得脚尖一点，向前迅猛跃去，同时伸手向肩头，按住槐木剑“除魔”的剑柄，对着那抹剑气一斩当空而去。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与李希圣讥讽",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "相距不过一丈，剑芒罡气转瞬间就劈到陈平安身前。 陈平安袖中早已滑落一张方寸缩地符，普通的黄纸材质，双指捻住，剑气近身的刹那之间，陈平安的身影就原地消失。 出自李希圣所赠《丹书真迹》的方寸符，玄妙神奇，但属于一次性消耗物品，陈平安祭出此符后，已经出现在两丈外的空地，但是当他发现剑气原来继续斩向狐魅之后，来不及再掏出一张方寸符箓，只得脚尖一点，向前迅猛跃去，同时伸手向肩头，按住槐木剑“除魔”的剑柄，对着那抹剑气一斩当空而去。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与李希圣之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -650,8 +975,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "讥讽",
+        "context": "相距不过一丈，剑芒罡气转瞬间就劈到陈平安身前。 陈平安袖中早已滑落一张方寸缩地符，普通的黄纸材质，双指捻住，剑气近身的刹那之间，陈平安的身影就原地消失。 黑衣老人嗤笑一声。 原来那抹剑气劈斩在空处后，继续前行，正好是那头雪白狐狸蜷缩地面的方向。 出自李希圣所赠《丹书真迹》的方寸符，玄妙神奇，但属于一次性消耗物品，陈平安祭出此符后，已经出现在两丈外的空地，但是当他发现剑气原来继续斩向狐魅之后，来不及再掏出一张方寸符箓，只得脚尖一点，向前迅猛跃去，同时伸手向肩头，按住槐木剑“除魔”的剑柄，对着那抹剑气一斩当空而去。 虽是出剑，其实归根结底，陈平安还是拳法为本。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与李希圣讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -714,7 +1065,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.200363",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -776,7 +1127,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -838,7 +1189,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.967040",
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -889,6 +1240,19 @@
         ],
         "juan_index": 238,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "陈平安将槐木剑收入魏檗打造而成的木匣，一路小跑向火堆，伸手凑近篝火，有意无意瞥了眼坐在对面打哈欠的柳赤诚，后者嬉皮笑脸道：“瞅啥瞅，这会儿总算开始羡慕我的英俊潇洒啦？",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 238,
+        "segment_index": 18
       }
     ],
     "locations": [],
@@ -899,7 +1263,8 @@
         "location": null,
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "柳赤诚"
         ],
         "description": "陈平安怔怔出神，回过神后，转过头去，瞪大眼睛，年幼狐仙不知何时已经不见了。 大髯汉子伸手指了指自己脸庞，打趣道：“陈平安啊陈平安，英雄救美，事后能否让美人以身相许，还得看这个啊！ 陈平安将槐木剑收入魏檗打造而成的木匣，一路小跑向火堆，伸手凑近篝火，有意无意瞥了眼坐在对面打哈欠的柳赤诚，后者嬉皮笑脸道：“瞅啥瞅，这会儿总算开始羡慕我的英俊潇洒啦？",
         "background": "",
@@ -919,7 +1284,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -957,21 +1322,37 @@
         ],
         "juan_index": 238,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "之所以没有请动两位小祖宗飞出养剑葫，去拦阻剑庄宋雨烧的那道剑气，反而要以身涉险，并非是陈平安意气用事。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 238,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安遭遇",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与宋雨烧遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
         "description": "陈平安翻了个白眼，摘下酒壶，仰头灌了一大口酒。 喝过酒后，陈平安握住酒葫芦，心情激荡，绝不是表面上那么云淡风轻。 之所以没有请动两位小祖宗飞出养剑葫，去拦阻剑庄宋雨烧的那道剑气，反而要以身涉险，并非是陈平安意气用事。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -985,8 +1366,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "会见",
+        "context": "陈平安翻了个白眼，摘下酒壶，仰头灌了一大口酒。 喝过酒后，陈平安握住酒葫芦，心情激荡，绝不是表面上那么云淡风轻。 之所以没有请动两位小祖宗飞出养剑葫，去拦阻剑庄宋雨烧的那道剑气，反而要以身涉险，并非是陈平安意气用事。 陈平安叹了口气，站起身，去往空地，别好酒葫芦后，闭上眼睛，仔细回味梳水国老剑圣的三次出剑，一次劈中神台，让狐仙被迫现身，一次手腕轻抖，剑气成网，最后一次当然就是那直扑陈平安的当头一剑。 陈平安依然没有睁眼，却缓缓抽出槐木剑，学那老人横剑在胸前，如剑在鞘，将出未出。 不知为何，陈平安想来思去，总觉得自己哪怕是依葫芦画瓢，哪怕千次万次，都学不像，别说神似，恐怕形似都难。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与宋雨烧遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1020,21 +1427,37 @@
         ],
         "juan_index": 238,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "不谈登顶，只说入门，那么练拳一事，有个稍有名气的师父带路就行了，可是习剑，还是需要一位明师领路才行，你其实应该跟那个宋雨烧诚心询问剑道，此人武道境界不高，但是已经走出自己的剑道，这很不容易。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安冲突",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与宋雨烧冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
-        "description": "陈平安叹息一声，只得再次收起那把追随自己两次游历江湖的槐木剑。 有人笑言，“陈平安，你的木剑，太轻了，所以味道怎么都不会对的，举重若轻，是剑道高处的境界，你一个初学者，又不是什么练剑的天纵奇才，当然会觉得哪里都不对劲。 这跟他当年看着宁姑娘走六步拳桩，大不一样。",
+        "description": "陈平安叹息一声，只得再次收起那把追随自己两次游历江湖的槐木剑。 有人笑言，“陈平安，你的木剑，太轻了，所以味道怎么都不会对的，举重若轻，是剑道高处的境界，你一个初学者，又不是什么练剑的天纵奇才，当然会觉得哪里都不对劲。 不谈登顶，只说入门，那么练拳一事，有个稍有名气的师父带路就行了，可是习剑，还是需要一位明师领路才行，你其实应该跟那个宋雨烧诚心询问剑道，此人武道境界不高，但是已经走出自己的剑道，这很不容易。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与宋雨烧之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1048,8 +1471,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "冲突",
+        "context": "这跟他当年看着宁姑娘走六步拳桩，大不一样。 原来出剑，到底跟练拳是不一样的。 陈平安叹息一声，只得再次收起那把追随自己两次游历江湖的槐木剑。 有人笑言，“陈平安，你的木剑，太轻了，所以味道怎么都不会对的，举重若轻，是剑道高处的境界，你一个初学者，又不是什么练剑的天纵奇才，当然会觉得哪里都不对劲。 不谈登顶，只说入门，那么练拳一事，有个稍有名气的师父带路就行了，可是习剑，还是需要一位明师领路才行，你其实应该跟那个宋雨烧诚心询问剑道，此人武道境界不高，但是已经走出自己的剑道，这很不容易。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与宋雨烧冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1084,21 +1533,40 @@
         ],
         "juan_index": 238,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "这番真知灼见，不是大髯汉子说出口的，甚至不是能够驾驭桃木剑飞掠的张山峰，反而是最不跟江湖沾边的书生柳赤诚，说这一席话的时候，柳赤诚站在添加了许多枯枝的熊熊火堆旁，火光映射，整个人的修长身影随着火光缓缓晃荡。 张山峰正在跟徐远霞请教江湖点穴的门道，一问一答，十分专注，便没怎么在意柳赤诚的言语。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 21
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
-        "description": "陈平安转头望去。 因为从头到尾，柳赤诚都未开口说话，陈平安就真真切切听到了柳赤诚的嗓音。 陈平安问了一个奇怪问题，“是你？",
+        "description": "陈平安转头望去。 这番真知灼见，不是大髯汉子说出口的，甚至不是能够驾驭桃木剑飞掠的张山峰，反而是最不跟江湖沾边的书生柳赤诚，说这一席话的时候，柳赤诚站在添加了许多枯枝的熊熊火堆旁，火光映射，整个人的修长身影随着火光缓缓晃荡。 张山峰正在跟徐远霞请教江湖点穴的门道，一问一答，十分专注，便没怎么在意柳赤诚的言语。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1112,8 +1580,29 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "因为从头到尾，柳赤诚都未开口说话，陈平安就真真切切听到了柳赤诚的嗓音。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1136,6 +1625,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚摆摆手，缓缓绕过火堆，来到陈平安身旁，笑呵呵道：“行了，咱们俩就别勾心斗角啦，你已经知道我是大妖，我也知道你背后所负之剑，大有来历，否则它方才就不会压抑不住，在感知到我的气息后，自发颤鸣起来，你虽然很快就强行压下它的动静，可我又不眼瞎耳背，所以现在你我心知肚明，陈平安，你能否告诉我，这把剑，是何方神圣铸造而成？",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 238,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "柳赤诚摆摆手，缓缓绕过火堆，来到陈平安身旁，笑呵呵道：“行了，咱们俩就别勾心斗角啦，你已经知道我是大妖，我也知道你背后所负之剑，大有来历，否则它方才就不会压抑不住，在感知到我的气息后，自发颤鸣起来，你虽然很快就强行压下它的动静，可我又不眼瞎耳背，所以现在你我心知肚明，陈平安，你能否告诉我，这把剑，是何方神圣铸造而成？ 陈平安神色凝重，问道：“你要抢剑？",
@@ -1152,16 +1654,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安对话",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
         "description": "柳赤诚摆摆手，缓缓绕过火堆，来到陈平安身旁，笑呵呵道：“行了，咱们俩就别勾心斗角啦，你已经知道我是大妖，我也知道你背后所负之剑，大有来历，否则它方才就不会压抑不住，在感知到我的气息后，自发颤鸣起来，你虽然很快就强行压下它的动静，可我又不眼瞎耳背，所以现在你我心知肚明，陈平安，你能否告诉我，这把剑，是何方神圣铸造而成？ 陈平安神色凝重，问道：“你要抢剑？ 在胭脂郡城，我听刘太守私底下说，你其实是一位金丹境神仙，因为在城外显露过一手神通。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -1175,8 +1680,34 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "在胭脂郡城，我听刘太守私底下说，你其实是一位金丹境神仙，因为在城外显露过一手神通。 ” 柳赤诚摆摆手，缓缓绕过火堆，来到陈平安身旁，笑呵呵道：“行了，咱们俩就别勾心斗角啦，你已经知道我是大妖，我也知道你背后所负之剑，大有来历，否则它方才就不会压抑不住，在感知到我的气息后，自发颤鸣起来，你虽然很快就强行压下它的动静，可我又不眼瞎耳背，所以现在你我心知肚明，陈平安，你能否告诉我，这把剑，是何方神圣铸造而成？ 你要送往倒悬山，交到谁手上？ ” 陈平安神色凝重，问道：“你要抢剑？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.201367",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1199,6 +1730,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "“柳赤诚”笑眯起眼，像是听到一个天大笑话，双手负后，摇头笑道：“剑是好剑，可我还真没兴趣，我知道你不信这种话，没关系，我比你强出太多，你只需要看我做的事情就行了。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 238,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安点头道：“诗文中看到过。",
@@ -1214,16 +1758,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安对话",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
-        "description": "陈平安点头道：“诗文中看到过。 ” “柳赤诚”笑眯起眼，像是听到一个天大笑话，双手负后，摇头笑道：“剑是好剑，可我还真没兴趣，我知道你不信这种话，没关系，我比你强出太多，你只需要看我做的事情就行了。",
+        "description": "“柳赤诚”笑眯起眼，像是听到一个天大笑话，双手负后，摇头笑道：“剑是好剑，可我还真没兴趣，我知道你不信这种话，没关系，我比你强出太多，你只需要看我做的事情就行了。 陈平安点头道：“诗文中看到过。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1237,8 +1784,34 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” “柳赤诚”笑眯起眼，像是听到一个天大笑话，双手负后，摇头笑道：“剑是好剑，可我还真没兴趣，我知道你不信这种话，没关系，我比你强出太多，你只需要看我做的事情就行了。 对了，你有没有听过一句话？ 世间好物不坚牢，彩云易散琉璃脆。 ” 陈平安点头道：“诗文中看到过。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1261,6 +1834,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚一挥袖子，烟水朦胧，云遮雾绕，落在篝火那边，往这处看来则是没有半点异样，“柳赤诚”正在和陈平安相谈甚欢，事实上这位白水国寒士，一身粉色道袍，玉树临风，此时此景，诡谲至极。 柳赤诚继续道：“‘彩云易散’，是说白帝城的彩云间，云霞聚散如飞烟，风景壮丽。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 238,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "柳赤诚一挥袖子，烟水朦胧，云遮雾绕，落在篝火那边，往这处看来则是没有半点异样，“柳赤诚”正在和陈平安相谈甚欢，事实上这位白水国寒士，一身粉色道袍，玉树临风，此时此景，诡谲至极。",
@@ -1276,16 +1863,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安冲突",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
-        "description": "柳赤诚一挥袖子，烟水朦胧，云遮雾绕，落在篝火那边，往这处看来则是没有半点异样，“柳赤诚”正在和陈平安相谈甚欢，事实上这位白水国寒士，一身粉色道袍，玉树临风，此时此景，诡谲至极。 ” 柳赤诚继续道：“‘彩云易散’，是说白帝城的彩云间，云霞聚散如飞烟，风景壮丽。",
+        "description": "柳赤诚一挥袖子，烟水朦胧，云遮雾绕，落在篝火那边，往这处看来则是没有半点异样，“柳赤诚”正在和陈平安相谈甚欢，事实上这位白水国寒士，一身粉色道袍，玉树临风，此时此景，诡谲至极。 柳赤诚继续道：“‘彩云易散’，是说白帝城的彩云间，云霞聚散如飞烟，风景壮丽。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1299,8 +1889,34 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "” 柳赤诚一挥袖子，烟水朦胧，云遮雾绕，落在篝火那边，往这处看来则是没有半点异样，“柳赤诚”正在和陈平安相谈甚欢，事实上这位白水国寒士，一身粉色道袍，玉树临风，此时此景，诡谲至极。 柳赤诚继续道：“‘彩云易散’，是说白帝城的彩云间，云霞聚散如飞烟，风景壮丽。 ” “‘琉璃脆’，是说曾经有位出身白帝城魔教道统的大妖，就像今夜这般的冲突，一样是为了一头看似无足轻重的小妖魅，跟大师兄起了争执，他为天下大势，我为小小的情理，师兄弟就此决裂，如今回头再看，真是滑稽可笑，就跟两个孩子闹脾气差不多，反正我一气之下，砸烂了白帝城彩云间的一整栋琉璃阁楼，最后只留下几只琉璃小酒盏而已，从此脱离白帝城，云游四方，没了师门庇护，最后被正道领袖的卫道士，追杀阻截千万里，最终打入大牢，镇压了千年之久。 我那位大师兄，从头到尾，只是袖手旁观。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1335,21 +1951,50 @@
         ],
         "juan_index": 238,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚微微一笑，双手一抖，甩了甩粉色道袍的两只大袖，双手叠放在腹部，气势森严，“因为我最近有了收徒弟的念头，觉得你陈平安挺不错的，我可以传授你世间最上乘的剑法，我虽是浩然天下的本土妖族出身，但是跟我师兄身为魔教领袖，却比神仙还相似神仙，便是许多正道仙家的高人，一样愿意对我师兄顶礼膜拜，所以我教你的剑法，亦是足以帮你登顶大道的正宗剑法，机缘一到，有望直达上五境，要知道‘正宗’的这个宗字，可不是能够乱用的字眼。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 238,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "宋雨烧之流，虽然摸索出了自己的剑道真意，可这么一位资质有限的纯粹武夫，他的武学高度，撑死了就是帮你跻身类似一位中五境剑修的位置，陈平安，你意下如何？",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安对话",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
         "description": "陈平安皱眉问道：“你与我说这些，是为了什么？ 柳赤诚微微一笑，双手一抖，甩了甩粉色道袍的两只大袖，双手叠放在腹部，气势森严，“因为我最近有了收徒弟的念头，觉得你陈平安挺不错的，我可以传授你世间最上乘的剑法，我虽是浩然天下的本土妖族出身，但是跟我师兄身为魔教领袖，却比神仙还相似神仙，便是许多正道仙家的高人，一样愿意对我师兄顶礼膜拜，所以我教你的剑法，亦是足以帮你登顶大道的正宗剑法，机缘一到，有望直达上五境，要知道‘正宗’的这个宗字，可不是能够乱用的字眼。 宋雨烧之流，虽然摸索出了自己的剑道真意，可这么一位资质有限的纯粹武夫，他的武学高度，撑死了就是帮你跻身类似一位中五境剑修的位置，陈平安，你意下如何？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1363,8 +2008,29 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "柳赤诚微微一笑，双手一抖，甩了甩粉色道袍的两只大袖，双手叠放在腹部，气势森严，“因为我最近有了收徒弟的念头，觉得你陈平安挺不错的，我可以传授你世间最上乘的剑法，我虽是浩然天下的本土妖族出身，但是跟我师兄身为魔教领袖，却比神仙还相似神仙，便是许多正道仙家的高人，一样愿意对我师兄顶礼膜拜，所以我教你的剑法，亦是足以帮你登顶大道的正宗剑法，机缘一到，有望直达上五境，要知道‘正宗’的这个宗字，可不是能够乱用的字眼。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 238,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1398,21 +2064,37 @@
         ],
         "juan_index": 238,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚微笑道：“在我看来，大道崎岖难行，唯有坚忍不拔之辈，能够走到最后，甚至有望比那些才华横溢的天之骄子，走的更远更高。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 238,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安对话",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与柳赤诚对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "柳赤诚"
         ],
-        "description": "陈平安反问道：“当魔头？ 你陈平安，跟我是同道中人，如今我已经帮你收取了一位大师兄，你放心，你是我最后一位弟子，最多百年光阴，我们师徒三人，必然会扬名天下，重返白帝城，在那里占据一席之地。 ”",
+        "description": "陈平安反问道：“当魔头？ 柳赤诚微笑道：“在我看来，大道崎岖难行，唯有坚忍不拔之辈，能够走到最后，甚至有望比那些才华横溢的天之骄子，走的更远更高。 你陈平安，跟我是同道中人，如今我已经帮你收取了一位大师兄，你放心，你是我最后一位弟子，最多百年光阴，我们师徒三人，必然会扬名天下，重返白帝城，在那里占据一席之地。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与柳赤诚之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -1426,8 +2108,34 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "柳赤诚"
+        ],
+        "action": "对话",
+        "context": "” 陈平安反问道：“当魔头？ ” 柳赤诚微笑道：“在我看来，大道崎岖难行，唯有坚忍不拔之辈，能够走到最后，甚至有望比那些才华横溢的天之骄子，走的更远更高。 你陈平安，跟我是同道中人，如今我已经帮你收取了一位大师兄，你放心，你是我最后一位弟子，最多百年光阴，我们师徒三人，必然会扬名天下，重返白帝城，在那里占据一席之地。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与柳赤诚对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1450,6 +2158,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚凝视着陈平安的眼睛，笑了笑，“我和大师兄当初所在师门，很有意思，大师兄是人，修行魔道术法，我是妖，修习人族神通，我们那位师父订立下来的宗旨，正是有教无类四个字，这一点与道祖座下二弟子的那位真无敌，很像。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 238,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "柳赤诚凝视着陈平安的眼睛，笑了笑，“我和大师兄当初所在师门，很有意思，大师兄是人，修行魔道术法，我是妖，修习人族神通，我们那位师父订立下来的宗旨，正是有教无类四个字，这一点与道祖座下二弟子的那位真无敌，很像。 陈平安咧嘴一笑，“认不认你当师父，我得问过才行。",
@@ -1466,16 +2187,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安师承",
         "time": null,
         "location": null,
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
         "description": "柳赤诚凝视着陈平安的眼睛，笑了笑，“我和大师兄当初所在师门，很有意思，大师兄是人，修行魔道术法，我是妖，修习人族神通，我们那位师父订立下来的宗旨，正是有教无类四个字，这一点与道祖座下二弟子的那位真无敌，很像。 陈平安咧嘴一笑，“认不认你当师父，我得问过才行。 除了白帝城，天下魔教还有数大道统，一个个势力大到惊人，盘根交错，便是宗字头的正道仙家，一样要避其锋芒，所以说，只要你拳头够硬，境界够高，什么魔道正道，都是无稽之谈，根本无所谓的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动柳赤诚与陈平安之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -1489,8 +2213,29 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "柳赤诚凝视着陈平安的眼睛，笑了笑，“我和大师兄当初所在师门，很有意思，大师兄是人，修行魔道术法，我是妖，修习人族神通，我们那位师父订立下来的宗旨，正是有教无类四个字，这一点与道祖座下二弟子的那位真无敌，很像。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 238,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1511,6 +2256,19 @@
       "文圣老秀才，不出意外早已离开宝瓶洲，陈平安上哪里去找？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "柳赤诚眼前一亮，“我就知道你小子，必然有不错的师承，没关系，说来听听，最终审时度势，良禽择木而栖，不丢人。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 238,
+        "segment_index": 28
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1545,16 +2303,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安在宝瓶洲迁移",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "柳赤诚",
           "陈平安"
         ],
-        "description": "文圣老秀才，不出意外早已离开宝瓶洲，陈平安上哪里去找？ “哦？ ”",
+        "description": "柳赤诚眼前一亮，“我就知道你小子，必然有不错的师承，没关系，说来听听，最终审时度势，良禽择木而栖，不丢人。 文圣老秀才，不出意外早已离开宝瓶洲，陈平安上哪里去找？ “哦？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动柳赤诚与陈平安之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -1568,8 +2329,34 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.968044",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "柳赤诚"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "“哦？ ” 柳赤诚眼前一亮，“我就知道你小子，必然有不错的师承，没关系，说来听听，最终审时度势，良禽择木而栖，不丢人。 我也不勉强你，更不会拿话唬你，只要你的师承高于我，我绝不强求这桩师徒情分。 ” 文圣老秀才，不出意外早已离开宝瓶洲，陈平安上哪里去找？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 柳赤诚与陈平安在宝瓶洲迁移",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 238,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1635,6 +2422,19 @@
       },
       {
         "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "实在不行，大不了拼命一次，还是不行的话，就像阿良说的，天大地大，活着最大，认了“柳赤诚”当师父便是，不管如何，肯定要先把剑送到倒悬山，亲手交给宁姑娘再说其他！",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "没有人知道，陈平安第一次护送李宝瓶他们远游大隋，以及之后跟随少年崔瀺返回黄庭国，为何陈平安次次在高山之巅，大水之畔，都必定会练习立桩剑炉，而且哪怕练习完毕，也会长久站在原地。",
@@ -1671,8 +2471,8 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "李宝瓶",
-          "崔瀺"
+          "阿良",
+          "柳赤诚"
         ],
         "description": "齐先生又逝世了，仿佛也没办法。 但是陈平安绝不愿意跟随此人修行什么通天大道。 陈平安深呼吸一口气，那就赌一次。",
         "background": "",
@@ -1680,7 +2480,8 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段29",
         "sentence_indexes_in_segment": [
@@ -1699,6 +2500,26 @@
       {
         "time": null,
         "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "柳赤诚"
+        ],
+        "action": "师承",
+        "context": "实在不行，大不了拼命一次，还是不行的话，就像阿良说的，天大地大，活着最大，认了“柳赤诚”当师父便是，不管如何，肯定要先把剑送到倒悬山，亲手交给宁姑娘再说其他！",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 29
+      },
+      {
+        "time": null,
+        "from_roles": [
           "陈平安"
         ],
         "to_roles": [
@@ -1757,7 +2578,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.969047",
+    "extracted_at": "2026-03-25T01:03:31.202370",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1791,20 +2612,34 @@
         ],
         "juan_index": 238,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "然后，柳赤诚忍俊不禁，开心笑起来，因为觉得好玩。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 30
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 陈平安与柳赤诚剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "柳赤诚"
         ],
-        "description": "哪怕是这一次独自闯荡江湖，就像上次在胭脂郡城目送刘高馨远行，陈平安还是会独自坐在屋脊高处，在今年最后的春风里，喝着酒，喃喃自语。 陈平安在内心深处，知道那个人肯定去世了，但是那个人也曾说过。 而那些所有人都不会深思的时分，却会有春风萦袖。",
+        "description": "哪怕是这一次独自闯荡江湖，就像上次在胭脂郡城目送刘高馨远行，陈平安还是会独自坐在屋脊高处，在今年最后的春风里，喝着酒，喃喃自语。 陈平安在内心深处，知道那个人肯定去世了，但是那个人也曾说过。 然后，柳赤诚忍俊不禁，开心笑起来，因为觉得好玩。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与柳赤诚之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十七章 小暑过后,春风犹在 · 段30",
         "sentence_indexes_in_segment": [
@@ -1820,7 +2655,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.969047",
+    "extracted_at": "2026-03-25T01:03:31.203373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1841,6 +2676,20 @@
       "一个温暖醇厚的嗓音在陈平安身旁响起，“在的。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "但是柳赤诚很快就笑不出来了。 柳赤诚心头巨震，这一刻，简直就像是千年之前那场大战，对上了那位一手持仙剑、一手托法印的张天师！",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 238,
+        "segment_index": 31
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1881,7 +2730,7 @@
           "齐静春",
           "陈平安"
         ],
-        "description": "陈平安轻声问道：“齐先生？ 一个温暖醇厚的嗓音在陈平安身旁响起，“在的。 但是柳赤诚很快就笑不出来了。",
+        "description": "但是柳赤诚很快就笑不出来了。 陈平安轻声问道：“齐先生？ 柳赤诚心头巨震，这一刻，简直就像是千年之前那场大战，对上了那位一手持仙剑、一手托法印的张天师！",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
@@ -1922,7 +2771,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.969047",
+    "extracted_at": "2026-03-25T01:03:31.203373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

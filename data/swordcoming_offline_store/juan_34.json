@@ -96,7 +96,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.377874",
+    "extracted_at": "2026-03-25T01:03:30.359273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -131,6 +131,19 @@
         ],
         "juan_index": 34,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "站在男人身后的宋集薪脸色阴沉似水，握紧那块苻南华赠送的老龙布雨玉佩。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 34,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -153,16 +166,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第三十四章 齐聚 · 宋集薪在大骊对话",
+        "name": "第一卷笼中雀 第三十四章 齐聚 · 宋集薪与苻南华在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "苻南华"
         ],
         "description": "站在男人身后的宋集薪脸色阴沉似水，握紧那块苻南华赠送的老龙布雨玉佩。 这位顶着“私生子”“野种”头衔很多年的读书种子，如今已经知道身边男人的真实身份，所以少年才更加明白男人所说言语的分量，“亲自摆酒”这四个字，将会是一张大骊最厉害的保命符，是一架官场最长的青云梯。 ”",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋集薪与苻南华之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第三十四章 齐聚 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -176,8 +192,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.377874",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "” 男子点了点头，打量了一眼高大少年，开门见山地问道：“少年，想不想去外边看看？ 比如投军入伍，上阵厮杀，我保证你只要熬得过十年，就能当上大官，到时候我亲自给你在京城摆酒庆功，如何？ ” 站在男人身后的宋集薪脸色阴沉似水，握紧那块苻南华赠送的老龙布雨玉佩。 这位顶着“私生子”“野种”头衔很多年的读书种子，如今已经知道身边男人的真实身份，所以少年才更加明白男人所说言语的分量，“亲自摆酒”这四个字，将会是一张大骊最厉害的保命符，是一架官场最长的青云梯。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第三十四章 齐聚 · 宋集薪与苻南华在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 34,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -240,6 +282,19 @@
         ],
         "juan_index": 34,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "白袍男人一笑置之，不以为意，“无妨，等你哪天有机会走出小镇，可以去最近的丹阳山口，找到一个叫刘临溪的武人，说是京城宋长镜举荐你来此投军，他若是不信，你就跟他讲那个叫宋长镜的人说了，你刘临溪还欠他三万颗大隋边骑的头颅。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 34,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -250,7 +305,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -287,7 +344,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.377874",
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -394,7 +451,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.377874",
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -548,7 +605,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.377874",
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -667,7 +724,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -829,7 +886,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -933,7 +990,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.360277",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -995,7 +1052,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1101,7 +1158,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1194,7 +1251,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1283,17 +1340,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "刘羡阳"
         ],
         "description": "在走出祖宅前，宁姑娘建议他既然有了一片槐叶，就早点离开小镇，有了祖荫槐叶的无形庇护，便不至于有太大的意外，最好不要在小镇逗留太久，因为她不知道刘羡阳一事，会不会殃及他陈平安。 但是陈平安坚持要亲眼看到刘羡阳被阮师傅收为徒弟，才能安心离开。 因为当年没有刘羡阳，他早就饿死了。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0,
           1
@@ -1323,7 +1380,7 @@
         "action": "守护",
         "context": "在走出祖宅前，宁姑娘建议他既然有了一片槐叶，就早点离开小镇，有了祖荫槐叶的无形庇护，便不至于有太大的意外，最好不要在小镇逗留太久，因为她不知道刘羡阳一事，会不会殃及他陈平安。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1343,7 +1400,7 @@
         "action": "别离",
         "context": "但是陈平安坚持要亲眼看到刘羡阳被阮师傅收为徒弟，才能安心离开。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1353,7 +1410,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1415,7 +1472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1564,7 +1621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1627,7 +1684,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.378877",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1707,7 +1764,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.361280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1784,7 +1841,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.362284",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1845,7 +1902,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.362284",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1906,7 +1963,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.362284",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2031,7 +2088,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.362284",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2159,7 +2216,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.362284",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2236,7 +2293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.362284",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2289,16 +2346,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "泥瓶巷外墙脚根那边，小女孩脚丫一下一下轻轻踢着老人胸膛，想着这一路行来，相中了哪些入眼的山峰，想着挑选哪一座搬回家乡才好。 以后咱们难道真要带着个疯子离开小镇，那多丢人现眼啊？ 男儿膝下有黄金。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第三十四章 齐聚 · 段26",
         "sentence_indexes_in_segment": [
@@ -2314,7 +2371,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2395,7 +2452,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2460,6 +2517,19 @@
         ],
         "juan_index": 34,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "可是现在刘羡阳，已经陷入自己之前遇到的困境，当时若非齐先生插手，自己的命运就是杀死苻南华，然后被杀，或是云霞山的人，或是老龙城。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 34,
+        "segment_index": 28
       }
     ],
     "locations": [
@@ -2472,7 +2542,8 @@
         "coordinates": null,
         "related_entities": [
           "刘羡阳",
-          "齐静春"
+          "齐静春",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -2500,17 +2571,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "齐静春",
-          "陈平安",
-          "刘羡阳"
+          "谢谢",
+          "苻南华",
+          "刘羡阳",
+          "陈平安"
         ],
         "description": "陈平安眼神坚毅，不言而喻。 陈平安的直觉告诉他，如果刘羡阳在卢正淳下跪之前，答应下来这笔买卖，说不定最多吃些苦头，但是性命无忧。 可是现在刘羡阳，已经陷入自己之前遇到的困境，当时若非齐先生插手，自己的命运就是杀死苻南华，然后被杀，或是云霞山的人，或是老龙城。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第三十四章 齐聚 · 段28",
         "sentence_indexes_in_segment": [
@@ -2526,7 +2598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.379881",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2641,7 +2713,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2704,7 +2776,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2767,7 +2839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2815,6 +2887,19 @@
         ],
         "juan_index": 34,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜对此不置一词，只是问道：“死在小巷的那个刺客，查出来是哪方势力的棋子没？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 34,
+        "segment_index": 32
       }
     ],
     "locations": [],
@@ -2825,14 +2910,13 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "陈平安跟在两人身后，稍稍偏向小巷墙壁一侧，死死盯住巷口那边的动静。 白袍男子带着少年宋集薪，在年迈管事的领路匣，赶往督造官衙署后厅。 ”",
+        "description": "陈平安跟在两人身后，稍稍偏向小巷墙壁一侧，死死盯住巷口那边的动静。 白袍男子带着少年宋集薪，在年迈管事的领路匣，赶往督造官衙署后厅。 宋长镜对此不置一词，只是问道：“死在小巷的那个刺客，查出来是哪方势力的棋子没？",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第三十四章 齐聚 · 段32",
         "sentence_indexes_in_segment": [
           0,
@@ -2846,34 +2930,8 @@
         "segment_index": 32
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "宋集薪"
-        ],
-        "action": "对话",
-        "context": "” 陈平安跟在两人身后，稍稍偏向小巷墙壁一侧，死死盯住巷口那边的动静。 白袍男子带着少年宋集薪，在年迈管事的领路匣，赶往督造官衙署后厅。 管事说那位远道而来的书院李先生，在此等候了小半个时辰后，说要动身去学塾拜访一位儒门长辈。 宋长镜对此不置一词，只是问道：“死在小巷的那个刺客，查出来是哪方势力的棋子没？ ”",
-        "result": null,
-        "event_name": "墙头对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 34,
-        "segment_index": 32
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2893,7 +2951,22 @@
       "”",
       "宋长镜冷笑道：“也不知道给本王一点点惊喜！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜皱眉道：“嗯？ 宋长镜冷笑道：“也不知道给本王一点点惊喜！",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 34,
+        "segment_index": 33
+      }
+    ],
     "locations": [
       {
         "name": "福禄街",
@@ -2912,13 +2985,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第三十四章 齐聚 · 福禄街对话",
+        "name": "第一卷笼中雀 第三十四章 齐聚 · 宋长镜在福禄街对话",
         "time": null,
         "location": "福禄街",
-        "participants": [],
-        "description": "年迈老人赶紧弯腰惶恐道：“正是福禄街的宋家。 管事有些犹豫。 宋长镜皱眉道：“嗯？",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "宋长镜皱眉道：“嗯？ 年迈老人赶紧弯腰惶恐道：“正是福禄街的宋家。 宋长镜冷笑道：“也不知道给本王一点点惊喜！",
         "background": "",
-        "significance": "对应福禄街相关的关键对话场景。",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第三十四章 齐聚 · 段33",
         "sentence_indexes_in_segment": [
@@ -2934,7 +3009,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.363287",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3031,7 +3106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.364291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3095,7 +3170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.364291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3162,7 +3237,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.380884",
+    "extracted_at": "2026-03-25T01:03:30.364291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

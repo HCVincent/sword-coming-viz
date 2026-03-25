@@ -121,7 +121,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.497153",
+    "extracted_at": "2026-03-25T01:03:30.517321",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -221,18 +221,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "羊角辫小丫头只觉得莫名其妙，不知道一张破叶子，有什么只得炫耀的，但是她就是受不了李宝瓶的那副模样，很欠揍。 问题是学塾里差不多大的孩子，哪怕是李槐这样的刺头，也打不过李宝瓶，李槐曾经被她打得趴在地上装死，李宝瓶犹不罢休，扒掉李槐的裤子，再把那条裤子往树上一丢，高高挂在那里，光屁股李槐一路嚎啕大哭回去，他娘可不是省油的灯，二话不说就拽着李槐一起杀向福禄街，结果还没到李家，看着街道两边气派威严的石狮子、彩绘门神和高大院墙，妇人就气不打一处来，又给李槐暴打了一顿，连李家大门也没敲，就扯着自己儿子的耳朵，灰溜溜回到小镇最西边的破落宅子，不过那晚妇人宰了只鸡炖了，李槐光屁股站在凳子上，晃来晃去，吃得比谁都欢快，哪里还记得被李宝瓶按在地上拍脑袋的糗事。 只可惜红棉袄小姑娘完全沉浸在自己的世界里，根本不在乎什么金算盘，她继续在伙伴眼前轻轻摇晃槐叶，尖尖的小下巴抬了抬，指向前边的陈平安，她说道：“他送我的，我袋子里还有哦。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -261,7 +261,7 @@
         "action": "同行",
         "context": "问题是学塾里差不多大的孩子，哪怕是李槐这样的刺头，也打不过李宝瓶，李槐曾经被她打得趴在地上装死，李宝瓶犹不罢休，扒掉李槐的裤子，再把那条裤子往树上一丢，高高挂在那里，光屁股李槐一路嚎啕大哭回去，他娘可不是省油的灯，二话不说就拽着李槐一起杀向福禄街，结果还没到李家，看着街道两边气派威严的石狮子、彩绘门神和高大院墙，妇人就气不打一处来，又给李槐暴打了一顿，连李家大门也没敲，就扯着自己儿子的耳朵，灰溜溜回到小镇最西边的破落宅子，不过那晚妇人宰了只鸡炖了，李槐光屁股站在凳子上，晃来晃去，吃得比谁都欢快，哪里还记得被李宝瓶按在地上拍脑袋的糗事。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "福禄街",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -271,7 +271,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.497153",
+    "extracted_at": "2026-03-25T01:03:30.517321",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -402,7 +402,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.497153",
+    "extracted_at": "2026-03-25T01:03:30.517321",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -458,6 +458,19 @@
         "original_description_in_book": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
         "description": "李宝瓶同行的重要少年角色，承接书院求学与成长线。",
         "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 72,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "董水井",
+        "alias": [],
+        "original_description_in_book": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
+        "description": "小镇旧人中的重要一员，承接街巷命运与后来分流的人生路线。",
+        "power": "小镇",
         "sentence_indexes_in_segment": [
           2
         ],
@@ -554,23 +567,26 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "齐静春",
-          "陈平安",
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李宝瓶正在吃力地换肩膀来扛槐枝，之前已经来回换过很多次，火辣辣的疼。 羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。 她闲着也是闲着，竹筒倒豆子就把学塾的境况给一口气说出来，“齐先生之前答应要带我们出去游学，最后要去到山崖书院读书，当时我们学塾还有十四五个人，家里人都同意的，后来呢，这些大多住在福禄街和桃叶巷的有钱孩子，先是托病不来学塾，后来听李宝瓶说，他们直接离开小镇了，说是去投奔远房亲戚。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
           2,
-          3
+          3,
+          4,
+          5,
+          6
         ],
         "source": "第一卷笼中雀 第七十二章 黑云 · 段4",
         "sentence_indexes_in_segment": [
@@ -597,7 +613,7 @@
         "action": "对话",
         "context": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -617,7 +633,27 @@
         "action": "对话",
         "context": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 72,
+        "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "董水井"
+        ],
+        "action": "对话",
+        "context": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -637,7 +673,47 @@
         "action": "对话",
         "context": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 72,
+        "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "董水井"
+        ],
+        "action": "对话",
+        "context": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 72,
+        "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "董水井"
+        ],
+        "action": "对话",
+        "context": "羊角辫伸出一只手掌，回答道：“如今只剩下五个人啦，我，李宝瓶，李槐，林守一，董水井。",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -657,7 +733,7 @@
         "action": "别离",
         "context": "她闲着也是闲着，竹筒倒豆子就把学塾的境况给一口气说出来，“齐先生之前答应要带我们出去游学，最后要去到山崖书院读书，当时我们学塾还有十四五个人，家里人都同意的，后来呢，这些大多住在福禄街和桃叶巷的有钱孩子，先是托病不来学塾，后来听李宝瓶说，他们直接离开小镇了，说是去投奔远房亲戚。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -667,7 +743,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.498156",
+    "extracted_at": "2026-03-25T01:03:30.517321",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +806,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.498156",
+    "extracted_at": "2026-03-25T01:03:30.517321",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -808,7 +884,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.498156",
+    "extracted_at": "2026-03-25T01:03:30.517321",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -959,7 +1035,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.498156",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1070,7 +1146,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.498156",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1146,7 +1222,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.498156",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1226,7 +1302,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1331,7 +1407,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1394,7 +1470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1495,18 +1571,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "骑龙巷",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "那个门房于心不忍，为骑龙巷那间压岁铺子的小掌柜解围，说道：“方才一个学塾马先生让李槐来捎话，让府上这边准备好一辆马车，小姐你带上行李，先去学塾，然后离开小镇，与石小姐一起游学至山崖书院。 当然，在去学塾之前，小姐可以顺路去趟骑龙巷，把石小姐的东西装上马车。 李宝瓶只好先放过石春嘉，满脸失望，一起走进大门的时候，还不忘替石春嘉感到可惜。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1535,7 +1611,7 @@
         "action": "对话",
         "context": "那个门房于心不忍，为骑龙巷那间压岁铺子的小掌柜解围，说道：“方才一个学塾马先生让李槐来捎话，让府上这边准备好一辆马车，小姐你带上行李，先去学塾，然后离开小镇，与石小姐一起游学至山崖书院。 当然，在去学塾之前，小姐可以顺路去趟骑龙巷，把石小姐的东西装上马车。 ” 李宝瓶只好先放过石春嘉，满脸失望，一起走进大门的时候，还不忘替石春嘉感到可惜。 劫后余生的羊角辫小姑娘，默默下定决心今天就要拆掉辫子。 “咦？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "骑龙巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1550,7 +1626,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.518324",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1629,7 +1705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.519328",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1690,7 +1766,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.519328",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,7 +1858,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.499160",
+    "extracted_at": "2026-03-25T01:03:30.519328",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1875,7 +1951,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.500163",
+    "extracted_at": "2026-03-25T01:03:30.519328",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

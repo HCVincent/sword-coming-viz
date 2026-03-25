@@ -13,7 +13,21 @@
       "少年赵繇，既是学塾弟子、又是先生书童，顺着视线抬头望去，毫不犹豫道：“我们儒家以仁字立教，匾额四字，取自‘当仁，不让于师’，意思是说我们读书人应该尊师重道，但是在仁义道德之前，不必谦让。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "少年赵繇，既是学塾弟子、又是先生书童，顺着视线抬头望去，毫不犹豫道：“我们儒家以仁字立教，匾额四字，取自‘当仁，不让于师’，意思是说我们读书人应该尊师重道，但是在仁义道德之前，不必谦让。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 11,
+        "segment_index": 1
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -32,16 +46,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安"
+          "顾璨",
+          "陈平安",
+          "赵繇"
         ],
-        "description": "这位小镇学问最大的教书先生，脸色有些憔悴，伸手指向头顶的一块匾额，“当仁不让，四字何解？ 【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！ 一位双鬓星霜的儒士带着青衫少年郎，离开乡塾，来到那座牌坊楼下。",
+        "description": "这位小镇学问最大的教书先生，脸色有些憔悴，伸手指向头顶的一块匾额，“当仁不让，四字何解？ 少年赵繇，既是学塾弟子、又是先生书童，顺着视线抬头望去，毫不犹豫道：“我们儒家以仁字立教，匾额四字，取自‘当仁，不让于师’，意思是说我们读书人应该尊师重道，但是在仁义道德之前，不必谦让。 【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段1",
         "sentence_indexes_in_segment": [
@@ -57,7 +72,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.332718",
+    "extracted_at": "2026-03-25T01:03:30.292653",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -166,7 +181,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.332718",
+    "extracted_at": "2026-03-25T01:03:30.292653",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -230,7 +245,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.332718",
+    "extracted_at": "2026-03-25T01:03:30.292653",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -251,6 +266,20 @@
       "赵繇突然鼓起勇气说道：“先生，学生知道你不是俗人，这座小镇也不是寻常地方。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "到后边，先生说话的嗓音细如蚊蝇，哪怕读书郎赵繇竖起耳朵，也听不清楚了。 赵繇突然鼓起勇气说道：“先生，学生知道你不是俗人，这座小镇也不是寻常地方。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -276,7 +305,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -291,12 +322,15 @@
         "location": "小镇",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
-        "description": "齐先生叹了口气，语气有些无奈和疲惫：“很多事情，本是天机不可泄露，事到如今，才越来越无所谓，但我们毕竟是读书人，还是要讲一讲脸面的。 更何况我齐静春若是带头坏了规矩，无异于监守自盗，吃相就真的太难看了。 赵繇突然鼓起勇气说道：“先生，学生知道你不是俗人，这座小镇也不是寻常地方。",
+        "description": "到后边，先生说话的嗓音细如蚊蝇，哪怕读书郎赵繇竖起耳朵，也听不清楚了。 齐先生叹了口气，语气有些无奈和疲惫：“很多事情，本是天机不可泄露，事到如今，才越来越无所谓，但我们毕竟是读书人，还是要讲一讲脸面的。 更何况我齐静春若是带头坏了规矩，无异于监守自盗，吃相就真的太难看了。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -310,8 +344,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.332718",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "赵繇"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "只不过，在这里完成一门芝麻大小的术法神通，如果搁在外边，兴许就等于天神敲大鼓、春雷震天地的恢弘气势了吧……” 到后边，先生说话的嗓音细如蚊蝇，哪怕读书郎赵繇竖起耳朵，也听不清楚了。 齐先生叹了口气，语气有些无奈和疲惫：“很多事情，本是天机不可泄露，事到如今，才越来越无所谓，但我们毕竟是读书人，还是要讲一讲脸面的。 更何况我齐静春若是带头坏了规矩，无异于监守自盗，吃相就真的太难看了。 ” 赵繇突然鼓起勇气说道：“先生，学生知道你不是俗人，这座小镇也不是寻常地方。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.292653",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -331,7 +391,21 @@
       "赵繇指了指气势巍峨的十二脚牌坊，“这处地方，加上杏花巷的铁锁井，还有传言桥底悬挂有两柄铁剑的廊桥，老槐树，桃叶巷的桃树，以及我赵家所在的福禄街，每年张贴的谷雨帖、重阳帖等等，都很奇怪。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "赵繇指了指气势巍峨的十二脚牌坊，“这处地方，加上杏花巷的铁锁井，还有传言桥底悬挂有两柄铁剑的廊桥，老槐树，桃叶巷的桃树，以及我赵家所在的福禄街，每年张贴的谷雨帖、重阳帖等等，都很奇怪。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 11,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "廊桥",
@@ -340,7 +414,9 @@
         "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -354,7 +430,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -368,7 +446,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -378,13 +458,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 廊桥对话",
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 赵繇在廊桥对话",
         "time": null,
         "location": "廊桥",
-        "participants": [],
+        "participants": [
+          "赵繇"
+        ],
         "description": "赵繇指了指气势巍峨的十二脚牌坊，“这处地方，加上杏花巷的铁锁井，还有传言桥底悬挂有两柄铁剑的廊桥，老槐树，桃叶巷的桃树，以及我赵家所在的福禄街，每年张贴的谷雨帖、重阳帖等等，都很奇怪。 ” 儒士好奇笑道：“哦？",
         "background": "",
-        "significance": "对应廊桥相关的关键对话场景。",
+        "significance": "对应赵繇在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段5",
         "sentence_indexes_in_segment": [
@@ -400,7 +482,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.332718",
+    "extracted_at": "2026-03-25T01:03:30.292653",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -420,7 +502,21 @@
       "赵繇微沉声道：“先生那些书，内容我早已烂熟于心，桃叶巷的桃花，就和书上诗句描述，出入很大。",
       "再有，先生教书，为何只传蒙学三书，重在识字，蒙学之后，我们该读什么书？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "赵繇微沉声道：“先生那些书，内容我早已烂熟于心，桃叶巷的桃花，就和书上诗句描述，出入很大。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 11,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -443,7 +539,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -458,7 +556,8 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
         "description": "怎么奇怪了，你自幼在这里长大，根本从未走出去过，难道你见识过小镇以外的风光景象？ 赵繇微沉声道：“先生那些书，内容我早已烂熟于心，桃叶巷的桃花，就和书上诗句描述，出入很大。 儒士打断少年，“奇怪？",
         "background": "",
@@ -478,7 +577,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.292653",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -499,6 +598,20 @@
       "这拨人与诸子百家里的高人，到达此境界后，大致统称为陆地神仙，算是一只脚迈入门槛了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "赵繇立即不再说话。 自称齐静春的儒士小声道：“赵繇，以后你需要谨言慎行，切记祸从口出，所以儒家贤人大多守口如瓶。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 11,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -523,12 +636,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
-        "description": "自称齐静春的儒士小声道：“赵繇，以后你需要谨言慎行，切记祸从口出，所以儒家贤人大多守口如瓶。 ” 赵繇立即不再说话。",
+        "description": "赵繇立即不再说话。 自称齐静春的儒士小声道：“赵繇，以后你需要谨言慎行，切记祸从口出，所以儒家贤人大多守口如瓶。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -542,8 +658,97 @@
         "segment_index": 8
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "赵繇"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "” 赵繇立即不再说话。 自称齐静春的儒士小声道：“赵繇，以后你需要谨言慎行，切记祸从口出，所以儒家贤人大多守口如瓶。 贤人之上的君子，则讲慎独，饬躬若璧，唯恐有瑕疵。 至于圣人，比如七十二座书院的山主们……这些人啊，就能够如道教大真人、佛家金身罗汉一般，一语成谶，言出法随。 这拨人与诸子百家里的高人，到达此境界后，大致统称为陆地神仙，算是一只脚迈入门槛了。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.293656",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "11-9-0": {
+    "juan_index": 11,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十一章 少女和飞剑",
+    "source_sentences": [
+      "不过这些人物，人人如龙，一些高高在上，像是道观寺庙里的神像，高不可攀，一些神龙见首不见尾，寻常人根本找不到。",
+      "”",
+      "赵繇听得迷迷糊糊，如坠云雾。",
+      "赵繇忍不住问道：“先生，你今天为什么要说这些？",
+      "”",
+      "儒士脸色豁达，笑道：“你有先生，我自然也有先生。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "赵繇听得迷迷糊糊，如坠云雾。 赵繇忍不住问道：“先生，你今天为什么要说这些？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 11,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 赵繇对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "赵繇"
+        ],
+        "description": "赵繇听得迷迷糊糊，如坠云雾。 赵繇忍不住问道：“先生，你今天为什么要说这些？ 不过这些人物，人人如龙，一些高高在上，像是道观寺庙里的神像，高不可攀，一些神龙见首不见尾，寻常人根本找不到。",
+        "background": "",
+        "significance": "对应赵繇在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 9
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.293656",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -563,7 +768,21 @@
       "”",
       "井水下降，槐叶离枝，皆是预兆。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "只是希望你明白一个道理，天外有天，人上有人，不管你赵繇如何‘得天独厚，鸿运当头’，都不可以志得意满，心生懈怠。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 11,
+        "segment_index": 10
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -582,16 +801,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安"
+          "顾璨",
+          "陈平安",
+          "赵繇"
         ],
-        "description": "所以这次我没办法带你离开小镇，需要你自己走出去。 而我的先生……不说也罢，总之，我本以为还能够苟延残喘几十年的，突然发现有些幕后人，连这点时日也不愿意等了。 有些无伤大雅的真相，也该透露一些给你，你只当是听个故事就行。",
+        "description": "所以这次我没办法带你离开小镇，需要你自己走出去。 只是希望你明白一个道理，天外有天，人上有人，不管你赵繇如何‘得天独厚，鸿运当头’，都不可以志得意满，心生懈怠。 而我的先生……不说也罢，总之，我本以为还能够苟延残喘几十年的，突然发现有些幕后人，连这点时日也不愿意等了。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段10",
         "sentence_indexes_in_segment": [
@@ -607,7 +827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.293656",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -642,6 +862,19 @@
         ],
         "juan_index": 11,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "名叫齐静春的读书人提醒道：“赵繇，还记得我让你收好的那片槐叶吗？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 11,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -662,17 +895,21 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
+          "顾璨",
+          "陈平安",
           "齐静春",
-          "陈平安"
+          "赵繇"
         ],
         "description": "名叫齐静春的读书人提醒道：“赵繇，还记得我让你收好的那片槐叶吗？ 小镇数千人，得此‘福荫’之人，屈指可数，那片槐叶，可以经常把玩，以后说不定还有一桩机缘。 ”",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -686,8 +923,29 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "指点",
+        "context": "名叫齐静春的读书人提醒道：“赵繇，还记得我让你收好的那片槐叶吗？",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 11,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.293656",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -751,7 +1009,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.293656",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -786,6 +1044,19 @@
         ],
         "juan_index": 11,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "赵繇忧心忡忡，“先生？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 13
       }
     ],
     "locations": [
@@ -813,9 +1084,10 @@
         "location": "泥瓶巷",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
-        "description": "儒士齐静春突然望向泥瓶巷那边，愈发眉头紧皱。 儒士轻轻叹息道：“蛰虫渐闻春声，破土而出。 只是身为客人，在主人眼皮子底下鬼鬼祟祟，行那鬼蜮伎俩，是不是也太托大了？",
+        "description": "儒士齐静春突然望向泥瓶巷那边，愈发眉头紧皱。 赵繇忧心忡忡，“先生？ 儒士轻轻叹息道：“蛰虫渐闻春声，破土而出。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -833,7 +1105,193 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.293656",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "11-14-0": {
+    "juan_index": 11,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十一章 少女和飞剑",
+    "source_sentences": [
+      "”",
+      "儒士摆摆手，示意此事与少年无关，只是带着他来到最后一面匾额下。",
+      "少年赵繇就好像骤然间听到一声春雷的蛰虫，猛然间停下脚步，眼神直直呆呆。",
+      "只见不远处，有一位头戴帷帽的黑衣少女，薄纱遮挡了容颜，身材匀称，既不纤细，也不丰腴，她腰间分别悬佩一把雪白剑鞘的长剑、绿鞘狭刀，站在“气冲斗牛”匾额下，她双臂环胸，扬起脑袋。",
+      "儒士感到好笑，轻轻咳嗽一声。",
+      "少年郎只是呆若木鸡，根本没有领会先生“非礼勿视”的提醒。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "少年赵繇就好像骤然间听到一声春雷的蛰虫，猛然间停下脚步，眼神直直呆呆。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 11,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 赵繇指点",
+        "time": null,
+        "location": null,
+        "participants": [
+          "赵繇"
+        ],
+        "description": "少年赵繇就好像骤然间听到一声春雷的蛰虫，猛然间停下脚步，眼神直直呆呆。 ” 儒士摆摆手，示意此事与少年无关，只是带着他来到最后一面匾额下。",
+        "background": "",
+        "significance": "对应赵繇在叙事中的关键指点节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.293656",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "11-15-0": {
+    "juan_index": 11,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十一章 少女和飞剑",
+    "source_sentences": [
+      "儒士会心一笑，竟是没有出声喝斥，反而不再大煞风景地咳嗽出声，任由身旁少年痴痴望向那位少女。",
+      "少女好像始终没有察觉到少年的视线。",
+      "她似乎格外欣赏“气冲斗牛”这四个大字，相较其余三块正楷匾额的端庄肃穆，这块匾额的大字独独以行楷写就，其中神韵，简直是近乎恣意妄为。",
+      "她喜欢！",
+      "少年突然惊醒过来，原来是先生拍了一下他的肩头，笑道：“赵繇，你该回学塾搬东西回家了。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "少年突然惊醒过来，原来是先生拍了一下他的肩头，笑道：“赵繇，你该回学塾搬东西回家了。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 11,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 赵繇对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "赵繇"
+        ],
+        "description": "少年突然惊醒过来，原来是先生拍了一下他的肩头，笑道：“赵繇，你该回学塾搬东西回家了。 儒士会心一笑，竟是没有出声喝斥，反而不再大煞风景地咳嗽出声，任由身旁少年痴痴望向那位少女。 少女好像始终没有察觉到少年的视线。",
+        "background": "",
+        "significance": "对应赵繇在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 15
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.293656",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "11-16-0": {
+    "juan_index": 11,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十一章 少女和飞剑",
+    "source_sentences": [
+      "少年涨红了脸，低着头，跟着先生一起返回学塾。",
+      "少女这才缓缓松开了握住刀柄的五指。",
+      "远处，儒士打趣道：“赵繇啊赵繇，我可是救了你一命啊。",
+      "”",
+      "少年震惊道：“先生？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "远处，儒士打趣道：“赵繇啊赵繇，我可是救了你一命啊。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 11,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 赵繇剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "赵繇"
+        ],
+        "description": "远处，儒士打趣道：“赵繇啊赵繇，我可是救了你一命啊。 少年涨红了脸，低着头，跟着先生一起返回学塾。 少女这才缓缓松开了握住刀柄的五指。",
+        "background": "",
+        "significance": "对应赵繇在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.294660",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -898,7 +1356,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.294660",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "11-19-0": {
+    "juan_index": 11,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十一章 少女和飞剑",
+    "source_sentences": [
+      "话一说出口，少年就懵了。",
+      "儒士有些头疼，倒不是生气，而是局面比较棘手，沉声道：“赵繇，转过身去！",
+      "”",
+      "少年下意识转身，背对先生。",
+      "牌坊楼下，少女转头，杀气冲天。",
+      "她先是双手下垂，两只手的拇指各自按在剑柄、刀柄之上。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "儒士有些头疼，倒不是生气，而是局面比较棘手，沉声道：“赵繇，转过身去！",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 11,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 赵繇剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "赵繇"
+        ],
+        "description": "儒士有些头疼，倒不是生气，而是局面比较棘手，沉声道：“赵繇，转过身去！ 话一说出口，少年就懵了。 ”",
+        "background": "",
+        "significance": "对应赵繇在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.294660",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -962,7 +1482,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.333722",
+    "extracted_at": "2026-03-25T01:03:30.294660",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1027,7 +1547,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1092,7 +1612,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1156,7 +1676,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1192,6 +1712,19 @@
         ],
         "juan_index": 11,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "亲自将赵繇一路从学塾送到福禄街赵家大宅，中年儒士缓缓而行，每当他迈出一步，大街两侧庭院森森的高门大宅，有些隐蔽地方，便会有些不易察觉的流光溢彩，一闪而逝。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 11,
+        "segment_index": 33
       }
     ],
     "locations": [
@@ -1202,7 +1735,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "赵繇"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1217,12 +1752,15 @@
         "location": "福禄街",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
         "description": "齐静春有些无奈，挥了挥袖，将那柄剑钉入一根牌坊石柱高处，若是有人强行拔走，必然会惊扰到坐镇中枢的自己，就像之前“说书先生”一明一暗，两次出手，都没有逃过这位学塾先生的遥遥关注。 亲自将赵繇一路从学塾送到福禄街赵家大宅，中年儒士缓缓而行，每当他迈出一步，大街两侧庭院森森的高门大宅，有些隐蔽地方，便会有些不易察觉的流光溢彩，一闪而逝。 齐静春呢喃道：“奇了怪哉，哪里来的小丫头？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -1236,8 +1774,34 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "冲突",
+        "context": "仍是不愿带上那把剑。 齐静春有些无奈，挥了挥袖，将那柄剑钉入一根牌坊石柱高处，若是有人强行拔走，必然会惊扰到坐镇中枢的自己，就像之前“说书先生”一明一暗，两次出手，都没有逃过这位学塾先生的遥遥关注。 亲自将赵繇一路从学塾送到福禄街赵家大宅，中年儒士缓缓而行，每当他迈出一步，大街两侧庭院森森的高门大宅，有些隐蔽地方，便会有些不易察觉的流光溢彩，一闪而逝。 齐静春呢喃道：“奇了怪哉，哪里来的小丫头？ 莫不是本洲之外的仙家子弟？ ”",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1301,7 +1865,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1351,6 +1915,19 @@
         ],
         "juan_index": 11,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "当宋集薪从内屋拿出一样东西，放在桌上，苻南华不管如何掩饰，都藏不住脸上的狂喜。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 11,
+        "segment_index": 35
       }
     ],
     "locations": [],
@@ -1362,7 +1939,8 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "苻南华"
         ],
         "description": "儒士望向窗外，并无太多的悲喜，只是有些神色寂寞，“齐静春愧对恩师，苟活百年，只欠一死。 当宋集薪从内屋拿出一样东西，放在桌上，苻南华不管如何掩饰，都藏不住脸上的狂喜。 书案上，还有一封刚到没多久的密信。",
         "background": "",
@@ -1382,7 +1960,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1462,7 +2040,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1485,6 +2063,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华伸出三根手指头。 苻南华愣了愣，哈哈大笑。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 11,
+        "segment_index": 37
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -1503,15 +2095,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 宋集薪剧情推进",
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 苻南华与宋集薪剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "苻南华",
           "宋集薪"
         ],
-        "description": "宋集薪哦了一声，撇撇嘴，“原来是三十万。 他原本以为宋集薪会说三万人。 ”",
+        "description": "苻南华伸出三根手指头。 宋集薪哦了一声，撇撇嘴，“原来是三十万。 苻南华愣了愣，哈哈大笑。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "推动苻南华与宋集薪之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段37",
         "sentence_indexes_in_segment": [
@@ -1527,7 +2120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1591,7 +2184,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.334725",
+    "extracted_at": "2026-03-25T01:03:30.295663",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

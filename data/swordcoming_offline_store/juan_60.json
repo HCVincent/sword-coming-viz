@@ -73,7 +73,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.454004",
+    "extracted_at": "2026-03-25T01:03:30.466143",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -105,6 +105,20 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           0,
+          4
+        ],
+        "juan_index": 60,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "女子长眉微挑，问道：“你的意思，是说在你们大骊藩王宋长镜面前，就要低眉顺眼，卑躬屈膝？ 宋集薪哈哈大笑，伸手指着陈对，“姑娘你这说话的路数，要是被咱们小镇学塾的齐先生听见了，先生他一定会皱眉头的，知道吗，你这叫非此即彼，很不讲道理的，乍一听好像蛮有道理，其实根本经不起推敲，我真正的意思，当然是你可以不用对宋长镜谄媚相向，也不应当如此，但是他宋长镜好歹是大骊最大的一条地头蛇，还是首屈一指的武道大宗师吧？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
           4
         ],
         "juan_index": 60,
@@ -150,6 +164,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪",
           "陈对",
           "齐静春"
@@ -171,7 +186,8 @@
         "related_entities": [
           "宋集薪",
           "陈对",
-          "齐静春"
+          "齐静春",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -195,7 +211,9 @@
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段2",
         "sentence_indexes_in_segment": [
@@ -230,9 +248,49 @@
         ],
         "juan_index": 60,
         "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "宋集薪哈哈大笑，伸手指着陈对，“姑娘你这说话的路数，要是被咱们小镇学塾的齐先生听见了，先生他一定会皱眉头的，知道吗，你这叫非此即彼，很不讲道理的，乍一听好像蛮有道理，其实根本经不起推敲，我真正的意思，当然是你可以不用对宋长镜谄媚相向，也不应当如此，但是他宋长镜好歹是大骊最大的一条地头蛇，还是首屈一指的武道大宗师吧？",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 60,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈对"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "宋集薪哈哈大笑，伸手指着陈对，“姑娘你这说话的路数，要是被咱们小镇学塾的齐先生听见了，先生他一定会皱眉头的，知道吗，你这叫非此即彼，很不讲道理的，乍一听好像蛮有道理，其实根本经不起推敲，我真正的意思，当然是你可以不用对宋长镜谄媚相向，也不应当如此，但是他宋长镜好歹是大骊最大的一条地头蛇，还是首屈一指的武道大宗师吧？",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 60,
+        "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.454004",
+    "extracted_at": "2026-03-25T01:03:30.466143",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -253,6 +311,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "为何非要摆着一张臭脸装大爷，你说装也就装了，装完被宋长镜打得半死，还敢当着他的面放狠话，我真不知道该怎么说你好。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 60,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -302,19 +373,18 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪与陈对在宝瓶洲对话",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 宋长镜与宋集薪在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "宋长镜",
           "宋集薪",
           "陈对"
         ],
-        "description": "最后宋集薪指了指自己，自嘲道：“连我这种嘴贱心肠坏的人，也晓得审时度势，看碟下菜。 陈对犹豫了一下，说道：“算是同类相斥吧，我也是习武之人，对于你们东宝瓶洲的武夫，实话实说，一直不是特别瞧得起，当然最后证明我是错的，大错特错。 为何非要摆着一张臭脸装大爷，你说装也就装了，装完被宋长镜打得半死，还敢当着他的面放狠话，我真不知道该怎么说你好。",
+        "description": "为何非要摆着一张臭脸装大爷，你说装也就装了，装完被宋长镜打得半死，还敢当着他的面放狠话，我真不知道该怎么说你好。 最后宋集薪指了指自己，自嘲道：“连我这种嘴贱心肠坏的人，也晓得审时度势，看碟下菜。 陈对犹豫了一下，说道：“算是同类相斥吧，我也是习武之人，对于你们东宝瓶洲的武夫，实话实说，一直不是特别瞧得起，当然最后证明我是错的，大错特错。",
         "background": "",
-        "significance": "在宝瓶洲推动宋集薪与陈对之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在宝瓶洲推动宋长镜与宋集薪之间的对话线。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -328,34 +398,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "陈对"
-        ],
-        "action": "对话",
-        "context": "为何非要摆着一张臭脸装大爷，你说装也就装了，装完被宋长镜打得半死，还敢当着他的面放狠话，我真不知道该怎么说你好。 ” 最后宋集薪指了指自己，自嘲道：“连我这种嘴贱心肠坏的人，也晓得审时度势，看碟下菜。 ” 陈对犹豫了一下，说道：“算是同类相斥吧，我也是习武之人，对于你们东宝瓶洲的武夫，实话实说，一直不是特别瞧得起，当然最后证明我是错的，大错特错。 ”",
-        "result": null,
-        "event_name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪与陈对在宝瓶洲对话",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 60,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.454004",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.466143",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -453,7 +497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.454004",
+    "extracted_at": "2026-03-25T01:03:30.466143",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,7 +622,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.454004",
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -734,7 +778,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -799,7 +843,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -835,6 +879,19 @@
         ],
         "juan_index": 60,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑道：“这得问你的邻居朋友。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 60,
+        "segment_index": 8
       }
     ],
     "locations": [
@@ -857,16 +914,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪在福禄街对话",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪与宋长镜在福禄街对话",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪牵着小女孩走向衙署大门，转头问道：“门外这条福禄街上不会出现刺客吧？ 宋集薪撇撇嘴，转身看了眼天色，乌云汇聚，有点下雨的迹象。 ”",
+        "description": "宋集薪牵着小女孩走向衙署大门，转头问道：“门外这条福禄街上不会出现刺客吧？ 宋长镜笑道：“这得问你的邻居朋友。 宋集薪撇撇嘴，转身看了眼天色，乌云汇聚，有点下雨的迹象。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在福禄街推动宋集薪与宋长镜之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -880,8 +940,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "” 宋集薪牵着小女孩走向衙署大门，转头问道：“门外这条福禄街上不会出现刺客吧？ ” 宋长镜笑道：“这得问你的邻居朋友。 ” 宋集薪撇撇嘴，转身看了眼天色，乌云汇聚，有点下雨的迹象。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪与宋长镜在福禄街对话",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 60,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -917,6 +1003,20 @@
         ],
         "juan_index": 60,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "把正阳山陶紫送回去后，宋集薪惊讶发现宋长镜，竟然就站在那棵子孙槐之下，他快步走去，好奇问道：“这么着急离开？ 宋长镜点头道：“临时收到个消息，外边有点事情，需要亲自解决，所以直接乘坐马车去泥瓶巷，收拾完东西就走。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 60,
+        "segment_index": 9
       }
     ],
     "locations": [
@@ -928,7 +1028,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -943,7 +1044,9 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -953,16 +1056,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪在正阳山对话",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪与宋长镜在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "description": "把正阳山陶紫送回去后，宋集薪惊讶发现宋长镜，竟然就站在那棵子孙槐之下，他快步走去，好奇问道：“这么着急离开？ 宋长镜点头道：“临时收到个消息，外边有点事情，需要亲自解决，所以直接乘坐马车去泥瓶巷，收拾完东西就走。 宋集薪举目望去，果然衙署门口外停着三辆马车，这应该是少年平生第一次坐马车了。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动宋集薪与宋长镜之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -976,8 +1082,29 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "把正阳山陶紫送回去后，宋集薪惊讶发现宋长镜，竟然就站在那棵子孙槐之下，他快步走去，好奇问道：“这么着急离开？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十章 有鬼 · 宋集薪与宋长镜在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 60,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1011,6 +1138,20 @@
           0,
           1,
           2
+        ],
+        "juan_index": 60,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋集薪弯腰坐入最前边一辆马车的车厢，宋长镜紧随其后，盘腿而坐。 宋长镜掀起帘子，望向车窗外的小镇景象，从今往后，大骊王朝就要彻底失去这座小洞天名义上的掌控权了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
         ],
         "juan_index": 60,
         "segment_index": 10
@@ -1051,7 +1192,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1067,7 +1210,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4,
           5
@@ -1099,7 +1244,7 @@
           "阿良",
           "陈平安",
           "宋集薪",
-          "稚圭"
+          "宋长镜"
         ],
         "description": "宋集薪弯腰坐入最前边一辆马车的车厢，宋长镜紧随其后，盘腿而坐。 宋集薪环顾四周，空落落的，就只有自己屁股底下的那个草编蒲团，完全没有想象中的豪奢气派，更不会给人别有洞天的惊艳。 这让宋集薪有些失望，原本少年还很期待看到稚圭登上马车后的惊讶。",
         "background": "",
@@ -1119,7 +1264,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1140,6 +1285,19 @@
       "他陈平安没爹没娘的，如今连好朋友也死翘翘了，那可不就是得由我这个邻居，来给他处理后事？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜收起思绪，随口问道：“不跟那陈平安道一声别？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 60,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1211,7 +1369,8 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "description": "以后恐怕就只能在大骊皇宫秘史里去找了。 宋长镜收起思绪，随口问道：“不跟那陈平安道一声别？ 驶出福禄街后，道路不平，宋集薪身体开始跟随马车轻轻摇晃，摇头道：“那家伙能不能活下来，还不好说，万一只等到一具尸体，多恶心。",
         "background": "",
@@ -1236,30 +1395,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "宋长镜"
         ],
         "to_roles": [
-          "宋集薪"
+          "陈平安"
         ],
         "action": "对话",
-        "context": "千里河山小洞天。 以后恐怕就只能在大骊皇宫秘史里去找了。 宋长镜收起思绪，随口问道：“不跟那陈平安道一声别？ ” 驶出福禄街后，道路不平，宋集薪身体开始跟随马车轻轻摇晃，摇头道：“那家伙能不能活下来，还不好说，万一只等到一具尸体，多恶心。 他陈平安没爹没娘的，如今连好朋友也死翘翘了，那可不就是得由我这个邻居，来给他处理后事？",
+        "context": "宋长镜收起思绪，随口问道：“不跟那陈平安道一声别？",
         "result": null,
         "event_name": "墙头对话",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 60,
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.467147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1280,6 +1434,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜嗯了一声。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 60,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -1352,7 +1519,7 @@
           "宋集薪",
           "马苦玄"
         ],
-        "description": "宋集薪问道：“那个正阳山的小女孩提到过一个人，叫马苦玄，是杏花巷的，跟我差不多岁数，好像他开价一袋子供养钱，把陈平安和那少女的藏身之地卖给了正阳山。 ” 宋长镜嗯了一声。",
+        "description": "宋长镜嗯了一声。 宋集薪问道：“那个正阳山的小女孩提到过一个人，叫马苦玄，是杏花巷的，跟我差不多岁数，好像他开价一袋子供养钱，把陈平安和那少女的藏身之地卖给了正阳山。 ”",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
         "related_action_indices": [
@@ -1435,7 +1602,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1456,6 +1623,20 @@
       "宋长镜不以为意道：“谁让本王还有个尾大不掉的身份，狗屁大骊藩王。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜想了想，“之前潜伏在宋家的刺客，在骑龙巷刺杀过那个大隋皇子，原本已经被找到一点蛛丝马迹，其中涉及到了这个名叫马苦玄的少年，这些年里，那名刑徒出身的刺客，私底下多次和马苦玄接触，有可能是师徒关系。 宋长镜不以为意道：“谁让本王还有个尾大不掉的身份，狗屁大骊藩王。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 60,
+        "segment_index": 13
+      },
       {
         "entity_type": "person",
         "name": "马苦玄",
@@ -1494,6 +1675,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "马苦玄"
         ],
         "sentence_indexes_in_segment": [
@@ -1511,7 +1693,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1,
           5
@@ -1522,16 +1706,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 马苦玄与宋集薪在骑龙巷对话",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 宋长镜与马苦玄在骑龙巷对话",
         "time": null,
         "location": "骑龙巷",
         "participants": [
-          "马苦玄",
-          "宋集薪"
+          "宋长镜",
+          "马苦玄"
         ],
         "description": "宋长镜想了想，“之前潜伏在宋家的刺客，在骑龙巷刺杀过那个大隋皇子，原本已经被找到一点蛛丝马迹，其中涉及到了这个名叫马苦玄的少年，这些年里，那名刑徒出身的刺客，私底下多次和马苦玄接触，有可能是师徒关系。 如今真武山横插一脚，只能暂且搁置，毕竟大骊军伍当中，就有许多真武子弟，而且官位都还不低。 宋集薪笑道：“叔叔，你也有说‘只能’的时候？",
         "background": "",
-        "significance": "在骑龙巷推动马苦玄与宋集薪之间的对话线。",
+        "significance": "在骑龙巷推动宋长镜与马苦玄之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -1552,30 +1736,25 @@
       {
         "time": null,
         "from_roles": [
-          "马苦玄"
+          "宋长镜"
         ],
         "to_roles": [
-          "宋集薪"
+          "马苦玄"
         ],
-        "action": "对话",
-        "context": "宋长镜想了想，“之前潜伏在宋家的刺客，在骑龙巷刺杀过那个大隋皇子，原本已经被找到一点蛛丝马迹，其中涉及到了这个名叫马苦玄的少年，这些年里，那名刑徒出身的刺客，私底下多次和马苦玄接触，有可能是师徒关系。 如今真武山横插一脚，只能暂且搁置，毕竟大骊军伍当中，就有许多真武子弟，而且官位都还不低。 ” 宋集薪笑道：“叔叔，你也有说‘只能’的时候？ ” 宋长镜不以为意道：“谁让本王还有个尾大不掉的身份，狗屁大骊藩王。",
+        "action": "师承",
+        "context": "宋长镜想了想，“之前潜伏在宋家的刺客，在骑龙巷刺杀过那个大隋皇子，原本已经被找到一点蛛丝马迹，其中涉及到了这个名叫马苦玄的少年，这些年里，那名刑徒出身的刺客，私底下多次和马苦玄接触，有可能是师徒关系。",
         "result": null,
-        "event_name": "第一卷笼中雀 第六十章 有鬼 · 马苦玄与宋集薪在骑龙巷对话",
+        "event_name": "第一卷笼中雀 第六十章 有鬼 · 宋长镜与马苦玄在骑龙巷对话",
         "location": "骑龙巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
         ],
         "juan_index": 60,
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1628,6 +1807,19 @@
       },
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜哑然失笑，“在让你搬去泥瓶巷之前，衙署早就彻彻底底查过了，陈平安他家祖宗十八代，很清楚的脉络，没有任何问题，跟富贵权势四个字，不沾边。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 60,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "怎么，那个陈对吓到你了？",
@@ -1650,7 +1842,8 @@
         "coordinates": null,
         "related_entities": [
           "宋集薪",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -1684,6 +1877,7 @@
         "participants": [
           "陈平安",
           "宋集薪",
+          "宋长镜",
           "陈对"
         ],
         "description": "马车临近泥瓶巷的时候，宋集薪有意无意道：“陈平安，真的就只是陈平安？ 宋长镜哑然失笑，“在让你搬去泥瓶巷之前，衙署早就彻彻底底查过了，陈平安他家祖宗十八代，很清楚的脉络，没有任何问题，跟富贵权势四个字，不沾边。 怎么，那个陈对吓到你了？",
@@ -1704,7 +1898,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1725,6 +1919,19 @@
       "就没有出现过一个惊才绝艳的大人物？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "勉强扯得上亲戚关系的，是那个陈松风所在的龙尾郡陈氏，但是你想一想，几百年没联系的亲戚，还算亲戚吗？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 60,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -1765,9 +1972,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "陈松风",
           "宋集薪"
         ],
-        "description": "再者，小镇陈氏这一支，已经落魄到只剩下一个人不是奴仆丫鬟，穷在闹市无人问，富在深山有远亲。 宋集薪仍不死心，“那祖宗十八代之前的十八代呢？ 勉强扯得上亲戚关系的，是那个陈松风所在的龙尾郡陈氏，但是你想一想，几百年没联系的亲戚，还算亲戚吗？",
+        "description": "勉强扯得上亲戚关系的，是那个陈松风所在的龙尾郡陈氏，但是你想一想，几百年没联系的亲戚，还算亲戚吗？ 再者，小镇陈氏这一支，已经落魄到只剩下一个人不是奴仆丫鬟，穷在闹市无人问，富在深山有远亲。 宋集薪仍不死心，“那祖宗十八代之前的十八代呢？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1785,7 +1993,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.455007",
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1806,6 +2014,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑道：“原来你是希望陈平安身世特殊一些？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 60,
+        "segment_index": 16
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1843,7 +2064,8 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "description": "宋长镜笑道：“原来你是希望陈平安身世特殊一些？ 宋集薪没有掩饰自己的心思，点头道：“如果他跟寻常人不一样，我心里也会好受一些。 一个也没有？",
         "background": "",
@@ -1868,30 +2090,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "宋长镜"
         ],
         "to_roles": [
-          "宋集薪"
+          "陈平安"
         ],
         "action": "对话",
-        "context": "一个也没有？ ” 宋长镜笑道：“原来你是希望陈平安身世特殊一些？ ” 宋集薪没有掩饰自己的心思，点头道：“如果他跟寻常人不一样，我心里也会好受一些。 ”",
+        "context": "宋长镜笑道：“原来你是希望陈平安身世特殊一些？",
         "result": null,
         "event_name": "墙头对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 60,
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1912,6 +2129,20 @@
       "宋长镜更加疑惑不解，“那陈平安属于哪一种？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜愈发好奇，打趣道：“那家伙到底怎么欺负你了，让你如此执念？ 宋长镜更加疑惑不解，“那陈平安属于哪一种？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 60,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -1968,14 +2199,13 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪冷笑着打断大骊藩王的言语，“小地方的人，眼界兴许不高，眼窝子会浅，但是绝对不能觉得他们就傻了。 宋长镜更加疑惑不解，“那陈平安属于哪一种？ 宋长镜愈发好奇，打趣道：“那家伙到底怎么欺负你了，让你如此执念？",
+        "description": "宋长镜愈发好奇，打趣道：“那家伙到底怎么欺负你了，让你如此执念？ 宋集薪冷笑着打断大骊藩王的言语，“小地方的人，眼界兴许不高，眼窝子会浅，但是绝对不能觉得他们就傻了。 宋长镜更加疑惑不解，“那陈平安属于哪一种？",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1989,34 +2219,8 @@
         "segment_index": 17
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "讥讽",
-        "context": "宋长镜愈发好奇，打趣道：“那家伙到底怎么欺负你了，让你如此执念？ 可是按照我对那少年的了解，不像是个……” 宋集薪冷笑着打断大骊藩王的言语，“小地方的人，眼界兴许不高，眼窝子会浅，但是绝对不能觉得他们就傻了。 好也好得赤子之心淳朴善良，坏也会坏得头顶生疮脚底流脓，还有些人，则真的会蠢得无药可救，甚至是又蠢又坏。 ” 宋长镜更加疑惑不解，“那陈平安属于哪一种？",
-        "result": null,
-        "event_name": "墙头对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 60,
-        "segment_index": 17
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2109,7 +2313,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.468150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2209,7 +2413,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2271,7 +2475,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2378,7 +2582,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2440,7 +2644,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2546,7 +2750,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2625,7 +2829,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2739,7 +2943,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2842,7 +3046,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.456011",
+    "extracted_at": "2026-03-25T01:03:30.469154",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2906,7 +3110,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3000,7 +3204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3062,7 +3266,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3188,7 +3392,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3223,20 +3427,34 @@
         ],
         "juan_index": 60,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "李二做得好好的铺子伙计，你凭啥让他卷铺盖滚蛋？",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 60,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 杨老头剧情推进",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 杨老头与李二剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "杨老头"
+          "杨老头",
+          "李二"
         ],
-        "description": "杨老头，你好歹是我家汉子的师傅，怎么尽做这些缺德事？ 妇人停下脚步，单手叉腰骂道：“干啥咧，你防贼呢？ ！",
+        "description": "杨老头，你好歹是我家汉子的师傅，怎么尽做这些缺德事？ 李二做得好好的铺子伙计，你凭啥让他卷铺盖滚蛋？ 妇人停下脚步，单手叉腰骂道：“干啥咧，你防贼呢？",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键剧情推进节点。",
+        "significance": "推动杨老头与李二之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段32",
         "sentence_indexes_in_segment": [
@@ -3252,7 +3470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3275,6 +3493,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "李二是睡了他师娘啊，还是睡了他师父的闺女啊？ 师父是什么性子，李二他媳妇又是什么德行，他怎么会不清楚，所以他觉得自己这次不死也得掉层皮。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 60,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
         "name": "杨老头",
         "alias": [
           "杨掌柜"
@@ -3292,16 +3524,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 杨老头剧情推进",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 李二与杨老头师承",
         "time": null,
         "location": null,
         "participants": [
+          "李二",
           "杨老头"
         ],
-        "description": "杨老头面无表情，“说完了？ 李二是睡了他师娘啊，还是睡了他师父的闺女啊？ ！",
+        "description": "李二是睡了他师娘啊，还是睡了他师父的闺女啊？ 师父是什么性子，李二他媳妇又是什么德行，他怎么会不清楚，所以他觉得自己这次不死也得掉层皮。 杨老头面无表情，“说完了？",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动李二与杨老头之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -3315,8 +3550,34 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "师承",
+        "context": "李二是睡了他师娘啊，还是睡了他师父的闺女啊？ ！ ” 被从街上堵回来的男人，缩着脖子，躲在后门那边，恨不得挖个洞把自己埋了。 师父是什么性子，李二他媳妇又是什么德行，他怎么会不清楚，所以他觉得自己这次不死也得掉层皮。 杨老头面无表情，“说完了？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十章 有鬼 · 李二与杨老头师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 60,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3337,6 +3598,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "要不是李二给你赶出铺子，我们一家四口人会这么惨？",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 60,
+        "segment_index": 34
+      },
       {
         "entity_type": "person",
         "name": "杨老头",
@@ -3377,9 +3651,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "李二",
           "杨老头"
         ],
-        "description": "说完了就回家叫春去，听说小镇最西边的猫叫声，一年到头就没断过，白天叫晚上也叫，好些人给吵得搬了家……” 杨老头，赶紧掏出棺材本来，给咱家修房子，要不然我今天跟你没完！ 妇人好像被说中伤心处，嗓音又往上高涨，“老不死的东西，你还好意思说回家！",
+        "description": "说完了就回家叫春去，听说小镇最西边的猫叫声，一年到头就没断过，白天叫晚上也叫，好些人给吵得搬了家……” 要不是李二给你赶出铺子，我们一家四口人会这么惨？ 杨老头，赶紧掏出棺材本来，给咱家修房子，要不然我今天跟你没完！",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -3397,7 +3672,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.470157",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3434,21 +3709,37 @@
         ],
         "juan_index": 60,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "郑大风哭丧着脸道：“师父，李二按照你老吩咐，去办那件事情了啊，一时半会肯定回不来。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 60,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十章 有鬼 · 郑大风剧情推进",
+        "name": "第一卷笼中雀 第六十章 有鬼 · 郑大风与李二师承",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风"
+          "郑大风",
+          "李二"
         ],
         "description": "老人视线冷冷望向那个躲躲藏藏的汉子，郑大风。 郑大风哭丧着脸道：“师父，李二按照你老吩咐，去办那件事情了啊，一时半会肯定回不来。 郑大风连下跪磕头的心都有了。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动郑大风与李二之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十章 有鬼 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -3462,8 +3753,29 @@
         "segment_index": 35
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "师承",
+        "context": "郑大风哭丧着脸道：“师父，李二按照你老吩咐，去办那件事情了啊，一时半会肯定回不来。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十章 有鬼 · 郑大风与李二师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 60,
+        "segment_index": 35
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.471161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3527,7 +3839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.457014",
+    "extracted_at": "2026-03-25T01:03:30.471161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

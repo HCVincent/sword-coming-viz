@@ -11,6 +11,7 @@ import {
   LocationDetail,
   LocationsView,
   MapView,
+  NetworkRoleRelationsDetail,
   NetworkGraph,
   PowerChart,
   RelationDetail,
@@ -34,6 +35,16 @@ interface SelectedRelationPair {
   sourceName: string;
   targetName: string;
   relations: RoleLinkUnified[];
+}
+
+interface RoleRelationGroup {
+  counterpartId: string;
+  counterpartName: string;
+  relations: RoleLinkUnified[];
+  totalWeight: number;
+  actionTypes: string[];
+  sourceUnits: number[];
+  earliestProgress: number | null;
 }
 
 function toTimelineEvent(event: UnifiedEvent): TimelineEventUnified {
@@ -100,11 +111,17 @@ function App() {
   const [selectedRelationPair, setSelectedRelationPair] = useState<SelectedRelationPair | null>(null);
   const [focusNodeId, setFocusNodeId] = useState<string | null>(null);
 
-  const { nodes: roles, links: roleLinks, timelineEvents, locations, powerDistribution } = useUnifiedVisualizationData(
-    kb,
-    unitRange,
-    progressRange
-  );
+  const {
+    nodes: roles,
+    networkNodes,
+    isolatedNodes,
+    links: roleLinks,
+    totalRoleCount,
+    linkedRoleCount,
+    timelineEvents,
+    locations,
+    powerDistribution,
+  } = useUnifiedVisualizationData(kb, unitRange, progressRange);
   const { seasonOverviews, characterArcs, curatedRelationships, conflictChains, foreshadowingThreads } = useFilteredWriterInsights(
     writerInsights,
     unitRange,
@@ -408,6 +425,9 @@ function App() {
 
       const sourceNode = roles.find((node) => node.id === sourceId);
       const targetNode = roles.find((node) => node.id === targetId);
+      setSelectedEvent(null);
+      setSelectedRole(null);
+      setSelectedLocation(null);
       setSelectedRelationPair({
         sourceId,
         targetId,
@@ -428,7 +448,72 @@ function App() {
     [focusNodeId, progressRange, roleLinks, roles, searchParams, setSearchParams, unitRange]
   );
 
+  const openNetworkRoleRelations = useCallback(
+    (roleId: string) => {
+      if (!kb?.roles?.[roleId]) return;
+      const role = toRoleNode(kb.roles[roleId]);
+      setSelectedEvent(null);
+      setSelectedRole(role);
+      setSelectedLocation(null);
+      setSelectedRelationPair(null);
+      const next = writeUrlGlobalContext(searchParams, {
+        tab: 'network',
+        unitRange,
+        progressRange,
+        focusRoleId: focusNodeId ?? undefined,
+        selection: { type: 'role', id: role.id },
+      });
+      setSearchParams(next, { replace: false });
+    },
+    [focusNodeId, kb, progressRange, searchParams, setSearchParams, unitRange]
+  );
+
   const availableRoleIds = useMemo(() => new Set(roles.map((role) => role.id)), [roles]);
+
+  const selectedRoleRelationGroups = useMemo<RoleRelationGroup[]>(() => {
+    if (!selectedRole) return [];
+
+    const groups = new Map<string, RoleRelationGroup>();
+    for (const link of roleLinks) {
+      const sourceId = typeof link.source === 'object' ? (link.source as never as { id: string }).id : link.source;
+      const targetId = typeof link.target === 'object' ? (link.target as never as { id: string }).id : link.target;
+      if (sourceId !== selectedRole.id && targetId !== selectedRole.id) continue;
+
+      const counterpartId = sourceId === selectedRole.id ? targetId : sourceId;
+      const counterpartNode = roles.find((node) => node.id === counterpartId);
+      const existing = groups.get(counterpartId);
+      if (existing) {
+        existing.relations.push(link);
+        existing.totalWeight += link.weight;
+        existing.actionTypes = Array.from(new Set([...existing.actionTypes, ...link.actionTypes]));
+        existing.sourceUnits = Array.from(new Set([...existing.sourceUnits, ...(link.sourceUnits || [])])).sort(
+          (a, b) => a - b
+        );
+        if (link.progressStart !== null) {
+          existing.earliestProgress =
+            existing.earliestProgress === null ? link.progressStart : Math.min(existing.earliestProgress, link.progressStart);
+        }
+        continue;
+      }
+
+      groups.set(counterpartId, {
+        counterpartId,
+        counterpartName: counterpartNode?.name || counterpartId,
+        relations: [link],
+        totalWeight: link.weight,
+        actionTypes: Array.from(new Set(link.actionTypes)),
+        sourceUnits: Array.from(new Set(link.sourceUnits || [])).sort((a, b) => a - b),
+        earliestProgress: link.progressStart,
+      });
+    }
+
+    return Array.from(groups.values()).sort(
+      (left, right) =>
+        right.totalWeight - left.totalWeight ||
+        right.relations.length - left.relations.length ||
+        left.counterpartName.localeCompare(right.counterpartName, 'zh-CN')
+    );
+  }, [roleLinks, roles, selectedRole]);
 
   const unitLabel = bookConfig?.unit_label ?? kb?.unit_label ?? '章节';
   const title = bookConfig?.title ?? '小说';
@@ -564,8 +649,16 @@ function App() {
               <h3 className="text-lg font-bold text-[#2c1810] mb-3">数据统计</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-gray-600">人物数量：</span>
-                  <span className="font-semibold">{roles.length}</span>
+                  <span className="text-gray-600">人物总数：</span>
+                  <span className="font-semibold">{totalRoleCount}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">关系网人物：</span>
+                  <span className="font-semibold">{linkedRoleCount}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">孤立人物：</span>
+                  <span className="font-semibold">{Math.max(totalRoleCount - linkedRoleCount, 0)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">事件数量：</span>
@@ -647,9 +740,13 @@ function App() {
 
               {activeTab === 'network' && (
                 <NetworkGraph
-                  nodes={roles}
+                  allNodes={roles}
+                  linkedNodes={networkNodes}
+                  isolatedNodes={isolatedNodes}
                   links={roleLinks}
-                  onNodeClick={(role) => openRoleDetail(role.id, 'network')}
+                  totalRoleCount={totalRoleCount}
+                  linkedRoleCount={linkedRoleCount}
+                  onNodeClick={(role) => openNetworkRoleRelations(role.id)}
                   onLinkClick={handleLinkClick}
                   focusNodeId={focusNodeId}
                   onFocusNodeHandled={() => setFocusNodeId(null)}
@@ -742,25 +839,45 @@ function App() {
         availableRoleIds={availableRoleIds}
       />
 
-      <RoleDetail
-        role={selectedRole}
-        onClose={() => {
-          setSelectedRole(null);
-          clearSelectionFromUrl(activeTab);
-        }}
-        onEntityClick={handleFocusNode}
-        onEventClick={(event) => openEventDetail(event.id, activeTab)}
-        relatedEvents={
-          selectedRole
-            ? timelineEvents.filter(
-                (event) =>
-                  event.participants.some((name) => name === selectedRole.name || selectedRole.aliases.includes(name))
-              )
-            : []
-        }
-        kb={kb}
-        availableRoleIds={availableRoleIds}
-      />
+      {activeTab === 'network' ? (
+        <NetworkRoleRelationsDetail
+          role={selectedRole}
+          relationGroups={selectedRoleRelationGroups}
+          onClose={() => {
+            setSelectedRole(null);
+            clearSelectionFromUrl(activeTab);
+          }}
+          onRelationClick={(sourceId, targetId) => {
+            setSelectedRole(null);
+            handleLinkClick(sourceId, targetId);
+          }}
+          onEntityClick={(entityName) => {
+            setSelectedRole(null);
+            handleFocusNode(entityName);
+          }}
+          kb={kb}
+        />
+      ) : (
+        <RoleDetail
+          role={selectedRole}
+          onClose={() => {
+            setSelectedRole(null);
+            clearSelectionFromUrl(activeTab);
+          }}
+          onEntityClick={handleFocusNode}
+          onEventClick={(event) => openEventDetail(event.id, activeTab)}
+          relatedEvents={
+            selectedRole
+              ? timelineEvents.filter(
+                  (event) =>
+                    event.participants.some((name) => name === selectedRole.name || selectedRole.aliases.includes(name))
+                )
+              : []
+          }
+          kb={kb}
+          availableRoleIds={availableRoleIds}
+        />
+      )}
 
       {selectedLocation && (
         <LocationDetail

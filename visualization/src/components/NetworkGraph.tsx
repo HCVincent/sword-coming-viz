@@ -3,8 +3,12 @@ import * as d3 from 'd3';
 import type { RoleNodeUnified, RoleLinkUnified } from '../types/unified';
 
 interface NetworkGraphProps {
-  nodes: RoleNodeUnified[];
+  allNodes: RoleNodeUnified[];
+  linkedNodes: RoleNodeUnified[];
+  isolatedNodes: RoleNodeUnified[];
   links: RoleLinkUnified[];
+  totalRoleCount: number;
+  linkedRoleCount: number;
   onNodeClick?: (node: RoleNodeUnified) => void;
   onLinkClick?: (sourceId: string, targetId: string) => void;
   focusNodeId?: string | null; // Node ID to focus/highlight from external trigger
@@ -55,7 +59,18 @@ function createDataKey(nodes: RoleNodeUnified[], links: RoleLinkUnified[]): stri
   return `${nodeIds}|${linkIds}`;
 }
 
-export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNodeId, onFocusNodeHandled }: NetworkGraphProps) {
+export function NetworkGraph({
+  allNodes,
+  linkedNodes,
+  isolatedNodes,
+  links,
+  totalRoleCount,
+  linkedRoleCount,
+  onNodeClick,
+  onLinkClick,
+  focusNodeId,
+  onFocusNodeHandled,
+}: NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; content: RoleNodeUnified } | null>(null);
@@ -80,25 +95,84 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
   
   // Interactive state
   const [searchTerm, setSearchTerm] = useState('');
-  const [minAppearances, setMinAppearances] = useState(1);
+  const [importanceFilter, setImportanceFilter] = useState(0);
   const [selectedPower, setSelectedPower] = useState<string>('all');
+  const [showIsolated, setShowIsolated] = useState(false);
   const [highlightedNode, setHighlightedNode] = useState<string | null>(null);
   const [notFoundMessage, setNotFoundMessage] = useState<string | null>(null);
 
   // Get unique powers for filter dropdown
   const availablePowers = useMemo(() => {
-    const powers = new Set(nodes.map(n => n.power).filter(Boolean) as string[]);
+    const powers = new Set(allNodes.map(n => n.power).filter(Boolean) as string[]);
     return Array.from(powers).sort();
-  }, [nodes]);
+  }, [allNodes]);
 
-  // Filter nodes based on appearances and power
-  // Create fresh copies to avoid D3 mutating the original data
+  const candidateNodes = useMemo(
+    () => (showIsolated ? [...linkedNodes, ...isolatedNodes] : linkedNodes),
+    [isolatedNodes, linkedNodes, showIsolated]
+  );
+
+  const powerFilteredNodes = useMemo(
+    () => candidateNodes.filter((node) => selectedPower === 'all' || node.power === selectedPower),
+    [candidateNodes, selectedPower]
+  );
+
+  const scoredNodes = useMemo(() => {
+    const nodeIds = new Set(powerFilteredNodes.map((node) => node.id));
+    const nodeStats = new Map<string, { linkCount: number; weightSum: number }>();
+
+    for (const node of powerFilteredNodes) {
+      nodeStats.set(node.id, { linkCount: 0, weightSum: 0 });
+    }
+
+    for (const link of links) {
+      const sourceId = typeof link.source === 'object' ? (link.source as any).id : link.source;
+      const targetId = typeof link.target === 'object' ? (link.target as any).id : link.target;
+      if (!nodeIds.has(sourceId) || !nodeIds.has(targetId)) continue;
+
+      const sourceStats = nodeStats.get(sourceId);
+      const targetStats = nodeStats.get(targetId);
+      if (sourceStats) {
+        sourceStats.linkCount += 1;
+        sourceStats.weightSum += link.weight;
+      }
+      if (targetStats) {
+        targetStats.linkCount += 1;
+        targetStats.weightSum += link.weight;
+      }
+    }
+
+    return powerFilteredNodes
+      .map((node) => {
+        const stats = nodeStats.get(node.id) ?? { linkCount: 0, weightSum: 0 };
+        const mentionScore = Math.log2((node.appearances ?? 0) + 1);
+        const importanceScore = stats.weightSum * 3 + stats.linkCount * 5 + mentionScore;
+        return {
+          ...node,
+          importanceScore,
+          linkCount: stats.linkCount,
+          weightSum: stats.weightSum,
+        };
+      })
+      .sort((a, b) => b.importanceScore - a.importanceScore || b.appearances - a.appearances);
+  }, [links, powerFilteredNodes]);
+
+  const importanceThreshold = useMemo(() => {
+    if (!scoredNodes.length || importanceFilter <= 0) return -Infinity;
+    const scores = scoredNodes.map((node) => node.importanceScore).sort((a, b) => a - b);
+    const index = Math.min(
+      scores.length - 1,
+      Math.floor((importanceFilter / 100) * (scores.length - 1))
+    );
+    return scores[index];
+  }, [importanceFilter, scoredNodes]);
+
+  // Filter nodes based on current-range importance score and create fresh copies to avoid D3 mutation.
   const filteredNodes = useMemo(() => {
-    return nodes
-      .filter(n => n.appearances >= minAppearances)
-      .filter(n => selectedPower === 'all' || n.power === selectedPower)
-      .map(n => ({ ...n }));
-  }, [nodes, minAppearances, selectedPower]);
+    return scoredNodes
+      .filter((node) => node.importanceScore >= importanceThreshold)
+      .map((node) => ({ ...node }));
+  }, [importanceThreshold, scoredNodes]);
 
   // Filter links to match filtered nodes
   // Note: We need to create fresh copies of links to avoid D3 mutating them with object references
@@ -117,6 +191,16 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
         target: typeof l.target === 'object' ? (l.target as any).id : l.target,
       }));
   }, [links, filteredNodes]);
+
+  const filteredLinkedRoleCount = useMemo(
+    () => filteredNodes.filter((node) => !node.isIsolated).length,
+    [filteredNodes]
+  );
+
+  const filteredIsolatedRoleCount = useMemo(
+    () => filteredNodes.filter((node) => node.isIsolated).length,
+    [filteredNodes]
+  );
 
   // Search functionality
   const searchResult = useMemo(() => {
@@ -207,15 +291,18 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
         setSearchTerm(''); // Clear search when focusing externally
       } else {
         // Try to find by ID, name, or alias in all nodes and adjust filters
-        const node = nodes.find(n => 
+        const node = allNodes.find(n => 
           n.id === focusNodeId || 
           n.name === focusNodeId ||
           n.aliases?.some(alias => alias === focusNodeId)
         );
         if (node) {
           // Reset filters to show this node
-          setMinAppearances(1);
+          setImportanceFilter(0);
           setSelectedPower('all');
+          if (node.isIsolated && !showIsolated) {
+            setShowIsolated(true);
+          }
           targetNodeId = node.id;
           setHighlightedNode(node.id);
           setSearchTerm('');
@@ -240,7 +327,7 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
       
       onFocusNodeHandled?.();
     }
-  }, [focusNodeId, filteredNodes, nodes, onFocusNodeHandled, centerOnNode]);
+  }, [allNodes, centerOnNode, filteredNodes, focusNodeId, onFocusNodeHandled, showIsolated]);
 
   useEffect(() => {
     if (!svgRef.current || !containerRef.current || filteredNodes.length === 0) return;
@@ -422,10 +509,12 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
     // Node circles
     node
       .append('circle')
-      .attr('r', (d) => Math.min(8 + d.appearances * 2, 20))
+      .attr('r', (d) => (d.isIsolated ? Math.min(6 + d.appearances * 1.2, 14) : Math.min(8 + d.appearances * 2, 20)))
       .attr('fill', (d) => colorScale(d.power || '无'))
-      .attr('stroke', '#fff')
-      .attr('stroke-width', 2);
+      .attr('fill-opacity', (d) => (d.isIsolated ? 0.45 : 1))
+      .attr('stroke', (d) => (d.isIsolated ? '#c9b6a0' : '#fff'))
+      .attr('stroke-width', (d) => (d.isIsolated ? 1.5 : 2))
+      .attr('stroke-dasharray', (d) => (d.isIsolated ? '3,2' : null));
 
     // Node labels
     node
@@ -511,7 +600,7 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
       });
     } else {
       // Reset opacity
-      node.style('opacity', 1);
+      node.style('opacity', (d: any) => (d?.isIsolated ? 0.55 : 1));
       link.style('opacity', 1);
     }
   }, [highlightedNode, filteredLinks]);
@@ -519,7 +608,20 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
   return (
     <div ref={containerRef} className="w-full bg-white rounded-lg shadow-md p-4 relative">
       <div className="flex flex-wrap justify-between items-center mb-4 gap-2">
-        <h3 className="text-lg font-bold text-[#2c1810]">人物关系网络图</h3>
+        <div>
+          <h3 className="text-lg font-bold text-[#2c1810]">人物关系网络图</h3>
+          <p className="text-sm text-gray-500 mt-1">
+            当前范围内共 {totalRoleCount} 人，其中 {linkedRoleCount} 人已形成关系边，
+            {Math.max(totalRoleCount - linkedRoleCount, 0)} 人暂为孤立人物。
+          </p>
+          <p className="text-xs text-[#8b4513] mt-1">
+            当前筛选后显示 {filteredNodes.length} 人，其中连边人物 {filteredLinkedRoleCount} 人，
+            孤立人物 {filteredIsolatedRoleCount} 人。
+          </p>
+          <p className="text-xs text-gray-500 mt-1">
+            重要度按当前范围内的关系边数量、边权和出场次数综合计算。
+          </p>
+        </div>
         
         <div className="flex flex-wrap gap-3 items-center">
           {/* Search Input */}
@@ -553,19 +655,30 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
             </select>
           </div>
 
-          {/* Density Filter */}
+          {/* Importance Filter */}
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <span>重要度:</span>
             <input
               type="range"
-              min="1"
-              max="20"
-              value={minAppearances}
-              onChange={(e) => setMinAppearances(parseInt(e.target.value))}
+              min="0"
+              max="100"
+              step="5"
+              value={importanceFilter}
+              onChange={(e) => setImportanceFilter(parseInt(e.target.value))}
               className="w-20 accent-[#8b4513]"
             />
-            <span className="w-8 text-right">{minAppearances}+</span>
+            <span className="w-12 text-right">{importanceFilter}%</span>
           </div>
+
+          <label className="flex items-center gap-2 text-sm text-gray-600">
+            <input
+              type="checkbox"
+              checked={showIsolated}
+              onChange={(e) => setShowIsolated(e.target.checked)}
+              className="accent-[#8b4513]"
+            />
+            <span>显示孤立人物</span>
+          </label>
         </div>
       </div>
 
@@ -590,6 +703,9 @@ export function NetworkGraph({ nodes, links, onNodeClick, onLinkClick, focusNode
           }}
         >
           <h4 className="font-bold text-[#8b4513]">{tooltip.content.name}</h4>
+          {tooltip.content.isIsolated && (
+            <p className="text-xs text-amber-700 mt-1">当前范围内已识别，但暂未抽取到高置信关系边。</p>
+          )}
           <p className="text-sm text-gray-600">阵营: {tooltip.content.power || '无'}</p>
           <p className="text-sm mt-1 line-clamp-3 break-words">{tooltip.content.description}</p>
           <p className="text-xs text-gray-500 mt-1">出现次数: {tooltip.content.appearances}</p>

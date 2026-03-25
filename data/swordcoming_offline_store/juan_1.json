@@ -86,7 +86,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.311647",
+    "extracted_at": "2026-03-25T01:03:30.265057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -238,7 +238,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.312649",
+    "extracted_at": "2026-03-25T01:03:30.265057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -320,7 +320,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -444,7 +444,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -509,7 +509,9 @@
         "description": "宋集薪愣了愣，循着声音转头望去，是个眉眼含笑的锦衣少年，站在院外，一张全然陌生的面孔。 老者的视线在陈平安一扫而过，并无停滞，但是在宋集薪和婢女身上，多有停留，笑意渐渐浓郁。 宋集薪斜眼道：“卖！",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第一章 惊蛰 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -523,8 +525,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "试探",
+        "context": "宋集薪愣了愣，循着声音转头望去，是个眉眼含笑的锦衣少年，站在院外，一张全然陌生的面孔。 锦衣少年身边站着一位身材高大的老者，面容白皙，脸色和蔼，轻轻眯眼打量着两座毗邻院落的少年少女。 老者的视线在陈平安一扫而过，并无停滞，但是在宋集薪和婢女身上，多有停留，笑意渐渐浓郁。 宋集薪斜眼道：“卖！ 怎么不卖！ ”",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 1,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -588,7 +616,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -653,7 +681,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -762,7 +790,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -866,7 +894,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.265568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -998,7 +1026,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.266562",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1077,7 +1105,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.266562",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1178,7 +1206,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.313653",
+    "extracted_at": "2026-03-25T01:03:30.266562",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

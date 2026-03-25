@@ -87,7 +87,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.483104",
+    "extracted_at": "2026-03-25T01:03:30.504275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.483104",
+    "extracted_at": "2026-03-25T01:03:30.504275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -315,7 +315,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.483104",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -395,6 +395,19 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "陈平安又问道：“按照宋集薪和稚圭之前的说法，齐先生原本打算跟学塾书童赵繇一起离开小镇，为什么最后不走了？",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 69,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "宁姚摇头笑道：“圣人的心思，就像一条龙脉，能够绵延千万里，我可猜不到，也懒得猜。 说完这句话，她把碗筷往陈平安手里一丢，自己起身去往一栋独属于她的黄泥墙茅草屋，宁姚自己也很奇怪为何阮师对此自己如此客气，难道阮师看出自己的身份？",
@@ -435,7 +448,8 @@
           "陈平安",
           "宋集薪",
           "稚圭",
-          "齐静春"
+          "齐静春",
+          "赵繇"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -466,7 +480,8 @@
         "participants": [
           "陈平安",
           "宋集薪",
-          "稚圭"
+          "稚圭",
+          "赵繇"
         ],
         "description": "陈平安又问道：“按照宋集薪和稚圭之前的说法，齐先生原本打算跟学塾书童赵繇一起离开小镇，为什么最后不走了？ 宁姚摇头笑道：“圣人的心思，就像一条龙脉，能够绵延千万里，我可猜不到，也懒得猜。 说完这句话，她把碗筷往陈平安手里一丢，自己起身去往一栋独属于她的黄泥墙茅草屋，宁姚自己也很奇怪为何阮师对此自己如此客气，难道阮师看出自己的身份？",
         "background": "",
@@ -474,7 +489,10 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第一卷笼中雀 第六十九章 夜幕 · 段4",
         "sentence_indexes_in_segment": [
@@ -533,6 +551,26 @@
       {
         "time": null,
         "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "对话",
+        "context": "陈平安又问道：“按照宋集薪和稚圭之前的说法，齐先生原本打算跟学塾书童赵繇一起离开小镇，为什么最后不走了？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 69,
+        "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
           "宋集薪"
         ],
         "to_roles": [
@@ -549,9 +587,49 @@
         ],
         "juan_index": 69,
         "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "对话",
+        "context": "陈平安又问道：“按照宋集薪和稚圭之前的说法，齐先生原本打算跟学塾书童赵繇一起离开小镇，为什么最后不走了？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 69,
+        "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "稚圭"
+        ],
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "对话",
+        "context": "陈平安又问道：“按照宋集薪和稚圭之前的说法，齐先生原本打算跟学塾书童赵繇一起离开小镇，为什么最后不走了？",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 69,
+        "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.483104",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -619,6 +697,19 @@
       },
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈平安拿着碗筷，刚想要去灶房那边，发现不远处有人从这边走过，是一位袖子宽大的年轻男人，比读书人陈松风更像读书人，有一种说不清道不明的感觉，有点像齐先生，又有点像当时在泥瓶巷遇到的督造官宋大人。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 69,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -628,6 +719,32 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 69,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "陈平安这次没有像当初在泥瓶巷，故意瞒着蔡金简苻南华，而是直截了当给那人指明了方向。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 69,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "陈平安这次没有像当初在泥瓶巷，故意瞒着蔡金简苻南华，而是直截了当给那人指明了方向。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 69,
         "segment_index": 5
@@ -660,7 +777,10 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "齐静春"
+          "陈松风",
+          "齐静春",
+          "蔡金简",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -699,7 +819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.484108",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -805,7 +925,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.484108",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -958,7 +1078,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.484108",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1093,7 +1213,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.484108",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1168,7 +1288,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.484108",
+    "extracted_at": "2026-03-25T01:03:30.505279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

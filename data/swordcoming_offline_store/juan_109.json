@@ -96,7 +96,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.659872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -201,7 +201,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.659872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -280,7 +280,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.610023",
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -329,24 +329,36 @@
         ],
         "juan_index": 109,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "陈平安一针见血道：“之前在观水街分开，你拉上你爹朱河说是去逛兵器铺子，是不是想挑选匕首之类的趁手兵器，容易隐藏在袖口之内，我猜应该是铺子关了吧，所以只好用竹签代替。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 109,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与陈平安对话",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱鹿对话",
         "time": null,
         "location": null,
         "participants": [
+          "陈平安",
           "朱鹿",
-          "陈平安"
+          "朱河"
         ],
         "description": "朱鹿陷入莫大恐慌，顾不得擦拭嘴角的鲜血，带着哭腔解释道：“不要杀我，陈平安，我只是跟你开一个玩笑，真的我不骗你，如果我要杀你，我怎么会用这几支糖葫芦竹签，再说了我为什么要杀你啊……” 陈平安一针见血道：“之前在观水街分开，你拉上你爹朱河说是去逛兵器铺子，是不是想挑选匕首之类的趁手兵器，容易隐藏在袖口之内，我猜应该是铺子关了吧，所以只好用竹签代替。 朱鹿蓦然笑起来，胸膛剧烈起伏，咳嗽得厉害，捂住嘴，猩红鲜血仍是不断从手指缝隙渗出，她松开手，仿佛认命一般，仰头望着那个居高临下俯视自己的少年，视线从上往下，最后看到一双粗糙低贱的草鞋，少女再次抬起头，好似魔怔失心疯了，不哭反笑，死死盯住越来越靠近自己的少年，沙哑笑道：“没想到你没我想象的那么蠢，但是我很奇怪，你是怎么看出我要杀你的？",
         "background": "",
-        "significance": "推动朱鹿与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与朱鹿之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -360,34 +372,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "朱鹿"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "朱鹿陷入莫大恐慌，顾不得擦拭嘴角的鲜血，带着哭腔解释道：“不要杀我，陈平安，我只是跟你开一个玩笑，真的我不骗你，如果我要杀你，我怎么会用这几支糖葫芦竹签，再说了我为什么要杀你啊……” 陈平安一针见血道：“之前在观水街分开，你拉上你爹朱河说是去逛兵器铺子，是不是想挑选匕首之类的趁手兵器，容易隐藏在袖口之内，我猜应该是铺子关了吧，所以只好用竹签代替。 ” 朱鹿蓦然笑起来，胸膛剧烈起伏，咳嗽得厉害，捂住嘴，猩红鲜血仍是不断从手指缝隙渗出，她松开手，仿佛认命一般，仰头望着那个居高临下俯视自己的少年，视线从上往下，最后看到一双粗糙低贱的草鞋，少女再次抬起头，好似魔怔失心疯了，不哭反笑，死死盯住越来越靠近自己的少年，沙哑笑道：“没想到你没我想象的那么蠢，但是我很奇怪，你是怎么看出我要杀你的？ ” 少女提高嗓音，原本清秀可人的脸庞，扭曲而癫狂，“陈平安，在杀我之前，可以不可以让我死个明白？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 109,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -492,7 +478,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -543,6 +529,19 @@
         ],
         "juan_index": 109,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "但是显而易见，朱鹿杀他杀得毫不含糊，一点拖泥带水的犹豫都没有，可要陈平安反过来，杀她杀得心无芥蒂，很难，因为这中间夹着那个红棉袄小姑娘，性情爽朗的汉子朱河，以及这个什么李家二公子。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 109,
+        "segment_index": 6
       }
     ],
     "locations": [],
@@ -553,7 +552,8 @@
         "location": null,
         "participants": [
           "陈平安",
-          "朱鹿"
+          "朱鹿",
+          "朱河"
         ],
         "description": "陈平安蹲下身，掰开她的五指，取出那三支竹签，自己握在手心，然后坐在廊道长椅上，面无表情地盯住朱鹿，不让她有任何折腾出幺蛾子的机会。 但是显而易见，朱鹿杀他杀得毫不含糊，一点拖泥带水的犹豫都没有，可要陈平安反过来，杀她杀得心无芥蒂，很难，因为这中间夹着那个红棉袄小姑娘，性情爽朗的汉子朱河，以及这个什么李家二公子。 陈平安在看到她从廊道远远走来的第一眼起，就知道朱鹿不怀好意了，而且少年的眼力极好，少女的隐藏掩饰，远远不够精湛，颤颤巍巍的睫毛，咬住牙根的鼓起腮帮，低敛视线的狠辣，陈平安一目了然。",
         "background": "",
@@ -573,7 +573,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -652,7 +652,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -756,7 +756,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -836,7 +836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.660876",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -942,7 +942,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -990,21 +990,35 @@
         ],
         "juan_index": 109,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "陈平安安安静静坐在长椅上，身边刚好散落着那些冰糖葫芦，一颗颗无人问津，少年看着朱鹿，扯了扯嘴角，“如果不是朱河，你今天就真的要好笑‘死’了。 陈平安站起身，缓缓说道：“我知道，这些话你其实是说给你爹听的，而且你这次挣扎起身，是为了引诱我对你出手，你要让朱河没有选择的余地，要么我杀你，要么他杀我，对不对？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 109,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱鹿对话",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱河对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "朱鹿"
+          "朱河"
         ],
         "description": "陈平安安安静静坐在长椅上，身边刚好散落着那些冰糖葫芦，一颗颗无人问津，少年看着朱鹿，扯了扯嘴角，“如果不是朱河，你今天就真的要好笑‘死’了。 陈平安站起身，缓缓说道：“我知道，这些话你其实是说给你爹听的，而且你这次挣扎起身，是为了引诱我对你出手，你要让朱河没有选择的余地，要么我杀你，要么他杀我，对不对？ 朱鹿脸色阴沉，不再说话。",
         "background": "",
-        "significance": "推动陈平安与朱鹿之间的对话关系。",
+        "significance": "推动陈平安与朱河之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -1028,27 +1042,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "朱鹿"
+          "朱河"
         ],
         "action": "对话",
-        "context": "” 陈平安安安静静坐在长椅上，身边刚好散落着那些冰糖葫芦，一颗颗无人问津，少年看着朱鹿，扯了扯嘴角，“如果不是朱河，你今天就真的要好笑‘死’了。 ” 陈平安站起身，缓缓说道：“我知道，这些话你其实是说给你爹听的，而且你这次挣扎起身，是为了引诱我对你出手，你要让朱河没有选择的余地，要么我杀你，要么他杀我，对不对？ ” 朱鹿脸色阴沉，不再说话。",
+        "context": "陈平安站起身，缓缓说道：“我知道，这些话你其实是说给你爹听的，而且你这次挣扎起身，是为了引诱我对你出手，你要让朱河没有选择的余地，要么我杀你，要么他杀我，对不对？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱鹿对话",
+        "event_name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱河对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 109,
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.611026",
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1069,6 +1078,19 @@
       "公子说过，当断不断，必为其乱！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河不知何时站在廊道之中，双拳紧握，手背青筋暴起，满脸痛苦，男人望向那一双少年少女。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 109,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -1122,14 +1144,13 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "朱鹿"
         ],
-        "description": "朱鹿伸出大拇指，使劲抹掉嘴角的血迹，微微低头，眼睛却盯着草鞋少年。 爹，我求你了，不要心慈手软，趁着那个风雪庙的阿良还没有回来，赶紧动手！ 朱河不知何时站在廊道之中，双拳紧握，手背青筋暴起，满脸痛苦，男人望向那一双少年少女。",
+        "description": "朱河不知何时站在廊道之中，双拳紧握，手背青筋暴起，满脸痛苦，男人望向那一双少年少女。 朱鹿伸出大拇指，使劲抹掉嘴角的血迹，微微低头，眼睛却盯着草鞋少年。 爹，我求你了，不要心慈手软，趁着那个风雪庙的阿良还没有回来，赶紧动手！",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1143,34 +1164,8 @@
         "segment_index": 12
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "朱鹿"
-        ],
-        "to_roles": [
-          "阿良"
-        ],
-        "action": "对话",
-        "context": "朱河不知何时站在廊道之中，双拳紧握，手背青筋暴起，满脸痛苦，男人望向那一双少年少女。 一个是自己心爱的闺女，一个是自己欣赏的晚辈。 朱鹿伸出大拇指，使劲抹掉嘴角的血迹，微微低头，眼睛却盯着草鞋少年。 她缓缓转头，少女破天荒脸色平静，对那个熟悉身影说道：“以我们小姐的脾气，如果知道了这一切，我就算不死，也要脱一层皮，这辈子就算是毫无希望了。 爹，我求你了，不要心慈手软，趁着那个风雪庙的阿良还没有回来，赶紧动手！ 公子说过，当断不断，必为其乱！",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "风雪庙",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 109,
-        "segment_index": 12
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1206,6 +1201,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "然后少年站在廊道中央，与朱河对峙。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 109,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "朱鹿心一沉。",
@@ -1221,19 +1229,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱鹿冲突",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱河冲突",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "朱河",
           "朱鹿"
         ],
-        "description": "陈平安突然转身弯腰，随手捡起一颗糖葫芦，放入嘴里咀嚼起来。 朱鹿心一沉。 ”",
+        "description": "陈平安突然转身弯腰，随手捡起一颗糖葫芦，放入嘴里咀嚼起来。 然后少年站在廊道中央，与朱河对峙。 朱鹿心一沉。",
         "background": "",
-        "significance": "推动陈平安与朱鹿之间的冲突关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与朱河之间的冲突关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1247,34 +1254,8 @@
         "segment_index": 13
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "朱鹿"
-        ],
-        "action": "冲突",
-        "context": "” 陈平安突然转身弯腰，随手捡起一颗糖葫芦，放入嘴里咀嚼起来。 然后少年站在廊道中央，与朱河对峙。 少年对少女轻声道：“你会死的。 ” 朱鹿心一沉。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱鹿冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 109,
-        "segment_index": 13
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1351,7 +1332,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1456,7 +1437,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1514,6 +1495,20 @@
         "power": "披云山",
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 109,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "所以哪怕在进入红烛镇之前的棋墩山边界，土地爷魏檗送给他们人手一份临别赠礼，她在朱河的强硬要求下，拿到了那本所谓的仙家秘籍紫气书，无数人山下武人梦寐以求的武道宝典，少女其实并未提起多少的心气。 这一切，粗糙汉子的朱河，醉心于武道攀登的纯粹武人，又如何晓得？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          5
         ],
         "juan_index": 109,
         "segment_index": 16
@@ -1586,7 +1581,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.661879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1607,6 +1602,19 @@
       "所以自知正面搏杀不是少年对手的少女，需要一场暗处的袭杀，如少年揭穿的真相那样，她需要一把匕首。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "尤其是他们父女二人，如今拥有了真武山英雄胆，和那部山上神仙手笔的紫气书，就像朱河亲口所说，如今他连第七境的风光，也敢去想一想了。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 109,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -1637,16 +1645,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与陈平安揭示",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱河与朱鹿揭示",
         "time": null,
         "location": null,
         "participants": [
+          "朱河",
           "朱鹿",
           "陈平安"
         ],
-        "description": "那么她朱鹿，为何不敢去想一想自己以前不敢想的风光日子？ 陈平安必须死。 但是那封书信的到来，宛如自家公子在面授机宜，就像一场雪中送炭，让悟出其中玄机的少女，重新燃起希望，告诉自己，一定要习武，最少要成为爹那样的武道宗师，一定要在沙场立下汗马功劳，让那个“诰命夫人”来得天经地义。",
+        "description": "尤其是他们父女二人，如今拥有了真武山英雄胆，和那部山上神仙手笔的紫气书，就像朱河亲口所说，如今他连第七境的风光，也敢去想一想了。 那么她朱鹿，为何不敢去想一想自己以前不敢想的风光日子？ 陈平安必须死。",
         "background": "",
-        "significance": "推动朱鹿与陈平安之间的揭示关系。",
+        "significance": "推动朱河与朱鹿之间的揭示关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段17",
         "sentence_indexes_in_segment": [
@@ -1662,7 +1671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1683,6 +1692,19 @@
       "环环相扣。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "刚好他爹朱河说到与陈平安道歉一事，而陈平安与小姐李宝瓶，又提过要买糖葫芦。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 109,
+        "segment_index": 18
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1763,7 +1785,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1800,6 +1822,20 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "因为朱鹿真正的厉害之处，还在于她既给自己找了一条退路，又给身为武道五境的朱河，替她爹选择了一条没有回头的路。 朱河望向那个束发别玉簪的贫寒少年，说了一个本该由他女儿诚心诚意说出口的三个字，“对不起。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 109,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "她死，或者陈平安死。",
@@ -1815,16 +1851,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与陈平安剧情推进",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与朱河剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "朱鹿",
+          "朱河",
           "陈平安"
         ],
         "description": "朱鹿之机敏急智，可见一斑。 因为朱鹿真正的厉害之处，还在于她既给自己找了一条退路，又给身为武道五境的朱河，替她爹选择了一条没有回头的路。 她死，或者陈平安死。",
         "background": "",
-        "significance": "推动朱鹿与陈平安之间的剧情推进关系。",
+        "significance": "推动朱鹿与朱河之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段19",
         "sentence_indexes_in_segment": [
@@ -1840,7 +1877,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1874,21 +1911,37 @@
         ],
         "juan_index": 109,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "当初在棋墩山辖境内，与朱河切磋之后，少年察觉到自己体内三座气府，竟然让那条横冲直撞的气机火龙，都只敢过门不入，陈平安直到那个时候，才意识到那三处，藏有三缕极小极小的剑气，与他心意牵连，使用起来，毫无门槛。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 109,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安对话",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱河对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "陈平安笑道：“没关系，路都是自己选的。 当初在棋墩山辖境内，与朱河切磋之后，少年察觉到自己体内三座气府，竟然让那条横冲直撞的气机火龙，都只敢过门不入，陈平安直到那个时候，才意识到那三处，藏有三缕极小极小的剑气，与他心意牵连，使用起来，毫无门槛。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与朱河之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1902,8 +1955,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "陈平安笑道：“没关系，路都是自己选的。 ” 草鞋少年不合常理的笑意，给人森寒之意。 这种荒诞感觉，不远处的少女尤为清晰。 当初在棋墩山辖境内，与朱河切磋之后，少年察觉到自己体内三座气府，竟然让那条横冲直撞的气机火龙，都只敢过门不入，陈平安直到那个时候，才意识到那三处，藏有三缕极小极小的剑气，与他心意牵连，使用起来，毫无门槛。 之后炸烂那条白蟒的头颅，少年用掉了一缕剑气。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱河对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 109,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2008,7 +2087,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.612030",
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2041,20 +2120,34 @@
         ],
         "juan_index": 109,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河更是头皮发麻，堂堂武道五境的小宗师，竟是心神陷入泥泞，四肢丝毫动弹不得。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 109,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿剧情推进",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与朱河剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "朱鹿"
+          "朱鹿",
+          "朱河"
         ],
-        "description": "不知是心有灵犀，还是祖荫庇佑，少女朱鹿没来由满怀惶恐，尖声喊道：“不要！ 少年一只草鞋向前踏出，一只草鞋向后挪去。 少年双膝弯曲，身形下坠，双指并拢，直指廊道远处的男子，嘴唇微动。",
+        "description": "不知是心有灵犀，还是祖荫庇佑，少女朱鹿没来由满怀惶恐，尖声喊道：“不要！ 朱河更是头皮发麻，堂堂武道五境的小宗师，竟是心神陷入泥泞，四肢丝毫动弹不得。 少年一只草鞋向前踏出，一只草鞋向后挪去。",
         "background": "",
-        "significance": "对应朱鹿在叙事中的关键剧情推进节点。",
+        "significance": "推动朱鹿与朱河之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段22",
         "sentence_indexes_in_segment": [
@@ -2070,7 +2163,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -29,6 +29,19 @@
         ],
         "juan_index": 66,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜拢了拢名贵却老旧的狐裘，这位藩王今天出奇的谈兴颇高，伸手指向西边一座高山，“那座山名叫披云山，以后有可能被大骊敕封为五岳之外的十大正山之一，按照祖辈留下的老规矩，会出现一位载入谱牒前列的山神，得以塑造金身神像，堂堂正正，享受人间香火，为大骊镇压一地气运，不至于流散别处，以免为邻国作嫁衣裳。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 66,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -55,7 +68,9 @@
         "description": "魏檗坐镇之地，是陈平安和落魄山的重要支援场。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           2,
           3
@@ -72,7 +87,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -102,12 +119,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "description": "宋集薪站在山顶，视野开阔，这么多年待在泥瓶巷，看来望去皆是泥墙，少年喜欢当下这种感觉，登高望远，千里山河，全在自己的脚底下。 宋长镜拢了拢名贵却老旧的狐裘，这位藩王今天出奇的谈兴颇高，伸手指向西边一座高山，“那座山名叫披云山，以后有可能被大骊敕封为五岳之外的十大正山之一，按照祖辈留下的老规矩，会出现一位载入谱牒前列的山神，得以塑造金身神像，堂堂正正，享受人间香火，为大骊镇压一地气运，不至于流散别处，以免为邻国作嫁衣裳。 小镇百姓只有站在披云山的山巅，才有可能看到我们脚下这座龙头山，因为龙头山受大阵护持，寻常肉眼凡胎，看不到此地的光景，这也算是一桩机缘，根据衙署密档记录，历史上就有几人因此登上龙头山，成功走出此方天地。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -121,8 +141,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！ 宋集薪站在山顶，视野开阔，这么多年待在泥瓶巷，看来望去皆是泥墙，少年喜欢当下这种感觉，登高望远，千里山河，全在自己的脚底下。 宋长镜拢了拢名贵却老旧的狐裘，这位藩王今天出奇的谈兴颇高，伸手指向西边一座高山，“那座山名叫披云山，以后有可能被大骊敕封为五岳之外的十大正山之一，按照祖辈留下的老规矩，会出现一位载入谱牒前列的山神，得以塑造金身神像，堂堂正正，享受人间香火，为大骊镇压一地气运，不至于流散别处，以免为邻国作嫁衣裳。 小镇百姓只有站在披云山的山巅，才有可能看到我们脚下这座龙头山，因为龙头山受大阵护持，寻常肉眼凡胎，看不到此地的光景，这也算是一桩机缘，根据衙署密档记录，历史上就有几人因此登上龙头山，成功走出此方天地。 ” 宋集薪问道：“那这些人是不是都出人头地了？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -143,6 +189,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑道：“有两个在大骊混得不错，相隔不过三十年，一文一武，被后世誉为大骊双璧，文的那个，死后谥文正，武的那个，则给子孙赢得了世袭上柱国的不小祖荫，虽说本王对两人的子孙观感极差，但是两家跟大骊的香火情，本王捏着鼻子也得认，毕竟当年要不是他们联手力挽狂澜，大骊宋氏熬不过那次难关。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 66,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -169,7 +228,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0,
           2
@@ -194,16 +255,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
         "description": "在咱们大骊或是东宝瓶洲成了人上人？ 宋长镜笑道：“有两个在大骊混得不错，相隔不过三十年，一文一武，被后世誉为大骊双璧，文的那个，死后谥文正，武的那个，则给子孙赢得了世袭上柱国的不小祖荫，虽说本王对两人的子孙观感极差，但是两家跟大骊的香火情，本王捏着鼻子也得认，毕竟当年要不是他们联手力挽狂澜，大骊宋氏熬不过那次难关。 宋集薪感受着山顶的清风吹拂，有一种羽化飞升之感，问道：“那其他人？",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋长镜与宋集薪之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -217,8 +281,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "在咱们大骊或是东宝瓶洲成了人上人？ ” 宋长镜笑道：“有两个在大骊混得不错，相隔不过三十年，一文一武，被后世誉为大骊双璧，文的那个，死后谥文正，武的那个，则给子孙赢得了世袭上柱国的不小祖荫，虽说本王对两人的子孙观感极差，但是两家跟大骊的香火情，本王捏着鼻子也得认，毕竟当年要不是他们联手力挽狂澜，大骊宋氏熬不过那次难关。 ” 宋集薪感受着山顶的清风吹拂，有一种羽化飞升之感，问道：“那其他人？ ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -238,7 +328,22 @@
       "没办法，不肯为大骊所用，就只有这个下场。",
       "宋家一向厚待练气士不假，可前提是这些练气士，必须要为宋家卖命，哪怕只是做做样子。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜轻轻呼出一口气，愈发神清气爽，压下体内蠢蠢欲动的气海升腾，如同用一只手强行按下一轮冉冉升起的大日，宋长镜此刻无比确定，自己只要踏出那道大门，就会立即跻身第十境，被誉为武道止境的第十境！ 宋长镜平缓了一下心境，给了少年一个不太温馨的真相：“死绝了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 66,
+        "segment_index": 3
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -260,13 +365,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 大骊冲突",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜在大骊冲突",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "本王就曾亲手宰掉一个，当时本王还只是七境武夫，那人还是一位相对棘手的剑修，而且人生正值巅峰，那次本王与他相互追杀，辗转了七八百里路，最后在大骊南部边境一个叫白狐关的小地方，终于被本王追上，打烂他所有傍身法器和本命飞剑之后，本王拧断了他的脖子。 没办法，不肯为大骊所用，就只有这个下场。 宋长镜轻轻呼出一口气，愈发神清气爽，压下体内蠢蠢欲动的气海升腾，如同用一只手强行按下一轮冉冉升起的大日，宋长镜此刻无比确定，自己只要踏出那道大门，就会立即跻身第十境，被誉为武道止境的第十境！",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "宋长镜轻轻呼出一口气，愈发神清气爽，压下体内蠢蠢欲动的气海升腾，如同用一只手强行按下一轮冉冉升起的大日，宋长镜此刻无比确定，自己只要踏出那道大门，就会立即跻身第十境，被誉为武道止境的第十境！ 宋长镜平缓了一下心境，给了少年一个不太温馨的真相：“死绝了。 本王就曾亲手宰掉一个，当时本王还只是七境武夫，那人还是一位相对棘手的剑修，而且人生正值巅峰，那次本王与他相互追杀，辗转了七八百里路，最后在大骊南部边境一个叫白狐关的小地方，终于被本王追上，打烂他所有傍身法器和本命飞剑之后，本王拧断了他的脖子。",
         "background": "",
-        "significance": "对应大骊相关的关键冲突场景。",
+        "significance": "对应宋长镜在叙事中的关键冲突节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段3",
         "sentence_indexes_in_segment": [
@@ -282,7 +389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "extracted_at": "2026-03-25T01:03:30.494241",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -303,6 +410,20 @@
       "宋长镜笑道：“那名剑修之前，大多是如此。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "那一次捉对厮杀的后半程，宋长镜进入第八境。 宋长镜笑道：“那名剑修之前，大多是如此。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -339,16 +460,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
-        "description": "宋集薪对这位藩王叔叔的传奇经历，并不感兴趣，只是好奇问道：“是其它王朝出了更高的价格？ 才使得他们不惜叛离大骊？ ”",
+        "description": "那一次捉对厮杀的后半程，宋长镜进入第八境。 宋集薪对这位藩王叔叔的传奇经历，并不感兴趣，只是好奇问道：“是其它王朝出了更高的价格？ 才使得他们不惜叛离大骊？",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋长镜与宋集薪之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -362,8 +486,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "” 那一次捉对厮杀的后半程，宋长镜进入第八境。 宋集薪对这位藩王叔叔的传奇经历，并不感兴趣，只是好奇问道：“是其它王朝出了更高的价格？ 才使得他们不惜叛离大骊？ ” 宋长镜笑道：“那名剑修之前，大多是如此。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.494241",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -411,6 +561,19 @@
         ],
         "juan_index": 66,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜用看待白痴一样的眼神，斜瞥一眼自己的侄子，“然后不就死了？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 66,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -440,14 +603,13 @@
         "location": "大骊",
         "participants": [
           "大骊皇帝",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "大骊地处偏远，民风彪悍，本就是崇武之国，武道天才辈出，一点也不值钱，倒是文绉绉软趴趴的练气士，凤毛麟角，所以每出世几个，历任大骊皇帝都恨不得当菩萨供奉起来，当今天子，嗯，也就是那位皇兄，当然也不例外，有次那名剑修入宫觐见皇兄，负剑而行，鼻孔朝天的样子，很欠揍啊，他当时刚好碰运气得到一件趁手的护身宝物，朝野上下，如日中天，所以见到本王之后，连招呼也不打，就是这样。 宋集薪问道：“然后呢？ ”",
+        "description": "大骊地处偏远，民风彪悍，本就是崇武之国，武道天才辈出，一点也不值钱，倒是文绉绉软趴趴的练气士，凤毛麟角，所以每出世几个，历任大骊皇帝都恨不得当菩萨供奉起来，当今天子，嗯，也就是那位皇兄，当然也不例外，有次那名剑修入宫觐见皇兄，负剑而行，鼻孔朝天的样子，很欠揍啊，他当时刚好碰运气得到一件趁手的护身宝物，朝野上下，如日中天，所以见到本王之后，连招呼也不打，就是这样。 宋集薪问道：“然后呢？ 宋长镜用看待白痴一样的眼神，斜瞥一眼自己的侄子，“然后不就死了？",
         "background": "",
         "significance": "在大骊推动大骊皇帝与宋集薪之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -461,34 +623,8 @@
         "segment_index": 5
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "大骊皇帝"
-        ],
-        "to_roles": [
-          "宋集薪"
-        ],
-        "action": "对话",
-        "context": "大骊地处偏远，民风彪悍，本就是崇武之国，武道天才辈出，一点也不值钱，倒是文绉绉软趴趴的练气士，凤毛麟角，所以每出世几个，历任大骊皇帝都恨不得当菩萨供奉起来，当今天子，嗯，也就是那位皇兄，当然也不例外，有次那名剑修入宫觐见皇兄，负剑而行，鼻孔朝天的样子，很欠揍啊，他当时刚好碰运气得到一件趁手的护身宝物，朝野上下，如日中天，所以见到本王之后，连招呼也不打，就是这样。 ” 宋集薪问道：“然后呢？ ” 宋长镜用看待白痴一样的眼神，斜瞥一眼自己的侄子，“然后不就死了？ ”",
-        "result": null,
-        "event_name": "第一卷笼中雀 第六十六章 抬头 · 大骊皇帝与宋集薪在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 66,
-        "segment_index": 5
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.494241",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -524,6 +660,20 @@
         ],
         "juan_index": 66,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜淡然道：“有些人，你就不能惯着他。 宋长镜笑道：“你可能不知道一件事，那就是整个东宝瓶洲，只有一个王朝的练气士，无论什么出身什么靠山，都必须为皇帝去往边境沙场效劳卖命，实打实厮杀三年，若是战功不足，就继续留在边境喝西北风，直到攒够了才能回家享福。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -552,7 +702,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -562,16 +714,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪满脸匪夷所思，“叔叔你就因为人家没跟你打招呼，就痛下杀手，斩杀一名足可称之为国之砥柱的大修士？ 宋集薪眼神狐疑，似乎想不明白这么一个桀骜不驯、不顾大局的大骊皇族，是怎么活到今天的。 宋长镜笑道：“你可能不知道一件事，那就是整个东宝瓶洲，只有一个王朝的练气士，无论什么出身什么靠山，都必须为皇帝去往边境沙场效劳卖命，实打实厮杀三年，若是战功不足，就继续留在边境喝西北风，直到攒够了才能回家享福。",
+        "description": "宋集薪满脸匪夷所思，“叔叔你就因为人家没跟你打招呼，就痛下杀手，斩杀一名足可称之为国之砥柱的大修士？ 宋长镜淡然道：“有些人，你就不能惯着他。 宋集薪眼神狐疑，似乎想不明白这么一个桀骜不驯、不顾大局的大骊皇族，是怎么活到今天的。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋集薪与宋长镜之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -585,8 +740,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "宋集薪满脸匪夷所思，“叔叔你就因为人家没跟你打招呼，就痛下杀手，斩杀一名足可称之为国之砥柱的大修士？ ” 宋长镜淡然道：“有些人，你就不能惯着他。 ” 宋集薪眼神狐疑，似乎想不明白这么一个桀骜不驯、不顾大局的大骊皇族，是怎么活到今天的。 宋长镜笑道：“你可能不知道一件事，那就是整个东宝瓶洲，只有一个王朝的练气士，无论什么出身什么靠山，都必须为皇帝去往边境沙场效劳卖命，实打实厮杀三年，若是战功不足，就继续留在边境喝西北风，直到攒够了才能回家享福。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.494241",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -621,6 +802,19 @@
         ],
         "juan_index": 66,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜哈哈笑道：“这条不成文的规矩，是在本王掌握兵权之后订立的。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -646,16 +840,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪更加疑惑，“叔叔你不是才说大骊最推崇练气士吗？ 退一步说，大骊就不怕这些人夭折在沙场？ ”",
+        "description": "宋集薪更加疑惑，“叔叔你不是才说大骊最推崇练气士吗？ 退一步说，大骊就不怕这些人夭折在沙场？ 宋长镜哈哈笑道：“这条不成文的规矩，是在本王掌握兵权之后订立的。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋集薪与宋长镜之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -669,8 +866,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "” 宋集薪更加疑惑，“叔叔你不是才说大骊最推崇练气士吗？ 怎么就有这么个规矩了？ 退一步说，大骊就不怕这些人夭折在沙场？ ” 宋长镜哈哈笑道：“这条不成文的规矩，是在本王掌握兵权之后订立的。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.494241",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -705,6 +928,19 @@
         ],
         "juan_index": 66,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜摇头道：“那名剑修年轻时候投军边境，短短一年就攒够了战功，在大骊口碑相当不错。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 8
       }
     ],
     "locations": [
@@ -717,7 +953,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           2,
           5
@@ -728,15 +966,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊剧情推进",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "description": "宋集薪恍然道：“是那名剑修不愿去沙场，折了你的面子？ 使得其他练气士上行下效，无形中坏了大骊的军心民心？ 宋长镜摇头道：“那名剑修年轻时候投军边境，短短一年就攒够了战功，在大骊口碑相当不错。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动宋集薪与宋长镜之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段8",
         "sentence_indexes_in_segment": [
@@ -752,7 +991,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "extracted_at": "2026-03-25T01:03:30.494241",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -787,20 +1026,34 @@
         ],
         "juan_index": 66,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜的答案很简单，“虽说修士和武夫是两条路上的人，前者也确实更加……嗯，用那头绣虎的话说，就是更加金枝玉叶。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪剧情推进",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪恼羞成怒道：“那到底是为何？ ” ！",
+        "description": "宋集薪恼羞成怒道：“那到底是为何？ 宋长镜的答案很简单，“虽说修士和武夫是两条路上的人，前者也确实更加……嗯，用那头绣虎的话说，就是更加金枝玉叶。 ”",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "推动宋集薪与宋长镜之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段9",
         "sentence_indexes_in_segment": [
@@ -816,7 +1069,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -851,6 +1104,19 @@
         ],
         "juan_index": 66,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜却不想再聊那个已死之人的话题，“是不是很想知道，那个跟我生死相搏的中年人？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 66,
+        "segment_index": 10
       }
     ],
     "locations": [
@@ -877,12 +1143,15 @@
         "participants": [
           "魏檗",
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "武夫第十境就算走到了尽头，但是练气士却还有上五境可以攀爬，两者之差，确实不小，如果拎出两者中最拔尖的一小撮人，上五境练气士，就像站在这里的山顶，本王这样的武道中人，却只能是站在那座披云山的山顶，当然了，武道止境宗师，跟十一、十二境界的修士，也不是没得打，不过说到底，在世俗人眼中，武夫就是打只会打杀杀的大老粗，要矮人家修士一头的，所以那次宫中相见，他虽然没跟本王打招呼，但是故意斜眼瞅我，嘴角翘起，很挑衅啊，本王就想教他做人。 宋集薪呆若木鸡。 ”",
+        "description": "武夫第十境就算走到了尽头，但是练气士却还有上五境可以攀爬，两者之差，确实不小，如果拎出两者中最拔尖的一小撮人，上五境练气士，就像站在这里的山顶，本王这样的武道中人，却只能是站在那座披云山的山顶，当然了，武道止境宗师，跟十一、十二境界的修士，也不是没得打，不过说到底，在世俗人眼中，武夫就是打只会打杀杀的大老粗，要矮人家修士一头的，所以那次宫中相见，他虽然没跟本王打招呼，但是故意斜眼瞅我，嘴角翘起，很挑衅啊，本王就想教他做人。 宋集薪呆若木鸡。 宋长镜却不想再聊那个已死之人的话题，“是不是很想知道，那个跟我生死相搏的中年人？",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -896,8 +1165,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "会见",
+        "context": "武夫第十境就算走到了尽头，但是练气士却还有上五境可以攀爬，两者之差，确实不小，如果拎出两者中最拔尖的一小撮人，上五境练气士，就像站在这里的山顶，本王这样的武道中人，却只能是站在那座披云山的山顶，当然了，武道止境宗师，跟十一、十二境界的修士，也不是没得打，不过说到底，在世俗人眼中，武夫就是打只会打杀杀的大老粗，要矮人家修士一头的，所以那次宫中相见，他虽然没跟本王打招呼，但是故意斜眼瞅我，嘴角翘起，很挑衅啊，本王就想教他做人。 ” 宋集薪呆若木鸡。 教人做人，那你好歹给人家留一条活路啊，就非要拧断人家的脖子？ 宋长镜却不想再聊那个已死之人的话题，“是不是很想知道，那个跟我生死相搏的中年人？ ”",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -932,21 +1227,38 @@
         ],
         "juan_index": 66,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "虽然三辆马车先行，可后边两人的硬碰硬，打得天昏地暗，其中一次宋长镜整个人从天而降，在马车十几丈外的地方砸出一个大坑，之后又有一次，宋长镜还以颜色，当时少年已经爬到车顶上，亲眼看到那个气势如陆地蛟龙一般的壮实汉子，被宋长镜一拳砸得撞入一座小山头之中，溅射而起的尘土，极其壮观。 其实宋长镜跟那个横空出世的汉子，打得一点都不神仙缥缈，仿佛拳拳到肉，从头到尾都像是在以伤换伤，以命换命！",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 66,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪剧情推进",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜对话",
         "time": null,
         "location": null,
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪下意识咽了咽唾沫，没有说话。 虽然三辆马车先行，可后边两人的硬碰硬，打得天昏地暗，其中一次宋长镜整个人从天而降，在马车十几丈外的地方砸出一个大坑，之后又有一次，宋长镜还以颜色，当时少年已经爬到车顶上，亲眼看到那个气势如陆地蛟龙一般的壮实汉子，被宋长镜一拳砸得撞入一座小山头之中，溅射而起的尘土，极其壮观。 非人。",
+        "description": "宋集薪下意识咽了咽唾沫，没有说话。 虽然三辆马车先行，可后边两人的硬碰硬，打得天昏地暗，其中一次宋长镜整个人从天而降，在马车十几丈外的地方砸出一个大坑，之后又有一次，宋长镜还以颜色，当时少年已经爬到车顶上，亲眼看到那个气势如陆地蛟龙一般的壮实汉子，被宋长镜一拳砸得撞入一座小山头之中，溅射而起的尘土，极其壮观。 其实宋长镜跟那个横空出世的汉子，打得一点都不神仙缥缈，仿佛拳拳到肉，从头到尾都像是在以伤换伤，以命换命！",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动宋集薪与宋长镜之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -960,8 +1272,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "宋集薪下意识咽了咽唾沫，没有说话。 虽然三辆马车先行，可后边两人的硬碰硬，打得天昏地暗，其中一次宋长镜整个人从天而降，在马车十几丈外的地方砸出一个大坑，之后又有一次，宋长镜还以颜色，当时少年已经爬到车顶上，亲眼看到那个气势如陆地蛟龙一般的壮实汉子，被宋长镜一拳砸得撞入一座小山头之中，溅射而起的尘土，极其壮观。 非人。 这是少年当时唯一的观感。 其实宋长镜跟那个横空出世的汉子，打得一点都不神仙缥缈，仿佛拳拳到肉，从头到尾都像是在以伤换伤，以命换命！ 比的就是谁更蛮不讲理。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -982,6 +1320,20 @@
       "宋长镜收回手，沉声道：“因为本王唯一想要的，是看到止境之上的武道风光，只有走到了那里，我宋长镜才不枉此生。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜突然揉了揉少年的脑袋，嗓音语气破天荒有些温暖，“皇兄的野心很大，在大隋皇帝还只盯着大骊的时候，他就已经看到了东宝瓶洲最南边的老龙城。 宋长镜收回手，沉声道：“因为本王唯一想要的，是看到止境之上的武道风光，只有走到了那里，我宋长镜才不枉此生。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -1008,7 +1360,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0,
           1
@@ -1023,7 +1377,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1037,7 +1393,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1047,15 +1405,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊剧情推进",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
         "description": "宋长镜突然揉了揉少年的脑袋，嗓音语气破天荒有些温暖，“皇兄的野心很大，在大隋皇帝还只盯着大骊的时候，他就已经看到了东宝瓶洲最南边的老龙城。 你是不是很奇怪为何，本王既是大骊嫡出的皇子，又是掌握一国军权的藩王，在军中和民间威信之高，无人能比，却还是能跟你爹做到兄友弟恭？ 宋集薪笑了笑，狡黠道：“叔叔你愿意说就说呗。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动宋长镜与宋集薪之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段12",
         "sentence_indexes_in_segment": [
@@ -1071,7 +1430,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1094,6 +1453,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜摇头笑道：“你啊，若是习武，撑死了第八境，没前途，还是乖乖当个练气士好了，成就肯定更高。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 66,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -1111,16 +1483,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
-        "description": "宋集薪有些不服气，“为何我就只能到武道第八境？ ” 这一刻少年心胸间好似有洪流激荡，颤声问道：“如果我一心一意，能够有叔叔你今天的高度吗？",
+        "description": "宋长镜摇头笑道：“你啊，若是习武，撑死了第八境，没前途，还是乖乖当个练气士好了，成就肯定更高。 宋集薪有些不服气，“为何我就只能到武道第八境？ ”",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋长镜与宋集薪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1134,8 +1509,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "” 这一刻少年心胸间好似有洪流激荡，颤声问道：“如果我一心一意，能够有叔叔你今天的高度吗？ ” 宋长镜摇头笑道：“你啊，若是习武，撑死了第八境，没前途，还是乖乖当个练气士好了，成就肯定更高。 ” 宋集薪有些不服气，“为何我就只能到武道第八境？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1158,6 +1559,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜玩味笑道：“只能？ 宋长镜也不计较少年的不知天高地厚，眯眼望向远方，缓缓道：“练气士嘛，是个靠老天爷赏饭吃的行当，命好不好，很重要，今天在这里撞见个机缘，明天再那里捡到个法宝，后天不小心遇到个深藏不露的神仙，大后天看个风景，指不定就悟了，好像做什么都能增长修为。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 66,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -1175,16 +1590,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
-        "description": "宋集薪有些脸红。 ” 宋长镜玩味笑道：“只能？",
+        "description": "宋长镜玩味笑道：“只能？ 宋集薪有些脸红。 宋长镜也不计较少年的不知天高地厚，眯眼望向远方，缓缓道：“练气士嘛，是个靠老天爷赏饭吃的行当，命好不好，很重要，今天在这里撞见个机缘，明天再那里捡到个法宝，后天不小心遇到个深藏不露的神仙，大后天看个风景，指不定就悟了，好像做什么都能增长修为。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋长镜与宋集薪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1198,8 +1616,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "” 宋长镜玩味笑道：“只能？ ” 宋集薪有些脸红。 宋长镜也不计较少年的不知天高地厚，眯眼望向远方，缓缓道：“练气士嘛，是个靠老天爷赏饭吃的行当，命好不好，很重要，今天在这里撞见个机缘，明天再那里捡到个法宝，后天不小心遇到个深藏不露的神仙，大后天看个风景，指不定就悟了，好像做什么都能增长修为。 至于我们武道中人，大不一样，没什么捷径可走，只能靠一步一步走出来，无趣得很。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1234,21 +1678,38 @@
         ],
         "juan_index": 66,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜不再理会这个侄子，转身走向马车，眼角余光看到少女的背影后，犹豫了一下，走到她身边，跟她一起抬头望向那道大门。 宋长镜自言自语道：“真龙之气，凝结成珠。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 66,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪剧情推进",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜同行",
         "time": null,
         "location": null,
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪心情复杂，有些失落。 ” 宋长镜不再理会这个侄子，转身走向马车，眼角余光看到少女的背影后，犹豫了一下，走到她身边，跟她一起抬头望向那道大门。",
+        "description": "宋集薪心情复杂，有些失落。 宋长镜不再理会这个侄子，转身走向马车，眼角余光看到少女的背影后，犹豫了一下，走到她身边，跟她一起抬头望向那道大门。 宋长镜自言自语道：“真龙之气，凝结成珠。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动宋集薪与宋长镜之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1262,8 +1723,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "同行",
+        "context": "” 宋集薪心情复杂，有些失落。 宋长镜不再理会这个侄子，转身走向马车，眼角余光看到少女的背影后，犹豫了一下，走到她身边，跟她一起抬头望向那道大门。 宋长镜自言自语道：“真龙之气，凝结成珠。 世间蛟龙之属，皆以珠为贵，如同修士的本命元神。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与宋长镜同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.495245",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,6 +1783,19 @@
         ],
         "juan_index": 66,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑道：“为了廊桥匾额所写的风生水起这四个字，我大骊付出的代价之大，外人无法想象。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 66,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -1306,7 +1806,9 @@
         "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1322,7 +1824,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1332,16 +1836,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 稚圭在廊桥对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 稚圭与宋长镜在廊桥对话",
         "time": null,
         "location": "廊桥",
         "participants": [
-          "稚圭"
+          "稚圭",
+          "宋长镜"
         ],
         "description": "婢女稚圭没有转头，但是流露出一丝紧张。 宋长镜笑道：“为了廊桥匾额所写的风生水起这四个字，我大骊付出的代价之大，外人无法想象。 风生水起，水起，为何要水起？",
         "background": "",
-        "significance": "对应稚圭在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在廊桥推动稚圭与宋长镜之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1355,8 +1862,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "稚圭"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "婢女稚圭没有转头，但是流露出一丝紧张。 宋长镜笑道：“为了廊桥匾额所写的风生水起这四个字，我大骊付出的代价之大，外人无法想象。 风生水起，水起，为何要水起？ 还不是希望蛟龙走江的时候，能够畅通无阻。 本王呢，其实对这些不上心，一切只是你家少爷他那个狠心老爹的意愿，你出了这座小洞天之后，也估计除了京城那头绣虎，不会再有谁能对你指手画脚。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 稚圭与宋长镜在廊桥对话",
+        "location": "廊桥",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1377,6 +1910,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜转头，望着少女的侧脸，“虽说你和本王那个侄子的命数挂钩，息息相关，荣辱与共，但是你也别太过恃宠而骄，不要让本王有出手的念头，嗯，看在大骊江山和侄子宋集薪的面子上，本王可以破例，给你两次找死的机会，刚好应了事不过三这句老话。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 66,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -1404,6 +1950,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -1416,16 +1963,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪在大骊冲突",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊冲突",
         "time": null,
         "location": "大骊",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
         "description": "宋长镜转头，望着少女的侧脸，“虽说你和本王那个侄子的命数挂钩，息息相关，荣辱与共，但是你也别太过恃宠而骄，不要让本王有出手的念头，嗯，看在大骊江山和侄子宋集薪的面子上，本王可以破例，给你两次找死的机会，刚好应了事不过三这句老话。 少女蓦然发怒，先转身，再后退两步，狠狠盯着这位让她心生恐怖的大骊藩王，“我本来就不是人，你们却要以世人的规矩来约束我，到底是谁不讲道理？ ”",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋长镜与宋集薪之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1439,8 +1989,93 @@
         "segment_index": 17
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "冲突",
+        "context": "宋长镜转头，望着少女的侧脸，“虽说你和本王那个侄子的命数挂钩，息息相关，荣辱与共，但是你也别太过恃宠而骄，不要让本王有出手的念头，嗯，看在大骊江山和侄子宋集薪的面子上，本王可以破例，给你两次找死的机会，刚好应了事不过三这句老话。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜与宋集薪在大骊冲突",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 66,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.496248",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "66-18-0": {
+    "juan_index": 66,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十六章 抬头",
+    "source_sentences": [
+      "宋长镜快意笑道：“别误会，本王绝不会在小事上苛求你，恰恰相反，本王才是你最大的护身符。",
+      "”",
+      "宋长镜凝视着少女，她有一双泛起黄金色彩的诡谲眼眸，他最后说道：“打了那一架后，本王与你，其实已是一条船上的盟友了。",
+      "记住这句话，尤其是将来，在你有资格做出重大抉择的时候，好好想起这句话。",
+      "”",
+      "宋长镜转身离去。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜快意笑道：“别误会，本王绝不会在小事上苛求你，恰恰相反，本王才是你最大的护身符。 宋长镜凝视着少女，她有一双泛起黄金色彩的诡谲眼眸，他最后说道：“打了那一架后，本王与你，其实已是一条船上的盟友了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "宋长镜快意笑道：“别误会，本王绝不会在小事上苛求你，恰恰相反，本王才是你最大的护身符。 宋长镜凝视着少女，她有一双泛起黄金色彩的诡谲眼眸，他最后说道：“打了那一架后，本王与你，其实已是一条船上的盟友了。 宋长镜转身离去。",
+        "background": "",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十六章 抬头 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 18
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1460,7 +2095,22 @@
       "驱车的马夫爽朗大笑，面对这位大骊一人之下万人之上的权贵藩王，竟是一点也不拘谨。",
       "宋长镜戎马生涯二十年，虽说为将做帅，不可能次次大战都身先士卒，更多是在大帐运筹帷幄，但大骊边境硝烟四起，每逢死战，宋长镜必然亲身陷阵。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜登上马车，弯腰掀起帘子，没好气地撂下一句：“打下大隋再说。 宋长镜戎马生涯二十年，虽说为将做帅，不可能次次大战都身先士卒，更多是在大帐运筹帷幄，但大骊边境硝烟四起，每逢死战，宋长镜必然亲身陷阵。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 66,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1471,7 +2121,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           0,
           4,
@@ -1483,13 +2135,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十六章 抬头 · 大骊对话",
+        "name": "第一卷笼中雀 第六十六章 抬头 · 宋长镜在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "马车旁，一名满身沙场粗粝气息的中年车夫，看着大骊藩王身上那件扎眼的雪白狐裘，实在忍不住，开口笑道：“王爷，啥时候换一件新狐裘啊，这都多少年了，王爷穿着不烦，咱们可是看着都烦了。 驱车的马夫爽朗大笑，面对这位大骊一人之下万人之上的权贵藩王，竟是一点也不拘谨。 宋长镜戎马生涯二十年，虽说为将做帅，不可能次次大战都身先士卒，更多是在大帐运筹帷幄，但大骊边境硝烟四起，每逢死战，宋长镜必然亲身陷阵。",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "马车旁，一名满身沙场粗粝气息的中年车夫，看着大骊藩王身上那件扎眼的雪白狐裘，实在忍不住，开口笑道：“王爷，啥时候换一件新狐裘啊，这都多少年了，王爷穿着不烦，咱们可是看着都烦了。 宋长镜登上马车，弯腰掀起帘子，没好气地撂下一句：“打下大隋再说。 驱车的马夫爽朗大笑，面对这位大骊一人之下万人之上的权贵藩王，竟是一点也不拘谨。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段19",
         "sentence_indexes_in_segment": [
@@ -1505,7 +2159,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.475076",
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1526,6 +2180,19 @@
       "宋集薪发现稚圭蜷缩在角落，瑟瑟发抖，他担忧道：“怎么了？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜坐入车厢后，盘腿而坐，眉头紧皱：“那人要本王离开骊珠洞天之后，不用着急赶赴京城，‘不妨在山脚等一等，抬头看一看’，等什么？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 66,
+        "segment_index": 20
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -1565,7 +2232,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1580,14 +2249,13 @@
         "location": "骊珠洞天",
         "participants": [
           "宋集薪",
-          "稚圭"
+          "稚圭",
+          "宋长镜"
         ],
         "description": "宋长镜坐入车厢后，盘腿而坐，眉头紧皱：“那人要本王离开骊珠洞天之后，不用着急赶赴京城，‘不妨在山脚等一等，抬头看一看’，等什么？ 宋集薪和婢女稚圭也进了车厢，马车已经准备动身穿过那道大门。 宋集薪发现稚圭蜷缩在角落，瑟瑟发抖，他担忧道：“怎么了？",
         "background": "",
         "significance": "在骊珠洞天推动宋集薪与稚圭之间的迁移线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十六章 抬头 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1601,34 +2269,8 @@
         "segment_index": 20
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "稚圭"
-        ],
-        "action": "别离",
-        "context": "堂堂藩王，平时的生活起居，从无醇酒美妇，几乎可以用“身无外物”来形容。 宋长镜坐入车厢后，盘腿而坐，眉头紧皱：“那人要本王离开骊珠洞天之后，不用着急赶赴京城，‘不妨在山脚等一等，抬头看一看’，等什么？ 看什么？ ” 宋集薪和婢女稚圭也进了车厢，马车已经准备动身穿过那道大门。 宋集薪发现稚圭蜷缩在角落，瑟瑟发抖，他担忧道：“怎么了？",
-        "result": null,
-        "event_name": "第一卷笼中雀 第六十六章 抬头 · 宋集薪与稚圭在骊珠洞天迁移",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 66,
-        "segment_index": 20
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1706,7 +2348,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1785,7 +2427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1860,7 +2502,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.496248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1941,7 +2583,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.497251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2023,7 +2665,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.497251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

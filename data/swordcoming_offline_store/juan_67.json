@@ -43,6 +43,19 @@
         ],
         "juan_index": 67,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "刘灞桥和陈松风沿着原路返回，在两人能够看到廊桥轮廓的时候，已是黄昏时分，刘灞桥沿着一条小径走到溪畔，蹲下身掬了一捧水洗脸，约莫是嫌弃不够酣畅淋漓，干脆撅起屁股趴在地上，将整个脑袋沉入溪水当中，最后猛然抬头，大呼痛快，转头看着大汗淋漓的陈松风，刘灞桥打趣道：“一介文弱书生，手无缚鸡之力啊。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -100,7 +113,9 @@
         "description": "小镇空间中的标志性地点，承接多场关键相遇和转折。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -116,14 +131,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "郑大风"
+          "郑大风",
+          "陈松风"
         ],
         "description": "在齐静春放下那双筷子之前的两天，小镇出现了一些不好的兆头，铁锁井水位下降得很厉害，槐枝从树干断裂坠落，枝叶皆枯黄，明显不符合春荣秋枯的规矩，还有小镇外横七竖八躺着许多泥塑木雕神像的地方，经常大半夜传来爆竹一般的炸裂声，好事者跑去一看，靠近小镇一带，去年冬肯定还存世的那拨泥菩萨木神仙们，竟然已经消失大半。 从福禄街和桃叶巷动身的牛车马车，就没有断过，在那大幅青石板铺就的街面上，连大半夜都能听到扰人清梦的牛马蹄声。 那些衣衫华美、满身富贵气的外乡人，也开始匆匆忙忙往外走，大多神色不悦，三三两两，经常有人朝小镇学塾方向指指点点，颇为愤懑。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十七章 远行 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -137,21 +151,57 @@
         "segment_index": 1
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.497251",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-2-0": {
+    "juan_index": 67,
+    "segment_index": 2,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "”",
+      "陈松风只是掬水喝了口溪水，嗓子沙哑道：“我当初之所以辛辛苦苦成为练气士，只是希望强身健体，能够多活几年，多看几本书而已，如何比得上你们剑修，何况在这处骊珠小洞天，剑修之外的练气士最吃亏，一不留神，运转气机，就要损耗道行，境界越高，折损越多，不曾想我修为低下，反而成了好事。",
+      "”",
+      "刘灞桥拍了拍肩膀，“不如改换门庭，加入我们风雷园练剑，以后我罩你。",
+      "你想啊，成为一名剑修，御剑凌风，万丈高空，风驰电掣，尤其是雷雨时分，踏剑穿梭其中……”",
+      "陈松风突然笑道：“听说风雷园被雷劈次数最多的剑修，名叫……”"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风只是掬水喝了口溪水，嗓子沙哑道：“我当初之所以辛辛苦苦成为练气士，只是希望强身健体，能够多活几年，多看几本书而已，如何比得上你们剑修，何况在这处骊珠小洞天，剑修之外的练气士最吃亏，一不留神，运转气机，就要损耗道行，境界越高，折损越多，不曾想我修为低下，反而成了好事。 陈松风突然笑道：“听说风雷园被雷劈次数最多的剑修，名叫……”",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 2
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风对话",
         "time": null,
-        "from_roles": [
-          "齐静春"
+        "location": null,
+        "participants": [
+          "陈松风"
         ],
-        "to_roles": [
-          "郑大风"
-        ],
-        "action": "对话",
-        "context": "【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！ 在齐静春放下那双筷子之前的两天，小镇出现了一些不好的兆头，铁锁井水位下降得很厉害，槐枝从树干断裂坠落，枝叶皆枯黄，明显不符合春荣秋枯的规矩，还有小镇外横七竖八躺着许多泥塑木雕神像的地方，经常大半夜传来爆竹一般的炸裂声，好事者跑去一看，靠近小镇一带，去年冬肯定还存世的那拨泥菩萨木神仙们，竟然已经消失大半。 从福禄街和桃叶巷动身的牛车马车，就没有断过，在那大幅青石板铺就的街面上，连大半夜都能听到扰人清梦的牛马蹄声。 那些衣衫华美、满身富贵气的外乡人，也开始匆匆忙忙往外走，大多神色不悦，三三两两，经常有人朝小镇学塾方向指指点点，颇为愤懑。 小镇东门的光棍郑大风没了身影，窑务督造衙署也没有要找人顶替的意思，于是小镇就像没了两颗门牙的人，说话容易漏风。 刘灞桥和陈松风沿着原路返回，在两人能够看到廊桥轮廓的时候，已是黄昏时分，刘灞桥沿着一条小径走到溪畔，蹲下身掬了一捧水洗脸，约莫是嫌弃不够酣畅淋漓，干脆撅起屁股趴在地上，将整个脑袋沉入溪水当中，最后猛然抬头，大呼痛快，转头看着大汗淋漓的陈松风，刘灞桥打趣道：“一介文弱书生，手无缚鸡之力啊。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "小镇",
-        "is_commentary": false,
+        "description": "陈松风只是掬水喝了口溪水，嗓子沙哑道：“我当初之所以辛辛苦苦成为练气士，只是希望强身健体，能够多活几年，多看几本书而已，如何比得上你们剑修，何况在这处骊珠小洞天，剑修之外的练气士最吃亏，一不留神，运转气机，就要损耗道行，境界越高，折损越多，不曾想我修为低下，反而成了好事。 陈松风突然笑道：“听说风雷园被雷劈次数最多的剑修，名叫……” ”",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段2",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -161,10 +211,11 @@
           5
         ],
         "juan_index": 67,
-        "segment_index": 1
+        "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.497251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -184,7 +235,34 @@
       "难怪当初要被那人笑称‘需要压一压气焰’。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风无奈道：“我如何知道这等机要密事？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 67,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "刘灞桥想起那天在衙署正堂爆发的冲突，感慨道：“宋长镜实在是太强了，最可怕的这位大骊藩王还如此年轻，一般的第八、第九境武人，谁不是半百、甲子年龄往上走的，甚至百岁也不算高龄，可是如果我没有记错的化，宋长镜才将近四十岁吧。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 67,
+        "segment_index": 4
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -195,7 +273,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -205,14 +285,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十七章 远行 · 大骊冲突",
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风与宋长镜在大骊冲突",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "刘灞桥想起那天在衙署正堂爆发的冲突，感慨道：“宋长镜实在是太强了，最可怕的这位大骊藩王还如此年轻，一般的第八、第九境武人，谁不是半百、甲子年龄往上走的，甚至百岁也不算高龄，可是如果我没有记错的化，宋长镜才将近四十岁吧。 ” 陈松风无奈道：“我如何知道这等机要密事？",
+        "participants": [
+          "陈松风",
+          "宋长镜"
+        ],
+        "description": "陈松风无奈道：“我如何知道这等机要密事？ 刘灞桥想起那天在衙署正堂爆发的冲突，感慨道：“宋长镜实在是太强了，最可怕的这位大骊藩王还如此年轻，一般的第八、第九境武人，谁不是半百、甲子年龄往上走的，甚至百岁也不算高龄，可是如果我没有记错的化，宋长镜才将近四十岁吧。 ”",
         "background": "",
-        "significance": "对应大骊相关的关键冲突场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动陈松风与宋长镜之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十七章 远行 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -226,8 +311,110 @@
         "segment_index": 4
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "冲突",
+        "context": "” 陈松风无奈道：“我如何知道这等机要密事？ ” 刘灞桥想起那天在衙署正堂爆发的冲突，感慨道：“宋长镜实在是太强了，最可怕的这位大骊藩王还如此年轻，一般的第八、第九境武人，谁不是半百、甲子年龄往上走的，甚至百岁也不算高龄，可是如果我没有记错的化，宋长镜才将近四十岁吧。 难怪当初要被那人笑称‘需要压一压气焰’。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十七章 远行 · 陈松风与宋长镜在大骊冲突",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.497251",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-5-0": {
+    "juan_index": 67,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "陈松风轻声道：“应运而生，得天独厚。",
+      "”",
+      "上五境修士，神龙见首不见尾，很难寻觅。",
+      "但是武人当中的第八、第九境，往往天下皆知，与世俗王朝也离得不远。",
+      "何况武道攀升，靠的就是一场场生死大战，于生死一线，见过生死，方能破开生死，获得一种类似佛家“自在”、道家“清净”的超然心境。",
+      "除了两名大宗师之间的切磋，第八、第九两境武人，最喜欢欺负中五境里的顶尖练气士，尤其是宋长镜这样的第九境最强者，几乎可以说是上五境之下无敌手，也就只有练气士当中的剑修能够与之一战，但也只能争取让自己输得不那么难看，赢得一个虽败犹荣的说法。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风轻声道：“应运而生，得天独厚。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 67,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "除了两名大宗师之间的切磋，第八、第九两境武人，最喜欢欺负中五境里的顶尖练气士，尤其是宋长镜这样的第九境最强者，几乎可以说是上五境之下无敌手，也就只有练气士当中的剑修能够与之一战，但也只能争取让自己输得不那么难看，赢得一个虽败犹荣的说法。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风与宋长镜剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风",
+          "宋长镜"
+        ],
+        "description": "陈松风轻声道：“应运而生，得天独厚。 除了两名大宗师之间的切磋，第八、第九两境武人，最喜欢欺负中五境里的顶尖练气士，尤其是宋长镜这样的第九境最强者，几乎可以说是上五境之下无敌手，也就只有练气士当中的剑修能够与之一战，但也只能争取让自己输得不那么难看，赢得一个虽败犹荣的说法。 ”",
+        "background": "",
+        "significance": "推动陈松风与宋长镜之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 5
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.497251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -247,7 +434,36 @@
       "陈松风呢喃道：“大骊气象，已是时来天地皆同力。",
       "因此我陈氏要扶龙，不可与人争着附龙而已。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "刘灞桥还沉浸在自己的思绪当中，“宋长镜要我出了小镇后去，凭自己本事取走符剑，要不要给风雷园打声招呼呢，让他们早早摆好庆功宴？ 陈松风哭笑不得，望着深不过膝盖的潺潺流水，想到宋长镜以及这位藩王身边的风流少年，陈松风隐隐约约感受到一种大势凝聚的迹象，决定这趟返回龙尾郡陈氏祖宅后，必须说服家族押注在大骊王朝，哪怕没办法孤注一掷，也要让陈氏子弟趁早融入大骊庙堂。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 67,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风哭笑不得，望着深不过膝盖的潺潺流水，想到宋长镜以及这位藩王身边的风流少年，陈松风隐隐约约感受到一种大势凝聚的迹象，决定这趟返回龙尾郡陈氏祖宅后，必须说服家族押注在大骊王朝，哪怕没办法孤注一掷，也要让陈氏子弟趁早融入大骊庙堂。 陈松风呢喃道：“大骊气象，已是时来天地皆同力。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 67,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -256,7 +472,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -272,7 +490,10 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风",
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           3,
           4
@@ -288,7 +509,9 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜",
+          "陈松风"
         ],
         "description": "刘灞桥还沉浸在自己的思绪当中，“宋长镜要我出了小镇后去，凭自己本事取走符剑，要不要给风雷园打声招呼呢，让他们早早摆好庆功宴？ 陈松风哭笑不得，望着深不过膝盖的潺潺流水，想到宋长镜以及这位藩王身边的风流少年，陈松风隐隐约约感受到一种大势凝聚的迹象，决定这趟返回龙尾郡陈氏祖宅后，必须说服家族押注在大骊王朝，哪怕没办法孤注一掷，也要让陈氏子弟趁早融入大骊庙堂。 陈松风呢喃道：“大骊气象，已是时来天地皆同力。",
         "background": "",
@@ -308,7 +531,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.476080",
+    "extracted_at": "2026-03-25T01:03:30.497251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -328,7 +551,21 @@
       "”",
       "刘灞桥跟着起身，大大咧咧道：“萍水相逢，聚散不定，天晓得以后还能不能再见到。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风站起身，甩了甩手，笑道：“你好像跟那泥瓶巷少年很投缘啊。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 67,
+        "segment_index": 7
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -337,7 +574,9 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -347,13 +586,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十七章 远行 · 泥瓶巷对话",
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
+        "participants": [
+          "陈松风"
+        ],
         "description": "陈松风站起身，甩了甩手，笑道：“你好像跟那泥瓶巷少年很投缘啊。 ” 刘灞桥问道：“你嘀嘀咕咕个什么？",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键对话场景。",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十七章 远行 · 段7",
         "sentence_indexes_in_segment": [
@@ -369,7 +610,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.498255",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-8-0": {
+    "juan_index": 67,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "”",
+      "两人一起踩着溪畔春草走上岸，陈松风问道：“听说南涧国辖境内的那块福地，要在今年冬对外开放，准许数十人进入，你当下不是仍然无法破开瓶颈吗，要不要下去碰碰运气？",
+      "”",
+      "刘灞桥冷笑道：“坚决不去，去蚂蚁堆里作威作福，老子臊得慌。",
+      "”",
+      "陈松风摇头道：“我家柳先生曾经说过，心境如镜，越擦越亮，故而心境修行，能够在道祖莲台上坐忘，当然大有裨益，可是偶尔在小泥塘里摸爬滚打，未必就没有好处。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "两人一起踩着溪畔春草走上岸，陈松风问道：“听说南涧国辖境内的那块福地，要在今年冬对外开放，准许数十人进入，你当下不是仍然无法破开瓶颈吗，要不要下去碰碰运气？ 陈松风摇头道：“我家柳先生曾经说过，心境如镜，越擦越亮，故而心境修行，能够在道祖莲台上坐忘，当然大有裨益，可是偶尔在小泥塘里摸爬滚打，未必就没有好处。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "两人一起踩着溪畔春草走上岸，陈松风问道：“听说南涧国辖境内的那块福地，要在今年冬对外开放，准许数十人进入，你当下不是仍然无法破开瓶颈吗，要不要下去碰碰运气？ 陈松风摇头道：“我家柳先生曾经说过，心境如镜，越擦越亮，故而心境修行，能够在道祖莲台上坐忘，当然大有裨益，可是偶尔在小泥塘里摸爬滚打，未必就没有好处。 ”",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 8
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.498255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -389,7 +693,21 @@
       "刘灞桥双手抱住后脑勺，满脸不屑道：“说句难听的话，如今咱们东宝瓶洲那三块福地，谁不心知肚明，早就变味了，已经成为那些个世俗王朝的豪阀子弟，花钱下去找乐子的地儿，难怪被说成是仙家治下的青楼勾栏之地，乌烟瘴气。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "不等陈松风说完，刘灞桥已经嚷嚷道：“我这人胜负心太重，一旦去了灵气稀薄的福地，若是无法靠自己的本事破开禁忌，重返家乡，那我肯定会留下心结，那就会得不偿失，弊大于利。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 67,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -408,13 +726,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十七章 远行 · 宝瓶洲剧情推进",
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "刘灞桥双手抱住后脑勺，满脸不屑道：“说句难听的话，如今咱们东宝瓶洲那三块福地，谁不心知肚明，早就变味了，已经成为那些个世俗王朝的豪阀子弟，花钱下去找乐子的地儿，难怪被说成是仙家治下的青楼勾栏之地，乌烟瘴气。 去福地当个抛却前身、忘记前生的谪仙人，享福也好，受难也罢，多多少少……” 不等陈松风说完，刘灞桥已经嚷嚷道：“我这人胜负心太重，一旦去了灵气稀薄的福地，若是无法靠自己的本事破开禁忌，重返家乡，那我肯定会留下心结，那就会得不偿失，弊大于利。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "不等陈松风说完，刘灞桥已经嚷嚷道：“我这人胜负心太重，一旦去了灵气稀薄的福地，若是无法靠自己的本事破开禁忌，重返家乡，那我肯定会留下心结，那就会得不偿失，弊大于利。 刘灞桥双手抱住后脑勺，满脸不屑道：“说句难听的话，如今咱们东宝瓶洲那三块福地，谁不心知肚明，早就变味了，已经成为那些个世俗王朝的豪阀子弟，花钱下去找乐子的地儿，难怪被说成是仙家治下的青楼勾栏之地，乌烟瘴气。 去福地当个抛却前身、忘记前生的谪仙人，享福也好，受难也罢，多多少少……”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十七章 远行 · 段9",
         "sentence_indexes_in_segment": [
@@ -430,7 +750,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.498255",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-10-0": {
+    "juan_index": 67,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "陈松风笑道：“也不可一概而论，不说我们这些外乡人，只说那些当地人的话，不乏惊才绝艳之辈。",
+      "”",
+      "刘灞桥白眼道：“一座福地，那么多人口，每年能有几人脱颖而出？",
+      "一个都未必有吧，这些成功来到我们这里的，百年当中，最终被咱们记住名字，又能有几个？",
+      "屈指可数吧。",
+      "所以我就不明白，这些个福地为何如此受人推崇，还有人扬言，只要拥有一块福地的一部分统辖权，好处不比拥有一位上五境修士来得少，疯了吧。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风笑道：“也不可一概而论，不说我们这些外乡人，只说那些当地人的话，不乏惊才绝艳之辈。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 67,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风笑道：“也不可一概而论，不说我们这些外乡人，只说那些当地人的话，不乏惊才绝艳之辈。 ” 刘灞桥白眼道：“一座福地，那么多人口，每年能有几人脱颖而出？",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.498255",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-11-0": {
+    "juan_index": 67,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "”",
+      "陈松风笑道：“福地收益，细水流长啊，偶尔还能蹦出一两个惊喜，最关键是所有的好处，属于坐享其成，谁不乐意从其中分一杯羹？",
+      "”",
+      "洞天走出去的人，命多半好。",
+      "福地升上来的人，命尤其硬。",
+      "刘灞桥问道：“你好像不太喜欢那个姓陈的少年？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风笑道：“福地收益，细水流长啊，偶尔还能蹦出一两个惊喜，最关键是所有的好处，属于坐享其成，谁不乐意从其中分一杯羹？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 67,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风笑道：“福地收益，细水流长啊，偶尔还能蹦出一两个惊喜，最关键是所有的好处，属于坐享其成，谁不乐意从其中分一杯羹？ ” ”",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.498255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -450,7 +894,21 @@
       "在龙尾郡陈氏眼中，我们和小镇上的陈姓之人，虽说远祖相同，可那都是多少年前的老黄历了，谈不上丁点儿情分，但是所有龙尾郡陈氏的对手，岂会如此看待，在这种情况下，如果泥瓶巷少年干脆也成了大户人家的下人，也就罢了，当时当世一场大笑过后，很难多年持续成为一桩谈资，可这个少年的咬牙坚持，孤零零的存在，就显得格外引人注目，外边许多人甚至在打赌，小镇这一支这一房这一个陈氏子弟，何时不再是那个‘唯一’。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风想了想，选择袒露心扉，“如果出于个人，我对少年没有任何意见。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 67,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -489,9 +947,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
-        "description": "骊珠小洞天的陈氏子弟，本就是本洲的一个笑话，小镇之内，一个人数不算少的姓氏，仅剩一人，其余全部成了别家奴婢，沦为笑谈，实属正常。 在龙尾郡陈氏眼中，我们和小镇上的陈姓之人，虽说远祖相同，可那都是多少年前的老黄历了，谈不上丁点儿情分，但是所有龙尾郡陈氏的对手，岂会如此看待，在这种情况下，如果泥瓶巷少年干脆也成了大户人家的下人，也就罢了，当时当世一场大笑过后，很难多年持续成为一桩谈资，可这个少年的咬牙坚持，孤零零的存在，就显得格外引人注目，外边许多人甚至在打赌，小镇这一支这一房这一个陈氏子弟，何时不再是那个‘唯一’。 ”",
+        "description": "陈松风想了想，选择袒露心扉，“如果出于个人，我对少年没有任何意见。 骊珠小洞天的陈氏子弟，本就是本洲的一个笑话，小镇之内，一个人数不算少的姓氏，仅剩一人，其余全部成了别家奴婢，沦为笑谈，实属正常。 在龙尾郡陈氏眼中，我们和小镇上的陈姓之人，虽说远祖相同，可那都是多少年前的老黄历了，谈不上丁点儿情分，但是所有龙尾郡陈氏的对手，岂会如此看待，在这种情况下，如果泥瓶巷少年干脆也成了大户人家的下人，也就罢了，当时当世一场大笑过后，很难多年持续成为一桩谈资，可这个少年的咬牙坚持，孤零零的存在，就显得格外引人注目，外边许多人甚至在打赌，小镇这一支这一房这一个陈氏子弟，何时不再是那个‘唯一’。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -509,7 +968,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.498255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -529,7 +988,21 @@
       "刘灞桥摇头道：“不是道理很难说清楚，事实上，本来就是你们没道理，只是因为那个少年太弱小，所以才让你们能够显得理直气壮，加上你们龙尾郡陈氏的声势，比少年大许多，可是比起身边那些看笑话的人，又很一般，所以处境愈发尴尬，到最后，不愿意承认自己无能，只好反过来暗示自己，认为那个少年才是罪魁祸首。",
       "我相信如果不是这座骊珠洞天不容易进入，那个让龙尾郡陈氏难堪的陋巷少年，早就被龙尾郡陈氏子弟，悄悄找个由头做掉，或是某个附庸家族的家伙，杀之邀功了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风笑道：“当然，少年何错之有，可是世上终究有些事情，很难说清楚道理的。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 67,
+        "segment_index": 13
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -548,13 +1021,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十七章 远行 · 骊珠洞天对话",
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
-        "description": "我相信如果不是这座骊珠洞天不容易进入，那个让龙尾郡陈氏难堪的陋巷少年，早就被龙尾郡陈氏子弟，悄悄找个由头做掉，或是某个附庸家族的家伙，杀之邀功了。 刘灞桥皱眉道：“这又不是那少年的错。 ”",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风笑道：“当然，少年何错之有，可是世上终究有些事情，很难说清楚道理的。 我相信如果不是这座骊珠洞天不容易进入，那个让龙尾郡陈氏难堪的陋巷少年，早就被龙尾郡陈氏子弟，悄悄找个由头做掉，或是某个附庸家族的家伙，杀之邀功了。 刘灞桥皱眉道：“这又不是那少年的错。",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键对话场景。",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十七章 远行 · 段13",
         "sentence_indexes_in_segment": [
@@ -570,7 +1045,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.498255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -590,7 +1065,22 @@
       "“就说正阳山那头搬山猿，自己拿不到剑经，害怕我风雷园拿到，就要一拳打死那刘姓少年，你觉得这样讲理吗？",
       "我觉得这样很不讲理。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风脸色涨红，一时间竟是有几分恼羞成怒。 刘灞桥抱着后脑勺，扬起脑袋望向天空，仍是优哉游哉的慵懒神色，“我知道你陈松风不是这样的人，可惜像你这样的人，到底少，不像你的人，终究多。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 67,
+        "segment_index": 14
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -609,13 +1099,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十七章 远行 · 正阳山剧情推进",
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风在正阳山剧情推进",
         "time": null,
         "location": "正阳山",
-        "participants": [],
-        "description": "“就说正阳山那头搬山猿，自己拿不到剑经，害怕我风雷园拿到，就要一拳打死那刘姓少年，你觉得这样讲理吗？ ” 陈松风脸色涨红，一时间竟是有几分恼羞成怒。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风脸色涨红，一时间竟是有几分恼羞成怒。 刘灞桥抱着后脑勺，扬起脑袋望向天空，仍是优哉游哉的慵懒神色，“我知道你陈松风不是这样的人，可惜像你这样的人，到底少，不像你的人，终究多。 “就说正阳山那头搬山猿，自己拿不到剑经，害怕我风雷园拿到，就要一拳打死那刘姓少年，你觉得这样讲理吗？",
         "background": "",
-        "significance": "对应正阳山相关的关键剧情推进场景。",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十七章 远行 · 段14",
         "sentence_indexes_in_segment": [
@@ -631,7 +1123,194 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.498255",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-15-0": {
+    "juan_index": 67,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "可是有用吗？",
+      "没用啊，我连正面挑衅老猿也不敢。",
+      "”",
+      "刘灞桥叹了口气，松开一只手，拍了拍自己的肚子，自嘲道：“我呢，就是口拙嘴笨，拳头也不够硬，剑还不够快，要不然我这肚子里，真是积攒了一大堆道理，想要跟这个世道，好好说上一说。",
+      "”",
+      "陈松风吐出一口气，“所以你觉得那个少年不错？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风吐出一口气，“所以你觉得那个少年不错？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风吐出一口气，“所以你觉得那个少年不错？ 可是有用吗？ 没用啊，我连正面挑衅老猿也不敢。",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 15
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.498255",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-16-0": {
+    "juan_index": 67,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "”",
+      "刘灞桥转头望向大日坠落的西边高山，“觉得不错？",
+      "怎么可能。",
+      "”",
+      "陈松风有些疑惑。",
+      "刘灞桥笑道：“我一看到那个少年，就自惭形秽。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风有些疑惑。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 67,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风有些疑惑。 ” 刘灞桥转头望向大日坠落的西边高山，“觉得不错？",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.499258",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "67-17-0": {
+    "juan_index": 67,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十七章 远行",
+    "source_sentences": [
+      "”",
+      "陈松风觉得匪夷所思，摇头笑道：“何至于此？",
+      "”",
+      "刘灞桥把到了嘴巴的一些话咽回去，省得伤感情。",
+      "陈松风这个家伙，虽然没那么合胃口对脾气，可是比起一般的读书人，已经好上许多，自己就知足吧。",
+      "话痨刘灞桥就这么一路沉默下去。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风觉得匪夷所思，摇头笑道：“何至于此？ 陈松风这个家伙，虽然没那么合胃口对脾气，可是比起一般的读书人，已经好上许多，自己就知足吧。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 67,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十七章 远行 · 陈松风对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风觉得匪夷所思，摇头笑道：“何至于此？ 陈松风这个家伙，虽然没那么合胃口对脾气，可是比起一般的读书人，已经好上许多，自己就知足吧。 ”",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十七章 远行 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 67,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -746,7 +1425,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -824,7 +1503,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -938,7 +1617,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.477083",
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1039,7 +1718,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1101,7 +1780,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1202,7 +1881,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.499258",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1306,7 +1985,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.500262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1411,7 +2090,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.500262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1489,7 +2168,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.500262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1629,7 +2308,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.500262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1721,7 +2400,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.500262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1826,7 +2505,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.478087",
+    "extracted_at": "2026-03-25T01:03:30.500262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1904,7 +2583,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2012,7 +2691,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2117,7 +2796,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2195,7 +2874,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2216,6 +2895,19 @@
       "在蒙学散去之后，垂垂老矣的扫地老人，沐浴更衣后，来到齐先生书房外，席地而坐。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "小镇最西边那户人家，李二的儿子李槐，也在这座乡塾求学，他爹娘带着姐姐离开了小镇，唯独留下了他，李槐非但没有哭闹，反而高兴坏了，终于不用受人管束了，只是到了晚上，这个寄住在舅舅家的孩子，做了噩梦醒来后，就开始撕心裂肺嚎叫，结果被惊醒后的舅舅舅妈联手镇压，一个使用鸡毛掸子，一个使用扫帚。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 67,
+        "segment_index": 34
+      },
       {
         "entity_type": "person",
         "name": "李槐",
@@ -2255,6 +2947,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "李槐"
         ],
         "sentence_indexes_in_segment": [
@@ -2309,17 +3002,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "齐静春",
+          "顾璨",
           "陈平安",
+          "李二",
           "李槐"
         ],
         "description": "小镇学塾仅剩下五个蒙童，出身高低不同，年龄大小各异，其中以一个身穿大红棉袄的小女孩，虽然出身于福禄街，但是她在学塾里从不欺负人，不过也不喜欢凑热闹，从来只喜欢自己胡乱逛荡。 小镇最西边那户人家，李二的儿子李槐，也在这座乡塾求学，他爹娘带着姐姐离开了小镇，唯独留下了他，李槐非但没有哭闹，反而高兴坏了，终于不用受人管束了，只是到了晚上，这个寄住在舅舅家的孩子，做了噩梦醒来后，就开始撕心裂肺嚎叫，结果被惊醒后的舅舅舅妈联手镇压，一个使用鸡毛掸子，一个使用扫帚。 其余三人，分别来自桃叶巷，骑龙巷，杏花巷，两男一女。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0
         ],
@@ -2340,30 +3034,25 @@
       {
         "time": null,
         "from_roles": [
-          "李槐"
+          "李二"
         ],
         "to_roles": [
-          "齐静春"
+          "李槐"
         ],
         "action": "别离",
-        "context": "小镇学塾仅剩下五个蒙童，出身高低不同，年龄大小各异，其中以一个身穿大红棉袄的小女孩，虽然出身于福禄街，但是她在学塾里从不欺负人，不过也不喜欢凑热闹，从来只喜欢自己胡乱逛荡。 小镇最西边那户人家，李二的儿子李槐，也在这座乡塾求学，他爹娘带着姐姐离开了小镇，唯独留下了他，李槐非但没有哭闹，反而高兴坏了，终于不用受人管束了，只是到了晚上，这个寄住在舅舅家的孩子，做了噩梦醒来后，就开始撕心裂肺嚎叫，结果被惊醒后的舅舅舅妈联手镇压，一个使用鸡毛掸子，一个使用扫帚。 其余三人，分别来自桃叶巷，骑龙巷，杏花巷，两男一女。 齐先生在下课后，送给他们一人一幅字，要他们妥善保管，仔细临摹，说是三天之后他要检查课业。 那是一个齐字。 在蒙学散去之后，垂垂老矣的扫地老人，沐浴更衣后，来到齐先生书房外，席地而坐。",
+        "context": "小镇最西边那户人家，李二的儿子李槐，也在这座乡塾求学，他爹娘带着姐姐离开了小镇，唯独留下了他，李槐非但没有哭闹，反而高兴坏了，终于不用受人管束了，只是到了晚上，这个寄住在舅舅家的孩子，做了噩梦醒来后，就开始撕心裂肺嚎叫，结果被惊醒后的舅舅舅妈联手镇压，一个使用鸡毛掸子，一个使用扫帚。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
         ],
         "juan_index": 67,
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2430,7 +3119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2513,7 +3202,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2578,7 +3267,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2643,7 +3332,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.479090",
+    "extracted_at": "2026-03-25T01:03:30.501265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2708,7 +3397,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.480094",
+    "extracted_at": "2026-03-25T01:03:30.502269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2789,7 +3478,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.480094",
+    "extracted_at": "2026-03-25T01:03:30.502269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2860,17 +3549,17 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
           "陈对"
         ],
         "description": "两辆马车在天远远未亮的时分，就从福禄街出发，早早离开小镇。 他只好厚着脸皮去问，问衙署名叫陈对的那拨客人，什么时候才从福禄街出发。 门房笑着说他们啊，早就离开小镇了。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十七章 远行 · 段41",
         "sentence_indexes_in_segment": [
@@ -2886,7 +3575,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.480094",
+    "extracted_at": "2026-03-25T01:03:30.502269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2965,7 +3654,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.480094",
+    "extracted_at": "2026-03-25T01:03:30.502269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3025,7 +3714,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.480094",
+    "extracted_at": "2026-03-25T01:03:30.502269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

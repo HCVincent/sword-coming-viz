@@ -100,7 +100,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.543294",
+    "extracted_at": "2026-03-25T01:03:30.578089",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -162,7 +162,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.578089",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -257,7 +257,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.579093",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -349,7 +349,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.579093",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -476,7 +476,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.579093",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -538,7 +538,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.579093",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -576,6 +576,19 @@
       },
       {
         "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "这股玄之又玄的气流，一直没有给陈平安带来什么不适或是疼痛，反而让少年有一种大冬天晒太阳的暖洋洋感觉，陈平安对于身体五脏六腑的感知，很小就极其敏锐，所以对于自己哪里出了问题，很快就能察觉到，云霞山蔡金简当初在泥瓶巷说他活的不长久了，她可能觉得陋巷少年只当她是开玩笑，其实陈平安当场就确定了她的说法无误。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 87,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "李宝瓶晃荡着那双小腿，双臂环胸，“据说习武的根本是散气二字，霸道得很，跟练气士的养气炼气完全不同，后者是多多益善，锱铢必较，习武不一样，当你找到最初的那股气后，就像是要一座座关隘打杀过去，将原本栖居在窍穴气府内的气息，全部消除殆尽，转化换成最早的那一口气，最后全身上下，心意一动，一气呵成，转瞬之间，气流运转百里数百里，第九境甚至可以长达千里之远，一下子就调动起全身潜力，一员大将如臂指使千军万马，威势之大，可想而知，丝毫不比练气士御气凌空而行来得差。",
@@ -597,7 +610,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -608,19 +622,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十七章 小夫子 · 陈平安与李宝瓶在泥瓶巷冲突",
+        "name": "第二卷山水郎 第八十七章 小夫子 · 陈平安与蔡金简在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
+          "蔡金简",
           "李宝瓶"
         ],
         "description": "陈平安陷入沉思，自己能够感受到那股气的存在，身体内就像有一条无家可归的小火龙，胡乱游走于一座大火炉，之前这条火龙有点类似无头苍蝇，随处乱撞，碰壁之后就转头，如今它的活动范围越来越大，但是最终都会返回腹部的那些气府附近，徘徊不定，像是出门玩耍的稚童，疲惫之后就想要回家，只是暂时尚未找到真正的家门口。 这股玄之又玄的气流，一直没有给陈平安带来什么不适或是疼痛，反而让少年有一种大冬天晒太阳的暖洋洋感觉，陈平安对于身体五脏六腑的感知，很小就极其敏锐，所以对于自己哪里出了问题，很快就能察觉到，云霞山蔡金简当初在泥瓶巷说他活的不长久了，她可能觉得陋巷少年只当她是开玩笑，其实陈平安当场就确定了她的说法无误。 既然察觉不到任何不妥，陈平安就对那股气流听之任之，内心深处还有一丝好奇，想要看一看它到底会选择哪座窍穴作为它的宅邸。",
         "background": "",
-        "significance": "在泥瓶巷推动陈平安与李宝瓶之间的冲突线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在泥瓶巷推动陈平安与蔡金简之间的剧情推进线。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第八十七章 小夫子 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -634,34 +647,8 @@
         "segment_index": 7
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "李宝瓶"
-        ],
-        "action": "冲突",
-        "context": "” 陈平安陷入沉思，自己能够感受到那股气的存在，身体内就像有一条无家可归的小火龙，胡乱游走于一座大火炉，之前这条火龙有点类似无头苍蝇，随处乱撞，碰壁之后就转头，如今它的活动范围越来越大，但是最终都会返回腹部的那些气府附近，徘徊不定，像是出门玩耍的稚童，疲惫之后就想要回家，只是暂时尚未找到真正的家门口。 这股玄之又玄的气流，一直没有给陈平安带来什么不适或是疼痛，反而让少年有一种大冬天晒太阳的暖洋洋感觉，陈平安对于身体五脏六腑的感知，很小就极其敏锐，所以对于自己哪里出了问题，很快就能察觉到，云霞山蔡金简当初在泥瓶巷说他活的不长久了，她可能觉得陋巷少年只当她是开玩笑，其实陈平安当场就确定了她的说法无误。 既然察觉不到任何不妥，陈平安就对那股气流听之任之，内心深处还有一丝好奇，想要看一看它到底会选择哪座窍穴作为它的宅邸。 李宝瓶晃荡着那双小腿，双臂环胸，“据说习武的根本是散气二字，霸道得很，跟练气士的养气炼气完全不同，后者是多多益善，锱铢必较，习武不一样，当你找到最初的那股气后，就像是要一座座关隘打杀过去，将原本栖居在窍穴气府内的气息，全部消除殆尽，转化换成最早的那一口气，最后全身上下，心意一动，一气呵成，转瞬之间，气流运转百里数百里，第九境甚至可以长达千里之远，一下子就调动起全身潜力，一员大将如臂指使千军万马，威势之大，可想而知，丝毫不比练气士御气凌空而行来得差。 ”",
-        "result": null,
-        "event_name": "第二卷山水郎 第八十七章 小夫子 · 陈平安与李宝瓶在泥瓶巷冲突",
-        "location": "泥瓶巷",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 87,
-        "segment_index": 7
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.580096",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -775,7 +762,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.580096",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -823,6 +810,19 @@
         ],
         "juan_index": 87,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "李宝瓶突然欲言又止，似乎想起了一件事，可又有些难以启齿，有点做贼心虚，最后决定还是坦诚相见，实在是不愿意欺骗她的小师叔，小姑娘哭丧着脸道歉道：“朱鹿姐姐和她爹朱河叔叔，本来是要跟我们一起去往大隋南方边境的，可是我怕小师叔你不喜欢他们，就骗他们去小镇东门那边等我们。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 87,
+        "segment_index": 9
       }
     ],
     "locations": [
@@ -835,7 +835,8 @@
         "coordinates": null,
         "related_entities": [
           "李宝瓶",
-          "朱鹿"
+          "朱鹿",
+          "朱河"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -859,7 +860,9 @@
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第八十七章 小夫子 · 段9",
         "sentence_indexes_in_segment": [
@@ -894,9 +897,49 @@
         ],
         "juan_index": 87,
         "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "会见",
+        "context": "李宝瓶突然欲言又止，似乎想起了一件事，可又有些难以启齿，有点做贼心虚，最后决定还是坦诚相见，实在是不愿意欺骗她的小师叔，小姑娘哭丧着脸道歉道：“朱鹿姐姐和她爹朱河叔叔，本来是要跟我们一起去往大隋南方边境的，可是我怕小师叔你不喜欢他们，就骗他们去小镇东门那边等我们。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 87,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱鹿"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "会见",
+        "context": "李宝瓶突然欲言又止，似乎想起了一件事，可又有些难以启齿，有点做贼心虚，最后决定还是坦诚相见，实在是不愿意欺骗她的小师叔，小姑娘哭丧着脸道歉道：“朱鹿姐姐和她爹朱河叔叔，本来是要跟我们一起去往大隋南方边境的，可是我怕小师叔你不喜欢他们，就骗他们去小镇东门那边等我们。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 87,
+        "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.580096",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -917,6 +960,20 @@
       "要怎么练出名堂来，估计得等我自己读得懂那部拳谱再说。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "如果朱河叔叔也在的话，他就能教小师叔练拳了，因为朱鹿姐姐从小就跟着她爹一起习武，老祖宗私下对我说过，虽然朱河练武天赋有限，但是教人习武是一把好手，称得上‘明师’这个说法，哪怕丢在大骊京城那些个‘府字头’的豪门大宅里，也可以成为座上宾。 现在朱河叔叔不见了，朱鹿姐姐也不见了……”",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 87,
+        "segment_index": 10
+      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -956,6 +1013,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "朱河",
           "朱鹿"
         ],
         "sentence_indexes_in_segment": [
@@ -967,16 +1025,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十七章 小夫子 · 朱鹿与陈平安在大骊同行",
+        "name": "第二卷山水郎 第八十七章 小夫子 · 朱河与朱鹿在大骊同行",
         "time": null,
         "location": "大骊",
         "participants": [
-          "朱鹿",
-          "陈平安"
+          "朱河",
+          "朱鹿"
         ],
         "description": "如果朱河叔叔也在的话，他就能教小师叔练拳了，因为朱鹿姐姐从小就跟着她爹一起习武，老祖宗私下对我说过，虽然朱河练武天赋有限，但是教人习武是一把好手，称得上‘明师’这个说法，哪怕丢在大骊京城那些个‘府字头’的豪门大宅里，也可以成为座上宾。 现在朱河叔叔不见了，朱鹿姐姐也不见了……” 陈平安赶紧安慰道：“没事没事，我练拳虽然没有什么师父，只有一部拳谱。",
         "background": "",
-        "significance": "在大骊推动朱鹿与陈平安之间的同行线。",
+        "significance": "在大骊推动朱河与朱鹿之间的同行线。",
         "related_action_indices": [
           0
         ],
@@ -997,30 +1055,25 @@
       {
         "time": null,
         "from_roles": [
-          "朱鹿"
+          "朱河"
         ],
         "to_roles": [
-          "陈平安"
+          "朱鹿"
         ],
         "action": "同行",
-        "context": "如果朱河叔叔也在的话，他就能教小师叔练拳了，因为朱鹿姐姐从小就跟着她爹一起习武，老祖宗私下对我说过，虽然朱河练武天赋有限，但是教人习武是一把好手，称得上‘明师’这个说法，哪怕丢在大骊京城那些个‘府字头’的豪门大宅里，也可以成为座上宾。 现在朱河叔叔不见了，朱鹿姐姐也不见了……” 陈平安赶紧安慰道：“没事没事，我练拳虽然没有什么师父，只有一部拳谱。 如今连拳谱上的字也没有认全，更不敢瞎练了。 只练习一个走桩一个站桩，不过已经确定能够滋养体魄，不会伤身。 要怎么练出名堂来，估计得等我自己读得懂那部拳谱再说。",
+        "context": "如果朱河叔叔也在的话，他就能教小师叔练拳了，因为朱鹿姐姐从小就跟着她爹一起习武，老祖宗私下对我说过，虽然朱河练武天赋有限，但是教人习武是一把好手，称得上‘明师’这个说法，哪怕丢在大骊京城那些个‘府字头’的豪门大宅里，也可以成为座上宾。",
         "result": null,
-        "event_name": "第二卷山水郎 第八十七章 小夫子 · 朱鹿与陈平安在大骊同行",
+        "event_name": "第二卷山水郎 第八十七章 小夫子 · 朱河与朱鹿在大骊同行",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
         ],
         "juan_index": 87,
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.544297",
+    "extracted_at": "2026-03-25T01:03:30.581100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1082,7 +1135,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.581100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1187,7 +1240,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.581100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1250,7 +1303,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.581100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1286,6 +1339,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "李宝瓶轻声道：“朱河叔叔经常告诉朱鹿姐姐，练拳不练真，三年鬼上身。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 87,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "李宝瓶轻声道：“朱河叔叔经常告诉朱鹿姐姐，练拳不练真，三年鬼上身。 朱鹿姐姐曾经有两次差点熬不过去，第一次过后，她整个人得有小半年没缓过来，那段时间像是个病秧子，平时连水桶也提不起来，第二次更惨，我听到动静后，就搬了一根小板凳过去，偷偷捅破窗户纸，结果看到朱鹿姐姐在床上痛得打滚，旁人按都按不住，最后她指甲盖都翻开了，鲜血淋漓，很可怜的，最后是家里请了杨家铺子的掌柜送药来，好像才不痛了，逐渐安稳下来。",
@@ -1308,7 +1374,8 @@
         "location": null,
         "participants": [
           "朱鹿",
-          "李宝瓶"
+          "李宝瓶",
+          "朱河"
         ],
         "description": "李宝瓶轻声道：“朱河叔叔经常告诉朱鹿姐姐，练拳不练真，三年鬼上身。 朱鹿姐姐曾经有两次差点熬不过去，第一次过后，她整个人得有小半年没缓过来，那段时间像是个病秧子，平时连水桶也提不起来，第二次更惨，我听到动静后，就搬了一根小板凳过去，偷偷捅破窗户纸，结果看到朱鹿姐姐在床上痛得打滚，旁人按都按不住，最后她指甲盖都翻开了，鲜血淋漓，很可怜的，最后是家里请了杨家铺子的掌柜送药来，好像才不痛了，逐渐安稳下来。 我事后问起，老祖宗只说小命是靠药材保住了，第八境的希望却丢了，以后就不用太过栽培朱鹿姐姐了，否则反而是害她，如果运气好到洪福齐天的地步，就可以进入第七境，运气不好，第六境都悬。",
         "background": "",
@@ -1328,7 +1395,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.581100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1433,7 +1500,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1514,7 +1581,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1576,7 +1643,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1638,7 +1705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1742,7 +1809,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.545301",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1865,7 +1932,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.546304",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1972,7 +2039,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.546304",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2051,7 +2118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.546304",
+    "extracted_at": "2026-03-25T01:03:30.582103",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2112,7 +2179,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.546304",
+    "extracted_at": "2026-03-25T01:03:30.583107",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2213,7 +2280,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.546304",
+    "extracted_at": "2026-03-25T01:03:30.583107",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2323,7 +2390,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.546304",
+    "extracted_at": "2026-03-25T01:03:30.583107",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

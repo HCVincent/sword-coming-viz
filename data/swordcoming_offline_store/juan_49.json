@@ -54,7 +54,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -74,7 +74,21 @@
       "那名悬佩虎符的兵家宗师，因为身份特殊的缘故，被此方天地“青睐”，故而虽然修为极为不俗，但是影响并不明显。",
       "此时此刻，面对一个异于寻常小镇百姓的矫健少年，老猿竟然找到了一丝当年浴血奋战的快意。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "如今老猿能算是藩王宋长镜之外，被此地天道压制最多的角色之一。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 49,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -129,7 +143,8 @@
         "location": "正阳山",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
         "description": "若说是老人是耍诈，还真冤枉了这头正阳山护山猿，千年修行，千丈真身，其身法手段，便是赞誉为顶天立地也不为过。 在搬山猿修行路上的漫长岁月里，尤其是在正阳山开山立派的早期，弱小山门，四面树敌，虎狼环视，正阳山的开山鼻祖战死之后，作为头号大将，老猿什么样的死战血战没有经历过？ 今日这场小巷中屋顶上的“小打小闹”，跟以前的厮杀，其实有着异曲同工之妙，在于当年那些荡气回肠的大战之中，顶尖修士和大炼气士们，也是以法宝重器遥遥牵制老猿，根本不敢正面搏杀，如人间俗世沙场上来去如风的大羌轻骑，绝对不会直接装上大骊的重甲武卒，而是快刀子慢割肉，一点一点寻找契机，慢慢削去铁桶战阵的表层。",
         "background": "",
@@ -149,7 +164,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -276,7 +291,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -369,7 +384,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.422492",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -449,7 +464,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -513,7 +528,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -575,7 +590,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -639,7 +654,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -675,6 +690,19 @@
         ],
         "juan_index": 49,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "只不过当时已经是黄昏尾声，宋集薪眼力不够，只能听宋长镜为他讲述那场起始于泥瓶巷屋顶的可笑追杀。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 10
       }
     ],
     "locations": [
@@ -700,7 +728,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -711,16 +740,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪在福禄街冲突",
+        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪与宋长镜在福禄街冲突",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
         "description": "福禄街那棵子孙槐，之前刚遭受过少年刺客的攀援，当下能够承受一个人重量的最高枝，位置要高出屋顶许多的地方，又坐着一位不速之客，往下一些，还站着一人。 他带着宋集薪来到子孙槐上，说是要带他看一出好戏。 只不过当时已经是黄昏尾声，宋集薪眼力不够，只能听宋长镜为他讲述那场起始于泥瓶巷屋顶的可笑追杀。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在福禄街推动宋集薪与宋长镜之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十九章 碎瓷 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -734,8 +766,29 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "冲突",
+        "context": "只不过当时已经是黄昏尾声，宋集薪眼力不够，只能听宋长镜为他讲述那场起始于泥瓶巷屋顶的可笑追杀。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪与宋长镜在福禄街冲突",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -800,7 +853,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.424904",
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -833,6 +886,19 @@
         "sentence_indexes_in_segment": [
           0,
           4
+        ],
+        "juan_index": 49,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜淡然笑道：“运气太好了，遭人嫉妒，又没有靠山，很难理解吗？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 49,
         "segment_index": 12
@@ -874,16 +940,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪在正阳山对话",
+        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪与宋长镜在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "宋长镜"
         ],
-        "description": "宋集薪没有抬头，因为有个家伙直接就把脚悬挂在少年头顶，少年好奇问道：“那他为何还被正阳山老猿一拳打死？ 宋集薪满脸疑惑，问道：“那你当时在泥瓶巷，为什么不拉拢得更加彻底一些？ ”",
+        "description": "宋集薪没有抬头，因为有个家伙直接就把脚悬挂在少年头顶，少年好奇问道：“那他为何还被正阳山老猿一拳打死？ 宋长镜淡然笑道：“运气太好了，遭人嫉妒，又没有靠山，很难理解吗？ 宋集薪满脸疑惑，问道：“那你当时在泥瓶巷，为什么不拉拢得更加彻底一些？",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动宋集薪与宋长镜之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十九章 碎瓷 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -897,8 +966,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "对话",
+        "context": "宋集薪没有抬头，因为有个家伙直接就把脚悬挂在少年头顶，少年好奇问道：“那他为何还被正阳山老猿一拳打死？ ” 宋长镜淡然笑道：“运气太好了，遭人嫉妒，又没有靠山，很难理解吗？ ” 宋集薪满脸疑惑，问道：“那你当时在泥瓶巷，为什么不拉拢得更加彻底一些？ ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪与宋长镜在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.423496",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -918,7 +1013,22 @@
       "宋长镜缓缓道：“你可能很奇怪，为何那些外乡人，都有一种视他人如蝼蚁的眼神，你当真以为这只是他们天性自负？",
       "眼睛长在天上？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜突然站起身，望向远处，神色微变，一只手轻轻摩挲着腰间玉带，眼神炙热。 宋长镜缓缓道：“你可能很奇怪，为何那些外乡人，都有一种视他人如蝼蚁的眼神，你当真以为这只是他们天性自负？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 49,
+        "segment_index": 13
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -958,9 +1068,10 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "少年头顶的大骊藩王哈哈大笑，快意至极，笑了很久才说道：“本王对于那些山上的修行天才……总之等你出去之后，听说过本王的某个绰号，就会明白其中缘由了。 在这位近乎“山登绝顶我为峰”的武道大宗师眼中，小镇最西边，随着搬山猿的坏了规矩，刹那之间气机激荡不止，以至于那一块区域的气息絮乱，如同炸裂飞溅的破瓷器。 ”",
+        "description": "少年头顶的大骊藩王哈哈大笑，快意至极，笑了很久才说道：“本王对于那些山上的修行天才……总之等你出去之后，听说过本王的某个绰号，就会明白其中缘由了。 宋长镜突然站起身，望向远处，神色微变，一只手轻轻摩挲着腰间玉带，眼神炙热。 在这位近乎“山登绝顶我为峰”的武道大宗师眼中，小镇最西边，随着搬山猿的坏了规矩，刹那之间气机激荡不止，以至于那一块区域的气息絮乱，如同炸裂飞溅的破瓷器。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -978,7 +1089,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1059,7 +1170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1082,10 +1193,36 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜不感到意外，自顾自继续说道：“因为有一条线，摆在你们和他们之间。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 49,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "刘羡阳",
         "alias": [],
         "original_description_in_book": "这条线说大不大，对有些人，比小水沟还不如，只要遇到它，就能够一跨而过，像你和之前的刘羡阳，还有那个被别洲道家大宗相中的读书种子赵繇，皆在此列。",
         "description": "陈平安的少年好友，是小镇线与成长线的重要支点人物。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 49,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "这条线说大不大，对有些人，比小水沟还不如，只要遇到它，就能够一跨而过，像你和之前的刘羡阳，还有那个被别洲道家大宗相中的读书种子赵繇，皆在此列。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
         "power": "小镇",
         "sentence_indexes_in_segment": [
           1
@@ -1118,9 +1255,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "宋长镜",
           "刘羡阳"
         ],
-        "description": "这条线说大不大，对有些人，比小水沟还不如，只要遇到它，就能够一跨而过，像你和之前的刘羡阳，还有那个被别洲道家大宗相中的读书种子赵繇，皆在此列。 但是说小也不小，小镇绝大多数人，看着那条线，就像对着一条天堑，连跨过去的欲望都生不出来。 宋长镜不感到意外，自顾自继续说道：“因为有一条线，摆在你们和他们之间。",
+        "description": "宋长镜不感到意外，自顾自继续说道：“因为有一条线，摆在你们和他们之间。 这条线说大不大，对有些人，比小水沟还不如，只要遇到它，就能够一跨而过，像你和之前的刘羡阳，还有那个被别洲道家大宗相中的读书种子赵繇，皆在此列。 但是说小也不小，小镇绝大多数人，看着那条线，就像对着一条天堑，连跨过去的欲望都生不出来。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1138,7 +1276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1220,7 +1358,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1240,7 +1378,23 @@
       "宋长镜突然皱起眉头，继而释然，然后是瞬间爆发的战意昂扬。",
       "大骊武夫宋长镜，此生喜好三事，筑京观，杀天才，战神仙。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑了笑，哪怕那道刺客身影从子孙槐下，一闪而过，这位藩王也根本没有要阻拦的意思。 宋长镜突然皱起眉头，继而释然，然后是瞬间爆发的战意昂扬。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 17
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -1279,7 +1433,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1294,9 +1450,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "视野之中，老猿的魁梧身影从西边大步而回，不断在小镇当上“起起落落”，至于落地之时会不会踩塌屋舍、会不会坏了别人院落布置，根本毫不在意。 那正阳山老猿似乎认定了一位出气筒。 大骊武夫宋长镜，此生喜好三事，筑京观，杀天才，战神仙。",
+        "description": "宋长镜笑了笑，哪怕那道刺客身影从子孙槐下，一闪而过，这位藩王也根本没有要阻拦的意思。 视野之中，老猿的魁梧身影从西边大步而回，不断在小镇当上“起起落落”，至于落地之时会不会踩塌屋舍、会不会坏了别人院落布置，根本毫不在意。 那正阳山老猿似乎认定了一位出气筒。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1314,7 +1471,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1346,6 +1503,20 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 49,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜不退反进，向前踏出一步，老猿则后退一步。 宋长镜大踏步向前，这一次只有他出拳了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
         ],
         "juan_index": 49,
         "segment_index": 18
@@ -1387,15 +1558,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋集薪在福禄街剧情推进",
+        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋长镜与宋集薪在福禄街剧情推进",
         "time": null,
         "location": "福禄街",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
-        "description": "下一刻，宋集薪瞪大眼睛，不知何时头顶的男人，已经落在福禄街上，与远处飞奔而来的魁梧老人，简简单单近乎蛮横地对撞而去。 大骊藩王，搬山老猿。 一人一拳互换，砸中各自胸口。",
+        "description": "下一刻，宋集薪瞪大眼睛，不知何时头顶的男人，已经落在福禄街上，与远处飞奔而来的魁梧老人，简简单单近乎蛮横地对撞而去。 大骊藩王，搬山老猿。 宋长镜不退反进，向前踏出一步，老猿则后退一步。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "在福禄街推动宋长镜与宋集薪之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十九章 碎瓷 · 段18",
         "sentence_indexes_in_segment": [
@@ -1411,7 +1583,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.424499",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "49-19-0": {
+    "juan_index": 49,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第四十九章 碎瓷",
+    "source_sentences": [
+      "一步向前重重踩地，双膝微蹲，左手向前伸出，右手握拳后撤。",
+      "这位男子一身雪白长袍，大袖飘摇，脚下则是满地碎裂的青石板。",
+      "一拳直直去。",
+      "老猿只得伸出一只手掌，挡在宋长镜的拳头。",
+      "天地之间，似乎隐隐响起先后两次崩裂声响。",
+      "老猿倒滑出去十数丈，青石板地面被犁出一条触目惊心的沟壑。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "老猿只得伸出一只手掌，挡在宋长镜的拳头。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 49,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第四十九章 碎瓷 · 宋长镜剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "老猿只得伸出一只手掌，挡在宋长镜的拳头。 一步向前重重踩地，双膝微蹲，左手向前伸出，右手握拳后撤。 这位男子一身雪白长袍，大袖飘摇，脚下则是满地碎裂的青石板。",
+        "background": "",
+        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第四十九章 碎瓷 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1432,6 +1666,20 @@
       "宋长镜竖起一只手掌，摇了摇笑道：“等本王出去之后再打，现在先各忙各的。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜轻轻挥袖，一手负后，一手扶住腰间白玉带，笑眯眯道：“齐静春，你这也不出面拦阻？ 宋长镜竖起一只手掌，摇了摇笑道：“等本王出去之后再打，现在先各忙各的。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 20
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1456,12 +1704,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "宋长镜轻轻挥袖，一手负后，一手扶住腰间白玉带，笑眯眯道：“齐静春，你这也不出面拦阻？ 难道真要破罐子破摔了？ 别啊，再多撑一会儿。",
+        "description": "宋长镜轻轻挥袖，一手负后，一手扶住腰间白玉带，笑眯眯道：“齐静春，你这也不出面拦阻？ 宋长镜竖起一只手掌，摇了摇笑道：“等本王出去之后再打，现在先各忙各的。 难道真要破罐子破摔了？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十九章 碎瓷 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1475,8 +1726,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "宋长镜轻轻挥袖，一手负后，一手扶住腰间白玉带，笑眯眯道：“齐静春，你这也不出面拦阻？ 难道真要破罐子破摔了？ 别啊，再多撑一会儿。 ” 老猿吐出一口浊气。 宋长镜竖起一只手掌，摇了摇笑道：“等本王出去之后再打，现在先各忙各的。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 49,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.424499",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1496,7 +1773,22 @@
       "”",
       "老猿冷哼一声，独自进入李家大宅，小姐安然无恙，甚至连惊吓都算不上，老猿了解过详细情况后，发现不过是拙劣的伎俩，略作思量，便狞笑着赶往小镇西边。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "老猿咧嘴一笑，“宋长镜，那你到时候最好能打赢我，否则大骊南方边军会不太好受。 宋长镜微笑道：“如你所愿。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 49,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1507,7 +1799,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1536,9 +1830,10 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "老猿咧嘴一笑，“宋长镜，那你到时候最好能打赢我，否则大骊南方边军会不太好受。 老猿冷哼一声，独自进入李家大宅，小姐安然无恙，甚至连惊吓都算不上，老猿了解过详细情况后，发现不过是拙劣的伎俩，略作思量，便狞笑着赶往小镇西边。 ”",
+        "description": "老猿咧嘴一笑，“宋长镜，那你到时候最好能打赢我，否则大骊南方边军会不太好受。 宋长镜微笑道：“如你所愿。 老猿冷哼一声，独自进入李家大宅，小姐安然无恙，甚至连惊吓都算不上，老猿了解过详细情况后，发现不过是拙劣的伎俩，略作思量，便狞笑着赶往小镇西边。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1556,7 +1851,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

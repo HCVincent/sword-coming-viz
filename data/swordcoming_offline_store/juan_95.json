@@ -127,7 +127,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "extracted_at": "2026-03-25T01:03:30.614214",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -163,6 +163,19 @@
         ],
         "juan_index": 95,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阮邛与他们说过了一些龙脊山事宜，以及大骊朝廷在龙泉县的大略部署，然后随口问道：““神仙台魏晋，此次是不是与你们同行北上？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 95,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -193,7 +206,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -212,7 +226,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -237,16 +252,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛在风雪庙对话",
+        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛与魏晋在风雪庙对话",
         "time": null,
         "location": "风雪庙",
         "participants": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "description": "大墨山庄为此付出了不可估量的巨大代价，除去那名陆地剑仙被拘押在风雪庙受罚五十年，短短六年之间，风雪庙六脉各有一人前去大墨山庄挑战，打得大墨山庄从水符王朝当之无愧的第一宗门，掉落到二流势力垫底，至今尚未缓过来。 阮邛笑着向四人抱拳还礼，风雪庙并无繁文缛节，便是晚辈面对那些修为通天的老祖，礼仪仍是如此简单。 阮邛与他们说过了一些龙脊山事宜，以及大骊朝廷在龙泉县的大略部署，然后随口问道：““神仙台魏晋，此次是不是与你们同行北上？",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在风雪庙推动阮邛与魏晋之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十五章 小庙 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -260,8 +278,29 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "阮邛与他们说过了一些龙脊山事宜，以及大骊朝廷在龙泉县的大略部署，然后随口问道：““神仙台魏晋，此次是不是与你们同行北上？",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十五章 小庙 · 阮邛与魏晋在风雪庙对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 95,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -297,21 +336,37 @@
         ],
         "juan_index": 95,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阮邛问道：“你们有人见过魏晋吗？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 95,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛对话",
+        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛与魏晋对话",
         "time": null,
         "location": null,
         "participants": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "description": "阮邛问道：“你们有人见过魏晋吗？ 负剑老人问道：“阮师有此问，可是有事发生？ ”",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动阮邛与魏晋之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十五章 小庙 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -325,8 +380,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "对话",
+        "context": "阮邛问道：“你们有人见过魏晋吗？",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十五章 小庙 · 阮邛与魏晋对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 95,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -362,6 +438,20 @@
         ],
         "juan_index": 95,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阮邛笑着摆手道：“只是好奇而已，如果我没有记错，魏晋堪堪四十岁，就已经坐稳十楼境界，神仙台也确实需要有人站出来，挑起刘老祖一脉的大梁。 五人一起行走在僻静山路上，负剑老人辈分和修为都最高，其余三人则该称呼魏晋为魏师伯祖，老人与阮师并肩而行，风雪庙六脉，以神仙台最为香火单薄，几乎沦为俗世王朝数代单传的惨淡景象，恰恰又是神仙台在三百年中对风雪庙贡献最大，所以阮师曾经所在的绿水潭，老剑修所在的大鲵沟，都对神仙台报以由衷的善意和期待，哪怕风雪庙内部六座山头各有争执，但是如果门风严谨、传承有序的神仙台彻底消逝，那么不管对风雪庙哪一脉，注定都不是好事。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 95,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -373,6 +463,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "魏晋",
           "阮邛"
         ],
         "sentence_indexes_in_segment": [
@@ -398,16 +489,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛在风雪庙对话",
+        "name": "第二卷山水郎 第九十五章 小庙 · 魏晋与阮邛在风雪庙对话",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "魏晋",
           "阮邛"
         ],
         "description": "阮邛笑着摆手道：“只是好奇而已，如果我没有记错，魏晋堪堪四十岁，就已经坐稳十楼境界，神仙台也确实需要有人站出来，挑起刘老祖一脉的大梁。 五人一起行走在僻静山路上，负剑老人辈分和修为都最高，其余三人则该称呼魏晋为魏师伯祖，老人与阮师并肩而行，风雪庙六脉，以神仙台最为香火单薄，几乎沦为俗世王朝数代单传的惨淡景象，恰恰又是神仙台在三百年中对风雪庙贡献最大，所以阮师曾经所在的绿水潭，老剑修所在的大鲵沟，都对神仙台报以由衷的善意和期待，哪怕风雪庙内部六座山头各有争执，但是如果门风严谨、传承有序的神仙台彻底消逝，那么不管对风雪庙哪一脉，注定都不是好事。 老人闻言后抚须笑道：“魏师伯天纵奇才，神龙见首不见尾，在江湖上也赢得偌大名声，说不定下次见面，就是咱们东宝瓶洲最年轻的上五楼的大修士了。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在风雪庙推动魏晋与阮邛之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十五章 小庙 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -421,8 +515,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏晋"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "同行",
+        "context": "五人一起行走在僻静山路上，负剑老人辈分和修为都最高，其余三人则该称呼魏晋为魏师伯祖，老人与阮师并肩而行，风雪庙六脉，以神仙台最为香火单薄，几乎沦为俗世王朝数代单传的惨淡景象，恰恰又是神仙台在三百年中对风雪庙贡献最大，所以阮师曾经所在的绿水潭，老剑修所在的大鲵沟，都对神仙台报以由衷的善意和期待，哪怕风雪庙内部六座山头各有争执，但是如果门风严谨、传承有序的神仙台彻底消逝，那么不管对风雪庙哪一脉，注定都不是好事。",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十五章 小庙 · 魏晋与阮邛在风雪庙对话",
+        "location": "风雪庙",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 95,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -459,6 +574,19 @@
         ],
         "juan_index": 95,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "相信魏晋在江湖闯荡多年，也见识过人心险恶，能够理解宗门的苦心。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 95,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -481,15 +609,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛在风雪庙剧情推进",
+        "name": "第二卷山水郎 第九十五章 小庙 · 阮邛与魏晋在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "description": "阮邛轻声道：“树大招风，越是如此，越要小心啊。 老剑师转头看着阮师凝重神色，顿时了然，沉声道：“等这次事了，返回风雪庙，我就会跟宗主建言，争取将魏师伯召回宗门，魏师伯不管如何，最好等到成功跻身上五楼之后，再行走江湖。 阮邛点头道：“这是老成之见，理当如此。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
+        "significance": "在风雪庙推动阮邛与魏晋之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十五章 小庙 · 段5",
         "sentence_indexes_in_segment": [
@@ -505,7 +634,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -541,6 +670,19 @@
         ],
         "juan_index": 95,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阮邛摇头道：“最后魏晋愿不愿意回到风雪庙修行，那就是他自己的决定了。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 95,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -552,7 +694,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -585,12 +728,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "阮邛"
+          "阮邛",
+          "魏晋"
         ],
         "description": "阮邛摇头道：“最后魏晋愿不愿意回到风雪庙修行，那就是他自己的决定了。 阮邛突然望向小镇那边，抱拳道：“我家秀秀出了点事情，我得去看看，就不与诸位同行了。 ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十五章 小庙 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -604,8 +750,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "同行",
+        "context": "” 老人欲言又止。 阮邛摇头道：“最后魏晋愿不愿意回到风雪庙修行，那就是他自己的决定了。 ” 阮邛突然望向小镇那边，抱拳道：“我家秀秀出了点事情，我得去看看，就不与诸位同行了。 ”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "风雪庙",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 95,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -670,7 +842,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -830,7 +1002,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "extracted_at": "2026-03-25T01:03:30.615218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -932,7 +1104,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "extracted_at": "2026-03-25T01:03:30.616222",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1039,7 +1211,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.570385",
+    "extracted_at": "2026-03-25T01:03:30.616222",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1135,7 +1307,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.616222",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1247,7 +1419,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.571388",
+    "extracted_at": "2026-03-25T01:03:30.616222",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

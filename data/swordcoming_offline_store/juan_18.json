@@ -13,7 +13,39 @@
       "不过苻南华也未多想，姿色出众的女子，环肥燕瘦，风姿绰约，对于老龙城少主而言，实在是看腻了。",
       "和蔡金简并肩而行，苻南华问道：“怎么了，不顺利？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华走出屋子的时候，发现那个清清秀秀的婢女，就坐在院子里的小板凳上，手里拿了一把玉米，正在喂鸡，老母鸡带着一群黄毛绒绒的鸡崽，低头啄食。 见到她后，苻南华微微一笑，少女不知是性格腼腆，还是天生冷漠，扯了扯嘴角，就当是回礼了。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "苻南华拉开院门后，发现蔡金简竟然在等在小巷，兴致不高，他转身关上门，透过渐渐狭窄的门缝，看到一张抬起头望过来的容颜，苻南华突然发现这个丫鬟，本该满身泥土气息的贫贱少女，竟然有一双颇为不俗的眼眸，衬托得她宛如一抹初春绽放的嫩绿色。 和蔡金简并肩而行，苻南华问道：“怎么了，不顺利？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 1
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -22,7 +54,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -32,14 +66,20 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第十八章 五去其三 · 老龙城对话",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "不过苻南华也未多想，姿色出众的女子，环肥燕瘦，风姿绰约，对于老龙城少主而言，实在是看腻了。 【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！ 苻南华走出屋子的时候，发现那个清清秀秀的婢女，就坐在院子里的小板凳上，手里拿了一把玉米，正在喂鸡，老母鸡带着一群黄毛绒绒的鸡崽，低头啄食。",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "苻南华走出屋子的时候，发现那个清清秀秀的婢女，就坐在院子里的小板凳上，手里拿了一把玉米，正在喂鸡，老母鸡带着一群黄毛绒绒的鸡崽，低头啄食。 见到她后，苻南华微微一笑，少女不知是性格腼腆，还是天生冷漠，扯了扯嘴角，就当是回礼了。 苻南华拉开院门后，发现蔡金简竟然在等在小巷，兴致不高，他转身关上门，透过渐渐狭窄的门缝，看到一张抬起头望过来的容颜，苻南华突然发现这个丫鬟，本该满身泥土气息的贫贱少女，竟然有一双颇为不俗的眼眸，衬托得她宛如一抹初春绽放的嫩绿色。",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -53,8 +93,133 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.347269",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "和蔡金简并肩而行，苻南华问道：“怎么了，不顺利？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.313274",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "18-2-0": {
+    "juan_index": 18,
+    "segment_index": 2,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十八章 五去其三",
+    "source_sentences": [
+      "机缘一事，本就好事多磨，未必能够次次一锤定音，不用灰心丧气。",
+      "”",
+      "蔡金简天生风情柔媚，修行之后，洗髓伐骨，仅就身体而言，比起世俗女子当然更是净如琉璃，山下女子，一眼看去再惊为天人，归根到底，终究是一副臭皮囊罢了。",
+      "此时云霞山的仙子脸色不太好看，可见她的心情有多糟糕，否则也不至于如此明显摆在脸上，应该之前在小巷等待就憋了一肚子火气，实在是不吐不快，“有位高人捷足先登了，是书简湖的地头蛇之一，截江真君刘志茂。",
+      "连一点商量的余地都没有，见面就搬出我云霞山的掌门师祖，来压我一个晚辈，从头到尾我只说了几句话，就给他赶出那个顾粲的院子。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简天生风情柔媚，修行之后，洗髓伐骨，仅就身体而言，比起世俗女子当然更是净如琉璃，山下女子，一眼看去再惊为天人，归根到底，终究是一副臭皮囊罢了。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 18,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "此时云霞山的仙子脸色不太好看，可见她的心情有多糟糕，否则也不至于如此明显摆在脸上，应该之前在小巷等待就憋了一肚子火气，实在是不吐不快，“有位高人捷足先登了，是书简湖的地头蛇之一，截江真君刘志茂。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 18,
+        "segment_index": 2
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与刘志茂等待",
+        "time": null,
+        "location": null,
+        "participants": [
+          "蔡金简",
+          "刘志茂"
+        ],
+        "description": "蔡金简天生风情柔媚，修行之后，洗髓伐骨，仅就身体而言，比起世俗女子当然更是净如琉璃，山下女子，一眼看去再惊为天人，归根到底，终究是一副臭皮囊罢了。 此时云霞山的仙子脸色不太好看，可见她的心情有多糟糕，否则也不至于如此明显摆在脸上，应该之前在小巷等待就憋了一肚子火气，实在是不吐不快，“有位高人捷足先登了，是书简湖的地头蛇之一，截江真君刘志茂。 机缘一事，本就好事多磨，未必能够次次一锤定音，不用灰心丧气。",
+        "background": "",
+        "significance": "推动蔡金简与刘志茂之间的等待关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第十八章 五去其三 · 段2",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 2
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "刘志茂"
+        ],
+        "action": "等待",
+        "context": "机缘一事，本就好事多磨，未必能够次次一锤定音，不用灰心丧气。 ” 蔡金简天生风情柔媚，修行之后，洗髓伐骨，仅就身体而言，比起世俗女子当然更是净如琉璃，山下女子，一眼看去再惊为天人，归根到底，终究是一副臭皮囊罢了。 此时云霞山的仙子脸色不太好看，可见她的心情有多糟糕，否则也不至于如此明显摆在脸上，应该之前在小巷等待就憋了一肚子火气，实在是不吐不快，“有位高人捷足先登了，是书简湖的地头蛇之一，截江真君刘志茂。 连一点商量的余地都没有，见面就搬出我云霞山的掌门师祖，来压我一个晚辈，从头到尾我只说了几句话，就给他赶出那个顾粲的院子。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与刘志茂等待",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.313274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -74,7 +239,35 @@
       "苻南华笑道：“能够来此地寻找机缘的人物，谁没有点压箱底本事？",
       "如你我这样的年轻人，可能还好，根据小镇的规矩，越是修为高深，被镇压的力度越大，圣人之下，境界越是临近圣人，照理说就越是孱弱如稚童，对吧？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华若有所思，提醒道：“出了泥瓶巷再聊。 苻南华笑道：“能够来此地寻找机缘的人物，谁没有点压箱底本事？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 18,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简疑惑道：“此地不是一律术法禁绝吗？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 18,
+        "segment_index": 3
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -83,7 +276,9 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -112,12 +307,16 @@
         "location": "泥瓶巷",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "苻南华",
+          "蔡金简"
         ],
-        "description": "苻南华若有所思，提醒道：“出了泥瓶巷再聊。 如你我这样的年轻人，可能还好，根据小镇的规矩，越是修为高深，被镇压的力度越大，圣人之下，境界越是临近圣人，照理说就越是孱弱如稚童，对吧？ ”",
+        "description": "苻南华若有所思，提醒道：“出了泥瓶巷再聊。 蔡金简疑惑道：“此地不是一律术法禁绝吗？ 苻南华笑道：“能够来此地寻找机缘的人物，谁没有点压箱底本事？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -131,8 +330,138 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.347269",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "苻南华若有所思，提醒道：“出了泥瓶巷再聊。 ” 蔡金简疑惑道：“此地不是一律术法禁绝吗？ ” 苻南华笑道：“能够来此地寻找机缘的人物，谁没有点压箱底本事？ 如你我这样的年轻人，可能还好，根据小镇的规矩，越是修为高深，被镇压的力度越大，圣人之下，境界越是临近圣人，照理说就越是孱弱如稚童，对吧？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.313274",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "18-4-0": {
+    "juan_index": 18,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十八章 五去其三",
+    "source_sentences": [
+      "但是你有没有想过，若是有得道高人拼着道行折损，也要施展神通的话，难不成当真还不如我们这些后进之辈？",
+      "”",
+      "蔡金简反驳道：“有圣人在此，他截江真君还敢明目张胆对我出手？",
+      "”",
+      "苻南华劝说道：“我们是来此是找善缘，不是来结怨的，哪怕没有性命之忧，跟前辈们恶了关系，终归不美。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简反驳道：“有圣人在此，他截江真君还敢明目张胆对我出手？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 18,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华劝说道：“我们是来此是找善缘，不是来结怨的，哪怕没有性命之忧，跟前辈们恶了关系，终归不美。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 18,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与苻南华对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "蔡金简",
+          "苻南华"
+        ],
+        "description": "蔡金简反驳道：“有圣人在此，他截江真君还敢明目张胆对我出手？ 苻南华劝说道：“我们是来此是找善缘，不是来结怨的，哪怕没有性命之忧，跟前辈们恶了关系，终归不美。 但是你有没有想过，若是有得道高人拼着道行折损，也要施展神通的话，难不成当真还不如我们这些后进之辈？",
+        "background": "",
+        "significance": "推动蔡金简与苻南华之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第十八章 五去其三 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 4
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "但是你有没有想过，若是有得道高人拼着道行折损，也要施展神通的话，难不成当真还不如我们这些后进之辈？ ” 蔡金简反驳道：“有圣人在此，他截江真君还敢明目张胆对我出手？ ” 苻南华劝说道：“我们是来此是找善缘，不是来结怨的，哪怕没有性命之忧，跟前辈们恶了关系，终归不美。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与苻南华对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.313274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -153,6 +482,35 @@
       "原本极为兴奋雀跃的苻南华，也冷静许多，他仔细思量这趟小巷之行，与蔡金简的结盟，没有露出任何马脚才对，跟少年宋集薪的交易，也无纰漏才是，本就是一桩符合规矩的公平买卖，那位坐看此地风来风走、水起水落的圣人，岂会有插手的闲情逸致？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简并非钻牛角尖的人物，点头道：“苻兄所言甚是，是老成持重之论。 走出泥瓶巷后，苻南华和蔡金简几乎同时精神一振，这绝非光线骤然明亮那么简单，两人面面相觑，然后视线迅速错开。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "走出泥瓶巷后，苻南华和蔡金简几乎同时精神一振，这绝非光线骤然明亮那么简单，两人面面相觑，然后视线迅速错开。 原本极为兴奋雀跃的苻南华，也冷静许多，他仔细思量这趟小巷之行，与蔡金简的结盟，没有露出任何马脚才对，跟少年宋集薪的交易，也无纰漏才是，本就是一桩符合规矩的公平买卖，那位坐看此地风来风走、水起水落的圣人，岂会有插手的闲情逸致？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -177,7 +535,10 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -187,15 +548,17 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第十八章 五去其三 · 宋集薪在泥瓶巷剧情推进",
+        "name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与苻南华在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "蔡金简",
+          "苻南华",
           "宋集薪"
         ],
-        "description": "走出泥瓶巷后，苻南华和蔡金简几乎同时精神一振，这绝非光线骤然明亮那么简单，两人面面相觑，然后视线迅速错开。 原本极为兴奋雀跃的苻南华，也冷静许多，他仔细思量这趟小巷之行，与蔡金简的结盟，没有露出任何马脚才对，跟少年宋集薪的交易，也无纰漏才是，本就是一桩符合规矩的公平买卖，那位坐看此地风来风走、水起水落的圣人，岂会有插手的闲情逸致？ 蔡金简并非钻牛角尖的人物，点头道：“苻兄所言甚是，是老成持重之论。",
+        "description": "蔡金简并非钻牛角尖的人物，点头道：“苻兄所言甚是，是老成持重之论。 走出泥瓶巷后，苻南华和蔡金简几乎同时精神一振，这绝非光线骤然明亮那么简单，两人面面相觑，然后视线迅速错开。 原本极为兴奋雀跃的苻南华，也冷静许多，他仔细思量这趟小巷之行，与蔡金简的结盟，没有露出任何马脚才对，跟少年宋集薪的交易，也无纰漏才是，本就是一桩符合规矩的公平买卖，那位坐看此地风来风走、水起水落的圣人，岂会有插手的闲情逸致？",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "在泥瓶巷推动蔡金简与苻南华之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段5",
         "sentence_indexes_in_segment": [
@@ -211,7 +574,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.347269",
+    "extracted_at": "2026-03-25T01:03:30.313274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -231,7 +594,37 @@
       "各怀心事的两人走在大街上，距离泥瓶巷越远，两人心头的沉闷感觉便越轻，苻南华觉得那是机缘气数之重，蔡金简则感觉是家族负担之重。",
       "抬头望着远处那座牌坊，苻南华好奇问道：“书简湖的截江真君？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "相比苻南华的心思深远，蔡金简的想法更加简单，以为是被苻南华说中，截江真君确实动用了某种神通法术，对自己进行了监视。 各怀心事的两人走在大街上，距离泥瓶巷越远，两人心头的沉闷感觉便越轻，苻南华觉得那是机缘气数之重，蔡金简则感觉是家族负担之重。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "相比苻南华的心思深远，蔡金简的想法更加简单，以为是被苻南华说中，截江真君确实动用了某种神通法术，对自己进行了监视。 各怀心事的两人走在大街上，距离泥瓶巷越远，两人心头的沉闷感觉便越轻，苻南华觉得那是机缘气数之重，蔡金简则感觉是家族负担之重。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 18,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -240,7 +633,10 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -250,14 +646,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第十八章 五去其三 · 泥瓶巷对话",
+        "name": "第一卷笼中雀 第十八章 五去其三 · 苻南华与蔡金简在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "各怀心事的两人走在大街上，距离泥瓶巷越远，两人心头的沉闷感觉便越轻，苻南华觉得那是机缘气数之重，蔡金简则感觉是家族负担之重。 那么这股压力来自何处？ 难道是那个连名号也没听过的截江真君？",
+        "participants": [
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "相比苻南华的心思深远，蔡金简的想法更加简单，以为是被苻南华说中，截江真君确实动用了某种神通法术，对自己进行了监视。 各怀心事的两人走在大街上，距离泥瓶巷越远，两人心头的沉闷感觉便越轻，苻南华觉得那是机缘气数之重，蔡金简则感觉是家族负担之重。 抬头望着远处那座牌坊，苻南华好奇问道：“书简湖的截江真君？",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动苻南华与蔡金简之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -271,8 +672,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.347269",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "那么这股压力来自何处？ 难道是那个连名号也没听过的截江真君？ 相比苻南华的心思深远，蔡金简的想法更加简单，以为是被苻南华说中，截江真君确实动用了某种神通法术，对自己进行了监视。 她一阵后怕，幸亏只是说了些埋怨言语，不曾放狠话说气话。 各怀心事的两人走在大街上，距离泥瓶巷越远，两人心头的沉闷感觉便越轻，苻南华觉得那是机缘气数之重，蔡金简则感觉是家族负担之重。 抬头望着远处那座牌坊，苻南华好奇问道：“书简湖的截江真君？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第十八章 五去其三 · 苻南华与蔡金简在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.314278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -292,7 +719,34 @@
       "”",
       "苻南华恍然，“原来如此。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简压低嗓音，冷笑道：“什么真君，旁门里还算位置靠前的真人而已，最是道貌岸然，也根本没资格称为真君，好事之徒的阿谀之词罢了，想那元武帝何等精明，自然不会敕封此人为真君，一个萝卜一个坑，真君的头衔，给出去一个，很可能意味着两百年都拿不回来，加上元武帝祖辈们的大手大脚，到了他手里，就只剩下两个真君的名额，更不会随随便便给一个沽名钓誉的旁门野修。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 18,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华恍然，“原来如此。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 7
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -311,14 +765,20 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第十八章 五去其三 · 老龙城对话",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "即便我老龙城位于一洲极南之地，可是真君之位，何其煊赫，我再孤陋寡闻，也该有所了解啊。 我怎么根本没印象？ ”",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "即便我老龙城位于一洲极南之地，可是真君之位，何其煊赫，我再孤陋寡闻，也该有所了解啊。 蔡金简压低嗓音，冷笑道：“什么真君，旁门里还算位置靠前的真人而已，最是道貌岸然，也根本没资格称为真君，好事之徒的阿谀之词罢了，想那元武帝何等精明，自然不会敕封此人为真君，一个萝卜一个坑，真君的头衔，给出去一个，很可能意味着两百年都拿不回来，加上元武帝祖辈们的大手大脚，到了他手里，就只剩下两个真君的名额，更不会随随便便给一个沽名钓誉的旁门野修。 苻南华恍然，“原来如此。",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -332,8 +792,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "我怎么根本没印象？ 即便我老龙城位于一洲极南之地，可是真君之位，何其煊赫，我再孤陋寡闻，也该有所了解啊。 ” 蔡金简压低嗓音，冷笑道：“什么真君，旁门里还算位置靠前的真人而已，最是道貌岸然，也根本没资格称为真君，好事之徒的阿谀之词罢了，想那元武帝何等精明，自然不会敕封此人为真君，一个萝卜一个坑，真君的头衔，给出去一个，很可能意味着两百年都拿不回来，加上元武帝祖辈们的大手大脚，到了他手里，就只剩下两个真君的名额，更不会随随便便给一个沽名钓誉的旁门野修。 ” 苻南华恍然，“原来如此。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.314278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -356,6 +842,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简看似随意问道：“那个宋集薪如何？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 18,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -368,21 +867,37 @@
         ],
         "juan_index": 18,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华也随口回答道：“那个少年啊，野心勃勃，天生聪颖，靠山不小，就是格局……”",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第十八章 五去其三 · 宋集薪对话",
+        "name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与宋集薪对话",
         "time": null,
         "location": null,
         "participants": [
+          "蔡金简",
           "宋集薪"
         ],
-        "description": "蔡金简看似随意问道：“那个宋集薪如何？ ” 每一位真君坐镇王朝，都可以为君主收拢、压制和增长国运。",
+        "description": "蔡金简看似随意问道：“那个宋集薪如何？ 苻南华也随口回答道：“那个少年啊，野心勃勃，天生聪颖，靠山不小，就是格局……” ”",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动蔡金简与宋集薪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -396,8 +911,134 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "蔡金简看似随意问道：“那个宋集薪如何？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与宋集薪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 18,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.314278",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "18-9-0": {
+    "juan_index": 18,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十八章 五去其三",
+    "source_sentences": [
+      "蔡金简笑道：“不大？",
+      "”",
+      "苻南华哈哈笑道：“不能说不大，只是不够大。",
+      "”",
+      "两人走到牌坊下，苻南华意气风发，喃喃道：“时来天地皆同力。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简笑道：“不大？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 18,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华哈哈笑道：“不能说不大，只是不够大。 两人走到牌坊下，苻南华意气风发，喃喃道：“时来天地皆同力。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 18,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与苻南华对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "蔡金简",
+          "苻南华"
+        ],
+        "description": "蔡金简笑道：“不大？ 苻南华哈哈笑道：“不能说不大，只是不够大。 两人走到牌坊下，苻南华意气风发，喃喃道：“时来天地皆同力。",
+        "background": "",
+        "significance": "推动蔡金简与苻南华之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第十八章 五去其三 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 9
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "蔡金简笑道：“不大？ ” 苻南华哈哈笑道：“不能说不大，只是不够大。 ” 两人走到牌坊下，苻南华意气风发，喃喃道：“时来天地皆同力。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第十八章 五去其三 · 蔡金简与苻南华对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.314278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -418,6 +1059,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简抬头望着“莫向外求”四字，心头空落落的，只觉得怅然若失，好像先前在泥瓶巷得到的顿悟，又全盘还给了这座小镇。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 18,
+        "segment_index": 10
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -445,6 +1099,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "蔡金简",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -461,7 +1116,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -477,12 +1134,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "蔡金简",
           "宋集薪"
         ],
         "description": "蔡金简抬头望着“莫向外求”四字，心头空落落的，只觉得怅然若失，好像先前在泥瓶巷得到的顿悟，又全盘还给了这座小镇。 宋集薪的宅子，在泥瓶巷属于大户门庭，除了悬挂匾额的大堂，还有左右偏房。 大堂匾额为“怀远堂”，并无署名，宋集薪总觉得仅凭字迹来看，不是什么大家手笔。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -496,8 +1156,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "蔡金简抬头望着“莫向外求”四字，心头空落落的，只觉得怅然若失，好像先前在泥瓶巷得到的顿悟，又全盘还给了这座小镇。 这让她异常烦躁起来。 宋集薪的宅子，在泥瓶巷属于大户门庭，除了悬挂匾额的大堂，还有左右偏房。 大堂匾额为“怀远堂”，并无署名，宋集薪总觉得仅凭字迹来看，不是什么大家手笔。 主仆二人此刻待在宋集薪的主屋，少年在翻箱倒柜，丫鬟站在门口，她柔柔问道：“公子，生意没谈拢？ ”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.314278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -530,6 +1216,19 @@
         "sentence_indexes_in_segment": [
           0,
           5
+        ],
+        "juan_index": 18,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "宋集薪放下一串铃铛，坐回屋内唯一一张椅子上，双手抱着后脑勺，翘着二郎腿，“那个老龙城的苻南华，不全是蠢货，一开始就没把我当做不谙世事的冤大头，只不过也聪明不到哪里去，想要与我套交情，真是好玩。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 18,
         "segment_index": 11
@@ -572,7 +1271,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宋集薪"
+          "宋集薪",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -599,18 +1299,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "齐静春",
-          "陈平安",
+          "谢谢",
+          "苻南华",
           "宋集薪",
-          "稚圭"
+          "齐静春"
         ],
         "description": "宋集薪放下一串铃铛，坐回屋内唯一一张椅子上，双手抱着后脑勺，翘着二郎腿，“那个老龙城的苻南华，不全是蠢货，一开始就没把我当做不谙世事的冤大头，只不过也聪明不到哪里去，想要与我套交情，真是好玩。 他后来被我随便一诈，就露出了狐狸尾巴，以为故弄玄虚，来点雷霆手段，就能恩威并施，唬住少爷我，比起让人捉摸不透的齐先生，差了十万八千里。 婢女稚圭说道：“十万八千里，公子，你这个说法太夸张了。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段11",
         "sentence_indexes_in_segment": [
@@ -626,7 +1326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "extracted_at": "2026-03-25T01:03:30.314278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -705,7 +1405,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "extracted_at": "2026-03-25T01:03:30.314278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -801,7 +1501,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "extracted_at": "2026-03-25T01:03:30.315281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -907,7 +1607,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "extracted_at": "2026-03-25T01:03:30.315281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1013,7 +1713,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "extracted_at": "2026-03-25T01:03:30.315281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1052,6 +1752,19 @@
       },
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "倒是赵繇那书呆子，多半也会得到铜钱，他才好骗，公子我保管给你弄回一袋子来。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 18,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "稚圭",
         "alias": [],
         "original_description_in_book": "稚圭走出屋子，来到院落，看到那条天生碍眼的四脚蛇，半死不活趴在地面上，晒着太阳，经常还打个滚，很享受的模样。",
@@ -1067,19 +1780,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第十八章 五去其三 · 宋集薪与稚圭对话",
+        "name": "第一卷笼中雀 第十八章 五去其三 · 宋集薪与赵繇剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "宋集薪",
+          "赵繇",
           "稚圭"
         ],
-        "description": "宋集薪撇撇嘴，双手捂住脖子，拧了拧，云淡风轻道：“没事，想起一些破烂事。 看到婢女有些奇怪，宋集薪也没有继续解释，见自家公子没有说话的兴致，少女也就不去打破砂锅问到底。 稚圭走出屋子，来到院落，看到那条天生碍眼的四脚蛇，半死不活趴在地面上，晒着太阳，经常还打个滚，很享受的模样。",
+        "description": "宋集薪撇撇嘴，双手捂住脖子，拧了拧，云淡风轻道：“没事，想起一些破烂事。 倒是赵繇那书呆子，多半也会得到铜钱，他才好骗，公子我保管给你弄回一袋子来。 看到婢女有些奇怪，宋集薪也没有继续解释，见自家公子没有说话的兴致，少女也就不去打破砂锅问到底。",
         "background": "",
-        "significance": "推动宋集薪与稚圭之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动宋集薪与赵繇之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第十八章 五去其三 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1093,34 +1805,8 @@
         "segment_index": 16
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "稚圭"
-        ],
-        "action": "对话",
-        "context": "宋集薪撇撇嘴，双手捂住脖子，拧了拧，云淡风轻道：“没事，想起一些破烂事。 姓陈的那边，不着急，省得惹祸上身。 倒是赵繇那书呆子，多半也会得到铜钱，他才好骗，公子我保管给你弄回一袋子来。 ” 看到婢女有些奇怪，宋集薪也没有继续解释，见自家公子没有说话的兴致，少女也就不去打破砂锅问到底。 稚圭走出屋子，来到院落，看到那条天生碍眼的四脚蛇，半死不活趴在地面上，晒着太阳，经常还打个滚，很享受的模样。",
-        "result": null,
-        "event_name": "第一卷笼中雀 第十八章 五去其三 · 宋集薪与稚圭对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 18,
-        "segment_index": 16
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.315281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1184,7 +1870,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.348272",
+    "extracted_at": "2026-03-25T01:03:30.315281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1245,7 +1931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.349275",
+    "extracted_at": "2026-03-25T01:03:30.316285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1310,7 +1996,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.349275",
+    "extracted_at": "2026-03-25T01:03:30.316285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,7 +2074,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.349275",
+    "extracted_at": "2026-03-25T01:03:30.316285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1408,7 +2094,21 @@
       "最后一次是以秘术让其深信自己开悟。",
       "若是在小镇之外，当然绝无此可能，便是一位名副其实的道家真君，恐怕也不敢如此作为，可小镇之上，蔡金简无异于凡人，老人不惜付出巨大代价，便有了可趁之机。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "若是在小镇之外，当然绝无此可能，便是一位名副其实的道家真君，恐怕也不敢如此作为，可小镇之上，蔡金简无异于凡人，老人不惜付出巨大代价，便有了可趁之机。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 18,
+        "segment_index": 25
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -1431,7 +2131,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1446,7 +2148,8 @@
         "location": "泥瓶巷",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
         "description": "为了收下这个徒弟，先前泥瓶巷中，老人费尽心思，拼着折损数十年修为道行，才成功动了三次手脚。 若是在小镇之外，当然绝无此可能，便是一位名副其实的道家真君，恐怕也不敢如此作为，可小镇之上，蔡金简无异于凡人，老人不惜付出巨大代价，便有了可趁之机。 老人咦了一声，略作思量后，手腕摇晃，那口大白碗重新出现在掌心，他低头凝神望去，眼神晦暗不明，只见白碗的水面上，涟漪阵阵，偶有水花溅起，一条黑线在白碗四处飞快游曳，时不时撞击碗壁，老人自言自语道：“罢了罢了，便随你去吧。",
         "background": "",
@@ -1466,7 +2169,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.349275",
+    "extracted_at": "2026-03-25T01:03:30.316285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1528,7 +2231,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.349275",
+    "extracted_at": "2026-03-25T01:03:30.317288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

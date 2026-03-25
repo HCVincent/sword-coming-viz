@@ -96,7 +96,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.682837",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -158,7 +158,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.682837",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -220,7 +220,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.682837",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -326,7 +326,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -388,7 +388,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -450,7 +450,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -512,7 +512,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.764731",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -603,6 +603,19 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "四间屋子，李宝瓶和谢谢一间，李槐和陈平安，崔瀺和于禄，最后一间单独留给已经身为练气士的林守一。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 138,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "林守一",
         "alias": [],
         "original_description_in_book": "四间屋子，李宝瓶和谢谢一间，李槐和陈平安，崔瀺和于禄，最后一间单独留给已经身为练气士的林守一。 进入此地后，林守一真真切切感受到神清气爽，那种玄妙感觉，就像是之前在大雨泥泞之中赶路，每一步都要从泥泞中拔出脚来，如今放晴之后，道路干燥不说，还换了一身干净衣衫，走在路上的感觉，自然会觉得惬意轻松，仿佛整个人都脱胎换骨了。",
@@ -620,18 +633,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十八章 拔河 · 林守一与陈平安迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "林守一",
-          "陈平安",
           "李宝瓶",
-          "谢谢"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "四间屋子，李宝瓶和谢谢一间，李槐和陈平安，崔瀺和于禄，最后一间单独留给已经身为练气士的林守一。 进入此地后，林守一真真切切感受到神清气爽，那种玄妙感觉，就像是之前在大雨泥泞之中赶路，每一步都要从泥泞中拔出脚来，如今放晴之后，道路干燥不说，还换了一身干净衣衫，走在路上的感觉，自然会觉得惬意轻松，仿佛整个人都脱胎换骨了。 林守一便有些纳闷，隐于闹市的郡城之中，竟然还有这么一块裨益修行的福地？",
         "background": "",
-        "significance": "推动林守一与陈平安之间的迁移关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十八章 拔河 · 段8",
         "sentence_indexes_in_segment": [
@@ -647,7 +660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.765735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -702,6 +715,19 @@
       },
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "当陈平安听店铺主人说出那个令人咂舌的价格后，打定主意不多想什么，可是崔瀺数次暗示他一定要买下这盒子玉簪，最后干脆就扬言若是陈平安不出手，他崔东山就要买下了，陈平安一咬牙，便跟那家伙商量好，与住宿钱一样，先记在账上。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 138,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -738,13 +764,16 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "崔东山"
         ],
         "description": "在寻找秋芦客栈的途中，它们路过一间玉石铺子，陈平安本打算只是进去随便看几眼，长长见识，开开眼界就好了，结果一眼就看中了它们，四支簪子安安静静躺在打开的木盒内，可亲可爱，让人心生欢喜。 当陈平安听店铺主人说出那个令人咂舌的价格后，打定主意不多想什么，可是崔瀺数次暗示他一定要买下这盒子玉簪，最后干脆就扬言若是陈平安不出手，他崔东山就要买下了，陈平安一咬牙，便跟那家伙商量好，与住宿钱一样，先记在账上。 于是陈平安欠了白衣少年第一笔钱，一百两银子，不多，但绝对不算少。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第二卷山水郎 第一百三十八章 拔河 · 段9",
         "sentence_indexes_in_segment": [
@@ -779,9 +808,49 @@
         ],
         "juan_index": 138,
         "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "冲突",
+        "context": "当陈平安听店铺主人说出那个令人咂舌的价格后，打定主意不多想什么，可是崔瀺数次暗示他一定要买下这盒子玉簪，最后干脆就扬言若是陈平安不出手，他崔东山就要买下了，陈平安一咬牙，便跟那家伙商量好，与住宿钱一样，先记在账上。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 138,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "冲突",
+        "context": "当陈平安听店铺主人说出那个令人咂舌的价格后，打定主意不多想什么，可是崔瀺数次暗示他一定要买下这盒子玉簪，最后干脆就扬言若是陈平安不出手，他崔东山就要买下了，陈平安一咬牙，便跟那家伙商量好，与住宿钱一样，先记在账上。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 138,
+        "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.765735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -830,6 +899,19 @@
         ],
         "juan_index": 138,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "孩子记起一事，赶紧起身，蹲在墙角打开书箱后，一顿摸索，干脆将彩绘木偶和泥人儿在内的物件，全部挪出来放在脚边，李槐脑袋伸入空荡荡的书箱，然后猛然转头望向陈平安的背影，委屈道：“崔东山果然不是个好东西，那颗银锭不见了！",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 138,
+        "segment_index": 10
       }
     ],
     "locations": [],
@@ -840,7 +922,8 @@
         "location": null,
         "participants": [
           "陈平安",
-          "李槐"
+          "李槐",
+          "崔东山"
         ],
         "description": "李槐把小书箱放在墙脚根后，一个后仰倒在床上，满脸陶醉道：“真是神仙住的地方啊，爹娘和姐他们就没这个福气。 孩子记起一事，赶紧起身，蹲在墙角打开书箱后，一顿摸索，干脆将彩绘木偶和泥人儿在内的物件，全部挪出来放在脚边，李槐脑袋伸入空荡荡的书箱，然后猛然转头望向陈平安的背影，委屈道：“崔东山果然不是个好东西，那颗银锭不见了！ 陈平安，咋办啊，我可以去讨要回来吗？",
         "background": "",
@@ -860,7 +943,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.765735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -905,6 +988,19 @@
         "sentence_indexes_in_segment": [
           0,
           4
+        ],
+        "juan_index": 138,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "李槐急匆匆跑出屋子，“我找崔东山算账去。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 138,
         "segment_index": 11
@@ -961,7 +1057,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.765735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1065,7 +1161,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.683841",
+    "extracted_at": "2026-03-25T01:03:30.765735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1142,7 +1238,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.765735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1246,7 +1342,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1328,18 +1424,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十八章 拔河 · 陈平安与崔瀺剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "崔瀺",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "李槐蹑手蹑脚溜进屋子，手里抓着那颗银锭，这个孩子根本不敢掺和这摊浑水，坐在床沿那边，脸色有些苍白。 陈平安瞥了眼白衣少年，重新做回凳子。 崔瀺斜靠房门，这个罪魁祸首还不忘煽风点火，“好心当成驴肝肺的滋味，不好受吧？",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的剧情推进关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十八章 拔河 · 段15",
         "sentence_indexes_in_segment": [
@@ -1355,7 +1451,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1434,7 +1530,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1496,7 +1592,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1544,6 +1640,19 @@
         ],
         "juan_index": 138,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "应该就是如自己猜测，齐静春送给少年赵繇的那方印章，意义重大，只可惜自己的出现，少年一经试探就选择明哲保身，不管是为了自身前程还是家族安危，少年到底是双手奉上了印章，那么印章蕴含之物，就会自然而然重归天地，难怪今年的暮春气候，如此漫长。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 138,
+        "segment_index": 18
       }
     ],
     "locations": [],
@@ -1554,7 +1663,8 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
         "description": "陈平安问道：“然后？ 应该就是如自己猜测，齐静春送给少年赵繇的那方印章，意义重大，只可惜自己的出现，少年一经试探就选择明哲保身，不管是为了自身前程还是家族安危，少年到底是双手奉上了印章，那么印章蕴含之物，就会自然而然重归天地，难怪今年的暮春气候，如此漫长。 ”",
         "background": "",
@@ -1579,30 +1689,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
           "齐静春"
         ],
-        "action": "对话",
-        "context": "” 白衣少年陷入沉思。 陈平安问道：“然后？ ” 白衣少年回过神，揉了揉眉心红痣，想到这一路行来的古怪气候，愈发确定一件事情。 应该就是如自己猜测，齐静春送给少年赵繇的那方印章，意义重大，只可惜自己的出现，少年一经试探就选择明哲保身，不管是为了自身前程还是家族安危，少年到底是双手奉上了印章，那么印章蕴含之物，就会自然而然重归天地，难怪今年的暮春气候，如此漫长。",
+        "to_roles": [
+          "赵繇"
+        ],
+        "action": "试探",
+        "context": "应该就是如自己猜测，齐静春送给少年赵繇的那方印章，意义重大，只可惜自己的出现，少年一经试探就选择明哲保身，不管是为了自身前程还是家族安危，少年到底是双手奉上了印章，那么印章蕴含之物，就会自然而然重归天地，难怪今年的暮春气候，如此漫长。",
         "result": null,
         "event_name": "齐静春现身",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 138,
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,7 +1887,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1836,7 +1941,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.684845",
+    "extracted_at": "2026-03-25T01:03:30.766738",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

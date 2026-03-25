@@ -85,7 +85,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.352249",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +198,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.352249",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -348,7 +348,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.352249",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -480,7 +480,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.352249",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -593,7 +593,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.353253",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -698,7 +698,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.353253",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -825,7 +825,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.373860",
+    "extracted_at": "2026-03-25T01:03:30.353253",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -994,7 +994,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.353253",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1118,7 +1118,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.353253",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1157,6 +1157,19 @@
       },
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "陈平安不再深思，只当是苻南华那般的外乡人，又要来泥瓶巷寻找机缘了。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 32,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -1180,7 +1193,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -1214,14 +1228,13 @@
         "location": "泥瓶巷",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "苻南华"
         ],
         "description": "先前哪怕是惊鸿一瞥，陈平安也看到一尘不染的雪白袍子上，胸前后背两处，皆绣有疏淡的金丝，隐隐约约，构成两幅图案，好像有活物游走于山雾云海之中，很是奇妙。 陈平安不再深思，只当是苻南华那般的外乡人，又要来泥瓶巷寻找机缘了。 那天在和齐先生一起走过老槐树底之后，草鞋少年倒是已经不太担心，总觉得只要有齐先生在小镇，退一万步说，哪怕真出了事情，好歹也能求到一个公道。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第三十二章 桃叶 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -1235,34 +1248,8 @@
         "segment_index": 10
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "同行",
-        "context": "先前哪怕是惊鸿一瞥，陈平安也看到一尘不染的雪白袍子上，胸前后背两处，皆绣有疏淡的金丝，隐隐约约，构成两幅图案，好像有活物游走于山雾云海之中，很是奇妙。 陈平安不再深思，只当是苻南华那般的外乡人，又要来泥瓶巷寻找机缘了。 那天在和齐先生一起走过老槐树底之后，草鞋少年倒是已经不太担心，总觉得只要有齐先生在小镇，退一万步说，哪怕真出了事情，好歹也能求到一个公道。 陈平安小跑路过杏花巷的时候，看到昨夜遇到的青衣少女，还在那边一家馄饨铺子坐着，一手一根筷子，竖立在桌面上，轻轻敲打，整张略带稚气肥嫩的圆乎乎脸庞，神采奕奕，她满眼都是那边热锅里煮着的馄饨，根本没注意到五六步外的陈平安。 对青衣少女而言，美食当前，天塌下也要吃完再跑路！ 陈平安由衷佩服这位陌生的姑娘，也不打搅她，笑着继续跑向小镇东边。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "泥瓶巷",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 32,
-        "segment_index": 10
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.353253",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1486,7 +1473,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.354256",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1566,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.354256",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1628,7 +1615,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.354256",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1763,7 +1750,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.354256",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1825,7 +1812,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.354256",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1886,7 +1873,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.354256",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1925,16 +1912,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "老人突然笑道：“这两天有个远房亲戚要登门拜访，到时候桃芽你就跟随家里那几个孩子，一起离开小镇。 ” 白发苍苍的老人笑道：“桃芽，你跟那送信少年一样，亦是‘有心人’啊。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第三十二章 桃叶 · 段17",
         "sentence_indexes_in_segment": [
@@ -1950,7 +1937,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.374863",
+    "extracted_at": "2026-03-25T01:03:30.355260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2011,7 +1998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.375867",
+    "extracted_at": "2026-03-25T01:03:30.355260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2065,16 +2052,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "老人回望一眼自己宅子，呢喃道：“小镇的得天独厚，本就不合大道，当初被圣人们硬生生改天换地，享受了整整三千年大气运，历代走出小镇之人，多在整个东宝瓶洲开枝散叶，可是老天爷何等精明，所以是时候来秋后算账、跟咱们收取报酬喽。 要知道，死分大小，咱们小镇几千口人，这一死，是大死啊，连来生也没了。 老人轻轻呼出一口浊气，跨过门槛，走下台阶，走向最近的一棵桃树，站在树底下，老人伤感道：“桃之夭夭，灼灼其华。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第三十二章 桃叶 · 段19",
         "sentence_indexes_in_segment": [
@@ -2090,7 +2077,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.375867",
+    "extracted_at": "2026-03-25T01:03:30.355260",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "32-20-0": {
+    "juan_index": 32,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第三十二章 桃叶",
+    "source_sentences": [
+      "”",
+      "“所以啊，如今趁着老天爷还睁一只眼闭一只眼的时候，能多走一人是一人。",
+      "”",
+      "老人伸出干枯手掌，扶住桃枝，“有心人有心人，希望真能天不负吧。",
+      "”",
+      "不知何时，读书少年郎赵繇的奶奶，拄着拐杖的老妪已经走近这边，“都快入土的老头子了，还这般天真，如老娘们涂抹胭脂，真是尤其面目可憎。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "不知何时，读书少年郎赵繇的奶奶，拄着拐杖的老妪已经走近这边，“都快入土的老头子了，还这般天真，如老娘们涂抹胭脂，真是尤其面目可憎。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 32,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第三十二章 桃叶 · 赵繇剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "赵繇"
+        ],
+        "description": "不知何时，读书少年郎赵繇的奶奶，拄着拐杖的老妪已经走近这边，“都快入土的老头子了，还这般天真，如老娘们涂抹胭脂，真是尤其面目可憎。 ” “所以啊，如今趁着老天爷还睁一只眼闭一只眼的时候，能多走一人是一人。",
+        "background": "",
+        "significance": "对应赵繇在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第三十二章 桃叶 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 32,
+        "segment_index": 20
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.355260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2182,7 +2231,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.375867",
+    "extracted_at": "2026-03-25T01:03:30.355260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

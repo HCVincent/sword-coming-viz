@@ -75,7 +75,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -139,7 +139,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -204,7 +204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -295,7 +295,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -377,7 +377,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -400,6 +400,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "枉费我那么看好跟你同姓的赵繇。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 262,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -418,15 +431,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风剧情推进",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与赵繇剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风"
+          "郑大风",
+          "赵繇"
         ],
-        "description": "竹帘掀起，露出一张稚嫩漂亮的少女容颜，正是那位喜欢坐在郑大风身边嗑瓜子的小丫头，她笑眯眯道：“掌柜的，你是要认我做长辈呀？ 郑大风收起老烟杆，起身搓手，屁颠屁颠跑向少女，“做啥长辈，显得多生分。 ”",
+        "description": "枉费我那么看好跟你同姓的赵繇。 竹帘掀起，露出一张稚嫩漂亮的少女容颜，正是那位喜欢坐在郑大风身边嗑瓜子的小丫头，她笑眯眯道：“掌柜的，你是要认我做长辈呀？ 郑大风收起老烟杆，起身搓手，屁颠屁颠跑向少女，“做啥长辈，显得多生分。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
+        "significance": "推动郑大风与赵繇之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段6",
         "sentence_indexes_in_segment": [
@@ -442,7 +456,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -507,7 +521,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -571,7 +585,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -607,20 +621,35 @@
         ],
         "juan_index": 262,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "郑大风幸灾乐祸道：“叫范二，一二三的二。 郑大风不再多说范二，自言自语道：“范小子学武，以后还要以庶子身份继承家业。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风揭示",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与范二揭示",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风"
+          "郑大风",
+          "范二"
         ],
         "description": "郑大风幸灾乐祸道：“叫范二，一二三的二。 郑大风不再多说范二，自言自语道：“范小子学武，以后还要以庶子身份继承家业。 所有女子都望向汉子。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键揭示节点。",
+        "significance": "推动郑大风与范二之间的揭示关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段10",
         "sentence_indexes_in_segment": [
@@ -636,7 +665,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.328823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -715,7 +744,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -795,7 +824,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -858,7 +887,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -922,7 +951,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -985,7 +1014,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1077,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1112,7 +1141,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1195,7 +1224,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.080079",
+    "extracted_at": "2026-03-25T01:03:31.329827",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1259,7 +1288,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1292,20 +1321,34 @@
         ],
         "juan_index": 262,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "再不是马致眼中，那个与少年范二有说有笑的阳光少年，不再是走桩立桩时神气内敛的沉稳少年。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 262,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 陈平安与范二剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "范二"
         ],
-        "description": "当陈平安由撼山拳剑炉变为这一拳架后，气势浑然一变。 若是再抬起一腿，其实有点类似佛教寺庙的一尊天王相，只不过形似而已，真意大不相同，此拳，正是在孙氏祖宅两次打退金色云海蛟龙的云蒸大泽式。 再不是马致眼中，那个与少年范二有说有笑的阳光少年，不再是走桩立桩时神气内敛的沉稳少年。",
+        "description": "当陈平安由撼山拳剑炉变为这一拳架后，气势浑然一变。 再不是马致眼中，那个与少年范二有说有笑的阳光少年，不再是走桩立桩时神气内敛的沉稳少年。 若是再抬起一腿，其实有点类似佛教寺庙的一尊天王相，只不过形似而已，真意大不相同，此拳，正是在孙氏祖宅两次打退金色云海蛟龙的云蒸大泽式。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与范二之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段20",
         "sentence_indexes_in_segment": [
@@ -1321,7 +1364,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1399,7 +1442,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1462,7 +1505,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1524,7 +1567,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1587,7 +1630,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1607,7 +1650,49 @@
       "孙嘉树是否喜欢金粟，当然是喜欢的，只是妇人不愿道破天机，因为她并不觉得金粟和孙嘉树，能够成为一对神仙眷侣，作为金粟的夫君人选，在妇人心中，才华横溢、已经走到台前的孙嘉树最次，苻南华稍好，最好还是范二。",
       "只可惜世间男女情爱，从来不以男子好坏、双方合不合适而论。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "距离圭脉小院不远的那座寻常院子，桂花小娘金粟正在吃着一片甜瓜，岛上有一口天然泉水，冰镇瓜果最是美味，金粟的传道恩师，妇人桂姨，她对于人间美食早已没有兴趣，在一旁看着得意弟子的冷艳容颜，便是这一刻，寻常的吃东西，也流露出一份天然的清丽气度，心想难怪当年孙嘉树和苻南华，两位老龙城最出类拔萃的年轻俊彦，都要对同一位女子心动不已。 孙嘉树是否喜欢金粟，当然是喜欢的，只是妇人不愿道破天机，因为她并不觉得金粟和孙嘉树，能够成为一对神仙眷侣，作为金粟的夫君人选，在妇人心中，才华横溢、已经走到台前的孙嘉树最次，苻南华稍好，最好还是范二。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 262,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "距离圭脉小院不远的那座寻常院子，桂花小娘金粟正在吃着一片甜瓜，岛上有一口天然泉水，冰镇瓜果最是美味，金粟的传道恩师，妇人桂姨，她对于人间美食早已没有兴趣，在一旁看着得意弟子的冷艳容颜，便是这一刻，寻常的吃东西，也流露出一份天然的清丽气度，心想难怪当年孙嘉树和苻南华，两位老龙城最出类拔萃的年轻俊彦，都要对同一位女子心动不已。 孙嘉树是否喜欢金粟，当然是喜欢的，只是妇人不愿道破天机，因为她并不觉得金粟和孙嘉树，能够成为一对神仙眷侣，作为金粟的夫君人选，在妇人心中，才华横溢、已经走到台前的孙嘉树最次，苻南华稍好，最好还是范二。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 262,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "孙嘉树是否喜欢金粟，当然是喜欢的，只是妇人不愿道破天机，因为她并不觉得金粟和孙嘉树，能够成为一对神仙眷侣，作为金粟的夫君人选，在妇人心中，才华横溢、已经走到台前的孙嘉树最次，苻南华稍好，最好还是范二。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 262,
+        "segment_index": 25
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1616,7 +1701,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "孙嘉树",
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1626,14 +1714,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "距离圭脉小院不远的那座寻常院子，桂花小娘金粟正在吃着一片甜瓜，岛上有一口天然泉水，冰镇瓜果最是美味，金粟的传道恩师，妇人桂姨，她对于人间美食早已没有兴趣，在一旁看着得意弟子的冷艳容颜，便是这一刻，寻常的吃东西，也流露出一份天然的清丽气度，心想难怪当年孙嘉树和苻南华，两位老龙城最出类拔萃的年轻俊彦，都要对同一位女子心动不已。 少年眼神坚毅，根本不说话，只是收起那古老拳架，向后缓缓寸步倒滑出去，真是行云流水，赏心悦目。 世间剑修，剑意万千，大不相同。",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "孙嘉树"
+        ],
+        "description": "距离圭脉小院不远的那座寻常院子，桂花小娘金粟正在吃着一片甜瓜，岛上有一口天然泉水，冰镇瓜果最是美味，金粟的传道恩师，妇人桂姨，她对于人间美食早已没有兴趣，在一旁看着得意弟子的冷艳容颜，便是这一刻，寻常的吃东西，也流露出一份天然的清丽气度，心想难怪当年孙嘉树和苻南华，两位老龙城最出类拔萃的年轻俊彦，都要对同一位女子心动不已。 孙嘉树是否喜欢金粟，当然是喜欢的，只是妇人不愿道破天机，因为她并不觉得金粟和孙嘉树，能够成为一对神仙眷侣，作为金粟的夫君人选，在妇人心中，才华横溢、已经走到台前的孙嘉树最次，苻南华稍好，最好还是范二。 少年眼神坚毅，根本不说话，只是收起那古老拳架，向后缓缓寸步倒滑出去，真是行云流水，赏心悦目。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1647,8 +1741,29 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "师承",
+        "context": "距离圭脉小院不远的那座寻常院子，桂花小娘金粟正在吃着一片甜瓜，岛上有一口天然泉水，冰镇瓜果最是美味，金粟的传道恩师，妇人桂姨，她对于人间美食早已没有兴趣，在一旁看着得意弟子的冷艳容颜，便是这一刻，寻常的吃东西，也流露出一份天然的清丽气度，心想难怪当年孙嘉树和苻南华，两位老龙城最出类拔萃的年轻俊彦，都要对同一位女子心动不已。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 262,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.330830",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1709,7 +1824,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.331834",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1770,7 +1885,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.331834",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "262-31-0": {
+    "juan_index": 262,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百六十一章 有剑从云海来",
+    "source_sentences": [
+      "”",
+      "年轻男人眯起眼眸，凝视着眼前妇人，言语不算客气，“你就是桂夫人？",
+      "”",
+      "桂姨神色淡然，“正是。",
+      "”",
+      "男人眼神炙热起来，“自我介绍一下，我叫姜北海，来自玉圭宗，如今我们宗门刚好欠缺一艘跨洲渡船，不知道桂夫人有没有兴趣，加入玉圭宗？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "年轻男人眯起眼眸，凝视着眼前妇人，言语不算客气，“你就是桂夫人？ 男人眼神炙热起来，“自我介绍一下，我叫姜北海，来自玉圭宗，如今我们宗门刚好欠缺一艘跨洲渡船，不知道桂夫人有没有兴趣，加入玉圭宗？",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 31
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "年轻男人眯起眼眸，凝视着眼前妇人，言语不算客气，“你就是桂夫人？ 男人眼神炙热起来，“自我介绍一下，我叫姜北海，来自玉圭宗，如今我们宗门刚好欠缺一艘跨洲渡船，不知道桂夫人有没有兴趣，加入玉圭宗？ ”",
+        "background": "",
+        "significance": "对应桂夫人在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 31
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.331834",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1790,7 +1968,21 @@
       "”",
       "东宝瓶洲是九大洲中最小的一个，相邻东南方的桐叶洲，却是不小，比起那座扶摇洲都要大上不少，而且桐叶洲的洞天福地，在九大洲当中数量算是多的，尤其是其中有两座福地的品秩，极高。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "相信范家不敢、不愿也不会拒绝我的提议，桂夫人，你觉得呢？",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 262,
+        "segment_index": 32
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1809,13 +2001,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 宝瓶洲对话",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "东宝瓶洲是九大洲中最小的一个，相邻东南方的桐叶洲，却是不小，比起那座扶摇洲都要大上不少，而且桐叶洲的洞天福地，在九大洲当中数量算是多的，尤其是其中有两座福地的品秩，极高。 ” 桂姨默不作声。",
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "相信范家不敢、不愿也不会拒绝我的提议，桂夫人，你觉得呢？ 东宝瓶洲是九大洲中最小的一个，相邻东南方的桐叶洲，却是不小，比起那座扶摇洲都要大上不少，而且桐叶洲的洞天福地，在九大洲当中数量算是多的，尤其是其中有两座福地的品秩，极高。 ”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
+        "significance": "对应桂夫人在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段32",
         "sentence_indexes_in_segment": [
@@ -1831,7 +2025,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.081082",
+    "extracted_at": "2026-03-25T01:03:31.331834",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "262-33-0": {
+    "juan_index": 262,
+    "segment_index": 33,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百六十一章 有剑从云海来",
+    "source_sentences": [
+      "好到许多婆娑洲、俱芦洲的修士，都会万里迢迢赶往桐叶洲，各有所求，最终这些以“谪仙人”身份降落福地的修士，收益之高，要远远超过许多福地。",
+      "而桐叶洲版图上，桐叶宗和玉圭宗，一北一南，双峰并峙。",
+      "帮助丁家逃过一劫的那位桐叶洲年轻人，正是出自桐叶宗，一座宗门，能够一洲称号命名，屹立数千年不倒，本身就是一种实力的最佳展露。",
+      "这一点，与东北方的俱芦洲，却敢从皑皑洲抢走那个北字，以北俱芦洲自居，有异曲同工之妙。",
+      "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 262,
+        "segment_index": 33
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。 好到许多婆娑洲、俱芦洲的修士，都会万里迢迢赶往桐叶洲，各有所求，最终这些以“谪仙人”身份降落福地的修士，收益之高，要远远超过许多福地。 而桐叶洲版图上，桐叶宗和玉圭宗，一北一南，双峰并峙。",
+        "background": "",
+        "significance": "对应桂夫人在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段33",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 33
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.331834",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1851,7 +2107,22 @@
       "说到最后，姜氏男子此地无银三百两，弯腰赔罪，脸上却是笑容阴冷，道：“失礼了失礼了，措辞不当，桂夫人莫要怪罪。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "姜氏男子笑了笑，“既然桂夫人都知道，还是这般不冷不热的态度，想必是觉得玉圭宗与老龙城范家，不在一洲，又隔着一个桐叶宗，所以鞭长莫及？ 说到最后，姜氏男子此地无银三百两，弯腰赔罪，脸上却是笑容阴冷，道：“失礼了失礼了，措辞不当，桂夫人莫要怪罪。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 262,
+        "segment_index": 34
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1860,7 +2131,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "桂夫人"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1870,13 +2143,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 老龙城剧情推进",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "姜氏男子笑了笑，“既然桂夫人都知道，还是这般不冷不热的态度，想必是觉得玉圭宗与老龙城范家，不在一洲，又隔着一个桐叶宗，所以鞭长莫及？ 桂姨摇头道：“玉圭宗，我如雷贯耳，玉圭宗内掌握云窟福地的姜家，以及姜氏最近十数代，皆是一脉单传，我都有所耳闻。 ”",
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "姜氏男子笑了笑，“既然桂夫人都知道，还是这般不冷不热的态度，想必是觉得玉圭宗与老龙城范家，不在一洲，又隔着一个桐叶宗，所以鞭长莫及？ 说到最后，姜氏男子此地无银三百两，弯腰赔罪，脸上却是笑容阴冷，道：“失礼了失礼了，措辞不当，桂夫人莫要怪罪。 桂姨摇头道：“玉圭宗，我如雷贯耳，玉圭宗内掌握云窟福地的姜家，以及姜氏最近十数代，皆是一脉单传，我都有所耳闻。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "对应桂夫人在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段34",
         "sentence_indexes_in_segment": [
@@ -1892,7 +2167,132 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.331834",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "262-36-0": {
+    "juan_index": 262,
+    "segment_index": 36,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百六十一章 有剑从云海来",
+    "source_sentences": [
+      "”",
+      "年轻男子蓦然大笑，“邀请桂夫人加入玉圭宗，算不得我姜北海的诚意，只要桂夫人愿意，嫁入都可以。",
+      "”",
+      "然后他自顾自摆摆手，哈哈笑道：“玩笑话，当不得真。",
+      "桂夫人且放心，咱们玉圭宗宗主和我姜氏家主，都对夫人仰慕已久，由不得我姜北海随心所欲，冒犯夫人。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "年轻男子蓦然大笑，“邀请桂夫人加入玉圭宗，算不得我姜北海的诚意，只要桂夫人愿意，嫁入都可以。 桂夫人且放心，咱们玉圭宗宗主和我姜氏家主，都对夫人仰慕已久，由不得我姜北海随心所欲，冒犯夫人。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 262,
+        "segment_index": 36
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "年轻男子蓦然大笑，“邀请桂夫人加入玉圭宗，算不得我姜北海的诚意，只要桂夫人愿意，嫁入都可以。 桂夫人且放心，咱们玉圭宗宗主和我姜氏家主，都对夫人仰慕已久，由不得我姜北海随心所欲，冒犯夫人。 ”",
+        "background": "",
+        "significance": "对应桂夫人在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段36",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 36
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.332837",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "262-37-0": {
+    "juan_index": 262,
+    "segment_index": 37,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百六十一章 有剑从云海来",
+    "source_sentences": [
+      "桂姨还是笑脸以对，挑不出半点毛病。",
+      "女子姿色的高低，面容是否长得倾国倾城，未必决定一切。",
+      "那位瘦高老者目露激赏之意，只是天生语气淡然，缓缓道：“桂夫人好气度，如我家公子所言，玉圭宗确实极有诚意相邀，恳请夫人认真考虑，希望六十年后，能够在玉圭宗山门内，喝上一杯桂夫人亲手酿造的桂子酒。",
+      "”",
+      "桂姨轻轻点头。",
+      "双方就此别过。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "那位瘦高老者目露激赏之意，只是天生语气淡然，缓缓道：“桂夫人好气度，如我家公子所言，玉圭宗确实极有诚意相邀，恳请夫人认真考虑，希望六十年后，能够在玉圭宗山门内，喝上一杯桂夫人亲手酿造的桂子酒。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 262,
+        "segment_index": 37
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "那位瘦高老者目露激赏之意，只是天生语气淡然，缓缓道：“桂夫人好气度，如我家公子所言，玉圭宗确实极有诚意相邀，恳请夫人认真考虑，希望六十年后，能够在玉圭宗山门内，喝上一杯桂夫人亲手酿造的桂子酒。 桂姨还是笑脸以对，挑不出半点毛病。 女子姿色的高低，面容是否长得倾国倾城，未必决定一切。",
+        "background": "",
+        "significance": "对应桂夫人在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段37",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 37
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.332837",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1954,7 +2354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.332837",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2016,7 +2416,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.332837",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2093,7 +2493,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.332837",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2155,7 +2555,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2207,7 +2607,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

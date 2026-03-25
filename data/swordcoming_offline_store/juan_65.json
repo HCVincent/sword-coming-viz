@@ -105,7 +105,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -133,6 +133,19 @@
         "original_description_in_book": "刘灞桥收起大拇指，不去和走在前边的陈对陈松风并肩而行，反而走在陈平安一侧，扭头笑道：“虽说那正阳山就是个小山包，躲着一些个名不副实的缩头乌龟，可那头护山猿凶名赫赫，是一拳一拳打出来的名号，尤其是在正阳山的开山老祖死后，在正阳山开出第三峰前的头个两百年里，几乎都是靠着这头老猿护着正阳山，才没被周边势力吞并。",
         "description": "大骊线的重要人物，与陈平安和王朝布局线存在稳定交集。",
         "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "刘灞桥收起大拇指，不去和走在前边的陈对陈松风并肩而行，反而走在陈平安一侧，扭头笑道：“虽说那正阳山就是个小山包，躲着一些个名不副实的缩头乌龟，可那头护山猿凶名赫赫，是一拳一拳打出来的名号，尤其是在正阳山的开山老祖死后，在正阳山开出第三峰前的头个两百年里，几乎都是靠着这头老猿护着正阳山，才没被周边势力吞并。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
         "sentence_indexes_in_segment": [
           1
         ],
@@ -176,6 +189,7 @@
         "coordinates": null,
         "related_entities": [
           "陈对",
+          "陈松风",
           "陈平安",
           "宁姚"
         ],
@@ -190,18 +204,21 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安在正阳山对话",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈松风在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
           "陈对",
+          "陈松风",
           "陈平安"
         ],
         "description": "刘灞桥收起大拇指，不去和走在前边的陈对陈松风并肩而行，反而走在陈平安一侧，扭头笑道：“虽说那正阳山就是个小山包，躲着一些个名不副实的缩头乌龟，可那头护山猿凶名赫赫，是一拳一拳打出来的名号，尤其是在正阳山的开山老祖死后，在正阳山开出第三峰前的头个两百年里，几乎都是靠着这头老猿护着正阳山，才没被周边势力吞并。 当然了，那会儿的正阳山，到底还只是个不成气候的小门小户，需要面对的敌人，不算太强，要是那会儿就惹上咱们风雷园，嘿，没悬念，只需要老祖一声令下，赏我一块御剑牌，我就可以一个人跑到正阳山的上空，轻轻丢下咱们那座雷池剑阵，下过这场剑雨之后，正阳山就算玩完了。 宁姚毫不留情面地直接拆穿：“正阳山没你说的那么不堪，风雷园也没你说的那么强大。",
         "background": "",
-        "significance": "在正阳山推动陈对与陈平安之间的对话线。",
+        "significance": "在正阳山推动陈对与陈松风之间的对话线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段2",
         "sentence_indexes_in_segment": [
@@ -223,12 +240,52 @@
           "陈对"
         ],
         "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "刘灞桥收起大拇指，不去和走在前边的陈对陈松风并肩而行，反而走在陈平安一侧，扭头笑道：“虽说那正阳山就是个小山包，躲着一些个名不副实的缩头乌龟，可那头护山猿凶名赫赫，是一拳一拳打出来的名号，尤其是在正阳山的开山老祖死后，在正阳山开出第三峰前的头个两百年里，几乎都是靠着这头老猿护着正阳山，才没被周边势力吞并。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈松风在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈对"
+        ],
+        "to_roles": [
           "陈平安"
         ],
         "action": "对话",
         "context": "刘灞桥收起大拇指，不去和走在前边的陈对陈松风并肩而行，反而走在陈平安一侧，扭头笑道：“虽说那正阳山就是个小山包，躲着一些个名不副实的缩头乌龟，可那头护山猿凶名赫赫，是一拳一拳打出来的名号，尤其是在正阳山的开山老祖死后，在正阳山开出第三峰前的头个两百年里，几乎都是靠着这头老猿护着正阳山，才没被周边势力吞并。",
         "result": null,
-        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安在正阳山对话",
+        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈松风在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "刘灞桥收起大拇指，不去和走在前边的陈对陈松风并肩而行，反而走在陈平安一侧，扭头笑道：“虽说那正阳山就是个小山包，躲着一些个名不副实的缩头乌龟，可那头护山猿凶名赫赫，是一拳一拳打出来的名号，尤其是在正阳山的开山老祖死后，在正阳山开出第三峰前的头个两百年里，几乎都是靠着这头老猿护着正阳山，才没被周边势力吞并。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈松风在正阳山对话",
         "location": "正阳山",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -238,7 +295,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -317,7 +374,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.471063",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -398,7 +455,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -434,6 +491,20 @@
       },
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "过了廊桥之后，陈对陈松风自然而然放慢脚步，让陈平安在前头带路。 一行人沿着那条无名小溪往上游走，陈平安背着一只竹片泛黄的大背篓，陈松风则背着一只色泽依旧碧绿可爱的竹编书箱。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 65,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "过了廊桥之后，陈对陈松风自然而然放慢脚步，让陈平安在前头带路。 一行人沿着那条无名小溪往上游走，陈平安背着一只竹片泛黄的大背篓，陈松风则背着一只色泽依旧碧绿可爱的竹编书箱。",
@@ -459,6 +530,7 @@
         "coordinates": null,
         "related_entities": [
           "陈对",
+          "陈松风",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -470,19 +542,18 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安在廊桥对话",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 陈平安与陈松风在廊桥对话",
         "time": null,
         "location": "廊桥",
         "participants": [
-          "陈对",
-          "陈平安"
+          "陈平安",
+          "陈松风",
+          "陈对"
         ],
         "description": "过了廊桥之后，陈对陈松风自然而然放慢脚步，让陈平安在前头带路。 一行人沿着那条无名小溪往上游走，陈平安背着一只竹片泛黄的大背篓，陈松风则背着一只色泽依旧碧绿可爱的竹编书箱。 刘灞桥很好奇陈平安背篓里到底装了什么，非要一探究竟，就让陈平安放慢脚步，他一边跟着一边在背篓里翻来翻去，发现乱七八糟的东西还不少，三盏叠放在一起的斗笠，两把壶，一把水壶，一把装油，大小两把柴刀，两块打火石和一捆火折子，背篓底部，还有一排被对半剖开后合拢的竹筒，约莫有七八截，一只装有鱼钩鱼线的小布袋。",
         "background": "",
-        "significance": "在廊桥推动陈对与陈平安之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在廊桥推动陈平安与陈松风之间的对话线。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -496,34 +567,8 @@
         "segment_index": 5
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈对"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "还有海潮铁骑出身的一位千金小姐，因祸得福，认识了观湖书院的崔公子，两人一见如故…… 过了廊桥之后，陈对陈松风自然而然放慢脚步，让陈平安在前头带路。 一行人沿着那条无名小溪往上游走，陈平安背着一只竹片泛黄的大背篓，陈松风则背着一只色泽依旧碧绿可爱的竹编书箱。 刘灞桥很好奇陈平安背篓里到底装了什么，非要一探究竟，就让陈平安放慢脚步，他一边跟着一边在背篓里翻来翻去，发现乱七八糟的东西还不少，三盏叠放在一起的斗笠，两把壶，一把水壶，一把装油，大小两把柴刀，两块打火石和一捆火折子，背篓底部，还有一排被对半剖开后合拢的竹筒，约莫有七八截，一只装有鱼钩鱼线的小布袋。 刘灞桥问道：“陈平安，那一截截竹筒是做啥的？ ”",
-        "result": null,
-        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安在廊桥对话",
-        "location": "廊桥",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 65,
-        "segment_index": 5
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -586,7 +631,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -648,7 +693,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -710,7 +755,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.490227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -810,7 +855,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -873,7 +918,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -906,6 +951,20 @@
         ],
         "juan_index": 65,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "宁姚皱眉道：“是正阳山的苏稼？ 苏稼，禾之秀实为稼，那位圣人所谓‘好稼者众矣’的稼！",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -917,7 +976,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "宁姚"
+          "宁姚",
+          "苏稼"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -928,15 +988,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 宁姚在正阳山剧情推进",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 苏稼与宁姚在正阳山剧情推进",
         "time": null,
         "location": "正阳山",
         "participants": [
+          "苏稼",
           "宁姚"
         ],
-        "description": "宁姚皱眉道：“是正阳山的苏稼？ 刘灞桥啧啧道：“宁姑娘你这性子，就不如我家苏仙子了。 ”",
+        "description": "宁姚皱眉道：“是正阳山的苏稼？ 苏稼，禾之秀实为稼，那位圣人所谓‘好稼者众矣’的稼！ 刘灞桥啧啧道：“宁姑娘你这性子，就不如我家苏仙子了。",
         "background": "",
-        "significance": "对应宁姚在叙事中的关键剧情推进节点。",
+        "significance": "在正阳山推动苏稼与宁姚之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段11",
         "sentence_indexes_in_segment": [
@@ -952,7 +1013,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -998,6 +1059,19 @@
         ],
         "juan_index": 65,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "宁姚问了一个陈平安绝对听不懂的问题，“你如果真的这么喜欢苏稼，那你有没有想过，一旦她也喜欢你，怎么办？",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 65,
+        "segment_index": 12
       }
     ],
     "locations": [],
@@ -1008,7 +1082,8 @@
         "location": null,
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "苏稼"
         ],
         "description": "宁姚问了一个陈平安绝对听不懂的问题，“你如果真的这么喜欢苏稼，那你有没有想过，一旦她也喜欢你，怎么办？ 怎么样，我家苏仙子，是不是名字也动人心魄？ ”",
         "background": "",
@@ -1028,7 +1103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1075,6 +1150,22 @@
         ],
         "juan_index": 65,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈对和陈松风跟前面三人拉开十数步距离。 看到刘灞桥跟草鞋少年聊得那么投缘，陈松风有些羡慕，刘灞桥仿佛天生就擅长与人打交道，三教九流百家，帝王将相贩夫走卒，根本就没有他不能聊天的对象。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 13
       }
     ],
     "locations": [
@@ -1086,7 +1177,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈对"
+          "陈对",
+          "陈松风"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -1103,14 +1195,13 @@
         "participants": [
           "阿良",
           "陈平安",
+          "陈松风",
           "陈对"
         ],
-        "description": "陈平安觉得刘灞桥这个人，不坏。 陈对和陈松风跟前面三人拉开十数步距离。 陈对比起进入小镇之前的她，明显如今要和气许多，搁在以前陈松风问这种问题，她只当耳旁风，耐着性子解释道：“如果清风城早就知道真相，刘姓少年祖上是我颍阴陈氏留在小镇守墓人，那么他们胆敢如此行事，理所当然要付出代价，而且远远不是归还甲胄这么简单了，但是既然他们事先并不知晓内幕，大道机缘本就宝贵珍稀，人人可争，我颍阴陈氏还不至于如此霸道。",
+        "description": "陈平安觉得刘灞桥这个人，不坏。 陈对和陈松风跟前面三人拉开十数步距离。 看到刘灞桥跟草鞋少年聊得那么投缘，陈松风有些羡慕，刘灞桥仿佛天生就擅长与人打交道，三教九流百家，帝王将相贩夫走卒，根本就没有他不能聊天的对象。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1124,34 +1215,8 @@
         "segment_index": 13
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "陈对"
-        ],
-        "action": "对话",
-        "context": "陈平安觉得刘灞桥这个人，不坏。 陈对和陈松风跟前面三人拉开十数步距离。 看到刘灞桥跟草鞋少年聊得那么投缘，陈松风有些羡慕，刘灞桥仿佛天生就擅长与人打交道，三教九流百家，帝王将相贩夫走卒，根本就没有他不能聊天的对象。 陈松风小声问道：“那妇人听到风声后，就立即拜访衙署，主动提出要归还那具甲胄，作为清风城许氏的赔罪，你为何不收？ ” 陈对比起进入小镇之前的她，明显如今要和气许多，搁在以前陈松风问这种问题，她只当耳旁风，耐着性子解释道：“如果清风城早就知道真相，刘姓少年祖上是我颍阴陈氏留在小镇守墓人，那么他们胆敢如此行事，理所当然要付出代价，而且远远不是归还甲胄这么简单了，但是既然他们事先并不知晓内幕，大道机缘本就宝贵珍稀，人人可争，我颍阴陈氏还不至于如此霸道。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 65,
-        "segment_index": 13
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1174,6 +1239,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风笑道：“说不定清风城也有算计正阳山一把的念头，如果不是那老猿冲在前头，被妇人扯来当了回虎皮大旗，估计清风城还真就拿不走宝甲。 陈松风放低声音，看似漫不经心说道：“兴许是有心无力吧，与其做些徒劳无功的大事，不如捞些蝇头小利。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "陈对恢复本来面貌，冷笑道：“蝇营狗苟，只会随波逐流，从来不在乎真正的大势是什么。",
@@ -1194,7 +1273,9 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1204,16 +1285,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对在正阳山对话",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 陈松风与陈对在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
+          "陈松风",
           "陈对"
         ],
-        "description": "陈松风笑道：“说不定清风城也有算计正阳山一把的念头，如果不是那老猿冲在前头，被妇人扯来当了回虎皮大旗，估计清风城还真就拿不走宝甲。 陈对恢复本来面貌，冷笑道：“蝇营狗苟，只会随波逐流，从来不在乎真正的大势是什么。 ”",
+        "description": "陈松风笑道：“说不定清风城也有算计正阳山一把的念头，如果不是那老猿冲在前头，被妇人扯来当了回虎皮大旗，估计清风城还真就拿不走宝甲。 陈对恢复本来面貌，冷笑道：“蝇营狗苟，只会随波逐流，从来不在乎真正的大势是什么。 陈松风放低声音，看似漫不经心说道：“兴许是有心无力吧，与其做些徒劳无功的大事，不如捞些蝇头小利。",
         "background": "",
-        "significance": "对应陈对在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动陈松风与陈对之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1227,8 +1311,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.472066",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "” 陈松风笑道：“说不定清风城也有算计正阳山一把的念头，如果不是那老猿冲在前头，被妇人扯来当了回虎皮大旗，估计清风城还真就拿不走宝甲。 ” 陈对恢复本来面貌，冷笑道：“蝇营狗苟，只会随波逐流，从来不在乎真正的大势是什么。 ” 陈松风放低声音，看似漫不经心说道：“兴许是有心无力吧，与其做些徒劳无功的大事，不如捞些蝇头小利。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈松风与陈对在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1266,6 +1376,21 @@
       },
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈对转头瞥了眼这位龙尾郡陈氏子弟，对于陈松风的“无心之语”，陈对不置可否。 因为草鞋少年与搬山猿的小镇屋顶一役，刘灞桥远远观战了大半场，回去之后就跟陈松风大肆宣扬了一番，当时陈对也在场，所以她知道不可以将陈平安视为普通的市井少年。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "马上要进山了，陈平安停下脚步，陈对几乎同时就开口说道：“刘灞桥，告诉他，只管带路，越快越好。 因为草鞋少年与搬山猿的小镇屋顶一役，刘灞桥远远观战了大半场，回去之后就跟陈松风大肆宣扬了一番，当时陈对也在场，所以她知道不可以将陈平安视为普通的市井少年。",
@@ -1288,6 +1413,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "陈松风",
           "陈对",
           "陈平安"
         ],
@@ -1349,7 +1475,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.491230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1387,6 +1513,20 @@
       },
       {
         "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "尤其是春雨过后，泥泞地滑，加上时不时就需要跨越溪涧石崖，陈松风口干舌燥，汗如雨下。 再往后，哪怕刘灞桥帮陈松风背起书箱，陈松风依然气喘如牛，脸色发白。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 65,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安期间问过陈对一次，要不要放慢脚步。",
@@ -1402,16 +1542,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安剧情推进",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈松风剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈对",
+          "陈松风",
           "陈平安"
         ],
-        "description": "这位豪阀俊彦，虽然也喜欢登高作赋、探幽寻奇，但是比起其他四人，实在相形见绌，陈对是武道高手，刘灞桥是天底下所有练气士当中，极为重视淬炼体魄的剑修，那对少年少女，更是能够戏耍一尊肉身强横至极的搬山猿。 陈平安期间问过陈对一次，要不要放慢脚步。 陈对的答复是摇头。",
+        "description": "这位豪阀俊彦，虽然也喜欢登高作赋、探幽寻奇，但是比起其他四人，实在相形见绌，陈对是武道高手，刘灞桥是天底下所有练气士当中，极为重视淬炼体魄的剑修，那对少年少女，更是能够戏耍一尊肉身强横至极的搬山猿。 尤其是春雨过后，泥泞地滑，加上时不时就需要跨越溪涧石崖，陈松风口干舌燥，汗如雨下。 再往后，哪怕刘灞桥帮陈松风背起书箱，陈松风依然气喘如牛，脸色发白。",
         "background": "",
-        "significance": "推动陈对与陈平安之间的剧情推进关系。",
+        "significance": "推动陈对与陈松风之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段16",
         "sentence_indexes_in_segment": [
@@ -1427,7 +1568,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1448,6 +1589,21 @@
       "陈平安干脆摘下背篓，放在石崖凹陷处，说道：“休息一刻钟好了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "在一行人需要在溪涧当中涉水而上的时候，陈松风踩在一块长有青苔的石头上，一个脚步打滑，整个人摔入溪水当中，成了落汤鸡，狼狈至极。 刘灞桥赶忙回身去搀扶陈松风起身。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3
+        ],
+        "juan_index": 65,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "陈对",
@@ -1478,19 +1634,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安对话",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 陈松风与陈对对话",
         "time": null,
         "location": null,
         "participants": [
+          "陈松风",
           "陈对",
           "陈平安"
         ],
-        "description": "陈对停下脚步转身望去，虽然没有说话，但是她脸色阴沉。 陈平安干脆摘下背篓，放在石崖凹陷处，说道：“休息一刻钟好了。 在一行人需要在溪涧当中涉水而上的时候，陈松风踩在一块长有青苔的石头上，一个脚步打滑，整个人摔入溪水当中，成了落汤鸡，狼狈至极。",
+        "description": "在一行人需要在溪涧当中涉水而上的时候，陈松风踩在一块长有青苔的石头上，一个脚步打滑，整个人摔入溪水当中，成了落汤鸡，狼狈至极。 陈对停下脚步转身望去，虽然没有说话，但是她脸色阴沉。 刘灞桥赶忙回身去搀扶陈松风起身。",
         "background": "",
-        "significance": "推动陈对与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈松风与陈对之间的对话关系。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1504,34 +1659,8 @@
         "segment_index": 17
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈对"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "在一行人需要在溪涧当中涉水而上的时候，陈松风踩在一块长有青苔的石头上，一个脚步打滑，整个人摔入溪水当中，成了落汤鸡，狼狈至极。 陈对停下脚步转身望去，虽然没有说话，但是她脸色阴沉。 刘灞桥赶忙回身去搀扶陈松风起身。 陈松风歉意道：“我没事，不用管我，肯定能跟上。 ” 陈平安干脆摘下背篓，放在石崖凹陷处，说道：“休息一刻钟好了。",
-        "result": null,
-        "event_name": "第一卷笼中雀 第六十五章 珠子 · 陈对与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 65,
-        "segment_index": 17
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1644,7 +1773,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1692,6 +1821,20 @@
         ],
         "juan_index": 65,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "不曾想陈对根本不听陈平安的解释，直接对陈松风说道：“你回小镇便是。 陈松风满脸苦涩，看着不容置疑的年轻女子，他转过头对刘灞桥说道：“那接下来就劳烦你背书箱了。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 65,
+        "segment_index": 19
       }
     ],
     "locations": [
@@ -1704,7 +1847,8 @@
         "coordinates": null,
         "related_entities": [
           "陈对",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -1721,13 +1865,16 @@
         "participants": [
           "阿良",
           "陈平安",
-          "陈对"
+          "陈对",
+          "陈松风"
         ],
-        "description": "翻山越岭涉水一事，陈平安确实是行家里的行家。 不曾想陈对根本不听陈平安的解释，直接对陈松风说道：“你回小镇便是。 刘灞桥大怒，拿下书箱摔向陈对，“老子还不伺候了！",
+        "description": "翻山越岭涉水一事，陈平安确实是行家里的行家。 不曾想陈对根本不听陈平安的解释，直接对陈松风说道：“你回小镇便是。 陈松风满脸苦涩，看着不容置疑的年轻女子，他转过头对刘灞桥说道：“那接下来就劳烦你背书箱了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段19",
         "sentence_indexes_in_segment": [
@@ -1762,9 +1909,49 @@
         ],
         "juan_index": 65,
         "segment_index": 19
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈对"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "不曾想陈对根本不听陈平安的解释，直接对陈松风说道：“你回小镇便是。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 19
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "不曾想陈对根本不听陈平安的解释，直接对陈松风说道：“你回小镇便是。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1811,6 +1998,19 @@
         ],
         "juan_index": 65,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风轻声劝说刘灞桥，后者拿着竹筒，冷笑道：“才不受这窝囊气，跟你一起打道回府，到了衙署那边，要一桌子好酒好菜，大鱼大肉！",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 20
       }
     ],
     "locations": [],
@@ -1823,7 +2023,7 @@
           "陈对",
           "陈平安"
         ],
-        "description": "陈对脸色平淡，接过书箱后自己背起来，对陈平安说道：“走。 陈平安想了想，从背篓里拿出两截竹筒，轻轻抛给刘灞桥，“回去路上饿了，可以填肚子。 ”",
+        "description": "陈对脸色平淡，接过书箱后自己背起来，对陈平安说道：“走。 陈平安想了想，从背篓里拿出两截竹筒，轻轻抛给刘灞桥，“回去路上饿了，可以填肚子。 陈松风轻声劝说刘灞桥，后者拿着竹筒，冷笑道：“才不受这窝囊气，跟你一起打道回府，到了衙署那边，要一桌子好酒好菜，大鱼大肉！",
         "background": "",
         "significance": "推动陈对与陈平安之间的对话关系。",
         "related_action_indices": [
@@ -1864,7 +2064,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1968,7 +2168,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2015,6 +2215,19 @@
         ],
         "juan_index": 65,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "前方三人身影渐行渐远，陈松风干脆坐在一屁股石头上，苦笑道：“你这是何苦来哉，跟颍阴陈氏结下一些香火情，对你对风雷园，怎么都不是坏事，为何要意气用事？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 65,
+        "segment_index": 22
       }
     ],
     "locations": [],
@@ -2027,7 +2240,7 @@
           "陈平安",
           "宁姚"
         ],
-        "description": "陈平安点点头，和宁姚一起离去。 刘灞桥打开一截竹筒，露出雪白的饭团，兴高采烈道：“还是陈平安厚道，不愧是我的好兄弟。 ”",
+        "description": "陈平安点点头，和宁姚一起离去。 前方三人身影渐行渐远，陈松风干脆坐在一屁股石头上，苦笑道：“你这是何苦来哉，跟颍阴陈氏结下一些香火情，对你对风雷园，怎么都不是坏事，为何要意气用事？ 刘灞桥打开一截竹筒，露出雪白的饭团，兴高采烈道：“还是陈平安厚道，不愧是我的好兄弟。",
         "background": "",
         "significance": "推动陈平安与宁姚之间的对话关系。",
         "related_action_indices": [
@@ -2068,7 +2281,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2089,6 +2302,20 @@
       "他抓起一只饭团大啃起来，含糊不清问道：“你说得也不对，小镇齐先生，当然还有齐先生的先生，就很厉害。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风知道刘灞桥的脾气，不再劝说什么。 陈松风自嘲道：“百无一用是书生啊。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 23
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2143,14 +2370,13 @@
         "location": "小镇",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
-        "description": "刘灞桥嘀嘀咕咕道：“早知道应该让陈平安留下一竹筒腌菜的。 他抓起一只饭团大啃起来，含糊不清问道：“你说得也不对，小镇齐先生，当然还有齐先生的先生，就很厉害。 陈松风知道刘灞桥的脾气，不再劝说什么。",
+        "description": "陈松风知道刘灞桥的脾气，不再劝说什么。 陈松风自嘲道：“百无一用是书生啊。 刘灞桥嘀嘀咕咕道：“早知道应该让陈平安留下一竹筒腌菜的。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -2164,34 +2390,8 @@
         "segment_index": 23
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "陈松风知道刘灞桥的脾气，不再劝说什么。 陈松风自嘲道：“百无一用是书生啊。 ” 刘灞桥嘀嘀咕咕道：“早知道应该让陈平安留下一竹筒腌菜的。 ” 他抓起一只饭团大啃起来，含糊不清问道：“你说得也不对，小镇齐先生，当然还有齐先生的先生，就很厉害。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 65,
-        "segment_index": 23
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.473070",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.492234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2212,6 +2412,20 @@
       "陈松风伸手抖了抖湿透的外衫，唏嘘道：“好一个‘天晓得’。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风眼神恍惚，“你说齐先生到底想做什么？ 陈松风伸手抖了抖湿透的外衫，唏嘘道：“好一个‘天晓得’。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 24
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -2236,12 +2450,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
-        "description": "陈松风眼神恍惚，“你说齐先生到底想做什么？ ” ”",
+        "description": "陈松风眼神恍惚，“你说齐先生到底想做什么？ 陈松风伸手抖了抖湿透的外衫，唏嘘道：“好一个‘天晓得’。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -2255,8 +2472,34 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "” 陈松风眼神恍惚，“你说齐先生到底想做什么？ ” 刘灞桥随口答道：“天晓得。 ” 陈松风伸手抖了抖湿透的外衫，唏嘘道：“好一个‘天晓得’。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2334,7 +2577,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2398,7 +2641,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2492,7 +2735,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2528,6 +2771,21 @@
         ],
         "juan_index": 65,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "大骊藩王宋长镜裹了一件狐裘，脸色苍白，但是精神极好，来到宋集薪身边，笑道：“这座位于东宝瓶洲的骊珠洞天，三十六小洞天之一，不以占地广袤见长，版图不过方圆千里而已。 宋长镜没有转头，只是抬手指了指身后那道大门，“过了那道门，再沿着云梯一直向下，约莫三十里路后，就算踩在了我大骊的疆土之上。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 65,
+        "segment_index": 28
       }
     ],
     "locations": [
@@ -2541,6 +2799,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -2558,6 +2817,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -2574,6 +2834,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -2586,16 +2847,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十五章 珠子 · 宋集薪在大骊对话",
+        "name": "第一卷笼中雀 第六十五章 珠子 · 宋长镜与宋集薪在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
         "description": "宋集薪则转身走到山顶边缘，举目远眺，大好河山，只觉得心旷神怡。 大骊藩王宋长镜裹了一件狐裘，脸色苍白，但是精神极好，来到宋集薪身边，笑道：“这座位于东宝瓶洲的骊珠洞天，三十六小洞天之一，不以占地广袤见长，版图不过方圆千里而已。 宋长镜没有转头，只是抬手指了指身后那道大门，“过了那道门，再沿着云梯一直向下，约莫三十里路后，就算踩在了我大骊的疆土之上。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋长镜与宋集薪之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十五章 珠子 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -2609,8 +2873,29 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.474073",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "大骊藩王宋长镜裹了一件狐裘，脸色苍白，但是精神极好，来到宋集薪身边，笑道：“这座位于东宝瓶洲的骊珠洞天，三十六小洞天之一，不以占地广袤见长，版图不过方圆千里而已。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十五章 珠子 · 宋长镜与宋集薪在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 65,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.493237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

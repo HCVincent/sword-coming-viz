@@ -120,7 +120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,7 +182,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -278,7 +278,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.425907",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -341,7 +341,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -446,7 +446,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -551,7 +551,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -631,7 +631,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.425502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -722,7 +722,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.426506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -786,7 +786,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.426506",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-16-0": {
+    "juan_index": 50,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "然后他双指夹住那枚金精铜钱，晃了晃，“真不要？",
+      "”",
+      "妇人明显有些犹豫狐疑。",
+      "就在此时，远处有人无奈喊道：“灞桥，崔先生让你赶紧回去。",
+      "”",
+      "刘灞桥闻声转头望去，是龙尾郡陈氏子弟，陈松风，身边站着一位身材高挑的冷峻女子，两手空空，并无携带兵器，她模样不出挑，身段倒是没得说，一双大长腿，很对刘灞桥的胃口。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "刘灞桥闻声转头望去，是龙尾郡陈氏子弟，陈松风，身边站着一位身材高挑的冷峻女子，两手空空，并无携带兵器，她模样不出挑，身段倒是没得说，一双大长腿，很对刘灞桥的胃口。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 陈松风剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "刘灞桥闻声转头望去，是龙尾郡陈氏子弟，陈松风，身边站着一位身材高挑的冷峻女子，两手空空，并无携带兵器，她模样不出挑，身段倒是没得说，一双大长腿，很对刘灞桥的胃口。 然后他双指夹住那枚金精铜钱，晃了晃，“真不要？ ”",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.426506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -806,7 +868,21 @@
       "所以越想越气的妇人在离去之前，狠狠拧着自己男人的腰肉，直到拧得男人整张脸都歪了，这才罢休，两个孩子是见惯这幅场景的，非但不担心爹娘吵架，还使劲偷着乐呵。",
       "妇人眼尖，看到躲在门口那边鬼鬼祟祟的邋遢汉子，顿时骂道：“姓郑的，又来叼走老娘的衣裤？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "她正是陈松风的远房亲戚，至于怎么个远法，陈松风对此没有主动提起过，女子对陈松风也从来是直呼其名，一路同行，三人平时相处，刘灞桥也没觉得女子如何倨傲，就是天生性子冷了一些。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 17
+      }
+    ],
     "locations": [
       {
         "name": "福禄街",
@@ -825,13 +901,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 福禄街剧情推进",
+        "name": "第一卷笼中雀 第五十章 天行健 · 陈松风在福禄街剧情推进",
         "time": null,
         "location": "福禄街",
-        "participants": [],
-        "description": "既然是崔明皇发话，刘灞桥不敢多待，便跟着两人赶往福禄街，只是离去之时，下意识多瞥了眼那个愁眉苦脸的中年汉子。 她正是陈松风的远房亲戚，至于怎么个远法，陈松风对此没有主动提起过，女子对陈松风也从来是直呼其名，一路同行，三人平时相处，刘灞桥也没觉得女子如何倨傲，就是天生性子冷了一些。 夹杂在人流当中的一个邋遢汉子，犹豫片刻，在街坊邻居陆续散去之后，独自走向院子。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "她正是陈松风的远房亲戚，至于怎么个远法，陈松风对此没有主动提起过，女子对陈松风也从来是直呼其名，一路同行，三人平时相处，刘灞桥也没觉得女子如何倨傲，就是天生性子冷了一些。 既然是崔明皇发话，刘灞桥不敢多待，便跟着两人赶往福禄街，只是离去之时，下意识多瞥了眼那个愁眉苦脸的中年汉子。 夹杂在人流当中的一个邋遢汉子，犹豫片刻，在街坊邻居陆续散去之后，独自走向院子。",
         "background": "",
-        "significance": "对应福禄街相关的关键剧情推进场景。",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十章 天行健 · 段17",
         "sentence_indexes_in_segment": [
@@ -847,7 +925,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.426910",
+    "extracted_at": "2026-03-25T01:03:30.426506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -911,7 +989,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -975,7 +1053,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1056,7 +1134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1120,7 +1198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1155,20 +1233,34 @@
         ],
         "juan_index": 50,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "邋遢汉子郑大风暴怒道：“李二！",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 郑大风剧情推进",
+        "name": "第一卷笼中雀 第五十章 天行健 · 郑大风与李二剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风"
+          "郑大风",
+          "李二"
         ],
         "description": "邋遢汉子郑大风暴怒道：“李二！ 你给老子说清楚！ 谁偷你婆娘衣物了？",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
+        "significance": "推动郑大风与李二之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十章 天行健 · 段26",
         "sentence_indexes_in_segment": [
@@ -1184,7 +1276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1248,7 +1340,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-28-0": {
+    "juan_index": 50,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "这位看门人站起身，脚尖一点，如一片槐叶飘入街道，离得远了，这才胆敢破口大骂道：“李二，老子这就找嫂子买她的贴身衣物去！",
+      "”",
+      "邋遢汉子一边撂狠话，一边跑得比狗还快。",
+      "只是憨厚汉子根本就没起身的意思，吐出一个字，“孬。",
+      "”",
+      "三人回到衙署，那位观湖书院的儒家君子，崔明皇坐在在正厅等候已久，见到陌生女子后，崔明皇起身点头致意，女子也点了点头，脸色依然冰冷，用刘灞桥私底下的话说，就是一副“全天下都欠了她大把银子”的表情。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "这位看门人站起身，脚尖一点，如一片槐叶飘入街道，离得远了，这才胆敢破口大骂道：“李二，老子这就找嫂子买她的贴身衣物去！",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 李二等待",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李二"
+        ],
+        "description": "这位看门人站起身，脚尖一点，如一片槐叶飘入街道，离得远了，这才胆敢破口大骂道：“李二，老子这就找嫂子买她的贴身衣物去！ ” 邋遢汉子一边撂狠话，一边跑得比狗还快。",
+        "background": "",
+        "significance": "对应李二在叙事中的关键等待节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.427509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1268,7 +1422,22 @@
       "刘灞桥好奇问道：“难不成那老畜生三拳干翻了宋长镜？",
       "宋长镜如此绣花枕头不济事？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "刘灞桥好奇问道：“难不成那老畜生三拳干翻了宋长镜？ 宋长镜如此绣花枕头不济事？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 29
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -1301,13 +1470,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 正阳山对话",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜在正阳山对话",
         "time": null,
         "location": "正阳山",
-        "participants": [],
-        "description": "你是没有看到，刚才咱们督造官宋大人和那正阳山护山猿，在福禄街硬碰硬对了三拳，动静不小。 崔明皇在三人落座后，对刘灞桥笑道：“亏得你忍住没出手，要不然肯定会捅出大篓子。 说实话，接下来不管你遇到如何千载难逢的机会，我劝你都不要出手，不要觉得有机可乘。",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "你是没有看到，刚才咱们督造官宋大人和那正阳山护山猿，在福禄街硬碰硬对了三拳，动静不小。 刘灞桥好奇问道：“难不成那老畜生三拳干翻了宋长镜？ 宋长镜如此绣花枕头不济事？",
         "background": "",
-        "significance": "对应正阳山相关的关键对话场景。",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十章 天行健 · 段29",
         "sentence_indexes_in_segment": [
@@ -1323,7 +1494,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.427509",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-30-0": {
+    "juan_index": 50,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "不是都说他摸着了第十境的门槛吗，只差半步就能一脚跨入那个境界。",
+      "”",
+      "崔明皇无奈道：“咱们好歹借住在宋大人这里，你能不能说话客气些？",
+      "”",
+      "陈松风感慨道：“是宋大人占了一些优势。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风感慨道：“是宋大人占了一些优势。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 陈松风剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风感慨道：“是宋大人占了一些优势。 不是都说他摸着了第十境的门槛吗，只差半步就能一脚跨入那个境界。 ”",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.428513",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1343,7 +1576,21 @@
       "听到此事后，手指微动。",
       "她也是被陈松风匆忙找到，原本她打算在小镇一直逛荡下去。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "她也是被陈松风匆忙找到，原本她打算在小镇一直逛荡下去。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 31
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1368,7 +1615,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1383,7 +1632,8 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
         "description": "哪怕与那位大骊藩王八竿子打不着，可只要是修行中人，听闻这种壮举之后，无法不心神往之！ 她也是被陈松风匆忙找到，原本她打算在小镇一直逛荡下去。 一位纯粹武夫，只以肉身与一头搬山猿硬扛到底！",
         "background": "",
@@ -1403,7 +1653,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.428513",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1423,7 +1673,23 @@
       "到时候以正阳山那帮土鳖的脾性，肯定要急着跳出来说，这些都是咱们风雷园血口喷人了，有本事拿出证据来啊！",
       "我拿你大爷的证据，要不是小镇禁绝术法，坏规矩的代价太大，否则我死也要把这一幕原原本本‘拓印’在音容镜当中。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "她之所以没有执意坚持，而是跟随陈松风一起去找刘灞桥，再返回衙署，她只是入乡随俗罢了。 至于陈松风能否从那棵老槐树讨到便宜好处，能够得手几张祖荫槐叶，同样姓陈的女子，并不上心。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 50,
+        "segment_index": 32
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -1462,9 +1728,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
-        "description": "刘灞桥突然捧腹大笑，“老畜生这次栽了个大跟头，痛快痛快，竟然被一个普通少年遛狗耍猴，被牵着鼻子走了半座小镇，哈哈，这个天大的笑话，够我在风雷园说上十年了！ 到时候以正阳山那帮土鳖的脾性，肯定要急着跳出来说，这些都是咱们风雷园血口喷人了，有本事拿出证据来啊！ 我拿你大爷的证据，要不是小镇禁绝术法，坏规矩的代价太大，否则我死也要把这一幕原原本本‘拓印’在音容镜当中。",
+        "description": "她之所以没有执意坚持，而是跟随陈松风一起去找刘灞桥，再返回衙署，她只是入乡随俗罢了。 至于陈松风能否从那棵老槐树讨到便宜好处，能够得手几张祖荫槐叶，同样姓陈的女子，并不上心。 不过在陈松风找到她的时候，她仍然能够清晰感受到，年轻男人那种刻意压抑的兴奋激动，多半是收获颇丰，落下槐叶的数量，出乎龙尾郡陈氏老祖的预期了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1482,7 +1749,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.428513",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1502,7 +1769,35 @@
       "所以别看这位大骊藩王不在的时候，刘灞桥一口一个宋长镜喊着，这会儿刘灞桥心虚得很。",
       "好在脸皮一事，年轻剑修向来不甚在乎，赔笑道：“宋大宗师，我正在说你老人家与正阳山老畜生的巅峰一战呢，真是惊天地泣鬼神，王爷你老人家拳出如龙，若非拳下留情，那护山猿定会在福禄街上当场死无全尸，宋大人武道之高，武德之好，实在是让晚辈拍马难及！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜对这位观湖书院的读书人，笑着摇摇头，示意不用如此繁文缛节，他随手拉过一条椅子，坐在刘灞桥身边，与陈松风和女子两人，分列左右相对而坐。 所以别看这位大骊藩王不在的时候，刘灞桥一口一个宋长镜喊着，这会儿刘灞桥心虚得很。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "宋长镜对这位观湖书院的读书人，笑着摇摇头，示意不用如此繁文缛节，他随手拉过一条椅子，坐在刘灞桥身边，与陈松风和女子两人，分列左右相对而坐。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 50,
+        "segment_index": 34
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1513,7 +1808,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1,
           4
@@ -1552,14 +1849,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 大骊对话",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈松风在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "崔明皇早已站起身，正想要开口说话，意思是要将那张主位椅子，让给这位大骊藩王。 所以别看这位大骊藩王不在的时候，刘灞桥一口一个宋长镜喊着，这会儿刘灞桥心虚得很。 好在脸皮一事，年轻剑修向来不甚在乎，赔笑道：“宋大宗师，我正在说你老人家与正阳山老畜生的巅峰一战呢，真是惊天地泣鬼神，王爷你老人家拳出如龙，若非拳下留情，那护山猿定会在福禄街上当场死无全尸，宋大人武道之高，武德之好，实在是让晚辈拍马难及！",
+        "participants": [
+          "宋长镜",
+          "陈松风"
+        ],
+        "description": "崔明皇早已站起身，正想要开口说话，意思是要将那张主位椅子，让给这位大骊藩王。 宋长镜对这位观湖书院的读书人，笑着摇摇头，示意不用如此繁文缛节，他随手拉过一条椅子，坐在刘灞桥身边，与陈松风和女子两人，分列左右相对而坐。 所以别看这位大骊藩王不在的时候，刘灞桥一口一个宋长镜喊着，这会儿刘灞桥心虚得很。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋长镜与陈松风之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十章 天行健 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -1573,8 +1875,97 @@
         "segment_index": 34
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "” 崔明皇早已站起身，正想要开口说话，意思是要将那张主位椅子，让给这位大骊藩王。 宋长镜对这位观湖书院的读书人，笑着摇摇头，示意不用如此繁文缛节，他随手拉过一条椅子，坐在刘灞桥身边，与陈松风和女子两人，分列左右相对而坐。 刘灞桥虽然给人印象是混不吝的惫懒性格，不过如此近距离，面对一位极有可能跻身传说第十境的武夫，尤其这家伙可谓恶名昭彰，筑京观一事也就罢了，嗜好斩杀天才一事，真是让人毛骨悚然。 所以别看这位大骊藩王不在的时候，刘灞桥一口一个宋长镜喊着，这会儿刘灞桥心虚得很。 好在脸皮一事，年轻剑修向来不甚在乎，赔笑道：“宋大宗师，我正在说你老人家与正阳山老畜生的巅峰一战呢，真是惊天地泣鬼神，王爷你老人家拳出如龙，若非拳下留情，那护山猿定会在福禄街上当场死无全尸，宋大人武道之高，武德之好，实在是让晚辈拍马难及！",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈松风在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 34
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.428513",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-35-0": {
+    "juan_index": 50,
+    "segment_index": 35,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "”",
+      "宋长镜笑着不说话。",
+      "刘灞桥额头渗出冷汗，后背浸透汗水，终于说不出一个字来，悻悻然彻底闭嘴。",
+      "宋长镜突然转头望向对面那位女子，眼神玩味，饶有兴致，问道：“你也是龙尾郡陈氏子弟？",
+      "”",
+      "女子摇头，缓缓道：“不是。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑着不说话。 宋长镜突然转头望向对面那位女子，眼神玩味，饶有兴致，问道：“你也是龙尾郡陈氏子弟？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 50,
+        "segment_index": 35
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "宋长镜笑着不说话。 宋长镜突然转头望向对面那位女子，眼神玩味，饶有兴致，问道：“你也是龙尾郡陈氏子弟？ ”",
+        "background": "",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段35",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 35
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.427914",
+    "extracted_at": "2026-03-25T01:03:30.428513",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1597,6 +1988,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜哦了一声，若有所思。 宋长镜对此不以为意，对刘灞桥笑道：“其实少年能活下来，你是恩人之一。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -1614,16 +2019,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 宋集薪对话",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与宋集薪对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
-        "description": "直到宋集薪出现在门口，少年见到屋内并无椅子座位，便随意所在门槛上，望向屋内众人。 ” 宋长镜哦了一声，若有所思。",
+        "description": "宋长镜哦了一声，若有所思。 直到宋集薪出现在门口，少年见到屋内并无椅子座位，便随意所在门槛上，望向屋内众人。 宋长镜对此不以为意，对刘灞桥笑道：“其实少年能活下来，你是恩人之一。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋长镜与宋集薪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十章 天行健 · 段36",
         "sentence_indexes_in_segment": [
           0,
@@ -1637,8 +2045,34 @@
         "segment_index": 36
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "” 宋长镜哦了一声，若有所思。 气氛尴尬。 直到宋集薪出现在门口，少年见到屋内并无椅子座位，便随意所在门槛上，望向屋内众人。 宋长镜对此不以为意，对刘灞桥笑道：“其实少年能活下来，你是恩人之一。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与宋集薪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 36
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.428513",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1658,7 +2092,21 @@
       "宋长镜一笑置之。",
       "女子转头瞥了眼坐在门槛上的俊逸少年。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜一笑置之。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 37
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -1711,9 +2159,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "若非搬山猿一开始认定少年寻衅，是受人指使，而在这座小镇当中，敢给正阳山下套的家伙，都非蠢人，皆是擅长谋而后动之辈，所以老猿觉得螳螂捕蝉黄雀在后的那只黄雀，一定身份不低，身手不弱，这才使得不愿流露出丝毫破绽的老猿，在泥瓶巷那一带显得颇为狼狈。 所以一直到小镇最西边的宅子，老猿确定四周并无刺客潜伏后，这才稍稍放开手脚，给予那草鞋少年后背心一拳。 刘灞桥干笑道：“虽热事实如此，但是这种恩人我可不想当。",
+        "description": "若非搬山猿一开始认定少年寻衅，是受人指使，而在这座小镇当中，敢给正阳山下套的家伙，都非蠢人，皆是擅长谋而后动之辈，所以老猿觉得螳螂捕蝉黄雀在后的那只黄雀，一定身份不低，身手不弱，这才使得不愿流露出丝毫破绽的老猿，在泥瓶巷那一带显得颇为狼狈。 所以一直到小镇最西边的宅子，老猿确定四周并无刺客潜伏后，这才稍稍放开手脚，给予那草鞋少年后背心一拳。 宋长镜一笑置之。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1731,7 +2180,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.428513",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1795,7 +2244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.429516",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1815,7 +2264,22 @@
       "宋长镜瞬间眯眼。",
       "大堂之内，一阵磅礴威压如暴雨狠狠砸在众人头顶，躲也无处躲，所有人的肌肤，竟然产生了实质性的针刺疼痛。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "然后少年指了指大骊藩王宋长镜，“那你得先问过他才行。 宋长镜瞬间眯眼。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 39
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1826,7 +2290,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1836,13 +2302,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 大骊剧情推进",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "然后少年指了指大骊藩王宋长镜，“那你得先问过他才行。 ” ”",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "然后少年指了指大骊藩王宋长镜，“那你得先问过他才行。 宋长镜瞬间眯眼。 ”",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十章 天行健 · 段39",
         "sentence_indexes_in_segment": [
@@ -1858,7 +2326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.429516",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1893,6 +2361,19 @@
         ],
         "juan_index": 50,
         "segment_index": 40
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风艰难开口，只是语气不弱，“王爷，这位姑娘并非我们东宝瓶洲人氏，所以希望王爷慎重行事！",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 50,
+        "segment_index": 40
       }
     ],
     "locations": [
@@ -1903,7 +2384,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1929,16 +2412,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 宋集薪在宝瓶洲剧情推进",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋集薪与陈松风在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "陈松风"
         ],
         "description": "唯独门口那边的宋集薪浑然不觉。 陈松风艰难开口，只是语气不弱，“王爷，这位姑娘并非我们东宝瓶洲人氏，所以希望王爷慎重行事！ 就不怕你们大骊被灭国吗？",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动宋集薪与陈松风之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十章 天行健 · 段40",
         "sentence_indexes_in_segment": [
           0,
@@ -1952,8 +2438,201 @@
         "segment_index": 40
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "唯独门口那边的宋集薪浑然不觉。 陈松风艰难开口，只是语气不弱，“王爷，这位姑娘并非我们东宝瓶洲人氏，所以希望王爷慎重行事！ ” 女子笑了，站起身，“你敢杀我？ 就不怕你们大骊被灭国吗？ ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十章 天行健 · 宋集薪与陈松风在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 40
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.429516",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-41-0": {
+    "juan_index": 50,
+    "segment_index": 41,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "崔明皇正要阻拦。",
+      "只见女子整个人倒飞出去，身后那张椅子在空中化作齑粉不说，女子高挑身躯全部陷入墙壁，几乎像是嵌入墙壁的一样物件。",
+      "宋长镜神出鬼没地站在墙壁下，负手而立，微微仰头，看着七窍流血的女子，笑道：“小丫头，是不是觉得你的老子或是老祖很厉害，所以就有资格在本王面前大放……那个字怎么说来着？",
+      "”",
+      "这位藩王转头笑望向自己侄子，少年笑眯眯道：“厥，大放厥词。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜神出鬼没地站在墙壁下，负手而立，微微仰头，看着七窍流血的女子，笑道：“小丫头，是不是觉得你的老子或是老祖很厉害，所以就有资格在本王面前大放……那个字怎么说来着？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 50,
+        "segment_index": 41
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "宋长镜神出鬼没地站在墙壁下，负手而立，微微仰头，看着七窍流血的女子，笑道：“小丫头，是不是觉得你的老子或是老祖很厉害，所以就有资格在本王面前大放……那个字怎么说来着？ 崔明皇正要阻拦。 只见女子整个人倒飞出去，身后那张椅子在空中化作齑粉不说，女子高挑身躯全部陷入墙壁，几乎像是嵌入墙壁的一样物件。",
+        "background": "",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段41",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 41
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.429516",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-42-0": {
+    "juan_index": 50,
+    "segment_index": 42,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "宋长镜笑了笑，转头继续望向女子，后者虽然满脸痛苦，但是眼神坚毅，没有丝毫祈求示弱。",
+      "宋长镜说道：“下辈子投胎，别再碰到本王了。",
+      "”",
+      "陈松风肝胆欲裂，满眼血丝，整个人处于复杂至极的情绪当中，大愤怒、大恐惧兼有，正要开口说话。",
+      "崔明皇已经抢先上前一步，作揖致歉，低头诚恳道：“王爷，能不能给在下一个面子，不要跟她一般见识。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜笑了笑，转头继续望向女子，后者虽然满脸痛苦，但是眼神坚毅，没有丝毫祈求示弱。 宋长镜说道：“下辈子投胎，别再碰到本王了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 50,
+        "segment_index": 42
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风肝胆欲裂，满眼血丝，整个人处于复杂至极的情绪当中，大愤怒、大恐惧兼有，正要开口说话。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 50,
+        "segment_index": 42
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈松风对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜",
+          "陈松风"
+        ],
+        "description": "宋长镜笑了笑，转头继续望向女子，后者虽然满脸痛苦，但是眼神坚毅，没有丝毫祈求示弱。 宋长镜说道：“下辈子投胎，别再碰到本王了。 陈松风肝胆欲裂，满眼血丝，整个人处于复杂至极的情绪当中，大愤怒、大恐惧兼有，正要开口说话。",
+        "background": "",
+        "significance": "推动宋长镜与陈松风之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段42",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 42
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "宋长镜笑了笑，转头继续望向女子，后者虽然满脸痛苦，但是眼神坚毅，没有丝毫祈求示弱。 宋长镜说道：“下辈子投胎，别再碰到本王了。 ” 陈松风肝胆欲裂，满眼血丝，整个人处于复杂至极的情绪当中，大愤怒、大恐惧兼有，正要开口说话。 崔明皇已经抢先上前一步，作揖致歉，低头诚恳道：“王爷，能不能给在下一个面子，不要跟她一般见识。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈松风对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 42
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.429516",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1973,7 +2652,21 @@
       "欺负一个娘们，传出去有损你的名声。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜嘴角扯了扯，满是讥讽。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 43
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1994,13 +2687,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 大骊对话",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "与大骊藩王对视的女子，突然认命一般闭上眼睛。 宋长镜嘴角扯了扯，满是讥讽。 就在此时，门槛那边的少年哈哈笑道：“叔叔！",
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "宋长镜嘴角扯了扯，满是讥讽。 与大骊藩王对视的女子，突然认命一般闭上眼睛。 就在此时，门槛那边的少年哈哈笑道：“叔叔！",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十章 天行健 · 段43",
         "sentence_indexes_in_segment": [
@@ -2016,7 +2711,84 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.429516",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-44-0": {
+    "juan_index": 50,
+    "segment_index": 44,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "宋长镜身形略微停顿，细微到了极点，哪怕是崔明皇和刘灞桥，也只觉得那个杀神根本就是纹丝不动。",
+      "宋长镜歪了歪脑袋，伸出双指，随意一弹。",
+      "好似掸去肩头灰尘。",
+      "风雷园年轻一辈第一人的刘灞桥，呆若木鸡。",
+      "崔明皇如释重负。",
+      "陈松风如坠云雾。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜身形略微停顿，细微到了极点，哪怕是崔明皇和刘灞桥，也只觉得那个杀神根本就是纹丝不动。 宋长镜歪了歪脑袋，伸出双指，随意一弹。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 50,
+        "segment_index": 44
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风如坠云雾。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 44
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈松风剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜",
+          "陈松风"
+        ],
+        "description": "宋长镜身形略微停顿，细微到了极点，哪怕是崔明皇和刘灞桥，也只觉得那个杀神根本就是纹丝不动。 宋长镜歪了歪脑袋，伸出双指，随意一弹。 陈松风如坠云雾。",
+        "background": "",
+        "significance": "推动宋长镜与陈松风之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段44",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 44
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.429516",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2039,6 +2811,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜对刘灞桥笑道：“小子，不错，本王看好你。 宋长镜不予理会，对刘灞桥说道：“离开小镇之后，去大骊京城找本王，有样东西送给你，就看你拿不拿得动、搬不搬得走了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 45
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "女子睁开眼睛，把自己从墙壁里“拔出来”，落地后，身形一晃，对那个背影说道：“今日赐教，陈对铭记五内。",
@@ -2059,7 +2845,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -2075,7 +2863,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -2085,18 +2875,21 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
+          "宋长镜",
           "陈对"
         ],
-        "description": "女子睁开眼睛，把自己从墙壁里“拔出来”，落地后，身形一晃，对那个背影说道：“今日赐教，陈对铭记五内。 宋长镜不予理会，对刘灞桥说道：“离开小镇之后，去大骊京城找本王，有样东西送给你，就看你拿不拿得动、搬不搬得走了。 宋长镜对刘灞桥笑道：“小子，不错，本王看好你。",
+        "description": "宋长镜对刘灞桥笑道：“小子，不错，本王看好你。 女子睁开眼睛，把自己从墙壁里“拔出来”，落地后，身形一晃，对那个背影说道：“今日赐教，陈对铭记五内。 宋长镜不予理会，对刘灞桥说道：“离开小镇之后，去大骊京城找本王，有样东西送给你，就看你拿不拿得动、搬不搬得走了。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十章 天行健 · 段45",
         "sentence_indexes_in_segment": [
           0,
@@ -2110,8 +2903,34 @@
         "segment_index": 45
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "宋长镜对刘灞桥笑道：“小子，不错，本王看好你。 ” 女子睁开眼睛，把自己从墙壁里“拔出来”，落地后，身形一晃，对那个背影说道：“今日赐教，陈对铭记五内。 ” 宋长镜不予理会，对刘灞桥说道：“离开小镇之后，去大骊京城找本王，有样东西送给你，就看你拿不拿得动、搬不搬得走了。 ”",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 45
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.429516",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2134,6 +2953,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜和宋集薪走出这栋别院，男人笑道：“心胸之间的那口恶气，出完了没？",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 50,
+        "segment_index": 46
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -2152,16 +2984,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 宋集薪对话",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与宋集薪对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
         "description": "宋长镜和宋集薪走出这栋别院，男人笑道：“心胸之间的那口恶气，出完了没？ 宋集薪点头道：“差不多了。 刘灞桥脱口而出道：“符剑！",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋长镜与宋集薪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十章 天行健 · 段46",
         "sentence_indexes_in_segment": [
           0,
@@ -2175,8 +3010,29 @@
         "segment_index": 46
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "宋长镜和宋集薪走出这栋别院，男人笑道：“心胸之间的那口恶气，出完了没？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与宋集薪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 50,
+        "segment_index": 46
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.430520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2300,7 +3156,69 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.430520",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-48-0": {
+    "juan_index": 50,
+    "segment_index": 48,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "“你太低估宋长镜这三个字了。",
+      "”",
+      "大堂内，崔明皇坐回位置，不露声色。",
+      "刘灞桥颓然靠在椅背上，心有余悸道：“乖乖，七境八境和这第九境就相差这么多吗？",
+      "”",
+      "风雷园有七境八境武夫各有一人，而且与刘灞桥关系都不错。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "“你太低估宋长镜这三个字了。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 48
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "“你太低估宋长镜这三个字了。 ” 大堂内，崔明皇坐回位置，不露声色。",
+        "background": "",
+        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段48",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 48
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.430520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2323,6 +3241,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "崔明皇摇头道：“围棋当中，同样是九段国手，也分强弱，相差很大，何况宋长镜本就是第九境里的最强手。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 49
+      },
+      {
+        "entity_type": "person",
         "name": "陈对",
         "alias": [],
         "original_description_in_book": "然后崔明皇望向名叫陈对的女子，关心问道：“陈姑娘你没事吧？",
@@ -2338,16 +3269,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 陈对对话",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈对对话",
         "time": null,
         "location": null,
         "participants": [
+          "宋长镜",
           "陈对"
         ],
-        "description": "然后崔明皇望向名叫陈对的女子，关心问道：“陈姑娘你没事吧？ 崔明皇摇头道：“围棋当中，同样是九段国手，也分强弱，相差很大，何况宋长镜本就是第九境里的最强手。 ”",
+        "description": "崔明皇摇头道：“围棋当中，同样是九段国手，也分强弱，相差很大，何况宋长镜本就是第九境里的最强手。 然后崔明皇望向名叫陈对的女子，关心问道：“陈姑娘你没事吧？ ”",
         "background": "",
-        "significance": "对应陈对在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动宋长镜与陈对之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十章 天行健 · 段49",
         "sentence_indexes_in_segment": [
           0,
@@ -2361,8 +3295,158 @@
         "segment_index": 49
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "陈对"
+        ],
+        "action": "对话",
+        "context": "崔明皇摇头道：“围棋当中，同样是九段国手，也分强弱，相差很大，何况宋长镜本就是第九境里的最强手。 ” 然后崔明皇望向名叫陈对的女子，关心问道：“陈姑娘你没事吧？ ” 女子也是狠人，虽然脸色苍白，但仍是坦然笑道：“无妨。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈对对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 49
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.430520",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-50-0": {
+    "juan_index": 50,
+    "segment_index": 50,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "陈松风仿佛比这位局中人的远房亲戚，更加惶恐不安。",
+      "崔明皇心中一叹，龙尾郡陈氏，恐怕很难在接下来的大争乱局之中，脱颖而出了。",
+      "刘灞桥啧啧道：“一弹指，就能够将我飞剑弹回窍穴，还能不伤我半点神魂，实在是匪夷所思。",
+      "”",
+      "崔明皇打趣道：“现在知道山外有山、人上有人了吧？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风仿佛比这位局中人的远房亲戚，更加惶恐不安。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 50
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 陈松风剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风仿佛比这位局中人的远房亲戚，更加惶恐不安。 崔明皇心中一叹，龙尾郡陈氏，恐怕很难在接下来的大争乱局之中，脱颖而出了。 刘灞桥啧啧道：“一弹指，就能够将我飞剑弹回窍穴，还能不伤我半点神魂，实在是匪夷所思。",
+        "background": "",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段50",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 50
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.428917",
+    "extracted_at": "2026-03-25T01:03:30.430520",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "50-51-0": {
+    "juan_index": 50,
+    "segment_index": 51,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第五十章 天行健",
+    "source_sentences": [
+      "刘灞桥狗不了吃屎，坏笑道：“人上有人？",
+      "崔大先生你真是一点也不君子啊！",
+      "”",
+      "崔明皇哭笑不得，懒得理睬这浑人。",
+      "刘灞桥想了想，出声安慰那名字有些古怪的女子，免得她一时想不开，铁了心要以卵击石，去找宋长镜的麻烦，到时候这一屋子的人都吃不了兜着走，“陈大姐，虽然我这么说很长他人志气灭自己威风，但是碰到宋长镜，低低头，退一步，不丢人。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "刘灞桥想了想，出声安慰那名字有些古怪的女子，免得她一时想不开，铁了心要以卵击石，去找宋长镜的麻烦，到时候这一屋子的人都吃不了兜着走，“陈大姐，虽然我这么说很长他人志气灭自己威风，但是碰到宋长镜，低低头，退一步，不丢人。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 50,
+        "segment_index": 51
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宋长镜"
+        ],
+        "description": "刘灞桥想了想，出声安慰那名字有些古怪的女子，免得她一时想不开，铁了心要以卵击石，去找宋长镜的麻烦，到时候这一屋子的人都吃不了兜着走，“陈大姐，虽然我这么说很长他人志气灭自己威风，但是碰到宋长镜，低低头，退一步，不丢人。 刘灞桥狗不了吃屎，坏笑道：“人上有人？ 崔大先生你真是一点也不君子啊！",
+        "background": "",
+        "significance": "对应宋长镜在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第五十章 天行健 · 段51",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 50,
+        "segment_index": 51
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.430520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2382,7 +3466,35 @@
       "当然了，如果我真能拿到那把大骊京城的符剑，吹一百年都行！",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风欲言又止。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 50,
+        "segment_index": 52
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "但是女子嗯了一声，淡然道：“宋长镜确实有这个资格，我没有不服气，只是心有不甘而已。 刘灞桥没心没肺道：“其实不甘心都不用，看看我，现在就贼高兴，以后回到风雷园，又有十年牛皮可以吹了，竟然与大骊宋长镜交过手，哪怕只有一招，但我刘灞桥到最后毫发无损啊！",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 50,
+        "segment_index": 52
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2393,7 +3505,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           3,
           4
@@ -2404,13 +3518,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十章 天行健 · 大骊迁移",
+        "name": "第一卷笼中雀 第五十章 天行健 · 宋长镜与陈松风在大骊迁移",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "刘灞桥没心没肺道：“其实不甘心都不用，看看我，现在就贼高兴，以后回到风雷园，又有十年牛皮可以吹了，竟然与大骊宋长镜交过手，哪怕只有一招，但我刘灞桥到最后毫发无损啊！ 当然了，如果我真能拿到那把大骊京城的符剑，吹一百年都行！ 陈松风欲言又止。",
+        "participants": [
+          "宋长镜",
+          "陈松风"
+        ],
+        "description": "陈松风欲言又止。 但是女子嗯了一声，淡然道：“宋长镜确实有这个资格，我没有不服气，只是心有不甘而已。 刘灞桥没心没肺道：“其实不甘心都不用，看看我，现在就贼高兴，以后回到风雷园，又有十年牛皮可以吹了，竟然与大骊宋长镜交过手，哪怕只有一招，但我刘灞桥到最后毫发无损啊！",
         "background": "",
-        "significance": "对应大骊相关的关键迁移场景。",
+        "significance": "在大骊推动宋长镜与陈松风之间的迁移线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十章 天行健 · 段52",
         "sentence_indexes_in_segment": [
@@ -2426,7 +3543,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.430520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2446,7 +3563,21 @@
       "需要我摸黑上山？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "她没来由想起那个坐在门槛上的少年，能够一句话阻止宋长镜出手杀人的少年。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 50,
+        "segment_index": 53
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -2470,9 +3601,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "宋长镜"
         ],
-        "description": "杨家铺子的老掌柜回到小镇后，直奔自家铺子后边的院子，不大不小，正好够店里三位长工伙计居住。 女子思绪转向别处。 她没来由想起那个坐在门槛上的少年，能够一句话阻止宋长镜出手杀人的少年。",
+        "description": "她没来由想起那个坐在门槛上的少年，能够一句话阻止宋长镜出手杀人的少年。 杨家铺子的老掌柜回到小镇后，直奔自家铺子后边的院子，不大不小，正好够店里三位长工伙计居住。 女子思绪转向别处。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2490,7 +3622,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.430520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2613,7 +3745,7 @@
         "segment_index": 54
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.431523",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2674,7 +3806,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.431523",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2735,7 +3867,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.432527",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2796,7 +3928,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.432527",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2860,7 +3992,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.429921",
+    "extracted_at": "2026-03-25T01:03:30.432527",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2924,7 +4056,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.432527",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2988,7 +4120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.432527",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3049,7 +4181,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.432527",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3127,7 +4259,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.430924",
+    "extracted_at": "2026-03-25T01:03:30.433530",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

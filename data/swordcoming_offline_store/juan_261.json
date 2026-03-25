@@ -16,6 +16,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "在范二走出小巷的时候，那位年纪轻轻的绿袍女子已经步入灰尘药铺。 相比范二的客客气气，这位女子就没那么平易近人了，大步走向竹帘，去往后院。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 261,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -33,16 +47,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风剧情推进",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 范二与郑大风冲突",
         "time": null,
         "location": null,
         "participants": [
+          "范二",
           "郑大风"
         ],
-        "description": "郑大风坐在正屋台阶上，抽着旱烟， 在范二走出小巷的时候，那位年纪轻轻的绿袍女子已经步入灰尘药铺。 当她走入其中，争芳斗艳的妇人少女，顿时黯然失色，她们面面相觑，与这位女子同处一室，她们心中的自惭形秽，油然而生。",
+        "description": "在范二走出小巷的时候，那位年纪轻轻的绿袍女子已经步入灰尘药铺。 相比范二的客客气气，这位女子就没那么平易近人了，大步走向竹帘，去往后院。 郑大风坐在正屋台阶上，抽着旱烟，",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动范二与郑大风之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -56,8 +73,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "范二"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "冲突",
+        "context": "在范二走出小巷的时候，那位年纪轻轻的绿袍女子已经步入灰尘药铺。 当她走入其中，争芳斗艳的妇人少女，顿时黯然失色，她们面面相觑，与这位女子同处一室，她们心中的自惭形秽，油然而生。 相比范二的客客气气，这位女子就没那么平易近人了，大步走向竹帘，去往后院。 从头到尾，没有哪位药铺女子敢出声阻拦。 郑大风坐在正屋台阶上，抽着旱烟， 绿袍女子环顾四周，抬手一招，一根小板凳从厢房屋檐下瞬间出现在她身后，她坐着开始喝酒。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 范二与郑大风冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.324809",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -89,6 +132,19 @@
         "power": "落魄山",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 261,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "不提地仙苻畦以及手握四把仙兵的苻家，孙家是出了名的底蕴深厚，拥有一位元婴地仙坐镇祖宅。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 261,
         "segment_index": 2
@@ -130,16 +186,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风在老龙城迁移",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与苻畦在老龙城迁移",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "郑大风"
+          "郑大风",
+          "苻畦"
         ],
-        "description": "郑大风当然认得此人，他此次南下进入老龙城，所见第一人，就是这位名声不显的范家大小姐，范峻茂。 老龙城五大姓，符孙方侯丁。 方家虽无元婴震慑群雄，却有两位七境武道宗师和一位九境金丹剑修，在宝瓶洲南方的山下王朝，尤其是江湖，方家拥有极大的威势，遍布各地的银庄、镖局、当铺客栈，星罗棋布，相比苻家和孙家，方家挣的是蝇头小利，走的是积少成多的路数。",
+        "description": "郑大风当然认得此人，他此次南下进入老龙城，所见第一人，就是这位名声不显的范家大小姐，范峻茂。 老龙城五大姓，符孙方侯丁。 不提地仙苻畦以及手握四把仙兵的苻家，孙家是出了名的底蕴深厚，拥有一位元婴地仙坐镇祖宅。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动郑大风与苻畦之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -153,8 +212,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "同行",
+        "context": "郑大风当然认得此人，他此次南下进入老龙城，所见第一人，就是这位名声不显的范家大小姐，范峻茂。 老龙城五大姓，符孙方侯丁。 不提地仙苻畦以及手握四把仙兵的苻家，孙家是出了名的底蕴深厚，拥有一位元婴地仙坐镇祖宅。 方家虽无元婴震慑群雄，却有两位七境武道宗师和一位九境金丹剑修，在宝瓶洲南方的山下王朝，尤其是江湖，方家拥有极大的威势，遍布各地的银庄、镖局、当铺客栈，星罗棋布，相比苻家和孙家，方家挣的是蝇头小利，走的是积少成多的路数。 侯家的顶尖战力，那拨中五境的供奉清客，不占任何优势，但是有一位离家多年的庶子，已是观湖书院的贤人，虽然那位贤人离家之后，从未返乡祭祖，但是侯家的的确确因此受益深远，每年都会派人去往观湖书院拜年。 侯家除了去往倒悬山的那艘跨洲渡船，还拥有老龙城去往北俱芦洲最多的航线，路程大多不长，从数万里到三十万里，例如北段尽头在梳水国的那条走龙道，侯家就占据了半壁江山，零零碎碎，加在一起，不容小觑。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与苻畦在老龙城迁移",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.324809",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -218,7 +303,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "extracted_at": "2026-03-25T01:03:31.324809",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -239,6 +324,20 @@
       "关于此人，老头子没有细说她的根脚，只说到了老龙城，先找她，只需要打个照面即可，然后才是去跟老龙城城主苻畦商议买卖。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "所以与范家有间隙的侯家，就敢自言范家不过是城主苻畦的一条看门狗，年复一年吃着残羹冷炙，吃不饱饿不死，历代家主都胸无大志，混吃等死。 关于此人，老头子没有细说她的根脚，只说到了老龙城，先找她，只需要打个照面即可，然后才是去跟老龙城城主苻畦商议买卖。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "郑大风",
@@ -263,7 +362,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻畦"
+        ],
         "sentence_indexes_in_segment": [
           3,
           5
@@ -274,16 +375,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风在老龙城冲突",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 苻畦与郑大风在老龙城冲突",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "苻畦",
           "郑大风"
         ],
-        "description": "而老龙城城主一直认可范家为五大姓之一，老龙城绝大部分人，却认为丁家更加名副其实，范家不该位列其中，这其实也是一桩趣事。 郑大风透过烟雾，凝视着不远处一袭墨绿长袍的年轻女子，优哉游哉喝着酒。 关于此人，老头子没有细说她的根脚，只说到了老龙城，先找她，只需要打个照面即可，然后才是去跟老龙城城主苻畦商议买卖。",
+        "description": "所以与范家有间隙的侯家，就敢自言范家不过是城主苻畦的一条看门狗，年复一年吃着残羹冷炙，吃不饱饿不死，历代家主都胸无大志，混吃等死。 而老龙城城主一直认可范家为五大姓之一，老龙城绝大部分人，却认为丁家更加名副其实，范家不该位列其中，这其实也是一桩趣事。 郑大风透过烟雾，凝视着不远处一袭墨绿长袍的年轻女子，优哉游哉喝着酒。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动苻畦与郑大风之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -297,8 +401,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻畦"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "冲突",
+        "context": "唯独范家，不温不火，始终不引人注意。 家族内既无十境元婴老祖，也没有真正拿得出手的强大金丹，更没有天资卓绝的后起之秀，从来都是步步紧跟苻家，大树底下好乘凉，靠着这一层关系，勉强抱住了五大姓氏之一的头衔。 所以与范家有间隙的侯家，就敢自言范家不过是城主苻畦的一条看门狗，年复一年吃着残羹冷炙，吃不饱饿不死，历代家主都胸无大志，混吃等死。 而老龙城城主一直认可范家为五大姓之一，老龙城绝大部分人，却认为丁家更加名副其实，范家不该位列其中，这其实也是一桩趣事。 郑大风透过烟雾，凝视着不远处一袭墨绿长袍的年轻女子，优哉游哉喝着酒。 关于此人，老头子没有细说她的根脚，只说到了老龙城，先找她，只需要打个照面即可，然后才是去跟老龙城城主苻畦商议买卖。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 苻畦与郑大风在老龙城冲突",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.325813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -399,7 +529,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "extracted_at": "2026-03-25T01:03:31.325813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -478,7 +608,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "extracted_at": "2026-03-25T01:03:31.325813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -516,6 +646,19 @@
         ],
         "juan_index": 261,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "而是与李二有过五次“求死”之战的郑大风，那个曾经在小镇门外，打死过数十位来到骊珠洞天寻找机缘的看门人。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 261,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -527,6 +670,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "郑大风"
         ],
         "sentence_indexes_in_segment": [
@@ -543,6 +687,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "郑大风"
         ],
         "sentence_indexes_in_segment": [
@@ -560,12 +705,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "郑大风"
+          "郑大风",
+          "李二"
         ],
         "description": "郑大风皱了皱眉头。 绿袍女子站起身，冷笑不已，然后做出一个古怪至极的动作，抬起手臂，做了一个抛掷动作，脸上笑意森严，双手朝郑大风心口轻轻一戳，缓缓道：“嗖，死啦。 郑大风站起身，这一刻，不再是那个嬉皮笑脸的药铺掌柜。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -579,8 +727,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.077069",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "讥讽",
+        "context": "郑大风皱了皱眉头。 绿袍女子站起身，冷笑不已，然后做出一个古怪至极的动作，抬起手臂，做了一个抛掷动作，脸上笑意森严，双手朝郑大风心口轻轻一戳，缓缓道：“嗖，死啦。 ” 郑大风站起身，这一刻，不再是那个嬉皮笑脸的药铺掌柜。 而是与李二有过五次“求死”之战的郑大风，那个曾经在小镇门外，打死过数十位来到骊珠洞天寻找机缘的看门人。 女子微微一笑，“我现在打不过你。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.325813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -612,6 +786,19 @@
           1,
           2,
           4
+        ],
+        "juan_index": 261,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 261,
         "segment_index": 9
@@ -660,7 +847,7 @@
         "participants": [
           "阿良",
           "陈平安",
-          "郑大风"
+          "崔东山"
         ],
         "description": "拂晓时分，陈平安就已经在小院练习走桩，天地寂寥，唯有晨曦懒洋洋躺在少年的肩头。 等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。 郑大风虽然看上去吊儿郎当，但是在某些事情上，其实并不含糊。",
         "background": "",
@@ -688,27 +875,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "郑大风"
+          "崔东山"
         ],
         "action": "师承",
-        "context": "观景女子的明亮眼眸之中，亦是此景。 拂晓时分，陈平安就已经在小院练习走桩，天地寂寥，唯有晨曦懒洋洋躺在少年的肩头。 等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。 郑大风虽然看上去吊儿郎当，但是在某些事情上，其实并不含糊。 郑大风不喜欢陈平安，陈平安何尝就喜欢这个小镇看门人了？ 但是两看相厌，不等于可以只看对方惹人厌的地方。",
+        "context": "等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。",
         "result": null,
         "event_name": "阿良过境",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 261,
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.325813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -740,6 +922,19 @@
           1,
           3,
           4
+        ],
+        "juan_index": 261,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "刘志茂",
+        "alias": [],
+        "original_description_in_book": "就像顾粲，小小年纪，性子阴沉，陈平安就很怕他在书简湖跟随截江真君刘志茂，朝夕相处，最后顾粲变成自己年幼时最讨厌的那种人。",
+        "description": "顾璨相关命运线的重要人物，是后续冲突升级的重要推手。",
+        "power": "书简湖",
+        "sentence_indexes_in_segment": [
+          1
         ],
         "juan_index": 261,
         "segment_index": 10
@@ -818,25 +1013,26 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "就像顾粲，小小年纪，性子阴沉，陈平安就很怕他在书简湖跟随截江真君刘志茂，朝夕相处，最后顾粲变成自己年幼时最讨厌的那种人。 李槐，刚离开家乡的时候，典型的窝里横，不知道如今变得如何了？ 敢不敢在朋友受人欺辱的时候，挺身而出，而不是像之前远游大隋，次次只敢躲在他陈平安身后？",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段10",
         "sentence_indexes_in_segment": [
@@ -855,6 +1051,26 @@
       {
         "time": null,
         "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘志茂"
+        ],
+        "action": "同行",
+        "context": "就像顾粲，小小年纪，性子阴沉，陈平安就很怕他在书简湖跟随截江真君刘志茂，朝夕相处，最后顾粲变成自己年幼时最讨厌的那种人。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 261,
+        "segment_index": 10
+      },
+      {
+        "time": null,
+        "from_roles": [
           "林守一"
         ],
         "to_roles": [
@@ -863,7 +1079,7 @@
         "action": "对话",
         "context": "林守一，虽然早熟沉稳，是修道的良材美玉，一路潜心问道，陈平安就会担心潜心问道是好事，可若只是一心问道，连患难与共的李宝瓶李槐他们，在大道之前，林守一会不会觉得只是挂碍，从而不念旧情，双方愈行愈远，如何是好？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -883,7 +1099,7 @@
         "action": "对话",
         "context": "林守一，虽然早熟沉稳，是修道的良材美玉，一路潜心问道，陈平安就会担心潜心问道是好事，可若只是一心问道，连患难与共的李宝瓶李槐他们，在大道之前，林守一会不会觉得只是挂碍，从而不念旧情，双方愈行愈远，如何是好？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -903,7 +1119,7 @@
         "action": "对话",
         "context": "林守一，虽然早熟沉稳，是修道的良材美玉，一路潜心问道，陈平安就会担心潜心问道是好事，可若只是一心问道，连患难与共的李宝瓶李槐他们，在大道之前，林守一会不会觉得只是挂碍，从而不念旧情，双方愈行愈远，如何是好？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -923,7 +1139,7 @@
         "action": "对话",
         "context": "林守一，虽然早熟沉稳，是修道的良材美玉，一路潜心问道，陈平安就会担心潜心问道是好事，可若只是一心问道，连患难与共的李宝瓶李槐他们，在大道之前，林守一会不会觉得只是挂碍，从而不念旧情，双方愈行愈远，如何是好？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -943,7 +1159,7 @@
         "action": "对话",
         "context": "林守一，虽然早熟沉稳，是修道的良材美玉，一路潜心问道，陈平安就会担心潜心问道是好事，可若只是一心问道，连患难与共的李宝瓶李槐他们，在大道之前，林守一会不会觉得只是挂碍，从而不念旧情，双方愈行愈远，如何是好？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -963,7 +1179,7 @@
         "action": "对话",
         "context": "林守一，虽然早熟沉稳，是修道的良材美玉，一路潜心问道，陈平安就会担心潜心问道是好事，可若只是一心问道，连患难与共的李宝瓶李槐他们，在大道之前，林守一会不会觉得只是挂碍，从而不念旧情，双方愈行愈远，如何是好？",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -973,7 +1189,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.325813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1005,6 +1221,19 @@
           0,
           1,
           2
+        ],
+        "juan_index": 261,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "范二",
+        "alias": [],
+        "original_description_in_book": "陈平安总会有这样那样的担忧，所以他才会由衷羡慕范二的无忧无虑。",
+        "description": "老龙城群像中极具识别度的角色，适合支撑轻重交替的人物网。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 261,
         "segment_index": 11
@@ -1052,6 +1281,19 @@
         ],
         "juan_index": 261,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "被马苦玄活活打死的彩衣国剑神，梳水国剑圣宋雨烧，古榆国剑尊林孤山，松溪国剑仙苏琅，就都是山下武夫，大体上还是在混迹江湖，不被山上视为同道。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 261,
+        "segment_index": 11
       }
     ],
     "locations": [],
@@ -1064,7 +1306,7 @@
           "陈平安",
           "宋集薪",
           "马苦玄",
-          "郑大风"
+          "范二"
         ],
         "description": "陈平安总会有这样那样的担忧，所以他才会由衷羡慕范二的无忧无虑。 陈平安跟邻居宋集薪和杏花巷马苦玄不太一样，两位注定要一飞冲天的天之骄子，一个若是看到求而不得的好东西，宋集薪多半会冷嘲热讽，马苦玄一个心情不好的话，可能就会干脆一拳将其打碎，我得不到的，你也别想要了。 陈平安略微收起思绪，继续翻开那本被郑大风临时取名为剑术正经的剑谱。",
         "background": "",
@@ -1084,7 +1326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1146,7 +1388,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1211,7 +1453,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1293,7 +1535,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1355,7 +1597,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1416,7 +1658,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,7 +1720,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1540,7 +1782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.326816",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1601,7 +1843,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.078072",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1678,7 +1920,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1740,7 +1982,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1802,7 +2044,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1883,7 +2125,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1945,7 +2187,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1983,7 +2225,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安试探",
         "time": null,
         "location": null,
         "participants": [
@@ -1991,7 +2233,7 @@
         ],
         "description": "话说回来，如果陈平安真能做到，哪怕只是支撑一时半刻，剑谱记载的那四招剑术，必定会进步神速。 老人笑容玩味。 虽然不知少年为何早早具备魂魄胆的雏形，可是被一名金丹剑修的剑气侵入气府，扫荡三魂，其中滋味，别说是咬牙练习剑术，能不能站稳脚跟还两说。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段25",
         "sentence_indexes_in_segment": [
@@ -2007,7 +2249,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2066,7 +2308,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.079076",
+    "extracted_at": "2026-03-25T01:03:31.327820",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.940378",
+    "extracted_at": "2026-03-25T01:03:31.156632",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -120,7 +120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.940378",
+    "extracted_at": "2026-03-25T01:03:31.157636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,7 +182,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.940378",
+    "extracted_at": "2026-03-25T01:03:31.157636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -276,7 +276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.940378",
+    "extracted_at": "2026-03-25T01:03:31.157636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -297,6 +297,19 @@
       "法，从来都是一个很大的字。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "后天灵器，例如高品相的黄纸符箓，以及一些被练气士雕刻、打造而成的神异器物，比如老龙城少城主苻南华的那枚玉佩，名为“老龙布雨”，就是灵器之中的头等物件，价值连城，还有他从宋集薪那边购买而得的“山魈壶”，更是珍贵异常。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 225,
+        "segment_index": 7
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -322,6 +335,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻南华",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -333,15 +347,17 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十五章 夜路 · 宋集薪在老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
           "宋集薪"
         ],
         "description": "后天灵器，例如高品相的黄纸符箓，以及一些被练气士雕刻、打造而成的神异器物，比如老龙城少城主苻南华的那枚玉佩，名为“老龙布雨”，就是灵器之中的头等物件，价值连城，还有他从宋集薪那边购买而得的“山魈壶”，更是珍贵异常。 关键时刻，还能以毁坏根基的代价、反哺主人。 小雪钱其实勉强能算此类，只是一颗雪花钱蕴含的灵气，太过稀少，可以忽略不计，没有练气士傻乎乎到汲取小雪钱的灵气，来助长修行境界。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键剧情推进节点。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十五章 夜路 · 段7",
         "sentence_indexes_in_segment": [
@@ -357,7 +373,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.940378",
+    "extracted_at": "2026-03-25T01:03:31.157636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -390,6 +406,32 @@
         ],
         "juan_index": 225,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "当然阿良从魏晋那边取来的银色养剑葫，还有正阳山苏稼腰间悬挂的那枚葫芦，是养剑葫当中的天潢贵胄，相传是道祖飞升之前亲手栽下的一串葫芦藤，结出的六颗葫芦，再被山巅高人打造成六件养剑容器，自然不是寻常养剑葫可以媲美。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 225,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "当然阿良从魏晋那边取来的银色养剑葫，还有正阳山苏稼腰间悬挂的那枚葫芦，是养剑葫当中的天潢贵胄，相传是道祖飞升之前亲手栽下的一串葫芦藤，结出的六颗葫芦，再被山巅高人打造成六件养剑容器，自然不是寻常养剑葫可以媲美。",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 225,
+        "segment_index": 8
       }
     ],
     "locations": [
@@ -401,7 +443,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阿良"
+          "阿良",
+          "魏晋",
+          "苏稼"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -417,7 +461,9 @@
         "location": "正阳山",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "魏晋",
+          "苏稼"
         ],
         "description": "当然阿良从魏晋那边取来的银色养剑葫，还有正阳山苏稼腰间悬挂的那枚葫芦，是养剑葫当中的天潢贵胄，相传是道祖飞升之前亲手栽下的一串葫芦藤，结出的六颗葫芦，再被山巅高人打造成六件养剑容器，自然不是寻常养剑葫可以媲美。 否则就不会有道法佛法之说。 法器，蕴含着天地大道的无形规矩。",
         "background": "",
@@ -437,7 +483,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.940378",
+    "extracted_at": "2026-03-25T01:03:31.157636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -515,7 +561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.157636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -547,6 +593,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 225,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣馈赠的风雪小锥笔，以及一大摞材质珍贵的符纸。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
         ],
         "juan_index": 225,
         "segment_index": 11
@@ -589,9 +648,10 @@
         "participants": [
           "陈平安",
           "魏檗",
-          "齐静春"
+          "齐静春",
+          "李希圣"
         ],
-        "description": "而齐先生留给自己的三方印章，都是最好的蛇胆石篆刻而成。 所以陈平安独自走回屋子的时候，脚下带风，像极了没在路上遇见某某某的青衣小童。 虽然暂时无法断定每一样东西的具体品级，但是从落魄山带出来的物件，绝对差不了。",
+        "description": "而齐先生留给自己的三方印章，都是最好的蛇胆石篆刻而成。 李希圣馈赠的风雪小锥笔，以及一大摞材质珍贵的符纸。 所以陈平安独自走回屋子的时候，脚下带风，像极了没在路上遇见某某某的青衣小童。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
         "related_action_indices": [],
@@ -609,7 +669,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.158639",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -673,7 +733,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.158639",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -735,7 +795,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.158639",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -798,7 +858,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.158639",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -860,7 +920,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.158639",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -925,7 +985,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.941382",
+    "extracted_at": "2026-03-25T01:03:31.158639",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

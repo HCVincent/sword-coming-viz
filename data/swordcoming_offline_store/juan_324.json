@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.230085",
+    "extracted_at": "2026-03-25T01:03:31.566647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -93,6 +93,19 @@
         ],
         "juan_index": 324,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "大街上跟种秋一战，跻身五境，之后跟丁婴一战，这两块磨刀石，用来砥砺武道，比起在桂花岛与老金丹剑修的切磋，无论是体魄还是心性，都要强出太多，尤其是与丁婴从城头转战牯牛山，这种涉及武学大道根本以及“天下”武运的生死之战，哪怕以落魄山竹楼的崔姓老人眼光来看，也会赞赏有加，要说一句八九境的纯粹武夫，都未必能够打出那种气势。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 324,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -103,7 +116,9 @@
         "description": "陈平安后续立足和经营的核心地点，是后三季推进的主场之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "种秋"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -134,12 +149,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "种秋"
         ],
         "description": "陈平安蹲在地上，伸出手掌贴在在地面，闭上眼睛，试图找到一些蛛丝马迹，飞剑十五嗖一下飞出养剑葫，贴着地面，疾速飞旋，最后剑尖朝地，指向一处。 陈平安立即开始用双手刨开地面，以他当下的武道境界，五指都可以称为削铁如泥了。 大街上跟种秋一战，跻身五境，之后跟丁婴一战，这两块磨刀石，用来砥砺武道，比起在桂花岛与老金丹剑修的切磋，无论是体魄还是心性，都要强出太多，尤其是与丁婴从城头转战牯牛山，这种涉及武学大道根本以及“天下”武运的生死之战，哪怕以落魄山竹楼的崔姓老人眼光来看，也会赞赏有加，要说一句八九境的纯粹武夫，都未必能够打出那种气势。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -153,8 +171,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "冲突",
+        "context": "陈平安蹲在地上，伸出手掌贴在在地面，闭上眼睛，试图找到一些蛛丝马迹，飞剑十五嗖一下飞出养剑葫，贴着地面，疾速飞旋，最后剑尖朝地，指向一处。 陈平安立即开始用双手刨开地面，以他当下的武道境界，五指都可以称为削铁如泥了。 大街上跟种秋一战，跻身五境，之后跟丁婴一战，这两块磨刀石，用来砥砺武道，比起在桂花岛与老金丹剑修的切磋，无论是体魄还是心性，都要强出太多，尤其是与丁婴从城头转战牯牛山，这种涉及武学大道根本以及“天下”武运的生死之战，哪怕以落魄山竹楼的崔姓老人眼光来看，也会赞赏有加，要说一句八九境的纯粹武夫，都未必能够打出那种气势。 片刻之后，挖出一个将近等人高的大坑，陈平安双手捧起奄奄一息的莲花小人儿，跃出大坑，将它小心翼翼放在桌上，先脱了身上那件法袍金醴，裹成一团，像是个小草窝似的，把小东西放在法袍之中。 之后赶紧从方寸物里头拿出一颗谷雨钱，比起灵气淡薄的小雪钱，以手触摸、依稀可以感觉到灵气如水流转的小暑钱，谷雨钱蕴含灵气最盛，如冰冻结，陈平安将这颗山上神仙钱币攥在手心，猛然一握，谷雨钱在手中粉碎，陈平安微微松开，撒在莲花小人儿身上。 至于这颗谷雨钱，能够在仙家店铺购买多少古怪精魅，多少在王侯之家、富贵门庭都难得一见的精灵，陈平安早已不是初出茅庐的江湖雏儿，不是那个泥瓶巷的泥腿子窑工学徒，所以一清二楚。",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.566647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -278,7 +322,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "extracted_at": "2026-03-25T01:03:31.566647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -374,7 +418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "extracted_at": "2026-03-25T01:03:31.567650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -461,16 +505,17 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与李宝瓶在龙泉迁移",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安",
           "李宝瓶"
         ],
         "description": "自陈平安第一次离开龙泉，护送李宝瓶他们去大隋求学，再到莫名其妙闯入这座天下。 陈平安隔三岔五就会起身，去屋内看看莲花小人儿的情况，虽然进展缓慢，可是在朝好的方向一点一点痊愈，这才彻底放下心。 陈平安弯腰坐在小板凳上，等着那个名叫曹晴朗的孩子回家。",
         "background": "",
-        "significance": "在龙泉推动陈平安与李宝瓶之间的迁移线。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
           0
         ],
@@ -499,7 +544,7 @@
         "action": "守护",
         "context": "自陈平安第一次离开龙泉，护送李宝瓶他们去大隋求学，再到莫名其妙闯入这座天下。",
         "result": null,
-        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与李宝瓶在龙泉迁移",
+        "event_name": "李二照面陈平安",
         "location": "龙泉",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -509,7 +554,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "extracted_at": "2026-03-25T01:03:31.567650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -604,7 +649,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "extracted_at": "2026-03-25T01:03:31.567650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -685,7 +730,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "extracted_at": "2026-03-25T01:03:31.567650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -708,6 +753,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "想来应该是国师种秋的意思。 陈平安站起身，原来是种秋来了。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "这天黄昏里，陈平安拎了条板凳坐在街巷拐角处，若是以往，这边就会有个棋摊子，两个臭棋篓子厮杀得天昏地暗，旁边无数个臭棋篓子在支昏招。 陈平安站起身，原来是种秋来了。",
@@ -725,16 +785,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "种秋",
           "陈平安"
         ],
-        "description": "这天黄昏里，陈平安拎了条板凳坐在街巷拐角处，若是以往，这边就会有个棋摊子，两个臭棋篓子厮杀得天昏地暗，旁边无数个臭棋篓子在支昏招。 陈平安站起身，原来是种秋来了。 种秋和陈平安沿着大街散步，种秋满脸疲倦，微笑道：“京师这一块坊市已经暗中戒严了，各路小道消息也被控制下来，皇帝陛下和太子殿下，都对你很好奇，想要见你，被我劝阻下来。",
+        "description": "想来应该是国师种秋的意思。 这天黄昏里，陈平安拎了条板凳坐在街巷拐角处，若是以往，这边就会有个棋摊子，两个臭棋篓子厮杀得天昏地暗，旁边无数个臭棋篓子在支昏招。 陈平安站起身，原来是种秋来了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动种秋与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -748,8 +811,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "种秋和陈平安沿着大街散步，种秋满脸疲倦，微笑道：“京师这一块坊市已经暗中戒严了，各路小道消息也被控制下来，皇帝陛下和太子殿下，都对你很好奇，想要见你，被我劝阻下来。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.567650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -783,21 +867,37 @@
         ],
         "juan_index": 324,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋一袭青衫，双鬓微白，短短数日，竟是有了几分沧桑老态，可见这位国师当下心情并不轻松，继续说道：“俞真意在牯牛山遗址，自己搭建了一座小茅屋，要在那边潜心修行，陛下提出要求，除非是俞真意将湖山派迁入南苑国境内，否则就要动用武力驱逐俞真意，俞真意不予理会，我希望陛下能够再等等，但是陛下没有同意，已经调动兵马，很快就会有万余精锐，围住牯牛山一带。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 324,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "种秋"
         ],
-        "description": "陈平安点头答应下来。 陈平安想了想，问道：“那个镜心斋樊莞尔？ 不过你要是愿意的话，随时可以进宫，或是去我住处那边散散心。",
+        "description": "陈平安点头答应下来。 种秋一袭青衫，双鬓微白，短短数日，竟是有了几分沧桑老态，可见这位国师当下心情并不轻松，继续说道：“俞真意在牯牛山遗址，自己搭建了一座小茅屋，要在那边潜心修行，陛下提出要求，除非是俞真意将湖山派迁入南苑国境内，否则就要动用武力驱逐俞真意，俞真意不予理会，我希望陛下能够再等等，但是陛下没有同意，已经调动兵马，很快就会有万余精锐，围住牯牛山一带。 陈平安想了想，问道：“那个镜心斋樊莞尔？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与种秋之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -811,8 +911,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "对话",
+        "context": "不过你要是愿意的话，随时可以进宫，或是去我住处那边散散心。 ” 陈平安点头答应下来。 种秋一袭青衫，双鬓微白，短短数日，竟是有了几分沧桑老态，可见这位国师当下心情并不轻松，继续说道：“俞真意在牯牛山遗址，自己搭建了一座小茅屋，要在那边潜心修行，陛下提出要求，除非是俞真意将湖山派迁入南苑国境内，否则就要动用武力驱逐俞真意，俞真意不予理会，我希望陛下能够再等等，但是陛下没有同意，已经调动兵马，很快就会有万余精锐，围住牯牛山一带。 ” 陈平安想了想，问道：“那个镜心斋樊莞尔？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.567650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -835,6 +961,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋先将樊莞尔的大略生平说给陈平安，然后无奈道：“我猜陛下应该是私下见了她，才有此决心和举措，想着只要有她压阵，加上滞留京师的北晋大将军唐铁意，当然，还要加上我种秋，形势再差也差不到哪里去。 说到这里，种秋站在一处沟壑边缘，正是当时陈平安以顶峰拳架校大龙、御风而过，一拳将他击飞的位置，笑了笑，“陛下多次拿话试探我，询问你的心性和来历，我既不好欺骗陛下，也不好将你扯入这些俗世恩怨，只说你既不会扶持南苑国，但也不会帮着俞真意，闲云野鹤，只在云深处，是不会与鸡犬为伍的，更不会与它们争食。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 324,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "种秋先将樊莞尔的大略生平说给陈平安，然后无奈道：“我猜陛下应该是私下见了她，才有此决心和举措，想着只要有她压阵，加上滞留京师的北晋大将军唐铁意，当然，还要加上我种秋，形势再差也差不到哪里去。 说到这里，种秋站在一处沟壑边缘，正是当时陈平安以顶峰拳架校大龙、御风而过，一拳将他击飞的位置，笑了笑，“陛下多次拿话试探我，询问你的心性和来历，我既不好欺骗陛下，也不好将你扯入这些俗世恩怨，只说你既不会扶持南苑国，但也不会帮着俞真意，闲云野鹤，只在云深处，是不会与鸡犬为伍的，更不会与它们争食。",
@@ -852,16 +992,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安试探",
         "time": null,
         "location": null,
         "participants": [
+          "种秋",
           "陈平安"
         ],
         "description": "种秋先将樊莞尔的大略生平说给陈平安，然后无奈道：“我猜陛下应该是私下见了她，才有此决心和举措，想着只要有她压阵，加上滞留京师的北晋大将军唐铁意，当然，还要加上我种秋，形势再差也差不到哪里去。 说到这里，种秋站在一处沟壑边缘，正是当时陈平安以顶峰拳架校大龙、御风而过，一拳将他击飞的位置，笑了笑，“陛下多次拿话试探我，询问你的心性和来历，我既不好欺骗陛下，也不好将你扯入这些俗世恩怨，只说你既不会扶持南苑国，但也不会帮着俞真意，闲云野鹤，只在云深处，是不会与鸡犬为伍的，更不会与它们争食。 陈平安抱拳致谢。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动种秋与陈平安之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -875,8 +1018,29 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.231088",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "试探",
+        "context": "说到这里，种秋站在一处沟壑边缘，正是当时陈平安以顶峰拳架校大龙、御风而过，一拳将他击飞的位置，笑了笑，“陛下多次拿话试探我，询问你的心性和来历，我既不好欺骗陛下，也不好将你扯入这些俗世恩怨，只说你既不会扶持南苑国，但也不会帮着俞真意，闲云野鹤，只在云深处，是不会与鸡犬为伍的，更不会与它们争食。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 324,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.568654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -897,6 +1061,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋摆摆手，“换成是我，只会比你更加心烦。 种秋想起一事，“你住处那户人家的惨事，是我亲自处理的，朝廷这边抓了不少魔教余孽，可以确定，当时是丁婴下令让人行凶，大概是为了让春潮宫的簪花郎周仕，要他与你早早交手，没办法置身事外，以便水到渠成地扯出陆舫以及周肥。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 324,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -927,19 +1105,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与曹晴朗冲突",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "种秋",
           "陈平安",
           "曹晴朗"
         ],
-        "description": "陈平安摘下酒葫芦，喝了口酒。 而且通过曹晴朗在衙门那边的口供，得知丁婴之所以如此，与你关系不大，是因为丁婴误认为曹晴朗这个孩子，与镜心斋童青青有关。 种秋摆摆手，“换成是我，只会比你更加心烦。",
+        "description": "种秋摆摆手，“换成是我，只会比你更加心烦。 陈平安摘下酒葫芦，喝了口酒。 种秋想起一事，“你住处那户人家的惨事，是我亲自处理的，朝廷这边抓了不少魔教余孽，可以确定，当时是丁婴下令让人行凶，大概是为了让春潮宫的簪花郎周仕，要他与你早早交手，没办法置身事外，以便水到渠成地扯出陆舫以及周肥。",
         "background": "",
-        "significance": "推动陈平安与曹晴朗之间的冲突关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动种秋与陈平安之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -953,34 +1130,8 @@
         "segment_index": 11
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "曹晴朗"
-        ],
-        "action": "冲突",
-        "context": "种秋摆摆手，“换成是我，只会比你更加心烦。 ” 陈平安摘下酒葫芦，喝了口酒。 种秋想起一事，“你住处那户人家的惨事，是我亲自处理的，朝廷这边抓了不少魔教余孽，可以确定，当时是丁婴下令让人行凶，大概是为了让春潮宫的簪花郎周仕，要他与你早早交手，没办法置身事外，以便水到渠成地扯出陆舫以及周肥。 而且通过曹晴朗在衙门那边的口供，得知丁婴之所以如此，与你关系不大，是因为丁婴误认为曹晴朗这个孩子，与镜心斋童青青有关。 ”",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与曹晴朗冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 324,
-        "segment_index": 11
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.568654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1015,21 +1166,37 @@
         ],
         "juan_index": 324,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋愣了一下，满脸疑惑。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 324,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "种秋"
         ],
-        "description": "陈平安嗯了一声。 陈平安突然问道：“这里到底是哪里？ 陈平安指了指身后的长气，解释道：“我是背着这把剑，误打误撞进来的，兜兜转转，找了很久，都不知道自己早就身在其中。",
+        "description": "陈平安嗯了一声。 陈平安突然问道：“这里到底是哪里？ 种秋愣了一下，满脸疑惑。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与种秋之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1043,8 +1210,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "对话",
+        "context": "陈平安嗯了一声。 陈平安突然问道：“这里到底是哪里？ ” 种秋愣了一下，满脸疑惑。 陈平安指了指身后的长气，解释道：“我是背着这把剑，误打误撞进来的，兜兜转转，找了很久，都不知道自己早就身在其中。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.568654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1065,6 +1258,20 @@
       "后来白河寺那一晚，丁婴和周仕鸦儿一起潜入大殿，寻找那副罗汉金身。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋笑着介绍了一些关于藕花福地和谪仙人的历史记载。 后来白河寺丑闻暴露，牯牛山四大宗师聚首，陈平安更觉得匪夷所思，竟然都喜欢用“天下”这个词汇，国师种秋是天下第一手，南苑是天下第一强国，镜心亭的董青青是天下第一美人，等等，不胜枚举。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 324,
+        "segment_index": 13
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1115,16 +1322,19 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安在观道观剧情推进",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安在观道观同行",
         "time": null,
         "location": "观道观",
         "participants": [
+          "种秋",
           "陈平安"
         ],
-        "description": "陈平安这才了然。 老道人当时话只说了一半，观道观的确是不存在，但其实可以说整座藕花福地，就是老道人的“观道之地”。 一开始，陈平安察觉到不对劲的地方，是发现一洲之内竟然有两个北晋国，要知道莲花小人儿就是在北晋寺庙内寻见的，起先陈平安还觉得可能是桐叶洲与宝瓶洲风土不同，还专门去状元巷书肆翻阅了许多稗官野史和文人笔札，结果越看越奇怪，还不死心，又去了那家一看就是权贵之家的私人藏书楼，想要通过正史才确定南苑国在桐叶洲的具体方位，还是云遮雾绕，书上始终唯有四国历史。",
+        "description": "种秋笑着介绍了一些关于藕花福地和谪仙人的历史记载。 陈平安这才了然。 老道人当时话只说了一半，观道观的确是不存在，但其实可以说整座藕花福地，就是老道人的“观道之地”。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在观道观推动种秋与陈平安之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1138,8 +1348,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "种秋笑着介绍了一些关于藕花福地和谪仙人的历史记载。 陈平安这才了然。 老道人当时话只说了一半，观道观的确是不存在，但其实可以说整座藕花福地，就是老道人的“观道之地”。 一开始，陈平安察觉到不对劲的地方，是发现一洲之内竟然有两个北晋国，要知道莲花小人儿就是在北晋寺庙内寻见的，起先陈平安还觉得可能是桐叶洲与宝瓶洲风土不同，还专门去状元巷书肆翻阅了许多稗官野史和文人笔札，结果越看越奇怪，还不死心，又去了那家一看就是权贵之家的私人藏书楼，想要通过正史才确定南苑国在桐叶洲的具体方位，还是云遮雾绕，书上始终唯有四国历史。 后来白河寺丑闻暴露，牯牛山四大宗师聚首，陈平安更觉得匪夷所思，竟然都喜欢用“天下”这个词汇，国师种秋是天下第一手，南苑是天下第一强国，镜心亭的董青青是天下第一美人，等等，不胜枚举。 后来白河寺那一晚，丁婴和周仕鸦儿一起潜入大殿，寻找那副罗汉金身。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安在观道观同行",
+        "location": "观道观",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.568654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1176,6 +1412,19 @@
         ],
         "juan_index": 324,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "宋雨烧",
+        "alias": [],
+        "original_description_in_book": "所以陈平安就没有往深处想，只当做是环境阻塞的一处“无法之地”，就剑圣宋雨烧所在的宝瓶洲梳水国，武夫强盛。",
+        "description": "大骊武夫线的重要代表人物，承接王朝气象与江湖武道气。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 324,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -1187,7 +1436,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -1198,15 +1448,16 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安在宝瓶洲剧情推进",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与宋雨烧在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "宋雨烧"
         ],
         "description": "在这之前，陈平安由于身边就有心相寺老僧这么一位练气士，加上进入这座京城没多久，很快就遇到了那件喜欢在月色下翩翩起舞的青色衣裙。 所以陈平安就没有往深处想，只当做是环境阻塞的一处“无法之地”，就剑圣宋雨烧所在的宝瓶洲梳水国，武夫强盛。 如今细细思量，陈平安倍觉悚然，寒意阵阵。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在宝瓶洲推动陈平安与宋雨烧之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段14",
         "sentence_indexes_in_segment": [
@@ -1222,7 +1473,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.568654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1245,6 +1496,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋身为国师，一场大战过后，天下形势都变得云波诡谲，还有无数事情需要他去定夺，今天过来拜访陈平安，一是防止出现误会，二是存了私心，来这边散心，透口气。 所以聊完该聊的，种秋就告辞离去。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 324,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "种秋身为国师，一场大战过后，天下形势都变得云波诡谲，还有无数事情需要他去定夺，今天过来拜访陈平安，一是防止出现误会，二是存了私心，来这边散心，透口气。 离别之际，陈平安歉意道：“我暂时还无法离开藕花福地。",
@@ -1262,16 +1528,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安迁移",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
+          "种秋",
           "陈平安"
         ],
-        "description": "种秋身为国师，一场大战过后，天下形势都变得云波诡谲，还有无数事情需要他去定夺，今天过来拜访陈平安，一是防止出现误会，二是存了私心，来这边散心，透口气。 离别之际，陈平安歉意道：“我暂时还无法离开藕花福地。 种秋笑着说了一句，“没关系，反正你陈平安也不像是个谪仙人。",
+        "description": "种秋身为国师，一场大战过后，天下形势都变得云波诡谲，还有无数事情需要他去定夺，今天过来拜访陈平安，一是防止出现误会，二是存了私心，来这边散心，透口气。 所以聊完该聊的，种秋就告辞离去。 离别之际，陈平安歉意道：“我暂时还无法离开藕花福地。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动种秋与陈平安之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1285,8 +1554,29 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "种秋身为国师，一场大战过后，天下形势都变得云波诡谲，还有无数事情需要他去定夺，今天过来拜访陈平安，一是防止出现误会，二是存了私心，来这边散心，透口气。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 324,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.568654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1309,6 +1599,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "种秋离去后，独自走在清冷大街上，神色黯然。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 324,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "如果自己和俞真意当年遇上的第一个谪仙人，是陈平安，会不会如今就是另外一种结局？ 陈平安拎起小板凳，走入晦暗的小巷。",
@@ -1326,15 +1629,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "种秋"
         ],
-        "description": "如果自己和俞真意当年遇上的第一个谪仙人，是陈平安，会不会如今就是另外一种结局？ 陈平安拎起小板凳，走入晦暗的小巷。 陈平安突然眯起眼。",
+        "description": "种秋离去后，独自走在清冷大街上，神色黯然。 如果自己和俞真意当年遇上的第一个谪仙人，是陈平安，会不会如今就是另外一种结局？ 陈平安拎起小板凳，走入晦暗的小巷。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与种秋之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段16",
         "sentence_indexes_in_segment": [
@@ -1350,7 +1654,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1413,7 +1717,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1491,7 +1795,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1593,7 +1897,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1698,7 +2002,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1803,7 +2107,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.232092",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1908,7 +2212,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.569657",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2016,7 +2320,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.570662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2094,7 +2398,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.570662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2156,7 +2460,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.570662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2179,6 +2483,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "皇帝魏良第一时间望向窗户外边，很是紧张，有些后悔没有喊上国师种秋，毕竟国师跟那人关系不错，是有香火情的。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 324,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "那位年纪轻轻的谪仙人陈平安，没有身穿那扎眼的一袭白袍，而是一身南苑国寻常殷实人家的普通衣衫。",
@@ -2194,16 +2511,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安迁移",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
+          "种秋",
           "陈平安"
         ],
-        "description": "那位年纪轻轻的谪仙人陈平安，没有身穿那扎眼的一袭白袍，而是一身南苑国寻常殷实人家的普通衣衫。 皇帝魏良第一时间望向窗户外边，很是紧张，有些后悔没有喊上国师种秋，毕竟国师跟那人关系不错，是有香火情的。 但是等了半天，才发现那人从楼梯口出现，竟是规规矩矩走了酒楼大门和楼梯。",
+        "description": "皇帝魏良第一时间望向窗户外边，很是紧张，有些后悔没有喊上国师种秋，毕竟国师跟那人关系不错，是有香火情的。 那位年纪轻轻的谪仙人陈平安，没有身穿那扎眼的一袭白袍，而是一身南苑国寻常殷实人家的普通衣衫。 但是等了半天，才发现那人从楼梯口出现，竟是规规矩矩走了酒楼大门和楼梯。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动种秋与陈平安之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -2217,8 +2537,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "皇帝魏良第一时间望向窗户外边，很是紧张，有些后悔没有喊上国师种秋，毕竟国师跟那人关系不错，是有香火情的。 但是等了半天，才发现那人从楼梯口出现，竟是规规矩矩走了酒楼大门和楼梯。 那位年纪轻轻的谪仙人陈平安，没有身穿那扎眼的一袭白袍，而是一身南苑国寻常殷实人家的普通衣衫。 魏良稳了稳心神，站起身。 皇帝都起身迎客了，周姝真和皇室三人都赶紧起身。 黄庭没有摆架子，只是也未太过殷勤，站了起来，却离开酒桌，走到了窗口那边，像是把自己摘了出去，交给地头蛇跟过江龙，双方自己看着办，她谁也不偏袒。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 种秋与陈平安迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 324,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.570662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2281,7 +2627,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.570662",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2343,7 +2689,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.571664",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2405,7 +2751,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.233095",
+    "extracted_at": "2026-03-25T01:03:31.571664",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2468,7 +2814,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.234098",
+    "extracted_at": "2026-03-25T01:03:31.571664",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2503,21 +2849,38 @@
         ],
         "juan_index": 324,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "陈平安付过钱结了账，离开热闹喧嚣的夜市，缓缓而行，在寂静无人处，掠上一座屋脊，又去了那家庭院深深的官宦人家，去了他家的私人藏书楼，这一次不是去查询“这座天下”的历史和堪舆，而是去寻找有关桥梁建造的书籍，可惜搜寻无果，就打起了工部衙门藏书和档案的主意，一番权衡，想着还是有机会就跟种秋说一声，请人家国师帮这个忙，应该不会太为难。 再就是还要跟种秋讨要一个书生的消息。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 324,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安迁移",
+        "name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "种秋"
         ],
-        "description": "以前没觉得多有道理，这会儿陈平安在熙熙攘攘的闹市中，觉得老前辈的老话真是不骗人。 陈平安付过钱结了账，离开热闹喧嚣的夜市，缓缓而行，在寂静无人处，掠上一座屋脊，又去了那家庭院深深的官宦人家，去了他家的私人藏书楼，这一次不是去查询“这座天下”的历史和堪舆，而是去寻找有关桥梁建造的书籍，可惜搜寻无果，就打起了工部衙门藏书和档案的主意，一番权衡，想着还是有机会就跟种秋说一声，请人家国师帮这个忙，应该不会太为难。 陈平安最后在一座高楼屋顶停下，坐下来喝酒，喝到最后，对着天空伸出了中指。",
+        "description": "以前没觉得多有道理，这会儿陈平安在熙熙攘攘的闹市中，觉得老前辈的老话真是不骗人。 陈平安付过钱结了账，离开热闹喧嚣的夜市，缓缓而行，在寂静无人处，掠上一座屋脊，又去了那家庭院深深的官宦人家，去了他家的私人藏书楼，这一次不是去查询“这座天下”的历史和堪舆，而是去寻找有关桥梁建造的书籍，可惜搜寻无果，就打起了工部衙门藏书和档案的主意，一番权衡，想着还是有机会就跟种秋说一声，请人家国师帮这个忙，应该不会太为难。 再就是还要跟种秋讨要一个书生的消息。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与种秋之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十三章 人间灯火点点 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -2531,8 +2894,29 @@
         "segment_index": 35
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.234098",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "别离",
+        "context": "陈平安付过钱结了账，离开热闹喧嚣的夜市，缓缓而行，在寂静无人处，掠上一座屋脊，又去了那家庭院深深的官宦人家，去了他家的私人藏书楼，这一次不是去查询“这座天下”的历史和堪舆，而是去寻找有关桥梁建造的书籍，可惜搜寻无果，就打起了工部衙门藏书和档案的主意，一番权衡，想着还是有机会就跟种秋说一声，请人家国师帮这个忙，应该不会太为难。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十三章 人间灯火点点 · 陈平安与种秋迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 324,
+        "segment_index": 35
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.571664",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2594,7 +2978,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.234098",
+    "extracted_at": "2026-03-25T01:03:31.571664",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2658,7 +3042,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.234098",
+    "extracted_at": "2026-03-25T01:03:31.571664",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

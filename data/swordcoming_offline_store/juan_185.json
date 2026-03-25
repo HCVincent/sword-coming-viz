@@ -103,7 +103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -168,7 +168,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -247,7 +247,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -330,7 +330,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -410,7 +410,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.955437",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -518,7 +518,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -583,7 +583,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.815274",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -689,7 +689,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -797,7 +797,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -906,7 +906,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -971,7 +971,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1022,6 +1022,19 @@
         ],
         "juan_index": 185,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "老人点了点头，又摇头道：“把我跟李希圣位置颠倒一下，可能会更好。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 185,
+        "segment_index": 12
       }
     ],
     "locations": [],
@@ -1033,14 +1046,13 @@
         "participants": [
           "魏檗",
           "陈平安",
-          "阮邛"
+          "阮邛",
+          "李希圣"
         ],
-        "description": "老人笑道：“阮邛，偷听别人说话，不是什么好习惯啊。 阮邛大大方方坦白道：“你，李家嫡长孙，魏檗，你们三个，我必须盯着。 ”",
+        "description": "老人笑道：“阮邛，偷听别人说话，不是什么好习惯啊。 阮邛大大方方坦白道：“你，李家嫡长孙，魏檗，你们三个，我必须盯着。 老人点了点头，又摇头道：“把我跟李希圣位置颠倒一下，可能会更好。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1054,34 +1066,8 @@
         "segment_index": 12
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阮邛"
-        ],
-        "to_roles": [
-          "魏檗"
-        ],
-        "action": "对话",
-        "context": "老人笑道：“阮邛，偷听别人说话，不是什么好习惯啊。 ” 阮邛大大方方坦白道：“你，李家嫡长孙，魏檗，你们三个，我必须盯着。 ” 老人点了点头，又摇头道：“把我跟李希圣位置颠倒一下，可能会更好。 ”",
-        "result": null,
-        "event_name": "魏檗现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 185,
-        "segment_index": 12
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1188,7 +1174,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1317,7 +1303,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.956441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1381,7 +1367,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.816278",
+    "extracted_at": "2026-03-25T01:03:30.957444",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1401,7 +1387,22 @@
       "”",
       "曹曦身体前倾，从一只粉绿色小瓷碟中，夹起一粒腌萝卜，丢入嘴中，“不就一件破烂瓷器嘛，只要你开口，再点个头，我帮你出面解决。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "“既然都到了这里，咱们俩的身份很快就会被看穿，你谢实好歹是从骊珠洞天出去的人物，若是刻意隐蔽身份，反而让人怀疑，还不如像我这样，大摇大摆走入小镇，说不得还要打一架，让大骊见识见识，省得他们不把一位陆地剑仙当回事。 曹曦说到这里，看了眼对面汉子，笑嘻嘻道：“都说俱芦洲的谢实，光明磊落，如头顶悬空的大日骄阳，平生不做半点亏心事，怎么，这次要破例啦？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 185,
+        "segment_index": 22
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -1410,7 +1411,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1424,7 +1427,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1440,7 +1445,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1455,9 +1462,10 @@
         "location": "骊珠洞天",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
-        "description": "“既然都到了这里，咱们俩的身份很快就会被看穿，你谢实好歹是从骊珠洞天出去的人物，若是刻意隐蔽身份，反而让人怀疑，还不如像我这样，大摇大摆走入小镇，说不得还要打一架，让大骊见识见识，省得他们不把一位陆地剑仙当回事。 随着筷子拍在案几上，与此同时，所有船家女都陷入一种古怪状态，并不妨碍她们呼吸，手上动作也娴熟无碍，可是好像对于船上近在咫尺的两位外乡客人，完全视而不见听而不闻了。 ”",
+        "description": "“既然都到了这里，咱们俩的身份很快就会被看穿，你谢实好歹是从骊珠洞天出去的人物，若是刻意隐蔽身份，反而让人怀疑，还不如像我这样，大摇大摆走入小镇，说不得还要打一架，让大骊见识见识，省得他们不把一位陆地剑仙当回事。 曹曦说到这里，看了眼对面汉子，笑嘻嘻道：“都说俱芦洲的谢实，光明磊落，如头顶悬空的大日骄阳，平生不做半点亏心事，怎么，这次要破例啦？ 随着筷子拍在案几上，与此同时，所有船家女都陷入一种古怪状态，并不妨碍她们呼吸，手上动作也娴熟无碍，可是好像对于船上近在咫尺的两位外乡客人，完全视而不见听而不闻了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1475,7 +1483,320 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.817281",
+    "extracted_at": "2026-03-25T01:03:30.957444",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "185-23-0": {
+    "juan_index": 185,
+    "segment_index": 23,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十五章 剑胚在手心",
+    "source_sentences": [
+      "谢实啊谢实，真不是我说你，你说咱们好歹混到这个份上了，你怎么还给人牵着鼻子走？",
+      "不窝囊啊？",
+      "”",
+      "汉子嗤笑道：“真不怕风大闪了舌头？",
+      "买了你本命瓷的家伙，就是什么好说话的货色？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实啊谢实，真不是我说你，你说咱们好歹混到这个份上了，你怎么还给人牵着鼻子走？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 185,
+        "segment_index": 23
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 谢实对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实啊谢实，真不是我说你，你说咱们好歹混到这个份上了，你怎么还给人牵着鼻子走？ 不窝囊啊？ ”",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段23",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 23
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.957444",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "185-24-0": {
+    "juan_index": 185,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十五章 剑胚在手心",
+    "source_sentences": [
+      "曹曦一脸惊讶道：“怎么，老谢你消息不够灵通啊，没听说我家里一个晚辈，刚刚跟醇儒陈氏一位嫡系女子，订了一桩婚？",
+      "陈氏请一位陆家高人帮着算了一卦，你猜怎么样，八个大字！",
+      "良人美眷，天作之合！",
+      "这事情真不是我吹嘘什么，在咱们那个洲，真不是什么小事情。",
+      "”",
+      "谢实冷笑道：“这种事情，你曹曦不害臊就罢了，怎么还能一脸得意？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实冷笑道：“这种事情，你曹曦不害臊就罢了，怎么还能一脸得意？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 谢实对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实冷笑道：“这种事情，你曹曦不害臊就罢了，怎么还能一脸得意？ 曹曦一脸惊讶道：“怎么，老谢你消息不够灵通啊，没听说我家里一个晚辈，刚刚跟醇儒陈氏一位嫡系女子，订了一桩婚？ 陈氏请一位陆家高人帮着算了一卦，你猜怎么样，八个大字！",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 24
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.958448",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "185-25-0": {
+    "juan_index": 185,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十五章 剑胚在手心",
+    "source_sentences": [
+      "谁给你的脸皮？",
+      "”",
+      "曹曦皮厚如墙，反问道：“咋就丢脸了？",
+      "我家子孙凭真本事拐骗来的媳妇，我这个当老祖宗的，为何不乐呵？",
+      "”",
+      "谢实双手环胸，眯眼沉声道：“说吧，到底为什么要把我喊到这里来？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实双手环胸，眯眼沉声道：“说吧，到底为什么要把我喊到这里来？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 谢实对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实双手环胸，眯眼沉声道：“说吧，到底为什么要把我喊到这里来？ 谁给你的脸皮？ ”",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 25
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.958448",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "185-27-0": {
+    "juan_index": 185,
+    "segment_index": 27,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十五章 剑胚在手心",
+    "source_sentences": [
+      "这条江水，就是曹曦的佩剑。",
+      "谢实对于这些算不得秘闻的别洲消息，早有耳闻，可即便如此，仍是直接问道：“你是需要打一场，才能闭嘴？",
+      "”",
+      "曹曦只是吃菜喝酒，摇头晃脑道：“婆娑洲都说我曹曦喜怒无常，性情乖张。",
+      "谢实，你是不是觉得我这种人，很难打交道？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实对于这些算不得秘闻的别洲消息，早有耳闻，可即便如此，仍是直接问道：“你是需要打一场，才能闭嘴？ 谢实，你是不是觉得我这种人，很难打交道？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 185,
+        "segment_index": 27
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 谢实对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实对于这些算不得秘闻的别洲消息，早有耳闻，可即便如此，仍是直接问道：“你是需要打一场，才能闭嘴？ 谢实，你是不是觉得我这种人，很难打交道？ 这条江水，就是曹曦的佩剑。",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段27",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 27
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.958448",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "185-28-0": {
+    "juan_index": 185,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十五章 剑胚在手心",
+    "source_sentences": [
+      "谢实开始闭目养神。",
+      "每当画舫有客登船后，谈拢生意之后，船家女就会摘下一盏悬挂于船头固定位置的灯笼，示意这艘画舫客满，不再接客。",
+      "曹曦晃了晃筷子，“错啊，大错特错，世上最难打交道的人，是你谢实这种人，太难交心。",
+      "”",
+      "谢实闭着眼睛，“我的耐心有限。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实开始闭目养神。 曹曦晃了晃筷子，“错啊，大错特错，世上最难打交道的人，是你谢实这种人，太难交心。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 185,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 谢实剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实开始闭目养神。 曹曦晃了晃筷子，“错啊，大错特错，世上最难打交道的人，是你谢实这种人，太难交心。 谢实闭着眼睛，“我的耐心有限。",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.958448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1496,6 +1817,20 @@
       "“虽然不知具体谋划，但是我继续出现在这里，接下来就会好好盯着你。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "有人看不得大骊宋氏崛起，你谢实偏偏死脑筋，信守承诺，不得不出山，以至于那倒悬山之行，都不得不耽搁下来。 “不凑巧，醇儒陈氏见不得齐静春的好，之前连带着对大骊也印象极差，只是如今变了主意，原因不明，我也不在乎，反正醇儒陈氏不但在小镇，以宝瓶洲龙尾郡陈氏的名义，开办学塾，还让我走这一趟远门，算是给我家那位子孙出的彩礼钱，为的就是拦下你谢实。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 185,
+        "segment_index": 29
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1523,6 +1858,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -1540,7 +1876,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "齐静春"
+          "齐静春",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -1556,7 +1893,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "齐静春"
+          "齐静春",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -1572,7 +1910,8 @@
         "location": "大骊",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "有人看不得大骊宋氏崛起，你谢实偏偏死脑筋，信守承诺，不得不出山，以至于那倒悬山之行，都不得不耽搁下来。 “不凑巧，醇儒陈氏见不得齐静春的好，之前连带着对大骊也印象极差，只是如今变了主意，原因不明，我也不在乎，反正醇儒陈氏不但在小镇，以宝瓶洲龙尾郡陈氏的名义，开办学塾，还让我走这一趟远门，算是给我家那位子孙出的彩礼钱，为的就是拦下你谢实。 曹曦白眼道：“好吧，说正事。",
         "background": "",
@@ -1592,7 +1931,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.817281",
+    "extracted_at": "2026-03-25T01:03:30.958448",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "185-30-0": {
+    "juan_index": 185,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十五章 剑胚在手心",
+    "source_sentences": [
+      "”",
+      "谢实没有睁眼，嘴角有些讥讽，“你确定拦得住？",
+      "”",
+      "曹曦总算吃完了一盏盏小碟里的各色菜肴，放下筷子，胸有成竹道：“我不确定能不能打过你，但是确定我拦得住你。",
+      "”",
+      "谢实猛然睁开眼，转头望去。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实没有睁眼，嘴角有些讥讽，“你确定拦得住？ 谢实猛然睁开眼，转头望去。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 谢实剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "谢实"
+        ],
+        "description": "谢实没有睁眼，嘴角有些讥讽，“你确定拦得住？ 谢实猛然睁开眼，转头望去。 ”",
+        "background": "",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.958448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1613,6 +2015,33 @@
       "神仙台魏晋当时对他的称呼是“墨家的那个谁”。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "一位相貌年轻的剑客，没有悬佩长剑，或是背负长剑，而是横放长剑于身后，双手手肘懒洋洋抵在剑鞘之上，就这么微笑着与谢实对视。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 185,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "此人在那悬挂“秀水高风”匾额的嫁衣女鬼府邸，出鞘不过寸余，就以一条被他搬到身前的袖珍山脉，硬生生挡下陆地剑仙魏晋的凌厉一剑。 神仙台魏晋当时对他的称呼是“墨家的那个谁”。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 31
+      },
       {
         "entity_type": "person",
         "name": "阿良",
@@ -1678,17 +2107,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "阿良",
+          "李二",
           "陈平安",
-          "魏檗"
+          "魏晋",
+          "谢实"
         ],
-        "description": "在红烛镇，他跟阿良见过面喝过酒。 在绣花江渡船上，他又跟陈平安打过招呼，当时好像还是陈平安第一次与人抱拳行礼。 最后也是他和一名属下刘狱，带着棋墩山魏檗去往龙泉。",
+        "description": "一位相貌年轻的剑客，没有悬佩长剑，或是背负长剑，而是横放长剑于身后，双手手肘懒洋洋抵在剑鞘之上，就这么微笑着与谢实对视。 此人在那悬挂“秀水高风”匾额的嫁衣女鬼府邸，出鞘不过寸余，就以一条被他搬到身前的袖珍山脉，硬生生挡下陆地剑仙魏晋的凌厉一剑。 在红烛镇，他跟阿良见过面喝过酒。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段31",
         "sentence_indexes_in_segment": [
@@ -1704,7 +2134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.817281",
+    "extracted_at": "2026-03-25T01:03:30.958448",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1802,7 +2232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.817281",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1864,7 +2294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.817281",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1942,7 +2372,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.817281",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2005,7 +2435,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818131",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2043,6 +2473,19 @@
       },
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "陈平安为了尽量减轻对疼痛的感知程度，身躯剧烈颤抖的他，开始不得不竭力分心去想别处，去想崔东山大声朗诵的圣贤典籍内容，去想年轻道人陆沉的药方字体，想风雪庙魏晋的一剑破空破万法，想象今天泥瓶巷内白虹飞剑敲击春叶秋风的奇异景象……",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 37
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -2050,6 +2493,19 @@
         "original_description_in_book": "陈平安为了尽量减轻对疼痛的感知程度，身躯剧烈颤抖的他，开始不得不竭力分心去想别处，去想崔东山大声朗诵的圣贤典籍内容，去想年轻道人陆沉的药方字体，想风雪庙魏晋的一剑破空破万法，想象今天泥瓶巷内白虹飞剑敲击春叶秋风的奇异景象……",
         "description": "白玉京三掌教之一，串联道家高层、骊珠洞天与大骊王朝。",
         "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 185,
+        "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "陈平安为了尽量减轻对疼痛的感知程度，身躯剧烈颤抖的他，开始不得不竭力分心去想别处，去想崔东山大声朗诵的圣贤典籍内容，去想年轻道人陆沉的药方字体，想风雪庙魏晋的一剑破空破万法，想象今天泥瓶巷内白虹飞剑敲击春叶秋风的奇异景象……",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
         "sentence_indexes_in_segment": [
           5
         ],
@@ -2067,7 +2523,9 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "陆沉"
+          "崔东山",
+          "陆沉",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -2084,7 +2542,9 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "陆沉"
+          "崔东山",
+          "陆沉",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -2095,16 +2555,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 陈平安与陆沉在风雪庙剧情推进",
+        "name": "第三卷金错刀 第一百八十五章 剑胚在手心 · 陈平安与崔东山在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
           "陈平安",
-          "陆沉"
+          "崔东山",
+          "陆沉",
+          "魏晋"
         ],
         "description": "之前陈平安一直停滞在六七之间，死活无法突破那道门槛。 无论陈平安如何练拳练桩，如何跟青衣小童切磋淬炼体魄，都不得其法，故而不得其门而入。 陈平安为了尽量减轻对疼痛的感知程度，身躯剧烈颤抖的他，开始不得不竭力分心去想别处，去想崔东山大声朗诵的圣贤典籍内容，去想年轻道人陆沉的药方字体，想风雪庙魏晋的一剑破空破万法，想象今天泥瓶巷内白虹飞剑敲击春叶秋风的奇异景象……",
         "background": "",
-        "significance": "在风雪庙推动陈平安与陆沉之间的剧情推进线。",
+        "significance": "在风雪庙推动陈平安与崔东山之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十五章 剑胚在手心 · 段37",
         "sentence_indexes_in_segment": [
@@ -2120,7 +2582,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2183,7 +2645,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2247,7 +2709,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.959451",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2309,7 +2771,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.818285",
+    "extracted_at": "2026-03-25T01:03:30.960455",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

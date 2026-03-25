@@ -58,7 +58,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -140,7 +140,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.403330",
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -175,6 +175,19 @@
         ],
         "juan_index": 45,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风一开始本以为是读书人之间的客套寒暄，只是当他看到对方的眼神之后，灵犀一动，陈松风立即心领神会，抱拳道：“崔先生，我去寻一寻那位远房堂姐，回来之后再向先生讨教治国韬略。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 45,
+        "segment_index": 5
       }
     ],
     "locations": [],
@@ -185,12 +198,15 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "陈松风"
         ],
-        "description": "那位儒家君子看似漫不经心说道：“松风，我先前去学塾那边拜访过齐先生，先生说起修身一事，有过‘时不我待’的感慨。 刘灞桥嘿嘿一笑，指了指这位崔先生，“我已经懂了。 ”",
+        "description": "那位儒家君子看似漫不经心说道：“松风，我先前去学塾那边拜访过齐先生，先生说起修身一事，有过‘时不我待’的感慨。 陈松风一开始本以为是读书人之间的客套寒暄，只是当他看到对方的眼神之后，灵犀一动，陈松风立即心领神会，抱拳道：“崔先生，我去寻一寻那位远房堂姐，回来之后再向先生讨教治国韬略。 刘灞桥嘿嘿一笑，指了指这位崔先生，“我已经懂了。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十五章 阳光 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -204,8 +220,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "齐静春"
+        ],
+        "to_roles": [
+          "陈松风"
+        ],
+        "action": "对话",
+        "context": "刘灞桥嘿嘿一笑，指了指这位崔先生，“我已经懂了。 ” 那位儒家君子看似漫不经心说道：“松风，我先前去学塾那边拜访过齐先生，先生说起修身一事，有过‘时不我待’的感慨。 ” 修身齐家治国平天下，这位出自崔氏的圣人种子，却只说到修身便打住了。 陈松风一开始本以为是读书人之间的客套寒暄，只是当他看到对方的眼神之后，灵犀一动，陈松风立即心领神会，抱拳道：“崔先生，我去寻一寻那位远房堂姐，回来之后再向先生讨教治国韬略。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 45,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.405433",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -225,7 +267,23 @@
       "刘灞桥翘着二郎腿，直言不讳道：“这个陈松风聪明是聪明，一点就透，只不过吃相也太不讲究了，好歹坐下来跟你胡扯几句，再走也不迟，就那么急着去求祖荫槐叶？",
       "我看没必要嘛，如今我们东宝瓶洲除了龙尾郡陈氏，还剩下几个上得了台面的姓氏门阀？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "陈松风言语当中，有意无意跳过“齐家”环节，只是提及了治国。 陈松风匆匆离去。",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 45,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -244,13 +302,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十五章 阳光 · 宝瓶洲剧情推进",
+        "name": "第一卷笼中雀 第四十五章 阳光 · 陈松风在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "我看没必要嘛，如今我们东宝瓶洲除了龙尾郡陈氏，还剩下几个上得了台面的姓氏门阀？ ” 陈松风言语当中，有意无意跳过“齐家”环节，只是提及了治国。",
+        "participants": [
+          "陈松风"
+        ],
+        "description": "陈松风言语当中，有意无意跳过“齐家”环节，只是提及了治国。 陈松风匆匆离去。 刘灞桥翘着二郎腿，直言不讳道：“这个陈松风聪明是聪明，一点就透，只不过吃相也太不讲究了，好歹坐下来跟你胡扯几句，再走也不迟，就那么急着去求祖荫槐叶？",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应陈松风在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十五章 阳光 · 段6",
         "sentence_indexes_in_segment": [
@@ -266,7 +326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -287,6 +347,19 @@
       "刘灞桥吞吞吐吐，语焉不详。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陈松风",
+        "alias": [],
+        "original_description_in_book": "那些槐叶，不乖乖落入他陈松风口袋，难道还落在小镇土生土长的俗人头上？",
+        "description": "龙泉与大骊接壤地带的重要人物，常与陈平安、小镇旧人形成交集。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 45,
+        "segment_index": 7
+      },
       {
         "entity_type": "person",
         "name": "阮邛",
@@ -311,7 +384,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "陈松风"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -341,12 +416,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "陈松风",
           "阮邛"
         ],
         "description": "那些槐叶，不乖乖落入他陈松风口袋，难道还落在小镇土生土长的俗人头上？ 东宝瓶洲的陈氏，以龙尾郡陈氏为尊，虽然沉寂很久，只不过瘦死的骆驼比马大，虽然声势不振，但到底是祖上出过一大串枭雄人杰的千年豪阀，所以哪怕是刘灞桥所在风雷园这样的鼎盛宗门，也不敢小觑，所以就连刘灞桥这种人，也愿意与之为伍，算是当做半个朋友。 读书人好奇问道：“你来此是找那位阮师，求他帮你铸剑？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十五章 阳光 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -360,8 +438,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈松风"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "对话",
+        "context": "那些槐叶，不乖乖落入他陈松风口袋，难道还落在小镇土生土长的俗人头上？ ” 东宝瓶洲的陈氏，以龙尾郡陈氏为尊，虽然沉寂很久，只不过瘦死的骆驼比马大，虽然声势不振，但到底是祖上出过一大串枭雄人杰的千年豪阀，所以哪怕是刘灞桥所在风雷园这样的鼎盛宗门，也不敢小觑，所以就连刘灞桥这种人，也愿意与之为伍，算是当做半个朋友。 读书人好奇问道：“你来此是找那位阮师，求他帮你铸剑？ ” 刘灞桥吞吞吐吐，语焉不详。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 45,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -441,7 +545,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -502,7 +606,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -563,7 +667,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -625,7 +729,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404334",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -705,7 +809,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.404844",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -843,7 +947,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.404844",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -907,7 +1011,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.406436",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -968,7 +1072,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1152,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1123,7 +1227,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1176,16 +1280,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "李氏家主轻声道：“前辈放心，我们李氏一定将陶小姐安然无恙地送出小镇。 老猿嗯了一声，“此次麻烦你们帮忙照顾小姐，就算正阳山欠你们一个人情。 ”",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十五章 阳光 · 段19",
         "sentence_indexes_in_segment": [
@@ -1201,7 +1305,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1280,7 +1384,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1357,7 +1461,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1435,7 +1539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.413865",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1497,7 +1601,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.407440",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1618,7 +1722,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1745,7 +1849,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1857,7 +1961,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1919,7 +2023,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1998,7 +2102,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2062,7 +2166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2126,7 +2230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2190,7 +2294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.414869",
+    "extracted_at": "2026-03-25T01:03:30.408443",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

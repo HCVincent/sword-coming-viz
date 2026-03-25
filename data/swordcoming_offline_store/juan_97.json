@@ -135,18 +135,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十七章 拜山头 · 李宝瓶与陈平安在龙泉迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": "龙泉",
         "participants": [
           "李宝瓶",
-          "陈平安",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "一行人沿着龙须溪和铁符河缓缓南下，可日行六十余里，李宝瓶和李槐都是脚力异于常人的孩子，林守一虽然草鞋都磨破了两双，也是富家子弟，可不愿在两个李姓孩子面前叫苦认输，硬是熬着，加上陈平安教了他用草药敷脚的土法子，终究是咬牙熬过来了，队伍里有白驴和马匹帮着驮物，所以走得并不算太艰难。 陈平安心底很佩服李宝瓶这三个孩子，于是游学两个字，以及读书人这个称呼，在草鞋少年心目中，分量愈发加重。 龙泉县隶属于大骊永嘉郡，在很久之前，东宝瓶洲所有王朝一起下诏，天下州郡县如果带龙字，皆需要避讳修改，换上其它字顶替，如今龙泉县估计是沾了骊珠洞天的光，才得以破例。",
         "background": "",
-        "significance": "在龙泉推动李宝瓶与陈平安之间的迁移线。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十七章 拜山头 · 段1",
         "sentence_indexes_in_segment": [
@@ -162,7 +162,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.573395",
+    "extracted_at": "2026-03-25T01:03:30.620235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -183,6 +183,19 @@
       "！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 97,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -259,6 +272,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "朱河",
           "陈平安",
           "阿良",
           "林守一"
@@ -308,21 +322,25 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "阿良",
-          "陈平安",
-          "林守一"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。 李宝瓶小书箱里，摆着一部大骊朝廷颁布的彩绘版郡县堪舆图册，照理只有一州刺史衙署才有资格存档秘藏。 一行人在山脚稍作休息，李槐看着宽不过骑龙巷的小路，呆若木鸡，震惊之后转头怒骂道：“阿良！",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第二卷山水郎 第九十七章 拜山头 · 段2",
         "sentence_indexes_in_segment": [
@@ -341,6 +359,66 @@
       {
         "time": null,
         "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 97,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "阿良"
+        ],
+        "action": "对话",
+        "context": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 97,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "林守一"
+        ],
+        "action": "对话",
+        "context": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 97,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
           "陈平安"
         ],
         "to_roles": [
@@ -349,7 +427,7 @@
         "action": "对话",
         "context": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "福禄街",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -369,7 +447,7 @@
         "action": "对话",
         "context": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "福禄街",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -389,7 +467,7 @@
         "action": "对话",
         "context": "朱河在福禄街李家，应该翻阅过许多私家藏书，知晓许多门外事，陈平安有事没事就跟朱河讨教，反之朱河也乐意跟少年请教一下入山下水的规矩门道，阿良不知为何，喝酒的次数多了，说话的时候少了，林守一自从喝过银葫芦里的烈酒后，跟阿良走得很近，经常跟他问东问西，同时有成为小酒鬼的趋势。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": "福禄街",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -399,7 +477,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.573395",
+    "extracted_at": "2026-03-25T01:03:30.620235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -511,7 +589,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.574398",
+    "extracted_at": "2026-03-25T01:03:30.620235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -620,7 +698,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.574398",
+    "extracted_at": "2026-03-25T01:03:30.620235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -745,7 +823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.574398",
+    "extracted_at": "2026-03-25T01:03:30.620235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -776,6 +854,20 @@
         "sentence_indexes_in_segment": [
           0,
           2,
+          4
+        ],
+        "juan_index": 97,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱鹿火冒三丈，朱河拦住女儿，“就按照平安说的，不要妄下定论，到了那边再看，我们又不是一定要在红烛镇过夜。 陈平安这一路上跟李宝瓶和朱河识字认字，看着大义凛然的朱鹿，少年顿时有些败下阵来。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
           4
         ],
         "juan_index": 97,
@@ -832,7 +924,7 @@
           "阿良",
           "陈平安",
           "朱鹿",
-          "李宝瓶"
+          "朱河"
         ],
         "description": "朱鹿火冒三丈，朱河拦住女儿，“就按照平安说的，不要妄下定论，到了那边再看，我们又不是一定要在红烛镇过夜。 朱鹿伸手指着陈平安，犹然气咻咻道：“幸好你不是读书人，要不然那些圣贤书真是因你蒙羞！ 陈平安这一路上跟李宝瓶和朱河识字认字，看着大义凛然的朱鹿，少年顿时有些败下阵来。",
         "background": "",
@@ -852,7 +944,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.574398",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -882,6 +974,19 @@
         "power": "正阳山",
         "sentence_indexes_in_segment": [
           0,
+          2
+        ],
+        "juan_index": 97,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河轻喝道：“朱鹿！",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
           2
         ],
         "juan_index": 97,
@@ -943,18 +1048,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
-          "朱鹿",
-          "李宝瓶"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "朱鹿最后斜瞥一眼少年头上的碧玉簪子，觉得真是碍眼，讥笑道：“沐猴而冠！ 朱河轻喝道：“朱鹿！ 李宝瓶和林守一同时皱了皱眉头。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十七章 拜山头 · 段7",
         "sentence_indexes_in_segment": [
@@ -970,7 +1075,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.574398",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1078,7 +1183,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.574398",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1105,6 +1210,20 @@
         "original_description_in_book": "山路弯曲，盘旋而上，一行人不管大小，腿上都裹了棉布行缠，用以增长脚力，人手持有一根木杖，当然还有陈平安亲手编制的草鞋，就连行囊备有好几双结实靴子的朱河朱鹿父女，也不例外。 朱河是性子淳朴的人，哪怕已是五境武人，依然耐着性子跟孩子赔礼道歉，答应出了山进了市镇，一定给他买一整套崭新衣物，可孩子在意之事，就是自家穷苦自己可怜，一看到那婢女脾气这么坏，偏偏身边还跟着一个有钱的爹，孩子只觉得自己被伤口撒盐，哭得更加撕心裂肺，双脚使劲踩着泥泞地面，很快就跟一只小泥猴似的，一来二去，所有人都心烦气躁起来，陈平安上去劝说，李槐不愿听，陈平安很快就被连累得一身黄泥，所幸陈平安什么苦头灾殃没受过，倒是没急眼，只是有点无奈。",
         "description": "《剑来》主角，小镇出身少年，是前三季叙事的绝对核心视角人物。",
         "power": "泥瓶巷",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 97,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "山路弯曲，盘旋而上，一行人不管大小，腿上都裹了棉布行缠，用以增长脚力，人手持有一根木杖，当然还有陈平安亲手编制的草鞋，就连行囊备有好几双结实靴子的朱河朱鹿父女，也不例外。 朱河是性子淳朴的人，哪怕已是五境武人，依然耐着性子跟孩子赔礼道歉，答应出了山进了市镇，一定给他买一整套崭新衣物，可孩子在意之事，就是自家穷苦自己可怜，一看到那婢女脾气这么坏，偏偏身边还跟着一个有钱的爹，孩子只觉得自己被伤口撒盐，哭得更加撕心裂肺，双脚使劲踩着泥泞地面，很快就跟一只小泥猴似的，一来二去，所有人都心烦气躁起来，陈平安上去劝说，李槐不愿听，陈平安很快就被连累得一身黄泥，所幸陈平安什么苦头灾殃没受过，倒是没急眼，只是有点无奈。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
         "sentence_indexes_in_segment": [
           1,
           4
@@ -1157,18 +1276,21 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与李槐指点",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "山路弯曲，盘旋而上，一行人不管大小，腿上都裹了棉布行缠，用以增长脚力，人手持有一根木杖，当然还有陈平安亲手编制的草鞋，就连行囊备有好几双结实靴子的朱河朱鹿父女，也不例外。 朱鹿一开始死活不肯，嫌弃太过丑陋寒酸，后来入山遇上雨天，山路泥泞不堪，经常脚底打滑，朱鹿是登堂入室的武人，虽然不至于险象环生，却也踉跄难堪，最后不得不从她爹手中拿过草鞋，默默换上，李槐偷着乐呵，被恼羞成怒的少女一脚使劲踩在烂泥里，二境巅峰的武人，有意为之的一脚踩踏，自然势大力沉，当场溅得李槐半身泥浆。 孩子家境贫寒，本就没带几身换洗衣物，立即戳中了伤心处，哭得稀里哗啦，气喘吁吁的林守一不愿掺和这摊子烂事，停步在旁休息的时候翻白眼。",
         "background": "",
-        "significance": "推动陈平安与李槐之间的指点关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第九十七章 拜山头 · 段9",
         "sentence_indexes_in_segment": [
@@ -1186,7 +1308,27 @@
       {
         "time": null,
         "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
           "陈平安"
+        ],
+        "action": "指点",
+        "context": "朱河是性子淳朴的人，哪怕已是五境武人，依然耐着性子跟孩子赔礼道歉，答应出了山进了市镇，一定给他买一整套崭新衣物，可孩子在意之事，就是自家穷苦自己可怜，一看到那婢女脾气这么坏，偏偏身边还跟着一个有钱的爹，孩子只觉得自己被伤口撒盐，哭得更加撕心裂肺，双脚使劲踩着泥泞地面，很快就跟一只小泥猴似的，一来二去，所有人都心烦气躁起来，陈平安上去劝说，李槐不愿听，陈平安很快就被连累得一身黄泥，所幸陈平安什么苦头灾殃没受过，倒是没急眼，只是有点无奈。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 97,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
         ],
         "to_roles": [
           "李槐"
@@ -1194,7 +1336,7 @@
         "action": "指点",
         "context": "朱河是性子淳朴的人，哪怕已是五境武人，依然耐着性子跟孩子赔礼道歉，答应出了山进了市镇，一定给他买一整套崭新衣物，可孩子在意之事，就是自家穷苦自己可怜，一看到那婢女脾气这么坏，偏偏身边还跟着一个有钱的爹，孩子只觉得自己被伤口撒盐，哭得更加撕心裂肺，双脚使劲踩着泥泞地面，很快就跟一只小泥猴似的，一来二去，所有人都心烦气躁起来，陈平安上去劝说，李槐不愿听，陈平安很快就被连累得一身黄泥，所幸陈平安什么苦头灾殃没受过，倒是没急眼，只是有点无奈。",
         "result": null,
-        "event_name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与李槐指点",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1204,7 +1346,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.575402",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1283,16 +1425,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "朱鹿趁机煽风点火，看吧，好心没好报，陈平安，你赶紧把这种没心没肺的东西丢下得了。 李槐哭得更加厉害。 李宝瓶大声呵斥也不管用。",
         "background": "",
-        "significance": "推动陈平安与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1321,7 +1465,7 @@
         "action": "对话",
         "context": "陈平安思来想去，最后只得试探性问道：“李槐，我回头帮你做一只小竹箱，咋样？",
         "result": null,
-        "event_name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与李槐对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1331,7 +1475,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.575402",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1395,17 +1539,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与李槐对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "陈平安回答道：“不能太大，你个子小，背起来不能觉着重才行，要是不答应，就当我没说，你继续哭，然后我们继续赶路，跟不跟上随你。 李槐咧嘴笑道：“小可以，一定要做得漂亮点！ 最少也要跟李宝瓶那只书箱一样好看！",
         "background": "",
-        "significance": "推动陈平安与李槐之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十七章 拜山头 · 段11",
         "sentence_indexes_in_segment": [
@@ -1421,7 +1566,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.575402",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1499,16 +1644,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "林守一"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "朱鹿啧啧道：“上梁不正下梁歪，小小年纪，就学会坑蒙拐骗了，爹娘品行如何，不看便知。 竹箱即将到手的李槐挤眉弄眼，差点把朱鹿气得七窍生烟。 陈平安转头对林守一说道：“给你也做一只书箱？",
         "background": "",
-        "significance": "推动陈平安与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1537,7 +1684,7 @@
         "action": "对话",
         "context": "陈平安转头对林守一说道：“给你也做一只书箱？",
         "result": null,
-        "event_name": "第二卷山水郎 第九十七章 拜山头 · 陈平安与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1547,7 +1694,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.575402",
+    "extracted_at": "2026-03-25T01:03:30.621239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1577,6 +1724,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           2
+        ],
+        "juan_index": 97,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "孩子们雀跃不已，就连朱河放眼远眺北方，也颇为心旷神怡，恨不得长啸几声。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 97,
         "segment_index": 13
@@ -1619,9 +1779,10 @@
         "participants": [
           "阿良",
           "陈平安",
-          "林守一"
+          "林守一",
+          "朱河"
         ],
-        "description": "林守一刚要摇头拒绝，听到后边那句话后，犹豫了一下，点点头。 棋墩山的山巅景象极其奇异，像是一个小镇常见的巨大晒谷场，地面平整，搁在这里，便如仙人以刀剑削去高耸山头一般。 陈平安是见惯山头的人，尤其是最后那趟进山，一座座山头一步步走过，此刻反而显得相对神色从容。",
+        "description": "林守一刚要摇头拒绝，听到后边那句话后，犹豫了一下，点点头。 棋墩山的山巅景象极其奇异，像是一个小镇常见的巨大晒谷场，地面平整，搁在这里，便如仙人以刀剑削去高耸山头一般。 孩子们雀跃不已，就连朱河放眼远眺北方，也颇为心旷神怡，恨不得长啸几声。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1639,7 +1800,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.575402",
+    "extracted_at": "2026-03-25T01:03:30.622242",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1659,6 +1820,19 @@
       "黄昏里，彩霞满天，在少年独自离开山顶大坪去碰运气后，没过多久，只见山巅四周彩云聚散不定，速度极快，如顽劣孩童的变脸，而众人丝毫不觉得山风迅猛，与此同时，原本堂堂正正清清爽爽的山河景象，给有心人带来一种蒙上雾霾的阴森感觉。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "今夜要在山顶过夜，朱河朱鹿开始搭帐篷，李槐和林守一跑去拾取易燃的柴禾，陈平安和李宝瓶则用石子搭灶煮饭，如今几个行囊里的米粮和干菜都已吃得差不多，确实是要寻一处闹市补给，陈平安为此一路上见到药材，就摘下放入背篓，因为翻山越岭熟门熟路，腿脚利索，哪怕需要绕路攀援山崖，一样很快就可以跟上队伍，不会耽误行程，如今已经攒下小半背篓晒干的珍稀草药，争取能够少花一点积蓄是一点。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 97,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -1744,17 +1918,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "今夜要在山顶过夜，朱河朱鹿开始搭帐篷，李槐和林守一跑去拾取易燃的柴禾，陈平安和李宝瓶则用石子搭灶煮饭，如今几个行囊里的米粮和干菜都已吃得差不多，确实是要寻一处闹市补给，陈平安为此一路上见到药材，就摘下放入背篓，因为翻山越岭熟门熟路，腿脚利索，哪怕需要绕路攀援山崖，一样很快就可以跟上队伍，不会耽误行程，如今已经攒下小半背篓晒干的珍稀草药，争取能够少花一点积蓄是一点。 就着几碟子腌渍咸菜吃完米饭，阿良起头造反，带着李槐一起用筷子敲着白碗，嚷着要吃肉要吃肉。 陈平安点点头，说今夜去做几个陷阱套子，看明早能不能逮几只山跳野鸡来开开荤。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -1782,7 +1957,7 @@
         "action": "同行",
         "context": "就着几碟子腌渍咸菜吃完米饭，阿良起头造反，带着李槐一起用筷子敲着白碗，嚷着要吃肉要吃肉。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1792,7 +1967,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.576405",
+    "extracted_at": "2026-03-25T01:03:30.622242",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1813,6 +1988,23 @@
       "朱河毕竟是第一次接触到传说中的山精神怪，有些紧张，轻声道：“阿良前辈，这棋墩山真有那土地或是山神盘踞？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "这让朱河立即心情沉重起来，尽量不惊扰三个聚头背诵书籍的求学蒙童，也不去跟独自坐在崖畔发呆的女儿打招呼，朱河想了想，来到无人处，掏出怀中一本泛黄古籍，翻到中间“开山”一页，手指停在“撮壤诀”附近，仔细浏览那些细微如蝇头的鲜红文字，翻过一页，则是两幅图案，一幅绘有小山模样，只是底部山根如竹笋盘结，旁边空白处注解为“太山符”，一幅为双手结印之玄奇手势。 朱河神情凝重，断断续续默念，不断加深印象，“取山之东、南之土各一抔，捻嶽字最佳，捻山字亦可”，“焚礼敬山神符一张，脚踏魁罡二字，呵气一口，可向山神、土地借取一山，气与地连……”",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 97,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "阿良",
@@ -1836,9 +2028,10 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
-        "description": "朱河正要搓燃手中那张李氏老祖赠送的黄符，突然吓了一大跳，原来阿良不知何时蹲在了他旁边，后者提着酒壶，笑呵呵道：“你手上那张寻常材质的入山箓，下笔之人的画符手法，还是不错的，但是符箓一道，一步差不得，纸张材质如人之根骨一般重要，所以它可承受不起‘嶽’字的重量，所以我劝你写个岳字就可以了，省得请神没成，还惹恼了山神。 朱河毕竟是第一次接触到传说中的山精神怪，有些紧张，轻声道：“阿良前辈，这棋墩山真有那土地或是山神盘踞？ 这让朱河立即心情沉重起来，尽量不惊扰三个聚头背诵书籍的求学蒙童，也不去跟独自坐在崖畔发呆的女儿打招呼，朱河想了想，来到无人处，掏出怀中一本泛黄古籍，翻到中间“开山”一页，手指停在“撮壤诀”附近，仔细浏览那些细微如蝇头的鲜红文字，翻过一页，则是两幅图案，一幅绘有小山模样，只是底部山根如竹笋盘结，旁边空白处注解为“太山符”，一幅为双手结印之玄奇手势。",
+        "description": "这让朱河立即心情沉重起来，尽量不惊扰三个聚头背诵书籍的求学蒙童，也不去跟独自坐在崖畔发呆的女儿打招呼，朱河想了想，来到无人处，掏出怀中一本泛黄古籍，翻到中间“开山”一页，手指停在“撮壤诀”附近，仔细浏览那些细微如蝇头的鲜红文字，翻过一页，则是两幅图案，一幅绘有小山模样，只是底部山根如竹笋盘结，旁边空白处注解为“太山符”，一幅为双手结印之玄奇手势。 朱河神情凝重，断断续续默念，不断加深印象，“取山之东、南之土各一抔，捻嶽字最佳，捻山字亦可”，“焚礼敬山神符一张，脚踏魁罡二字，呵气一口，可向山神、土地借取一山，气与地连……” 合上古籍，小心翼翼放回怀中，朱河又从袖中一摞黄色符箓当中，抽出一张黄纸，开始依循书上记载去石坪东方和南方各抓取一把土壤，捻出一个古体的岳字，即嶽，上山下狱。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1856,7 +2049,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.576405",
+    "extracted_at": "2026-03-25T01:03:30.622242",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1889,6 +2082,19 @@
         ],
         "juan_index": 97,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河满脸错愕，“不然？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 97,
+        "segment_index": 16
       }
     ],
     "locations": [],
@@ -1899,12 +2105,15 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
-        "description": "阿良悠悠然喝了口酒，嗤笑道：“谁跟你说山神土地，一定是性情良善之辈？ 那为何还有这么重的阴煞气息？ ”",
+        "description": "阿良悠悠然喝了口酒，嗤笑道：“谁跟你说山神土地，一定是性情良善之辈？ 朱河满脸错愕，“不然？ 那为何还有这么重的阴煞气息？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十七章 拜山头 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1918,8 +2127,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.576405",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "那为何还有这么重的阴煞气息？ ” 阿良悠悠然喝了口酒，嗤笑道：“谁跟你说山神土地，一定是性情良善之辈？ ” 朱河满脸错愕，“不然？ ”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 97,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.622242",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1957,6 +2192,20 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河猛然惊醒道：“不好，陈平安一个人不在山顶！ 朱河火急火燎道：“阿良前辈，你去找陈平安，我继续完成这道撮壤成山诀，如何？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 97,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "朱河猛然惊醒道：“不好，陈平安一个人不在山顶！ 朱河火急火燎道：“阿良前辈，你去找陈平安，我继续完成这道撮壤成山诀，如何？",
@@ -1978,7 +2227,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "阿良嘿嘿道：“我就是随口一说，天晓得这里的主人家，待客的脾气是好是坏。 朱河猛然惊醒道：“不好，陈平安一个人不在山顶！ 阿良点了点头。",
         "background": "",
@@ -1998,7 +2248,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.576405",
+    "extracted_at": "2026-03-25T01:03:30.622242",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2017,6 +2267,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "我朱河只是五境武人，对付世俗高手自信还有一搏之力，可是对付那些古怪东西，真是心里没底啊。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 97,
+        "segment_index": 18
+      },
       {
         "entity_type": "person",
         "name": "阿良",
@@ -2039,9 +2302,10 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
-        "description": "阿良笑着起身，大摇大摆离去，轻飘飘撂下一句话，“那你自己小心啊。 我朱河只是五境武人，对付世俗高手自信还有一搏之力，可是对付那些古怪东西，真是心里没底啊。 ”",
+        "description": "我朱河只是五境武人，对付世俗高手自信还有一搏之力，可是对付那些古怪东西，真是心里没底啊。 阿良笑着起身，大摇大摆离去，轻飘飘撂下一句话，“那你自己小心啊。 ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2057,7 +2321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.576405",
+    "extracted_at": "2026-03-25T01:03:30.622242",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

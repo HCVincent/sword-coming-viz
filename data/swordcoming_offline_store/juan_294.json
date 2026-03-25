@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.466299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -121,7 +121,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.466299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -184,7 +184,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.466299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -246,7 +246,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.466299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -309,7 +309,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.466299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -372,7 +372,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.466299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -434,7 +434,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -469,6 +469,20 @@
         ],
         "juan_index": 294,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。 陈平安在台阶上蹭了蹭靴底的泥泞，想了想，缓缓道：“宝瓶洲距离俱芦洲太近，大骊跟谢实关系也很神秘，都有关系，不全是一洲风土民风的事情。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 8
       }
     ],
     "locations": [
@@ -480,6 +494,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -499,7 +514,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -510,16 +526,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安在宝瓶洲剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与谢实在宝瓶洲试探",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "陈平安打开院门，跨过门槛后，抬头打量了一下宝塔镇妖符，除了一粒印痕浅淡的污渍，符箓并未出现符胆崩碎、灵光摇晃的迹象，前来试探符箓身前的鬼魅，如陆台所说，确实道行不高。 陈平安返回院子，打定主意，如果还来挑衅，那就别怪他当个恶邻了。 陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动陈平安与谢实之间的试探线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -533,8 +552,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "试探",
+        "context": "陈平安打开院门，跨过门槛后，抬头打量了一下宝塔镇妖符，除了一粒印痕浅淡的污渍，符箓并未出现符胆崩碎、灵光摇晃的迹象，前来试探符箓身前的鬼魅，如陆台所说，确实道行不高。 陈平安返回院子，打定主意，如果还来挑衅，那就别怪他当个恶邻了。 陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。 ” 陈平安在台阶上蹭了蹭靴底的泥泞，想了想，缓缓道：“宝瓶洲距离俱芦洲太近，大骊跟谢实关系也很神秘，都有关系，不全是一洲风土民风的事情。 陆台，你觉得呢？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与谢实在宝瓶洲试探",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -614,7 +659,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -676,7 +721,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -738,7 +783,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -801,7 +846,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.168870",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -863,7 +908,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -926,7 +971,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.467302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -990,7 +1035,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1053,7 +1098,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1116,7 +1161,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1179,7 +1224,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1243,7 +1288,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1306,7 +1351,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1368,7 +1413,574 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.169873",
+    "extracted_at": "2026-03-25T01:03:31.468306",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-25-0": {
+    "juan_index": 294,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "几乎每个人自幼就听着飞鹰堡的诸多传奇事迹，桓老爷子身为沉香国四大宗师之一的身份，",
+      "桓老爷子年轻时候一起行走江湖的挚友，如今的十大高手当中，还有三人。",
+      "而老太君，传闻是邻国前朝的亡国公主，逃难江湖，被桓老爷子所救，一见钟情，期间坎坷不断，种种磨难，最终还是走在了一起，传为江湖美谈。",
+      "少堡主桓常，自幼就展现出出类拔萃的习武天赋，天生膂力惊人，十余年间，向外边的大侠讨教，或是跟那些已经名动江湖的少侠切磋过招，可圈可点。",
+      "而堡主千金桓淑，据说跟沉香国十大高手之一的嫡长子，订了一桩娃娃亲，只等那位年轻人前来迎娶。",
+      "而飞鹰堡年轻一辈的领袖，不是桓常，而是一位外姓人，陶斜阳，是堡主桓阳的嫡传弟子，从小跟随大管家何老先生学习儒家典籍和高深功夫，说起人缘，比少堡主桓常还要好。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "而飞鹰堡年轻一辈的领袖，不是桓常，而是一位外姓人，陶斜阳，是堡主桓阳的嫡传弟子，从小跟随大管家何老先生学习儒家典籍和高深功夫，说起人缘，比少堡主桓常还要好。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳揭示",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "而飞鹰堡年轻一辈的领袖，不是桓常，而是一位外姓人，陶斜阳，是堡主桓阳的嫡传弟子，从小跟随大管家何老先生学习儒家典籍和高深功夫，说起人缘，比少堡主桓常还要好。 几乎每个人自幼就听着飞鹰堡的诸多传奇事迹，桓老爷子身为沉香国四大宗师之一的身份， 桓老爷子年轻时候一起行走江湖的挚友，如今的十大高手当中，还有三人。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键揭示节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 25
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-26-0": {
+    "juan_index": 294,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "陶斜阳古道热肠，在飞鹰堡有口皆碑，性情开朗，好像天塌下都不怕。",
+      "上回进山入堡的一伙人，为首宗师，是大名鼎鼎的江湖豪侠，其中有位仙子美誉的漂亮女子，与陶斜阳关系极好，经常一起在飞鹰堡内外同行，与陶斜阳喝着街边最便宜的酒水，也能笑颜如花。",
+      "陶斜阳最近几年已经开始帮着堡主和官家何崖，开始尝试着打理飞鹰堡事务，接触到了许多内幕，日子过得并不轻松。",
+      "八方客人，待人接物，需要滴水不漏，飞鹰堡祖辈遗留下来那一支支香火，不能让它们无声无息地灭了，得暗中续着香火情。",
+      "跑京城，跑山头上的名门正派，跑大城池里的强横帮派，给豪门官邸送银子，跟郡城地头蛇笼络关系，都需要陶斜阳这个外姓人去跑动，所以陶斜阳的江湖见识和经验，都很出众。",
+      "今夜这个来到这条巷弄的刀客，正是陶斜阳。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "陶斜阳古道热肠，在飞鹰堡有口皆碑，性情开朗，好像天塌下都不怕。 上回进山入堡的一伙人，为首宗师，是大名鼎鼎的江湖豪侠，其中有位仙子美誉的漂亮女子，与陶斜阳关系极好，经常一起在飞鹰堡内外同行，与陶斜阳喝着街边最便宜的酒水，也能笑颜如花。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "陶斜阳古道热肠，在飞鹰堡有口皆碑，性情开朗，好像天塌下都不怕。 上回进山入堡的一伙人，为首宗师，是大名鼎鼎的江湖豪侠，其中有位仙子美誉的漂亮女子，与陶斜阳关系极好，经常一起在飞鹰堡内外同行，与陶斜阳喝着街边最便宜的酒水，也能笑颜如花。 陶斜阳最近几年已经开始帮着堡主和官家何崖，开始尝试着打理飞鹰堡事务，接触到了许多内幕，日子过得并不轻松。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-27-0": {
+    "juan_index": 294,
+    "segment_index": 27,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "而与之同行的年轻道人，是陶斜阳在江湖上认识的至交好友，一见如故，陶斜阳知道年轻道人的一些秘密，能够看得见那些阴秽东西，还有一些江湖上闻所未闻的压胜手段。",
+      "道人收到陶斜阳的密信求助后，二话不说就来到飞鹰堡，一番小心探寻，年轻道人心情愈发沉重，果然如陶斜阳信上所说，飞鹰堡的确是鬼物作祟，而且道行高深，直接坏了飞鹰堡的风水根本。",
+      "年轻道人自知斤两，从来不是什么真正的山上人，跟随那个喜欢云游四方的师父，修习道法不过五年，只学到了一些望气、画符的皮毛功夫，而且他画的符箓，时灵时不灵，背着的那把铜钱剑，由七七四十九颗铜钱串成，至今还没有出手的机会，是不是真的能够镇煞斩邪，心里完全没谱。",
+      "年轻道人名叫黄尚，是个科举无望的士族子弟，练习道法将近五年，画符还是没能登堂入室，传授道法的师父又常年不在身边，黄尚几乎花光了所有积蓄，才凑出了那把前朝神册、元光、正德“三通宝”的铜钱剑，师父说过这三种通宝铜钱，九叠篆，蕴含的阳气最足。",
+      "至于黄尚所画之符，品秩不行，就只能靠数量来垫补。",
+      "让他这么个半吊子道士，对付飞鹰堡的凶煞恶鬼，实在是硬着头皮，只是与陶斜阳相交莫逆，义气使然，见陶斜阳铁了心要来此为民除害，总不能眼睁睁见着兄弟夭折在这边。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "而与之同行的年轻道人，是陶斜阳在江湖上认识的至交好友，一见如故，陶斜阳知道年轻道人的一些秘密，能够看得见那些阴秽东西，还有一些江湖上闻所未闻的压胜手段。 道人收到陶斜阳的密信求助后，二话不说就来到飞鹰堡，一番小心探寻，年轻道人心情愈发沉重，果然如陶斜阳信上所说，飞鹰堡的确是鬼物作祟，而且道行高深，直接坏了飞鹰堡的风水根本。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 27
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "而与之同行的年轻道人，是陶斜阳在江湖上认识的至交好友，一见如故，陶斜阳知道年轻道人的一些秘密，能够看得见那些阴秽东西，还有一些江湖上闻所未闻的压胜手段。 道人收到陶斜阳的密信求助后，二话不说就来到飞鹰堡，一番小心探寻，年轻道人心情愈发沉重，果然如陶斜阳信上所说，飞鹰堡的确是鬼物作祟，而且道行高深，直接坏了飞鹰堡的风水根本。 让他这么个半吊子道士，对付飞鹰堡的凶煞恶鬼，实在是硬着头皮，只是与陶斜阳相交莫逆，义气使然，见陶斜阳铁了心要来此为民除害，总不能眼睁睁见着兄弟夭折在这边。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段27",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 27
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-28-0": {
+    "juan_index": 294,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "两人的称兄道弟，并非那江湖豪客在酒桌上的推杯换盏，而是换命。",
+      "这栋宅子在荒废之前，原先的主人应该家境殷实，门槛颇高，大门也是上好的柏木，还装饰有兽面门环，古老而深沉。",
+      "道士黄尚从袖中摸出一张黄纸符箓，先前大雨磅礴，此时道人看着湿漉漉的大门和高墙，苦笑道：“天时地利都不在我们这边啊。",
+      "”",
+      "刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！ 两人的称兄道弟，并非那江湖豪客在酒桌上的推杯换盏，而是换命。 这栋宅子在荒废之前，原先的主人应该家境殷实，门槛颇高，大门也是上好的柏木，还装饰有兽面门环，古老而深沉。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-29-0": {
+    "juan_index": 294,
+    "segment_index": 29,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "黄尚正要说话。",
+      "陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！",
+      "若是两人都死在这边，在下边还不得抢酒喝？",
+      "！",
+      "”",
+      "陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！ 陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 29
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！ 陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！ 黄尚正要说话。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段29",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 29
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-30-0": {
+    "juan_index": 294,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "”",
+      "刀势凶猛，竟是直接劈开了大门，陶斜阳大步走入其中，毅然决然。",
+      "一时间步伐沉沉，如陷泥潭，陶斜阳毫无畏惧，轻喝一声，挥刀向前，一刀刀劈在虚空处，刀光森森，略带莹光，显然是在武道窥得门径了。",
+      "陶斜阳以刀开路，笔直向前。",
+      "藏在他怀中和腰间的两张“君子佩符”，瞬间黑化，染满墨汁一般，本就不多的灵气，消逝干净。",
+      "黄尚正要快步跟上，只觉得阴风阵阵，从门内扑出，只得在大门内壁，找了两处稍稍干燥的地方，张贴了两张镇宅符箓，这才稍稍好受，不至于呼吸凝滞，然后双手各捻住一张符箓，分别是“光华真君持剑符”和“黄神越章之印符”，皆是上古遗留下来的著名护身符，广为流传。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "刀势凶猛，竟是直接劈开了大门，陶斜阳大步走入其中，毅然决然。 一时间步伐沉沉，如陷泥潭，陶斜阳毫无畏惧，轻喝一声，挥刀向前，一刀刀劈在虚空处，刀光森森，略带莹光，显然是在武道窥得门径了。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "刀势凶猛，竟是直接劈开了大门，陶斜阳大步走入其中，毅然决然。 一时间步伐沉沉，如陷泥潭，陶斜阳毫无畏惧，轻喝一声，挥刀向前，一刀刀劈在虚空处，刀光森森，略带莹光，显然是在武道窥得门径了。 陶斜阳以刀开路，笔直向前。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-31-0": {
+    "juan_index": 294,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "只是黄尚才顶着阴风向前走出三步，就发现持剑符合印章符变得漆黑大半，好像刚从砚台里扯出来的两张符箓，年轻道人心中大骇，忍不住高喊道：“煞气浓重似水，此地鬼魅绝不是当年死于小巷的冤魂！",
+      "必然是游荡百年以上的厉鬼！",
+      "斜阳，速速退出宅子……”",
+      "只是远处的正屋房门，自行打开，陶斜阳挥刀而入，房门便砰然关闭。",
+      "黄尚满脸悲痛，竭力往手中两张遭殃的符箓，浇灌入淡薄的灵气，怒喝道：“移殃去咎！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "只是远处的正屋房门，自行打开，陶斜阳挥刀而入，房门便砰然关闭。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 31
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "只是远处的正屋房门，自行打开，陶斜阳挥刀而入，房门便砰然关闭。 只是黄尚才顶着阴风向前走出三步，就发现持剑符合印章符变得漆黑大半，好像刚从砚台里扯出来的两张符箓，年轻道人心中大骇，忍不住高喊道：“煞气浓重似水，此地鬼魅绝不是当年死于小巷的冤魂！ 必然是游荡百年以上的厉鬼！",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 31
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-33-0": {
+    "juan_index": 294,
+    "segment_index": 33,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "往袖子伸去的左手手背处，好似给人针刺了一下，黄尚打了个寒颤，头顶又有莫名其妙的骤雨淋下，黄尚环顾四周，小雨绵绵，年轻道人怔怔抬手抹了一把脸，摊手一看，竟是满是鲜血。",
+      "下一刻，黄尚下意识抬起头。",
+      "一张没了眼珠的苍白脸庞近在咫尺，几乎要贴上黄尚的鼻尖。",
+      "黄尚呆若木鸡。",
+      "刹那之间，肩膀被人使劲按住，往后一拽，黄尚整个人倒飞出宅子，摔在外边的泥泞巷弄中，晕晕乎乎。",
+      "只看到一个熟悉的高瘦背影，正是飞鹰堡老管事何崖，陶斜阳的师父。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "只看到一个熟悉的高瘦背影，正是飞鹰堡老管事何崖，陶斜阳的师父。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 33
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "只看到一个熟悉的高瘦背影，正是飞鹰堡老管事何崖，陶斜阳的师父。 往袖子伸去的左手手背处，好似给人针刺了一下，黄尚打了个寒颤，头顶又有莫名其妙的骤雨淋下，黄尚环顾四周，小雨绵绵，年轻道人怔怔抬手抹了一把脸，摊手一看，竟是满是鲜血。 下一刻，黄尚下意识抬起头。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段33",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 33
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.469310",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-34-0": {
+    "juan_index": 294,
+    "segment_index": 34,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "老人双手持符，符纸应该不是普通符箓的黄纸材质，莹光流淌，晶莹剔透，虽然在阴风煞雨之中，光彩飘荡，如大风之中的两支烛火，可是符箓灵光始终摇而不散。",
+      "老管事脚踩罡步，念念有词。",
+      "黄尚刚刚松了口气，脖子就被指甲极长的雪白双手掐住，一下子往后拽去，年轻道士双手胡乱拍打泥泞地面，毫无作用，后脑勺和后背重重撞在强巷弄墙壁上，像是有人渗透墙壁之中，也希望黄尚这个大活人跟着进入其中。",
+      "黄尚一翻白眼，晕厥过去。",
+      "等到年轻道人清醒过来，已经回到飞鹰堡主楼的那间客房，隔壁就是陶斜阳的住处。",
+      "黄尚摇摇晃晃起了床，刚好看到何老先生脸色凝重地走出房间。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "等到年轻道人清醒过来，已经回到飞鹰堡主楼的那间客房，隔壁就是陶斜阳的住处。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 34
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陶斜阳"
+        ],
+        "description": "等到年轻道人清醒过来，已经回到飞鹰堡主楼的那间客房，隔壁就是陶斜阳的住处。 老人双手持符，符纸应该不是普通符箓的黄纸材质，莹光流淌，晶莹剔透，虽然在阴风煞雨之中，光彩飘荡，如大风之中的两支烛火，可是符箓灵光始终摇而不散。 老管事脚踩罡步，念念有词。",
+        "background": "",
+        "significance": "对应陶斜阳在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段34",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 34
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.470313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1391,6 +2003,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陶斜阳",
+        "alias": [],
+        "original_description_in_book": "何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。",
+        "description": "龙泉地界重要人物，承接地方秩序与修行势力的交叉线索。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "今晚陈平安和陆台要去桓家府邸赴宴。",
@@ -1406,16 +2031,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安迁移",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
+          "陶斜阳",
           "陈平安"
         ],
-        "description": "今晚陈平安和陆台要去桓家府邸赴宴。 何崖叹息一声，“斜阳的身体并无重伤，只是……” 老人没有继续说下去。",
+        "description": "何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。 今晚陈平安和陆台要去桓家府邸赴宴。 何崖叹息一声，“斜阳的身体并无重伤，只是……”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陶斜阳与陈平安之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -1429,8 +2057,34 @@
         "segment_index": 35
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.170877",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "何崖叹息一声，“斜阳的身体并无重伤，只是……” 老人没有继续说下去。 何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。 只是看着年轻道士的仓皇失措，尤其是脖颈处还有黑如浓墨的一条条抓痕，过了一宿，尚未淡去，老人便有些于心不忍，叹息一声，快步离开，要去煮一付药，帮着徒弟培本固元。 黄尚几次想要推门而入，都收回手，失魂落魄。 今晚陈平安和陆台要去桓家府邸赴宴。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与陈平安迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 35
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.470313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1493,7 +2147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.170877",
+    "extracted_at": "2026-03-25T01:03:31.470313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1556,7 +2210,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.170877",
+    "extracted_at": "2026-03-25T01:03:31.470313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1619,7 +2273,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.170877",
+    "extracted_at": "2026-03-25T01:03:31.470313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1681,7 +2335,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.170877",
+    "extracted_at": "2026-03-25T01:03:31.470313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

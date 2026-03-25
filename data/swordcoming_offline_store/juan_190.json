@@ -93,7 +93,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -114,6 +114,19 @@
       "御风路过各座山头，脚下偶有练气士朗声问好，魏檗以往都笑着会应答，今天却没有这个心情。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "她之前就在这里，亲眼见过此人与大骊守门人之一的墨家豪侠许弱，一同骑乘着那条道行平平的黑蛇，沿着江水逆行，去往大山之中。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 190,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "魏檗",
@@ -144,6 +157,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "许弱",
           "魏檗"
         ],
         "sentence_indexes_in_segment": [
@@ -177,12 +191,15 @@
         "location": "大骊",
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "许弱"
         ],
         "description": "她之前就在这里，亲眼见过此人与大骊守门人之一的墨家豪侠许弱，一同骑乘着那条道行平平的黑蛇，沿着江水逆行，去往大山之中。 但是杨花没有想到，这个魏檗竟然会一跃成为大骊北岳正神，品秩远远在她之上。 杨花不知为何魏檗要向自己表现出善意，地位不稳，所以需要拉拢人心？",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十章 我是一名剑客 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -196,8 +213,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "许弱"
+        ],
+        "to_roles": [
+          "魏檗"
+        ],
+        "action": "讥讽",
+        "context": "她之前就在这里，亲眼见过此人与大骊守门人之一的墨家豪侠许弱，一同骑乘着那条道行平平的黑蛇，沿着江水逆行，去往大山之中。 但是杨花没有想到，这个魏檗竟然会一跃成为大骊北岳正神，品秩远远在她之上。 杨花不知为何魏檗要向自己表现出善意，地位不稳，所以需要拉拢人心？ 杨花冷笑不已，攥紧拳头，毫不犹豫地将手心白球捏爆，灵气全部流淌进入她体内，发丝飞扬，脚下的江水起浪，似乎在为主人的修为递增而感到喜悦。 魏檗收回远眺铁符江的视线，返回他的老巢披云山。 御风路过各座山头，脚下偶有练气士朗声问好，魏檗以往都笑着会应答，今天却没有这个心情。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 190,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -279,7 +322,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -366,7 +409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -500,7 +543,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -612,7 +655,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834340",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -674,7 +717,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834340",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -768,7 +811,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834340",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -847,7 +890,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834340",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -941,7 +984,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834340",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1045,7 +1088,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.834340",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1125,7 +1168,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1235,7 +1278,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1297,7 +1340,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.982531",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

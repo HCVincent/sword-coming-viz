@@ -16,6 +16,45 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "魏羡",
+        "alias": [],
+        "original_description_in_book": "南苑国开国皇帝魏羡，是无敌的，在那个时代没有对手，之后卢白象亦是如此，以一人之力，压得整个江湖无法喘息一甲子，女子剑仙隋右边，更是寂寞得只能御剑飞升，武疯子朱敛选择与世为敌，一人战九人，天下十人的榜上宗师，真被他杀了大半。",
+        "description": "落魄山群像成员，补足陈平安后续势力与同行人物关系。",
+        "power": "落魄山",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 321,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "卢白象",
+        "alias": [],
+        "original_description_in_book": "南苑国开国皇帝魏羡，是无敌的，在那个时代没有对手，之后卢白象亦是如此，以一人之力，压得整个江湖无法喘息一甲子，女子剑仙隋右边，更是寂寞得只能御剑飞升，武疯子朱敛选择与世为敌，一人战九人，天下十人的榜上宗师，真被他杀了大半。",
+        "description": "落魄山班底中的关键人物，能稳定承接经营线与势力成形阶段。",
+        "power": "落魄山",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 321,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "隋右边",
+        "alias": [],
+        "original_description_in_book": "南苑国开国皇帝魏羡，是无敌的，在那个时代没有对手，之后卢白象亦是如此，以一人之力，压得整个江湖无法喘息一甲子，女子剑仙隋右边，更是寂寞得只能御剑飞升，武疯子朱敛选择与世为敌，一人战九人，天下十人的榜上宗师，真被他杀了大半。",
+        "description": "落魄山群像的重要成员，有助于补齐后段班底关系。",
+        "power": "落魄山",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 321,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "朱敛",
         "alias": [],
         "original_description_in_book": "南苑国开国皇帝魏羡，是无敌的，在那个时代没有对手，之后卢白象亦是如此，以一人之力，压得整个江湖无法喘息一甲子，女子剑仙隋右边，更是寂寞得只能御剑飞升，武疯子朱敛选择与世为敌，一人战九人，天下十人的榜上宗师，真被他杀了大半。",
@@ -44,19 +83,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 朱敛与陈平安冲突",
+        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 魏羡与卢白象冲突",
         "time": null,
         "location": null,
         "participants": [
-          "朱敛",
-          "陈平安"
+          "魏羡",
+          "卢白象",
+          "隋右边",
+          "朱敛"
         ],
         "description": "南苑国开国皇帝魏羡，是无敌的，在那个时代没有对手，之后卢白象亦是如此，以一人之力，压得整个江湖无法喘息一甲子，女子剑仙隋右边，更是寂寞得只能御剑飞升，武疯子朱敛选择与世为敌，一人战九人，天下十人的榜上宗师，真被他杀了大半。 丁婴这一次，遇上了一个名叫陈平安的年轻谪仙人。 潜入太子府第之前，皇后周姝真，或者说是敬仰楼楼主，又或者说是镜心斋死士，她身形隐匿于一处荫凉阴影中，望向南边城头的两人之战，感慨万分。",
         "background": "",
-        "significance": "推动朱敛与陈平安之间的冲突关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动魏羡与卢白象之间的冲突关系。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十章 井口边的老道人 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -70,21 +109,56 @@
         "segment_index": 1
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.554605",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "321-7-0": {
+    "juan_index": 321,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百二十章 井口边的老道人",
+    "source_sentences": [
+      "周姝真转头对魏衍笑道：“殿下，不用担心自己沦为我们镜心斋的傀儡，我们并无此意，也无支撑这份野心的实力，师父曾经说过，世间有丁婴，俞真意和种秋三人，就是三座跨不过去的大山，尤其是前两人在人间活着，镜心斋的一切谋划，只是小打小闹，于这座天下，并无任何真实意义。",
+      "”",
+      "还有一些言语，周姝真没有说出口，为尊者讳，不愿意在魏衍这个外人面前，多说师父童青青的事情。",
+      "童青青其实当年与弟子周姝真最后一次见面，还说了一些肺腑之言，“做了这么多，只是我怕死，所以我想要知道这个天下的每个角落，有哪些人做了什么事，我都要知道，那么我就可以避开所有危险。",
+      "”",
+      "而且周姝真并不相信这是师父的真心话。"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "周姝真转头对魏衍笑道：“殿下，不用担心自己沦为我们镜心斋的傀儡，我们并无此意，也无支撑这份野心的实力，师父曾经说过，世间有丁婴，俞真意和种秋三人，就是三座跨不过去的大山，尤其是前两人在人间活着，镜心斋的一切谋划，只是小打小闹，于这座天下，并无任何真实意义。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 321,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 种秋对话",
         "time": null,
-        "from_roles": [
-          "朱敛"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "冲突",
-        "context": "潜入太子府第之前，皇后周姝真，或者说是敬仰楼楼主，又或者说是镜心斋死士，她身形隐匿于一处荫凉阴影中，望向南边城头的两人之战，感慨万分。 双方打得山崩地裂。 即便翻开敬仰楼中那些灰尘最厚的秘密档案，藕花福地，也已经有很多个甲子，不曾出现过如此惊天动地的捉对厮杀。 寥寥两人，打得却像是两军对垒，打出了黄沙万里和金戈铁马的气势。 南苑国开国皇帝魏羡，是无敌的，在那个时代没有对手，之后卢白象亦是如此，以一人之力，压得整个江湖无法喘息一甲子，女子剑仙隋右边，更是寂寞得只能御剑飞升，武疯子朱敛选择与世为敌，一人战九人，天下十人的榜上宗师，真被他杀了大半。 丁婴这一次，遇上了一个名叫陈平安的年轻谪仙人。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十章 井口边的老道人 · 朱敛与陈平安冲突",
         "location": null,
-        "is_commentary": false,
+        "participants": [
+          "种秋"
+        ],
+        "description": "周姝真转头对魏衍笑道：“殿下，不用担心自己沦为我们镜心斋的傀儡，我们并无此意，也无支撑这份野心的实力，师父曾经说过，世间有丁婴，俞真意和种秋三人，就是三座跨不过去的大山，尤其是前两人在人间活着，镜心斋的一切谋划，只是小打小闹，于这座天下，并无任何真实意义。 ” 还有一些言语，周姝真没有说出口，为尊者讳，不愿意在魏衍这个外人面前，多说师父童青青的事情。",
+        "background": "",
+        "significance": "对应种秋在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百二十章 井口边的老道人 · 段7",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -94,10 +168,11 @@
           5
         ],
         "juan_index": 321,
-        "segment_index": 1
+        "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.223060",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.555609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -158,7 +233,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.223060",
+    "extracted_at": "2026-03-25T01:03:31.555609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -178,7 +253,21 @@
       "在十人之外，浩然天下其余八洲，当然各自都有修为冠绝一洲的角色，比如南婆娑洲的醇儒陈淳安，皑皑洲的财神爷，可是比起中土神洲，总体气象还是差了太远。",
       "那个枯瘦小女孩，抱着一摞书籍，飞快跑出了院子、巷弄，一路飞奔。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "她一旦成功晋升为玉璞境，再以她的天生福缘，那么宝瓶洲的风雪庙魏晋，最终成就，都会被她压下一头。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 321,
+        "segment_index": 15
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -187,7 +276,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -201,7 +292,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -211,13 +304,15 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 宝瓶洲剧情推进",
+        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 魏晋在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
+        "participants": [
+          "魏晋"
+        ],
         "description": "她一旦成功晋升为玉璞境，再以她的天生福缘，那么宝瓶洲的风雪庙魏晋，最终成就，都会被她压下一头。 这样的人物，放在中土神洲，都是凤毛麟角的存在，因为大道可期，旁人清晰可见。 简单而言，就是有机会，有一天站在那十人附近，甚至是挤掉某一人，占据一席之地。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十章 井口边的老道人 · 段15",
         "sentence_indexes_in_segment": [
@@ -233,7 +328,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.224064",
+    "extracted_at": "2026-03-25T01:03:31.556612",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "321-19-0": {
+    "juan_index": 321,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百二十章 井口边的老道人",
+    "source_sentences": [
+      "这位老道人只是低头凝视着双指间的那轮日头。",
+      "它并非虚像，而是真真正正的实相，反而天上此刻那轮大日，才是虚幻。",
+      "老道人将这颗“珠子”暂时收入袖中，抬头看了眼南边城头。",
+      "这个“丁婴”让他有些失望，俞真意和种秋倒是还凑合，但这种凑合，不是俞真意和种秋本身表现有多好，而是老道人对他们的期望，本就很低而已。",
+      "丁婴不一样。",
+      "要知道这个丁婴，无论根骨还是心性，都是最接近那位道老二的器，或者说胚子，算是一幅世间最接近真迹的赝品了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "种秋",
+        "alias": [],
+        "original_description_in_book": "这个“丁婴”让他有些失望，俞真意和种秋倒是还凑合，但这种凑合，不是俞真意和种秋本身表现有多好，而是老道人对他们的期望，本就很低而已。",
+        "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 321,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 种秋剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "种秋"
+        ],
+        "description": "这个“丁婴”让他有些失望，俞真意和种秋倒是还凑合，但这种凑合，不是俞真意和种秋本身表现有多好，而是老道人对他们的期望，本就很低而已。 这位老道人只是低头凝视着双指间的那轮日头。 它并非虚像，而是真真正正的实相，反而天上此刻那轮大日，才是虚幻。",
+        "background": "",
+        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百二十章 井口边的老道人 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 321,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.556612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -256,6 +413,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "魏羡",
+        "alias": [],
+        "original_description_in_book": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。",
+        "description": "落魄山群像成员，补足陈平安后续势力与同行人物关系。",
+        "power": "落魄山",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 321,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "卢白象",
+        "alias": [],
+        "original_description_in_book": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。",
+        "description": "落魄山班底中的关键人物，能稳定承接经营线与势力成形阶段。",
+        "power": "落魄山",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 321,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "朱敛",
         "alias": [],
         "original_description_in_book": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。",
@@ -271,16 +454,22 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 朱敛剧情推进",
+        "name": "第五卷道观道 第三百二十章 井口边的老道人 · 魏羡与卢白象同行",
         "time": null,
         "location": null,
         "participants": [
+          "魏羡",
+          "卢白象",
           "朱敛"
         ],
         "description": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。 哪怕这样的丁婴，到了浩然天下任何地方，都是毫无悬念的十二境，但也止步于此了，瓶颈太过明显，一件不错的赝品，往往坏不到哪里去，可再好能好到哪里去？ 老道人还是觉得不满意。",
         "background": "",
-        "significance": "对应朱敛在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动魏羡与卢白象之间的同行关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第五卷道观道 第三百二十章 井口边的老道人 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -294,8 +483,69 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.224064",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏羡"
+        ],
+        "to_roles": [
+          "卢白象"
+        ],
+        "action": "同行",
+        "context": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十章 井口边的老道人 · 魏羡与卢白象同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 321,
+        "segment_index": 20
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "魏羡"
+        ],
+        "to_roles": [
+          "朱敛"
+        ],
+        "action": "同行",
+        "context": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十章 井口边的老道人 · 魏羡与卢白象同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 321,
+        "segment_index": 20
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "卢白象"
+        ],
+        "to_roles": [
+          "朱敛"
+        ],
+        "action": "同行",
+        "context": "魏羡，卢白象，朱敛，三者合一，各取其长，糅合在一起的丁婴，还是这般不堪。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十章 井口边的老道人 · 魏羡与卢白象同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 321,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.556612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

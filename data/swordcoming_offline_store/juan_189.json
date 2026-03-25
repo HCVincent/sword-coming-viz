@@ -73,7 +73,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.828319",
+    "extracted_at": "2026-03-25T01:03:30.974503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -244,7 +244,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.828319",
+    "extracted_at": "2026-03-25T01:03:30.974503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -309,7 +309,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.828319",
+    "extracted_at": "2026-03-25T01:03:30.974503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -373,7 +373,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.828319",
+    "extracted_at": "2026-03-25T01:03:30.974503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -545,7 +545,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.828319",
+    "extracted_at": "2026-03-25T01:03:30.974503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -582,6 +582,21 @@
         ],
         "juan_index": 189,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "老人一想到李二家那个泼辣媳妇，再回头看看这样通情达理的小姑娘，老人心情就有些复杂，好坏参半。 老人有次实在是被妇人堵着门骂惨了，实在忍不住，让李二好好管管自己媳妇的那张破嘴，结果李二憋了半天，回答了一些让杨老头愈发火冒三丈的混账话：师父你要是真气不过，揍我一顿好了，记得别打脸，要不然回到家给媳妇瞧见，她又得来骂你。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 189,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -608,12 +623,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "李二",
           "杨老头"
         ],
-        "description": "杨老头嗯了一声，点点头，没拒绝。 这个小镇，恐怕也就那位缺心眼的愚昧妇人，有本事也有胆子跟老人满嘴喷粪了，关键是老人还骂不过她。 老人有次实在是被妇人堵着门骂惨了，实在忍不住，让李二好好管管自己媳妇的那张破嘴，结果李二憋了半天，回答了一些让杨老头愈发火冒三丈的混账话：师父你要是真气不过，揍我一顿好了，记得别打脸，要不然回到家给媳妇瞧见，她又得来骂你。",
+        "description": "杨老头嗯了一声，点点头，没拒绝。 老人一想到李二家那个泼辣媳妇，再回头看看这样通情达理的小姑娘，老人心情就有些复杂，好坏参半。 这个小镇，恐怕也就那位缺心眼的愚昧妇人，有本事也有胆子跟老人满嘴喷粪了，关键是老人还骂不过她。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -627,8 +645,29 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "师承",
+        "context": "老人有次实在是被妇人堵着门骂惨了，实在忍不住，让李二好好管管自己媳妇的那张破嘴，结果李二憋了半天，回答了一些让杨老头愈发火冒三丈的混账话：师父你要是真气不过，揍我一顿好了，记得别打脸，要不然回到家给媳妇瞧见，她又得来骂你。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 189,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.974503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -778,7 +817,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -854,7 +893,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -988,7 +1027,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1152,7 +1191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1240,16 +1279,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "最后宋煜章离开此地，返京赴任，又在重回龙泉小镇期间，被那位大骊娘娘派人拧断了脖子，私藏了头颅装入匣中。 宋煜章知晓太多大骊宋氏的丑闻内幕了，他其实一开始就知道自己必死无疑，甚至当初在返京途中，这位当得起骨鲠二字的大骊文官，就做好了暴毙途中的准备，忠心耿耿，慷慨赴死，亦是不过如此。 所以当时被大骊娘娘派遣杀人灭口的王毅甫，那位卢氏亡国大将，才会发自肺腑地说出那句盖棺定论。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段11",
         "sentence_indexes_in_segment": [
@@ -1265,7 +1304,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1331,7 +1370,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1396,7 +1435,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,7 +1520,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.975507",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1608,7 +1647,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.829323",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1716,7 +1755,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1800,7 +1839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1883,7 +1922,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1991,7 +2030,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2164,7 +2203,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2247,7 +2286,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2327,7 +2366,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2479,7 +2518,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.976510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2544,7 +2583,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.977514",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2605,7 +2644,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.830326",
+    "extracted_at": "2026-03-25T01:03:30.977514",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2625,7 +2664,21 @@
       "挂在他腰间，再合适不过。",
       "崔赐忍不住又问了个问题，“先生，我们进山到底是为啥？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "走在前头的儒衫书生，正是李希圣，除了手持便于行走山路的竹杖，腰间还悬挂着两块木片合在一起的桃符，古朴素雅。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 189,
+        "segment_index": 30
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -2663,9 +2716,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "他叫崔赐，名字是他自己取的，家住小镇袁家祖宅，却不是袁家人。 ” 少年使劲点头。",
+        "description": "他叫崔赐，名字是他自己取的，家住小镇袁家祖宅，却不是袁家人。 走在前头的儒衫书生，正是李希圣，除了手持便于行走山路的竹杖，腰间还悬挂着两块木片合在一起的桃符，古朴素雅。 ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2683,7 +2737,319 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.977514",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "189-31-0": {
+    "juan_index": 189,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事",
+    "source_sentences": [
+      "”",
+      "李希圣回答道：“因为我觉得有件事情，有些人做得很不对。",
+      "既然是错，就不能一错再错了。",
+      "我需要做点力所能及的事情。",
+      "”",
+      "崔赐笑容灿烂道：“先生总是对的！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣回答道：“因为我觉得有件事情，有些人做得很不对。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 189,
+        "segment_index": 31
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 李希圣对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣回答道：“因为我觉得有件事情，有些人做得很不对。 ” 既然是错，就不能一错再错了。",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 189,
+        "segment_index": 31
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.977514",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "189-32-0": {
+    "juan_index": 189,
+    "segment_index": 32,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事",
+    "source_sentences": [
+      "”",
+      "李希圣摇头道：“书上那些经久流传的宝贵道理，不管是哪一教哪一家的，都不可落在空处。",
+      "”",
+      "少年犹豫不决。",
+      "李希圣调侃道：“今天你还可以问最后一个问题。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣摇头道：“书上那些经久流传的宝贵道理，不管是哪一教哪一家的，都不可落在空处。 李希圣调侃道：“今天你还可以问最后一个问题。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 189,
+        "segment_index": 32
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣摇头道：“书上那些经久流传的宝贵道理，不管是哪一教哪一家的，都不可落在空处。 李希圣调侃道：“今天你还可以问最后一个问题。 ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段32",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 189,
+        "segment_index": 32
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.977514",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "189-33-0": {
+    "juan_index": 189,
+    "segment_index": 33,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事",
+    "source_sentences": [
+      "少年雀跃道：“我在另一本文人笔札上看到，天底下有九座雄镇楼，为何最后一座，名字的字数不一样？",
+      "”",
+      "李希圣想了想，“你是说那座名为‘镇白泽’的雄镇楼？",
+      "因为白泽是一个……家伙的名字啊，如果名叫镇白楼、镇泽楼，多不合适。",
+      "”",
+      "少年挠心挠肺，苦着脸，想要再问一个问题，又不敢问。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣想了想，“你是说那座名为‘镇白泽’的雄镇楼？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 189,
+        "segment_index": 33
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣想了想，“你是说那座名为‘镇白泽’的雄镇楼？ 少年雀跃道：“我在另一本文人笔札上看到，天底下有九座雄镇楼，为何最后一座，名字的字数不一样？ ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段33",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 189,
+        "segment_index": 33
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.977514",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "189-34-0": {
+    "juan_index": 189,
+    "segment_index": 34,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事",
+    "source_sentences": [
+      "李希圣忍俊不禁道：“再问便是了，今天天气很好，山水秀美，可以多问几个。",
+      "”",
+      "少年欢天喜地，在先生身边蹦蹦跳跳，“雄镇楼镇压的那个白泽，跟练气士几乎人手一册的白泽图，有关系吗？",
+      "”",
+      "李希圣点头道：“有的，就是同一个名字。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣忍俊不禁道：“再问便是了，今天天气很好，山水秀美，可以多问几个。 李希圣点头道：“有的，就是同一个名字。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 189,
+        "segment_index": 34
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣忍俊不禁道：“再问便是了，今天天气很好，山水秀美，可以多问几个。 李希圣点头道：“有的，就是同一个名字。 ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段34",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 189,
+        "segment_index": 34
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.977514",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "189-35-0": {
+    "juan_index": 189,
+    "segment_index": 35,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事",
+    "source_sentences": [
+      "少年啧啧道：“老爷，这其中一定有很多学问吧？",
+      "”",
+      "李希圣不露声色地抬起头，向一个方位歉意一笑，然后对少年叮嘱道：“儒家圣贤告诫我们为长者讳，不仅仅是对待文庙里的那些圣人们，对于三教百家的圣贤，一样适用。",
+      "所以将来你独自行走于山川湖泽，不要胡乱直接喊出他的名讳。",
+      "”",
+      "少年纳闷道：“白泽？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣不露声色地抬起头，向一个方位歉意一笑，然后对少年叮嘱道：“儒家圣贤告诫我们为长者讳，不仅仅是对待文庙里的那些圣人们，对于三教百家的圣贤，一样适用。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 189,
+        "segment_index": 35
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 李希圣剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣不露声色地抬起头，向一个方位歉意一笑，然后对少年叮嘱道：“儒家圣贤告诫我们为长者讳，不仅仅是对待文庙里的那些圣人们，对于三教百家的圣贤，一样适用。 少年啧啧道：“老爷，这其中一定有很多学问吧？ ”",
+        "background": "",
+        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段35",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 189,
+        "segment_index": 35
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2703,7 +3069,21 @@
       "少年哈哈大笑，不以为意。",
       "两人继续跋山涉水，去往那座落魄山。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣笑着打了一下他的脑袋，“你说呢？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 189,
+        "segment_index": 36
+      }
+    ],
     "locations": [
       {
         "name": "落魄山",
@@ -2722,13 +3102,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 落魄山立势",
+        "name": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 李希圣在落魄山立势",
         "time": null,
         "location": "落魄山",
-        "participants": [],
-        "description": "两人继续跋山涉水，去往那座落魄山。 ” 李希圣笑着打了一下他的脑袋，“你说呢？",
+        "participants": [
+          "李希圣"
+        ],
+        "description": "李希圣笑着打了一下他的脑袋，“你说呢？ 两人继续跋山涉水，去往那座落魄山。 ”",
         "background": "",
-        "significance": "对应落魄山相关的关键立势场景。",
+        "significance": "对应李希圣在叙事中的关键立势节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十九章 猛字楼外说剑之二三事 · 段36",
         "sentence_indexes_in_segment": [
@@ -2744,7 +3126,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2822,7 +3204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2902,7 +3284,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3004,7 +3386,7 @@
         "segment_index": 39
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3070,7 +3452,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3211,7 +3593,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.978517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3314,7 +3696,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.831330",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3392,7 +3774,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3517,7 +3899,7 @@
         "segment_index": 44
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3624,7 +4006,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3740,7 +4122,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3820,7 +4202,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3897,7 +4279,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4000,7 +4382,7 @@
         "segment_index": 49
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.979520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4124,7 +4506,7 @@
         "segment_index": 50
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4220,7 +4602,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4295,7 +4677,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4376,7 +4758,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4441,7 +4823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.832333",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4503,7 +4885,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4564,7 +4946,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4656,7 +5038,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.980525",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4763,7 +5145,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4824,7 +5206,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.833337",
+    "extracted_at": "2026-03-25T01:03:30.981528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

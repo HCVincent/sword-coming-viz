@@ -55,7 +55,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.794838",
+    "extracted_at": "2026-03-25T01:03:30.924329",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-3-0": {
+    "juan_index": 176,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "南涧国边境，一座高耸入云的山岳后方，山林之间，小径幽深，有年轻道姑缓缓而行，手里拎着一根翠绿竹枝，手指轻轻拧转，她身后跟随一头灵动神异的白色麋鹿。",
+      "一位悬佩长剑的白衣男子与她并肩而行，神色落寞。",
+      "她无奈道：“早就跟你说过不止一次，不是你只有下五境修为，我就一定不喜欢，但也不是你有了上五境修为，我就一定喜欢你。",
+      "魏晋，我跟你，真的没有可能，你为何就是不愿死心？",
+      "不然你告诉我，如何才能死心？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋，我跟你，真的没有可能，你为何就是不愿死心？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 176,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋，我跟你，真的没有可能，你为何就是不愿死心？ 南涧国边境，一座高耸入云的山岳后方，山林之间，小径幽深，有年轻道姑缓缓而行，手里拎着一根翠绿竹枝，手指轻轻拧转，她身后跟随一头灵动神异的白色麋鹿。 一位悬佩长剑的白衣男子与她并肩而行，神色落寞。",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.924329",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -75,7 +137,23 @@
       "比如说你们宗门里那个师叔？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "男子正是风雪庙神仙台的天才剑修，魏晋。 山上修行之人，所谓的天才，其实也分三六九等，如此年轻的十一境剑修，魏晋是当之无愧的第一等，破境速度，远超同辈。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 176,
+        "segment_index": 4
+      }
+    ],
     "locations": [
       {
         "name": "风雪庙",
@@ -84,7 +162,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -94,13 +174,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 风雪庙对话",
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋在风雪庙对话",
         "time": null,
         "location": "风雪庙",
-        "participants": [],
-        "description": "男子正是风雪庙神仙台的天才剑修，魏晋。 要一位潜心修道的道姑说出这么直白赤裸的言语，看来那名男子着实对她纠缠不清，让她有些恼了。 山上修行之人，所谓的天才，其实也分三六九等，如此年轻的十一境剑修，魏晋是当之无愧的第一等，破境速度，远超同辈。",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "男子正是风雪庙神仙台的天才剑修，魏晋。 山上修行之人，所谓的天才，其实也分三六九等，如此年轻的十一境剑修，魏晋是当之无愧的第一等，破境速度，远超同辈。 魏晋神色萎靡，哪里像是一个刚刚破开十境门槛的风流人物，苦笑道：“是因为你有喜欢的人了吗？",
         "background": "",
-        "significance": "对应风雪庙相关的关键对话场景。",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段4",
         "sentence_indexes_in_segment": [
@@ -116,7 +198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.794838",
+    "extracted_at": "2026-03-25T01:03:30.924329",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -136,7 +218,24 @@
       "剑心澄澈净如琉璃，不一定就真的通晓熟稔人情世故，尤其是情爱一事，本就是天底下最不讲道理的事情，更是让人懊恼。",
       "魏晋轻声道：“贺小凉，我最后只问你一个问题。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "年轻道姑停下脚步，转头望向这个已是名动一洲的风雪庙剑修，气笑道：“魏晋，你怎么如此不可理喻！ 魏晋虽然面无表情，可心中有些委屈，又不知如何解释和挽回，一时间便保持沉默，哪怕是如此心灰意冷的魏晋，衣衫褶皱，在外人眼中，不管他随随便便站在何处，依旧是天底下最有朝气的一把剑。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "风雪庙",
@@ -145,7 +244,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -155,13 +256,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 风雪庙对话",
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋在风雪庙对话",
         "time": null,
         "location": "风雪庙",
-        "participants": [],
-        "description": "年轻道姑停下脚步，转头望向这个已是名动一洲的风雪庙剑修，气笑道：“魏晋，你怎么如此不可理喻！ ” 魏晋虽然面无表情，可心中有些委屈，又不知如何解释和挽回，一时间便保持沉默，哪怕是如此心灰意冷的魏晋，衣衫褶皱，在外人眼中，不管他随随便便站在何处，依旧是天底下最有朝气的一把剑。",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "年轻道姑停下脚步，转头望向这个已是名动一洲的风雪庙剑修，气笑道：“魏晋，你怎么如此不可理喻！ 魏晋虽然面无表情，可心中有些委屈，又不知如何解释和挽回，一时间便保持沉默，哪怕是如此心灰意冷的魏晋，衣衫褶皱，在外人眼中，不管他随随便便站在何处，依旧是天底下最有朝气的一把剑。 只可惜这个外人，不包括魏晋眼前的年轻道姑。",
         "background": "",
-        "significance": "对应风雪庙相关的关键对话场景。",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段5",
         "sentence_indexes_in_segment": [
@@ -177,7 +280,195 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.794838",
+    "extracted_at": "2026-03-25T01:03:30.924329",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-6-0": {
+    "juan_index": 176,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "”",
+      "她点头道：“你问便是。",
+      "”",
+      "魏晋犹豫片刻，视线转向别处，嗓音沙哑道：“你最讲缘分，那么如果有一天，你终于遇上与你有缘的人物，哪怕你内心并不喜欢他，会不会为了所谓的大道，依旧选择跟他成为道侣？",
+      "”",
+      "万籁寂静。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋犹豫片刻，视线转向别处，嗓音沙哑道：“你最讲缘分，那么如果有一天，你终于遇上与你有缘的人物，哪怕你内心并不喜欢他，会不会为了所谓的大道，依旧选择跟他成为道侣？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 176,
+        "segment_index": 6
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋犹豫片刻，视线转向别处，嗓音沙哑道：“你最讲缘分，那么如果有一天，你终于遇上与你有缘的人物，哪怕你内心并不喜欢他，会不会为了所谓的大道，依旧选择跟他成为道侣？ ” 她点头道：“你问便是。",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 6
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.924329",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-7-0": {
+    "juan_index": 176,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "仿佛就连天地间无形的缕缕清风，都在这一刻凝固。",
+      "年轻道姑微笑道：“会。",
+      "”",
+      "魏晋眼神彻底黯淡，依旧不去看这位一见钟情的女子，红着眼睛，“哪怕你和他成了世人眼中的神仙眷侣，可是你会不开心的，贺小凉，我不骗你，我不希望看到你不开心的样子。",
+      "”",
+      "年轻道姑轻轻叹息一声，虽然流露出一丝伤感，可道心依旧坚若磐石，“魏晋，哪怕真有那么一天，我会过得不如人意，可是我绝对不会反悔，更不会转过头来喜欢你魏晋。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋眼神彻底黯淡，依旧不去看这位一见钟情的女子，红着眼睛，“哪怕你和他成了世人眼中的神仙眷侣，可是你会不开心的，贺小凉，我不骗你，我不希望看到你不开心的样子。 年轻道姑轻轻叹息一声，虽然流露出一丝伤感，可道心依旧坚若磐石，“魏晋，哪怕真有那么一天，我会过得不如人意，可是我绝对不会反悔，更不会转过头来喜欢你魏晋。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋眼神彻底黯淡，依旧不去看这位一见钟情的女子，红着眼睛，“哪怕你和他成了世人眼中的神仙眷侣，可是你会不开心的，贺小凉，我不骗你，我不希望看到你不开心的样子。 年轻道姑轻轻叹息一声，虽然流露出一丝伤感，可道心依旧坚若磐石，“魏晋，哪怕真有那么一天，我会过得不如人意，可是我绝对不会反悔，更不会转过头来喜欢你魏晋。 仿佛就连天地间无形的缕缕清风，都在这一刻凝固。",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 7
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.924329",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-8-0": {
+    "juan_index": 176,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "”",
+      "魏晋喃喃道：“这样吗？",
+      "”",
+      "年轻道姑转身离去。",
+      "魏晋久久不愿挪步，她不后悔，可是他已经后悔了，后悔不该问出这个伤人伤己的蠢问题。",
+      "一名年轻道人从密林深处走出，身旁有一青一红两尾大鱼在空中游曳。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋喃喃道：“这样吗？ 魏晋久久不愿挪步，她不后悔，可是他已经后悔了，后悔不该问出这个伤人伤己的蠢问题。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 176,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋喃喃道：“这样吗？ 魏晋久久不愿挪步，她不后悔，可是他已经后悔了，后悔不该问出这个伤人伤己的蠢问题。 ”",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 8
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.924329",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -197,7 +488,22 @@
       "”",
       "宗这个字眼，年轻道人格外咬字加重几分。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋收回视线，在道姑贺小凉走远之后，才敢凝望她愈行愈远的背影。 年轻道人虽然对这位十一境剑修有些忌惮，可这座山林就位于宗门后山，他相信魏晋一言不合就敢拔剑杀人，只是道人完全不信自己会死，所以他嗤笑道：“风雪庙的十一境剑修，就能在我们神诰宗逞凶？",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 176,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -220,7 +526,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -230,13 +538,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 宝瓶洲对话",
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "他不去看那个东宝瓶洲当代金童玉女里的金童，冷声道：“你敢说一个字，我就敢出剑杀人。 年轻道人虽然对这位十一境剑修有些忌惮，可这座山林就位于宗门后山，他相信魏晋一言不合就敢拔剑杀人，只是道人完全不信自己会死，所以他嗤笑道：“风雪庙的十一境剑修，就能在我们神诰宗逞凶？ 魏晋收回视线，在道姑贺小凉走远之后，才敢凝望她愈行愈远的背影。",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋收回视线，在道姑贺小凉走远之后，才敢凝望她愈行愈远的背影。 他不去看那个东宝瓶洲当代金童玉女里的金童，冷声道：“你敢说一个字，我就敢出剑杀人。 年轻道人虽然对这位十一境剑修有些忌惮，可这座山林就位于宗门后山，他相信魏晋一言不合就敢拔剑杀人，只是道人完全不信自己会死，所以他嗤笑道：“风雪庙的十一境剑修，就能在我们神诰宗逞凶？",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段9",
         "sentence_indexes_in_segment": [
@@ -252,7 +562,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.794838",
+    "extracted_at": "2026-03-25T01:03:30.924329",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -345,7 +655,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.794838",
+    "extracted_at": "2026-03-25T01:03:30.925333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -365,7 +675,22 @@
       "十一境的剑修，战力完全能够等同于兵家之外的十二境练气士，这是常识。",
       "更何况神诰宗的宗主，卡在十一境巅峰已经很多年，今年之所以召开庆典，就是为了庆贺他终于破境，所以魏晋和宗主祁真，都是各自破境没多久的练气士，两人若是换个地方打擂台，胜负还真不好说。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋转头望向那个年轻道人，突然有些意态阑珊，“你没资格让我出剑，你师父祁真还差不多。 更何况神诰宗的宗主，卡在十一境巅峰已经很多年，今年之所以召开庆典，就是为了庆贺他终于破境，所以魏晋和宗主祁真，都是各自破境没多久的练气士，两人若是换个地方打擂台，胜负还真不好说。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 11
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -384,13 +709,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 宝瓶洲剧情推进",
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "像他和贺小凉这样师出同门的金童玉女，在东宝瓶洲近千年的历史上，连同他们两人在内，只出现过三次，全部成为了联袂跻身上五境的大道眷侣。 所以他不想自己成为第一个例外。 魏晋转头望向那个年轻道人，突然有些意态阑珊，“你没资格让我出剑，你师父祁真还差不多。",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "像他和贺小凉这样师出同门的金童玉女，在东宝瓶洲近千年的历史上，连同他们两人在内，只出现过三次，全部成为了联袂跻身上五境的大道眷侣。 魏晋转头望向那个年轻道人，突然有些意态阑珊，“你没资格让我出剑，你师父祁真还差不多。 更何况神诰宗的宗主，卡在十一境巅峰已经很多年，今年之所以召开庆典，就是为了庆贺他终于破境，所以魏晋和宗主祁真，都是各自破境没多久的练气士，两人若是换个地方打擂台，胜负还真不好说。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段11",
         "sentence_indexes_in_segment": [
@@ -406,7 +733,134 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.794838",
+    "extracted_at": "2026-03-25T01:03:30.925333",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-12-0": {
+    "juan_index": 176,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "不过这是神诰宗的地盘，各种阵法层出不穷，又是一方真君地界，占尽天时地利人和的祁真，绝不可以视为普通的十二境初期修士。",
+      "年轻道人笑道：“没资格，又怎样？",
+      "”",
+      "这句话，对于再一次被道姑贺小凉当头浇了一盆冷水的魏晋而言，真是伤人至极。",
+      "于是魏晋淡然道：“接好。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "这句话，对于再一次被道姑贺小凉当头浇了一盆冷水的魏晋而言，真是伤人至极。 于是魏晋淡然道：“接好。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 176,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "这句话，对于再一次被道姑贺小凉当头浇了一盆冷水的魏晋而言，真是伤人至极。 于是魏晋淡然道：“接好。 不过这是神诰宗的地盘，各种阵法层出不穷，又是一方真君地界，占尽天时地利人和的祁真，绝不可以视为普通的十二境初期修士。",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.925333",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-13-0": {
+    "juan_index": 176,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "年轻道人根本无法看清楚魏晋拔剑，一缕长不过寸余的剑气就在他头顶劈下。",
+      "眼看着就要失去一张保命符的年轻道人，看到一只白皙如玉的温润手掌，伸到了他头顶，替他抓住了那缕裂空而至的恐怖剑气。",
+      "然后空中泛起一点血腥气，与这座静谧祥和的山林格格不入。",
+      "魏晋看了一眼那位不速之客，松开剑柄，缓缓离去，只是撂下了一句话，“好自为之。",
+      "”",
+      "一位面如冠玉的道士站在神诰宗金童身前，收起那只挡下魏晋剑气的手掌，手心伤口，深可见骨。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "年轻道人根本无法看清楚魏晋拔剑，一缕长不过寸余的剑气就在他头顶劈下。 魏晋看了一眼那位不速之客，松开剑柄，缓缓离去，只是撂下了一句话，“好自为之。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "年轻道人根本无法看清楚魏晋拔剑，一缕长不过寸余的剑气就在他头顶劈下。 魏晋看了一眼那位不速之客，松开剑柄，缓缓离去，只是撂下了一句话，“好自为之。 一位面如冠玉的道士站在神诰宗金童身前，收起那只挡下魏晋剑气的手掌，手心伤口，深可见骨。",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.925333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -488,7 +942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.795841",
+    "extracted_at": "2026-03-25T01:03:30.925333",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -553,7 +1007,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.795841",
+    "extracted_at": "2026-03-25T01:03:30.925333",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-21-0": {
+    "juan_index": 176,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "贺小凉遥遥望去，自叹不如。",
+      "无关境界差距，无关辈分差距。",
+      "而在于那位年纪轻轻的师叔，早早走到了大道远处，让人难以望其项背，所以就会自惭形秽。",
+      "在街边酒肆买过了一壶酒，魏晋倒了些在手心，那头白色毛驴低头喝得飞快，好在这里的老百姓都是见过大世面的，别说是毛驴喝酒了，就算是毛驴开口说话都不会皱一下眉头。",
+      "魏晋缩回手，开始自己喝着酒，离开酒肆，漫无目的地随意行走，毛驴就屁颠屁颠跟在他后头。",
+      "走出那座位于神诰宗山脚的城镇后，从来只把自己当江湖人的魏晋，依然不愿御剑飞行，把自己喝得醉醺醺，摇摇晃晃坐在毛驴背上，任由它驮着自己随意逛荡。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "在街边酒肆买过了一壶酒，魏晋倒了些在手心，那头白色毛驴低头喝得飞快，好在这里的老百姓都是见过大世面的，别说是毛驴喝酒了，就算是毛驴开口说话都不会皱一下眉头。 魏晋缩回手，开始自己喝着酒，离开酒肆，漫无目的地随意行走，毛驴就屁颠屁颠跟在他后头。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "在街边酒肆买过了一壶酒，魏晋倒了些在手心，那头白色毛驴低头喝得飞快，好在这里的老百姓都是见过大世面的，别说是毛驴喝酒了，就算是毛驴开口说话都不会皱一下眉头。 魏晋缩回手，开始自己喝着酒，离开酒肆，漫无目的地随意行走，毛驴就屁颠屁颠跟在他后头。 走出那座位于神诰宗山脚的城镇后，从来只把自己当江湖人的魏晋，依然不愿御剑飞行，把自己喝得醉醺醺，摇摇晃晃坐在毛驴背上，任由它驮着自己随意逛荡。",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.926336",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -573,7 +1091,23 @@
       "”",
       "那道人加重语气道：“其实你才是傻子，知道不？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "最后来到了南涧国的国都丰阳，魏晋如常人一样，在城门口递交了关牒，这才得以牵驴入城。 满身酒气的魏晋使劲想了想，记得自己在丰阳有个对脾气的江湖朋友，在七八年前有过一场结伴游历，那人好像说过自己是丰阳城内一个大门派的掌门之子，魏晋便问路去往那座名为雄风帮的门派，魏晋记得当时那人还自嘲来着，说他祖上真没学问，取了这么个不讲究的帮派名称，魏晋就安慰他，说宝瓶洲南边有个很大的仙家府邸，传承千年，底蕴深厚，雄踞一方，势力堪比一国，却被开山祖师爷取了个名字，叫无敌神拳帮，那才叫可怜，每逢盛会，神仙扎堆，门下弟子个个觉得了无生趣。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 176,
+        "segment_index": 22
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -582,7 +1116,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -592,13 +1128,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 宝瓶洲立势",
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋在宝瓶洲立势",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "满身酒气的魏晋使劲想了想，记得自己在丰阳有个对脾气的江湖朋友，在七八年前有过一场结伴游历，那人好像说过自己是丰阳城内一个大门派的掌门之子，魏晋便问路去往那座名为雄风帮的门派，魏晋记得当时那人还自嘲来着，说他祖上真没学问，取了这么个不讲究的帮派名称，魏晋就安慰他，说宝瓶洲南边有个很大的仙家府邸，传承千年，底蕴深厚，雄踞一方，势力堪比一国，却被开山祖师爷取了个名字，叫无敌神拳帮，那才叫可怜，每逢盛会，神仙扎堆，门下弟子个个觉得了无生趣。 山山水水，重重复复。 最后来到了南涧国的国都丰阳，魏晋如常人一样，在城门口递交了关牒，这才得以牵驴入城。",
+        "participants": [
+          "魏晋"
+        ],
+        "description": "最后来到了南涧国的国都丰阳，魏晋如常人一样，在城门口递交了关牒，这才得以牵驴入城。 满身酒气的魏晋使劲想了想，记得自己在丰阳有个对脾气的江湖朋友，在七八年前有过一场结伴游历，那人好像说过自己是丰阳城内一个大门派的掌门之子，魏晋便问路去往那座名为雄风帮的门派，魏晋记得当时那人还自嘲来着，说他祖上真没学问，取了这么个不讲究的帮派名称，魏晋就安慰他，说宝瓶洲南边有个很大的仙家府邸，传承千年，底蕴深厚，雄踞一方，势力堪比一国，却被开山祖师爷取了个名字，叫无敌神拳帮，那才叫可怜，每逢盛会，神仙扎堆，门下弟子个个觉得了无生趣。 魏晋缓缓前行，街旁有个算命摊子，一位身穿道袍头戴道冠的年轻道士，生意冷清，正趴在桌子上，对着一个流着鼻涕、手拿糖葫芦的小孩说教，“这个世道很糟糕，但是你不能因为这样，就觉得那些与人为善、愿意吃亏的好人，是傻子。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键立势场景。",
+        "significance": "对应魏晋在叙事中的关键立势节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段22",
         "sentence_indexes_in_segment": [
@@ -614,7 +1152,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.795841",
+    "extracted_at": "2026-03-25T01:03:30.926336",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-25-0": {
+    "juan_index": 176,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "然后孩子就转身一摇一摆蹦跳离开，嘴上嚷嚷着“吃糖葫芦喽~”",
+      "年轻道人痛心疾首地一拍桌面，“世风日下，人心不古哇！",
+      "”",
+      "魏晋一笑而过，猛然间他停下脚步，却没有转头，回想了一遍那算命道人的装束，魏晋有些犹豫不决。",
+      "那道人已经开口笑道：“既然有缘，何不相见？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋一笑而过，猛然间他停下脚步，却没有转头，回想了一遍那算命道人的装束，魏晋有些犹豫不决。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 176,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋一笑而过，猛然间他停下脚步，却没有转头，回想了一遍那算命道人的装束，魏晋有些犹豫不决。 然后孩子就转身一摇一摆蹦跳离开，嘴上嚷嚷着“吃糖葫芦喽~” 年轻道人痛心疾首地一拍桌面，“世风日下，人心不古哇！",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 25
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.926336",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "176-26-0": {
+    "juan_index": 176,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十六章 无聊就是没得聊",
+    "source_sentences": [
+      "魏晋牵驴而走。",
+      "年轻道人可怜兮兮道：“日子难熬，这南涧国的人咋就一个个这么精呢？",
+      "民风也太不淳朴了！",
+      "”",
+      "他愤愤然坐回凳子，守着桌上的签筒，双手抱住后脑勺，晒着太阳，脖子前后晃悠，头顶的道冠跟着晃荡，自言自语道：“无聊啊真无聊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "魏晋牵驴而走。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 176,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 魏晋剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏晋"
+        ],
+        "description": "魏晋牵驴而走。 年轻道人可怜兮兮道：“日子难熬，这南涧国的人咋就一个个这么精呢？ 民风也太不淳朴了！",
+        "background": "",
+        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十六章 无聊就是没得聊 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 176,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.926336",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -694,7 +1356,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.795841",
+    "extracted_at": "2026-03-25T01:03:30.927340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -756,7 +1418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.795841",
+    "extracted_at": "2026-03-25T01:03:30.927340",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -818,7 +1480,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.796845",
+    "extracted_at": "2026-03-25T01:03:30.928343",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

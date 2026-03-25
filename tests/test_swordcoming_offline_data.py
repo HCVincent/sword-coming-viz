@@ -484,6 +484,9 @@ def test_build_writer_insights_payload_creates_arc_conflict_and_foreshadowing():
     assert payload["summary"]["foreshadowing_thread_count"] == 1
     assert payload["summary"]["season_overview_count"] == 2
     assert payload["summary"]["curated_relationship_count"] == 1
+    assert len(payload["season_overviews"][0]["story_beats"]) == 3
+    assert len(payload["season_overviews"][0]["must_keep_scenes"]) == 3
+    assert payload["season_overviews"][0]["must_keep_scenes"][0]["label"]
     assert payload["character_arcs"][0]["role_name"] == "陈平安"
     assert payload["character_arcs"][0]["spotlight"] is True
     assert payload["season_overviews"][0]["season_name"] == "第一季"

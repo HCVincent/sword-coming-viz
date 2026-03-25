@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.947402",
+    "extracted_at": "2026-03-25T01:03:31.167973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.948406",
+    "extracted_at": "2026-03-25T01:03:31.168489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -181,7 +181,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.948406",
+    "extracted_at": "2026-03-25T01:03:31.169006",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -220,16 +220,16 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安"
         ],
         "description": "之后赵鎏在古宅住下，传讯给小镇上的神诰宗弟子，然后一行人又多住了一天。 赵鎏心意已决，心中就再无扭捏，大大方方去了趟古宅，恭贺夫妻二人苦尽甘来，跟人家认了错，赔罪喝了罚酒三杯，给了一件品相很低但是很讨喜的小灵器，杨晃也是个妙人，才撕破脸皮没多久，如今他赵鎏负荆请罪，竟是客气热情得很，说喝酒就喝酒，就连那件灵器都收下了，但是喝酒之后，喝了个半醉，杨晃又开始破口大骂赵鎏，最后连女鬼都看不下去， 劝了半天，杨晃就是不听，赵鎏在酒桌上什么话都不说，都受着。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十九章 趋之若鹜 · 段16",
         "sentence_indexes_in_segment": [
@@ -245,7 +245,129 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.948406",
+    "extracted_at": "2026-03-25T01:03:31.169510",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "229-23-0": {
+    "juan_index": 229,
+    "segment_index": 23,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百二十九章 趋之若鹜",
+    "source_sentences": [
+      "”",
+      "书生柳赤诚从东门出城，沿着官道一路步行，走出去十里后，在驿站外歇脚，没有功名在身的老百姓，可没资格进去落座。",
+      "驿站外有一座茶摊，书生便要了一碗滚烫茶汤，喝着暖胃，低声呢喃，像是在自言自语道：“你不是总吹嘘自己多厉害嘛，真不管这么大一个烂摊子？",
+      "那位刘小姐，挺好一个姑娘，又给我钱花，掏钱的时候都不带眨眼的，又给我搂搂抱抱，解了我多大的燃眉之急，不然你真要我当乞丐，还是去卖屁股啊？",
+      "我饿死了，你也好不到哪里去！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "书生柳赤诚从东门出城，沿着官道一路步行，走出去十里后，在驿站外歇脚，没有功名在身的老百姓，可没资格进去落座。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 229,
+        "segment_index": 23
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百二十九章 趋之若鹜 · 柳赤诚剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "柳赤诚"
+        ],
+        "description": "书生柳赤诚从东门出城，沿着官道一路步行，走出去十里后，在驿站外歇脚，没有功名在身的老百姓，可没资格进去落座。 ” 驿站外有一座茶摊，书生便要了一碗滚烫茶汤，喝着暖胃，低声呢喃，像是在自言自语道：“你不是总吹嘘自己多厉害嘛，真不管这么大一个烂摊子？",
+        "background": "",
+        "significance": "对应柳赤诚在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百二十九章 趋之若鹜 · 段23",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 229,
+        "segment_index": 23
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.170042",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "229-28-0": {
+    "juan_index": 229,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 5,
+    "segment_start_time": "第三卷金错刀 第二百二十九章 趋之若鹜",
+    "source_sentences": [
+      "书生摊开双手，仰起头望向天空，笑容陶醉，粉色道袍竟然给人一种活物的雀跃之感，哗啦一下骤然铺开，来到书生身后，如有婢女服侍，根本无需书生动手，道袍就那么穿在了他身上。",
+      "本就相貌英俊的书生柳赤诚，穿上这件道袍之后，确实玉树临风。",
+      "风流倜傥的书生大步前行，脚步凌空，逍遥御风，步步登天，直入云霄，大声吟唱道：“冢中一千年，世上也千年。",
+      "”",
+      "脚下的大地之上，开满了异乡黄花。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "柳赤诚",
+        "alias": [],
+        "original_description_in_book": "本就相貌英俊的书生柳赤诚，穿上这件道袍之后，确实玉树临风。",
+        "description": "山上线重要人物，适合补足高位修士和外部势力圈层。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 229,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百二十九章 趋之若鹜 · 柳赤诚剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "柳赤诚"
+        ],
+        "description": "本就相貌英俊的书生柳赤诚，穿上这件道袍之后，确实玉树临风。 书生摊开双手，仰起头望向天空，笑容陶醉，粉色道袍竟然给人一种活物的雀跃之感，哗啦一下骤然铺开，来到书生身后，如有婢女服侍，根本无需书生动手，道袍就那么穿在了他身上。 风流倜傥的书生大步前行，脚步凌空，逍遥御风，步步登天，直入云霄，大声吟唱道：“冢中一千年，世上也千年。",
+        "background": "",
+        "significance": "对应柳赤诚在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百二十九章 趋之若鹜 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 229,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.170042",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

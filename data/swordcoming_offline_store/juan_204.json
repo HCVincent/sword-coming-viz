@@ -75,7 +75,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.884938",
+    "extracted_at": "2026-03-25T01:03:31.043239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -136,7 +136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.884938",
+    "extracted_at": "2026-03-25T01:03:31.044243",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -156,7 +156,22 @@
       "不是糟践铜钱是什么？",
       "谢实不知如何开口，天君头衔已是囊中物的一洲道主，竟是坐立难安。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实刚要恭敬行礼，年轻道人微微摇头，伸手虚按两下，示意谢实坐下便是，谢实便老老实实坐在那根长凳上，长眉少年咽了咽口水，站在谢实身边，低着头，脑子里一团浆糊。 谢实不知如何开口，天君头衔已是囊中物的一洲道主，竟是坐立难安。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -180,9 +195,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
-        "description": "年轻道人在小镇百姓这边不陌生，会给樵夫窑工算卦，会给姑娘妇人看手相，会帮人写家书，什么都会做，一些个能够蹭吃蹭喝的红白喜事，年轻道人也不含糊，无非就是帮忙念叨几句吉利话，然后就开始大碗吃肉大碗喝酒，比起上山下水的青壮汉子，毫不逊色，简直能让心疼饭菜钱。 长眉儿的娘亲，那位知书达理的谢宅当家妇人，曾经就带着少年来算过命，抽出一支上签，说了一通虚头巴脑的好话，把他娘亲给欣慰得撇过头去擦拭泪花，结果年轻道人得寸进尺，说要给他娘亲也看看手相，一脸笑意贼头贼脑的，长眉儿气得当场就拉着娘亲回家，心想哪有这么厚颜无耻的色胚，牵着娘亲离去后，少年当时还转头狠狠瞪了眼年轻道人。 谢实刚要恭敬行礼，年轻道人微微摇头，伸手虚按两下，示意谢实坐下便是，谢实便老老实实坐在那根长凳上，长眉少年咽了咽口水，站在谢实身边，低着头，脑子里一团浆糊。",
+        "description": "年轻道人在小镇百姓这边不陌生，会给樵夫窑工算卦，会给姑娘妇人看手相，会帮人写家书，什么都会做，一些个能够蹭吃蹭喝的红白喜事，年轻道人也不含糊，无非就是帮忙念叨几句吉利话，然后就开始大碗吃肉大碗喝酒，比起上山下水的青壮汉子，毫不逊色，简直能让心疼饭菜钱。 谢实刚要恭敬行礼，年轻道人微微摇头，伸手虚按两下，示意谢实坐下便是，谢实便老老实实坐在那根长凳上，长眉少年咽了咽口水，站在谢实身边，低着头，脑子里一团浆糊。 谢实不知如何开口，天君头衔已是囊中物的一洲道主，竟是坐立难安。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -200,7 +216,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.884938",
+    "extracted_at": "2026-03-25T01:03:31.044243",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -223,6 +239,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "年轻道人不理会谢实，微微抬头望向低头的长眉儿，打趣道：“贫道当年没骗你吧，你的那支上签，货真价实，童叟无欺。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 204,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "在陈平安那边自称姓陆名沉的年轻道人，笑道：“不用这么紧张，当年你又没做错什么，心虚得好没道理，怎么，只因为辈分比你家老祖宗高一些，你就觉得自己错了？",
@@ -238,16 +267,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陈平安对话",
+        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 谢实与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陈平安"
         ],
-        "description": "在陈平安那边自称姓陆名沉的年轻道人，笑道：“不用这么紧张，当年你又没做错什么，心虚得好没道理，怎么，只因为辈分比你家老祖宗高一些，你就觉得自己错了？ 年轻道人不理会谢实，微微抬头望向低头的长眉儿，打趣道：“贫道当年没骗你吧，你的那支上签，货真价实，童叟无欺。 ”",
+        "description": "年轻道人不理会谢实，微微抬头望向低头的长眉儿，打趣道：“贫道当年没骗你吧，你的那支上签，货真价实，童叟无欺。 在陈平安那边自称姓陆名沉的年轻道人，笑道：“不用这么紧张，当年你又没做错什么，心虚得好没道理，怎么，只因为辈分比你家老祖宗高一些，你就觉得自己错了？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢实与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零四章 故人来送剑去 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -261,8 +293,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.885941",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "年轻道人不理会谢实，微微抬头望向低头的长眉儿，打趣道：“贫道当年没骗你吧，你的那支上签，货真价实，童叟无欺。 ” 少年不知为何，就要下跪磕头，只是偏偏如何都跪不下去。 在陈平安那边自称姓陆名沉的年轻道人，笑道：“不用这么紧张，当年你又没做错什么，心虚得好没道理，怎么，只因为辈分比你家老祖宗高一些，你就觉得自己错了？ 那你这辈子可就有的愁喽，越往山上走，越是见着谁就觉得自己错，何苦来哉，白白浪费了贫道的一支上签。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零四章 故人来送剑去 · 谢实与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.044243",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -285,6 +343,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "少年以往在自己跟前挺伶俐懂事的一孩子，怎么到了关键时刻反而露怯，这让谢实有些恼火，只是刚要出声训斥，就被年轻道人一瞪眼，吓得谢实噤如寒蝉，闭嘴不言。 谢实心中苦笑，原来自个儿比起长眉儿，好不到哪里去。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 204,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -302,16 +375,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉对话",
+        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 谢实与陆沉对话",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陆沉"
         ],
-        "description": "陆沉轻笑道：“真不打算留在身边雕琢？ 少年以往在自己跟前挺伶俐懂事的一孩子，怎么到了关键时刻反而露怯，这让谢实有些恼火，只是刚要出声训斥，就被年轻道人一瞪眼，吓得谢实噤如寒蝉，闭嘴不言。 谢实心中苦笑，原来自个儿比起长眉儿，好不到哪里去。",
+        "description": "少年以往在自己跟前挺伶俐懂事的一孩子，怎么到了关键时刻反而露怯，这让谢实有些恼火，只是刚要出声训斥，就被年轻道人一瞪眼，吓得谢实噤如寒蝉，闭嘴不言。 谢实心中苦笑，原来自个儿比起长眉儿，好不到哪里去。 陆沉轻笑道：“真不打算留在身边雕琢？",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢实与陆沉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零四章 故人来送剑去 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -325,8 +401,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.885941",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "对话",
+        "context": "少年以往在自己跟前挺伶俐懂事的一孩子，怎么到了关键时刻反而露怯，这让谢实有些恼火，只是刚要出声训斥，就被年轻道人一瞪眼，吓得谢实噤如寒蝉，闭嘴不言。 谢实心中苦笑，原来自个儿比起长眉儿，好不到哪里去。 陆沉轻笑道：“真不打算留在身边雕琢？ ” 谢实正襟危坐，深呼吸一口气，运用神通正了正本心，不再如先前那般畏手畏脚，回答道：“大树荫庇之下，既是福气，也是坏事，很难长出第二棵高树。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零四章 故人来送剑去 · 谢实与陆沉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.044243",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -362,21 +464,37 @@
         ],
         "juan_index": 204,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实好不容易平稳的心绪，立即一团乱麻，苦着脸一言不发。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 204,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉对话",
+        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉与谢实对话",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
-        "description": "陆沉点头道：“正解。 然后陆沉揉了揉下巴，啧啧笑道：“回头贫道可以把这句话去跟师父说一说，让他老人家别总唠叨当徒弟的不成材，当师父的最少有一半错嘛。 ”",
+        "description": "陆沉点头道：“正解。 然后陆沉揉了揉下巴，啧啧笑道：“回头贫道可以把这句话去跟师父说一说，让他老人家别总唠叨当徒弟的不成材，当师父的最少有一半错嘛。 谢实好不容易平稳的心绪，立即一团乱麻，苦着脸一言不发。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与谢实之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零四章 故人来送剑去 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -390,8 +508,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.885941",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "陆沉点头道：“正解。 ” 然后陆沉揉了揉下巴，啧啧笑道：“回头贫道可以把这句话去跟师父说一说，让他老人家别总唠叨当徒弟的不成材，当师父的最少有一半错嘛。 ” 谢实好不容易平稳的心绪，立即一团乱麻，苦着脸一言不发。 还想要当天君，怕不是连个真人名号都保不住吧？",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉与谢实对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.044243",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -426,21 +570,37 @@
         ],
         "juan_index": 204,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实如释重负，他是真怕长眉儿傻乎乎去一屁股坐下。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉与谢实师承",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
-        "description": "陆沉对长眉少年招招手，“来来来，帮贫道看着摊子，贫道随便走走，见一见熟人去。 自家老爷的师父，当然不至于为此生气，但是谁不知道自家老爷的二师兄，那个难以揣测的脾气…… 那位若是动了肝火，谁扛得住？",
+        "description": "陆沉对长眉少年招招手，“来来来，帮贫道看着摊子，贫道随便走走，见一见熟人去。 谢实如释重负，他是真怕长眉儿傻乎乎去一屁股坐下。 自家老爷的师父，当然不至于为此生气，但是谁不知道自家老爷的二师兄，那个难以揣测的脾气……",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与谢实之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零四章 故人来送剑去 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -454,8 +614,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.885941",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "师承",
+        "context": "自家老爷的师父，当然不至于为此生气，但是谁不知道自家老爷的二师兄，那个难以揣测的脾气…… 那位若是动了肝火，谁扛得住？ 陆沉对长眉少年招招手，“来来来，帮贫道看着摊子，贫道随便走走，见一见熟人去。 ” 长眉儿哪敢鸠占鹊巢，真的去坐在那么个位置上，打死不挪步。 谢实如释重负，他是真怕长眉儿傻乎乎去一屁股坐下。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉与谢实师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -491,21 +677,38 @@
         ],
         "juan_index": 204,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "陆沉也不以为意，对连忙起身的谢实吩咐道：“其他人贫道就不见了，你跟他们打声招呼，让他们别热脸贴冷屁股，贫道最近心情不太好，怕到时候一个收不住手，呵呵……还有啊，以后贫道若是想见你家子孙，哪里需要你多此一举地领着过来，他就是躲在下边的福地里头，贫道一样也能见着，对不对，所以下不为例。 谢实压低嗓音，点头道：“谨遵法旨！",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 204,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉对话",
+        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉与谢实对话",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "谢实"
         ],
-        "description": "陆沉也不以为意，对连忙起身的谢实吩咐道：“其他人贫道就不见了，你跟他们打声招呼，让他们别热脸贴冷屁股，贫道最近心情不太好，怕到时候一个收不住手，呵呵……还有啊，以后贫道若是想见你家子孙，哪里需要你多此一举地领着过来，他就是躲在下边的福地里头，贫道一样也能见着，对不对，所以下不为例。 陆沉咳嗽一声，笑眯眯问道：“这孩子他娘亲呢，怎么有事没来啊？ ”",
+        "description": "陆沉也不以为意，对连忙起身的谢实吩咐道：“其他人贫道就不见了，你跟他们打声招呼，让他们别热脸贴冷屁股，贫道最近心情不太好，怕到时候一个收不住手，呵呵……还有啊，以后贫道若是想见你家子孙，哪里需要你多此一举地领着过来，他就是躲在下边的福地里头，贫道一样也能见着，对不对，所以下不为例。 谢实压低嗓音，点头道：“谨遵法旨！ 陆沉咳嗽一声，笑眯眯问道：“这孩子他娘亲呢，怎么有事没来啊？",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与谢实之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百零四章 故人来送剑去 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -519,8 +722,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.885941",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "陆沉也不以为意，对连忙起身的谢实吩咐道：“其他人贫道就不见了，你跟他们打声招呼，让他们别热脸贴冷屁股，贫道最近心情不太好，怕到时候一个收不住手，呵呵……还有啊，以后贫道若是想见你家子孙，哪里需要你多此一举地领着过来，他就是躲在下边的福地里头，贫道一样也能见着，对不对，所以下不为例。 ” 谢实压低嗓音，点头道：“谨遵法旨！ ” 陆沉咳嗽一声，笑眯眯问道：“这孩子他娘亲呢，怎么有事没来啊？ 上会儿手相都没来得及看呢。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉与谢实对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 204,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -543,6 +772,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "第一次亲眼见到“本脉老爷”的谢实，嚅嚅喏喏，实在说不出一个字来。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 204,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -560,15 +802,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第两百零四章 故人来送剑去 · 谢实与陆沉剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陆沉"
         ],
-        "description": "陆沉大摇大摆离去，经过隔壁摊子的时候，满脸羡慕道：“老仙长真忙啊。 ” 第一次亲眼见到“本脉老爷”的谢实，嚅嚅喏喏，实在说不出一个字来。",
+        "description": "第一次亲眼见到“本脉老爷”的谢实，嚅嚅喏喏，实在说不出一个字来。 陆沉大摇大摆离去，经过隔壁摊子的时候，满脸羡慕道：“老仙长真忙啊。 ”",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
+        "significance": "推动谢实与陆沉之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百零四章 故人来送剑去 · 段12",
         "sentence_indexes_in_segment": [
@@ -584,7 +827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -667,7 +910,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -746,7 +989,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -824,7 +1067,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -930,7 +1173,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1044,7 +1287,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.045247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1140,7 +1383,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1270,7 +1513,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1376,7 +1619,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1440,7 +1683,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.886454",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1521,7 +1764,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1586,7 +1829,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1693,7 +1936,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.046251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1799,7 +2042,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.047254",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1906,7 +2149,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.047254",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2036,7 +2279,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.047254",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2169,7 +2412,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.047254",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2252,7 +2495,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.047254",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2364,7 +2607,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.887448",
+    "extracted_at": "2026-03-25T01:03:31.047254",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -99,7 +99,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.662883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -149,6 +149,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "阿良只是看了眼朱河，甚至懒得去瞥一眼少女朱鹿，懒洋洋道：“这么珍贵的剑气，用来杀一个朱河，太暴殄天物了，你不心疼，我都替你心疼。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 110,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "阿良只是看了眼朱河，甚至懒得去瞥一眼少女朱鹿，懒洋洋道：“这么珍贵的剑气，用来杀一个朱河，太暴殄天物了，你不心疼，我都替你心疼。",
@@ -170,6 +183,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "朱鹿"
         ],
         "description": "陈平安叹了口气，“暂时听你的。 阿良只是看了眼朱河，甚至懒得去瞥一眼少女朱鹿，懒洋洋道：“这么珍贵的剑气，用来杀一个朱河，太暴殄天物了，你不心疼，我都替你心疼。 何况……算了算了，不说这些大煞风景的话，总之，我阿良的良心会过不去。",
@@ -190,7 +204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.663886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -290,7 +304,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.663886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -396,7 +410,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.663886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -443,6 +457,19 @@
         ],
         "juan_index": 110,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河心神已经从泥泞当中勉强拔出，但是四肢比先前更加僵硬，一动即死，这是朱河脑海中唯一的念头，这就是那名斗笠汉子带来的无形震慑。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 110,
+        "segment_index": 5
       }
     ],
     "locations": [],
@@ -453,7 +480,8 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "朱河"
         ],
         "description": "陈平安突然觉得这个所谓的十八停，多半是比撼山拳谱好不到哪里去了。 阿良仿佛看穿少年的心思，一本正经道：“我像是个信口开河的骗子吗？ 我阿良这辈子就不知道吹牛是什么事情！",
         "background": "",
@@ -473,7 +501,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.663886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -494,6 +522,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "可当这个家伙成了对立面的敌人，朱河整个人吓得汗流浃背，当真是要魂飞魄散。 远处朱河已是心神失守，近处的朱鹿只听到陈平安在自说自话。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 110,
+        "segment_index": 6
+      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -544,9 +586,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "朱鹿"
         ],
-        "description": "远处朱河已是心神失守，近处的朱鹿只听到陈平安在自说自话。 阿良又以心声告知陈平安，“轻舟已过万重山，气机流转一瞬百里千里万里，是很好，可若是能够做到缓行，如山岳百年累土，不见丝毫增高，海川千年积水，水面不见半点抬升，则更好！ 当那个腰佩绿刀别葫芦的家伙，与你是朋友的时候，你会觉得他怎么看怎么不像高手。",
+        "description": "可当这个家伙成了对立面的敌人，朱河整个人吓得汗流浃背，当真是要魂飞魄散。 远处朱河已是心神失守，近处的朱鹿只听到陈平安在自说自话。 阿良又以心声告知陈平安，“轻舟已过万重山，气机流转一瞬百里千里万里，是很好，可若是能够做到缓行，如山岳百年累土，不见丝毫增高，海川千年积水，水面不见半点抬升，则更好！",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -564,7 +607,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.663886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,7 +712,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.663886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -732,6 +775,20 @@
         ],
         "juan_index": 110,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "不等朱鹿说话，朱河已经沉声道：“恳请阿良前辈让朱鹿离开，我愿意自尽谢罪，甚至不用脏了前辈的竹刀。 阿良只是笑眯眯看着朱鹿，根本不理睬已经掏出丹药和黄纸符箓的朱河，“朱鹿啊，你希望谁能活下来？",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 110,
+        "segment_index": 8
       }
     ],
     "locations": [],
@@ -743,14 +800,17 @@
         "participants": [
           "阿良",
           "陈平安",
-          "朱鹿"
+          "朱鹿",
+          "朱河"
         ],
         "description": "陈平安捂住额头。 阿良不露声色地抬起屁股，用手拍掉那些站在屁股上的冰糖葫芦，挪了个位置坐下，双手摊放在栏杆上，重重呼出一口气，终于第一次正视朱鹿，“你和你爹除了要把真武山那颗英雄胆，和紫气书一并还给我，还需要拿出那叠李家传承下来的符箓，但是这些符箓只能救下你们当中的一个人，朱鹿，我现在让你来选择，是你活着离开枕头驿，还是你爹？ 不等朱鹿说话，朱河已经沉声道：“恳请阿良前辈让朱鹿离开，我愿意自尽谢罪，甚至不用脏了前辈的竹刀。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "source": "第二卷山水郎 第一百一十章 无不散的筵席 · 段8",
         "sentence_indexes_in_segment": [
@@ -792,6 +852,46 @@
           "朱鹿"
         ],
         "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "不等朱鹿说话，朱河已经沉声道：“恳请阿良前辈让朱鹿离开，我愿意自尽谢罪，甚至不用脏了前辈的竹刀。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 110,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱鹿"
+        ],
+        "to_roles": [
+          "阿良"
+        ],
+        "action": "对话",
+        "context": "不等朱鹿说话，朱河已经沉声道：“恳请阿良前辈让朱鹿离开，我愿意自尽谢罪，甚至不用脏了前辈的竹刀。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 110,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
           "阿良"
         ],
         "action": "对话",
@@ -807,7 +907,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.613033",
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -828,6 +928,19 @@
       "阿良望向陈平安，问道：“你觉得呢？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "朱河在远处廊道重重跪下，磕头颤声道：“阿良前辈！",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 110,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "阿良",
@@ -907,7 +1020,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -928,6 +1041,21 @@
       "朱河猛然抬头，怒吼道：“陈平安，朱鹿还是个孩子！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "你要是怕朱河报复，我可以废掉他武道修为，怕意外的话，我可以随便打断朱河的长生桥，嗯，朱鹿的也行。 少年不去看朱河，只是看着朱鹿，“我说过，你必须死。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 110,
+        "segment_index": 10
+      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -960,19 +1088,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十章 无不散的筵席 · 朱鹿与陈平安同行",
+        "name": "第二卷山水郎 第一百一十章 无不散的筵席 · 朱河与朱鹿剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "朱河",
           "朱鹿",
           "陈平安"
         ],
         "description": "你要是怕朱河报复，我可以废掉他武道修为，怕意外的话，我可以随便打断朱河的长生桥，嗯，朱鹿的也行。 少年不去看朱河，只是看着朱鹿，“我说过，你必须死。 朱河猛然抬头，怒吼道：“陈平安，朱鹿还是个孩子！",
         "background": "",
-        "significance": "推动朱鹿与陈平安之间的同行关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动朱河与朱鹿之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十章 无不散的筵席 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -986,34 +1113,8 @@
         "segment_index": 10
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "朱鹿"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "同行",
-        "context": "要不然一起放了？ 你要是怕朱河报复，我可以废掉他武道修为，怕意外的话，我可以随便打断朱河的长生桥，嗯，朱鹿的也行。 ” 少年不去看朱河，只是看着朱鹿，“我说过，你必须死。 ” 朱河猛然抬头，怒吼道：“陈平安，朱鹿还是个孩子！",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百一十章 无不散的筵席 · 朱鹿与陈平安同行",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 110,
-        "segment_index": 10
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1119,7 +1220,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1225,7 +1326,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1302,7 +1403,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1364,7 +1465,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.664891",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1447,7 +1548,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1529,7 +1630,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1591,7 +1692,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1654,7 +1755,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1755,7 +1856,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1849,7 +1950,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.614036",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1912,7 +2013,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1977,7 +2078,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.665893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2083,7 +2184,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.666897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

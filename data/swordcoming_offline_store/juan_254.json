@@ -130,7 +130,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.044702",
+    "extracted_at": "2026-03-25T01:03:31.276627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -166,6 +166,33 @@
           2,
           3,
           4
+        ],
+        "juan_index": 254,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "关于师父和传道人，本就是郑大风的一个心结所在，老头子承认自己是他和师兄李二的师父，但不是他们俩的传道人，反而让李二的女儿李柳，认了老家伙做传道人。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 254,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "关于师父和传道人，本就是郑大风的一个心结所在，老头子承认自己是他和师兄李二的师父，但不是他们俩的传道人，反而让李二的女儿李柳，认了老家伙做传道人。 老头子对于陈平安的态度，也挺让人捉摸不透，但是郑大风可以明确一点，泥瓶巷少年，只是师父众多押注对象之一，分量远远比不得天道眷顾的马苦玄，和生而知之的李柳，当初传授的那门吐纳法门，其实很粗陋，算不得什么武道上乘心法，郑大风猜测应该是这几年陈平安在武道的上升势头太过惊人，现在都已经由炼体境跻身炼气境，所以老头子开始逐渐加大押注。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          3
         ],
         "juan_index": 254,
         "segment_index": 2
@@ -209,7 +236,8 @@
         "related_entities": [
           "陈平安",
           "郑大风",
-          "马苦玄"
+          "马苦玄",
+          "李柳"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -220,20 +248,25 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 陈平安与郑大风在泥瓶巷指点",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "泥瓶巷",
+        "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安",
           "郑大风",
-          "马苦玄"
+          "李柳"
         ],
         "description": "郑大风百思不得其解，便坐在药铺门槛上发呆。 关于师父和传道人，本就是郑大风的一个心结所在，老头子承认自己是他和师兄李二的师父，但不是他们俩的传道人，反而让李二的女儿李柳，认了老家伙做传道人。 至于护道人身份，郑大风如今算是范家小子的护道人，要保证那个小家伙顺利破开武夫三境瓶颈，之后还要帮着范家小子一路走到纯粹武夫的炼神境。",
         "background": "",
-        "significance": "在泥瓶巷推动陈平安与郑大风之间的指点线。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段2",
         "sentence_indexes_in_segment": [
@@ -252,6 +285,46 @@
       {
         "time": null,
         "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "师承",
+        "context": "关于师父和传道人，本就是郑大风的一个心结所在，老头子承认自己是他和师兄李二的师父，但不是他们俩的传道人，反而让李二的女儿李柳，认了老家伙做传道人。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 254,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "李柳"
+        ],
+        "action": "师承",
+        "context": "关于师父和传道人，本就是郑大风的一个心结所在，老头子承认自己是他和师兄李二的师父，但不是他们俩的传道人，反而让李二的女儿李柳，认了老家伙做传道人。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 254,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
           "陈平安"
         ],
         "to_roles": [
@@ -260,7 +333,7 @@
         "action": "指点",
         "context": "老头子对于陈平安的态度，也挺让人捉摸不透，但是郑大风可以明确一点，泥瓶巷少年，只是师父众多押注对象之一，分量远远比不得天道眷顾的马苦玄，和生而知之的李柳，当初传授的那门吐纳法门，其实很粗陋，算不得什么武道上乘心法，郑大风猜测应该是这几年陈平安在武道的上升势头太过惊人，现在都已经由炼体境跻身炼气境，所以老头子开始逐渐加大押注。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 陈平安与郑大风在泥瓶巷指点",
+        "event_name": "李二照面陈平安",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -280,7 +353,7 @@
         "action": "指点",
         "context": "老头子对于陈平安的态度，也挺让人捉摸不透，但是郑大风可以明确一点，泥瓶巷少年，只是师父众多押注对象之一，分量远远比不得天道眷顾的马苦玄，和生而知之的李柳，当初传授的那门吐纳法门，其实很粗陋，算不得什么武道上乘心法，郑大风猜测应该是这几年陈平安在武道的上升势头太过惊人，现在都已经由炼体境跻身炼气境，所以老头子开始逐渐加大押注。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 陈平安与郑大风在泥瓶巷指点",
+        "event_name": "李二照面陈平安",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -288,9 +361,49 @@
         ],
         "juan_index": 254,
         "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "李柳"
+        ],
+        "action": "指点",
+        "context": "老头子对于陈平安的态度，也挺让人捉摸不透，但是郑大风可以明确一点，泥瓶巷少年，只是师父众多押注对象之一，分量远远比不得天道眷顾的马苦玄，和生而知之的李柳，当初传授的那门吐纳法门，其实很粗陋，算不得什么武道上乘心法，郑大风猜测应该是这几年陈平安在武道的上升势头太过惊人，现在都已经由炼体境跻身炼气境，所以老头子开始逐渐加大押注。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "守护",
+        "context": "郑大风皱眉沉思道：“难道是要我去当陈平安的传道人，或是护道人？",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.276627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -339,21 +452,34 @@
         ],
         "juan_index": 254,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "显然让李二给陈平安当护道人，才是最合适的。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 郑大风与陈平安师承",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": null,
+        "location": "龙泉",
         "participants": [
-          "郑大风",
+          "李二",
           "陈平安"
         ],
         "description": "郑大风双手抱住脑袋，无奈叹息：“再说了我跟陈平安八字不合，这么个不解风情的死板少年，我实在喜欢不起来啊。 显然让李二给陈平安当护道人，才是最合适的。 ”",
         "background": "",
-        "significance": "推动郑大风与陈平安之间的师承关系。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
           0
         ],
@@ -374,30 +500,25 @@
       {
         "time": null,
         "from_roles": [
-          "郑大风"
+          "李二"
         ],
         "to_roles": [
           "陈平安"
         ],
-        "action": "师承",
-        "context": "” 郑大风双手抱住脑袋，无奈叹息：“再说了我跟陈平安八字不合，这么个不解风情的死板少年，我实在喜欢不起来啊。 显然让李二给陈平安当护道人，才是最合适的。 师父啊，你老人家到底是咋想的，能不能给句痛快话？ 给他当个一年半载的护道人，还好说，捏着鼻子忍忍就过去了，可要是当他的传道人，那不是要了我的亲命嘛。 ”",
+        "action": "守护",
+        "context": "显然让李二给陈平安当护道人，才是最合适的。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 郑大风与陈平安师承",
+        "event_name": "李二照面陈平安",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 254,
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.276627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -461,7 +582,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.276627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -525,7 +646,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.276627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -589,7 +710,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.276627",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -668,7 +789,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.277630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +851,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.277630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -795,7 +916,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.277630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -860,7 +981,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.277630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -925,7 +1046,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.045715",
+    "extracted_at": "2026-03-25T01:03:31.277630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -945,7 +1066,21 @@
       "老龙城即将迎来一场盛事，少城主苻南华即将迎娶云林姜氏嫡女。",
       "云林姜氏是宝瓶洲历史最悠久的豪阀之一，相传在上古时代，儒家刚刚成为浩然天下的正统，百废待兴，礼圣制定了最早的儒教规矩，姜氏出过数位大祝，即大礼春官中，与大史、大宰并列为六大天官之一，主掌祁神降福的各种祝词。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "老龙城即将迎来一场盛事，少城主苻南华即将迎娶云林姜氏嫡女。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -954,7 +1089,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -978,13 +1115,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
+        "participants": [
+          "谢谢",
+          "苻南华"
+        ],
         "description": "老龙城即将迎来一场盛事，少城主苻南华即将迎娶云林姜氏嫡女。 云林姜氏是宝瓶洲历史最悠久的豪阀之一，相传在上古时代，儒家刚刚成为浩然天下的正统，百废待兴，礼圣制定了最早的儒教规矩，姜氏出过数位大祝，即大礼春官中，与大史、大宰并列为六大天官之一，主掌祁神降福的各种祝词。 少女弯下腰，双手托起腮帮，安静听着哨子，反正之前掌柜的哼唱曲词，是他的家乡话，她也听不懂。",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段12",
         "sentence_indexes_in_segment": [
@@ -1000,7 +1140,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "extracted_at": "2026-03-25T01:03:31.277630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1019,7 +1159,35 @@
       "今天苻南华竟然离开私宅，独自走到苻城大门口，头顶高冠，一袭玉白色长袍，腰间悬挂翠绿欲滴的龙形玉佩，这位少城主在神色沉稳之余，似乎还有些郁郁寡欢，比起去往骊珠洞天的意气风发，天壤之别。",
       "这段时间这座符城贵客临门，川流不息，哪怕苻家待人接物，可能比一国朝廷还要经验老道，可还是有些应接不暇。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "素来以交友广泛著称老龙城的苻南华，在从北方骊珠洞天返回后，突然变得深居简出，虽说谈不上就此闭门谢客，可是除了孙嘉树这些老朋友，能够登门见上他几面，苻南华再也没有结交什么新朋友，一直待在苻家，外城几处名动半洲的风花雪月场所，这位少城主再没有露过面。 今天苻南华竟然离开私宅，独自走到苻城大门口，头顶高冠，一袭玉白色长袍，腰间悬挂翠绿欲滴的龙形玉佩，这位少城主在神色沉稳之余，似乎还有些郁郁寡欢，比起去往骊珠洞天的意气风发，天壤之别。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "素来以交友广泛著称老龙城的苻南华，在从北方骊珠洞天返回后，突然变得深居简出，虽说谈不上就此闭门谢客，可是除了孙嘉树这些老朋友，能够登门见上他几面，苻南华再也没有结交什么新朋友，一直待在苻家，外城几处名动半洲的风花雪月场所，这位少城主再没有露过面。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 13
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1043,7 +1211,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           1,
           2
@@ -1058,7 +1229,10 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           2,
           3
@@ -1069,14 +1243,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 宝瓶洲迁移",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "宝瓶洲",
-        "participants": [],
+        "location": "老龙城",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "孙嘉树"
+        ],
         "description": "云林姜氏位于宝瓶洲东南部的大海之滨，面朝大海的府门，有一条极其宽阔的阙门行道，长达三十余里，一直延伸到大海之中，最终以一对巨大的天然礁石作为阙门，有囊括东海之意，气魄极大。 在从中土神洲迁徙宝瓶洲后的漫长岁月里，姜氏逐渐弃文从商，家族在无数次山河动荡中，始终屹立不倒，成为名副其实的富可敌国，老龙城苻家同样如此，所以这两家选择联姻，在宝瓶洲南方是近期最大的一个消息，有人好奇先前苻家的聘礼是什么，也有人好奇姜氏女子的嫁妆，会不会是一件半仙兵，以及那些与苻家世代交好的山上仙府，会拿出怎样的珍重贺礼，所以老龙城这两个月涌入无数看热闹的山上修士，加上传闻那位姜氏女子奇丑无比，更让人遐想连篇。 素来以交友广泛著称老龙城的苻南华，在从北方骊珠洞天返回后，突然变得深居简出，虽说谈不上就此闭门谢客，可是除了孙嘉树这些老朋友，能够登门见上他几面，苻南华再也没有结交什么新朋友，一直待在苻家，外城几处名动半洲的风花雪月场所，这位少城主再没有露过面。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键迁移场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1089,8 +1269,29 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "会见",
+        "context": "素来以交友广泛著称老龙城的苻南华，在从北方骊珠洞天返回后，突然变得深居简出，虽说谈不上就此闭门谢客，可是除了孙嘉树这些老朋友，能够登门见上他几面，苻南华再也没有结交什么新朋友，一直待在苻家，外城几处名动半洲的风花雪月场所，这位少城主再没有露过面。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.278634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1109,7 +1310,34 @@
       "这次丹霞山来了四人，两位山门老祖和各自得意弟子。",
       "苻南华今天破天荒出门迎客，是来见一个一个本该已经死了的人，云霞山仙子蔡金简。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华今天破天荒出门迎客，是来见一个一个本该已经死了的人，云霞山仙子蔡金简。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "苻南华今天破天荒出门迎客，是来见一个一个本该已经死了的人，云霞山仙子蔡金简。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 14
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1159,14 +1387,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 宝瓶洲剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "宝瓶洲",
-        "participants": [],
+        "location": "老龙城",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
         "description": "此时符城门外，就有好几拨山上仙家府邸的重要人物，前来祝贺那桩被世人誉为“金玉良缘”的联姻，其中就有云霞山，云霞山算不得最顶尖的门派，但是出产的云根石，风靡数洲，财源滚滚，故而也有一番蒸蒸日上的景象，若是再冒出一两个能够扛起大梁的天之骄子，云霞山跻身宝瓶洲一流仙家行列，指日可待。 老龙城与云霞山有着数百年香火情，因为云霞山的特产云根石，正是苻家吞宝鲸、悬浮山两艘渡船的重要货物之一，由云根石淬炼打造而出的磨石，是剑气长城剑修用以砥砺剑锋的好东西，因为价廉物美，最重要当然还是价格便宜，哪怕效果比之世间最佳磨剑石的斩龙台，云泥之别，可一文钱难倒英雄汉，每逢妖族作乱，大战连绵，便是赊账，欠下一屁股烂账，也顾不得了，对剑修而言，没什么比有一把好剑更重要。 当然所谓的价钱便宜，是相比其它通过倒悬山运往剑气长城的珍稀物品，云霞山云根石的价格，卖给宝瓶洲修士，卖给老龙城苻家，卖给剑气长城剑修，是三种悬殊价格。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1179,8 +1413,33 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "师承",
+        "context": "此时符城门外，就有好几拨山上仙家府邸的重要人物，前来祝贺那桩被世人誉为“金玉良缘”的联姻，其中就有云霞山，云霞山算不得最顶尖的门派，但是出产的云根石，风靡数洲，财源滚滚，故而也有一番蒸蒸日上的景象，若是再冒出一两个能够扛起大梁的天之骄子，云霞山跻身宝瓶洲一流仙家行列，指日可待。 老龙城与云霞山有着数百年香火情，因为云霞山的特产云根石，正是苻家吞宝鲸、悬浮山两艘渡船的重要货物之一，由云根石淬炼打造而出的磨石，是剑气长城剑修用以砥砺剑锋的好东西，因为价廉物美，最重要当然还是价格便宜，哪怕效果比之世间最佳磨剑石的斩龙台，云泥之别，可一文钱难倒英雄汉，每逢妖族作乱，大战连绵，便是赊账，欠下一屁股烂账，也顾不得了，对剑修而言，没什么比有一把好剑更重要。 当然所谓的价钱便宜，是相比其它通过倒悬山运往剑气长城的珍稀物品，云霞山云根石的价格，卖给宝瓶洲修士，卖给老龙城苻家，卖给剑气长城剑修，是三种悬殊价格。 这次丹霞山来了四人，两位山门老祖和各自得意弟子。 苻南华今天破天荒出门迎客，是来见一个一个本该已经死了的人，云霞山仙子蔡金简。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.278634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1200,7 +1459,64 @@
       "蔡金简的传道恩师，受宠若惊，哪里会拒绝这番美意，之前蔡金简在骊珠洞天两手空空返回山门，整整一袋子金精铜钱，连打水漂都不如，半点响声都没有，那可是金精铜钱，谷雨钱在它面前，就是诰命夫人见着了皇后娘娘，屁都不是。",
       "连累老人在云霞山这两年受尽白眼和诘难，原本想要一步步将蔡金简推上山主宝座的老人，心灰意冷，但是更气人的是寄予厚望的蔡金简，这两年跟个活死人似的，修行山门神通十分惫懒，让老人既心疼又愤懑，还打不得骂不得，生怕蔡金简破罐子破摔，沦为正阳山苏稼那般废物。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "当苻南华出人意料地现身后，城门这边顿时议论纷纷，招呼声贺喜声连绵不绝，苻南华一一应付过去，不失礼节，最后苻南华来到位置靠后的两辆马车前，看到那两匹神俊非凡的青骢马，有着蛟龙之属的偏远血统，应该是从孙家驿站临时雇佣的车辆，老龙城内外都知道，两种游览老龙城的方式最耗钱，一是向苻家买下一枚老龙翻云佩，再就是跟孙嘉树那家伙名下的店铺雇车，一般只有两种人会如此做派，一种是兜里真有钱，一种是土鳖傻子。 见到了苻南华亲自出门迎接，两位老祖赶紧带着得意弟子走下马车，其中一位云霞山嫡传，正是脸色微白却容颜妩媚的仙子蔡金简，另外一位则是器宇轩昂的年轻男子，身上所传法袍隐约有云雾缭绕的气象。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "孙嘉树",
+        "alias": [],
+        "original_description_in_book": "当苻南华出人意料地现身后，城门这边顿时议论纷纷，招呼声贺喜声连绵不绝，苻南华一一应付过去，不失礼节，最后苻南华来到位置靠后的两辆马车前，看到那两匹神俊非凡的青骢马，有着蛟龙之属的偏远血统，应该是从孙家驿站临时雇佣的车辆，老龙城内外都知道，两种游览老龙城的方式最耗钱，一是向苻家买下一枚老龙翻云佩，再就是跟孙嘉树那家伙名下的店铺雇车，一般只有两种人会如此做派，一种是兜里真有钱，一种是土鳖傻子。",
+        "description": "老龙城线的重要人物，常与陈平安和海上局势线形成直接交集。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 254,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "见到了苻南华亲自出门迎接，两位老祖赶紧带着得意弟子走下马车，其中一位云霞山嫡传，正是脸色微白却容颜妩媚的仙子蔡金简，另外一位则是器宇轩昂的年轻男子，身上所传法袍隐约有云雾缭绕的气象。 蔡金简的传道恩师，受宠若惊，哪里会拒绝这番美意，之前蔡金简在骊珠洞天两手空空返回山门，整整一袋子金精铜钱，连打水漂都不如，半点响声都没有，那可是金精铜钱，谷雨钱在它面前，就是诰命夫人见着了皇后娘娘，屁都不是。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "连累老人在云霞山这两年受尽白眼和诘难，原本想要一步步将蔡金简推上山主宝座的老人，心灰意冷，但是更气人的是寄予厚望的蔡金简，这两年跟个活死人似的，修行山门神通十分惫懒，让老人既心疼又愤懑，还打不得骂不得，生怕蔡金简破罐子破摔，沦为正阳山苏稼那般废物。",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 15
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1209,7 +1525,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "孙嘉树"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1223,7 +1542,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1237,7 +1558,10 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简",
+          "苏稼"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1247,14 +1571,22 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 老龙城遭遇",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "当苻南华出人意料地现身后，城门这边顿时议论纷纷，招呼声贺喜声连绵不绝，苻南华一一应付过去，不失礼节，最后苻南华来到位置靠后的两辆马车前，看到那两匹神俊非凡的青骢马，有着蛟龙之属的偏远血统，应该是从孙家驿站临时雇佣的车辆，老龙城内外都知道，两种游览老龙城的方式最耗钱，一是向苻家买下一枚老龙翻云佩，再就是跟孙嘉树那家伙名下的店铺雇车，一般只有两种人会如此做派，一种是兜里真有钱，一种是土鳖傻子。 蔡金简的传道恩师，受宠若惊，哪里会拒绝这番美意，之前蔡金简在骊珠洞天两手空空返回山门，整整一袋子金精铜钱，连打水漂都不如，半点响声都没有，那可是金精铜钱，谷雨钱在它面前，就是诰命夫人见着了皇后娘娘，屁都不是。 连累老人在云霞山这两年受尽白眼和诘难，原本想要一步步将蔡金简推上山主宝座的老人，心灰意冷，但是更气人的是寄予厚望的蔡金简，这两年跟个活死人似的，修行山门神通十分惫懒，让老人既心疼又愤懑，还打不得骂不得，生怕蔡金简破罐子破摔，沦为正阳山苏稼那般废物。",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "孙嘉树",
+          "蔡金简"
+        ],
+        "description": "当苻南华出人意料地现身后，城门这边顿时议论纷纷，招呼声贺喜声连绵不绝，苻南华一一应付过去，不失礼节，最后苻南华来到位置靠后的两辆马车前，看到那两匹神俊非凡的青骢马，有着蛟龙之属的偏远血统，应该是从孙家驿站临时雇佣的车辆，老龙城内外都知道，两种游览老龙城的方式最耗钱，一是向苻家买下一枚老龙翻云佩，再就是跟孙嘉树那家伙名下的店铺雇车，一般只有两种人会如此做派，一种是兜里真有钱，一种是土鳖傻子。 见到了苻南华亲自出门迎接，两位老祖赶紧带着得意弟子走下马车，其中一位云霞山嫡传，正是脸色微白却容颜妩媚的仙子蔡金简，另外一位则是器宇轩昂的年轻男子，身上所传法袍隐约有云雾缭绕的气象。 苻南华跟两位云霞山老祖客套寒暄之后，提了一个小要求，说要带着蔡仙子先入城赏景叙旧。",
         "background": "",
-        "significance": "对应老龙城相关的关键遭遇场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1268,8 +1600,49 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "会见",
+        "context": "当苻南华出人意料地现身后，城门这边顿时议论纷纷，招呼声贺喜声连绵不绝，苻南华一一应付过去，不失礼节，最后苻南华来到位置靠后的两辆马车前，看到那两匹神俊非凡的青骢马，有着蛟龙之属的偏远血统，应该是从孙家驿站临时雇佣的车辆，老龙城内外都知道，两种游览老龙城的方式最耗钱，一是向苻家买下一枚老龙翻云佩，再就是跟孙嘉树那家伙名下的店铺雇车，一般只有两种人会如此做派，一种是兜里真有钱，一种是土鳖傻子。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 254,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "师承",
+        "context": "见到了苻南华亲自出门迎接，两位老祖赶紧带着得意弟子走下马车，其中一位云霞山嫡传，正是脸色微白却容颜妩媚的仙子蔡金简，另外一位则是器宇轩昂的年轻男子，身上所传法袍隐约有云雾缭绕的气象。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.278634",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1289,7 +1662,42 @@
       "但是不管如何，终有一天会穿上那件老龙袍的苻南华，愿意如此对待破格礼遇云霞山，两位老祖可谓颜面有光。",
       "苻南华和蔡金简两人极有默契，一路上都没有怎么说话，一直到了苻南华的私人府邸，苻南华在大厅落座，拍了拍腰间那块父亲亲自赐下的崭新玉佩，望向那位曾经在小巷被少年以瓷片捅碎喉咙的仙子，说道：“我们现在可以打开天窗说亮话了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华与蔡金简并肩而行，走过符城大门，带着这位小有名气的蔡仙子，一路走向他在符城的辉煌私宅。 在骊珠洞天寻觅机缘之时，苻南华还只是众多未来家主候选人之一，所以精于生意的苻南华，对当时就矮他一头的蔡金简十分客气，可如今对他青眼相加的传道老祖，破关在即，又有与云林姜氏嫡女联姻的推波助澜，苻南华的身价水涨船高，已经不可同日而语。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "苻南华与蔡金简并肩而行，走过符城大门，带着这位小有名气的蔡仙子，一路走向他在符城的辉煌私宅。 在骊珠洞天寻觅机缘之时，苻南华还只是众多未来家主候选人之一，所以精于生意的苻南华，对当时就矮他一头的蔡金简十分客气，可如今对他青眼相加的传道老祖，破关在即，又有与云林姜氏嫡女联姻的推波助澜，苻南华的身价水涨船高，已经不可同日而语。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 16
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -1298,7 +1706,10 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华",
+          "蔡金简"
+        ],
         "sentence_indexes_in_segment": [
           1,
           2
@@ -1309,14 +1720,21 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 骊珠洞天对话",
+        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华与蔡金简在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
-        "description": "在骊珠洞天寻觅机缘之时，苻南华还只是众多未来家主候选人之一，所以精于生意的苻南华，对当时就矮他一头的蔡金简十分客气，可如今对他青眼相加的传道老祖，破关在即，又有与云林姜氏嫡女联姻的推波助澜，苻南华的身价水涨船高，已经不可同日而语。 所以在云霞山两位老祖看来，苻南华如此亲近蔡金简，绝不是当年一起在骊珠洞天结为短暂盟友可以解释，难道两人曾经有过一段露水姻缘？ 苻南华与蔡金简并肩而行，走过符城大门，带着这位小有名气的蔡仙子，一路走向他在符城的辉煌私宅。",
+        "participants": [
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "苻南华与蔡金简并肩而行，走过符城大门，带着这位小有名气的蔡仙子，一路走向他在符城的辉煌私宅。 在骊珠洞天寻觅机缘之时，苻南华还只是众多未来家主候选人之一，所以精于生意的苻南华，对当时就矮他一头的蔡金简十分客气，可如今对他青眼相加的传道老祖，破关在即，又有与云林姜氏嫡女联姻的推波助澜，苻南华的身价水涨船高，已经不可同日而语。 所以在云霞山两位老祖看来，苻南华如此亲近蔡金简，绝不是当年一起在骊珠洞天结为短暂盟友可以解释，难道两人曾经有过一段露水姻缘？",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在骊珠洞天推动苻南华与蔡金简之间的对话线。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1330,8 +1748,69 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "同行",
+        "context": "苻南华与蔡金简并肩而行，走过符城大门，带着这位小有名气的蔡仙子，一路走向他在符城的辉煌私宅。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华与蔡金简在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 254,
+        "segment_index": 16
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "同行",
+        "context": "所以在云霞山两位老祖看来，苻南华如此亲近蔡金简，绝不是当年一起在骊珠洞天结为短暂盟友可以解释，难道两人曾经有过一段露水姻缘？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华与蔡金简在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 16
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "对话",
+        "context": "苻南华和蔡金简两人极有默契，一路上都没有怎么说话，一直到了苻南华的私人府邸，苻南华在大厅落座，拍了拍腰间那块父亲亲自赐下的崭新玉佩，望向那位曾经在小巷被少年以瓷片捅碎喉咙的仙子，说道：“我们现在可以打开天窗说亮话了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华与蔡金简在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1351,7 +1830,35 @@
       "”",
       "蔡金简收敛笑意，“如果我说你是以小人之心度君子之腹，你信吗？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简看似嫣然一笑，但是笑容其实了无生气，“说什么？ 蔡金简收敛笑意，“如果我说你是以小人之心度君子之腹，你信吗？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华死死盯住这个本该身死道消于骊珠洞天的女子，“我不会问你如何活了过来，我只想知道，那个人为什么救你，救了你之后，他想要你做什么？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 17
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -1360,7 +1867,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1370,13 +1879,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 骊珠洞天剧情推进",
+        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 蔡金简与苻南华在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
-        "description": "苻南华死死盯住这个本该身死道消于骊珠洞天的女子，“我不会问你如何活了过来，我只想知道，那个人为什么救你，救了你之后，他想要你做什么？ ” 蔡金简看似嫣然一笑，但是笑容其实了无生气，“说什么？",
+        "participants": [
+          "蔡金简",
+          "苻南华"
+        ],
+        "description": "蔡金简看似嫣然一笑，但是笑容其实了无生气，“说什么？ 苻南华死死盯住这个本该身死道消于骊珠洞天的女子，“我不会问你如何活了过来，我只想知道，那个人为什么救你，救了你之后，他想要你做什么？ 蔡金简收敛笑意，“如果我说你是以小人之心度君子之腹，你信吗？",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键剧情推进场景。",
+        "significance": "在骊珠洞天推动蔡金简与苻南华之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段17",
         "sentence_indexes_in_segment": [
@@ -1392,7 +1904,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1415,6 +1927,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华冷笑道：“君子？ 蔡金简神色平淡，“苻南华，咬文嚼字就没有意思了吧？",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -1424,6 +1950,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           2
+        ],
+        "juan_index": 254,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简神色平淡，“苻南华，咬文嚼字就没有意思了吧？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 254,
         "segment_index": 18
@@ -1437,9 +1976,11 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "苻南华",
+          "蔡金简"
         ],
-        "description": "如果他齐静春只是一位君子，那么儒家圣人还不得占据四座天下？ ” 苻南华冷笑道：“君子？",
+        "description": "苻南华冷笑道：“君子？ 如果他齐静春只是一位君子，那么儒家圣人还不得占据四座天下？ 蔡金简神色平淡，“苻南华，咬文嚼字就没有意思了吧？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1457,7 +1998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,6 +2019,36 @@
       "苻南华扯了扯嘴角，“人都死了，还是被各路天上仙人联手镇压致死，儒教那座文庙选择袖手旁观，齐静春明显再无翻身的半点机会，那么圣人又如何，先生又如何？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华深呼吸一口气，“那我先坦诚相见，你倒在血泊之后，我也阴沟里翻船，差点栽在那个破地方，姓齐的当时从那个泥腿子贱胚手底下，救下了我……” 苻南华突然察觉到蔡金简嘴角笑意的玩味，立即停下言语，改了口风，“他齐静春拦下陈平安后，跟我说了一番话，要我离开骊珠洞天，但是随手赠予我一份不在法宝器物上的机缘，具体为何，就不与你说了，但是很奇怪，齐静春从头到尾，没有要求要我发誓将来放过陈平安，不找他的麻烦，或是什么冤家宜解不宜结的劝说言语。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "苻南华突然察觉到蔡金简嘴角笑意的玩味，立即停下言语，改了口风，“他齐静春拦下陈平安后，跟我说了一番话，要我离开骊珠洞天，但是随手赠予我一份不在法宝器物上的机缘，具体为何，就不与你说了，但是很奇怪，齐静春从头到尾，没有要求要我发誓将来放过陈平安，不找他的麻烦，或是什么冤家宜解不宜结的劝说言语。 蔡金简环顾四周，神情淡漠，最后望向苻南华，微笑道：“对待救命恩人和一位圣人，你难道不该以姓氏加先生作为敬称吗？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 19
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1517,6 +2088,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻南华",
+          "蔡金简",
           "齐静春",
           "陈平安"
         ],
@@ -1534,13 +2107,18 @@
         "location": "骊珠洞天",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "苻南华",
+          "蔡金简"
         ],
-        "description": "苻南华突然察觉到蔡金简嘴角笑意的玩味，立即停下言语，改了口风，“他齐静春拦下陈平安后，跟我说了一番话，要我离开骊珠洞天，但是随手赠予我一份不在法宝器物上的机缘，具体为何，就不与你说了，但是很奇怪，齐静春从头到尾，没有要求要我发誓将来放过陈平安，不找他的麻烦，或是什么冤家宜解不宜结的劝说言语。 苻南华扯了扯嘴角，“人都死了，还是被各路天上仙人联手镇压致死，儒教那座文庙选择袖手旁观，齐静春明显再无翻身的半点机会，那么圣人又如何，先生又如何？ 苻南华深呼吸一口气，“那我先坦诚相见，你倒在血泊之后，我也阴沟里翻船，差点栽在那个破地方，姓齐的当时从那个泥腿子贱胚手底下，救下了我……”",
+        "description": "苻南华深呼吸一口气，“那我先坦诚相见，你倒在血泊之后，我也阴沟里翻船，差点栽在那个破地方，姓齐的当时从那个泥腿子贱胚手底下，救下了我……” 苻南华突然察觉到蔡金简嘴角笑意的玩味，立即停下言语，改了口风，“他齐静春拦下陈平安后，跟我说了一番话，要我离开骊珠洞天，但是随手赠予我一份不在法宝器物上的机缘，具体为何，就不与你说了，但是很奇怪，齐静春从头到尾，没有要求要我发誓将来放过陈平安，不找他的麻烦，或是什么冤家宜解不宜结的劝说言语。 蔡金简环顾四周，神情淡漠，最后望向苻南华，微笑道：“对待救命恩人和一位圣人，你难道不该以姓氏加先生作为敬称吗？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段19",
         "sentence_indexes_in_segment": [
@@ -1559,7 +2137,47 @@
       {
         "time": null,
         "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "蔡金简"
+        ],
+        "action": "指点",
+        "context": "苻南华突然察觉到蔡金简嘴角笑意的玩味，立即停下言语，改了口风，“他齐静春拦下陈平安后，跟我说了一番话，要我离开骊珠洞天，但是随手赠予我一份不在法宝器物上的机缘，具体为何，就不与你说了，但是很奇怪，齐静春从头到尾，没有要求要我发誓将来放过陈平安，不找他的麻烦，或是什么冤家宜解不宜结的劝说言语。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 254,
+        "segment_index": 19
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
           "齐静春"
+        ],
+        "action": "指点",
+        "context": "苻南华突然察觉到蔡金简嘴角笑意的玩味，立即停下言语，改了口风，“他齐静春拦下陈平安后，跟我说了一番话，要我离开骊珠洞天，但是随手赠予我一份不在法宝器物上的机缘，具体为何，就不与你说了，但是很奇怪，齐静春从头到尾，没有要求要我发誓将来放过陈平安，不找他的麻烦，或是什么冤家宜解不宜结的劝说言语。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 254,
+        "segment_index": 19
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
         ],
         "to_roles": [
           "陈平安"
@@ -1575,9 +2193,29 @@
         ],
         "juan_index": 254,
         "segment_index": 19
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "蔡金简环顾四周，神情淡漠，最后望向苻南华，微笑道：“对待救命恩人和一位圣人，你难道不该以姓氏加先生作为敬称吗？",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1612,6 +2250,32 @@
         ],
         "juan_index": 254,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简一笑置之，感慨了一句题外话，“我们云霞山的几位老祖的修道之地，都没有这座府邸来得灵气充沛，苻南华，你们苻家真是有钱。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "蔡金简一笑置之，感慨了一句题外话，“我们云霞山的几位老祖的修道之地，都没有这座府邸来得灵气充沛，苻南华，你们苻家真是有钱。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 20
       }
     ],
     "locations": [],
@@ -1622,9 +2286,11 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "蔡金简",
+          "苻南华"
         ],
-        "description": "齐静春又如何？ ” 蔡金简一笑置之，感慨了一句题外话，“我们云霞山的几位老祖的修道之地，都没有这座府邸来得灵气充沛，苻南华，你们苻家真是有钱。",
+        "description": "齐静春又如何？ 蔡金简一笑置之，感慨了一句题外话，“我们云霞山的几位老祖的修道之地，都没有这座府邸来得灵气充沛，苻南华，你们苻家真是有钱。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1642,7 +2308,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1662,7 +2328,37 @@
       "”",
       "苻南华叹息一声，“既然你这么聪明，当初我们也曾在骊珠洞天共患难一场，为何不能合则两利？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华流露出一丝不耐烦，眯眼道：“蔡金简，别给脸不要脸，我即将拥有一艘吞宝鲸渡船，若是不收你云霞山的云根石，你们云霞山的山门收入就会骤减两成，你再被那位老祖器重看好，可是你先赔了一袋子金精铜钱在前，如果再有影响云霞山攫取暴利的途径在后，你自己掂量掂量！ 蔡金简笑了起来，“行了，苻南华你就别威胁我了，老龙城苻家到底如何有钱，我是不知道，可苻家几千年来是如何做买卖的，我一清二楚，别说你拥有一艘吞宝鲸，就是你真当上了城主，也不会在这种祖宗规矩上动手脚。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "苻南华流露出一丝不耐烦，眯眼道：“蔡金简，别给脸不要脸，我即将拥有一艘吞宝鲸渡船，若是不收你云霞山的云根石，你们云霞山的山门收入就会骤减两成，你再被那位老祖器重看好，可是你先赔了一袋子金精铜钱在前，如果再有影响云霞山攫取暴利的途径在后，你自己掂量掂量！ 蔡金简笑了起来，“行了，苻南华你就别威胁我了，老龙城苻家到底如何有钱，我是不知道，可苻家几千年来是如何做买卖的，我一清二楚，别说你拥有一艘吞宝鲸，就是你真当上了城主，也不会在这种祖宗规矩上动手脚。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1671,7 +2367,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简",
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1685,7 +2384,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1695,13 +2396,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 老龙城剧情推进",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "蔡金简笑了起来，“行了，苻南华你就别威胁我了，老龙城苻家到底如何有钱，我是不知道，可苻家几千年来是如何做买卖的，我一清二楚，别说你拥有一艘吞宝鲸，就是你真当上了城主，也不会在这种祖宗规矩上动手脚。 苻南华叹息一声，“既然你这么聪明，当初我们也曾在骊珠洞天共患难一场，为何不能合则两利？ 无根浮萍的山野散修对此眼红嫉妒，合情合理。",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "苻南华流露出一丝不耐烦，眯眼道：“蔡金简，别给脸不要脸，我即将拥有一艘吞宝鲸渡船，若是不收你云霞山的云根石，你们云霞山的山门收入就会骤减两成，你再被那位老祖器重看好，可是你先赔了一袋子金精铜钱在前，如果再有影响云霞山攫取暴利的途径在后，你自己掂量掂量！ 蔡金简笑了起来，“行了，苻南华你就别威胁我了，老龙城苻家到底如何有钱，我是不知道，可苻家几千年来是如何做买卖的，我一清二楚，别说你拥有一艘吞宝鲸，就是你真当上了城主，也不会在这种祖宗规矩上动手脚。 苻南华叹息一声，“既然你这么聪明，当初我们也曾在骊珠洞天共患难一场，为何不能合则两利？",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段21",
         "sentence_indexes_in_segment": [
@@ -1717,7 +2422,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1737,7 +2442,35 @@
       "说到最后，苻南华情不自禁地站起身，言语激昂，气势勃发，如同一位指点江山的未来君主。",
       "蔡金简微微抬头，看着这位踌躇满志的少城主，眼神清澈，她并没有太多情绪起伏。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "在这之后，我不但会争取城主之位，还能够帮你往上行走，试想一下，我只需要稍稍提高吞宝鲸收购云根石的价格，对外放出风声，是因为你蔡金简的功劳，云霞山岂敢怠慢你这位招财童子？ 蔡金简微微抬头，看着这位踌躇满志的少城主，眼神清澈，她并没有太多情绪起伏。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "说到最后，苻南华情不自禁地站起身，言语激昂，气势勃发，如同一位指点江山的未来君主。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 22
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1756,14 +2489,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 老龙城指点",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "何况你自身天赋就很好，又有押宝在你一人身上的老祖恩师，作为山门靠山，再有老龙城这么一个强力外援，云霞山山主之位，最迟百年，必然是你的囊中之物！ 你我二人，以诚相交，彻底消弭那场祸事的后遗症？ 在这之后，我不但会争取城主之位，还能够帮你往上行走，试想一下，我只需要稍稍提高吞宝鲸收购云根石的价格，对外放出风声，是因为你蔡金简的功劳，云霞山岂敢怠慢你这位招财童子？",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "在这之后，我不但会争取城主之位，还能够帮你往上行走，试想一下，我只需要稍稍提高吞宝鲸收购云根石的价格，对外放出风声，是因为你蔡金简的功劳，云霞山岂敢怠慢你这位招财童子？ 何况你自身天赋就很好，又有押宝在你一人身上的老祖恩师，作为山门靠山，再有老龙城这么一个强力外援，云霞山山主之位，最迟百年，必然是你的囊中之物！ 说到最后，苻南华情不自禁地站起身，言语激昂，气势勃发，如同一位指点江山的未来君主。",
         "background": "",
-        "significance": "对应老龙城相关的关键指点场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -1777,8 +2516,34 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.046707",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "指点",
+        "context": "你我二人，以诚相交，彻底消弭那场祸事的后遗症？ 在这之后，我不但会争取城主之位，还能够帮你往上行走，试想一下，我只需要稍稍提高吞宝鲸收购云根石的价格，对外放出风声，是因为你蔡金简的功劳，云霞山岂敢怠慢你这位招财童子？ 何况你自身天赋就很好，又有押宝在你一人身上的老祖恩师，作为山门靠山，再有老龙城这么一个强力外援，云霞山山主之位，最迟百年，必然是你的囊中之物！ ” 说到最后，苻南华情不自禁地站起身，言语激昂，气势勃发，如同一位指点江山的未来君主。 蔡金简微微抬头，看着这位踌躇满志的少城主，眼神清澈，她并没有太多情绪起伏。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.279637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1799,6 +2564,35 @@
       "在临行之前，蔡金简壮起胆子，询问先生为何愿意救下自己这种人。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "不是苻南华说得不够真诚，所描绘的前景不够美妙，而是如今的蔡金简，跟当初那个负担山门重任、一肚子勾心斗角的蔡仙子，心境已经截然不同。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 254,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "不是苻南华说得不够真诚，所描绘的前景不够美妙，而是如今的蔡金简，跟当初那个负担山门重任、一肚子勾心斗角的蔡仙子，心境已经截然不同。 那位在骊珠洞天担任教书先生的儒家圣人，以莫大神通救了她后，在那座学塾内，有过一场如同长辈与晚辈的对话，就像只是在闲聊人生，蔡金简当初肉身依旧重伤不堪，远未痊愈，齐先生便只是将她的魂魄剥离开来，学塾内，光阴如溪水潺潺流淌，先生向她询问了许多洞天之外的事情，都是很琐碎的小事，山下市井的粮米价格如何，书本刊印之术，是不是更加简单便于流传，等等，蔡金简一开始还十分忐忑，到后来便放下心来，与齐先生一问一答，有些她答不上来，有些她可以回答，那位先生始终面带微笑，偶尔蔡金简也会询问一些连她师父都束手无策的修行症结，先生便会三言两语，一一点透。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 23
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1825,6 +2619,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "蔡金简",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -1842,12 +2637,15 @@
         "location": "骊珠洞天",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
-        "description": "那位在骊珠洞天担任教书先生的儒家圣人，以莫大神通救了她后，在那座学塾内，有过一场如同长辈与晚辈的对话，就像只是在闲聊人生，蔡金简当初肉身依旧重伤不堪，远未痊愈，齐先生便只是将她的魂魄剥离开来，学塾内，光阴如溪水潺潺流淌，先生向她询问了许多洞天之外的事情，都是很琐碎的小事，山下市井的粮米价格如何，书本刊印之术，是不是更加简单便于流传，等等，蔡金简一开始还十分忐忑，到后来便放下心来，与齐先生一问一答，有些她答不上来，有些她可以回答，那位先生始终面带微笑，偶尔蔡金简也会询问一些连她师父都束手无策的修行症结，先生便会三言两语，一一点透。 最后齐先生还向她推荐一些圣贤经典，说是山上修行，修力当然不可或缺，神通术法，自然多多益善，能够由杂入精是更好，可修心一样很重要，读那些书上道理，未必是要她去做圣人，可如人之心境即心田，需要有源头活水来，庄稼才能繁茂丰收，修道才算是真正修长生…… 最终离开骊珠洞天，蔡金简还是那个志向高远的蔡金简，可也不再是那个觉得修行只为修行的云霞山仙子。",
+        "description": "不是苻南华说得不够真诚，所描绘的前景不够美妙，而是如今的蔡金简，跟当初那个负担山门重任、一肚子勾心斗角的蔡仙子，心境已经截然不同。 那位在骊珠洞天担任教书先生的儒家圣人，以莫大神通救了她后，在那座学塾内，有过一场如同长辈与晚辈的对话，就像只是在闲聊人生，蔡金简当初肉身依旧重伤不堪，远未痊愈，齐先生便只是将她的魂魄剥离开来，学塾内，光阴如溪水潺潺流淌，先生向她询问了许多洞天之外的事情，都是很琐碎的小事，山下市井的粮米价格如何，书本刊印之术，是不是更加简单便于流传，等等，蔡金简一开始还十分忐忑，到后来便放下心来，与齐先生一问一答，有些她答不上来，有些她可以回答，那位先生始终面带微笑，偶尔蔡金简也会询问一些连她师父都束手无策的修行症结，先生便会三言两语，一一点透。 最后齐先生还向她推荐一些圣贤经典，说是山上修行，修力当然不可或缺，神通术法，自然多多益善，能够由杂入精是更好，可修心一样很重要，读那些书上道理，未必是要她去做圣人，可如人之心境即心田，需要有源头活水来，庄稼才能繁茂丰收，修道才算是真正修长生……",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1861,8 +2659,29 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "师承",
+        "context": "那位在骊珠洞天担任教书先生的儒家圣人，以莫大神通救了她后，在那座学塾内，有过一场如同长辈与晚辈的对话，就像只是在闲聊人生，蔡金简当初肉身依旧重伤不堪，远未痊愈，齐先生便只是将她的魂魄剥离开来，学塾内，光阴如溪水潺潺流淌，先生向她询问了许多洞天之外的事情，都是很琐碎的小事，山下市井的粮米价格如何，书本刊印之术，是不是更加简单便于流传，等等，蔡金简一开始还十分忐忑，到后来便放下心来，与齐先生一问一答，有些她答不上来，有些她可以回答，那位先生始终面带微笑，偶尔蔡金简也会询问一些连她师父都束手无策的修行症结，先生便会三言两语，一一点透。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.280641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1897,6 +2716,19 @@
         ],
         "juan_index": 254,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简又问为何愿意教自己这种人圣贤道理。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 254,
+        "segment_index": 24
       }
     ],
     "locations": [],
@@ -1907,9 +2739,10 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
-        "description": "那位齐先生坦诚笑言，“救你，不合此方天地规矩，却是我齐静春的道理。 ” 蔡金简又问为何愿意教自己这种人圣贤道理。",
+        "description": "那位齐先生坦诚笑言，“救你，不合此方天地规矩，却是我齐静春的道理。 蔡金简又问为何愿意教自己这种人圣贤道理。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1927,7 +2760,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.280641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1948,6 +2781,21 @@
       "这才有了她这次拜访老龙城的露面机会。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简回到云霞山，哪怕修行难题困惑已无，仍是不再急于攀升境界，只是将齐先生推荐的书籍看了一遍，将那些先生的话语，想了一遍又一遍。 外人觉得她是荒废修行，蔡金简自己知道不是。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -2004,12 +2852,15 @@
         "location": "宝瓶洲",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
-        "description": "蔡金简回到云霞山，哪怕修行难题困惑已无，仍是不再急于攀升境界，只是将齐先生推荐的书籍看了一遍，将那些先生的话语，想了一遍又一遍。 后来她听师父私底下说，那位齐先生死了，在宝瓶洲北方版图的上空，一人迎敌数位天上仙人，最终灰飞烟灭，世间再无齐静春。 这才有了她这次拜访老龙城的露面机会。",
+        "description": "蔡金简回到云霞山，哪怕修行难题困惑已无，仍是不再急于攀升境界，只是将齐先生推荐的书籍看了一遍，将那些先生的话语，想了一遍又一遍。 外人觉得她是荒废修行，蔡金简自己知道不是。 后来她听师父私底下说，那位齐先生死了，在宝瓶洲北方版图的上空，一人迎敌数位天上仙人，最终灰飞烟灭，世间再无齐静春。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -2023,8 +2874,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "会见",
+        "context": "蔡金简回到云霞山，哪怕修行难题困惑已无，仍是不再急于攀升境界，只是将齐先生推荐的书籍看了一遍，将那些先生的话语，想了一遍又一遍。 外人觉得她是荒废修行，蔡金简自己知道不是。 后来她听师父私底下说，那位齐先生死了，在宝瓶洲北方版图的上空，一人迎敌数位天上仙人，最终灰飞烟灭，世间再无齐静春。 蔡金简没有如何悲痛欲绝，只是觉得有些失落。 在那之后，就开始放下书本重新修行，很快就成功破开一境，并且故意压制境界，免得太过惊世骇俗。 这才有了她这次拜访老龙城的露面机会。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.280641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2059,6 +2936,19 @@
         ],
         "juan_index": 254,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简想明白了许多以前想都不会去想的事情，心境通透，扫去遍地尘埃，而且云霞山最重观想，所以才能破境迅猛。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 26
       }
     ],
     "locations": [
@@ -2084,9 +2974,10 @@
         "location": "泥瓶巷",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "蔡金简"
         ],
-        "description": "种种福祸相依，一切源于那场泥瓶巷的狭路相逢。 在那之后，齐先生为自己传道解惑，则很纯粹，大概是觉得她还有的救，所以那位先生愿意教。 归根结底，在于当初在修行路上误入歧途的自己，祸害惨了那个少年。",
+        "description": "种种福祸相依，一切源于那场泥瓶巷的狭路相逢。 在那之后，齐先生为自己传道解惑，则很纯粹，大概是觉得她还有的救，所以那位先生愿意教。 蔡金简想明白了许多以前想都不会去想的事情，心境通透，扫去遍地尘埃，而且云霞山最重观想，所以才能破境迅猛。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -2104,7 +2995,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.280641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2124,7 +3015,35 @@
       "”",
       "苻南华有点措手不及，怀疑其中是否有诈，或是另有玄机，一时间反而没有先前那么胸有成竹。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "身处老龙城这座未来城主的龙兴府邸，蔡金简没有挥袖离去，突然会心笑道：“苻南华，我们第一次结盟，结局惨淡，今天第二次结盟，你我再大赌一场？",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 254,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "身处老龙城这座未来城主的龙兴府邸，蔡金简没有挥袖离去，突然会心笑道：“苻南华，我们第一次结盟，结局惨淡，今天第二次结盟，你我再大赌一场？ 苻南华有点措手不及，怀疑其中是否有诈，或是另有玄机，一时间反而没有先前那么胸有成竹。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 27
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -2133,7 +3052,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简",
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           0,
           2
@@ -2144,14 +3066,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 老龙城对话",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "身处老龙城这座未来城主的龙兴府邸，蔡金简没有挥袖离去，突然会心笑道：“苻南华，我们第一次结盟，结局惨淡，今天第二次结盟，你我再大赌一场？ 我现在就可以承诺，只要我手握云霞山大权，所有云根石，不再分卖给老龙城其余五大姓，全部给你苻家！ 我赌你能够穿上老龙袍，你赌我能够当上云霞山山主，如何？",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "身处老龙城这座未来城主的龙兴府邸，蔡金简没有挥袖离去，突然会心笑道：“苻南华，我们第一次结盟，结局惨淡，今天第二次结盟，你我再大赌一场？ 我现在就可以承诺，只要我手握云霞山大权，所有云根石，不再分卖给老龙城其余五大姓，全部给你苻家！ 苻南华有点措手不及，怀疑其中是否有诈，或是另有玄机，一时间反而没有先前那么胸有成竹。",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -2165,8 +3093,29 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "对话",
+        "context": "身处老龙城这座未来城主的龙兴府邸，蔡金简没有挥袖离去，突然会心笑道：“苻南华，我们第一次结盟，结局惨淡，今天第二次结盟，你我再大赌一场？",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 254,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.280641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2186,7 +3135,40 @@
       "一位身穿龙袍的高大男子，积威深重，凭空出现在大堂中，站在龙绕梁旁，仰头端详着那颗巨龙所衔宝珠，男子似乎想要通过云霞山蔡金简的视线，看到更深远的地方。",
       "他来得无声无息，以至于苻南华根本没有察觉，等到苻南华意识到的时候，龙袍男人收回视线，望向这位嫡子，问道：“为什么不答应她？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "骊珠洞天的境遇，虽然没有成为修行路上的魔障心结，但是不梳理清楚脉络，赶紧下定决心如何处置那个泥瓶巷的泥腿子少年，苻南华心里头很不痛快。 苻南华最后也没有答应或是拒绝蔡金简，只说让她稍等几天。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "蔡金简已经站起身，来到一根龙绕梁附近，饶有兴致地欣赏起那颗雪白宝珠。 苻南华最后也没有答应或是拒绝蔡金简，只说让她稍等几天。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 28
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -2195,7 +3177,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -2209,7 +3193,9 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -2223,7 +3209,10 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "蔡金简",
+          "苻南华"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -2233,14 +3222,20 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 骊珠洞天对话",
+        "name": "老龙城暗流角力",
         "time": null,
-        "location": "骊珠洞天",
-        "participants": [],
-        "description": "骊珠洞天的境遇，虽然没有成为修行路上的魔障心结，但是不梳理清楚脉络，赶紧下定决心如何处置那个泥瓶巷的泥腿子少年，苻南华心里头很不痛快。 在蔡金简离开这座私邸之后，苻南华摘下那枚之余老龙城意义非凡的玉佩，握在手心，在大堂上转圈踱步，权衡利弊。 蔡金简已经站起身，来到一根龙绕梁附近，饶有兴致地欣赏起那颗雪白宝珠。",
+        "location": "老龙城",
+        "participants": [
+          "谢谢",
+          "苻南华",
+          "蔡金简"
+        ],
+        "description": "骊珠洞天的境遇，虽然没有成为修行路上的魔障心结，但是不梳理清楚脉络，赶紧下定决心如何处置那个泥瓶巷的泥腿子少年，苻南华心里头很不痛快。 蔡金简已经站起身，来到一根龙绕梁附近，饶有兴致地欣赏起那颗雪白宝珠。 苻南华最后也没有答应或是拒绝蔡金简，只说让她稍等几天。",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -2254,8 +3249,29 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "蔡金简"
+        ],
+        "to_roles": [
+          "苻南华"
+        ],
+        "action": "别离",
+        "context": "在蔡金简离开这座私邸之后，苻南华摘下那枚之余老龙城意义非凡的玉佩，握在手心，在大堂上转圈踱步，权衡利弊。",
+        "result": null,
+        "event_name": "老龙城暗流角力",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.280641",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2276,6 +3292,32 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华回答道：“总觉得心意难平。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 254,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "正是老龙城城主苻畦的龙袍男人，随口道：“很简单，要么杀了陈平安，强行压下心湖涟漪，以修力之法，竭力斩断一位儒家圣人带给你的全部影响。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 29
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2299,6 +3341,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "苻畦",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -2311,15 +3354,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 陈平安在老龙城对话",
+        "name": "老龙城暗流角力",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "谢谢",
+          "苻南华",
+          "苻畦",
           "陈平安"
         ],
-        "description": "正是老龙城城主苻畦的龙袍男人，随口道：“很简单，要么杀了陈平安，强行压下心湖涟漪，以修力之法，竭力斩断一位儒家圣人带给你的全部影响。 要么顺势而为，些许难以抹去的心结疙瘩，在别处是越往高处走，修道瑕疵越大，可在老龙城苻家，本就是结成心湖珍珠的秘法之一。 ”",
+        "description": "苻南华回答道：“总觉得心意难平。 正是老龙城城主苻畦的龙袍男人，随口道：“很简单，要么杀了陈平安，强行压下心湖涟漪，以修力之法，竭力斩断一位儒家圣人带给你的全部影响。 要么顺势而为，些许难以抹去的心结疙瘩，在别处是越往高处走，修道瑕疵越大，可在老龙城苻家，本就是结成心湖珍珠的秘法之一。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "强化老龙城线中的权势试探与隐性角力。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段29",
         "sentence_indexes_in_segment": [
@@ -2335,7 +3381,174 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.281644",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "254-30-0": {
+    "juan_index": 254,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十三章 有人送剑有人等",
+    "source_sentences": [
+      "男人讥笑道：“就这么点难题，你也需要如此纠结？",
+      "看来我身上这件老龙袍，你这辈子是不打算穿了？",
+      "”",
+      "苻南华大汗淋漓。",
+      "男人摇摇头，“一个死人，一个少年，就让你如此不痛快，我苻畦生一个好儿子。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华大汗淋漓。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "男人摇摇头，“一个死人，一个少年，就让你如此不痛快，我苻畦生一个好儿子。",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 254,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华与苻畦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苻南华",
+          "苻畦"
+        ],
+        "description": "苻南华大汗淋漓。 男人摇摇头，“一个死人，一个少年，就让你如此不痛快，我苻畦生一个好儿子。 男人讥笑道：“就这么点难题，你也需要如此纠结？",
+        "background": "",
+        "significance": "推动苻南华与苻畦之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 30
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "对话",
+        "context": "男人讥笑道：“就这么点难题，你也需要如此纠结？ 看来我身上这件老龙袍，你这辈子是不打算穿了？ ” 苻南华大汗淋漓。 男人摇摇头，“一个死人，一个少年，就让你如此不痛快，我苻畦生一个好儿子。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华与苻畦对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.281644",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "254-31-0": {
+    "juan_index": 254,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十三章 有人送剑有人等",
+    "source_sentences": [
+      "苻南华脸色惨白。",
+      "男人扯了扯嘴角，“那你知不知道，我早年已经身穿老龙袍，为了苻家二字，跪在地上给人苦苦哀求的时候，把额头白骨都磕了出来，如今有无心结？",
+      "”",
+      "苻南华头脑一片空白，默然流泪却浑然不知。",
+      "男人嗤笑一声，消逝不见。",
+      "如果有人能够过了倒悬山那道奇妙禁制，成功进入两座天地的接壤处，便都会感慨大有奇观。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "苻南华脸色惨白。 苻南华头脑一片空白，默然流泪却浑然不知。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 254,
+        "segment_index": 31
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 苻南华剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苻南华"
+        ],
+        "description": "苻南华脸色惨白。 苻南华头脑一片空白，默然流泪却浑然不知。 男人扯了扯嘴角，“那你知不知道，我早年已经身穿老龙袍，为了苻家二字，跪在地上给人苦苦哀求的时候，把额头白骨都磕了出来，如今有无心结？",
+        "background": "",
+        "significance": "对应苻南华在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十三章 有人送剑有人等 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 254,
+        "segment_index": 31
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.281644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2396,7 +3609,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.281644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2458,7 +3671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.281644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2519,7 +3732,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.281644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2599,7 +3812,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.047710",
+    "extracted_at": "2026-03-25T01:03:31.281644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2660,7 +3873,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2722,7 +3935,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2783,7 +3996,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2882,7 +4095,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2944,7 +4157,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3006,7 +4219,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3111,7 +4324,7 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3174,7 +4387,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.282648",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3237,7 +4450,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3300,7 +4513,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3364,7 +4577,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3428,7 +4641,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.048714",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3506,7 +4719,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3571,7 +4784,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3711,7 +4924,7 @@
         "segment_index": 56
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3774,7 +4987,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.049717",
+    "extracted_at": "2026-03-25T01:03:31.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

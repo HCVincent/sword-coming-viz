@@ -133,7 +133,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.504686",
+    "extracted_at": "2026-03-25T01:03:30.525349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -236,7 +236,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.504686",
+    "extracted_at": "2026-03-25T01:03:30.525349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -370,7 +370,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.504686",
+    "extracted_at": "2026-03-25T01:03:30.525349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -421,6 +421,19 @@
         ],
         "juan_index": 75,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "大骊武人辈出，以藩王宋长镜领衔，五境之上的高手数量，冠绝东宝瓶洲。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 75,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -435,7 +448,8 @@
         "coordinates": null,
         "related_entities": [
           "阮邛",
-          "大骊皇帝"
+          "大骊皇帝",
+          "宋长镜"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -452,7 +466,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "宋长镜"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -490,9 +506,7 @@
         "description": "任何一座王朝，能够拥有阮邛这样的大修士帮忙坐镇山河，都是莫大的幸事。 尤其阮邛的言下之意，是他选择在此扎根，而不仅仅是类似客卿、供奉、国师这样的身份依附大骊，因此不是那种合则聚、不合则散的形势，阮邛是真正在大骊国土上开枝散叶，无形中与王朝气运戚戚相关，别说是一位小小督造官，就是大骊皇帝坐在这里，也会心生欣喜。 大骊武人辈出，以藩王宋长镜领衔，五境之上的高手数量，冠绝东宝瓶洲。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -506,34 +520,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阮邛"
-        ],
-        "to_roles": [
-          "大骊皇帝"
-        ],
-        "action": "对话",
-        "context": "任何一座王朝，能够拥有阮邛这样的大修士帮忙坐镇山河，都是莫大的幸事。 尤其阮邛的言下之意，是他选择在此扎根，而不仅仅是类似客卿、供奉、国师这样的身份依附大骊，因此不是那种合则聚、不合则散的形势，阮邛是真正在大骊国土上开枝散叶，无形中与王朝气运戚戚相关，别说是一位小小督造官，就是大骊皇帝坐在这里，也会心生欣喜。 大骊武人辈出，以藩王宋长镜领衔，五境之上的高手数量，冠绝东宝瓶洲。 但是山上神仙实在少得可怜，与大骊强盛国力完全不符，这一直是大骊皇帝的心病。 阮邛笑道：“占山为王一事，不用着急，说句难听的，除去你们不愿拿出来的披云山，也没哪座山入得了我眼。 ”",
-        "result": null,
-        "event_name": "魏檗现身",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 75,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.504686",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.525349",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -683,7 +671,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -784,7 +772,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -910,7 +898,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -991,7 +979,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1095,7 +1083,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1160,7 +1148,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1293,7 +1281,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.526352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1369,7 +1357,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.527355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1490,7 +1478,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.505681",
+    "extracted_at": "2026-03-25T01:03:30.527355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1573,7 +1561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.527355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1690,7 +1678,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.527355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1803,7 +1791,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.527355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1953,7 +1941,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.527355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2053,7 +2041,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2211,7 +2199,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2355,7 +2343,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2457,7 +2445,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2584,7 +2572,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.506684",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2724,7 +2712,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.507688",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2832,7 +2820,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.507688",
+    "extracted_at": "2026-03-25T01:03:30.528358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2956,7 +2944,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.507688",
+    "extracted_at": "2026-03-25T01:03:30.529362",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

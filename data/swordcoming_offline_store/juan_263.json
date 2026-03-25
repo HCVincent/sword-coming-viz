@@ -71,7 +71,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -149,7 +149,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -169,7 +169,34 @@
       "是针对我们范家的手段，还是跟外乡客人起了纠纷？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "被誉为地仙境的十境剑修，只差一步就可以破开瓶颈，跻身上五境，由于剑修杀力太大，在此之前的整个中五境生涯，往往锋芒毕露，所以比起寻常十境元婴的陆地神仙，反而要更加“出世”，就像风雪庙魏晋，成为玉璞境剑仙之前，就彻底离开江湖，一直在闭生死关。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 263,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "马致以心声相问于那位桂姨，“桂夫人，是何方神圣出手了？",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 263,
+        "segment_index": 3
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -193,7 +220,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -203,14 +232,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 老龙城冲突",
+        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 魏晋与桂夫人在老龙城冲突",
         "time": null,
         "location": "老龙城",
-        "participants": [],
+        "participants": [
+          "魏晋",
+          "桂夫人"
+        ],
         "description": "而那位从老龙城悍然出手的剑修，哪怕一剑递出，跨海如此遥远，剑意之凝聚，几乎等同于马致的百丈出剑，这让马致如何不惊叹佩服？ 被誉为地仙境的十境剑修，只差一步就可以破开瓶颈，跻身上五境，由于剑修杀力太大，在此之前的整个中五境生涯，往往锋芒毕露，所以比起寻常十境元婴的陆地神仙，反而要更加“出世”，就像风雪庙魏晋，成为玉璞境剑仙之前，就彻底离开江湖，一直在闭生死关。 看来这位老龙城的老剑修，一定是被范家桂花岛上某人惹恼得厉害，否则绝不会冒着惹来天劫的风险，如此凌厉出剑。",
         "background": "",
-        "significance": "对应老龙城相关的关键冲突场景。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动魏晋与桂夫人之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -224,8 +258,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏晋"
+        ],
+        "to_roles": [
+          "桂夫人"
+        ],
+        "action": "冲突",
+        "context": "而那位从老龙城悍然出手的剑修，哪怕一剑递出，跨海如此遥远，剑意之凝聚，几乎等同于马致的百丈出剑，这让马致如何不惊叹佩服？ 被誉为地仙境的十境剑修，只差一步就可以破开瓶颈，跻身上五境，由于剑修杀力太大，在此之前的整个中五境生涯，往往锋芒毕露，所以比起寻常十境元婴的陆地神仙，反而要更加“出世”，就像风雪庙魏晋，成为玉璞境剑仙之前，就彻底离开江湖，一直在闭生死关。 看来这位老龙城的老剑修，一定是被范家桂花岛上某人惹恼得厉害，否则绝不会冒着惹来天劫的风险，如此凌厉出剑。 马致以心声相问于那位桂姨，“桂夫人，是何方神圣出手了？ 是针对我们范家的手段，还是跟外乡客人起了纠纷？ ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 魏晋与桂夫人在老龙城冲突",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 263,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -286,7 +346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -306,7 +366,21 @@
       "马致对此不以为意，只当是那位身份特殊的桂夫人，担心桂花岛本体会被殃及池鱼，需要她分心应对。",
       "马致眼见着少年还在立桩，便干脆收起了荫凉飞剑，坐在石桌旁，世间的洞天福地，总计十大洞天，三十六小洞天，七十二福地，为几座天下所共有，分三六九等，品秩高低有别，宝瓶洲神诰宗掌握的那块清潭福地，品秩就很低，而桐叶洲姜氏手中那块云窟福地，就极其不俗。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "马致对此不以为意，只当是那位身份特殊的桂夫人，担心桂花岛本体会被殃及池鱼，需要她分心应对。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 263,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -325,13 +399,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 宝瓶洲揭示",
+        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 桂夫人在宝瓶洲揭示",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "马致眼见着少年还在立桩，便干脆收起了荫凉飞剑，坐在石桌旁，世间的洞天福地，总计十大洞天，三十六小洞天，七十二福地，为几座天下所共有，分三六九等，品秩高低有别，宝瓶洲神诰宗掌握的那块清潭福地，品秩就很低，而桐叶洲姜氏手中那块云窟福地，就极其不俗。 马致突然惊讶道：“玉圭宗姜氏？ 可是那个手握云窟福地的姜氏？",
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "马致对此不以为意，只当是那位身份特殊的桂夫人，担心桂花岛本体会被殃及池鱼，需要她分心应对。 马致眼见着少年还在立桩，便干脆收起了荫凉飞剑，坐在石桌旁，世间的洞天福地，总计十大洞天，三十六小洞天，七十二福地，为几座天下所共有，分三六九等，品秩高低有别，宝瓶洲神诰宗掌握的那块清潭福地，品秩就很低，而桐叶洲姜氏手中那块云窟福地，就极其不俗。 马致突然惊讶道：“玉圭宗姜氏？",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键揭示场景。",
+        "significance": "对应桂夫人在叙事中的关键揭示节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 段5",
         "sentence_indexes_in_segment": [
@@ -347,7 +423,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.082086",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -411,7 +487,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.333841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -474,7 +550,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -535,7 +611,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -597,7 +673,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -617,7 +693,21 @@
       "而且苻家一向跟范家关系很好……”",
       "那位宫装妇人小心翼翼道：“会不会是桂夫人的缘故？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "那位宫装妇人小心翼翼道：“会不会是桂夫人的缘故？",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 263,
+        "segment_index": 10
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -636,13 +726,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 老龙城剧情推进",
+        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 桂夫人在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "姜北海思量片刻，“苻家向来不喜欢丁家，而丁家跟桐叶宗关系不错，丁家之前正是靠着那个家伙才能在老龙城屹立不倒，我们玉圭宗跟桐叶宗那是千年之久的死对头了，照理来说，敌人的敌人就是朋友，哪怕我们这次选择范家的桂花岛去往倒悬山，没有选择苻家的吞宝鲸 难道是某位苻家老祖，手持一件半仙兵，向我们示威？ ”",
+        "participants": [
+          "桂夫人"
+        ],
+        "description": "姜北海思量片刻，“苻家向来不喜欢丁家，而丁家跟桐叶宗关系不错，丁家之前正是靠着那个家伙才能在老龙城屹立不倒，我们玉圭宗跟桐叶宗那是千年之久的死对头了，照理来说，敌人的敌人就是朋友，哪怕我们这次选择范家的桂花岛去往倒悬山，没有选择苻家的吞宝鲸 那位宫装妇人小心翼翼道：“会不会是桂夫人的缘故？ 难道是某位苻家老祖，手持一件半仙兵，向我们示威？",
         "background": "",
-        "significance": "对应老龙城相关的关键剧情推进场景。",
+        "significance": "对应桂夫人在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 段10",
         "sentence_indexes_in_segment": [
@@ -658,7 +750,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -678,7 +770,35 @@
       "真当我们玉圭宗是吃素的？",
       "你信不信，我只要稍稍添油加醋一番，咱们玉圭宗那两位脾气火爆的老祖，马上就会杀到老龙城兴师问罪？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "姜北海压低嗓音，气笑道：“咱们又不是明着抢夺桂夫人？ 只是开诚布公谈买卖而已，若说桂花岛是苻畦的产业，桂夫人是那苻畦的姘头，那么有此风波，还勉强算过得去，这座桂花岛，是范家先祖当年凭借运气得来的，苻家为此出头？",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 263,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "苻畦",
+        "alias": [],
+        "original_description_in_book": "只是开诚布公谈买卖而已，若说桂花岛是苻畦的产业，桂夫人是那苻畦的姘头，那么有此风波，还勉强算过得去，这座桂花岛，是范家先祖当年凭借运气得来的，苻家为此出头？",
+        "description": "老龙城苻氏关键人物，承接家族线、海上城池线与大局布局。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 263,
+        "segment_index": 11
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -697,14 +817,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 老龙城对话",
+        "name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 桂夫人与苻畦在老龙城对话",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "你信不信，我只要稍稍添油加醋一番，咱们玉圭宗那两位脾气火爆的老祖，马上就会杀到老龙城兴师问罪？ 有可能是某位苻家老祖，心仪于她？ ”",
+        "participants": [
+          "桂夫人",
+          "苻畦"
+        ],
+        "description": "姜北海压低嗓音，气笑道：“咱们又不是明着抢夺桂夫人？ 只是开诚布公谈买卖而已，若说桂花岛是苻畦的产业，桂夫人是那苻畦的姘头，那么有此风波，还勉强算过得去，这座桂花岛，是范家先祖当年凭借运气得来的，苻家为此出头？ 你信不信，我只要稍稍添油加醋一番，咱们玉圭宗那两位脾气火爆的老祖，马上就会杀到老龙城兴师问罪？",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动桂夫人与苻畦之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -718,8 +843,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "桂夫人"
+        ],
+        "to_roles": [
+          "苻畦"
+        ],
+        "action": "对话",
+        "context": "有可能是某位苻家老祖，心仪于她？ ” 姜北海压低嗓音，气笑道：“咱们又不是明着抢夺桂夫人？ 只是开诚布公谈买卖而已，若说桂花岛是苻畦的产业，桂夫人是那苻畦的姘头，那么有此风波，还勉强算过得去，这座桂花岛，是范家先祖当年凭借运气得来的，苻家为此出头？ 真当我们玉圭宗是吃素的？ 你信不信，我只要稍稍添油加醋一番，咱们玉圭宗那两位脾气火爆的老祖，马上就会杀到老龙城兴师问罪？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十二章 一叶扁舟,翩翩少年 · 桂夫人与苻畦在老龙城对话",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 263,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -780,7 +931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -841,7 +992,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.334845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -918,7 +1069,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -985,7 +1136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1199,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.083089",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1115,7 +1266,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1198,7 +1349,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1279,7 +1430,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1342,7 +1493,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.335848",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1438,7 +1589,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1501,7 +1652,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1563,7 +1714,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1626,7 +1777,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1689,7 +1840,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1771,7 +1922,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1835,7 +1986,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.084093",
+    "extracted_at": "2026-03-25T01:03:31.336852",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1897,7 +2048,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1959,7 +2110,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2021,7 +2172,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2083,7 +2234,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2161,7 +2312,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2206,6 +2357,19 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0,
+          2
+        ],
+        "juan_index": 263,
+        "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "陈平安看了眼手中那杆依旧保持翠绿颜色的竹篙，想了想，盘腿而坐，将竹篙横放在膝盖上，以手指使劲抹去上边那些不合《丹书真迹》的符箓文字，然后凭借记忆，陈平安掏出那支李希圣赠送的毛笔小雪锥，呵了一口气，润笔之后，毫尖朱红，如染浓墨，陈平安笑了笑，将竹篙放在地上左侧，左撇子少年屏气凝神，悬臂空中，手持笔管刻有“下笔有神”的毛笔，开始在竹篙上一笔一划篆刻《真迹》上所谓的“斩锁符”。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
           2
         ],
         "juan_index": 263,
@@ -2263,7 +2427,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2326,7 +2490,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.085096",
+    "extracted_at": "2026-03-25T01:03:31.337855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

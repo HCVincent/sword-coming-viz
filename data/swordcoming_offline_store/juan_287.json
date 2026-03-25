@@ -113,7 +113,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.152313",
+    "extracted_at": "2026-03-25T01:03:31.441212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -193,7 +193,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.441212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -276,7 +276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.442216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -370,7 +370,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.442216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -434,7 +434,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.442216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -497,7 +497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.442216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -559,7 +559,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.443219",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -624,7 +624,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.443219",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -676,6 +676,19 @@
         ],
         "juan_index": 287,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "因为有齐先生，有李希圣，还有彩衣国城隍爷沈温，哪怕是张山峰临时兴起的吟诗作对，都会让陈平安心生向往。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 287,
+        "segment_index": 10
       }
     ],
     "locations": [],
@@ -686,14 +699,13 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "可陈平安竟然第一次主动停下那套翻来覆去的枯燥剑架，坐在他面前，学陆台摆出跪坐饮茶的姿势，有些别扭，与陆台的潇洒风流，云泥之别，就像是庄稼地里的老农，学那老夫子坐而论道，只会摇头晃脑，装模作样。 陈平安摆出这幅姿态，陆台觉得挺好玩的，在中土神洲年轻一辈当中，被誉为斗茶无敌手的陆氏俊彦，斜眼打量着浑身不自在的陈平安，怎么看怎么有意思，给他这么一瞧，陈平安自然愈发拘谨。 对于真正的读书人，陈平安还是很向往的。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -707,34 +719,8 @@
         "segment_index": 10
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "这是陆台随口说说的，连他自己都觉得是一些废话。 可陈平安竟然第一次主动停下那套翻来覆去的枯燥剑架，坐在他面前，学陆台摆出跪坐饮茶的姿势，有些别扭，与陆台的潇洒风流，云泥之别，就像是庄稼地里的老农，学那老夫子坐而论道，只会摇头晃脑，装模作样。 陈平安摆出这幅姿态，陆台觉得挺好玩的，在中土神洲年轻一辈当中，被誉为斗茶无敌手的陆氏俊彦，斜眼打量着浑身不自在的陈平安，怎么看怎么有意思，给他这么一瞧，陈平安自然愈发拘谨。 对于真正的读书人，陈平安还是很向往的。 因为有齐先生，有李希圣，还有彩衣国城隍爷沈温，哪怕是张山峰临时兴起的吟诗作对，都会让陈平安心生向往。 陈平安克服心中的不适，问道：“你是说我的心性，走了极端？",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 287,
-        "segment_index": 10
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:31.443219",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -796,7 +782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.443219",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -834,6 +820,19 @@
       },
       {
         "entity_type": "person",
+        "name": "桂夫人",
+        "alias": [],
+        "original_description_in_book": "在桂花岛风波过后，陈平安遇上那位爱慕桂夫人数百年的老舟子，既是桂花岛的第一位撑船人，更是陆沉飞升之前的唯一仆人，一起泛海远游天地四方。",
+        "description": "老龙城线上重要女性角色，牵动城池权势、礼法和利益关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 287,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -851,18 +850,21 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与陆沉迁移",
+        "name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与桂夫人迁移",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "桂夫人",
           "陆沉"
         ],
         "description": "陆台稳定心境，开始屏气凝神，郑重其事递给陈平安一碗茶，“慢饮，等你喝完，我再说我的一点见解。 陈平安不知其中讲究，也只当是一场找人解惑的普通问答，就点点头，接过茶碗，喝了一小口。 在桂花岛风波过后，陈平安遇上那位爱慕桂夫人数百年的老舟子，既是桂花岛的第一位撑船人，更是陆沉飞升之前的唯一仆人，一起泛海远游天地四方。",
         "background": "",
-        "significance": "推动陈平安与陆沉之间的迁移关系。",
+        "significance": "推动陈平安与桂夫人之间的迁移关系。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 段12",
         "sentence_indexes_in_segment": [
@@ -884,12 +886,52 @@
           "陈平安"
         ],
         "to_roles": [
+          "桂夫人"
+        ],
+        "action": "同行",
+        "context": "在桂花岛风波过后，陈平安遇上那位爱慕桂夫人数百年的老舟子，既是桂花岛的第一位撑船人，更是陆沉飞升之前的唯一仆人，一起泛海远游天地四方。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与桂夫人迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 287,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "陆沉"
         ],
         "action": "同行",
         "context": "在桂花岛风波过后，陈平安遇上那位爱慕桂夫人数百年的老舟子，既是桂花岛的第一位撑船人，更是陆沉飞升之前的唯一仆人，一起泛海远游天地四方。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与陆沉迁移",
+        "event_name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与桂夫人迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 287,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "桂夫人"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "同行",
+        "context": "在桂花岛风波过后，陈平安遇上那位爱慕桂夫人数百年的老舟子，既是桂花岛的第一位撑船人，更是陆沉飞升之前的唯一仆人，一起泛海远游天地四方。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与桂夫人迁移",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -899,7 +941,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.153317",
+    "extracted_at": "2026-03-25T01:03:31.443219",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -963,7 +1005,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154320",
+    "extracted_at": "2026-03-25T01:03:31.444223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1069,7 +1111,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.154320",
+    "extracted_at": "2026-03-25T01:03:31.444223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1167,7 +1209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154320",
+    "extracted_at": "2026-03-25T01:03:31.444223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1229,7 +1271,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154320",
+    "extracted_at": "2026-03-25T01:03:31.444223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1312,7 +1354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154320",
+    "extracted_at": "2026-03-25T01:03:31.444223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1390,7 +1432,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.445227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1498,7 +1540,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.445227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1605,7 +1647,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.445227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1721,7 +1763,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.445227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1760,6 +1802,19 @@
       },
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "所以哪怕羡慕老龙城的李二，哪怕到了剑气长城后，陈平安肩头又多了一副担子，陈平安反而在心境上，比以前更加轻松。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 287,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "刘羡阳",
         "alias": [],
         "original_description_in_book": "从只敢买下五座山头就赶紧租借出去三座，想着要把所有家当一口气送给背井离乡的刘羡阳，新春前后，一口气送给粉裙女童和青衣小童，将近半数的上品蛇胆石……从一个“既然我留不住，那就赶紧送给在乎的人”，到如今的陈平安，已是翻天覆地。",
@@ -1781,6 +1836,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1797,6 +1853,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1809,16 +1866,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 陈平安与刘羡阳在老龙城剧情推进",
+        "name": "李二照面陈平安",
         "time": null,
-        "location": "老龙城",
+        "location": "龙泉",
         "participants": [
+          "李二",
           "陈平安",
           "刘羡阳"
         ],
         "description": "我陈平安要为自己做点什么。 所以哪怕羡慕老龙城的李二，哪怕到了剑气长城后，陈平安肩头又多了一副担子，陈平安反而在心境上，比以前更加轻松。 所以陈平安换下了草鞋，穿上了一袭长袍，想要成为剑仙，而且是能够在剑气长城上刻字的大剑仙。",
         "background": "",
-        "significance": "在老龙城推动陈平安与刘羡阳之间的剧情推进线。",
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十六章 对坐观人,自己知道 · 段22",
         "sentence_indexes_in_segment": [
@@ -1834,7 +1892,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1897,7 +1955,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1918,6 +1976,32 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "蔡金简",
+        "alias": [],
+        "original_description_in_book": "在家乡小镇，接连面对蔡金简、苻南华和搬山猿，陈平安认为自己差不多等于死了一次。",
+        "description": "山上势力人物，常出现在龙泉与大骊交错的关键场景里。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 287,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "在家乡小镇，接连面对蔡金简、苻南华和搬山猿，陈平安认为自己差不多等于死了一次。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 287,
+        "segment_index": 24
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1942,6 +2026,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "蔡金简",
+          "苻南华",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -1958,7 +2044,9 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "蔡金简",
+          "苻南华"
         ],
         "description": "在家乡小镇，接连面对蔡金简、苻南华和搬山猿，陈平安认为自己差不多等于死了一次。 陈平安缓缓放下已经喝完的茶碗，笑道：“不管你信不信，靠运气的好东西，我从来拿不住。 ”",
         "background": "",
@@ -1978,7 +2066,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2042,7 +2130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2105,7 +2193,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2167,7 +2255,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2230,7 +2318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.154833",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2294,7 +2382,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.446230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2360,7 +2448,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2425,7 +2513,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2519,7 +2607,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2574,7 +2662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.155825",
+    "extracted_at": "2026-03-25T01:03:31.447233",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

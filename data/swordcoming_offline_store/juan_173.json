@@ -16,6 +16,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "拂晓时分，李二一家三口早已备好行囊，在东华山山脚与一行人告别，比起第一次在家乡小镇跟亲人们的分开，李槐这次不再没心没肺，不会只觉得没了拘束，可以整天吃糖葫芦和鸡腿，而是多出几分愁绪，孩子到底是长大了。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 173,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "拂晓时分，李二一家三口早已备好行囊，在东华山山脚与一行人告别，比起第一次在家乡小镇跟亲人们的分开，李槐这次不再没心没肺，不会只觉得没了拘束，可以整天吃糖葫芦和鸡腿，而是多出几分愁绪，孩子到底是长大了。 妇人红着眼睛，不愿松开李槐的手，絮絮叨叨说着天冷加衣、吃饱喝足的琐碎言语，李槐便安安静静听着。",
@@ -56,11 +69,37 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "李宝瓶，林守一，于禄，谢谢，还有翩翩美少年的崔东山，都来送行。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 173,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "李宝瓶，林守一，于禄，谢谢，还有翩翩美少年的崔东山，都来送行。",
         "description": "老龙城线的重要女性角色，牵连家族、城池和海上局势。",
         "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 173,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "李宝瓶，林守一，于禄，谢谢，还有翩翩美少年的崔东山，都来送行。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
         "sentence_indexes_in_segment": [
           4
         ],
@@ -91,6 +130,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "李槐"
         ],
         "sentence_indexes_in_segment": [
@@ -102,19 +142,21 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "李宝瓶"
+          "于禄"
         ],
         "description": "就像那个任劳任怨的泥瓶巷少年，在上一座渡口，就已经远离众人而去。 拂晓时分，李二一家三口早已备好行囊，在东华山山脚与一行人告别，比起第一次在家乡小镇跟亲人们的分开，李槐这次不再没心没肺，不会只觉得没了拘束，可以整天吃糖葫芦和鸡腿，而是多出几分愁绪，孩子到底是长大了。 李宝瓶，林守一，于禄，谢谢，还有翩翩美少年的崔东山，都来送行。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十三章 逆旅 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -128,8 +170,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "别离",
+        "context": "拂晓时分，李二一家三口早已备好行囊，在东华山山脚与一行人告别，比起第一次在家乡小镇跟亲人们的分开，李槐这次不再没心没肺，不会只觉得没了拘束，可以整天吃糖葫芦和鸡腿，而是多出几分愁绪，孩子到底是长大了。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 173,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.914295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -150,6 +213,34 @@
       "李槐不愿在他们面前流露出悲伤情绪，强忍着忧愁，找了个有趣的话题，嘿嘿笑道：“崔东山，如果说你是陈平安的学生，咱们都是齐先生的弟子，宝瓶又喊陈平安小师叔，你跟咱们辈分到底咋算？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。 李二拍了拍李槐的脑袋，笑着跟上媳妇的脚步，李柳拍了拍弟弟的肩头，然后对众人施了一个万福，姗姗而去。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "李柳",
+        "alias": [],
+        "original_description_in_book": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。 李二拍了拍李槐的脑袋，笑着跟上媳妇的脚步，李柳拍了拍弟弟的肩头，然后对众人施了一个万福，姗姗而去。",
+        "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "李槐",
@@ -181,6 +272,19 @@
       },
       {
         "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "林守一",
         "alias": [],
         "original_description_in_book": "李槐轻轻踢了一脚林守一，后者手心满是汗水地攥着一封信，冷峻少年摇摇头，望着少女的背影，呢喃道：“下次吧。",
@@ -188,6 +292,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "李槐不愿在他们面前流露出悲伤情绪，强忍着忧愁，找了个有趣的话题，嘿嘿笑道：“崔东山，如果说你是陈平安的学生，咱们都是齐先生的弟子，宝瓶又喊陈平安小师叔，你跟咱们辈分到底咋算？",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 173,
         "segment_index": 2
@@ -230,8 +347,11 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
+          "李柳",
           "李槐",
-          "谢谢"
+          "谢谢",
+          "于禄"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -242,19 +362,25 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "书院同行南下",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "齐静春",
-          "陈平安",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。 李二拍了拍李槐的脑袋，笑着跟上媳妇的脚步，李柳拍了拍弟弟的肩头，然后对众人施了一个万福，姗姗而去。 李槐轻轻踢了一脚林守一，后者手心满是汗水地攥着一封信，冷峻少年摇摇头，望着少女的背影，呢喃道：“下次吧。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第二卷山水郎 第一百七十三章 逆旅 · 段2",
         "sentence_indexes_in_segment": [
@@ -273,6 +399,86 @@
       {
         "time": null,
         "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "李柳"
+        ],
+        "action": "试探",
+        "context": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "试探",
+        "context": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "试探",
+        "context": "李二始终憨憨傻站在旁边，李柳给李槐理了理已经足够崭新齐整的衣衫后，便回头望向山崖书院的匾额，对于谢谢和于禄两个同龄人的打量眼神，少女无动于衷。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李槐"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "对话",
+        "context": "李槐不愿在他们面前流露出悲伤情绪，强忍着忧愁，找了个有趣的话题，嘿嘿笑道：“崔东山，如果说你是陈平安的学生，咱们都是齐先生的弟子，宝瓶又喊陈平安小师叔，你跟咱们辈分到底咋算？",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
           "李槐"
         ],
         "to_roles": [
@@ -281,7 +487,27 @@
         "action": "对话",
         "context": "李槐不愿在他们面前流露出悲伤情绪，强忍着忧愁，找了个有趣的话题，嘿嘿笑道：“崔东山，如果说你是陈平安的学生，咱们都是齐先生的弟子，宝瓶又喊陈平安小师叔，你跟咱们辈分到底咋算？",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "书院同行南下",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 173,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "李槐不愿在他们面前流露出悲伤情绪，强忍着忧愁，找了个有趣的话题，嘿嘿笑道：“崔东山，如果说你是陈平安的学生，咱们都是齐先生的弟子，宝瓶又喊陈平安小师叔，你跟咱们辈分到底咋算？",
+        "result": null,
+        "event_name": "书院同行南下",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -291,7 +517,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.914295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -314,6 +540,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "崔东山双手负后，玉树临风，洋洋得意道：“我可是我家先生的开山大弟子，辈分很高，比这东华山高出十万八千里。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "李槐愣了一下，“难不成得喊你大师兄？",
@@ -329,16 +568,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十三章 逆旅 · 李槐立势",
+        "name": "第二卷山水郎 第一百七十三章 逆旅 · 崔东山与李槐立势",
         "time": null,
         "location": null,
         "participants": [
+          "崔东山",
           "李槐"
         ],
-        "description": "李槐愣了一下，“难不成得喊你大师兄？ ” 崔东山双手负后，玉树临风，洋洋得意道：“我可是我家先生的开山大弟子，辈分很高，比这东华山高出十万八千里。",
+        "description": "崔东山双手负后，玉树临风，洋洋得意道：“我可是我家先生的开山大弟子，辈分很高，比这东华山高出十万八千里。 李槐愣了一下，“难不成得喊你大师兄？ ”",
         "background": "",
-        "significance": "对应李槐在叙事中的关键立势节点。",
-        "related_action_indices": [],
+        "significance": "推动崔东山与李槐之间的立势关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十三章 逆旅 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -352,8 +594,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "师承",
+        "context": "” 崔东山双手负后，玉树临风，洋洋得意道：“我可是我家先生的开山大弟子，辈分很高，比这东华山高出十万八千里。 ” 李槐愣了一下，“难不成得喊你大师兄？ ” “大师兄？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十三章 逆旅 · 崔东山与李槐立势",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 173,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -376,6 +644,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "崔东山顿时急眼了，“你全家都是大师兄！",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "李槐有些懵，“那喊你小师兄？",
@@ -391,15 +672,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十三章 逆旅 · 李槐剧情推进",
+        "name": "第二卷山水郎 第一百七十三章 逆旅 · 崔东山与李槐剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "崔东山",
           "李槐"
         ],
-        "description": "李槐有些懵，“那喊你小师兄？ ” 崔东山顿时急眼了，“你全家都是大师兄！",
+        "description": "崔东山顿时急眼了，“你全家都是大师兄！ 李槐有些懵，“那喊你小师兄？ ”",
         "background": "",
-        "significance": "对应李槐在叙事中的关键剧情推进节点。",
+        "significance": "推动崔东山与李槐之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十三章 逆旅 · 段4",
         "sentence_indexes_in_segment": [
@@ -415,7 +697,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -436,6 +718,32 @@
       "红棉袄小姑娘冲出牌楼下，李槐喊道：“李宝瓶，等下还有课呢！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "崔东山眼睛一亮，“小师兄好，既尊重兄长，又透着股亲切，以后你们就喊我小师兄吧，于禄，谢谢，从今天起，你们也不例外，不用喊公子了，太生分，就跟着宝瓶他们一起喊我小师兄。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "崔东山眼睛一亮，“小师兄好，既尊重兄长，又透着股亲切，以后你们就喊我小师兄吧，于禄，谢谢，从今天起，你们也不例外，不用喊公子了，太生分，就跟着宝瓶他们一起喊我小师兄。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "谢谢",
@@ -480,18 +788,23 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十三章 逆旅 · 李宝瓶与谢谢剧情推进",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "谢谢",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "崔东山眼睛一亮，“小师兄好，既尊重兄长，又透着股亲切，以后你们就喊我小师兄吧，于禄，谢谢，从今天起，你们也不例外，不用喊公子了，太生分，就跟着宝瓶他们一起喊我小师兄。 李宝瓶冷哼道：“我可没答应！ 红棉袄小姑娘冲出牌楼下，李槐喊道：“李宝瓶，等下还有课呢！",
         "background": "",
-        "significance": "推动李宝瓶与谢谢之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第二卷山水郎 第一百七十三章 逆旅 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -505,8 +818,69 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.787813",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "同行",
+        "context": "崔东山眼睛一亮，“小师兄好，既尊重兄长，又透着股亲切，以后你们就喊我小师兄吧，于禄，谢谢，从今天起，你们也不例外，不用喊公子了，太生分，就跟着宝瓶他们一起喊我小师兄。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "同行",
+        "context": "崔东山眼睛一亮，“小师兄好，既尊重兄长，又透着股亲切，以后你们就喊我小师兄吧，于禄，谢谢，从今天起，你们也不例外，不用喊公子了，太生分，就跟着宝瓶他们一起喊我小师兄。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "谢谢"
+        ],
+        "action": "同行",
+        "context": "崔东山眼睛一亮，“小师兄好，既尊重兄长，又透着股亲切，以后你们就喊我小师兄吧，于禄，谢谢，从今天起，你们也不例外，不用喊公子了，太生分，就跟着宝瓶他们一起喊我小师兄。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -557,16 +931,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十三章 逆旅 · 李宝瓶与李槐同行",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "”李宝瓶高高扬起脑袋，一路飞奔，追逐着蔚蓝天空中掠过一群鸽子，鸽哨声此起彼伏，悠扬清越地响起于大隋京城。 李槐扯开嗓音喊道：“那带上我一起啊。 ”",
         "background": "",
-        "significance": "推动李宝瓶与李槐之间的同行关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -595,7 +971,7 @@
         "action": "同行",
         "context": "” “罚抄文章，我昨夜已经挑灯写好了，怕什么！ 我要一个人先逛遍这里，以后好带着小师叔逛街。 ”李宝瓶高高扬起脑袋，一路飞奔，追逐着蔚蓝天空中掠过一群鸽子，鸽哨声此起彼伏，悠扬清越地响起于大隋京城。 李槐扯开嗓音喊道：“那带上我一起啊。 ”",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十三章 逆旅 · 李宝瓶与李槐同行",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -610,7 +986,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -688,7 +1064,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -769,7 +1145,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -833,7 +1209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -895,7 +1271,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.915298",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -958,7 +1334,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.916301",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1020,7 +1396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.916301",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1082,7 +1458,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.916301",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1103,6 +1479,19 @@
       "当了窑工之后，多少还是能攒下一些铜钱的，陈平安从未有过额外的开销，对付柴米油盐就已经极其艰辛了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "高煊",
+        "alias": [],
+        "original_description_in_book": "难怪大隋皇子高煊，当初买走那位金色鲤鱼和龙王篓后，会觉得过意不去，除了给出一袋子金精铜钱，这次在大隋京城还要表达谢意。",
+        "description": "大骊人物群中的重要成员，能补足王朝线与龙泉线之间的角色层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 173,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1143,9 +1532,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "高煊"
         ],
-        "description": "当时在小镇遇到那个提着鱼篓卖鱼的汉子，陈平安一眼就看出不同寻常了。 当了窑工之后，多少还是能攒下一些铜钱的，陈平安从未有过额外的开销，对付柴米油盐就已经极其艰辛了。 ”",
+        "description": "难怪大隋皇子高煊，当初买走那位金色鲤鱼和龙王篓后，会觉得过意不去，除了给出一袋子金精铜钱，这次在大隋京城还要表达谢意。 当时在小镇遇到那个提着鱼篓卖鱼的汉子，陈平安一眼就看出不同寻常了。 当了窑工之后，多少还是能攒下一些铜钱的，陈平安从未有过额外的开销，对付柴米油盐就已经极其艰辛了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1163,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.916301",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1184,6 +1574,19 @@
       "只可惜半路杀出一个大隋高氏皇子，本就坏了规矩在先的李二顿时心中警醒，不敢再强塞给陈平安这份天大福运，事后杨老头也训斥过李二，告诉他一个残酷的真相，如果陈平安真收下了鱼篓和鲤鱼，那么能不能活着离开小镇都两说。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "高煊",
+        "alias": [],
+        "original_description_in_book": "二是被高煊和老人半路截下。",
+        "description": "大骊人物群中的重要成员，能补足王朝线与龙泉线之间的角色层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 173,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1215,6 +1618,21 @@
       },
       {
         "entity_type": "person",
+        "name": "李二",
+        "alias": [],
+        "original_description_in_book": "事实上陈平安不知道那个汉子，正是李槐的父亲，李二，杨老头的徒弟之一。 当时李二就已是武道九境的巅峰武夫，不同于负责收受金精铜钱的看门人，李二对陈平安观感很好，至于李二当时为何不直接赠送陈平安，是有大讲究的，师父杨老头这一条道路上的人，历来推崇“公道”二字，所以李二当时随口报了一个价格，是为了跟泥瓶巷少年讨价还价，显得更加真实。",
+        "description": "小镇出身的重要长辈，牵动陈平安、李宝瓶一行与后续山上线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 173,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "杨老头",
         "alias": [
           "杨掌柜"
@@ -1240,6 +1658,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "陈平安",
           "杨老头"
         ],
@@ -1257,6 +1676,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李二",
           "陈平安",
           "杨老头"
         ],
@@ -1269,20 +1689,23 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
+          "李二",
           "杨老头"
         ],
-        "description": "陈平安丢了一颗石子到溪水里，少年此刻有些忧伤，不是失落什么丢了好大一桩福缘机缘，而是觉得好几座金山银山跟自己擦肩而过了。 事实上陈平安不知道那个汉子，正是李槐的父亲，李二，杨老头的徒弟之一。 当时李二就已是武道九境的巅峰武夫，不同于负责收受金精铜钱的看门人，李二对陈平安观感很好，至于李二当时为何不直接赠送陈平安，是有大讲究的，师父杨老头这一条道路上的人，历来推崇“公道”二字，所以李二当时随口报了一个价格，是为了跟泥瓶巷少年讨价还价，显得更加真实。",
+        "description": "二是被高煊和老人半路截下。 陈平安丢了一颗石子到溪水里，少年此刻有些忧伤，不是失落什么丢了好大一桩福缘机缘，而是觉得好几座金山银山跟自己擦肩而过了。 事实上陈平安不知道那个汉子，正是李槐的父亲，李二，杨老头的徒弟之一。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "source": "第二卷山水郎 第一百七十三章 逆旅 · 段15",
         "sentence_indexes_in_segment": [
@@ -1301,15 +1724,15 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "李二"
         ],
         "to_roles": [
-          "杨老头"
+          "陈平安"
         ],
         "action": "师承",
         "context": "当时李二就已是武道九境的巅峰武夫，不同于负责收受金精铜钱的看门人，李二对陈平安观感很好，至于李二当时为何不直接赠送陈平安，是有大讲究的，师父杨老头这一条道路上的人，历来推崇“公道”二字，所以李二当时随口报了一个价格，是为了跟泥瓶巷少年讨价还价，显得更加真实。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1321,7 +1744,47 @@
       {
         "time": null,
         "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "师承",
+        "context": "当时李二就已是武道九境的巅峰武夫，不同于负责收受金精铜钱的看门人，李二对陈平安观感很好，至于李二当时为何不直接赠送陈平安，是有大讲究的，师父杨老头这一条道路上的人，历来推崇“公道”二字，所以李二当时随口报了一个价格，是为了跟泥瓶巷少年讨价还价，显得更加真实。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 173,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
           "陈平安"
+        ],
+        "action": "别离",
+        "context": "只可惜半路杀出一个大隋高氏皇子，本就坏了规矩在先的李二顿时心中警醒，不敢再强塞给陈平安这份天大福运，事后杨老头也训斥过李二，告诉他一个残酷的真相，如果陈平安真收下了鱼篓和鲤鱼，那么能不能活着离开小镇都两说。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 173,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
         ],
         "to_roles": [
           "杨老头"
@@ -1329,7 +1792,7 @@
         "action": "别离",
         "context": "只可惜半路杀出一个大隋高氏皇子，本就坏了规矩在先的李二顿时心中警醒，不敢再强塞给陈平安这份天大福运，事后杨老头也训斥过李二，告诉他一个残酷的真相，如果陈平安真收下了鱼篓和鲤鱼，那么能不能活着离开小镇都两说。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1339,7 +1802,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.916301",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1420,7 +1883,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.788817",
+    "extracted_at": "2026-03-25T01:03:30.916301",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "173-17-0": {
+    "juan_index": 173,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十三章 逆旅",
+    "source_sentences": [
+      "女童在远处背靠崔东山留下的书箱，使劲摇头，“我不。",
+      "”",
+      "青衣小童笑眯眯道：“我不吃你便是。",
+      "”",
+      "女童打死不凑过去。",
+      "青衣小童怒道：“不过来，我就真吃你了啊！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "女童在远处背靠崔东山留下的书箱，使劲摇头，“我不。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 173,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十三章 逆旅 · 崔东山剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "崔东山"
+        ],
+        "description": "女童在远处背靠崔东山留下的书箱，使劲摇头，“我不。 ” 青衣小童笑眯眯道：“我不吃你便是。",
+        "background": "",
+        "significance": "对应崔东山在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十三章 逆旅 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 173,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.916301",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1482,7 +2007,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.789820",
+    "extracted_at": "2026-03-25T01:03:30.917305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1538,7 +2063,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.789820",
+    "extracted_at": "2026-03-25T01:03:30.917305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

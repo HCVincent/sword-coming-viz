@@ -16,6 +16,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "夜幕深沉，督造官衙署，宋长镜一人独自返回，少年宋集薪已经去往狗窝一般的泥瓶巷，对此男人没有强求，身为统兵多年的沙场大将，在尸山血海里，尚且能够鼾声大作，所以那个被放养的侄子，这些年日子过得没那么符合天潢贵胄的身份，宋长镜没觉得这就亏欠了那孩子。 宋长镜率先跨过只开了一扇侧门的门槛，大步向前，说道：“不用带路。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 41,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -39,6 +53,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "宋集薪"
         ],
         "sentence_indexes_in_segment": [
@@ -66,16 +81,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十一章 练拳 · 宋集薪在泥瓶巷对话",
+        "name": "第一卷笼中雀 第四十一章 练拳 · 宋长镜与宋集薪在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "宋长镜",
           "宋集薪"
         ],
-        "description": "夜幕深沉，督造官衙署，宋长镜一人独自返回，少年宋集薪已经去往狗窝一般的泥瓶巷，对此男人没有强求，身为统兵多年的沙场大将，在尸山血海里，尚且能够鼾声大作，所以那个被放养的侄子，这些年日子过得没那么符合天潢贵胄的身份，宋长镜没觉得这就亏欠了那孩子。 能活着返回大骊京城，就不错了。 【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！",
+        "description": "夜幕深沉，督造官衙署，宋长镜一人独自返回，少年宋集薪已经去往狗窝一般的泥瓶巷，对此男人没有强求，身为统兵多年的沙场大将，在尸山血海里，尚且能够鼾声大作，所以那个被放养的侄子，这些年日子过得没那么符合天潢贵胄的身份，宋长镜没觉得这就亏欠了那孩子。 能活着返回大骊京城，就不错了。 宋长镜率先跨过只开了一扇侧门的门槛，大步向前，说道：“不用带路。",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动宋长镜与宋集薪之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第四十一章 练拳 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -89,8 +107,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "【悠久小説網ωωω.ＵＪХＳ.ｃｏｍ】，免费小说无弹窗免费阅读！ 夜幕深沉，督造官衙署，宋长镜一人独自返回，少年宋集薪已经去往狗窝一般的泥瓶巷，对此男人没有强求，身为统兵多年的沙场大将，在尸山血海里，尚且能够鼾声大作，所以那个被放养的侄子，这些年日子过得没那么符合天潢贵胄的身份，宋长镜没觉得这就亏欠了那孩子。 能活着返回大骊京城，就不错了。 衙署的年迈管事，一直等候在门口，手里提着灯笼。 宋长镜率先跨过只开了一扇侧门的门槛，大步向前，说道：“不用带路。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第四十一章 练拳 · 宋长镜与宋集薪在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 41,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.392388",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -111,6 +155,21 @@
       "不愧是一位正人君子。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "但是宋长镜不一样，当今大骊皇帝的同母弟弟，还立下过开疆拓土不世之功，更是东宝瓶洲名列前茅的武道宗师。 他的到来，就像过江龙闯入了一座小湖，地头蛇们哪怕谈不上如何畏惧，面对宋长镜这种人，谁都会拿出该有的恭谨姿态。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4
+        ],
+        "juan_index": 41,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "大骊皇帝",
@@ -164,6 +223,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "大骊皇帝"
         ],
         "sentence_indexes_in_segment": [
@@ -180,6 +240,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "宋长镜",
           "大骊皇帝"
         ],
         "sentence_indexes_in_segment": [
@@ -197,9 +258,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "宋长镜",
           "大骊皇帝"
         ],
-        "description": "福禄街上的这栋衙署，建造得并不豪奢，占地远远不如卢李两姓的宅子，前任那位货真价实的窑务督造官，生活得清苦紧巴，小镇大户们也没觉得如何不妥。 但是宋长镜不一样，当今大骊皇帝的同母弟弟，还立下过开疆拓土不世之功，更是东宝瓶洲名列前茅的武道宗师。 年迈管事默然点头，放缓脚步，然后悄然离去。",
+        "description": "福禄街上的这栋衙署，建造得并不豪奢，占地远远不如卢李两姓的宅子，前任那位货真价实的窑务督造官，生活得清苦紧巴，小镇大户们也没觉得如何不妥。 但是宋长镜不一样，当今大骊皇帝的同母弟弟，还立下过开疆拓土不世之功，更是东宝瓶洲名列前茅的武道宗师。 他的到来，就像过江龙闯入了一座小湖，地头蛇们哪怕谈不上如何畏惧，面对宋长镜这种人，谁都会拿出该有的恭谨姿态。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -217,7 +279,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.393296",
+    "extracted_at": "2026-03-25T01:03:30.392388",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -238,6 +300,20 @@
       "身穿一身素洁衣衫的宋集薪回到泥瓶巷，院门未锁，推开屋门后，看到婢女稚圭坐在正堂一张椅子上，半眯着眼，歪着脑袋打瞌睡，当脑袋倾斜到了一个幅度后，就立即坐正，然后继续歪斜。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "宋长镜",
+        "alias": [],
+        "original_description_in_book": "宋长镜大袖飘摇，快步走过，嘴角泛起讥讽笑意。 走在幽深小径上，宋长镜蓦然爽朗大笑。",
+        "description": "大骊暗线中的高位人物，是王朝线与小镇线之间的重要压迫来源。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 41,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -302,19 +378,18 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十一章 练拳 · 宋集薪与稚圭在宝瓶洲迁移",
+        "name": "第一卷笼中雀 第四十一章 练拳 · 宋长镜与宋集薪在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "宋长镜",
           "宋集薪",
           "稚圭"
         ],
-        "description": "此事迅速风靡东宝瓶洲，传为一桩美谈。 身穿一身素洁衣衫的宋集薪回到泥瓶巷，院门未锁，推开屋门后，看到婢女稚圭坐在正堂一张椅子上，半眯着眼，歪着脑袋打瞌睡，当脑袋倾斜到了一个幅度后，就立即坐正，然后继续歪斜。 宋长镜大袖飘摇，快步走过，嘴角泛起讥讽笑意。",
+        "description": "宋长镜大袖飘摇，快步走过，嘴角泛起讥讽笑意。 此事迅速风靡东宝瓶洲，传为一桩美谈。 走在幽深小径上，宋长镜蓦然爽朗大笑。",
         "background": "",
-        "significance": "在宝瓶洲推动宋集薪与稚圭之间的迁移线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在宝瓶洲推动宋长镜与宋集薪之间的迁移线。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第四十一章 练拳 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -328,34 +403,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "稚圭"
-        ],
-        "action": "讥讽",
-        "context": "宋长镜大袖飘摇，快步走过，嘴角泛起讥讽笑意。 昔年有少年求学于观湖书院，书法通神，名动朝野，被南魏国主召入皇宫，于侧殿撰写诏书，正值隆冬大雪，笔冻不能书，帝敕令宫嫔十余人侍于左右身侧，为其呵笔。 此事迅速风靡东宝瓶洲，传为一桩美谈。 只是无人深思，皇城宫禁何等森严，这种事情，皇帝不说，宦官不说，嫔妃不说，老百姓是如何知道的？ 走在幽深小径上，宋长镜蓦然爽朗大笑。 身穿一身素洁衣衫的宋集薪回到泥瓶巷，院门未锁，推开屋门后，看到婢女稚圭坐在正堂一张椅子上，半眯着眼，歪着脑袋打瞌睡，当脑袋倾斜到了一个幅度后，就立即坐正，然后继续歪斜。",
-        "result": null,
-        "event_name": "第一卷笼中雀 第四十一章 练拳 · 宋集薪与稚圭在宝瓶洲迁移",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 41,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.393391",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -479,7 +528,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "extracted_at": "2026-03-25T01:03:30.393391",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -558,7 +607,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "extracted_at": "2026-03-25T01:03:30.393391",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -636,7 +685,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "extracted_at": "2026-03-25T01:03:30.393391",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -750,7 +799,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "extracted_at": "2026-03-25T01:03:30.393391",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -831,7 +880,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "extracted_at": "2026-03-25T01:03:30.393391",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -893,7 +942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.394300",
+    "extracted_at": "2026-03-25T01:03:30.394395",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -972,7 +1021,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.394395",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1054,7 +1103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.394395",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1181,7 +1230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.394395",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1285,7 +1334,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1390,7 +1439,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1467,7 +1516,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1572,7 +1621,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1651,7 +1700,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.395303",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1728,7 +1777,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1840,7 +1889,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.396307",
+    "extracted_at": "2026-03-25T01:03:30.395398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -41,6 +41,19 @@
         ],
         "juan_index": 111,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "阿良对此并不觉得意外，开诚布公道：“第一次是在龙须溪边上，如果那次你让我觉得是个不谙世事的小屁孩，是个靠着一腔热血意气用事的烂好人，我可能只会留给你一头驴子，拍拍屁股就走了，至于你能不能熬到风雪庙魏晋出关，关我屁事，反正早死晚死都是死，浪费我感情。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 111,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -52,7 +65,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阿良"
+          "阿良",
+          "魏晋"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -68,14 +82,13 @@
         "location": "风雪庙",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "魏晋"
         ],
         "description": "阿良不再喝酒，系好银色小葫芦，不过仍是翘着二郎腿，那柄棋墩山土地爷新打造的竹刀，横放在斗笠汉子的膝盖上，阿良双手双手轻轻拍打刀柄和刀鞘顶部，一上一下，说道：“一路走来，我其实一直在试探你，很多次了。 陈平安点头道：“到后边我也琢磨出一点意思了，但只是觉得阿良你肚子里憋了很多想法，具体想什么，我一直没想明白。 阿良对此并不觉得意外，开诚布公道：“第一次是在龙须溪边上，如果那次你让我觉得是个不谙世事的小屁孩，是个靠着一腔热血意气用事的烂好人，我可能只会留给你一头驴子，拍拍屁股就走了，至于你能不能熬到风雪庙魏晋出关，关我屁事，反正早死晚死都是死，浪费我感情。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十一章 斗笠 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -89,34 +102,8 @@
         "segment_index": 1
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阿良"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "阿良不再喝酒，系好银色小葫芦，不过仍是翘着二郎腿，那柄棋墩山土地爷新打造的竹刀，横放在斗笠汉子的膝盖上，阿良双手双手轻轻拍打刀柄和刀鞘顶部，一上一下，说道：“一路走来，我其实一直在试探你，很多次了。 你的选择，会决定我护送你到哪里，简单来说，就是我能陪你走多少路，就看你跨过多少个坎。 ” 陈平安点头道：“到后边我也琢磨出一点意思了，但只是觉得阿良你肚子里憋了很多想法，具体想什么，我一直没想明白。 ” 阿良对此并不觉得意外，开诚布公道：“第一次是在龙须溪边上，如果那次你让我觉得是个不谙世事的小屁孩，是个靠着一腔热血意气用事的烂好人，我可能只会留给你一头驴子，拍拍屁股就走了，至于你能不能熬到风雪庙魏晋出关，关我屁事，反正早死晚死都是死，浪费我感情。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "风雪庙",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 111,
-        "segment_index": 1
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.666897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -208,7 +195,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.666897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -271,7 +258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.666897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -366,7 +353,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.666897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -505,7 +492,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.666897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -611,18 +598,18 @@
     "locations": [],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "齐静春",
-          "陈平安",
-          "阿良",
-          "李槐"
+          "李宝瓶",
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李槐的那本断水大崖，林守一的修道天赋，都是可以用来卖钱，换成你陈平安的踏脚石。 齐静春的弟子，不该如此凄惨。 尤其是李宝瓶，那么好的一个小姑娘，我一想到她被自己信任的小师叔伤透了心，我阿良的心都快要碎了。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十一章 斗笠 · 段6",
         "sentence_indexes_in_segment": [
@@ -638,7 +625,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.615040",
+    "extracted_at": "2026-03-25T01:03:30.667900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -789,7 +776,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.667900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -865,7 +852,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.667900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -958,7 +945,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.667900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1035,7 +1022,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.667900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1139,7 +1126,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.667900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1231,7 +1218,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1312,7 +1299,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1393,7 +1380,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1442,6 +1429,19 @@
         ],
         "juan_index": 111,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "李锦",
+        "alias": [],
+        "original_description_in_book": "观水街那条小巷的书铺里，自称冲澹江李锦的年轻公子，额头如遭重锤撞击，整个人倒飞出去，撞入书墙不说，直接破墙而出，跌入隔壁店铺，把那个站在柜台后头打盹的店伙计，给吓得噤若寒蝉。",
+        "description": "龙泉地界的重要角色，串联地方秩序、山水神灵与陈平安外部行动。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 111,
+        "segment_index": 15
       }
     ],
     "locations": [],
@@ -1453,9 +1453,10 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "阿良"
+          "阿良",
+          "李锦"
         ],
-        "description": "我想告诉他们，齐静春不在意的事情，有人在乎。 阿良莫名其妙伸手随意一弹指。 阿良嘀嘀咕咕道：“神仙打架，看戏就好。",
+        "description": "我想告诉他们，齐静春不在意的事情，有人在乎。 阿良莫名其妙伸手随意一弹指。 观水街那条小巷的书铺里，自称冲澹江李锦的年轻公子，额头如遭重锤撞击，整个人倒飞出去，撞入书墙不说，直接破墙而出，跌入隔壁店铺，把那个站在柜台后头打盹的店伙计，给吓得噤若寒蝉。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1473,7 +1474,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1554,7 +1555,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.616044",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1617,6 +1618,19 @@
       },
       {
         "entity_type": "person",
+        "name": "朱河",
+        "alias": [],
+        "original_description_in_book": "陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
+        "description": "小镇旧人中的重要角色，能补齐早期街巷人情关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 111,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
@@ -1655,6 +1669,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "朱河",
           "朱鹿"
         ],
         "description": "李槐在小镇是不是天天踩到狗屎，从不擦鞋底板？ 远处有个稚嫩嗓音响起，“阿良你才天天踩狗屎！ 陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
@@ -1663,7 +1678,10 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第二卷山水郎 第一百一十一章 斗笠 · 段17",
         "sentence_indexes_in_segment": [
@@ -1705,7 +1723,47 @@
           "陈平安"
         ],
         "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 111,
+        "segment_index": 17
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "朱鹿"
+        ],
+        "action": "对话",
+        "context": "陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 111,
+        "segment_index": 17
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "朱河"
         ],
         "action": "对话",
         "context": "陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
@@ -1738,9 +1796,29 @@
         ],
         "juan_index": 111,
         "segment_index": 17
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "朱鹿"
+        ],
+        "action": "对话",
+        "context": "陈平安望向阿良，后者低声笑道：“没事，三个家伙都是先后赶来这里没多久，不知道朱河朱鹿的事情，关于这对父女的‘不告而别‘，回头你自己找个借口对付过去就行了。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 111,
+        "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1905,18 +1983,18 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
           "林守一",
-          "李宝瓶"
+          "李槐",
+          "于禄"
         ],
         "description": "阿良招手道：“别偷听墙脚根了，来来来，分赃分赃了。 李宝瓶，李槐和林守一先后来到廊道，李宝瓶坐在陈平安右手边，李槐坐在陈平安左边，结果跟阿良的遭遇如出一辙，骂骂咧咧摘下屁股上的冰糖葫芦，立即眉开眼笑，二话不说就丢进嘴里，林守一则默默坐在阿良身边。 阿良转身交给林守一那一摞黄纸符箓，“好好研究，不要轻易浪费了，齐静春说过，你们小镇的福禄街和桃叶巷，大有玄机，至今还隐藏着一桩不小的机缘。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十一章 斗笠 · 段18",
         "sentence_indexes_in_segment": [
@@ -1932,7 +2010,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.668904",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1997,18 +2075,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
+          "李宝瓶",
+          "林守一",
           "李槐",
-          "林守一"
+          "于禄"
         ],
         "description": "林守一点点头，郑重其事地收起那叠符箓，与云上琅琅书一起藏在怀中。 阿良转头望向贼头贼脑的李槐，没好气道：“你那本破烂书呢？ 李槐怒骂道：“你惦记它干嘛？",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十一章 斗笠 · 段19",
         "sentence_indexes_in_segment": [
@@ -2024,7 +2102,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2115,7 +2193,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2221,7 +2299,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2336,7 +2414,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2415,7 +2493,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2520,7 +2598,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2613,18 +2691,18 @@
     "locations": [],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "阿良",
-          "陈平安",
           "李宝瓶",
-          "李槐"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "阿良投去怀疑和询问的视线。 李宝瓶车轱辘似的飞奔，很快就一个来回，双手把狭刀递给阿良。 阿良悬佩好那柄名为祥符的名刀。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十一章 斗笠 · 段25",
         "sentence_indexes_in_segment": [
@@ -2640,7 +2718,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.617047",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2705,7 +2783,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.618050",
+    "extracted_at": "2026-03-25T01:03:30.669907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2762,7 +2840,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.618123",
+    "extracted_at": "2026-03-25T01:03:30.670911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

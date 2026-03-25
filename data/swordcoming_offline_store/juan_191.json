@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -89,20 +89,34 @@
         ],
         "juan_index": 191,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "崔东山",
+        "alias": [],
+        "original_description_in_book": "就连陈平安这般无趣古板的人，听到崔东山在大崖大水之畔吟诵此诗，都忍不住心神往之。",
+        "description": "崔瀺相关暗线的重要延伸人物，也是后续群像中的关键变化因子。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 陈平安与崔东山剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "崔东山"
         ],
         "description": "就连陈平安这般无趣古板的人，听到崔东山在大崖大水之畔吟诵此诗，都忍不住心神往之。 之前陈平安练拳，好歹还有一部撼山谱，哪怕宁姑娘看不上，总归给陈平安指明了一条习武道路。 剑术已成君把去，有蛟龙处斩蛟龙。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与崔东山之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段2",
         "sentence_indexes_in_segment": [
@@ -118,7 +132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -183,7 +197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -218,6 +232,21 @@
         ],
         "juan_index": 191,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣带着算是半个弟子的少年崔赐，特意登上落魄山寻访山主陈平安。 李希圣摘下腰间桃符，开门见山道：“我有可能要离开小镇，所以赶紧过来，送你一样东西，省得到时候匆匆忙忙，话都说不清楚。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -229,6 +258,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李希圣",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -244,7 +274,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -259,12 +291,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "李希圣"
         ],
         "description": "陈平安一路飞奔下楼。 李希圣带着算是半个弟子的少年崔赐，特意登上落魄山寻访山主陈平安。 李希圣摘下腰间桃符，开门见山道：“我有可能要离开小镇，所以赶紧过来，送你一样东西，省得到时候匆匆忙忙，话都说不清楚。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -278,8 +313,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "李希圣带着算是半个弟子的少年崔赐，特意登上落魄山寻访山主陈平安。",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 191,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -316,6 +372,20 @@
       },
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣说道：“朱鹿在枕头驿试图行凶一事，是他暗中指使，他当然是错的，我知道的时候，已经来不及阻拦。 李希圣看到依旧沉默的黝黑少年，笑道：“你放心，就事论事，这块桃符，只跟刺杀一事有关，之后我离开小镇，你要自己小心李宝箴，如果是你稳稳占据上风，陈平安，我恳请你能够给他一次活命的机会，给他洗心革面的机会，一次，就一次。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "朱鹿",
         "alias": [],
         "original_description_in_book": "李希圣说道：“朱鹿在枕头驿试图行凶一事，是他暗中指使，他当然是错的，我知道的时候，已经来不及阻拦。",
@@ -337,6 +407,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李希圣",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -348,19 +419,21 @@
     ],
     "events": [
       {
-        "name": "阿良过境",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "小镇",
         "participants": [
-          "阿良",
+          "顾璨",
           "陈平安",
+          "李希圣",
           "朱鹿"
         ],
         "description": "陈平安点了点头。 李希圣说道：“朱鹿在枕头驿试图行凶一事，是他暗中指使，他当然是错的，我知道的时候，已经来不及阻拦。 李希圣看到依旧沉默的黝黑少年，笑道：“你放心，就事论事，这块桃符，只跟刺杀一事有关，之后我离开小镇，你要自己小心李宝箴，如果是你稳稳占据上风，陈平安，我恳请你能够给他一次活命的机会，给他洗心革面的机会，一次，就一次。",
         "background": "",
-        "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段5",
         "sentence_indexes_in_segment": [
@@ -379,30 +452,45 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "李希圣"
         ],
         "to_roles": [
           "朱鹿"
         ],
         "action": "对话",
-        "context": "” 陈平安点了点头。 李希圣说道：“朱鹿在枕头驿试图行凶一事，是他暗中指使，他当然是错的，我知道的时候，已经来不及阻拦。 李宝箴从小就不是愿意认错的人，但是没办法，他是宝瓶二哥，我是他大哥，一家人就是一家人，既然他做错了事情又不愿意悔改，就只好我来代为弥补。 ” 李希圣看到依旧沉默的黝黑少年，笑道：“你放心，就事论事，这块桃符，只跟刺杀一事有关，之后我离开小镇，你要自己小心李宝箴，如果是你稳稳占据上风，陈平安，我恳请你能够给他一次活命的机会，给他洗心革面的机会，一次，就一次。",
+        "context": "李希圣说道：“朱鹿在枕头驿试图行凶一事，是他暗中指使，他当然是错的，我知道的时候，已经来不及阻拦。",
         "result": null,
-        "event_name": "阿良过境",
+        "event_name": "顾璨离开小镇",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
+          2
+        ],
+        "juan_index": 191,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "李希圣看到依旧沉默的黝黑少年，笑道：“你放心，就事论事，这块桃符，只跟刺杀一事有关，之后我离开小镇，你要自己小心李宝箴，如果是你稳稳占据上风，陈平安，我恳请你能够给他一次活命的机会，给他洗心革面的机会，一次，就一次。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 191,
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -435,20 +523,34 @@
         ],
         "juan_index": 191,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣递出桃符，笑容温暖，“既然如此，就安心收下。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 陈平安与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
-        "description": "陈平安仔细思考片刻，缓缓道：“好的！ ” “当然，若是势均力敌、你死我亡的险峻形势，你不用手下留情，万事以自保为上。",
+        "description": "陈平安仔细思考片刻，缓缓道：“好的！ 李希圣递出桃符，笑容温暖，“既然如此，就安心收下。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段6",
         "sentence_indexes_in_segment": [
@@ -464,7 +566,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -526,7 +628,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -570,6 +672,20 @@
         "power": "剑气长城",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 191,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "直觉告诉陈平安，可能跟李希圣的这块桃符有关。 李希圣见到少年异常坚持，犹豫了一下，“能否单独聊？",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          3
         ],
         "juan_index": 191,
         "segment_index": 8
@@ -663,7 +779,8 @@
         "location": "骊珠洞天",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "说到这里陈平安就不再多说什么。 事实上，阿良曾经提过一嘴，说骊珠洞天真正的大机缘，还留在福禄街和桃叶巷。 直觉告诉陈平安，可能跟李希圣的这块桃符有关。",
         "background": "",
@@ -683,7 +800,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.834851",
+    "extracted_at": "2026-03-25T01:03:30.983534",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -703,7 +820,21 @@
       "见到吴鸢后，赶紧此地无银三百两地使劲拍了拍衣衫，驱散酒味儿，牵马走到郡守大人身前，笑呵呵作揖行礼，“下官曹茂拜见郡守大人。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "新任窑务督造官，是一位与曹县令岁数相对的年轻人，姓曹，同样是一个上柱国姓氏，比如神龙见首不见尾的袁县令，曹督造更加愿意抛头露面，不但主动登门拜访福禄街桃叶巷的富贵门庭，龙尾郡陈氏创办的学塾，也经常能够看到此人的身影，尤其是学塾助教李希圣的授课，曹督造只要一得闲就会去旁听，脱下官服，换上儒衫，堂而皇之坐在学堂最后，跟一大堆蒙童稚子同处一室，从不觉得丢人现眼。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 191,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "福禄街",
@@ -712,7 +843,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -726,7 +859,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -755,7 +890,8 @@
         "location": "福禄街",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "新任窑务督造官，是一位与曹县令岁数相对的年轻人，姓曹，同样是一个上柱国姓氏，比如神龙见首不见尾的袁县令，曹督造更加愿意抛头露面，不但主动登门拜访福禄街桃叶巷的富贵门庭，龙尾郡陈氏创办的学塾，也经常能够看到此人的身影，尤其是学塾助教李希圣的授课，曹督造只要一得闲就会去旁听，脱下官服，换上儒衫，堂而皇之坐在学堂最后，跟一大堆蒙童稚子同处一室，从不觉得丢人现眼。 槐黄县的东边驿路，最靠近县城小镇的驿站，名为槐宅驿站，规模不大，但是麻雀虽小五脏俱全，五匹驿马俱是乙等战马，这对于其它郡县的小驿站而言，简直就是做梦都别想。 今天槐宅驿站来了一拨拨贵客，清晨时分，郡守吴鸢就从西边郡府移驾而来，只带了两名心腹的文武秘书郎，然后是袁县令乘车赶到，见着了等候在驿路旁边的上官吴鸢，竟是连打个招呼都不乐意，径直走入驿站，要了一壶茶水，坐在那边自饮自酌。",
         "background": "",
@@ -775,7 +911,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.984538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -796,6 +932,19 @@
       "有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "赵繇",
+        "alias": [],
+        "original_description_in_book": "有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。",
+        "description": "小镇少年群像中的关键人物，承接早期命运差异与外部机缘线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -854,6 +1003,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "赵繇",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -870,12 +1020,15 @@
         "location": "大骊",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "赵繇"
         ],
         "description": "京城袁曹两大上柱国姓氏，本是关系莫逆的姻亲世交，近百年以来却变得水火不容，帮着两个家族光耀门楣的各自祖辈，曾是一辈子并肩作战的坚定盟友，更是大骊崛起的关键砥柱，加上曹沆、袁瀣两位上柱国是同乡人氏，所以被史书誉为“沆瀣一气、文武双璧”，大骊乡野市井之间，至今还有诸多传奇事迹，广为流传。 如今龙泉郡辖内所有门神，一律统一规制，悬挂那对文武门神，其实就是袁曹两家祖辈曹沆、袁瀣的画像。 有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -889,8 +1042,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "赵繇"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "同行",
+        "context": "京城袁曹两大上柱国姓氏，本是关系莫逆的姻亲世交，近百年以来却变得水火不容，帮着两个家族光耀门楣的各自祖辈，曾是一辈子并肩作战的坚定盟友，更是大骊崛起的关键砥柱，加上曹沆、袁瀣两位上柱国是同乡人氏，所以被史书誉为“沆瀣一气、文武双璧”，大骊乡野市井之间，至今还有诸多传奇事迹，广为流传。 如今龙泉郡辖内所有门神，一律统一规制，悬挂那对文武门神，其实就是袁曹两家祖辈曹沆、袁瀣的画像。 至于两家各自让嫡系子弟来此为官，是否有山上高人指点，或是心存接纳某些祖荫的念头，就不得而知了。 毕竟那棵老槐树已经倒塌，枝干尽毁，槐叶散尽，这座袁曹两姓的“龙兴之地”，还能不能剩下点祖宗槐荫，真不好说。 很快又有数人联袂而至，全是上了岁数的老者。 有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.984538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -913,6 +1092,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "还有神意内敛的李家老祖宗，在骊珠洞天的禁制消散后，老人成功跻身十境，为家族挣得两个恩荫官身，但是嫡长孙李希圣拒绝，李宝箴则选择接受，在大骊京城顺势跻身清流官员之列。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 191,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "还有住在桃叶巷街角一栋宅子的矮小老人，慈眉善目，当初陈平安帮着发送家书，老人还想请少年去家里喝水，只是出身于泥瓶巷的泥腿子没敢答应而已。",
@@ -933,7 +1125,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -949,7 +1143,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1010,7 +1206,8 @@
         "location": "骊珠洞天",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "还有神意内敛的李家老祖宗，在骊珠洞天的禁制消散后，老人成功跻身十境，为家族挣得两个恩荫官身，但是嫡长孙李希圣拒绝，李宝箴则选择接受，在大骊京城顺势跻身清流官员之列。 还有住在桃叶巷街角一栋宅子的矮小老人，慈眉善目，当初陈平安帮着发送家书，老人还想请少年去家里喝水，只是出身于泥瓶巷的泥腿子没敢答应而已。 其余几位老者，同样是小镇四姓十族的家主，手握数目不等的龙窑、大量良田和寻常山头，是真正的小镇土财主。",
         "background": "",
@@ -1030,7 +1227,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.984538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1150,7 +1347,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.984538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1217,7 +1414,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.984538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1270,6 +1467,19 @@
       },
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "鸡毛蒜皮的都行，比如谢实曹曦两人在年少时代，他们身边有没有差不多有趣的同龄人？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 191,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -1314,7 +1524,7 @@
           "崔瀺",
           "稚圭"
         ],
-        "description": "崔瀺望向局促不安的少女，笑问道：“稚圭，你跟钦天监说的那些内容，记录在案，每个字我都仔细看过了，那么还有没有你没有说过的小故事？ 原来少女是大骊皇子宋集薪的婢女，稚圭，本命王朱，真身古怪，竟然是世间最后一条真龙魂魄凝聚而成的珠子。 稚圭想了想，摇头道：“没有。",
+        "description": "崔瀺望向局促不安的少女，笑问道：“稚圭，你跟钦天监说的那些内容，记录在案，每个字我都仔细看过了，那么还有没有你没有说过的小故事？ 鸡毛蒜皮的都行，比如谢实曹曦两人在年少时代，他们身边有没有差不多有趣的同龄人？ 原来少女是大骊皇子宋集薪的婢女，稚圭，本命王朱，真身古怪，竟然是世间最后一条真龙魂魄凝聚而成的珠子。",
         "background": "",
         "significance": "在大骊推动崔瀺与稚圭之间的对话线。",
         "related_action_indices": [
@@ -1355,7 +1565,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.984538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1390,6 +1600,33 @@
         ],
         "juan_index": 191,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "没过多久，就有三人走入驿站，富家翁曹曦，木讷汉子谢实，墨家游侠许弱。 谢实双手抱拳，向少女弯腰道：“桃叶巷谢实，感谢姑娘的两次救命之恩！",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "没过多久，就有三人走入驿站，富家翁曹曦，木讷汉子谢实，墨家游侠许弱。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 191,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -1414,7 +1651,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1424,15 +1663,17 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺在骊珠洞天剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与崔瀺在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "崔瀺"
+          "谢实",
+          "崔瀺",
+          "许弱"
         ],
-        "description": "崔瀺哑然失笑，倒是没有恼火，继续独自喝酒。 两位从骊珠洞天走出去的大人物，见到少女之后，确定了她身上的那股气息，曹曦微微发愣，然后捧腹大笑，伸手指向少女，“他娘的丢人丢到姥姥家了，当年吓得老子半死的家伙，原来是这么个柔柔弱弱的小姑娘啊。 谢实双手抱拳，向少女弯腰道：“桃叶巷谢实，感谢姑娘的两次救命之恩！",
+        "description": "崔瀺哑然失笑，倒是没有恼火，继续独自喝酒。 没过多久，就有三人走入驿站，富家翁曹曦，木讷汉子谢实，墨家游侠许弱。 两位从骊珠洞天走出去的大人物，见到少女之后，确定了她身上的那股气息，曹曦微微发愣，然后捧腹大笑，伸手指向少女，“他娘的丢人丢到姥姥家了，当年吓得老子半死的家伙，原来是这么个柔柔弱弱的小姑娘啊。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在骊珠洞天推动谢实与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段16",
         "sentence_indexes_in_segment": [
@@ -1448,7 +1689,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,20 +1722,48 @@
         ],
         "juan_index": 191,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "稚圭冷着脸，只是对谢实点点头而已，至于曹曦，她根本就没看一眼。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 191,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "许弱",
+        "alias": [],
+        "original_description_in_book": "许弱双手环胸，斜靠在门口，开始闭目养神。",
+        "description": "风雪庙线重要人物，可补足龙泉与宗门势力的对接关系。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 191,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 稚圭剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 稚圭与谢实剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "稚圭"
+          "稚圭",
+          "谢实",
+          "许弱"
         ],
-        "description": "稚圭冷着脸，只是对谢实点点头而已，至于曹曦，她根本就没看一眼。 ” 许弱双手环胸，斜靠在门口，开始闭目养神。",
+        "description": "稚圭冷着脸，只是对谢实点点头而已，至于曹曦，她根本就没看一眼。 许弱双手环胸，斜靠在门口，开始闭目养神。 ”",
         "background": "",
-        "significance": "对应稚圭在叙事中的关键剧情推进节点。",
+        "significance": "推动稚圭与谢实之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段17",
         "sentence_indexes_in_segment": [
@@ -1510,7 +1779,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1573,7 +1842,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1650,7 +1919,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.835845",
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1684,21 +1953,37 @@
         ],
         "juan_index": 191,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实一直沉默不语。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 稚圭对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 稚圭与谢实对话",
         "time": null,
         "location": null,
         "participants": [
-          "稚圭"
+          "稚圭",
+          "谢实"
         ],
-        "description": "稚圭看到这个家伙就烦，曹曦小时候是如此，老了之后更是如此。 稚圭犹豫了一下，“你们到底谁当上了真君？ ”",
+        "description": "稚圭看到这个家伙就烦，曹曦小时候是如此，老了之后更是如此。 谢实一直沉默不语。 稚圭犹豫了一下，“你们到底谁当上了真君？",
         "background": "",
-        "significance": "对应稚圭在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动稚圭与谢实之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1712,8 +1997,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.836880",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "稚圭"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "” 曹曦干笑道：“我不是听老人说黑狗血能够驱邪嘛。 ” 稚圭看到这个家伙就烦，曹曦小时候是如此，老了之后更是如此。 谢实一直沉默不语。 稚圭犹豫了一下，“你们到底谁当上了真君？",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 稚圭与谢实对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1748,6 +2059,21 @@
         ],
         "juan_index": 191,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "曹曦抬起白碗，指向坐在大骊国师对面的谢实，“他是俱芦洲的真君，马上就要成为道家天君，好几个王朝的五岳都有他那一脉的宗门府邸，整个俱芦洲，道教派系，就属他一家独大，其余都是不成气候的旁门左道，那些所谓的掌门真人，一国真君，给咱们谢真君提鞋都不配。 在咱们这位老乡谢实面前，全部都是孙子，一个都不例外。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 21
       }
     ],
     "locations": [
@@ -1761,7 +2087,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -1772,15 +2099,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺在大骊剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "谢实",
           "崔瀺"
         ],
-        "description": "曹曦抬起白碗，指向坐在大骊国师对面的谢实，“他是俱芦洲的真君，马上就要成为道家天君，好几个王朝的五岳都有他那一脉的宗门府邸，整个俱芦洲，道教派系，就属他一家独大，其余都是不成气候的旁门左道，那些所谓的掌门真人，一国真君，给咱们谢真君提鞋都不配。 谁成为了剑仙？ ”",
+        "description": "曹曦抬起白碗，指向坐在大骊国师对面的谢实，“他是俱芦洲的真君，马上就要成为道家天君，好几个王朝的五岳都有他那一脉的宗门府邸，整个俱芦洲，道教派系，就属他一家独大，其余都是不成气候的旁门左道，那些所谓的掌门真人，一国真君，给咱们谢真君提鞋都不配。 在咱们这位老乡谢实面前，全部都是孙子，一个都不例外。 谢实脸色阴沉，“闭嘴。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动谢实与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段21",
         "sentence_indexes_in_segment": [
@@ -1796,7 +2124,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.836880",
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1816,7 +2144,21 @@
       "之后就需要一洲之内半数以上天君的点头，最后再讨要来中土神洲某个宗门的一纸敕令，才算名正言顺。",
       "而俱芦洲的道主正是谢实，所在宗门即是居中主香，加上俱芦洲剑修昌盛，佛家香火远远压过道家，使得一位天君都没有出现，只算有半个，那就是谢实本人。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "而俱芦洲的道主正是谢实，所在宗门即是居中主香，加上俱芦洲剑修昌盛，佛家香火远远压过道家，使得一位天君都没有出现，只算有半个，那就是谢实本人。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 22
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1835,13 +2177,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "王朝之内，道教一国真君的任命，除了需要皇帝君主的提名举荐，更需要一洲道统道主的承认，例如东宝瓶洲的神诰宗宗主祁真，就是道主。 ” 曹曦告饶道：“好好好，不说就不说，谁让你是道门天君，而我只是一介野修，惹不起啊。",
+        "participants": [
+          "谢实"
+        ],
+        "description": "王朝之内，道教一国真君的任命，除了需要皇帝君主的提名举荐，更需要一洲道统道主的承认，例如东宝瓶洲的神诰宗宗主祁真，就是道主。 而俱芦洲的道主正是谢实，所在宗门即是居中主香，加上俱芦洲剑修昌盛，佛家香火远远压过道家，使得一位天君都没有出现，只算有半个，那就是谢实本人。 ”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应谢实在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段22",
         "sentence_indexes_in_segment": [
@@ -1857,7 +2201,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837019",
+    "extracted_at": "2026-03-25T01:03:30.985541",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1877,7 +2221,22 @@
       "谢实直截了当说道：“那件被打碎的本命瓷，我们可以既往不咎。",
       "但是我要跟你们大骊讨要三个人。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "当然宝瓶洲好不到哪里去，作为九大洲当中版图最小的一个，哪怕道家势力远远超过佛门，宝瓶洲的天君仍然只有一人，而且还是刚刚破境跻身十二境的新天君，正是南涧国神诰宗的祁真，与谢实一样，所有的真君人选，纯粹是一个洲一个人一言决之。 谢实直截了当说道：“那件被打碎的本命瓷，我们可以既往不咎。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 23
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1886,7 +2245,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1912,13 +2273,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 宝瓶洲对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "当然宝瓶洲好不到哪里去，作为九大洲当中版图最小的一个，哪怕道家势力远远超过佛门，宝瓶洲的天君仍然只有一人，而且还是刚刚破境跻身十二境的新天君，正是南涧国神诰宗的祁真，与谢实一样，所有的真君人选，纯粹是一个洲一个人一言决之。 但是我要跟你们大骊讨要三个人。 但是在别的大洲，中土神洲不用多说，例如疆域广袤的南婆娑洲，道家天君就有一双手之数。",
+        "participants": [
+          "谢实"
+        ],
+        "description": "当然宝瓶洲好不到哪里去，作为九大洲当中版图最小的一个，哪怕道家势力远远超过佛门，宝瓶洲的天君仍然只有一人，而且还是刚刚破境跻身十二境的新天君，正是南涧国神诰宗的祁真，与谢实一样，所有的真君人选，纯粹是一个洲一个人一言决之。 谢实直截了当说道：“那件被打碎的本命瓷，我们可以既往不咎。 但是我要跟你们大骊讨要三个人。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
+        "significance": "对应谢实在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段23",
         "sentence_indexes_in_segment": [
@@ -1934,7 +2297,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837019",
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1982,6 +2345,19 @@
         ],
         "juan_index": 191,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实，你所谓的既往不咎，根本就站不住脚。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 24
       }
     ],
     "locations": [
@@ -2012,14 +2388,13 @@
         "location": "大骊",
         "participants": [
           "崔瀺",
-          "陈平安"
+          "陈平安",
+          "谢实"
         ],
         "description": "崔瀺放下手中酒碗，微笑道：“稍等，什么叫既往不咎？ 陈平安的本命瓷破碎一事，虽是我们大骊窑务督造衙署的失责在先，可是，首先，当初陈平安的资质勘验，买瓷人是早早确认过的，并无特殊之处，属下中下之资，此事确认无误。 二，本命瓷被人打破，我大骊当时就该追责的追责，该赔偿的赔偿，买瓷人同样点头认可了，赔偿也痛快收下了。",
         "background": "",
         "significance": "在大骊推动崔瀺与陈平安之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -2033,34 +2408,8 @@
         "segment_index": 24
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "” 崔瀺放下手中酒碗，微笑道：“稍等，什么叫既往不咎？ 陈平安的本命瓷破碎一事，虽是我们大骊窑务督造衙署的失责在先，可是，首先，当初陈平安的资质勘验，买瓷人是早早确认过的，并无特殊之处，属下中下之资，此事确认无误。 二，本命瓷被人打破，我大骊当时就该追责的追责，该赔偿的赔偿，买瓷人同样点头认可了，赔偿也痛快收下了。 谢实，你所谓的既往不咎，根本就站不住脚。 ”",
-        "result": null,
-        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与陈平安在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 191,
-        "segment_index": 24
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.837019",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2081,6 +2430,19 @@
       "稚圭眼神闪烁，似乎听到了感兴趣的事情。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实淡然道：“买瓷人当然没资格胡搅蛮缠，可是买瓷人之后的势力，就有资格跟你们大骊不讲道理了。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 191,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -2120,7 +2482,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -2130,16 +2494,17 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与稚圭在大骊剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "谢实",
           "崔瀺",
           "稚圭"
         ],
         "description": "谢实淡然道：“买瓷人当然没资格胡搅蛮缠，可是买瓷人之后的势力，就有资格跟你们大骊不讲道理了。 崔瀺哈哈大笑，竟是毫不犹豫地点了点头，重新端起酒碗，小酌了一口，啧啧道：“世事多无奈啊。 稚圭眼神闪烁，似乎听到了感兴趣的事情。",
         "background": "",
-        "significance": "在大骊推动崔瀺与稚圭之间的剧情推进线。",
+        "significance": "在大骊推动谢实与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段25",
         "sentence_indexes_in_segment": [
@@ -2155,7 +2520,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837019",
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2190,6 +2555,19 @@
         ],
         "juan_index": 191,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实毫无身陷重围的觉悟，继续说道：“大骊南下，已成定局。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 191,
+        "segment_index": 26
       }
     ],
     "locations": [
@@ -2203,7 +2581,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "谢实"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -2215,16 +2594,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺在大骊对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "谢实"
         ],
         "description": "崔瀺问道：“那么如果大骊不答应？ 谢实毫无身陷重围的觉悟，继续说道：“大骊南下，已成定局。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与谢实之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -2238,8 +2620,34 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837019",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "崔瀺问道：“那么如果大骊不答应？ ” 谢实毫无身陷重围的觉悟，继续说道：“大骊南下，已成定局。 如果你们不答应，就要担心后院起火。 ” 后顾之忧？",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2260,6 +2668,19 @@
       "因为当大人物们开始登台谋划天下大势的时候，小事就不小了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "显而易见，谢实的言下之意，是俱芦洲的修士，会趁着大骊铁骑南下征伐的时候，公然跨海南下，袭扰大骊北方国境。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 191,
+        "segment_index": 27
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2284,7 +2705,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           0,
           3
@@ -2295,15 +2718,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 陈平安在大骊迁移",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与陈平安在大骊迁移",
         "time": null,
         "location": "大骊",
         "participants": [
+          "谢实",
           "陈平安"
         ],
         "description": "大骊的北部版图，已经抵达北边的大海之滨， 显而易见，谢实的言下之意，是俱芦洲的修士，会趁着大骊铁骑南下征伐的时候，公然跨海南下，袭扰大骊北方国境。 那个名叫陈平安的少年，他的本命瓷被打破，其实归根结底，就是一桩已经盖棺定论的芝麻小事，只是某些人一个蹩脚的借口。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "在大骊推动谢实与陈平安之间的迁移线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段27",
         "sentence_indexes_in_segment": [
@@ -2319,7 +2743,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837528",
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2359,6 +2783,19 @@
       },
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实喝了坐下来后的第一口酒，“贺小凉，马苦玄，李希圣。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
         "name": "马苦玄",
         "alias": [],
         "original_description_in_book": "谢实喝了坐下来后的第一口酒，“贺小凉，马苦玄，李希圣。",
@@ -2369,24 +2806,37 @@
         ],
         "juan_index": 191,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "谢实喝了坐下来后的第一口酒，“贺小凉，马苦玄，李希圣。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 28
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与马苦玄对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实对话",
         "time": null,
         "location": null,
         "participants": [
           "崔瀺",
-          "马苦玄"
+          "谢实",
+          "马苦玄",
+          "李希圣"
         ],
         "description": "崔瀺轻轻叹息，山上人不讲道理的时候，就是这样，跟小孩子过家家打闹差不多，脾气一上头，就要用尽气力打生打死，很吓唬人，但又不是在吓唬人。 不是崔瀺感到陌生，恰恰相反，崔瀺亲身经历过很多次，所以显得格外淡然。 崔瀺只得率先退让一步，转为询问道：“你想要带走哪三个人？",
         "background": "",
-        "significance": "推动崔瀺与马苦玄之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动崔瀺与谢实之间的对话关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -2400,34 +2850,8 @@
         "segment_index": 28
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "马苦玄"
-        ],
-        "action": "对话",
-        "context": "崔瀺轻轻叹息，山上人不讲道理的时候，就是这样，跟小孩子过家家打闹差不多，脾气一上头，就要用尽气力打生打死，很吓唬人，但又不是在吓唬人。 不是崔瀺感到陌生，恰恰相反，崔瀺亲身经历过很多次，所以显得格外淡然。 崔瀺只得率先退让一步，转为询问道：“你想要带走哪三个人？ ” 谢实喝了坐下来后的第一口酒，“贺小凉，马苦玄，李希圣。 重要次序，就是排名。",
-        "result": null,
-        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与马苦玄对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 191,
-        "segment_index": 28
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.837528",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2462,6 +2886,19 @@
         ],
         "juan_index": 191,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实默不作声。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 29
       }
     ],
     "locations": [
@@ -2484,16 +2921,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺在大骊对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "谢实"
         ],
-        "description": "你们大骊能交出几个人，就可以拿到相对应的不同回报。 崔瀺哈哈笑道：“回报？ ”",
+        "description": "你们大骊能交出几个人，就可以拿到相对应的不同回报。 崔瀺哈哈笑道：“回报？ 谢实默不作声。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与谢实之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -2507,8 +2947,34 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837528",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "你们大骊能交出几个人，就可以拿到相对应的不同回报。 ” 崔瀺哈哈笑道：“回报？ 是雷霆震怒才对吧？ ” 谢实默不作声。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.986545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2529,6 +2995,20 @@
       "这笔买卖怎么都是亏的。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李希圣是大骊龙泉人氏，属于最好商量的一个。 除了名声不显的儒生李希圣，其余两人俱是师门希望所在，一个兵家祖庭之一，一个道家圣地，大骊哪怕已经占据半壁江山，都未必愿意跟其中一方交恶，更何况如今连大隋都没有覆灭。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 191,
+        "segment_index": 30
+      },
       {
         "entity_type": "person",
         "name": "马苦玄",
@@ -2553,7 +3033,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0,
           3,
@@ -2572,7 +3054,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李希圣"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -2596,16 +3080,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 马苦玄在大骊剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 李希圣与马苦玄在大骊师承",
         "time": null,
         "location": "大骊",
         "participants": [
+          "李希圣",
           "马苦玄"
         ],
         "description": "李希圣是大骊龙泉人氏，属于最好商量的一个。 马苦玄已经是真武山弟子，短短一年时间，就已经名声鹊起，杀性极大，天赋极高，一日千里。 除了名声不显的儒生李希圣，其余两人俱是师门希望所在，一个兵家祖庭之一，一个道家圣地，大骊哪怕已经占据半壁江山，都未必愿意跟其中一方交恶，更何况如今连大隋都没有覆灭。",
         "background": "",
-        "significance": "对应马苦玄在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动李希圣与马苦玄之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -2619,8 +3106,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837528",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "马苦玄"
+        ],
+        "action": "师承",
+        "context": "李希圣是大骊龙泉人氏，属于最好商量的一个。 马苦玄已经是真武山弟子，短短一年时间，就已经名声鹊起，杀性极大，天赋极高，一日千里。 贺小凉更是神诰宗的得意门生，天资惊人，福缘更是吓人。 除了名声不显的儒生李希圣，其余两人俱是师门希望所在，一个兵家祖庭之一，一个道家圣地，大骊哪怕已经占据半壁江山，都未必愿意跟其中一方交恶，更何况如今连大隋都没有覆灭。 一旦神诰宗和真武山振臂一呼，大骊就需要面对宝瓶洲半数兵家修士、以及大半道士的敌意， 这笔买卖怎么都是亏的。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 李希圣与马苦玄在大骊师承",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.987548",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2655,6 +3168,20 @@
         ],
         "juan_index": 191,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "但是谢实突然说道：“只要你们答应此事，我就会带人去往靠近观湖书院的避暑山，帮你们震慑书院以及整个南方势力，放心，绝不是做做样子。 这是俱芦洲几位顶尖修士的承诺，也包括我谢实在内。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 31
       }
     ],
     "locations": [
@@ -2678,16 +3205,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺在大骊对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "谢实"
         ],
-        "description": "崔瀺觉得这桩买卖没得谈了。 估计回去大骊京城之后，白玉京添补飞剑一事，需要作出最坏的那个打算。 就像你们不答应，我们俱芦洲修士南下攻打大骊北境，绝不是开玩笑，那么你们大骊只要点头，同样不会让你们吃半点亏。",
+        "description": "崔瀺觉得这桩买卖没得谈了。 估计回去大骊京城之后，白玉京添补飞剑一事，需要作出最坏的那个打算。 但是谢实突然说道：“只要你们答应此事，我就会带人去往靠近观湖书院的避暑山，帮你们震慑书院以及整个南方势力，放心，绝不是做做样子。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与谢实之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -2701,8 +3231,34 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837528",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "崔瀺觉得这桩买卖没得谈了。 估计回去大骊京城之后，白玉京添补飞剑一事，需要作出最坏的那个打算。 但是谢实突然说道：“只要你们答应此事，我就会带人去往靠近观湖书院的避暑山，帮你们震慑书院以及整个南方势力，放心，绝不是做做样子。 就像你们不答应，我们俱芦洲修士南下攻打大骊北境，绝不是开玩笑，那么你们大骊只要点头，同样不会让你们吃半点亏。 这是俱芦洲几位顶尖修士的承诺，也包括我谢实在内。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与谢实在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:30.987548",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2723,6 +3279,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "如果谢实真愿意带人死守避暑山，而不是故弄玄虚，那么这一断，就让大隋尚未跟大骊开战，就砍掉了半条命。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 191,
+        "segment_index": 32
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -2749,7 +3318,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "谢实"
+        ],
         "sentence_indexes_in_segment": [
           2,
           3
@@ -2774,15 +3345,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺在大骊剧情推进",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "谢实",
           "崔瀺"
         ],
         "description": "如果谢实真愿意带人死守避暑山，而不是故弄玄虚，那么这一断，就让大隋尚未跟大骊开战，就砍掉了半条命。 甚至可以说，东宝瓶洲的半壁江山，已经大半可能性落入大骊宋氏之手。 崔瀺感慨道：“原来是这么大一个赌局，真的有点出乎意料，我得跟我们陛下打声招呼才行。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动谢实与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段32",
         "sentence_indexes_in_segment": [
@@ -2798,7 +3370,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.837528",
+    "extracted_at": "2026-03-25T01:03:30.987548",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2819,6 +3391,21 @@
       "若是答应此事，我会收取两到三名大骊出身的嫡传弟子，重点栽培，绝不含糊。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "谢实点头道：“情理之中，我可以等，最多半个月时间，你们大骊皇帝必须给我答复。 崔瀺突然指了指稚圭，“她的两次救命之恩，你谢实就没有一点表示？",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 33
+      },
       {
         "entity_type": "person",
         "name": "大骊皇帝",
@@ -2872,6 +3459,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "谢实",
           "大骊皇帝"
         ],
         "sentence_indexes_in_segment": [
@@ -2884,17 +3472,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 大骊皇帝与崔瀺在大骊对话",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与大骊皇帝在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "谢实",
           "大骊皇帝",
           "崔瀺",
           "稚圭"
         ],
-        "description": "谢实点头道：“情理之中，我可以等，最多半个月时间，你们大骊皇帝必须给我答复。 崔瀺突然指了指稚圭，“她的两次救命之恩，你谢实就没有一点表示？ 若是答应此事，我会收取两到三名大骊出身的嫡传弟子，重点栽培，绝不含糊。",
+        "description": "谢实点头道：“情理之中，我可以等，最多半个月时间，你们大骊皇帝必须给我答复。 崔瀺突然指了指稚圭，“她的两次救命之恩，你谢实就没有一点表示？ 谢实爽朗笑道：“当然，你们不答应此事，南下袭扰一事，我谢实不会参与其中。",
         "background": "",
-        "significance": "在大骊推动大骊皇帝与崔瀺之间的对话线。",
+        "significance": "在大骊推动谢实与大骊皇帝之间的对话线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段33",
         "sentence_indexes_in_segment": [
@@ -2910,7 +3499,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.838034",
+    "extracted_at": "2026-03-25T01:03:30.987548",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2931,6 +3520,20 @@
       "但是只要她愿意，名额不在那两三个之中。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "你们应该清楚，不妨先说一句，我谢实很快就会晋升天君，以我的年龄，在所有九洲的道家天君当中，只能算是青壮，说一句不要脸的话，就是真正的大道可期，而且我谢实在开宗立派的千年岁月当中，只有三名嫡传弟子！ 谢实摇头道：“她不算。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 191,
+        "segment_index": 34
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -2963,19 +3566,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与稚圭师承",
+        "name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 谢实与崔瀺剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "崔瀺",
           "稚圭"
         ],
-        "description": "崔瀺指了指稚圭，“她算一个？ 你们应该清楚，不妨先说一句，我谢实很快就会晋升天君，以我的年龄，在所有九洲的道家天君当中，只能算是青壮，说一句不要脸的话，就是真正的大道可期，而且我谢实在开宗立派的千年岁月当中，只有三名嫡传弟子！ ”",
+        "description": "你们应该清楚，不妨先说一句，我谢实很快就会晋升天君，以我的年龄，在所有九洲的道家天君当中，只能算是青壮，说一句不要脸的话，就是真正的大道可期，而且我谢实在开宗立派的千年岁月当中，只有三名嫡传弟子！ 崔瀺指了指稚圭，“她算一个？ 谢实摇头道：“她不算。",
         "background": "",
-        "significance": "推动崔瀺与稚圭之间的师承关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动谢实与崔瀺之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -2989,34 +3591,8 @@
         "segment_index": 34
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "稚圭"
-        ],
-        "action": "师承",
-        "context": "你们应该清楚，不妨先说一句，我谢实很快就会晋升天君，以我的年龄，在所有九洲的道家天君当中，只能算是青壮，说一句不要脸的话，就是真正的大道可期，而且我谢实在开宗立派的千年岁月当中，只有三名嫡传弟子！ ” 崔瀺指了指稚圭，“她算一个？ ” 谢实摇头道：“她不算。 但是只要她愿意，名额不在那两三个之中。",
-        "result": null,
-        "event_name": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 崔瀺与稚圭师承",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 191,
-        "segment_index": 34
-      }
-    ],
-    "extracted_at": "2026-03-24T15:41:29.838034",
+    "relations": [],
+    "extracted_at": "2026-03-25T01:03:30.987548",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3107,7 +3683,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.838034",
+    "extracted_at": "2026-03-25T01:03:30.987548",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

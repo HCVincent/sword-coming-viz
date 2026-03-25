@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.831998",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -107,6 +107,19 @@
         ],
         "juan_index": 158,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "李宝瓶还是挑选大红色的衣裳，不单单是瞧着喜气的缘故，陈平安很早就听小姑娘抱怨过，好像是小时候有一位云游道人经过福禄街，给李家三兄妹测过命数，其中给李宝瓶算八字的时候，提到了小姑娘以后最好身穿红色衣衫，可避邪祟，李家这些年不管如何宠溺这个小闺女，在这件事上没得商量，李宝瓶虽然越长大越郁闷，可还是照做，上次在红烛镇驿站收到家里人的三封书信，无一例外，从父亲到李希圣、李宝箴两个哥哥，全部提醒过小姑娘，千万别图新鲜就换了其它颜色的衣衫。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 158,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -119,7 +132,8 @@
         "coordinates": null,
         "related_entities": [
           "李宝瓶",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "sentence_indexes_in_segment": [
           4
@@ -135,13 +149,15 @@
         "location": "福禄街",
         "participants": [
           "李宝瓶",
-          "陈平安"
+          "陈平安",
+          "李希圣"
         ],
         "description": "陈平安笑道：“那当然，只要你别嫌弃丢人就行。 之后陈平安带着李宝瓶逛了几家杂货铺子，给三个孩子都买了崭新靴子，陈平安自己没买，倒不是抠门到这份上，实在是穿不习惯，试穿的时候，浑身不自在，简直连走路都不会了。 除此之外还给三人各自买了两套新衣服，花钱如流水，陈平安说不心疼肯定是假，可钱该花总得花。",
         "background": "",
         "significance": "在福禄街推动李宝瓶与陈平安之间的对话线。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段2",
         "sentence_indexes_in_segment": [
@@ -176,9 +192,29 @@
         ],
         "juan_index": 158,
         "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "指点",
+        "context": "李宝瓶还是挑选大红色的衣裳，不单单是瞧着喜气的缘故，陈平安很早就听小姑娘抱怨过，好像是小时候有一位云游道人经过福禄街，给李家三兄妹测过命数，其中给李宝瓶算八字的时候，提到了小姑娘以后最好身穿红色衣衫，可避邪祟，李家这些年不管如何宠溺这个小闺女，在这件事上没得商量，李宝瓶虽然越长大越郁闷，可还是照做，上次在红烛镇驿站收到家里人的三封书信，无一例外，从父亲到李希圣、李宝箴两个哥哥，全部提醒过小姑娘，千万别图新鲜就换了其它颜色的衣衫。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶与陈平安在福禄街对话",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 158,
+        "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.833002",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -273,7 +309,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.833002",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -375,7 +411,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.833002",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -451,7 +487,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.833002",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -503,16 +539,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶与林守一对话",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
-          "林守一"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "李宝瓶问道：“林守一说练气士那样的山上神仙，若是修道有成，能活一百年甚至是一千年呢！ 李宝瓶试探性问道：“那我先走？ ”",
         "background": "",
-        "significance": "推动李宝瓶与林守一之间的对话关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0
         ],
@@ -541,7 +579,7 @@
         "action": "对话",
         "context": "李宝瓶问道：“林守一说练气士那样的山上神仙，若是修道有成，能活一百年甚至是一千年呢！",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶与林守一对话",
+        "event_name": "书院同行南下",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -551,7 +589,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.833002",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -613,7 +651,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.833002",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -721,7 +759,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.734130",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -784,7 +822,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -877,7 +915,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -939,7 +977,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1016,7 +1054,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1078,7 +1116,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1154,7 +1192,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1175,6 +1213,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "同一座院子，近在咫尺，于禄和谢谢却从头到尾都不知道这位剑灵的存在，每当她出现的时候，就会在双方之间隔绝气机，使得少年少女看不见听不着，完全无法感知到她。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 158,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "谢谢",
@@ -1218,17 +1269,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 谢谢与李宝瓶迁移",
+        "name": "书院同行南下",
         "time": null,
         "location": null,
         "participants": [
-          "谢谢",
           "李宝瓶",
-          "陈平安"
+          "林守一",
+          "李槐",
+          "于禄"
         ],
         "description": "同一座院子，近在咫尺，于禄和谢谢却从头到尾都不知道这位剑灵的存在，每当她出现的时候，就会在双方之间隔绝气机，使得少年少女看不见听不着，完全无法感知到她。 李宝瓶打过招呼就去屋内放东西，陈平安坐在剑灵身边。 回到院子，高大女子坐在石凳上，正在仰头望向天幕，嘴角噙着柔和笑意。",
         "background": "",
-        "significance": "推动谢谢与李宝瓶之间的迁移关系。",
+        "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段15",
         "sentence_indexes_in_segment": [
@@ -1244,7 +1296,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.834005",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1322,7 +1374,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.835008",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1352,6 +1404,19 @@
         "original_description_in_book": "她向天空伸出手，手心多出那株亭亭玉立的雪白荷叶，“因为酸秀才的缘故，加上你那一剑有些不同寻常，所以荷叶支撑不了太多时间了，这也是我着急赶回去的原因之一，再就是秀才答应我，不会因为崔瀺的事情牵连到主人，他会先去一趟颍阴陈氏那边，跟人说完道理再去西边，所以接下来，如他所说，安安心心带着那帮孩子求学便是，有崔瀺这么个坏蛋，还有那个武夫第六境的于禄一旁护驾，我相信哪怕主人没了剑气，便是有些坎坷，也一样能够逢凶化吉。",
         "description": "大骊国师，是王朝布局和小镇暗线的核心操盘者之一。",
         "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 158,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "于禄",
+        "alias": [],
+        "original_description_in_book": "她向天空伸出手，手心多出那株亭亭玉立的雪白荷叶，“因为酸秀才的缘故，加上你那一剑有些不同寻常，所以荷叶支撑不了太多时间了，这也是我着急赶回去的原因之一，再就是秀才答应我，不会因为崔瀺的事情牵连到主人，他会先去一趟颍阴陈氏那边，跟人说完道理再去西边，所以接下来，如他所说，安安心心带着那帮孩子求学便是，有崔瀺这么个坏蛋，还有那个武夫第六境的于禄一旁护驾，我相信哪怕主人没了剑气，便是有些坎坷，也一样能够逢凶化吉。",
+        "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
+        "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1393,13 +1458,16 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "崔瀺",
+          "于禄"
         ],
         "description": "她向天空伸出手，手心多出那株亭亭玉立的雪白荷叶，“因为酸秀才的缘故，加上你那一剑有些不同寻常，所以荷叶支撑不了太多时间了，这也是我着急赶回去的原因之一，再就是秀才答应我，不会因为崔瀺的事情牵连到主人，他会先去一趟颍阴陈氏那边，跟人说完道理再去西边，所以接下来，如他所说，安安心心带着那帮孩子求学便是，有崔瀺这么个坏蛋，还有那个武夫第六境的于禄一旁护驾，我相信哪怕主人没了剑气，便是有些坎坷，也一样能够逢凶化吉。 陈平安说道：“阿良曾经无意间说过，不管是武夫境界还是练气士，到了三境修为，就可以试着独自游历一国，只要自己不找死，多半没有太大问题，五六境的话，就可以把半洲版图走下来，前提是不要胡乱凑热闹，不要往那些出了名的湖泽险地走，再就是别热血上头，遇上什么事情都觉得可以行侠仗义，或是斩妖除魔，那么就可以大体上安然无恙了，如果说遇上飞来横祸，因此死翘翘，那就只能怪命不好，这么糟糕的命数，待在家里一样不安稳，所以出门不出门，结果大致是一样的。 ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段17",
         "sentence_indexes_in_segment": [
@@ -1415,6 +1483,26 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "冲突",
+        "context": "她向天空伸出手，手心多出那株亭亭玉立的雪白荷叶，“因为酸秀才的缘故，加上你那一剑有些不同寻常，所以荷叶支撑不了太多时间了，这也是我着急赶回去的原因之一，再就是秀才答应我，不会因为崔瀺的事情牵连到主人，他会先去一趟颍阴陈氏那边，跟人说完道理再去西边，所以接下来，如他所说，安安心心带着那帮孩子求学便是，有崔瀺这么个坏蛋，还有那个武夫第六境的于禄一旁护驾，我相信哪怕主人没了剑气，便是有些坎坷，也一样能够逢凶化吉。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 158,
+        "segment_index": 17
+      },
       {
         "time": null,
         "from_roles": [
@@ -1436,7 +1524,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.835008",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1499,7 +1587,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.735133",
+    "extracted_at": "2026-03-25T01:03:30.835008",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1561,7 +1649,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.835008",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1624,7 +1712,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.835008",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1697,7 +1785,7 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺在大骊揭示",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺在大骊试探",
         "time": null,
         "location": "大骊",
         "participants": [
@@ -1706,7 +1794,7 @@
         ],
         "description": "陈平安坐回原位，突然一拍脑袋，想起那把槐木剑，忘了询问她和文圣老先生，那个躲在木剑中的金衣女童到底是什么了！ 崔瀺在秋芦客栈的一间密室喝着茶，客栈的二当家，刘嘉卉，在郡城高层大名鼎鼎的刘夫人，就像一名卑微婢女，小心翼翼察言观色，谨慎打量着这名表露身份的大骊国师。 她所在的紫阳府，本就是被大骊拉拢过去的黄庭国棋子，这桩盟约，是极少露面的开山祖师，亲自点头许可的，紫阳府上上下下，自然不敢有丝毫的掉以轻心。",
         "background": "",
-        "significance": "在大骊推动陈平安与崔瀺之间的揭示线。",
+        "significance": "在大骊推动陈平安与崔瀺之间的试探线。",
         "related_action_indices": [
           0
         ],
@@ -1732,10 +1820,10 @@
         "to_roles": [
           "崔瀺"
         ],
-        "action": "归属",
+        "action": "试探",
         "context": "陈平安坐回原位，突然一拍脑袋，想起那把槐木剑，忘了询问她和文圣老先生，那个躲在木剑中的金衣女童到底是什么了！ 崔瀺在秋芦客栈的一间密室喝着茶，客栈的二当家，刘嘉卉，在郡城高层大名鼎鼎的刘夫人，就像一名卑微婢女，小心翼翼察言观色，谨慎打量着这名表露身份的大骊国师。 她所在的紫阳府，本就是被大骊拉拢过去的黄庭国棋子，这桩盟约，是极少露面的开山祖师，亲自点头许可的，紫阳府上上下下，自然不敢有丝毫的掉以轻心。 尤其是像刘嘉卉这种自认大道无望的外派子弟，对于朝廷官府这类世俗权势的象征，会格外上心。 虽说黄庭国洪氏皇帝，历来奉行祖制优待仙家，只可惜一个小小的黄庭国，能够让牵连极深的灵韵派死心塌地，却没办法让紫阳府这类门派势力效忠，因为池塘太小了，水底下的蛟龙希望拥有更加宽广的地盘。 紫阳府比起那个只想要一个“宫”字的伏龙观，野心更大。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺在大骊揭示",
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺在大骊试探",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1750,7 +1838,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.835008",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1834,7 +1922,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1897,7 +1985,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1980,7 +2068,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2044,7 +2132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2128,7 +2216,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2214,7 +2302,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2278,7 +2366,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2361,7 +2449,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.736137",
+    "extracted_at": "2026-03-25T01:03:30.836012",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2446,7 +2534,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2510,7 +2598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2574,7 +2662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2658,7 +2746,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2722,7 +2810,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2803,7 +2891,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2887,7 +2975,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2953,7 +3041,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3046,7 +3134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.837015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3125,7 +3213,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.838019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3219,7 +3307,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.737140",
+    "extracted_at": "2026-03-25T01:03:30.838019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3346,7 +3434,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.738144",
+    "extracted_at": "2026-03-25T01:03:30.838019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3471,7 +3559,7 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.738144",
+    "extracted_at": "2026-03-25T01:03:30.838019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3550,7 +3638,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.738144",
+    "extracted_at": "2026-03-25T01:03:30.838019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3631,7 +3719,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.738144",
+    "extracted_at": "2026-03-25T01:03:30.838019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3738,7 +3826,7 @@
         "segment_index": 49
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.738144",
+    "extracted_at": "2026-03-25T01:03:30.839022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3790,7 +3878,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.738144",
+    "extracted_at": "2026-03-25T01:03:30.839022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

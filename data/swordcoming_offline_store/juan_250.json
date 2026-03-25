@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "extracted_at": "2026-03-25T01:03:31.256557",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -118,7 +118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "extracted_at": "2026-03-25T01:03:31.257561",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -193,7 +193,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "extracted_at": "2026-03-25T01:03:31.257561",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -214,6 +214,19 @@
       "可好像有钱人，消暑避暑的门道也很多，更别提神通广大的山上练气士。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏稼",
+        "alias": [],
+        "original_description_in_book": "山上恩怨，可能是凡夫俗子几辈子加在一起的事情，所以冤家宜解不宜结，风雷园和正阳山就是最好的例子，曾经高高在上的仙子苏稼如今如何了？",
+        "description": "正阳山线重要人物，适合补强山上宗门与龙泉地界的关系网。",
+        "power": "正阳山",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 250,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -238,7 +251,9 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "苏稼"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -296,16 +311,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安在正阳山等待",
+        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 苏稼与陈平安在正阳山等待",
         "time": null,
         "location": "正阳山",
         "participants": [
+          "苏稼",
           "陈平安"
         ],
         "description": "山上恩怨，可能是凡夫俗子几辈子加在一起的事情，所以冤家宜解不宜结，风雷园和正阳山就是最好的例子，曾经高高在上的仙子苏稼如今如何了？ 陈平安默默无言，只是摘下酒壶喝着酒，等待渡船出发去往南方，此行乘船南下二十万里，下船渡口处，又会有其它仙家渡船直达老龙城，再由老龙城跨洲去往倒悬山，进入剑气长城，所以再没有与朋友一起游历江湖的机会了，哪怕想喝酒，就只能自己一个人喝。 渡船即将起航，客人们开始陆续登船，陈平安在二楼找到自己房间，比起梧桐山渡口登上的那艘鲲船天字房，十分逼仄狭小，只摆放了一张床铺，外边有一个仅供两人站立的小阳台，",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键等待节点。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动苏稼与陈平安之间的等待线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -319,8 +337,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苏稼"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "等待",
+        "context": "山上恩怨，可能是凡夫俗子几辈子加在一起的事情，所以冤家宜解不宜结，风雷园和正阳山就是最好的例子，曾经高高在上的仙子苏稼如今如何了？ 她那只世间第一等的养剑葫，被收缴回师门，剑心和修为一同破碎不堪，据说已经彻底杳无音信，有多少爱慕她的年轻练气士，至今还在痛心疾首？ 陈平安默默无言，只是摘下酒壶喝着酒，等待渡船出发去往南方，此行乘船南下二十万里，下船渡口处，又会有其它仙家渡船直达老龙城，再由老龙城跨洲去往倒悬山，进入剑气长城，所以再没有与朋友一起游历江湖的机会了，哪怕想喝酒，就只能自己一个人喝。 渡船即将起航，客人们开始陆续登船，陈平安在二楼找到自己房间，比起梧桐山渡口登上的那艘鲲船天字房，十分逼仄狭小，只摆放了一张床铺，外边有一个仅供两人站立的小阳台， 陈平安放下那兜花费了十数两银子的瓜果，摘下剑匣和包裹，坐在被褥整洁舒适的床铺上，没来由想起了泥瓶巷祖宅的木板床铺，陈平安后仰躺下，穷人畏冬，富人怕暑。 可好像有钱人，消暑避暑的门道也很多，更别提神通广大的山上练气士。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 苏稼与陈平安在正阳山等待",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 250,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.257561",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -352,6 +396,19 @@
           0,
           1,
           2
+        ],
+        "juan_index": 250,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "李希圣",
+        "alias": [],
+        "original_description_in_book": "陈平安坐起身，卷起袖管和裤管，双手手腕处和双腿脚踝上方，露出隐隐约约的符箓模样，真气缓缓流转，如同裹缠有无形的负担，瞧着不太起眼，而且李希圣赠送的那本丹书真迹，也无记载。",
+        "description": "书院线与儒家线的重要人物，也是李宝瓶相关人物网的重要支点。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 250,
         "segment_index": 5
@@ -469,8 +526,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "杨老头",
-          "郑大风"
+          "李希圣",
+          "杨老头"
         ],
         "description": "陈平安坐起身，卷起袖管和裤管，双手手腕处和双腿脚踝上方，露出隐隐约约的符箓模样，真气缓缓流转，如同裹缠有无形的负担，瞧着不太起眼，而且李希圣赠送的那本丹书真迹，也无记载。 这是杨老头的手笔，名为真气八两符，老人没有细说，只说是能够帮助纯粹武夫在酣睡时，以真气运转自行淬炼体魄，而且陈平安只要跻身炼气境，这四张符箓就会自行退散，如果始终无法破开瓶颈，就让陈平安到了宝瓶洲最南端的老龙城，去一座灰尘药铺找郑大风，让那位曾经的小镇看门人帮忙解除束缚。 陈平安收起袖管裤管，走到渡船阳台，根据梳水国地方县志记载，这条地下水道的形成，是世间最后一条真龙被仙人追杀，潜入地下，它以巨大身躯开辟而成，最终在梳水国那处洞口钻出地面，最后御风去往了北方大骊，最后大战落幕，便有了那座骊珠小洞天。",
         "background": "",
@@ -490,7 +547,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "extracted_at": "2026-03-25T01:03:31.257561",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -552,7 +609,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "extracted_at": "2026-03-25T01:03:31.257561",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -630,7 +687,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.033275",
+    "extracted_at": "2026-03-25T01:03:31.257561",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -710,7 +767,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -775,7 +832,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -857,7 +914,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -940,7 +997,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1105,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1086,7 +1143,7 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安试探",
         "time": null,
         "location": null,
         "participants": [
@@ -1094,7 +1151,7 @@
         ],
         "description": "又一天练拳到正午时分，陈平安突然发现养剑葫里的酒水，还有盈余，可是干粮已经不够三餐，只得挂好酒壶，背好剑匣，穿上草鞋，第一次推开房门，准备去船尾的一座饭馆买些易于储藏的食物，离着不算远，因为是吃饭的点，正是乘客出门来往的时分，陈平安出门的时候，刚好左边屋子的那拨江湖豪侠也要出门觅食，陈平安便略微放慢脚步，拉开五六步距离，跟在五人后头，其中有人忍不住回头打量这个头回碰面的古怪邻居，很快就有人扯了扯他袖子，示意不要横生枝节。 他当下最大的兴趣所在，是想知道船上的那些钓鱼人，是否有谁钓上了两指长的珍稀河龙。 那人很快就收回视线，背负木匣的少年剑士，独自行走江湖，年纪轻轻，瞧着却是气度沉稳，确实最好不要招惹，若真是位万中无一的剑修，自己这伙人哪怕出身都不差，在山下都算江湖名门大派，可还是吃罪不起的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "对应陈平安在叙事中的关键试探节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段13",
         "sentence_indexes_in_segment": [
@@ -1110,7 +1167,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1210,7 +1267,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.258564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1269,6 +1326,19 @@
         "original_description_in_book": "只是这趟南下游历，陈平安错过了许多地方，有些是来不及去，会绕路很远，比如顾璨和他娘亲所在的书简湖青峡岛，陈平安希望他们娘俩过得好好的，不要受人欺负，但是更希望顾璨不要成为练气士之后，转过头来去欺压别人，最终变成老龙城少城主苻南华那般的山上神仙。",
         "description": "小镇少年，和陈平安关系极深，承接早期情感牵连与后续命运分叉。",
         "power": "泥瓶巷",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 250,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "苻南华",
+        "alias": [],
+        "original_description_in_book": "只是这趟南下游历，陈平安错过了许多地方，有些是来不及去，会绕路很远，比如顾璨和他娘亲所在的书简湖青峡岛，陈平安希望他们娘俩过得好好的，不要受人欺负，但是更希望顾璨不要成为练气士之后，转过头来去欺压别人，最终变成老龙城少城主苻南华那般的山上神仙。",
+        "description": "老龙城与大势布局线的重要人物，参与多场试探与利益角力。",
+        "power": "老龙城",
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1399,7 +1469,8 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "顾璨"
+          "顾璨",
+          "苻南华"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -1426,18 +1497,18 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "顾璨离开小镇",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "齐静春",
+          "顾璨",
           "陈平安",
           "杨老头",
-          "顾璨"
+          "苻南华"
         ],
         "description": "宝瓶洲南涧国神诰宗就独占一块福地，名为清潭福地，福地有点类似藩属之国，只是更加版图广袤，自成体系，蕴含天道规矩也大小不一、高低不一，往往出产丰富，能够源源不断被仙家大宗所攫取，所造就的格局，必然是宗门大者愈大，山头高峰愈高，例如骊珠洞天，位列浩然天下的三十六小洞天之一，当初那对力挽狂澜、为宋氏延续国祚的大骊双壁，就是骊珠洞天走出去、然后被大骊王朝近水楼台先得月的人杰。 天大地大，陈平安两次远游，哪怕尚未走出宝瓶洲，其实已经有所领略，而杨老头说的小镇之大，无法想象。 陈平安也领教过了一些。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段15",
         "sentence_indexes_in_segment": [
@@ -1453,7 +1524,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.034278",
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1519,7 +1590,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035169",
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1618,7 +1689,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035169",
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1641,6 +1712,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "谢实",
+        "alias": [],
+        "original_description_in_book": "当时能够聚集那么多剑气的势力，只会是那个大王朝的朝廷，可那位皇帝已经亲自去往神诰宗，发誓绝无此事，之后在祁真的陪同下，亲自面见俱芦洲道主谢实，后者竟然只说一切自有俱芦洲修士追查真相。",
+        "description": "老龙城海上与家族势力线的重要枢纽人物。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 250,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "临近洞口处，陈平安突然停下脚步，然后骤然加快脚步，向那两位老者抱拳问道：“两位仙师，冒昧问一句，那艘鲲船上的乘客如何了？",
@@ -1656,16 +1740,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安对话",
+        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 谢实与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "谢实",
           "陈平安"
         ],
-        "description": "临近洞口处，陈平安突然停下脚步，然后骤然加快脚步，向那两位老者抱拳问道：“两位仙师，冒昧问一句，那艘鲲船上的乘客如何了？ 有何好处？ 当时能够聚集那么多剑气的势力，只会是那个大王朝的朝廷，可那位皇帝已经亲自去往神诰宗，发誓绝无此事，之后在祁真的陪同下，亲自面见俱芦洲道主谢实，后者竟然只说一切自有俱芦洲修士追查真相。",
+        "description": "当时能够聚集那么多剑气的势力，只会是那个大王朝的朝廷，可那位皇帝已经亲自去往神诰宗，发誓绝无此事，之后在祁真的陪同下，亲自面见俱芦洲道主谢实，后者竟然只说一切自有俱芦洲修士追查真相。 临近洞口处，陈平安突然停下脚步，然后骤然加快脚步，向那两位老者抱拳问道：“两位仙师，冒昧问一句，那艘鲲船上的乘客如何了？ 有何好处？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动谢实与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1679,8 +1766,34 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035169",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "有何好处？ 当时能够聚集那么多剑气的势力，只会是那个大王朝的朝廷，可那位皇帝已经亲自去往神诰宗，发誓绝无此事，之后在祁真的陪同下，亲自面见俱芦洲道主谢实，后者竟然只说一切自有俱芦洲修士追查真相。 临近洞口处，陈平安突然停下脚步，然后骤然加快脚步，向那两位老者抱拳问道：“两位仙师，冒昧问一句，那艘鲲船上的乘客如何了？ ” 一位老人对此置若罔闻，看也不看一眼满嘴北方口音的背剑少年，继续前行。 那位悬挂印章的老人倒是停下身形，耐心说道：“下五境的乘客，几乎没人活下来。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 谢实与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 250,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1743,7 +1856,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035169",
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1808,7 +1921,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035169",
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1872,7 +1985,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035680",
+    "extracted_at": "2026-03-25T01:03:31.259568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1934,7 +2047,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035680",
+    "extracted_at": "2026-03-25T01:03:31.260571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1998,7 +2111,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035680",
+    "extracted_at": "2026-03-25T01:03:31.260571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2057,7 +2170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:30.035680",
+    "extracted_at": "2026-03-25T01:03:31.260571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

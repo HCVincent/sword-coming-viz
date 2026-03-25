@@ -135,7 +135,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -256,7 +256,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.931347",
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -318,7 +318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -392,17 +392,20 @@
     ],
     "events": [
       {
-        "name": "魏檗现身",
+        "name": "李二照面陈平安",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "魏檗",
-          "陈平安"
+          "李二",
+          "陈平安",
+          "魏檗"
         ],
         "description": "陌生道人这副做派，落在青衣小童眼中，比起魏檗那种绵里藏针的阴森笑容，这哥们可就真诚太多了，不过青衣小童在这狗屁龙泉郡，一朝被蛇咬十年怕井绳，混得有些草木皆兵了，便再次仔细打量了一番道人，确定没有半点练气士的气象后，激动得差点热泪盈眶，一路晃荡过去，跳起来就在年轻道人肩头上一拍，“谢什么，我家老爷陈平安下山前就说了，他不在家的时候，我就要挑起重担，当家作主，你作为客人，哪有让你受到惊吓的道理。 “这样啊，如此说来贫道托你的福，逃过一劫了。 ”年轻道人笑容灿烂，连忙道谢。",
         "background": "",
-        "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百二十二章 有些离别可以再会 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -416,8 +419,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏檗"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "试探",
+        "context": "陌生道人这副做派，落在青衣小童眼中，比起魏檗那种绵里藏针的阴森笑容，这哥们可就真诚太多了，不过青衣小童在这狗屁龙泉郡，一朝被蛇咬十年怕井绳，混得有些草木皆兵了，便再次仔细打量了一番道人，确定没有半点练气士的气象后，激动得差点热泪盈眶，一路晃荡过去，跳起来就在年轻道人肩头上一拍，“谢什么，我家老爷陈平安下山前就说了，他不在家的时候，我就要挑起重担，当家作主，你作为客人，哪有让你受到惊吓的道理。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 222,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -500,7 +524,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -565,7 +589,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.145594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -630,7 +654,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -776,7 +800,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -886,7 +910,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -996,7 +1020,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1061,7 +1085,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1167,7 +1191,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.932350",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1247,7 +1271,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1354,7 +1378,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.146598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1418,7 +1442,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.147601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1514,7 +1538,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.147601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1579,7 +1603,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.147601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1640,7 +1664,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.147601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1703,7 +1727,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.933354",
+    "extracted_at": "2026-03-25T01:03:31.147601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1723,7 +1747,21 @@
       "宝瓶洲国家林立，可是名副其实的“王朝”，双手之数而已。",
       "北方卢氏王朝，已是过眼云烟，据说皇族子弟上吊的上吊，投井的投井，活下来的也都沦为刑徒遗民，被逼着给大骊宋氏去开山吃土了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏晋",
+        "alias": [],
+        "original_description_in_book": "鲲船下方的宝瓶洲版图，为一个朱荧王朝的疆土，是宝瓶洲剑修最多的一个强大王朝，相传风雪庙陆地剑仙魏晋当年第一次行走江湖，在朱荧王朝逗留时间最久，几次生死搏杀，对手都是与朱荧王朝的成名剑修。",
+        "description": "山上线极具锋芒的剑修，常与问剑、对峙和高位气象场景相关。",
+        "power": "风雪庙",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 222,
+        "segment_index": 29
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1732,7 +1770,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           1,
           2,
@@ -1748,7 +1788,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "魏晋"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1775,13 +1817,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十二章 有些离别可以再会 · 宝瓶洲迁移",
+        "name": "第三卷金错刀 第二百二十二章 有些离别可以再会 · 魏晋在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
+        "participants": [
+          "魏晋"
+        ],
         "description": "鲲船下方的宝瓶洲版图，为一个朱荧王朝的疆土，是宝瓶洲剑修最多的一个强大王朝，相传风雪庙陆地剑仙魏晋当年第一次行走江湖，在朱荧王朝逗留时间最久，几次生死搏杀，对手都是与朱荧王朝的成名剑修。 朱荧王朝是宝瓶洲中南部首屈一指的鼎盛势力，藩属小国多达十数个，仅就国土面积而言，仅次于北方吞并了卢氏王朝的大骊，而朱荧老皇帝的诸多龙子龙孙当中，光是早早决意舍弃皇位的九境剑修就有两人，四大皇家供奉当中，一名十境剑修，曾经与那位号称宝瓶洲上五境之下第一人的风雷园李抟景，三次交手，三次落败，但是差距有限，否则李抟景也不会答应后边的两次挑战。 宝瓶洲国家林立，可是名副其实的“王朝”，双手之数而已。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键迁移场景。",
+        "significance": "对应魏晋在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十二章 有些离别可以再会 · 段29",
         "sentence_indexes_in_segment": [
@@ -1797,7 +1841,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.934357",
+    "extracted_at": "2026-03-25T01:03:31.148605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1858,7 +1902,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.934357",
+    "extracted_at": "2026-03-25T01:03:31.148605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1921,7 +1965,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.934357",
+    "extracted_at": "2026-03-25T01:03:31.148605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1985,7 +2029,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.934357",
+    "extracted_at": "2026-03-25T01:03:31.148605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2065,7 +2109,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.934357",
+    "extracted_at": "2026-03-25T01:03:31.149608",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2117,7 +2161,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-24T15:41:29.934357",
+    "extracted_at": "2026-03-25T01:03:31.149608",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
