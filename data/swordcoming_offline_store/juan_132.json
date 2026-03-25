@@ -106,7 +106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.742655",
+    "extracted_at": "2026-03-25T17:27:37.524585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -142,6 +142,21 @@
         ],
         "juan_index": 132,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "车夫是个大骊驻留龙泉县城的大谍子，眼观鼻鼻观心，纹丝不动坐在驾车位置上，崔瀺上了车弯腰掀起帘子后，突然转头道：“去把王毅甫喊过来担任车夫，你继续留在县城，负责盯着骑龙巷和杏花巷两处地方的动静。 约莫一盏茶功夫，一个高大男子大步流星走来，高大少年目不斜视，神色从容，少女眼神冷冽，似乎不太喜欢这位名叫王毅甫的男人。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 132,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -155,7 +170,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "王毅甫"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -176,7 +192,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "王毅甫"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -192,7 +209,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "王毅甫"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -203,15 +221,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺在大骊剧情推进",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 王毅甫与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "王毅甫",
           "崔瀺"
         ],
-        "description": "车夫是个大骊驻留龙泉县城的大谍子，眼观鼻鼻观心，纹丝不动坐在驾车位置上，崔瀺上了车弯腰掀起帘子后，突然转头道：“去把王毅甫喊过来担任车夫，你继续留在县城，负责盯着骑龙巷和杏花巷两处地方的动静。 王毅甫，正是那个奉命亲手拧掉宋煜章头颅的男子，昔年卢氏王朝的沙场猛将，既没有沦为大骊阶下囚，也没有成为新王朝的座上宾，更没有重掌兵权，而是成为了那位娘娘的鹰犬，随着她被“贬谪”到长春宫去结茅修道，王毅甫的主人，就从大骊娘娘换成了眼前的这位少年国师。 因为是走驿路官道，马车不小，足以容纳三人，可崔瀺仍是让少年少女坐在外边，他独自霸占着宽敞车厢，没过多久，车厢内就传来琅琅读书声，堂堂大骊国师，享誉一洲的围棋圣手，却每天都要朗诵这些蒙学内容，实在是让人觉得好笑。",
+        "description": "车夫是个大骊驻留龙泉县城的大谍子，眼观鼻鼻观心，纹丝不动坐在驾车位置上，崔瀺上了车弯腰掀起帘子后，突然转头道：“去把王毅甫喊过来担任车夫，你继续留在县城，负责盯着骑龙巷和杏花巷两处地方的动静。 约莫一盏茶功夫，一个高大男子大步流星走来，高大少年目不斜视，神色从容，少女眼神冷冽，似乎不太喜欢这位名叫王毅甫的男人。 王毅甫，正是那个奉命亲手拧掉宋煜章头颅的男子，昔年卢氏王朝的沙场猛将，既没有沦为大骊阶下囚，也没有成为新王朝的座上宾，更没有重掌兵权，而是成为了那位娘娘的鹰犬，随着她被“贬谪”到长春宫去结茅修道，王毅甫的主人，就从大骊娘娘换成了眼前的这位少年国师。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动王毅甫与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段2",
         "sentence_indexes_in_segment": [
@@ -227,7 +246,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.742655",
+    "extracted_at": "2026-03-25T17:27:37.524585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -264,6 +283,32 @@
         ],
         "juan_index": 132,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "离开小镇后，沿着驿路驶出大概一个时辰，崔瀺让王毅甫停车，他独自走向一座小山坡，观湖书院的“君子”崔明皇等候已久，见到这位被驱逐出家门的祖辈后，毕恭毕敬作揖行礼。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "离开小镇后，沿着驿路驶出大概一个时辰，崔瀺让王毅甫停车，他独自走向一座小山坡，观湖书院的“君子”崔明皇等候已久，见到这位被驱逐出家门的祖辈后，毕恭毕敬作揖行礼。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -275,7 +320,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "王毅甫",
+          "崔明皇"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -344,12 +391,16 @@
         "participants": [
           "顾璨",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "王毅甫"
         ],
         "description": "马车由东门驶出小镇，崔瀺掀起窗帘，看了眼东门口附近的新建县衙，尚未完全竣工，只是有了个雏形，在衙署胥吏督促下，小镇青壮现在就已经开始忙碌，使得整个东门都尘土飞扬，崔瀺眼神阴沉地放下帘子。 离开小镇后，沿着驿路驶出大概一个时辰，崔瀺让王毅甫停车，他独自走向一座小山坡，观湖书院的“君子”崔明皇等候已久，见到这位被驱逐出家门的祖辈后，毕恭毕敬作揖行礼。 崔瀺站在山顶，回望小镇，只可惜如今境界大跌，修为低微，哪怕穷尽目力，也无法见着那边的风景了，“尊奉披云山为大骊北岳一事，还需要酝酿，一时半会很难成功。",
         "background": "",
         "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -363,8 +414,49 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.742655",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "王毅甫"
+        ],
+        "action": "等待",
+        "context": "离开小镇后，沿着驿路驶出大概一个时辰，崔瀺让王毅甫停车，他独自走向一座小山坡，观湖书院的“君子”崔明皇等候已久，见到这位被驱逐出家门的祖辈后，毕恭毕敬作揖行礼。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "崔明皇"
+        ],
+        "action": "等待",
+        "context": "离开小镇后，沿着驿路驶出大概一个时辰，崔瀺让王毅甫停车，他独自走向一座小山坡，观湖书院的“君子”崔明皇等候已久，见到这位被驱逐出家门的祖辈后，毕恭毕敬作揖行礼。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.524585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -387,6 +479,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇松了口气后，眼神坚毅，承诺道：“绝不会让老祖失望的！",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -405,15 +510,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与崔明皇剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "崔明皇"
         ],
-        "description": "崔瀺对此不置一词，继续说自己的，“我将那个瓷人少年留给你，到时候你把他安插进入新书院，不出意外的话，他的修行会很顺利，可能会以一种吓人的速度跻身中五境，你做好心理准备，但是你最好将他雪藏起来，不要太早浮水出面。 我从瓷山千挑万选出了那些碎瓷，好不容易才拼凑出这么个神魂具备的瓷人，这少年能够从一堆破瓷片，到现在的活灵活现，与人无异，既是我崔瀺毕生心血的凝聚，也有很大的运气成分，所以你务必多上点心。 ”",
+        "description": "崔明皇松了口气后，眼神坚毅，承诺道：“绝不会让老祖失望的！ 崔瀺对此不置一词，继续说自己的，“我将那个瓷人少年留给你，到时候你把他安插进入新书院，不出意外的话，他的修行会很顺利，可能会以一种吓人的速度跻身中五境，你做好心理准备，但是你最好将他雪藏起来，不要太早浮水出面。 我从瓷山千挑万选出了那些碎瓷，好不容易才拼凑出这么个神魂具备的瓷人，这少年能够从一堆破瓷片，到现在的活灵活现，与人无异，既是我崔瀺毕生心血的凝聚，也有很大的运气成分，所以你务必多上点心。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与崔明皇之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段4",
         "sentence_indexes_in_segment": [
@@ -429,7 +535,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "extracted_at": "2026-03-25T17:27:37.524585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -450,6 +556,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇心情激荡，弯腰抱拳道：“老祖放心，我崔明皇一定将其视为己出！",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -521,9 +640,10 @@
         "participants": [
           "崔瀺",
           "杨老头",
+          "崔明皇",
           "宋长镜"
         ],
-        "description": "崔瀺有些疲惫神色，“在小镇这边，除了藩王宋长镜之外，其余两拨谍子死士，你能够随便使唤，我已经帮你打过招呼了。 再就是没事的时候，多跟杨家铺子的杨老头聊聊，这个老不死的东西，做事最是公道，从不谈什么好坏、正邪、敌我，你争取能够让老头子答应跟你做买卖。 ”",
+        "description": "崔明皇心情激荡，弯腰抱拳道：“老祖放心，我崔明皇一定将其视为己出！ 崔瀺有些疲惫神色，“在小镇这边，除了藩王宋长镜之外，其余两拨谍子死士，你能够随便使唤，我已经帮你打过招呼了。 再就是没事的时候，多跟杨家铺子的杨老头聊聊，这个老不死的东西，做事最是公道，从不谈什么好坏、正邪、敌我，你争取能够让老头子答应跟你做买卖。",
         "background": "",
         "significance": "揭示小镇暗线与大骊布局。",
         "related_action_indices": [],
@@ -541,7 +661,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "extracted_at": "2026-03-25T17:27:37.524585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -592,12 +712,38 @@
       },
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "“至于吴鸢，你自己看着办吧，就事论事，不要交心就行。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
         ],
         "original_description_in_book": "崔瀺说到最后，分明是青葱少年的俊美相貌，却给崔明皇一种耄耋老人、万事皆休的错觉。",
         "description": "大骊国师，是王朝布局和小镇暗线的核心操盘者之一。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔瀺说到最后，分明是青葱少年的俊美相貌，却给崔明皇一种耄耋老人、万事皆休的错觉。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
         "power": "大骊",
         "sentence_indexes_in_segment": [
           5
@@ -666,9 +812,10 @@
         "participants": [
           "阮邛",
           "李希圣",
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "“至于阮邛，我劝你别去自讨无趣。 福禄街和桃叶巷的四大姓十大族，如今七零八落，人心涣散，你多留心李家，嗯，就是李希圣所在的李家，至于那个心比天高的二公子李宝箴，如今靠山一倒，虽说算不上被一夜之间打回原形，但是也算领教过我们大骊京城的云波诡谲了，这对兄弟之间，你选谁都行，不过只能选一个。 崔瀺说到最后，分明是青葱少年的俊美相貌，却给崔明皇一种耄耋老人、万事皆休的错觉。",
+        "description": "“至于阮邛，我劝你别去自讨无趣。 福禄街和桃叶巷的四大姓十大族，如今七零八落，人心涣散，你多留心李家，嗯，就是李希圣所在的李家，至于那个心比天高的二公子李宝箴，如今靠山一倒，虽说算不上被一夜之间打回原形，但是也算领教过我们大骊京城的云波诡谲了，这对兄弟之间，你选谁都行，不过只能选一个。 “至于吴鸢，你自己看着办吧，就事论事，不要交心就行。",
         "background": "",
         "significance": "在福禄街推动阮邛与李希圣之间的剧情推进线。",
         "related_action_indices": [],
@@ -686,7 +833,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "extracted_at": "2026-03-25T17:27:37.525588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -709,6 +856,34 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇试探性问道道：“那个学生吴鸢，难不成是？ 崔明皇恍然大悟道：“难怪，老祖宗你那次在袁氏祖宅泄露天机，我总觉得不对劲，后来才想明白，是因为吴鸢在场的缘故。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "崔明皇试探性问道道：“那个学生吴鸢，难不成是？ 崔明皇恍然大悟道：“难怪，老祖宗你那次在袁氏祖宅泄露天机，我总觉得不对劲，后来才想明白，是因为吴鸢在场的缘故。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -726,16 +901,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔明皇与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔明皇",
+          "吴鸢"
         ],
-        "description": "崔瀺耷拉着双肩，向山下走去，点了点头，有气无力道：“他是娘娘的人。 崔明皇试探性问道道：“那个学生吴鸢，难不成是？ ”",
+        "description": "崔明皇试探性问道道：“那个学生吴鸢，难不成是？ 崔瀺耷拉着双肩，向山下走去，点了点头，有气无力道：“他是娘娘的人。 崔明皇恍然大悟道：“难怪，老祖宗你那次在袁氏祖宅泄露天机，我总觉得不对劲，后来才想明白，是因为吴鸢在场的缘故。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔明皇与吴鸢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -749,8 +927,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔明皇"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔明皇试探性问道道：“那个学生吴鸢，难不成是？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔明皇与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 132,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.525588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -786,21 +985,37 @@
         ],
         "juan_index": 132,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇默然无语。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 132,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺揭示",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与崔明皇揭示",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "崔明皇"
         ],
-        "description": "崔瀺叹了口气，并没有藏掖真相，打开天窗说亮话，“当时在袁氏老宅，我给了他一次机会，之前芝麻绿豆大小的琐事，他把消息全部传递出去，我懒得计较。 崔瀺拍了拍这位家族晚辈的肩膀，“我对你寄予很大期望啊，不然不会跟你讲这些的。 ”",
+        "description": "崔瀺叹了口气，并没有藏掖真相，打开天窗说亮话，“当时在袁氏老宅，我给了他一次机会，之前芝麻绿豆大小的琐事，他把消息全部传递出去，我懒得计较。 崔明皇默然无语。 崔瀺拍了拍这位家族晚辈的肩膀，“我对你寄予很大期望啊，不然不会跟你讲这些的。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键揭示节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与崔明皇之间的揭示关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -814,8 +1029,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "崔明皇"
+        ],
+        "action": "师承",
+        "context": "” 崔瀺叹了口气，并没有藏掖真相，打开天窗说亮话，“当时在袁氏老宅，我给了他一次机会，之前芝麻绿豆大小的琐事，他把消息全部传递出去，我懒得计较。 可他如果走出宅子后，选择在那件事情上泄密给那位娘娘，那他就死了，弟子欺师灭祖，那么先生打死学生，天经地义嘛。 ” 崔明皇默然无语。 崔瀺拍了拍这位家族晚辈的肩膀，“我对你寄予很大期望啊，不然不会跟你讲这些的。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与崔明皇揭示",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.525588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -838,6 +1079,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇苦笑道：“诚惶诚恐。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -850,21 +1104,37 @@
         ],
         "juan_index": 132,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "崔瀺加快步伐走下山，走出十数步后，转头笑道：“你我都是聪明人，你肯定在想我能这么给吴鸢挖坑，一定不会放过你，事实上……你没有猜错，确实是这样的，不过陷阱在哪里，需要在哪天做出生死抉择，得你自己去琢磨。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺加快步伐走下山，走出十数步后，转头笑道：“你我都是聪明人，你肯定在想我能这么给吴鸢挖坑，一定不会放过你，事实上……你没有猜错，确实是这样的，不过陷阱在哪里，需要在哪天做出生死抉择，得你自己去琢磨。 ” 崔明皇苦笑道：“诚惶诚恐。",
+        "description": "崔明皇苦笑道：“诚惶诚恐。 崔瀺加快步伐走下山，走出十数步后，转头笑道：“你我都是聪明人，你肯定在想我能这么给吴鸢挖坑，一定不会放过你，事实上……你没有猜错，确实是这样的，不过陷阱在哪里，需要在哪天做出生死抉择，得你自己去琢磨。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与吴鸢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -878,8 +1148,29 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺加快步伐走下山，走出十数步后，转头笑道：“你我都是聪明人，你肯定在想我能这么给吴鸢挖坑，一定不会放过你，事实上……你没有猜错，确实是这样的，不过陷阱在哪里，需要在哪天做出生死抉择，得你自己去琢磨。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.525588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -902,6 +1193,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇没有惊慌失措，更没有委屈无辜，反而斗志昂扬，“该读的书，差不多已经读完了，以后人生的乐趣，就在于此了。 崔瀺转过身，望向山脚那辆马车，双手拢在袖子里，啧啧道：“果然三种弟子都得有啊，你崔明皇，吴鸢，瓷人，齐全了。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -914,21 +1219,39 @@
         ],
         "juan_index": 132,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "崔瀺转过身，望向山脚那辆马车，双手拢在袖子里，啧啧道：“果然三种弟子都得有啊，你崔明皇，吴鸢，瓷人，齐全了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与崔明皇师承",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "崔明皇",
+          "吴鸢"
         ],
-        "description": "崔瀺转过身，望向山脚那辆马车，双手拢在袖子里，啧啧道：“果然三种弟子都得有啊，你崔明皇，吴鸢，瓷人，齐全了。 ” 崔明皇没有惊慌失措，更没有委屈无辜，反而斗志昂扬，“该读的书，差不多已经读完了，以后人生的乐趣，就在于此了。",
+        "description": "崔明皇没有惊慌失措，更没有委屈无辜，反而斗志昂扬，“该读的书，差不多已经读完了，以后人生的乐趣，就在于此了。 崔瀺转过身，望向山脚那辆马车，双手拢在袖子里，啧啧道：“果然三种弟子都得有啊，你崔明皇，吴鸢，瓷人，齐全了。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与崔明皇之间的师承关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -942,8 +1265,49 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "崔明皇"
+        ],
+        "action": "师承",
+        "context": "崔瀺转过身，望向山脚那辆马车，双手拢在袖子里，啧啧道：“果然三种弟子都得有啊，你崔明皇，吴鸢，瓷人，齐全了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与崔明皇师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 10
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "师承",
+        "context": "崔瀺转过身，望向山脚那辆马车，双手拢在袖子里，啧啧道：“果然三种弟子都得有啊，你崔明皇，吴鸢，瓷人，齐全了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与崔明皇师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.525588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1082,7 +1446,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.743658",
+    "extracted_at": "2026-03-25T17:27:37.526592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1235,7 +1599,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.744662",
+    "extracted_at": "2026-03-25T17:27:37.526592",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "132-13-0": {
+    "juan_index": 132,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百三十二章 学生崔瀺",
+    "source_sentences": [
+      "至于那个老头子到底是怎么想的？",
+      "天晓得！",
+      "就是字面意义上的那个天晓得。",
+      "老头子，虽然一辈子最高的俗世功名不过秀才而已。",
+      "但是当初在儒教文庙，曾经排在第四高位啊，那会儿老秀才真可谓如日中天，要不然老头子人都没死，神像能硬生生给人搬进去竖起来？",
+      "老秀才自己拦都拦不住。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "但是当初在儒教文庙，曾经排在第四高位啊，那会儿老秀才真可谓如日中天，要不然老头子人都没死，神像能硬生生给人搬进去竖起来？ 老秀才自己拦都拦不住。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "但是当初在儒教文庙，曾经排在第四高位啊，那会儿老秀才真可谓如日中天，要不然老头子人都没死，神像能硬生生给人搬进去竖起来？ 老秀才自己拦都拦不住。 至于那个老头子到底是怎么想的？",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.526592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1267,6 +1694,33 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 132,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "一辆马车停在驿站外的路边，眉心朱砂的白衣少年站在车顶上，面朝北方，翘首以盼。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫坐在驾车位置上，像往常一样闷不吭声。 高大少年于禄在清点行囊里的物件，身材婀娜却容颜粗鄙的少女最闲散惬意，坐在王毅甫身边，和少年背对背，她正晃荡着双腿，一颗颗嗑着瓜子。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4,
+          5
         ],
         "juan_index": 132,
         "segment_index": 14
@@ -1305,16 +1759,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与于禄在大骊剧情推进",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 王毅甫与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "王毅甫",
           "崔瀺",
+          "白衣少年",
           "于禄"
         ],
-        "description": "不过崔瀺总觉得当时老头子其实偷着乐呵，根本就没真想着去拦。 通往大骊南边关隘野夫关的必经之路上。 高大少年于禄在清点行囊里的物件，身材婀娜却容颜粗鄙的少女最闲散惬意，坐在王毅甫身边，和少年背对背，她正晃荡着双腿，一颗颗嗑着瓜子。",
+        "description": "不过崔瀺总觉得当时老头子其实偷着乐呵，根本就没真想着去拦。 通往大骊南边关隘野夫关的必经之路上。 一辆马车停在驿站外的路边，眉心朱砂的白衣少年站在车顶上，面朝北方，翘首以盼。",
         "background": "",
-        "significance": "在大骊推动崔瀺与于禄之间的剧情推进线。",
+        "significance": "在大骊推动王毅甫与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段14",
         "sentence_indexes_in_segment": [
@@ -1330,7 +1786,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.744662",
+    "extracted_at": "2026-03-25T17:27:37.526592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1368,6 +1824,19 @@
       },
       {
         "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫没有转身，轻声道：“殿下，以后保重。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 132,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "于禄",
         "alias": [],
         "original_description_in_book": "已经改名为于禄的高大少年，点头笑道：“王将军也是如此。",
@@ -1383,19 +1852,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与于禄对话",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与王毅甫对话",
         "time": null,
         "location": null,
         "participants": [
           "崔瀺",
+          "王毅甫",
           "于禄"
         ],
-        "description": "少年崔瀺一跺脚，“总算来了！ 已经改名为于禄的高大少年，点头笑道：“王将军也是如此。 ”",
+        "description": "少年崔瀺一跺脚，“总算来了！ 王毅甫没有转身，轻声道：“殿下，以后保重。 已经改名为于禄的高大少年，点头笑道：“王将军也是如此。",
         "background": "",
-        "significance": "推动崔瀺与于禄之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动崔瀺与王毅甫之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1409,21 +1877,57 @@
         "segment_index": 15
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.526592",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "132-16-0": {
+    "juan_index": 132,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百三十二章 学生崔瀺",
+    "source_sentences": [
+      "王毅甫嗯了一声，正要开口。",
+      "嗑完一大把瓜子的少女拍拍手，云淡风轻飘出一句话来，“王大将军没必要跟我这种刑徒贱民客套寒暄了。",
+      "”",
+      "王毅甫苦笑道：“是我们对不住你的师门。",
+      "”",
+      "少女双手叠放在膝盖上，仰头望向蔚蓝天空，笑道：“那你就跟那些魂飞魄散的死人们说去。"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫嗯了一声，正要开口。 王毅甫苦笑道：“是我们对不住你的师门。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 王毅甫对话",
         "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "于禄"
-        ],
-        "action": "对话",
-        "context": "少年崔瀺一跺脚，“总算来了！ ” 王毅甫没有转身，轻声道：“殿下，以后保重。 ” 已经改名为于禄的高大少年，点头笑道：“王将军也是如此。 ”",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 崔瀺与于禄对话",
         "location": null,
-        "is_commentary": false,
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "王毅甫嗯了一声，正要开口。 王毅甫苦笑道：“是我们对不住你的师门。 嗑完一大把瓜子的少女拍拍手，云淡风轻飘出一句话来，“王大将军没必要跟我这种刑徒贱民客套寒暄了。",
+        "background": "",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段16",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -1433,10 +1937,11 @@
           5
         ],
         "juan_index": 132,
-        "segment_index": 15
+        "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.744662",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.526592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1469,6 +1974,19 @@
         ],
         "juan_index": 132,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "于禄突然说道：“王毅甫，不用理她，她就是个没长大的孩子而已，心里有气，又不知道跟谁发泄。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 17
       }
     ],
     "locations": [
@@ -1489,16 +2007,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 于禄在山崖书院对话",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 于禄与王毅甫在山崖书院对话",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "于禄"
+          "于禄",
+          "王毅甫"
         ],
         "description": "我既没有参加那场大战，事后也没有自尽，相反活得还不错，很快就是新山崖书院的学生了。 于禄突然说道：“王毅甫，不用理她，她就是个没长大的孩子而已，心里有气，又不知道跟谁发泄。 所以王大将军你跟我说这个，挺没意思的。",
         "background": "",
-        "significance": "对应于禄在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在山崖书院推动于禄与王毅甫之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1512,8 +2033,29 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.744662",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "王毅甫"
+        ],
+        "action": "对话",
+        "context": "于禄突然说道：“王毅甫，不用理她，她就是个没长大的孩子而已，心里有气，又不知道跟谁发泄。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 于禄与王毅甫在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 132,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.527595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1549,6 +2091,20 @@
       },
       {
         "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫一阵头大。 若非担心这两个孩子的安危，王毅甫又怎么可能答应大骊娘娘，为她效命。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 132,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安一行人沿着驿路边缘南下。",
@@ -1571,7 +2127,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "王毅甫"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1581,19 +2139,18 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 于禄与陈平安在大骊对话",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 王毅甫与于禄在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "王毅甫",
           "于禄",
           "陈平安"
         ],
-        "description": "于禄微笑不言，继续低头收拾行李。 若非担心这两个孩子的安危，王毅甫又怎么可能答应大骊娘娘，为她效命。 陈平安一行人沿着驿路边缘南下。",
+        "description": "于禄微笑不言，继续低头收拾行李。 王毅甫一阵头大。 若非担心这两个孩子的安危，王毅甫又怎么可能答应大骊娘娘，为她效命。",
         "background": "",
-        "significance": "在大骊推动于禄与陈平安之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在大骊推动王毅甫与于禄之间的对话线。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1607,34 +2164,8 @@
         "segment_index": 18
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "于禄"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "少女笑道：“呦，还当自己是贵不可言的卢氏太子啊，还有资格教我做人？ ” 于禄微笑不言，继续低头收拾行李。 王毅甫一阵头大。 若非担心这两个孩子的安危，王毅甫又怎么可能答应大骊娘娘，为她效命。 陈平安一行人沿着驿路边缘南下。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 于禄与陈平安在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 132,
-        "segment_index": 18
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.744662",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.527595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1657,6 +2188,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "然后看到一个脸熟的白衣少年飞奔而来，那种热情，简直比一位怀春少女面对心仪情郎，还来得夸张。 眉心朱砂的白衣少年笑容灿烂道：“陈平安，虽然听上去很像个玩笑，但我其实是很认真很严肃地告诉你，从今天起，我就是你的学生了！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 132,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "眉心朱砂的白衣少年笑容灿烂道：“陈平安，虽然听上去很像个玩笑，但我其实是很认真很严肃地告诉你，从今天起，我就是你的学生了！ 等我死了之后，你记得帮我立起一块碑文，就写陈平安弟子之墓！",
@@ -1674,16 +2219,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 陈平安对话",
+        "name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 白衣少年与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "白衣少年",
           "陈平安"
         ],
-        "description": "眉心朱砂的白衣少年笑容灿烂道：“陈平安，虽然听上去很像个玩笑，但我其实是很认真很严肃地告诉你，从今天起，我就是你的学生了！ 等我死了之后，你记得帮我立起一块碑文，就写陈平安弟子之墓！ 陈平安呆滞了很久才缓过来，问道：“你的真实姓名叫什么？",
+        "description": "然后看到一个脸熟的白衣少年飞奔而来，那种热情，简直比一位怀春少女面对心仪情郎，还来得夸张。 眉心朱砂的白衣少年笑容灿烂道：“陈平安，虽然听上去很像个玩笑，但我其实是很认真很严肃地告诉你，从今天起，我就是你的学生了！ 等我死了之后，你记得帮我立起一块碑文，就写陈平安弟子之墓！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动白衣少年与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十二章 学生崔瀺 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1697,8 +2245,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.744662",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "白衣少年"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "然后看到一个脸熟的白衣少年飞奔而来，那种热情，简直比一位怀春少女面对心仪情郎，还来得夸张。 眉心朱砂的白衣少年笑容灿烂道：“陈平安，虽然听上去很像个玩笑，但我其实是很认真很严肃地告诉你，从今天起，我就是你的学生了！ 你不认我做学生的话，我就死给你看！ 等我死了之后，你记得帮我立起一块碑文，就写陈平安弟子之墓！ ” 陈平安呆滞了很久才缓过来，问道：“你的真实姓名叫什么？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十二章 学生崔瀺 · 白衣少年与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 132,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.527595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1772,7 +2346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.745665",
+    "extracted_at": "2026-03-25T17:27:37.527595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

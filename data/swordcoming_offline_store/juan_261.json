@@ -100,7 +100,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "extracted_at": "2026-03-25T17:27:38.253220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -138,6 +138,19 @@
       },
       {
         "entity_type": "person",
+        "name": "范峻茂",
+        "alias": [],
+        "original_description_in_book": "郑大风当然认得此人，他此次南下进入老龙城，所见第一人，就是这位名声不显的范家大小姐，范峻茂。",
+        "description": "山上修士群像中的关键人物，适合增强外围修士与冲突网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 261,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "苻畦",
         "alias": [],
         "original_description_in_book": "不提地仙苻畦以及手握四把仙兵的苻家，孙家是出了名的底蕴深厚，拥有一位元婴地仙坐镇祖宅。",
@@ -159,7 +172,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "郑大风"
+          "郑大风",
+          "范峻茂"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -186,19 +200,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与苻畦在老龙城迁移",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与范峻茂在老龙城迁移",
         "time": null,
         "location": "老龙城",
         "participants": [
           "郑大风",
+          "范峻茂",
           "苻畦"
         ],
         "description": "郑大风当然认得此人，他此次南下进入老龙城，所见第一人，就是这位名声不显的范家大小姐，范峻茂。 老龙城五大姓，符孙方侯丁。 不提地仙苻畦以及手握四把仙兵的苻家，孙家是出了名的底蕴深厚，拥有一位元婴地仙坐镇祖宅。",
         "background": "",
-        "significance": "在老龙城推动郑大风与苻畦之间的迁移线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在老龙城推动郑大风与范峻茂之间的迁移线。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -212,34 +225,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "郑大风"
-        ],
-        "to_roles": [
-          "苻畦"
-        ],
-        "action": "同行",
-        "context": "郑大风当然认得此人，他此次南下进入老龙城，所见第一人，就是这位名声不显的范家大小姐，范峻茂。 老龙城五大姓，符孙方侯丁。 不提地仙苻畦以及手握四把仙兵的苻家，孙家是出了名的底蕴深厚，拥有一位元婴地仙坐镇祖宅。 方家虽无元婴震慑群雄，却有两位七境武道宗师和一位九境金丹剑修，在宝瓶洲南方的山下王朝，尤其是江湖，方家拥有极大的威势，遍布各地的银庄、镖局、当铺客栈，星罗棋布，相比苻家和孙家，方家挣的是蝇头小利，走的是积少成多的路数。 侯家的顶尖战力，那拨中五境的供奉清客，不占任何优势，但是有一位离家多年的庶子，已是观湖书院的贤人，虽然那位贤人离家之后，从未返乡祭祖，但是侯家的的确确因此受益深远，每年都会派人去往观湖书院拜年。 侯家除了去往倒悬山的那艘跨洲渡船，还拥有老龙城去往北俱芦洲最多的航线，路程大多不长，从数万里到三十万里，例如北段尽头在梳水国的那条走龙道，侯家就占据了半壁江山，零零碎碎，加在一起，不容小觑。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与苻畦在老龙城迁移",
-        "location": "老龙城",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 261,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.253220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -303,7 +290,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "extracted_at": "2026-03-25T17:27:38.253220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -428,7 +415,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.325813",
+    "extracted_at": "2026-03-25T17:27:38.254223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -462,6 +449,20 @@
           0,
           2,
           3
+        ],
+        "juan_index": 261,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "范峻茂",
+        "alias": [],
+        "original_description_in_book": "郑大风习惯了老头子的云遮雾绕，抽旱烟是如此，做事更是如此，所以对名为范峻茂的女子，懒得去刨根问底，当初以八境武夫境界观察范峻茂，就只是一位尚未跻身中五境的稚嫩修士，但是如今跻身九境之后，再来打量一番，郑大风发现自己当初看错了，当下范峻茂分明是金丹境的练气士。 原来那个“范峻茂”在喝酒的时候，就跻身了第十境，元婴境，一举成为世俗眼中的地仙之流。",
+        "description": "山上修士群像中的关键人物，适合增强外围修士与冲突网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
         ],
         "juan_index": 261,
         "segment_index": 5
@@ -509,12 +510,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "郑大风"
+          "郑大风",
+          "范峻茂"
         ],
         "description": "郑大风习惯了老头子的云遮雾绕，抽旱烟是如此，做事更是如此，所以对名为范峻茂的女子，懒得去刨根问底，当初以八境武夫境界观察范峻茂，就只是一位尚未跻身中五境的稚嫩修士，但是如今跻身九境之后，再来打量一番，郑大风发现自己当初看错了，当下范峻茂分明是金丹境的练气士。 郑大风就陪着她沉默不言，反正女子长得水灵，是他占便宜。 郑大风突然发出一连串啧啧啧，“厉害厉害，以前总觉得在老龙城，就见不到比小镇更夸张的奇人怪事，今天真是涨了见识。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -528,8 +532,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.325813",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "范峻茂"
+        ],
+        "action": "试探",
+        "context": "郑大风习惯了老头子的云遮雾绕，抽旱烟是如此，做事更是如此，所以对名为范峻茂的女子，懒得去刨根问底，当初以八境武夫境界观察范峻茂，就只是一位尚未跻身中五境的稚嫩修士，但是如今跻身九境之后，再来打量一番，郑大风发现自己当初看错了，当下范峻茂分明是金丹境的练气士。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 261,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.254223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -564,6 +589,19 @@
         ],
         "juan_index": 261,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "范峻茂",
+        "alias": [],
+        "original_description_in_book": "范峻茂终于开口说了第一句话，“以后在老龙城，你听命于我。",
+        "description": "山上修士群像中的关键人物，适合增强外围修士与冲突网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 261,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -574,7 +612,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "范峻茂"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -584,16 +624,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风在老龙城剧情推进",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与范峻茂在老龙城对话",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "郑大风"
+          "郑大风",
+          "范峻茂"
         ],
         "description": "虽然她已经尽量压制破境流露出的那点蛛丝马迹，可郑大风还是抓到了一点端倪，心中惊叹不已。 范峻茂终于开口说了第一句话，“以后在老龙城，你听命于我。 确认无误了。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动郑大风与范峻茂之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -607,8 +650,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.325813",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "范峻茂"
+        ],
+        "action": "对话",
+        "context": "虽然她已经尽量压制破境流露出的那点蛛丝马迹，可郑大风还是抓到了一点端倪，心中惊叹不已。 确认无误了。 老头子对于此人，势在必得。 甚至说不定此人早就是老头子心目中的胜负手之一。 范峻茂终于开口说了第一句话，“以后在老龙城，你听命于我。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 郑大风与范峻茂在老龙城对话",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.254223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -754,7 +823,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.325813",
+    "extracted_at": "2026-03-25T17:27:38.254223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -786,6 +855,32 @@
           1,
           2,
           4
+        ],
+        "juan_index": 261,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 261,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 261,
         "segment_index": 9
@@ -847,13 +942,16 @@
         "participants": [
           "阿良",
           "陈平安",
-          "崔东山"
+          "马致",
+          "老秀才"
         ],
         "description": "拂晓时分，陈平安就已经在小院练习走桩，天地寂寥，唯有晨曦懒洋洋躺在少年的肩头。 等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。 郑大风虽然看上去吊儿郎当，但是在某些事情上，其实并不含糊。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段9",
         "sentence_indexes_in_segment": [
@@ -872,7 +970,47 @@
       {
         "time": null,
         "from_roles": [
+          "马致"
+        ],
+        "to_roles": [
           "陈平安"
+        ],
+        "action": "师承",
+        "context": "等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 261,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "马致"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "师承",
+        "context": "等到金丹剑修马致推门而出，陈平安已经走桩完毕，坐在石桌旁翻看那本剑术正经，陈平安在练拳间隙，读书其实没有停过，既有自己沿途购买的杂书，也有当初从彩衣国郡守府邸书房“偷来”的山水游记，当然还有老秀才赠送的那本儒家入门典籍，加上跟弟子崔东山那一路相伴游历，早已知道正经二字，不是俗语所谓正儿八经的正经，而是极大的一个说法，一本书能够称为经，已是世俗立言之巅，若是再加上一个正字，更是了不得。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 261,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "马致"
         ],
         "to_roles": [
           "崔东山"
@@ -890,7 +1028,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.325813",
+    "extracted_at": "2026-03-25T17:27:38.254223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1189,7 +1327,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.325813",
+    "extracted_at": "2026-03-25T17:27:38.255227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1294,6 +1432,19 @@
         ],
         "juan_index": 261,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "被马苦玄活活打死的彩衣国剑神，梳水国剑圣宋雨烧，古榆国剑尊林孤山，松溪国剑仙苏琅，就都是山下武夫，大体上还是在混迹江湖，不被山上视为同道。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 261,
+        "segment_index": 11
       }
     ],
     "locations": [],
@@ -1326,7 +1477,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.255227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,7 +1539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.255227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1453,7 +1604,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.255227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1535,7 +1686,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1597,7 +1748,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1617,7 +1768,21 @@
       "老人说到这里，自嘲笑道：“如果范家愿意倾尽家族半数的钱财，帮助我淬炼那把本命飞剑，四处购买天材地宝，铸造剑炉，说不定能够让我顺势突破九境瓶颈。",
       "但是范家再好，也不可能如此作为，毕竟我不姓范。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "我马致，两百七十岁，在八十年前就已经跻身金丹境，当时在老龙城还惹出不小的动静，五大姓氏有四个，同时重金邀请我担任供奉……好汉不提当年勇，不说这些陈芝麻烂谷子了，只说我在破境之初，就明白一件事，这辈子都不用去想什么陆地神仙元婴境了，为何？",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 261,
+        "segment_index": 16
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1626,7 +1791,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "马致"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1636,13 +1803,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 老龙城对话",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 马致在老龙城对话",
         "time": null,
         "location": "老龙城",
-        "participants": [],
+        "participants": [
+          "马致"
+        ],
         "description": "我马致，两百七十岁，在八十年前就已经跻身金丹境，当时在老龙城还惹出不小的动静，五大姓氏有四个，同时重金邀请我担任供奉……好汉不提当年勇，不说这些陈芝麻烂谷子了，只说我在破境之初，就明白一件事，这辈子都不用去想什么陆地神仙元婴境了，为何？ ” 老人再次自问自答，“一是天资不够，二是实在没钱。",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
+        "significance": "对应马致在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段16",
         "sentence_indexes_in_segment": [
@@ -1658,7 +1827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1720,7 +1889,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,7 +1951,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.326816",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1802,7 +1971,22 @@
       "马致压下心境涟漪，微笑道：“陈公子是武道中人，可既然要练剑，以我作为假想敌，就该知道练气士的底细……”",
       "马致突然停下言语，“想来这些公子都已清楚，我就不唠叨了？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "马致压下心境涟漪，微笑道：“陈公子是武道中人，可既然要练剑，以我作为假想敌，就该知道练气士的底细……” 马致突然停下言语，“想来这些公子都已清楚，我就不唠叨了？",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1821,13 +2005,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 宝瓶洲对话",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 马致在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "老人叹息一声，金丹境，尤其是剑修，哪怕在中土神洲也会有一席之地，无非是从宝瓶洲的一国状元郎变成了一位进士，可到底还是做不得真正的逍遥神仙。 金丹老人随即喟叹道：“话虽如此，可是这个仙师辈出、妖魔作祟的复杂世道，还是有很多只凭自己喜好、只想一拳一剑打碎一切的人物，也不是说他们做得全然不对，说句心里话，那等无法无天的痛快惬意，旁观之人，内心难免都会有些艳羡，只是这种人可以有，但是绝不可以人人推崇，尤其看久了热闹，真当那一拳那一剑莫名其妙砸在自己头上的那天，真心苦也。 ”",
+        "participants": [
+          "马致"
+        ],
+        "description": "老人叹息一声，金丹境，尤其是剑修，哪怕在中土神洲也会有一席之地，无非是从宝瓶洲的一国状元郎变成了一位进士，可到底还是做不得真正的逍遥神仙。 马致压下心境涟漪，微笑道：“陈公子是武道中人，可既然要练剑，以我作为假想敌，就该知道练气士的底细……” 马致突然停下言语，“想来这些公子都已清楚，我就不唠叨了？",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
+        "significance": "对应马致在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段19",
         "sentence_indexes_in_segment": [
@@ -1843,7 +2029,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1876,6 +2062,21 @@
         ],
         "juan_index": 261,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "马致微微一笑，“练气士中五境，洞府，观海，龙门，金丹，元婴。 我所在的金丹境，能够将整座气海凝聚为一颗金色丹丸，至于金丹的品相、大小和意象，因人而异，一般来说，通过龙门境时期的丹室，就能大致推算出金丹的优劣，我正是当初丹室粗糙，侥幸结丹，金丹品相便好不到哪里去，便知道自己无望元婴了，若非如此，我马致一位金丹剑修，为何仍是敌不过登龙台结茅的楚阳？",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 20
       }
     ],
     "locations": [
@@ -1886,7 +2087,9 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "马致"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1896,15 +2099,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安在老龙城剧情推进",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 马致与陈平安在老龙城剧情推进",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "马致",
           "陈平安"
         ],
-        "description": "陈平安摇头道：“马先生只管说，好话不嫌多。 这些年老龙城，背地里不知道多少金丹同辈，和那些个中五境的小家伙，以此取笑我马致。 ”",
+        "description": "陈平安摇头道：“马先生只管说，好话不嫌多。 马致微微一笑，“练气士中五境，洞府，观海，龙门，金丹，元婴。 我所在的金丹境，能够将整座气海凝聚为一颗金色丹丸，至于金丹的品相、大小和意象，因人而异，一般来说，通过龙门境时期的丹室，就能大致推算出金丹的优劣，我正是当初丹室粗糙，侥幸结丹，金丹品相便好不到哪里去，便知道自己无望元婴了，若非如此，我马致一位金丹剑修，为何仍是敌不过登龙台结茅的楚阳？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在老龙城推动马致与陈平安之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段20",
         "sentence_indexes_in_segment": [
@@ -1920,7 +2124,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "extracted_at": "2026-03-25T17:27:38.256230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1943,6 +2147,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "久而久之，便流传起了一句话，小时了了，大未必佳，马致是也……” 马致说起这桩糗事，哈哈大笑起来，显然全无心结。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 261,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安突然问道：“马先生，能不能问一句关于你的修为境界？",
@@ -1958,16 +2177,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安对话",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 马致与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "马致",
           "陈平安"
         ],
-        "description": "陈平安突然问道：“马先生，能不能问一句关于你的修为境界？ 久而久之，便流传起了一句话，小时了了，大未必佳，马致是也……” 马致说起这桩糗事，哈哈大笑起来，显然全无心结。",
+        "description": "久而久之，便流传起了一句话，小时了了，大未必佳，马致是也……” 马致说起这桩糗事，哈哈大笑起来，显然全无心结。 陈平安突然问道：“马先生，能不能问一句关于你的修为境界？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动马致与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1981,8 +2203,34 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马致"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "久而久之，便流传起了一句话，小时了了，大未必佳，马致是也……” 马致说起这桩糗事，哈哈大笑起来，显然全无心结。 陈平安突然问道：“马先生，能不能问一句关于你的修为境界？ ” 马致点头道：“自无不可。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 马致与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.257234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2015,21 +2263,39 @@
         ],
         "juan_index": 261,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "马致心中恍然。 那些个撞大运跻身中五境的山泽散修，可能一辈子都不知道龙门境的丹室，可以不止一幅画卷，真正的修道天才，可以有两幅丹室“壁画”，马致这一生接触过的前辈修士，有数位元婴地仙，就都是两幅，一位玉璞境神仙，则是三幅之多，惊世骇俗。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安对话",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安与马致对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "马致"
         ],
-        "description": "陈平安小心问道：“马先生什么岁数跻身龙门境，丹室有几幅图画、几种场景？ ” 马致心中恍然。",
+        "description": "陈平安小心问道：“马先生什么岁数跻身龙门境，丹室有几幅图画、几种场景？ 马致心中恍然。 那些个撞大运跻身中五境的山泽散修，可能一辈子都不知道龙门境的丹室，可以不止一幅画卷，真正的修道天才，可以有两幅丹室“壁画”，马致这一生接触过的前辈修士，有数位元婴地仙，就都是两幅，一位玉璞境神仙，则是三幅之多，惊世骇俗。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与马致之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -2043,8 +2309,34 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "马致"
+        ],
+        "action": "对话",
+        "context": "陈平安小心问道：“马先生什么岁数跻身龙门境，丹室有几幅图画、几种场景？ ” 马致心中恍然。 果然是山上第一等的仙家子弟，否则绝对问不出如此问题。 那些个撞大运跻身中五境的山泽散修，可能一辈子都不知道龙门境的丹室，可以不止一幅画卷，真正的修道天才，可以有两幅丹室“壁画”，马致这一生接触过的前辈修士，有数位元婴地仙，就都是两幅，一位玉璞境神仙，则是三幅之多，惊世骇俗。 马致抚须而笑，并不藏掖，坦诚相告，“先前提过一嘴，我马致是在一百九十岁的时候跻身九境金丹，龙门境嘛，那就是很早之前的事情了，一百二十多岁的时候，因为我修道较晚，否则百岁之前鲤鱼跳龙门，问题不大。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安与马致对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.257234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2079,6 +2371,20 @@
         ],
         "juan_index": 261,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "马致以为是少年惊讶于自己的修道天资，老人笑意多了几分。 马致被蒙在鼓里，反而笑着安慰少年，“陈公子，以你的出众资质，哪怕走的是武道一途，未来成就，只会比我只高不低，只要脚踏实地，大道可期！",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 23
       }
     ],
     "locations": [
@@ -2101,15 +2407,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安在泥瓶巷剧情推进",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安与马致在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "马致"
         ],
-        "description": "陈平安一脸震惊，咽了咽唾沫。 殊不知陈平安之所以有此疑问，是记起了当初在泥瓶巷祖宅，一位姑娘充满懊恼和不满的自言自语，被当时竖起耳朵的陈平安给一字不差听了去，“我只达到龙门境”，“丹室之内六府图案”，“尚未画龙点睛，尚未天女飞天”…… 陈平安默默摘下养剑葫，喝了口香醇的桂花小酿，压压惊，多喝两口，赶紧压压惊。",
+        "description": "陈平安一脸震惊，咽了咽唾沫。 马致以为是少年惊讶于自己的修道天资，老人笑意多了几分。 殊不知陈平安之所以有此疑问，是记起了当初在泥瓶巷祖宅，一位姑娘充满懊恼和不满的自言自语，被当时竖起耳朵的陈平安给一字不差听了去，“我只达到龙门境”，“丹室之内六府图案”，“尚未画龙点睛，尚未天女飞天”……",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在泥瓶巷推动陈平安与马致之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段23",
         "sentence_indexes_in_segment": [
@@ -2125,7 +2432,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "extracted_at": "2026-03-25T17:27:38.257234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2158,20 +2465,34 @@
         ],
         "juan_index": 261,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "马致站起身，正色道：“武道炼气三境，魂魄胆，其中三魂七魄，三魂为胎光、爽灵、幽精，我就以三种不同的剑气，先后帮你洗涮、冲荡和砥砺体内三魂。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 261,
+        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安与马致剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "马致"
         ],
-        "description": "陈平安脸色尴尬，点点头，“好！ 不妨就从今日开始，适应我的剑气做起。 ”",
+        "description": "陈平安脸色尴尬，点点头，“好！ 马致站起身，正色道：“武道炼气三境，魂魄胆，其中三魂七魄，三魂为胎光、爽灵、幽精，我就以三种不同的剑气，先后帮你洗涮、冲荡和砥砺体内三魂。 不妨就从今日开始，适应我的剑气做起。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与马致之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段24",
         "sentence_indexes_in_segment": [
@@ -2187,7 +2508,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "extracted_at": "2026-03-25T17:27:38.257234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2220,21 +2541,37 @@
         ],
         "juan_index": 261,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "马致笑了笑，一柄本命飞剑从老人心口处飞掠而出，悬停在两人之间，“此剑被我取名为凉荫，诞生之初，是在一棵参天大树的树荫之下，已经与我相伴两百多年光阴，算不得如何锋利，可是与人对敌，悄无声息伤人神魂，还算不俗。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安试探",
+        "name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安与马致试探",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "马致"
         ],
-        "description": "话说回来，如果陈平安真能做到，哪怕只是支撑一时半刻，剑谱记载的那四招剑术，必定会进步神速。 老人笑容玩味。 虽然不知少年为何早早具备魂魄胆的雏形，可是被一名金丹剑修的剑气侵入气府，扫荡三魂，其中滋味，别说是咬牙练习剑术，能不能站稳脚跟还两说。",
+        "description": "话说回来，如果陈平安真能做到，哪怕只是支撑一时半刻，剑谱记载的那四招剑术，必定会进步神速。 马致笑了笑，一柄本命飞剑从老人心口处飞掠而出，悬停在两人之间，“此剑被我取名为凉荫，诞生之初，是在一棵参天大树的树荫之下，已经与我相伴两百多年光阴，算不得如何锋利，可是与人对敌，悄无声息伤人神魂，还算不俗。 老人笑容玩味。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键试探节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与马致之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十章 海上生明月 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -2248,8 +2585,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "马致"
+        ],
+        "action": "试探",
+        "context": "老人笑容玩味。 虽然不知少年为何早早具备魂魄胆的雏形，可是被一名金丹剑修的剑气侵入气府，扫荡三魂，其中滋味，别说是咬牙练习剑术，能不能站稳脚跟还两说。 话说回来，如果陈平安真能做到，哪怕只是支撑一时半刻，剑谱记载的那四招剑术，必定会进步神速。 “陈公子，小心了，我先以一分剑道真意，试探你三魂的厚薄程度。 ” 马致笑了笑，一柄本命飞剑从老人心口处飞掠而出，悬停在两人之间，“此剑被我取名为凉荫，诞生之初，是在一棵参天大树的树荫之下，已经与我相伴两百多年光阴，算不得如何锋利，可是与人对敌，悄无声息伤人神魂，还算不俗。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十章 海上生明月 · 陈平安与马致试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 261,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.257234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2308,7 +2671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.327820",
+    "extracted_at": "2026-03-25T17:27:38.257234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

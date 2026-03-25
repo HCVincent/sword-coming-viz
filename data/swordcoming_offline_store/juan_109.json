@@ -96,7 +96,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.659872",
+    "extracted_at": "2026-03-25T17:27:37.418887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -201,7 +201,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.659872",
+    "extracted_at": "2026-03-25T17:27:37.418887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -280,7 +280,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "extracted_at": "2026-03-25T17:27:37.419398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -342,23 +342,37 @@
         ],
         "juan_index": 109,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "朱鹿蓦然笑起来，胸膛剧烈起伏，咳嗽得厉害，捂住嘴，猩红鲜血仍是不断从手指缝隙渗出，她松开手，仿佛认命一般，仰头望着那个居高临下俯视自己的少年，视线从上往下，最后看到一双粗糙低贱的草鞋，少女再次抬起头，好似魔怔失心疯了，不哭反笑，死死盯住越来越靠近自己的少年，沙哑笑道：“没想到你没我想象的那么蠢，但是我很奇怪，你是怎么看出我要杀你的？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 109,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百零九章 少年有话说 · 陈平安与朱鹿对话",
+        "name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与沙哑对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
           "朱鹿",
-          "朱河"
+          "沙哑"
         ],
         "description": "朱鹿陷入莫大恐慌，顾不得擦拭嘴角的鲜血，带着哭腔解释道：“不要杀我，陈平安，我只是跟你开一个玩笑，真的我不骗你，如果我要杀你，我怎么会用这几支糖葫芦竹签，再说了我为什么要杀你啊……” 陈平安一针见血道：“之前在观水街分开，你拉上你爹朱河说是去逛兵器铺子，是不是想挑选匕首之类的趁手兵器，容易隐藏在袖口之内，我猜应该是铺子关了吧，所以只好用竹签代替。 朱鹿蓦然笑起来，胸膛剧烈起伏，咳嗽得厉害，捂住嘴，猩红鲜血仍是不断从手指缝隙渗出，她松开手，仿佛认命一般，仰头望着那个居高临下俯视自己的少年，视线从上往下，最后看到一双粗糙低贱的草鞋，少女再次抬起头，好似魔怔失心疯了，不哭反笑，死死盯住越来越靠近自己的少年，沙哑笑道：“没想到你没我想象的那么蠢，但是我很奇怪，你是怎么看出我要杀你的？",
         "background": "",
-        "significance": "推动陈平安与朱鹿之间的对话关系。",
-        "related_action_indices": [],
+        "significance": "推动朱鹿与沙哑之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百零九章 少年有话说 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -372,8 +386,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "朱鹿"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "对话",
+        "context": "朱鹿蓦然笑起来，胸膛剧烈起伏，咳嗽得厉害，捂住嘴，猩红鲜血仍是不断从手指缝隙渗出，她松开手，仿佛认命一般，仰头望着那个居高临下俯视自己的少年，视线从上往下，最后看到一双粗糙低贱的草鞋，少女再次抬起头，好似魔怔失心疯了，不哭反笑，死死盯住越来越靠近自己的少年，沙哑笑道：“没想到你没我想象的那么蠢，但是我很奇怪，你是怎么看出我要杀你的？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百零九章 少年有话说 · 朱鹿与沙哑对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 109,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.419398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -478,7 +513,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "extracted_at": "2026-03-25T17:27:37.419398",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -573,7 +608,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "extracted_at": "2026-03-25T17:27:37.419911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -652,7 +687,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "extracted_at": "2026-03-25T17:27:37.419911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -756,7 +791,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "extracted_at": "2026-03-25T17:27:37.419911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -836,7 +871,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.660876",
+    "extracted_at": "2026-03-25T17:27:37.420441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -942,7 +977,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.420441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1057,7 +1092,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.420441",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1165,7 +1200,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.420954",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1255,7 +1290,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.420954",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1332,7 +1367,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.420954",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1437,7 +1472,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.421467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1581,7 +1616,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.661879",
+    "extracted_at": "2026-03-25T17:27:37.421977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1671,7 +1706,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.662883",
+    "extracted_at": "2026-03-25T17:27:37.421977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1785,7 +1820,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.662883",
+    "extracted_at": "2026-03-25T17:27:37.422488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1877,7 +1912,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.662883",
+    "extracted_at": "2026-03-25T17:27:37.422488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1982,7 +2017,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.662883",
+    "extracted_at": "2026-03-25T17:27:37.422488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2087,7 +2122,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.662883",
+    "extracted_at": "2026-03-25T17:27:37.422997",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2163,7 +2198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.662883",
+    "extracted_at": "2026-03-25T17:27:37.422997",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

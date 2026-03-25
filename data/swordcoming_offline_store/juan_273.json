@@ -28,6 +28,19 @@
         ],
         "juan_index": 273,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "陈平安便带着那对夫妇走入敬剑阁，将金粟告诉他的，再告诉夫妇一遍，而且陈平安从小就记性好，一座座屋子仙剑仿品和剑仙画卷，只要是上了心去记住的，陈平安第一时间都能给夫妇说出姓名、剑名和大致履历。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 273,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -71,12 +84,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "金粟"
         ],
         "description": "陈平安其实有些意外，难得在倒悬山遇到会说东宝瓶洲雅言的人，只是走了这么远，晓得僧不言名，道不言寿，遇上陌生人，冒冒然询问何方人氏，好像也不妥当。 陈平安便带着那对夫妇走入敬剑阁，将金粟告诉他的，再告诉夫妇一遍，而且陈平安从小就记性好，一座座屋子仙剑仿品和剑仙画卷，只要是上了心去记住的，陈平安第一时间都能给夫妇说出姓名、剑名和大致履历。 带着夫妇游览过去，陈平安也多出一个念头，想着既然用过了剑，那就在倒悬山多待一段时间，将敬剑阁里某些有眼缘的剑仙和仙剑，都一一记录下来，以后带回落魄山竹楼，无聊的时候可以拿出来翻一翻，就像那些刻着美好诗句、人世道理的小竹简，太阳底下晒着它们的时候，哪怕远远看着，陈平安就会觉得格外舒服，暖洋洋的，好像阳光不是晒在小竹简和文字上，而是晒在了自己的心头上。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -90,8 +106,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "金粟"
+        ],
+        "action": "对话",
+        "context": "陈平安其实有些意外，难得在倒悬山遇到会说东宝瓶洲雅言的人，只是走了这么远，晓得僧不言名，道不言寿，遇上陌生人，冒冒然询问何方人氏，好像也不妥当。 陈平安便带着那对夫妇走入敬剑阁，将金粟告诉他的，再告诉夫妇一遍，而且陈平安从小就记性好，一座座屋子仙剑仿品和剑仙画卷，只要是上了心去记住的，陈平安第一时间都能给夫妇说出姓名、剑名和大致履历。 带着夫妇游览过去，陈平安也多出一个念头，想着既然用过了剑，那就在倒悬山多待一段时间，将敬剑阁里某些有眼缘的剑仙和仙剑，都一一记录下来，以后带回落魄山竹楼，无聊的时候可以拿出来翻一翻，就像那些刻着美好诗句、人世道理的小竹简，太阳底下晒着它们的时候，哪怕远远看着，陈平安就会觉得格外舒服，暖洋洋的，好像阳光不是晒在小竹简和文字上，而是晒在了自己的心头上。 摘抄临摹的时候，刚好可以练字，就是不知道倒悬山的笔墨纸，会不会很贵。 那位年轻妇人笑道：“你的记性很不错。 ”",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.322460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -155,7 +197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.323463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -238,7 +280,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.323463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -323,7 +365,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.323463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -406,7 +448,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.323463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -469,7 +511,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.323463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -548,7 +590,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.324466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -648,7 +690,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.324466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -711,7 +753,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.324466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -774,7 +816,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.324466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -836,7 +878,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.324466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -899,7 +941,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.325470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -962,7 +1004,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.325470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1026,7 +1068,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.376990",
+    "extracted_at": "2026-03-25T17:27:38.325470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1088,7 +1130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "extracted_at": "2026-03-25T17:27:38.325470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1151,7 +1193,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "extracted_at": "2026-03-25T17:27:38.325470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1184,21 +1226,38 @@
         ],
         "juan_index": 273,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "一位负责看守敬剑阁的倒悬山道姑，在被人一把甩出敬剑阁后，来到孤峰山脚的广场上，对着那位正在翻书的小道童泫然欲泣，对着这位自家师尊控诉那名男子的罪行，小道童心不在焉地听完道观的愤懑言语，问道：“你还不知道他是谁吧？ 小道童点点头，“那就是不知者无罪，你走吧。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 陈平安与小道童对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "小道童"
         ],
-        "description": "陈平安挠挠头，便跟着妇人一起前行。 男人跟在两人身后，回望一眼敬剑阁，扯了扯嘴角。 一位负责看守敬剑阁的倒悬山道姑，在被人一把甩出敬剑阁后，来到孤峰山脚的广场上，对着那位正在翻书的小道童泫然欲泣，对着这位自家师尊控诉那名男子的罪行，小道童心不在焉地听完道观的愤懑言语，问道：“你还不知道他是谁吧？",
+        "description": "陈平安挠挠头，便跟着妇人一起前行。 一位负责看守敬剑阁的倒悬山道姑，在被人一把甩出敬剑阁后，来到孤峰山脚的广场上，对着那位正在翻书的小道童泫然欲泣，对着这位自家师尊控诉那名男子的罪行，小道童心不在焉地听完道观的愤懑言语，问道：“你还不知道他是谁吧？ 小道童点点头，“那就是不知者无罪，你走吧。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与小道童之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1212,8 +1271,158 @@
         "segment_index": 17
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "小道童"
+        ],
+        "action": "对话",
+        "context": "陈平安挠挠头，便跟着妇人一起前行。 男人跟在两人身后，回望一眼敬剑阁，扯了扯嘴角。 一位负责看守敬剑阁的倒悬山道姑，在被人一把甩出敬剑阁后，来到孤峰山脚的广场上，对着那位正在翻书的小道童泫然欲泣，对着这位自家师尊控诉那名男子的罪行，小道童心不在焉地听完道观的愤懑言语，问道：“你还不知道他是谁吧？ ” 这位金丹境的道姑，茫然摇头。 小道童点点头，“那就是不知者无罪，你走吧。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 陈平安与小道童对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.326473",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "273-18-0": {
+    "juan_index": 273,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十二章 陈平安,你听我说",
+    "source_sentences": [
+      "”",
+      "道姑愈发疑惑。",
+      "后边拴马桩上那位抱剑汉子幸灾乐祸道：“教不严师之惰。",
+      "”",
+      "小道童怒道：“放屁，这是儒家的王八蛋说法，我这一脉从不推崇这个！",
+      "做人修道，什么时候不是自己一个人的事情了？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童怒道：“放屁，这是儒家的王八蛋说法，我这一脉从不推崇这个！",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 273,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 小道童剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童怒道：“放屁，这是儒家的王八蛋说法，我这一脉从不推崇这个！ ” 道姑愈发疑惑。",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 18
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "extracted_at": "2026-03-25T17:27:38.326473",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "273-19-0": {
+    "juan_index": 273,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十二章 陈平安,你听我说",
+    "source_sentences": [
+      "！",
+      "”",
+      "道姑吓得瑟瑟发抖，待在原地，低眉顺眼，丝毫不敢动弹。",
+      "抱剑汉子非但没有见好就收，反而火上加油，嬉笑道：“难怪上香楼里头，你们道祖老爷的画像挂那么高，距离你们师尊三位掌教，隔着十万八千里远。",
+      "”",
+      "小道童一个蹦跳站起身，“你找打？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童一个蹦跳站起身，“你找打？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 小道童对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童一个蹦跳站起身，“你找打？ ！ ”",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.326473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1247,6 +1456,19 @@
         ],
         "juan_index": 273,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童气得咬牙切齿，双手负后，在那张大蒲团上打转，喃喃自语：“你以为你是这边的阿良？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 273,
+        "segment_index": 20
       }
     ],
     "locations": [
@@ -1274,12 +1496,15 @@
         "location": "剑气长城",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "小道童"
         ],
         "description": "我这个人别的优点没有，就像阿良说的，就是直肠子，所以拍马屁和揭人短两件事，阿良都说我在剑气长城是排的上号的。 小道童气得咬牙切齿，双手负后，在那张大蒲团上打转，喃喃自语：“你以为你是这边的阿良？ ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1293,8 +1518,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "小道童"
+        ],
+        "action": "对话",
+        "context": "” 抱剑汉子哈哈笑道：“幸好你没说‘你找死’，不然我就要批评你胡说八道了。 我这个人别的优点没有，就像阿良说的，就是直肠子，所以拍马屁和揭人短两件事，阿良都说我在剑气长城是排的上号的。 ” 小道童气得咬牙切齿，双手负后，在那张大蒲团上打转，喃喃自语：“你以为你是这边的阿良？ 你一个土生土长的那边流民……如果不是师尊告诫，要我与人为善，我今天非把你打得面目全非，才不管你是不是在这边收到了天地压制，跌了半个境界，胜之不武咋了，打得你一年不敢见人，那才痛快，打得你就跟当年孤峰上边的师兄一样……看你不顺眼好几年了……”",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.326473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1356,7 +1607,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "extracted_at": "2026-03-25T17:27:38.326473",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "273-22-0": {
+    "juan_index": 273,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十二章 陈平安,你听我说",
+    "source_sentences": [
+      "偶尔一个恍惚，或是被夫人问话，好像过了很久，又好像不到一炷香功夫，三人就来到了一间尚未打烊的酒铺，但是生意冷清，竟然铺子里一位客人都没有，只有一个趴在酒桌上打盹的少年店伙计，一个在柜台后逗弄一只笼中雀的老头子。",
+      "老掌柜瞥了眼夫妇二人，“稀客稀客，这酒必须得拿出来了。",
+      "”",
+      "然后他瞥了眼两人身后的背剑少年，皱了皱眉头，但是叹息一声，没有说什么，好像碍于情分，这才睁一只眼闭一只眼。",
+      "然后老人朝那个惫懒伙计爆喝一声，“许甲！",
+      "睡睡睡，你怎么不睡死算了！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "许甲",
+        "alias": [],
+        "original_description_in_book": "然后老人朝那个惫懒伙计爆喝一声，“许甲！",
+        "description": "山上支线人物，适合补足修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 273,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 许甲剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "许甲"
+        ],
+        "description": "然后老人朝那个惫懒伙计爆喝一声，“许甲！ 偶尔一个恍惚，或是被夫人问话，好像过了很久，又好像不到一炷香功夫，三人就来到了一间尚未打烊的酒铺，但是生意冷清，竟然铺子里一位客人都没有，只有一个趴在酒桌上打盹的少年店伙计，一个在柜台后逗弄一只笼中雀的老头子。 老掌柜瞥了眼夫妇二人，“稀客稀客，这酒必须得拿出来了。",
+        "background": "",
+        "significance": "对应许甲在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 22
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.326473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1379,6 +1692,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "许甲",
+        "alias": [],
+        "original_description_in_book": "名叫许甲的少年猛然惊醒，擦了擦口水，有气无力地站起身，佝偻着去搬了一坛酒，放在落座三人的桌上，打着哈欠道：“三位客官，慢慢喝，老规矩，本店没有吃食。",
+        "description": "山上支线人物，适合补足修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 273,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "妇人点头致意，然后对坐在对面的陈平安笑道：“有位很厉害的和尚，有一次云游至此，喝了过忘忧酒，赞不绝口，声称‘能破我心中佛者，唯有此酒’。",
@@ -1394,16 +1720,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 许甲与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "许甲",
           "陈平安"
         ],
-        "description": "妇人点头致意，然后对坐在对面的陈平安笑道：“有位很厉害的和尚，有一次云游至此，喝了过忘忧酒，赞不绝口，声称‘能破我心中佛者，唯有此酒’。 来客人了，去搬一坛酒来！ ”",
+        "description": "名叫许甲的少年猛然惊醒，擦了擦口水，有气无力地站起身，佝偻着去搬了一坛酒，放在落座三人的桌上，打着哈欠道：“三位客官，慢慢喝，老规矩，本店没有吃食。 妇人点头致意，然后对坐在对面的陈平安笑道：“有位很厉害的和尚，有一次云游至此，喝了过忘忧酒，赞不绝口，声称‘能破我心中佛者，唯有此酒’。 来客人了，去搬一坛酒来！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动许甲与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1417,8 +1746,34 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "许甲"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "来客人了，去搬一坛酒来！ ” 名叫许甲的少年猛然惊醒，擦了擦口水，有气无力地站起身，佝偻着去搬了一坛酒，放在落座三人的桌上，打着哈欠道：“三位客官，慢慢喝，老规矩，本店没有吃食。 ” 妇人点头致意，然后对坐在对面的陈平安笑道：“有位很厉害的和尚，有一次云游至此，喝了过忘忧酒，赞不绝口，声称‘能破我心中佛者，唯有此酒’。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十二章 陈平安,你听我说 · 许甲与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 273,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.327477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1524,7 +1879,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "extracted_at": "2026-03-25T17:27:38.327477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1587,7 +1942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.377993",
+    "extracted_at": "2026-03-25T17:27:38.327477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1691,7 +2046,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.378997",
+    "extracted_at": "2026-03-25T17:27:38.327477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1753,7 +2108,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.378997",
+    "extracted_at": "2026-03-25T17:27:38.327477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1817,7 +2172,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.378997",
+    "extracted_at": "2026-03-25T17:27:38.327477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1897,7 +2252,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.378997",
+    "extracted_at": "2026-03-25T17:27:38.328481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1959,7 +2314,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.378997",
+    "extracted_at": "2026-03-25T17:27:38.328481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2021,7 +2376,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.328481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2083,7 +2438,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.328481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2160,7 +2515,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.328481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2223,7 +2578,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.328481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2284,7 +2639,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.329484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2363,7 +2718,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.329484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2427,7 +2782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.380000",
+    "extracted_at": "2026-03-25T17:27:38.329484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2498,7 +2853,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.381004",
+    "extracted_at": "2026-03-25T17:27:38.329484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

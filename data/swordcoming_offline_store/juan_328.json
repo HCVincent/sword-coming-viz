@@ -45,6 +45,33 @@
       },
       {
         "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "丁婴一死百了，俞真意御剑远去，只留下种秋收拾残局。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "丁婴一死百了，俞真意御剑远去，只留下种秋收拾残局。 至于牯牛山一带仍是禁地，被圈禁起来，朝廷下令越过雷池者杀无赦，出现了许多钦天监官员的身影，俞真意留下的那栋简陋茅屋，也未拆掉。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "曹晴朗",
         "alias": [],
         "original_description_in_book": "送了曹晴朗去学塾，陈平安原路返回，撑伞行走在依然寂寥冷清的大街上，随着朝廷逐渐放松对这座坊市的戒严，街道上已经可以见到稀稀疏疏的路人，但人气还是很淡，多是一些胆子较大的江湖人士，来此瞻仰战场，对着街上那条被鸟瞰峰剑仙劈出的沟壑，啧啧称奇。",
@@ -65,13 +92,17 @@
         "location": null,
         "participants": [
           "陈平安",
-          "种秋"
+          "种秋",
+          "丁婴",
+          "俞真意"
         ],
         "description": "京师那场帝王将相和贩夫走卒眼中，皆是神仙打架的风波，依旧涟漪不断，当时陈平安帮着种秋给阎实景他们教拳，当时少年那些凑热闹的朋友，就是涟漪之一。 老将军吕霄走下城头后，跟孙子孙女吹嘘自己跟陈平安是忘年交，也是，状元巷附近许多户人家的搬迁，更是。 丁婴一死百了，俞真意御剑远去，只留下种秋收拾残局。",
         "background": "",
         "significance": "推动陈平安与种秋之间的指点关系。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段1",
         "sentence_indexes_in_segment": [
@@ -106,9 +137,49 @@
         ],
         "juan_index": 328,
         "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "丁婴"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "别离",
+        "context": "丁婴一死百了，俞真意御剑远去，只留下种秋收拾残局。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与种秋指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "丁婴"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "别离",
+        "context": "丁婴一死百了，俞真意御剑远去，只留下种秋收拾残局。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与种秋指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.588723",
+    "extracted_at": "2026-03-25T17:27:38.627060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -170,7 +241,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.588723",
+    "extracted_at": "2026-03-25T17:27:38.627060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -222,6 +293,32 @@
       },
       {
         "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "陈平安一一记在心中，尝试着跟撼山拳谱相互佐证，听过了这些粗浅拳理，陈平安终于下定决心，搜集这方天地的武学，从低到高，不用太多，以后练拳之余，可以随手翻翻，说不定可以有意外之喜，就像之前撼山拳的六步走桩，融合种秋的顶峰大架，就成功让陈平安一举破开四境瓶颈，而且水到渠成，自然而然，尤其是那种丁婴走入白河寺大殿、种秋第一次露面走向自己的“气势”，此方天地所谓的天人合一，陈平安觉得大有玄机，说不定返回浩然天下后，还有额外的裨益。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 328,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "而且极有可能，将来五境破六境，契机就在这其中，陈平安猜测离开灵气稀薄的藕花福地后，自己会陷入泥泞境地，状况有点类似樊莞尔当初在白河寺大殿外，就是那种身负重石、拖泥带水的迟滞感觉，又有点像是杨老头当初在自己手脚上嵌入的四张真气符。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 328,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "杨老头",
         "alias": [
           "杨掌柜"
@@ -239,18 +336,20 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与杨老头迁移",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与樊莞尔迁移",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "樊莞尔",
           "杨老头"
         ],
         "description": "陈平安又问了一些外家拳拳理，老师傅起先藏藏掖掖，面有难色，陈平安故作恍然，说自己忘了正事，掏出了二十两银子，放在手边茶几上，说打算近期在武馆学拳，但是不保证每天都来武馆，老师傅眼前一亮，这才知无不言言无不尽，跟陈平安说起了那些最烂大街的拳理。 陈平安一一记在心中，尝试着跟撼山拳谱相互佐证，听过了这些粗浅拳理，陈平安终于下定决心，搜集这方天地的武学，从低到高，不用太多，以后练拳之余，可以随手翻翻，说不定可以有意外之喜，就像之前撼山拳的六步走桩，融合种秋的顶峰大架，就成功让陈平安一举破开四境瓶颈，而且水到渠成，自然而然，尤其是那种丁婴走入白河寺大殿、种秋第一次露面走向自己的“气势”，此方天地所谓的天人合一，陈平安觉得大有玄机，说不定返回浩然天下后，还有额外的裨益。 而且极有可能，将来五境破六境，契机就在这其中，陈平安猜测离开灵气稀薄的藕花福地后，自己会陷入泥泞境地，状况有点类似樊莞尔当初在白河寺大殿外，就是那种身负重石、拖泥带水的迟滞感觉，又有点像是杨老头当初在自己手脚上嵌入的四张真气符。",
         "background": "",
-        "significance": "推动陈平安与杨老头之间的迁移关系。",
+        "significance": "推动陈平安与樊莞尔之间的迁移关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段3",
         "sentence_indexes_in_segment": [
@@ -271,12 +370,32 @@
           "陈平安"
         ],
         "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "别离",
+        "context": "而且极有可能，将来五境破六境，契机就在这其中，陈平安猜测离开灵气稀薄的藕花福地后，自己会陷入泥泞境地，状况有点类似樊莞尔当初在白河寺大殿外，就是那种身负重石、拖泥带水的迟滞感觉，又有点像是杨老头当初在自己手脚上嵌入的四张真气符。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与樊莞尔迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 328,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
           "杨老头"
         ],
         "action": "别离",
         "context": "而且极有可能，将来五境破六境，契机就在这其中，陈平安猜测离开灵气稀薄的藕花福地后，自己会陷入泥泞境地，状况有点类似樊莞尔当初在白河寺大殿外，就是那种身负重石、拖泥带水的迟滞感觉，又有点像是杨老头当初在自己手脚上嵌入的四张真气符。",
         "result": null,
-        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与杨老头迁移",
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与樊莞尔迁移",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -286,7 +405,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.589727",
+    "extracted_at": "2026-03-25T17:27:38.627060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -395,7 +514,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.589727",
+    "extracted_at": "2026-03-25T17:27:38.628064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -575,7 +694,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.589727",
+    "extracted_at": "2026-03-25T17:27:38.628064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -616,11 +735,37 @@
       },
       {
         "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "等到陈平安离开院子，刚刚走出巷子，鬼鬼祟祟的小女孩便赶紧拴上院门，在屋檐下有模有样“练拳”，是偷学陈平安模仿丁婴和目盲道人的雷法架子，一手摊开朝天，一手握拳在身前，缓缓而行。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 328,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "她学了这套“拳法”之后，便觉得有些无趣，改为其它架势，都是当时她在大街上偷师而来的，有种秋的某一次出拳，陆舫劈开街道的一剑，陈平安的六步走桩，小女孩歪歪扭扭，不得其门而入，当然全部学得皮毛都没有。",
         "description": "武道线的重要人物，常与陈平安的成长试炼和气象对照相关。",
         "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 328,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "她学了这套“拳法”之后，便觉得有些无趣，改为其它架势，都是当时她在大街上偷师而来的，有种秋的某一次出拳，陆舫劈开街道的一剑，陈平安的六步走桩，小女孩歪歪扭扭，不得其门而入，当然全部学得皮毛都没有。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
         "sentence_indexes_in_segment": [
           4
         ],
@@ -644,18 +789,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与种秋迁移",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与丁婴迁移",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "种秋",
-          "曹晴朗"
+          "丁婴"
         ],
         "description": "陈平安离开武馆后，回到住处，枯瘦小女孩在屋檐下发呆，滂沱大雨转为淅沥沥小雨，她见到了陈平安后，咧嘴一笑。 陈平安发现她身上有些湿漉漉的雨水，假装没有看到，拿了装有那架琵琶的包裹，要去找姓蒋的寒士书生，离这里隔着三座坊市，并不算近。 等到陈平安离开院子，刚刚走出巷子，鬼鬼祟祟的小女孩便赶紧拴上院门，在屋檐下有模有样“练拳”，是偷学陈平安模仿丁婴和目盲道人的雷法架子，一手摊开朝天，一手握拳在身前，缓缓而行。",
         "background": "",
-        "significance": "推动陈平安与种秋之间的迁移关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与丁婴之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -669,8 +815,29 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.590730",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "丁婴"
+        ],
+        "action": "别离",
+        "context": "等到陈平安离开院子，刚刚走出巷子，鬼鬼祟祟的小女孩便赶紧拴上院门，在屋檐下有模有样“练拳”，是偷学陈平安模仿丁婴和目盲道人的雷法架子，一手摊开朝天，一手握拳在身前，缓缓而行。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与丁婴迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 328,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.628064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -734,7 +901,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.590730",
+    "extracted_at": "2026-03-25T17:27:38.628064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -757,6 +924,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人出现在陈平安身边，笑问道：“怎么不直接告诉他真相？ 老道人又问了个问题，直指人心，“那么哪一种选择，你心里会最好受？",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老道人出现在陈平安身边，笑问道：“怎么不直接告诉他真相？ 陈平安轻声道：“什么都不告诉他，什么都告诉他，以及三年之后，不管蒋泉有没有考中，都让种国师帮我告诉他，我觉得第三种选择，对他和对顾苓，都会更好一些。",
@@ -773,16 +954,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老道人",
           "陈平安"
         ],
-        "description": "老道人出现在陈平安身边，笑问道：“怎么不直接告诉他真相？ 陈平安轻声道：“什么都不告诉他，什么都告诉他，以及三年之后，不管蒋泉有没有考中，都让种国师帮我告诉他，我觉得第三种选择，对他和对顾苓，都会更好一些。 蒋泉与两位好友离开坊市，远处，那个送信人，就撑伞站在街边一处屋檐下，目送穷书生渐渐远行。",
+        "description": "老道人出现在陈平安身边，笑问道：“怎么不直接告诉他真相？ 陈平安轻声道：“什么都不告诉他，什么都告诉他，以及三年之后，不管蒋泉有没有考中，都让种国师帮我告诉他，我觉得第三种选择，对他和对顾苓，都会更好一些。 老道人又问了个问题，直指人心，“那么哪一种选择，你心里会最好受？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老道人与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -796,8 +980,29 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.591734",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老道人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "老道人出现在陈平安身边，笑问道：“怎么不直接告诉他真相？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 328,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.629067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -830,21 +1035,37 @@
         ],
         "juan_index": 328,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人笑道：“不知道对错是吧？",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 16
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老道人"
         ],
-        "description": "陈平安回答道：“进入藕花福地之前，会选第一种，行走江湖，谁都应该生死自负。 ” 这会儿，应该是第二种，可以求一个最简单的问心无愧，不会留下任何心境瑕疵。",
+        "description": "陈平安回答道：“进入藕花福地之前，会选第一种，行走江湖，谁都应该生死自负。 老道人笑道：“不知道对错是吧？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老道人之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -858,8 +1079,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.591734",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "对话",
+        "context": "” 陈平安回答道：“进入藕花福地之前，会选第一种，行走江湖，谁都应该生死自负。 这会儿，应该是第二种，可以求一个最简单的问心无愧，不会留下任何心境瑕疵。 至于为什么选第三种，我也不知道，其实自己也不知道到底是对是错。 ” 老道人笑道：“不知道对错是吧？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.629067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -893,21 +1140,37 @@
         ],
         "juan_index": 328,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人一手按住陈平安肩头，说道：“接下来你就更不知道了。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老道人",
           "陈平安"
         ],
         "description": "陈平安转过头，“怎么了？ 老道人一手按住陈平安肩头，说道：“接下来你就更不知道了。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老道人与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -921,8 +1184,29 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.591734",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老道人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "老道人一手按住陈平安肩头，说道：“接下来你就更不知道了。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.630071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -945,6 +1229,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人笑问道：“知道为何有此传统习俗吗？ 老道人说道：“皇宫需要借着曙光降临的时分，喝退一些冤魂。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 328,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "只得收起伞的陈平安摇头。",
@@ -960,16 +1258,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老道人",
           "陈平安"
         ],
-        "description": "只得收起伞的陈平安摇头。 老道人笑问道：“知道为何有此传统习俗吗？ 无论是浩然天下，还是藕花福地，差不多都需要这样。",
+        "description": "老道人笑问道：“知道为何有此传统习俗吗？ 只得收起伞的陈平安摇头。 老道人说道：“皇宫需要借着曙光降临的时分，喝退一些冤魂。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老道人与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -983,8 +1284,34 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.592737",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老道人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "老道人笑问道：“知道为何有此传统习俗吗？ 无论是浩然天下，还是藕花福地，差不多都需要这样。 ” 只得收起伞的陈平安摇头。 老道人说道：“皇宫需要借着曙光降临的时分，喝退一些冤魂。 你觉得是谁的冤魂？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.630071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1018,21 +1345,39 @@
         ],
         "juan_index": 328,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人说道：“历史上那些冤死的忠臣，枉死的骨鲠之臣，死谏而死的国之栋梁。 之后，藕花福地的光阴长河，一年十年百年，仿佛都只在老道人的一念之间。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老道人"
         ],
-        "description": "陈平安还是摇头。 下一刻，老道人带着陈平安，见到了一位穷首皓经的老夫子，下笔如有神，对于子孙却约束不多，去世的时候，毕生心血被子孙四处兜售无果，气愤之下，干脆付之一炬。 ”",
+        "description": "陈平安还是摇头。 老道人说道：“历史上那些冤死的忠臣，枉死的骨鲠之臣，死谏而死的国之栋梁。 之后，藕花福地的光阴长河，一年十年百年，仿佛都只在老道人的一念之间。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老道人之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1046,8 +1391,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.592737",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "对话",
+        "context": "” 陈平安还是摇头。 老道人说道：“历史上那些冤死的忠臣，枉死的骨鲠之臣，死谏而死的国之栋梁。 ” 之后，藕花福地的光阴长河，一年十年百年，仿佛都只在老道人的一念之间。 下一刻，老道人带着陈平安，见到了一位穷首皓经的老夫子，下笔如有神，对于子孙却约束不多，去世的时候，毕生心血被子孙四处兜售无果，气愤之下，干脆付之一炬。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.630071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1109,7 +1480,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.592737",
+    "extracted_at": "2026-03-25T17:27:38.630071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1171,7 +1542,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.592737",
+    "extracted_at": "2026-03-25T17:27:38.631074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1218,6 +1589,19 @@
         ],
         "juan_index": 328,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人已经不在身侧。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 23
       }
     ],
     "locations": [],
@@ -1228,9 +1612,10 @@
         "location": null,
         "participants": [
           "陈平安",
-          "曹晴朗"
+          "曹晴朗",
+          "老道人"
         ],
-        "description": "他与曹晴朗撑伞去往学塾的时候，小女孩站在院门口，死死盯着他们的背影，满脸雨水，浑然不觉。 最终，陈平安独自站在屋檐下，手中还拿着那把陪他度过了不知多少年的油纸伞，大街上还下着小雨。 陈平安看了许许多多。",
+        "description": "他与曹晴朗撑伞去往学塾的时候，小女孩站在院门口，死死盯着他们的背影，满脸雨水，浑然不觉。 最终，陈平安独自站在屋檐下，手中还拿着那把陪他度过了不知多少年的油纸伞，大街上还下着小雨。 老道人已经不在身侧。",
         "background": "",
         "significance": "推动陈平安与曹晴朗之间的剧情推进关系。",
         "related_action_indices": [],
@@ -1248,7 +1633,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.593741",
+    "extracted_at": "2026-03-25T17:27:38.631074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1341,7 +1726,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.593741",
+    "extracted_at": "2026-03-25T17:27:38.631074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1362,6 +1747,19 @@
       "陈平安突然收回视线，笑了起来，离开水井旁，虽然什么都没想明白，但是想通了一件事情，那个惹人厌的小女孩，得教一教她一些为人的道理，从最简答的教起，要是教不懂，教了还是没用，那就不用再管了，可教还是要教的，教过之后，她最少知道了何谓善恶，再为恶，或是向善，就都是她自己的事情了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人坐在天上，看着两人。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 328,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1394,16 +1792,19 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安在观道观迁移",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安在观道观迁移",
         "time": null,
         "location": "观道观",
         "participants": [
+          "老道人",
           "陈平安"
         ],
-        "description": "观道观，道观道。 陈平安突然收回视线，笑了起来，离开水井旁，虽然什么都没想明白，但是想通了一件事情，那个惹人厌的小女孩，得教一教她一些为人的道理，从最简答的教起，要是教不懂，教了还是没用，那就不用再管了，可教还是要教的，教过之后，她最少知道了何谓善恶，再为恶，或是向善，就都是她自己的事情了。 正在此时，小院子里的枯瘦小女孩，仰头看着刺眼的太阳。",
+        "description": "观道观，道观道。 老道人坐在天上，看着两人。 陈平安突然收回视线，笑了起来，离开水井旁，虽然什么都没想明白，但是想通了一件事情，那个惹人厌的小女孩，得教一教她一些为人的道理，从最简答的教起，要是教不懂，教了还是没用，那就不用再管了，可教还是要教的，教过之后，她最少知道了何谓善恶，再为恶，或是向善，就都是她自己的事情了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在观道观推动老道人与陈平安之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1417,8 +1818,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.593741",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老道人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "正在此时，小院子里的枯瘦小女孩，仰头看着刺眼的太阳。 观道观，道观道。 老道人坐在天上，看着两人。 与藕花福地衔接的莲花洞天，有位道人坐在池畔，看着三人。 按照某位弟子的说法，他只是闲来无事，便看看别人的小道而已。 陈平安突然收回视线，笑了起来，离开水井旁，虽然什么都没想明白，但是想通了一件事情，那个惹人厌的小女孩，得教一教她一些为人的道理，从最简答的教起，要是教不懂，教了还是没用，那就不用再管了，可教还是要教的，教过之后，她最少知道了何谓善恶，再为恶，或是向善，就都是她自己的事情了。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安在观道观迁移",
+        "location": "观道观",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.631074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1441,6 +1868,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人脸色阴沉，心情不算太好，就想着要将陈平安丢出藕花福地。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 328,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老道人脸色阴沉，心情不算太好，就想着要将陈平安丢出藕花福地。 于是他一挥衣袖，陈平安一步走出了藕花福地，竟是桐叶洲北晋国外的驿路上。",
@@ -1452,20 +1892,35 @@
         ],
         "juan_index": 328,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "他竟然没能赢了老秀才。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 328,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老道人",
+          "老秀才"
         ],
-        "description": "老道人脸色阴沉，心情不算太好，就想着要将陈平安丢出藕花福地。 于是他一挥衣袖，陈平安一步走出了藕花福地，竟是桐叶洲北晋国外的驿路上。 他竟然没能赢了老秀才。",
+        "description": "老道人脸色阴沉，心情不算太好，就想着要将陈平安丢出藕花福地。 他竟然没能赢了老秀才。 于是他一挥衣袖，陈平安一步走出了藕花福地，竟是桐叶洲北晋国外的驿路上。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老道人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段26",
         "sentence_indexes_in_segment": [
@@ -1481,7 +1936,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.593741",
+    "extracted_at": "2026-03-25T17:27:38.631074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1518,6 +1973,20 @@
       },
       {
         "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人站在他身边，“按照约定，你可以带走藕花福地的五个人，其中四人，我帮你选了。 老道人手中拿着四支画轴，随手丢开，在陈平安身前依次排开，悬停空中，其中一幅画卷自行打开，上边画着一位端坐的龙袍男子，“这是南苑国开国皇帝魏羡。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 328,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "魏羡",
         "alias": [],
         "original_description_in_book": "老道人手中拿着四支画轴，随手丢开，在陈平安身前依次排开，悬停空中，其中一幅画卷自行打开，上边画着一位端坐的龙袍男子，“这是南苑国开国皇帝魏羡。",
@@ -1546,17 +2015,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与魏羡剧情推进",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "老道人",
           "魏羡",
           "隋右边"
         ],
-        "description": "陈平安赶紧四周张望，所幸看到了道路上不远处，莲花小人儿在探头探脑，显然小家伙比陈平安还犯迷糊。 老道人手中拿着四支画轴，随手丢开，在陈平安身前依次排开，悬停空中，其中一幅画卷自行打开，上边画着一位端坐的龙袍男子，“这是南苑国开国皇帝魏羡。 一位负剑女子，“隋右边，舍弃武学，一样有剑仙资质。",
+        "description": "陈平安赶紧四周张望，所幸看到了道路上不远处，莲花小人儿在探头探脑，显然小家伙比陈平安还犯迷糊。 老道人站在他身边，“按照约定，你可以带走藕花福地的五个人，其中四人，我帮你选了。 老道人手中拿着四支画轴，随手丢开，在陈平安身前依次排开，悬停空中，其中一幅画卷自行打开，上边画着一位端坐的龙袍男子，“这是南苑国开国皇帝魏羡。",
         "background": "",
-        "significance": "推动陈平安与魏羡之间的剧情推进关系。",
+        "significance": "推动陈平安与老道人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段27",
         "sentence_indexes_in_segment": [
@@ -1572,7 +2042,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.593741",
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1662,7 +2132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.594744",
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1685,6 +2155,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人显然不愿与陈平安多说什么，更不给陈平安插话的机会，一股脑说了这么多。 不等陈平安询问最后一人是谁，老道人伸手一抓，已经扯出一个枯瘦小女孩，一拍她后脑勺，她摔了个狗吃屎，扑倒在道路上，抬起头后满脸茫然。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4
+        ],
+        "juan_index": 328,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老道人显然不愿与陈平安多说什么，更不给陈平安插话的机会，一股脑说了这么多。 不等陈平安询问最后一人是谁，老道人伸手一抓，已经扯出一个枯瘦小女孩，一拍她后脑勺，她摔了个狗吃屎，扑倒在道路上，抬起头后满脸茫然。",
@@ -1702,16 +2187,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老道人"
         ],
         "description": "老道人显然不愿与陈平安多说什么，更不给陈平安插话的机会，一股脑说了这么多。 不等陈平安询问最后一人是谁，老道人伸手一抓，已经扯出一个枯瘦小女孩，一拍她后脑勺，她摔了个狗吃屎，扑倒在道路上，抬起头后满脸茫然。 陈平安望向这位身材高大的老道人，问道：“长生桥怎么办？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老道人之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -1725,8 +2213,29 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.594744",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "对话",
+        "context": "陈平安望向这位身材高大的老道人，问道：“长生桥怎么办？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 328,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1749,6 +2258,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人脸色漠然，“底子已经打好了，之后自己摸索。 老道人望向远处，“我自会还给陈清都。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 328,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安再问道：“那把长气剑？",
@@ -1764,16 +2287,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安对话",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老道人",
           "陈平安"
         ],
-        "description": "陈平安再问道：“那把长气剑？ 老道人脸色漠然，“底子已经打好了，之后自己摸索。 ”",
+        "description": "老道人脸色漠然，“底子已经打好了，之后自己摸索。 陈平安再问道：“那把长气剑？ 老道人望向远处，“我自会还给陈清都。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老道人与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -1787,8 +2313,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.594744",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老道人"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "老道人脸色漠然，“底子已经打好了，之后自己摸索。 ” 陈平安再问道：“那把长气剑？ ” 老道人望向远处，“我自会还给陈清都。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 老道人与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 328,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1823,21 +2375,39 @@
         ],
         "juan_index": 328,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "陈平安将那四幅画收入飞剑十五当中，与老道人拱手告别。 老道人心情不佳，一步返回藕花福地，瞥了眼与福地接壤的莲花洞天，那家伙已经离开池畔。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 328,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安迁移",
+        "name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老道人"
         ],
-        "description": "陈平安将那四幅画收入飞剑十五当中，与老道人拱手告别。 陈平安跟枯瘦小女孩大眼瞪小眼。 陈平安叹了口气，“你叫什么名字？",
+        "description": "陈平安将那四幅画收入飞剑十五当中，与老道人拱手告别。 老道人心情不佳，一步返回藕花福地，瞥了眼与福地接壤的莲花洞天，那家伙已经离开池畔。 老道人这才笑了起来。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老道人之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十七章 丢出观道观 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -1851,8 +2421,29 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.595747",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "别离",
+        "context": "陈平安将那四幅画收入飞剑十五当中，与老道人拱手告别。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十七章 丢出观道观 · 陈平安与老道人迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 328,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1914,7 +2505,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.595747",
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1990,7 +2581,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.595747",
+    "extracted_at": "2026-03-25T17:27:38.632079",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

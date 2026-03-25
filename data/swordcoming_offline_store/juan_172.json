@@ -106,7 +106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.910281",
+    "extracted_at": "2026-03-25T17:27:37.733615",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -129,6 +129,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "行走江湖，老僧小道美尼姑，遇上类似这些看着好欺负的货色，最好全都别招惹，这是无数在阴沟里翻船的江湖前辈，代代相传下来的道理。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 172,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安是沾了身边青衣小童和粉裙女童的光，毕竟没几个正常人，会带着俩屁孩，而且一个比一个长得粉雕玉琢，然后三人在野兽出没的深山老林里瞎逛荡。 粉裙女童帮着陈平安捧来枯枝，不停忙碌，青衣小童则是个惫懒货，就喜欢饭来张口，蹲在破庙外头打哈欠，懒洋洋道：“老爷，山路两头各有一拨人相对而行，很快就要撞上啦，左手那边打打杀杀的，好像很好玩的样子，右手那边个个鲜衣怒马，里头还有个大长腿的俊俏娘们哩，老爷你若是心动，我给你抢来当压寨夫人吧，玩过了就放她回家，大不了我送她些财宝机缘，她指不定还要对老爷感恩戴德……”",
@@ -146,16 +159,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 陈平安对话",
+        "name": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 老僧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "陈平安是沾了身边青衣小童和粉裙女童的光，毕竟没几个正常人，会带着俩屁孩，而且一个比一个长得粉雕玉琢，然后三人在野兽出没的深山老林里瞎逛荡。 粉裙女童帮着陈平安捧来枯枝，不停忙碌，青衣小童则是个惫懒货，就喜欢饭来张口，蹲在破庙外头打哈欠，懒洋洋道：“老爷，山路两头各有一拨人相对而行，很快就要撞上啦，左手那边打打杀杀的，好像很好玩的样子，右手那边个个鲜衣怒马，里头还有个大长腿的俊俏娘们哩，老爷你若是心动，我给你抢来当压寨夫人吧，玩过了就放她回家，大不了我送她些财宝机缘，她指不定还要对老爷感恩戴德……” 陈平安正撅起屁股，吹着大柴火堆里的火星，随口说道：“等下碰到了他们，你别生事。",
+        "description": "行走江湖，老僧小道美尼姑，遇上类似这些看着好欺负的货色，最好全都别招惹，这是无数在阴沟里翻船的江湖前辈，代代相传下来的道理。 陈平安是沾了身边青衣小童和粉裙女童的光，毕竟没几个正常人，会带着俩屁孩，而且一个比一个长得粉雕玉琢，然后三人在野兽出没的深山老林里瞎逛荡。 粉裙女童帮着陈平安捧来枯枝，不停忙碌，青衣小童则是个惫懒货，就喜欢饭来张口，蹲在破庙外头打哈欠，懒洋洋道：“老爷，山路两头各有一拨人相对而行，很快就要撞上啦，左手那边打打杀杀的，好像很好玩的样子，右手那边个个鲜衣怒马，里头还有个大长腿的俊俏娘们哩，老爷你若是心动，我给你抢来当压寨夫人吧，玩过了就放她回家，大不了我送她些财宝机缘，她指不定还要对老爷感恩戴德……”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老僧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -169,8 +185,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.911285",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老僧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "行走江湖，老僧小道美尼姑，遇上类似这些看着好欺负的货色，最好全都别招惹，这是无数在阴沟里翻船的江湖前辈，代代相传下来的道理。 陈平安是沾了身边青衣小童和粉裙女童的光，毕竟没几个正常人，会带着俩屁孩，而且一个比一个长得粉雕玉琢，然后三人在野兽出没的深山老林里瞎逛荡。 只要是稍微有点脑子的货色，就不会轻易出手行凶。 其实之前遇上一伙流窜犯案的莽汉，确实心有歹意，只是小心谨慎地追踪三人，想着找准机会再出手，结果最终发现那瞧着一根手指头就能碾死的青衣小童，变幻出恐怖真身，以长蛇之身翻山越岭，沿途大树纷纷崩断，给那拨人吓得一个个差点尿裤子。 粉裙女童帮着陈平安捧来枯枝，不停忙碌，青衣小童则是个惫懒货，就喜欢饭来张口，蹲在破庙外头打哈欠，懒洋洋道：“老爷，山路两头各有一拨人相对而行，很快就要撞上啦，左手那边打打杀杀的，好像很好玩的样子，右手那边个个鲜衣怒马，里头还有个大长腿的俊俏娘们哩，老爷你若是心动，我给你抢来当压寨夫人吧，玩过了就放她回家，大不了我送她些财宝机缘，她指不定还要对老爷感恩戴德……” 陈平安正撅起屁股，吹着大柴火堆里的火星，随口说道：“等下碰到了他们，你别生事。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十二章 江湖路上见不平 · 老僧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 172,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.733615",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -232,7 +274,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.911285",
+    "extracted_at": "2026-03-25T17:27:37.733615",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -294,7 +336,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.911285",
+    "extracted_at": "2026-03-25T17:27:37.733615",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -357,7 +399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.912288",
+    "extracted_at": "2026-03-25T17:27:37.735622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -421,7 +463,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.735622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -482,7 +524,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.735622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -544,7 +586,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.736626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -606,7 +648,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.736626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,7 +711,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.736626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -732,7 +774,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.736626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -795,7 +837,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.736626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -858,7 +900,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.736626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -920,7 +962,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.913291",
+    "extracted_at": "2026-03-25T17:27:37.737629",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -983,7 +1025,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.914295",
+    "extracted_at": "2026-03-25T17:27:37.737629",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1046,7 +1088,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.914295",
+    "extracted_at": "2026-03-25T17:27:37.737629",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1108,7 +1150,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.914295",
+    "extracted_at": "2026-03-25T17:27:37.737629",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1172,7 +1214,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.914295",
+    "extracted_at": "2026-03-25T17:27:37.737629",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -165,6 +165,24 @@ def test_entity_resolver_prefers_manual_canonical_role_name():
     assert "宋睦" not in kb.roles
 
 
+def test_normalize_mined_candidate_filters_non_person_prefix_phrases():
+    normalized = build_swordcoming_offline_data.normalize_mined_candidate(
+        "小心翼翼",
+        blocked_names=set(),
+        known_names=set(),
+        location_names=set(),
+    )
+    assert normalized is None
+
+    titled = build_swordcoming_offline_data.normalize_mined_candidate(
+        "老秀才",
+        blocked_names=set(),
+        known_names=set(),
+        location_names=set(),
+    )
+    assert titled == "老秀才"
+
+
 def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
     book_path = tmp_path / "swordcoming_book.json"
     core_cast_path = tmp_path / "core_cast.json"
@@ -349,6 +367,143 @@ def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
     assert writer_payload["season_overviews"][0]["season_name"] == "第一季"
     assert writer_payload["curated_relationships"][0]["title"] == "陈平安与宋集薪：镜像关系"
     assert writer_payload["curated_relationships"][0]["manual_beats"][0]["phase_label"] == "镜像"
+
+
+def test_build_offline_data_includes_curated_extra_seed_characters(tmp_path):
+    book_path = tmp_path / "book.json"
+    core_cast_path = tmp_path / "core_cast.json"
+    book_config_path = tmp_path / "book_config.json"
+    unit_progress_path = tmp_path / "unit_progress_index.json"
+    manual_overrides_path = tmp_path / "manual_overrides.json"
+    store_dir = tmp_path / "store"
+    kb_output = tmp_path / "unified_knowledge.json"
+    writer_output = tmp_path / "writer_insights.json"
+
+    book_path.write_text(
+        json.dumps(
+            [
+                {
+                    "juan_index": 1,
+                    "unit_title": "第一卷 笼中雀 第一章 惊蛰",
+                    "segments": [
+                        {
+                            "segment_index": 1,
+                            "segment_start_time": "第一卷 笼中雀 第一章 惊蛰",
+                            "sentences": [
+                                "陈平安在泥瓶巷守夜。",
+                                "陆台问了陈平安一句。",
+                            ],
+                        }
+                    ],
+                }
+            ],
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    core_cast_path.write_text(
+        json.dumps(
+            {
+                "version": "v1",
+                "characters": [
+                    {"name": "陈平安", "aliases": [], "power": "泥瓶巷", "description": "主角"},
+                ],
+                "locations": [
+                    {"name": "泥瓶巷", "aliases": [], "type": "街巷", "description": "场景"}
+                ],
+                "relation_keywords": [{"action": "提问", "keywords": ["问了"]}],
+                "event_rules": [],
+                "event_type_rules": [{"type": "剧情推进", "keywords": ["守夜", "问了"]}],
+                "phase_rules": [],
+                "writer_focus": {
+                    "spotlight_role": "陈平安",
+                    "priority_characters": ["陈平安"],
+                    "conflict_actions": ["提问"],
+                    "curated_relationships": [],
+                },
+                "foreshadowing_patterns": [],
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    book_config_path.write_text(
+        json.dumps(
+            {
+                "book_id": "swordcoming",
+                "title": "剑来",
+                "unit_label": "章节",
+                "progress_label": "叙事进度",
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    unit_progress_path.write_text(
+        json.dumps(
+            {
+                "book_id": "swordcoming",
+                "unit_label": "章节",
+                "progress_label": "叙事进度",
+                "segments": {
+                    "1-1": {
+                        "unit_index": 1,
+                        "segment_index": 1,
+                        "progress_index": 1,
+                        "progress_label": "第一卷 笼中雀 第一章 惊蛰 · 段1",
+                    }
+                },
+                "units": {
+                    "1": {
+                        "unit_index": 1,
+                        "unit_title": "第一卷 笼中雀 第一章 惊蛰",
+                        "season_name": "第一季",
+                        "progress_start": 1,
+                        "progress_end": 1,
+                    }
+                },
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    manual_overrides_path.write_text(
+        json.dumps(
+            {
+                "version": "v1",
+                "blocked_aliases": ["先生"],
+                "role_aliases": {},
+                "role_primary_powers": {"陈平安": "泥瓶巷"},
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    stats = build_swordcoming_offline_data.build_offline_data(
+        book_path=book_path,
+        core_cast_path=core_cast_path,
+        store_dir=store_dir,
+        kb_output=kb_output,
+        writer_output=writer_output,
+        unit_progress_index_path=unit_progress_path,
+        book_config_path=book_config_path,
+        manual_overrides_path=manual_overrides_path,
+        sync_output=False,
+    )
+
+    payload = json.loads(kb_output.read_text(encoding="utf-8"))
+    assert stats["curated_extra_seed_roles"] >= 1
+    assert "陆台" in payload["roles"]
 
 
 def test_build_writer_insights_payload_creates_arc_conflict_and_foreshadowing():

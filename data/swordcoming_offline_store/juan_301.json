@@ -26,21 +26,37 @@
         ],
         "juan_index": 301,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人转头望向校武场那边的云海，山岳下沉，拳罡迎敌，云海之上更有剑光纵横。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 301,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳对话",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与老道人对话",
         "time": null,
         "location": null,
         "participants": [
-          "陶斜阳"
+          "陶斜阳",
+          "老道人"
         ],
-        "description": "陶斜阳一屁股坐在地上，以刀拄地。 桓家祠堂外，好不容易杀出一条血路的众人，邋遢老人在以桓老堡主传授的秘术，以盛放有桓氏子嗣鲜血的双碗施法后，老人等待片刻，颓然跌坐在地上，失魂落魄，喃喃道：“为何如此，不该如此的……” 浑身浴血的桓氏兄妹脸色苍白，年轻道士嘴唇颤抖，“那些妖魔鬼魅，不知道用了什么阴毒法子，早就耗尽了两尊石狮子蕴含的灵气。",
+        "description": "陶斜阳一屁股坐在地上，以刀拄地。 老道人转头望向校武场那边的云海，山岳下沉，拳罡迎敌，云海之上更有剑光纵横。 桓家祠堂外，好不容易杀出一条血路的众人，邋遢老人在以桓老堡主传授的秘术，以盛放有桓氏子嗣鲜血的双碗施法后，老人等待片刻，颓然跌坐在地上，失魂落魄，喃喃道：“为何如此，不该如此的……”",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陶斜阳与老道人之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -54,8 +70,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.483358",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "对话",
+        "context": "桓家祠堂外，好不容易杀出一条血路的众人，邋遢老人在以桓老堡主传授的秘术，以盛放有桓氏子嗣鲜血的双碗施法后，老人等待片刻，颓然跌坐在地上，失魂落魄，喃喃道：“为何如此，不该如此的……” 浑身浴血的桓氏兄妹脸色苍白，年轻道士嘴唇颤抖，“那些妖魔鬼魅，不知道用了什么阴毒法子，早就耗尽了两尊石狮子蕴含的灵气。 ” 陶斜阳一屁股坐在地上，以刀拄地。 老道人转头望向校武场那边的云海，山岳下沉，拳罡迎敌，云海之上更有剑光纵横。 老人生出一丝渺茫希望，挣扎着站起身，对四个年轻人说道：“你们四个，赶紧离开飞鹰堡，先前你们护送我来到这里，现在轮到我为你们几个孩子护送一程，你们就当为飞鹰堡桓氏留下一点血脉香火，不要犹豫了，赶紧离开此地，走得越远越好，以后不要想着报仇！",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与老道人对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.466878",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -89,21 +131,65 @@
         ],
         "juan_index": 301,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "陶斜阳-根本没有起身的迹象，抬头望向那个心仪多年的桓氏女子，沙哑道：“桓淑，你和桓常一起走吧，我要留在这里，走南闯北这么多年，真的有点累了，今天就不走了。",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "年轻道士正要说话，陶斜阳对他摇头道：“黄尚，别劝我了，我意已决！",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 301,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人喟叹一声，带着徒弟和桓氏兄妹，一起杀向就近的飞鹰堡北门。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳剧情推进",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与沙哑同行",
         "time": null,
         "location": null,
         "participants": [
-          "陶斜阳"
+          "陶斜阳",
+          "沙哑",
+          "黄尚"
         ],
-        "description": "陶斜阳-根本没有起身的迹象，抬头望向那个心仪多年的桓氏女子，沙哑道：“桓淑，你和桓常一起走吧，我要留在这里，走南闯北这么多年，真的有点累了，今天就不走了。 年轻道士正要说话，陶斜阳对他摇头道：“黄尚，别劝我了，我意已决！ ”",
+        "description": "陶斜阳-根本没有起身的迹象，抬头望向那个心仪多年的桓氏女子，沙哑道：“桓淑，你和桓常一起走吧，我要留在这里，走南闯北这么多年，真的有点累了，今天就不走了。 年轻道士正要说话，陶斜阳对他摇头道：“黄尚，别劝我了，我意已决！ 老道人喟叹一声，带着徒弟和桓氏兄妹，一起杀向就近的飞鹰堡北门。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陶斜阳与沙哑之间的同行关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -117,8 +203,49 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.483358",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "同行",
+        "context": "陶斜阳-根本没有起身的迹象，抬头望向那个心仪多年的桓氏女子，沙哑道：“桓淑，你和桓常一起走吧，我要留在这里，走南闯北这么多年，真的有点累了，今天就不走了。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与沙哑同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "黄尚"
+        ],
+        "action": "对话",
+        "context": "年轻道士正要说话，陶斜阳对他摇头道：“黄尚，别劝我了，我意已决！",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与沙哑同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 301,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.466878",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -152,21 +279,37 @@
         ],
         "juan_index": 301,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "黄尚跟随师父他们奔跑，视线朦胧，始终不敢回头看那个年轻武夫。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳剧情推进",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与黄尚同行",
         "time": null,
         "location": null,
         "participants": [
-          "陶斜阳"
+          "陶斜阳",
+          "黄尚"
         ],
-        "description": "陶斜阳盘腿而坐，面朝祠堂大门，开始以袖口擦拭长刀。 陶斜阳低下头，凝视着雪亮刀身映照出来的那截脸孔，扯了扯嘴角，还是不喜欢啊。 黄尚跟随师父他们奔跑，视线朦胧，始终不敢回头看那个年轻武夫。",
+        "description": "陶斜阳盘腿而坐，面朝祠堂大门，开始以袖口擦拭长刀。 黄尚跟随师父他们奔跑，视线朦胧，始终不敢回头看那个年轻武夫。 陶斜阳低下头，凝视着雪亮刀身映照出来的那截脸孔，扯了扯嘴角，还是不喜欢啊。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陶斜阳与黄尚之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -180,8 +323,221 @@
         "segment_index": 3
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "黄尚"
+        ],
+        "action": "同行",
+        "context": "陶斜阳盘腿而坐，面朝祠堂大门，开始以袖口擦拭长刀。 黄尚跟随师父他们奔跑，视线朦胧，始终不敢回头看那个年轻武夫。 桓淑突然转头，望向那个熟悉男人的落魄背影，于心不忍，心中千言万语，到了嘴边，便烟消云散。 生死之间，最真性情。 年轻女子被兄长一拽而走，不再停留。 陶斜阳低下头，凝视着雪亮刀身映照出来的那截脸孔，扯了扯嘴角，还是不喜欢啊。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陶斜阳与黄尚同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.467882",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-4-0": {
+    "juan_index": 301,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "当鬼婴被陆台一竹扇透心戳死的瞬间，哀嚎传出主楼厅堂，楼外的那片黑色云海之上，顾不得两把飞剑还在肆意飞掠，高冠老者再度现身，脸色难看至极，整个人气恼得连累五岳冠都开始颤颤巍巍，几乎已经淹没高处屋脊的云海，更是翻滚如沸水。",
+      "老人对着主楼那边怒吼道：“废物，废物！",
+      "留你何用？",
+      "！",
+      "”",
+      "高冠老人伸出一只手，猛然攥紧。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "当鬼婴被陆台一竹扇透心戳死的瞬间，哀嚎传出主楼厅堂，楼外的那片黑色云海之上，顾不得两把飞剑还在肆意飞掠，高冠老者再度现身，脸色难看至极，整个人气恼得连累五岳冠都开始颤颤巍巍，几乎已经淹没高处屋脊的云海，更是翻滚如沸水。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 301,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "当鬼婴被陆台一竹扇透心戳死的瞬间，哀嚎传出主楼厅堂，楼外的那片黑色云海之上，顾不得两把飞剑还在肆意飞掠，高冠老者再度现身，脸色难看至极，整个人气恼得连累五岳冠都开始颤颤巍巍，几乎已经淹没高处屋脊的云海，更是翻滚如沸水。 老人对着主楼那边怒吼道：“废物，废物！ 留你何用？",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 4
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.483358",
+    "extracted_at": "2026-03-25T17:27:38.467882",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-5-0": {
+    "juan_index": 301,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "大堂之内，苦苦应对两把飞剑的拂尘男子，学道之初，本就早早被老人以师门秘法控制，此刻他一颗心脏毫无征兆地炸开，然后瞬间魂飞魄散，骨肉分离，所有鲜血都被干干净净剥离出来，化作一大团猩红血球，不计代价地向外冲撞，一位观海境的气海爆裂，就已经将那座被陆台鸠占鹊巢的符阵，给炸得七零八落，摇摇欲坠，等到鲜血向外喷涌，好似倦鸟归巢，试图掠向楼外的云海老人那边。",
+      "陆台皱了皱眉头，收回针尖麦芒，以免被那些污秽鲜血沾染，到时候可就不是耗费天材地宝那么轻松了，不再往符阵灌注灵气，于是鲜血如一条溪涧，拉伸出一条纤长的河道，从大堂蔓延到了云海之上的高冠老人，涌入老者的手心之中。",
+      "老人如饥汉饱腹一顿，双眼血光绽放，双手挥袖，两股鲜红气机从大袖中汹涌而出，一时间罡风大作，初一十五两把飞剑在云海之中四处飘散。",
+      "高冠老人脸色狰狞，低头看着那座尚未触地的中央山岳，大怒道：“垂死挣扎！",
+      "本来还想着鬼婴初生，胃口不济，才将你压在山岳磨盘下，一点点榨取精血，既然现在害得老夫万事皆休，老夫可不用这般讲究！",
+      "去死！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "大堂之内，苦苦应对两把飞剑的拂尘男子，学道之初，本就早早被老人以师门秘法控制，此刻他一颗心脏毫无征兆地炸开，然后瞬间魂飞魄散，骨肉分离，所有鲜血都被干干净净剥离出来，化作一大团猩红血球，不计代价地向外冲撞，一位观海境的气海爆裂，就已经将那座被陆台鸠占鹊巢的符阵，给炸得七零八落，摇摇欲坠，等到鲜血向外喷涌，好似倦鸟归巢，试图掠向楼外的云海老人那边。 陆台皱了皱眉头，收回针尖麦芒，以免被那些污秽鲜血沾染，到时候可就不是耗费天材地宝那么轻松了，不再往符阵灌注灵气，于是鲜血如一条溪涧，拉伸出一条纤长的河道，从大堂蔓延到了云海之上的高冠老人，涌入老者的手心之中。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "大堂之内，苦苦应对两把飞剑的拂尘男子，学道之初，本就早早被老人以师门秘法控制，此刻他一颗心脏毫无征兆地炸开，然后瞬间魂飞魄散，骨肉分离，所有鲜血都被干干净净剥离出来，化作一大团猩红血球，不计代价地向外冲撞，一位观海境的气海爆裂，就已经将那座被陆台鸠占鹊巢的符阵，给炸得七零八落，摇摇欲坠，等到鲜血向外喷涌，好似倦鸟归巢，试图掠向楼外的云海老人那边。 陆台皱了皱眉头，收回针尖麦芒，以免被那些污秽鲜血沾染，到时候可就不是耗费天材地宝那么轻松了，不再往符阵灌注灵气，于是鲜血如一条溪涧，拉伸出一条纤长的河道，从大堂蔓延到了云海之上的高冠老人，涌入老者的手心之中。 老人如饥汉饱腹一顿，双眼血光绽放，双手挥袖，两股鲜红气机从大袖中汹涌而出，一时间罡风大作，初一十五两把飞剑在云海之中四处飘散。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 5
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.467882",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-6-0": {
+    "juan_index": 301,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "”",
+      "陆台已经来到飞鹰堡主楼的那座观景台，驾驭两柄飞剑掠向云海老人，畅快大笑道：“老贼！",
+      "我太平山等这一天很久了！",
+      "”",
+      "老人脸色一凝，随即癫狂大笑道：“老夫就算今天死在这里，也要你们太平山两位天才修士一起陪葬！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台已经来到飞鹰堡主楼的那座观景台，驾驭两柄飞剑掠向云海老人，畅快大笑道：“老贼！",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 6
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台已经来到飞鹰堡主楼的那座观景台，驾驭两柄飞剑掠向云海老人，畅快大笑道：“老贼！ ” 我太平山等这一天很久了！",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 6
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.467882",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -204,6 +560,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台眼神微变，默念一声“走”，一根色彩绚烂的彩带从这座上阳台一闪而逝，配合那条如金蛟缠绕山峰的缚妖索，一起往上提拽而起，绝对不能让这座中岳与其余扎根大地的四岳汇合，到时候五岳结阵，陈平安别说是四境武夫，就是六境的体魄，恐怕都要被活生生碾压成一滩肉泥。 陆台怒喝一声，“给我升起！",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 301,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台眼神微变，默念一声“走”，一根色彩绚烂的彩带从这座上阳台一闪而逝，配合那条如金蛟缠绕山峰的缚妖索，一起往上提拽而起，绝对不能让这座中岳与其余扎根大地的四岳汇合，到时候五岳结阵，陈平安别说是四境武夫，就是六境的体魄，恐怕都要被活生生碾压成一滩肉泥。",
@@ -219,16 +589,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安冲突",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台眼神微变，默念一声“走”，一根色彩绚烂的彩带从这座上阳台一闪而逝，配合那条如金蛟缠绕山峰的缚妖索，一起往上提拽而起，绝对不能让这座中岳与其余扎根大地的四岳汇合，到时候五岳结阵，陈平安别说是四境武夫，就是六境的体魄，恐怕都要被活生生碾压成一滩肉泥。 老人一手挥袖不断，竭力阻拦初一十五、针尖麦芒四把飞剑的刺杀，一手握拳，向下凶猛砸下，“小兔崽子，死也不死？ ！",
+        "description": "陆台眼神微变，默念一声“走”，一根色彩绚烂的彩带从这座上阳台一闪而逝，配合那条如金蛟缠绕山峰的缚妖索，一起往上提拽而起，绝对不能让这座中岳与其余扎根大地的四岳汇合，到时候五岳结阵，陈平安别说是四境武夫，就是六境的体魄，恐怕都要被活生生碾压成一滩肉泥。 陆台怒喝一声，“给我升起！ 老人一手挥袖不断，竭力阻拦初一十五、针尖麦芒四把飞剑的刺杀，一手握拳，向下凶猛砸下，“小兔崽子，死也不死？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -242,8 +615,153 @@
         "segment_index": 7
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "陆台眼神微变，默念一声“走”，一根色彩绚烂的彩带从这座上阳台一闪而逝，配合那条如金蛟缠绕山峰的缚妖索，一起往上提拽而起，绝对不能让这座中岳与其余扎根大地的四岳汇合，到时候五岳结阵，陈平安别说是四境武夫，就是六境的体魄，恐怕都要被活生生碾压成一滩肉泥。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陆台与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 301,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.467882",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-9-0": {
+    "juan_index": 301,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "当五岳齐聚之后，阵法已成，上阳台那边，陆台吐出一口鲜血，踉跄前行数步，好不容易扶住栏杆，手指微动，艰难开口道：“回来……”",
+      "原本捆住中岳的五彩腰带，亦是失去了绚烂光彩，开始恢复原形，然后向主楼那边掠去，老人眼前一亮，再次探臂一抓，将彩带扯在手中，刚刚缚妖索到手，又有这根一眼便知法宝无疑的彩带，被自己收入囊中，天无绝人之路，此次虽然还是吃了大亏，可好歹并非血本无归。",
+      "老人重新盘腿而坐，蒲团凭空浮现，经此一役，头顶五岳冠已经灵气稀薄。",
+      "头顶云海那边，唯有主楼那名剑修的两把飞剑，一大一小，还在挣扎，之前那两把袖珍飞剑，高冠老人其实一直在暗中观察，在中岳成功压死那金袍少年后，飞剑便向地面坠落，落在了远处的两处巷弄之中，多半是就此销毁了，实在可惜。",
+      "今日大仇得报，老人心中有些快意，一来已经撑不起五岳真形阵法，二来还要赶紧从少年尸体上剥落那件金色法袍，然后赶紧离开飞鹰堡，免得被扶乩宗或是太平山的老王八拦阻截杀，不然就要像当年那样，再次沦为丧家犬。",
+      "事已至此，太平山依然没有金丹或是元婴老祖出手，看来一死一伤的两个崽子，太过托大，才给了自己安然离去的机会，不过两个年轻人，绝对是太平山最拔尖的嫡传弟子，说不定还是那位山主的得意高徒，才有胆子如此一身法宝，招摇过市。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "当五岳齐聚之后，阵法已成，上阳台那边，陆台吐出一口鲜血，踉跄前行数步，好不容易扶住栏杆，手指微动，艰难开口道：“回来……”",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 301,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "当五岳齐聚之后，阵法已成，上阳台那边，陆台吐出一口鲜血，踉跄前行数步，好不容易扶住栏杆，手指微动，艰难开口道：“回来……” 原本捆住中岳的五彩腰带，亦是失去了绚烂光彩，开始恢复原形，然后向主楼那边掠去，老人眼前一亮，再次探臂一抓，将彩带扯在手中，刚刚缚妖索到手，又有这根一眼便知法宝无疑的彩带，被自己收入囊中，天无绝人之路，此次虽然还是吃了大亏，可好歹并非血本无归。 老人重新盘腿而坐，蒲团凭空浮现，经此一役，头顶五岳冠已经灵气稀薄。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 9
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.484362",
+    "extracted_at": "2026-03-25T17:27:38.468885",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-10-0": {
+    "juan_index": 301,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "如果自己不是早就跟太平山，结下了不死不休的梁子，恐怕早就避其锋芒了。",
+      "高冠老人默念“收山”口诀，五座山峰瞬间拔地而起，体型越来越小，最终重返五岳冠之中。",
+      "老人一边挥袖驾驭云海，阻挡陆台的针尖麦芒两把飞剑。",
+      "一边盘腿坐于蒲团上，笑着往校武场那边下降。",
+      "地上有一摊亮眼的金色，就像从竹竿上不小心掉落地面的一件金色衣裳，随意铺在地面上。",
+      "明明一件法宝唾手可得，高冠老人却脸色剧变，双手虚空一拍，整个人连同蒲团一起猛然升空，经过一系列战事，以及随着老人自身灵气的衰竭，那座十不存一的黑色云海疯狂涌向老人。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "老人一边挥袖驾驭云海，阻挡陆台的针尖麦芒两把飞剑。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 301,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "老人一边挥袖驾驭云海，阻挡陆台的针尖麦芒两把飞剑。 如果自己不是早就跟太平山，结下了不死不休的梁子，恐怕早就避其锋芒了。 高冠老人默念“收山”口诀，五座山峰瞬间拔地而起，体型越来越小，最终重返五岳冠之中。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.468885",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -266,6 +784,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "校武场地上那抹金色，从刚好足够一人平躺的大坑中，一跃而起，高声喊道：“陆台，针尖借我一用！ 陆台没有丝毫惊讶，心意微动，巨大的飞剑针尖便出现在陈平安脚下。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台没有丝毫惊讶，心意微动，巨大的飞剑针尖便出现在陈平安脚下。 先前从初一十五的“坠落”，陆台其实就发现了蛛丝马迹，陈平安说过，它们是本命飞剑，却不是他陈平安的本命之物。",
@@ -283,15 +817,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台没有丝毫惊讶，心意微动，巨大的飞剑针尖便出现在陈平安脚下。 先前从初一十五的“坠落”，陆台其实就发现了蛛丝马迹，陈平安说过，它们是本命飞剑，却不是他陈平安的本命之物。 所以陈平安如果真的死了，初一十五只会更加拼命杀敌，只有陈平安假死，才会故意让两把飞剑演戏。",
+        "description": "校武场地上那抹金色，从刚好足够一人平躺的大坑中，一跃而起，高声喊道：“陆台，针尖借我一用！ 陆台没有丝毫惊讶，心意微动，巨大的飞剑针尖便出现在陈平安脚下。 先前从初一十五的“坠落”，陆台其实就发现了蛛丝马迹，陈平安说过，它们是本命飞剑，却不是他陈平安的本命之物。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段11",
         "sentence_indexes_in_segment": [
@@ -307,7 +842,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.484362",
+    "extracted_at": "2026-03-25T17:27:38.468885",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -330,6 +865,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "依葫芦画瓢，灵犀一动的陆台也故意失去五彩腰带的控制，任由高冠老人取走。 又有陆台的飞剑麦芒在高空阻拦。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 301,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "最关键是陆台的五彩腰带，和陈平安的金色缚妖索，重新活了过来，同时绑缚住高冠老人的手臂，如两条蟒蛇缠绕人身。 而陈平安，踩在飞剑针尖之上，向空中追着高冠老人和云海，飞掠而去。",
@@ -346,16 +896,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安冲突",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "最关键是陆台的五彩腰带，和陈平安的金色缚妖索，重新活了过来，同时绑缚住高冠老人的手臂，如两条蟒蛇缠绕人身。 而陈平安，踩在飞剑针尖之上，向空中追着高冠老人和云海，飞掠而去。 依葫芦画瓢，灵犀一动的陆台也故意失去五彩腰带的控制，任由高冠老人取走。",
+        "description": "依葫芦画瓢，灵犀一动的陆台也故意失去五彩腰带的控制，任由高冠老人取走。 又有陆台的飞剑麦芒在高空阻拦。 最关键是陆台的五彩腰带，和陈平安的金色缚妖索，重新活了过来，同时绑缚住高冠老人的手臂，如两条蟒蛇缠绕人身。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -369,8 +922,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.484362",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "依葫芦画瓢，灵犀一动的陆台也故意失去五彩腰带的控制，任由高冠老人取走。 老人去势极快，可是早早隐匿在附近的初一十五，来势更快。 一左一右，它们瞬间戳穿了那蒲团，使得高冠老人远遁速度微微凝滞。 又有陆台的飞剑麦芒在高空阻拦。 最关键是陆台的五彩腰带，和陈平安的金色缚妖索，重新活了过来，同时绑缚住高冠老人的手臂，如两条蟒蛇缠绕人身。 而陈平安，踩在飞剑针尖之上，向空中追着高冠老人和云海，飞掠而去。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陆台与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.468885",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -393,6 +972,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "虽然在山岳镇压之下，借助陆台的彩带拖延时间，再加上陈平安早就算准了最大的坑洼，出拳之前，跺脚裂地，硬是临时开辟出一座可供躺下的大坑，得以逃过粉身碎骨的下场，但是被五岳大阵的磅礴气机当面压下，好似置身于密封棺材内的陈平安，可一点都不好受，当下肋骨已经断了好几根，如果不是在竹楼习惯了这种，也就只能眼睁睁看着高冠老人离去。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "虽然在山岳镇压之下，借助陆台的彩带拖延时间，再加上陈平安早就算准了最大的坑洼，出拳之前，跺脚裂地，硬是临时开辟出一座可供躺下的大坑，得以逃过粉身碎骨的下场，但是被五岳大阵的磅礴气机当面压下，好似置身于密封棺材内的陈平安，可一点都不好受，当下肋骨已经断了好几根，如果不是在竹楼习惯了这种，也就只能眼睁睁看着高冠老人离去。 陈平安在踩剑“飞升”之前，就以剑师驭剑之法，将先前那把丢在一旁的长剑“痴心”握在手心。",
@@ -410,15 +1002,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安迁移",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安与陆台迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "虽然在山岳镇压之下，借助陆台的彩带拖延时间，再加上陈平安早就算准了最大的坑洼，出拳之前，跺脚裂地，硬是临时开辟出一座可供躺下的大坑，得以逃过粉身碎骨的下场，但是被五岳大阵的磅礴气机当面压下，好似置身于密封棺材内的陈平安，可一点都不好受，当下肋骨已经断了好几根，如果不是在竹楼习惯了这种，也就只能眼睁睁看着高冠老人离去。 陈平安在踩剑“飞升”之前，就以剑师驭剑之法，将先前那把丢在一旁的长剑“痴心”握在手心。 这使得初次御剑的陈平安仍是很快追上高冠老人，对着那家伙的后脑勺就是一剑劈去。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "推动陈平安与陆台之间的迁移关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段13",
         "sentence_indexes_in_segment": [
@@ -434,7 +1027,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.484362",
+    "extracted_at": "2026-03-25T17:27:38.468885",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-14-0": {
+    "juan_index": 301,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "上阳台那边，陆台一咬牙，再次说出“开花”二字，青衫飘飘，御风追去。",
+      "速度犹胜飞剑针尖。",
+      "陆台在空中划出一道圆弧，十数个眨眼功夫，就飞快截住那龙门境高冠老人的去路。",
+      "老人苦头吃足，竟是不敢硬闯，转弯绕行，结果被后边两次出剑都慢上一线的金袍少年，给一剑刺穿，透心凉！",
+      "而且这柄剑极其古怪。",
+      "生机连同灵气，骤然流失，被透体而过的长剑汲取。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "上阳台那边，陆台一咬牙，再次说出“开花”二字，青衫飘飘，御风追去。 陆台在空中划出一道圆弧，十数个眨眼功夫，就飞快截住那龙门境高冠老人的去路。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 301,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "上阳台那边，陆台一咬牙，再次说出“开花”二字，青衫飘飘，御风追去。 陆台在空中划出一道圆弧，十数个眨眼功夫，就飞快截住那龙门境高冠老人的去路。 速度犹胜飞剑针尖。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.468885",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -467,21 +1123,37 @@
         ],
         "juan_index": 301,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安本想趁胜追击，再出一拳，打断高冠老人的头颅才算万无一失，但是陆台已经近乎嘶吼地以心声提醒陈平安，借着飞剑针尖，赶紧后撤，越远越好。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安指点",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安与陆台指点",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安本想趁胜追击，再出一拳，打断高冠老人的头颅才算万无一失，但是陆台已经近乎嘶吼地以心声提醒陈平安，借着飞剑针尖，赶紧后撤，越远越好。 老人停下身形，蒲团下的云海随之径直悬停。 低头看了眼剑尖，凄然一笑。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -495,8 +1167,29 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.484362",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "指点",
+        "context": "陈平安本想趁胜追击，再出一拳，打断高冠老人的头颅才算万无一失，但是陆台已经近乎嘶吼地以心声提醒陈平安，借着飞剑针尖，赶紧后撤，越远越好。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 陈平安与陆台指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.469888",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -519,6 +1212,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "高冠老人扶了扶头上那顶歪斜的五岳冠，也不去拔出那把刺破心脏的“痴心”，阴恻恻笑望向陆台。 陆台与高冠老人相对而立，心有余悸，当时故意自称太平山修士，为的就是吓退这个老家伙，哪里想到一听说来自太平山，就跟疯狗一样乱咬人，陈平安当时的境地，是名副其实的命悬一线。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 301,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台与高冠老人相对而立，心有余悸，当时故意自称太平山修士，为的就是吓退这个老家伙，哪里想到一听说来自太平山，就跟疯狗一样乱咬人，陈平安当时的境地，是名副其实的命悬一线。",
@@ -534,15 +1242,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百章 江湖险恶 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百章 江湖险恶 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台与高冠老人相对而立，心有余悸，当时故意自称太平山修士，为的就是吓退这个老家伙，哪里想到一听说来自太平山，就跟疯狗一样乱咬人，陈平安当时的境地，是名副其实的命悬一线。 高冠老人扶了扶头上那顶歪斜的五岳冠，也不去拔出那把刺破心脏的“痴心”，阴恻恻笑望向陆台。 双手依旧被两剑法宝死死捆住，竭力限制老者的灵气流转。",
+        "description": "高冠老人扶了扶头上那顶歪斜的五岳冠，也不去拔出那把刺破心脏的“痴心”，阴恻恻笑望向陆台。 陆台与高冠老人相对而立，心有余悸，当时故意自称太平山修士，为的就是吓退这个老家伙，哪里想到一听说来自太平山，就跟疯狗一样乱咬人，陈平安当时的境地，是名副其实的命悬一线。 陆台稳了稳心神，平静道：“我们其实不是太平山修士。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百章 江湖险恶 · 段16",
         "sentence_indexes_in_segment": [
@@ -558,7 +1267,132 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.485365",
+    "extracted_at": "2026-03-25T17:27:38.469888",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-21-0": {
+    "juan_index": 301,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "老道人带着三人顺顺利利逃离了飞鹰堡，一路往北边大山深处钻，这一趟，顺风顺水到了匪夷所思的地步，除了零星的阴物鬼魅出来搅局，并无太大的波折。",
+      "不说劫后余生的三位年轻人，就连老道人自己都觉得无法想象。",
+      "一时间四人都有些恍若隔世。",
+      "站在山坡之上，桓常突然说道：“我要回去。",
+      "”",
+      "邋遢老人暗中点头，有此心思，且不去谈幼稚与否，将来才有希望帮助桓氏重振旗鼓。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人带着三人顺顺利利逃离了飞鹰堡，一路往北边大山深处钻，这一趟，顺风顺水到了匪夷所思的地步，除了零星的阴物鬼魅出来搅局，并无太大的波折。 不说劫后余生的三位年轻人，就连老道人自己都觉得无法想象。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 301,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 老道人对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老道人"
+        ],
+        "description": "老道人带着三人顺顺利利逃离了飞鹰堡，一路往北边大山深处钻，这一趟，顺风顺水到了匪夷所思的地步，除了零星的阴物鬼魅出来搅局，并无太大的波折。 不说劫后余生的三位年轻人，就连老道人自己都觉得无法想象。 一时间四人都有些恍若隔世。",
+        "background": "",
+        "significance": "对应老道人在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.470892",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-22-0": {
+    "juan_index": 301,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "若是只顾着埋头仓皇逃窜，老人不会看轻女子桓淑，却要打心眼瞧不起桓老兄弟的这位嫡孙。",
+      "原先那座漆黑如墨的云海已散，虽然暂时仍然不好说飞鹰堡就已经脱离死局，可到底是一个好兆头。",
+      "老道人举目望去，以山门道法粗略观其气象，飞鹰堡内的浓郁阴气，几乎消散殆尽。",
+      "于是出言劝慰桓常，“别着急回去，如今大势好像已经转向我们这边，你在这个时候，绝不可节外生枝。",
+      "”",
+      "桓常握紧腰间刀柄，手背青筋暴起，闷闷道：“父母还身处险境，我做儿子的却要袖手旁观，不当人子！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人举目望去，以山门道法粗略观其气象，飞鹰堡内的浓郁阴气，几乎消散殆尽。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 301,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 老道人剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老道人"
+        ],
+        "description": "老道人举目望去，以山门道法粗略观其气象，飞鹰堡内的浓郁阴气，几乎消散殆尽。 若是只顾着埋头仓皇逃窜，老人不会看轻女子桓淑，却要打心眼瞧不起桓老兄弟的这位嫡孙。 原先那座漆黑如墨的云海已散，虽然暂时仍然不好说飞鹰堡就已经脱离死局，可到底是一个好兆头。",
+        "background": "",
+        "significance": "对应老道人在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 22
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.470892",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -620,7 +1454,174 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.485365",
+    "extracted_at": "2026-03-25T17:27:38.470892",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-25-0": {
+    "juan_index": 301,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "年轻道士黄尚喃喃道：“师父，那两个外乡人，难道真能将那尊魔头斩杀在天上？",
+      "”",
+      "老道人哭笑不得，叹息道：“有能耐布置下这么大一个局，颠倒百里风水气运，极有可能是一位金丹境的大魔头，那搬动山岳之术，别说是师父我，就是你那位天纵之才的师祖，在修为巅峰之际，一样都做不到，那两个年轻人，如果能够赶跑强敌，就已经是万幸，根本不用奢望成功杀敌。",
+      "”",
+      "脱离险地，老人那根时刻紧绷的心弦便松了，顿时显得神色萎靡，今日一战，让这位山居道人实在是心力憔悴。",
+      "老道人靠着一棵大树，“除非是扶乩宗的大修士闻讯赶来，而且必须辈分不低，否则很难拦下那位驾驭云海的魔道巨枭。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "年轻道士黄尚喃喃道：“师父，那两个外乡人，难道真能将那尊魔头斩杀在天上？",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 301,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "老道人哭笑不得，叹息道：“有能耐布置下这么大一个局，颠倒百里风水气运，极有可能是一位金丹境的大魔头，那搬动山岳之术，别说是师父我，就是你那位天纵之才的师祖，在修为巅峰之际，一样都做不到，那两个年轻人，如果能够赶跑强敌，就已经是万幸，根本不用奢望成功杀敌。 老道人靠着一棵大树，“除非是扶乩宗的大修士闻讯赶来，而且必须辈分不低，否则很难拦下那位驾驭云海的魔道巨枭。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 黄尚与老道人师承",
+        "time": null,
+        "location": null,
+        "participants": [
+          "黄尚",
+          "老道人"
+        ],
+        "description": "年轻道士黄尚喃喃道：“师父，那两个外乡人，难道真能将那尊魔头斩杀在天上？ 老道人哭笑不得，叹息道：“有能耐布置下这么大一个局，颠倒百里风水气运，极有可能是一位金丹境的大魔头，那搬动山岳之术，别说是师父我，就是你那位天纵之才的师祖，在修为巅峰之际，一样都做不到，那两个年轻人，如果能够赶跑强敌，就已经是万幸，根本不用奢望成功杀敌。 老道人靠着一棵大树，“除非是扶乩宗的大修士闻讯赶来，而且必须辈分不低，否则很难拦下那位驾驭云海的魔道巨枭。",
+        "background": "",
+        "significance": "推动黄尚与老道人之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 25
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "黄尚"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "师承",
+        "context": "年轻道士黄尚喃喃道：“师父，那两个外乡人，难道真能将那尊魔头斩杀在天上？ ” 老道人哭笑不得，叹息道：“有能耐布置下这么大一个局，颠倒百里风水气运，极有可能是一位金丹境的大魔头，那搬动山岳之术，别说是师父我，就是你那位天纵之才的师祖，在修为巅峰之际，一样都做不到，那两个年轻人，如果能够赶跑强敌，就已经是万幸，根本不用奢望成功杀敌。 ” 脱离险地，老人那根时刻紧绷的心弦便松了，顿时显得神色萎靡，今日一战，让这位山居道人实在是心力憔悴。 老道人靠着一棵大树，“除非是扶乩宗的大修士闻讯赶来，而且必须辈分不低，否则很难拦下那位驾驭云海的魔道巨枭。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百章 江湖险恶 · 黄尚与老道人师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.470892",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "301-26-0": {
+    "juan_index": 301,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百章 江湖险恶",
+    "source_sentences": [
+      "”",
+      "三人脸色沉重，桓淑咬紧嘴唇，心情尤为复杂。",
+      "爹娘还在困境之中，祠堂外还有个自愿等死的傻子。",
+      "自己和兄长哪怕苟活，仍然前途渺茫，何去何从，桓淑当真不知道。",
+      "黄尚神色黯然。",
+      "辛苦修道数载，片刻不敢懈怠，本以为已经道法小成，逢山遇水，不在话下，哪里想到只是在这世外桃源一般的飞鹰堡，就差点丢了性命。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "黄尚神色黯然。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 301,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百章 江湖险恶 · 黄尚剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "黄尚"
+        ],
+        "description": "黄尚神色黯然。 ” 三人脸色沉重，桓淑咬紧嘴唇，心情尤为复杂。",
+        "background": "",
+        "significance": "对应黄尚在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百章 江湖险恶 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 301,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.470892",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -682,7 +1683,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.485365",
+    "extracted_at": "2026-03-25T17:27:38.470892",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -746,7 +1747,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.486369",
+    "extracted_at": "2026-03-25T17:27:38.471895",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

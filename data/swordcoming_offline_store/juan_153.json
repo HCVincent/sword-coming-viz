@@ -16,6 +16,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才脚尖一点，一步掠过八百里山河，飘然落在之前陈平安递剑的地方，开始漫步，抬起手臂，手指弯曲，看似随意地敲敲打打，像是在叩响门扉，只是没有得到任何回应，老秀才收起手，无奈道：“不讲究啊，此等行径，无异于在别人家里搭帐篷，罢了罢了，我等着便是了。 老秀才开始耐心等待剑灵的现身，漫长的等待，老人站在原地，思考一个难题，并不显得焦躁。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 153,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老秀才脚尖一点，一步掠过八百里山河，飘然落在之前陈平安递剑的地方，开始漫步，抬起手臂，手指弯曲，看似随意地敲敲打打，像是在叩响门扉，只是没有得到任何回应，老秀才收起手，无奈道：“不讲究啊，此等行径，无异于在别人家里搭帐篷，罢了罢了，我等着便是了。 空中浮现一阵细微涟漪，只见高大女子一手抓住陈平安的肩膀，从缥缈虚空之中一步跨出。",
@@ -32,16 +47,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十三章 心境 · 陈平安遭遇",
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才与陈平安遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安"
         ],
-        "description": "老秀才脚尖一点，一步掠过八百里山河，飘然落在之前陈平安递剑的地方，开始漫步，抬起手臂，手指弯曲，看似随意地敲敲打打，像是在叩响门扉，只是没有得到任何回应，老秀才收起手，无奈道：“不讲究啊，此等行径，无异于在别人家里搭帐篷，罢了罢了，我等着便是了。 空中浮现一阵细微涟漪，只见高大女子一手抓住陈平安的肩膀，从缥缈虚空之中一步跨出。 ”",
+        "description": "老秀才脚尖一点，一步掠过八百里山河，飘然落在之前陈平安递剑的地方，开始漫步，抬起手臂，手指弯曲，看似随意地敲敲打打，像是在叩响门扉，只是没有得到任何回应，老秀才收起手，无奈道：“不讲究啊，此等行径，无异于在别人家里搭帐篷，罢了罢了，我等着便是了。 老秀才开始耐心等待剑灵的现身，漫长的等待，老人站在原地，思考一个难题，并不显得焦躁。 空中浮现一阵细微涟漪，只见高大女子一手抓住陈平安的肩膀，从缥缈虚空之中一步跨出。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动老秀才与陈平安之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十三章 心境 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -55,8 +73,345 @@
         "segment_index": 1
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "等待",
+        "context": "老秀才脚尖一点，一步掠过八百里山河，飘然落在之前陈平安递剑的地方，开始漫步，抬起手臂，手指弯曲，看似随意地敲敲打打，像是在叩响门扉，只是没有得到任何回应，老秀才收起手，无奈道：“不讲究啊，此等行径，无异于在别人家里搭帐篷，罢了罢了，我等着便是了。 ” 老秀才开始耐心等待剑灵的现身，漫长的等待，老人站在原地，思考一个难题，并不显得焦躁。 空中浮现一阵细微涟漪，只见高大女子一手抓住陈平安的肩膀，从缥缈虚空之中一步跨出。 老秀才回过神，第一句话就是“我认输，不打了，反正其余两剑出不出，已经不重要，对吧？ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十三章 心境 · 老秀才与陈平安遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.611245",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-3-0": {
+    "juan_index": 153,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "”",
+      "老秀才答道：“六千年整，之前三千多年，你方唱罢我登场，乱成一团，威严尽失，穗山这座东岳，换了三个主人。",
+      "最乱的时候，曾经被视为魔教道统的一脉势力，直接给鸠占鹊巢，真正是礼仪崩坏的混乱局势。",
+      "现任穗山大神能够坐稳六千年，虽说有运气成分，但更多还是凭借他个人的恐怖战力，拳头够硬，又是光脚不怕穿鞋的，谁不忌惮几分。",
+      "”",
+      "剑灵讥笑道：“礼乐崩坏？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才答道：“六千年整，之前三千多年，你方唱罢我登场，乱成一团，威严尽失，穗山这座东岳，换了三个主人。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 153,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才答道：“六千年整，之前三千多年，你方唱罢我登场，乱成一团，威严尽失，穗山这座东岳，换了三个主人。 ” 最乱的时候，曾经被视为魔教道统的一脉势力，直接给鸠占鹊巢，真正是礼仪崩坏的混乱局势。",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 3
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.809922",
+    "extracted_at": "2026-03-25T17:27:37.611245",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-4-0": {
+    "juan_index": 153,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "是你们三教分赃不均？",
+      "还是浩然天下内部出现了正邪对峙？",
+      "那位礼圣呢，以他的脾气，怎么可能袖手旁观？",
+      "”",
+      "老秀才叹息道：“一言难尽，不提也罢。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才叹息道：“一言难尽，不提也罢。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 153,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才叹息道：“一言难尽，不提也罢。 是你们三教分赃不均？ 还是浩然天下内部出现了正邪对峙？",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.611245",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-5-0": {
+    "juan_index": 153,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "高大女子双手负后，鄙夷神色更甚，“大局已定，自然就要内讧，哈哈，好一个大道之争，百家争鸣，热闹是热闹了，结果如何？",
+      "世道果真变得更好了？",
+      "”",
+      "老秀才瞥了眼白衣剑灵，极为硬气地直截了当道：“儒家道统内部，自然算不得清澈见底，并非皆是仁人君子，可我儒家先贤为此付出了无数心血，说是呕心沥血也不过分，故而始终本正源清，你绝不可一言否决。",
+      "”",
+      "剑灵玩味道：“这算不算第三次？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才瞥了眼白衣剑灵，极为硬气地直截了当道：“儒家道统内部，自然算不得清澈见底，并非皆是仁人君子，可我儒家先贤为此付出了无数心血，说是呕心沥血也不过分，故而始终本正源清，你绝不可一言否决。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 153,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才瞥了眼白衣剑灵，极为硬气地直截了当道：“儒家道统内部，自然算不得清澈见底，并非皆是仁人君子，可我儒家先贤为此付出了无数心血，说是呕心沥血也不过分，故而始终本正源清，你绝不可一言否决。 高大女子双手负后，鄙夷神色更甚，“大局已定，自然就要内讧，哈哈，好一个大道之争，百家争鸣，热闹是热闹了，结果如何？ 世道果真变得更好了？",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 5
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.611245",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-6-0": {
+    "juan_index": 153,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "”",
+      "先前颇为老不正经的老秀才这一刻，竟是半点不退让，淡然道：“在这件事上，你要是觉得不对，我可以跟你讲百年千年的道理，你用剑讲你的道理也无妨。",
+      "”",
+      "她仔细打量着身材并不高大的清瘦老人，“你当真散尽了圣人气运，只余下魂魄，将这座天下的人间当做寄生之所？",
+      "”",
+      "老秀才沉默片刻，“对。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "先前颇为老不正经的老秀才这一刻，竟是半点不退让，淡然道：“在这件事上，你要是觉得不对，我可以跟你讲百年千年的道理，你用剑讲你的道理也无妨。 老秀才沉默片刻，“对。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 6
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才试探",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "先前颇为老不正经的老秀才这一刻，竟是半点不退让，淡然道：“在这件事上，你要是觉得不对，我可以跟你讲百年千年的道理，你用剑讲你的道理也无妨。 老秀才沉默片刻，“对。 ”",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键试探节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 6
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.612248",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-7-0": {
+    "juan_index": 153,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "”",
+      "她收起油然而生的那股杀性杀心，眼神复杂，“这么多年，就只有你们两个做到，但是我很好奇，你是推崇那个家伙的选择？",
+      "还是不得已而为之？",
+      "前者可能极小，涉及到你们的大道了，我估计儒教道统内的老头子，哪怕这不是什么美差使，也绝不会让你成功。",
+      "”",
+      "老秀才平静道：“见贤思齐，天经地义。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才平静道：“见贤思齐，天经地义。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才平静道：“见贤思齐，天经地义。 ” 她收起油然而生的那股杀性杀心，眼神复杂，“这么多年，就只有你们两个做到，但是我很好奇，你是推崇那个家伙的选择？",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 7
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.612248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -89,21 +444,37 @@
         ],
         "juan_index": 153,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "一直脸色紧绷的老秀才霎时间破功，一拍大腿，笑道：“余着余着，余着好啊，老百姓人家大年三十的时候，都兴这个，碗里剩下一点饭菜，故意余着留给明年，兆头好，寓意好。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 153,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十三章 心境 · 陈平安对话",
+        "name": "第二卷山水郎 第一百五十三章 心境 · 陈平安与老秀才对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老秀才"
         ],
-        "description": "她思量片刻，转头看了眼陈平安，笑道：“不但初衷已经达成，还远远超乎预期，看在你做出这个选择的份上，当然最主要还是看在我家主人的份上，余下两剑，就先余着？ ” 以后哪天我又突然看你不顺眼的话，新账旧账一起算。",
+        "description": "她思量片刻，转头看了眼陈平安，笑道：“不但初衷已经达成，还远远超乎预期，看在你做出这个选择的份上，当然最主要还是看在我家主人的份上，余下两剑，就先余着？ 一直脸色紧绷的老秀才霎时间破功，一拍大腿，笑道：“余着余着，余着好啊，老百姓人家大年三十的时候，都兴这个，碗里剩下一点饭菜，故意余着留给明年，兆头好，寓意好。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老秀才之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十三章 心境 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -117,8 +488,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.809922",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "对话",
+        "context": "” 她思量片刻，转头看了眼陈平安，笑道：“不但初衷已经达成，还远远超乎预期，看在你做出这个选择的份上，当然最主要还是看在我家主人的份上，余下两剑，就先余着？ 以后哪天我又突然看你不顺眼的话，新账旧账一起算。 ” 一直脸色紧绷的老秀才霎时间破功，一拍大腿，笑道：“余着余着，余着好啊，老百姓人家大年三十的时候，都兴这个，碗里剩下一点饭菜，故意余着留给明年，兆头好，寓意好。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十三章 心境 · 陈平安与老秀才对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.612248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -180,7 +577,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.809922",
+    "extracted_at": "2026-03-25T17:27:37.612248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -242,7 +639,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.612248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -322,7 +719,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.612248",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -385,7 +782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.613252",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -449,7 +846,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.613252",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -515,7 +912,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.613252",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -577,7 +974,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.613252",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -638,7 +1035,127 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.810925",
+    "extracted_at": "2026-03-25T17:27:37.613252",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-20-0": {
+    "juan_index": 153,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "她笑起来的时候，跟你可像了。",
+      "”",
+      "除了搬山“回家”，小孩子几乎不会离开小坟头附近，时不时会像是在牵着手，往南边走一段距离，像是牵着一位小姑娘的小手，只是每走一段距离，孩子仍然就会悄悄望向坟头那边，显得恋恋不舍。",
+      "可唯有一种情况，小孩子会撒腿飞奔出去很远很远，一直高高扬起小脑袋，专注地望着高空，像是在追逐着空中离他远去的某个人。",
+      "山水画卷内，老秀才神色肃穆。",
+      "“青出于蓝而胜于蓝，未必没有这个机会。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "山水画卷内，老秀才神色肃穆。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 153,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "山水画卷内，老秀才神色肃穆。 她笑起来的时候，跟你可像了。 ”",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 153,
+        "segment_index": 20
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.613252",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "153-22-0": {
+    "juan_index": 153,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 4,
+    "segment_start_time": "第二卷山水郎 第一百五十三章 心境",
+    "source_sentences": [
+      "老秀才望向这座小天地的天空，仿佛视线穿过了重重天幕，突然自嘲道：“天行健，君子以自强不息。",
+      "说的真是太好了，哪怕再过万万年都不会有错。",
+      "难怪当初咱们儒家老祖宗要跟你老人家请教学问，看来道理一事，咱们读书人不但讲得晚了一些，也远远没有讲完讲透啊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才望向这座小天地的天空，仿佛视线穿过了重重天幕，突然自嘲道：“天行健，君子以自强不息。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 153,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十三章 心境 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才望向这座小天地的天空，仿佛视线穿过了重重天幕，突然自嘲道：“天行健，君子以自强不息。 说的真是太好了，哪怕再过万万年都不会有错。 难怪当初咱们儒家老祖宗要跟你老人家请教学问，看来道理一事，咱们读书人不但讲得晚了一些，也远远没有讲完讲透啊。",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十三章 心境 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "juan_index": 153,
+        "segment_index": 22
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.614255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

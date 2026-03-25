@@ -115,7 +115,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.854074",
+    "extracted_at": "2026-03-25T17:27:37.660685",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -232,7 +232,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.854074",
+    "extracted_at": "2026-03-25T17:27:37.661688",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -311,7 +311,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.854074",
+    "extracted_at": "2026-03-25T17:27:37.661688",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -389,7 +389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.854074",
+    "extracted_at": "2026-03-25T17:27:37.661688",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -493,7 +493,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.854074",
+    "extracted_at": "2026-03-25T17:27:37.661688",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -559,7 +559,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.854074",
+    "extracted_at": "2026-03-25T17:27:37.662692",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -595,6 +595,20 @@
         ],
         "juan_index": 162,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "高大老人正是书院的茅小冬，当初大骊山崖书院的创建，正是此人帮着圣人齐静春一点一点办起来的，无论是修为、资历辈分、还是道德学问，都是当之无愧的书院第一人，所以连同礼部尚书在内，任何人都愿意尊称一声茅老。 茅小冬听到刘副山主的询问后，笑道：“当然有可能，而且这不是什么‘可能’，就是千真万确的事实！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 10
       }
     ],
     "locations": [
@@ -622,6 +636,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -656,6 +671,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -672,12 +688,15 @@
         "location": "骊珠洞天",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "茅小冬"
         ],
         "description": "那位国字脸副山主思量片刻，没有直接反驳什么，而是微微放低嗓音，问道：“茅老，那骊珠洞天，如今大骊龙泉县的县城，就那么大的地方，据说总共才五六千人，适合蒙学的孩子，肯定不多。 齐先生会不会是在那里，实在没有选择的机会？ 高大老人正是书院的茅小冬，当初大骊山崖书院的创建，正是此人帮着圣人齐静春一点一点办起来的，无论是修为、资历辈分、还是道德学问，都是当之无愧的书院第一人，所以连同礼部尚书在内，任何人都愿意尊称一声茅老。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -691,8 +710,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.855078",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "得嘞，还是废话。 那位国字脸副山主思量片刻，没有直接反驳什么，而是微微放低嗓音，问道：“茅老，那骊珠洞天，如今大骊龙泉县的县城，就那么大的地方，据说总共才五六千人，适合蒙学的孩子，肯定不多。 齐先生会不会是在那里，实在没有选择的机会？ ” 高大老人正是书院的茅小冬，当初大骊山崖书院的创建，正是此人帮着圣人齐静春一点一点办起来的，无论是修为、资历辈分、还是道德学问，都是当之无愧的书院第一人，所以连同礼部尚书在内，任何人都愿意尊称一声茅老。 茅小冬听到刘副山主的询问后，笑道：“当然有可能，而且这不是什么‘可能’，就是千真万确的事实！",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.662692",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -713,6 +758,19 @@
       "高大老人可不在乎这些，依旧言谈无忌，“换成是我啊，那帮齐静春亲手教出来的小家伙们，该吃吃该喝喝，他们要是愿意学就学，愿意偷懒就偷懒，他们以后有出息没出息，我才懒得计较，我身为书院具体管事的副山主，手底下这么多学生，以后每年只会更多，哪里有时间和精力，来听你们牢骚这些个孩子的爬树、逃课、画小人儿？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬环顾四周，“是你们大隋需要这些个孩子，最好个个是天才，大放异彩，还会争取他们长大后，主动选择留在大隋庙堂，好为你们长脸，顺便帮你们打一打大骊的脸。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 162,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -739,7 +797,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -754,7 +814,8 @@
         "location": "大骊",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "茅小冬"
         ],
         "description": "茅小冬环顾四周，“是你们大隋需要这些个孩子，最好个个是天才，大放异彩，还会争取他们长大后，主动选择留在大隋庙堂，好为你们长脸，顺便帮你们打一打大骊的脸。 高大老人可不在乎这些，依旧言谈无忌，“换成是我啊，那帮齐静春亲手教出来的小家伙们，该吃吃该喝喝，他们要是愿意学就学，愿意偷懒就偷懒，他们以后有出息没出息，我才懒得计较，我身为书院具体管事的副山主，手底下这么多学生，以后每年只会更多，哪里有时间和精力，来听你们牢骚这些个孩子的爬树、逃课、画小人儿？ ”",
         "background": "",
@@ -774,7 +835,132 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.855078",
+    "extracted_at": "2026-03-25T17:27:37.662692",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "162-13-0": {
+    "juan_index": 162,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们",
+    "source_sentences": [
+      "”",
+      "茅小冬埋怨道：“尚书大人，茶喝完再走不迟嘛……”",
+      "高大老人微微踮起脚，瞥了眼茶杯，“哎呀，喝完了啊，大人你真是的，再喝一杯再喝一杯，给咱们书院一点面子，中不中？",
+      "传出去还以为咱们不待见大人呢，那多不好，万一户部为了天官大人打抱不平，故意克扣书院崇文坊刻书所需的银两，我跟谁喊冤去？",
+      "”",
+      "几乎要比茅小冬矮一个脑袋的尚书大人，苦着脸拱手道：“茅老，就饶过我吧，就当你是山主我是副山主行不行？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬埋怨道：“尚书大人，茶喝完再走不迟嘛……” 几乎要比茅小冬矮一个脑袋的尚书大人，苦着脸拱手道：“茅老，就饶过我吧，就当你是山主我是副山主行不行？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 茅小冬剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "茅小冬埋怨道：“尚书大人，茶喝完再走不迟嘛……” 几乎要比茅小冬矮一个脑袋的尚书大人，苦着脸拱手道：“茅老，就饶过我吧，就当你是山主我是副山主行不行？ ”",
+        "background": "",
+        "significance": "对应茅小冬在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.662692",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "162-14-0": {
+    "juan_index": 162,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们",
+    "source_sentences": [
+      "”",
+      "“不中！",
+      "”茅小冬大笑着转身离去。",
+      "等到高大老人离去，矮小老人一脸无可奈何，气哼哼道：“原本是躲清静来着，好嘛，到头来还要挨训，咱们可还是自家人，以后可不敢再来喽。",
+      "”",
+      "夫子院内响起一阵大笑，就连那国字脸副山主亦是忍俊不禁。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "”茅小冬大笑着转身离去。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 162,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 茅小冬剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "”茅小冬大笑着转身离去。 ” “不中！",
+        "background": "",
+        "significance": "对应茅小冬在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百六十二章 被大隋欺负的孩子们 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 162,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.662692",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -839,7 +1025,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.855078",
+    "extracted_at": "2026-03-25T17:27:37.663695",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -901,7 +1087,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.855078",
+    "extracted_at": "2026-03-25T17:27:37.663695",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -966,7 +1152,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.855078",
+    "extracted_at": "2026-03-25T17:27:37.663695",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1029,7 +1215,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.855078",
+    "extracted_at": "2026-03-25T17:27:37.663695",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1091,7 +1277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.663695",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1153,7 +1339,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1261,7 +1447,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1324,7 +1510,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1386,7 +1572,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1449,7 +1635,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1511,7 +1697,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1616,7 +1802,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.856081",
+    "extracted_at": "2026-03-25T17:27:37.664699",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1693,7 +1879,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.665702",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1769,7 +1955,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.665702",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1874,7 +2060,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.665702",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1937,7 +2123,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.665702",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2042,7 +2228,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.665702",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2157,7 +2343,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.665702",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2261,7 +2447,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.666706",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2341,7 +2527,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.857085",
+    "extracted_at": "2026-03-25T17:27:37.666706",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2450,7 +2636,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.666706",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2531,7 +2717,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.666706",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2641,7 +2827,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.666706",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2703,7 +2889,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.666706",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2783,7 +2969,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.667709",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2889,7 +3075,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.667709",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2969,7 +3155,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.858088",
+    "extracted_at": "2026-03-25T17:27:37.667709",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3049,7 +3235,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.667709",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3151,7 +3337,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.667709",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3213,7 +3399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.667709",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3329,7 +3515,7 @@
         "segment_index": 50
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.668712",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3408,7 +3594,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.668712",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3490,7 +3676,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.668712",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3571,7 +3757,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.668712",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3653,7 +3839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.859092",
+    "extracted_at": "2026-03-25T17:27:37.668712",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3770,7 +3956,7 @@
         "segment_index": 56
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.860095",
+    "extracted_at": "2026-03-25T17:27:37.669716",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3873,7 +4059,7 @@
         "segment_index": 57
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.860095",
+    "extracted_at": "2026-03-25T17:27:37.669716",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3952,7 +4138,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.860095",
+    "extracted_at": "2026-03-25T17:27:37.669716",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4013,7 +4199,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.860095",
+    "extracted_at": "2026-03-25T17:27:37.669716",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

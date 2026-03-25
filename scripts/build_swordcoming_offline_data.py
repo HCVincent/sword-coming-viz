@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import sys
 from collections import Counter, defaultdict
@@ -35,6 +36,229 @@ DEFAULT_SYNC_FILES = [
 ]
 
 SYMMETRIC_ACTIONS = {"对话", "会见", "冲突", "同行"}
+
+COMMON_SURNAME_CHARS = set(
+    "赵钱孙李周吴郑王冯陈卫蒋沈韩杨朱秦许何吕张孔曹严华金魏陶姜戚谢邹喻柏窦章云苏潘葛范彭郎鲁韦马苗凤方俞任袁柳鲍史唐费廉岑薛雷贺倪汤滕殷罗毕郝安常乐于傅卞齐康伍余元顾孟黄穆萧尹姚邵汪祁毛禹狄贝明伏成戴谈宋茅庞熊纪舒屈项祝董梁杜阮蓝闵席季贾路江童颜郭梅盛林刁钟徐邱高夏蔡田樊胡凌霍虞万支柯昝管卢莫房裘缪应宗丁宣邓郁杭洪包诸左石崔吉龚程嵇邢裴陆荣翁荀羊惠甄曲封芮储靳汲松段富巫乌焦巴弓牧车侯宓全班仰秋仲伊宫宁栾甘厉戎祖武符刘景詹龙叶司韶黎蓟薄印白蒲邰从鄂索赖卓蔺屠蒙池乔阴闻党翟谭贡劳姬申扶堵冉宰郦雍桑桂牛寿通边扈燕冀郏浦尚温别庄晏柴瞿阎充慕连茹习艾鱼向古易慎戈廖终暨居衡步都耿弘匡国文寇广禄东欧沃利蔚越夔隆师巩聂晁勾敖融冷辛阚那简饶曾沙养鞠须丰关蒯相查后荆红游竺权盖益桓公"
+)
+COMMON_NAME_PREFIXES = {"阿", "小", "老"}
+LEADING_NOISE_TOKENS = (
+    "于是",
+    "然后",
+    "只是",
+    "若是",
+    "如果",
+    "这个",
+    "那个",
+    "这么",
+    "那么",
+    "便是",
+    "还是",
+)
+TRAILING_NOISE_CHARS = set("的了着呢啊呀嘛吧么")
+NON_PERSON_CANDIDATES = {
+    "小镇",
+    "大骊",
+    "山上",
+    "山下",
+    "少年",
+    "少女",
+    "老人",
+    "男人",
+    "女人",
+    "先生",
+    "掌教",
+    "真人",
+    "道人",
+    "修士",
+    "武夫",
+    "剑修",
+    "书生",
+    "国师",
+    "皇帝",
+    "山君",
+    "君子",
+    "圣人",
+    "祖师",
+    "天君",
+    "公子",
+    "夫人",
+    "小姐",
+    "孩子",
+    "婢女",
+    "丫鬟",
+    "城头",
+    "街巷",
+    "泥瓶",
+    "骑龙",
+    "龙泉",
+    "书院",
+    "长城",
+    "落魄",
+    "正阳",
+    "白帝",
+    "风雪",
+    "老龙",
+    "落魄山",
+    "剑气长城",
+}
+NON_PERSON_SUBSTRINGS = (
+    "少年",
+    "少女",
+    "老人",
+    "女子",
+    "男子",
+    "书生",
+    "掌柜",
+    "祖宅",
+    "老祖",
+    "岛上",
+    "岛中",
+    "京城",
+    "朝廷",
+    "皇帝",
+    "王朝",
+    "藩王",
+    "铺子",
+    "店里",
+    "城里",
+    "城中",
+    "城头",
+    "巷口",
+    "路上",
+    "山上",
+    "山下",
+    "楼上",
+    "楼下",
+    "时候",
+    "地方",
+    "东西",
+    "事情",
+    "一个",
+    "一种",
+    "一些",
+    "这些",
+    "那些",
+    "于是",
+    "然后",
+    "最后",
+    "只是",
+    "后者",
+    "前者",
+    "那人",
+    "仰头",
+    "转头",
+    "低头",
+    "抬头",
+    "点头",
+    "摇头",
+    "轻声",
+    "沉声",
+    "小声",
+    "冷冷",
+    "微微",
+    "静静",
+    "哈哈",
+    "好奇",
+    "忍不住",
+    "试探性",
+    "毕恭毕敬",
+    "小心翼翼",
+    "边跑一边",
+)
+ALLOWED_TITLED_CANDIDATES = {
+    "老秀才",
+    "老道人",
+    "老剑仙",
+    "老僧",
+    "老妪",
+    "小道童",
+    "白衣少年",
+    "宫装妇人",
+    "中年儒士",
+    "阴神",
+}
+LOCATION_POWER_HINTS = {
+    "泥瓶巷": "小镇",
+    "骑龙巷": "小镇",
+    "小镇": "小镇",
+    "龙泉": "龙泉",
+    "龙泉郡": "龙泉",
+    "骊珠洞天": "骊珠洞天",
+    "大骊": "大骊",
+    "大隋": "山崖书院",
+    "山崖书院": "山崖书院",
+    "老龙城": "老龙城",
+    "落魄山": "落魄山",
+    "剑气长城": "剑气长城",
+}
+MINED_CHARACTER_PATTERNS = [
+    ("intro", re.compile(r"姓([\u4e00-\u9fff])，名([\u4e00-\u9fff]{1,2})")),
+    ("intro", re.compile(r"(?:名叫|叫做|唤作|唤做|自称)([\u4e00-\u9fff]{2,4})")),
+    (
+        "dialogue",
+        re.compile(
+            r"([\u4e00-\u9fff]{2,4})(?=说道|问道|笑道|答道|开口|冷笑|怒道|喝道|骂道|轻声道|沉声道|轻声|沉声|抬头|低头|点头|摇头|看向|看着|望向|望着|转头|抱拳|作揖|行礼|同行|并肩|对视|相视|出声)"
+        ),
+    ),
+]
+MANUAL_EXTRA_CHARACTERS = [
+    {"name": "陆台", "aliases": [], "power": "道家", "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。"},
+    {"name": "老秀才", "aliases": [], "power": "山崖书院", "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。"},
+    {"name": "吴鸢", "aliases": [], "power": "大骊", "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。"},
+    {"name": "茅小冬", "aliases": [], "power": "山崖书院", "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。"},
+    {"name": "曹峻", "aliases": [], "power": "山上", "description": "山上人物，适合补强前三季外围修士群像与冲突关系。"},
+    {"name": "徐远霞", "aliases": [], "power": "江湖", "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。"},
+    {"name": "张山峰", "aliases": [], "power": "道家", "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。"},
+    {"name": "范二", "aliases": [], "power": "老龙城", "description": "老龙城支线的重要人物，适合补足城池与家族关系网。"},
+    {"name": "杨花", "aliases": [], "power": "小镇", "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。"},
+    {"name": "柳赤诚", "aliases": [], "power": "山上", "description": "山上高位人物，适合扩展外围强者关系与更大格局。"},
+    {"name": "桂姨", "aliases": [], "power": "老龙城", "description": "老龙城线中的重要女性角色，可补强城池人情与势力关系。"},
+    {"name": "刘太守", "aliases": [], "power": "大骊", "description": "地方官面人物，能增强大骊王朝线与地方秩序线。"},
+    {"name": "范峻茂", "aliases": [], "power": "老龙城", "description": "老龙城家族线人物，适合补足家族与利益关系网。"},
+    {"name": "曹慈", "aliases": [], "power": "武道", "description": "武道线代表人物，适合补足前三季高水平对照线。"},
+    {"name": "丁婴", "aliases": [], "power": "武道", "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。"},
+    {"name": "许甲", "aliases": [], "power": "山上", "description": "山上支线人物，适合补足修士群像。"},
+    {"name": "贺小凉", "aliases": [], "power": "山上", "description": "山上女性人物，可补足外围修士关系链。"},
+    {"name": "傅玉", "aliases": [], "power": "山上", "description": "山上人物，适合增强外围势力和人物关系层次。"},
+    {"name": "陈真容", "aliases": [], "power": "大骊", "description": "大骊相关人物，可补足王朝支线与官面网络。"},
+    {"name": "李侯", "aliases": [], "power": "龙泉", "description": "龙泉地界人物，适合增强地方秩序与山水网络。"},
+    {"name": "黄尚", "aliases": [], "power": "山上", "description": "山上人物，适合扩展外围修士节点。"},
+    {"name": "陆舫", "aliases": [], "power": "山上", "description": "山上人物，适合补强高位修士群像。"},
+    {"name": "崔明皇", "aliases": [], "power": "大骊", "description": "大骊支线人物，适合加强王朝线的层次。"},
+    {"name": "老剑仙", "aliases": [], "power": "剑气长城", "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。"},
+    {"name": "老僧", "aliases": [], "power": "山上", "description": "带有稳定身份的支线人物，适合作为外围宗门节点。"},
+    {"name": "老妪", "aliases": [], "power": "小镇", "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。"},
+    {"name": "宫装妇人", "aliases": [], "power": "老龙城", "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。"},
+    {"name": "白衣少年", "aliases": [], "power": "山上", "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。"},
+    {"name": "中年儒士", "aliases": [], "power": "山崖书院", "description": "书院相关稳定称谓人物，可补足儒家侧面人物层次。"},
+    {"name": "小道童", "aliases": [], "power": "道家", "description": "道门称谓人物，可扩展道家支线关系。"},
+    {"name": "老道人", "aliases": [], "power": "道家", "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。"},
+    {"name": "阴神", "aliases": [], "power": "小镇", "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。"},
+    {"name": "金粟", "aliases": [], "power": "老龙城", "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。"},
+    {"name": "范峻茂", "aliases": [], "power": "山上", "description": "山上修士群像中的关键人物，适合增强外围修士与冲突网络。"},
+    {"name": "王毅甫", "aliases": [], "power": "大骊", "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。"},
+    {"name": "李长英", "aliases": [], "power": "山崖书院", "description": "书院求学线的重要人物，适合补强李宝瓶一行相关的人物网络。"},
+    {"name": "刘幽州", "aliases": [], "power": "大骊", "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。"},
+    {"name": "周姝真", "aliases": [], "power": "山上", "description": "外围修士与高位布局线人物，适合补足山上势力层次。"},
+    {"name": "魏衍", "aliases": [], "power": "江湖", "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。"},
+    {"name": "樊莞尔", "aliases": [], "power": "老龙城", "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。"},
+    {"name": "刘宗", "aliases": [], "power": "武道", "description": "武道支线人物，能补足高强度对峙与外部强者关系。"},
+    {"name": "姜北海", "aliases": [], "power": "山上", "description": "高位修士支线人物，适合补强外围宗门与强者网络。"},
+    {"name": "石春嘉", "aliases": [], "power": "小镇", "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。"},
+    {"name": "沈温", "aliases": [], "power": "山上", "description": "山水与庙堂边缘的支线人物，适合补足外围山上关系。"},
+    {"name": "李抟景", "aliases": [], "power": "山上", "description": "山上剑修线人物，可增强外部强者与宗门关系层次。"},
+    {"name": "周肥", "aliases": [], "power": "山上", "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。"},
+    {"name": "高稹", "aliases": [], "power": "大骊", "description": "大骊宗室相关人物，可补足王朝内部关系与身份错位线。"},
+    {"name": "刘太守", "aliases": [], "power": "大骊", "description": "地方官面人物，适合强化郡城治理与王朝支线。"},
+    {"name": "曹曦", "aliases": [], "power": "山上", "description": "山上强者支线人物，可补足正阳山等外围宗门关系。"},
+    {"name": "马致", "aliases": [], "power": "山上", "description": "外围修士人物，适合增加山上群像与冲突节点。"},
+    {"name": "苏琅", "aliases": [], "power": "山上", "description": "山上支线人物，适合补足高位修士与对战网络。"},
+    {"name": "秋实", "aliases": [], "power": "老龙城", "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。"},
+    {"name": "沈霖", "aliases": [], "power": "山水", "description": "山水神灵相关人物，适合补强地方山水与秩序网络。"},
+    {"name": "周矩", "aliases": [], "power": "山上", "description": "外围修士与谋划线人物，可扩展山上冲突关系链。"},
+    {"name": "刘高华", "aliases": [], "power": "江湖", "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。"},
+    {"name": "吴懿", "aliases": [], "power": "山水", "description": "山水与地方势力交叉线人物，适合扩充场域相关关系。"},
+]
 
 
 def load_json(path: Path) -> Any:
@@ -98,6 +322,212 @@ def build_sentence_mentions(
         sentence_locations.append(unique_names(match[0] for match in location_matches))
 
     return sentence_characters, sentence_locations
+
+
+def all_cjk(text: str) -> bool:
+    return bool(text) and all("\u4e00" <= char <= "\u9fff" for char in text)
+
+
+def trim_candidate_noise(name: str) -> str:
+    candidate = str(name).strip().strip("“”‘’『』「」《》〈〉【】（）()，。！？；：、 ")
+    for token in LEADING_NOISE_TOKENS:
+        if candidate.startswith(token) and len(candidate) - len(token) >= 2:
+            candidate = candidate[len(token) :]
+            break
+    while candidate and candidate[-1] in TRAILING_NOISE_CHARS:
+        candidate = candidate[:-1]
+    return candidate
+
+
+def normalize_mined_candidate(
+    raw_name: str,
+    *,
+    blocked_names: set[str],
+    known_names: set[str],
+    location_names: set[str],
+) -> Optional[str]:
+    candidate = trim_candidate_noise(raw_name)
+    if len(candidate) < 2 or len(candidate) > 4:
+        return None
+    if not all_cjk(candidate):
+        return None
+    if candidate in blocked_names or candidate in known_names or candidate in location_names:
+        return None
+    if candidate in NON_PERSON_CANDIDATES:
+        return None
+    if any(part in candidate for part in NON_PERSON_SUBSTRINGS):
+        return None
+    if any(known == candidate or known.startswith(candidate) or candidate.startswith(known) for known in known_names):
+        return None
+
+    first_char = candidate[0]
+    if first_char not in COMMON_SURNAME_CHARS and first_char not in COMMON_NAME_PREFIXES:
+        return None
+    if first_char in COMMON_NAME_PREFIXES and candidate not in ALLOWED_TITLED_CANDIDATES:
+        return None
+    return candidate
+
+
+def infer_candidate_power(
+    *,
+    co_character_names: Iterable[str],
+    character_config: Dict[str, dict],
+    location_names: Iterable[str],
+) -> str:
+    power_counts = Counter(
+        str(character_config[name].get("power", "")).strip()
+        for name in co_character_names
+        if name in character_config and str(character_config[name].get("power", "")).strip()
+    )
+    if power_counts:
+        return power_counts.most_common(1)[0][0]
+
+    for location_name in location_names:
+        if location_name in LOCATION_POWER_HINTS:
+            return LOCATION_POWER_HINTS[location_name]
+
+    return "未归类"
+
+
+def build_candidate_description(
+    *,
+    candidate_name: str,
+    co_character_names: Sequence[str],
+    location_names: Sequence[str],
+    sample_sentences: Sequence[str],
+) -> str:
+    partners = "、".join(co_character_names[:2])
+    locations = "、".join(location_names[:2])
+
+    if partners and locations:
+        return f"前三季叙事中多次出现，常与{partners}同场，主要活动于{locations}。"
+    if partners:
+        return f"前三季叙事中多次出现，常与{partners}同场，推动相关支线发展。"
+    if locations:
+        return f"前三季叙事中多次出现，主要活动于{locations}等场域。"
+    if sample_sentences:
+        return f"前三季叙事中多次出现，相关语境包括：{sample_sentences[0][:28]}。"
+    return f"{candidate_name}在前三季叙事中多次出现，是可继续补充整理的重要支线人物。"
+
+
+def mine_character_candidates(
+    *,
+    book: Sequence[dict],
+    core_cast: dict,
+    manual_overrides: dict,
+) -> List[dict]:
+    seed_characters = core_cast.get("characters", [])
+    seed_names = {str(item["name"]).strip() for item in seed_characters if str(item.get("name", "")).strip()}
+    known_names = set(seed_names)
+    location_names = {
+        str(item["name"]).strip()
+        for item in core_cast.get("locations", [])
+        if str(item.get("name", "")).strip()
+    }
+    blocked_names = {
+        str(name).strip()
+        for name in manual_overrides.get("blocked_aliases", [])
+        if str(name).strip()
+    }
+
+    for item in seed_characters:
+        known_names.update(unique_names(item.get("aliases", [])))
+    for item in core_cast.get("locations", []):
+        location_names.update(unique_names(item.get("aliases", [])))
+
+    target_total = max(int(core_cast.get("candidate_target_total_roles", 160)), len(seed_characters))
+    max_new_characters = max(0, target_total - len(seed_characters))
+    if max_new_characters <= 0:
+        return []
+
+    evidence: Dict[str, dict] = {}
+
+    for unit in book:
+        unit_index = int(unit["juan_index"])
+        for segment in unit.get("segments", []):
+            for sentence in segment.get("sentences", []):
+                sentence_text = str(sentence).strip()
+                if not sentence_text:
+                    continue
+
+                co_characters = sorted(name for name in seed_names if name in sentence_text)
+                co_locations = sorted(name for name in location_names if name in sentence_text)
+
+                for source, pattern in MINED_CHARACTER_PATTERNS:
+                    for match in pattern.finditer(sentence_text):
+                        raw_name = match.group(1) + match.group(2) if source == "intro" and match.lastindex == 2 else match.group(1)
+                        candidate = normalize_mined_candidate(
+                            raw_name,
+                            blocked_names=blocked_names,
+                            known_names=known_names,
+                            location_names=location_names,
+                        )
+                        if not candidate:
+                            continue
+
+                        entry = evidence.setdefault(
+                            candidate,
+                            {
+                                "units": set(),
+                                "sentence_count": 0,
+                                "co_characters": Counter(),
+                                "co_locations": Counter(),
+                                "pattern_hits": Counter(),
+                                "samples": [],
+                            },
+                        )
+                        entry["units"].add(unit_index)
+                        entry["sentence_count"] += 1
+                        entry["pattern_hits"][source] += 1
+                        entry["co_characters"].update(co_characters)
+                        entry["co_locations"].update(co_locations)
+                        if len(entry["samples"]) < 3 and sentence_text not in entry["samples"]:
+                            entry["samples"].append(sentence_text)
+
+    character_config = {str(item["name"]).strip(): item for item in seed_characters}
+    selected: List[Tuple[int, str, dict]] = []
+
+    for candidate, item in evidence.items():
+        unit_count = len(item["units"])
+        co_character_count = len(item["co_characters"])
+        co_location_count = len(item["co_locations"])
+        if unit_count < 3:
+            continue
+        if not (co_character_count >= 2 or (co_character_count >= 1 and co_location_count >= 1)):
+            continue
+
+        intro_hits = int(item["pattern_hits"].get("intro", 0))
+        dialogue_hits = int(item["pattern_hits"].get("dialogue", 0))
+        score = unit_count * 8 + co_character_count * 5 + co_location_count * 3 + intro_hits * 7 + dialogue_hits * 4 + int(item["sentence_count"])
+        selected.append((score, candidate, item))
+
+    selected.sort(key=lambda value: (-value[0], value[1]))
+
+    mined_characters: List[dict] = []
+    for _, candidate, item in selected[:max_new_characters]:
+        co_character_names = [name for name, _ in item["co_characters"].most_common(4)]
+        location_names_sorted = [name for name, _ in item["co_locations"].most_common(3)]
+        mined_characters.append(
+            {
+                "name": candidate,
+                "aliases": [],
+                "power": infer_candidate_power(
+                    co_character_names=co_character_names,
+                    character_config=character_config,
+                    location_names=location_names_sorted,
+                ),
+                "description": build_candidate_description(
+                    candidate_name=candidate,
+                    co_character_names=co_character_names,
+                    location_names=location_names_sorted,
+                    sample_sentences=item["samples"],
+                ),
+                "mined": True,
+                "source_units": sorted(item["units"]),
+            }
+        )
+
+    return mined_characters
 
 
 def choose_summary_sentences(
@@ -516,13 +946,32 @@ def build_offline_data(
 ) -> dict:
     book = load_json(book_path)
     core_cast = load_json(core_cast_path)
+    manual_overrides = load_json(manual_overrides_path)
 
     if max_units is not None:
         book = book[:max_units]
 
-    character_config = {item["name"]: item for item in core_cast.get("characters", [])}
+    base_characters = core_cast.get("characters", [])
+    base_character_names = {item["name"] for item in base_characters}
+    curated_extra_characters = [
+        item for item in MANUAL_EXTRA_CHARACTERS if item["name"] not in base_character_names
+    ]
+    character_seeds = [*base_characters, *curated_extra_characters]
+    core_cast_for_extraction = {**core_cast, "characters": character_seeds}
+
+    mined_characters = mine_character_candidates(
+        book=book,
+        core_cast=core_cast_for_extraction,
+        manual_overrides=manual_overrides,
+    )
+    augmented_characters = [
+        *character_seeds,
+        *[item for item in mined_characters if item["name"] not in {character["name"] for character in character_seeds}],
+    ]
+
+    character_config = {item["name"]: item for item in augmented_characters}
     location_config = {item["name"]: item for item in core_cast.get("locations", [])}
-    character_matchers = build_matchers(core_cast.get("characters", []))
+    character_matchers = build_matchers(augmented_characters)
     location_matchers = build_matchers(core_cast.get("locations", []))
 
     chunks_by_juan: Dict[int, Dict[str, dict]] = defaultdict(dict)
@@ -591,6 +1040,10 @@ def build_offline_data(
         "raw_locations": extracted_locations,
         "raw_events": extracted_events,
         "raw_relations": extracted_relations,
+        "seed_roles": len(base_characters),
+        "curated_extra_seed_roles": len(curated_extra_characters),
+        "mined_roles": len(mined_characters),
+        "augmented_role_seeds": len(augmented_characters),
         "writer_character_arcs": writer_payload["summary"]["character_arc_count"],
         "writer_season_overviews": writer_payload["summary"]["season_overview_count"],
         "writer_curated_relationships": writer_payload["summary"]["curated_relationship_count"],

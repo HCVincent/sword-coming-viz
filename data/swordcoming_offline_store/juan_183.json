@@ -127,7 +127,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.948413",
+    "extracted_at": "2026-03-25T17:27:37.782785",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -148,6 +148,20 @@
       "有些亏，认了就认了，说不定事后发现因祸得福。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "自称曹峻的年轻剑客笑呵呵道：“你是说大骊朝廷，还是兵家阮邛？ 曹峻看着那位貌如冠玉的青衫书生，相比自己的貌似年轻，对方是货真价实的年纪轻轻，这让曹峻有点不爽快，他拇指抵住腰间短剑剑柄，“真要打？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 183,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "阮邛",
@@ -176,6 +190,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "曹峻",
           "阮邛"
         ],
         "sentence_indexes_in_segment": [
@@ -188,15 +203,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 阮邛在大骊剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与阮邛在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "曹峻",
           "阮邛"
         ],
         "description": "自称曹峻的年轻剑客笑呵呵道：“你是说大骊朝廷，还是兵家阮邛？ 如果是前者，我劝你们死了这条心，大骊宋氏如果真有骨气，就不会当缩头乌龟。 如果是阮邛，哈哈，容我先卖个关子，你们大可以拭目以待。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动曹峻与阮邛之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段2",
         "sentence_indexes_in_segment": [
@@ -212,7 +228,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.948413",
+    "extracted_at": "2026-03-25T17:27:37.782785",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -245,6 +261,19 @@
         ],
         "juan_index": 183,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻目露赞赏，但是很快摇了摇头，啧啧道：“可惜了。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -265,16 +294,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣在骊珠洞天对话",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "李希圣微笑道：“既然你说你的的道理，全在剑鞘里，那我可以听听看。 “听闻骊珠洞天之前术法禁绝，如今洞天破碎下坠，才一年功夫，你就已经跻身中五境，很不错了。 ”",
+        "description": "李希圣微笑道：“既然你说你的的道理，全在剑鞘里，那我可以听听看。 “听闻骊珠洞天之前术法禁绝，如今洞天破碎下坠，才一年功夫，你就已经跻身中五境，很不错了。 曹峻目露赞赏，但是很快摇了摇头，啧啧道：“可惜了。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在骊珠洞天推动李希圣与曹峻之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -288,8 +320,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.948413",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "对话",
+        "context": "” 李希圣微笑道：“既然你说你的的道理，全在剑鞘里，那我可以听听看。 ” “听闻骊珠洞天之前术法禁绝，如今洞天破碎下坠，才一年功夫，你就已经跻身中五境，很不错了。 ” 曹峻目露赞赏，但是很快摇了摇头，啧啧道：“可惜了。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.782785",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -322,20 +380,34 @@
         ],
         "juan_index": 183,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻忍俊不禁道：“井底之蛙，不知天高。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 183,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "李希圣伸出一只手掌，“请。 ” ”",
+        "description": "李希圣伸出一只手掌，“请。 曹峻忍俊不禁道：“井底之蛙，不知天高。 ”",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "significance": "推动李希圣与曹峻之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段4",
         "sentence_indexes_in_segment": [
@@ -351,7 +423,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "extracted_at": "2026-03-25T17:27:37.782785",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -385,21 +457,38 @@
         ],
         "juan_index": 183,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "“等你以后出了井口，就会发现我这样的人物，当得起……”曹峻脚尖一点，弯腰前冲，大笑出声，一旦选择出手，这个笑意吟吟的年轻剑客，气势骤变，狭窄逼仄的巷弄回荡起后续言语，“厚道两字啊！ 一道绚烂白光爆炸开口，疯狂四散的剑气，瞬间弥漫整条巷弄，加上曹峻的身形太过迅猛急速，使得他的模糊身影融入其中，不易察觉，让人错以为像一条暴雨过后的山涧洪水，以巷弄为河床，疯狂涌向处于下游的李希圣一行人。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 183,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣冲突",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣冲突",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "李希圣笑而不言。 一道绚烂白光爆炸开口，疯狂四散的剑气，瞬间弥漫整条巷弄，加上曹峻的身形太过迅猛急速，使得他的模糊身影融入其中，不易察觉，让人错以为像一条暴雨过后的山涧洪水，以巷弄为河床，疯狂涌向处于下游的李希圣一行人。 “等你以后出了井口，就会发现我这样的人物，当得起……”曹峻脚尖一点，弯腰前冲，大笑出声，一旦选择出手，这个笑意吟吟的年轻剑客，气势骤变，狭窄逼仄的巷弄回荡起后续言语，“厚道两字啊！",
+        "description": "李希圣笑而不言。 “等你以后出了井口，就会发现我这样的人物，当得起……”曹峻脚尖一点，弯腰前冲，大笑出声，一旦选择出手，这个笑意吟吟的年轻剑客，气势骤变，狭窄逼仄的巷弄回荡起后续言语，“厚道两字啊！ 一道绚烂白光爆炸开口，疯狂四散的剑气，瞬间弥漫整条巷弄，加上曹峻的身形太过迅猛急速，使得他的模糊身影融入其中，不易察觉，让人错以为像一条暴雨过后的山涧洪水，以巷弄为河床，疯狂涌向处于下游的李希圣一行人。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动曹峻与李希圣之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -413,8 +502,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "一道绚烂白光爆炸开口，疯狂四散的剑气，瞬间弥漫整条巷弄，加上曹峻的身形太过迅猛急速，使得他的模糊身影融入其中，不易察觉，让人错以为像一条暴雨过后的山涧洪水，以巷弄为河床，疯狂涌向处于下游的李希圣一行人。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 183,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.782785",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -449,20 +559,35 @@
         ],
         "juan_index": 183,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "然后轻轻精准握住了曹峻的持剑手腕。 曹峻微微一笑，松开手指，距离李希圣胸膛尚有两三尺的短剑，嗖一下，直刺李希圣心口。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 183,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "李希圣看似不急不缓，侧过身，抬手挥袖，伸向那尾仿佛白鱼的雪亮短剑。 曹峻微微一笑，松开手指，距离李希圣胸膛尚有两三尺的短剑，嗖一下，直刺李希圣心口。 李希圣神色从容，左手双指并拢于身前。",
+        "description": "李希圣看似不急不缓，侧过身，抬手挥袖，伸向那尾仿佛白鱼的雪亮短剑。 然后轻轻精准握住了曹峻的持剑手腕。 曹峻微微一笑，松开手指，距离李希圣胸膛尚有两三尺的短剑，嗖一下，直刺李希圣心口。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "significance": "推动李希圣与曹峻之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段6",
         "sentence_indexes_in_segment": [
@@ -478,7 +603,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "extracted_at": "2026-03-25T17:27:37.783789",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -513,21 +638,39 @@
         ],
         "juan_index": 183,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "李希圣只得后退，曹峻欺身而近，持剑之手已经出拳，直击李希圣脖颈。 李希圣以手肘抵住曹峻拳头的同时，那尾白鱼已经激射而至，李希圣抖了抖另外一只手的手腕，大袖摇晃。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 183,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣讥讽",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
         "description": "李希圣只得后退，曹峻欺身而近，持剑之手已经出拳，直击李希圣脖颈。 李希圣以手肘抵住曹峻拳头的同时，那尾白鱼已经激射而至，李希圣抖了抖另外一只手的手腕，大袖摇晃。 曹峻嗤笑一声，一脚踹中李希圣腹部，踹得青衫书生后退四五步。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动曹峻与李希圣之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -541,8 +684,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "讥讽",
+        "context": "曹峻嗤笑一声，一脚踹中李希圣腹部，踹得青衫书生后退四五步。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 183,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.783789",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -577,20 +741,35 @@
         ],
         "juan_index": 183,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "李希圣止住后退颓势，脸色微白，曹峻虽是剑修，可这一脚势大力沉，丝毫不逊色五境巅峰的纯粹武夫，这本就是剑修和兵家修士的恐怖之处，炼气淬体两不误，所以李希圣挨了这么一下，并不好受，体内气机的流转必然受到一定程度的波及。 李希圣那只兜住曹峻飞剑的大袖之内，砰砰作响，连绵不绝，然后发出细微的丝帛撕裂声响，之后丝丝缕缕的雪白剑光，从缝隙之间渗透而出。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 183,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
         "description": "李希圣止住后退颓势，脸色微白，曹峻虽是剑修，可这一脚势大力沉，丝毫不逊色五境巅峰的纯粹武夫，这本就是剑修和兵家修士的恐怖之处，炼气淬体两不误，所以李希圣挨了这么一下，并不好受，体内气机的流转必然受到一定程度的波及。 李希圣那只兜住曹峻飞剑的大袖之内，砰砰作响，连绵不绝，然后发出细微的丝帛撕裂声响，之后丝丝缕缕的雪白剑光，从缝隙之间渗透而出。 袖有乾坤的李希圣那只手，五指或弯曲如弓，或笔直如剑戟，飞快掐出一个道家法诀，在心中默念一个字：“镇！",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "significance": "推动李希圣与曹峻之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段8",
         "sentence_indexes_in_segment": [
@@ -606,7 +785,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "extracted_at": "2026-03-25T17:27:37.783789",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -629,6 +808,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻对此毫不意外，笑道：“七。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 183,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "李希圣整只袖口，自手肘以下，瞬间破碎，手腕附近，剑光大震。 李希圣掐诀的五指随之变换，成为名副其实的握诀，在所有人看不见的手心，掌纹如水流微微晃动，改变轨迹。",
@@ -646,16 +838,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣对话",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣对话",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "李希圣整只袖口，自手肘以下，瞬间破碎，手腕附近，剑光大震。 李希圣掐诀的五指随之变换，成为名副其实的握诀，在所有人看不见的手心，掌纹如水流微微晃动，改变轨迹。 李希圣这条胳膊瞬间焕发出一阵雾蒙蒙的青紫光彩。",
+        "description": "曹峻对此毫不意外，笑道：“七。 李希圣整只袖口，自手肘以下，瞬间破碎，手腕附近，剑光大震。 李希圣掐诀的五指随之变换，成为名副其实的握诀，在所有人看不见的手心，掌纹如水流微微晃动，改变轨迹。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动曹峻与李希圣之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -669,8 +864,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "曹峻对此毫不意外，笑道：“七。 ” 李希圣整只袖口，自手肘以下，瞬间破碎，手腕附近，剑光大震。 好似月光满手的绝美风景，却蕴含着莫大的凶险杀机。 李希圣掐诀的五指随之变换，成为名副其实的握诀，在所有人看不见的手心，掌纹如水流微微晃动，改变轨迹。 李希圣这条胳膊瞬间焕发出一阵雾蒙蒙的青紫光彩。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.783789",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -704,6 +925,20 @@
         ],
         "juan_index": 183,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻原本细眯如缝的那双丹凤眼眸，睁开些许，调侃道：“有点意思，道家法诀号称千千万，我见识过就不下两百种，还真没见过你这么简单又好用的。 姓李的，你这六境修为，也太厚实了些，从来只有六境剑修欺负七境练气士，哪里有你这种六境练气士硬扛七境剑修的道理，传出去，我曹峻岂不是要被全天下的剑修笑话啊。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 183,
+        "segment_index": 10
       }
     ],
     "locations": [
@@ -724,16 +959,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣在泥瓶巷对话",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "剑锋疯狂萦绕李希圣手臂的那条白色游鱼，它带起的剑气跟李希圣的散发出的青紫之气，相互敲击出清脆的金石声，密集攒簇，震人耳膜。 以至于泥瓶巷一侧的高墙，和另一侧老宅的院门矮墙，不断有灰尘泥屑簌簌而落。 李希圣在经历过初期的生疏之后，当下已经显得犹有余力，甚至还可以开口笑道：“可能是你的道理还不够……高？",
+        "description": "剑锋疯狂萦绕李希圣手臂的那条白色游鱼，它带起的剑气跟李希圣的散发出的青紫之气，相互敲击出清脆的金石声，密集攒簇，震人耳膜。 以至于泥瓶巷一侧的高墙，和另一侧老宅的院门矮墙，不断有灰尘泥屑簌簌而落。 曹峻原本细眯如缝的那双丹凤眼眸，睁开些许，调侃道：“有点意思，道家法诀号称千千万，我见识过就不下两百种，还真没见过你这么简单又好用的。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动李希圣与曹峻之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -747,8 +985,97 @@
         "segment_index": 10
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "对话",
+        "context": "剑锋疯狂萦绕李希圣手臂的那条白色游鱼，它带起的剑气跟李希圣的散发出的青紫之气，相互敲击出清脆的金石声，密集攒簇，震人耳膜。 以至于泥瓶巷一侧的高墙，和另一侧老宅的院门矮墙，不断有灰尘泥屑簌簌而落。 曹峻原本细眯如缝的那双丹凤眼眸，睁开些许，调侃道：“有点意思，道家法诀号称千千万，我见识过就不下两百种，还真没见过你这么简单又好用的。 姓李的，你这六境修为，也太厚实了些，从来只有六境剑修欺负七境练气士，哪里有你这种六境练气士硬扛七境剑修的道理，传出去，我曹峻岂不是要被全天下的剑修笑话啊。 ” 李希圣在经历过初期的生疏之后，当下已经显得犹有余力，甚至还可以开口笑道：“可能是你的道理还不够……高？",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.783789",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "183-11-0": {
+    "juan_index": 183,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪",
+    "source_sentences": [
+      "”",
+      "曹峻点点头，深以为然，所以满脸笑意地说出一个字，“八！",
+      "”",
+      "宛如灵活白鱼的飞剑，往主人曹峻那边倒掠回去，然后静止悬停，飞剑瞬间黯淡无光，短剑就只是短剑，没有丝毫剑气流溢，再没有之前的煌煌气势。",
+      "之前给人诡谲感觉的阴冷剑意，摇身一变，变得光明正大。",
+      "飞剑刹那之间凭空消失。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻点点头，深以为然，所以满脸笑意地说出一个字，“八！ 宛如灵活白鱼的飞剑，往主人曹峻那边倒掠回去，然后静止悬停，飞剑瞬间黯淡无光，短剑就只是短剑，没有丝毫剑气流溢，再没有之前的煌煌气势。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 183,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻点点头，深以为然，所以满脸笑意地说出一个字，“八！ 宛如灵活白鱼的飞剑，往主人曹峻那边倒掠回去，然后静止悬停，飞剑瞬间黯淡无光，短剑就只是短剑，没有丝毫剑气流溢，再没有之前的煌煌气势。 ”",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 11
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "extracted_at": "2026-03-25T17:27:37.784793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -813,7 +1140,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.949416",
+    "extracted_at": "2026-03-25T17:27:37.784793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -875,7 +1202,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.784793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -896,6 +1223,19 @@
       "面对敌人的冷嘲热讽，李希圣并不生气，嗓音依旧温醇柔和，“陈平安，可能需要麻烦你们再后退一些，如果能退到四五丈之外，是最好。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻始终保持一手负后的自负姿势，一手轻拍长剑剑柄，“你这样的修道天才，肯定是家族寄予厚望的存在，就没有几件防身的宝贝？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 183,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "李希圣",
@@ -926,16 +1266,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与陈平安剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣",
           "陈平安"
         ],
-        "description": "面对敌人的冷嘲热讽，李希圣并不生气，嗓音依旧温醇柔和，“陈平安，可能需要麻烦你们再后退一些，如果能退到四五丈之外，是最好。 任你法宝万千，任你神通广大，我剑修追求一击致命，一剑破万法。 曹峻始终保持一手负后的自负姿势，一手轻拍长剑剑柄，“你这样的修道天才，肯定是家族寄予厚望的存在，就没有几件防身的宝贝？",
+        "description": "曹峻始终保持一手负后的自负姿势，一手轻拍长剑剑柄，“你这样的修道天才，肯定是家族寄予厚望的存在，就没有几件防身的宝贝？ 面对敌人的冷嘲热讽，李希圣并不生气，嗓音依旧温醇柔和，“陈平安，可能需要麻烦你们再后退一些，如果能退到四五丈之外，是最好。 任你法宝万千，任你神通广大，我剑修追求一击致命，一剑破万法。",
         "background": "",
-        "significance": "推动李希圣与陈平安之间的剧情推进关系。",
+        "significance": "推动曹峻与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段14",
         "sentence_indexes_in_segment": [
@@ -951,7 +1292,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.784793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -974,6 +1315,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻抬手使劲一拍额头，满脸委屈道：“大敌当前，还有闲情逸致说废话，我很生气。 在曹峻手拍额头发出声响的同时，飞剑已经在那点声响的遮掩之下，真正做到了悄无声息，杀到了李希圣的后背心。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 183,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "在曹峻手拍额头发出声响的同时，飞剑已经在那点声响的遮掩之下，真正做到了悄无声息，杀到了李希圣的后背心。",
@@ -989,15 +1344,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "在曹峻手拍额头发出声响的同时，飞剑已经在那点声响的遮掩之下，真正做到了悄无声息，杀到了李希圣的后背心。 ” 曹峻抬手使劲一拍额头，满脸委屈道：“大敌当前，还有闲情逸致说废话，我很生气。",
+        "description": "曹峻抬手使劲一拍额头，满脸委屈道：“大敌当前，还有闲情逸致说废话，我很生气。 在曹峻手拍额头发出声响的同时，飞剑已经在那点声响的遮掩之下，真正做到了悄无声息，杀到了李希圣的后背心。 ”",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "significance": "推动曹峻与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段15",
         "sentence_indexes_in_segment": [
@@ -1013,7 +1369,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.784793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1034,6 +1390,19 @@
       "叮叮叮叮……"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻愣了一下，随即大笑道：“这也行？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 183,
+        "segment_index": 16
+      },
       {
         "entity_type": "person",
         "name": "李希圣",
@@ -1066,16 +1435,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣在泥瓶巷对话",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "一声空灵悦耳的响动，响彻泥瓶巷。 李希圣背后浮现出一片青翠竹叶，抵挡住了飞剑的刺杀。 曹峻愣了一下，随即大笑道：“这也行？",
+        "description": "一声空灵悦耳的响动，响彻泥瓶巷。 曹峻愣了一下，随即大笑道：“这也行？ 李希圣背后浮现出一片青翠竹叶，抵挡住了飞剑的刺杀。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动曹峻与李希圣之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1089,8 +1461,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "一声空灵悦耳的响动，响彻泥瓶巷。 曹峻愣了一下，随即大笑道：“这也行？ 那我可就真不客气啦。 ” 李希圣背后浮现出一片青翠竹叶，抵挡住了飞剑的刺杀。 叮叮叮叮……",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.784793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1124,20 +1522,35 @@
         ],
         "juan_index": 183,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻眯眼凝视那处战场。 虽然不断有绿叶坠地，瞬间枯黄，可是曹峻着实有些无奈，因为粗略估计那个读书人的树叶，最少也该有百余张。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣与曹峻剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "小巷内，李希圣四周响起一大串类似动静。 李希圣岿然不动，四周全部是高高低低、飘荡起伏的树叶，名为白鱼的短剑则穿梭其中，不断破阵，但是次次无功而返。 除了一张张竹叶，还有桃叶，柳叶，槐叶……",
+        "description": "小巷内，李希圣四周响起一大串类似动静。 曹峻眯眼凝视那处战场。 李希圣岿然不动，四周全部是高高低低、飘荡起伏的树叶，名为白鱼的短剑则穿梭其中，不断破阵，但是次次无功而返。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "significance": "推动李希圣与曹峻之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段17",
         "sentence_indexes_in_segment": [
@@ -1153,7 +1566,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.785796",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "183-18-0": {
+    "juan_index": 183,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪",
+    "source_sentences": [
+      "所以曹峻心情不太好。",
+      "你这家伙的家里，是卖树叶的啊？",
+      "就算卖，有人买吗？",
+      "曹峻不愿就此打退堂鼓，他就不信一个小小的六境练气士，能够支撑到最后。",
+      "同时驾驭这么多张树叶，本来就不简单，练气士需要耗费的心神，极其可观。",
+      "于是曹峻暗中告诉自己，虽然胜之不武，可勉强当做是一场砥砺剑锋的蠢笨气力活好了，他倒要看看那个读书人能够支撑多久。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "所以曹峻心情不太好。 曹峻不愿就此打退堂鼓，他就不信一个小小的六境练气士，能够支撑到最后。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "所以曹峻心情不太好。 曹峻不愿就此打退堂鼓，他就不信一个小小的六境练气士，能够支撑到最后。 于是曹峻暗中告诉自己，虽然胜之不武，可勉强当做是一场砥砺剑锋的蠢笨气力活好了，他倒要看看那个读书人能够支撑多久。",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.785796",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1215,7 +1692,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.785796",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1238,6 +1715,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻蓦然瞪大眼睛，终于不再笑脸示人，“你不吹牛会死啊？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 183,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "李希圣叹了口气，不再说话。",
@@ -1253,16 +1743,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣对话",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "李希圣叹了口气，不再说话。 因为我朋友还要赶路。 ”",
+        "description": "曹峻蓦然瞪大眼睛，终于不再笑脸示人，“你不吹牛会死啊？ 李希圣叹了口气，不再说话。 因为我朋友还要赶路。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动曹峻与李希圣之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1276,8 +1769,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "因为我朋友还要赶路。 ” 曹峻蓦然瞪大眼睛，终于不再笑脸示人，“你不吹牛会死啊？ ” 李希圣叹了口气，不再说话。 他只是抖了抖那只仅存的袖子，从袖子里抖落出了一大堆匪夷所思的玩意儿。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十三章 他有春叶夏雷秋风冬雪 · 曹峻与李希圣对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 183,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.785796",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1337,7 +1856,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.785796",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

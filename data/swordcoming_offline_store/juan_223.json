@@ -1,4 +1,66 @@
 {
+  "223-5-0": {
+    "juan_index": 223,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百二十三章 小街一战",
+    "source_sentences": [
+      "是不是妖魔鬼怪？",
+      "反正我的听妖铃铛是没有动静。",
+      "”",
+      "大髯汉子置若罔闻，揉着下巴嘀咕道：“其中一个嘴角有痣的白衣少女，身材似乎不比彩衣女子逊色。",
+      "”",
+      "刘高华在沉浸在心神震撼当中，自言自语道：“真是神通广大，难怪读书笔札上总有人要入山访仙，我要是学会了这个神仙术法，以后哪里需要去青楼喝花酒。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘高华",
+        "alias": [],
+        "original_description_in_book": "刘高华在沉浸在心神震撼当中，自言自语道：“真是神通广大，难怪读书笔札上总有人要入山访仙，我要是学会了这个神仙术法，以后哪里需要去青楼喝花酒。",
+        "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 223,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百二十三章 小街一战 · 刘高华剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘高华"
+        ],
+        "description": "刘高华在沉浸在心神震撼当中，自言自语道：“真是神通广大，难怪读书笔札上总有人要入山访仙，我要是学会了这个神仙术法，以后哪里需要去青楼喝花酒。 是不是妖魔鬼怪？ 反正我的听妖铃铛是没有动静。",
+        "background": "",
+        "significance": "对应刘高华在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百二十三章 小街一战 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 223,
+        "segment_index": 5
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.022616",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "223-6-0": {
     "juan_index": 223,
     "segment_index": 6,
@@ -56,7 +118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.149608",
+    "extracted_at": "2026-03-25T17:27:38.023619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -90,21 +152,38 @@
         ],
         "juan_index": 223,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "刘高华",
+        "alias": [],
+        "original_description_in_book": "刘高华为难道：“徐大侠，我可穷得家徒四壁了，我家府上的光景，你们又不是没看到，以往偶有风花雪月，也是被朋友拉着去，说句难听的，一开始姑娘们还念着我是什么郡守之子，愿意说上几句奉承话，主动投怀送抱，后来人人背后骂我是一毛不拔的铁公鸡，只差没给我脸色看了。 大髯汉子调侃道：“好好一个官宦子弟，竟然当成你这个鸟样，也算你刘高华的本事了。",
+        "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 223,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十三章 小街一战 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百二十三章 小街一战 · 陈平安与刘高华讥讽",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘高华"
         ],
-        "description": "大髯汉子点了点头，深以为然道：“这种大煞风景的事情，陈平安绝对做得出来。 其实回头让刘大公子请咱们去趟胭脂水粉窝，保管陈平安下次再遇到这种好事情，恨不得蹲在湖心高台边上。 ”",
+        "description": "大髯汉子点了点头，深以为然道：“这种大煞风景的事情，陈平安绝对做得出来。 其实回头让刘大公子请咱们去趟胭脂水粉窝，保管陈平安下次再遇到这种好事情，恨不得蹲在湖心高台边上。 刘高华为难道：“徐大侠，我可穷得家徒四壁了，我家府上的光景，你们又不是没看到，以往偶有风花雪月，也是被朋友拉着去，说句难听的，一开始姑娘们还念着我是什么郡守之子，愿意说上几句奉承话，主动投怀送抱，后来人人背后骂我是一毛不拔的铁公鸡，只差没给我脸色看了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与刘高华之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百二十三章 小街一战 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -118,8 +197,97 @@
         "segment_index": 7
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘高华"
+        ],
+        "action": "讥讽",
+        "context": "大髯汉子点了点头，深以为然道：“这种大煞风景的事情，陈平安绝对做得出来。 其实回头让刘大公子请咱们去趟胭脂水粉窝，保管陈平安下次再遇到这种好事情，恨不得蹲在湖心高台边上。 ” 刘高华为难道：“徐大侠，我可穷得家徒四壁了，我家府上的光景，你们又不是没看到，以往偶有风花雪月，也是被朋友拉着去，说句难听的，一开始姑娘们还念着我是什么郡守之子，愿意说上几句奉承话，主动投怀送抱，后来人人背后骂我是一毛不拔的铁公鸡，只差没给我脸色看了。 ” 大髯汉子调侃道：“好好一个官宦子弟，竟然当成你这个鸟样，也算你刘高华的本事了。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百二十三章 小街一战 · 陈平安与刘高华讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 223,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.023619",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "223-8-0": {
+    "juan_index": 223,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百二十三章 小街一战",
+    "source_sentences": [
+      "咋的，读书没出息，无法继承父业，又拉不下面子生财有道，到最后两头不靠，就这么成天游山玩水，不务正业？",
+      "”",
+      "刘高华脸色黯然，自嘲道：“如果不是家里就我这么一根独苗，爹还想着我传承香火，不然我死在古宅里头，他最多也就是写出一篇名动士林的祭子稿吧，文字一定写得血泪锥心，实则父子之情，也就那般了。",
+      "”",
+      "大髯汉子剥了颗柑橘，递给刘高华一半，也未说什么安慰之语。",
+      "衣食无忧的太平岁月里，年轻人才会觉得事事不如意。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘高华",
+        "alias": [],
+        "original_description_in_book": "刘高华脸色黯然，自嘲道：“如果不是家里就我这么一根独苗，爹还想着我传承香火，不然我死在古宅里头，他最多也就是写出一篇名动士林的祭子稿吧，文字一定写得血泪锥心，实则父子之情，也就那般了。 大髯汉子剥了颗柑橘，递给刘高华一半，也未说什么安慰之语。",
+        "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 223,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百二十三章 小街一战 · 刘高华剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘高华"
+        ],
+        "description": "刘高华脸色黯然，自嘲道：“如果不是家里就我这么一根独苗，爹还想着我传承香火，不然我死在古宅里头，他最多也就是写出一篇名动士林的祭子稿吧，文字一定写得血泪锥心，实则父子之情，也就那般了。 大髯汉子剥了颗柑橘，递给刘高华一半，也未说什么安慰之语。 咋的，读书没出息，无法继承父业，又拉不下面子生财有道，到最后两头不靠，就这么成天游山玩水，不务正业？",
+        "background": "",
+        "significance": "对应刘高华在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百二十三章 小街一战 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 223,
+        "segment_index": 8
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.149608",
+    "extracted_at": "2026-03-25T17:27:38.023619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -204,7 +372,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.149608",
+    "extracted_at": "2026-03-25T17:27:38.023619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -329,7 +497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.023619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -394,7 +562,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.023619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -519,7 +687,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.024623",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -638,7 +806,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.024623",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -741,7 +909,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.024623",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -843,7 +1011,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.024623",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -923,7 +1091,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.150611",
+    "extracted_at": "2026-03-25T17:27:38.025626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1001,7 +1169,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.151615",
+    "extracted_at": "2026-03-25T17:27:38.025626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1107,7 +1275,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.151615",
+    "extracted_at": "2026-03-25T17:27:38.025626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1210,7 +1378,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.151615",
+    "extracted_at": "2026-03-25T17:27:38.025626",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1291,7 +1459,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.151615",
+    "extracted_at": "2026-03-25T17:27:38.026630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1418,7 +1586,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.151615",
+    "extracted_at": "2026-03-25T17:27:38.026630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1541,7 +1709,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.152618",
+    "extracted_at": "2026-03-25T17:27:38.026630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1620,7 +1788,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.152618",
+    "extracted_at": "2026-03-25T17:27:38.026630",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1699,7 +1867,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.152618",
+    "extracted_at": "2026-03-25T17:27:38.027633",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1796,7 +1964,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.152618",
+    "extracted_at": "2026-03-25T17:27:38.027633",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1876,7 +2044,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.152618",
+    "extracted_at": "2026-03-25T17:27:38.027633",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1995,7 +2163,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.152618",
+    "extracted_at": "2026-03-25T17:27:38.027633",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2094,7 +2262,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.153622",
+    "extracted_at": "2026-03-25T17:27:38.028637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2198,7 +2366,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.153622",
+    "extracted_at": "2026-03-25T17:27:38.028637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2303,7 +2471,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.153622",
+    "extracted_at": "2026-03-25T17:27:38.028637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2404,7 +2572,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.153622",
+    "extracted_at": "2026-03-25T17:27:38.028637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2526,7 +2694,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.153622",
+    "extracted_at": "2026-03-25T17:27:38.028637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2631,7 +2799,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.153622",
+    "extracted_at": "2026-03-25T17:27:38.029640",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

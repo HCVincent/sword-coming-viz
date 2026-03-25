@@ -29,21 +29,55 @@
         ],
         "juan_index": 240,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "陈平安守后半夜，回到古寺内，徐远霞和张山峰都没有开口问什么，陈平安也就不说什么。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 240,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "陈平安守后半夜，回到古寺内，徐远霞和张山峰都没有开口问什么，陈平安也就不说什么。 天蒙蒙亮，大髯汉子还在酣睡，张山峰收拾好被褥后，发现陈平安不在古寺，走出大门，发现陈平安破天荒没有练习拳桩，而是手持槐木剑，一动不动。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安对话",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与徐远霞对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "徐远霞",
+          "张山峰"
         ],
         "description": "陈平安守后半夜，回到古寺内，徐远霞和张山峰都没有开口问什么，陈平安也就不说什么。 一夜到天明，陈平安对着篝火，火光映照着那张略微白皙几分的脸庞，不知道在想些什么。 天蒙蒙亮，大髯汉子还在酣睡，张山峰收拾好被褥后，发现陈平安不在古寺，走出大门，发现陈平安破天荒没有练习拳桩，而是手持槐木剑，一动不动。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与徐远霞之间的对话关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -57,8 +91,69 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.207387",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "徐远霞"
+        ],
+        "action": "对话",
+        "context": "陈平安守后半夜，回到古寺内，徐远霞和张山峰都没有开口问什么，陈平安也就不说什么。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与徐远霞对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 240,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "对话",
+        "context": "陈平安守后半夜，回到古寺内，徐远霞和张山峰都没有开口问什么，陈平安也就不说什么。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与徐远霞对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 240,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "对话",
+        "context": "陈平安守后半夜，回到古寺内，徐远霞和张山峰都没有开口问什么，陈平安也就不说什么。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与徐远霞对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 240,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.103897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -78,6 +173,22 @@
       "由于给一文钱难倒了英雄汉，三人继续赶路去往剑水山庄的途中，张山峰就提及了价值还要在小暑钱之上的“谷雨钱”，说他这辈子还没能见过一次，只闻其名，一枚小暑钱等同于千枚雪花钱，一颗材质珍稀的谷雨钱，又价值百枚小暑钱，金丹境元婴境的地仙们，好像都是使用这种钱币用来交易法宝，最关键是谷雨钱，本身就是练气士的大补之物，能够快速补气，恢复元气。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰臂长如猿，剑招衔接圆转如意，按照江湖高手的眼光来看，天生就是练剑的好胚子，当然，在山上仙家看来，恐怕就没有这个说法了，更多还是注重“养气炼气”，讲究一个登山够快，快到在同辈人当中好似一骑绝尘，快到连百岁千年的老家伙都望尘莫及。 在张山峰收剑之后，陈平安还是持剑姿势，犹豫不决，就是递不出一剑。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "juan_index": 240,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -104,6 +215,19 @@
         ],
         "juan_index": 240,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "山庄离此七百余里，多是雄山峻岭，好在入夏之后，风和日丽，三人放开手脚赶路，很快就到了剑水山庄辖境，庄子建在一座秀美大山的山脚，去往山庄之前，经过一座川流不息的繁华小镇，陈平安独自去买了酒装入养剑葫，徐远霞去了趟书肆，张山峰负责去购置添补干粮肉脯，钱到用处方恨少，大髯汉子看上了一本定价极高的梳水国前朝孤本，品相极好，没奈何囊中羞涩，懊恼自己当初在胭脂郡城脸皮太薄，就应该跟陈平安一样，大大方方收下那五千两银子。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 240,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -115,7 +239,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "徐远霞",
+          "张山峰"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -132,9 +258,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "张山峰",
           "宋雨烧"
         ],
-        "description": "在张山峰收剑之后，陈平安还是持剑姿势，犹豫不决，就是递不出一剑。 吃早餐的时候，三人一合计，打算去一趟宋雨烧创建的剑水山庄，稍作休整，打听清楚那座梳水国仙家渡口的具体位置后，再动身不迟。 山庄离此七百余里，多是雄山峻岭，好在入夏之后，风和日丽，三人放开手脚赶路，很快就到了剑水山庄辖境，庄子建在一座秀美大山的山脚，去往山庄之前，经过一座川流不息的繁华小镇，陈平安独自去买了酒装入养剑葫，徐远霞去了趟书肆，张山峰负责去购置添补干粮肉脯，钱到用处方恨少，大髯汉子看上了一本定价极高的梳水国前朝孤本，品相极好，没奈何囊中羞涩，懊恼自己当初在胭脂郡城脸皮太薄，就应该跟陈平安一样，大大方方收下那五千两银子。",
+        "description": "张山峰臂长如猿，剑招衔接圆转如意，按照江湖高手的眼光来看，天生就是练剑的好胚子，当然，在山上仙家看来，恐怕就没有这个说法了，更多还是注重“养气炼气”，讲究一个登山够快，快到在同辈人当中好似一骑绝尘，快到连百岁千年的老家伙都望尘莫及。 在张山峰收剑之后，陈平安还是持剑姿势，犹豫不决，就是递不出一剑。 吃早餐的时候，三人一合计，打算去一趟宋雨烧创建的剑水山庄，稍作休整，打听清楚那座梳水国仙家渡口的具体位置后，再动身不迟。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -151,7 +278,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.207387",
+    "extracted_at": "2026-03-25T17:27:38.103897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -172,6 +299,33 @@
       "当咱们剑水山庄是小镇的街边店铺呢？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "徐远霞期间提醒他们两个，这次在胭脂郡斩妖除魔的收获，若是无益于自己当下的修行，最好找一处山上店铺，哪怕折价，只要别太贱卖，都应该购置一两件裨益修行的所需灵器，落袋为安，钱财是如此，实打实的境界提升更是如此。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 240,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰对此心中早有定数，说要购买几张梦寐以求的攻伐符箓，若是雷法符箓最佳，再就是希望能找到一把价格公道的法剑，桃木剑虽然也能降服鬼魅阴物，可受限于桃木材质本身的孱弱，万一遇上力大无比的山泽大妖，铁定遭殃。 而且他跟张山峰不太一样，立身之本，是纯粹武夫的体魄和拳法，可以傍身，无形中就是防御，还有养剑葫芦里的两位小祖宗，可谓杀力无穷，所以暂时没想着卖出那些缴获而来的小物件们，或是与练气士以物易物。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 240,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -209,9 +363,11 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "张山峰",
+          "徐远霞"
         ],
-        "description": "陈平安有些犯嘀咕，他当然是恨不得世间万千法宝，只进口袋不出口袋。 当咱们剑水山庄是小镇的街边店铺呢？ 徐远霞期间提醒他们两个，这次在胭脂郡斩妖除魔的收获，若是无益于自己当下的修行，最好找一处山上店铺，哪怕折价，只要别太贱卖，都应该购置一两件裨益修行的所需灵器，落袋为安，钱财是如此，实打实的境界提升更是如此。",
+        "description": "徐远霞期间提醒他们两个，这次在胭脂郡斩妖除魔的收获，若是无益于自己当下的修行，最好找一处山上店铺，哪怕折价，只要别太贱卖，都应该购置一两件裨益修行的所需灵器，落袋为安，钱财是如此，实打实的境界提升更是如此。 张山峰对此心中早有定数，说要购买几张梦寐以求的攻伐符箓，若是雷法符箓最佳，再就是希望能找到一把价格公道的法剑，桃木剑虽然也能降服鬼魅阴物，可受限于桃木材质本身的孱弱，万一遇上力大无比的山泽大妖，铁定遭殃。 陈平安有些犯嘀咕，他当然是恨不得世间万千法宝，只进口袋不出口袋。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -229,7 +385,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.208391",
+    "extracted_at": "2026-03-25T17:27:38.103897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -249,7 +405,37 @@
       "”",
       "宝瓶洲的江湖，水其实不深，比不上顶尖剑客辈出的北俱芦洲，徐远霞这种四境的纯粹武夫，在彩衣国梳水国这种小国江湖，已经属于横着走的宗师，又有趁手的神兵利器在身，如虎添翼，当初在破败古寺，如果不是着了道，被那貌似少女的“嬷嬷”偷袭，而是堂堂正正倾力一战，徐远霞未必就输了那位梳水国四煞之一的嬷嬷。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "于是三人吃了个不软不硬的闭门羹，张山峰问徐远霞，能否给点银子，让那位管事通融通融。 张山峰笑道：“实在不行，徐大哥你在大门口耍一套刀法，咱仨保管立即成为座上宾。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 240,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "于是三人吃了个不软不硬的闭门羹，张山峰问徐远霞，能否给点银子，让那位管事通融通融。 徐远霞苦笑道：“江湖中人，尤其是剑水山庄这种江湖执牛耳者，你随便掏银子，是打人家的脸，只会适得其反。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 4
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -258,7 +444,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "徐远霞"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -268,14 +456,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 宝瓶洲对话",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "宝瓶洲的江湖，水其实不深，比不上顶尖剑客辈出的北俱芦洲，徐远霞这种四境的纯粹武夫，在彩衣国梳水国这种小国江湖，已经属于横着走的宗师，又有趁手的神兵利器在身，如虎添翼，当初在破败古寺，如果不是着了道，被那貌似少女的“嬷嬷”偷袭，而是堂堂正正倾力一战，徐远霞未必就输了那位梳水国四煞之一的嬷嬷。 于是三人吃了个不软不硬的闭门羹，张山峰问徐远霞，能否给点银子，让那位管事通融通融。 徐远霞苦笑道：“江湖中人，尤其是剑水山庄这种江湖执牛耳者，你随便掏银子，是打人家的脸，只会适得其反。",
+        "participants": [
+          "张山峰",
+          "徐远霞"
+        ],
+        "description": "于是三人吃了个不软不硬的闭门羹，张山峰问徐远霞，能否给点银子，让那位管事通融通融。 徐远霞苦笑道：“江湖中人，尤其是剑水山庄这种江湖执牛耳者，你随便掏银子，是打人家的脸，只会适得其反。 张山峰笑道：“实在不行，徐大哥你在大门口耍一套刀法，咱仨保管立即成为座上宾。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动张山峰与徐远霞之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -289,8 +482,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.208391",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "徐远霞"
+        ],
+        "action": "对话",
+        "context": "于是三人吃了个不软不硬的闭门羹，张山峰问徐远霞，能否给点银子，让那位管事通融通融。 徐远霞苦笑道：“江湖中人，尤其是剑水山庄这种江湖执牛耳者，你随便掏银子，是打人家的脸，只会适得其反。 ” 张山峰笑道：“实在不行，徐大哥你在大门口耍一套刀法，咱仨保管立即成为座上宾。 ” 宝瓶洲的江湖，水其实不深，比不上顶尖剑客辈出的北俱芦洲，徐远霞这种四境的纯粹武夫，在彩衣国梳水国这种小国江湖，已经属于横着走的宗师，又有趁手的神兵利器在身，如虎添翼，当初在破败古寺，如果不是着了道，被那貌似少女的“嬷嬷”偷袭，而是堂堂正正倾力一战，徐远霞未必就输了那位梳水国四煞之一的嬷嬷。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.104901",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -311,6 +530,35 @@
       "徐远霞跟陈平安张山峰对视一眼后，转头笑道：“可以啊。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "徐远霞用手心抹着络腮胡子，觉得实在不行，就只能出此下策了。 张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。 徐远霞跟陈平安张山峰对视一眼后，转头笑道：“可以啊。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -343,18 +591,28 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与宋雨烧遭遇",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "张山峰",
+          "徐远霞",
           "陈平安",
           "宋雨烧"
         ],
-        "description": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。 陈平安三人看到了少女魔头，她也看到了他们，跟壮汉说了一声，就径直走向三人，身姿婀娜地施了一个万福，然后微笑道：“三位英雄好汉，不打不相识，此次做客剑水山庄，咱们双方不如在酒桌上，相逢一笑泯恩仇？ 徐远霞跟陈平安张山峰对视一眼后，转头笑道：“可以啊。",
+        "description": "徐远霞用手心抹着络腮胡子，觉得实在不行，就只能出此下策了。 张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。 陈平安三人看到了少女魔头，她也看到了他们，跟壮汉说了一声，就径直走向三人，身姿婀娜地施了一个万福，然后微笑道：“三位英雄好汉，不打不相识，此次做客剑水山庄，咱们双方不如在酒桌上，相逢一笑泯恩仇？",
         "background": "",
-        "significance": "推动陈平安与宋雨烧之间的遭遇关系。",
+        "significance": "推动张山峰与徐远霞之间的遭遇关系。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
         ],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段5",
         "sentence_indexes_in_segment": [
@@ -373,6 +631,106 @@
       {
         "time": null,
         "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "徐远霞"
+        ],
+        "action": "会见",
+        "context": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "会见",
+        "context": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "会见",
+        "context": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
           "陈平安"
         ],
         "to_roles": [
@@ -381,7 +739,7 @@
         "action": "会见",
         "context": "张山峰突然扯了扯两人袖子，徐远霞和陈平安转头望去，一架装饰豪奢的巨大马车缓缓停下，气势凌人，走下了一位少女和一位魁梧壮汉，少女是熟面孔，正是古寺中设计逞凶的魔头，当时她对梳水国剑圣宋雨烧，说她要亲自拜访剑水山庄，没想到说来就真来了，半点不含糊。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与宋雨烧遭遇",
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -389,9 +747,69 @@
         ],
         "juan_index": 240,
         "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "徐远霞跟陈平安张山峰对视一眼后，转头笑道：“可以啊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "对话",
+        "context": "徐远霞跟陈平安张山峰对视一眼后，转头笑道：“可以啊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "对话",
+        "context": "徐远霞跟陈平安张山峰对视一眼后，转头笑道：“可以啊。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 张山峰与徐远霞遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.208391",
+    "extracted_at": "2026-03-25T17:27:38.104901",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -414,6 +832,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "徐远霞借这个机会，跟老者传告宋雨烧的那番言辞，正是剑庄大管事的楚姓老人，一听就确定是老庄主的语气，相比对待少女和壮汉的小心谨慎，就多出了许多真诚热络。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 240,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "宋雨烧",
         "alias": [],
         "original_description_in_book": "徐远霞借这个机会，跟老者传告宋雨烧的那番言辞，正是剑庄大管事的楚姓老人，一听就确定是老庄主的语气，相比对待少女和壮汉的小心谨慎，就多出了许多真诚热络。",
@@ -429,16 +860,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 宋雨烧会见",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 徐远霞与宋雨烧会见",
         "time": null,
         "location": null,
         "participants": [
+          "徐远霞",
           "宋雨烧"
         ],
         "description": "徐远霞借这个机会，跟老者传告宋雨烧的那番言辞，正是剑庄大管事的楚姓老人，一听就确定是老庄主的语气，相比对待少女和壮汉的小心谨慎，就多出了许多真诚热络。 ” 很快山庄那边就有一位佝偻老人出门迎接少女和壮汉，姓楚。",
         "background": "",
-        "significance": "对应宋雨烧在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "推动徐远霞与宋雨烧之间的会见关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -452,8 +886,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.209394",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "宋雨烧"
+        ],
+        "action": "会见",
+        "context": "” 很快山庄那边就有一位佝偻老人出门迎接少女和壮汉，姓楚。 原来壮汉在登门之前，投了拜帖，山庄不敢怠慢。 徐远霞借这个机会，跟老者传告宋雨烧的那番言辞，正是剑庄大管事的楚姓老人，一听就确定是老庄主的语气，相比对待少女和壮汉的小心谨慎，就多出了许多真诚热络。 而且能够入了老庄主法眼的江湖朋友，在这个节骨眼上，多多益善，少庄主的那把盟主交椅，说不定就可以坐得稳当了！ 进了庄子，穿廊过道绕影壁，剑庄建造得别有洞天，三人被楚管事亲自安排在风景优美的一座独栋大院，少女和壮汉刚好下榻在邻近的一栋院子。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 徐远霞与宋雨烧会见",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.104901",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,20 +947,50 @@
         ],
         "juan_index": 240,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "徐远霞和张山峰暂时不想出门走动，陈平安就独自去观看瀑布。 张山峰在院子里练习剑术，徐远霞坐在石凳上，自嘲道：“好嘛，我一个四境武夫，都能没听到瀑布声，你小子倒是耳朵尖。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 240,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "徐远霞和张山峰暂时不想出门走动，陈平安就独自去观看瀑布。 张山峰在院子里练习剑术，徐远霞坐在石凳上，自嘲道：“好嘛，我一个四境武夫，都能没听到瀑布声，你小子倒是耳朵尖。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 240,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与徐远霞剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "徐远霞",
+          "张山峰"
         ],
         "description": "陈平安在进院子前就听到了水声，一问附近是否有溪涧，才知道原来院子后边，沿着石板路一路前行，离此不算近，有条飞流直下的大瀑布，是剑水山庄名动梳水国的一处美景胜地，雨后天晴，就会有彩虹挂空，景象壮丽，动人心魄。 徐远霞和张山峰暂时不想出门走动，陈平安就独自去观看瀑布。 张山峰在院子里练习剑术，徐远霞坐在石凳上，自嘲道：“好嘛，我一个四境武夫，都能没听到瀑布声，你小子倒是耳朵尖。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与徐远霞之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段7",
         "sentence_indexes_in_segment": [
@@ -516,7 +1006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.209394",
+    "extracted_at": "2026-03-25T17:27:38.104901",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -543,6 +1033,19 @@
         "alias": [],
         "original_description_in_book": "车队人马来自大隋官方，虽然轻车简从，并未大张旗鼓，但是在大骊庙堂中枢还是掀起了大风浪，以至于大骊方面的迎客队伍中，有两位上柱国，分别姓袁和曹，还有出身山崖书院的礼部尚书，以及数位京城大佬，无一例外，都是大骊皇帝的嫡系亲信，郡守吴鸢身处其中，实在不起眼。",
         "description": "大骊王朝君主，是王朝线的决策中心人物。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "车队人马来自大隋官方，虽然轻车简从，并未大张旗鼓，但是在大骊庙堂中枢还是掀起了大风浪，以至于大骊方面的迎客队伍中，有两位上柱国，分别姓袁和曹，还有出身山崖书院的礼部尚书，以及数位京城大佬，无一例外，都是大骊皇帝的嫡系亲信，郡守吴鸢身处其中，实在不起眼。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
         "power": "大骊",
         "sentence_indexes_in_segment": [
           1
@@ -607,7 +1110,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "大骊皇帝"
+          "大骊皇帝",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -623,7 +1127,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "大骊皇帝"
+          "大骊皇帝",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -657,12 +1162,14 @@
           "魏檗",
           "陈平安",
           "大骊皇帝",
-          "高煊"
+          "吴鸢"
         ],
         "description": "龙泉郡迎来了一支车队，绝对是稀客。 车队人马来自大隋官方，虽然轻车简从，并未大张旗鼓，但是在大骊庙堂中枢还是掀起了大风浪，以至于大骊方面的迎客队伍中，有两位上柱国，分别姓袁和曹，还有出身山崖书院的礼部尚书，以及数位京城大佬，无一例外，都是大骊皇帝的嫡系亲信，郡守吴鸢身处其中，实在不起眼。 其余两辆马车，分别乘坐有皇子高煊和蟒服宦官，以及一位身份清贵但是品秩不算太高的礼部侍郎。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -676,8 +1183,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.209394",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "大骊皇帝"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "别离",
+        "context": "车队人马来自大隋官方，虽然轻车简从，并未大张旗鼓，但是在大骊庙堂中枢还是掀起了大风浪，以至于大骊方面的迎客队伍中，有两位上柱国，分别姓袁和曹，还有出身山崖书院的礼部尚书，以及数位京城大佬，无一例外，都是大骊皇帝的嫡系亲信，郡守吴鸢身处其中，实在不起眼。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 240,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.105932",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -833,7 +1361,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.209394",
+    "extracted_at": "2026-03-25T17:27:38.105932",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -962,7 +1490,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.209394",
+    "extracted_at": "2026-03-25T17:27:38.105932",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1070,7 +1598,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "extracted_at": "2026-03-25T17:27:38.105932",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1118,6 +1646,19 @@
         ],
         "juan_index": 240,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "在大隋山崖书院所在的京城东山，也有一桩更加隐蔽的另一半附属山盟，虽然看似规格不高，而且没有对外泄露半点风声，但是大隋京城内外紧张万分，从皇帝到六部衙门，以及山上山下，外松内紧，将山崖书院盯得严严实实，好在书院副山长茅小冬像一只护鸡崽儿的老母鸡，强力要求大隋朝廷不可因为此事，耽搁书院的正常授业，这才使得书院绝刀部分的夫子学生们，都没有察觉到丝毫异样。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 240,
+        "segment_index": 12
       }
     ],
     "locations": [
@@ -1147,7 +1688,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1162,14 +1705,13 @@
         "location": "大骊",
         "participants": [
           "宋集薪",
-          "高煊"
+          "高煊",
+          "茅小冬"
         ],
         "description": "宋集薪冷笑道：“那你吓死了没有？ 高煊撇撇嘴，不再跟这个家伙斗嘴，转头望向气势巍峨的大骊北岳山神庙，轻声道：“北岳庙在这里，南岳呢？ 在大隋山崖书院所在的京城东山，也有一桩更加隐蔽的另一半附属山盟，虽然看似规格不高，而且没有对外泄露半点风声，但是大隋京城内外紧张万分，从皇帝到六部衙门，以及山上山下，外松内紧，将山崖书院盯得严严实实，好在书院副山长茅小冬像一只护鸡崽儿的老母鸡，强力要求大隋朝廷不可因为此事，耽搁书院的正常授业，这才使得书院绝刀部分的夫子学生们，都没有察觉到丝毫异样。",
         "background": "",
         "significance": "在大骊推动宋集薪与高煊之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1183,34 +1725,8 @@
         "segment_index": 12
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋集薪"
-        ],
-        "to_roles": [
-          "高煊"
-        ],
-        "action": "对话",
-        "context": "宋集薪冷笑道：“那你吓死了没有？ ” 高煊撇撇嘴，不再跟这个家伙斗嘴，转头望向气势巍峨的大骊北岳山神庙，轻声道：“北岳庙在这里，南岳呢？ ” 在大隋山崖书院所在的京城东山，也有一桩更加隐蔽的另一半附属山盟，虽然看似规格不高，而且没有对外泄露半点风声，但是大隋京城内外紧张万分，从皇帝到六部衙门，以及山上山下，外松内紧，将山崖书院盯得严严实实，好在书院副山长茅小冬像一只护鸡崽儿的老母鸡，强力要求大隋朝廷不可因为此事，耽搁书院的正常授业，这才使得书院绝刀部分的夫子学生们，都没有察觉到丝毫异样。 大隋之所以如此风声鹤唳，怪不得大隋小题大做，委实是大骊此次负责签订东山盟约的人，来头太大。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百三十九章 观瀑 · 宋集薪与高煊在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 240,
-        "segment_index": 12
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.105932",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1338,7 +1854,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "extracted_at": "2026-03-25T17:27:38.105932",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1432,7 +1948,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "extracted_at": "2026-03-25T17:27:38.106907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1556,7 +2072,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "extracted_at": "2026-03-25T17:27:38.106907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1588,6 +2104,19 @@
           0,
           3,
           4
+        ],
+        "juan_index": 240,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "崔东山收拾了半天棋局，斜眼看着正襟危坐当大爷的老头子，有些愤懑，就也不当苦力了，四肢趴开躺在编织精致的大竹席子上，嘀咕道：“你运气比我好多了，老秀才是个欺软怕硬的，不愿跟你撕破脸皮，就来收拾我一个天真无邪的青葱少年，你是不知道，从骊珠洞天到这大隋京城，老子受了多少白眼委屈。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 240,
         "segment_index": 16
@@ -1630,7 +2159,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔东山"
+          "崔东山",
+          "老秀才"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -1675,17 +2205,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 崔东山与崔瀺在骊珠洞天迁移",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 崔东山与老秀才在骊珠洞天迁移",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
           "崔东山",
+          "老秀才",
           "崔瀺",
           "李宝瓶"
         ],
         "description": "崔东山收拾了半天棋局，斜眼看着正襟危坐当大爷的老头子，有些愤懑，就也不当苦力了，四肢趴开躺在编织精致的大竹席子上，嘀咕道：“你运气比我好多了，老秀才是个欺软怕硬的，不愿跟你撕破脸皮，就来收拾我一个天真无邪的青葱少年，你是不知道，从骊珠洞天到这大隋京城，老子受了多少白眼委屈。 崔瀺默不作声。 崔东山仰面躺在席子上，摸了摸额头，仿佛现在还隐隐作痛，是给李宝瓶那个臭丫头拿印章拍出的心理阴影！",
         "background": "",
-        "significance": "在骊珠洞天推动崔东山与崔瀺之间的迁移线。",
+        "significance": "在骊珠洞天推动崔东山与老秀才之间的迁移线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段16",
         "sentence_indexes_in_segment": [
@@ -1701,7 +2232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "extracted_at": "2026-03-25T17:27:38.106907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1796,7 +2327,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.210398",
+    "extracted_at": "2026-03-25T17:27:38.106907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1939,7 +2470,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.106907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2068,7 +2599,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.106907",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2164,7 +2695,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.107911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2292,7 +2823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.107911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2401,7 +2932,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.107911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2520,7 +3051,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.107911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2616,7 +3147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.107911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2695,7 +3226,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.211402",
+    "extracted_at": "2026-03-25T17:27:38.107911",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2775,7 +3306,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.108914",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2914,7 +3445,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.108914",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2948,20 +3479,34 @@
         ],
         "juan_index": 240,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年双手叉腰，放声大笑。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 240,
+        "segment_index": 28
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 崔东山剧情推进",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 崔东山与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山"
+          "崔东山",
+          "白衣少年"
         ],
-        "description": "崔东山一个跳起身，跑到少女身边，一脚狠狠踹在少女屁股上，踹得少女整个人摔入院子。 崔东山叹气一声，伸手轻轻捶打心口，“看到你这副可怜模样，公子我心如刀割哇。 ”",
+        "description": "崔东山一个跳起身，跑到少女身边，一脚狠狠踹在少女屁股上，踹得少女整个人摔入院子。 白衣少年双手叉腰，放声大笑。 崔东山叹气一声，伸手轻轻捶打心口，“看到你这副可怜模样，公子我心如刀割哇。",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键剧情推进节点。",
+        "significance": "推动崔东山与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段28",
         "sentence_indexes_in_segment": [
@@ -2977,7 +3522,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.108914",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3053,7 +3598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.108914",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3271,7 +3816,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.108914",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3389,7 +3934,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.109918",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3500,7 +4045,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.212405",
+    "extracted_at": "2026-03-25T17:27:38.109918",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3547,6 +4092,19 @@
         ],
         "juan_index": 240,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "崔东山仰起头做泪流满面状，喃喃道：“世间竟有此等无情无义的先生。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 240,
+        "segment_index": 33
       }
     ],
     "locations": [],
@@ -3557,7 +4115,8 @@
         "location": null,
         "participants": [
           "崔东山",
-          "李宝瓶"
+          "李宝瓶",
+          "仰起头"
         ],
         "description": "崔东山伸手指了指自己鼻子，“我的呢？ 李宝瓶双臂环胸，盘腿坐在长凳上，摇头道：“小师叔没给你写信。 崔东山仰起头做泪流满面状，喃喃道：“世间竟有此等无情无义的先生。",
         "background": "",
@@ -3577,7 +4136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.109918",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3673,7 +4232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.109918",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3778,7 +4337,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.109918",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3856,7 +4415,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.109918",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3991,7 +4550,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.110921",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4144,7 +4703,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.110921",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4258,7 +4817,7 @@
         "segment_index": 39
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.213408",
+    "extracted_at": "2026-03-25T17:27:38.110921",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4293,20 +4852,34 @@
         ],
         "juan_index": 240,
         "segment_index": 40
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "陈平安脚尖一点，踩在这座水榭的红漆栏杆上，本想练习立桩剑炉，可是一只手已经情不自禁地摘下了养剑葫，顺势又喝了口酒，仰起头，望向瀑布之巅，视线缓缓下移。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 240,
+        "segment_index": 40
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百三十九章 观瀑 · 陈平安与仰起头剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "仰起头"
         ],
         "description": "陈平安站在深水潭旁边的一座精巧水榭中，在想一个问题。 陈平安掂量了一下瀑布水势，再想到自己正确出剑都不会的尴尬境地，答案是不能。 陈平安脚尖一点，踩在这座水榭的红漆栏杆上，本想练习立桩剑炉，可是一只手已经情不自禁地摘下了养剑葫，顺势又喝了口酒，仰起头，望向瀑布之巅，视线缓缓下移。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与仰起头之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百三十九章 观瀑 · 段40",
         "sentence_indexes_in_segment": [
@@ -4322,7 +4895,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.214412",
+    "extracted_at": "2026-03-25T17:27:38.110921",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

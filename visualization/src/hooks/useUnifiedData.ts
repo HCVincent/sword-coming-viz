@@ -18,14 +18,14 @@ export function useUnifiedKnowledgeBase() {
         const response = await fetch('/data/unified_knowledge.json');
 
         if (!response.ok) {
-          throw new Error(`Failed to load unified knowledge base: ${response.status}`);
+          throw new Error(`读取统一知识库失败：${response.status}`);
         }
 
         const data = (await response.json()) as UnifiedKnowledgeBase;
         setKb(data);
       } catch (err) {
         console.error('Error loading unified knowledge base:', err);
-        setError(err instanceof Error ? err.message : 'Unknown error loading data');
+        setError(err instanceof Error ? err.message : '读取知识库时发生未知错误');
       } finally {
         setLoading(false);
       }

@@ -27,21 +27,37 @@
         ],
         "juan_index": 310,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "汉子朗声笑道：“外乡人，我叫马宣，来自塞外，有好事之徒给了一个粉金刚的绰号，昨儿有人花了黄金千两，要买下你的脑袋，还说你武功深不可测，别看长得面嫩，极有可能是俞真意那般的老妖怪，我便喊了姘头一起，今儿你是自尽，好留个全尸，还是给我双拳砸得粉碎？",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 310,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零九章 围杀之局 · 陈平安对话",
+        "name": "第五卷道观道 第三百零九章 围杀之局 · 陈平安与俞真意对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "俞真意"
         ],
-        "description": "长条青石铺就的街道两头，有两人相向而行，陈平安和棋摊子刚好位于居中位置。 陈平安左手边是一位面罩白纱的女子，衣石青色衣，红锦裹身，系以玉带，怀抱一只琵琶，身子妖娆，摇曳生姿。 右边是一位身高八尺的汉子，赤手空拳，上身裸露，肌肉虬结，却穿了条粉色长裤。",
+        "description": "长条青石铺就的街道两头，有两人相向而行，陈平安和棋摊子刚好位于居中位置。 陈平安左手边是一位面罩白纱的女子，衣石青色衣，红锦裹身，系以玉带，怀抱一只琵琶，身子妖娆，摇曳生姿。 汉子朗声笑道：“外乡人，我叫马宣，来自塞外，有好事之徒给了一个粉金刚的绰号，昨儿有人花了黄金千两，要买下你的脑袋，还说你武功深不可测，别看长得面嫩，极有可能是俞真意那般的老妖怪，我便喊了姘头一起，今儿你是自尽，好留个全尸，还是给我双拳砸得粉碎？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与俞真意之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零九章 围杀之局 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -55,8 +71,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "对话",
+        "context": "长条青石铺就的街道两头，有两人相向而行，陈平安和棋摊子刚好位于居中位置。 陈平安左手边是一位面罩白纱的女子，衣石青色衣，红锦裹身，系以玉带，怀抱一只琵琶，身子妖娆，摇曳生姿。 右边是一位身高八尺的汉子，赤手空拳，上身裸露，肌肉虬结，却穿了条粉色长裤。 这一双男女，怎么看都不像是跟鸡鸣犬吠作伴的市井百姓。 那汉子杀气腾腾，毫不遮掩自己的昂扬战意，盯着那个手拿朱红酒壶的家伙，比起寻常南苑国青壮男人，个子还要略高一些，虽然面容清秀，可也算不得什么少年郎了。 汉子朗声笑道：“外乡人，我叫马宣，来自塞外，有好事之徒给了一个粉金刚的绰号，昨儿有人花了黄金千两，要买下你的脑袋，还说你武功深不可测，别看长得面嫩，极有可能是俞真意那般的老妖怪，我便喊了姘头一起，今儿你是自尽，好留个全尸，还是给我双拳砸得粉碎？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零九章 围杀之局 · 陈平安与俞真意对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 310,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.518056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -91,21 +133,37 @@
         ],
         "juan_index": 310,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "先是那个仙子樊莞尔所谓的谪仙人，现在又有人出价黄金千两，于是光天化日之下，蹦出这么两个满身血腥煞气的家伙，如果不是自己阻拦，恐怕那些四处逃窜的百姓就已经死了。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 310,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零九章 围杀之局 · 陈平安冲突",
+        "name": "第五卷道观道 第三百零九章 围杀之局 · 陈平安与樊莞尔冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "樊莞尔"
         ],
-        "description": "陈平安觉得有点莫名其妙，为何要找上自己？ 相较于声势吓人的魁梧大汉马宣，陈平安注意力更多还是在女子身上。 那支以整块紫檀制成的华美琵琶，落在陈平安眼中，又有玄机，琵琶弦附近，丝丝缕缕的血腥气和浓如墨汁的死气，相互缠绕，向四周散发流溢。",
+        "description": "陈平安觉得有点莫名其妙，为何要找上自己？ 先是那个仙子樊莞尔所谓的谪仙人，现在又有人出价黄金千两，于是光天化日之下，蹦出这么两个满身血腥煞气的家伙，如果不是自己阻拦，恐怕那些四处逃窜的百姓就已经死了。 相较于声势吓人的魁梧大汉马宣，陈平安注意力更多还是在女子身上。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与樊莞尔之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零九章 围杀之局 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -119,8 +177,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "冲突",
+        "context": "原来那个白袍外乡人盯上了她，感觉像是她只要敢手指触弦，他就会撇下那个粉金刚，先盯上她。 她是来帮着老相好一起挣千两黄金的，可不是来担任吃力不讨好的厮杀主力，之所以愿意接这笔买卖，就在于她和粉金刚马宣是江湖上少有的绝佳搭档，一人近身厮杀肉搏，一人远远牵扯袭扰，天衣无缝，只要是那十人之外的江湖宗师，两人配合，哪怕打不过，也能逃得掉。 陈平安觉得有点莫名其妙，为何要找上自己？ 先是那个仙子樊莞尔所谓的谪仙人，现在又有人出价黄金千两，于是光天化日之下，蹦出这么两个满身血腥煞气的家伙，如果不是自己阻拦，恐怕那些四处逃窜的百姓就已经死了。 相较于声势吓人的魁梧大汉马宣，陈平安注意力更多还是在女子身上。 那支以整块紫檀制成的华美琵琶，落在陈平安眼中，又有玄机，琵琶弦附近，丝丝缕缕的血腥气和浓如墨汁的死气，相互缠绕，向四周散发流溢。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零九章 围杀之局 · 陈平安与樊莞尔冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 310,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.518056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -200,7 +284,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "extracted_at": "2026-03-25T17:27:38.519059",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -262,7 +346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "extracted_at": "2026-03-25T17:27:38.519059",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -325,7 +409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "extracted_at": "2026-03-25T17:27:38.519059",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -388,7 +472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "extracted_at": "2026-03-25T17:27:38.519059",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -452,7 +536,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "extracted_at": "2026-03-25T17:27:38.519059",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -516,7 +600,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.518480",
+    "extracted_at": "2026-03-25T17:27:38.519059",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "310-11-0": {
+    "juan_index": 310,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零九章 围杀之局",
+    "source_sentences": [
+      "要一统江湖？",
+      "还是老神仙俞真意精心调教出来的嫡传弟子？",
+      "是为了针对丁老魔重出江湖的杀手锏？",
+      "形势一团乱麻。",
+      "琵琶女子心中也是如此。",
+      "自己和马宣不该掺和进来的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "还是老神仙俞真意精心调教出来的嫡传弟子？",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 310,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零九章 围杀之局 · 俞真意剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "俞真意"
+        ],
+        "description": "还是老神仙俞真意精心调教出来的嫡传弟子？ 要一统江湖？ 是为了针对丁老魔重出江湖的杀手锏？",
+        "background": "",
+        "significance": "对应俞真意在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零九章 围杀之局 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 310,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.520062",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,7 +724,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.519483",
+    "extracted_at": "2026-03-25T17:27:38.520062",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -644,7 +790,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.519483",
+    "extracted_at": "2026-03-25T17:27:38.520062",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,7 +853,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.519483",
+    "extracted_at": "2026-03-25T17:27:38.520062",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -771,7 +917,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.519483",
+    "extracted_at": "2026-03-25T17:27:38.520062",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -794,6 +940,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "老人抬头望向远处，“俞真意，种秋，不妨实话告诉你们，周肥我已经答应保下，劝你们还是先杀童青青和冯青白两个，再来对付老夫，再说了，多出一个外乡人，就是多出一份机缘，杀不杀我，已经没那么重要。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 310,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "老人抬头望向远处，“俞真意，种秋，不妨实话告诉你们，周肥我已经答应保下，劝你们还是先杀童青青和冯青白两个，再来对付老夫，再说了，多出一个外乡人，就是多出一份机缘，杀不杀我，已经没那么重要。",
@@ -804,20 +963,49 @@
         ],
         "juan_index": 310,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "老人抬头望向远处，“俞真意，种秋，不妨实话告诉你们，周肥我已经答应保下，劝你们还是先杀童青青和冯青白两个，再来对付老夫，再说了，多出一个外乡人，就是多出一份机缘，杀不杀我，已经没那么重要。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 310,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "那你们也太小看我丁婴了。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 310,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零九章 围杀之局 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百零九章 围杀之局 · 俞真意与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "俞真意",
+          "种秋",
+          "周肥",
+          "丁婴"
         ],
-        "description": "老人抬头望向远处，“俞真意，种秋，不妨实话告诉你们，周肥我已经答应保下，劝你们还是先杀童青青和冯青白两个，再来对付老夫，再说了，多出一个外乡人，就是多出一份机缘，杀不杀我，已经没那么重要。 ” 你们真以为我会对一副罗汉金身动心吗？",
+        "description": "老人抬头望向远处，“俞真意，种秋，不妨实话告诉你们，周肥我已经答应保下，劝你们还是先杀童青青和冯青白两个，再来对付老夫，再说了，多出一个外乡人，就是多出一份机缘，杀不杀我，已经没那么重要。 那你们也太小看我丁婴了。 ”",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动俞真意与种秋之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零九章 围杀之局 · 段18",
         "sentence_indexes_in_segment": [
@@ -833,7 +1021,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.519483",
+    "extracted_at": "2026-03-25T17:27:38.520062",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -895,7 +1083,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.519483",
+    "extracted_at": "2026-03-25T17:27:38.521066",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

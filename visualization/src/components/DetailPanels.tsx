@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type {
   RoleLinkUnified,
   RoleNodeUnified,
@@ -23,7 +24,41 @@ function formatUnitSpan(units: number[] | undefined, unitLabel: string): string 
   const sorted = [...units].sort((a, b) => a - b);
   const start = sorted[0];
   const end = sorted[sorted.length - 1];
-  return start === end ? `${unitLabel}${start}` : `${unitLabel}${start}–${end}`;
+  return start === end ? `${unitLabel}${start}` : `${unitLabel}${start}-${end}`;
+}
+
+function ModalShell(props: {
+  title: string;
+  subtitle?: string | null;
+  wide?: boolean;
+  onClose: () => void;
+  onBack?: () => void;
+  children: ReactNode;
+}) {
+  const { title, subtitle, wide, onBack, onClose, children } = props;
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className={`modal-panel ${wide ? 'modal-panel--wide' : ''}`} onClick={(event) => event.stopPropagation()}>
+        <div className="modal-header">
+          <div className="flex flex-wrap items-start gap-3">
+            {onBack ? (
+              <button type="button" className="outline-button" onClick={onBack}>
+                返回上一层
+              </button>
+            ) : null}
+            <div>
+              <h2 className="modal-title">{title}</h2>
+              {subtitle ? <p className="detail-text mt-2">{subtitle}</p> : null}
+            </div>
+          </div>
+          <button type="button" className="modal-close" onClick={onClose} aria-label="关闭">
+            ×
+          </button>
+        </div>
+        <div className="modal-body">{children}</div>
+      </div>
+    </div>
+  );
 }
 
 function renderRoleChip(opts: {
@@ -43,24 +78,16 @@ function renderRoleChip(opts: {
 
   if (available) {
     return (
-      <button
-        key={name}
-        onClick={() => onClick(name)}
-        className="inline-flex items-center px-2 py-1 bg-[#faf8f5] border border-[#d4c5b5] rounded text-sm hover:bg-[#8b4513] hover:text-white hover:border-[#8b4513] transition-colors cursor-pointer"
-      >
+      <button key={name} type="button" className="pill-chip hover:underline" onClick={() => onClick(name)}>
         {name}
       </button>
     );
   }
 
   return (
-    <span
-      key={name}
-      className="inline-flex items-center px-2 py-1 bg-gray-100 border border-gray-300 rounded text-sm text-gray-400 cursor-not-allowed"
-      title={`当前范围不可用。出现：${unitSpan}`}
-    >
+    <span key={name} className="pill-chip pill-chip--muted" title={`当前范围不可用，出现于：${unitSpan}`}>
       {name}
-      <span className="ml-1 text-[10px] text-gray-400">({unitSpan})</span>
+      <span className="text-[10px]">({unitSpan})</span>
     </span>
   );
 }
@@ -68,109 +95,101 @@ function renderRoleChip(opts: {
 interface EventDetailProps {
   event: TimelineEventUnified | null;
   onClose: () => void;
+  onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onLocationClick?: (locationName: string) => void;
   kb: UnifiedKnowledgeBase | null;
   availableRoleIds: Set<string>;
 }
 
-export function EventDetail({ event, onClose, onEntityClick, onLocationClick, kb, availableRoleIds }: EventDetailProps) {
+export function EventDetail({ event, onClose, onBack, onEntityClick, onLocationClick, kb, availableRoleIds }: EventDetailProps) {
   if (!event) return null;
 
-  const unitLabel = kb?.unit_label ?? '章节';
   const progressLabel = kb?.progress_label ?? '叙事进度';
-
-  const handleEntityClick = (name: string) => {
-    onClose();
-    onEntityClick?.(name);
-  };
-
-  const handleLocationClick = (name: string) => {
-    onClose();
-    onLocationClick?.(name);
-  };
+  const unitLabel = kb?.unit_label ?? '章节';
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={onClose}>
-      <div className="bg-white rounded-lg shadow-xl max-w-lg w-full mx-4 p-6" onClick={(e) => e.stopPropagation()}>
-        <div className="flex justify-between items-start mb-4">
-          <h2 className="text-xl font-bold text-[#8b4513]">{event.name}</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl leading-none">
-            ×
-          </button>
-        </div>
+    <ModalShell title={event.name} onClose={onClose} onBack={onBack}>
+      {(event.progressLabel || event.progressStart !== null) && (
+        <section className="detail-section">
+          <h3 className="detail-heading">{progressLabel}</h3>
+          <p className="detail-text">{event.progressLabel ?? event.progressStart}</p>
+        </section>
+      )}
 
-        <div className="space-y-3">
-          {(event.progressLabel || event.progressStart !== null) && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">{progressLabel}：</span>
-              <span className="text-gray-700">{event.progressLabel ?? event.progressStart}</span>
-            </div>
+      {event.timeText && (
+        <section className="detail-section">
+          <h3 className="detail-heading">原文时间</h3>
+          <p className="detail-text">{event.timeText}</p>
+        </section>
+      )}
+
+      {event.location && (
+        <section className="detail-section">
+          <h3 className="detail-heading">地点</h3>
+          {onLocationClick ? (
+            <button type="button" className="card-action" onClick={() => onLocationClick(event.location!)}>
+              {event.location}
+            </button>
+          ) : (
+            <p className="detail-text">{event.location}</p>
           )}
+        </section>
+      )}
 
-          {event.timeText && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">原文时间：</span>
-              <span className="text-gray-700">{event.timeText}</span>
-            </div>
-          )}
-
-          {event.location && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">地点：</span>
-              {onLocationClick ? (
-                <button onClick={() => handleLocationClick(event.location!)} className="text-[#8b4513] hover:underline cursor-pointer">
-                  {event.location}
-                </button>
-              ) : (
-                <span className="text-gray-700">{event.location}</span>
-              )}
-            </div>
-          )}
-
-          {event.participants.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">参与者：</span>
-              <p className="text-xs text-gray-500 mt-0.5">点击可在关系图中查看</p>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {event.participants.map((name) =>
-                  renderRoleChip({ name, kb, availableRoleIds, onClick: handleEntityClick })
-                )}
-              </div>
-            </div>
-          )}
-
-          <div>
-            <span className="font-semibold text-[#2c1810]">描述：</span>
-            <p className="text-gray-700 mt-1">{event.description}</p>
+      <section className="detail-section">
+        <h3 className="detail-heading">参与人物</h3>
+        {event.participants.length > 0 ? (
+          <div className="chip-wrap">
+            {event.participants.map((name) =>
+              renderRoleChip({
+                name,
+                kb,
+                availableRoleIds,
+                onClick: (roleName) => {
+                  onEntityClick?.(roleName);
+                },
+              })
+            )}
           </div>
+        ) : (
+          <p className="status-note">当前事件未记录明确参与人物。</p>
+        )}
+      </section>
 
-          {event.background && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">背景：</span>
-              <p className="text-gray-700 mt-1">{event.background}</p>
-            </div>
-          )}
+      <section className="detail-section">
+        <h3 className="detail-heading">描述</h3>
+        <p className="detail-text">{event.description}</p>
+      </section>
 
-          {event.significance && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">剧情意义：</span>
-              <p className="text-gray-700 mt-1 text-sm italic">{event.significance}</p>
-            </div>
-          )}
+      {event.background && (
+        <section className="detail-section">
+          <h3 className="detail-heading">背景</h3>
+          <p className="detail-text">{event.background}</p>
+        </section>
+      )}
 
-          <div className="text-sm text-gray-500 pt-2 border-t border-[#d4c5b5]">
-            来源：{unitLabel}{event.unitIndex}
-          </div>
-        </div>
-      </div>
-    </div>
+      {event.significance && (
+        <section className="detail-section">
+          <h3 className="detail-heading">剧情意义</h3>
+          <p className="detail-text">{event.significance}</p>
+        </section>
+      )}
+
+      <section className="detail-section divider-line">
+        <p className="status-note">
+          来源：{unitLabel}
+          {event.unitIndex}
+        </p>
+      </section>
+    </ModalShell>
   );
 }
 
 interface RoleDetailProps {
   role: RoleNodeUnified | null;
   onClose: () => void;
+  onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onEventClick?: (event: TimelineEventUnified) => void;
   relatedEvents?: TimelineEventUnified[];
@@ -181,6 +200,7 @@ interface RoleDetailProps {
 export function RoleDetail({
   role,
   onClose,
+  onBack,
   onEntityClick,
   onEventClick,
   relatedEvents,
@@ -191,107 +211,97 @@ export function RoleDetail({
 
   const unitLabel = kb?.unit_label ?? '章节';
 
-  const handleEntityClick = (name: string) => {
-    onClose();
-    onEntityClick?.(name);
-  };
-
-  const handleEventClick = (event: TimelineEventUnified) => {
-    onClose();
-    onEventClick?.(event);
-  };
-
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={onClose}>
-      <div
-        className="bg-white rounded-lg shadow-xl max-w-lg w-full mx-4 p-6 max-h-[80vh] overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex justify-between items-start mb-4">
-          <h2 className="text-xl font-bold text-[#8b4513]">{role.name}</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl leading-none">
-            ×
-          </button>
-        </div>
-
-        <div className="space-y-3">
-          {role.aliases.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">别名：</span>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {role.aliases.map((alias) => (
-                  <span key={alias} className="px-2 py-1 bg-[#faf8f5] border border-[#d4a574] rounded text-sm text-[#8b4513]">
-                    {alias}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {role.power && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">阵营：</span>
-              <span className="px-2 py-1 bg-[#c41e3a] text-white rounded text-sm ml-2">{role.power}</span>
-            </div>
-          )}
-
-          <div>
-            <span className="font-semibold text-[#2c1810]">简介：</span>
-            <p className="text-gray-700 mt-1">{role.description || '暂无描述'}</p>
+    <ModalShell title={role.name} onClose={onClose} onBack={onBack}>
+      {role.aliases.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">别名</h3>
+          <div className="chip-wrap">
+            {role.aliases.map((alias) => (
+              <span key={alias} className="pill-chip">
+                {alias}
+              </span>
+            ))}
           </div>
+        </section>
+      )}
 
-          {role.relatedEntities.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">相关人物：</span>
-              <p className="text-xs text-gray-500 mt-0.5">点击可在图中查看</p>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {role.relatedEntities.slice(0, 15).map((name) =>
-                  renderRoleChip({ name, kb, availableRoleIds, onClick: handleEntityClick })
-                )}
-                {role.relatedEntities.length > 15 && (
-                  <span className="text-sm text-gray-500 self-center">+{role.relatedEntities.length - 15}</span>
-                )}
-              </div>
-            </div>
-          )}
-
-          {relatedEvents && relatedEvents.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">相关事件：</span>
-              <p className="text-xs text-gray-500 mt-0.5">点击可查看详情</p>
-              <div className="mt-2 space-y-2 max-h-48 overflow-y-auto">
-                {relatedEvents.slice(0, 10).map((event) => (
-                  <button
-                    key={event.id}
-                    onClick={() => handleEventClick(event)}
-                    className="w-full text-left p-2 bg-[#faf8f5] border border-[#d4c5b5] rounded hover:bg-[#8b4513] hover:text-white hover:border-[#8b4513] transition-colors"
-                  >
-                    <div className="font-medium text-sm">{event.name}</div>
-                    <div className="text-xs opacity-70">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <div>
-            <span className="font-semibold text-[#2c1810]">出现次数：</span>
-            <span className="text-gray-700">{role.appearances} 次</span>
+      {role.power && (
+        <section className="detail-section">
+          <h3 className="detail-heading">阵营</h3>
+          <div className="chip-wrap">
+            <span className="pill-chip pill-chip--strong">{role.power}</span>
           </div>
+        </section>
+      )}
 
-          <div>
-            <span className="font-semibold text-[#2c1810]">出现{unitLabel}：</span>
-            <div className="flex flex-wrap gap-2 mt-1">
+      <section className="detail-section">
+        <h3 className="detail-heading">简介</h3>
+        <p className="detail-text">{role.description || '暂无描述。'}</p>
+      </section>
+
+      {role.relatedEntities.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">相关人物</h3>
+          <div className="chip-wrap">
+            {role.relatedEntities.slice(0, 15).map((name) =>
+              renderRoleChip({
+                name,
+                kb,
+                availableRoleIds,
+                onClick: (roleName) => {
+                  onEntityClick?.(roleName);
+                },
+              })
+            )}
+            {role.relatedEntities.length > 15 && (
+              <span className="pill-chip pill-chip--muted">+{role.relatedEntities.length - 15}</span>
+            )}
+          </div>
+        </section>
+      )}
+
+      {relatedEvents && relatedEvents.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">相关事件</h3>
+          <div className="info-list">
+            {relatedEvents.slice(0, 10).map((event) => (
+              <button
+                key={event.id}
+                type="button"
+                className="detail-card text-left hover:border-[var(--accent-deep)]"
+                onClick={() => {
+                  onEventClick?.(event);
+                }}
+              >
+                <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
+                <div className="status-note mt-2">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="detail-section divider-line">
+        <div className="info-list">
+          <div className="info-row">
+            <span>出现次数</span>
+            <strong>{role.appearances} 次</strong>
+          </div>
+          <div className="detail-section">
+            <h3 className="detail-heading">出现{unitLabel}</h3>
+            <div className="chip-wrap">
               {role.units.map((unit) => (
-                <span key={unit} className="px-2 py-1 bg-[#faf8f5] border border-[#d4c5b5] rounded text-sm">
-                  {unitLabel}{unit}
+                <span key={unit} className="pill-chip">
+                  {unitLabel}
+                  {unit}
                 </span>
               ))}
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </ModalShell>
   );
 }
 
@@ -302,24 +312,28 @@ interface LocationListProps {
 
 export function LocationList({ locations, onLocationClick }: LocationListProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
-      <h3 className="text-lg font-bold text-[#2c1810] mb-4">地点列表</h3>
-      <div className="space-y-2 max-h-96 overflow-y-auto">
+    <div className="view-shell">
+      <div className="view-header">
+        <div>
+          <h3 className="view-title">地点列表</h3>
+          <p className="view-copy">从这里快速进入地点详情。</p>
+        </div>
+      </div>
+      <div className="info-list max-h-96 overflow-y-auto pr-1">
         {locations.map((location) => (
-          <div
+          <button
             key={location.id}
-            className="p-3 border border-[#d4c5b5] rounded-lg hover:bg-[#faf8f5] cursor-pointer transition-colors"
+            type="button"
+            className="detail-card text-left hover:border-[var(--accent-deep)]"
             onClick={() => onLocationClick?.(location)}
           >
-            <div className="flex justify-between items-start">
-              <h4 className="font-semibold text-[#8b4513]">{location.canonical_name}</h4>
-              {location.location_type && (
-                <span className="text-xs px-2 py-1 bg-[#d4a574] text-white rounded">{location.location_type}</span>
-              )}
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div className="font-semibold text-[var(--accent-deep)]">{location.canonical_name}</div>
+              {location.location_type ? <span className="pill-chip pill-chip--strong">{location.location_type}</span> : null}
             </div>
-            {location.modern_name && <p className="text-sm text-gray-500 mt-1">今：{location.modern_name}</p>}
-            {location.description && <p className="text-sm text-gray-700 mt-1 line-clamp-2">{location.description}</p>}
-          </div>
+            {location.modern_name ? <p className="status-note mt-2">现代地名：{location.modern_name}</p> : null}
+            {location.description ? <p className="detail-text mt-2">{location.description}</p> : null}
+          </button>
         ))}
       </div>
     </div>
@@ -332,8 +346,9 @@ interface LocationDetailProps {
   relatedRoles: string[];
   relatedActions: UnifiedRelation[];
   onClose: () => void;
+  onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
-  onNavigateToMap?: () => void;
+  onEventClick?: (event: TimelineEventUnified) => void;
   kb: UnifiedKnowledgeBase | null;
   availableRoleIds: Set<string>;
 }
@@ -344,115 +359,103 @@ export function LocationDetail({
   relatedRoles,
   relatedActions,
   onClose,
+  onBack,
   onEntityClick,
-  onNavigateToMap,
+  onEventClick,
   kb,
   availableRoleIds,
 }: LocationDetailProps) {
   if (!location) return null;
 
-  const handleEntityClick = (name: string) => {
-    onClose();
-    onEntityClick?.(name);
-  };
-
   const unitLabel = kb?.unit_label ?? '章节';
-  const units = location.units_appeared ?? location.juans_appeared;
+  const units = location.units_appeared ?? location.juans_appeared ?? [];
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={onClose}>
-      <div
-        className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 p-6 max-h-[80vh] overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h2 className="text-xl font-bold text-[#8b4513]">{location.canonical_name}</h2>
-            {location.modern_name && <p className="text-sm text-gray-500">今：{location.modern_name}</p>}
+    <ModalShell
+      title={location.canonical_name}
+      subtitle={location.modern_name ? `现代地名：${location.modern_name}` : undefined}
+      onClose={onClose}
+      onBack={onBack}
+      wide
+    >
+      {location.location_type && (
+        <section className="detail-section">
+          <h3 className="detail-heading">类型</h3>
+          <div className="chip-wrap">
+            <span className="pill-chip pill-chip--strong">{location.location_type}</span>
           </div>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl leading-none">
-            ×
-          </button>
-        </div>
+        </section>
+      )}
 
-        <div className="space-y-4">
-          {location.location_type && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">类型：</span>
-              <span className="text-gray-700">{location.location_type}</span>
-            </div>
-          )}
+      {location.description && (
+        <section className="detail-section">
+          <h3 className="detail-heading">描述</h3>
+          <p className="detail-text">{location.description}</p>
+        </section>
+      )}
 
-          {location.description && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">描述：</span>
-              <p className="text-gray-700 mt-1">{location.description}</p>
-            </div>
-          )}
-
-          {relatedRoles.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">相关人物：</span>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {relatedRoles.map((name) =>
-                  renderRoleChip({ name, kb, availableRoleIds, onClick: handleEntityClick })
-                )}
-              </div>
-            </div>
-          )}
-
-          {relatedEvents.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">相关事件：</span>
-              <div className="mt-2 space-y-2 max-h-48 overflow-y-auto">
-                {relatedEvents.map((event) => (
-                  <div key={event.id} className="rounded-lg border border-[#d4c5b5] bg-[#faf8f5] p-3">
-                    <div className="font-medium text-[#2c1810]">{event.name}</div>
-                    <div className="text-xs text-gray-500 mt-1">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {relatedActions.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810]">关联关系：</span>
-              <div className="mt-2 space-y-2">
-                {relatedActions.map((action) => (
-                  <div key={action.id} className="rounded-lg border border-[#d4c5b5] bg-[#faf8f5] p-3 text-sm text-gray-700">
-                    {action.from_entity} → {action.to_entity} · {action.primary_action}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <div>
-            <span className="font-semibold text-[#2c1810]">出现{unitLabel}：</span>
-            <div className="flex flex-wrap gap-2 mt-1">
-              {units.map((unit) => (
-                <span key={unit} className="px-2 py-1 bg-[#faf8f5] border border-[#d4c5b5] rounded text-sm">
-                  {unitLabel}{unit}
-                </span>
-              ))}
-            </div>
+      {relatedRoles.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">相关人物</h3>
+          <div className="chip-wrap">
+            {relatedRoles.map((name) =>
+              renderRoleChip({
+                name,
+                kb,
+                availableRoleIds,
+                onClick: (roleName) => {
+                  onEntityClick?.(roleName);
+                },
+              })
+            )}
           </div>
+        </section>
+      )}
 
-          {onNavigateToMap && (
-            <button
-              onClick={() => {
-                onClose();
-                onNavigateToMap();
-              }}
-              className="px-3 py-2 rounded-lg bg-[#8b4513] text-white hover:bg-[#5d2e0c] transition-colors"
-            >
-              在地点关系视图中查看
-            </button>
-          )}
+      {relatedEvents.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">相关事件</h3>
+          <div className="info-list max-h-56 overflow-y-auto pr-1">
+            {relatedEvents.map((event) => (
+              <button
+                key={event.id}
+                type="button"
+                className="detail-card text-left hover:border-[var(--accent-deep)]"
+                onClick={() => onEventClick?.(event)}
+              >
+                <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
+                <div className="status-note mt-2">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {relatedActions.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">关联关系</h3>
+          <div className="info-list">
+            {relatedActions.map((action) => (
+              <div key={action.id} className="detail-card detail-text">
+                {action.from_entity} → {action.to_entity} · {action.primary_action}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="detail-section divider-line">
+        <h3 className="detail-heading">出现{unitLabel}</h3>
+        <div className="chip-wrap">
+          {units.map((unit) => (
+            <span key={unit} className="pill-chip">
+              {unitLabel}
+              {unit}
+            </span>
+          ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </ModalShell>
   );
 }
 
@@ -461,6 +464,7 @@ interface RelationDetailProps {
   sourceName: string;
   targetName: string;
   onClose: () => void;
+  onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onEventClick?: (event: TimelineEventUnified) => void;
   relatedEvents?: TimelineEventUnified[];
@@ -473,6 +477,7 @@ export function RelationDetail({
   sourceName,
   targetName,
   onClose,
+  onBack,
   onEntityClick,
   onEventClick,
   relatedEvents,
@@ -484,158 +489,131 @@ export function RelationDetail({
   const targetId = resolveRoleId(kb, targetName);
   const sourceAvailable = sourceId ? availableRoleIds.has(sourceId) : false;
   const targetAvailable = targetId ? availableRoleIds.has(targetId) : false;
-  const sourceUnits = sourceId ? kb?.roles?.[sourceId]?.units_appeared ?? kb?.roles?.[sourceId]?.juans_appeared : [];
-  const targetUnits = targetId ? kb?.roles?.[targetId]?.units_appeared ?? kb?.roles?.[targetId]?.juans_appeared : [];
-  const allSourceUnits = [...new Set(relations.flatMap((relation) => relation.sourceUnits || []))].sort((a, b) => a - b);
+  const allUnits = [...new Set(relations.flatMap((relation) => relation.sourceUnits || []))].sort((a, b) => a - b);
   const totalWeight = relations.reduce((sum, relation) => sum + relation.weight, 0);
   const earliestProgress = relations
     .map((relation) => relation.progressStart)
     .filter((value): value is number => value !== null)
     .sort((a, b) => a - b)[0];
 
-  const handleEntityClick = (name: string) => {
-    onClose();
-    onEntityClick?.(name);
-  };
-
-  const handleEventClick = (event: TimelineEventUnified) => {
-    onClose();
-    onEventClick?.(event);
-  };
-
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={onClose}>
-      <div
-        className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 p-6 max-h-[80vh] overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h2 className="text-xl font-bold text-[#8b4513]">人物关系详情</h2>
-            <p className="text-lg text-[#2c1810] mt-1">
-              <button
-                onClick={() => sourceAvailable && handleEntityClick(sourceName)}
-                disabled={!sourceAvailable}
-                className={sourceAvailable ? 'font-semibold hover:text-[#8b4513] hover:underline' : 'font-semibold text-gray-400'}
-              >
-                {sourceName}
-              </button>
-              <span className="mx-2 text-gray-500">⇄</span>
-              <button
-                onClick={() => targetAvailable && handleEntityClick(targetName)}
-                disabled={!targetAvailable}
-                className={targetAvailable ? 'font-semibold hover:text-[#8b4513] hover:underline' : 'font-semibold text-gray-400'}
-              >
-                {targetName}
-              </button>
-            </p>
-            {(!sourceAvailable || !targetAvailable) && (
-              <p className="text-xs text-gray-400 mt-1">
-                {!sourceAvailable ? `${sourceName} 不可用 · ${formatUnitSpan(sourceUnits, unitLabel)}` : null}
-                {!sourceAvailable && !targetAvailable ? '；' : null}
-                {!targetAvailable ? `${targetName} 不可用 · ${formatUnitSpan(targetUnits, unitLabel)}` : null}
-              </p>
-            )}
-          </div>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl leading-none">
-            ×
+    <ModalShell title="人物关系详情" subtitle={`${sourceName} 与 ${targetName}`} onClose={onClose} onBack={onBack} wide>
+      <section className="detail-section">
+        <div className="chip-wrap">
+          <button
+            type="button"
+            className={sourceAvailable ? 'card-action' : 'pill-chip pill-chip--muted'}
+            onClick={() => {
+              if (!sourceAvailable) return;
+              onEntityClick?.(sourceName);
+            }}
+            disabled={!sourceAvailable}
+          >
+            {sourceName}
+          </button>
+          <span className="pill-chip pill-chip--muted">↔</span>
+          <button
+            type="button"
+            className={targetAvailable ? 'card-action' : 'pill-chip pill-chip--muted'}
+            onClick={() => {
+              if (!targetAvailable) return;
+              onEntityClick?.(targetName);
+            }}
+            disabled={!targetAvailable}
+          >
+            {targetName}
           </button>
         </div>
+      </section>
 
-        <div className="space-y-4">
-          {relations.length > 1 && (
-            <div className="p-3 bg-[#f5f0e8] border border-[#d4a574] rounded-lg">
-              <span className="text-sm text-[#8b4513]">共找到 <strong>{relations.length}</strong> 条关系记录</span>
+      <section className="detail-section">
+        <div className="info-list">
+          <div className="info-row">
+            <span>关系记录</span>
+            <strong>{relations.length} 条</strong>
+          </div>
+          <div className="info-row">
+            <span>总互动次数</span>
+            <strong>{totalWeight} 次</strong>
+          </div>
+          {earliestProgress !== undefined && (
+            <div className="info-row">
+              <span>最早进度</span>
+              <strong>{earliestProgress}</strong>
             </div>
           )}
+        </div>
+      </section>
 
+      <section className="detail-section">
+        <h3 className="detail-heading">关系记录</h3>
+        <div className="info-list">
           {relations.map((relation, index) => (
-            <div key={`${relation.source}-${relation.target}-${index}`} className="border border-[#d4c5b5] rounded-lg p-4">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-sm font-semibold text-[#8b4513]">关系 {index + 1}:</span>
-                <span className="text-sm text-gray-700">{relation.action}</span>
+            <div key={`${relation.source}-${relation.target}-${index}`} className="detail-card">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="pill-chip pill-chip--strong">关系 {index + 1}</span>
+                <span className="pill-chip">{relation.action}</span>
+                {relation.progressLabel ? <span className="pill-chip">{relation.progressLabel}</span> : null}
+                {relation.timeText ? <span className="pill-chip">{relation.timeText}</span> : null}
               </div>
-
-              {relation.progressLabel && (
-                <div className="mb-2 text-sm text-gray-600">进度：{relation.progressLabel}</div>
-              )}
-
-              {relation.timeText && <div className="mb-2 text-sm text-gray-600">原文时间：{relation.timeText}</div>}
-
               {relation.actionTypes.length > 0 && (
-                <div className="mb-2">
-                  <span className="font-semibold text-[#2c1810] text-sm">行动类型：</span>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {relation.actionTypes.map((type) => (
-                      <span key={type} className="px-2 py-0.5 bg-[#f5f0e8] border border-[#d4a574] text-[#8b4513] rounded text-xs">
-                        {type}
-                      </span>
-                    ))}
-                  </div>
+                <div className="chip-wrap mt-3">
+                  {relation.actionTypes.map((type) => (
+                    <span key={type} className="pill-chip">
+                      {type}
+                    </span>
+                  ))}
                 </div>
               )}
-
               {relation.contexts.length > 0 && (
-                <div>
-                  <span className="font-semibold text-[#2c1810] text-sm">互动记录：</span>
-                  <div className="mt-1 space-y-1 max-h-40 overflow-y-auto">
-                    {relation.contexts.map((context, contextIndex) => (
-                      <div key={contextIndex} className="p-2 bg-[#faf8f5] border border-[#d4c5b5] rounded text-xs text-gray-700">
-                        {context}
-                      </div>
-                    ))}
-                  </div>
+                <div className="info-list mt-3">
+                  {relation.contexts.map((context, contextIndex) => (
+                    <div key={contextIndex} className="subtle-card detail-text">
+                      {context}
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
           ))}
-
-          <div className="pt-3 border-t border-[#d4c5b5] grid grid-cols-2 gap-4 text-sm">
-            <div>
-              <span className="font-semibold text-[#2c1810]">总互动次数：</span>
-              <span className="text-gray-700 ml-2">{totalWeight} 次</span>
-            </div>
-            {earliestProgress !== undefined && (
-              <div>
-                <span className="font-semibold text-[#2c1810]">最早进度：</span>
-                <span className="text-gray-700 ml-2">{earliestProgress}</span>
-              </div>
-            )}
-          </div>
-
-          {relatedEvents && relatedEvents.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810] text-sm">相关事件：</span>
-              <div className="mt-2 space-y-2 max-h-48 overflow-y-auto">
-                {relatedEvents.slice(0, 8).map((event) => (
-                  <button
-                    key={event.id}
-                    onClick={() => handleEventClick(event)}
-                    className="w-full text-left p-2 bg-[#faf8f5] border border-[#d4c5b5] rounded hover:bg-[#8b4513] hover:text-white hover:border-[#8b4513] transition-colors"
-                  >
-                    <div className="font-medium text-sm">{event.name}</div>
-                    <div className="text-xs opacity-70">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {allSourceUnits.length > 0 && (
-            <div>
-              <span className="font-semibold text-[#2c1810] text-sm">出现{unitLabel}：</span>
-              <div className="flex flex-wrap gap-1 mt-1">
-                {allSourceUnits.map((unit) => (
-                  <span key={unit} className="px-2 py-0.5 bg-[#faf8f5] border border-[#d4c5b5] rounded text-xs">
-                    {unitLabel}{unit}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
-      </div>
-    </div>
+      </section>
+
+      {relatedEvents && relatedEvents.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">相关事件</h3>
+          <div className="info-list max-h-56 overflow-y-auto pr-1">
+            {relatedEvents.slice(0, 8).map((event) => (
+              <button
+                key={event.id}
+                type="button"
+                className="detail-card text-left hover:border-[var(--accent-deep)]"
+                onClick={() => {
+                  onEventClick?.(event);
+                }}
+              >
+                <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
+                <div className="status-note mt-2">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {allUnits.length > 0 && (
+        <section className="detail-section divider-line">
+          <h3 className="detail-heading">出现{unitLabel}</h3>
+          <div className="chip-wrap">
+            {allUnits.map((unit) => (
+              <span key={unit} className="pill-chip">
+                {unitLabel}
+                {unit}
+              </span>
+            ))}
+          </div>
+        </section>
+      )}
+    </ModalShell>
   );
 }
 
@@ -653,6 +631,7 @@ interface NetworkRoleRelationsDetailProps {
   role: RoleNodeUnified | null;
   relationGroups: NetworkRoleRelationGroup[];
   onClose: () => void;
+  onBack?: () => void;
   onRelationClick?: (sourceId: string, targetId: string) => void;
   onEntityClick?: (entityName: string) => void;
   kb: UnifiedKnowledgeBase | null;
@@ -662,6 +641,7 @@ export function NetworkRoleRelationsDetail({
   role,
   relationGroups,
   onClose,
+  onBack,
   onRelationClick,
   onEntityClick,
   kb,
@@ -671,95 +651,73 @@ export function NetworkRoleRelationsDetail({
   const unitLabel = kb?.unit_label ?? '章节';
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]" onClick={onClose}>
-      <div
-        className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 p-6 max-h-[80vh] overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h2 className="text-xl font-bold text-[#8b4513]">{role.name}的人物关系</h2>
-            <p className="text-sm text-gray-500 mt-1">
-              当前范围内共 {relationGroups.length} 个关系对象，优先列出和他直接形成关系边的人物。
-            </p>
-          </div>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl leading-none">
-            ×
-          </button>
-        </div>
-
-        <div className="space-y-3">
-          {relationGroups.length > 0 ? (
-            relationGroups.map((group) => (
-              <div key={`${role.id}-${group.counterpartId}`} className="rounded-xl border border-[#d4c5b5] bg-[#faf8f5] p-4">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <button
-                      onClick={() => onRelationClick?.(role.id, group.counterpartId)}
-                      className="text-left text-lg font-semibold text-[#5d2e0c] hover:underline"
-                    >
-                      {role.name} × {group.counterpartName}
-                    </button>
-                    <div className="mt-2 flex flex-wrap gap-2 text-xs">
-                      <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white">
-                        关系记录 {group.relations.length}
-                      </span>
-                      <span className="px-2 py-1 rounded-full bg-[#d4a574] text-white">
-                        互动权重 {group.totalWeight}
-                      </span>
-                      {group.earliestProgress !== null && (
-                        <span className="px-2 py-1 rounded-full bg-[#f4ede4] text-[#8b4513]">
-                          最早进度 {group.earliestProgress}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-end gap-2">
-                    <button
-                      onClick={() => onRelationClick?.(role.id, group.counterpartId)}
-                      className="px-3 py-2 rounded-lg bg-[#8b4513] text-white text-sm hover:bg-[#6e360f] transition-colors"
-                    >
-                      查看关系详情
-                    </button>
-                    <button
-                      onClick={() => {
-                        onClose();
-                        onEntityClick?.(group.counterpartName);
-                      }}
-                      className="text-xs text-[#8b4513] hover:underline"
-                    >
-                      在图中聚焦 {group.counterpartName}
-                    </button>
+    <ModalShell
+      title={`${role.name}的人物关系`}
+      subtitle={`当前范围内共识别到 ${relationGroups.length} 个直接关系对象。`}
+      onClose={onClose}
+      onBack={onBack}
+      wide
+    >
+      {relationGroups.length > 0 ? (
+        <div className="info-list">
+          {relationGroups.map((group) => (
+            <div key={`${role.id}-${group.counterpartId}`} className="detail-card">
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <button
+                    type="button"
+                    className="text-left text-lg font-semibold text-[var(--accent-deep)] hover:underline"
+                    onClick={() => onRelationClick?.(role.id, group.counterpartId)}
+                  >
+                    {role.name} 与 {group.counterpartName}
+                  </button>
+                  <div className="chip-wrap mt-3">
+                    <span className="pill-chip pill-chip--strong">关系记录 {group.relations.length}</span>
+                    <span className="pill-chip">互动权重 {group.totalWeight}</span>
+                    {group.earliestProgress !== null ? <span className="pill-chip">最早进度 {group.earliestProgress}</span> : null}
                   </div>
                 </div>
-
-                {group.actionTypes.length > 0 && (
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {group.actionTypes.map((type) => (
-                      <span
-                        key={`${group.counterpartId}-${type}`}
-                        className="px-2 py-1 rounded-full border border-[#d4a574] bg-white text-xs text-[#8b4513]"
-                      >
-                        {type}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {group.sourceUnits.length > 0 && (
-                  <div className="mt-3 text-sm text-gray-600">
-                    出现{unitLabel}：{formatUnitSpan(group.sourceUnits, unitLabel)}
-                  </div>
-                )}
+                <div className="flex flex-col items-end gap-2">
+                  <button
+                    type="button"
+                    className="ink-button"
+                    onClick={() => onRelationClick?.(role.id, group.counterpartId)}
+                  >
+                    查看关系详情
+                  </button>
+                  <button
+                    type="button"
+                    className="outline-button"
+                    onClick={() => {
+                      onEntityClick?.(group.counterpartName);
+                    }}
+                  >
+                    在图中聚焦
+                  </button>
+                </div>
               </div>
-            ))
-          ) : (
-            <div className="rounded-xl border border-[#d4c5b5] bg-[#faf8f5] p-4 text-sm text-gray-500">
-              当前范围内，这个人物还没有形成可展示的关系边。
+
+              {group.actionTypes.length > 0 && (
+                <div className="chip-wrap mt-3">
+                  {group.actionTypes.map((type) => (
+                    <span key={`${group.counterpartId}-${type}`} className="pill-chip">
+                      {type}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {group.sourceUnits.length > 0 && (
+                <p className="status-note mt-3">
+                  出现{unitLabel}：{formatUnitSpan(group.sourceUnits, unitLabel)}
+                </p>
+              )}
             </div>
-          )}
+          ))}
         </div>
-      </div>
-    </div>
+      ) : (
+        <div className="empty-state">当前范围内，这个人物还没有形成可展示的关系边。</div>
+      )}
+    </ModalShell>
   );
 }

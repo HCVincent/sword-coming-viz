@@ -91,7 +91,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.898239",
+    "extracted_at": "2026-03-25T17:27:37.716556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -262,7 +262,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.898239",
+    "extracted_at": "2026-03-25T17:27:37.717560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -535,7 +535,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.898239",
+    "extracted_at": "2026-03-25T17:27:37.717560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -632,7 +632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.717560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -695,7 +695,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.717560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -758,7 +758,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.717560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -823,7 +823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.718563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -843,7 +843,21 @@
       "一位腰间悬挂红色戒尺的高大老人，缓缓而行，身旁是一位额头渗出汗水的司礼监秉笔太监，与武英殿广场那位为国而战的宦官一样，身穿大红蟒服，只不过两人身份，品秩相当，实则云泥之别。",
       "秉笔太监只得又一次小心翼翼催促茅老快行入宫，可是离开东华山的茅小冬嘴上答应，脚步仍是迈得不急不缓，这可把宦官急得不行，恨不得背起老人跑向皇宫。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "秉笔太监只得又一次小心翼翼催促茅老快行入宫，可是离开东华山的茅小冬嘴上答应，脚步仍是迈得不急不缓，这可把宦官急得不行，恨不得背起老人跑向皇宫。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "山崖书院",
@@ -862,13 +876,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 山崖书院揭示",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬在山崖书院揭示",
         "time": null,
         "location": "山崖书院",
-        "participants": [],
-        "description": "大隋宫城有一座暗藏玄机的廊墙，可以秘密通往各处，比如钦天监、六部衙门，还有东华山的新山崖书院。 言语之间，脚下的飞剑微微摇晃，如江水汹涌之间的水草晃荡，若非船家舵手足够沉稳，早就飘荡远去。 如果不是职责所在，他一个享誉朝野的顶尖练气士，武道之争，对自身修为毫无裨益，何至于在这里喝西北风。",
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "大隋宫城有一座暗藏玄机的廊墙，可以秘密通往各处，比如钦天监、六部衙门，还有东华山的新山崖书院。 秉笔太监只得又一次小心翼翼催促茅老快行入宫，可是离开东华山的茅小冬嘴上答应，脚步仍是迈得不急不缓，这可把宦官急得不行，恨不得背起老人跑向皇宫。 言语之间，脚下的飞剑微微摇晃，如江水汹涌之间的水草晃荡，若非船家舵手足够沉稳，早就飘荡远去。",
         "background": "",
-        "significance": "对应山崖书院相关的关键揭示场景。",
+        "significance": "对应茅小冬在叙事中的关键揭示节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段12",
         "sentence_indexes_in_segment": [
@@ -884,7 +900,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.718563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -923,6 +939,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "东华山山崖书院，正式改名为崔东山的白衣少年，离开山巅后，懒洋洋走向自己学舍，他单独拥有一座僻静小院落，如今他这位打架打出来的崔家老祖宗，少女谢谢，或者说卢氏王朝的天才修士谢灵越，就成了他名正言顺的门下弟子，一同搬来院子，伺候起居。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 170,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "东华山山崖书院，正式改名为崔东山的白衣少年，离开山巅后，懒洋洋走向自己学舍，他单独拥有一座僻静小院落，如今他这位打架打出来的崔家老祖宗，少女谢谢，或者说卢氏王朝的天才修士谢灵越，就成了他名正言顺的门下弟子，一同搬来院子，伺候起居。",
@@ -945,6 +974,7 @@
         "coordinates": null,
         "related_entities": [
           "崔东山",
+          "白衣少年",
           "谢谢"
         ],
         "sentence_indexes_in_segment": [
@@ -956,18 +986,20 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山与谢谢在山崖书院迁移",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山与白衣少年在山崖书院迁移",
         "time": null,
         "location": "山崖书院",
         "participants": [
           "崔东山",
+          "白衣少年",
           "谢谢"
         ],
         "description": "东华山山崖书院，正式改名为崔东山的白衣少年，离开山巅后，懒洋洋走向自己学舍，他单独拥有一座僻静小院落，如今他这位打架打出来的崔家老祖宗，少女谢谢，或者说卢氏王朝的天才修士谢灵越，就成了他名正言顺的门下弟子，一同搬来院子，伺候起居。 崔东山走入院子，潇洒一拂袖，石桌上多出一副棋盘和两盒棋子，棋盘上早有落子，棋至中盘，黑白棋子犬牙交错，局势复杂。 崔东山站着捻起一枚白色棋子，沉吟不语，举棋不落。",
         "background": "",
-        "significance": "在山崖书院推动崔东山与谢谢之间的迁移线。",
+        "significance": "在山崖书院推动崔东山与白衣少年之间的迁移线。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段13",
         "sentence_indexes_in_segment": [
@@ -989,12 +1021,32 @@
           "崔东山"
         ],
         "to_roles": [
+          "白衣少年"
+        ],
+        "action": "师承",
+        "context": "东华山山崖书院，正式改名为崔东山的白衣少年，离开山巅后，懒洋洋走向自己学舍，他单独拥有一座僻静小院落，如今他这位打架打出来的崔家老祖宗，少女谢谢，或者说卢氏王朝的天才修士谢灵越，就成了他名正言顺的门下弟子，一同搬来院子，伺候起居。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山与白衣少年在山崖书院迁移",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 170,
+        "segment_index": 13
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
           "谢谢"
         ],
         "action": "师承",
         "context": "东华山山崖书院，正式改名为崔东山的白衣少年，离开山巅后，懒洋洋走向自己学舍，他单独拥有一座僻静小院落，如今他这位打架打出来的崔家老祖宗，少女谢谢，或者说卢氏王朝的天才修士谢灵越，就成了他名正言顺的门下弟子，一同搬来院子，伺候起居。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山与谢谢在山崖书院迁移",
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山与白衣少年在山崖书院迁移",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1004,7 +1056,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.718563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1118,7 +1170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.899242",
+    "extracted_at": "2026-03-25T17:27:37.718563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1218,7 +1270,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.718563",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1281,7 +1333,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.719567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1314,20 +1366,34 @@
         ],
         "juan_index": 170,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "屋内那白衣少年已经笑得满地打滚。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山剧情推进",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 崔东山与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山"
+          "崔东山",
+          "白衣少年"
         ],
-        "description": "感知到少女的异样气机波动，崔东山在屋内哈哈大笑，笑得赶紧捂住肚子，一边擦拭眼泪一边大声道：“就凭你也想当我的师娘？ ” 少女默然离去，来到院子坐在石凳上，看着那副棋局，她突然眼前一亮，像是为自己找出一条生路。",
+        "description": "感知到少女的异样气机波动，崔东山在屋内哈哈大笑，笑得赶紧捂住肚子，一边擦拭眼泪一边大声道：“就凭你也想当我的师娘？ 屋内那白衣少年已经笑得满地打滚。 ”",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键剧情推进节点。",
+        "significance": "推动崔东山与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段17",
         "sentence_indexes_in_segment": [
@@ -1343,7 +1409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.719567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1405,7 +1471,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.719567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1467,7 +1533,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.719567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1529,7 +1595,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.719567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1591,7 +1657,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.719567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1653,7 +1719,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.900246",
+    "extracted_at": "2026-03-25T17:27:37.720571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1716,7 +1782,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.901249",
+    "extracted_at": "2026-03-25T17:27:37.720571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1777,7 +1843,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.901249",
+    "extracted_at": "2026-03-25T17:27:37.720571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1797,7 +1863,21 @@
       "大隋皇帝笑道：“那就劳烦茅老走一趟，寡人在养心斋等着。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬大步走近，劝说道：“陛下，我去更妥当些，那人是我们书院一个孩子的父亲，是听说他儿子给人欺负得惨了，这才气不过，要来皇宫跟陛下讲讲道理。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 170,
+        "segment_index": 28
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1816,13 +1896,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 宝瓶洲对话",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "陛下之前不愿意见，现在人家给逼得破境，成为宝瓶洲第三位武道止境大宗师，气势正值巅峰，可就未必愿意收手了。 ” 茅小冬大步走近，劝说道：“陛下，我去更妥当些，那人是我们书院一个孩子的父亲，是听说他儿子给人欺负得惨了，这才气不过，要来皇宫跟陛下讲讲道理。",
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "茅小冬大步走近，劝说道：“陛下，我去更妥当些，那人是我们书院一个孩子的父亲，是听说他儿子给人欺负得惨了，这才气不过，要来皇宫跟陛下讲讲道理。 陛下之前不愿意见，现在人家给逼得破境，成为宝瓶洲第三位武道止境大宗师，气势正值巅峰，可就未必愿意收手了。 ”",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
+        "significance": "对应茅小冬在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段28",
         "sentence_indexes_in_segment": [
@@ -1838,7 +1920,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.901249",
+    "extracted_at": "2026-03-25T17:27:37.720571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1859,6 +1941,19 @@
       "一起走入养心斋，屋内只有四人，各自坐下，大隋皇帝，说书先生，山崖书院副山主，李槐他爹李二。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬笑容古怪道：“陛下，他叫李二，是咱们山崖书院学生李槐的父亲，他执意要步行前来面见陛下，说是在别人家里飞来飞去，不是跟人讲道理该有的态度。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 170,
+        "segment_index": 31
+      },
       {
         "entity_type": "person",
         "name": "李二",
@@ -1897,6 +1992,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "李二",
           "李槐"
         ],
@@ -1958,7 +2054,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.901249",
+    "extracted_at": "2026-03-25T17:27:37.720571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2021,7 +2117,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.901249",
+    "extracted_at": "2026-03-25T17:27:37.721574",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "170-33-0": {
+    "juan_index": 170,
+    "segment_index": 33,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十章 喝好酒的大宗师",
+    "source_sentences": [
+      "实在不行，去京城外也行。",
+      "”",
+      "茅小冬忍住笑意，差点没幸灾乐祸地笑出声。",
+      "说书先生瞪了他一眼，茅小冬回了个白眼。",
+      "大隋皇帝有些目瞪口呆，轻声问道：“还要再打一场才行？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬忍住笑意，差点没幸灾乐祸地笑出声。 说书先生瞪了他一眼，茅小冬回了个白眼。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 170,
+        "segment_index": 33
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "茅小冬忍住笑意，差点没幸灾乐祸地笑出声。 说书先生瞪了他一眼，茅小冬回了个白眼。 实在不行，去京城外也行。",
+        "background": "",
+        "significance": "对应茅小冬在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段33",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 33
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.721574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2100,7 +2259,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "extracted_at": "2026-03-25T17:27:37.721574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2162,7 +2321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "extracted_at": "2026-03-25T17:27:37.721574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2284,7 +2443,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "extracted_at": "2026-03-25T17:27:37.721574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2331,6 +2490,19 @@
         ],
         "juan_index": 170,
         "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬微笑不语。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 170,
+        "segment_index": 37
       }
     ],
     "locations": [],
@@ -2343,7 +2515,7 @@
           "李二",
           "李槐"
         ],
-        "description": "李二赶紧摆手道：“我可不是什么先生，茅老才是，书院里传授李槐学问的两个夫子，还主动跟咱们家一家四口人聊了大半天，也能算是真正的先生，对谁都客客气气的，那才是读书人。 说书先生听到这里，终于开口笑道：“这次算是不打不相识，李槐有你这么个讲道理的爹，以及李槐能够在大隋京城求学，都是我们大隋的幸事，好事啊。 ”",
+        "description": "李二赶紧摆手道：“我可不是什么先生，茅老才是，书院里传授李槐学问的两个夫子，还主动跟咱们家一家四口人聊了大半天，也能算是真正的先生，对谁都客客气气的，那才是读书人。 茅小冬微笑不语。 说书先生听到这里，终于开口笑道：“这次算是不打不相识，李槐有你这么个讲道理的爹，以及李槐能够在大隋京城求学，都是我们大隋的幸事，好事啊。",
         "background": "",
         "significance": "推动李二与李槐之间的对话关系。",
         "related_action_indices": [
@@ -2384,7 +2556,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "extracted_at": "2026-03-25T17:27:37.721574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2418,21 +2590,38 @@
         ],
         "juan_index": 170,
         "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "大隋皇帝给茅小冬使了个颜色，然后起身道：“寡人这就去让人传话。 茅小冬跟随其后，离开养心斋，留下李二和说书先生。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 38
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二迁移",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李二迁移",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "李二"
         ],
-        "description": "李二瓮声瓮气道：“客气话我不会说，我反正今儿就在这等着，等到那些家族的人出来打过一场。 茅小冬跟随其后，离开养心斋，留下李二和说书先生。 皇帝陛下，事先说好，我得早些回书院，让那些人别故意拖着我，到时候就别怪我一家一户找上门去了。",
+        "description": "李二瓮声瓮气道：“客气话我不会说，我反正今儿就在这等着，等到那些家族的人出来打过一场。 大隋皇帝给茅小冬使了个颜色，然后起身道：“寡人这就去让人传话。 茅小冬跟随其后，离开养心斋，留下李二和说书先生。",
         "background": "",
-        "significance": "对应李二在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与李二之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段38",
         "sentence_indexes_in_segment": [
           0,
@@ -2446,8 +2635,29 @@
         "segment_index": 38
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "同行",
+        "context": "茅小冬跟随其后，离开养心斋，留下李二和说书先生。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李二迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 38
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.722577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2468,6 +2678,19 @@
       "大隋皇帝停下脚步，恼羞成怒道：“茅老，你说实话，是不是就在等今天看寡人的笑话？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬笑道：“很简单啊，让那些家族的话事人，不管能打的还是不能打的……好吧，其实在李二跟前，就没一个能打的，全部一股脑进宫，然后站着不动，就那么杵在那李二跟前，只低头认错，摆出一副挨打不还手的可怜架势，这事情就算一笔揭过了。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 170,
+        "segment_index": 39
+      },
       {
         "entity_type": "person",
         "name": "李二",
@@ -2491,12 +2714,15 @@
         "location": null,
         "participants": [
           "李二",
-          "陈平安"
+          "陈平安",
+          "茅小冬"
         ],
         "description": "茅小冬笑道：“很简单啊，让那些家族的话事人，不管能打的还是不能打的……好吧，其实在李二跟前，就没一个能打的，全部一股脑进宫，然后站着不动，就那么杵在那李二跟前，只低头认错，摆出一副挨打不还手的可怜架势，这事情就算一笔揭过了。 陛下放一百个心，李二那么憨厚淳朴的性子，肯定不会出手的。 大隋皇帝有些愁容，和高大老人并肩走在廊道，“茅老何以教我？",
         "background": "",
         "significance": "强化小镇长辈线对陈平安成长的托底作用。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段39",
         "sentence_indexes_in_segment": [
           0,
@@ -2510,8 +2736,29 @@
         "segment_index": 39
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "对话",
+        "context": "茅小冬笑道：“很简单啊，让那些家族的话事人，不管能打的还是不能打的……好吧，其实在李二跟前，就没一个能打的，全部一股脑进宫，然后站着不动，就那么杵在那李二跟前，只低头认错，摆出一副挨打不还手的可怜架势，这事情就算一笔揭过了。",
+        "result": null,
+        "event_name": "李二出手",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 170,
+        "segment_index": 39
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.722577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2534,6 +2781,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬大笑着摇头道：“实不相瞒，我也不知道李槐有这么个爹，早知道如此，我就早些入宫面圣了，哪里会闹出这么大动静，如今陛下肯定惺惺念念，指不定将来哪天就会迁怒于书院，得不偿失啊。 茅小冬突然收敛玩笑意味，小声提醒道：“陛下，如陛下的长辈所言，眼下虽是折损面子的坏事，但是长远来看，这定然是一桩好事！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "茅小冬大笑着摇头道：“实不相瞒，我也不知道李槐有这么个爹，早知道如此，我就早些入宫面圣了，哪里会闹出这么大动静，如今陛下肯定惺惺念念，指不定将来哪天就会迁怒于书院，得不偿失啊。",
@@ -2549,16 +2810,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李槐对话",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李槐对话",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "李槐"
         ],
-        "description": "茅小冬大笑着摇头道：“实不相瞒，我也不知道李槐有这么个爹，早知道如此，我就早些入宫面圣了，哪里会闹出这么大动静，如今陛下肯定惺惺念念，指不定将来哪天就会迁怒于书院，得不偿失啊。 ” ”",
+        "description": "茅小冬大笑着摇头道：“实不相瞒，我也不知道李槐有这么个爹，早知道如此，我就早些入宫面圣了，哪里会闹出这么大动静，如今陛下肯定惺惺念念，指不定将来哪天就会迁怒于书院，得不偿失啊。 茅小冬突然收敛玩笑意味，小声提醒道：“陛下，如陛下的长辈所言，眼下虽是折损面子的坏事，但是长远来看，这定然是一桩好事！ ”",
         "background": "",
-        "significance": "对应李槐在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与李槐之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段40",
         "sentence_indexes_in_segment": [
           0,
@@ -2572,8 +2836,34 @@
         "segment_index": 40
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "对话",
+        "context": "” 茅小冬大笑着摇头道：“实不相瞒，我也不知道李槐有这么个爹，早知道如此，我就早些入宫面圣了，哪里会闹出这么大动静，如今陛下肯定惺惺念念，指不定将来哪天就会迁怒于书院，得不偿失啊。 ” 大隋皇帝气笑道：“迁怒个屁，寡人敢吗？ ” 茅小冬突然收敛玩笑意味，小声提醒道：“陛下，如陛下的长辈所言，眼下虽是折损面子的坏事，但是长远来看，这定然是一桩好事！",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李槐对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 40
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.722577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2672,7 +2962,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "extracted_at": "2026-03-25T17:27:37.722577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2692,7 +2982,22 @@
       "”",
       "茅小冬沉声道：“陛下要知道一件事，这就是我山崖书院的真正学问所在，何须大隋刻意嘉奖？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬神色肃穆，拒绝道：“不用！ 茅小冬沉声道：“陛下要知道一件事，这就是我山崖书院的真正学问所在，何须大隋刻意嘉奖？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 42
+      }
+    ],
     "locations": [
       {
         "name": "山崖书院",
@@ -2701,7 +3006,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -2711,13 +3018,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 山崖书院剧情推进",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬在山崖书院剧情推进",
         "time": null,
         "location": "山崖书院",
-        "participants": [],
-        "description": "茅小冬沉声道：“陛下要知道一件事，这就是我山崖书院的真正学问所在，何须大隋刻意嘉奖？ ” 茅小冬神色肃穆，拒绝道：“不用！",
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "茅小冬神色肃穆，拒绝道：“不用！ 茅小冬沉声道：“陛下要知道一件事，这就是我山崖书院的真正学问所在，何须大隋刻意嘉奖？ ”",
         "background": "",
-        "significance": "对应山崖书院相关的关键剧情推进场景。",
+        "significance": "对应茅小冬在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段42",
         "sentence_indexes_in_segment": [
@@ -2733,7 +3042,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.902253",
+    "extracted_at": "2026-03-25T17:27:37.722577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2795,7 +3104,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "extracted_at": "2026-03-25T17:27:37.722577",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2816,6 +3125,21 @@
       "李二叹了口气，“总觉得这些人是不长记性的，我又不能留在书院，以后茅老你多照顾李槐他们。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "高大老人没有躲避，有着十足的僭越嫌疑，就这么堂而皇之接受一位君主的隆重谢礼，肃容道：“茅小冬为山崖书院坦然受之。 李二离开皇宫的时候，跟茅小冬一起走在那条御用廊墙之中，总觉得给身旁老人算计了一把，有些闷闷不乐。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3
+        ],
+        "juan_index": 170,
+        "segment_index": 44
+      },
       {
         "entity_type": "person",
         "name": "李二",
@@ -2853,7 +3177,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -2863,18 +3189,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与李槐在山崖书院对话",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与茅小冬在山崖书院对话",
         "time": null,
         "location": "山崖书院",
         "participants": [
           "李二",
-          "李槐"
+          "茅小冬"
         ],
         "description": "高大老人没有躲避，有着十足的僭越嫌疑，就这么堂而皇之接受一位君主的隆重谢礼，肃容道：“茅小冬为山崖书院坦然受之。 李二离开皇宫的时候，跟茅小冬一起走在那条御用廊墙之中，总觉得给身旁老人算计了一把，有些闷闷不乐。 茅小冬笑道：“认错了就行，你还真要打得他们个个躺着离开皇宫啊，以后你儿子是要在京城书院求学很久的，抬头不见低头见的，如今让他们自认理亏，加上大隋皇帝，都觉得欠了你李二一个天大人情，不挺好？",
         "background": "",
-        "significance": "在山崖书院推动李二与李槐之间的对话线。",
+        "significance": "在山崖书院推动李二与茅小冬之间的对话线。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段44",
         "sentence_indexes_in_segment": [
@@ -2896,27 +3223,42 @@
           "李二"
         ],
         "to_roles": [
-          "李槐"
+          "茅小冬"
         ],
-        "action": "对话",
-        "context": "高大老人没有躲避，有着十足的僭越嫌疑，就这么堂而皇之接受一位君主的隆重谢礼，肃容道：“茅小冬为山崖书院坦然受之。 ” 李二离开皇宫的时候，跟茅小冬一起走在那条御用廊墙之中，总觉得给身旁老人算计了一把，有些闷闷不乐。 茅小冬笑道：“认错了就行，你还真要打得他们个个躺着离开皇宫啊，以后你儿子是要在京城书院求学很久的，抬头不见低头见的，如今让他们自认理亏，加上大隋皇帝，都觉得欠了你李二一个天大人情，不挺好？ ” 李二叹了口气，“总觉得这些人是不长记性的，我又不能留在书院，以后茅老你多照顾李槐他们。",
+        "action": "同行",
+        "context": "李二离开皇宫的时候，跟茅小冬一起走在那条御用廊墙之中，总觉得给身旁老人算计了一把，有些闷闷不乐。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与李槐在山崖书院对话",
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与茅小冬在山崖书院对话",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
+        ],
+        "juan_index": 170,
+        "segment_index": 44
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "对话",
+        "context": "茅小冬笑道：“认错了就行，你还真要打得他们个个躺着离开皇宫啊，以后你儿子是要在京城书院求学很久的，抬头不见低头见的，如今让他们自认理亏，加上大隋皇帝，都觉得欠了你李二一个天大人情，不挺好？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与茅小冬在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 170,
         "segment_index": 44
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "extracted_at": "2026-03-25T17:27:37.723581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2939,6 +3281,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬点头道：“应该的。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 170,
+        "segment_index": 45
+      },
+      {
+        "entity_type": "person",
         "name": "李二",
         "alias": [],
         "original_description_in_book": "一位佝偻老人现身于廊墙之内，点头笑道：“对的，李二你这次主动退让一次，大隋自然就愿意拿出双份的诚意。",
@@ -2954,16 +3309,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二遭遇",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李二遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "李二"
         ],
-        "description": "一位佝偻老人现身于廊墙之内，点头笑道：“对的，李二你这次主动退让一次，大隋自然就愿意拿出双份的诚意。 ” 茅小冬点头道：“应该的。",
+        "description": "茅小冬点头道：“应该的。 一位佝偻老人现身于廊墙之内，点头笑道：“对的，李二你这次主动退让一次，大隋自然就愿意拿出双份的诚意。 ”",
         "background": "",
-        "significance": "对应李二在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与李二之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段45",
         "sentence_indexes_in_segment": [
           0,
@@ -2977,8 +3335,34 @@
         "segment_index": 45
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "李二"
+        ],
+        "action": "对话",
+        "context": "” 茅小冬点头道：“应该的。 再说了，不是还有那个弋阳郡高氏老祖嘛，对吧？ ” 一位佝偻老人现身于廊墙之内，点头笑道：“对的，李二你这次主动退让一次，大隋自然就愿意拿出双份的诚意。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李二遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 45
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.723581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3015,6 +3399,19 @@
       },
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬笑问道：“李二，你在骊珠洞天就是九境武人了，怎么还活得那么窘迫寒酸？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 170,
+        "segment_index": 46
+      },
+      {
+        "entity_type": "person",
         "name": "宋长镜",
         "alias": [],
         "original_description_in_book": "如今更是十境武人了，整个东宝瓶洲的武道前三甲，而且战力肯定还要在宋长镜前头。",
@@ -3036,6 +3433,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "李二"
         ],
         "sentence_indexes_in_segment": [
@@ -3063,16 +3461,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与宋长镜在骊珠洞天对话",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李二在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "李二",
-          "宋长镜"
+          "茅小冬",
+          "李二"
         ],
         "description": "李二点点头，“希望如此吧。 茅小冬笑问道：“李二，你在骊珠洞天就是九境武人了，怎么还活得那么窘迫寒酸？ 如今更是十境武人了，整个东宝瓶洲的武道前三甲，而且战力肯定还要在宋长镜前头。",
         "background": "",
-        "significance": "在骊珠洞天推动李二与宋长镜之间的对话线。",
+        "significance": "在骊珠洞天推动茅小冬与李二之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -3093,30 +3491,25 @@
       {
         "time": null,
         "from_roles": [
-          "李二"
+          "茅小冬"
         ],
         "to_roles": [
-          "宋长镜"
+          "李二"
         ],
         "action": "对话",
-        "context": "李二点点头，“希望如此吧。 ” 茅小冬笑问道：“李二，你在骊珠洞天就是九境武人了，怎么还活得那么窘迫寒酸？ 如今更是十境武人了，整个东宝瓶洲的武道前三甲，而且战力肯定还要在宋长镜前头。 就没想着告诉家里人，好歹让他们过上好日子嘛。 ”",
+        "context": "茅小冬笑问道：“李二，你在骊珠洞天就是九境武人了，怎么还活得那么窘迫寒酸？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 李二与宋长镜在骊珠洞天对话",
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 茅小冬与李二在骊珠洞天对话",
         "location": "骊珠洞天",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 170,
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "extracted_at": "2026-03-25T17:27:37.723581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3176,6 +3569,19 @@
         ],
         "juan_index": 170,
         "segment_index": 47
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬打趣道：“万一你媳妇子女觉得是呢？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 170,
+        "segment_index": 47
       }
     ],
     "locations": [
@@ -3207,7 +3613,7 @@
           "李二",
           "李柳"
         ],
-        "description": "李二摇头道：“哦，给我媳妇穿上花衣服，穿金戴银，让李柳有一大堆胭脂水粉，李槐每天大鱼大肉，就真是对他们好？ 李二仍是摇头：“有人让我不许那么做，这是一方面，二来我自己也是这么觉得，以前在小镇上，就我媳妇他家那些的亲戚，那还不得坏事做尽。 我觉得不是。",
+        "description": "李二摇头道：“哦，给我媳妇穿上花衣服，穿金戴银，让李柳有一大堆胭脂水粉，李槐每天大鱼大肉，就真是对他们好？ 茅小冬打趣道：“万一你媳妇子女觉得是呢？ 李二仍是摇头：“有人让我不许那么做，这是一方面，二来我自己也是这么觉得，以前在小镇上，就我媳妇他家那些的亲戚，那还不得坏事做尽。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -3225,7 +3631,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "extracted_at": "2026-03-25T17:27:37.723581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3321,7 +3727,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "extracted_at": "2026-03-25T17:27:37.723581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3357,6 +3763,19 @@
         ],
         "juan_index": 170,
         "segment_index": 50
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬感叹道：“李二算是活明白了的，很多聪明人远远不如他。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 170,
+        "segment_index": 50
       }
     ],
     "locations": [],
@@ -3367,12 +3786,15 @@
         "location": null,
         "participants": [
           "李二",
-          "陈平安"
+          "陈平安",
+          "茅小冬"
         ],
         "description": "我哪怕真的是个窝囊废，可如今在我儿子心里，我李二已经是个还不错的爹，没给他丢人现眼，你们知道我李二知道这个后，有多开心吗？ 李二一想到这里，就告辞一声，一闪而逝，火烧屁股地赶往东华山书院。 除了想念那娘仨，再就是一件关于儿子的事情，他李二如今可以出手了。",
         "background": "",
         "significance": "强化小镇长辈线对陈平安成长的托底作用。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段50",
         "sentence_indexes_in_segment": [
           0,
@@ -3386,8 +3808,34 @@
         "segment_index": 50
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.903256",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李二"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "我哪怕真的是个窝囊废，可如今在我儿子心里，我李二已经是个还不错的爹，没给他丢人现眼，你们知道我李二知道这个后，有多开心吗？ 李二一想到这里，就告辞一声，一闪而逝，火烧屁股地赶往东华山书院。 除了想念那娘仨，再就是一件关于儿子的事情，他李二如今可以出手了。 茅小冬感叹道：“李二算是活明白了的，很多聪明人远远不如他。 ” 说书先生笑道：“甲子之前的十境武夫，怎么可能真是蠢人？",
+        "result": null,
+        "event_name": "李二出手",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 50
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.724584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3422,6 +3870,19 @@
         ],
         "juan_index": 170,
         "segment_index": 51
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬点头道：“宋长镜的武道心性之好，比年纪轻轻还要可怕。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 170,
+        "segment_index": 51
       }
     ],
     "locations": [
@@ -3447,16 +3908,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 宋长镜在大骊对话",
+        "name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 宋长镜与茅小冬在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "宋长镜"
+          "宋长镜",
+          "茅小冬"
         ],
         "description": "不过这位佝偻老人唏嘘道：“不过就目前看来，还是三人之中战力最弱的大骊藩王宋长镜，最有希望达到那个境界，不单单是宋长镜年纪最轻这么简单。 茅小冬点头道：“宋长镜的武道心性之好，比年纪轻轻还要可怕。 佝偻老人笑问道：“你是说那人以绝对碾压的姿态，出现在大骊皇宫后，宋长镜敢于誓死不退吧？",
         "background": "",
-        "significance": "对应宋长镜在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动宋长镜与茅小冬之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 段51",
         "sentence_indexes_in_segment": [
           0,
@@ -3470,8 +3934,34 @@
         "segment_index": 51
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋长镜"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "” 不过这位佝偻老人唏嘘道：“不过就目前看来，还是三人之中战力最弱的大骊藩王宋长镜，最有希望达到那个境界，不单单是宋长镜年纪最轻这么简单。 ” 茅小冬点头道：“宋长镜的武道心性之好，比年纪轻轻还要可怕。 ” 佝偻老人笑问道：“你是说那人以绝对碾压的姿态，出现在大骊皇宫后，宋长镜敢于誓死不退吧？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十章 喝好酒的大宗师 · 宋长镜与茅小冬在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 170,
+        "segment_index": 51
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.724584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3492,6 +3982,19 @@
       "两手空空的李二走到门口，才记起忘了买点东西，因为有林守一在场，妇人只是丢了个等下再跟你算账的眼神，李二搓着手坐下后，发现还有一坛酒，李二看了眼林守一，问道：“要不一起喝点？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬笑着反问，“你是想问大骊的白玉楼，到底是真是假吧？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 170,
+        "segment_index": 52
+      },
       {
         "entity_type": "person",
         "name": "李二",
@@ -3557,7 +4060,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -3617,7 +4122,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "extracted_at": "2026-03-25T17:27:37.724584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3721,7 +4226,7 @@
         "segment_index": 53
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "extracted_at": "2026-03-25T17:27:37.724584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3826,7 +4331,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "extracted_at": "2026-03-25T17:27:37.724584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3926,7 +4431,7 @@
         "segment_index": 55
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "extracted_at": "2026-03-25T17:27:37.724584",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3988,7 +4493,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "extracted_at": "2026-03-25T17:27:37.725588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4095,7 +4600,7 @@
         "segment_index": 58
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.904260",
+    "extracted_at": "2026-03-25T17:27:37.725588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4199,7 +4704,7 @@
         "segment_index": 59
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "extracted_at": "2026-03-25T17:27:37.725588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

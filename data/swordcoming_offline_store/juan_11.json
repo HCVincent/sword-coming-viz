@@ -72,7 +72,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.292653",
+    "extracted_at": "2026-03-25T17:27:36.960855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -122,6 +122,19 @@
         ],
         "juan_index": 11,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "中年儒士",
+        "alias": [],
+        "original_description_in_book": "中年儒士看着弟子如临大敌的拘谨模样，会心一笑，拍了拍少年的肩头，“只是随口一问而已，不必紧张。",
+        "description": "书院相关稳定称谓人物，可补足儒家侧面人物层次。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 2
       }
     ],
     "locations": [],
@@ -133,14 +146,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "中年儒士"
         ],
-        "description": "齐先生问道：“不必谦让？ 青衫少年郎相貌清逸，而且比起宋集薪的咄咄逼人、锋芒毕露，气质要更为温润内敛，就像是初发芙蓉，自然可爱。 修改成‘不可’，又如何？",
+        "description": "齐先生问道：“不必谦让？ 青衫少年郎相貌清逸，而且比起宋集薪的咄咄逼人、锋芒毕露，气质要更为温润内敛，就像是初发芙蓉，自然可爱。 中年儒士看着弟子如临大敌的拘谨模样，会心一笑，拍了拍少年的肩头，“只是随口一问而已，不必紧张。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -154,34 +166,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "齐静春"
-        ],
-        "to_roles": [
-          "宋集薪"
-        ],
-        "action": "对话",
-        "context": "齐先生问道：“不必谦让？ 修改成‘不可’，又如何？ ” 青衫少年郎相貌清逸，而且比起宋集薪的咄咄逼人、锋芒毕露，气质要更为温润内敛，就像是初发芙蓉，自然可爱。 当先生问出这个暗藏玄机的问题后，少年不敢掉以轻心，小心斟酌，觉得是先生在考究自己的学问，岂敢随意？ 中年儒士看着弟子如临大敌的拘谨模样，会心一笑，拍了拍少年的肩头，“只是随口一问而已，不必紧张。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 11,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.292653",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:36.960855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -245,7 +231,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.292653",
+    "extracted_at": "2026-03-25T17:27:36.960855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -371,7 +357,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.292653",
+    "extracted_at": "2026-03-25T17:27:36.960855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -482,7 +468,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.292653",
+    "extracted_at": "2026-03-25T17:27:36.960855",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -577,7 +563,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.292653",
+    "extracted_at": "2026-03-25T17:27:36.961858",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -685,7 +671,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.961858",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -748,7 +734,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.961858",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -827,7 +813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.961858",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -945,7 +931,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.961858",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1009,7 +995,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.961858",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1105,7 +1091,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1167,7 +1153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1229,7 +1215,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.293656",
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1291,7 +1277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.294660",
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1356,7 +1342,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.294660",
+    "extracted_at": "2026-03-25T17:27:36.962861",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "11-18-0": {
+    "juan_index": 11,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第十一章 少女和飞剑",
+    "source_sentences": [
+      "少年欲言又止。",
+      "中年儒士笑道：“当然了，如果只是偷偷喜欢谁，道祖佛陀也拦不住。",
+      "便是我们条条框框最多的读书人，咱们那位至圣先师，也不过告诫‘非礼勿言、视、听、动’而已，没有说过非礼勿思。",
+      "”",
+      "少年这一刻突然像是鬼迷心窍，大声脱口而出道：“她很香啊！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "中年儒士",
+        "alias": [],
+        "original_description_in_book": "中年儒士笑道：“当然了，如果只是偷偷喜欢谁，道祖佛陀也拦不住。",
+        "description": "书院相关稳定称谓人物，可补足儒家侧面人物层次。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 11,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第十一章 少女和飞剑 · 中年儒士对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "中年儒士"
+        ],
+        "description": "中年儒士笑道：“当然了，如果只是偷偷喜欢谁，道祖佛陀也拦不住。 少年欲言又止。 便是我们条条框框最多的读书人，咱们那位至圣先师，也不过告诫‘非礼勿言、视、听、动’而已，没有说过非礼勿思。",
+        "background": "",
+        "significance": "对应中年儒士在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 11,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1418,7 +1466,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.294660",
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1482,7 +1530,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.294660",
+    "extracted_at": "2026-03-25T17:27:36.962861",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1547,7 +1595,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.964869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1612,7 +1660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.964869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1676,7 +1724,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.964869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1725,6 +1773,19 @@
         ],
         "juan_index": 11,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "中年儒士",
+        "alias": [],
+        "original_description_in_book": "亲自将赵繇一路从学塾送到福禄街赵家大宅，中年儒士缓缓而行，每当他迈出一步，大街两侧庭院森森的高门大宅，有些隐蔽地方，便会有些不易察觉的流光溢彩，一闪而逝。",
+        "description": "书院相关稳定称谓人物，可补足儒家侧面人物层次。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 11,
+        "segment_index": 33
       }
     ],
     "locations": [
@@ -1736,7 +1797,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "赵繇"
+          "赵繇",
+          "中年儒士"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -1753,14 +1815,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "赵繇"
+          "赵繇",
+          "中年儒士"
         ],
         "description": "齐静春有些无奈，挥了挥袖，将那柄剑钉入一根牌坊石柱高处，若是有人强行拔走，必然会惊扰到坐镇中枢的自己，就像之前“说书先生”一明一暗，两次出手，都没有逃过这位学塾先生的遥遥关注。 亲自将赵繇一路从学塾送到福禄街赵家大宅，中年儒士缓缓而行，每当他迈出一步，大街两侧庭院森森的高门大宅，有些隐蔽地方，便会有些不易察觉的流光溢彩，一闪而逝。 齐静春呢喃道：“奇了怪哉，哪里来的小丫头？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第十一章 少女和飞剑 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -1774,34 +1835,8 @@
         "segment_index": 33
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "齐静春"
-        ],
-        "to_roles": [
-          "赵繇"
-        ],
-        "action": "冲突",
-        "context": "仍是不愿带上那把剑。 齐静春有些无奈，挥了挥袖，将那柄剑钉入一根牌坊石柱高处，若是有人强行拔走，必然会惊扰到坐镇中枢的自己，就像之前“说书先生”一明一暗，两次出手，都没有逃过这位学塾先生的遥遥关注。 亲自将赵繇一路从学塾送到福禄街赵家大宅，中年儒士缓缓而行，每当他迈出一步，大街两侧庭院森森的高门大宅，有些隐蔽地方，便会有些不易察觉的流光溢彩，一闪而逝。 齐静春呢喃道：“奇了怪哉，哪里来的小丫头？ 莫不是本洲之外的仙家子弟？ ”",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "福禄街",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 11,
-        "segment_index": 33
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:36.964869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1865,7 +1900,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.964869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1960,7 +1995,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.964869",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2040,7 +2075,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.965872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2120,7 +2155,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.965872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2184,7 +2219,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.295663",
+    "extracted_at": "2026-03-25T17:27:36.965872",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

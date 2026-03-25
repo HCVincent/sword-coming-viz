@@ -58,7 +58,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.622242",
+    "extracted_at": "2026-03-25T17:27:37.372522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -189,7 +189,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "extracted_at": "2026-03-25T17:27:37.372522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -319,7 +319,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "extracted_at": "2026-03-25T17:27:37.372522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -354,6 +354,19 @@
         ],
         "juan_index": 98,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "等到朱河低头后，老翁与他对视片刻，悻悻然收回手，退后数步，沙哑开口：“晓不晓得东宝瓶洲大雅言？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 98,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -365,7 +378,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "朱河"
+          "朱河",
+          "沙哑"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -392,16 +406,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十八章 山神作祟 · 朱河在宝瓶洲剧情推进",
+        "name": "第二卷山水郎 第九十八章 山神作祟 · 朱河与沙哑在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "朱河"
+          "朱河",
+          "沙哑"
         ],
         "description": "等到朱河低头后，老翁与他对视片刻，悻悻然收回手，退后数步，沙哑开口：“晓不晓得东宝瓶洲大雅言？ 朱河怔怔点头。 老翁又问：“那么大骊官话呢？",
         "background": "",
-        "significance": "对应朱河在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动朱河与沙哑之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十八章 山神作祟 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -415,8 +432,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "朱河"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "对话",
+        "context": "等到朱河低头后，老翁与他对视片刻，悻悻然收回手，退后数步，沙哑开口：“晓不晓得东宝瓶洲大雅言？",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十八章 山神作祟 · 朱河与沙哑在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 98,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.373526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -498,7 +536,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "extracted_at": "2026-03-25T17:27:37.373526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -560,7 +598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "extracted_at": "2026-03-25T17:27:37.373526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -623,7 +661,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "extracted_at": "2026-03-25T17:27:37.373526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -685,7 +723,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.623246",
+    "extracted_at": "2026-03-25T17:27:37.373526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -786,7 +824,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.624249",
+    "extracted_at": "2026-03-25T17:27:37.374529",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -892,7 +930,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.624249",
+    "extracted_at": "2026-03-25T17:27:37.374636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -998,7 +1036,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.624249",
+    "extracted_at": "2026-03-25T17:27:37.374636",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1063,7 +1101,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.624249",
+    "extracted_at": "2026-03-25T17:27:37.375150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1141,7 +1179,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.624249",
+    "extracted_at": "2026-03-25T17:27:37.375150",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

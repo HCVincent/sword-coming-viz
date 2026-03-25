@@ -27,6 +27,20 @@
         ],
         "juan_index": 210,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "陈平安顶着贵客的头衔，却不是什么金贵娇气的人物，所以不需要两位婢女真正如何伺候，少女秋实便把心思放在了外边，每天就像是个消息灵通的耳报神，说着鲲船上近期发生的奇人趣事，至于陈平安爱不爱听，她可不管，反正来自大骊的寒酸少年是个好说话的。 秋实说起这些，滔滔不绝，添油加醋，比说书先生还精彩，只是陈平安也就是听过就算。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -40,7 +54,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -52,16 +67,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安在大骊遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实在大骊遭遇",
         "time": null,
         "location": "大骊",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "description": "陈平安顶着贵客的头衔，却不是什么金贵娇气的人物，所以不需要两位婢女真正如何伺候，少女秋实便把心思放在了外边，每天就像是个消息灵通的耳报神，说着鲲船上近期发生的奇人趣事，至于陈平安爱不爱听，她可不管，反正来自大骊的寒酸少年是个好说话的。 在刘大麻子开的兵器铺子那边，遇上了两拨一掷千金的豪客，看上了同一把灵器，因为怄气，较劲上了，价格一路攀升，最后是从大骊梧桐山渡口登船的那个家伙，出手更加阔绰，原本要价八千雪花玉的一杆方天画戟，硬是花了将近两万雪花玉，这让少女既羡慕又心疼，哪有这么大手大脚花钱的，真当钱是大风刮来的呀。 秋实说起这些，滔滔不绝，添油加醋，比说书先生还精彩，只是陈平安也就是听过就算。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动陈平安与秋实之间的遭遇线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -75,8 +93,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "秋实"
+        ],
+        "action": "对话",
+        "context": "陈平安顶着贵客的头衔，却不是什么金贵娇气的人物，所以不需要两位婢女真正如何伺候，少女秋实便把心思放在了外边，每天就像是个消息灵通的耳报神，说着鲲船上近期发生的奇人趣事，至于陈平安爱不爱听，她可不管，反正来自大骊的寒酸少年是个好说话的。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实在大骊遭遇",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 210,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.958393",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -186,7 +225,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "extracted_at": "2026-03-25T17:27:37.958393",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -250,7 +289,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "extracted_at": "2026-03-25T17:27:37.958393",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -281,6 +320,20 @@
         "sentence_indexes_in_segment": [
           1,
           2
+        ],
+        "juan_index": 210,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "陈平安听说鲲船有一座专门以飞剑传讯的“信铺”，功用类似人间驿站，就写了两封信，托付秋实去寄，因为信中所写并无秘事，最要还是跟人报一声平安，说一些从秋实那边听来的奇奇怪怪，哪怕给人看去都无所谓，只是信铺的价格实在昂贵，一封寄往大骊龙泉县的信件，要收取山上神仙专用的十文雪花玉钱，寄去大隋山崖书院的信件，更贵，得二十文，吓得陈平安只好放弃人手一封信的念头，大骊收信人为魏檗，大隋书院收信人则是李宝瓶，让两人帮着传话。 秋实刚刚返回书房，靠在门槛那边，嬉笑道：“不是没有傻乎乎的野路子练气士，好不容易刚学会了凌空飞行，刚想着天高任鸟飞呢，结果一头撞进去，就给噼里啪啦撞了个鼻青脸肿，这还算运气好的，运气背的，被刺穿眼珠子、脖颈，从高空摔落下去，当场毙命，变成一滩烂泥，可怜真可怜。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          5
         ],
         "juan_index": 210,
         "segment_index": 4
@@ -326,6 +379,7 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
+          "秋实",
           "魏檗",
           "李宝瓶"
         ],
@@ -347,6 +401,7 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
+          "秋实",
           "魏檗",
           "李宝瓶"
         ],
@@ -365,6 +420,7 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
+          "秋实",
           "魏檗",
           "李宝瓶"
         ],
@@ -383,10 +439,10 @@
         "participants": [
           "李二",
           "陈平安",
-          "魏檗",
-          "李宝瓶"
+          "秋实",
+          "魏檗"
         ],
-        "description": "陈平安听说鲲船有一座专门以飞剑传讯的“信铺”，功用类似人间驿站，就写了两封信，托付秋实去寄，因为信中所写并无秘事，最要还是跟人报一声平安，说一些从秋实那边听来的奇奇怪怪，哪怕给人看去都无所谓，只是信铺的价格实在昂贵，一封寄往大骊龙泉县的信件，要收取山上神仙专用的十文雪花玉钱，寄去大隋山崖书院的信件，更贵，得二十文，吓得陈平安只好放弃人手一封信的念头，大骊收信人为魏檗，大隋书院收信人则是李宝瓶，让两人帮着传话。 陈平安站在观景台上，在春水的指点之下，发现靠近围栏的一座独栋小楼，时不时会有精光一闪，星星点点，不易察觉，春水笑着耐心解释道：“鼠有鼠路，鸟有鸟道，飞剑传信亦是如此。 更有乘坐青鸾的大练气士，掠空速度远胜鲲船，一闪而逝，一身宝光流转。",
+        "description": "陈平安听说鲲船有一座专门以飞剑传讯的“信铺”，功用类似人间驿站，就写了两封信，托付秋实去寄，因为信中所写并无秘事，最要还是跟人报一声平安，说一些从秋实那边听来的奇奇怪怪，哪怕给人看去都无所谓，只是信铺的价格实在昂贵，一封寄往大骊龙泉县的信件，要收取山上神仙专用的十文雪花玉钱，寄去大隋山崖书院的信件，更贵，得二十文，吓得陈平安只好放弃人手一封信的念头，大骊收信人为魏檗，大隋书院收信人则是李宝瓶，让两人帮着传话。 陈平安站在观景台上，在春水的指点之下，发现靠近围栏的一座独栋小楼，时不时会有精光一闪，星星点点，不易察觉，春水笑着耐心解释道：“鼠有鼠路，鸟有鸟道，飞剑传信亦是如此。 秋实刚刚返回书房，靠在门槛那边，嬉笑道：“不是没有傻乎乎的野路子练气士，好不容易刚学会了凌空飞行，刚想着天高任鸟飞呢，结果一头撞进去，就给噼里啪啦撞了个鼻青脸肿，这还算运气好的，运气背的，被刺穿眼珠子、脖颈，从高空摔落下去，当场毙命，变成一滩烂泥，可怜真可怜。",
         "background": "",
         "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [],
@@ -404,7 +460,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "extracted_at": "2026-03-25T17:27:37.958393",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -437,21 +493,38 @@
         ],
         "juan_index": 210,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "秋实点头道：“当然有啊，练气士里头脑子拎不清的家伙，多了去了，只不过飞剑这条羊肠小道，被俗称为‘云纹小径’，专门有云纹修士盯着这一块，就指望着靠这个发财呢，巴不得有傻子来做剪径蟊贼，几把寄信飞剑值不了几个钱，但是一旦抓到蟊贼，就可以强行索要一笔天价赔偿，蟊贼是穷光蛋的话，就跟他挂名的世俗王朝讨要，若是不曾记录在档案的野修，又身无分文，那就没法子啦，只能认栽，反正损失也不大。 说到这里，秋实一脸羡慕道：“那位掌管云纹小径的练气士，个个肥的流油！",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
-        "description": "陈平安问了一个很门外汉的问题，“世上就没有人吃饱了撑着，去拦截传讯飞剑吗？ ” ”",
+        "description": "陈平安问了一个很门外汉的问题，“世上就没有人吃饱了撑着，去拦截传讯飞剑吗？ 秋实点头道：“当然有啊，练气士里头脑子拎不清的家伙，多了去了，只不过飞剑这条羊肠小道，被俗称为‘云纹小径’，专门有云纹修士盯着这一块，就指望着靠这个发财呢，巴不得有傻子来做剪径蟊贼，几把寄信飞剑值不了几个钱，但是一旦抓到蟊贼，就可以强行索要一笔天价赔偿，蟊贼是穷光蛋的话，就跟他挂名的世俗王朝讨要，若是不曾记录在档案的野修，又身无分文，那就没法子啦，只能认栽，反正损失也不大。 说到这里，秋实一脸羡慕道：“那位掌管云纹小径的练气士，个个肥的流油！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与秋实之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -465,8 +538,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "秋实"
+        ],
+        "action": "冲突",
+        "context": "” 陈平安问了一个很门外汉的问题，“世上就没有人吃饱了撑着，去拦截传讯飞剑吗？ ” 秋实点头道：“当然有啊，练气士里头脑子拎不清的家伙，多了去了，只不过飞剑这条羊肠小道，被俗称为‘云纹小径’，专门有云纹修士盯着这一块，就指望着靠这个发财呢，巴不得有傻子来做剪径蟊贼，几把寄信飞剑值不了几个钱，但是一旦抓到蟊贼，就可以强行索要一笔天价赔偿，蟊贼是穷光蛋的话，就跟他挂名的世俗王朝讨要，若是不曾记录在档案的野修，又身无分文，那就没法子啦，只能认栽，反正损失也不大。 ” 说到这里，秋实一脸羡慕道：“那位掌管云纹小径的练气士，个个肥的流油！",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.958393",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -500,6 +599,19 @@
         ],
         "juan_index": 210,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "秋实看着一脸认真、仔细倾听的陈平安，心想这么个穷小子，怎么就跟大骊北岳正神攀交了关系？",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -513,6 +625,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "秋实",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -524,16 +637,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安在大骊遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实在大骊遭遇",
         "time": null,
         "location": "大骊",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "description": "陈平安啧啧称奇。 秋实看着一脸认真、仔细倾听的陈平安，心想这么个穷小子，怎么就跟大骊北岳正神攀交了关系？ 这些家伙每次登船远游，最差最差，都会住在中等房屋里头。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动陈平安与秋实之间的遭遇线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -547,8 +663,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "秋实"
+        ],
+        "action": "对话",
+        "context": "这些家伙每次登船远游，最差最差，都会住在中等房屋里头。 ” 春水柔声道：“其实真正传承上千年的仙家门阀，一般也不会使用飞剑传信，世上有很多玄妙秘术，可以让人仿佛面对面闲聊，比如一对子母榆钱，你以术法摩挲之后，再开口说话，搁放在别处的另外一枚榆钱，就会自动颤动发声，对方就听得到。 ” 陈平安啧啧称奇。 秋实看着一脸认真、仔细倾听的陈平安，心想这么个穷小子，怎么就跟大骊北岳正神攀交了关系？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实在大骊遭遇",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.959397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -581,6 +723,19 @@
         ],
         "juan_index": 210,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "好在陈平安穷就是穷，见识短浅就多问问题，从不打肿脸充胖子，反而让天性单纯的秋实觉得这样很好，若是没钱还喜欢摆阔，什么都不懂反而不懂装懂，那才是让人可怜又讨厌。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 210,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -601,15 +756,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安在宝瓶洲遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实在宝瓶洲遭遇",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "description": "好在陈平安穷就是穷，见识短浅就多问问题，从不打肿脸充胖子，反而让天性单纯的秋实觉得这样很好，若是没钱还喜欢摆阔，什么都不懂反而不懂装懂，那才是让人可怜又讨厌。 剑修杀力巨大，自然就多跋扈之辈，跋扈到了什么程度，举一个最简单的例子，婆娑洲位于南方，宝瓶洲位于南方，便俗称为南婆娑、东宝瓶，俱芦洲分明是浩然天下的东北方，却偏偏自称为北俱芦洲，这让正北方位的皑皑洲，便只能是皑皑洲了，愣是丢掉那个北字。 那得踩中多大的一坨狗屎才行啊？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
+        "significance": "在宝瓶洲推动陈平安与秋实之间的遭遇线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段7",
         "sentence_indexes_in_segment": [
@@ -625,7 +781,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "extracted_at": "2026-03-25T17:27:37.959397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -646,6 +802,21 @@
       "陈平安对此没有感到太多惊奇，因为当初那个风雪夜，青衣小童就端出一只水碗，水幕之中，能够清楚看到仙子苏稼的御剑身姿。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "秋实当然更是如此，喜欢说“咱们”北俱芦洲如何如何，你们宝瓶洲怎么不咋的，说到这些的时候，少女满眼放光，神采奕奕，像是一只骄傲的小黄莺。 这让春水都有些喜出望外，秋实更是开心得蹦跳起来，口口声声喊着陈公子，对他作揖致谢。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 210,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -683,7 +854,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "秋实"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -693,19 +866,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与苏稼在宝瓶洲遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 秋实与陈平安在宝瓶洲遭遇",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "秋实",
           "陈平安",
           "苏稼"
         ],
-        "description": "秋实当然更是如此，喜欢说“咱们”北俱芦洲如何如何，你们宝瓶洲怎么不咋的，说到这些的时候，少女满眼放光，神采奕奕，像是一只骄傲的小黄莺。 然后有一天，陈平安终于准备离开这座天字号房。 这让陈平安有些愧疚。",
+        "description": "秋实当然更是如此，喜欢说“咱们”北俱芦洲如何如何，你们宝瓶洲怎么不咋的，说到这些的时候，少女满眼放光，神采奕奕，像是一只骄傲的小黄莺。 然后有一天，陈平安终于准备离开这座天字号房。 这让春水都有些喜出望外，秋实更是开心得蹦跳起来，口口声声喊着陈公子，对他作揖致谢。",
         "background": "",
-        "significance": "在宝瓶洲推动陈平安与苏稼之间的遭遇线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在宝瓶洲推动秋实与陈平安之间的遭遇线。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -719,34 +891,8 @@
         "segment_index": 8
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "苏稼"
-        ],
-        "action": "别离",
-        "context": "秋实当然更是如此，喜欢说“咱们”北俱芦洲如何如何，你们宝瓶洲怎么不咋的，说到这些的时候，少女满眼放光，神采奕奕，像是一只骄傲的小黄莺。 然后有一天，陈平安终于准备离开这座天字号房。 这让春水都有些喜出望外，秋实更是开心得蹦跳起来，口口声声喊着陈公子，对他作揖致谢。 这让陈平安有些愧疚。 原来秋实传来一个大消息，今晚在鲲船船头那边，会拿出一幅打醮山祖传的花鸟条幅，能够远看万里之外的场景。 陈平安对此没有感到太多惊奇，因为当初那个风雪夜，青衣小童就端出一只水碗，水幕之中，能够清楚看到仙子苏稼的御剑身姿。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与苏稼在宝瓶洲遭遇",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 210,
-        "segment_index": 8
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.073344",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.959397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -840,7 +986,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "extracted_at": "2026-03-25T17:27:37.959397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -870,6 +1016,19 @@
         "power": "正阳山",
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 210,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "风雷园那边，则是一位园主嫡传弟子，名声不显，可以说是籍籍无名，甚至还不如那个师弟刘灞桥，但是这种一洲瞩目的巅峰大战，风雷园岂会儿戏？",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 210,
         "segment_index": 10
@@ -908,19 +1067,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 苏稼与陈平安在正阳山遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 苏稼与刘灞桥在正阳山遭遇",
         "time": null,
         "location": "正阳山",
         "participants": [
           "苏稼",
+          "刘灞桥",
           "陈平安"
         ],
-        "description": "而正阳山年轻一辈的出战剑修，正是仙子苏稼，拥有一枚上品养剑葫的修道天才。 陈平安带着她们走下楼，去往船头。 而年纪最长的两派老祖，则是只分生死！",
+        "description": "而正阳山年轻一辈的出战剑修，正是仙子苏稼，拥有一枚上品养剑葫的修道天才。 风雷园那边，则是一位园主嫡传弟子，名声不显，可以说是籍籍无名，甚至还不如那个师弟刘灞桥，但是这种一洲瞩目的巅峰大战，风雷园岂会儿戏？ 陈平安带着她们走下楼，去往船头。",
         "background": "",
-        "significance": "在正阳山推动苏稼与陈平安之间的遭遇线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在正阳山推动苏稼与刘灞桥之间的遭遇线。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -934,34 +1092,8 @@
         "segment_index": 10
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "苏稼"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "师承",
-        "context": "而年纪最长的两派老祖，则是只分生死！ 杀气腾腾。 仿佛还未出剑，就让观战之人嗅到了浓郁的血腥气。 而正阳山年轻一辈的出战剑修，正是仙子苏稼，拥有一枚上品养剑葫的修道天才。 风雷园那边，则是一位园主嫡传弟子，名声不显，可以说是籍籍无名，甚至还不如那个师弟刘灞桥，但是这种一洲瞩目的巅峰大战，风雷园岂会儿戏？ 陈平安带着她们走下楼，去往船头。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 苏稼与陈平安在正阳山遭遇",
-        "location": "正阳山",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 210,
-        "segment_index": 10
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.960400",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1023,7 +1155,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "extracted_at": "2026-03-25T17:27:37.960400",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "210-12-0": {
+    "juan_index": 210,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百一十章 山水相逢也重逢",
+    "source_sentences": [
+      "所以大多数人都搬着椅子凳子，其实跟市井集市的百姓凑热闹看庙会，没啥区别。",
+      "春水秋实年纪不大，却是熟稔此事的，还有领事帮着开路，畅通无阻地到了座位，位置极好。",
+      "使得貌不惊人的草鞋少年，一时间惹来颇多好奇视线。",
+      "难道是个脾气乖张、喜欢装穷的豪阀嫡传？",
+      "要不然你穿那么一双草鞋，是要下地锄草还是下田插秧啊？",
+      "三把紫檀大椅，椅子两两之间有一张案几，放着一小碟名为苦雀舌的俱芦洲特产名茶，不用泉水煮茶，生嚼茶叶即可，入嘴微涩，渐渐发苦，熬到约莫半炷香后，竟是浑然一变，甘甜清洌远胜茶水，所以被笑称为“半炷香茶”。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "春水秋实年纪不大，却是熟稔此事的，还有领事帮着开路，畅通无阻地到了座位，位置极好。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 210,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 秋实遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "秋实"
+        ],
+        "description": "春水秋实年纪不大，却是熟稔此事的，还有领事帮着开路，畅通无阻地到了座位，位置极好。 所以大多数人都搬着椅子凳子，其实跟市井集市的百姓凑热闹看庙会，没啥区别。 使得貌不惊人的草鞋少年，一时间惹来颇多好奇视线。",
+        "background": "",
+        "significance": "对应秋实在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.960400",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1087,7 +1281,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "extracted_at": "2026-03-25T17:27:37.960400",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1120,21 +1314,37 @@
         ],
         "juan_index": 210,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "一位鹤发鸡皮的老妪，是家族的教习嬷嬷，身边跟着一个俏丽丫鬟，气质跟老妪如出一辙，很冷。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 210,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与老妪遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老妪"
         ],
-        "description": "在陈平安正前方，是一大家子，身材极高的妇人，坐在主位上，颧骨高耸，姿色绝对称不上美人，但是气势凌人，习惯性嘴唇抿起，喜欢眯眼观人。 但是无论妇孺老幼，只要是佩剑，就绝不花俏，几乎没有任何多余的装饰，剑鞘没有镶嵌奇珍异宝，更无拖曳一根华美剑穗。 她身边是一位殷勤跑腿的文雅男子，相貌堂堂，面如冠玉，但是只要是跟妇人说话，就满脸笑意，弓背弯腰，不像是什么一家之主，若非屁股底下的座位骗不了人，反倒是更像浪荡贵妇私下豢养的小白脸。",
+        "description": "在陈平安正前方，是一大家子，身材极高的妇人，坐在主位上，颧骨高耸，姿色绝对称不上美人，但是气势凌人，习惯性嘴唇抿起，喜欢眯眼观人。 一位鹤发鸡皮的老妪，是家族的教习嬷嬷，身边跟着一个俏丽丫鬟，气质跟老妪如出一辙，很冷。 但是无论妇孺老幼，只要是佩剑，就绝不花俏，几乎没有任何多余的装饰，剑鞘没有镶嵌奇珍异宝，更无拖曳一根华美剑穗。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老妪之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1148,8 +1358,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "但是无论妇孺老幼，只要是佩剑，就绝不花俏，几乎没有任何多余的装饰，剑鞘没有镶嵌奇珍异宝，更无拖曳一根华美剑穗。 在陈平安正前方，是一大家子，身材极高的妇人，坐在主位上，颧骨高耸，姿色绝对称不上美人，但是气势凌人，习惯性嘴唇抿起，喜欢眯眼观人。 她身边是一位殷勤跑腿的文雅男子，相貌堂堂，面如冠玉，但是只要是跟妇人说话，就满脸笑意，弓背弯腰，不像是什么一家之主，若非屁股底下的座位骗不了人，反倒是更像浪荡贵妇私下豢养的小白脸。 他怀里抱着一个四五岁大的孩子，模样随男人，粉雕玉琢，颇为讨喜，气度则是完全随妇人，就不那么可爱了。 一位鹤发鸡皮的老妪，是家族的教习嬷嬷，身边跟着一个俏丽丫鬟，气质跟老妪如出一辙，很冷。 还有一位身材高大健硕的中年男子，端坐在妇人左手边的椅子上，偶有转头，望向那个殷勤男子，嘴角便渗出一丝讥讽。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与老妪遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.960400",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1182,20 +1418,35 @@
         ],
         "juan_index": 210,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "秋实忍不住直愣愣多看了几眼，很快就被春水拧了一下胳膊，不曾想那名高大男子身体后仰，转过头，皮笑肉不笑地咧咧嘴，露出一口雪白森森的牙齿，吓得秋实赶紧低头，大气都不敢喘。 在男人转回头去后，春水气得狠狠踩了秋实一脚，疼得后者倒抽一口冷气，满脸哀怨望向姐姐。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 210,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 秋实与陈平安遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "秋实",
           "陈平安"
         ],
-        "description": "陈平安借着欣赏那幅画卷的机会，把所有细节收入眼帘。 若是与他对视，男子非但不会遮掩轻视之意，反而堂而皇之地扯开嘴角，而那位一家之主身份的男子，竟然主动点头陪着笑。 秋实忍不住直愣愣多看了几眼，很快就被春水拧了一下胳膊，不曾想那名高大男子身体后仰，转过头，皮笑肉不笑地咧咧嘴，露出一口雪白森森的牙齿，吓得秋实赶紧低头，大气都不敢喘。",
+        "description": "陈平安借着欣赏那幅画卷的机会，把所有细节收入眼帘。 秋实忍不住直愣愣多看了几眼，很快就被春水拧了一下胳膊，不曾想那名高大男子身体后仰，转过头，皮笑肉不笑地咧咧嘴，露出一口雪白森森的牙齿，吓得秋实赶紧低头，大气都不敢喘。 在男人转回头去后，春水气得狠狠踩了秋实一脚，疼得后者倒抽一口冷气，满脸哀怨望向姐姐。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
+        "significance": "推动秋实与陈平安之间的遭遇关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段15",
         "sentence_indexes_in_segment": [
@@ -1211,7 +1462,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "extracted_at": "2026-03-25T17:27:37.961404",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1274,7 +1525,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.074348",
+    "extracted_at": "2026-03-25T17:27:37.961404",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1295,6 +1546,20 @@
       "当时宁姑娘还问了一个让刘灞桥很难堪的问题。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "风雷园刘灞桥，也算旧识。 当时宁姑娘还问了一个让刘灞桥很难堪的问题。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 210,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "苏稼",
@@ -1330,15 +1595,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 苏稼在正阳山遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 刘灞桥与苏稼在正阳山遭遇",
         "time": null,
         "location": "正阳山",
         "participants": [
+          "刘灞桥",
           "苏稼"
         ],
-        "description": "正阳山，护山搬山猿。 好像偏偏喜欢上了正阳山的仙子苏稼。 仇家之一。",
+        "description": "正阳山，护山搬山猿。 风雷园刘灞桥，也算旧识。 好像偏偏喜欢上了正阳山的仙子苏稼。",
         "background": "",
-        "significance": "对应苏稼在叙事中的关键遭遇节点。",
+        "significance": "在正阳山推动刘灞桥与苏稼之间的遭遇线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段17",
         "sentence_indexes_in_segment": [
@@ -1354,7 +1620,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "extracted_at": "2026-03-25T17:27:37.961404",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,21 +1654,38 @@
         ],
         "juan_index": 210,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "陈平安端坐在椅上，突然想起一事，开口让春水秋实吃那苦雀舌茶叶。 但是这一次，就连秋实都使劲摇头。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 210,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
-        "description": "陈平安端坐在椅上，突然想起一事，开口让春水秋实吃那苦雀舌茶叶。 春水悄悄指了指站在前方外围的鲲船执事，陈平安心中了然，便问道：“我能拿一些回去吗？ 但是这一次，就连秋实都使劲摇头。",
+        "description": "陈平安端坐在椅上，突然想起一事，开口让春水秋实吃那苦雀舌茶叶。 但是这一次，就连秋实都使劲摇头。 春水悄悄指了指站在前方外围的鲲船执事，陈平安心中了然，便问道：“我能拿一些回去吗？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与秋实之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1416,8 +1699,29 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "秋实"
+        ],
+        "action": "对话",
+        "context": "陈平安端坐在椅上，突然想起一事，开口让春水秋实吃那苦雀舌茶叶。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与秋实遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 210,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.961404",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,7 +1785,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "extracted_at": "2026-03-25T17:27:37.962407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1519,6 +1823,19 @@
       },
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "她应该叫贺小凉。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 210,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "苏稼",
         "alias": [],
         "original_description_in_book": "这位据说是神诰宗鼎鼎大名的道姑仙子，还是青衣小童最最仰慕倾心的仙子，比起苏稼还要喜欢，曾经说过一句半戏谑半真心的浑话，若是有机会给他摸上一摸贺仙子的手，他便是折寿百年都毫不犹豫。",
@@ -1534,16 +1851,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与苏稼遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与贺小凉遭遇",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "贺小凉",
           "苏稼"
         ],
-        "description": "陈平安下意识就要四处张望，但是很快克制住这股冲动，记性极好的他很快想起了一个人。 当时在家乡青牛背那边，第一次看到，陈平安就觉得她和身旁的一位同伴，像是从画里联袂走出的一双神仙，金童玉女，神仙美眷。 这位据说是神诰宗鼎鼎大名的道姑仙子，还是青衣小童最最仰慕倾心的仙子，比起苏稼还要喜欢，曾经说过一句半戏谑半真心的浑话，若是有机会给他摸上一摸贺仙子的手，他便是折寿百年都毫不犹豫。",
+        "description": "陈平安下意识就要四处张望，但是很快克制住这股冲动，记性极好的他很快想起了一个人。 当时在家乡青牛背那边，第一次看到，陈平安就觉得她和身旁的一位同伴，像是从画里联袂走出的一双神仙，金童玉女，神仙美眷。 她应该叫贺小凉。",
         "background": "",
-        "significance": "推动陈平安与苏稼之间的遭遇关系。",
+        "significance": "推动陈平安与贺小凉之间的遭遇关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段20",
         "sentence_indexes_in_segment": [
@@ -1559,7 +1877,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "extracted_at": "2026-03-25T17:27:37.962407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1624,7 +1942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "extracted_at": "2026-03-25T17:27:37.962407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1647,6 +1965,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "然后他突然发现眼前有一只手，手上摊放着一块刻有“打醮山天字号”的精美玉佩，他抬起视线，看到一张肤色黝黑、却也端正的少年脸庞，那人笑道：“我是住在天字号房间的，你如果真想进去看画卷，可以借给你用一下，到了第二排后，去找名为春水秋实的姑娘便是，就说……你是陈平安的朋友，她们很容易认出来的，因为是同胞姐妹，长得很像。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 210,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "然后他突然发现眼前有一只手，手上摊放着一块刻有“打醮山天字号”的精美玉佩，他抬起视线，看到一张肤色黝黑、却也端正的少年脸庞，那人笑道：“我是住在天字号房间的，你如果真想进去看画卷，可以借给你用一下，到了第二排后，去找名为春水秋实的姑娘便是，就说……你是陈平安的朋友，她们很容易认出来的，因为是同胞姐妹，长得很像。",
@@ -1662,16 +1993,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安对话",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 秋实与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "秋实",
           "陈平安"
         ],
         "description": "然后他突然发现眼前有一只手，手上摊放着一块刻有“打醮山天字号”的精美玉佩，他抬起视线，看到一张肤色黝黑、却也端正的少年脸庞，那人笑道：“我是住在天字号房间的，你如果真想进去看画卷，可以借给你用一下，到了第二排后，去找名为春水秋实的姑娘便是，就说……你是陈平安的朋友，她们很容易认出来的，因为是同胞姐妹，长得很像。 那户人家最后活下来的两个孩子，质朴懵懂，不怪他的本事不济，可是年轻道人会怪自己。 一想到这个，眼眶微红的年轻道人放下凳子，坐在那边，双手撑在膝盖上，背着一把桃木剑的年轻人有些茫然。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动秋实与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1685,8 +2019,29 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "秋实"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "然后他突然发现眼前有一只手，手上摊放着一块刻有“打醮山天字号”的精美玉佩，他抬起视线，看到一张肤色黝黑、却也端正的少年脸庞，那人笑道：“我是住在天字号房间的，你如果真想进去看画卷，可以借给你用一下，到了第二排后，去找名为春水秋实的姑娘便是，就说……你是陈平安的朋友，她们很容易认出来的，因为是同胞姐妹，长得很像。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 秋实与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 210,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.962407",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1725,6 +2080,19 @@
       },
       {
         "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "把先前恰好经过的陈平安给看得一愣一愣的，恁大一个男人，竟然还抹起了眼泪，难不成跟刘灞桥和青衣小童一般，也是那位苏稼仙子的爱慕者？",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 210,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "苏稼",
         "alias": [],
         "original_description_in_book": "把先前恰好经过的陈平安给看得一愣一愣的，恁大一个男人，竟然还抹起了眼泪，难不成跟刘灞桥和青衣小童一般，也是那位苏稼仙子的爱慕者？",
@@ -1740,19 +2108,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与苏稼遭遇",
+        "name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与刘灞桥遭遇",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "刘灞桥",
           "苏稼"
         ],
         "description": "陈平安将玉佩往他怀里一塞，转身小跑离去，转头笑道：“在那边坐下后，记得还我啊。 陈平安一边跑一边想，这个年轻道士也太想不开了，不过是没法子看清楚花鸟长幅的画面而已，就这么伤心伤肺？ 把先前恰好经过的陈平安给看得一愣一愣的，恁大一个男人，竟然还抹起了眼泪，难不成跟刘灞桥和青衣小童一般，也是那位苏稼仙子的爱慕者？",
         "background": "",
-        "significance": "推动陈平安与苏稼之间的遭遇关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与刘灞桥之间的遭遇关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1766,34 +2133,8 @@
         "segment_index": 24
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "苏稼"
-        ],
-        "action": "对话",
-        "context": "年轻道人张着嘴巴，傻乎乎呆着不说话。 陈平安将玉佩往他怀里一塞，转身小跑离去，转头笑道：“在那边坐下后，记得还我啊。 ” 陈平安一边跑一边想，这个年轻道士也太想不开了，不过是没法子看清楚花鸟长幅的画面而已，就这么伤心伤肺？ 把先前恰好经过的陈平安给看得一愣一愣的，恁大一个男人，竟然还抹起了眼泪，难不成跟刘灞桥和青衣小童一般，也是那位苏稼仙子的爱慕者？ 但是这些，都不是陈平安递出玉佩的真正原因。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十章 山水相逢也重逢 · 陈平安与苏稼遭遇",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 210,
-        "segment_index": 24
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.075351",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.963411",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1890,7 +2231,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.076355",
+    "extracted_at": "2026-03-25T17:27:37.963411",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1975,7 +2316,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.076355",
+    "extracted_at": "2026-03-25T17:27:37.963411",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

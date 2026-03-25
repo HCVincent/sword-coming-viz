@@ -58,7 +58,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "extracted_at": "2026-03-25T17:27:38.499993",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -93,6 +93,32 @@
           3,
           4,
           5
+        ],
+        "juan_index": 307,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "受益于在剑气长城上滴水穿石的打熬，后边又有飞鹰堡两场大战，尤其是邪道修士丹室自爆，灵气倾泻如洪水，陈平安那场逆流而行，收获颇丰，陈平安如今武道四境，有些瓶颈松动的迹象，但是总觉得还欠缺一点什么，陈平安有一种模糊的直觉，四五境的门槛，他只要愿意，可以很快就一步跨过，但是陈平安还是希望更扎实，实在不行，就像陆台当初所说，去武圣人庙碰碰运气，要不就是寻一处古战场遗址，寻找那些战死后魂魄不散的英灵、阴神。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 307,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "受益于在剑气长城上滴水穿石的打熬，后边又有飞鹰堡两场大战，尤其是邪道修士丹室自爆，灵气倾泻如洪水，陈平安那场逆流而行，收获颇丰，陈平安如今武道四境，有些瓶颈松动的迹象，但是总觉得还欠缺一点什么，陈平安有一种模糊的直觉，四五境的门槛，他只要愿意，可以很快就一步跨过，但是陈平安还是希望更扎实，实在不行，就像陆台当初所说，去武圣人庙碰碰运气，要不就是寻一处古战场遗址，寻找那些战死后魂魄不散的英灵、阴神。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 307,
         "segment_index": 2
@@ -135,7 +161,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "陆台",
+          "阴神"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -206,8 +234,8 @@
         "participants": [
           "陈平安",
           "魏檗",
-          "崔瀺",
-          "宁姚"
+          "陆台",
+          "阴神"
         ],
         "description": "受益于在剑气长城上滴水穿石的打熬，后边又有飞鹰堡两场大战，尤其是邪道修士丹室自爆，灵气倾泻如洪水，陈平安那场逆流而行，收获颇丰，陈平安如今武道四境，有些瓶颈松动的迹象，但是总觉得还欠缺一点什么，陈平安有一种模糊的直觉，四五境的门槛，他只要愿意，可以很快就一步跨过，但是陈平安还是希望更扎实，实在不行，就像陆台当初所说，去武圣人庙碰碰运气，要不就是寻一处古战场遗址，寻找那些战死后魂魄不散的英灵、阴神。 总得找点事情做做，不然陈平安都怕自己发霉了。 陈平安决定在这南苑国京城待到夏末，再找不到那座观道观，就返回宝瓶洲，把精力全部放在武道七境上，崔瀺的爷爷，就在落魄山竹楼那边，陈平安对此信心很大，跟宁姚的十年之约，说不定可以提前几年。",
         "background": "",
@@ -227,7 +255,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "extracted_at": "2026-03-25T17:27:38.501019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -312,6 +340,32 @@
         ],
         "juan_index": 307,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "不知道张山峰和徐远霞，结伴游历，有没有认识新的朋友，可以一起出生入死，降妖除魔。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "不知道张山峰和徐远霞，结伴游历，有没有认识新的朋友，可以一起出生入死，降妖除魔。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -356,13 +410,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "刘羡阳",
-          "李宝瓶"
+          "张山峰",
+          "徐远霞"
         ],
         "description": "不知道阿良在那天外天，跟那位传说中真无敌的道老二，有没有真正分出胜负。 不知道刘羡阳去往颍阴陈氏的遥远路途中，看过最高的山有多高，看过最大的水有多大。 不知道李宝瓶在山崖书院读书，开心不开心。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -376,8 +432,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "徐远霞"
+        ],
+        "action": "同行",
+        "context": "不知道张山峰和徐远霞，结伴游历，有没有认识新的朋友，可以一起出生入死，降妖除魔。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.501019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -425,6 +502,19 @@
         ],
         "juan_index": 307,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪言语刻薄，成天脸色阴沉沉的，很容易让陈平安想起杏花巷的马婆婆。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -452,7 +542,8 @@
         "location": "老龙城",
         "participants": [
           "陈平安",
-          "范二"
+          "范二",
+          "老妪"
         ],
         "description": "不知道范二在老龙城有没有遇上心仪的姑娘。 陈平安竟然想着心事，就这么睡着了。 有飞剑初一十五在养剑葫内，其实陈平安这一路风餐露宿，并不太过担忧。",
         "background": "",
@@ -472,7 +563,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "extracted_at": "2026-03-25T17:27:38.501019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -534,7 +625,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "extracted_at": "2026-03-25T17:27:38.501019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -570,21 +661,37 @@
         ],
         "juan_index": 307,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "陈平安只是小憩片刻，很快就被院子里的动静吵醒，老妪的絮絮叨叨，妇人的嚅嚅喏喏，老人在吊嗓子，孩子在晨读蒙学书本上的内容，唯独那个青壮汉子，应该还在呼呼大睡。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老妪同行",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老妪"
         ],
         "description": "来到南苑国京城之前，陈平安几次跟它逗乐，或是策马狂奔，或是卯足劲一口气飞奔出数十里，等他停马、停步之际，脚边总会有小家伙从土里探出脑袋，朝他咯咯而笑。 无论是陈平安走桩打拳还是练习剑术，它从不打搅，总是远远看着，只有陈平安向它招手，才会来到陈平安身边，沿着在法袍金醴，攀援而上，最终坐在陈平安肩头，一大一小，一起欣赏风景。 至于那枚雪花钱，暂时寄放在陈平安那边。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老妪之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -598,8 +705,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "同行",
+        "context": "一个小东西从地面冒出来，爬上桌子，坐在那座“书山”旁边，开始打瞌睡。 小莲人儿明显精通土遁之术，无声无息，速度极快。 来到南苑国京城之前，陈平安几次跟它逗乐，或是策马狂奔，或是卯足劲一口气飞奔出数十里，等他停马、停步之际，脚边总会有小家伙从土里探出脑袋，朝他咯咯而笑。 无论是陈平安走桩打拳还是练习剑术，它从不打搅，总是远远看着，只有陈平安向它招手，才会来到陈平安身边，沿着在法袍金醴，攀援而上，最终坐在陈平安肩头，一大一小，一起欣赏风景。 至于那枚雪花钱，暂时寄放在陈平安那边。 陈平安只是小憩片刻，很快就被院子里的动静吵醒，老妪的絮絮叨叨，妇人的嚅嚅喏喏，老人在吊嗓子，孩子在晨读蒙学书本上的内容，唯独那个青壮汉子，应该还在呼呼大睡。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老妪同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.501019",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -635,21 +768,37 @@
         ],
         "juan_index": 307,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安习以为常，桌上书籍，都是离开陆台和飞鹰堡后新买的，当时陆台说唯有读第一流的书，才有希望当第二流的人。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安坐在桌旁，轻轻拿起一本书籍，小东西也缓缓醒来，犯着迷糊，呆呆望向陈平安。 陈平安笑道：“睡你的。 小东西麻溜起身，跑到陈平安身边，帮他翻开一页书。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -663,8 +812,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "别离",
+        "context": "陈平安习以为常，桌上书籍，都是离开陆台和飞鹰堡后新买的，当时陆台说唯有读第一流的书，才有希望当第二流的人。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.502000",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -703,6 +873,35 @@
       },
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安当时听得茅塞顿开，如果不是陆台提醒，他真可能会见一本好书就买一本，而且都会细看慢看，但是书海无涯，人寿有限，陈平安既要练拳练剑，还要寻找道观，好不容易余下一点闲暇时光，确实应该用来读最好的书。 陆台给过一份书单，但是陈平安珍藏好那张纸，却没有照着书单去买书，而是去买了儒家亚圣的经义典籍。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 307,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "可惜文圣老秀才的书，市面上根本买不到了。 从情感上说，陈平安当然最倾向于齐先生的先生，那位爱喝酒还喜欢说酒话的老秀才，但是喜欢、仰慕和尊敬一个人，这没有问题，如果因此觉得那个人说的话做的事，就是全对的，会有大问题。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -725,9 +924,10 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安当时听得茅塞顿开，如果不是陆台提醒，他真可能会见一本好书就买一本，而且都会细看慢看，但是书海无涯，人寿有限，陈平安既要练拳练剑，还要寻找道观，好不容易余下一点闲暇时光，确实应该用来读最好的书。 陆台给过一份书单，但是陈平安珍藏好那张纸，却没有照着书单去买书，而是去买了儒家亚圣的经义典籍。 陈平安想要看“三四”，对比着看。",
+        "description": "陈平安当时听得茅塞顿开，如果不是陆台提醒，他真可能会见一本好书就买一本，而且都会细看慢看，但是书海无涯，人寿有限，陈平安既要练拳练剑，还要寻找道观，好不容易余下一点闲暇时光，确实应该用来读最好的书。 陆台给过一份书单，但是陈平安珍藏好那张纸，却没有照着书单去买书，而是去买了儒家亚圣的经义典籍。 可惜文圣老秀才的书，市面上根本买不到了。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
@@ -753,27 +953,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "齐静春"
+          "陆台"
         ],
         "action": "会见",
-        "context": "陈平安当时听得茅塞顿开，如果不是陆台提醒，他真可能会见一本好书就买一本，而且都会细看慢看，但是书海无涯，人寿有限，陈平安既要练拳练剑，还要寻找道观，好不容易余下一点闲暇时光，确实应该用来读最好的书。 陆台给过一份书单，但是陈平安珍藏好那张纸，却没有照着书单去买书，而是去买了儒家亚圣的经义典籍。 可惜文圣老秀才的书，市面上根本买不到了。 陈平安想要看“三四”，对比着看。 从情感上说，陈平安当然最倾向于齐先生的先生，那位爱喝酒还喜欢说酒话的老秀才，但是喜欢、仰慕和尊敬一个人，这没有问题，如果因此觉得那个人说的话做的事，就是全对的，会有大问题。 文圣老秀才的学问高不高？",
+        "context": "陈平安当时听得茅塞顿开，如果不是陆台提醒，他真可能会见一本好书就买一本，而且都会细看慢看，但是书海无涯，人寿有限，陈平安既要练拳练剑，还要寻找道观，好不容易余下一点闲暇时光，确实应该用来读最好的书。",
         "result": null,
         "event_name": "齐静春现身",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
         ],
         "juan_index": 307,
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.507441",
+    "extracted_at": "2026-03-25T17:27:38.502000",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -826,6 +1021,20 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "那么陈平安有没有资格，认为老秀才的道理不是最有道理？ 不过陈平安内心深处，当然还是希望看过了三四之争的双方学问，自己能够由衷觉得文圣老秀才说得更对。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "陈平安曾经跟宁姚爹娘说过，真正喜欢一个人，是要喜欢一个人不好的地方。",
@@ -841,17 +1050,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与崔瀺指点",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老秀才指点",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "老秀才",
           "崔瀺",
           "宁姚"
         ],
         "description": "当然很高，按照少年崔瀺的说法，曾经高到让所有读书人觉得“如日中天”。 那么陈平安有没有资格，认为老秀才的道理不是最有道理？ 陈平安曾经跟宁姚爹娘说过，真正喜欢一个人，是要喜欢一个人不好的地方。",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的指点关系。",
+        "significance": "推动陈平安与老秀才之间的指点关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段9",
         "sentence_indexes_in_segment": [
@@ -867,7 +1077,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "extracted_at": "2026-03-25T17:27:38.502000",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -931,7 +1141,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "extracted_at": "2026-03-25T17:27:38.502000",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -994,7 +1204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "extracted_at": "2026-03-25T17:27:38.502000",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1028,6 +1238,19 @@
         ],
         "juan_index": 307,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台曾经说过一句话，当时感触不深，如今越嚼越有余味。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 12
       }
     ],
     "locations": [
@@ -1050,16 +1273,19 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安在观道观剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与陆台在观道观同行",
         "time": null,
         "location": "观道观",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "为了寻找那座观道观，陈平安每天都会逛荡这座京城，见了市井百态，也见了隐于市井的一些古古怪怪。 只要它们不主动招惹自己，陈平安就不愿理会。 南苑国已经数百年无战事，国泰平安，一代代君王垂拱而治，既无贤名，也无恶名。",
+        "description": "为了寻找那座观道观，陈平安每天都会逛荡这座京城，见了市井百态，也见了隐于市井的一些古古怪怪。 只要它们不主动招惹自己，陈平安就不愿理会。 陆台曾经说过一句话，当时感触不深，如今越嚼越有余味。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在观道观推动陈平安与陆台之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1073,8 +1299,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "同行",
+        "context": "南苑国已经数百年无战事，国泰平安，一代代君王垂拱而治，既无贤名，也无恶名。 故而京城并无夜禁，江湖豪杰大大咧咧携刀佩剑，鲜衣怒马，官府从来不管，路上遇到了，马上马下，双方还会客客气气招呼几声，交情好的，便就近一起喝酒了，你说些官场上让人无奈的升迁，我说些江湖上荡气回肠的高手过招，一来二去，两三斤酒肯定打不住。 为了寻找那座观道观，陈平安每天都会逛荡这座京城，见了市井百态，也见了隐于市井的一些古古怪怪。 只要它们不主动招惹自己，陈平安就不愿理会。 陆台曾经说过一句话，当时感触不深，如今越嚼越有余味。 上了山，修了道，就会只觉得世间的古灵精怪和鬼魅阴物，好像越来越多。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与陆台在观道观同行",
+        "location": "观道观",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.503003",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1108,21 +1360,37 @@
         ],
         "juan_index": 307,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "但是前不久，一位在白河寺挂单修行的高僧，前年被推举为住持，风光无限，却在某天跑出寺庙，直接去了大理寺告官，听完后，大理寺卿在内诸位官员，人人面面相觑，原来这位老僧告发白河寺，在他饭菜里下毒，还要密谋他死后往尸体里灌注水银，不但如此，他还揭发白河寺僧人罪孽深重，诱骗重金求子的京城贵妇在内，总计六桩大罪。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安合上书本，一个时辰的时光就这样流逝而过，准备出门继续逛荡。 虽然寻找道观期间，陈平安的心境越来越烦躁，但是陈平安不是没有尝试静下心来，事实上做了许多努力，去了那些大大小小的寺庙，烧香拜佛，独自行走在静谧的小径树荫中，每到一处寺庙就记录在竹简上，状元巷边上那座小寺庙，陈平安去的次数最多，寺庙不大，算上住持也就十几人，久而久之，就混了熟脸，陈平安每次心不静，就会去那边坐坐，不一定会与僧人说话，哪怕只是独自坐在屋檐下，听着风铃的叮咚声，就能打发掉一个暑气升腾的下午。 南苑国崇佛贬道，京城和地方上寺庙林立，香火鼎盛，道观难得一见，京城更是一座也无。",
+        "description": "陈平安合上书本，一个时辰的时光就这样流逝而过，准备出门继续逛荡。 虽然寻找道观期间，陈平安的心境越来越烦躁，但是陈平安不是没有尝试静下心来，事实上做了许多努力，去了那些大大小小的寺庙，烧香拜佛，独自行走在静谧的小径树荫中，每到一处寺庙就记录在竹简上，状元巷边上那座小寺庙，陈平安去的次数最多，寺庙不大，算上住持也就十几人，久而久之，就混了熟脸，陈平安每次心不静，就会去那边坐坐，不一定会与僧人说话，哪怕只是独自坐在屋檐下，听着风铃的叮咚声，就能打发掉一个暑气升腾的下午。 但是前不久，一位在白河寺挂单修行的高僧，前年被推举为住持，风光无限，却在某天跑出寺庙，直接去了大理寺告官，听完后，大理寺卿在内诸位官员，人人面面相觑，原来这位老僧告发白河寺，在他饭菜里下毒，还要密谋他死后往尸体里灌注水银，不但如此，他还揭发白河寺僧人罪孽深重，诱骗重金求子的京城贵妇在内，总计六桩大罪。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1136,8 +1404,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "对话",
+        "context": "陈平安合上书本，一个时辰的时光就这样流逝而过，准备出门继续逛荡。 虽然寻找道观期间，陈平安的心境越来越烦躁，但是陈平安不是没有尝试静下心来，事实上做了许多努力，去了那些大大小小的寺庙，烧香拜佛，独自行走在静谧的小径树荫中，每到一处寺庙就记录在竹简上，状元巷边上那座小寺庙，陈平安去的次数最多，寺庙不大，算上住持也就十几人，久而久之，就混了熟脸，陈平安每次心不静，就会去那边坐坐，不一定会与僧人说话，哪怕只是独自坐在屋檐下，听着风铃的叮咚声，就能打发掉一个暑气升腾的下午。 南苑国崇佛贬道，京城和地方上寺庙林立，香火鼎盛，道观难得一见，京城更是一座也无。 最近几天，一件骇人密事，在京城上下沸沸扬扬，南苑国京城四大寺之一的白河寺，出了一桩天大丑闻，白河寺历来以住持佛法深厚、金身活罗汉著称于世，历代高僧圆寂之后，都能够留下不腐肉身或是烧出舍利子，其余三寺在这一点上，都要自愧不如。 这也被视为南苑国佛法昌盛、远胜邻国的明证。 但是前不久，一位在白河寺挂单修行的高僧，前年被推举为住持，风光无限，却在某天跑出寺庙，直接去了大理寺告官，听完后，大理寺卿在内诸位官员，人人面面相觑，原来这位老僧告发白河寺，在他饭菜里下毒，还要密谋他死后往尸体里灌注水银，不但如此，他还揭发白河寺僧人罪孽深重，诱骗重金求子的京城贵妇在内，总计六桩大罪。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.503003",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1160,6 +1454,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "心相寺的住持，是一位乡音浓重的老和尚，慈眉善目，高高大大的，入京三十年，老僧依旧乡音未改，也不爱与人唠叨佛法的精妙深远，多是家长里短聊着，每次去寺里闲坐，陈平安得费很大劲才能听懂，陈平安对于这位老僧，印象很好，而且看破未说破，老主持是一位修行中人，只是尚未跻身中五境。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 307,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "心相寺的住持，是一位乡音浓重的老和尚，慈眉善目，高高大大的，入京三十年，老僧依旧乡音未改，也不爱与人唠叨佛法的精妙深远，多是家长里短聊着，每次去寺里闲坐，陈平安得费很大劲才能听懂，陈平安对于这位老僧，印象很好，而且看破未说破，老主持是一位修行中人，只是尚未跻身中五境。 陈平安离开巷子，去往心相寺，打算在那边静坐，练习剑炉立桩。",
@@ -1178,16 +1485,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安迁移",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
         "description": "心相寺的住持，是一位乡音浓重的老和尚，慈眉善目，高高大大的，入京三十年，老僧依旧乡音未改，也不爱与人唠叨佛法的精妙深远，多是家长里短聊着，每次去寺里闲坐，陈平安得费很大劲才能听懂，陈平安对于这位老僧，印象很好，而且看破未说破，老主持是一位修行中人，只是尚未跻身中五境。 陈平安离开巷子，去往心相寺，打算在那边静坐，练习剑炉立桩。 不过是两里路程，陈平安就走过了一座武馆和镖局，尤其是那悬挂“气壮山河”匾额的武馆高墙里边，每回路过都是一群汉子在那哼哼哈哈的，应该是在练习拳架。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动老僧与陈平安之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1201,8 +1511,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老僧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "这个案子，太过惊世骇俗，直接惊动了南苑国皇帝陛下，下令彻查此事，结果白河寺三百僧人，大半被下狱，其余被驱逐出京城，划去籍牒，此生不得再做僧人。 其余三寺，依旧地位超然，毕竟根深蒂固，可是连累了许多名声不显的小寺，比如状元巷旁边的这座心相寺，近期的香客明显少了许多。 心相寺的住持，是一位乡音浓重的老和尚，慈眉善目，高高大大的，入京三十年，老僧依旧乡音未改，也不爱与人唠叨佛法的精妙深远，多是家长里短聊着，每次去寺里闲坐，陈平安得费很大劲才能听懂，陈平安对于这位老僧，印象很好，而且看破未说破，老主持是一位修行中人，只是尚未跻身中五境。 陈平安离开巷子，去往心相寺，打算在那边静坐，练习剑炉立桩。 不过是两里路程，陈平安就走过了一座武馆和镖局，尤其是那悬挂“气壮山河”匾额的武馆高墙里边，每回路过都是一群汉子在那哼哼哈哈的，应该是在练习拳架。 镖局门外的大街，经常都是镖车拥簇的场景，年轻男女皆趾高气昂，意气风发，老人们则要沉默许多，偶然见着了陈平安，都会点头致意，陈平安起先还会拱手还礼，后来见面了，就主动行礼，不曾想一来二去，老人便纷纷没了兴致，干脆看也不看陈平安。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.503003",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1266,7 +1602,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.508445",
+    "extracted_at": "2026-03-25T17:27:38.503003",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1302,21 +1638,38 @@
         ],
         "juan_index": 307,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "今日老僧像是知道陈平安要来，早早等在了一座偏殿的廊道中。 看到陈平安欲言又止，老僧开门见山笑道：“白河寺历代住持里，是出过真正金身的，不如外界传闻那般，都是骗子，不用一棍子打死白河寺千年历史。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 16
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
         "description": "不知不觉，陈平安开始用另一种眼光看待这个世界。 陈平安之所以最近串门有些勤快，最主要的原因，是感觉到了老主持的大限将至。 今日老僧像是知道陈平安要来，早早等在了一座偏殿的廊道中。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1330,8 +1683,29 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "对话",
+        "context": "看到陈平安欲言又止，老僧开门见山笑道：“白河寺历代住持里，是出过真正金身的，不如外界传闻那般，都是骗子，不用一棍子打死白河寺千年历史。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.504007",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1393,7 +1767,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "extracted_at": "2026-03-25T17:27:38.504007",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1416,6 +1790,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧点头道：“自然算，放在一座南苑国京城，白河寺和心相寺向来没有交集，看似因果模糊，实则不然，放在佛法之中，天大地大，皆是丝丝缕缕的牵连了。 这是老僧第一次在陈平安面前说“佛法”。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "这是老僧第一次在陈平安面前说“佛法”。",
@@ -1431,16 +1820,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "这是老僧第一次在陈平安面前说“佛法”。 ” 老僧点头道：“自然算，放在一座南苑国京城，白河寺和心相寺向来没有交集，看似因果模糊，实则不然，放在佛法之中，天大地大，皆是丝丝缕缕的牵连了。",
+        "description": "老僧点头道：“自然算，放在一座南苑国京城，白河寺和心相寺向来没有交集，看似因果模糊，实则不然，放在佛法之中，天大地大，皆是丝丝缕缕的牵连了。 这是老僧第一次在陈平安面前说“佛法”。 老僧犹豫了一下，笑道：“其实两座寺庙之间，也有因果，只是太过玄妙细微，太……小了，贫僧根本没把握说出来，还需要施主自己体会。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老僧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1454,8 +1846,34 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老僧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 老僧点头道：“自然算，放在一座南苑国京城，白河寺和心相寺向来没有交集，看似因果模糊，实则不然，放在佛法之中，天大地大，皆是丝丝缕缕的牵连了。 ” 这是老僧第一次在陈平安面前说“佛法”。 老僧犹豫了一下，笑道：“其实两座寺庙之间，也有因果，只是太过玄妙细微，太……小了，贫僧根本没把握说出来，还需要施主自己体会。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.504007",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,6 +1896,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "两人闲聊，无需一板一眼，老僧以前经常会被小沙弥打岔，聊着寺庙里边鸡毛蒜皮的小事，就把陈平安晾在一边，陈平安也经常会带上几支竹简或是一本书，读书刻字，也不觉得怠慢无礼。 老僧今天谈兴颇浓，关于佛法，蜻蜓点水，就不再多提，更多还是像以往那样随便聊，琴棋书画，帝王将相，贩夫走卒，诸子百家，都随便说一些，拉家常一般。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "两人闲聊，无需一板一眼，老僧以前经常会被小沙弥打岔，聊着寺庙里边鸡毛蒜皮的小事，就把陈平安晾在一边，陈平安也经常会带上几支竹简或是一本书，读书刻字，也不觉得怠慢无礼。 今天陈平安没有带书，只是带了一支纤细竹简，和一把小刻刀。",
@@ -1495,15 +1928,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
         "description": "两人闲聊，无需一板一眼，老僧以前经常会被小沙弥打岔，聊着寺庙里边鸡毛蒜皮的小事，就把陈平安晾在一边，陈平安也经常会带上几支竹简或是一本书，读书刻字，也不觉得怠慢无礼。 今天陈平安没有带书，只是带了一支纤细竹简，和一把小刻刀。 陈平安从不厌旧，刻刀还是当初购买玉牌，店家赠送的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动老僧与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段19",
         "sentence_indexes_in_segment": [
@@ -1519,7 +1953,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "extracted_at": "2026-03-25T17:27:38.504007",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1581,7 +2015,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "extracted_at": "2026-03-25T17:27:38.504007",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "307-21-0": {
+    "juan_index": 307,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零六章 老僧不爱说佛法",
+    "source_sentences": [
+      "”",
+      "老僧笑道：“对喽，万事莫走极端。",
+      "与人讲道理，最怕‘我要道理全占尽’。",
+      "最怕一旦与人交恶，便全然不见其善。",
+      "庙堂之上，党争，甚至是被后世视为君子之争的党争，为何还是遗祸极长，就在于君子贤人，在这些事情上，同样做得不对。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧笑道：“对喽，万事莫走极端。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 307,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老僧"
+        ],
+        "description": "老僧笑道：“对喽，万事莫走极端。 ” 与人讲道理，最怕‘我要道理全占尽’。",
+        "background": "",
+        "significance": "对应老僧在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.504007",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1604,6 +2100,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧继续道：“但是朝堂上的党争，你要是软弱了，讲这套大道理，多半会死的很惨，委实怪不得那些做了官的读书人。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 307,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安笑着摇头道：“有一位老先生，跟我说过类似的道理，他教我要万事多想，哪怕想了一大圈，绕回了原点，虽然费心费力，可长远来看，还是有益的。",
@@ -1619,15 +2128,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "陈平安笑着摇头道：“有一位老先生，跟我说过类似的道理，他教我要万事多想，哪怕想了一大圈，绕回了原点，虽然费心费力，可长远来看，还是有益的。 老僧继续道：“但是朝堂上的党争，你要是软弱了，讲这套大道理，多半会死的很惨，委实怪不得那些做了官的读书人。 既然如此，是不是可以说，贫僧这一通话，绕了一圈，全是废话？",
+        "description": "老僧继续道：“但是朝堂上的党争，你要是软弱了，讲这套大道理，多半会死的很惨，委实怪不得那些做了官的读书人。 陈平安笑着摇头道：“有一位老先生，跟我说过类似的道理，他教我要万事多想，哪怕想了一大圈，绕回了原点，虽然费心费力，可长远来看，还是有益的。 既然如此，是不是可以说，贫僧这一通话，绕了一圈，全是废话？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动老僧与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段22",
         "sentence_indexes_in_segment": [
@@ -1643,7 +2153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "extracted_at": "2026-03-25T17:27:38.505010",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1666,6 +2176,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧欣慰点头，“这位先生，是有大学问的。 老僧感叹道：“这位先生，定然活得不轻松。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安手指摩挲着那支翠绿欲滴的小竹简，轻声道：“有次老先生喝醉酒了，醉眼朦胧的，看似是在问我，可其实大概是在问所有人吧，他是这么说的，读过多少书，就敢说这个世道‘就是这样的’，见过多少人，就敢说男人女人‘都是这般德行’？",
@@ -1681,15 +2205,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "陈平安手指摩挲着那支翠绿欲滴的小竹简，轻声道：“有次老先生喝醉酒了，醉眼朦胧的，看似是在问我，可其实大概是在问所有人吧，他是这么说的，读过多少书，就敢说这个世道‘就是这样的’，见过多少人，就敢说男人女人‘都是这般德行’？ 老僧欣慰点头，“这位先生，是有大学问的。 ”",
+        "description": "老僧欣慰点头，“这位先生，是有大学问的。 陈平安手指摩挲着那支翠绿欲滴的小竹简，轻声道：“有次老先生喝醉酒了，醉眼朦胧的，看似是在问我，可其实大概是在问所有人吧，他是这么说的，读过多少书，就敢说这个世道‘就是这样的’，见过多少人，就敢说男人女人‘都是这般德行’？ 老僧感叹道：“这位先生，定然活得不轻松。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动老僧与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段23",
         "sentence_indexes_in_segment": [
@@ -1705,7 +2230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "extracted_at": "2026-03-25T17:27:38.505010",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1739,21 +2264,37 @@
         ],
         "juan_index": 307,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧微笑道：“回答之前，贫僧先有一问，是不是觉得此言即吓人，又别开生面，但是咀嚼一番，总觉得是走了捷径，不是正法？",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 307,
+        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安突然想起一事，始终想不明白，好奇问道：“佛家真会提倡‘放下屠刀立地成佛’一事吗？ 陈平安挠挠头，“我连一般的佛法都没读过，哪里清楚是不是正法。 ”",
+        "description": "陈平安突然想起一事，始终想不明白，好奇问道：“佛家真会提倡‘放下屠刀立地成佛’一事吗？ 老僧微笑道：“回答之前，贫僧先有一问，是不是觉得此言即吓人，又别开生面，但是咀嚼一番，总觉得是走了捷径，不是正法？ 陈平安挠挠头，“我连一般的佛法都没读过，哪里清楚是不是正法。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1767,8 +2308,97 @@
         "segment_index": 24
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "对话",
+        "context": "” 陈平安突然想起一事，始终想不明白，好奇问道：“佛家真会提倡‘放下屠刀立地成佛’一事吗？ ” 老僧微笑道：“回答之前，贫僧先有一问，是不是觉得此言即吓人，又别开生面，但是咀嚼一番，总觉得是走了捷径，不是正法？ ” 陈平安挠挠头，“我连一般的佛法都没读过，哪里清楚是不是正法。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.505010",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "307-25-0": {
+    "juan_index": 307,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零六章 老僧不爱说佛法",
+    "source_sentences": [
+      "”",
+      "老僧哈哈大笑，“放下屠刀立地成佛，世人只看捷径，匪夷所思，殊不知真正的玄妙，在于悟得‘屠刀在我手’，是谓‘知道了恶’，世间百态，很多人为恶而不知恶，很多人知恶而为恶，说到底，手中皆有一把鲜血淋漓的屠刀，轻重有别而已。",
+      "若是能够真正放下，从此回头，岂不是一桩善事？",
+      "”",
+      "老僧又说得远了些，“禅宗棒喝，外人仍然觉得诧异，实则棒喝开悟之前的那些苦功夫，常人看不见罢了，看见了也不愿做罢了。",
+      "成佛难不难？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧哈哈大笑，“放下屠刀立地成佛，世人只看捷径，匪夷所思，殊不知真正的玄妙，在于悟得‘屠刀在我手’，是谓‘知道了恶’，世间百态，很多人为恶而不知恶，很多人知恶而为恶，说到底，手中皆有一把鲜血淋漓的屠刀，轻重有别而已。 老僧又说得远了些，“禅宗棒喝，外人仍然觉得诧异，实则棒喝开悟之前的那些苦功夫，常人看不见罢了，看见了也不愿做罢了。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老僧"
+        ],
+        "description": "老僧哈哈大笑，“放下屠刀立地成佛，世人只看捷径，匪夷所思，殊不知真正的玄妙，在于悟得‘屠刀在我手’，是谓‘知道了恶’，世间百态，很多人为恶而不知恶，很多人知恶而为恶，说到底，手中皆有一把鲜血淋漓的屠刀，轻重有别而已。 老僧又说得远了些，“禅宗棒喝，外人仍然觉得诧异，实则棒喝开悟之前的那些苦功夫，常人看不见罢了，看见了也不愿做罢了。 ”",
+        "background": "",
+        "significance": "对应老僧在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 25
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.509448",
+    "extracted_at": "2026-03-25T17:27:38.505010",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1791,6 +2421,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧突然停下言语，叹了口气，“没有‘但是’，既然贫僧一个向佛之人，自己都做不到，为何要与你说那么远的道理呢？",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 307,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安笑道：“但说无妨，道理再远，先不说我去与不去，我能够知道它就在那儿，也是好事。",
@@ -1806,16 +2449,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "陈平安笑道：“但说无妨，道理再远，先不说我去与不去，我能够知道它就在那儿，也是好事。 当然难，知佛法是一难，守法、护法和传法，便更难了。 但是……”",
+        "description": "老僧突然停下言语，叹了口气，“没有‘但是’，既然贫僧一个向佛之人，自己都做不到，为何要与你说那么远的道理呢？ 陈平安笑道：“但说无妨，道理再远，先不说我去与不去，我能够知道它就在那儿，也是好事。 当然难，知佛法是一难，守法、护法和传法，便更难了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老僧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -1829,8 +2475,34 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老僧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "当然难，知佛法是一难，守法、护法和传法，便更难了。 但是……” 老僧突然停下言语，叹了口气，“没有‘但是’，既然贫僧一个向佛之人，自己都做不到，为何要与你说那么远的道理呢？ ” 陈平安笑道：“但说无妨，道理再远，先不说我去与不去，我能够知道它就在那儿，也是好事。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.506014",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1853,6 +2525,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧摆摆手，“容贫僧歇一会儿，喝杯茶润润嗓子，都快冒烟了。 老僧喊了一声，不远处一座精舍内，有个看似低头念经实则打盹的小沙弥，猛然睁开眼睛，听到老僧的言语后，赶紧去端了两碗茶水给住持和客人。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安喝茶快，老僧喝茶慢。 陈平安笑着将茶碗递还给小沙弥，老僧还未喝掉半碗，陈平安就低头拿起那支竹简，左右两端，都有一丝不易察觉的印痕。",
@@ -1869,15 +2557,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "陈平安喝茶快，老僧喝茶慢。 陈平安笑着将茶碗递还给小沙弥，老僧还未喝掉半碗，陈平安就低头拿起那支竹简，左右两端，都有一丝不易察觉的印痕。 老僧摆摆手，“容贫僧歇一会儿，喝杯茶润润嗓子，都快冒烟了。",
+        "description": "老僧摆摆手，“容贫僧歇一会儿，喝杯茶润润嗓子，都快冒烟了。 老僧喊了一声，不远处一座精舍内，有个看似低头念经实则打盹的小沙弥，猛然睁开眼睛，听到老僧的言语后，赶紧去端了两碗茶水给住持和客人。 陈平安喝茶快，老僧喝茶慢。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动老僧与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段27",
         "sentence_indexes_in_segment": [
@@ -1893,7 +2582,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "extracted_at": "2026-03-25T17:27:38.506014",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1926,20 +2615,34 @@
         ],
         "juan_index": 307,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧喝完了茶水，转头望去，炎炎夏日，骄阳烧烤人间，世人难得清凉，断断续续说着感慨。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 307,
+        "segment_index": 28
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安看左看右看两端。 竹简就像一把小尺子。 老僧喝完了茶水，转头望去，炎炎夏日，骄阳烧烤人间，世人难得清凉，断断续续说着感慨。",
+        "description": "陈平安看左看右看两端。 老僧喝完了茶水，转头望去，炎炎夏日，骄阳烧烤人间，世人难得清凉，断断续续说着感慨。 竹简就像一把小尺子。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老僧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段28",
         "sentence_indexes_in_segment": [
@@ -1955,7 +2658,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "extracted_at": "2026-03-25T17:27:38.506014",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1988,20 +2691,34 @@
         ],
         "juan_index": 307,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧望向廊道栏杆外的寺庙庭院，“这个世界，一直亏欠着好人。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 307,
+        "segment_index": 30
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安的视线从竹简上移开，抬头一笑，点头道：“对的。 ” 老僧望向廊道栏杆外的寺庙庭院，“这个世界，一直亏欠着好人。",
+        "description": "陈平安的视线从竹简上移开，抬头一笑，点头道：“对的。 老僧望向廊道栏杆外的寺庙庭院，“这个世界，一直亏欠着好人。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老僧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段30",
         "sentence_indexes_in_segment": [
@@ -2017,7 +2734,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "extracted_at": "2026-03-25T17:27:38.506014",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2050,21 +2767,37 @@
         ],
         "juan_index": 307,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "然后老僧多此一举，好似重复说道：“你看着它，它也在看着你。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "“陈平安，你如何看待这个世界，世界就会如何看你。 只可惜世事多无奈，聪明人越来越多，心眼心窍多如莲蓬者，往往喜欢讥讽醇厚，否认纯粹的善意，厌恶他人的赤诚。 ”",
+        "description": "“陈平安，你如何看待这个世界，世界就会如何看你。 然后老僧多此一举，好似重复说道：“你看着它，它也在看着你。 只可惜世事多无奈，聪明人越来越多，心眼心窍多如莲蓬者，往往喜欢讥讽醇厚，否认纯粹的善意，厌恶他人的赤诚。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -2078,8 +2811,34 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "对话",
+        "context": "只可惜世事多无奈，聪明人越来越多，心眼心窍多如莲蓬者，往往喜欢讥讽醇厚，否认纯粹的善意，厌恶他人的赤诚。 ” “陈平安，你如何看待这个世界，世界就会如何看你。 ” 然后老僧多此一举，好似重复说道：“你看着它，它也在看着你。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.506014",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2114,21 +2873,38 @@
         ],
         "juan_index": 307,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "今天老僧说得言语有些多，陈平安又是愿意认真思量的人，所以一时半会，还没有跟着老僧走到那么远的地方。 老僧突然灿烂笑道：“陈施主，今天老僧这番道理，说得可还好？",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 307,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安想了想，觉得有理，却未深思。 今天老僧说得言语有些多，陈平安又是愿意认真思量的人，所以一时半会，还没有跟着老僧走到那么远的地方。 陈平安心中有些伤感，笑道：“很好了。",
+        "description": "陈平安想了想，觉得有理，却未深思。 今天老僧说得言语有些多，陈平安又是愿意认真思量的人，所以一时半会，还没有跟着老僧走到那么远的地方。 老僧突然灿烂笑道：“陈施主，今天老僧这番道理，说得可还好？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段32",
         "sentence_indexes_in_segment": [
           0,
@@ -2142,8 +2918,34 @@
         "segment_index": 32
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "对话",
+        "context": "陈平安想了想，觉得有理，却未深思。 今天老僧说得言语有些多，陈平安又是愿意认真思量的人，所以一时半会，还没有跟着老僧走到那么远的地方。 老僧突然灿烂笑道：“陈施主，今天老僧这番道理，说得可还好？ ” 陈平安心中有些伤感，笑道：“很好了。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 32
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.506014",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2166,6 +2968,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧笑问道：“之前有次听你讲了那‘先后’、‘大小’‘善恶’之说，老僧还想再听一听。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 307,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安第一次说得生疏晦涩，可是道理和真心话，总是越说越明了的，如一面镜子时时擦拭，抹去尘埃，便会越擦越亮。",
@@ -2181,16 +2996,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
-        "description": "陈平安第一次说得生疏晦涩，可是道理和真心话，总是越说越明了的，如一面镜子时时擦拭，抹去尘埃，便会越擦越亮。 老僧笑问道：“之前有次听你讲了那‘先后’、‘大小’‘善恶’之说，老僧还想再听一听。 ”",
+        "description": "老僧笑问道：“之前有次听你讲了那‘先后’、‘大小’‘善恶’之说，老僧还想再听一听。 陈平安第一次说得生疏晦涩，可是道理和真心话，总是越说越明了的，如一面镜子时时擦拭，抹去尘埃，便会越擦越亮。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老僧与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -2204,8 +3022,34 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老僧"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "老僧笑问道：“之前有次听你讲了那‘先后’、‘大小’‘善恶’之说，老僧还想再听一听。 ” 陈平安第一次说得生疏晦涩，可是道理和真心话，总是越说越明了的，如一面镜子时时擦拭，抹去尘埃，便会越擦越亮。 对错有先后，先捋清楚顺序，莫要跳过，只谈自己想要说的那个道理。 对错还分大小，用一把、两把甚至多把尺子来衡量大小，这些尺子可以是所有世间正法、善法，法家律法，儒家礼仪，术家的术算，都可以借来一用。 底线的律法，高高的道德，各地的乡俗，精准的术算，都会涉及，不可以一概而论，钻研起来，极为繁琐复杂，劳心劳力。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.507017",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2228,6 +3072,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧神色安详，听过了陈平安的讲述，双手合十，低头道：“阿弥陀佛。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老僧神色安详，听过了陈平安的讲述，双手合十，低头道：“阿弥陀佛。",
@@ -2243,15 +3100,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 老僧与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老僧",
           "陈平安"
         ],
         "description": "老僧神色安详，听过了陈平安的讲述，双手合十，低头道：“阿弥陀佛。 之后才是最终定下善恶。 无形之中，人性是善是恶的三四之争，于是不再成为读书人不可逾越的一道险隘，因为这是末尾来谈的事情，而不是读书之起始，就需要做出决断的第一件事情。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动老僧与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段34",
         "sentence_indexes_in_segment": [
@@ -2267,7 +3125,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "extracted_at": "2026-03-25T17:27:38.507017",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2301,21 +3159,39 @@
         ],
         "juan_index": 307,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "陈平安收回视线，老僧微笑道：“寺庙不在，僧人在，僧人不在，经书在，经书不在，佛祖在，佛祖不在，佛法还在。 老僧转头再次望向幽静的院子，只有小沙弥扫地的沙沙声响。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安对话",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安望向那只停在飞檐上的小黄莺，它正在打量着打扫寺庙的小沙弥。 陈平安收回视线，老僧微笑道：“寺庙不在，僧人在，僧人不在，经书在，经书不在，佛祖在，佛祖不在，佛法还在。 便是心相寺没了一位僧人，剩不下一本经书，只要有人心中还有佛法，心相寺就还在。",
+        "description": "陈平安望向那只停在飞檐上的小黄莺，它正在打量着打扫寺庙的小沙弥。 陈平安收回视线，老僧微笑道：“寺庙不在，僧人在，僧人不在，经书在，经书不在，佛祖在，佛祖不在，佛法还在。 老僧转头再次望向幽静的院子，只有小沙弥扫地的沙沙声响。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -2329,8 +3205,29 @@
         "segment_index": 35
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.510452",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "对话",
+        "context": "陈平安收回视线，老僧微笑道：“寺庙不在，僧人在，僧人不在，经书在，经书不在，佛祖在，佛祖不在，佛法还在。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 307,
+        "segment_index": 35
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.507017",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2363,21 +3260,38 @@
         ],
         "juan_index": 307,
         "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "老僧低下头，嘴唇微动，“去也。 远处小沙弥往廊道这边望来，怀抱着扫帚，跟老僧抱怨着“师父，日头这么大，我能不能晚些再打扫啊，要热死了。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 307,
+        "segment_index": 36
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧师承",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安寂静无言。 ” 老僧低下头，嘴唇微动，“去也。",
+        "description": "陈平安寂静无言。 老僧低下头，嘴唇微动，“去也。 远处小沙弥往廊道这边望来，怀抱着扫帚，跟老僧抱怨着“师父，日头这么大，我能不能晚些再打扫啊，要热死了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段36",
         "sentence_indexes_in_segment": [
           0,
@@ -2391,8 +3305,34 @@
         "segment_index": 36
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "师承",
+        "context": "” 陈平安寂静无言。 老僧低下头，嘴唇微动，“去也。 ” 远处小沙弥往廊道这边望来，怀抱着扫帚，跟老僧抱怨着“师父，日头这么大，我能不能晚些再打扫啊，要热死了。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 36
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.507017",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2426,21 +3366,51 @@
         ],
         "juan_index": 307,
         "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "陈平安转过头，指了指好似酣睡打盹的老僧，然后伸出手指在嘴边嘘了一声。 廊道里的蒲草圆座上，已死老僧，保持着那个松松垮垮的坐姿。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 307,
+        "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安没来由想起陆台的一句话。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 307,
+        "segment_index": 37
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安冲突",
+        "name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
-        "description": "陈平安转过头，指了指好似酣睡打盹的老僧，然后伸出手指在嘴边嘘了一声。 陈平安没来由想起陆台的一句话。 小沙弥赶紧噤声，然后偷着乐，哈哈，我爱偷懒，原来师父也爱睡觉。",
+        "description": "陈平安转过头，指了指好似酣睡打盹的老僧，然后伸出手指在嘴边嘘了一声。 廊道里的蒲草圆座上，已死老僧，保持着那个松松垮垮的坐姿。 陈平安没来由想起陆台的一句话。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 段37",
         "sentence_indexes_in_segment": [
           0,
@@ -2454,8 +3424,29 @@
         "segment_index": 37
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "冲突",
+        "context": "陈平安转过头，指了指好似酣睡打盹的老僧，然后伸出手指在嘴边嘘了一声。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与老僧冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 307,
+        "segment_index": 37
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.508021",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

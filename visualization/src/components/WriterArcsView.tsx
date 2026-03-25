@@ -5,6 +5,7 @@ import type {
   WriterInsightEventRef,
   WriterSeasonOverview,
 } from '../types/writerInsights';
+import { toChineseRelationshipKind } from '../utils/writerInsightText';
 
 interface WriterArcsViewProps {
   seasonOverviews: WriterSeasonOverview[];
@@ -95,7 +96,7 @@ export function WriterArcsView({
         <section className="rounded-2xl border border-[#c18a59] bg-gradient-to-br from-[#fff9ef] to-[#fff3e0] p-4">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             <div>
-              <div className="text-xs font-semibold tracking-wide text-[#8b4513]">主角主线速览</div>
+              <div className="text-xs font-semibold tracking-wide text-[#8b4513]">主角主线</div>
               <button
                 onClick={() => onRoleClick?.(spotlightArc.role_name)}
                 className="mt-1 text-2xl font-bold text-[#5d2e0c] hover:underline"
@@ -125,9 +126,9 @@ export function WriterArcsView({
           <div className="flex items-center justify-between gap-3 mb-4">
             <div>
               <h4 className="text-lg font-bold text-[#2c1810]">分季总览</h4>
-              <p className="text-sm text-gray-500">先看每一季该抓哪条线，再进入具体角色和关系卡。</p>
+              <p className="text-sm text-gray-500">先看每一季主要讲哪条线，再进入具体角色和关系卡。</p>
             </div>
-            <div className="text-xs text-gray-500">当前命中 {seasonOverviews.length} 个季别卡片</div>
+            <div className="text-xs text-gray-500">当前显示 {seasonOverviews.length} 张季别卡</div>
           </div>
 
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
@@ -242,7 +243,7 @@ export function WriterArcsView({
                 </div>
 
                 <div className="mt-4">
-                  <div className="text-sm font-semibold text-[#2c1810] mb-2">改编抓手</div>
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">可改编线索</div>
                   <div className="space-y-2">
                     {overview.adaptation_hooks.map((hook, index) => (
                       <div
@@ -417,7 +418,7 @@ export function WriterArcsView({
                         {relationship.target_role_name}
                       </button>
                       <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white text-xs">
-                        {relationship.kind}
+                        {toChineseRelationshipKind(relationship.kind)}
                       </span>
                     </div>
                   </div>

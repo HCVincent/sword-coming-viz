@@ -1,4 +1,80 @@
 {
+  "302-2-0": {
+    "juan_index": 302,
+    "segment_index": 2,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零一章 伤心",
+    "source_sentences": [
+      "面对两个莫名其妙的年轻怪物，高冠老人仿佛自知必死，神色怅然，充满了无奈，缓缓道：“若非如此，方才那金袍少年刺我一剑的时候，我就自行炸裂金丹了，再以残留阴神炸死你，毕竟老夫早年巅峰，是摸着元婴门槛的大金丹修士，哪怕你躲得过，也绝对不会好受，说不得这副漂亮皮囊，就要没了。",
+      "”",
+      "陆台点点头，并不否认。",
+      "眼角余光则一直盯着高冠老人的两条胳膊，那才是真正禁锢住老人的杀手锏。",
+      "老人何等老辣，低头望去，啧啧道：“都是好东西啊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "面对两个莫名其妙的年轻怪物，高冠老人仿佛自知必死，神色怅然，充满了无奈，缓缓道：“若非如此，方才那金袍少年刺我一剑的时候，我就自行炸裂金丹了，再以残留阴神炸死你，毕竟老夫早年巅峰，是摸着元婴门槛的大金丹修士，哪怕你躲得过，也绝对不会好受，说不得这副漂亮皮囊，就要没了。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 302,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台点点头，并不否认。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 302,
+        "segment_index": 2
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零一章 伤心 · 阴神与陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "阴神",
+          "陆台"
+        ],
+        "description": "面对两个莫名其妙的年轻怪物，高冠老人仿佛自知必死，神色怅然，充满了无奈，缓缓道：“若非如此，方才那金袍少年刺我一剑的时候，我就自行炸裂金丹了，再以残留阴神炸死你，毕竟老夫早年巅峰，是摸着元婴门槛的大金丹修士，哪怕你躲得过，也绝对不会好受，说不得这副漂亮皮囊，就要没了。 陆台点点头，并不否认。 ”",
+        "background": "",
+        "significance": "推动阴神与陆台之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零一章 伤心 · 段2",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 2
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.471895",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "302-3-0": {
     "juan_index": 302,
     "segment_index": 3,
@@ -16,6 +92,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台视线越过蒲团老人，望向远方的陈平安。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台视线越过蒲团老人，望向远方的陈平安。",
@@ -31,16 +120,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安冲突",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "陆台视线越过蒲团老人，望向远方的陈平安。 老人环顾四周，有些落寞，“当初若非太平山一位老祖的高徒，觊觎我的五岳冠，我却不愿双手奉上，哪里会沦落到今天的境地，他索要无果，便私通散修，出钱请他们大开杀戒，杀得我亲朋好友一个不剩……” 说到这里，老人嘿嘿而笑，“老夫也不是吃素的，便找机会宰了他们两个龙门境修士，那可都是真正的天才，与你们两人差不多，运气好的话，有望跻身元婴境，金丹境是板上钉钉的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -54,8 +146,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.486369",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "老人环顾四周，有些落寞，“当初若非太平山一位老祖的高徒，觊觎我的五岳冠，我却不愿双手奉上，哪里会沦落到今天的境地，他索要无果，便私通散修，出钱请他们大开杀戒，杀得我亲朋好友一个不剩……” 说到这里，老人嘿嘿而笑，“老夫也不是吃素的，便找机会宰了他们两个龙门境修士，那可都是真正的天才，与你们两人差不多，运气好的话，有望跻身元婴境，金丹境是板上钉钉的。 所以太平山便气疯了，再顾不得什么风度不风度，明面上是一位年轻金丹与我捉对厮杀，最终杀得我境界大跌，事实如何？ 哈哈，好一个太平山，那年轻金丹背后可杵着一位元婴地仙呢，为的就是要我给那年轻金丹喂招，既得了打杀一位老金丹的声望，又得了稳固境界的实在好处，美其名曰物尽其用，你们说这些个名门正派，厉害不厉害？ ” 陆台视线越过蒲团老人，望向远方的陈平安。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.471895",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -88,21 +206,37 @@
         ],
         "juan_index": 302,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "他能与陈平安心湖说话，并且保证不被所有中五境修士窃听，陈平安却无法回答，江湖武人凝音成线的手段，市井百姓觉得神奇，可在山上修士看来，实在是最下乘的拙劣手法，因此陆台想要知道陈平安的决定，双方只能眼神交流。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 302,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "他能与陈平安心湖说话，并且保证不被所有中五境修士窃听，陈平安却无法回答，江湖武人凝音成线的手段，市井百姓觉得神奇，可在山上修士看来，实在是最下乘的拙劣手法，因此陆台想要知道陈平安的决定，双方只能眼神交流。 明知道两个年轻人在“眉来眼去”，可谓枭雄末路的高冠老人，没有理睬这些，艰难抬臂，伸出一根手指，轻弹从心口透出的锋锐剑尖，这个英雄气概的动作，使得老人呕血不已，只是老者神色自若，“如果没有认错，应该是那名沉香国第一剑客，从扶乩宗重金购买的佩剑吧，本来就算半件山上法宝，吃掉老夫的心头血后，总算是百尺竿头更进一步，坐实了法宝称号。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -116,8 +250,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.486369",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "他能与陈平安心湖说话，并且保证不被所有中五境修士窃听，陈平安却无法回答，江湖武人凝音成线的手段，市井百姓觉得神奇，可在山上修士看来，实在是最下乘的拙劣手法，因此陆台想要知道陈平安的决定，双方只能眼神交流。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 302,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.471895",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -179,7 +334,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.486369",
+    "extracted_at": "2026-03-25T17:27:38.472899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -212,21 +367,37 @@
         ],
         "juan_index": 302,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "老人低下眉眼，随着那根对陆台而言至关重要的五彩腰带，离开手臂，高冠老人顿时觉得浑身一轻，再无须龙游浅滩被虾戏，老人眯起眼眸，只等另外一条胳膊上的缚妖索也被金袍少年取走。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 302,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安迁移",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "以及那把饱饮老者心头精血的长剑痴心，也随后被陈平安以剑师驭剑术，从心口处拔出，只是拔出之前，不忘狠狠一搅，将老人心口完全捣烂，显而易见，就算是冒着长剑被炸裂的风险，陈平安也要确保老人的必死无疑。 ” 老人身躯开始腐化，一点点灰烬从身上簌簌而落，但是丹田处却绽放出一团刺眼的光彩，向四面八方激射而出。",
+        "description": "以及那把饱饮老者心头精血的长剑痴心，也随后被陈平安以剑师驭剑术，从心口处拔出，只是拔出之前，不忘狠狠一搅，将老人心口完全捣烂，显而易见，就算是冒着长剑被炸裂的风险，陈平安也要确保老人的必死无疑。 老人低下眉眼，随着那根对陆台而言至关重要的五彩腰带，离开手臂，高冠老人顿时觉得浑身一轻，再无须龙游浅滩被虾戏，老人眯起眼眸，只等另外一条胳膊上的缚妖索也被金袍少年取走。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -240,8 +411,96 @@
         "segment_index": 6
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "别离",
+        "context": "” 老人身躯开始腐化，一点点灰烬从身上簌簌而落，但是丹田处却绽放出一团刺眼的光彩，向四面八方激射而出。 几乎同时，初一十五和麦芒，全部疾速撤退，远离那位要自爆丹田的龙门境修士。 以及那把饱饮老者心头精血的长剑痴心，也随后被陈平安以剑师驭剑术，从心口处拔出，只是拔出之前，不忘狠狠一搅，将老人心口完全捣烂，显而易见，就算是冒着长剑被炸裂的风险，陈平安也要确保老人的必死无疑。 老人低下眉眼，随着那根对陆台而言至关重要的五彩腰带，离开手臂，高冠老人顿时觉得浑身一轻，再无须龙游浅滩被虾戏，老人眯起眼眸，只等另外一条胳膊上的缚妖索也被金袍少年取走。 但是老人呆若木鸡。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.472899",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "302-7-0": {
+    "juan_index": 302,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零一章 伤心",
+    "source_sentences": [
+      "那条品相极高的金色缚妖索非但没有离去，反而愈发绑缚住他的胳膊，摆明了要当他的殉葬品。",
+      "老人直到这一刻，机关算尽，到头来仍是被束手束脚，才彻底爆发出压抑心底的阴鸷暴戾，以及内心深处潜藏的那抹恐慌。",
+      "这份情难自禁的惶恐不安，半点不输当年被那位太平山年轻金丹追杀。",
+      "什么元婴地仙厚颜无耻的保驾护航，迫使老人给太平山的那位金丹喂招，自然是高冠老者的信口雌黄。",
+      "为的就是营造出自己愿意慷慨赴死的假象氛围，在缚妖索和彩带松开之后，他就可以分出一缕精粹阴神，舍了肉身和修为，彻底远去，虽然伤及大道根本，可总好过命丧当初，回头去市井找一棵修道好苗子，言语蛊惑，随口编织一个凄惨壮烈的故事，之后兢兢业业帮其修行，然后再伺机夺舍便是。",
+      "不管了，顾不得太多！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "为的就是营造出自己愿意慷慨赴死的假象氛围，在缚妖索和彩带松开之后，他就可以分出一缕精粹阴神，舍了肉身和修为，彻底远去，虽然伤及大道根本，可总好过命丧当初，回头去市井找一棵修道好苗子，言语蛊惑，随口编织一个凄惨壮烈的故事，之后兢兢业业帮其修行，然后再伺机夺舍便是。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 302,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零一章 伤心 · 阴神冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "阴神"
+        ],
+        "description": "为的就是营造出自己愿意慷慨赴死的假象氛围，在缚妖索和彩带松开之后，他就可以分出一缕精粹阴神，舍了肉身和修为，彻底远去，虽然伤及大道根本，可总好过命丧当初，回头去市井找一棵修道好苗子，言语蛊惑，随口编织一个凄惨壮烈的故事，之后兢兢业业帮其修行，然后再伺机夺舍便是。 那条品相极高的金色缚妖索非但没有离去，反而愈发绑缚住他的胳膊，摆明了要当他的殉葬品。 老人直到这一刻，机关算尽，到头来仍是被束手束脚，才彻底爆发出压抑心底的阴鸷暴戾，以及内心深处潜藏的那抹恐慌。",
+        "background": "",
+        "significance": "对应阴神在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零一章 伤心 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 7
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.486369",
+    "extracted_at": "2026-03-25T17:27:38.472899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -264,6 +523,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "由于陆台是练气士，更加难熬，哪怕已经隔着五十丈远，仍是一退再退，即便形势严峻，陆台仍是竭力以心声告知陈平安，选择一个能够保证自身安全的位置上，以此作为契机，淬炼武夫体魄神魂，大有裨益。 隔着那团絮乱气象，陆台看不清楚陈平安的动作，但是相信以陈平安的谨小慎微，会做一个安全之策。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "由于陆台是练气士，更加难熬，哪怕已经隔着五十丈远，仍是一退再退，即便形势严峻，陆台仍是竭力以心声告知陈平安，选择一个能够保证自身安全的位置上，以此作为契机，淬炼武夫体魄神魂，大有裨益。 隔着那团絮乱气象，陆台看不清楚陈平安的动作，但是相信以陈平安的谨小慎微，会做一个安全之策。",
@@ -281,15 +555,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "由于陆台是练气士，更加难熬，哪怕已经隔着五十丈远，仍是一退再退，即便形势严峻，陆台仍是竭力以心声告知陈平安，选择一个能够保证自身安全的位置上，以此作为契机，淬炼武夫体魄神魂，大有裨益。 隔着那团絮乱气象，陆台看不清楚陈平安的动作，但是相信以陈平安的谨小慎微，会做一个安全之策。 不知不觉，陆台早已将武道四境的陈平安当做了同道中人，甚至在某些生死抉择之中，愿意信赖甚至是一定程度上依赖陈平安。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段8",
         "sentence_indexes_in_segment": [
@@ -305,7 +580,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.486369",
+    "extracted_at": "2026-03-25T17:27:38.472899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -440,7 +715,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "extracted_at": "2026-03-25T17:27:38.472899",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -463,6 +738,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "好在手脚皆有莲花符箓生发绽放的陆台，在半空截下陈平安，最终扶着他站在缓缓下降的飞剑针尖之上，陆台自己则在飞剑之外的空中大袖飘摇。 陆台看着模样凄惨的陈平安，既是心疼，又有怒气，“陈平安，你也太莽撞了！",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "好在手脚皆有莲花符箓生发绽放的陆台，在半空截下陈平安，最终扶着他站在缓缓下降的飞剑针尖之上，陆台自己则在飞剑之外的空中大袖飘摇。 陆台看着模样凄惨的陈平安，既是心疼，又有怒气，“陈平安，你也太莽撞了！",
@@ -480,15 +770,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "好在手脚皆有莲花符箓生发绽放的陆台，在半空截下陈平安，最终扶着他站在缓缓下降的飞剑针尖之上，陆台自己则在飞剑之外的空中大袖飘摇。 陆台看着模样凄惨的陈平安，既是心疼，又有怒气，“陈平安，你也太莽撞了！ 陈平安歪头吐出一口血水，还有心情顺着视线望去很久，看得陆台哭笑不得。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段11",
         "sentence_indexes_in_segment": [
@@ -504,7 +795,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "extracted_at": "2026-03-25T17:27:38.473902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -538,20 +829,35 @@
         ],
         "juan_index": 302,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台赶紧掏出一只瓷瓶，倒出芬芳且浓稠的膏药在手心，缓缓倾倒在陈平安那条惨不忍睹的手臂上，哪怕是陈平安这么能熬的家伙，仍是呲牙咧嘴，陆台低声解释道：“忍着点，可让人白骨生肉。 陆台发现环顾四周，似乎在寻找什么，心中了然，没好气道：“方才我已经帮你接住了长剑和那根缚妖索，暂时收在腰带之中，不过事先说好，缚妖索破损得厉害，需要花费不少雪花钱才能修缮如初，不过你放心，这笔钱当然是我来出。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 302,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安收回视线，转头望向那位老修士身死道消的高空战场，并没有什么志得意满的表情，“我是在杀人。 陆台赶紧掏出一只瓷瓶，倒出芬芳且浓稠的膏药在手心，缓缓倾倒在陈平安那条惨不忍睹的手臂上，哪怕是陈平安这么能熬的家伙，仍是呲牙咧嘴，陆台低声解释道：“忍着点，可让人白骨生肉。 ”",
+        "description": "陈平安收回视线，转头望向那位老修士身死道消的高空战场，并没有什么志得意满的表情，“我是在杀人。 陆台赶紧掏出一只瓷瓶，倒出芬芳且浓稠的膏药在手心，缓缓倾倒在陈平安那条惨不忍睹的手臂上，哪怕是陈平安这么能熬的家伙，仍是呲牙咧嘴，陆台低声解释道：“忍着点，可让人白骨生肉。 陆台发现环顾四周，似乎在寻找什么，心中了然，没好气道：“方才我已经帮你接住了长剑和那根缚妖索，暂时收在腰带之中，不过事先说好，缚妖索破损得厉害，需要花费不少雪花钱才能修缮如初，不过你放心，这笔钱当然是我来出。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段12",
         "sentence_indexes_in_segment": [
@@ -567,7 +873,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "extracted_at": "2026-03-25T17:27:38.473902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -601,21 +907,37 @@
         ],
         "juan_index": 302,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台白眼道：“咱们脚下都是荒郊野岭，不怕给人捡漏拿走，好找的。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 302,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安对话",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安松了口气，随即问道：“那顶高冠？ 陈平安叹了口气，那块蒲团已毁，有点可惜，此次斩妖除魔，竟然就只剩下一顶可以搬出山岳的高冠。 ”",
+        "description": "陈平安松了口气，随即问道：“那顶高冠？ 陆台白眼道：“咱们脚下都是荒郊野岭，不怕给人捡漏拿走，好找的。 陈平安叹了口气，那块蒲团已毁，有点可惜，此次斩妖除魔，竟然就只剩下一顶可以搬出山岳的高冠。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -629,8 +951,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安松了口气，随即问道：“那顶高冠？ ” 陆台白眼道：“咱们脚下都是荒郊野岭，不怕给人捡漏拿走，好找的。 ” 两人一飞剑，缓缓向地面下降。 陈平安叹了口气，那块蒲团已毁，有点可惜，此次斩妖除魔，竟然就只剩下一顶可以搬出山岳的高冠。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.473902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -678,6 +1026,19 @@
         ],
         "juan_index": 302,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "这一场变故或者说机缘，跟当初远游大隋途中，顾璨他爹那尊阴神的选择，极为类似。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 302,
+        "segment_index": 14
       }
     ],
     "locations": [],
@@ -688,14 +1049,13 @@
         "location": null,
         "participants": [
           "陈平安",
-          "顾璨"
+          "顾璨",
+          "阴神"
         ],
         "description": "不过当初“逆流而上”，执意要将老修士斩杀当场，对于神魂淬炼，陈平安收益颇丰，武道四境第一次有“沉”下来的感觉，不再是那种虚无缥缈、捉摸不定的意味。 这一场变故或者说机缘，跟当初远游大隋途中，顾璨他爹那尊阴神的选择，极为类似。 陈平安觉得这场厮杀，哪怕没有那顶五岳冠，哪怕缚妖索彻底崩坏，也都不算亏。",
         "background": "",
         "significance": "推动陈平安与顾璨之间的冲突关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -709,34 +1069,8 @@
         "segment_index": 14
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "顾璨"
-        ],
-        "action": "冲突",
-        "context": "不过当初“逆流而上”，执意要将老修士斩杀当场，对于神魂淬炼，陈平安收益颇丰，武道四境第一次有“沉”下来的感觉，不再是那种虚无缥缈、捉摸不定的意味。 这一场变故或者说机缘，跟当初远游大隋途中，顾璨他爹那尊阴神的选择，极为类似。 陈平安觉得这场厮杀，哪怕没有那顶五岳冠，哪怕缚妖索彻底崩坏，也都不算亏。 如今自然是赚大了。 不说其他，只说那把充满邪祟气息的长剑痴心，品相就提升了一大截，转手卖出，可都是钱呢。 不过世间法宝终究是身外物，唯有拳法和剑术，才是陈平安真正想要死死抓住、抓牢的立身之本。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百零一章 伤心 · 陈平安与顾璨冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 302,
-        "segment_index": 14
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.473902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -759,6 +1093,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台突然笑道：“那顶五岳冠，长得挺漂亮啊。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 302,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安笑道：“得嘞，这就是想收入囊中的意思了。",
@@ -774,16 +1121,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安对话",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安笑道：“得嘞，这就是想收入囊中的意思了。 陆台突然笑道：“那顶五岳冠，长得挺漂亮啊。 那老家伙似乎尚未完整发挥出这件法宝的威力，应该是不清楚五岳冠真实来历的缘故，回头我回到中土神洲，去自家藏书楼和几个地理世家翻翻看，说不定会有收获。",
+        "description": "陆台突然笑道：“那顶五岳冠，长得挺漂亮啊。 陈平安笑道：“得嘞，这就是想收入囊中的意思了。 那老家伙似乎尚未完整发挥出这件法宝的威力，应该是不清楚五岳冠真实来历的缘故，回头我回到中土神洲，去自家藏书楼和几个地理世家翻翻看，说不定会有收获。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -797,8 +1147,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台突然笑道：“那顶五岳冠，长得挺漂亮啊。 那老家伙似乎尚未完整发挥出这件法宝的威力，应该是不清楚五岳冠真实来历的缘故，回头我回到中土神洲，去自家藏书楼和几个地理世家翻翻看，说不定会有收获。 ” 陈平安笑道：“得嘞，这就是想收入囊中的意思了。 你撅起腚儿就知道要放什么屁。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.474906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -821,6 +1197,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台愤愤道：“陈平安，好歹读了些圣贤书，你能不能斯文一点？ 陆台丢了个妩媚白眼。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 302,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台愤愤道：“陈平安，好歹读了些圣贤书，你能不能斯文一点？ 陈平安呦呵一声，“俩大老爷们，瞎讲究个啥？",
@@ -838,16 +1228,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安同行",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台愤愤道：“陈平安，好歹读了些圣贤书，你能不能斯文一点？ 陈平安呦呵一声，“俩大老爷们，瞎讲究个啥？ 哪怕一路同行，如果加上乘坐吞宝鲸从倒悬山到桐叶洲，已经不知道几个千里了，可陈平安觉得还是有些吃不消。",
+        "description": "陆台愤愤道：“陈平安，好歹读了些圣贤书，你能不能斯文一点？ 陈平安呦呵一声，“俩大老爷们，瞎讲究个啥？ 陆台丢了个妩媚白眼。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -861,8 +1254,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.487372",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "陆台愤愤道：“陈平安，好歹读了些圣贤书，你能不能斯文一点？ ” 陈平安呦呵一声，“俩大老爷们，瞎讲究个啥？ ” 陆台丢了个妩媚白眼。 哪怕一路同行，如果加上乘坐吞宝鲸从倒悬山到桐叶洲，已经不知道几个千里了，可陈平安觉得还是有些吃不消。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.474906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -885,6 +1304,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "两人落在飞鹰堡外的山林之中，陆台心意一动，本命飞剑麦芒一闪而逝。 陆台主动泄露底细，“麦芒相较针尖，杀伤力平平，但是麦芒诞生之初，就拥有一项罕见神通，‘觅宝’。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 302,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "”陈平安笑着拍了拍养剑葫芦，初一和十五都已经藏身其中。 不过这一次，即便是初一，都没有跟陈平安怄气，应该是这次生死之战，不像以前在城隍庙和千军万马之中那两次，立功不多。",
@@ -901,15 +1334,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "”陈平安笑着拍了拍养剑葫芦，初一和十五都已经藏身其中。 不过这一次，即便是初一，都没有跟陈平安怄气，应该是这次生死之战，不像以前在城隍庙和千军万马之中那两次，立功不多。 两人落在飞鹰堡外的山林之中，陆台心意一动，本命飞剑麦芒一闪而逝。",
+        "description": "两人落在飞鹰堡外的山林之中，陆台心意一动，本命飞剑麦芒一闪而逝。 陆台主动泄露底细，“麦芒相较针尖，杀伤力平平，但是麦芒诞生之初，就拥有一项罕见神通，‘觅宝’。 ”陈平安笑着拍了拍养剑葫芦，初一和十五都已经藏身其中。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段17",
         "sentence_indexes_in_segment": [
@@ -925,7 +1359,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.488376",
+    "extracted_at": "2026-03-25T17:27:38.474906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -975,6 +1409,19 @@
         ],
         "juan_index": 302,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台怔怔。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 18
       }
     ],
     "locations": [],
@@ -985,7 +1432,8 @@
         "location": null,
         "participants": [
           "陈平安",
-          "陆沉"
+          "陆沉",
+          "陆台"
         ],
         "description": "但是真正的原因，还是陈平安嘴上说着艳羡的言语，内心深处，对初一十五仍是充满了感激之情。 陈平安在一棵大树底下盘腿而坐，瞥了眼白骨惨惨的胳膊，撇撇嘴。 陆沉没来由红了眼睛，整个人显得有些沉默。",
         "background": "",
@@ -1005,7 +1453,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.488376",
+    "extracted_at": "2026-03-25T17:27:38.474906",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1041,6 +1489,19 @@
         ],
         "juan_index": 302,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台看到爽朗大笑的陈平安，他心境跟着安宁下来，跟他相对而坐，问道：“为何要这么拼命？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 302,
+        "segment_index": 19
       }
     ],
     "locations": [
@@ -1068,12 +1529,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "陆台"
         ],
         "description": "陈平安笑了起来，笑得很开心。 当初在落魄山竹楼，陈平安就被光脚老人这么骂过，十分难过。 陆台看到爽朗大笑的陈平安，他心境跟着安宁下来，跟他相对而坐，问道：“为何要这么拼命？",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1087,8 +1551,29 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.488376",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台看到爽朗大笑的陈平安，他心境跟着安宁下来，跟他相对而坐，问道：“为何要这么拼命？",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 302,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.475909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1150,7 +1635,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.488376",
+    "extracted_at": "2026-03-25T17:27:38.475909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1173,6 +1658,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台歉意道：“那根彩带，是我的本命物，受不得损伤，对不住了。 陈平安摆摆手，示意陆台不用多解释什么，看了眼陆台的黯然神色，笑着安慰道：“这可不是因为我自己觉得无所谓啊，而是我愿意相信你，才会觉得有些事情，你做了，就自有你的权衡和考量，朋友之间，不用说太多。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安摆摆手，示意陆台不用多解释什么，看了眼陆台的黯然神色，笑着安慰道：“这可不是因为我自己觉得无所谓啊，而是我愿意相信你，才会觉得有些事情，你做了，就自有你的权衡和考量，朋友之间，不用说太多。 陆台又有些眼眶湿润，陈平安语重心长道：“你啊，不是女儿身，真是可惜了。",
@@ -1189,15 +1689,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安摆摆手，示意陆台不用多解释什么，看了眼陆台的黯然神色，笑着安慰道：“这可不是因为我自己觉得无所谓啊，而是我愿意相信你，才会觉得有些事情，你做了，就自有你的权衡和考量，朋友之间，不用说太多。 陆台又有些眼眶湿润，陈平安语重心长道：“你啊，不是女儿身，真是可惜了。 ”",
+        "description": "陆台歉意道：“那根彩带，是我的本命物，受不得损伤，对不住了。 陈平安摆摆手，示意陆台不用多解释什么，看了眼陆台的黯然神色，笑着安慰道：“这可不是因为我自己觉得无所谓啊，而是我愿意相信你，才会觉得有些事情，你做了，就自有你的权衡和考量，朋友之间，不用说太多。 陆台又有些眼眶湿润，陈平安语重心长道：“你啊，不是女儿身，真是可惜了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段21",
         "sentence_indexes_in_segment": [
@@ -1213,7 +1714,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.488376",
+    "extracted_at": "2026-03-25T17:27:38.475909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1236,6 +1737,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "所以陆台知道从陈平安嘴里跑出来“朋友”两个字，分量到底有多重。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 302,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "所以陆台知道从陈平安嘴里跑出来“朋友”两个字，分量到底有多重。",
@@ -1251,15 +1765,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "所以陆台知道从陈平安嘴里跑出来“朋友”两个字，分量到底有多重。 我以前有两个江湖朋友，就是跟你说起过的年轻道士和大髯游侠，在这种事情，就都没你这么扭扭捏捏，你太不爽利了。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段22",
         "sentence_indexes_in_segment": [
@@ -1275,7 +1790,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "extracted_at": "2026-03-25T17:27:38.475909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1311,21 +1826,39 @@
         ],
         "juan_index": 302,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安事实上就是这么做的，高冠老人以五岳压下，只要陆台出手再慢一点，哪怕陈平安躲在“山底”下的大坑之中，依然会被阵法灵气所镇压，活活闷死其中。 陆台一想到这个，便又有些愁肠百转，整个人愈发像是女子了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3
+        ],
+        "juan_index": 302,
+        "segment_index": 23
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安冲突",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安事实上就是这么做的，高冠老人以五岳压下，只要陆台出手再慢一点，哪怕陈平安躲在“山底”下的大坑之中，依然会被阵法灵气所镇压，活活闷死其中。 因为他当时在那个小院中，是唯一的听众，亲耳听着陈平安亲口说过的那些事情，那些有关梦想和愿望的事情。 于是陆台斩钉截铁道：“陈平安，这次分赃，我会让你赚一个盆满钵盈的。",
+        "description": "陈平安事实上就是这么做的，高冠老人以五岳压下，只要陆台出手再慢一点，哪怕陈平安躲在“山底”下的大坑之中，依然会被阵法灵气所镇压，活活闷死其中。 陆台一想到这个，便又有些愁肠百转，整个人愈发像是女子了。 因为他当时在那个小院中，是唯一的听众，亲耳听着陈平安亲口说过的那些事情，那些有关梦想和愿望的事情。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1339,8 +1872,29 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "冲突",
+        "context": "陈平安事实上就是这么做的，高冠老人以五岳压下，只要陆台出手再慢一点，哪怕陈平安躲在“山底”下的大坑之中，依然会被阵法灵气所镇压，活活闷死其中。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 302,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.476913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1363,6 +1917,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台终于幽幽开口道：“陈平安，你怕死，我怕命。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 302,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台终于幽幽开口道：“陈平安，你怕死，我怕命。 陈平安摇头道：“当然不是，我比你爷们多了。",
@@ -1379,16 +1946,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "陆台终于幽幽开口道：“陈平安，你怕死，我怕命。 陈平安摇头道：“当然不是，我比你爷们多了。 长久的沉默。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -1402,8 +1972,29 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台终于幽幽开口道：“陈平安，你怕死，我怕命。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 302,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.476913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1426,6 +2017,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台好不容易与人这般吐露心扉，结果给人浇了一头冷水，顿时大怒，“陈平安！",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 302,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台好不容易与人这般吐露心扉，结果给人浇了一头冷水，顿时大怒，“陈平安！ 陈平安眨眨眼，“我一个大老爷们，要另外一个男人觉得我有意思做啥，我有病啊？",
@@ -1442,15 +2046,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陆台好不容易与人这般吐露心扉，结果给人浇了一头冷水，顿时大怒，“陈平安！ 陈平安眨眨眼，“我一个大老爷们，要另外一个男人觉得我有意思做啥，我有病啊？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段25",
         "sentence_indexes_in_segment": [
@@ -1466,7 +2071,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "extracted_at": "2026-03-25T17:27:38.476913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1489,6 +2094,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台恹恹道：“好吧，我有病。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 302,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安耳尖，愣了愣，“啥意思？",
@@ -1504,15 +2122,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安耳尖，愣了愣，“啥意思？ 陆台恹恹道：“好吧，我有病。 ”",
+        "description": "陆台恹恹道：“好吧，我有病。 陈平安耳尖，愣了愣，“啥意思？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段26",
         "sentence_indexes_in_segment": [
@@ -1528,7 +2147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "extracted_at": "2026-03-25T17:27:38.476913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1551,6 +2170,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台后仰倒去，躺在地上，“就是字面意思，我就是个怪物嘛，从小到大，知道这个秘密的人，我爹娘加两个师傅，再加一个家族老祖宗，你是第六个。 陆台痴痴望向天空，“想说什么就说吧，我既然说出口，就受得了你任何看法。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "说到最后，陈平安已经完全听不真切。 陈平安憋了半天。",
@@ -1567,15 +2200,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安揭示",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陆台与陈平安揭示",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "说到最后，陈平安已经完全听不真切。 陈平安憋了半天。 ”",
+        "description": "陆台后仰倒去，躺在地上，“就是字面意思，我就是个怪物嘛，从小到大，知道这个秘密的人，我爹娘加两个师傅，再加一个家族老祖宗，你是第六个。 说到最后，陈平安已经完全听不真切。 陈平安憋了半天。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "推动陆台与陈平安之间的揭示关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段27",
         "sentence_indexes_in_segment": [
@@ -1591,7 +2225,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "extracted_at": "2026-03-25T17:27:38.476913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1624,21 +2258,38 @@
         ],
         "juan_index": 302,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安挪了挪位置，靠近一些陆台，充满了好奇，又有些难为情，低声问道：“女人来那个的时候，是不是很痛啊？ 陆台如遭雷击，黑着脸转过头，咬牙切齿道：“你怎么不去问你喜欢的那个姑娘？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 302,
+        "segment_index": 28
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安对话",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安挪了挪位置，靠近一些陆台，充满了好奇，又有些难为情，低声问道：“女人来那个的时候，是不是很痛啊？ ” ”",
+        "description": "陈平安挪了挪位置，靠近一些陆台，充满了好奇，又有些难为情，低声问道：“女人来那个的时候，是不是很痛啊？ 陆台如遭雷击，黑着脸转过头，咬牙切齿道：“你怎么不去问你喜欢的那个姑娘？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零一章 伤心 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -1652,8 +2303,29 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安挪了挪位置，靠近一些陆台，充满了好奇，又有些难为情，低声问道：“女人来那个的时候，是不是很痛啊？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 302,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.476913",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1688,20 +2360,35 @@
         ],
         "juan_index": 302,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台突然笑了起来，指了指陈平安的手臂。 陆台坐起身的时候，蓦然发现那个家伙，在伤心，而且是很伤心的那种。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 302,
+        "segment_index": 29
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安下意识挠挠头，“这我哪敢啊。 陆台突然笑了起来，指了指陈平安的手臂。 陈平安骂了一句娘，赶紧放下那条血肉缓缓生长的胳膊，真疼。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段29",
         "sentence_indexes_in_segment": [
@@ -1717,7 +2404,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.489379",
+    "extracted_at": "2026-03-25T17:27:38.477916",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1738,6 +2425,20 @@
       "骊珠洞天。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台只觉得不可理喻。 只见陈平安膝盖上，放着一枚陆台从未见过的印章，小小的。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 302,
+        "segment_index": 30
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1772,15 +2473,16 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安在骊珠洞天剧情推进",
+        "name": "第五卷道观道 第三百零一章 伤心 · 陈平安与陆台在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "不知道天底下还有什么事情，能够让陈平安这么想不开。 只见陈平安膝盖上，放着一枚陆台从未见过的印章，小小的。 而他陈平安也还好好活着。",
+        "description": "陆台只觉得不可理喻。 不知道天底下还有什么事情，能够让陈平安这么想不开。 只见陈平安膝盖上，放着一枚陆台从未见过的印章，小小的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在骊珠洞天推动陈平安与陆台之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零一章 伤心 · 段30",
         "sentence_indexes_in_segment": [
@@ -1796,7 +2498,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.490383",
+    "extracted_at": "2026-03-25T17:27:38.477916",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1871,7 +2573,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.490383",
+    "extracted_at": "2026-03-25T17:27:38.477916",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

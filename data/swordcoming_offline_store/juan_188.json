@@ -40,6 +40,19 @@
         ],
         "juan_index": 188,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "当初不愿意跟随李宝瓶三位同窗，一起远游大隋的质朴少年，董水井选择留在小镇，而石春嘉，那个扎羊角辫的小姑娘，则选择跟随家族一起迁去大骊京城。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 188,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -52,7 +65,8 @@
         "coordinates": null,
         "related_entities": [
           "李宝瓶",
-          "董水井"
+          "董水井",
+          "石春嘉"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -71,7 +85,8 @@
         "coordinates": null,
         "related_entities": [
           "李宝瓶",
-          "董水井"
+          "董水井",
+          "石春嘉"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -95,7 +110,9 @@
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第三卷金错刀 第一百八十八章 大规大矩和鸡毛蒜皮 · 段1",
         "sentence_indexes_in_segment": [
@@ -130,9 +147,49 @@
         ],
         "juan_index": 188,
         "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "石春嘉"
+        ],
+        "action": "同行",
+        "context": "当初不愿意跟随李宝瓶三位同窗，一起远游大隋的质朴少年，董水井选择留在小镇，而石春嘉，那个扎羊角辫的小姑娘，则选择跟随家族一起迁去大骊京城。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 188,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "董水井"
+        ],
+        "to_roles": [
+          "石春嘉"
+        ],
+        "action": "同行",
+        "context": "当初不愿意跟随李宝瓶三位同窗，一起远游大隋的质朴少年，董水井选择留在小镇，而石春嘉，那个扎羊角辫的小姑娘，则选择跟随家族一起迁去大骊京城。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 188,
+        "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.969486",
+    "extracted_at": "2026-03-25T17:27:37.809879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -384,7 +441,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.969486",
+    "extracted_at": "2026-03-25T17:27:37.809879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -532,7 +589,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.969486",
+    "extracted_at": "2026-03-25T17:27:37.809879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -611,7 +668,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.969486",
+    "extracted_at": "2026-03-25T17:27:37.810883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -731,7 +788,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.969486",
+    "extracted_at": "2026-03-25T17:27:37.810883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -968,7 +1025,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.810883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1075,7 +1132,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.810883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1140,7 +1197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.810883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1295,7 +1352,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.810883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1397,7 +1454,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1516,7 +1573,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1657,7 +1714,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.970489",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1740,7 +1797,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1805,7 +1862,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1931,7 +1988,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2009,7 +2066,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.811886",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2131,7 +2188,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.812890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2217,7 +2274,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.812890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2344,7 +2401,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.812890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2425,7 +2482,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.971493",
+    "extracted_at": "2026-03-25T17:27:37.812890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2504,7 +2561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.812890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2582,7 +2639,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.813893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2686,7 +2743,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.813893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2793,7 +2850,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.813893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2872,7 +2929,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.813893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2993,7 +3050,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.813893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3122,7 +3179,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.972496",
+    "extracted_at": "2026-03-25T17:27:37.813893",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3222,7 +3279,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.814897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3301,7 +3358,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.814897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3425,7 +3482,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.814897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3555,7 +3612,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.814897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3617,7 +3674,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.814897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3737,7 +3794,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.815900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3858,7 +3915,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.973500",
+    "extracted_at": "2026-03-25T17:27:37.815900",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

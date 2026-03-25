@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import type { BookConfig } from '../types/pipelineArtifacts';
-import type { TimelineEventUnified, RoleNodeUnified, UnifiedLocation } from '../types/unified';
+import type { RoleNodeUnified, TimelineEventUnified, UnifiedLocation } from '../types/unified';
 
 interface MapViewProps {
   bookConfig: BookConfig | null;
@@ -60,92 +60,122 @@ export function MapView({
   }, [eventsInRange, locations]);
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 flex flex-col gap-4">
-      <div className="flex items-center justify-between">
+    <div className="view-shell">
+      <div className="view-header">
         <div>
-          <h3 className="text-lg font-bold text-[#2c1810]">地点关系 / 迁移视图</h3>
-          <p className="text-sm text-gray-500">
-            {bookConfig?.has_geo_coordinates ? '当前书籍支持真实坐标。' : '当前首版不依赖真实地图坐标，按叙事进度展示地点流转。'}
+          <h3 className="view-title">地点关系 / 迁移视图</h3>
+          <p className="view-copy">
+            {bookConfig?.has_geo_coordinates
+              ? '当前书籍支持真实坐标，这里会优先显示迁移路径与高频地点。'
+              : '这一版不依赖真实地图坐标，而是按叙事进度梳理地点流转与场域上下文。'}
           </p>
         </div>
-        <div className="text-sm text-gray-500">{locations.length} 个地点</div>
+        <div className="float-stat">{locations.length} 个地点</div>
       </div>
 
       {(selectedRole || selectedEvent || focusedLocation) && (
-        <div className="rounded-lg border border-[#d4c5b5] bg-[#faf8f5] p-4">
-          <div className="text-sm font-semibold text-[#8b4513] mb-2">
+        <section className="insight-card mb-4">
+          <p className="section-kicker">当前路径</p>
+          <h4 className="view-title text-[1.15rem]">
             {selectedRole
               ? `${selectedRole.name} 的地点轨迹`
               : selectedEvent
                 ? `${selectedEvent.name} 的地点上下文`
-                : `${focusedLocation?.canonical_name} 的地点详情`}
-          </div>
+                : `${focusedLocation?.canonical_name} 的场域摘要`}
+          </h4>
 
           {trajectory.length > 0 ? (
-            <div className="space-y-3">
+            <div className="view-grid mt-4">
               {trajectory.map((event, index) => (
                 <button
                   key={`${event.id}-${index}`}
+                  type="button"
+                  className="detail-card text-left hover:border-[rgba(182,120,42,0.28)]"
                   onClick={() => event.locationObj && onLocationClick?.(event.locationObj)}
-                  className="w-full text-left rounded-lg border border-[#d4c5b5] bg-white p-3 hover:border-[#8b4513] transition-colors"
                 >
-                  <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-start justify-between gap-3">
                     <div>
-                      <div className="font-medium text-[#2c1810]">{event.location}</div>
-                      <div className="text-sm text-gray-500">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
+                      <div className="font-semibold text-[var(--text-primary)]">{event.location}</div>
+                      <div className="mt-1 text-sm text-[var(--text-muted)]">
+                        {event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}
+                      </div>
                     </div>
-                    <div className="text-xs text-[#8b4513]">{event.name}</div>
+                    <span className="tag-pill">{event.name}</span>
                   </div>
                 </button>
               ))}
             </div>
           ) : focusedLocation ? (
-            <div className="text-sm text-gray-700">
-              <div className="font-medium text-[#2c1810]">{focusedLocation.canonical_name}</div>
-              {focusedLocation.description && <p className="mt-2">{focusedLocation.description}</p>}
-              <p className="mt-2 text-gray-500">相关实体：{focusedLocation.associated_entities?.join('、') || '暂无'}</p>
+            <div className="detail-card mt-4">
+              <div className="font-semibold text-[var(--text-primary)]">{focusedLocation.canonical_name}</div>
+              {focusedLocation.description && <p className="detail-text mt-3">{focusedLocation.description}</p>}
+              <div className="chip-wrap mt-4">
+                {(focusedLocation.associated_entities ?? []).slice(0, 6).map((entity) => (
+                  <span key={`${focusedLocation.id}-${entity}`} className="pill-chip">
+                    {entity}
+                  </span>
+                ))}
+              </div>
             </div>
           ) : (
-            <div className="text-sm text-gray-500">当前选择没有可用的地点轨迹。</div>
+            <div className="empty-state mt-4">当前选择没有可用的地点轨迹。</div>
           )}
-        </div>
+        </section>
       )}
 
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-        <div className="rounded-lg border border-[#d4c5b5] p-4">
-          <h4 className="font-semibold text-[#8b4513] mb-3">高频地点</h4>
-          <div className="space-y-2 max-h-[420px] overflow-y-auto pr-1">
+      <div className="grid gap-4 xl:grid-cols-2">
+        <section className="detail-card">
+          <div className="view-header">
+            <div>
+              <h4 className="view-title text-[1.15rem]">高频地点</h4>
+              <p className="view-copy">优先挑出事件密度高、剧情承载重的场域。</p>
+            </div>
+          </div>
+          <div className="view-grid max-h-[430px] overflow-y-auto pr-1">
             {topLocations.map(({ location, relatedEvents }) => (
               <button
                 key={location.id}
-                onClick={() => onLocationClick?.(location)}
-                className={`w-full text-left rounded-lg border p-3 transition-colors ${
-                  focusLocationId === location.id
-                    ? 'border-[#8b4513] bg-[#faf8f5]'
-                    : 'border-[#d4c5b5] hover:border-[#8b4513]'
+                type="button"
+                className={`detail-card text-left ${
+                  focusLocationId === location.id ? 'border-[rgba(182,120,42,0.34)] bg-[rgba(230,194,139,0.16)]' : 'hover:border-[rgba(182,120,42,0.28)]'
                 }`}
+                onClick={() => onLocationClick?.(location)}
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <div className="font-medium text-[#2c1810]">{location.canonical_name}</div>
-                    <div className="text-xs text-gray-500 mt-1">{location.location_type || '地点'}</div>
-                    {location.description && <p className="text-sm text-gray-600 mt-2 line-clamp-2">{location.description}</p>}
+                    <div className="font-semibold text-[var(--text-primary)]">{location.canonical_name}</div>
+                    <div className="mt-1 text-sm text-[var(--text-muted)]">{location.location_type || '地点'}</div>
                   </div>
-                  <div className="text-xs text-[#8b4513] whitespace-nowrap">{relatedEvents} 事件</div>
+                  <span className="dashboard-pill">{relatedEvents} 事件</span>
                 </div>
+                {location.description && <p className="detail-text mt-3">{location.description}</p>}
               </button>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className="rounded-lg border border-[#d4c5b5] p-4">
-          <h4 className="font-semibold text-[#8b4513] mb-3">地点迁移提示</h4>
-          <div className="space-y-3 text-sm text-gray-700">
-            <p>选中人物后，这里会按叙事进度列出其相关事件所在地点。</p>
-            <p>选中事件后，这里会强调该事件的地点和相邻地点上下文。</p>
-            <p>首版先服务剧情分析，不使用 OpenStreetMap 或真实经纬度。</p>
+        <section className="detail-card">
+          <div className="view-header">
+            <div>
+              <h4 className="view-title text-[1.15rem]">使用说明</h4>
+              <p className="view-copy">这一页仍然服务剧情分析，而不是地理学意义上的地图工具。</p>
+            </div>
           </div>
-        </div>
+          <div className="view-grid">
+            <div className="subtle-card">
+              <p className="detail-heading">角色轨迹</p>
+              <p className="detail-text">当你选中某个人物后，这里会按叙事进度列出该人物涉及事件所在的地点。</p>
+            </div>
+            <div className="subtle-card">
+              <p className="detail-heading">事件上下文</p>
+              <p className="detail-text">当你选中某个事件后，这里会强化该事件地点的上下文位置，帮助你判断戏落在哪里。</p>
+            </div>
+            <div className="subtle-card">
+              <p className="detail-heading">地点回跳</p>
+              <p className="detail-text">点击左侧地点卡，可以继续进入地点详情；再从详情中跳到相关人物、事件和关系。</p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

@@ -93,7 +93,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.017652",
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -114,6 +114,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "天何其高远，地何其广阔，要知道宝瓶洲才是浩然天下的九洲中，最小的那个，何况距离倒悬山最近的大洲，还是那座秀木如林、枝繁叶茂的婆娑洲，例如曹曦之流，已是战力极高的陆地剑仙，可是在南婆娑洲，依然难称最最顶尖，真正会当凌绝顶的修士，是颍阴陈氏的老祖之流。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 198,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "魏檗",
@@ -155,7 +168,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -205,14 +220,13 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "曹曦"
         ],
         "description": "天何其高远，地何其广阔，要知道宝瓶洲才是浩然天下的九洲中，最小的那个，何况距离倒悬山最近的大洲，还是那座秀木如林、枝繁叶茂的婆娑洲，例如曹曦之流，已是战力极高的陆地剑仙，可是在南婆娑洲，依然难称最最顶尖，真正会当凌绝顶的修士，是颍阴陈氏的老祖之流。 落魄山山神宋煜章，期间主动求见过魏檗一次，魏檗只是不咸不淡跟他聊了几句，远远不如第一次见面那般客气热络，其中缘由，双方心知肚明。 宋煜章要做醇臣，要愚忠，一切以大骊利益为首要，当初在山巅的山神庙，关于陈平安一事，宋煜章哪怕是当着魏檗的面，也说得开门见山，魏檗又不是没有半点火气的泥菩萨，便有些不欢而散。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十八章 少年想要远游 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -226,34 +240,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "魏檗"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "会见",
-        "context": "天何其高远，地何其广阔，要知道宝瓶洲才是浩然天下的九洲中，最小的那个，何况距离倒悬山最近的大洲，还是那座秀木如林、枝繁叶茂的婆娑洲，例如曹曦之流，已是战力极高的陆地剑仙，可是在南婆娑洲，依然难称最最顶尖，真正会当凌绝顶的修士，是颍阴陈氏的老祖之流。 落魄山山神宋煜章，期间主动求见过魏檗一次，魏檗只是不咸不淡跟他聊了几句，远远不如第一次见面那般客气热络，其中缘由，双方心知肚明。 宋煜章要做醇臣，要愚忠，一切以大骊利益为首要，当初在山巅的山神庙，关于陈平安一事，宋煜章哪怕是当着魏檗的面，也说得开门见山，魏檗又不是没有半点火气的泥菩萨，便有些不欢而散。 魏檗今天拎着包袱，优哉游哉缓缓登山而行，来到竹楼，发现今天在二楼屋内对练之前，站在栏杆附近的陈平安，刚刚练习完剑炉立桩，竟然还有兴致主动跟他打招呼，魏檗将价值十万两白银的包袱轻轻抛给粉裙女童，瞥了眼盘腿坐在崖畔的青衣小童，脚步轻盈地小跑上二楼，发出一连串噔噔噔的响声，不像是什么即将金色敕命在身的北岳正神，倒像是个跑堂的店伙计。 陈平安虽然马上就要“赶赴刑场”，仍是微笑道：“辛苦魏仙师了。 ”",
-        "result": null,
-        "event_name": "落魄山起势",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 198,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.017652",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -331,7 +319,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.018656",
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -410,7 +398,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.018656",
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -519,7 +507,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.018656",
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -582,7 +570,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.018656",
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -644,7 +632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.018656",
+    "extracted_at": "2026-03-25T17:27:37.867078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,7 +695,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.868081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -799,7 +787,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.868081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -863,7 +851,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.868081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -925,7 +913,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.868081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -989,7 +977,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.868081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1130,7 +1118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.869084",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1221,7 +1209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.019659",
+    "extracted_at": "2026-03-25T17:27:37.869084",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1329,7 +1317,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.869084",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1440,7 +1428,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.869084",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1532,7 +1520,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.869084",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1659,7 +1647,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.870088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1751,7 +1739,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.870088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1844,7 +1832,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.870088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1942,7 +1930,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.020663",
+    "extracted_at": "2026-03-25T17:27:37.870088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2104,7 +2092,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.870088",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2127,6 +2115,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "倒是一位在小镇不愿挪步的六境妖物，跟前去通报的县衙官吏起了争执，凶性勃发，一拳打得那名官吏呕血不已，还将一位随行扈从的武秘书郎一并打伤，结果不到一炷香功夫，飞剑传讯到了大山北边的新建郡府，郡守吴鸢亲自下令，将那名妖物当场斩杀。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 198,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "许弱",
         "alias": [],
         "original_description_in_book": "名动中土的墨家豪侠许弱，和麾下心腹刘狱，就在不远处的一座屋脊上，并肩而立，袖手旁观，没有越俎代庖。",
@@ -2147,7 +2148,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -2183,12 +2186,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "吴鸢",
           "许弱"
         ],
         "description": "随后近百位隐于小镇市井的野修，在进山路途当中，相互间起了好几桩冲突，一言不合就打生打死，大骊朝廷对此并不插手，只要双方厮杀，不破坏山头的风水，全部睁一只眼闭一只眼。 倒是一位在小镇不愿挪步的六境妖物，跟前去通报的县衙官吏起了争执，凶性勃发，一拳打得那名官吏呕血不已，还将一位随行扈从的武秘书郎一并打伤，结果不到一炷香功夫，飞剑传讯到了大山北边的新建郡府，郡守吴鸢亲自下令，将那名妖物当场斩杀。 从始至终，郡府没有动用小镇那几个大族的老祖修士，更没有驱使那些寄人篱下、汲取灵气的其它妖物，而是派遣了三位品秩较高的武秘书郎，配合两百精锐大骊军卒，在一名武将的率领下，把妖族所在的宅邸围困得水泄不通，屋脊之上，皆是膂力超群的弓弩手，一张张强弓劲弩，所用弩箭更是工部一座秘密衙门的特制，最终将其当场绞杀。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十八章 少年想要远游 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -2202,8 +2208,34 @@
         "segment_index": 24
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "许弱"
+        ],
+        "action": "冲突",
+        "context": "随后近百位隐于小镇市井的野修，在进山路途当中，相互间起了好几桩冲突，一言不合就打生打死，大骊朝廷对此并不插手，只要双方厮杀，不破坏山头的风水，全部睁一只眼闭一只眼。 倒是一位在小镇不愿挪步的六境妖物，跟前去通报的县衙官吏起了争执，凶性勃发，一拳打得那名官吏呕血不已，还将一位随行扈从的武秘书郎一并打伤，结果不到一炷香功夫，飞剑传讯到了大山北边的新建郡府，郡守吴鸢亲自下令，将那名妖物当场斩杀。 从始至终，郡府没有动用小镇那几个大族的老祖修士，更没有驱使那些寄人篱下、汲取灵气的其它妖物，而是派遣了三位品秩较高的武秘书郎，配合两百精锐大骊军卒，在一名武将的率领下，把妖族所在的宅邸围困得水泄不通，屋脊之上，皆是膂力超群的弓弩手，一张张强弓劲弩，所用弩箭更是工部一座秘密衙门的特制，最终将其当场绞杀。 名动中土的墨家豪侠许弱，和麾下心腹刘狱，就在不远处的一座屋脊上，并肩而立，袖手旁观，没有越俎代庖。 当时远远观战的人，还有许多买下山头的外来势力。 如果大骊是派遣出一位强大修士，碾压镇杀那个不守规矩的妖物，对于那些观战之人的冲击，其实要远远小于他们看到的那一幕兵家修士出身的大骊武秘书郎，配合沙场百战的悍卒，人人进退有序，有条不紊，游刃有余地强杀妖物，分属于山上山下的两拨人，却能够配合得天衣无缝。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 198,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.871091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2284,7 +2316,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.871091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2346,7 +2378,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.871091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2446,7 +2478,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.871091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2508,7 +2540,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.871091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2589,7 +2621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.871091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2668,7 +2700,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.021666",
+    "extracted_at": "2026-03-25T17:27:37.872095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2732,7 +2764,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.022670",
+    "extracted_at": "2026-03-25T17:27:37.872095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2766,21 +2798,37 @@
         ],
         "juan_index": 198,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "满脸鲜血看不清面容的陈平安悲愤欲绝，一边呕血，一边沙哑答道：“我是想问练拳之后，应该如何练剑……”",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 198,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十八章 少年想要远游 · 陈平安对话",
+        "name": "第三卷金错刀 第一百九十八章 少年想要远游 · 陈平安与沙哑对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "沙哑"
         ],
         "description": "奄奄一息的陈平安躺在地上，半死不活。 满脸鲜血看不清面容的陈平安悲愤欲绝，一边呕血，一边沙哑答道：“我是想问练拳之后，应该如何练剑……” 他多次误以为自己真的就要死了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与沙哑之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十八章 少年想要远游 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -2794,8 +2842,29 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.022670",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "对话",
+        "context": "满脸鲜血看不清面容的陈平安悲愤欲绝，一边呕血，一边沙哑答道：“我是想问练拳之后，应该如何练剑……”",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十八章 少年想要远游 · 陈平安与沙哑对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 198,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.872095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2873,7 +2942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.022670",
+    "extracted_at": "2026-03-25T17:27:37.872095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

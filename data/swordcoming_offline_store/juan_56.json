@@ -74,7 +74,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.450087",
+    "extracted_at": "2026-03-25T17:27:37.160545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -135,7 +135,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.160545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -197,7 +197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.160545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -277,7 +277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.160545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -297,7 +297,21 @@
       "到时候这支陈家就这么断子绝孙了，不怕遭到人家祖上阴神的报应？",
       "退一万步说，那女子的性情，你当真不清楚，愿意改嫁给你？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "到时候这支陈家就这么断子绝孙了，不怕遭到人家祖上阴神的报应？",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 56,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -316,13 +330,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十六章 点头 · 泥瓶巷剧情推进",
+        "name": "第一卷笼中雀 第五十六章 点头 · 阴神在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "泥瓶巷那一支陈家，好几辈人都是一根独苗，你就不怕害了一个人，最后害得人家一家三口全活不下去？ ” 少年下意识皱着眉头，使劲去记忆那些儿时的惨淡画面，“只有我奶奶没说话，好像不太高兴，反而对我爹一顿发火，‘你以为那孩子他爹死了，你就能有机会娶到她？",
+        "participants": [
+          "阴神"
+        ],
+        "description": "泥瓶巷那一支陈家，好几辈人都是一根独苗，你就不怕害了一个人，最后害得人家一家三口全活不下去？ 到时候这支陈家就这么断子绝孙了，不怕遭到人家祖上阴神的报应？ ”",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键剧情推进场景。",
+        "significance": "对应阴神在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十六章 点头 · 段5",
         "sentence_indexes_in_segment": [
@@ -338,7 +354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -417,7 +433,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -479,7 +495,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -583,7 +599,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -645,7 +661,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -723,7 +739,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.451091",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -847,7 +863,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.161549",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -926,7 +942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.162553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -987,7 +1003,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.162553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1066,7 +1082,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.162553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1171,7 +1187,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.162553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1272,7 +1288,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.162553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1379,7 +1395,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.452094",
+    "extracted_at": "2026-03-25T17:27:37.162553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1455,7 +1471,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.163556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1533,7 +1549,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.163556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1610,7 +1626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.163556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1687,7 +1703,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.163556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1791,7 +1807,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.163556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1892,7 +1908,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.163556",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1997,7 +2013,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.164560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2099,7 +2115,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.453098",
+    "extracted_at": "2026-03-25T17:27:37.164560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2176,7 +2192,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.164560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2277,7 +2293,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.164560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2379,7 +2395,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.164560",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2497,7 +2513,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2603,7 +2619,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2666,7 +2682,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2743,7 +2759,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2807,7 +2823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.454101",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2909,7 +2925,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.455105",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3002,7 +3018,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.455105",
+    "extracted_at": "2026-03-25T17:27:37.165564",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3060,7 +3076,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.455105",
+    "extracted_at": "2026-03-25T17:27:37.166567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

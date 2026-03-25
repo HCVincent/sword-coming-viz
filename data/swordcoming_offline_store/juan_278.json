@@ -28,20 +28,49 @@
         ],
         "juan_index": 278,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "一颗上等蛇胆石，是神诰宗道姑贺小凉当初在鲲船上，还给陈平安，还有一些已经褪色的普通蛇胆石。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 278,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "沈温",
+        "alias": [],
+        "original_description_in_book": "彩衣国城隍爷沈温赠送的金色文胆，除此之外，旁边搁着一小堆金银两色的金身碎片，文武辅官的银色碎片，也有胭脂郡淫祠山神的破碎金身。 一枚出自某一代龙虎山大天师之手的印章，按照沈温的说法，需要配合道家五雷正法，才能发挥威力，但是最让陈平安记忆犹新的，还是这句话：唯有德者持之。",
+        "description": "山水与庙堂边缘的支线人物，适合补足外围山上关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与沈温剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "沈温",
+          "贺小凉"
         ],
-        "description": "既是陈平安的收获，也是陈平安的江湖。 一颗上等蛇胆石，是神诰宗道姑贺小凉当初在鲲船上，还给陈平安，还有一些已经褪色的普通蛇胆石。 一枚出自某一代龙虎山大天师之手的印章，按照沈温的说法，需要配合道家五雷正法，才能发挥威力，但是最让陈平安记忆犹新的，还是这句话：唯有德者持之。",
+        "description": "既是陈平安的收获，也是陈平安的江湖。 一颗上等蛇胆石，是神诰宗道姑贺小凉当初在鲲船上，还给陈平安，还有一些已经褪色的普通蛇胆石。 彩衣国城隍爷沈温赠送的金色文胆，除此之外，旁边搁着一小堆金银两色的金身碎片，文武辅官的银色碎片，也有胭脂郡淫祠山神的破碎金身。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与沈温之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段1",
         "sentence_indexes_in_segment": [
@@ -57,7 +86,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.397059",
+    "extracted_at": "2026-03-25T17:27:38.353567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -264,7 +293,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.397059",
+    "extracted_at": "2026-03-25T17:27:38.353567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -285,6 +314,19 @@
       "宁姚翻翻捡捡，一样样打量过去，最后笑道：“都给我了？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "一本文圣老秀才赠送的儒家典籍，几本从胭脂郡太守府邸得到的山水游记和文人笔札。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 278,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -315,19 +357,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与宁姚对话",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 老秀才与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安",
           "宁姚"
         ],
-        "description": "它被陈平安放在了最手边的位置。 宁姚翻翻捡捡，一样样打量过去，最后笑道：“都给我了？ 一本文圣老秀才赠送的儒家典籍，几本从胭脂郡太守府邸得到的山水游记和文人笔札。",
+        "description": "一本文圣老秀才赠送的儒家典籍，几本从胭脂郡太守府邸得到的山水游记和文人笔札。 它被陈平安放在了最手边的位置。 宁姚翻翻捡捡，一样样打量过去，最后笑道：“都给我了？",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动老秀才与陈平安之间的对话关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -341,34 +382,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "宁姚"
-        ],
-        "action": "对话",
-        "context": "一本文圣老秀才赠送的儒家典籍，几本从胭脂郡太守府邸得到的山水游记和文人笔札。 一枚篆刻有“静心得意”的印章。 一枚没了山字印作伴的水字印，显得有些孤零零的。 它被陈平安放在了最手边的位置。 当然还有那本相伴时间最久的撼山拳谱。 宁姚翻翻捡捡，一样样打量过去，最后笑道：“都给我了？",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与宁姚对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 278,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.397059",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.353567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -460,7 +475,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.397059",
+    "extracted_at": "2026-03-25T17:27:38.353567",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -602,7 +617,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "extracted_at": "2026-03-25T17:27:38.354571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -694,7 +709,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "extracted_at": "2026-03-25T17:27:38.354571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -818,7 +833,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "extracted_at": "2026-03-25T17:27:38.354571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -853,21 +868,37 @@
         ],
         "juan_index": 278,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "说到这里，陈平安叹了口气，也趴在桌上，用手指轻轻戳着养剑葫，“我当时离开家乡，是乘坐一艘俱芦洲打醮山的鲲船，上边遇上了一对姐妹，一个叫春水一个叫秋实，跟我差不多岁数，后来鲲船坠毁，可能再也见不到她们了吧。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 278,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安遭遇",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与秋实遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "description": "陈平安赶紧摆手道：“没有哪个姑娘喜欢我，一路上不是打打杀杀的仇家，就是终有一别的萍水相逢。 说到这里，陈平安叹了口气，也趴在桌上，用手指轻轻戳着养剑葫，“我当时离开家乡，是乘坐一艘俱芦洲打醮山的鲲船，上边遇上了一对姐妹，一个叫春水一个叫秋实，跟我差不多岁数，后来鲲船坠毁，可能再也见不到她们了吧。 陈平安瞥了眼桌上那只不起眼的笔洗。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与秋实之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -881,8 +912,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "秋实"
+        ],
+        "action": "别离",
+        "context": "说到这里，陈平安叹了口气，也趴在桌上，用手指轻轻戳着养剑葫，“我当时离开家乡，是乘坐一艘俱芦洲打醮山的鲲船，上边遇上了一对姐妹，一个叫春水一个叫秋实，跟我差不多岁数，后来鲲船坠毁，可能再也见不到她们了吧。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与秋实遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 278,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.354571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -998,7 +1050,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "extracted_at": "2026-03-25T17:27:38.354571",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1102,7 +1154,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "extracted_at": "2026-03-25T17:27:38.355574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1216,7 +1268,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.398063",
+    "extracted_at": "2026-03-25T17:27:38.355574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1309,7 +1361,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.399066",
+    "extracted_at": "2026-03-25T17:27:38.355574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1405,7 +1457,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.399066",
+    "extracted_at": "2026-03-25T17:27:38.355574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1513,7 +1565,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.399066",
+    "extracted_at": "2026-03-25T17:27:38.355574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1574,7 +1626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.399066",
+    "extracted_at": "2026-03-25T17:27:38.355574",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1702,7 +1754,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.399066",
+    "extracted_at": "2026-03-25T17:27:38.356578",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1821,7 +1873,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.400071",
+    "extracted_at": "2026-03-25T17:27:38.356578",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1941,7 +1993,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.400071",
+    "extracted_at": "2026-03-25T17:27:38.356578",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2046,7 +2098,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.400071",
+    "extracted_at": "2026-03-25T17:27:38.356578",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2125,7 +2177,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.400071",
+    "extracted_at": "2026-03-25T17:27:38.356578",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2247,7 +2299,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.400071",
+    "extracted_at": "2026-03-25T17:27:38.356578",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2366,7 +2418,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.400071",
+    "extracted_at": "2026-03-25T17:27:38.357581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2416,6 +2468,32 @@
         ],
         "juan_index": 278,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "陈平安先去跟金粟说了一声，要提前去剑气长城。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 278,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "离开捉放渡这边的鹳雀客栈，宁姚带着陈平安来到孤峰山脚，结果稳坐倒悬山第二把交椅的小道童，一瞥那少年不合规矩的通关玉牌，再看那小丫头片子一脸天经地义的神态，气得小道童又从蒲团蹦跳起来，好在陈平安已经开始解释道：“这位仙长，之前我们在雷泽台那边，遇上了蛟龙真君，跟宁姑娘说，老真君他师尊已经颁下法旨，可以为宁姑娘破例。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 23
       }
     ],
     "locations": [
@@ -2427,7 +2505,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "金粟"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -2443,13 +2522,15 @@
         "location": "剑气长城",
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "小道童"
         ],
         "description": "就连宁姚都觉得“难得”的东西，肯定不是一般的价值连城，陈平安点点头，记下了。 陈平安先去跟金粟说了一声，要提前去剑气长城。 那位桂花小娘站在自己房门口，百感交集，她最后与陈平安和那位宁姑娘微笑告别。",
         "background": "",
         "significance": "在剑气长城推动宁姚与陈平安之间的迁移线。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段23",
         "sentence_indexes_in_segment": [
@@ -2484,9 +2565,29 @@
         ],
         "juan_index": 278,
         "segment_index": 23
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "宁姚"
+        ],
+        "to_roles": [
+          "小道童"
+        ],
+        "action": "别离",
+        "context": "离开捉放渡这边的鹳雀客栈，宁姚带着陈平安来到孤峰山脚，结果稳坐倒悬山第二把交椅的小道童，一瞥那少年不合规矩的通关玉牌，再看那小丫头片子一脸天经地义的神态，气得小道童又从蒲团蹦跳起来，好在陈平安已经开始解释道：“这位仙长，之前我们在雷泽台那边，遇上了蛟龙真君，跟宁姑娘说，老真君他师尊已经颁下法旨，可以为宁姑娘破例。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚与陈平安在剑气长城迁移",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.401073",
+    "extracted_at": "2026-03-25T17:27:38.357581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2507,6 +2608,21 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童斜眼看陈平安，“你谁啊，这小姑娘的情郎？ 陈平安只是眨眼，不说话，跟小道童装傻。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 24
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2545,6 +2661,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "小道童",
           "宁姚",
           "陈平安"
         ],
@@ -2557,18 +2674,21 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚与陈平安在剑气长城试探",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与小道童在剑气长城试探",
         "time": null,
         "location": "剑气长城",
         "participants": [
-          "宁姚",
-          "陈平安"
+          "陈平安",
+          "小道童",
+          "宁姚"
         ],
         "description": "小道童斜眼看陈平安，“你谁啊，这小姑娘的情郎？ 陈平安只是眨眼，不说话，跟小道童装傻。 小道童心中默念，与那个按照辈分算是他师侄的蛟龙真君聊了一下，再打量了一眼宁姚跟陈平安，“你们可以过关去剑气长城了。",
         "background": "",
-        "significance": "在剑气长城推动宁姚与陈平安之间的试探线。",
+        "significance": "在剑气长城推动陈平安与小道童之间的试探线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段24",
         "sentence_indexes_in_segment": [
@@ -2587,7 +2707,47 @@
       {
         "time": null,
         "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "小道童"
+        ],
+        "action": "对话",
+        "context": "陈平安只是眨眼，不说话，跟小道童装傻。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与小道童在剑气长城试探",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 278,
+        "segment_index": 24
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "小道童"
+        ],
+        "to_roles": [
           "宁姚"
+        ],
+        "action": "试探",
+        "context": "小道童心中默念，与那个按照辈分算是他师侄的蛟龙真君聊了一下，再打量了一眼宁姚跟陈平安，“你们可以过关去剑气长城了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与小道童在剑气长城试探",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 24
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "小道童"
         ],
         "to_roles": [
           "陈平安"
@@ -2595,7 +2755,7 @@
         "action": "试探",
         "context": "小道童心中默念，与那个按照辈分算是他师侄的蛟龙真君聊了一下，再打量了一眼宁姚跟陈平安，“你们可以过关去剑气长城了。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚与陈平安在剑气长城试探",
+        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与小道童在剑气长城试探",
         "location": "剑气长城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2605,7 +2765,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.401073",
+    "extracted_at": "2026-03-25T17:27:38.357581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2626,6 +2786,19 @@
       "宁姚白了一眼，“泥腿子！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "既然打定了主意，小道童就不再为难两人，他一屁股坐回蒲团，大概是觉得那个小姑娘太气人，干脆后仰倒去，手脚摊开，大大咧咧躺在蒲团上，然后打开那本道家典籍，盖在自己脸上，眼不见为净。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 278,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "宁姚",
@@ -2681,9 +2854,10 @@
         "location": "剑气长城",
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "小道童"
         ],
-        "description": "宁姚伸手握住陈平安，轻声道：“记住，跨入剑气长城之后，被剑气海水倒灌气府是正常事，你不能急，越急气机就越乱，只会一团糟。 陈平安点头道：“懂了，我就当是在拉坯，只要心稳，一切就稳。 宁姚白了一眼，“泥腿子！",
+        "description": "既然打定了主意，小道童就不再为难两人，他一屁股坐回蒲团，大概是觉得那个小姑娘太气人，干脆后仰倒去，手脚摊开，大大咧咧躺在蒲团上，然后打开那本道家典籍，盖在自己脸上，眼不见为净。 宁姚伸手握住陈平安，轻声道：“记住，跨入剑气长城之后，被剑气海水倒灌气府是正常事，你不能急，越急气机就越乱，只会一团糟。 陈平安点头道：“懂了，我就当是在拉坯，只要心稳，一切就稳。",
         "background": "",
         "significance": "在剑气长城推动宁姚与陈平安之间的剧情推进线。",
         "related_action_indices": [],
@@ -2701,7 +2875,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.401073",
+    "extracted_at": "2026-03-25T17:27:38.357581",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2778,7 +2952,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.401073",
+    "extracted_at": "2026-03-25T17:27:38.357581",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "278-27-0": {
+    "juan_index": 278,
+    "segment_index": 27,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十七章 城头两人四境三战",
+    "source_sentences": [
+      "脑袋被书本覆盖的小道童闷闷道：“虽然我不喜欢这丫头的臭脾气，可看到她给一个愣小子骗到手，还是有些心疼啊。",
+      "一个天一个地，这两人怎么凑一块的？",
+      "不是乱点鸳鸯谱嘛，谁牵的红线？",
+      "站出来，我一定戳死他这个半吊子月老，嗯，先戳个半死，留半条命容我骂死他。",
+      "”",
+      "孤峰高楼之巅，三清铃之中的一枚，叮咚作响，只是悄不可闻，并未昭告天下，响彻倒悬山。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "脑袋被书本覆盖的小道童闷闷道：“虽然我不喜欢这丫头的臭脾气，可看到她给一个愣小子骗到手，还是有些心疼啊。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 278,
+        "segment_index": 27
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 小道童剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "脑袋被书本覆盖的小道童闷闷道：“虽然我不喜欢这丫头的臭脾气，可看到她给一个愣小子骗到手，还是有些心疼啊。 一个天一个地，这两人怎么凑一块的？ 不是乱点鸳鸯谱嘛，谁牵的红线？",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段27",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 278,
+        "segment_index": 27
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.358585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2799,6 +3035,20 @@
       "突兀来到城头的陈平安，满脸涨红，然后脸色铁青，最后浑身颤抖。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "然后一缕气机转瞬掠至小道童脑袋上，掠入书中，然后那本书好似神灵附体，啪一声合上，然后对着小道童，就是左一巴掌右一耳光，很是清脆悦耳。 根本来不及躲避的小道童如遭雷击，然后恍然大悟，抱头求饶道：“师叔，我错了我错了……”",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 278,
+        "segment_index": 28
+      },
       {
         "entity_type": "person",
         "name": "宁姚",
@@ -2849,16 +3099,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与宁姚在剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 小道童与陈平安在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
         "participants": [
+          "小道童",
           "陈平安",
           "宁姚"
         ],
-        "description": "一步跨入剑气长城后，宁姚心中一凛，但是很快释然。 原来她带着陈平安跨过倒悬山镜面后，不是出现在纳兰老头和师刀道姑那扇大门附近，而是直接来到了剑气长城的城头，直接省去了穿越城池和登上城头的那两段漫长路程，但是如此一来，陈平安估计就要遭罪了。 突兀来到城头的陈平安，满脸涨红，然后脸色铁青，最后浑身颤抖。",
+        "description": "然后一缕气机转瞬掠至小道童脑袋上，掠入书中，然后那本书好似神灵附体，啪一声合上，然后对着小道童，就是左一巴掌右一耳光，很是清脆悦耳。 根本来不及躲避的小道童如遭雷击，然后恍然大悟，抱头求饶道：“师叔，我错了我错了……” 一步跨入剑气长城后，宁姚心中一凛，但是很快释然。",
         "background": "",
-        "significance": "在剑气长城推动陈平安与宁姚之间的剧情推进线。",
+        "significance": "在剑气长城推动小道童与陈平安之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段28",
         "sentence_indexes_in_segment": [
@@ -2874,7 +3125,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.401073",
+    "extracted_at": "2026-03-25T17:27:38.358585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2988,7 +3239,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.401073",
+    "extracted_at": "2026-03-25T17:27:38.358585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3050,6 +3301,19 @@
         ],
         "juan_index": 278,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙想不通便不多想了。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 278,
+        "segment_index": 30
       }
     ],
     "locations": [],
@@ -3082,7 +3346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.358585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3103,6 +3367,20 @@
       "便是这位在城墙上不止刻下一个字的老剑仙，都很期待她那把本命飞剑的出炉现世。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙觉得必须想一点能够开心的事情，于是笑望向宁姚这个小姑娘，真好。 便是这位在城墙上不止刻下一个字的老剑仙，都很期待她那把本命飞剑的出炉现世。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 278,
+        "segment_index": 31
+      },
       {
         "entity_type": "person",
         "name": "宁姚",
@@ -3135,15 +3413,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚在剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 老剑仙与宁姚在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
         "participants": [
+          "老剑仙",
           "宁姚"
         ],
-        "description": "老剑仙觉得必须想一点能够开心的事情，于是笑望向宁姚这个小姑娘，真好。 剑气长城，这一代年轻剑修，天才辈出，三千年未有的大气象。 天下事情实在太多，不近我身，便都不是重要事。",
+        "description": "老剑仙觉得必须想一点能够开心的事情，于是笑望向宁姚这个小姑娘，真好。 剑气长城，这一代年轻剑修，天才辈出，三千年未有的大气象。 便是这位在城墙上不止刻下一个字的老剑仙，都很期待她那把本命飞剑的出炉现世。",
         "background": "",
-        "significance": "对应宁姚在叙事中的关键剧情推进节点。",
+        "significance": "在剑气长城推动老剑仙与宁姚之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段31",
         "sentence_indexes_in_segment": [
@@ -3159,7 +3438,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.358585",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3194,6 +3473,19 @@
         ],
         "juan_index": 278,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "不苟言笑的老剑仙面对宁姚，那是从来不吝啬笑脸的，微笑道：“他要有事，陈爷爷估计也得有事了吧？",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 32
       }
     ],
     "locations": [
@@ -3216,16 +3508,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚在剑气长城对话",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 老剑仙与宁姚在剑气长城对话",
         "time": null,
         "location": "剑气长城",
         "participants": [
+          "老剑仙",
           "宁姚"
         ],
         "description": "之前有趟远游，宁姚丫头有次不管不顾，差点祭出了尚未成熟的本命飞剑，天地异象，因为剑气长城的某些秘法存在，即便隔着一座小天地和两座大天下，他与城头几个老家伙都察觉到了异样，那个脾气最坏的，差一点就要破坏规矩，闯入浩然天下。 宁姚小声问道：“陈爷爷，他不会有事吧？ 不苟言笑的老剑仙面对宁姚，那是从来不吝啬笑脸的，微笑道：“他要有事，陈爷爷估计也得有事了吧？",
         "background": "",
-        "significance": "对应宁姚在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在剑气长城推动老剑仙与宁姚之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段32",
         "sentence_indexes_in_segment": [
           0,
@@ -3239,8 +3534,29 @@
         "segment_index": 32
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老剑仙"
+        ],
+        "to_roles": [
+          "宁姚"
+        ],
+        "action": "对话",
+        "context": "不苟言笑的老剑仙面对宁姚，那是从来不吝啬笑脸的，微笑道：“他要有事，陈爷爷估计也得有事了吧？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 老剑仙与宁姚在剑气长城对话",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 32
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.359588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3273,20 +3589,48 @@
         ],
         "juan_index": 278,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙不再逗弄小姑娘，“这小子武道底子打得极好，心性又定，不错不错，肯定熬得住，放心吧，最近这段时间，就让他在城头上熬着，当初我那个小邻居，曹慈也是这么一步步走过来的。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 278,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "老剑仙不再逗弄小姑娘，“这小子武道底子打得极好，心性又定，不错不错，肯定熬得住，放心吧，最近这段时间，就让他在城头上熬着，当初我那个小邻居，曹慈也是这么一步步走过来的。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 278,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚剧情推进",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 宁姚与老剑仙剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "宁姚"
+          "宁姚",
+          "老剑仙",
+          "曹慈"
         ],
-        "description": "宁姚狠狠瞪了一眼老人。 老人打趣道：“呦，总算有点少女模样了，看来这外乡小子功莫大焉。 ”",
+        "description": "宁姚狠狠瞪了一眼老人。 老剑仙不再逗弄小姑娘，“这小子武道底子打得极好，心性又定，不错不错，肯定熬得住，放心吧，最近这段时间，就让他在城头上熬着，当初我那个小邻居，曹慈也是这么一步步走过来的。 老人打趣道：“呦，总算有点少女模样了，看来这外乡小子功莫大焉。",
         "background": "",
-        "significance": "对应宁姚在叙事中的关键剧情推进节点。",
+        "significance": "推动宁姚与老剑仙之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段33",
         "sentence_indexes_in_segment": [
@@ -3302,7 +3646,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.359588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3393,7 +3737,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.359588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3475,7 +3819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.359588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3511,6 +3855,35 @@
         ],
         "juan_index": 278,
         "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "就这样走走停停，到了第三天，陈平安在依稀可见大小两座茅屋轮廓的时候，看到了那位曹慈，他在一里路之外的墙头上，练习拳桩，脚步轻灵，出拳如虹，哪怕陈平安不是四境武夫，只是个眼光粗浅的门外汉，都会由衷感叹曹慈拳架子的……完美无瑕！ 陈平安是从右到左，住在小茅屋的曹慈则是从左到右。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "juan_index": 278,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "在陈平安一路缓缓走桩，最终临近老剑仙所住茅屋的时候，曹慈已经来回打完一趟拳，赶上了陈平安。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 278,
+        "segment_index": 36
       }
     ],
     "locations": [],
@@ -3521,7 +3894,9 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "曹慈",
+          "老剑仙"
         ],
         "description": "就这样走走停停，到了第三天，陈平安在依稀可见大小两座茅屋轮廓的时候，看到了那位曹慈，他在一里路之外的墙头上，练习拳桩，脚步轻灵，出拳如虹，哪怕陈平安不是四境武夫，只是个眼光粗浅的门外汉，都会由衷感叹曹慈拳架子的……完美无瑕！ 陈平安是从右到左，住在小茅屋的曹慈则是从左到右。 当下，陈平安一身拳意极为细微，绝大部分都已经被剑气死死压制。",
         "background": "",
@@ -3541,7 +3916,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.359588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3578,6 +3953,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "然后陈平安看到了老剑仙身边的宁姚。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 278,
+        "segment_index": 37
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "然后陈平安看到了老剑仙身边的宁姚。 宁姚确定了陈平安的练拳进展之后，这才放心带他走向茅屋附近的北边城头，带着他跃上城头，眺望那座城池，告诉他自己家在什么地方，她的朋友们，又分别住在什么地方。",
@@ -3586,6 +3974,21 @@
         "sentence_indexes_in_segment": [
           0,
           2
+        ],
+        "juan_index": 278,
+        "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈则看到了老人身旁的师父，大端国师，女子武神裴杯。 而且他们身后不远处，曹慈在练习一个新拳架，而女武神就在旁边微笑看着，时不时指点出他那个拳架的某些瑕疵。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
         ],
         "juan_index": 278,
         "segment_index": 37
@@ -3601,7 +4004,7 @@
           "宁姚",
           "陈平安"
         ],
-        "description": "然后陈平安看到了老剑仙身边的宁姚。 宁姚确定了陈平安的练拳进展之后，这才放心带他走向茅屋附近的北边城头，带着他跃上城头，眺望那座城池，告诉他自己家在什么地方，她的朋友们，又分别住在什么地方。 曹慈则看到了老人身旁的师父，大端国师，女子武神裴杯。",
+        "description": "然后陈平安看到了老剑仙身边的宁姚。 曹慈则看到了老人身旁的师父，大端国师，女子武神裴杯。 宁姚确定了陈平安的练拳进展之后，这才放心带他走向茅屋附近的北边城头，带着他跃上城头，眺望那座城池，告诉他自己家在什么地方，她的朋友们，又分别住在什么地方。",
         "background": "",
         "significance": "推动宁姚与陈平安之间的指点关系。",
         "related_action_indices": [
@@ -3642,7 +4045,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.359588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3676,20 +4079,48 @@
         ],
         "juan_index": 278,
         "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "第二天清晨，老剑仙来到双方附近，突然提议让两个少年切磋一番。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 278,
+        "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈无所谓。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 278,
+        "segment_index": 38
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安与老剑仙剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老剑仙",
+          "曹慈"
         ],
-        "description": "陈平安一直练习走桩到深夜，后半夜，盘腿坐在北边城头，保持剑炉立桩，缓缓入睡。 陈平安也无所谓。 第二天清晨，老剑仙来到双方附近，突然提议让两个少年切磋一番。",
+        "description": "陈平安一直练习走桩到深夜，后半夜，盘腿坐在北边城头，保持剑炉立桩，缓缓入睡。 第二天清晨，老剑仙来到双方附近，突然提议让两个少年切磋一番。 曹慈无所谓。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老剑仙之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段38",
         "sentence_indexes_in_segment": [
@@ -3705,7 +4136,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.402077",
+    "extracted_at": "2026-03-25T17:27:38.360592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3727,6 +4158,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "而且在切磋之前，老剑仙告诉两个同为四境的武道少年，最好忘记双方不会死在城头这一点。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 278,
+        "segment_index": 39
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安倾力出手，三战皆输。",
@@ -3737,20 +4181,35 @@
         ],
         "juan_index": 278,
         "segment_index": 39
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈不知保留实力多少，总之三战全胜。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 278,
+        "segment_index": 39
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 陈平安冲突",
+        "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 老剑仙与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "老剑仙",
+          "陈平安",
+          "曹慈"
         ],
-        "description": "陈平安倾力出手，三战皆输。 这一天，在没有任何禁制的形势下，两人就像身处浩然天下的寻常战场，飞剑、法宝、拳法，双方只要愿意，皆可使用。 而且在切磋之前，老剑仙告诉两个同为四境的武道少年，最好忘记双方不会死在城头这一点。",
+        "description": "而且在切磋之前，老剑仙告诉两个同为四境的武道少年，最好忘记双方不会死在城头这一点。 陈平安倾力出手，三战皆输。 曹慈不知保留实力多少，总之三战全胜。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
+        "significance": "推动老剑仙与陈平安之间的冲突关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 段39",
         "sentence_indexes_in_segment": [
@@ -3765,7 +4224,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "extracted_at": "2026-03-25T17:27:38.360592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

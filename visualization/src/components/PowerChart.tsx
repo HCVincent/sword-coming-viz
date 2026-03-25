@@ -19,8 +19,8 @@ export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) 
 
     const container = containerRef.current;
     const width = container.clientWidth;
-    const height = 300;
-    const margin = { top: 30, right: 30, bottom: 70, left: 60 };
+    const height = 340;
+    const margin = { top: 36, right: 24, bottom: 84, left: 56 };
 
     d3.select(svgRef.current).selectAll('*').remove();
 
@@ -31,7 +31,7 @@ export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) 
       .scaleBand()
       .domain(topData.map((d) => d.power))
       .range([margin.left, width - margin.right])
-      .padding(0.2);
+      .padding(0.26);
 
     const yScale = d3
       .scaleLinear()
@@ -39,24 +39,27 @@ export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) 
       .nice()
       .range([height - margin.bottom, margin.top]);
 
-    const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
+    const colorScale = d3
+      .scaleOrdinal<string, string>()
+      .domain(topData.map((d) => d.power))
+      .range(['#7a3c17', '#bc7a32', '#d7a55b', '#a44c2d', '#5f3d26', '#87604a', '#ba9154', '#6e4b2f', '#cfb37c', '#8f5c30']);
 
     svg
       .append('g')
       .attr('transform', `translate(0, ${height - margin.bottom})`)
       .call(d3.axisBottom(xScale))
       .selectAll('text')
-      .attr('transform', 'rotate(-45)')
+      .attr('transform', 'rotate(-36)')
       .style('text-anchor', 'end')
       .style('font-size', '11px')
-      .style('fill', '#2c1810');
+      .style('fill', '#413325');
 
     svg
       .append('g')
       .attr('transform', `translate(${margin.left}, 0)`)
-      .call(d3.axisLeft(yScale))
+      .call(d3.axisLeft(yScale).ticks(5))
       .selectAll('text')
-      .style('fill', '#2c1810');
+      .style('fill', '#413325');
 
     svg
       .selectAll('.bar')
@@ -68,12 +71,12 @@ export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) 
       .attr('y', (d) => yScale(d.count))
       .attr('width', xScale.bandwidth())
       .attr('height', (d) => height - margin.bottom - yScale(d.count))
-      .attr('fill', (_, i) => colorScale(i.toString()))
-      .attr('rx', 4)
+      .attr('fill', (d) => colorScale(d.power))
+      .attr('rx', 14)
       .style('cursor', 'pointer')
       .on('click', (_, d) => onPowerClick?.(d))
       .on('mouseover', function () {
-        d3.select(this).attr('opacity', 0.8);
+        d3.select(this).attr('opacity', 0.85);
       })
       .on('mouseout', function () {
         d3.select(this).attr('opacity', 1);
@@ -86,27 +89,35 @@ export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) 
       .append('text')
       .attr('class', 'label')
       .attr('x', (d) => (xScale(d.power) || 0) + xScale.bandwidth() / 2)
-      .attr('y', (d) => yScale(d.count) - 5)
+      .attr('y', (d) => yScale(d.count) - 10)
       .attr('text-anchor', 'middle')
       .style('font-size', '11px')
-      .style('fill', '#2c1810')
+      .style('font-weight', '700')
+      .style('fill', '#413325')
       .text((d) => d.count);
 
     svg
       .append('text')
       .attr('x', width / 2)
-      .attr('y', 15)
+      .attr('y', 18)
       .attr('text-anchor', 'middle')
-      .style('font-size', '14px')
-      .style('font-weight', 'bold')
-      .style('fill', '#2c1810')
+      .style('font-size', '15px')
+      .style('font-weight', '700')
+      .style('fill', '#2b170b')
       .text(chartTitle);
   }, [chartTitle, data, onPowerClick]);
 
   return (
-    <div ref={containerRef} className="w-full bg-white rounded-lg shadow-md p-4">
+    <div ref={containerRef} className="view-shell">
+      <div className="view-header">
+        <div>
+          <h3 className="view-title">阵营分布</h3>
+          <p className="view-copy">用当前范围内的角色提及次数和阵营归属，快速看出这一段文本由哪些势力主导。</p>
+        </div>
+        <div className="float-stat">前 {Math.min(data.length, 10)} 个阵营</div>
+      </div>
       {data.length === 0 ? (
-        <div className="h-[260px] flex items-center justify-center text-sm text-gray-500">当前范围暂无阵营数据</div>
+        <div className="empty-state">当前范围暂时没有阵营分布数据。</div>
       ) : (
         <svg ref={svgRef} className="w-full" />
       )}

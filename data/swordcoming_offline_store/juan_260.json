@@ -149,7 +149,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.318789",
+    "extracted_at": "2026-03-25T17:27:38.244189",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -211,7 +211,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.318789",
+    "extracted_at": "2026-03-25T17:27:38.244189",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -244,21 +244,37 @@
         ],
         "juan_index": 260,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "那位姿色远远不如圭脉小院金粟的桂花小娘，嫣然而笑，柔声补充了一句，“公子若是持有桂花岛特殊木牌，还可以再打折。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 260,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 陈平安对话",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 陈平安与金粟对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "金粟"
         ],
-        "description": "陈平安在动身之前，就已经收起那枚桂客木牌，点头笑道：“我想要画三幅一样的，敢问先生，需要多少钱？ ” 中年画师愣了一下，不知道眼前草鞋少年，是真人不露相的豪阀公孙，还是不谙世情的有钱子弟，一般人最多画一幅，哪里会一口气要三幅之多，只不过谁也不嫌自己挣钱多，画师微笑道：“一幅画十枚雪花钱，若是公子要三幅，可以便宜些，只收公子二十五枚。",
+        "description": "陈平安在动身之前，就已经收起那枚桂客木牌，点头笑道：“我想要画三幅一样的，敢问先生，需要多少钱？ 那位姿色远远不如圭脉小院金粟的桂花小娘，嫣然而笑，柔声补充了一句，“公子若是持有桂花岛特殊木牌，还可以再打折。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与金粟之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -272,8 +288,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.318789",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "金粟"
+        ],
+        "action": "对话",
+        "context": "陈平安在动身之前，就已经收起那枚桂客木牌，点头笑道：“我想要画三幅一样的，敢问先生，需要多少钱？ ” 中年画师愣了一下，不知道眼前草鞋少年，是真人不露相的豪阀公孙，还是不谙世情的有钱子弟，一般人最多画一幅，哪里会一口气要三幅之多，只不过谁也不嫌自己挣钱多，画师微笑道：“一幅画十枚雪花钱，若是公子要三幅，可以便宜些，只收公子二十五枚。 ” 那位姿色远远不如圭脉小院金粟的桂花小娘，嫣然而笑，柔声补充了一句，“公子若是持有桂花岛特殊木牌，还可以再打折。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 陈平安与金粟对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.244189",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -337,7 +379,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.318789",
+    "extracted_at": "2026-03-25T17:27:38.245192",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -398,7 +440,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.245192",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -460,7 +502,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.245192",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -564,7 +606,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.245192",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -790,7 +832,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.245192",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -839,6 +881,35 @@
         ],
         "juan_index": 260,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。 金粟将陈平安送回小院门口，就停步告辞。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "桂姨",
+        "alias": [],
+        "original_description_in_book": "这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。 回到住处，桂姨就在一座雅静小院之中，原来她们住在一处。",
+        "description": "老龙城线中的重要女性角色，可补强城池人情与势力关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 260,
+        "segment_index": 9
       }
     ],
     "locations": [
@@ -871,13 +942,16 @@
         "participants": [
           "李二",
           "陈平安",
-          "李宝瓶"
+          "金粟",
+          "桂姨"
         ],
         "description": "知道范家桂花岛上有飞剑传讯的仙家驿站后，就想着乘船后再说，刚好这次很凑巧，画了三幅画像，一幅连同书信送给李宝瓶，一幅家书寄往龙泉，到时候再让青衣小童和粉裙女童两个小家伙，帮着他去爹娘坟头上坟，将那幅画烧掉，好让爹娘知道如今自己过得很好，所以陈平安当时在桂树下才会藏起养剑葫，可不能让爹娘知道他已经是一个小酒鬼了啊。 写完了两封信，带着两幅画卷，陈平安再次离开院子，去往仙家驿站。 这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。",
         "background": "",
         "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段9",
         "sentence_indexes_in_segment": [
@@ -896,16 +970,156 @@
       {
         "time": null,
         "from_roles": [
-          "李宝瓶"
-        ],
-        "to_roles": [
           "陈平安"
         ],
+        "to_roles": [
+          "金粟"
+        ],
         "action": "同行",
-        "context": "知道范家桂花岛上有飞剑传讯的仙家驿站后，就想着乘船后再说，刚好这次很凑巧，画了三幅画像，一幅连同书信送给李宝瓶，一幅家书寄往龙泉，到时候再让青衣小童和粉裙女童两个小家伙，帮着他去爹娘坟头上坟，将那幅画烧掉，好让爹娘知道如今自己过得很好，所以陈平安当时在桂树下才会藏起养剑葫，可不能让爹娘知道他已经是一个小酒鬼了啊。 写完了两封信，带着两幅画卷，陈平安再次离开院子，去往仙家驿站。 这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。 金粟将陈平安送回小院门口，就停步告辞。 回到住处，桂姨就在一座雅静小院之中，原来她们住在一处。 哪怕是桂花岛的老人，都并不清楚，金粟是这位妇人的唯一弟子。",
+        "context": "这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。",
         "result": null,
         "event_name": "李二照面陈平安",
         "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 260,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "桂姨"
+        ],
+        "action": "同行",
+        "context": "这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 260,
+        "segment_index": 9
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "金粟"
+        ],
+        "to_roles": [
+          "桂姨"
+        ],
+        "action": "同行",
+        "context": "这次陈平安在门外遇到了桂花小娘金粟，虽然陈平安坚持自己去驿站寄信，可是金粟也坚持要带路，说她虽然不住在圭脉小院，但还是那座小院的婢女，如果陈平安连这种事情都要独自处理，她一定会被桂姨和范家责罚，陈平安无可奈何，只好让她跟随，好在之后到了驿站，金粟都只是默不作声，没有任何插手，哪怕陈平安还是收起了桂客木牌，以普通客人身份交付雪花钱，女子也只当全然没有看见。",
+        "result": null,
+        "event_name": "李二照面陈平安",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 260,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.246196",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "260-10-0": {
+    "juan_index": 260,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十九章 练拳百万",
+    "source_sentences": [
+      "金粟坐在妇人对面，妇人笑问道：“怎么，有心事？",
+      "跟那个少年有关？",
+      "”",
+      "天生性情冷淡的金粟哪怕面对这位授业恩师，也没有太多笑容，“有点怪。",
+      "”",
+      "桂姨笑道：“你如今还只是在桂花岛这一隅之地，跟着渡船在海上来来回回，其实跟人打交道的机会很少，会觉得那个少年奇怪，很正常。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "金粟坐在妇人对面，妇人笑问道：“怎么，有心事？ 天生性情冷淡的金粟哪怕面对这位授业恩师，也没有太多笑容，“有点怪。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 260,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "桂姨",
+        "alias": [],
+        "original_description_in_book": "桂姨笑道：“你如今还只是在桂花岛这一隅之地，跟着渡船在海上来来回回，其实跟人打交道的机会很少，会觉得那个少年奇怪，很正常。",
+        "description": "老龙城线中的重要女性角色，可补强城池人情与势力关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟与桂姨对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "金粟",
+          "桂姨"
+        ],
+        "description": "金粟坐在妇人对面，妇人笑问道：“怎么，有心事？ 天生性情冷淡的金粟哪怕面对这位授业恩师，也没有太多笑容，“有点怪。 桂姨笑道：“你如今还只是在桂花岛这一隅之地，跟着渡船在海上来来回回，其实跟人打交道的机会很少，会觉得那个少年奇怪，很正常。",
+        "background": "",
+        "significance": "推动金粟与桂姨之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 10
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "金粟"
+        ],
+        "to_roles": [
+          "桂姨"
+        ],
+        "action": "对话",
+        "context": "金粟坐在妇人对面，妇人笑问道：“怎么，有心事？ 跟那个少年有关？ ” 天生性情冷淡的金粟哪怕面对这位授业恩师，也没有太多笑容，“有点怪。 ” 桂姨笑道：“你如今还只是在桂花岛这一隅之地，跟着渡船在海上来来回回，其实跟人打交道的机会很少，会觉得那个少年奇怪，很正常。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟与桂姨对话",
+        "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
           0,
@@ -916,10 +1130,10 @@
           5
         ],
         "juan_index": 260,
-        "segment_index": 9
+        "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.246196",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -940,6 +1154,19 @@
       "你知不知道，范家更希望你与苻南华走得更近一些，只不过范家虽然是生意人，但是家风一向不错，哪怕你不懂事，还差点闯出祸事，依然不愿强人所难，换一个老龙城大姓试试看？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "金粟破天荒露出一抹少女娇憨神色，赌气道：“我也下船去过几趟内城，见识过很多老龙城年轻俊彦。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "孙嘉树",
@@ -977,6 +1204,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "金粟",
           "苻南华"
         ],
         "sentence_indexes_in_segment": [
@@ -995,6 +1223,7 @@
         "participants": [
           "谢谢",
           "苻南华",
+          "金粟",
           "孙嘉树"
         ],
         "description": "金粟破天荒露出一抹少女娇憨神色，赌气道：“我也下船去过几趟内城，见识过很多老龙城年轻俊彦。 妇人哑然失笑，“然后就对孙嘉树一见钟情？ 甚至毫不留情面地拒绝了苻南华的好意？",
@@ -1015,7 +1244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.246196",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1035,7 +1264,21 @@
       "只说天赋，你跟范小子差不多，在老龙城是算惊艳，可在整座宝瓶洲，就算不得最拔尖了，若是再搁在整座浩然天下……”",
       "说到这里，妇人叹了口气，收取一位合心合意的“得己意”弟子，何其艰难，想要弟子一路破境，步步登天，更是艰难。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "金粟眼神凌厉，“范家待我不薄，我将来自然会报恩，可若是敢在这种事情上逼人太甚，我……”",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 260,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "老龙城",
@@ -1068,13 +1311,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 老龙城对话",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟在老龙城对话",
         "time": null,
         "location": "老龙城",
-        "participants": [],
-        "description": "只说天赋，你跟范小子差不多，在老龙城是算惊艳，可在整座宝瓶洲，就算不得最拔尖了，若是再搁在整座浩然天下……” 你这会儿早就要吃苦头了。 ”",
+        "participants": [
+          "金粟"
+        ],
+        "description": "金粟眼神凌厉，“范家待我不薄，我将来自然会报恩，可若是敢在这种事情上逼人太甚，我……” 只说天赋，你跟范小子差不多，在老龙城是算惊艳，可在整座宝瓶洲，就算不得最拔尖了，若是再搁在整座浩然天下……” 你这会儿早就要吃苦头了。",
         "background": "",
-        "significance": "对应老龙城相关的关键对话场景。",
+        "significance": "对应金粟在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段12",
         "sentence_indexes_in_segment": [
@@ -1090,7 +1335,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.319792",
+    "extracted_at": "2026-03-25T17:27:38.246196",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1113,6 +1358,33 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "桂姨",
+        "alias": [],
+        "original_description_in_book": "心情高傲的年轻女子一不做二不休，反正这里没有外人，起身挪了个位置，坐在妇人身边，抱住桂姨的手臂，撒娇道：“金粟不是还有一个好师父嘛。 桂姨用一根手指点了一下女子，打趣道：“你是有一个好师父，我却有一个不让人省心的蹩脚徒弟。",
+        "description": "老龙城线中的重要女性角色，可补强城池人情与势力关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 260,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "心情高傲的年轻女子一不做二不休，反正这里没有外人，起身挪了个位置，坐在妇人身边，抱住桂姨的手臂，撒娇道：“金粟不是还有一个好师父嘛。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "孙嘉树",
         "alias": [],
         "original_description_in_book": "年轻女子抱住妇人胳膊，脑袋靠着妇人肩膀，呢喃道：“师父，你说孙嘉树喜欢我吗？",
@@ -1128,16 +1400,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树指点",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 桂姨与金粟指点",
         "time": null,
         "location": null,
         "participants": [
-          "孙嘉树"
+          "桂姨",
+          "金粟"
         ],
-        "description": "年轻女子抱住妇人胳膊，脑袋靠着妇人肩膀，呢喃道：“师父，你说孙嘉树喜欢我吗？ 所以真正的山顶仙家，收取弟子一事，从来都是重中之重，仅次于自身的证道长生，她认识两位十境地仙和一位玉璞境修士，为了考验一位未来弟子的心性，耗时最少的十年，最长的长达百年，万事俱备之后，才会接受弟子的拜师礼。 心情高傲的年轻女子一不做二不休，反正这里没有外人，起身挪了个位置，坐在妇人身边，抱住桂姨的手臂，撒娇道：“金粟不是还有一个好师父嘛。",
+        "description": "心情高傲的年轻女子一不做二不休，反正这里没有外人，起身挪了个位置，坐在妇人身边，抱住桂姨的手臂，撒娇道：“金粟不是还有一个好师父嘛。 桂姨用一根手指点了一下女子，打趣道：“你是有一个好师父，我却有一个不让人省心的蹩脚徒弟。 年轻女子抱住妇人胳膊，脑袋靠着妇人肩膀，呢喃道：“师父，你说孙嘉树喜欢我吗？",
         "background": "",
-        "significance": "对应孙嘉树在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动桂姨与金粟之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1151,8 +1426,133 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "桂姨"
+        ],
+        "to_roles": [
+          "金粟"
+        ],
+        "action": "师承",
+        "context": "心情高傲的年轻女子一不做二不休，反正这里没有外人，起身挪了个位置，坐在妇人身边，抱住桂姨的手臂，撒娇道：“金粟不是还有一个好师父嘛。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 桂姨与金粟指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.246196",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "260-14-0": {
+    "juan_index": 260,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十九章 练拳百万",
+    "source_sentences": [
+      "”",
+      "桂姨没有回答问题，而是调侃了一句，“春天已去，春心还在。",
+      "”",
+      "金粟满脸娇羞，埋怨道：“师父！",
+      "”",
+      "妇人转头凝视着弟子的脸庞，和蔼笑道：“这么俊俏的好姑娘，男人怎么会不喜欢呢？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "桂姨",
+        "alias": [],
+        "original_description_in_book": "桂姨没有回答问题，而是调侃了一句，“春天已去，春心还在。",
+        "description": "老龙城线中的重要女性角色，可补强城池人情与势力关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "金粟满脸娇羞，埋怨道：“师父！",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 260,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 桂姨与金粟对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "桂姨",
+          "金粟"
+        ],
+        "description": "桂姨没有回答问题，而是调侃了一句，“春天已去，春心还在。 金粟满脸娇羞，埋怨道：“师父！ ”",
+        "background": "",
+        "significance": "推动桂姨与金粟之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 14
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "桂姨"
+        ],
+        "to_roles": [
+          "金粟"
+        ],
+        "action": "师承",
+        "context": "” 桂姨没有回答问题，而是调侃了一句，“春天已去，春心还在。 ” 金粟满脸娇羞，埋怨道：“师父！ ” 妇人转头凝视着弟子的脸庞，和蔼笑道：“这么俊俏的好姑娘，男人怎么会不喜欢呢？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 桂姨与金粟对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.246196",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1173,6 +1573,19 @@
       "年轻女子神色黯然。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "金粟满心欢喜。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "孙嘉树",
@@ -1207,16 +1620,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树在老龙城剧情推进",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟与孙嘉树在老龙城同行",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "金粟",
           "孙嘉树"
         ],
-        "description": "但是妇人随即叹息道：“可是你有没有想过，孙嘉树除了是一个出类拔萃的男人，还是老龙城的孙家家主，是野心勃勃想要成为孙家中兴之祖的男人，更是商家寄予厚望的门生弟子。 ” 金粟满心欢喜。",
+        "description": "金粟满心欢喜。 但是妇人随即叹息道：“可是你有没有想过，孙嘉树除了是一个出类拔萃的男人，还是老龙城的孙家家主，是野心勃勃想要成为孙家中兴之祖的男人，更是商家寄予厚望的门生弟子。 ”",
         "background": "",
-        "significance": "对应孙嘉树在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动金粟与孙嘉树之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1230,8 +1646,97 @@
         "segment_index": 15
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "金粟"
+        ],
+        "to_roles": [
+          "孙嘉树"
+        ],
+        "action": "同行",
+        "context": "” 金粟满心欢喜。 但是妇人随即叹息道：“可是你有没有想过，孙嘉树除了是一个出类拔萃的男人，还是老龙城的孙家家主，是野心勃勃想要成为孙家中兴之祖的男人，更是商家寄予厚望的门生弟子。 就算你们俩最后排除万难，最终能够走到一起，一旦嫁为商人妇，你的修行之路，会很难的。 ” 年轻女子神色黯然。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟与孙嘉树在老龙城同行",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.247199",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "260-16-0": {
+    "juan_index": 260,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十九章 练拳百万",
+    "source_sentences": [
+      "妇人摸着金粟的柔顺青丝，“大道风光无限好，可是行走不易，一切取舍，皆是修行，人生在世，本就是一场苦修。",
+      "”",
+      "妇人突然笑道：“师父就不明白了，你为何偏偏看不上范小子？",
+      "多好一孩子，你要是能够真心喜欢他，师父哪怕拼了脸面不要，耗费掉与范家的千年香火情，也要促成你们两个的一段姻缘。",
+      "”",
+      "金粟哎呦一声，连忙坐直身体，“师父，千万别乱点鸳鸯谱，那范小子傻乎乎的，没有半点豪杰气魄或是枭雄之姿，整天瞎胡闹，我要是看上他这么个小屁孩，那才是真鬼迷心窍。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "妇人摸着金粟的柔顺青丝，“大道风光无限好，可是行走不易，一切取舍，皆是修行，人生在世，本就是一场苦修。 金粟哎呦一声，连忙坐直身体，“师父，千万别乱点鸳鸯谱，那范小子傻乎乎的，没有半点豪杰气魄或是枭雄之姿，整天瞎胡闹，我要是看上他这么个小屁孩，那才是真鬼迷心窍。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "金粟"
+        ],
+        "description": "妇人摸着金粟的柔顺青丝，“大道风光无限好，可是行走不易，一切取舍，皆是修行，人生在世，本就是一场苦修。 金粟哎呦一声，连忙坐直身体，“师父，千万别乱点鸳鸯谱，那范小子傻乎乎的，没有半点豪杰气魄或是枭雄之姿，整天瞎胡闹，我要是看上他这么个小屁孩，那才是真鬼迷心窍。 ”",
+        "background": "",
+        "significance": "对应金粟在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 16
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "extracted_at": "2026-03-25T17:27:38.247199",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1252,6 +1757,19 @@
       "陈平安回到院子后，暂时便再无闲事挂心头，就开始在院子里练习六步走桩。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "金粟轻声道：“师父你瞧瞧，范二结识的这个朋友，多无趣，榆木疙瘩似的，做什么说什么都一板一眼，这种人，哪怕家世再好，再让范家隆重对待，以后的成就也一定高不到哪里去。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 260,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "范二",
@@ -1282,16 +1800,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 范二与陈平安遭遇",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟与范二遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "范二",
-          "陈平安"
+          "金粟",
+          "范二"
         ],
         "description": "金粟轻声道：“师父你瞧瞧，范二结识的这个朋友，多无趣，榆木疙瘩似的，做什么说什么都一板一眼，这种人，哪怕家世再好，再让范家隆重对待，以后的成就也一定高不到哪里去。 陈平安回到院子后，暂时便再无闲事挂心头，就开始在院子里练习六步走桩。 ”",
         "background": "",
-        "significance": "推动范二与陈平安之间的遭遇关系。",
+        "significance": "推动金粟与范二之间的遭遇关系。",
         "related_action_indices": [
           0
         ],
@@ -1312,30 +1830,25 @@
       {
         "time": null,
         "from_roles": [
-          "范二"
+          "金粟"
         ],
         "to_roles": [
-          "陈平安"
+          "范二"
         ],
         "action": "师承",
-        "context": "” 妇人笑着摇头。 金粟轻声道：“师父你瞧瞧，范二结识的这个朋友，多无趣，榆木疙瘩似的，做什么说什么都一板一眼，这种人，哪怕家世再好，再让范家隆重对待，以后的成就也一定高不到哪里去。 ” 妇人略作思索，关于此事，既不认可，也不否定。 陈平安回到院子后，暂时便再无闲事挂心头，就开始在院子里练习六步走桩。",
+        "context": "金粟轻声道：“师父你瞧瞧，范二结识的这个朋友，多无趣，榆木疙瘩似的，做什么说什么都一板一眼，这种人，哪怕家世再好，再让范家隆重对待，以后的成就也一定高不到哪里去。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 范二与陈平安遭遇",
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 金粟与范二遭遇",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 260,
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "extracted_at": "2026-03-25T17:27:38.247199",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1418,7 +1931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "extracted_at": "2026-03-25T17:27:38.247199",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,7 +1994,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "extracted_at": "2026-03-25T17:27:38.247199",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1562,7 +2075,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "extracted_at": "2026-03-25T17:27:38.247199",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1626,7 +2139,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.320796",
+    "extracted_at": "2026-03-25T17:27:38.248203",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1659,21 +2172,37 @@
         ],
         "juan_index": 260,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "金丹境剑修马致，起先并未如何惊奇，但是长久观看少年打拳之后，终于看出了端倪。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 260,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 陈平安等待",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 陈平安与马致等待",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "马致"
         ],
-        "description": "孙氏祖宅的接连两次天大机缘，陈平安第一次是懵懵懂懂，只觉得那一拳不出不痛快，之后知道了真相，哪怕一次次守夜，好不容易等到了机缘降临，真到了那一刻，陈平安蓦然发现，只觉得自己这一拳还得再出！ 然后毫不犹豫就将那些金色气流化成的云海蛟龙，再次给打回天上。 一老一小，都不讲理。",
+        "description": "孙氏祖宅的接连两次天大机缘，陈平安第一次是懵懵懂懂，只觉得那一拳不出不痛快，之后知道了真相，哪怕一次次守夜，好不容易等到了机缘降临，真到了那一刻，陈平安蓦然发现，只觉得自己这一拳还得再出！ 金丹境剑修马致，起先并未如何惊奇，但是长久观看少年打拳之后，终于看出了端倪。 然后毫不犹豫就将那些金色气流化成的云海蛟龙，再次给打回天上。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键等待节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与马致之间的等待关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -1687,8 +2216,34 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "马致"
+        ],
+        "action": "等待",
+        "context": "孙氏祖宅的接连两次天大机缘，陈平安第一次是懵懵懂懂，只觉得那一拳不出不痛快，之后知道了真相，哪怕一次次守夜，好不容易等到了机缘降临，真到了那一刻，陈平安蓦然发现，只觉得自己这一拳还得再出！ 然后毫不犹豫就将那些金色气流化成的云海蛟龙，再次给打回天上。 一老一小，都不讲理。 金丹境剑修马致，起先并未如何惊奇，但是长久观看少年打拳之后，终于看出了端倪。 老人摇头苦笑，只觉得见鬼了。 一位纯粹武夫的魂魄胆，都已有雏形，只待打熬而已。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 陈平安与马致等待",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.248203",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1766,7 +2321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "extracted_at": "2026-03-25T17:27:38.248203",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1841,7 +2396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "extracted_at": "2026-03-25T17:27:38.248203",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1879,6 +2434,21 @@
       },
       {
         "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "这次离开老龙城，孙嘉树没有让家族供奉跟随，因为他身边多了一位风雷园年轻剑修，刘灞桥。 风尘仆仆赶来老龙城的刘灞桥，此时蹲在岛屿观景亭的栏杆上，远望桂花岛，略显疲惫萧索，疲惫是因为一路御剑南下，难免心神交瘁，脸上的落寞，则是百感交集，好似一股郁气从肚子里爬到了嗓子眼，想要一口吐出，却又怕伤到了朋友。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "刘灞桥哪怕是天资卓绝的剑修，这一路火急火燎地离开风雷园，御剑如此之远，仍是嘴唇干裂，伸手抹了抹，摇头道：“我哪有那脸皮去见陈平安。",
@@ -1900,7 +2470,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "孙嘉树"
+          "孙嘉树",
+          "刘灞桥"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -1917,13 +2488,15 @@
         "location": "老龙城",
         "participants": [
           "孙嘉树",
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "description": "比如孙氏家主孙嘉树。 这次离开老龙城，孙嘉树没有让家族供奉跟随，因为他身边多了一位风雷园年轻剑修，刘灞桥。 风尘仆仆赶来老龙城的刘灞桥，此时蹲在岛屿观景亭的栏杆上，远望桂花岛，略显疲惫萧索，疲惫是因为一路御剑南下，难免心神交瘁，脸上的落寞，则是百感交集，好似一股郁气从肚子里爬到了嗓子眼，想要一口吐出，却又怕伤到了朋友。",
         "background": "",
         "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段26",
         "sentence_indexes_in_segment": [
@@ -1945,27 +2518,42 @@
           "孙嘉树"
         ],
         "to_roles": [
-          "陈平安"
+          "刘灞桥"
         ],
         "action": "同行",
-        "context": "比如孙氏家主孙嘉树。 这次离开老龙城，孙嘉树没有让家族供奉跟随，因为他身边多了一位风雷园年轻剑修，刘灞桥。 风尘仆仆赶来老龙城的刘灞桥，此时蹲在岛屿观景亭的栏杆上，远望桂花岛，略显疲惫萧索，疲惫是因为一路御剑南下，难免心神交瘁，脸上的落寞，则是百感交集，好似一股郁气从肚子里爬到了嗓子眼，想要一口吐出，却又怕伤到了朋友。 孙嘉树轻声道：“为何不去桂花岛解释一下？ ” 刘灞桥哪怕是天资卓绝的剑修，这一路火急火燎地离开风雷园，御剑如此之远，仍是嘴唇干裂，伸手抹了抹，摇头道：“我哪有那脸皮去见陈平安。",
+        "context": "这次离开老龙城，孙嘉树没有让家族供奉跟随，因为他身边多了一位风雷园年轻剑修，刘灞桥。",
         "result": null,
         "event_name": "孙嘉树结识陈平安",
         "location": "老龙城",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 26
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "刘灞桥"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "刘灞桥哪怕是天资卓绝的剑修，这一路火急火燎地离开风雷园，御剑如此之远，仍是嘴唇干裂，伸手抹了抹，摇头道：“我哪有那脸皮去见陈平安。",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 260,
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "extracted_at": "2026-03-25T17:27:38.248203",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2003,6 +2591,21 @@
       },
       {
         "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "孙嘉树斜靠着亭柱，坐在刘灞桥旁边，苦笑道：“这次是我对不住你。 刘灞桥摆摆手，“气归气，道理还是道理，陈平安只是我刘灞桥的朋友，不等于就是你孙嘉树的朋友，我也没有想到陈平安藏着那么多秘密，连你孙嘉树都免不了财帛动人心，其实归根结底，是我的错，还是低估了我这位朋友的本事，孙嘉树，你也别因为我这么说，就愈发愧疚难当，不需要，也不该如此。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "刘灞桥摆摆手，“气归气，道理还是道理，陈平安只是我刘灞桥的朋友，不等于就是你孙嘉树的朋友，我也没有想到陈平安藏着那么多秘密，连你孙嘉树都免不了财帛动人心，其实归根结底，是我的错，还是低估了我这位朋友的本事，孙嘉树，你也别因为我这么说，就愈发愧疚难当，不需要，也不该如此。",
@@ -2023,7 +2626,8 @@
         "location": null,
         "participants": [
           "孙嘉树",
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "description": "孙嘉树斜靠着亭柱，坐在刘灞桥旁边，苦笑道：“这次是我对不住你。 刘灞桥摆摆手，“气归气，道理还是道理，陈平安只是我刘灞桥的朋友，不等于就是你孙嘉树的朋友，我也没有想到陈平安藏着那么多秘密，连你孙嘉树都免不了财帛动人心，其实归根结底，是我的错，还是低估了我这位朋友的本事，孙嘉树，你也别因为我这么说，就愈发愧疚难当，不需要，也不该如此。 孙嘉树手臂搁在栏杆上，侧身望去，清风拂面，本就英俊的男子愈发飘逸出尘，轻声道：“理是这个理，可是事情本不该变得这么糟糕的，你既不骂我也不揍我，这会儿还跟我讲道理，你刘灞桥是一个多么不喜欢嘴上讲道理的人，我孙嘉树比谁都清楚。",
         "background": "",
@@ -2051,14 +2655,71 @@
           "孙嘉树"
         ],
         "to_roles": [
-          "陈平安"
+          "刘灞桥"
         ],
         "action": "对话",
-        "context": "” 孙嘉树斜靠着亭柱，坐在刘灞桥旁边，苦笑道：“这次是我对不住你。 ” 刘灞桥摆摆手，“气归气，道理还是道理，陈平安只是我刘灞桥的朋友，不等于就是你孙嘉树的朋友，我也没有想到陈平安藏着那么多秘密，连你孙嘉树都免不了财帛动人心，其实归根结底，是我的错，还是低估了我这位朋友的本事，孙嘉树，你也别因为我这么说，就愈发愧疚难当，不需要，也不该如此。 ” 孙嘉树手臂搁在栏杆上，侧身望去，清风拂面，本就英俊的男子愈发飘逸出尘，轻声道：“理是这个理，可是事情本不该变得这么糟糕的，你既不骂我也不揍我，这会儿还跟我讲道理，你刘灞桥是一个多么不喜欢嘴上讲道理的人，我孙嘉树比谁都清楚。",
+        "context": "孙嘉树斜靠着亭柱，坐在刘灞桥旁边，苦笑道：“这次是我对不住你。",
         "result": null,
         "event_name": "孙嘉树结识陈平安",
         "location": null,
         "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 260,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.249231",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "260-28-0": {
+    "juan_index": 260,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百五十九章 练拳百万",
+    "source_sentences": [
+      "所以怎么觉得你这是要跟我绝交的意思？",
+      "”",
+      "刘灞桥摇头道：“不会。",
+      "你想多了。",
+      "”",
+      "刘灞桥转头扯了扯嘴角，笑道：“真的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥摇头道：“不会。 刘灞桥转头扯了扯嘴角，笑道：“真的。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 刘灞桥对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘灞桥"
+        ],
+        "description": "刘灞桥摇头道：“不会。 刘灞桥转头扯了扯嘴角，笑道：“真的。 所以怎么觉得你这是要跟我绝交的意思？",
+        "background": "",
+        "significance": "对应刘灞桥在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段28",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -2068,10 +2729,11 @@
           5
         ],
         "juan_index": 260,
-        "segment_index": 27
+        "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.249231",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2108,6 +2770,19 @@
       },
       {
         "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥已经继续望向远方，咧咧嘴，“酸，比陈平安的腌菜还酸。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 260,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "刘灞桥已经继续望向远方，咧咧嘴，“酸，比陈平安的腌菜还酸。",
@@ -2128,14 +2803,13 @@
         "location": null,
         "participants": [
           "孙嘉树",
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "description": "孙嘉树笑道：“你这次给我坑得这么惨，算不算我本将心向明月，奈何明月照沟渠？ 刘灞桥已经继续望向远方，咧咧嘴，“酸，比陈平安的腌菜还酸。 孙嘉树笑了起来，只是在心中叹息一声。",
         "background": "",
         "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -2149,34 +2823,8 @@
         "segment_index": 29
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "孙嘉树"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "” 孙嘉树笑道：“你这次给我坑得这么惨，算不算我本将心向明月，奈何明月照沟渠？ ” 刘灞桥已经继续望向远方，咧咧嘴，“酸，比陈平安的腌菜还酸。 ” 孙嘉树笑了起来，只是在心中叹息一声。",
-        "result": null,
-        "event_name": "孙嘉树结识陈平安",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 260,
-        "segment_index": 29
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.249231",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2210,6 +2858,23 @@
         ],
         "juan_index": 260,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "两人起身返回老龙城，孙嘉树带着刘灞桥去了孙氏祖宅。 那位定海神针一般的元婴境孙氏老祖，对刘灞桥这个风雷园后起之秀，第一次见面，就极其喜欢。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 260,
+        "segment_index": 30
       }
     ],
     "locations": [
@@ -2221,7 +2886,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "孙嘉树"
+          "孙嘉树",
+          "刘灞桥"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -2232,16 +2898,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树在老龙城会见",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树与刘灞桥在老龙城会见",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "孙嘉树"
+          "孙嘉树",
+          "刘灞桥"
         ],
-        "description": "两人起身返回老龙城，孙嘉树带着刘灞桥去了孙氏祖宅。 孙嘉树在夜幕中，独自手持鱼竿，在岸边默默垂钓。 那位定海神针一般的元婴境孙氏老祖，对刘灞桥这个风雷园后起之秀，第一次见面，就极其喜欢。",
+        "description": "两人起身返回老龙城，孙嘉树带着刘灞桥去了孙氏祖宅。 那位定海神针一般的元婴境孙氏老祖，对刘灞桥这个风雷园后起之秀，第一次见面，就极其喜欢。 作为地仙，老人如今已经难得动筷子，今天仍是跟两个年轻人坐在一桌，吃了顿宵夜，全是刘灞桥爱吃的饭菜。",
         "background": "",
-        "significance": "对应孙嘉树在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动孙嘉树与刘灞桥之间的会见线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -2255,8 +2924,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.321799",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "会见",
+        "context": "两人起身返回老龙城，孙嘉树带着刘灞桥去了孙氏祖宅。 那位定海神针一般的元婴境孙氏老祖，对刘灞桥这个风雷园后起之秀，第一次见面，就极其喜欢。 作为地仙，老人如今已经难得动筷子，今天仍是跟两个年轻人坐在一桌，吃了顿宵夜，全是刘灞桥爱吃的饭菜。 刘灞桥跟孙氏老祖插科打诨，跟早年一个德性，吹嘘吹捧从来不知肉麻是什么，揭短也毫不含糊，把老人逗得哈哈大笑。 刘灞桥还要赶回风雷园，吃过饭就直接挂上那枚老龙翻云佩，御剑离去。 孙嘉树在夜幕中，独自手持鱼竿，在岸边默默垂钓。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树与刘灞桥在老龙城会见",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 260,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.249231",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2292,20 +2987,35 @@
         ],
         "juan_index": 260,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥御剑折返回到这里，落在孙嘉树身后，一脚将这位孙氏家主踹到河里去。 孙氏老祖凭空出现在孙嘉树身旁，语重心长道：“刘灞桥这种朋友，人这辈子，不管是甲子岁月还是百年千年，能有一个都是福气，一定要好好珍惜。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 260,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树迁移",
+        "name": "第四卷剑气近 第二百五十九章 练拳百万 · 孙嘉树与刘灞桥迁移",
         "time": null,
         "location": null,
         "participants": [
-          "孙嘉树"
+          "孙嘉树",
+          "刘灞桥"
         ],
         "description": "深夜时分，孙嘉树突然抬起头。 刘灞桥御剑折返回到这里，落在孙嘉树身后，一脚将这位孙氏家主踹到河里去。 孙嘉树落汤鸡似的走上岸，反而开心笑了。",
         "background": "",
-        "significance": "对应孙嘉树在叙事中的关键迁移节点。",
+        "significance": "推动孙嘉树与刘灞桥之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十九章 练拳百万 · 段31",
         "sentence_indexes_in_segment": [
@@ -2321,7 +3031,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.249231",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2385,7 +3095,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.249231",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2447,7 +3157,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.250209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2551,7 +3261,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.250209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2654,7 +3364,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.250209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2780,7 +3490,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.250209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2873,7 +3583,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.250209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2988,7 +3698,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.322802",
+    "extracted_at": "2026-03-25T17:27:38.251213",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3021,6 +3731,19 @@
         "sentence_indexes_in_segment": [
           0,
           5
+        ],
+        "juan_index": 260,
+        "segment_index": 39
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "郑大风仰起头吞云吐雾，玩味道：“傻人有傻福。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 260,
         "segment_index": 39
@@ -3062,6 +3785,7 @@
         "participants": [
           "郑大风",
           "陈平安",
+          "仰起头",
           "范二"
         ],
         "description": "郑大风仰起头吞云吐雾，玩味道：“傻人有傻福。 范二难得反驳这位武道境界与天高的传道恩师，“先生，可不许这么说陈平安，他不傻的，聪明得很，连我都要佩服他会那么多事情。 我就觉得能认识陈平安，是我的福气。",
@@ -3082,7 +3806,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.251213",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3176,7 +3900,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.251213",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3282,7 +4006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.251213",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3375,7 +4099,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.251213",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3495,7 +4219,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.252216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3633,7 +4357,7 @@
         "segment_index": 44
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.252216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3741,7 +4465,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.323806",
+    "extracted_at": "2026-03-25T17:27:38.252216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3806,7 +4530,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "extracted_at": "2026-03-25T17:27:38.252216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3931,7 +4655,7 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "extracted_at": "2026-03-25T17:27:38.252216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4023,7 +4747,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "extracted_at": "2026-03-25T17:27:38.253220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4099,7 +4823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.324809",
+    "extracted_at": "2026-03-25T17:27:38.253220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

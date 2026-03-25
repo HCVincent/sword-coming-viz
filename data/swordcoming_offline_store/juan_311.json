@@ -1,4 +1,66 @@
 {
+  "311-1-0": {
+    "juan_index": 311,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "中年汉子缓缓走出树荫，握住剑柄，剑柄朝下，左右摇晃着，这哪里像是个剑客，倒像是个手持拨浪鼓的顽劣稚童，当他出现在众人视野，马宣，琵琶女，笑脸儿，簪花郎周仕，魔教鸦儿，都变了变脸色。",
+      "汉子不去看这些在江湖上声名赫赫的顶尖高手，只是对着那位应该是同道中人的年轻人笑道：“想多了，你还没有这么大的面子，这里的江湖百年，估计也就只有丁婴一人够格。",
+      "你……”",
+      "他伸出空闲一手，摇动手指，“还不行。",
+      "”",
+      "众目睽睽之下，汉子将长剑往地面一戳，掌心抵住剑柄，意态懒散，对两拨人笑呵呵道：“别发呆啊，你们继续，如果实在杀不掉，我再出手不迟。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "汉子不去看这些在江湖上声名赫赫的顶尖高手，只是对着那位应该是同道中人的年轻人笑道：“想多了，你还没有这么大的面子，这里的江湖百年，估计也就只有丁婴一人够格。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 311,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 丁婴对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "丁婴"
+        ],
+        "description": "汉子不去看这些在江湖上声名赫赫的顶尖高手，只是对着那位应该是同道中人的年轻人笑道：“想多了，你还没有这么大的面子，这里的江湖百年，估计也就只有丁婴一人够格。 中年汉子缓缓走出树荫，握住剑柄，剑柄朝下，左右摇晃着，这哪里像是个剑客，倒像是个手持拨浪鼓的顽劣稚童，当他出现在众人视野，马宣，琵琶女，笑脸儿，簪花郎周仕，魔教鸦儿，都变了变脸色。 你……”",
+        "background": "",
+        "significance": "对应丁婴在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.521066",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "311-6-0": {
     "juan_index": 311,
     "segment_index": 6,
@@ -55,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.520487",
+    "extracted_at": "2026-03-25T17:27:38.521066",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -88,21 +150,37 @@
         ],
         "juan_index": 311,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "那位吊儿郎当的拄剑男子，是陈平安见到第三个“近道”武夫，之前两人，分别是头戴银色莲花冠的老人和樊莞尔，不过眼前男人，比起樊莞尔的武道修为，要高出不少，就目前来看，距离姓丁的老人，差距不算太大。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 311,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安对话",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与樊莞尔对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "樊莞尔"
         ],
         "description": "那位吊儿郎当的拄剑男子，是陈平安见到第三个“近道”武夫，之前两人，分别是头戴银色莲花冠的老人和樊莞尔，不过眼前男人，比起樊莞尔的武道修为，要高出不少，就目前来看，距离姓丁的老人，差距不算太大。 但是一个马宣都有压箱底的本事，这座江湖显然没想象中那么浅。 如果养剑葫内是方寸物十五，而不是初一，情况会更好一些，不过事已至此，多想无益。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与樊莞尔之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -116,8 +194,91 @@
         "segment_index": 7
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "别离",
+        "context": "那位吊儿郎当的拄剑男子，是陈平安见到第三个“近道”武夫，之前两人，分别是头戴银色莲花冠的老人和樊莞尔，不过眼前男人，比起樊莞尔的武道修为，要高出不少，就目前来看，距离姓丁的老人，差距不算太大。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与樊莞尔对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 311,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.521066",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "311-9-0": {
+    "juan_index": 311,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "陆舫喂了一声，笑着提醒道：“大战在即，你还要想那些有的没的？",
+      "一个东躲西藏的童青青，一个一往无前的冯青白，加上一个浑浑噩噩的你，其实都没什么，各有各的活法，只不过就数你运气最差就是了。",
+      "知道你一直在刻意隐藏实力，小心玩火自焚。",
+      "”",
+      "马宣已经一鼓作气，将气势升到了武学生涯的最高处，就再无拖曳的理由。",
+      "对那位琵琶女子的怨恨和眷念，未必假，借机蓄势，全力一搏，更是真。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫喂了一声，笑着提醒道：“大战在即，你还要想那些有的没的？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 311,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫指点",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫喂了一声，笑着提醒道：“大战在即，你还要想那些有的没的？ 一个东躲西藏的童青青，一个一往无前的冯青白，加上一个浑浑噩噩的你，其实都没什么，各有各的活法，只不过就数你运气最差就是了。 知道你一直在刻意隐藏实力，小心玩火自焚。",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键指点节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 9
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.520487",
+    "extracted_at": "2026-03-25T17:27:38.522069",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,7 +343,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.520487",
+    "extracted_at": "2026-03-25T17:27:38.522069",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "311-11-0": {
+    "juan_index": 311,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "陆舫眼前一亮，高声笑道：“马宣，注意身前。",
+      "”",
+      "马宣骤然停步，以至于街面上被犁出两条沟壑，双脚重重踩踏，双臂格挡在身前。",
+      "果真有匪夷所思的一拳砸中他手臂，马宣怒喝一声，背后所绘长髯青袍的持刀儒将，猛然睁眼。",
+      "“去死！",
+      "”马宣只是微微后仰，一脚向前踩去，抡起一臂就是一拳挥出，金光流溢的整条胳膊，在空中画出了一道金色扇面。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫眼前一亮，高声笑道：“马宣，注意身前。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 311,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫眼前一亮，高声笑道：“马宣，注意身前。 ” 马宣骤然停步，以至于街面上被犁出两条沟壑，双脚重重踩踏，双臂格挡在身前。",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.522069",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -216,21 +439,37 @@
         ],
         "juan_index": 311,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "除去陆舫不提。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安对话",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "陈平安突然皱了皱眉头，刹那之间改变方向，弃了琵琶女，直接向左手边一掠而去。 目前露面的两拨人当中，陈平安最忌讳这个怪人。 在笑脸儿眼中，只见那一袭雪白长袍，一只手按住马宣拳头，轻轻向下一压，身形拔地而起，直接越过了马宣头顶，并且一脚点在了马宣后脑勺上，向那躲在后方鬼祟出手的女子一跃而去，琵琶女子见机不妙，手指在琵琶弦上飞快滚动，在两者之间，交织出一张碧绿色的蛛网。",
+        "description": "陈平安突然皱了皱眉头，刹那之间改变方向，弃了琵琶女，直接向左手边一掠而去。 除去陆舫不提。 目前露面的两拨人当中，陈平安最忌讳这个怪人。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆舫之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -244,8 +483,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.520487",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "对话",
+        "context": "在笑脸儿眼中，只见那一袭雪白长袍，一只手按住马宣拳头，轻轻向下一压，身形拔地而起，直接越过了马宣头顶，并且一脚点在了马宣后脑勺上，向那躲在后方鬼祟出手的女子一跃而去，琵琶女子见机不妙，手指在琵琶弦上飞快滚动，在两者之间，交织出一张碧绿色的蛛网。 陈平安突然皱了皱眉头，刹那之间改变方向，弃了琵琶女，直接向左手边一掠而去。 正是那个阴森森的笑脸儿。 除去陆舫不提。 目前露面的两拨人当中，陈平安最忌讳这个怪人。 笑脸儿嬉笑道：“都说捡软柿子捏，你倒好。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.522069",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -308,7 +573,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "extracted_at": "2026-03-25T17:27:38.522069",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -344,6 +609,19 @@
         ],
         "juan_index": 311,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫的话语刚好早先一步，大大方方说给笑脸儿，“小心，他要发力了。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 14
       }
     ],
     "locations": [],
@@ -354,12 +632,15 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "陆舫"
         ],
-        "description": "笑脸儿再次神出鬼没地出现在后方，这次他身躯蜷缩，双臂摊开，双拳分别敲向陈平安太阳穴。 陈平安刚要有所动作。 笑脸儿稍作犹豫，就主动放弃了双拳锤烂陈平安头颅的大好时机，瞬间站在了青石板街道上。",
+        "description": "笑脸儿再次神出鬼没地出现在后方，这次他身躯蜷缩，双臂摊开，双拳分别敲向陈平安太阳穴。 陈平安刚要有所动作。 陆舫的话语刚好早先一步，大大方方说给笑脸儿，“小心，他要发力了。",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -373,8 +654,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "别离",
+        "context": "笑脸儿再次神出鬼没地出现在后方，这次他身躯蜷缩，双臂摊开，双拳分别敲向陈平安太阳穴。 陈平安刚要有所动作。 陆舫的话语刚好早先一步，大大方方说给笑脸儿，“小心，他要发力了。 ” 笑脸儿稍作犹豫，就主动放弃了双拳锤烂陈平安头颅的大好时机，瞬间站在了青石板街道上。 陈平安差不多跟笑脸儿互换位置，后者来到了街上，陈平安站在了墙头。",
+        "result": null,
+        "event_name": "墙头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.522069",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -397,6 +704,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫掌心轻轻拍击剑柄，乐呵呵道：“跟这么多人合伙围殴一个晚辈，传出去，名声不好听。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安默不作声。",
@@ -412,15 +732,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "陈平安"
         ],
-        "description": "陈平安默不作声。 瞥了眼那个两次坏他好事的拄剑汉子，“你为什么不干脆动手？ ”",
+        "description": "陆舫掌心轻轻拍击剑柄，乐呵呵道：“跟这么多人合伙围殴一个晚辈，传出去，名声不好听。 陈平安默不作声。 瞥了眼那个两次坏他好事的拄剑汉子，“你为什么不干脆动手？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段15",
         "sentence_indexes_in_segment": [
@@ -436,7 +757,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "extracted_at": "2026-03-25T17:27:38.523073",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -515,7 +836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "extracted_at": "2026-03-25T17:27:38.523073",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -548,21 +869,37 @@
         ],
         "juan_index": 311,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫又开始指点江山，“马宣，别死啊。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安指点",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫指点",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "陈平安其实一直在“收着”。 因为他实在对这座江湖，以及整个南苑国京城，所谓的天下十人，充满了疑惑。 只是想不通归想不通，有些事情还是得做。",
+        "description": "陈平安其实一直在“收着”。 陆舫又开始指点江山，“马宣，别死啊。 因为他实在对这座江湖，以及整个南苑国京城，所谓的天下十人，充满了疑惑。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆舫之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -576,8 +913,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "指点",
+        "context": "陈平安其实一直在“收着”。 因为他实在对这座江湖，以及整个南苑国京城，所谓的天下十人，充满了疑惑。 只是想不通归想不通，有些事情还是得做。 陆舫又开始指点江山，“马宣，别死啊。 ” 马宣摆出一个拳架，左右双臂都已经变成金色，呼吸之间，吐露出点点金光。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.523073",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -639,7 +1002,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "extracted_at": "2026-03-25T17:27:38.523073",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -673,20 +1036,34 @@
         ],
         "juan_index": 311,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "“陆舫救我！",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "陈平安如影随形。 又是一拳击中，马宣身躯已经扭曲成一张弧弓，这一次陈平安出拳，角度微变，使得马宣刚好撞向身后那位同伴。 一拳再无留力的铁骑凿阵式，轰然砸中马宣胸膛。",
+        "description": "陈平安如影随形。 又是一拳击中，马宣身躯已经扭曲成一张弧弓，这一次陈平安出拳，角度微变，使得马宣刚好撞向身后那位同伴。 “陆舫救我！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆舫之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段19",
         "sentence_indexes_in_segment": [
@@ -702,7 +1079,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "extracted_at": "2026-03-25T17:27:38.523073",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -725,6 +1102,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "只要他稍作停滞，相信陆舫就要出剑了。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安仿佛看穿琵琶女子的心思，第三拳竟是再度击中马宣的腹部。",
@@ -740,16 +1130,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫与陈平安同行",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "陈平安"
         ],
-        "description": "陈平安仿佛看穿琵琶女子的心思，第三拳竟是再度击中马宣的腹部。 ” 琵琶女子脸色剧变，惊骇出声后，没有束手待毙，不愧是一流高手，既没有后退，也没有左右躲闪，脚尖一点，迅猛向前，试图躲在拥有金刚不败之身的马宣身后，心想那个家伙总不能一拳打穿马宣体魄。",
+        "description": "只要他稍作停滞，相信陆舫就要出剑了。 陈平安仿佛看穿琵琶女子的心思，第三拳竟是再度击中马宣的腹部。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与陈平安之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -763,8 +1156,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "” 琵琶女子脸色剧变，惊骇出声后，没有束手待毙，不愧是一流高手，既没有后退，也没有左右躲闪，脚尖一点，迅猛向前，试图躲在拥有金刚不败之身的马宣身后，心想那个家伙总不能一拳打穿马宣体魄。 只要他稍作停滞，相信陆舫就要出剑了。 陈平安仿佛看穿琵琶女子的心思，第三拳竟是再度击中马宣的腹部。 金身被震荡得粉碎不说，原本淡银色的双眼立即变得通红，布满渗人的血丝。 马宣后背和弄巧成拙的琵琶女子狠狠撞在一起。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十章 刺杀 · 陆舫与陈平安同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.523073",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -797,21 +1216,37 @@
         ],
         "juan_index": 311,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "远处的陆舫面带微笑，依旧没有出剑。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 21
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "陈平安一拳打穿女子怀中的琵琶，重重打在她腹部，手臂抡出半圈，女子连同破碎琵琶一起在空中被拳势带着拧转，之后猛然撞向一侧墙壁，那具丰腴娇躯几乎全部潜入墙壁，生死不知，怀中琵琶颓然摔在地上。 撞得琵琶弦一阵乱响，女子喷出一口鲜血后，双脚交错踢出，凌空虚步，向后倒退。 仍是太慢了。",
+        "description": "陈平安一拳打穿女子怀中的琵琶，重重打在她腹部，手臂抡出半圈，女子连同破碎琵琶一起在空中被拳势带着拧转，之后猛然撞向一侧墙壁，那具丰腴娇躯几乎全部潜入墙壁，生死不知，怀中琵琶颓然摔在地上。 远处的陆舫面带微笑，依旧没有出剑。 撞得琵琶弦一阵乱响，女子喷出一口鲜血后，双脚交错踢出，凌空虚步，向后倒退。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆舫之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -825,8 +1260,34 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.521490",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "对话",
+        "context": "撞得琵琶弦一阵乱响，女子喷出一口鲜血后，双脚交错踢出，凌空虚步，向后倒退。 仍是太慢了。 陈平安一拳打穿女子怀中的琵琶，重重打在她腹部，手臂抡出半圈，女子连同破碎琵琶一起在空中被拳势带着拧转，之后猛然撞向一侧墙壁，那具丰腴娇躯几乎全部潜入墙壁，生死不知，怀中琵琶颓然摔在地上。 远处的陆舫面带微笑，依旧没有出剑。 哪怕那人好像将他当做了真正的敌人。 他再次懒散开口，“笑脸儿，记住，千万别被他每个当下的出拳速度迷惑，他还可以更快，尽量别被他近身，暗器毒药啊什么的，不妨试试看。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.524076",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -849,6 +1310,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫故作恍然，“哦对了，他真正想杀的人，其实是鸦儿姑娘和周大公子。 结果陆舫这么一说，两人皆是惊悚异常。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "被陈平安拳法震慑，魔教女子鸦儿连硬着头皮凑热闹的心思都没了，哪怕事后被老教主追责，总好过现在就沦为马宣的凄惨下场。",
@@ -864,15 +1339,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "陈平安"
         ],
-        "description": "被陈平安拳法震慑，魔教女子鸦儿连硬着头皮凑热闹的心思都没了，哪怕事后被老教主追责，总好过现在就沦为马宣的凄惨下场。 ” 陆舫故作恍然，“哦对了，他真正想杀的人，其实是鸦儿姑娘和周大公子。",
+        "description": "陆舫故作恍然，“哦对了，他真正想杀的人，其实是鸦儿姑娘和周大公子。 被陈平安拳法震慑，魔教女子鸦儿连硬着头皮凑热闹的心思都没了，哪怕事后被老教主追责，总好过现在就沦为马宣的凄惨下场。 结果陆舫这么一说，两人皆是惊悚异常。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段22",
         "sentence_indexes_in_segment": [
@@ -888,7 +1364,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.524076",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -950,7 +1426,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.524076",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -985,20 +1461,34 @@
         ],
         "juan_index": 311,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫悄然握住了剑柄。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安与陆舫剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "剑尖直刺陈平安。 中庭穴别称龙颔，位于陈平安身前那条正中线上。 千钧一发之际，陈平安凭空消失。",
+        "description": "剑尖直刺陈平安。 中庭穴别称龙颔，位于陈平安身前那条正中线上。 陆舫悄然握住了剑柄。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆舫之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段24",
         "sentence_indexes_in_segment": [
@@ -1014,7 +1504,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.524076",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1076,7 +1566,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.524076",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "311-26-0": {
+    "juan_index": 311,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "”",
+      "冯青白无奈道：“可惜没能一剑杀了你，估计正面交锋，未必是你对手，没关系，我可以配合陆舫，他可是这里唯一的剑仙之资，板上钉钉要回去的。",
+      "”",
+      "只会半吊子请神降真的马宣，金身已破。",
+      "陷入墙壁琵琶女子，纹丝不动，墙根那边，断断续续有碎石坠地的声响。",
+      "一个秘密扶龙数年的魔教著名妖女，倒在血泊中，木屐跟那双如霜雪白皙的脚丫，都很扎眼。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "冯青白无奈道：“可惜没能一剑杀了你，估计正面交锋，未必是你对手，没关系，我可以配合陆舫，他可是这里唯一的剑仙之资，板上钉钉要回去的。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 311,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫揭示",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "冯青白无奈道：“可惜没能一剑杀了你，估计正面交锋，未必是你对手，没关系，我可以配合陆舫，他可是这里唯一的剑仙之资，板上钉钉要回去的。 ” ”",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键揭示节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.524076",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1099,6 +1651,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "但是还有陆舫，自称剑修的冯青白，笑脸儿，簪花郎周仕。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 311,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安双拳紧握，然后松开，以此反复数次。",
@@ -1114,15 +1679,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "陈平安"
         ],
-        "description": "陈平安双拳紧握，然后松开，以此反复数次。 但是还有陆舫，自称剑修的冯青白，笑脸儿，簪花郎周仕。 枯瘦小女孩缩在小板凳上，心中默念，“一拳又一拳，打爆他们的狗头，我好扒下他们的衣服和靴子，一看就值很多银子。",
+        "description": "但是还有陆舫，自称剑修的冯青白，笑脸儿，簪花郎周仕。 陈平安双拳紧握，然后松开，以此反复数次。 枯瘦小女孩缩在小板凳上，心中默念，“一拳又一拳，打爆他们的狗头，我好扒下他们的衣服和靴子，一看就值很多银子。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段27",
         "sentence_indexes_in_segment": [
@@ -1138,7 +1704,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.525080",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1172,20 +1738,48 @@
         ],
         "juan_index": 311,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "会不会是丁婴的诡计？",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "貌若纯真稚童的俞真意，正在用刻刀仔细雕琢一支玉竹扇骨，细细摩挲，如痴情人善待心爱女子的肌肤，面对种秋的询问，并没有回答，而是目不转睛盯着竹枝上的细微纹路，额头上渗出丝丝汗水，这对于武道境界已经返璞归真的俞真意而已，绝对不合常理。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 28
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋对话",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋与丁婴对话",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "种秋",
+          "丁婴",
+          "俞真意"
         ],
-        "description": "牯牛山之巅，南苑国国师种秋脸色肃穆，有些不敢确定，沉声问道：“当真如此？ 貌若纯真稚童的俞真意，正在用刻刀仔细雕琢一支玉竹扇骨，细细摩挲，如痴情人善待心爱女子的肌肤，面对种秋的询问，并没有回答，而是目不转睛盯着竹枝上的细微纹路，额头上渗出丝丝汗水，这对于武道境界已经返璞归真的俞真意而已，绝对不合常理。 斩杀那人，除了获得一个崭新名额之外，还能够获得三桩福缘？",
+        "description": "牯牛山之巅，南苑国国师种秋脸色肃穆，有些不敢确定，沉声问道：“当真如此？ 会不会是丁婴的诡计？ 貌若纯真稚童的俞真意，正在用刻刀仔细雕琢一支玉竹扇骨，细细摩挲，如痴情人善待心爱女子的肌肤，面对种秋的询问，并没有回答，而是目不转睛盯着竹枝上的细微纹路，额头上渗出丝丝汗水，这对于武道境界已经返璞归真的俞真意而已，绝对不合常理。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键对话节点。",
+        "significance": "推动种秋与丁婴之间的对话关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段28",
         "sentence_indexes_in_segment": [
@@ -1201,7 +1795,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.525080",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1224,6 +1818,36 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意作为仅次于丁婴的大宗师，早已寒暑不侵，而且传言在古稀之年，获得一本仙人秘籍，体悟天意数十载，精通术法，甚至有人言之凿凿，曾经亲眼看到俞真意能够腾云驾雾，骑鹤跨鸾，正是那这个时候，俞真意的体型外貌，开始由白发老者一步步转为青壮、少年，直到如今的稚童。 经过十年面壁闭关，成功破关而出，终于天人合一，世人皆憧憬正道魁首俞真意，能够与丁婴一战，最好是将其击毙，从此海晏清平，几位皇帝可以不用提心吊胆，在睡梦中被他割走头颅，正邪两派宗师都可以不用仰人鼻息，就连魔教巨擘都巴不得这个性情古怪的老祖宗，要么早点死，要么赶紧做到传说中的飞升壮举，总之，莫要在人间待着了，八十年了，也该换个人来坐一坐头把交椅的位置了。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "俞真意作为仅次于丁婴的大宗师，早已寒暑不侵，而且传言在古稀之年，获得一本仙人秘籍，体悟天意数十载，精通术法，甚至有人言之凿凿，曾经亲眼看到俞真意能够腾云驾雾，骑鹤跨鸾，正是那这个时候，俞真意的体型外貌，开始由白发老者一步步转为青壮、少年，直到如今的稚童。 经过十年面壁闭关，成功破关而出，终于天人合一，世人皆憧憬正道魁首俞真意，能够与丁婴一战，最好是将其击毙，从此海晏清平，几位皇帝可以不用提心吊胆，在睡梦中被他割走头颅，正邪两派宗师都可以不用仰人鼻息，就连魔教巨擘都巴不得这个性情古怪的老祖宗，要么早点死，要么赶紧做到传说中的飞升壮举，总之，莫要在人间待着了，八十年了，也该换个人来坐一坐头把交椅的位置了。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 311,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "除了俞真意和种秋这对亦敌亦友的男子，牯牛山顶还有位身穿尊贵袆衣的绝色女子，袆衣深青色，是南苑国皇后的第一礼服，只在朝会、谒庙等盛典穿着，此刻山顶有一个最为遵规守矩的南苑国国师，那么妇人就只能是南苑国皇后周姝真了。 春潮宫周肥，对这位周皇后的美色觊觎已久，簪花郎周仕曾经在白河寺大殿中坦言，如果不是种秋就守在皇宫旁，他父亲周肥早就闯宫抢人了。",
@@ -1236,20 +1860,49 @@
         ],
         "juan_index": 311,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "周姝真",
+        "alias": [],
+        "original_description_in_book": "除了俞真意和种秋这对亦敌亦友的男子，牯牛山顶还有位身穿尊贵袆衣的绝色女子，袆衣深青色，是南苑国皇后的第一礼服，只在朝会、谒庙等盛典穿着，此刻山顶有一个最为遵规守矩的南苑国国师，那么妇人就只能是南苑国皇后周姝真了。",
+        "description": "外围修士与高位布局线人物，适合补足山上势力层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "春潮宫周肥，对这位周皇后的美色觊觎已久，簪花郎周仕曾经在白河寺大殿中坦言，如果不是种秋就守在皇宫旁，他父亲周肥早就闯宫抢人了。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 311,
+        "segment_index": 29
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋揭示",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 俞真意与种秋揭示",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "俞真意",
+          "种秋",
+          "丁婴",
+          "周姝真"
         ],
-        "description": "除了俞真意和种秋这对亦敌亦友的男子，牯牛山顶还有位身穿尊贵袆衣的绝色女子，袆衣深青色，是南苑国皇后的第一礼服，只在朝会、谒庙等盛典穿着，此刻山顶有一个最为遵规守矩的南苑国国师，那么妇人就只能是南苑国皇后周姝真了。 春潮宫周肥，对这位周皇后的美色觊觎已久，簪花郎周仕曾经在白河寺大殿中坦言，如果不是种秋就守在皇宫旁，他父亲周肥早就闯宫抢人了。 俞真意放下手中那支玉竹，抬起手臂擦了擦额头汗水，轻轻吐出一口浊气，如云雾袅袅，在那张孩童脸庞附近经久不散，他先回答了种秋的问题，“应该不假。",
+        "description": "俞真意作为仅次于丁婴的大宗师，早已寒暑不侵，而且传言在古稀之年，获得一本仙人秘籍，体悟天意数十载，精通术法，甚至有人言之凿凿，曾经亲眼看到俞真意能够腾云驾雾，骑鹤跨鸾，正是那这个时候，俞真意的体型外貌，开始由白发老者一步步转为青壮、少年，直到如今的稚童。 经过十年面壁闭关，成功破关而出，终于天人合一，世人皆憧憬正道魁首俞真意，能够与丁婴一战，最好是将其击毙，从此海晏清平，几位皇帝可以不用提心吊胆，在睡梦中被他割走头颅，正邪两派宗师都可以不用仰人鼻息，就连魔教巨擘都巴不得这个性情古怪的老祖宗，要么早点死，要么赶紧做到传说中的飞升壮举，总之，莫要在人间待着了，八十年了，也该换个人来坐一坐头把交椅的位置了。 除了俞真意和种秋这对亦敌亦友的男子，牯牛山顶还有位身穿尊贵袆衣的绝色女子，袆衣深青色，是南苑国皇后的第一礼服，只在朝会、谒庙等盛典穿着，此刻山顶有一个最为遵规守矩的南苑国国师，那么妇人就只能是南苑国皇后周姝真了。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键揭示节点。",
+        "significance": "推动俞真意与种秋之间的揭示关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段29",
         "sentence_indexes_in_segment": [
@@ -1265,7 +1918,83 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.525080",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "311-30-0": {
+    "juan_index": 311,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "但是丁婴此人心思难测，比起合力斩杀那名突兀出现的年轻剑客，丁婴的后手，更值得我们小心。",
+      "”",
+      "俞真意加重语气，“我不放心状元巷那边的形势，种国师你最好亲自去盯着。",
+      "”",
+      "称呼种国师。",
+      "看来两人关系确实很一般。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "但是丁婴此人心思难测，比起合力斩杀那名突兀出现的年轻剑客，丁婴的后手，更值得我们小心。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 311,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意加重语气，“我不放心状元巷那边的形势，种国师你最好亲自去盯着。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 丁婴与俞真意剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "丁婴",
+          "俞真意"
+        ],
+        "description": "但是丁婴此人心思难测，比起合力斩杀那名突兀出现的年轻剑客，丁婴的后手，更值得我们小心。 俞真意加重语气，“我不放心状元巷那边的形势，种国师你最好亲自去盯着。 ”",
+        "background": "",
+        "significance": "推动丁婴与俞真意之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.525080",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1299,20 +2028,65 @@
         ],
         "juan_index": 311,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "种秋皱眉道：“状元巷围杀之局，有丁婴坐镇不说，陆舫还带了剑去，有什么不放心的？ 俞真意摇头道：“我不放心丁婴，也不放心陆舫。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "种秋皱眉道：“状元巷围杀之局，有丁婴坐镇不说，陆舫还带了剑去，有什么不放心的？ 俞真意摇头道：“我不放心丁婴，也不放心陆舫。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 311,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意摇头道：“我不放心丁婴，也不放心陆舫。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 陆舫与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "陆舫",
+          "种秋",
+          "丁婴",
+          "俞真意"
         ],
-        "description": "种秋皱眉道：“状元巷围杀之局，有丁婴坐镇不说，陆舫还带了剑去，有什么不放心的？ 种秋神色有些不快，“陆舫此人，光明磊落，有什么不放心的？ ”",
+        "description": "种秋皱眉道：“状元巷围杀之局，有丁婴坐镇不说，陆舫还带了剑去，有什么不放心的？ 俞真意摇头道：“我不放心丁婴，也不放心陆舫。 种秋神色有些不快，“陆舫此人，光明磊落，有什么不放心的？",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与种秋之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段31",
         "sentence_indexes_in_segment": [
@@ -1328,7 +2102,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.522493",
+    "extracted_at": "2026-03-25T17:27:38.525080",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1351,6 +2125,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意淡然道：“你要是不去，我去好了。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 32
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "种秋冷哼一声，看也不看那周皇后一眼，如一头鹰隼掠向山脚。",
@@ -1366,15 +2153,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 俞真意与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "俞真意",
           "种秋"
         ],
-        "description": "种秋冷哼一声，看也不看那周皇后一眼，如一头鹰隼掠向山脚。 ” 眼前这位享誉天下的正道第一人，湖山派的掌门，松籁国的帝师，世人眼中的老神仙，从来都是这样，虽然处处行事光明正大，但是骨子里透着一股疏离和冷漠，谁与他走得越近，感触越深。",
+        "description": "俞真意淡然道：“你要是不去，我去好了。 种秋冷哼一声，看也不看那周皇后一眼，如一头鹰隼掠向山脚。 ”",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动俞真意与种秋之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段32",
         "sentence_indexes_in_segment": [
@@ -1390,7 +2178,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.523497",
+    "extracted_at": "2026-03-25T17:27:38.526083",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1423,20 +2211,49 @@
         ],
         "juan_index": 311,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "你呢，俞真意，如今可以做到了吗？ 俞真意沉默不语。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "周姝真",
+        "alias": [],
+        "original_description_in_book": "周姝真笑了起来，“哪怕不是乘云御风，可怎么看，还是很飘逸潇洒的。",
+        "description": "外围修士与高位布局线人物，适合补足山上势力层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 311,
+        "segment_index": 33
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 俞真意与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "俞真意",
+          "种秋",
+          "周姝真"
         ],
-        "description": "周皇后感慨道：“强如种秋，仍是无法如同古籍上记载的那般仙人御风。 你呢，俞真意，如今可以做到了吗？ ”",
+        "description": "周皇后感慨道：“强如种秋，仍是无法如同古籍上记载的那般仙人御风。 你呢，俞真意，如今可以做到了吗？ 俞真意沉默不语。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动俞真意与种秋之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段33",
         "sentence_indexes_in_segment": [
@@ -1452,7 +2269,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.523497",
+    "extracted_at": "2026-03-25T17:27:38.526083",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1485,20 +2302,51 @@
         ],
         "juan_index": 311,
         "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "她还是少女时，在他国市井中，初次见到种秋和俞真意，前者锋芒毕露，后者神华内敛，可都让她感到惊艳。 俞真意站起身，个头还不到周皇后的胸口，但是当他站起身，周姝真就像一下子被撵到了山脚，只能高高仰望山巅此人。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 311,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "周姝真",
+        "alias": [],
+        "original_description_in_book": "俞真意站起身，个头还不到周皇后的胸口，但是当他站起身，周姝真就像一下子被撵到了山脚，只能高高仰望山巅此人。 周姝真点头道：“已经完全确定。",
+        "description": "外围修士与高位布局线人物，适合补足山上势力层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 311,
+        "segment_index": 34
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十章 刺杀 · 种秋对话",
+        "name": "第五卷道观道 第三百一十章 刺杀 · 俞真意与周姝真对话",
         "time": null,
         "location": null,
         "participants": [
+          "俞真意",
+          "周姝真",
           "种秋"
         ],
         "description": "她还是少女时，在他国市井中，初次见到种秋和俞真意，前者锋芒毕露，后者神华内敛，可都让她感到惊艳。 俞真意站起身，个头还不到周皇后的胸口，但是当他站起身，周姝真就像一下子被撵到了山脚，只能高高仰望山巅此人。 俞真意问道：“天下十人，确认无误了？",
         "background": "",
-        "significance": "对应种秋在叙事中的关键对话节点。",
+        "significance": "推动俞真意与周姝真之间的对话关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十章 刺杀 · 段34",
         "sentence_indexes_in_segment": [
@@ -1514,7 +2362,172 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.523497",
+    "extracted_at": "2026-03-25T17:27:38.526083",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "311-35-0": {
+    "juan_index": 311,
+    "segment_index": 35,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "她突然忍不住感叹道：“挺像一场朝廷对官员的大考，就是没这么残酷。",
+      "”",
+      "俞真意双手负后，举目远眺，意态萧索。",
+      "那位深藏不露的南苑国皇后，问了一个问题，“童青青到底躲在哪里？",
+      "”",
+      "俞真意沉默片刻，“想必只有丁婴知道吧。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意双手负后，举目远眺，意态萧索。 俞真意沉默片刻，“想必只有丁婴知道吧。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "俞真意沉默片刻，“想必只有丁婴知道吧。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 35
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 俞真意与丁婴剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "俞真意",
+          "丁婴"
+        ],
+        "description": "俞真意双手负后，举目远眺，意态萧索。 俞真意沉默片刻，“想必只有丁婴知道吧。 她突然忍不住感叹道：“挺像一场朝廷对官员的大考，就是没这么残酷。",
+        "background": "",
+        "significance": "推动俞真意与丁婴之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段35",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 311,
+        "segment_index": 35
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.526083",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "311-36-0": {
+    "juan_index": 311,
+    "segment_index": 36,
+    "chunk_start_index": 0,
+    "chunk_end_index": 5,
+    "segment_start_time": "第五卷道观道 第三百一十章 刺杀",
+    "source_sentences": [
+      "”",
+      "周姝真转过头，望向这位高高在上的神仙人物，“丁婴的武学境界，到底有多高？",
+      "”",
+      "俞真意说了一句怪话，“不知道我知不知道。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周姝真",
+        "alias": [],
+        "original_description_in_book": "周姝真转过头，望向这位高高在上的神仙人物，“丁婴的武学境界，到底有多高？",
+        "description": "外围修士与高位布局线人物，适合补足山上势力层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 311,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "周姝真转过头，望向这位高高在上的神仙人物，“丁婴的武学境界，到底有多高？",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 311,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意说了一句怪话，“不知道我知不知道。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 311,
+        "segment_index": 36
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十章 刺杀 · 周姝真与丁婴剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周姝真",
+          "丁婴",
+          "俞真意"
+        ],
+        "description": "周姝真转过头，望向这位高高在上的神仙人物，“丁婴的武学境界，到底有多高？ 俞真意说了一句怪话，“不知道我知不知道。 ”",
+        "background": "",
+        "significance": "推动周姝真与丁婴之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十章 刺杀 · 段36",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 311,
+        "segment_index": 36
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.526083",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

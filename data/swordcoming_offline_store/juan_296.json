@@ -16,6 +16,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "秋日和煦，陆台今天又在院子里独自枯坐打谱，陈平安在一旁练习剑术正经。 自从上次陆台察觉到飞鹰堡弟子的查探后，飞鹰堡就再没有私底下的冒犯。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "秋日和煦，陆台今天又在院子里独自枯坐打谱，陈平安在一旁练习剑术正经。 陆台趁着陈平安停下剑架的间隙，突然问道：“陈平安，我教你下棋吧？",
@@ -33,16 +49,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "秋日和煦，陆台今天又在院子里独自枯坐打谱，陈平安在一旁练习剑术正经。 陆台趁着陈平安停下剑架的间隙，突然问道：“陈平安，我教你下棋吧？ 陈平安还在那边拧转手腕，找寻最合适、顺畅的握剑姿势来应对变招，出剑想要快，就得从细处不断求变，这跟烧瓷当中极其高明的跳-刀手法，是一个道理，粗看是“不动”，实则不然。",
+        "description": "秋日和煦，陆台今天又在院子里独自枯坐打谱，陈平安在一旁练习剑术正经。 自从上次陆台察觉到飞鹰堡弟子的查探后，飞鹰堡就再没有私底下的冒犯。 陆台趁着陈平安停下剑架的间隙，突然问道：“陈平安，我教你下棋吧？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -56,8 +75,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.472320",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台趁着陈平安停下剑架的间隙，突然问道：“陈平安，我教你下棋吧？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 296,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.448818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -146,6 +186,20 @@
         ],
         "juan_index": 296,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "不过就像看到陆台煮茶，会让人觉得赏心悦目，去往大隋的路上，林守一跟谢谢下棋，同样让陈平安心神往之。 陆台也不纠缠，笑问道：“知道下棋的最高境界是什么吗？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 2
       }
     ],
     "locations": [],
@@ -178,7 +232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "extracted_at": "2026-03-25T17:27:38.448818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -212,20 +266,34 @@
         ],
         "juan_index": 296,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台捻子落子，眼神炙热，“身前无人。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 296,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安当然不知道。 陈平安想了想，点点头，“嗯。 ”",
+        "description": "陈平安当然不知道。 陆台捻子落子，眼神炙热，“身前无人。 陈平安想了想，点点头，“嗯。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段3",
         "sentence_indexes_in_segment": [
@@ -241,7 +309,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "extracted_at": "2026-03-25T17:27:38.449819",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -264,6 +332,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "这下子轮到陆台诧异了，抬起头，斜眼看着陈平安，“你真能懂？ 陆台微微一愣。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "这下子轮到陆台诧异了，抬起头，斜眼看着陈平安，“你真能懂？ 陈平安在院子里缓缓行走，气沉丹田，拳意倾泻，乍一看毫不起眼，原来已是水深无声的境界，笑道：“有个人的剑，还有帮我打熬武道三境的老人，他的拳，感觉都是这样的，就像你说的，‘身前无人’。",
@@ -280,16 +363,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "这下子轮到陆台诧异了，抬起头，斜眼看着陈平安，“你真能懂？ 陈平安在院子里缓缓行走，气沉丹田，拳意倾泻，乍一看毫不起眼，原来已是水深无声的境界，笑道：“有个人的剑，还有帮我打熬武道三境的老人，他的拳，感觉都是这样的，就像你说的，‘身前无人’。 ”",
+        "description": "这下子轮到陆台诧异了，抬起头，斜眼看着陈平安，“你真能懂？ 陈平安在院子里缓缓行走，气沉丹田，拳意倾泻，乍一看毫不起眼，原来已是水深无声的境界，笑道：“有个人的剑，还有帮我打熬武道三境的老人，他的拳，感觉都是这样的，就像你说的，‘身前无人’。 陆台微微一愣。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -303,8 +389,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "这下子轮到陆台诧异了，抬起头，斜眼看着陈平安，“你真能懂？ ” 陈平安在院子里缓缓行走，气沉丹田，拳意倾泻，乍一看毫不起眼，原来已是水深无声的境界，笑道：“有个人的剑，还有帮我打熬武道三境的老人，他的拳，感觉都是这样的，就像你说的，‘身前无人’。 ” 陆台微微一愣。 哪怕陆台见过太多的奇人美景，见过钟鸣鼎食，黄紫贵人，羽扇纶巾，餐霞饮露。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.449819",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -339,21 +451,39 @@
         ],
         "juan_index": 296,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "但是陆台觉得陈平安可以做得更好。 陈平安有些疑惑，不知陆台此举为何。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安迁移",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "看陈平安打拳，还是一种享受。 但是陆台觉得陈平安可以做得更好。 陈平安有些疑惑，不知陆台此举为何。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -367,8 +497,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "别离",
+        "context": "看陈平安打拳，还是一种享受。 但是陆台觉得陈平安可以做得更好。 他站起身，深呼吸一口气。 只见他鼻耳之间，有四缕白色气息缓缓飘荡而出，却并不离开，也未消逝，如四条纤细白蟒倒挂面目之上。 陈平安有些疑惑，不知陆台此举为何。 陆台走到院子中央，缓缓道：“纯粹武夫炼气，练气士也养气炼气，呼吸吐纳，都逃不掉一个‘气’字，气若游丝，搁在凡夫俗子身上，是形容一个人命不久矣，但是搁在剑修身上，是另外一种景象。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.449819",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -391,6 +547,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台缓缓吐出一口气，气凝聚如丝，最终在他身前变做了一把袖珍飞剑，陆台轻轻一吹。 陆台一跺脚，异象瞬间消散。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 296,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安心弦一震，迅速撇头，一抹白光从他耳畔疾速掠过，然后那抹极其纤细的白光，在整座院子迅猛飞掠，不断拉扯出一条条经久不散的流光溢彩，将一栋院子编织得如同一座剑气牢笼，一座充满凌厉剑气的雷池。 陆台微笑道：“我虽不是纯粹武夫，但是道理还是懂的，你陈平安练拳疯魔，只是一个最普通的拳架，就打了一百万遍，所以拳意浑然天成，但是你其实并不理解其中的真意。",
@@ -407,16 +578,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安心弦一震，迅速撇头，一抹白光从他耳畔疾速掠过，然后那抹极其纤细的白光，在整座院子迅猛飞掠，不断拉扯出一条条经久不散的流光溢彩，将一栋院子编织得如同一座剑气牢笼，一座充满凌厉剑气的雷池。 陆台微笑道：“我虽不是纯粹武夫，但是道理还是懂的，你陈平安练拳疯魔，只是一个最普通的拳架，就打了一百万遍，所以拳意浑然天成，但是你其实并不理解其中的真意。 ”",
+        "description": "陆台缓缓吐出一口气，气凝聚如丝，最终在他身前变做了一把袖珍飞剑，陆台轻轻一吹。 陈平安心弦一震，迅速撇头，一抹白光从他耳畔疾速掠过，然后那抹极其纤细的白光，在整座院子迅猛飞掠，不断拉扯出一条条经久不散的流光溢彩，将一栋院子编织得如同一座剑气牢笼，一座充满凌厉剑气的雷池。 陆台一跺脚，异象瞬间消散。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -430,8 +604,29 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台微笑道：“我虽不是纯粹武夫，但是道理还是懂的，你陈平安练拳疯魔，只是一个最普通的拳架，就打了一百万遍，所以拳意浑然天成，但是你其实并不理解其中的真意。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 296,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.449819",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -454,6 +649,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台面向陈平安，一手负后，一手伸出，手掌摊开，“世间的拳架，除了壮筋骨气血，温养魂魄神意，真正的玄机，在于一股‘不借助于天地之力，反而要敕令天地’的真气，衔接紧密，为的就是出拳快到不讲道理！ 陆台笔直伸出一拳，砰然作响，拳罡炸裂，传出丝帛撕裂的声响。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 296,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台面向陈平安，一手负后，一手伸出，手掌摊开，“世间的拳架，除了壮筋骨气血，温养魂魄神意，真正的玄机，在于一股‘不借助于天地之力，反而要敕令天地’的真气，衔接紧密，为的就是出拳快到不讲道理！",
@@ -469,15 +680,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台面向陈平安，一手负后，一手伸出，手掌摊开，“世间的拳架，除了壮筋骨气血，温养魂魄神意，真正的玄机，在于一股‘不借助于天地之力，反而要敕令天地’的真气，衔接紧密，为的就是出拳快到不讲道理！ ” 陆台笔直伸出一拳，砰然作响，拳罡炸裂，传出丝帛撕裂的声响。",
+        "description": "陆台面向陈平安，一手负后，一手伸出，手掌摊开，“世间的拳架，除了壮筋骨气血，温养魂魄神意，真正的玄机，在于一股‘不借助于天地之力，反而要敕令天地’的真气，衔接紧密，为的就是出拳快到不讲道理！ 陆台笔直伸出一拳，砰然作响，拳罡炸裂，传出丝帛撕裂的声响。 陆台又出拳，略有倾斜，一划一滑，出拳最终地点，仍是原先位置，但是声势，悄无声息，但是拳头触及的空中，气机崩碎，声势惊人。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段7",
         "sentence_indexes_in_segment": [
@@ -493,7 +705,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "extracted_at": "2026-03-25T17:27:38.449819",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -516,6 +728,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台收起拳头，叹了口气，望向天空，眼神恍惚道：“天下乱象已起，陈平安，你一定要活下去。 陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……”",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 296,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台收起拳头，叹了口气，望向天空，眼神恍惚道：“天下乱象已起，陈平安，你一定要活下去。 陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……”",
@@ -527,21 +753,40 @@
         ],
         "juan_index": 296,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……”",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 296,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陆台",
+          "陈平安",
+          "曹慈"
         ],
         "description": "陆台收起拳头，叹了口气，望向天空，眼神恍惚道：“天下乱象已起，陈平安，你一定要活下去。 陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……” ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -555,8 +800,69 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 296,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "曹慈"
+        ],
+        "action": "对话",
+        "context": "陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 296,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "曹慈"
+        ],
+        "action": "对话",
+        "context": "陆台嘴角渗出血丝，仍是继续说道：“你一定要活下去，坚守于某地，千万不要被大势裹挟，要做那中流砥柱，时来天地皆同力，陈平安，不要争一时得失，我相信你会比那个曹慈走得更远，会重建长生桥，会成为大剑仙……”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 296,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.450823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -589,21 +895,38 @@
         ],
         "juan_index": 296,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安已经看出不妙，轻声喝道：“陆台，够了！ 陆台点点头，抬起手背抹去血迹，坐回石桌旁，灿烂笑道：“既然我找到了这里，在飞鹰堡找到了上阳台，那么之后你就需要自己独自游历了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 296,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安已经看出不妙，轻声喝道：“陆台，够了！ 但是阴阳家不同。 精于卜卦、算命和星象之人，往往不得寿终正寝，偶尔有，也莫要奢望恩泽子孙，甚至有可能寅吃卯粮，祖上失德，贻害后人。",
+        "description": "陈平安已经看出不妙，轻声喝道：“陆台，够了！ 陆台点点头，抬起手背抹去血迹，坐回石桌旁，灿烂笑道：“既然我找到了这里，在飞鹰堡找到了上阳台，那么之后你就需要自己独自游历了。 但是阴阳家不同。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -617,8 +940,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "但是阴阳家不同。 精于卜卦、算命和星象之人，往往不得寿终正寝，偶尔有，也莫要奢望恩泽子孙，甚至有可能寅吃卯粮，祖上失德，贻害后人。 陈平安已经看出不妙，轻声喝道：“陆台，够了！ ” 陆台点点头，抬起手背抹去血迹，坐回石桌旁，灿烂笑道：“既然我找到了这里，在飞鹰堡找到了上阳台，那么之后你就需要自己独自游历了。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.450823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -651,21 +1000,37 @@
         ],
         "juan_index": 296,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台问道：“有什么打算？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 296,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安坐在他身边，点点头，“此间事了，我会独自北上，你不用担心。 ” 陆台问道：“有什么打算？",
+        "description": "陈平安坐在他身边，点点头，“此间事了，我会独自北上，你不用担心。 陆台问道：“有什么打算？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -679,8 +1044,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安坐在他身边，点点头，“此间事了，我会独自北上，你不用担心。 ” 陆台问道：“有什么打算？ ” “当然有啊。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.450823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -714,21 +1105,38 @@
         ],
         "juan_index": 296,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台点点头，“不用管我，我没事，这点天道反扑，陆氏子弟的家常饭而已。 陈平安确认陆台不是打肿脸充胖子后，便放下心来，双手抱住后脑勺，悠然道：“还有之前就想过，但是来不及做的一件事，给家乡铺一条路，每隔三五里就有一座行亭的那种，花再多钱，我也不心疼。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安笑道：“近的，就是找到一座古战场遗址，寻找那些死后还凝聚不散的阴魂英灵，淬炼三魂，夯实武道四境的底子。 陈平安确认陆台不是打肿脸充胖子后，便放下心来，双手抱住后脑勺，悠然道：“还有之前就想过，但是来不及做的一件事，给家乡铺一条路，每隔三五里就有一座行亭的那种，花再多钱，我也不心疼。 远的，回到家乡后，继续跟老人学拳，一步步走得踏实些，跻身第七境的可能性就更大。",
+        "description": "陈平安笑道：“近的，就是找到一座古战场遗址，寻找那些死后还凝聚不散的阴魂英灵，淬炼三魂，夯实武道四境的底子。 陆台点点头，“不用管我，我没事，这点天道反扑，陆氏子弟的家常饭而已。 陈平安确认陆台不是打肿脸充胖子后，便放下心来，双手抱住后脑勺，悠然道：“还有之前就想过，但是来不及做的一件事，给家乡铺一条路，每隔三五里就有一座行亭的那种，花再多钱，我也不心疼。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -742,8 +1150,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.473324",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安笑道：“近的，就是找到一座古战场遗址，寻找那些死后还凝聚不散的阴魂英灵，淬炼三魂，夯实武道四境的底子。 远的，回到家乡后，继续跟老人学拳，一步步走得踏实些，跻身第七境的可能性就更大。 ” 陆台点点头，“不用管我，我没事，这点天道反扑，陆氏子弟的家常饭而已。 ” 陈平安确认陆台不是打肿脸充胖子后，便放下心来，双手抱住后脑勺，悠然道：“还有之前就想过，但是来不及做的一件事，给家乡铺一条路，每隔三五里就有一座行亭的那种，花再多钱，我也不心疼。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.450823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -764,6 +1198,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台没好气道：“一条道路而已，也花不了几个钱。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 296,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -798,15 +1245,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安在骑龙巷剧情推进",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安在骑龙巷剧情推进",
         "time": null,
         "location": "骑龙巷",
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安也不跟他较劲，继续道：“到了家乡那边，试着亲自打理骑龙巷的两座铺子，只要能挣钱，哪怕是每天入账只有几文钱，都行。 ” 陆台没好气道：“一条道路而已，也花不了几个钱。",
+        "description": "陆台没好气道：“一条道路而已，也花不了几个钱。 陈平安也不跟他较劲，继续道：“到了家乡那边，试着亲自打理骑龙巷的两座铺子，只要能挣钱，哪怕是每天入账只有几文钱，都行。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在骑龙巷推动陆台与陈平安之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段12",
         "sentence_indexes_in_segment": [
@@ -822,7 +1270,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "extracted_at": "2026-03-25T17:27:38.450823",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -845,6 +1293,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台笑道：“真够忙的。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 296,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安始终望向远方，“再远一点的话，愿意听吗？",
@@ -860,16 +1321,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安始终望向远方，“再远一点的话，愿意听吗？ ” 陆台笑道：“真够忙的。",
+        "description": "陆台笑道：“真够忙的。 陈平安始终望向远方，“再远一点的话，愿意听吗？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -883,8 +1347,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 陆台笑道：“真够忙的。 ” 陈平安始终望向远方，“再远一点的话，愿意听吗？ ” “说吧，如果说得差了，污了我耳朵，我就一头扎进水井里，洗一洗。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十五章 远望 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.451826",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -918,6 +1408,19 @@
         ],
         "juan_index": 296,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台翻了个白眼，“好可怕的雄心壮志。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 296,
+        "segment_index": 15
       }
     ],
     "locations": [
@@ -945,12 +1448,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "陆台"
         ],
-        "description": "陈平安不理睬他的讥讽，“我想要在家乡落魄山那边，竹楼之外，有更多的建筑一栋栋立起来，从山脚……算了，从半山腰，一直延伸到山顶，有你说的那些瓦当，滴水，飞檐，藻井，卯榫，都要有。 陈平安说到这里，伸出一只手，狠狠往上比划了一下。 ”",
+        "description": "陈平安不理睬他的讥讽，“我想要在家乡落魄山那边，竹楼之外，有更多的建筑一栋栋立起来，从山脚……算了，从半山腰，一直延伸到山顶，有你说的那些瓦当，滴水，飞檐，藻井，卯榫，都要有。 陈平安说到这里，伸出一只手，狠狠往上比划了一下。 陆台翻了个白眼，“好可怕的雄心壮志。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -964,8 +1470,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "讥讽",
+        "context": "” 陈平安不理睬他的讥讽，“我想要在家乡落魄山那边，竹楼之外，有更多的建筑一栋栋立起来，从山脚……算了，从半山腰，一直延伸到山顶，有你说的那些瓦当，滴水，飞檐，藻井，卯榫，都要有。 ” 陈平安说到这里，伸出一只手，狠狠往上比划了一下。 陆台翻了个白眼，“好可怕的雄心壮志。 ”",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 296,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.451826",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -996,6 +1528,19 @@
         "sentence_indexes_in_segment": [
           0,
           4
+        ],
+        "juan_index": 296,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台赶紧举起双手，“好好好，你继续说。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
         ],
         "juan_index": 296,
         "segment_index": 16
@@ -1033,15 +1578,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安在骊珠洞天剧情推进",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 陈平安与陆台在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安有些泄气。 陈平安这才继续道：“我要购买很多的藏书，三教圣人，诸子百家，先贤笔札，都要有一些。 骊珠洞天在破碎之前，像我家泥瓶巷这种市井坊间，一本书有多难得，你肯定无法想象，比见着一粒银子还难。",
+        "description": "陈平安有些泄气。 陆台赶紧举起双手，“好好好，你继续说。 陈平安这才继续道：“我要购买很多的藏书，三教圣人，诸子百家，先贤笔札，都要有一些。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "在骊珠洞天推动陈平安与陆台之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段16",
         "sentence_indexes_in_segment": [
@@ -1057,7 +1603,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "extracted_at": "2026-03-25T17:27:38.451826",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1308,7 +1854,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "extracted_at": "2026-03-25T17:27:38.451826",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1342,6 +1888,19 @@
       },
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台一直安安静静听着。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 296,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "就像亲眼看着陈平安在夏天堆着自己的雪人。",
@@ -1357,16 +1916,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十五章 远望 · 刘羡阳与陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十五章 远望 · 刘羡阳与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "刘羡阳",
+          "陆台",
           "陈平安"
         ],
-        "description": "我希望自己和身边的人，不要再像刘羡阳那次那样，感觉什么都做不了，而是我们占着道理的时候，别人不听，那就让他们听，不管是靠拳头还是靠剑……” 就像亲眼看着陈平安在夏天堆着自己的雪人。 “不管天下怎么样，山下怎么个活法，别处山上是如何，我只希望我那边，人人相亲相爱，每天的日子都过得舒心些。",
+        "description": "我希望自己和身边的人，不要再像刘羡阳那次那样，感觉什么都做不了，而是我们占着道理的时候，别人不听，那就让他们听，不管是靠拳头还是靠剑……” 陆台一直安安静静听着。 就像亲眼看着陈平安在夏天堆着自己的雪人。",
         "background": "",
-        "significance": "推动刘羡阳与陈平安之间的剧情推进关系。",
+        "significance": "推动刘羡阳与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十五章 远望 · 段18",
         "sentence_indexes_in_segment": [
@@ -1380,7 +1940,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "extracted_at": "2026-03-25T17:27:38.451826",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

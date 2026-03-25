@@ -88,13 +88,13 @@ export function useWriterInsights() {
       try {
         const response = await fetch('/data/writer_insights.json');
         if (!response.ok) {
-          throw new Error(`Failed to load writer insights: ${response.status}`);
+          throw new Error(`读取编剧视图数据失败：${response.status}`);
         }
         const data = (await response.json()) as WriterInsightsPayload;
         setWriterInsights(data);
       } catch (err) {
         console.error('Error loading writer insights:', err);
-        setError(err instanceof Error ? err.message : 'Unknown error loading writer insights');
+        setError(err instanceof Error ? err.message : '读取编剧视图数据时发生未知错误');
       } finally {
         setLoading(false);
       }
@@ -111,6 +111,8 @@ export function useFilteredWriterInsights(
   unitRange?: [number, number],
   progressRange: [number | null, number | null] = [null, null]
 ) {
+  const spotlightRoleName = payload?.spotlight_role_name?.trim() || null;
+
   const characterArcs = useMemo(() => {
     if (!payload) return [];
     return payload.character_arcs
@@ -126,8 +128,14 @@ export function useFilteredWriterInsights(
           )
         ),
       }))
-      .filter((arc) => arc.key_events.length > 0 || arc.relationship_phases.length > 0);
-  }, [payload, progressRange, unitRange]);
+      .filter(
+        (arc) =>
+          arc.key_events.length > 0 ||
+          arc.relationship_phases.length > 0 ||
+          arc.spotlight ||
+          (spotlightRoleName ? arc.role_name === spotlightRoleName : false)
+      );
+  }, [payload, progressRange, spotlightRoleName, unitRange]);
 
   const seasonOverviews = useMemo(() => {
     if (!payload) return [];

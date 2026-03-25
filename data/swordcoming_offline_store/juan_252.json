@@ -84,7 +84,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.265589",
+    "extracted_at": "2026-03-25T17:27:38.179158",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -159,7 +159,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.265589",
+    "extracted_at": "2026-03-25T17:27:38.179158",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -194,6 +194,19 @@
         ],
         "juan_index": 252,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "由于刘灞桥的出现，负责这艘渡船事宜的羊脂堂老人，主动来到陈平安身边，为他解惑，原来那些滚滚云海就是老龙城的一件半仙兵，如果从城内抬头望天，却不会看到半片云彩，老人还告诉陈平安一个惊世骇俗的传说。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 252,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -205,7 +218,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -220,15 +234,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十一章 老龙城 · 陈平安在老龙城揭示",
+        "name": "第四卷剑气近 第二百五十一章 老龙城 · 陈平安与刘灞桥在老龙城揭示",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "description": "羊脂堂渡船停靠的渡口，在老龙城外三百余里，不是什么山水形胜的僻静之地，近百艘各色渡船在此滞留，喧闹沸腾，人满为患，既有墨家匠人打造的死物渡船，也有类似鲲船的活物渡船，光怪陆离，陈平安在渡船下降途中，看得目不暇接。 在渡船靠岸前，陈平安就听说了一个说法，说居住在城内的一个凡夫俗子，一辈子都逛不完老龙城。 陈平安之前在渡船上，试图俯瞰老龙城全貌，却发现有云海遮掩，有些遗憾。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
+        "significance": "在老龙城推动陈平安与刘灞桥之间的揭示线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十一章 老龙城 · 段3",
         "sentence_indexes_in_segment": [
@@ -243,7 +258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.265589",
+    "extracted_at": "2026-03-25T17:27:38.179158",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -277,6 +292,19 @@
         ],
         "juan_index": 252,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "后笑眯眯",
+        "alias": [],
+        "original_description_in_book": "老人最后笑眯眯问道：“怎么，公子不信？",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，主要活动于大骊。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 252,
+        "segment_index": 4
       }
     ],
     "locations": [
@@ -298,16 +326,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十一章 老龙城 · 陈平安在老龙城遭遇",
+        "name": "第四卷剑气近 第二百五十一章 老龙城 · 陈平安与后笑眯眯在老龙城遭遇",
         "time": null,
         "location": "老龙城",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "后笑眯眯"
         ],
         "description": "结果临了，一位莫名其妙出现的女子练气士，好似在老龙城云海之中打瞌睡，她现身后，看了一眼脚底下硝烟四起的老龙城，又看了一眼千余位练气士的汇聚，她打了个哈欠后，就探手一抓，占据方圆千里的云海，被她凝聚为手心的一颗珠子，丢入嘴中，然后她打了个喷嚏， 南海之中便出了成百上千道罡风龙卷，从海面上往北吹拂而去，对老龙城势在必得的魔道练气士，不提滥竽充数、只是负责摇旗呐喊的下五境练气士，光是中五境神仙，就被一道道罡风吹死了将近半数，在那之后，逃过一劫的群魔仓皇退散，之后被局势稳定的苻家追杀了整整百年之久。 陈平安听得一愣一愣。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动陈平安与后笑眯眯之间的遭遇线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十一章 老龙城 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -321,8 +352,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.265589",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "后笑眯眯"
+        ],
+        "action": "对话",
+        "context": "结果临了，一位莫名其妙出现的女子练气士，好似在老龙城云海之中打瞌睡，她现身后，看了一眼脚底下硝烟四起的老龙城，又看了一眼千余位练气士的汇聚，她打了个哈欠后，就探手一抓，占据方圆千里的云海，被她凝聚为手心的一颗珠子，丢入嘴中，然后她打了个喷嚏， 南海之中便出了成百上千道罡风龙卷，从海面上往北吹拂而去，对老龙城势在必得的魔道练气士，不提滥竽充数、只是负责摇旗呐喊的下五境练气士，光是中五境神仙，就被一道道罡风吹死了将近半数，在那之后，逃过一劫的群魔仓皇退散，之后被局势稳定的苻家追杀了整整百年之久。 陈平安听得一愣一愣。 老人最后笑眯眯问道：“怎么，公子不信？ ” 陈平安摇摇头，他当然不信。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十一章 老龙城 · 陈平安与后笑眯眯在老龙城遭遇",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 252,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.180161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -460,7 +517,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.265589",
+    "extracted_at": "2026-03-25T17:27:38.180161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,7 +635,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.265589",
+    "extracted_at": "2026-03-25T17:27:38.180161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -731,7 +788,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "extracted_at": "2026-03-25T17:27:38.180161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -814,7 +871,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "extracted_at": "2026-03-25T17:27:38.180161",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -877,7 +934,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "extracted_at": "2026-03-25T17:27:38.181164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -940,7 +997,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "extracted_at": "2026-03-25T17:27:38.181164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -987,6 +1044,32 @@
         ],
         "juan_index": 252,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "陈平安有此变化，想必阿良，徐远霞，刘灞桥，这几个家伙都是罪魁祸首。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 252,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "陈平安有此变化，想必阿良，徐远霞，刘灞桥，这几个家伙都是罪魁祸首。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 252,
+        "segment_index": 11
       }
     ],
     "locations": [],
@@ -997,14 +1080,14 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "徐远霞",
+          "刘灞桥"
         ],
         "description": "陈平安大概是被少女的欢快情绪感染，难得玩笑道：“给姑娘多看几眼，能少收我一枚雪花钱不？ 陈平安有此变化，想必阿良，徐远霞，刘灞桥，这几个家伙都是罪魁祸首。 少年俊俏算不得，可看着真顺眼。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十一章 老龙城 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -1018,34 +1101,8 @@
         "segment_index": 11
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "阿良"
-        ],
-        "action": "对话",
-        "context": "少年俊俏算不得，可看着真顺眼。 少女突然笑出声：“公子，你长得挺好看哩。 ” 陈平安大概是被少女的欢快情绪感染，难得玩笑道：“给姑娘多看几眼，能少收我一枚雪花钱不？ ” 陈平安有此变化，想必阿良，徐远霞，刘灞桥，这几个家伙都是罪魁祸首。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 252,
-        "segment_index": 11
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.181164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1108,7 +1165,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "extracted_at": "2026-03-25T17:27:38.181164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1252,7 +1309,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.266592",
+    "extracted_at": "2026-03-25T17:27:38.181164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1370,7 +1427,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.181164",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1475,7 +1532,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.182169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1574,7 +1631,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.182169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1652,7 +1709,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.182169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1689,6 +1746,19 @@
       },
       {
         "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "那个已经站了一会儿的年轻男人，终于笑眯眯仰起头，望向两个人，对少女轻声道：“谢谢啊。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 252,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "谢谢",
         "alias": [],
         "original_description_in_book": "那个已经站了一会儿的年轻男人，终于笑眯眯仰起头，望向两个人，对少女轻声道：“谢谢啊。",
@@ -1696,6 +1766,19 @@
         "power": "老龙城",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 252,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "年轻男人笑了笑，没有解释缘由，然后望向陈平安，“你是陈平安吧，我是刘灞桥的朋友，前不久刚刚收到了他的飞剑传讯，所以专门来这里等你。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 252,
         "segment_index": 19
@@ -1710,7 +1793,8 @@
         "participants": [
           "谢谢",
           "苻南华",
-          "陈平安"
+          "陈平安",
+          "仰起头"
         ],
         "description": "陈平安无言以对。 那个已经站了一会儿的年轻男人，终于笑眯眯仰起头，望向两个人，对少女轻声道：“谢谢啊。 年轻男人笑了笑，没有解释缘由，然后望向陈平安，“你是陈平安吧，我是刘灞桥的朋友，前不久刚刚收到了他的飞剑传讯，所以专门来这里等你。",
         "background": "",
@@ -1730,7 +1814,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.182169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1835,7 +1919,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.182169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1955,7 +2039,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.182169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2061,7 +2145,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.267596",
+    "extracted_at": "2026-03-25T17:27:38.183171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2155,7 +2239,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.268599",
+    "extracted_at": "2026-03-25T17:27:38.183171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2201,6 +2285,19 @@
           0,
           1,
           5
+        ],
+        "juan_index": 252,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "孙嘉树恍然道：“难怪刘灞桥说我们会投缘。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 252,
         "segment_index": 24
@@ -2257,7 +2354,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.268599",
+    "extracted_at": "2026-03-25T17:27:38.183171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2292,21 +2389,38 @@
         ],
         "juan_index": 252,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "孙嘉树有些哭笑不得，轻轻摇头道：“刘灞桥说我们俩都喜欢穷大方。 什么跟什么啊，刘灞桥这话说得莫名其妙了。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 252,
+        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十一章 老龙城 · 孙嘉树对话",
+        "name": "第四卷剑气近 第二百五十一章 老龙城 · 孙嘉树与刘灞桥对话",
         "time": null,
         "location": null,
         "participants": [
-          "孙嘉树"
+          "孙嘉树",
+          "刘灞桥"
         ],
-        "description": "孙嘉树有些哭笑不得，轻轻摇头道：“刘灞桥说我们俩都喜欢穷大方。 大方不大方且不去说，孙嘉树穷？ 孙嘉树突然说道：“我有一个偏门本事，就是能看到一个人过手又没拿住的钱财。",
+        "description": "孙嘉树有些哭笑不得，轻轻摇头道：“刘灞桥说我们俩都喜欢穷大方。 什么跟什么啊，刘灞桥这话说得莫名其妙了。 大方不大方且不去说，孙嘉树穷？",
         "background": "",
-        "significance": "对应孙嘉树在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动孙嘉树与刘灞桥之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十一章 老龙城 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -2320,8 +2434,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.268599",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "对话",
+        "context": "” 孙嘉树有些哭笑不得，轻轻摇头道：“刘灞桥说我们俩都喜欢穷大方。 ” 什么跟什么啊，刘灞桥这话说得莫名其妙了。 大方不大方且不去说，孙嘉树穷？ 孙嘉树突然说道：“我有一个偏门本事，就是能看到一个人过手又没拿住的钱财。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十一章 老龙城 · 孙嘉树与刘灞桥对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 252,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.183171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2401,7 +2541,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.268599",
+    "extracted_at": "2026-03-25T17:27:38.183171",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

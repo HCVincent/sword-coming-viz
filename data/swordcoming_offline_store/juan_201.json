@@ -16,6 +16,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "谢实",
         "alias": [],
         "original_description_in_book": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。 恐怕就只有那位自幼寡言的长眉少年，心境相对安稳，因为谢实大致跟他解释过了外边的世界，并且让少年暂时跟随阮邛铸剑打铁就是，机缘一事，不是跟着自家老祖作威作福就会更好。",
@@ -56,6 +82,8 @@
         "location": null,
         "participants": [
           "阮邛",
+          "曹曦",
+          "老妪",
           "谢实"
         ],
         "description": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。 恐怕就只有那位自幼寡言的长眉少年，心境相对安稳，因为谢实大致跟他解释过了外边的世界，并且让少年暂时跟随阮邛铸剑打铁就是，机缘一事，不是跟着自家老祖作威作福就会更好。 长眉少年心性坚韧，哪怕得知老祖谢实马上就是北边俱芦洲的首位天君，无论修为还是地位，其实都要超出师父阮邛一筹，少年仍是没有流露出丝毫改换门庭的想法，这让谢实在心中微微赞赏，这才是谢家子孙该有的度量。",
@@ -63,7 +91,10 @@
         "significance": "对应龙泉线的重要山上势力节点。",
         "related_action_indices": [
           0,
-          1
+          1,
+          2,
+          3,
+          4
         ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段1",
         "sentence_indexes_in_segment": [
@@ -79,6 +110,66 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "老妪"
+        ],
+        "to_roles": [
+          "谢实"
+        ],
+        "action": "对话",
+        "context": "喜欢大大咧咧说话的曹曦走后，谢宅顿时就重新恢复了清净，一家上下，从当家作主的妇人，到一双子女，再到几位老仆老妪，走路都要蹑手蹑脚，唯恐惊扰到谢实的休息。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 1
+      },
       {
         "time": null,
         "from_roles": [
@@ -120,7 +211,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.030202",
+    "extracted_at": "2026-03-25T17:27:37.907216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -200,7 +291,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.030202",
+    "extracted_at": "2026-03-25T17:27:37.907216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -263,7 +354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.030202",
+    "extracted_at": "2026-03-25T17:27:37.907216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -325,7 +416,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.030202",
+    "extracted_at": "2026-03-25T17:27:37.908220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -360,6 +451,19 @@
         ],
         "juan_index": 201,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦离开桃叶巷后，随便溜达起来，行走在大街小巷，笑眯眯的富家翁，外人不知他的显赫身份，曹曦倒是跟谁都能唠嗑几句。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -370,7 +474,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -380,16 +486,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实在桃叶巷迁移",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实与曹曦在桃叶巷迁移",
         "time": null,
         "location": "桃叶巷",
         "participants": [
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
         "description": "谢实看着略显稚嫩的脸庞，心中喟叹。 谢实挥挥手，示意少年可以离开。 谢实闭目养神，呼吸绵绵，坐忘神游。",
         "background": "",
-        "significance": "对应谢实在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在桃叶巷推动谢实与曹曦之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -403,8 +512,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.030202",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "谢实"
+        ],
+        "to_roles": [
+          "曹曦"
+        ],
+        "action": "别离",
+        "context": "谢实看着略显稚嫩的脸庞，心中喟叹。 乱世将至，群雄逐鹿，注定会精彩纷呈，但同样会多出许多无可奈何的生离死别，山上山下差不离的。 谢实挥挥手，示意少年可以离开。 一双香火小人儿蹦回匾额待着，相互依偎，窃窃私语。 谢实闭目养神，呼吸绵绵，坐忘神游。 曹曦离开桃叶巷后，随便溜达起来，行走在大街小巷，笑眯眯的富家翁，外人不知他的显赫身份，曹曦倒是跟谁都能唠嗑几句。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 谢实与曹曦在桃叶巷迁移",
+        "location": "桃叶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.908220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -424,7 +559,36 @@
       "他来到督造官衙署，门房是个眼力劲不好的，又没资格知晓曹氏家事和山上事，气势汹汹地将曹曦挡在门外，曹曦也不生气，笑呵呵站在衙署门外跟门房闲聊，一来二去，还挺热络了。",
       "结果搬出曹氏祖宅来此暂居的曹峻，察觉到异样后，给督造官曹茂提了一嘴，上柱国曹氏的这一代嫡长孙，吓得立即跑到大门口，见着了朝思暮想的老祖宗，二话不说就扑倒在地，砰砰磕头。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "若非如今骊珠洞天的宝贝都已搜刮殆尽，以曹曦在婆娑洲“雁过拔毛”的脾气，还不得把小镇翻个底朝天才尽兴，曹曦心中大恨，恼火大骊王朝之前的强买强卖，按照大骊曹氏子孙的密信所言，大骊那趟涸泽而渔似的搜集法宝，还真是收获颇丰，哪怕修为高如曹曦，都有些眼馋。 曹曦犹豫了一下，自言自语道：“儿孙自有儿孙福个屁，不提点几句，我看悬乎。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "结果搬出曹氏祖宅来此暂居的曹峻，察觉到异样后，给督造官曹茂提了一嘴，上柱国曹氏的这一代嫡长孙，吓得立即跑到大门口，见着了朝思暮想的老祖宗，二话不说就扑倒在地，砰砰磕头。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 6
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -433,7 +597,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -447,7 +613,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -463,7 +631,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -478,9 +648,11 @@
         "location": "骊珠洞天",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "曹曦",
+          "曹峻"
         ],
-        "description": "若非如今骊珠洞天的宝贝都已搜刮殆尽，以曹曦在婆娑洲“雁过拔毛”的脾气，还不得把小镇翻个底朝天才尽兴，曹曦心中大恨，恼火大骊王朝之前的强买强卖，按照大骊曹氏子孙的密信所言，大骊那趟涸泽而渔似的搜集法宝，还真是收获颇丰，哪怕修为高如曹曦，都有些眼馋。 屠龙一役，三教百家的先贤们在此血战一场，打得天翻地覆，尸体如雪纷纷落，然后四位圣人从天而降，画地为牢，所有宝贝就这么留在了小洞天之内，一甲子一次开门迎客，各凭本事，掏钱进门，靠着眼力捡漏，多有出去之后境界骤然暴涨的幸运儿。 曹曦犹豫了一下，自言自语道：“儿孙自有儿孙福个屁，不提点几句，我看悬乎。",
+        "description": "若非如今骊珠洞天的宝贝都已搜刮殆尽，以曹曦在婆娑洲“雁过拔毛”的脾气，还不得把小镇翻个底朝天才尽兴，曹曦心中大恨，恼火大骊王朝之前的强买强卖，按照大骊曹氏子孙的密信所言，大骊那趟涸泽而渔似的搜集法宝，还真是收获颇丰，哪怕修为高如曹曦，都有些眼馋。 曹曦犹豫了一下，自言自语道：“儿孙自有儿孙福个屁，不提点几句，我看悬乎。 他来到督造官衙署，门房是个眼力劲不好的，又没资格知晓曹氏家事和山上事，气势汹汹地将曹曦挡在门外，曹曦也不生气，笑呵呵站在衙署门外跟门房闲聊，一来二去，还挺热络了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -498,7 +670,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.031198",
+    "extracted_at": "2026-03-25T17:27:37.908220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -518,7 +690,35 @@
       "曹茂连忙起身，连官服上的灰尘都不舍得拍一下，年轻人激动得眼眶通红，发自肺腑。",
       "上五境的神仙人物，岂是想见就能见到的？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "别看曹茂在郡守吴鸢那边谈笑风生，心里根本没把吴鸢这个寒庶出身的国师弟子，如何放在眼里，更是大骊京城出了名的贵公子，今天到了曹曦跟前，真是毫不含糊，这怪不得曹茂失了分寸，曹曦，家族最大的老祖宗，比为家族赢得上柱国头衔的祖宗，还来得高高在上，曹氏只有每一代嫡子，才有资格知晓这桩天大密事，用以在危急时刻抖搂出来，自家老祖，婆娑洲的陆地剑仙，镇海楼的半个主人，这可是比免死铁券还管用的保命符。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "别看曹茂在郡守吴鸢那边谈笑风生，心里根本没把吴鸢这个寒庶出身的国师弟子，如何放在眼里，更是大骊京城出了名的贵公子，今天到了曹曦跟前，真是毫不含糊，这怪不得曹茂失了分寸，曹曦，家族最大的老祖宗，比为家族赢得上柱国头衔的祖宗，还来得高高在上，曹氏只有每一代嫡子，才有资格知晓这桩天大密事，用以在危急时刻抖搂出来，自家老祖，婆娑洲的陆地剑仙，镇海楼的半个主人，这可是比免死铁券还管用的保命符。 曹曦走到曹茂身边，用脚踹了一下，“起来吧，少在这里丢人现眼。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 7
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -529,7 +729,10 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢",
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -539,14 +742,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 大骊剧情推进",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 吴鸢与曹曦在大骊师承",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "别看曹茂在郡守吴鸢那边谈笑风生，心里根本没把吴鸢这个寒庶出身的国师弟子，如何放在眼里，更是大骊京城出了名的贵公子，今天到了曹曦跟前，真是毫不含糊，这怪不得曹茂失了分寸，曹曦，家族最大的老祖宗，比为家族赢得上柱国头衔的祖宗，还来得高高在上，曹氏只有每一代嫡子，才有资格知晓这桩天大密事，用以在危急时刻抖搂出来，自家老祖，婆娑洲的陆地剑仙，镇海楼的半个主人，这可是比免死铁券还管用的保命符。 把那个门房胥吏给吓得魂飞魄散。 曹曦走到曹茂身边，用脚踹了一下，“起来吧，少在这里丢人现眼。",
+        "participants": [
+          "吴鸢",
+          "曹曦"
+        ],
+        "description": "别看曹茂在郡守吴鸢那边谈笑风生，心里根本没把吴鸢这个寒庶出身的国师弟子，如何放在眼里，更是大骊京城出了名的贵公子，今天到了曹曦跟前，真是毫不含糊，这怪不得曹茂失了分寸，曹曦，家族最大的老祖宗，比为家族赢得上柱国头衔的祖宗，还来得高高在上，曹氏只有每一代嫡子，才有资格知晓这桩天大密事，用以在危急时刻抖搂出来，自家老祖，婆娑洲的陆地剑仙，镇海楼的半个主人，这可是比免死铁券还管用的保命符。 曹曦走到曹茂身边，用脚踹了一下，“起来吧，少在这里丢人现眼。 把那个门房胥吏给吓得魂飞魄散。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动吴鸢与曹曦之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -560,8 +768,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.031198",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "曹曦"
+        ],
+        "action": "师承",
+        "context": "别看曹茂在郡守吴鸢那边谈笑风生，心里根本没把吴鸢这个寒庶出身的国师弟子，如何放在眼里，更是大骊京城出了名的贵公子，今天到了曹曦跟前，真是毫不含糊，这怪不得曹茂失了分寸，曹曦，家族最大的老祖宗，比为家族赢得上柱国头衔的祖宗，还来得高高在上，曹氏只有每一代嫡子，才有资格知晓这桩天大密事，用以在危急时刻抖搂出来，自家老祖，婆娑洲的陆地剑仙，镇海楼的半个主人，这可是比免死铁券还管用的保命符。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 吴鸢与曹曦在大骊师承",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.908220",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -582,6 +811,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦问道：“关于陈平安的祖籍，查清楚了？",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -649,12 +891,15 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "曹曦"
         ],
         "description": "有这么一座大靠山，以后曹氏子弟莫说是在大骊王朝这一隅之地，便是在整座宝瓶洲，不能横着走？ 曹曦问道：“关于陈平安的祖籍，查清楚了？ 曹茂毕恭毕敬道：“启禀老祖，查清楚了，并无特殊，往上追本溯源数百年，都是小镇寻常人家，甚至连一位有据可查的练气士都未出现。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -668,8 +913,92 @@
         "segment_index": 8
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "曹曦问道：“关于陈平安的祖籍，查清楚了？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.908220",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-9-0": {
+    "juan_index": 201,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "曹曦嗯了一声，“那当下这件事情就简单了。",
+      "只是这还是挺奇怪蹊跷的一件事。",
+      "要么是龙尾溪陈氏动了手脚，或是某位老祖的气运实在太‘独’，寅吃卯粮，预支了数十代子孙的福缘。",
+      "算了，这些不用管，鸡毛蒜皮的小事而已。",
+      "”",
+      "曹茂弯着腰，想要领着老祖宗去往衙署大堂，曹曦没好气道：“屁大的官身，我坐在那大堂里头都嫌害臊。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦嗯了一声，“那当下这件事情就简单了。 曹茂弯着腰，想要领着老祖宗去往衙署大堂，曹曦没好气道：“屁大的官身，我坐在那大堂里头都嫌害臊。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦"
+        ],
+        "description": "曹曦嗯了一声，“那当下这件事情就简单了。 曹茂弯着腰，想要领着老祖宗去往衙署大堂，曹曦没好气道：“屁大的官身，我坐在那大堂里头都嫌害臊。 只是这还是挺奇怪蹊跷的一件事。",
+        "background": "",
+        "significance": "对应曹曦在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 9
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.031198",
+    "extracted_at": "2026-03-25T17:27:37.909223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -689,7 +1018,36 @@
       "”",
       "没过多久，悬佩长短双剑的曹峻懒洋洋走来，瞧见了曹曦也没个正形，笑道：“怎么，在谢宅那边受了气，想着把我当出气筒，大老远赶过来，就为了把我拎出来骂一顿？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦站在衙署广场的牌坊楼下，冷笑道：“曹峻，你给我滚出来。 没过多久，悬佩长短双剑的曹峻懒洋洋走来，瞧见了曹曦也没个正形，笑道：“怎么，在谢宅那边受了气，想着把我当出气筒，大老远赶过来，就为了把我拎出来骂一顿？",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹曦站在衙署广场的牌坊楼下，冷笑道：“曹峻，你给我滚出来。 没过多久，悬佩长短双剑的曹峻懒洋洋走来，瞧见了曹曦也没个正形，笑道：“怎么，在谢宅那边受了气，想着把我当出气筒，大老远赶过来，就为了把我拎出来骂一顿？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 10
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -710,14 +1068,20 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 大骊对话",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "如何跟神仙祖宗打交道，他委实没有半点经验，估计他的爷爷，大骊上柱国曹氏的当代家主在这里，一样会进退失据。 ” 曹茂有些手足无措。",
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "如何跟神仙祖宗打交道，他委实没有半点经验，估计他的爷爷，大骊上柱国曹氏的当代家主在这里，一样会进退失据。 曹曦站在衙署广场的牌坊楼下，冷笑道：“曹峻，你给我滚出来。 没过多久，悬佩长短双剑的曹峻懒洋洋走来，瞧见了曹曦也没个正形，笑道：“怎么，在谢宅那边受了气，想着把我当出气筒，大老远赶过来，就为了把我拎出来骂一顿？",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动曹曦与曹峻之间的对话线。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -731,8 +1095,292 @@
         "segment_index": 10
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "对话",
+        "context": "曹曦站在衙署广场的牌坊楼下，冷笑道：“曹峻，你给我滚出来。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 10
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "曹曦"
+        ],
+        "action": "对话",
+        "context": "没过多久，悬佩长短双剑的曹峻懒洋洋走来，瞧见了曹曦也没个正形，笑道：“怎么，在谢宅那边受了气，想着把我当出气筒，大老远赶过来，就为了把我拎出来骂一顿？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.909223",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-11-0": {
+    "juan_index": 201,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "”",
+      "曹曦斜瞥了一眼曹峻，“鸟样！",
+      "”",
+      "曹峻呵呵笑道：“没法子，随祖宗。",
+      "”",
+      "曹茂内心深处，有些羡慕只知姓名、出身同族的年轻剑客，竟然胆敢用这种吊儿郎当的口气跟老祖说话。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦斜瞥了一眼曹峻，“鸟样！",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹曦斜瞥了一眼曹峻，“鸟样！ 曹峻呵呵笑道：“没法子，随祖宗。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "曹曦斜瞥了一眼曹峻，“鸟样！ 曹峻呵呵笑道：“没法子，随祖宗。 ”",
+        "background": "",
+        "significance": "推动曹曦与曹峻之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 11
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "对话",
+        "context": "” 曹曦斜瞥了一眼曹峻，“鸟样！ ” 曹峻呵呵笑道：“没法子，随祖宗。 ” 曹茂内心深处，有些羡慕只知姓名、出身同族的年轻剑客，竟然胆敢用这种吊儿郎当的口气跟老祖说话。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.909223",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-12-0": {
+    "juan_index": 201,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "曹曦沉默片刻，仔细看了眼衙署布局和风水流转，毫无征兆地问道：“衙署是不是刚刚翻新过？",
+      "谁给出的主意？",
+      "”",
+      "曹茂环顾四周，这才低声道：“是爷爷拿着衙署图纸，去恳请一位京城陆氏高人，帮忙点拨了几句。",
+      "老祖宗，怎么了，不妥吗？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦沉默片刻，仔细看了眼衙署布局和风水流转，毫无征兆地问道：“衙署是不是刚刚翻新过？",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦"
+        ],
+        "description": "曹曦沉默片刻，仔细看了眼衙署布局和风水流转，毫无征兆地问道：“衙署是不是刚刚翻新过？ 谁给出的主意？ ”",
+        "background": "",
+        "significance": "对应曹曦在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 12
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.031198",
+    "extracted_at": "2026-03-25T17:27:37.909223",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-13-0": {
+    "juan_index": 201,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "曹曦脸色阴沉不定，“不妥？",
+      "妥当得很，比起之前更加藏风聚水，稍加改动，就是画龙点睛的漂亮手笔，多半会成为你曹茂的龙兴之地。",
+      "嗯，别误会，你没那好命当真龙天子，你这辈子不出意外的话，撑死了就是世袭罔替上柱国的爵位，运气好的话，将来可能是族谱上的中兴之祖。",
+      "”",
+      "曹茂狂喜，如何都遮掩不住。",
+      "曹峻习惯性眯眼而笑。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦脸色阴沉不定，“不妥？",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻习惯性眯眼而笑。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "曹曦脸色阴沉不定，“不妥？ 曹峻习惯性眯眼而笑。 妥当得很，比起之前更加藏风聚水，稍加改动，就是画龙点睛的漂亮手笔，多半会成为你曹茂的龙兴之地。",
+        "background": "",
+        "significance": "推动曹曦与曹峻之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.909223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -752,7 +1400,24 @@
       "曹曦喃喃道：“积善之家必有余庆，是不是多少要相信一点？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦则有些无奈，自己好不容易弄了个子嗣茂盛的大家族，怎么到头来尽是些窝囊废大草包，一个王朝的上柱国，就能笑得合不拢嘴？ 曹曦一时间心情大恶，只是没表现在脸上。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 14
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -761,7 +1426,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -776,9 +1443,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "曹曦"
         ],
-        "description": "曹曦没来由想起经由别人修缮过的祖宅，与记忆中是有些不一样的，比如大雨天气里，他小时候的破烂宅子，屋檐天井处的水滴年复一年，早已破败不堪，又没钱去缝补，一到下雨天，地上就会溅射得满地雨水，而富裕门户里的天井，无论雨雪，“财运福气”都往自家天井下边的水池里落进来，却绝不会让天井四周的地面变得潮湿，那叫干干净净的接纳风水了，按照小镇老一辈的说法，祖上积德，赏下一百粒米饭，子孙就能用地上水池这个大碗，半点不差地接住整个百粒米，而不是像曹曦小时候的屋子那样，最多接下个半碗米饭。 曹曦则有些无奈，自己好不容易弄了个子嗣茂盛的大家族，怎么到头来尽是些窝囊废大草包，一个王朝的上柱国，就能笑得合不拢嘴？ 曹曦一时间心情大恶，只是没表现在脸上。",
+        "description": "曹曦则有些无奈，自己好不容易弄了个子嗣茂盛的大家族，怎么到头来尽是些窝囊废大草包，一个王朝的上柱国，就能笑得合不拢嘴？ 曹曦一时间心情大恶，只是没表现在脸上。 曹曦没来由想起经由别人修缮过的祖宅，与记忆中是有些不一样的，比如大雨天气里，他小时候的破烂宅子，屋檐天井处的水滴年复一年，早已破败不堪，又没钱去缝补，一到下雨天，地上就会溅射得满地雨水，而富裕门户里的天井，无论雨雪，“财运福气”都往自家天井下边的水池里落进来，却绝不会让天井四周的地面变得潮湿，那叫干干净净的接纳风水了，按照小镇老一辈的说法，祖上积德，赏下一百粒米饭，子孙就能用地上水池这个大碗，半点不差地接住整个百粒米，而不是像曹曦小时候的屋子那样，最多接下个半碗米饭。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -796,7 +1464,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.031198",
+    "extracted_at": "2026-03-25T17:27:37.909223",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -816,7 +1484,35 @@
       "”",
       "曹峻调侃道：“真信啊？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "一只坐在牌坊楼上的火红狐狸讥讽道：“别人信这个就算了，你曹曦也信？ 曹曦没抬头，冷笑道：“那是我曹曦命硬，能耐大，所以可以不信，但是宝瓶洲这么一支没出息的曹氏，我如果不稍微信点，怕他们哪天说没就没了。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻调侃道：“真信啊？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 15
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -825,7 +1521,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -835,14 +1533,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 宝瓶洲对话",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "曹曦没抬头，冷笑道：“那是我曹曦命硬，能耐大，所以可以不信，但是宝瓶洲这么一支没出息的曹氏，我如果不稍微信点，怕他们哪天说没就没了。 一只坐在牌坊楼上的火红狐狸讥讽道：“别人信这个就算了，你曹曦也信？ 你要是真信，根本走不到今天！",
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "一只坐在牌坊楼上的火红狐狸讥讽道：“别人信这个就算了，你曹曦也信？ 曹曦没抬头，冷笑道：“那是我曹曦命硬，能耐大，所以可以不信，但是宝瓶洲这么一支没出息的曹氏，我如果不稍微信点，怕他们哪天说没就没了。 曹峻调侃道：“真信啊？",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动曹曦与曹峻之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -856,8 +1559,187 @@
         "segment_index": 15
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "讥讽",
+        "context": "一只坐在牌坊楼上的火红狐狸讥讽道：“别人信这个就算了，你曹曦也信？ 你要是真信，根本走不到今天！ ” 曹曦没抬头，冷笑道：“那是我曹曦命硬，能耐大，所以可以不信，但是宝瓶洲这么一支没出息的曹氏，我如果不稍微信点，怕他们哪天说没就没了。 ” 曹峻调侃道：“真信啊？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.910227",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-16-0": {
+    "juan_index": 201,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "咋的，老祖要行善积德不成？",
+      "这可真是太阳打西边出来了。",
+      "”",
+      "曹曦转头望向曹峻，“那颗剑胚，你不要动心思了，如果心里不得劲，回头我亲自补偿给你。",
+      "”",
+      "曹峻笑意趋于冷淡，“为何？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦转头望向曹峻，“那颗剑胚，你不要动心思了，如果心里不得劲，回头我亲自补偿给你。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹曦转头望向曹峻，“那颗剑胚，你不要动心思了，如果心里不得劲，回头我亲自补偿给你。 曹峻笑意趋于冷淡，“为何？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹峻与曹曦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻",
+          "曹曦"
+        ],
+        "description": "曹曦转头望向曹峻，“那颗剑胚，你不要动心思了，如果心里不得劲，回头我亲自补偿给你。 曹峻笑意趋于冷淡，“为何？ 咋的，老祖要行善积德不成？",
+        "background": "",
+        "significance": "推动曹峻与曹曦之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 16
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.031198",
+    "extracted_at": "2026-03-25T17:27:37.910227",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-17-0": {
+    "juan_index": 201,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "”",
+      "曹曦撂下一句：“我是你祖宗。",
+      "”",
+      "曹峻蓦然大笑，“就这么说定！",
+      "好人有好报，老祖宗一定长命万岁！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦撂下一句：“我是你祖宗。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻蓦然大笑，“就这么说定！",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦与曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "曹曦撂下一句：“我是你祖宗。 曹峻蓦然大笑，“就这么说定！ ”",
+        "background": "",
+        "significance": "推动曹曦与曹峻之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.910227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -877,7 +1759,22 @@
       "曹曦独处，坐在小小的大堂，没有匾额，好不容易冒出的香火小人，也早已给人吃掉。",
       "就是一栋孤零零的破落宅子了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦冷哼一声，懒得理睬那只嘴贱的狐狸，转身摔袖，大步离去。 曹曦独处，坐在小小的大堂，没有匾额，好不容易冒出的香火小人，也早已给人吃掉。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -896,13 +1793,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 泥瓶巷冲突",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦在泥瓶巷冲突",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "他回到泥瓶巷祖宅，淅沥沥的一场春雨，不期而至，越下越大。 火红狐狸站在牌楼上，使劲拍着爪子庆贺，但是嘴上可说着凉风嗖嗖的风凉话，“哇，父慈子孝似的画面，老祖宗出手阔绰，做子孙的孝顺，真温馨，不行不行，我眼泪都要流下来了……” 曹曦冷哼一声，懒得理睬那只嘴贱的狐狸，转身摔袖，大步离去。",
+        "participants": [
+          "曹曦"
+        ],
+        "description": "曹曦冷哼一声，懒得理睬那只嘴贱的狐狸，转身摔袖，大步离去。 他回到泥瓶巷祖宅，淅沥沥的一场春雨，不期而至，越下越大。 曹曦独处，坐在小小的大堂，没有匾额，好不容易冒出的香火小人，也早已给人吃掉。",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键冲突场景。",
+        "significance": "对应曹曦在叙事中的关键冲突节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段18",
         "sentence_indexes_in_segment": [
@@ -918,7 +1817,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.910227",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-19-0": {
+    "juan_index": 201,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "曹曦突然起身，去灶房碗柜拿出一只大白碗，走到天井对应的水池边，就蹲在边沿上，双脚踩在小水池里头铺着的鹅卵石上，用白碗承接雨水。",
+      "装了小半碗雨水后，曹曦喝了口，就立即洒进水池，埋怨道：“读书人只会瞎扯淡，这故乡水，哪里有酒好喝。",
+      "”",
+      "曹曦叹了口气，怔怔出神。",
+      "最后老人端着水碗，回首望去，好似有一位老态妇人在屋内劳作，像是她停下了动作，怀抱扫帚，安安静静站在那边，笑望向自己的儿子。",
+      "子欲养而亲不待，做娘亲的，没能享着半点福，可只要儿子出息了，便是没关系的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦突然起身，去灶房碗柜拿出一只大白碗，走到天井对应的水池边，就蹲在边沿上，双脚踩在小水池里头铺着的鹅卵石上，用白碗承接雨水。 装了小半碗雨水后，曹曦喝了口，就立即洒进水池，埋怨道：“读书人只会瞎扯淡，这故乡水，哪里有酒好喝。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3
+        ],
+        "juan_index": 201,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 曹曦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦"
+        ],
+        "description": "曹曦突然起身，去灶房碗柜拿出一只大白碗，走到天井对应的水池边，就蹲在边沿上，双脚踩在小水池里头铺着的鹅卵石上，用白碗承接雨水。 装了小半碗雨水后，曹曦喝了口，就立即洒进水池，埋怨道：“读书人只会瞎扯淡，这故乡水，哪里有酒好喝。 曹曦叹了口气，怔怔出神。",
+        "background": "",
+        "significance": "对应曹曦在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.910227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1076,7 +2039,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.910227",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1178,7 +2141,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1324,7 +2287,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1389,7 +2352,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1488,7 +2451,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1553,7 +2516,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.032201",
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1636,7 +2599,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1656,7 +2619,22 @@
       "妇人当然认得那位铁符江正神，名叫杨花，极有可能是东宝瓶洲最年轻的高品秩江神，她长达一丈的金色长发，脸上覆有面甲，怀抱一柄长剑，脾气极差，死在她手上的过路精怪，茫茫多。",
       "龙须河是铁符江的上游水段，当然隶属于铁符江水域，所以杨花巡视河道，是题中应有之义，只是杨花升任江神之后，从不登上那条江河地界的瀑布，今天是头一遭。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "妇人当然认得那位铁符江正神，名叫杨花，极有可能是东宝瓶洲最年轻的高品秩江神，她长达一丈的金色长发，脸上覆有面甲，怀抱一柄长剑，脾气极差，死在她手上的过路精怪，茫茫多。 龙须河是铁符江的上游水段，当然隶属于铁符江水域，所以杨花巡视河道，是题中应有之义，只是杨花升任江神之后，从不登上那条江河地界的瀑布，今天是头一遭。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 27
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1665,7 +2643,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "杨花"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1675,13 +2655,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 杨花在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "妇人当然认得那位铁符江正神，名叫杨花，极有可能是东宝瓶洲最年轻的高品秩江神，她长达一丈的金色长发，脸上覆有面甲，怀抱一柄长剑，脾气极差，死在她手上的过路精怪，茫茫多。 龙须河上，雨点噼里啪啦使劲砸在河面上。 石拱桥下，一位青丝茂如水草的妇人，悬停在河底上边，呜呜咽咽，她想起了自家孙子，再联想到自己一半金身毁弃的凄惨境遇，就愈发伤心，在自家门口都这般难混，更何况是孙子远在真武山，在那么多神仙精怪之中修行？",
+        "participants": [
+          "杨花"
+        ],
+        "description": "妇人当然认得那位铁符江正神，名叫杨花，极有可能是东宝瓶洲最年轻的高品秩江神，她长达一丈的金色长发，脸上覆有面甲，怀抱一柄长剑，脾气极差，死在她手上的过路精怪，茫茫多。 龙须河是铁符江的上游水段，当然隶属于铁符江水域，所以杨花巡视河道，是题中应有之义，只是杨花升任江神之后，从不登上那条江河地界的瀑布，今天是头一遭。 龙须河上，雨点噼里啪啦使劲砸在河面上。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段27",
         "sentence_indexes_in_segment": [
@@ -1697,7 +2679,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "extracted_at": "2026-03-25T17:27:37.911230",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-28-0": {
+    "juan_index": 201,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "生前名为马兰花的妇人河神，哪怕成了神祇，依然还是那副缩头缩脑的市井德行，低头怯生生说了句客套话，再抬起头，杨花早已迅猛远去上游的十数里外。",
+      "妇人心中愤愤，觉得这个年轻婆姨太不会做人了，即便是自己的顶头上官，可一声招呼都不打，也太不讲究了些。",
+      "于是妇人就又开始自怨自艾，觉得是自己给人欺负了。",
+      "最后妇人就害怕自己的孙子，在外边也给人这般不当回事，妇人一手捂住心口，一手擦拭泪花，然后如鲤鱼摆尾，快速游向自己的老巢，去瞅几眼家当宝贝们，想着它们未来都会是孙子的丰厚聘礼，她才能高兴几分，才会觉得这份死了还要遭罪的苦难日子，好歹还有个盼头。",
+      "驿站外边，停着一辆装有算卦摊子的独轮车，年轻道人摊子都没摊开，就开始给一位信命的驿丁看手相算命了，落在别的驿站胥吏眼中，那就是一个胡说八道一个小鸡啄米，可笑至极。",
+      "最后年轻道人没收人铜钱，其实那个驿丁也没想着要花钱，好在道人很识趣，只讨要了一碗热水，站在车旁咕咚咕咚大口喝水，很是痛快。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "生前名为马兰花的妇人河神，哪怕成了神祇，依然还是那副缩头缩脑的市井德行，低头怯生生说了句客套话，再抬起头，杨花早已迅猛远去上游的十数里外。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 201,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 杨花剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "杨花"
+        ],
+        "description": "生前名为马兰花的妇人河神，哪怕成了神祇，依然还是那副缩头缩脑的市井德行，低头怯生生说了句客套话，再抬起头，杨花早已迅猛远去上游的十数里外。 妇人心中愤愤，觉得这个年轻婆姨太不会做人了，即便是自己的顶头上官，可一声招呼都不打，也太不讲究了些。 于是妇人就又开始自怨自艾，觉得是自己给人欺负了。",
+        "background": "",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.911230",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1761,7 +2805,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "extracted_at": "2026-03-25T17:27:37.912234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1791,6 +2835,19 @@
         "original_description_in_book": "道姑正是被陆沉从神诰宗拐骗而来的贺小凉，那个让风雪庙魏晋喝了一壶壶断肠酒的绝情女子。",
         "description": "白玉京三掌教之一，串联道家高层、骊珠洞天与大骊王朝。",
         "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "道姑正是被陆沉从神诰宗拐骗而来的贺小凉，那个让风雪庙魏晋喝了一壶壶断肠酒的绝情女子。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1834,6 +2891,7 @@
         "coordinates": null,
         "related_entities": [
           "陆沉",
+          "贺小凉",
           "魏晋"
         ],
         "sentence_indexes_in_segment": [
@@ -1873,17 +2931,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与魏晋在风雪庙揭示",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与贺小凉在风雪庙揭示",
         "time": null,
         "location": "风雪庙",
         "participants": [
           "陆沉",
+          "贺小凉",
           "魏晋",
           "马苦玄"
         ],
         "description": "道姑正是被陆沉从神诰宗拐骗而来的贺小凉，那个让风雪庙魏晋喝了一壶壶断肠酒的绝情女子。 她其实之前也曾以玉女的身份，和金童一起代表宝瓶洲道统来此，取回祖师爷留在骊珠洞天的那件压胜法宝。 走的时候，他们没能成功带走马苦玄，她反而多出一块漂亮的蛇胆石，没办法，她的福缘之深厚，一洲瞩目，像是随便走在哪里，好东西都喜欢主动往她身上凑，挡都挡不住。",
         "background": "",
-        "significance": "在风雪庙推动陆沉与魏晋之间的揭示线。",
+        "significance": "在风雪庙推动陆沉与贺小凉之间的揭示线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段30",
         "sentence_indexes_in_segment": [
@@ -1899,7 +2958,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "extracted_at": "2026-03-25T17:27:37.912234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1999,7 +3058,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "extracted_at": "2026-03-25T17:27:37.912234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2131,7 +3190,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "extracted_at": "2026-03-25T17:27:37.912234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2164,6 +3223,19 @@
         "sentence_indexes_in_segment": [
           0,
           5
+        ],
+        "juan_index": 201,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉苦笑不已。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 201,
         "segment_index": 33
@@ -2212,14 +3284,12 @@
           "阿良",
           "陈平安",
           "陆沉",
-          "魏檗"
+          "贺小凉"
         ],
-        "description": "陆沉却已经算出她的问题，微笑道：“道可道非常道，意思是什么呢，就是言语文字，可以用来说话，但用来讲解大道，分量是远远不够的。 陆沉望向小镇那边，又开始怪话连篇，“世人都羡神仙好，神仙好不好，自然是好的，可你魏檗为何不羡慕，因为你从来就不是真正的神仙嘛。 至于贫道的意思呢，其实就是你想问的问题，贫道不会回答。",
+        "description": "陆沉却已经算出她的问题，微笑道：“道可道非常道，意思是什么呢，就是言语文字，可以用来说话，但用来讲解大道，分量是远远不够的。 贺小凉苦笑不已。 陆沉望向小镇那边，又开始怪话连篇，“世人都羡神仙好，神仙好不好，自然是好的，可你魏檗为何不羡慕，因为你从来就不是真正的神仙嘛。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -2233,34 +3303,8 @@
         "segment_index": 33
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陆沉"
-        ],
-        "to_roles": [
-          "魏檗"
-        ],
-        "action": "对话",
-        "context": "陆沉却已经算出她的问题，微笑道：“道可道非常道，意思是什么呢，就是言语文字，可以用来说话，但用来讲解大道，分量是远远不够的。 至于贫道的意思呢，其实就是你想问的问题，贫道不会回答。 ” 贺小凉苦笑不已。 这个莫名其妙出现在神诰宗的“小师叔”，这一路上说了无数的奇言怪语，她经常百思不得其解，后来就干脆不去深思了，他愿意说，就会叨叨叨个不停，你闭住耳朵、甚至关上心扉大门都不管用，照样会在心头响起他的声音，可当他不愿意说的时候，能够十天半个月一言不发。 陆沉望向小镇那边，又开始怪话连篇，“世人都羡神仙好，神仙好不好，自然是好的，可你魏檗为何不羡慕，因为你从来就不是真正的神仙嘛。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 201,
-        "segment_index": 33
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.033205",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.912234",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2293,6 +3337,32 @@
         ],
         "juan_index": 201,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦做了一辈子王八蛋，却做了一件厚道事。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 201,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "说到这里，年轻道人突然转头望向身后的贺小凉，笑问道：“凡俗夫子的心心念念，你听得见吗？",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 201,
+        "segment_index": 35
       }
     ],
     "locations": [
@@ -2321,9 +3391,10 @@
         "participants": [
           "阿良",
           "陈平安",
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
-        "description": "“说来奇妙，同样是一个小镇走出去的人，同时回到家乡，谢实做了一辈子好神仙，却要去做一件亏心事。 ” 曹曦做了一辈子王八蛋，却做了一件厚道事。",
+        "description": "“说来奇妙，同样是一个小镇走出去的人，同时回到家乡，谢实做了一辈子好神仙，却要去做一件亏心事。 曹曦做了一辈子王八蛋，却做了一件厚道事。 说到这里，年轻道人突然转头望向身后的贺小凉，笑问道：“凡俗夫子的心心念念，你听得见吗？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2341,7 +3412,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "extracted_at": "2026-03-25T17:27:37.912234",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "201-36-0": {
+    "juan_index": 201,
+    "segment_index": 36,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百零一章 若无闲事挂心头",
+    "source_sentences": [
+      "贺小凉无奈道：“十境练气士才能依稀听闻，我如今哪里做得到。",
+      "”",
+      "年轻道人哦了一声，“那你确实需要好好修行啊。",
+      "”",
+      "贺小凉只得苦笑。",
+      "年轻道人觉得这个可以说，便打开了话匣子，不管贺小凉感不感兴趣，竹筒倒起了豆子，“贫道告诉你啊，这种事情很玄乎，但其实又一点不玄乎，一种是心诚至极，正所谓精诚所至金石为开，所以圣人有言，惟精惟诚可以动人。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉无奈道：“十境练气士才能依稀听闻，我如今哪里做得到。 贺小凉只得苦笑。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 36
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 贺小凉剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "贺小凉"
+        ],
+        "description": "贺小凉无奈道：“十境练气士才能依稀听闻，我如今哪里做得到。 贺小凉只得苦笑。 年轻道人觉得这个可以说，便打开了话匣子，不管贺小凉感不感兴趣，竹筒倒起了豆子，“贫道告诉你啊，这种事情很玄乎，但其实又一点不玄乎，一种是心诚至极，正所谓精诚所至金石为开，所以圣人有言，惟精惟诚可以动人。",
+        "background": "",
+        "significance": "对应贺小凉在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段36",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 201,
+        "segment_index": 36
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.913237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2362,6 +3497,19 @@
       "当然，万一他一个较真，隔着十万八千里，崔赐必然会“无缘无故”暴毙当场。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉可不会溜须拍马，“我觉得是小师叔道法高深的关系。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 38
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -2411,19 +3559,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与李希圣在宝瓶洲对话",
+        "name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 贺小凉与陆沉在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "贺小凉",
           "陆沉",
           "李希圣"
         ],
-        "description": "陆沉有些失落，又不想说话了。 类似李希圣当时在入山途中，直呼白泽二字，立即就能够让那位远在宝瓶洲西海之滨的白老爷听见，而身边学生崔赐恐怕张开嘴，破口大骂一百遍，白老爷都听不到，或者说听见了也不在意。 ”",
+        "description": "贺小凉可不会溜须拍马，“我觉得是小师叔道法高深的关系。 陆沉有些失落，又不想说话了。 类似李希圣当时在入山途中，直呼白泽二字，立即就能够让那位远在宝瓶洲西海之滨的白老爷听见，而身边学生崔赐恐怕张开嘴，破口大骂一百遍，白老爷都听不到，或者说听见了也不在意。",
         "background": "",
-        "significance": "在宝瓶洲推动陆沉与李希圣之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在宝瓶洲推动贺小凉与陆沉之间的剧情推进线。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 段38",
         "sentence_indexes_in_segment": [
           0,
@@ -2437,34 +3584,8 @@
         "segment_index": 38
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陆沉"
-        ],
-        "to_roles": [
-          "李希圣"
-        ],
-        "action": "对话",
-        "context": "” 贺小凉可不会溜须拍马，“我觉得是小师叔道法高深的关系。 ” 陆沉有些失落，又不想说话了。 类似李希圣当时在入山途中，直呼白泽二字，立即就能够让那位远在宝瓶洲西海之滨的白老爷听见，而身边学生崔赐恐怕张开嘴，破口大骂一百遍，白老爷都听不到，或者说听见了也不在意。 当然，万一他一个较真，隔着十万八千里，崔赐必然会“无缘无故”暴毙当场。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百零一章 若无闲事挂心头 · 陆沉与李希圣在宝瓶洲对话",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 201,
-        "segment_index": 38
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.913237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2564,7 +3685,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "extracted_at": "2026-03-25T17:27:37.913237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2602,6 +3723,19 @@
       },
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "但是贺小凉有些讶异，“铸剑已经临近尾声，为何动静还这么大，使得地界之内，山根水运都有些摇晃了。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 201,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -2624,9 +3758,10 @@
         "location": null,
         "participants": [
           "阮邛",
+          "贺小凉",
           "陆沉"
         ],
-        "description": "与此同时，阮邛的铸剑气象，不由得让旁人感慨一句，圣人就是圣人。 陆沉笑而不言。 但是贺小凉有些讶异，“铸剑已经临近尾声，为何动静还这么大，使得地界之内，山根水运都有些摇晃了。",
+        "description": "与此同时，阮邛的铸剑气象，不由得让旁人感慨一句，圣人就是圣人。 但是贺小凉有些讶异，“铸剑已经临近尾声，为何动静还这么大，使得地界之内，山根水运都有些摇晃了。 陆沉笑而不言。",
         "background": "",
         "significance": "对应龙泉线的重要山上势力节点。",
         "related_action_indices": [],
@@ -2644,7 +3779,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "extracted_at": "2026-03-25T17:27:37.913237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2754,7 +3889,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "extracted_at": "2026-03-25T17:27:37.913237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2854,7 +3989,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "extracted_at": "2026-03-25T17:27:37.913237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2938,7 +4073,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.034208",
+    "extracted_at": "2026-03-25T17:27:37.914240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3002,7 +4137,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.035212",
+    "extracted_at": "2026-03-25T17:27:37.914240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.513038",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.513038",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -180,7 +180,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.513038",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -203,6 +203,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "樊莞尔也不是拖泥带水之人，就这样离开这条熙熙攘攘的宵夜闹市，一些个青皮流氓想要借机揩油，只是每次他们出手，她总是刚好躲过，如一尾鱼儿游曳在水草石块之间。 眼前这名素未蒙面却两次找上自己的奇怪女子，按照先前丁姓老者与那鸦儿、簪花郎周仕的聊天，她多半就是那个名动天下的樊莞尔，搁在家乡宝瓶洲，可就是神诰宗女冠贺小凉的地位。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安有些疑惑，按照竹楼老人的说法，武人天赋好不好，要看能否从低劣的拳架，养出最高明的拳意，当初他选择陈平安，这是原因之一。 不过崔姓老人死要面子，不愿承认撼山拳其实有着诸多可取之处，陈平安不愿揭穿而已。",
@@ -211,6 +226,19 @@
         "sentence_indexes_in_segment": [
           1,
           2
+        ],
+        "juan_index": 309,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "眼前这名素未蒙面却两次找上自己的奇怪女子，按照先前丁姓老者与那鸦儿、簪花郎周仕的聊天，她多半就是那个名动天下的樊莞尔，搁在家乡宝瓶洲，可就是神诰宗女冠贺小凉的地位。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 309,
         "segment_index": 4
@@ -224,7 +252,10 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "樊莞尔",
+          "贺小凉"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -234,15 +265,17 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安在宝瓶洲冲突",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 樊莞尔与陈平安在宝瓶洲冲突",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "樊莞尔",
+          "陈平安",
+          "贺小凉"
         ],
-        "description": "陈平安有些疑惑，按照竹楼老人的说法，武人天赋好不好，要看能否从低劣的拳架，养出最高明的拳意，当初他选择陈平安，这是原因之一。 不过崔姓老人死要面子，不愿承认撼山拳其实有着诸多可取之处，陈平安不愿揭穿而已。 眼前这名素未蒙面却两次找上自己的奇怪女子，按照先前丁姓老者与那鸦儿、簪花郎周仕的聊天，她多半就是那个名动天下的樊莞尔，搁在家乡宝瓶洲，可就是神诰宗女冠贺小凉的地位。",
+        "description": "樊莞尔也不是拖泥带水之人，就这样离开这条熙熙攘攘的宵夜闹市，一些个青皮流氓想要借机揩油，只是每次他们出手，她总是刚好躲过，如一尾鱼儿游曳在水草石块之间。 陈平安有些疑惑，按照竹楼老人的说法，武人天赋好不好，要看能否从低劣的拳架，养出最高明的拳意，当初他选择陈平安，这是原因之一。 不过崔姓老人死要面子，不愿承认撼山拳其实有着诸多可取之处，陈平安不愿揭穿而已。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
+        "significance": "在宝瓶洲推动樊莞尔与陈平安之间的冲突线。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段4",
         "sentence_indexes_in_segment": [
@@ -258,7 +291,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.515469",
+    "extracted_at": "2026-03-25T17:27:38.513038",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -292,6 +325,19 @@
           3,
           4,
           5
+        ],
+        "juan_index": 309,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "陈平安在樊莞尔身影消失后，想了想，也离开这处闹市。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 309,
         "segment_index": 5
@@ -336,12 +382,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "樊莞尔"
         ],
         "description": "先前头戴一顶银色莲花冠的丁姓老人，看似随随便便一步跨入白河寺大殿，陈平安就立即察觉到天地异象。 陈平安可是从骊珠洞天走出来的，见过的山顶人物，不算少了，能够让陈平安觉得“挺厉害”的人物，自然不简单。 在落魄山竹楼的喂拳之人，曾是一位十境巅峰的武夫，在桂花岛上的喂剑之人，好歹也是一位老金丹。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -355,8 +404,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.515469",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "别离",
+        "context": "陈平安在樊莞尔身影消失后，想了想，也离开这处闹市。",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.513038",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -390,6 +460,35 @@
         ],
         "juan_index": 309,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "在陈平安望水发呆的时候，出身镜心亭的仙子樊莞尔，遇上了本该回到南苑国宫城的太子殿下，魏衍。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 309,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "在陈平安望水发呆的时候，出身镜心亭的仙子樊莞尔，遇上了本该回到南苑国宫城的太子殿下，魏衍。 此人虽是天潢贵胄，却是一位深藏不露的年轻高手，他的武道授业恩师，是位从北方塞外流亡到南苑国的老一辈宗师，正如魏衍所说，是那当今天下、距离十大高手最近的一小撮人。",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -410,15 +509,17 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安在宝瓶洲指点",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与陈平安在宝瓶洲指点",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "魏衍",
+          "陈平安",
+          "樊莞尔"
         ],
         "description": "宝瓶洲许多繁华城池，栏板柱头或是拱券龙门石上，都有这类用以压胜水中精怪的镇水兽。 但是陈平安察觉不到这头古老的镇水兽，有一丝一缕的残余灵气，好像就只是个装饰摆设。 在陈平安望水发呆的时候，出身镜心亭的仙子樊莞尔，遇上了本该回到南苑国宫城的太子殿下，魏衍。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
+        "significance": "在宝瓶洲推动魏衍与陈平安之间的指点线。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段6",
         "sentence_indexes_in_segment": [
@@ -434,7 +535,734 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.515469",
+    "extracted_at": "2026-03-25T17:27:38.513038",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-7-0": {
+    "juan_index": 309,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "樊莞尔与魏衍散布于静谧夜色中，魏衍轻声道：“樊仙子，你要见那个人，其实不用瞒着我的，他能够躲在白河寺大殿，从始至终都没有让我们察觉到，肯定不是寻常的江湖莽夫，万一他是魔教中人，你出了事情，怎么办？",
+      "”",
+      "樊莞尔不愿让魏衍这位未来南苑皇帝心生芥蒂，微笑道：“殿下，你觉得自己与莞尔，还有魔教那个不知真实姓名的青鸦儿，春潮宫的簪花郎周仕，加上其余六位差不多年纪的年轻高手，总计十人，与天下十大高手遥相呼应，我们十人当中，谁的武道最高？",
+      "”",
+      "魏衍对此早就心中有数，除了有个好师父，还是一国太子，谍报眼线遍布天下，哪怕没有走过江湖，也早就对江湖密事烂熟于心，魏衍不用思索便娓娓道来，“谁为魁首，不好说，但是前三甲，早有定数，生死之战，一旦狭路相逢，谁生谁死，就看谁更擅长争夺冥冥之中的大势，天时地利人和，谁占据更多，谁就能赢。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "樊莞尔与魏衍散布于静谧夜色中，魏衍轻声道：“樊仙子，你要见那个人，其实不用瞒着我的，他能够躲在白河寺大殿，从始至终都没有让我们察觉到，肯定不是寻常的江湖莽夫，万一他是魔教中人，你出了事情，怎么办？ 樊莞尔不愿让魏衍这位未来南苑皇帝心生芥蒂，微笑道：“殿下，你觉得自己与莞尔，还有魔教那个不知真实姓名的青鸦儿，春潮宫的簪花郎周仕，加上其余六位差不多年纪的年轻高手，总计十人，与天下十大高手遥相呼应，我们十人当中，谁的武道最高？",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 309,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "樊莞尔与魏衍散布于静谧夜色中，魏衍轻声道：“樊仙子，你要见那个人，其实不用瞒着我的，他能够躲在白河寺大殿，从始至终都没有让我们察觉到，肯定不是寻常的江湖莽夫，万一他是魔教中人，你出了事情，怎么办？ 樊莞尔不愿让魏衍这位未来南苑皇帝心生芥蒂，微笑道：“殿下，你觉得自己与莞尔，还有魔教那个不知真实姓名的青鸦儿，春潮宫的簪花郎周仕，加上其余六位差不多年纪的年轻高手，总计十人，与天下十大高手遥相呼应，我们十人当中，谁的武道最高？",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 樊莞尔与魏衍遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "樊莞尔",
+          "魏衍"
+        ],
+        "description": "樊莞尔与魏衍散布于静谧夜色中，魏衍轻声道：“樊仙子，你要见那个人，其实不用瞒着我的，他能够躲在白河寺大殿，从始至终都没有让我们察觉到，肯定不是寻常的江湖莽夫，万一他是魔教中人，你出了事情，怎么办？ 樊莞尔不愿让魏衍这位未来南苑皇帝心生芥蒂，微笑道：“殿下，你觉得自己与莞尔，还有魔教那个不知真实姓名的青鸦儿，春潮宫的簪花郎周仕，加上其余六位差不多年纪的年轻高手，总计十人，与天下十大高手遥相呼应，我们十人当中，谁的武道最高？ 魏衍对此早就心中有数，除了有个好师父，还是一国太子，谍报眼线遍布天下，哪怕没有走过江湖，也早就对江湖密事烂熟于心，魏衍不用思索便娓娓道来，“谁为魁首，不好说，但是前三甲，早有定数，生死之战，一旦狭路相逢，谁生谁死，就看谁更擅长争夺冥冥之中的大势，天时地利人和，谁占据更多，谁就能赢。",
+        "background": "",
+        "significance": "推动樊莞尔与魏衍之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 7
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "樊莞尔"
+        ],
+        "to_roles": [
+          "魏衍"
+        ],
+        "action": "对话",
+        "context": "樊莞尔不愿让魏衍这位未来南苑皇帝心生芥蒂，微笑道：“殿下，你觉得自己与莞尔，还有魔教那个不知真实姓名的青鸦儿，春潮宫的簪花郎周仕，加上其余六位差不多年纪的年轻高手，总计十人，与天下十大高手遥相呼应，我们十人当中，谁的武道最高？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 樊莞尔与魏衍遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 309,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.514041",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-8-0": {
+    "juan_index": 309,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "说到这里，魏衍瞥了眼女子身后，今夜出行，樊莞尔并没有携带兵器，他笑道：“樊仙子精通镜心亭、湖山派以及失传已久的白猿背剑术，三家圣人之学，兼容并蓄，当然可以位列三甲，我师父由衷称赞过仙子，有无剑背在身后，是两个樊莞尔。",
+      "”",
+      "樊莞尔笑道：“殿下谬赞了。",
+      "”",
+      "魏衍一手负后，一手手指轻轻敲击腰间玉带，“魔教那个鸦儿，当年她刚刚进入京城，心高气傲，竟敢跑去国师那边，还吃了种国师一拳，能够伤而不死，世人都觉得是她侥幸，但是父皇与我说过，国师曾言，那个小姑娘，武学天资之高，可谓女子中的陆舫。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "说到这里，魏衍瞥了眼女子身后，今夜出行，樊莞尔并没有携带兵器，他笑道：“樊仙子精通镜心亭、湖山派以及失传已久的白猿背剑术，三家圣人之学，兼容并蓄，当然可以位列三甲，我师父由衷称赞过仙子，有无剑背在身后，是两个樊莞尔。 魏衍一手负后，一手手指轻轻敲击腰间玉带，“魔教那个鸦儿，当年她刚刚进入京城，心高气傲，竟敢跑去国师那边，还吃了种国师一拳，能够伤而不死，世人都觉得是她侥幸，但是父皇与我说过，国师曾言，那个小姑娘，武学天资之高，可谓女子中的陆舫。",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "说到这里，魏衍瞥了眼女子身后，今夜出行，樊莞尔并没有携带兵器，他笑道：“樊仙子精通镜心亭、湖山派以及失传已久的白猿背剑术，三家圣人之学，兼容并蓄，当然可以位列三甲，我师父由衷称赞过仙子，有无剑背在身后，是两个樊莞尔。 樊莞尔笑道：“殿下谬赞了。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 309,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "魏衍一手负后，一手手指轻轻敲击腰间玉带，“魔教那个鸦儿，当年她刚刚进入京城，心高气傲，竟敢跑去国师那边，还吃了种国师一拳，能够伤而不死，世人都觉得是她侥幸，但是父皇与我说过，国师曾言，那个小姑娘，武学天资之高，可谓女子中的陆舫。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏衍",
+          "樊莞尔"
+        ],
+        "description": "说到这里，魏衍瞥了眼女子身后，今夜出行，樊莞尔并没有携带兵器，他笑道：“樊仙子精通镜心亭、湖山派以及失传已久的白猿背剑术，三家圣人之学，兼容并蓄，当然可以位列三甲，我师父由衷称赞过仙子，有无剑背在身后，是两个樊莞尔。 樊莞尔笑道：“殿下谬赞了。 魏衍一手负后，一手手指轻轻敲击腰间玉带，“魔教那个鸦儿，当年她刚刚进入京城，心高气傲，竟敢跑去国师那边，还吃了种国师一拳，能够伤而不死，世人都觉得是她侥幸，但是父皇与我说过，国师曾言，那个小姑娘，武学天资之高，可谓女子中的陆舫。",
+        "background": "",
+        "significance": "推动魏衍与樊莞尔之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 8
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "对话",
+        "context": "说到这里，魏衍瞥了眼女子身后，今夜出行，樊莞尔并没有携带兵器，他笑道：“樊仙子精通镜心亭、湖山派以及失传已久的白猿背剑术，三家圣人之学，兼容并蓄，当然可以位列三甲，我师父由衷称赞过仙子，有无剑背在身后，是两个樊莞尔。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 309,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.514041",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-9-0": {
+    "juan_index": 309,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "“最后一人，应该就是那个来历不明的冯青白了，这十来年，横空出世，他的身世、师门，所有都查不到任何蛛丝马迹，喜好游历四方，不断挑战各路高手宗师，只知道此人进步神速，看他的对手挑选，就会发现他从一个略懂三脚猫的外行，短短十年间，就成长为当世第一流的高手。",
+      "”",
+      "说完这些，魏衍转头问道：“樊仙子，其余七人当中，还有隐藏更深的？",
+      "”",
+      "樊莞尔双手负后，走在一座寂静无人的小桥上，靠近栏杆，一次次拍打着雕刻着上边小石蹲狮的脑袋，摇头道：“就算真有，最少我和镜心亭都不知道。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "说完这些，魏衍转头问道：“樊仙子，其余七人当中，还有隐藏更深的？",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 309,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "樊莞尔双手负后，走在一座寂静无人的小桥上，靠近栏杆，一次次拍打着雕刻着上边小石蹲狮的脑袋，摇头道：“就算真有，最少我和镜心亭都不知道。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏衍",
+          "樊莞尔"
+        ],
+        "description": "说完这些，魏衍转头问道：“樊仙子，其余七人当中，还有隐藏更深的？ 樊莞尔双手负后，走在一座寂静无人的小桥上，靠近栏杆，一次次拍打着雕刻着上边小石蹲狮的脑袋，摇头道：“就算真有，最少我和镜心亭都不知道。 “最后一人，应该就是那个来历不明的冯青白了，这十来年，横空出世，他的身世、师门，所有都查不到任何蛛丝马迹，喜好游历四方，不断挑战各路高手宗师，只知道此人进步神速，看他的对手挑选，就会发现他从一个略懂三脚猫的外行，短短十年间，就成长为当世第一流的高手。",
+        "background": "",
+        "significance": "推动魏衍与樊莞尔之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 9
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "对话",
+        "context": "“最后一人，应该就是那个来历不明的冯青白了，这十来年，横空出世，他的身世、师门，所有都查不到任何蛛丝马迹，喜好游历四方，不断挑战各路高手宗师，只知道此人进步神速，看他的对手挑选，就会发现他从一个略懂三脚猫的外行，短短十年间，就成长为当世第一流的高手。 ” 说完这些，魏衍转头问道：“樊仙子，其余七人当中，还有隐藏更深的？ ” 樊莞尔双手负后，走在一座寂静无人的小桥上，靠近栏杆，一次次拍打着雕刻着上边小石蹲狮的脑袋，摇头道：“就算真有，最少我和镜心亭都不知道。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.514041",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-10-0": {
+    "juan_index": 309,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "魏衍笑容和煦，不曾想樊仙子还有如此俏皮的时候，一时间他便看着那双水润眼眸，有些痴了。",
+      "男子下等眼光，只看女子脸面，中等眼光看那身段，上等眼光看女子神意。",
+      "更何况樊莞尔三者皆有，还是各自世间第一风流。",
+      "如何能够让眼高于顶的南苑国太子殿下，不心动，窈窕淑女，君子好逑，魏衍对她的心仪，无论是言谈还是视线，既不赤裸放肆，却也从来不刻意隐藏得滴水不漏。",
+      "魏衍停下脚步，又加快步子，与她并肩而行，想要伸手牵住她的纤纤素手，可惜没有那份勇气。",
+      "樊莞尔停下脚步，侧过身，举目远眺，眉眼忧愁，缓缓道：“之所以聊起这个，就是想说一件我始终想不明白的怪事。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "魏衍笑容和煦，不曾想樊仙子还有如此俏皮的时候，一时间他便看着那双水润眼眸，有些痴了。 如何能够让眼高于顶的南苑国太子殿下，不心动，窈窕淑女，君子好逑，魏衍对她的心仪，无论是言谈还是视线，既不赤裸放肆，却也从来不刻意隐藏得滴水不漏。",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "更何况樊莞尔三者皆有，还是各自世间第一风流。 樊莞尔停下脚步，侧过身，举目远眺，眉眼忧愁，缓缓道：“之所以聊起这个，就是想说一件我始终想不明白的怪事。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔同行",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏衍",
+          "樊莞尔"
+        ],
+        "description": "魏衍笑容和煦，不曾想樊仙子还有如此俏皮的时候，一时间他便看着那双水润眼眸，有些痴了。 更何况樊莞尔三者皆有，还是各自世间第一风流。 如何能够让眼高于顶的南苑国太子殿下，不心动，窈窕淑女，君子好逑，魏衍对她的心仪，无论是言谈还是视线，既不赤裸放肆，却也从来不刻意隐藏得滴水不漏。",
+        "background": "",
+        "significance": "推动魏衍与樊莞尔之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 10
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "同行",
+        "context": "魏衍笑容和煦，不曾想樊仙子还有如此俏皮的时候，一时间他便看着那双水润眼眸，有些痴了。 男子下等眼光，只看女子脸面，中等眼光看那身段，上等眼光看女子神意。 更何况樊莞尔三者皆有，还是各自世间第一风流。 如何能够让眼高于顶的南苑国太子殿下，不心动，窈窕淑女，君子好逑，魏衍对她的心仪，无论是言谈还是视线，既不赤裸放肆，却也从来不刻意隐藏得滴水不漏。 魏衍停下脚步，又加快步子，与她并肩而行，想要伸手牵住她的纤纤素手，可惜没有那份勇气。 樊莞尔停下脚步，侧过身，举目远眺，眉眼忧愁，缓缓道：“之所以聊起这个，就是想说一件我始终想不明白的怪事。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.514041",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-11-0": {
+    "juan_index": 309,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "”",
+      "魏衍好奇道：“说说看。",
+      "”",
+      "樊莞尔揉了揉眉心，魏衍担忧道：“怎么了，可是那白袍剑客使用了什么阴险手法？",
+      "”",
+      "她笑着摇头，“殿下，你从你师父那边，听说过‘谪仙人’吗？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "魏衍好奇道：“说说看。 樊莞尔揉了揉眉心，魏衍担忧道：“怎么了，可是那白袍剑客使用了什么阴险手法？",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "樊莞尔揉了揉眉心，魏衍担忧道：“怎么了，可是那白袍剑客使用了什么阴险手法？",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔师承",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏衍",
+          "樊莞尔"
+        ],
+        "description": "魏衍好奇道：“说说看。 樊莞尔揉了揉眉心，魏衍担忧道：“怎么了，可是那白袍剑客使用了什么阴险手法？ ”",
+        "background": "",
+        "significance": "推动魏衍与樊莞尔之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 11
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "师承",
+        "context": "” 魏衍好奇道：“说说看。 ” 樊莞尔揉了揉眉心，魏衍担忧道：“怎么了，可是那白袍剑客使用了什么阴险手法？ ” 她笑着摇头，“殿下，你从你师父那边，听说过‘谪仙人’吗？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.514041",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-12-0": {
+    "juan_index": 309,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "”",
+      "魏衍笑道：“我那师父是个江湖莽夫，可不提这个，他老人家最不喜欢文人骚客，总说他们是帮没卵的娘们，年少时跟师父学武，只要聊天的时候，我说得稍稍文绉绉一点，就要挨打。",
+      "所以我就只能从诗篇中，去领略谪仙人的风姿了。",
+      "”",
+      "既然魏衍这边没有线索，樊莞尔就不愿多说此事，转移话题，她眼神深远，喃喃道：“殿下，你何曾有过一种感觉，当我们经历一事，或是走过一地、见过一人后，总觉得有些熟悉？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "魏衍笑道：“我那师父是个江湖莽夫，可不提这个，他老人家最不喜欢文人骚客，总说他们是帮没卵的娘们，年少时跟师父学武，只要聊天的时候，我说得稍稍文绉绉一点，就要挨打。 既然魏衍这边没有线索，樊莞尔就不愿多说此事，转移话题，她眼神深远，喃喃道：“殿下，你何曾有过一种感觉，当我们经历一事，或是走过一地、见过一人后，总觉得有些熟悉？",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "既然魏衍这边没有线索，樊莞尔就不愿多说此事，转移话题，她眼神深远，喃喃道：“殿下，你何曾有过一种感觉，当我们经历一事，或是走过一地、见过一人后，总觉得有些熟悉？",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏衍",
+          "樊莞尔"
+        ],
+        "description": "魏衍笑道：“我那师父是个江湖莽夫，可不提这个，他老人家最不喜欢文人骚客，总说他们是帮没卵的娘们，年少时跟师父学武，只要聊天的时候，我说得稍稍文绉绉一点，就要挨打。 既然魏衍这边没有线索，樊莞尔就不愿多说此事，转移话题，她眼神深远，喃喃道：“殿下，你何曾有过一种感觉，当我们经历一事，或是走过一地、见过一人后，总觉得有些熟悉？ ”",
+        "background": "",
+        "significance": "推动魏衍与樊莞尔之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 12
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "对话",
+        "context": "” 魏衍笑道：“我那师父是个江湖莽夫，可不提这个，他老人家最不喜欢文人骚客，总说他们是帮没卵的娘们，年少时跟师父学武，只要聊天的时候，我说得稍稍文绉绉一点，就要挨打。 所以我就只能从诗篇中，去领略谪仙人的风姿了。 ” 既然魏衍这边没有线索，樊莞尔就不愿多说此事，转移话题，她眼神深远，喃喃道：“殿下，你何曾有过一种感觉，当我们经历一事，或是走过一地、见过一人后，总觉得有些熟悉？ ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.515045",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "309-13-0": {
+    "juan_index": 309,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零八章 杀机四伏",
+    "source_sentences": [
+      "魏衍点点头，“有啊，怎么没有。",
+      "”",
+      "这位太子殿下觉得有趣，笑问道：“难道樊仙子也相信佛家转世一说？",
+      "”",
+      "樊莞尔摇摇头。",
+      "京城外的牯牛山上，今夜站着七八人之多，其中颜色若稚童的湖山派俞真意，神色凝重，远眺夜幕中的京城轮廓。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "魏衍点点头，“有啊，怎么没有。",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 309,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "樊莞尔摇摇头。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 309,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "京城外的牯牛山上，今夜站着七八人之多，其中颜色若稚童的湖山派俞真意，神色凝重，远眺夜幕中的京城轮廓。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "魏衍",
+          "樊莞尔",
+          "俞真意"
+        ],
+        "description": "魏衍点点头，“有啊，怎么没有。 樊莞尔摇摇头。 京城外的牯牛山上，今夜站着七八人之多，其中颜色若稚童的湖山派俞真意，神色凝重，远眺夜幕中的京城轮廓。",
+        "background": "",
+        "significance": "推动魏衍与樊莞尔之间的对话关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零八章 杀机四伏 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.515045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -457,6 +1285,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "满身酒气的邋遢汉子，连佩剑都当给了酒铺妇人，名为陆舫。 陆舫自嘲道：“不会是我吧？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "南苑国国师种秋，是一位不苟言笑的清瘦男子，气质儒雅，很难想象他会是那个天下第一手。",
@@ -467,21 +1309,50 @@
         ],
         "juan_index": 309,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 俞真意与周肥对话",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "俞真意",
+          "周肥"
         ],
-        "description": "南苑国国师种秋，是一位不苟言笑的清瘦男子，气质儒雅，很难想象他会是那个天下第一手。 满身酒气的邋遢汉子，连佩剑都当给了酒铺妇人，名为陆舫。 剩余一人，",
+        "description": "满身酒气的邋遢汉子，连佩剑都当给了酒铺妇人，名为陆舫。 南苑国国师种秋，是一位不苟言笑的清瘦男子，气质儒雅，很难想象他会是那个天下第一手。 俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动俞真意与周肥之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -495,8 +1366,29 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.515469",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "俞真意"
+        ],
+        "to_roles": [
+          "周肥"
+        ],
+        "action": "对话",
+        "context": "俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 俞真意与周肥对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.515045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -529,20 +1421,48 @@
         ],
         "juan_index": 309,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫摊开手，无奈道：“开个玩笑也不行啊？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 309,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "魏衍",
+        "alias": [],
+        "original_description_in_book": "但是无一例外，要么是榜上有名的十大高手之一，要么是魏衍师父那般的武学宗师。",
+        "description": "江湖与朝局交叉线人物，可补足支线冲突与地方秩序网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 种秋与陆舫剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "种秋",
+          "陆舫",
+          "魏衍"
         ],
-        "description": "种秋冷冷瞥了眼他。 ” 陆舫摊开手，无奈道：“开个玩笑也不行啊？",
+        "description": "种秋冷冷瞥了眼他。 陆舫摊开手，无奈道：“开个玩笑也不行啊？ 但是无一例外，要么是榜上有名的十大高手之一，要么是魏衍师父那般的武学宗师。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动种秋与陆舫之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段15",
         "sentence_indexes_in_segment": [
@@ -558,7 +1478,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.515469",
+    "extracted_at": "2026-03-25T17:27:38.515045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -581,6 +1501,33 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意死死盯住京城某个地方，轻声道：“陆舫，你跟你朋友，先解决掉那个最大的意外，至于是联手杀人，还是独自杀人，我都不管，但是只许成功不许失败，三天之内，将那人的头颅带过来，他身上的所有物件，老规矩，杀人者得之。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 309,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "俞真意死死盯住京城某个地方，轻声道：“陆舫，你跟你朋友，先解决掉那个最大的意外，至于是联手杀人，还是独自杀人，我都不管，但是只许成功不许失败，三天之内，将那人的头颅带过来，他身上的所有物件，老规矩，杀人者得之。 陆舫摸了摸后脑勺，叹息一声。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安没有返回宅子，就这么孤魂野鬼似的，独自夜游京城，期间潜入一家书香门第的藏书楼，随手翻阅书籍。",
@@ -596,15 +1543,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陆舫与俞真意剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
+          "俞真意",
           "陈平安"
         ],
-        "description": "陈平安没有返回宅子，就这么孤魂野鬼似的，独自夜游京城，期间潜入一家书香门第的藏书楼，随手翻阅书籍。 今夜的牯牛山，以及接下来的南苑国京城，注定会不谈正邪。 俞真意死死盯住京城某个地方，轻声道：“陆舫，你跟你朋友，先解决掉那个最大的意外，至于是联手杀人，还是独自杀人，我都不管，但是只许成功不许失败，三天之内，将那人的头颅带过来，他身上的所有物件，老规矩，杀人者得之。",
+        "description": "俞真意死死盯住京城某个地方，轻声道：“陆舫，你跟你朋友，先解决掉那个最大的意外，至于是联手杀人，还是独自杀人，我都不管，但是只许成功不许失败，三天之内，将那人的头颅带过来，他身上的所有物件，老规矩，杀人者得之。 陆舫摸了摸后脑勺，叹息一声。 陈平安没有返回宅子，就这么孤魂野鬼似的，独自夜游京城，期间潜入一家书香门第的藏书楼，随手翻阅书籍。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与俞真意之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段16",
         "sentence_indexes_in_segment": [
@@ -620,7 +1569,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "extracted_at": "2026-03-25T17:27:38.515045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -655,6 +1604,20 @@
         ],
         "juan_index": 309,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "陈平安就假装没看到，回了宅院，晚饭是跟孩子一家人在一张饭桌上，按照事先租房子的时候说好的，这户人家为陈平安添双碗筷，每天多收三十文钱，老妪信誓旦旦说，餐餐必有鱼肉，事实上陈平安经常外出，要么早出晚归，错过吃饭的点，要么干脆一段时间没人影儿，老妪高兴得很。 今天桌上没什么油水，老妪笑着抱歉，说陈公子今儿怎么不早点打声招呼，才好准备食材。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 17
       }
     ],
     "locations": [
@@ -682,12 +1645,15 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "老妪"
         ],
         "description": "陈平安在一家铺子买了几本文笔散淡的山水游记，近期肯定不会翻看，只是想着让落魄山多些藏书而已。 等陈平安走回住处的巷弄，刚好那个清秀的小家伙下课归来，两人一起走在巷子里，孩子像是有难言之隐，憋了半天也没好意思说出口。 陈平安就假装没看到，回了宅院，晚饭是跟孩子一家人在一张饭桌上，按照事先租房子的时候说好的，这户人家为陈平安添双碗筷，每天多收三十文钱，老妪信誓旦旦说，餐餐必有鱼肉，事实上陈平安经常外出，要么早出晚归，错过吃饭的点，要么干脆一段时间没人影儿，老妪高兴得很。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -701,8 +1667,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "同行",
+        "context": "在天亮之前，又悄然离去，在京城国子监又旁听那些夫子授课，直到日头高照的正午时分，才走回状元巷那边，有意避开了跟丁姓老人、簪花郎周仕有关的那栋宅子。 状元巷有几间逼仄狭小的书肆，除了卖书，也顺带卖一些称不上案头清供的文房四宝，粗糙简陋，好在价格不高，毕竟这边的买主，都是些进京赶考的穷书生。 陈平安在一家铺子买了几本文笔散淡的山水游记，近期肯定不会翻看，只是想着让落魄山多些藏书而已。 等陈平安走回住处的巷弄，刚好那个清秀的小家伙下课归来，两人一起走在巷子里，孩子像是有难言之隐，憋了半天也没好意思说出口。 陈平安就假装没看到，回了宅院，晚饭是跟孩子一家人在一张饭桌上，按照事先租房子的时候说好的，这户人家为陈平安添双碗筷，每天多收三十文钱，老妪信誓旦旦说，餐餐必有鱼肉，事实上陈平安经常外出，要么早出晚归，错过吃饭的点，要么干脆一段时间没人影儿，老妪高兴得很。 今天桌上没什么油水，老妪笑着抱歉，说陈公子今儿怎么不早点打声招呼，才好准备食材。",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.515045",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -738,20 +1730,34 @@
         ],
         "juan_index": 309,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪便问明儿怎么说，当听到陈平安说明天要外出后，老妪便唉声叹气，埋怨陈公子也太忙碌了些，吃顿家常饭菜都这么难，其实她儿媳妇的厨艺，还是不错的，不敢说多好，肯定下饭。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 309,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安与老妪剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老妪"
         ],
         "description": "陈平安笑着说能吃饱就行了。 老妪便问明儿怎么说，当听到陈平安说明天要外出后，老妪便唉声叹气，埋怨陈公子也太忙碌了些，吃顿家常饭菜都这么难，其实她儿媳妇的厨艺，还是不错的，不敢说多好，肯定下饭。 陈平安吃过了饭，就搬了条小凳，去那孩子爷爷经常跟人下棋的街角，难得是大条青石铺就的街面，世世代代住在这边的人，在那边看着人来人往，与街坊邻居聊着家长里短，很能解闷，若是见着了有富家子弟骑马疾驰而过，或是某位小有名气的青楼女子姗姗走过，都能让一整条街亮堂起来。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老妪之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段18",
         "sentence_indexes_in_segment": [
@@ -767,7 +1773,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "extracted_at": "2026-03-25T17:27:38.516048",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -830,7 +1836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "extracted_at": "2026-03-25T17:27:38.516048",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -864,21 +1870,37 @@
         ],
         "juan_index": 309,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "陈平安愣了一下，本以为是那个言语刻薄的老妪，经常去他房间“串门”，翻翻捡捡，不曾想是那个看着很老实的孩子他娘亲。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 309,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安迁移",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安与老妪迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老妪"
         ],
         "description": "孩子坐在矮矮的板凳上，双手紧握拳头，放在膝盖上，不敢看陈平安，“我娘经常趁着陈公子不在家，就去翻陈公子的东西。 陈平安愣了一下，本以为是那个言语刻薄的老妪，经常去他房间“串门”，翻翻捡捡，不曾想是那个看着很老实的孩子他娘亲。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老妪之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -892,8 +1914,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "别离",
+        "context": "” 孩子坐在矮矮的板凳上，双手紧握拳头，放在膝盖上，不敢看陈平安，“我娘经常趁着陈公子不在家，就去翻陈公子的东西。 ” 陈平安愣了一下，本以为是那个言语刻薄的老妪，经常去他房间“串门”，翻翻捡捡，不曾想是那个看着很老实的孩子他娘亲。 孩子心情愈发沉重，“后来陈公子离开久了，娘亲就偷拿了陈公子放在桌上的书籍给我，我一个忍不住，就翻书偷看了，我知道这样不好。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安与老妪迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.516048",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -957,7 +2005,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "extracted_at": "2026-03-25T17:27:38.516048",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1033,7 +2081,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "extracted_at": "2026-03-25T17:27:38.516048",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1109,7 +2157,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.516473",
+    "extracted_at": "2026-03-25T17:27:38.516048",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1172,7 +2220,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.517052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1235,7 +2283,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.517052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1298,7 +2346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.517052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1363,7 +2411,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.517052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1426,7 +2474,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.517052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1488,7 +2536,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.517052",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1551,7 +2599,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.518056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1614,7 +2662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.518056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1676,7 +2724,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.517476",
+    "extracted_at": "2026-03-25T17:27:38.518056",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

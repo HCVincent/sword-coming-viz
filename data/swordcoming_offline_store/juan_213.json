@@ -41,6 +41,19 @@
         ],
         "juan_index": 213,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "陈平安从秋实嘴里得到结果后，大吃一惊，先前两场大战，风雷园竟然都输了，一位祖师和一位辈分居中的著名剑修，先后死在了正阳山对手的剑下，第二场祖师大战，其实是同归于尽，但因为正阳山老祖拼着最后一口气，比风雷园剑修更晚咽下，风雪庙按照规矩判定正阳山获胜。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 213,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -52,7 +65,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "sentence_indexes_in_segment": [
           2,
@@ -70,7 +84,8 @@
         "coordinates": null,
         "related_entities": [
           "魏晋",
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "sentence_indexes_in_segment": [
           2,
@@ -103,14 +118,13 @@
         "location": "正阳山",
         "participants": [
           "陈平安",
-          "魏晋"
+          "魏晋",
+          "秋实"
         ],
         "description": "当陈平安走下高楼，返回座位的时候，竟然已经错过了两场大战。 隔壁椅子上的道士张山见到了陈平安，连忙起身拱手道谢，陈平安只得抱拳还礼，接过了玉牌。 这场公开的死敌之战，公平起见，战场没有设置在风雷园或者正阳山，而是风雪庙六脉之一的神仙台，风雪庙作为兵家圣地，相较于真武山，更加交友广泛，加上行事风格远比真武山低调，宗门弟子下山，多游侠而非沙场武将，所以与两家关系都不错，不会偏袒任何一方。",
         "background": "",
         "significance": "在正阳山推动陈平安与魏晋之间的揭示线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -124,34 +138,8 @@
         "segment_index": 1
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "魏晋"
-        ],
-        "action": "师承",
-        "context": "当陈平安走下高楼，返回座位的时候，竟然已经错过了两场大战。 隔壁椅子上的道士张山见到了陈平安，连忙起身拱手道谢，陈平安只得抱拳还礼，接过了玉牌。 这场公开的死敌之战，公平起见，战场没有设置在风雷园或者正阳山，而是风雪庙六脉之一的神仙台，风雪庙作为兵家圣地，相较于真武山，更加交友广泛，加上行事风格远比真武山低调，宗门弟子下山，多游侠而非沙场武将，所以与两家关系都不错，不会偏袒任何一方。 至于风雪庙为何选择神仙台，一来是神仙台位于高峰之巅，视野开阔，风景宜人，仅就观感而言，是风雪庙仙气最盛的一处风水宝地，二来神仙台弟子稀少，香火凋零，几乎只靠着魏晋一人支撑，而魏晋因为恩师的关系，又对宗门并不亲近，想必风雪庙也有借此机会，希冀着为神仙台增加香火。 陈平安从秋实嘴里得到结果后，大吃一惊，先前两场大战，风雷园竟然都输了，一位祖师和一位辈分居中的著名剑修，先后死在了正阳山对手的剑下，第二场祖师大战，其实是同归于尽，但因为正阳山老祖拼着最后一口气，比风雷园剑修更晚咽下，风雪庙按照规矩判定正阳山获胜。 占地广袤的神仙台上，并没有出现人头攒动的景象，数量稀少的建筑密集拥簇在东北角，只有身份地位和修为实力兼备的宝瓶洲练气士，才有资格登楼观战，其余修士，只能在风雪庙别处山峰远观。",
-        "result": null,
-        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安与魏晋在正阳山揭示",
-        "location": "正阳山",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 213,
-        "segment_index": 1
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.084383",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.976456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -466,7 +454,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "extracted_at": "2026-03-25T17:27:37.976456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -545,7 +533,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "extracted_at": "2026-03-25T17:27:37.976456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -568,6 +556,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "婢女秋实有些担心，觉得最后一场多半是打不成了，那个叫风雷园的门派，已经输掉两场，好歹第二场风雷园的老祖，只是差了一口气，好歹挽回些许颜面，若是第三场再输，那就是连输三场，传出去风雷园的名声就算彻底毁了。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 213,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安想起那个一同入山寻找楷树的剑修刘灞桥，突然说道：“第三场，风雷园一定会打。 刘灞桥对陈平安来说，不是朋友也不是敌人，在那拨外来神仙当中，留给陈平安很深的印象。",
@@ -580,21 +581,39 @@
         ],
         "juan_index": 213,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "陈平安想起那个一同入山寻找楷树的剑修刘灞桥，突然说道：“第三场，风雷园一定会打。 刘灞桥对陈平安来说，不是朋友也不是敌人，在那拨外来神仙当中，留给陈平安很深的印象。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安对话",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安与刘灞桥对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
-        "description": "陈平安想起那个一同入山寻找楷树的剑修刘灞桥，突然说道：“第三场，风雷园一定会打。 刘灞桥对陈平安来说，不是朋友也不是敌人，在那拨外来神仙当中，留给陈平安很深的印象。 陈平安单纯觉得能够教出刘灞桥的宗门，不会就这么退缩。",
+        "description": "婢女秋实有些担心，觉得最后一场多半是打不成了，那个叫风雷园的门派，已经输掉两场，好歹第二场风雷园的老祖，只是差了一口气，好歹挽回些许颜面，若是第三场再输，那就是连输三场，传出去风雷园的名声就算彻底毁了。 陈平安想起那个一同入山寻找楷树的剑修刘灞桥，突然说道：“第三场，风雷园一定会打。 刘灞桥对陈平安来说，不是朋友也不是敌人，在那拨外来神仙当中，留给陈平安很深的印象。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与刘灞桥之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -608,8 +627,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "对话",
+        "context": "陈平安想起那个一同入山寻找楷树的剑修刘灞桥，突然说道：“第三场，风雷园一定会打。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安与刘灞桥对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 213,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.977459",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -746,7 +786,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "extracted_at": "2026-03-25T17:27:37.977459",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -779,6 +819,32 @@
         ],
         "juan_index": 213,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "陈平安死死盯住那个白衣老人，片刻之后，转移视线，另外一栋高楼，是神仙台留给风雷园的观景点，从上到下，所站剑修数量稀少，比起正阳山中五境剑修的倾巢出动，风雷园这趟随行之人，屈指可数，而且多是容貌年轻的晚辈，例如吊儿郎当坐在栏杆上的刘灞桥，坐姿不雅，但是两战皆输后，刘灞桥神色凝重。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 213,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "秋实笑道：“先前两场的比剑，都是奔着打死对手去的，这一场架不用分胜负，而且无关大局，我估计会打得你来我往，不会再像先前那么血腥了。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -790,7 +856,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -802,15 +869,17 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安在正阳山对话",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安与刘灞桥在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥",
+          "秋实"
         ],
-        "description": "老者位置居中偏右，栏杆之后的这一层，俱是正阳山的祖师爷，男女皆有，一个个器宇不凡，剑气汇聚，如江河入海，气冲斗牛。 陈平安死死盯住那个白衣老人，片刻之后，转移视线，另外一栋高楼，是神仙台留给风雷园的观景点，从上到下，所站剑修数量稀少，比起正阳山中五境剑修的倾巢出动，风雷园这趟随行之人，屈指可数，而且多是容貌年轻的晚辈，例如吊儿郎当坐在栏杆上的刘灞桥，坐姿不雅，但是两战皆输后，刘灞桥神色凝重。 一栋高楼的顶楼廊道中，一位白衣魁梧老者，双臂环胸，正在俯瞰神仙台广场，有相貌精致的女童骑在老人头上。",
+        "description": "老者位置居中偏右，栏杆之后的这一层，俱是正阳山的祖师爷，男女皆有，一个个器宇不凡，剑气汇聚，如江河入海，气冲斗牛。 陈平安死死盯住那个白衣老人，片刻之后，转移视线，另外一栋高楼，是神仙台留给风雷园的观景点，从上到下，所站剑修数量稀少，比起正阳山中五境剑修的倾巢出动，风雷园这趟随行之人，屈指可数，而且多是容貌年轻的晚辈，例如吊儿郎当坐在栏杆上的刘灞桥，坐姿不雅，但是两战皆输后，刘灞桥神色凝重。 秋实笑道：“先前两场的比剑，都是奔着打死对手去的，这一场架不用分胜负，而且无关大局，我估计会打得你来我往，不会再像先前那么血腥了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "在正阳山推动陈平安与刘灞桥之间的对话线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段6",
         "sentence_indexes_in_segment": [
@@ -826,7 +895,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "extracted_at": "2026-03-25T17:27:37.977459",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -922,7 +991,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "extracted_at": "2026-03-25T17:27:37.977459",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1001,7 +1070,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.085385",
+    "extracted_at": "2026-03-25T17:27:37.978463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1022,6 +1091,19 @@
       "公然示威挑衅之后，年轻人收回本命飞剑，往那座高楼朗声道：“六十年后，我黄河会登顶正阳山试剑，再摘走一颗头颅放于风雷园。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "宝瓶洲真正让人服众的仙子，其实数量不多，神诰宗玉女贺小凉是当之无愧的第一人，之后就是苏稼与三四人并称于宝瓶洲，是无数年轻练气士心目中的神女，爱慕已久。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 213,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "苏稼",
@@ -1047,6 +1129,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "贺小凉",
           "苏稼"
         ],
         "sentence_indexes_in_segment": [
@@ -1076,16 +1159,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 苏稼在宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 贺小凉与苏稼在宝瓶洲师承",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "贺小凉",
           "苏稼"
         ],
         "description": "宝瓶洲真正让人服众的仙子，其实数量不多，神诰宗玉女贺小凉是当之无愧的第一人，之后就是苏稼与三四人并称于宝瓶洲，是无数年轻练气士心目中的神女，爱慕已久。 甚至有人戏言，在苏稼成名之后，正阳山每十年收取的弟子数目，比起先前多了三成之多。 剑修黄河站在苏稼身旁，抬起一只脚，踩在那只品相极佳的养剑葫之上，脚底板轻轻捻动。",
         "background": "",
-        "significance": "对应苏稼在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动贺小凉与苏稼之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -1099,8 +1185,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.086389",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
+          "苏稼"
+        ],
+        "action": "师承",
+        "context": "宝瓶洲真正让人服众的仙子，其实数量不多，神诰宗玉女贺小凉是当之无愧的第一人，之后就是苏稼与三四人并称于宝瓶洲，是无数年轻练气士心目中的神女，爱慕已久。 甚至有人戏言，在苏稼成名之后，正阳山每十年收取的弟子数目，比起先前多了三成之多。 剑修黄河站在苏稼身旁，抬起一只脚，踩在那只品相极佳的养剑葫之上，脚底板轻轻捻动。 这位风雷园年轻剑修，嘴角扯起一个弧度，环顾四周，最后转头望向正阳山祖师爷并排而立的那栋高楼。 从他眉心处，掠出一柄漆黑如墨的本命飞剑，嗡嗡作响，当这把飞剑颤鸣之后，整座神仙台周边的云海山风，从云淡风轻变得无比絮乱。 公然示威挑衅之后，年轻人收回本命飞剑，往那座高楼朗声道：“六十年后，我黄河会登顶正阳山试剑，再摘走一颗头颅放于风雷园。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 贺小凉与苏稼在宝瓶洲师承",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.978463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1120,7 +1232,21 @@
       "在这个剑修走出大门后，不单单是白发祖师爷，正阳山那栋高楼上下，皆为之愕然，震撼之余，还夹杂有一丝不愿承认的绝望。",
       "此人正是风雷园园主李抟景，惊才绝艳，四十岁的时候就跻身十境，但是之后漫长的数百年岁月当中，一直不曾破境，匪夷所思，但是哪怕没有跻身上五境，李抟景是公认东宝瓶洲最强的十境剑修，没有之一！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "此人正是风雷园园主李抟景，惊才绝艳，四十岁的时候就跻身十境，但是之后漫长的数百年岁月当中，一直不曾破境，匪夷所思，但是哪怕没有跻身上五境，李抟景是公认东宝瓶洲最强的十境剑修，没有之一！",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 10
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -1145,7 +1271,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李抟景"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1155,13 +1283,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 正阳山剧情推进",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景在正阳山剧情推进",
         "time": null,
         "location": "正阳山",
-        "participants": [],
+        "participants": [
+          "李抟景"
+        ],
         "description": "顶楼一位白发苍苍的正阳山祖师，须发张扬，怒目相向，忍不住就要下去捶死这个口出狂言的小王八蛋。 风雷园剑修所在的高楼顶层，突然大门打开，走出一位容貌俊美的黑衣剑修，笑望向那位蠢蠢欲动的正阳山祖师，“周鹤，倚老卖老，很不好，不然我来陪你玩玩？ 在这个剑修走出大门后，不单单是白发祖师爷，正阳山那栋高楼上下，皆为之愕然，震撼之余，还夹杂有一丝不愿承认的绝望。",
         "background": "",
-        "significance": "对应正阳山相关的关键剧情推进场景。",
+        "significance": "对应李抟景在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段10",
         "sentence_indexes_in_segment": [
@@ -1177,7 +1307,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.086389",
+    "extracted_at": "2026-03-25T17:27:37.978463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1210,6 +1340,20 @@
         ],
         "juan_index": 213,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "不是说好了李抟景兵解身亡了吗？ 李抟景不再理睬那些惊疑不定的正阳山老祖，抬起头，像是在微笑望着所有观看此战的幕后人，他一手负后，一手双指并拢，轻轻一旋，一缕清风萦绕之间，手腕一抖，李抟景微笑着说出一个字：“斩。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 213,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -1220,7 +1364,9 @@
         "description": "山上势力的重要代表之一，和小镇线、龙泉线多有纠葛。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李抟景"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1244,16 +1390,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 魏晋在正阳山迁移",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 魏晋与李抟景在正阳山迁移",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "魏晋"
+          "魏晋",
+          "李抟景"
         ],
-        "description": "魏晋在破境跻身十一境陆地剑仙之前，一样自认无法匹敌此人。 李抟景不再理睬那些惊疑不定的正阳山老祖，抬起头，像是在微笑望着所有观看此战的幕后人，他一手负后，一手双指并拢，轻轻一旋，一缕清风萦绕之间，手腕一抖，李抟景微笑着说出一个字：“斩。 那一缕清风离开黑衣剑修之后，瞬间化作一道气势磅礴的巨大剑气，在神仙台上空，旋转一圈，当场斩断了风雪庙神仙台与外界的联系。",
+        "description": "魏晋在破境跻身十一境陆地剑仙之前，一样自认无法匹敌此人。 不是说好了李抟景兵解身亡了吗？ 李抟景不再理睬那些惊疑不定的正阳山老祖，抬起头，像是在微笑望着所有观看此战的幕后人，他一手负后，一手双指并拢，轻轻一旋，一缕清风萦绕之间，手腕一抖，李抟景微笑着说出一个字：“斩。",
         "background": "",
-        "significance": "对应魏晋在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动魏晋与李抟景之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -1267,8 +1416,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.086389",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏晋"
+        ],
+        "to_roles": [
+          "李抟景"
+        ],
+        "action": "别离",
+        "context": "魏晋在破境跻身十一境陆地剑仙之前，一样自认无法匹敌此人。 不是说好了李抟景兵解身亡了吗？ 李抟景不再理睬那些惊疑不定的正阳山老祖，抬起头，像是在微笑望着所有观看此战的幕后人，他一手负后，一手双指并拢，轻轻一旋，一缕清风萦绕之间，手腕一抖，李抟景微笑着说出一个字：“斩。 ” 那一缕清风离开黑衣剑修之后，瞬间化作一道气势磅礴的巨大剑气，在神仙台上空，旋转一圈，当场斩断了风雪庙神仙台与外界的联系。 画卷中人，目瞪口呆。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 魏晋与李抟景在正阳山迁移",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.978463",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1289,6 +1464,20 @@
       "比如最年轻的九境纯粹武夫，大骊藩王宋长镜，在京城围剿一战当中，已经展露出传说中十境武夫的实力。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "画卷内，神仙台，高楼上，李抟景既没有找谁的麻烦，也没有撂下狠话，就那么站着怔怔出神，眺望远方恢复舒卷姿态的云海。 李抟景作为最强十境剑修，杀力之大，有目共睹。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 213,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "宋长镜",
@@ -1339,15 +1528,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 宋长镜在风雪庙剧情推进",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与宋长镜在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "李抟景",
           "宋长镜"
         ],
-        "description": "这让风雪庙如释重负。 比如最年轻的九境纯粹武夫，大骊藩王宋长镜，在京城围剿一战当中，已经展露出传说中十境武夫的实力。 画卷之外，面面相觑。",
+        "description": "画卷内，神仙台，高楼上，李抟景既没有找谁的麻烦，也没有撂下狠话，就那么站着怔怔出神，眺望远方恢复舒卷姿态的云海。 这让风雪庙如释重负。 李抟景作为最强十境剑修，杀力之大，有目共睹。",
         "background": "",
-        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
+        "significance": "在风雪庙推动李抟景与宋长镜之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段12",
         "sentence_indexes_in_segment": [
@@ -1363,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.087392",
+    "extracted_at": "2026-03-25T17:27:37.979467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1384,6 +1574,20 @@
       "你看看。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "打破李抟景的记录，成为最年轻的十境剑修，魏晋，如今已是上五境神仙，高高在上。 李抟景双手负后，面带笑意。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 213,
+        "segment_index": 13
+      },
       {
         "entity_type": "person",
         "name": "魏晋",
@@ -1446,16 +1650,17 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 魏晋与苏稼在风雪庙剧情推进",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与魏晋在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "李抟景",
           "魏晋",
           "苏稼"
         ],
         "description": "打破李抟景的记录，成为最年轻的十境剑修，魏晋，如今已是上五境神仙，高高在上。 背负剑匣的风雪庙黄河缓缓返回高楼。 正阳山那边则开始让人赶紧营救苏稼。",
         "background": "",
-        "significance": "在风雪庙推动魏晋与苏稼之间的剧情推进线。",
+        "significance": "在风雪庙推动李抟景与魏晋之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段13",
         "sentence_indexes_in_segment": [
@@ -1471,7 +1676,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.087392",
+    "extracted_at": "2026-03-25T17:27:37.979467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1491,7 +1696,22 @@
       "李抟景收回思绪，转身走向下楼的楼梯，手掌轻轻拍遍栏杆。",
       "李抟景走到下一楼，来到一位年轻人身旁。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景收回思绪，转身走向下楼的楼梯，手掌轻轻拍遍栏杆。 李抟景走到下一楼，来到一位年轻人身旁。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 14
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -1510,13 +1730,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 正阳山剧情推进",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景在正阳山剧情推进",
         "time": null,
         "location": "正阳山",
-        "participants": [],
-        "description": "三百年前，你负我一人真心，我便教你们整个正阳山，整整三百年抬不起头来。 你害得那些个侥幸成为剑仙的山门晚辈，都没有脸皮召开庆典，只能躲在山顶云海里，唉声叹气。 哪怕我如今要死了，又如何？",
+        "participants": [
+          "李抟景"
+        ],
+        "description": "三百年前，你负我一人真心，我便教你们整个正阳山，整整三百年抬不起头来。 李抟景收回思绪，转身走向下楼的楼梯，手掌轻轻拍遍栏杆。 李抟景走到下一楼，来到一位年轻人身旁。",
         "background": "",
-        "significance": "对应正阳山相关的关键剧情推进场景。",
+        "significance": "对应李抟景在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段14",
         "sentence_indexes_in_segment": [
@@ -1532,7 +1754,114 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.087392",
+    "extracted_at": "2026-03-25T17:27:37.979467",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "213-15-0": {
+    "juan_index": 213,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百一十三章 憧憬",
+    "source_sentences": [
+      "好不容易等到了大战落幕的刘灞桥，嘴唇颤抖。",
+      "李抟景笑道：“灞桥，看到心爱女子受辱，眼睁睁看着她剑心崩溃，因为敌对阵营无法出手相救，又感同身受，情难自禁，是不是很难受？",
+      "”",
+      "刘灞桥猛然回神，就要跳下栏杆，却被李抟景伸手拦下，“坐着便是。",
+      "”",
+      "刘灞桥愧疚道：“园主……”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "好不容易等到了大战落幕的刘灞桥，嘴唇颤抖。 刘灞桥猛然回神，就要跳下栏杆，却被李抟景伸手拦下，“坐着便是。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景笑道：“灞桥，看到心爱女子受辱，眼睁睁看着她剑心崩溃，因为敌对阵营无法出手相救，又感同身受，情难自禁，是不是很难受？ 刘灞桥猛然回神，就要跳下栏杆，却被李抟景伸手拦下，“坐着便是。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 213,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 刘灞桥与李抟景对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘灞桥",
+          "李抟景"
+        ],
+        "description": "好不容易等到了大战落幕的刘灞桥，嘴唇颤抖。 李抟景笑道：“灞桥，看到心爱女子受辱，眼睁睁看着她剑心崩溃，因为敌对阵营无法出手相救，又感同身受，情难自禁，是不是很难受？ 刘灞桥猛然回神，就要跳下栏杆，却被李抟景伸手拦下，“坐着便是。",
+        "background": "",
+        "significance": "推动刘灞桥与李抟景之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第两百一十三章 憧憬 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 15
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘灞桥"
+        ],
+        "to_roles": [
+          "李抟景"
+        ],
+        "action": "对话",
+        "context": "好不容易等到了大战落幕的刘灞桥，嘴唇颤抖。 李抟景笑道：“灞桥，看到心爱女子受辱，眼睁睁看着她剑心崩溃，因为敌对阵营无法出手相救，又感同身受，情难自禁，是不是很难受？ ” 刘灞桥猛然回神，就要跳下栏杆，却被李抟景伸手拦下，“坐着便是。 ” 刘灞桥愧疚道：“园主……”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 刘灞桥与李抟景对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.980470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1553,6 +1882,33 @@
       "灞桥，我只想知道，你还会喜欢她吗？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景微笑道：“没事没事，喜欢上一个最不该喜欢的女子而已，不算什么，天塌不下来。 李抟景问道：“苏稼从此沉沦，估计养剑葫都要被正阳山收走，剑心一毁，这位本来让你们这些娃儿自惭形秽的仙子，整个人的精神气就算垮掉了，以后可就不是什么仙子喽，说不定连正阳山的记名女修都不如。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 213,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥不知如何作答，既不愿说违心欺人的言语，又觉得愧对宗门愧对园主。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 213,
+        "segment_index": 16
+      },
       {
         "entity_type": "person",
         "name": "苏稼",
@@ -1576,6 +1932,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "李抟景",
           "苏稼"
         ],
         "sentence_indexes_in_segment": [
@@ -1587,16 +1944,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 苏稼在正阳山对话",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与苏稼在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
+          "李抟景",
           "苏稼"
         ],
-        "description": "李抟景问道：“苏稼从此沉沦，估计养剑葫都要被正阳山收走，剑心一毁，这位本来让你们这些娃儿自惭形秽的仙子，整个人的精神气就算垮掉了，以后可就不是什么仙子喽，说不定连正阳山的记名女修都不如。 李抟景微笑道：“没事没事，喜欢上一个最不该喜欢的女子而已，不算什么，天塌不下来。 更不用为此愧疚。",
+        "description": "李抟景微笑道：“没事没事，喜欢上一个最不该喜欢的女子而已，不算什么，天塌不下来。 刘灞桥不知如何作答，既不愿说违心欺人的言语，又觉得愧对宗门愧对园主。 李抟景问道：“苏稼从此沉沦，估计养剑葫都要被正阳山收走，剑心一毁，这位本来让你们这些娃儿自惭形秽的仙子，整个人的精神气就算垮掉了，以后可就不是什么仙子喽，说不定连正阳山的记名女修都不如。",
         "background": "",
-        "significance": "对应苏稼在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动李抟景与苏稼之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1610,8 +1970,167 @@
         "segment_index": 16
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李抟景"
+        ],
+        "to_roles": [
+          "苏稼"
+        ],
+        "action": "对话",
+        "context": "李抟景问道：“苏稼从此沉沦，估计养剑葫都要被正阳山收走，剑心一毁，这位本来让你们这些娃儿自惭形秽的仙子，整个人的精神气就算垮掉了，以后可就不是什么仙子喽，说不定连正阳山的记名女修都不如。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与苏稼在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 213,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.980470",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "213-17-0": {
+    "juan_index": 213,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百一十三章 憧憬",
+    "source_sentences": [
+      "”",
+      "刘灞桥呜咽道：“这辈子都喜欢。",
+      "园主，我是不是很没有出息？",
+      "”",
+      "李抟景感慨道：“傻小子，很好啊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥呜咽道：“这辈子都喜欢。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 213,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景感慨道：“傻小子，很好啊。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 213,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 刘灞桥与李抟景剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘灞桥",
+          "李抟景"
+        ],
+        "description": "刘灞桥呜咽道：“这辈子都喜欢。 李抟景感慨道：“傻小子，很好啊。 ”",
+        "background": "",
+        "significance": "推动刘灞桥与李抟景之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百一十三章 憧憬 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 17
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.087392",
+    "extracted_at": "2026-03-25T17:27:37.980470",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "213-18-0": {
+    "juan_index": 213,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百一十三章 憧憬",
+    "source_sentences": [
+      "“那就这么一直喜欢下去吧。",
+      "但是别耽误了练剑啊。",
+      "要知道你一直是我很看好的人，不比黄河差。",
+      "以前不跟你说这些，是说了没用，之所以现在可以讲了，也是因为没有以后机会了。",
+      "”",
+      "刘灞桥转过头，“园主？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥转过头，“园主？",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 刘灞桥剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘灞桥"
+        ],
+        "description": "刘灞桥转过头，“园主？ “那就这么一直喜欢下去吧。 但是别耽误了练剑啊。",
+        "background": "",
+        "significance": "对应刘灞桥在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百一十三章 憧憬 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.980470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1631,7 +2150,34 @@
       "刘灞桥再没有脸皮和胆子坐在栏杆上，站在廊道中，肃容道：“剑修当然以剑说道理。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景突然问道：“好好练剑，以后争取将我的尸骨，与那具尸骨葬在一起。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 213,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥再没有脸皮和胆子坐在栏杆上，站在廊道中，肃容道：“剑修当然以剑说道理。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 213,
+        "segment_index": 19
+      }
+    ],
     "locations": [
       {
         "name": "正阳山",
@@ -1650,14 +2196,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 正阳山对话",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与刘灞桥在正阳山对话",
         "time": null,
         "location": "正阳山",
-        "participants": [],
-        "description": "灞桥，若是风水轮流转，正阳山那个时候如日中天，压得咱们风雷园一个个夹着尾巴做人，你应该如何做？ ” 李抟景突然问道：“好好练剑，以后争取将我的尸骨，与那具尸骨葬在一起。",
+        "participants": [
+          "李抟景",
+          "刘灞桥"
+        ],
+        "description": "李抟景突然问道：“好好练剑，以后争取将我的尸骨，与那具尸骨葬在一起。 灞桥，若是风水轮流转，正阳山那个时候如日中天，压得咱们风雷园一个个夹着尾巴做人，你应该如何做？ 刘灞桥再没有脸皮和胆子坐在栏杆上，站在廊道中，肃容道：“剑修当然以剑说道理。",
         "background": "",
-        "significance": "对应正阳山相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在正阳山推动李抟景与刘灞桥之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1671,8 +2222,97 @@
         "segment_index": 19
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李抟景"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "对话",
+        "context": "” 李抟景突然问道：“好好练剑，以后争取将我的尸骨，与那具尸骨葬在一起。 灞桥，若是风水轮流转，正阳山那个时候如日中天，压得咱们风雷园一个个夹着尾巴做人，你应该如何做？ ” 刘灞桥再没有脸皮和胆子坐在栏杆上，站在廊道中，肃容道：“剑修当然以剑说道理。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与刘灞桥在正阳山对话",
+        "location": "正阳山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.980470",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "213-20-0": {
+    "juan_index": 213,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百一十三章 憧憬",
+    "source_sentences": [
+      "李抟景打趣道：“呦，像极了年轻时候的我。",
+      "”",
+      "随后李抟景眺望远方，呵呵笑道：“记住，男女之间，这套行不通，以后可莫要觉得自己剑术高，便事事如此。",
+      "与心爱女子说话，还是要……”",
+      "“要温柔啊，还是需要说一些情话的。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景打趣道：“呦，像极了年轻时候的我。 随后李抟景眺望远方，呵呵笑道：“记住，男女之间，这套行不通，以后可莫要觉得自己剑术高，便事事如此。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 213,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李抟景"
+        ],
+        "description": "李抟景打趣道：“呦，像极了年轻时候的我。 随后李抟景眺望远方，呵呵笑道：“记住，男女之间，这套行不通，以后可莫要觉得自己剑术高，便事事如此。 ”",
+        "background": "",
+        "significance": "对应李抟景在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百一十三章 憧憬 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 20
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.087392",
+    "extracted_at": "2026-03-25T17:27:37.980470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1692,7 +2332,34 @@
       "”",
       "刘灞桥嬉皮笑脸道：“这感情好，能者多劳，不用我挑担子。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景转过头，望向从楼梯口缓缓走来的闭关弟子，黄河。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 213,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "刘灞桥嬉皮笑脸道：“这感情好，能者多劳，不用我挑担子。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -1711,14 +2378,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 宝瓶洲对话",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与刘灞桥在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "望向两位年轻人，这位宝瓶洲最强十境练气士，洒然笑道：“我死之后，以后风雷园，就交由你们两个去扛起大梁了。 李抟景转过头，望向从楼梯口缓缓走来的闭关弟子，黄河。 ”",
+        "participants": [
+          "李抟景",
+          "刘灞桥"
+        ],
+        "description": "李抟景转过头，望向从楼梯口缓缓走来的闭关弟子，黄河。 望向两位年轻人，这位宝瓶洲最强十境练气士，洒然笑道：“我死之后，以后风雷园，就交由你们两个去扛起大梁了。 刘灞桥嬉皮笑脸道：“这感情好，能者多劳，不用我挑担子。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动李抟景与刘灞桥之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1732,8 +2404,111 @@
         "segment_index": 21
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李抟景"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "师承",
+        "context": "李抟景转过头，望向从楼梯口缓缓走来的闭关弟子，黄河。 望向两位年轻人，这位宝瓶洲最强十境练气士，洒然笑道：“我死之后，以后风雷园，就交由你们两个去扛起大梁了。 ” 黄河脸色冷漠，“师父，我一人足矣。 ” 刘灞桥嬉皮笑脸道：“这感情好，能者多劳，不用我挑担子。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与刘灞桥在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.981473",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "213-22-0": {
+    "juan_index": 213,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第两百一十三章 憧憬",
+    "source_sentences": [
+      "”",
+      "李抟景开怀大笑，伸手指向黄河，“剑修之杀力无穷，名动天下，归你。",
+      "”",
+      "然后手指转向刘灞桥，“剑修之潇洒绝伦，醇酒美人，归你。",
+      "”",
+      "李抟景最后悠然自得道：“总之，都归我们风雷园。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "李抟景开怀大笑，伸手指向黄河，“剑修之杀力无穷，名动天下，归你。 李抟景最后悠然自得道：“总之，都归我们风雷园。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "然后手指转向刘灞桥，“剑修之潇洒绝伦，醇酒美人，归你。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 213,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 李抟景与刘灞桥剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "李抟景",
+          "刘灞桥"
+        ],
+        "description": "李抟景开怀大笑，伸手指向黄河，“剑修之杀力无穷，名动天下，归你。 然后手指转向刘灞桥，“剑修之潇洒绝伦，醇酒美人，归你。 李抟景最后悠然自得道：“总之，都归我们风雷园。",
+        "background": "",
+        "significance": "推动李抟景与刘灞桥之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第两百一十三章 憧憬 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 213,
+        "segment_index": 22
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.087392",
+    "extracted_at": "2026-03-25T17:27:37.981473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1794,7 +2569,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.088396",
+    "extracted_at": "2026-03-25T17:27:37.981473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1871,7 +2646,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.088396",
+    "extracted_at": "2026-03-25T17:27:37.981473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1949,7 +2724,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.088396",
+    "extracted_at": "2026-03-25T17:27:37.981473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2011,7 +2786,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.088396",
+    "extracted_at": "2026-03-25T17:27:37.982477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2073,7 +2848,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.089399",
+    "extracted_at": "2026-03-25T17:27:37.982477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2106,6 +2881,19 @@
         ],
         "juan_index": 213,
         "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "好在这段时日的闲聊，经过春水秋实的讲解之后，也清楚在这艘跨越三洲的鲲船之上，遇到什么神仙都不用太奇怪。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 213,
+        "segment_index": 36
       }
     ],
     "locations": [
@@ -2126,15 +2914,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安在宝瓶洲立势",
+        "name": "第三卷金错刀 第两百一十三章 憧憬 · 陈平安与秋实在宝瓶洲立势",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
-        "description": "虽然陈平安不知道那些俱芦洲山顶处的机密内幕，何况他们都用俱芦洲雅言对话，陈平安根本听不懂，但这是一场风雨欲来的神仙打架，毋庸置疑。 至于鲲船底下，那座宝瓶洲的市井江湖，其实没这么多惊世骇俗的存在，不但是小小的东宝瓶洲是如此，哪怕是地大物博、江湖剑客多如牛毛的俱芦洲，也一样。 而且比起势力庞大的斛律家族，那柄“电掣”的上任主人，属于势单力不薄，战力极其强横无匹。",
+        "description": "虽然陈平安不知道那些俱芦洲山顶处的机密内幕，何况他们都用俱芦洲雅言对话，陈平安根本听不懂，但这是一场风雨欲来的神仙打架，毋庸置疑。 好在这段时日的闲聊，经过春水秋实的讲解之后，也清楚在这艘跨越三洲的鲲船之上，遇到什么神仙都不用太奇怪。 至于鲲船底下，那座宝瓶洲的市井江湖，其实没这么多惊世骇俗的存在，不但是小小的东宝瓶洲是如此，哪怕是地大物博、江湖剑客多如牛毛的俱芦洲，也一样。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键立势节点。",
+        "significance": "在宝瓶洲推动陈平安与秋实之间的立势线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十三章 憧憬 · 段36",
         "sentence_indexes_in_segment": [
@@ -2150,7 +2939,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.089399",
+    "extracted_at": "2026-03-25T17:27:37.982477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2248,7 +3037,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.089399",
+    "extracted_at": "2026-03-25T17:27:37.983480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

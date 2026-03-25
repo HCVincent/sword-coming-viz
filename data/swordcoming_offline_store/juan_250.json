@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.256557",
+    "extracted_at": "2026-03-25T17:27:38.168119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -89,21 +89,37 @@
         ],
         "juan_index": 250,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "刘高华",
+        "alias": [],
+        "original_description_in_book": "陈平安默默站在人群之中，突然想到了胭脂郡太守之子的刘高华，以及古榆国树精书生，还有他们当时携带的斗鸡杯，听说在别处价格要翻几番，就也跑去买了一对斗鸡杯，一枚雪花钱两只，将装有瓷杯的黄杨木盒放入包裹，便又去用真金白银买了些新鲜瓜果，一大兜拎在手里。",
+        "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 250,
+        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安指点",
+        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与刘高华指点",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘高华"
         ],
         "description": "好在陈平安是乘坐过鲲船的人，不至于一惊一乍，在青蚨坊又卖出了五岳真形碗和雷击乌木，多出了四百五十枚雪花钱，获利不错，加上陈平安需要每天练拳走桩，所以这份钱还得掏，不好节省。 陈平安默默站在人群之中，突然想到了胭脂郡太守之子的刘高华，以及古榆国树精书生，还有他们当时携带的斗鸡杯，听说在别处价格要翻几番，就也跑去买了一对斗鸡杯，一枚雪花钱两只，将装有瓷杯的黄杨木盒放入包裹，便又去用真金白银买了些新鲜瓜果，一大兜拎在手里。 有一位渡口练气士坐在岸边小石台上，坐在太师椅上，手持一只布满鹧鸪斑的茶盏，喝了无数口，茶水也没见底。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与刘高华之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -117,8 +133,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.257561",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘高华"
+        ],
+        "action": "指点",
+        "context": "好在陈平安是乘坐过鲲船的人，不至于一惊一乍，在青蚨坊又卖出了五岳真形碗和雷击乌木，多出了四百五十枚雪花钱，获利不错，加上陈平安需要每天练拳走桩，所以这份钱还得掏，不好节省。 有一位渡口练气士坐在岸边小石台上，坐在太师椅上，手持一只布满鹧鸪斑的茶盏，喝了无数口，茶水也没见底。 他对众人朗声提醒，渡船在半个时辰后南下，登船之前，可以购买一些价廉物美的特产带回家乡，然后他着重提及了彩衣国的地衣和山兰国的盆栽，大肆渲染，极尽吹捧，还报上了两家店面的门口字牌，果真有不少渡船客人动了心，去往两间铺子一掷千金，这让其余铺子的掌柜或白眼或艳羡，有钱能使鬼推磨嘛，他们没钱打点关系，就只能如此了。 陈平安默默站在人群之中，突然想到了胭脂郡太守之子的刘高华，以及古榆国树精书生，还有他们当时携带的斗鸡杯，听说在别处价格要翻几番，就也跑去买了一对斗鸡杯，一枚雪花钱两只，将装有瓷杯的黄杨木盒放入包裹，便又去用真金白银买了些新鲜瓜果，一大兜拎在手里。 人山人海之中，少年脚穿草鞋，背负剑匣，斜挎棉布包裹，还拎着一兜瓜果。 虽然人很多，人与人之间不过两三步距离，可是比起州郡集市的喧闹，这座仙家渡口就要安静许多，多是好友扎堆，窃窃私语，少有人高声言语，一些个按耐不住活泼天性的稚童，也被家中长辈牵手拉住，坚决不许他们四处乱跑。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与刘高华指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 250,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.169123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -193,7 +235,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.257561",
+    "extracted_at": "2026-03-25T17:27:38.169123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -364,7 +406,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.257561",
+    "extracted_at": "2026-03-25T17:27:38.169123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -547,7 +589,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.257561",
+    "extracted_at": "2026-03-25T17:27:38.169123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -609,7 +651,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.257561",
+    "extracted_at": "2026-03-25T17:27:38.169123",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -687,7 +729,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.257561",
+    "extracted_at": "2026-03-25T17:27:38.170126",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -767,7 +809,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.170126",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -832,7 +874,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.170126",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -914,7 +956,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.170126",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -997,7 +1039,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.170126",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1105,7 +1147,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.170126",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1167,7 +1209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.171130",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1267,7 +1309,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.258564",
+    "extracted_at": "2026-03-25T17:27:38.171130",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1524,7 +1566,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "extracted_at": "2026-03-25T17:27:38.171130",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1590,7 +1632,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "extracted_at": "2026-03-25T17:27:38.171130",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1625,6 +1667,45 @@
         ],
         "juan_index": 250,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "大多聊得云淡风轻，两位老人说得最多，身旁年轻晚辈们则洗耳恭听，少有插话，便是问话，也是必然恭恭敬敬，跟陈平安印象中的某些人，大不一样，比如风雷园剑修刘灞桥，泥瓶巷曹氏祖宅的那个婆娑洲剑修曹峻，最近还遇上了那个观湖书院的周矩，好像都不是这般拘谨的性格。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 250,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "大多聊得云淡风轻，两位老人说得最多，身旁年轻晚辈们则洗耳恭听，少有插话，便是问话，也是必然恭恭敬敬，跟陈平安印象中的某些人，大不一样，比如风雷园剑修刘灞桥，泥瓶巷曹氏祖宅的那个婆娑洲剑修曹峻，最近还遇上了那个观湖书院的周矩，好像都不是这般拘谨的性格。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 250,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "大多聊得云淡风轻，两位老人说得最多，身旁年轻晚辈们则洗耳恭听，少有插话，便是问话，也是必然恭恭敬敬，跟陈平安印象中的某些人，大不一样，比如风雷园剑修刘灞桥，泥瓶巷曹氏祖宅的那个婆娑洲剑修曹峻，最近还遇上了那个观湖书院的周矩，好像都不是这般拘谨的性格。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 250,
+        "segment_index": 17
       }
     ],
     "locations": [
@@ -1654,7 +1735,10 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥",
+          "曹峻",
+          "周矩"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -1665,15 +1749,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安在宝瓶洲对话",
+        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与刘灞桥在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘灞桥",
+          "曹峻",
+          "周矩"
         ],
         "description": "夹杂在人流之中，陈平安下了船后，身边有一拨气度不凡的男女，两位老者的气息尤为绵长，如江水缓流，走路时脚步轻灵，哪怕不是中五境的山上神仙，恐怕也差不远。 陈平安不是爱偷听人说话的人，只是这段时间待在屋子里练拳，实在没法子，难得听到有人以宝瓶洲雅言交谈，下意识就竖起耳朵。 大多聊得云淡风轻，两位老人说得最多，身旁年轻晚辈们则洗耳恭听，少有插话，便是问话，也是必然恭恭敬敬，跟陈平安印象中的某些人，大不一样，比如风雷园剑修刘灞桥，泥瓶巷曹氏祖宅的那个婆娑洲剑修曹峻，最近还遇上了那个观湖书院的周矩，好像都不是这般拘谨的性格。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "在宝瓶洲推动陈平安与刘灞桥之间的对话线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段17",
         "sentence_indexes_in_segment": [
@@ -1689,7 +1776,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "extracted_at": "2026-03-25T17:27:38.171130",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1793,7 +1880,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "extracted_at": "2026-03-25T17:27:38.172133",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1856,7 +1943,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "extracted_at": "2026-03-25T17:27:38.172133",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1892,21 +1979,37 @@
         ],
         "juan_index": 250,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "秋实",
+        "alias": [],
+        "original_description_in_book": "字体微小，且如会如蝌蚪缓缓流转绕行，陈平安因为喜欢春字，又因为鲲船之上，有一双姐妹婢女，她们的名字与那些文字吻合，当时陈平安还惋惜为何只有春水而无秋实，否则将来若是有缘再见，比如再次在梧桐山渡口乘坐打醮山鲲船，一定要拿出那只笔洗，给她们俩瞧一瞧，好教她们知道，原来世上有这么无巧不成书的趣事。",
+        "description": "渡船与老龙城支线女性人物，可补足陈平安外出途中人际网络。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 250,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安迁移",
+        "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与秋实迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "秋实"
         ],
         "description": "在胭脂郡打杀了那位蛇蝎夫人之后，陈平安其实得了一件宝贝，但是在梳水国青蚨坊却没有拿出来售卖，那是一件笔洗，笔洗底部一圈，有十六字，春花秋月，春风秋树，春山秋石，春水秋霜。 字体微小，且如会如蝌蚪缓缓流转绕行，陈平安因为喜欢春字，又因为鲲船之上，有一双姐妹婢女，她们的名字与那些文字吻合，当时陈平安还惋惜为何只有春水而无秋实，否则将来若是有缘再见，比如再次在梧桐山渡口乘坐打醮山鲲船，一定要拿出那只笔洗，给她们俩瞧一瞧，好教她们知道，原来世上有这么无巧不成书的趣事。 陈平安站在洞口，脸上没有什么悲恸神色，只是怔怔出神，望着远处的旖旎风光。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与秋实之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1920,8 +2023,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "秋实"
+        ],
+        "action": "冲突",
+        "context": "在胭脂郡打杀了那位蛇蝎夫人之后，陈平安其实得了一件宝贝，但是在梳水国青蚨坊却没有拿出来售卖，那是一件笔洗，笔洗底部一圈，有十六字，春花秋月，春风秋树，春山秋石，春水秋霜。 字体微小，且如会如蝌蚪缓缓流转绕行，陈平安因为喜欢春字，又因为鲲船之上，有一双姐妹婢女，她们的名字与那些文字吻合，当时陈平安还惋惜为何只有春水而无秋实，否则将来若是有缘再见，比如再次在梧桐山渡口乘坐打醮山鲲船，一定要拿出那只笔洗，给她们俩瞧一瞧，好教她们知道，原来世上有这么无巧不成书的趣事。 陈平安站在洞口，脸上没有什么悲恸神色，只是怔怔出神，望着远处的旖旎风光。 最后陈平安转身走向渡船。 身后姹紫嫣红开遍，少年便不看了。 到了渡船，回到二楼房间，关上门，继续练拳。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与秋实迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 250,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.172133",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1985,7 +2114,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.259568",
+    "extracted_at": "2026-03-25T17:27:38.172133",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2047,7 +2176,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.260571",
+    "extracted_at": "2026-03-25T17:27:38.172133",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2111,7 +2240,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.260571",
+    "extracted_at": "2026-03-25T17:27:38.172133",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2170,7 +2299,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.260571",
+    "extracted_at": "2026-03-25T17:27:38.173137",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

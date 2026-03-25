@@ -76,7 +76,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.495400",
+    "extracted_at": "2026-03-25T17:27:38.485944",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -174,7 +174,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.495400",
+    "extracted_at": "2026-03-25T17:27:38.485944",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -234,6 +234,19 @@
         ],
         "juan_index": 305,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "崔东山可以在书院随意走动，身边总是跟着一个名叫谢谢的贴身婢女，今天两人去旁听了葛老夫子的一堂经义课程，听了一半，原本趴在外边窗台上的崔东山就睡着了，谢谢站在一旁，不敢打搅自家公子的春秋大梦，害得屋内学生个个忍着笑，十分辛苦，葛老夫子恨不得一戒尺打得那崔东山满头是包，可一想到连同家族一起迁出京城的蔡京神，老夫子就忍住心中愤懑，回头一定要跟副山长茅小冬说道说道，不准崔东山以后靠近自己的课堂。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 305,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -261,13 +274,16 @@
         "location": "山崖书院",
         "participants": [
           "崔东山",
-          "谢谢"
+          "谢谢",
+          "茅小冬"
         ],
         "description": "陈平安看了一会儿。 自从跟大隋供奉蔡京神一战后，崔东山就赢得了一个蔡家老祖宗的便宜头衔，在山崖书院很吃香，加上崔东山当下的皮囊，眉心红痣，风神俊逸，实在讨喜。 崔东山可以在书院随意走动，身边总是跟着一个名叫谢谢的贴身婢女，今天两人去旁听了葛老夫子的一堂经义课程，听了一半，原本趴在外边窗台上的崔东山就睡着了，谢谢站在一旁，不敢打搅自家公子的春秋大梦，害得屋内学生个个忍着笑，十分辛苦，葛老夫子恨不得一戒尺打得那崔东山满头是包，可一想到连同家族一起迁出京城的蔡京神，老夫子就忍住心中愤懑，回头一定要跟副山长茅小冬说道说道，不准崔东山以后靠近自己的课堂。",
         "background": "",
         "significance": "在山崖书院推动崔东山与谢谢之间的对话线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段3",
         "sentence_indexes_in_segment": [
@@ -302,9 +318,49 @@
         ],
         "juan_index": 305,
         "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔东山可以在书院随意走动，身边总是跟着一个名叫谢谢的贴身婢女，今天两人去旁听了葛老夫子的一堂经义课程，听了一半，原本趴在外边窗台上的崔东山就睡着了，谢谢站在一旁，不敢打搅自家公子的春秋大梦，害得屋内学生个个忍着笑，十分辛苦，葛老夫子恨不得一戒尺打得那崔东山满头是包，可一想到连同家族一起迁出京城的蔡京神，老夫子就忍住心中愤懑，回头一定要跟副山长茅小冬说道说道，不准崔东山以后靠近自己的课堂。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与谢谢在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 305,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "谢谢"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔东山可以在书院随意走动，身边总是跟着一个名叫谢谢的贴身婢女，今天两人去旁听了葛老夫子的一堂经义课程，听了一半，原本趴在外边窗台上的崔东山就睡着了，谢谢站在一旁，不敢打搅自家公子的春秋大梦，害得屋内学生个个忍着笑，十分辛苦，葛老夫子恨不得一戒尺打得那崔东山满头是包，可一想到连同家族一起迁出京城的蔡京神，老夫子就忍住心中愤懑，回头一定要跟副山长茅小冬说道说道，不准崔东山以后靠近自己的课堂。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与谢谢在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 305,
+        "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.495400",
+    "extracted_at": "2026-03-25T17:27:38.485944",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -432,7 +488,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "extracted_at": "2026-03-25T17:27:38.485944",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -538,7 +594,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "extracted_at": "2026-03-25T17:27:38.486948",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -667,7 +723,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "extracted_at": "2026-03-25T17:27:38.486948",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +786,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "extracted_at": "2026-03-25T17:27:38.486948",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -777,24 +833,36 @@
         ],
         "juan_index": 305,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "更远处，身为此方小天地主人的副山长茅小冬，怒喝道：“胆敢在书院行凶？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 305,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 谢谢与崔东山敌对",
+        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 谢谢与崔东山剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "谢谢",
-          "崔东山"
+          "崔东山",
+          "茅小冬"
         ],
-        "description": "谢谢瞠目结舌，根本来不及反应。 她脑海一片空白，虽然院内气温灼烧，可是谢谢浑身冰凉，僵硬转头，只见那崔东山的眉心恰好被金色丝线一穿而过，向后倒去，轰然倒地。 必然是一位陆地神仙的刺杀手段！",
+        "description": "谢谢瞠目结舌，根本来不及反应。 她脑海一片空白，虽然院内气温灼烧，可是谢谢浑身冰凉，僵硬转头，只见那崔东山的眉心恰好被金色丝线一穿而过，向后倒去，轰然倒地。 更远处，身为此方小天地主人的副山长茅小冬，怒喝道：“胆敢在书院行凶？",
         "background": "",
-        "significance": "推动谢谢与崔东山之间的敌对关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动谢谢与崔东山之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -808,34 +876,8 @@
         "segment_index": 8
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "谢谢"
-        ],
-        "to_roles": [
-          "崔东山"
-        ],
-        "action": "敌对",
-        "context": "谢谢瞠目结舌，根本来不及反应。 她脑海一片空白，虽然院内气温灼烧，可是谢谢浑身冰凉，僵硬转头，只见那崔东山的眉心恰好被金色丝线一穿而过，向后倒去，轰然倒地。 必然是一位陆地神仙的刺杀手段！ 远处，一个沧桑嗓音快意响起，“妖人乱国，死不足惜！ ” 更远处，身为此方小天地主人的副山长茅小冬，怒喝道：“胆敢在书院行凶？",
-        "result": null,
-        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 谢谢与崔东山敌对",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 305,
-        "segment_index": 8
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.486948",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -868,6 +910,19 @@
           3,
           4,
           5
+        ],
+        "juan_index": 305,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "谢谢眼神呆滞，依然保持斜坐于门槛的姿势，望着那个倒地不起的白衣少年，就这么死了？",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 305,
         "segment_index": 9
@@ -937,7 +992,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "extracted_at": "2026-03-25T17:27:38.486948",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -987,6 +1042,19 @@
         ],
         "juan_index": 305,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "崔东山大步跨入门槛，弯腰捡起屋内一张品秩极高的替身傀儡符，用手指撮成灰烬，转头笑道：“茅小冬，这你能忍？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 10
       }
     ],
     "locations": [],
@@ -997,13 +1065,15 @@
         "location": null,
         "participants": [
           "崔东山",
-          "谢谢"
+          "谢谢",
+          "茅小冬"
         ],
         "description": "崔东山打量着谢谢的魂魄，最终在她的某座气府发现了异样，笑着说了一句“跟我捉迷藏，嫩了点吧”，只见他如棋士双指捻子，从谢谢魂魄之中抓取出一粒墨绿色的光点，将其在指缝间随意捏爆，体魄被神魂牵引，已经失去感知的那具娇躯，如砧板上的鱼，使劲蹦跳了一下。 崔东山一巴掌打在谢谢魂魄的“脸上”，笑骂道：“成事不足败事有余的玩意儿，滚回去。 神魂归位，谢谢缓缓醒来，头疼欲裂，挣扎着坐起身，一手撑地，一手捂住额头，痛得她满脸泪水。",
         "background": "",
         "significance": "推动崔东山与谢谢之间的对话关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段10",
         "sentence_indexes_in_segment": [
@@ -1038,9 +1108,29 @@
         ],
         "juan_index": 305,
         "segment_index": 10
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔东山大步跨入门槛，弯腰捡起屋内一张品秩极高的替身傀儡符，用手指撮成灰烬，转头笑道：“茅小冬，这你能忍？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与谢谢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.496403",
+    "extracted_at": "2026-03-25T17:27:38.487951",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1061,6 +1151,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "追杀途中，茅小冬冷笑的嗓音遥遥传入小院，道：“对，你就是那坨屎！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 305,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "崔东山",
@@ -1095,16 +1198,19 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山在山崖书院对话",
+        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 茅小冬与崔东山在山崖书院对话",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "茅小冬",
           "崔东山"
         ],
-        "description": "崔东山嘿嘿笑道：“我这每天走来走去的，那咱们山崖书院，岂不是成了一座茅厕？ 人家都在你家里拉屎撒尿了！ ”",
+        "description": "追杀途中，茅小冬冷笑的嗓音遥遥传入小院，道：“对，你就是那坨屎！ 崔东山嘿嘿笑道：“我这每天走来走去的，那咱们山崖书院，岂不是成了一座茅厕？ 人家都在你家里拉屎撒尿了！",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在山崖书院推动茅小冬与崔东山之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -1118,8 +1224,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "对话",
+        "context": "人家都在你家里拉屎撒尿了！ ” 追杀途中，茅小冬冷笑的嗓音遥遥传入小院，道：“对，你就是那坨屎！ ” 崔东山嘿嘿笑道：“我这每天走来走去的，那咱们山崖书院，岂不是成了一座茅厕？ ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 茅小冬与崔东山在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 305,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.487951",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1247,7 +1379,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "extracted_at": "2026-03-25T17:27:38.487951",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1290,6 +1422,19 @@
         "power": "老龙城",
         "sentence_indexes_in_segment": [
           2
+        ],
+        "juan_index": 305,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "高大老人茅小冬大步走入院子，“是个不知来历的元婴修士，给他跑了。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 305,
         "segment_index": 13
@@ -1341,14 +1486,13 @@
         "location": "大骊",
         "participants": [
           "崔东山",
-          "谢谢"
+          "谢谢",
+          "茅小冬"
         ],
-        "description": "崔东山突然问道：“有没有想过在大骊龙泉扎根？ 谢谢摇摇头，“不曾想过。 ”",
+        "description": "崔东山突然问道：“有没有想过在大骊龙泉扎根？ 谢谢摇摇头，“不曾想过。 高大老人茅小冬大步走入院子，“是个不知来历的元婴修士，给他跑了。",
         "background": "",
         "significance": "在大骊推动崔东山与谢谢之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1362,34 +1506,8 @@
         "segment_index": 13
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔东山"
-        ],
-        "to_roles": [
-          "谢谢"
-        ],
-        "action": "对话",
-        "context": "崔东山突然问道：“有没有想过在大骊龙泉扎根？ ” 谢谢摇摇头，“不曾想过。 ” 高大老人茅小冬大步走入院子，“是个不知来历的元婴修士，给他跑了。 ”",
-        "result": null,
-        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与谢谢在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 305,
-        "segment_index": 13
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.487951",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1421,6 +1539,19 @@
           0,
           4,
           5
+        ],
+        "juan_index": 305,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬皱眉道：“真要封山？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 305,
         "segment_index": 14
@@ -1468,7 +1599,7 @@
           "崔瀺",
           "崔东山"
         ],
-        "description": "崔东山根本不在意，笑道：“这次不过是试探而已，你还是更小心书院的夫子学生吧，世上总有些自以为是的所谓好人，觉得世道该如何，都得按照他们的想法去运转，一旦山崖书院和大隋京城对立起来，高氏和宋氏的两场山盟，因此作废也不是没有可能。 至于今日刺杀一事，是大隋某些山头的本意，还是“崔瀺”仇人的手笔，区别不大，因为崔东山说到的那个可能性，绝不是玩笑话。 崔东山冷笑道：“怎么，觉得没面子？",
+        "description": "崔东山根本不在意，笑道：“这次不过是试探而已，你还是更小心书院的夫子学生吧，世上总有些自以为是的所谓好人，觉得世道该如何，都得按照他们的想法去运转，一旦山崖书院和大隋京城对立起来，高氏和宋氏的两场山盟，因此作废也不是没有可能。 茅小冬皱眉道：“真要封山？ 至于今日刺杀一事，是大隋某些山头的本意，还是“崔瀺”仇人的手笔，区别不大，因为崔东山说到的那个可能性，绝不是玩笑话。",
         "background": "",
         "significance": "在山崖书院推动崔瀺与崔东山之间的对话线。",
         "related_action_indices": [
@@ -1509,7 +1640,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "extracted_at": "2026-03-25T17:27:38.487951",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1532,6 +1663,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬下定决心，转身就走。 崔东山笑道：“茅小冬，如果你说一句自己是坨屎，出了事情，我可以出手帮助书院。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "崔东山",
         "alias": [],
         "original_description_in_book": "崔东山笑道：“茅小冬，如果你说一句自己是坨屎，出了事情，我可以出手帮助书院。",
@@ -1547,16 +1693,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山对话",
+        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与茅小冬对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山"
+          "崔东山",
+          "茅小冬"
         ],
-        "description": "崔东山笑道：“茅小冬，如果你说一句自己是坨屎，出了事情，我可以出手帮助书院。 ” 茅小冬下定决心，转身就走。",
+        "description": "茅小冬下定决心，转身就走。 崔东山笑道：“茅小冬，如果你说一句自己是坨屎，出了事情，我可以出手帮助书院。 茅小冬转过头，面无表情道：“我是一坨屎。",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔东山与茅小冬之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1570,8 +1719,29 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔东山笑道：“茅小冬，如果你说一句自己是坨屎，出了事情，我可以出手帮助书院。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与茅小冬对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 305,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.488955",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1677,7 +1847,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "extracted_at": "2026-03-25T17:27:38.488955",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1804,7 +1974,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.497407",
+    "extracted_at": "2026-03-25T17:27:38.488955",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1965,7 +2135,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "extracted_at": "2026-03-25T17:27:38.488955",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2002,6 +2172,19 @@
       },
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "山崖书院在经过那桩短暂的刺杀风波后，在副山长茅小冬的执意要求下，开始封禁山门，无论是夫子先生还是学生杂役，一律不得外出。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "高煊",
         "alias": [],
         "original_description_in_book": "名义上的山长，大隋礼部尚书，对此颇有异议，但是皇帝陛下支持此事，而且还秘密增派几位供奉，隐匿于东山附近，而且还让皇子高煊正式进入书院求学。",
@@ -2022,7 +2205,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -2032,19 +2217,18 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与高煊在山崖书院揭示",
+        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与茅小冬在山崖书院揭示",
         "time": null,
         "location": "山崖书院",
         "participants": [
           "崔东山",
+          "茅小冬",
           "高煊"
         ],
         "description": "崔东山叹息一声，“大概就只有小宝瓶，会心疼我家先生吧。 哎呦一声，崔东山又开始满地打滚，手捧心口，嚷嚷着“一想到这个，就心疼死我了”。 山崖书院在经过那桩短暂的刺杀风波后，在副山长茅小冬的执意要求下，开始封禁山门，无论是夫子先生还是学生杂役，一律不得外出。",
         "background": "",
-        "significance": "在山崖书院推动崔东山与高煊之间的揭示线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在山崖书院推动崔东山与茅小冬之间的揭示线。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -2058,34 +2242,8 @@
         "segment_index": 19
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔东山"
-        ],
-        "to_roles": [
-          "高煊"
-        ],
-        "action": "敌对",
-        "context": "崔东山叹息一声，“大概就只有小宝瓶，会心疼我家先生吧。 ” 哎呦一声，崔东山又开始满地打滚，手捧心口，嚷嚷着“一想到这个，就心疼死我了”。 ———— 山崖书院在经过那桩短暂的刺杀风波后，在副山长茅小冬的执意要求下，开始封禁山门，无论是夫子先生还是学生杂役，一律不得外出。 名义上的山长，大隋礼部尚书，对此颇有异议，但是皇帝陛下支持此事，而且还秘密增派几位供奉，隐匿于东山附近，而且还让皇子高煊正式进入书院求学。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 崔东山与高煊在山崖书院揭示",
-        "location": "山崖书院",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 305,
-        "segment_index": 19
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.488955",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2211,7 +2369,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "extracted_at": "2026-03-25T17:27:38.489958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2326,7 +2484,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "extracted_at": "2026-03-25T17:27:38.489958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2451,7 +2609,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "extracted_at": "2026-03-25T17:27:38.489958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2528,7 +2686,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "extracted_at": "2026-03-25T17:27:38.489958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2592,7 +2750,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.498410",
+    "extracted_at": "2026-03-25T17:27:38.489958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2657,7 +2815,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.489958",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2705,6 +2863,19 @@
         ],
         "juan_index": 305,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "青衣小童不愿跟她发牢骚，只是独自在崖畔长吁短叹，很快就斗志昂扬，下山又去了一趟小镇，县衙和窑务督造府，都硬着头皮逛了，回来的时候又病恹恹的，隔了两天，再去了北边大山外新建成的龙泉郡城，找了那郡守吴鸢。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 305,
+        "segment_index": 26
       }
     ],
     "locations": [
@@ -2719,7 +2890,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "魏檗"
+          "魏檗",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           3,
@@ -2752,7 +2924,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "魏檗"
+          "魏檗",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           3,
@@ -2804,7 +2977,8 @@
         "participants": [
           "魏檗",
           "陈平安",
-          "李宝瓶"
+          "李宝瓶",
+          "吴鸢"
         ],
         "description": "李宝瓶越想越觉得自己聪明，一手执笔娴熟抄书，一手伸出大拇指，两眼放光，啧啧道：“不愧是武林盟主，老霸气了！ 龙泉郡落魄山上，在收到一封信后，很少外出的青衣小童，先去小镇回了一封信，自信满满，然后破天荒去了趟披云山，去大骊北岳殿找那魏檗。 青衣小童不愿跟她发牢骚，只是独自在崖畔长吁短叹，很快就斗志昂扬，下山又去了一趟小镇，县衙和窑务督造府，都硬着头皮逛了，回来的时候又病恹恹的，隔了两天，再去了北边大山外新建成的龙泉郡城，找了那郡守吴鸢。",
         "background": "",
@@ -2824,7 +2998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.490962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2889,7 +3063,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.490962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2952,7 +3126,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.490962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3016,7 +3190,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.490962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3098,7 +3272,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.490962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3223,7 +3397,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.499414",
+    "extracted_at": "2026-03-25T17:27:38.490962",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3285,7 +3459,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "extracted_at": "2026-03-25T17:27:38.491965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3308,6 +3482,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "以至于龙泉郡的几位官老爷，都闻讯赶来，例如官帽子最大的太守吴鸢，都在铺子吃了碗香气扑鼻的馄饨，赞不绝口。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 305,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
         "name": "董水井",
         "alias": [],
         "original_description_in_book": "这天暮色里，铺子打烊在即，让店伙计招呼着稀稀疏疏的几桌客人，董水井难得忙里偷闲，劳累一天，筋疲力尽，便坐在铺子门口，端了一碗茶水，慢慢喝着。 董水井猛然起身，赶紧喝完剩下的茶水，快步走去，从山上走下一伙人，其中有一张熟悉面孔，她应该是跟着家里长辈登山烧香，这会儿才下山，看天色时辰，多半是要住在龙泉郡城里头了。",
@@ -3316,6 +3503,19 @@
         "sentence_indexes_in_segment": [
           2,
           3,
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "董水井笑着打招呼，跟那几个大人看着岁数，喊了叔伯姨婶，然后望向那位个子稍微高了些的丫头，问道：“石春嘉，什么时候回来的？",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
           4
         ],
         "juan_index": 305,
@@ -3334,6 +3534,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "董水井"
         ],
         "sentence_indexes_in_segment": [
@@ -3346,16 +3547,19 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 董水井在龙泉对话",
+        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 董水井与石春嘉在龙泉对话",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "董水井"
+          "董水井",
+          "石春嘉"
         ],
         "description": "以至于龙泉郡的几位官老爷，都闻讯赶来，例如官帽子最大的太守吴鸢，都在铺子吃了碗香气扑鼻的馄饨，赞不绝口。 这天暮色里，铺子打烊在即，让店伙计招呼着稀稀疏疏的几桌客人，董水井难得忙里偷闲，劳累一天，筋疲力尽，便坐在铺子门口，端了一碗茶水，慢慢喝着。 董水井猛然起身，赶紧喝完剩下的茶水，快步走去，从山上走下一伙人，其中有一张熟悉面孔，她应该是跟着家里长辈登山烧香，这会儿才下山，看天色时辰，多半是要住在龙泉郡城里头了。",
         "background": "",
-        "significance": "对应董水井在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在龙泉推动董水井与石春嘉之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -3369,8 +3573,29 @@
         "segment_index": 34
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "董水井"
+        ],
+        "to_roles": [
+          "石春嘉"
+        ],
+        "action": "对话",
+        "context": "董水井笑着打招呼，跟那几个大人看着岁数，喊了叔伯姨婶，然后望向那位个子稍微高了些的丫头，问道：“石春嘉，什么时候回来的？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 董水井与石春嘉在龙泉对话",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 34
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.491965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3391,6 +3616,20 @@
       "石嘉春的爹娘，只是听说过董水井，却不曾见过，看女儿念念不舍，就顺势说要吃几碗馄饨，董水井亲自下厨，亲自递上桌后，寒暄两句就回到柜台后边，石嘉春潦草吃完，就起身跑到董水井身边，小声询问有无宝瓶的消息，董水井只能是将陈平安说过的一些事情，重述了一遍，石嘉春竖起耳朵，一个字都不愿意错过。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉当初跟随李宝瓶董水井他们一起，经历了一场惊心动魄的短暂远游，回到小镇后，这些孩子便分成三拨人，分道扬镳，各有选择。 唯独石春嘉，家中卖了骑龙巷的那间祖传铺子，跟随家族搬去了大隋京城，不知道这次回到故乡，是为了祭祖还是怎的。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 305,
+        "segment_index": 35
+      },
       {
         "entity_type": "person",
         "name": "李宝瓶",
@@ -3470,6 +3709,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "石春嘉",
           "李宝瓶",
           "董水井"
         ],
@@ -3487,7 +3727,9 @@
         "description": "小镇重要街巷，与泥瓶巷共同构成早期人物活动范围。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "石春嘉"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -3510,7 +3752,9 @@
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段35",
         "sentence_indexes_in_segment": [
@@ -3526,6 +3770,46 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "石春嘉"
+        ],
+        "to_roles": [
+          "李宝瓶"
+        ],
+        "action": "同行",
+        "context": "石春嘉当初跟随李宝瓶董水井他们一起，经历了一场惊心动魄的短暂远游，回到小镇后，这些孩子便分成三拨人，分道扬镳，各有选择。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 305,
+        "segment_index": 35
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "石春嘉"
+        ],
+        "to_roles": [
+          "董水井"
+        ],
+        "action": "同行",
+        "context": "石春嘉当初跟随李宝瓶董水井他们一起，经历了一场惊心动魄的短暂远游，回到小镇后，这些孩子便分成三拨人，分道扬镳，各有选择。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 305,
+        "segment_index": 35
+      },
       {
         "time": null,
         "from_roles": [
@@ -3547,7 +3831,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "extracted_at": "2026-03-25T17:27:38.491965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3610,7 +3894,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "extracted_at": "2026-03-25T17:27:38.491965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3673,7 +3957,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "extracted_at": "2026-03-25T17:27:38.491965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3813,7 +4097,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "extracted_at": "2026-03-25T17:27:38.491965",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3875,7 +4159,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.500418",
+    "extracted_at": "2026-03-25T17:27:38.492968",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3989,7 +4273,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.501421",
+    "extracted_at": "2026-03-25T17:27:38.492968",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4089,7 +4373,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.501421",
+    "extracted_at": "2026-03-25T17:27:38.492968",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4154,7 +4438,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.501421",
+    "extracted_at": "2026-03-25T17:27:38.493972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4216,7 +4500,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.501421",
+    "extracted_at": "2026-03-25T17:27:38.493972",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4279,7 +4563,63 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.501421",
+    "extracted_at": "2026-03-25T17:27:38.494975",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "305-50-0": {
+    "juan_index": 305,
+    "segment_index": 50,
+    "chunk_start_index": 0,
+    "chunk_end_index": 3,
+    "segment_start_time": "第五卷道观道 第三百零四章 低头观井,抬头看天",
+    "source_sentences": [
+      "”",
+      "小女孩仰起头，反问道：“你管我？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "小女孩仰起头，反问道：“你管我？",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 305,
+        "segment_index": 50
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 仰起头对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "仰起头"
+        ],
+        "description": "小女孩仰起头，反问道：“你管我？ ” ”",
+        "background": "",
+        "significance": "对应仰起头在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零四章 低头观井,抬头看天 · 段50",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 305,
+        "segment_index": 50
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.494975",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

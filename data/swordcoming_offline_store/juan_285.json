@@ -90,7 +90,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.435191",
+    "extracted_at": "2026-03-25T17:27:38.396064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -236,7 +236,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.435191",
+    "extracted_at": "2026-03-25T17:27:38.396064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -300,7 +300,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.435191",
+    "extracted_at": "2026-03-25T17:27:38.396064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -377,7 +377,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.435191",
+    "extracted_at": "2026-03-25T17:27:38.396064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -400,6 +400,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "这位曾经被看门小道童打出上香楼的陆姓子弟，明显也看出了陈平安的戒备，他拍了拍腰间那块吞宝鲸颁发的登船玉牌，哈哈笑道：“如你所想，我这次去往扶乩宗，是守株待兔，专程等你的。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 285,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "这位曾经被看门小道童打出上香楼的陆姓子弟，明显也看出了陈平安的戒备，他拍了拍腰间那块吞宝鲸颁发的登船玉牌，哈哈笑道：“如你所想，我这次去往扶乩宗，是守株待兔，专程等你的。 陈平安有些摸不着头脑，可是在心中打定主意，绝对要对此人敬而远之。",
@@ -418,16 +431,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安对话",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 小道童与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "小道童",
           "陈平安"
         ],
         "description": "这位曾经被看门小道童打出上香楼的陆姓子弟，明显也看出了陈平安的戒备，他拍了拍腰间那块吞宝鲸颁发的登船玉牌，哈哈笑道：“如你所想，我这次去往扶乩宗，是守株待兔，专程等你的。 陈平安有些摸不着头脑，可是在心中打定主意，绝对要对此人敬而远之。 这家伙不但模样如女子绝色，嗓音也清脆悦耳，难分雌雄，之前“无意间”一起游览捉放亭，他的言行举止，一看就是性子跳脱、不按常理行事的人，陈平安虽然不反感此人的装束、性情和癖好，但是也不希望有人打破自己的平静生活。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动小道童与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -441,8 +457,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.435191",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "小道童"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "这位曾经被看门小道童打出上香楼的陆姓子弟，明显也看出了陈平安的戒备，他拍了拍腰间那块吞宝鲸颁发的登船玉牌，哈哈笑道：“如你所想，我这次去往扶乩宗，是守株待兔，专程等你的。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 小道童与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 285,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.397067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -465,6 +502,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "自称陆台的他见陈平安面无表情，显然根本不愿意相信他这套鬼话。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 285,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "自称陆台的他见陈平安面无表情，显然根本不愿意相信他这套鬼话。 陈平安没有恶言相向，更没有流露出丝毫不耐烦的神色，而是用一种打商量的和善口气询问道：“陆公子，你循着大吉卦象去往桐叶洲，我当然不会拦着你，也拦不住你，但是你我二人，能不能各走各的？",
@@ -481,16 +531,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安对话",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "自称陆台的他见陈平安面无表情，显然根本不愿意相信他这套鬼话。 陈平安没有恶言相向，更没有流露出丝毫不耐烦的神色，而是用一种打商量的和善口气询问道：“陆公子，你循着大吉卦象去往桐叶洲，我当然不会拦着你，也拦不住你，但是你我二人，能不能各走各的？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -504,8 +557,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 自称陆台的他见陈平安面无表情，显然根本不愿意相信他这套鬼话。 他叹息一声，“好吧，实话实说，我出身阴阳家，精于占卜算卦，兜里没钱是真，挣不到钱是假，但是我欠了你一颗谷雨钱后，给自己算了一卦，是东游吞宝、桐叶封侯，上上卦，此卦的意思很粗浅，但是以防意外，我仍是在这里待了足足两旬，这就是之前我说‘守株待兔’的由来，最后见到了你，我就知道，这趟老祖宗显灵保佑的桐叶洲之行，不去是要遭天打雷劈的。 ” 陈平安没有恶言相向，更没有流露出丝毫不耐烦的神色，而是用一种打商量的和善口气询问道：“陆公子，你循着大吉卦象去往桐叶洲，我当然不会拦着你，也拦不住你，但是你我二人，能不能各走各的？ 若是陆公子你急需钱财，我可以再借给你一些小暑钱……”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 285,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.397067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -540,20 +619,34 @@
         ],
         "juan_index": 285,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台竟是开始撒娇，“陈平安，行行好？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 285,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "他突然打断陈平安的话语，语气神色俱是天然妩媚道：“什么陆公子，为了少些麻烦，你喊我陆姑娘就行了，不然别人看我的眼神，会很怪的。 陈平安头皮发麻。 陆台竟是开始撒娇，“陈平安，行行好？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段7",
         "sentence_indexes_in_segment": [
@@ -569,7 +662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "extracted_at": "2026-03-25T17:27:38.397067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -604,20 +697,35 @@
         ],
         "juan_index": 285,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安一身鸡皮疙瘩，顾不得什么客气不客气，拍掉陆台的那只手，义正辞严道：“公子……陆姑娘请自重！ 陆台悻悻然收回手，站在原地，咬着嘴唇，眼神幽怨，泫然欲泣。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 285,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "嘴上鬼话连篇，他还伸出一只比女子还要修长白皙的手，试图扯住陈平安的一条手臂。 陈平安一身鸡皮疙瘩，顾不得什么客气不客气，拍掉陆台的那只手，义正辞严道：“公子……陆姑娘请自重！ 陈平安转身就走。",
+        "description": "嘴上鬼话连篇，他还伸出一只比女子还要修长白皙的手，试图扯住陈平安的一条手臂。 陈平安一身鸡皮疙瘩，顾不得什么客气不客气，拍掉陆台的那只手，义正辞严道：“公子……陆姑娘请自重！ 陆台悻悻然收回手，站在原地，咬着嘴唇，眼神幽怨，泫然欲泣。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段8",
         "sentence_indexes_in_segment": [
@@ -633,7 +741,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "extracted_at": "2026-03-25T17:27:38.397067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -656,6 +764,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台如影随形，陈平安停步他就停步，陈平安转头，他就转头，不知道从哪里掏出了一柄玲珑精巧的小铜镜，手指间还捻着一只打开的胭脂盒，如美人在闺阁对镜梳妆。 这幅画面，看得对他还算知根知底的陈平安，只觉得毛骨悚然，倒是四周许多男子练气士，眼神荡漾，一些个上了岁数、道行高深的金丹元婴，哪怕依旧看穿陆台的障眼法，知晓了他的男子身份，可眼神依旧炙热。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "juan_index": 285,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台如影随形，陈平安停步他就停步，陈平安转头，他就转头，不知道从哪里掏出了一柄玲珑精巧的小铜镜，手指间还捻着一只打开的胭脂盒，如美人在闺阁对镜梳妆。 这幅画面，看得对他还算知根知底的陈平安，只觉得毛骨悚然，倒是四周许多男子练气士，眼神荡漾，一些个上了岁数、道行高深的金丹元婴，哪怕依旧看穿陆台的障眼法，知晓了他的男子身份，可眼神依旧炙热。",
@@ -673,16 +797,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安揭示",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陆台与陈平安揭示",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台如影随形，陈平安停步他就停步，陈平安转头，他就转头，不知道从哪里掏出了一柄玲珑精巧的小铜镜，手指间还捻着一只打开的胭脂盒，如美人在闺阁对镜梳妆。 这幅画面，看得对他还算知根知底的陈平安，只觉得毛骨悚然，倒是四周许多男子练气士，眼神荡漾，一些个上了岁数、道行高深的金丹元婴，哪怕依旧看穿陆台的障眼法，知晓了他的男子身份，可眼神依旧炙热。 陈平安从来没有经历过这种恶心人不偿命的阵仗，一肚子火气，可又拿这个陆台没辙。",
+        "description": "陆台如影随形，陈平安停步他就停步，陈平安转头，他就转头，不知道从哪里掏出了一柄玲珑精巧的小铜镜，手指间还捻着一只打开的胭脂盒，如美人在闺阁对镜梳妆。 这幅画面，看得对他还算知根知底的陈平安，只觉得毛骨悚然，倒是四周许多男子练气士，眼神荡漾，一些个上了岁数、道行高深的金丹元婴，哪怕依旧看穿陆台的障眼法，知晓了他的男子身份，可眼神依旧炙热。 陆台就像一个可怜兮兮的弃妇小娘，不敢对负心汉抱怨什么，只敢这么恋恋不舍地跟随。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的揭示关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -696,8 +823,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "陆台如影随形，陈平安停步他就停步，陈平安转头，他就转头，不知道从哪里掏出了一柄玲珑精巧的小铜镜，手指间还捻着一只打开的胭脂盒，如美人在闺阁对镜梳妆。 这幅画面，看得对他还算知根知底的陈平安，只觉得毛骨悚然，倒是四周许多男子练气士，眼神荡漾，一些个上了岁数、道行高深的金丹元婴，哪怕依旧看穿陆台的障眼法，知晓了他的男子身份，可眼神依旧炙热。 修行路上，漫漫长生，百无禁忌。 陆台就像一个可怜兮兮的弃妇小娘，不敢对负心汉抱怨什么，只敢这么恋恋不舍地跟随。 四周视线充满了玩味。 陈平安从来没有经历过这种恶心人不偿命的阵仗，一肚子火气，可又拿这个陆台没辙。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陆台与陈平安揭示",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 285,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.397067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -792,7 +945,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "extracted_at": "2026-03-25T17:27:38.398071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -854,7 +1007,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "extracted_at": "2026-03-25T17:27:38.398071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -903,6 +1056,19 @@
         ],
         "juan_index": 285,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "此时，陈平安走向通往吞宝鲸碧水湖的那块地衣，陆台哀叹一声，加快步伐，姗姗而行，挡住陈平安的去路，伸出手道：“我本来也是去往碧水湖，既然你如此厌恶我，那我就不碍你的眼了，我可以更改住处，添些钱，找人换一下，去往那座久负盛名的旖旎园，咱俩就这样分道扬镳吧，陈平安，先前你说可以借我一些小暑钱，还作数吗？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 285,
+        "segment_index": 12
       }
     ],
     "locations": [
@@ -930,7 +1096,8 @@
         "location": "骊珠洞天",
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安很想知道，骊珠洞天破碎下坠后，是否有秘境遗留人间。 回头倒是可以问问魏檗。 此时，陈平安走向通往吞宝鲸碧水湖的那块地衣，陆台哀叹一声，加快步伐，姗姗而行，挡住陈平安的去路，伸出手道：“我本来也是去往碧水湖，既然你如此厌恶我，那我就不碍你的眼了，我可以更改住处，添些钱，找人换一下，去往那座久负盛名的旖旎园，咱俩就这样分道扬镳吧，陈平安，先前你说可以借我一些小暑钱，还作数吗？",
         "background": "",
@@ -958,27 +1125,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "魏檗"
+          "陆台"
         ],
         "action": "冲突",
-        "context": "几乎大半的野修散修，之所以能够崛起，都归功于秘境的收获。 无意间闯入一座未被占据的秘境，或是草木精华的世外桃源，或是瘴气横生的蛮夷之地，或是仙人兵解的洞窟，运气好的，就可以青云直上，一飞冲天，运气不好的，说不定就要老死其中，要么惨遭横祸，死后的一身遗物，沦为后人的机缘之一。 陈平安很想知道，骊珠洞天破碎下坠后，是否有秘境遗留人间。 回头倒是可以问问魏檗。 此时，陈平安走向通往吞宝鲸碧水湖的那块地衣，陆台哀叹一声，加快步伐，姗姗而行，挡住陈平安的去路，伸出手道：“我本来也是去往碧水湖，既然你如此厌恶我，那我就不碍你的眼了，我可以更改住处，添些钱，找人换一下，去往那座久负盛名的旖旎园，咱俩就这样分道扬镳吧，陈平安，先前你说可以借我一些小暑钱，还作数吗？ 不然我可去不了旖旎园……”",
+        "context": "此时，陈平安走向通往吞宝鲸碧水湖的那块地衣，陆台哀叹一声，加快步伐，姗姗而行，挡住陈平安的去路，伸出手道：“我本来也是去往碧水湖，既然你如此厌恶我，那我就不碍你的眼了，我可以更改住处，添些钱，找人换一下，去往那座久负盛名的旖旎园，咱俩就这样分道扬镳吧，陈平安，先前你说可以借我一些小暑钱，还作数吗？",
         "result": null,
         "event_name": "魏檗现身",
         "location": "骊珠洞天",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          4
         ],
         "juan_index": 285,
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.436195",
+    "extracted_at": "2026-03-25T17:27:38.398071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1015,20 +1177,37 @@
         ],
         "juan_index": 285,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安直接掏出一大把破财消灾的小暑钱，走近几步，迅速交给陆台。 陆台接过小暑钱后，怔怔望向陈平安，一双秋水眼眸，说不尽的委屈，最后黯然转身，多半是去找人商量着更换住处。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 285,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安直接掏出一大把破财消灾的小暑钱，走近几步，迅速交给陆台。 只要此人不再纠缠自己，让自己这一路好好练拳和练剑，陈平安愿意花这笔钱。 陆台接过小暑钱后，怔怔望向陈平安，一双秋水眼眸，说不尽的委屈，最后黯然转身，多半是去找人商量着更换住处。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段13",
         "sentence_indexes_in_segment": [
@@ -1044,7 +1223,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.437198",
+    "extracted_at": "2026-03-25T17:27:38.398071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1063,6 +1242,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台脚步轻盈，活泼俏皮地走向陈平安那块地衣，得意洋洋，容颜愈发娇艳。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 285,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台脚步轻盈，活泼俏皮地走向陈平安那块地衣，得意洋洋，容颜愈发娇艳。 陈平安身形消逝之前，忍不住对那位“姑娘”骂了句你大爷。",
@@ -1079,15 +1271,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十四章 姑娘请自重 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陆台脚步轻盈，活泼俏皮地走向陈平安那块地衣，得意洋洋，容颜愈发娇艳。 陈平安身形消逝之前，忍不住对那位“姑娘”骂了句你大爷。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十四章 姑娘请自重 · 段14",
         "sentence_indexes_in_segment": [
@@ -1099,7 +1292,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.437198",
+    "extracted_at": "2026-03-25T17:27:38.398071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

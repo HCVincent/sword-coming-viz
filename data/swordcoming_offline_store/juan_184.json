@@ -16,6 +16,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。 曹峻看出一丝端倪，佩服道：“你下棋一定很厉害，而且肯定精通阴阳家的卜卦。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。",
@@ -31,15 +47,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣迁移",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与李希圣迁移",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。 曹峻看出一丝端倪，佩服道：“你下棋一定很厉害，而且肯定精通阴阳家的卜卦。 ”",
+        "description": "曹峻看着那些乱七八糟的小玩意，如同沙场上的重甲步卒方阵，将主帅李希圣围成铁桶一块。 曹峻看出一丝端倪，佩服道：“你下棋一定很厉害，而且肯定精通阴阳家的卜卦。 这就像一场城池攻守之战，曹峻一方战力强悍，但是兵力不够，只能专攻一面城墙，书生看似在四面城墙上都布满了守城甲士，实则三面都是空架子，他只需要未卜先知，次次算准曹峻的进攻方向，防守起来就显得游刃有余。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键迁移节点。",
+        "significance": "推动曹峻与李希圣之间的迁移关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段1",
         "sentence_indexes_in_segment": [
@@ -55,7 +72,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.950420",
+    "extracted_at": "2026-03-25T17:27:37.785796",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -76,6 +93,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻内心有些纠结，大骊皇帝是不敢为了一个齐静春，跟三教幕后势力掰手腕，但是为了一个有望跻身上五境的自家练气士，跟早已在别洲扎根立业的曹氏撕破脸皮，多半愿意。 曹峻破天荒有些犹豫不决，将白鱼收回剑鞘，同时握住了另外一把佩剑的剑柄，剑名墨螭。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 184,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "大骊皇帝",
@@ -129,6 +160,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "曹峻",
           "大骊皇帝",
           "齐静春"
         ],
@@ -147,10 +179,10 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "大骊皇帝",
-          "李希圣"
+          "曹峻",
+          "大骊皇帝"
         ],
-        "description": "曹峻内心有些纠结，大骊皇帝是不敢为了一个齐静春，跟三教幕后势力掰手腕，但是为了一个有望跻身上五境的自家练气士，跟早已在别洲扎根立业的曹氏撕破脸皮，多半愿意。 李希圣笑着反问道：“你有本事当缩头乌龟？ 曹峻破天荒有些犹豫不决，将白鱼收回剑鞘，同时握住了另外一把佩剑的剑柄，剑名墨螭。",
+        "description": "曹峻内心有些纠结，大骊皇帝是不敢为了一个齐静春，跟三教幕后势力掰手腕，但是为了一个有望跻身上五境的自家练气士，跟早已在别洲扎根立业的曹氏撕破脸皮，多半愿意。 曹峻破天荒有些犹豫不决，将白鱼收回剑鞘，同时握住了另外一把佩剑的剑柄，剑名墨螭。 李希圣笑着反问道：“你有本事当缩头乌龟？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -168,7 +200,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "extracted_at": "2026-03-25T17:27:37.785796",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -191,6 +223,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻被噎得不行，他曾经是被一洲剑仙寄予厚望的天才剑修，追求的是天下无匹的锐气和杀力，当然没本事也没兴趣跟眼前青衫书生一样，打不还手骂不还口，就靠着一大堆稀奇古怪的破烂货，死守城墙，坚决不主动出击。 李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。",
@@ -206,16 +252,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣遭遇",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣与曹峻遭遇",
         "time": null,
         "location": null,
         "participants": [
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。 曹峻被噎得不行，他曾经是被一洲剑仙寄予厚望的天才剑修，追求的是天下无匹的锐气和杀力，当然没本事也没兴趣跟眼前青衫书生一样，打不还手骂不还口，就靠着一大堆稀奇古怪的破烂货，死守城墙，坚决不主动出击。 曾有人形容剑修本身是轻骑，来去如风，风驰电掣，飞剑则像弓弩，与人狭路相逢，小规模厮杀，往往一个照面，敌人就死了。",
+        "description": "曹峻被噎得不行，他曾经是被一洲剑仙寄予厚望的天才剑修，追求的是天下无匹的锐气和杀力，当然没本事也没兴趣跟眼前青衫书生一样，打不还手骂不还口，就靠着一大堆稀奇古怪的破烂货，死守城墙，坚决不主动出击。 李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。 曾有人形容剑修本身是轻骑，来去如风，风驰电掣，飞剑则像弓弩，与人狭路相逢，小规模厮杀，往往一个照面，敌人就死了。",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动李希圣与曹峻之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -229,8 +278,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李希圣"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "对话",
+        "context": "李希圣见曹峻不说话，伸手轻轻拨动，身前的一些小雷、秋风缓缓挪动，使得他视野开朗，李希圣主动开口道：“你这把剑所讲的道理，没讲透。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣与曹峻遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.786800",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -253,6 +323,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻双手轻轻揉了揉脸颊，“你这人说话真是不中听，不过我承认你有这个资格，我有个建议，你可以考虑一下，咱们来一场生死之战，所有后果自负，与家国无关，如何？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。",
@@ -268,16 +351,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与李希圣对话",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。 ” 言下之意，他愿意听一听那把墨螭的道理。",
+        "description": "曹峻双手轻轻揉了揉脸颊，“你这人说话真是不中听，不过我承认你有这个资格，我有个建议，你可以考虑一下，咱们来一场生死之战，所有后果自负，与家国无关，如何？ 李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。 ”",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动曹峻与李希圣之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -291,8 +377,97 @@
         "segment_index": 4
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "” 言下之意，他愿意听一听那把墨螭的道理。 曹峻双手轻轻揉了揉脸颊，“你这人说话真是不中听，不过我承认你有这个资格，我有个建议，你可以考虑一下，咱们来一场生死之战，所有后果自负，与家国无关，如何？ 敢不敢跟我赌一把？ ” 李希圣摇头道：“你已经看出来，我根本就不擅长攻伐之道，所以你其实从头到尾，立于不败之地。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与李希圣对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.786800",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-5-0": {
+    "juan_index": 184,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "”",
+      "丝毫不介意泄露底细。",
+      "曹峻无奈道：“你是坦诚还是缺心眼啊？",
+      "”",
+      "曹峻看着那个年轻书生，没来由想起一位南婆娑洲最了不起的读书人，是醇儒陈氏这一代的家主。",
+      "传闻那位读书读出莫大学问的陈氏老人，两袖藏清风，一肩扛明月，一肩挑红日。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻无奈道：“你是坦诚还是缺心眼啊？ 曹峻看着那个年轻书生，没来由想起一位南婆娑洲最了不起的读书人，是醇儒陈氏这一代的家主。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻无奈道：“你是坦诚还是缺心眼啊？ 曹峻看着那个年轻书生，没来由想起一位南婆娑洲最了不起的读书人，是醇儒陈氏这一代的家主。 ”",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 5
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "extracted_at": "2026-03-25T17:27:37.786800",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -315,6 +490,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻收起思绪，转头望去，只见一只通体鲜红的小狐狸，双腿自立，站在泥瓶巷一栋老宅的屋檐上，对曹峻说道：“老祖宗让我告诉你，要你适可而止，若是给阮邛打死了，他就随便在这边找个地儿，帮你葬了，好歹算是叶落归根。 曹峻一脸嫌弃，“啥？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
@@ -324,6 +513,19 @@
         "power": "风雪庙",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 184,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "小狐狸咳嗽一声，从温文尔雅的模样，瞬间变得凶神恶煞，摆出双手叉腰状，骂骂咧咧，“曹曦那个老王八蛋，告诉你这个龟孙子，赶紧收手，如果惹恼了姓阮的铁匠，被打成一滩肉泥，他不会帮你报仇的，有几百个嫡系子孙呢，帮不过来，还说可惜你那媳妇还没娶进门，否则他就不会让我劝你收手了，给人打死最好，他好趁机而入。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 184,
         "segment_index": 6
@@ -338,6 +540,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "曹峻",
           "阮邛"
         ],
         "sentence_indexes_in_segment": [
@@ -349,16 +552,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 阮邛在泥瓶巷对话",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与阮邛在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "曹峻",
           "阮邛"
         ],
-        "description": "曹峻收起思绪，转头望去，只见一只通体鲜红的小狐狸，双腿自立，站在泥瓶巷一栋老宅的屋檐上，对曹峻说道：“老祖宗让我告诉你，要你适可而止，若是给阮邛打死了，他就随便在这边找个地儿，帮你葬了，好歹算是叶落归根。 ” 曹峻一脸嫌弃，“啥？",
+        "description": "曹峻收起思绪，转头望去，只见一只通体鲜红的小狐狸，双腿自立，站在泥瓶巷一栋老宅的屋檐上，对曹峻说道：“老祖宗让我告诉你，要你适可而止，若是给阮邛打死了，他就随便在这边找个地儿，帮你葬了，好歹算是叶落归根。 曹峻一脸嫌弃，“啥？ 小狐狸咳嗽一声，从温文尔雅的模样，瞬间变得凶神恶煞，摆出双手叉腰状，骂骂咧咧，“曹曦那个老王八蛋，告诉你这个龟孙子，赶紧收手，如果惹恼了姓阮的铁匠，被打成一滩肉泥，他不会帮你报仇的，有几百个嫡系子孙呢，帮不过来，还说可惜你那媳妇还没娶进门，否则他就不会让我劝你收手了，给人打死最好，他好趁机而入。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动曹峻与阮邛之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -372,8 +578,29 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "对话",
+        "context": "曹峻收起思绪，转头望去，只见一只通体鲜红的小狐狸，双腿自立，站在泥瓶巷一栋老宅的屋檐上，对曹峻说道：“老祖宗让我告诉你，要你适可而止，若是给阮邛打死了，他就随便在这边找个地儿，帮你葬了，好歹算是叶落归根。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与阮邛在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 184,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.786800",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -396,6 +623,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻一脸云淡风轻，点头道：“这就对了。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 184,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "李希圣不管这些，“如果不打，就请让路。",
@@ -411,15 +651,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 李希圣剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与李希圣剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "李希圣"
         ],
-        "description": "李希圣不管这些，“如果不打，就请让路。 ” 曹峻一脸云淡风轻，点头道：“这就对了。",
+        "description": "曹峻一脸云淡风轻，点头道：“这就对了。 李希圣不管这些，“如果不打，就请让路。 ”",
         "background": "",
-        "significance": "对应李希圣在叙事中的关键剧情推进节点。",
+        "significance": "推动曹峻与李希圣之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段7",
         "sentence_indexes_in_segment": [
@@ -435,7 +676,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "extracted_at": "2026-03-25T17:27:37.786800",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -455,7 +696,23 @@
       "曹峻身形拔地而起，直冲云霄，然后向铁匠铺子急急坠去。",
       "至于龙泉郡内，不得擅自御风凌空的狗屁规矩，曹峻真不放在心上。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻笑道：“去铁匠铺子瞅瞅，瞻仰瞻仰圣人。 曹峻身形拔地而起，直冲云霄，然后向铁匠铺子急急坠去。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 8
+      }
+    ],
     "locations": [
       {
         "name": "龙泉",
@@ -467,7 +724,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹峻"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -477,13 +736,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 龙泉对话",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻在龙泉对话",
         "time": null,
         "location": "龙泉",
-        "participants": [],
-        "description": "至于龙泉郡内，不得擅自御风凌空的狗屁规矩，曹峻真不放在心上。 “不打了，不打了，我打不死你，你打不死我，多没劲。 ”",
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻笑道：“去铁匠铺子瞅瞅，瞻仰瞻仰圣人。 曹峻身形拔地而起，直冲云霄，然后向铁匠铺子急急坠去。 至于龙泉郡内，不得擅自御风凌空的狗屁规矩，曹峻真不放在心上。",
         "background": "",
-        "significance": "对应龙泉相关的关键对话场景。",
+        "significance": "对应曹峻在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段8",
         "sentence_indexes_in_segment": [
@@ -499,7 +760,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "extracted_at": "2026-03-25T17:27:37.786800",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -522,6 +783,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻顿时如同一颗流星倒掠出去，最后等他好不容易停下身形，已经是数百里之外，之前已经在云海之中翻滚了无数次，在空中盘腿而坐，呕血不止，曹峻面如金纸，没有恼羞成怒或是气急败坏，反而泛起那张习惯性的笑脸，“从风雪庙出来的家伙，果然一个个脾气都不太好。 那只皮毛鲜红的狐狸绕着曹峻打转，幸灾乐祸道：“吃苦头了吧？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "魏晋",
         "alias": [],
         "original_description_in_book": "就是不知道神仙台魏晋，会不会给人惊喜？",
@@ -542,7 +817,9 @@
         "description": "阮邛所属势力，是龙泉线和山上线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹峻"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -552,15 +829,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 魏晋在风雪庙剧情推进",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与魏晋在风雪庙剧情推进",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "曹峻",
           "魏晋"
         ],
-        "description": "曹峻顿时如同一颗流星倒掠出去，最后等他好不容易停下身形，已经是数百里之外，之前已经在云海之中翻滚了无数次，在空中盘腿而坐，呕血不止，曹峻面如金纸，没有恼羞成怒或是气急败坏，反而泛起那张习惯性的笑脸，“从风雪庙出来的家伙，果然一个个脾气都不太好。 就是不知道神仙台魏晋，会不会给人惊喜？ 结果砰然一声巨响。",
+        "description": "曹峻顿时如同一颗流星倒掠出去，最后等他好不容易停下身形，已经是数百里之外，之前已经在云海之中翻滚了无数次，在空中盘腿而坐，呕血不止，曹峻面如金纸，没有恼羞成怒或是气急败坏，反而泛起那张习惯性的笑脸，“从风雪庙出来的家伙，果然一个个脾气都不太好。 就是不知道神仙台魏晋，会不会给人惊喜？ 那只皮毛鲜红的狐狸绕着曹峻打转，幸灾乐祸道：“吃苦头了吧？",
         "background": "",
-        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
+        "significance": "在风雪庙推动曹峻与魏晋之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段9",
         "sentence_indexes_in_segment": [
@@ -576,7 +854,112 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "extracted_at": "2026-03-25T17:27:37.787803",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-10-0": {
+    "juan_index": 184,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "曹峻笑道：“又没死。",
+      "”",
+      "狐狸啧啧道：“欺软怕硬的本事，倒是随曹曦。",
+      "”",
+      "曹峻说道：“不欺软怕硬，难道还要欺硬怕软？",
+      "你脑子有病吧？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻笑道：“又没死。 曹峻说道：“不欺软怕硬，难道还要欺硬怕软？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "狐狸啧啧道：“欺软怕硬的本事，倒是随曹曦。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与曹曦对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻",
+          "曹曦"
+        ],
+        "description": "曹峻笑道：“又没死。 狐狸啧啧道：“欺软怕硬的本事，倒是随曹曦。 曹峻说道：“不欺软怕硬，难道还要欺硬怕软？",
+        "background": "",
+        "significance": "推动曹峻与曹曦之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 10
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "曹曦"
+        ],
+        "action": "对话",
+        "context": "曹峻笑道：“又没死。 ” 狐狸啧啧道：“欺软怕硬的本事，倒是随曹曦。 ” 曹峻说道：“不欺软怕硬，难道还要欺硬怕软？ 你脑子有病吧？",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与曹曦对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.787803",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -596,7 +979,21 @@
       "如果不是你在一边怂恿我杀人夺宝，我最多就是跟那少年公平买卖。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻黑着脸道：“你还好意思说？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 11
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -620,9 +1017,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "曹峻"
         ],
-        "description": "狐狸不以为意，抬起一只爪子挠着下巴，踮起脚跟，眺望小镇，“那块没能抢到手的古怪剑胚，咋说？ ” ”",
+        "description": "狐狸不以为意，抬起一只爪子挠着下巴，踮起脚跟，眺望小镇，“那块没能抢到手的古怪剑胚，咋说？ 曹峻黑着脸道：“你还好意思说？ ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -640,7 +1038,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.951423",
+    "extracted_at": "2026-03-25T17:27:37.787803",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -660,7 +1058,34 @@
       "”",
       "火红狐狸哪壶不开提哪壶，老调重弹道：“大不了让他将来睡几次你的媳妇，怕个卵？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻冷笑道：“就曹曦那脾气，我算计他一寸，他能讨回去一尺。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹峻冷笑道：“就曹曦那脾气，我算计他一寸，他能讨回去一尺。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "龙泉",
@@ -682,14 +1107,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 龙泉对话",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与曹曦在龙泉对话",
         "time": null,
         "location": "龙泉",
-        "participants": [],
-        "description": "火红狐狸板起脸教训道：“做人呢，要坚守本心，你在外边如何，到了小小龙泉郡，就该继续保持，不过就是有个十一境的兵家圣人，你屁股后头不也跟着个十一境的剑修老祖？ 一个有天时地利，一个有趁手神兵，都是练气士里不讲道理的货色，旗鼓相当，他们打一架，你在旁观战，说不定还可以有所明悟，何乐而不为？ ”",
+        "participants": [
+          "曹峻",
+          "曹曦"
+        ],
+        "description": "火红狐狸板起脸教训道：“做人呢，要坚守本心，你在外边如何，到了小小龙泉郡，就该继续保持，不过就是有个十一境的兵家圣人，你屁股后头不也跟着个十一境的剑修老祖？ 曹峻冷笑道：“就曹曦那脾气，我算计他一寸，他能讨回去一尺。 一个有天时地利，一个有趁手神兵，都是练气士里不讲道理的货色，旗鼓相当，他们打一架，你在旁观战，说不定还可以有所明悟，何乐而不为？",
         "background": "",
-        "significance": "对应龙泉相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在龙泉推动曹峻与曹曦之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -703,8 +1133,218 @@
         "segment_index": 12
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "曹曦"
+        ],
+        "action": "对话",
+        "context": "曹峻冷笑道：“就曹曦那脾气，我算计他一寸，他能讨回去一尺。",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与曹曦在龙泉对话",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.787803",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-13-0": {
+    "juan_index": 184,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "！",
+      "”",
+      "曹峻默不作声，保持微笑，凝视着那只狐狸，年轻剑客的笑脸没有半点波动。",
+      "狐狸故作惊讶道：“哇，真生气了啊，吊儿郎当了一百年的曹峻，竟然也有较真的时候？",
+      "”",
+      "曹峻微笑道：“闲来打蚊蝇，忽起杀尽蚊蝇心。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻默不作声，保持微笑，凝视着那只狐狸，年轻剑客的笑脸没有半点波动。 狐狸故作惊讶道：“哇，真生气了啊，吊儿郎当了一百年的曹峻，竟然也有较真的时候？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻默不作声，保持微笑，凝视着那只狐狸，年轻剑客的笑脸没有半点波动。 狐狸故作惊讶道：“哇，真生气了啊，吊儿郎当了一百年的曹峻，竟然也有较真的时候？ 曹峻微笑道：“闲来打蚊蝇，忽起杀尽蚊蝇心。",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 13
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.952427",
+    "extracted_at": "2026-03-25T17:27:37.787803",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-15-0": {
+    "juan_index": 184,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "这一片空中，剑光暴溅，白虹纵横。",
+      "别说被切分出十七八块的身躯，就是那颗头颅都已经变作八瓣，但是当白鱼飞剑出现一丝凝滞，一瞬间狐狸就恢复完整。",
+      "如此反复循环。",
+      "最后曹峻叹息一声，收剑入鞘。",
+      "狐狸扭了扭脖子，走到曹峻身边坐下，“年轻人，多大的本事，就说多大口气的话。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "最后曹峻叹息一声，收剑入鞘。 狐狸扭了扭脖子，走到曹峻身边坐下，“年轻人，多大的本事，就说多大口气的话。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 184,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "最后曹峻叹息一声，收剑入鞘。 狐狸扭了扭脖子，走到曹峻身边坐下，“年轻人，多大的本事，就说多大口气的话。 这一片空中，剑光暴溅，白虹纵横。",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 15
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.787803",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "184-16-0": {
+    "juan_index": 184,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百八十四章 别有洞天",
+    "source_sentences": [
+      "曹峻点头道：“有道理。",
+      "听你的。",
+      "”",
+      "“既然如此，等你把媳妇娶进门，借我睡一睡？",
+      "反正她是女的，我是母的，谁占谁便宜还不好说呢。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻点头道：“有道理。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 184,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻点头道：“有道理。 听你的。 ”",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 184,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -725,6 +1365,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "“年纪轻轻”曹峻，原来早已百岁高龄，他此时举目远望，嘴唇抿起，对于那头狐狸在耳边的挖苦，置若罔闻。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -755,19 +1408,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣讥讽",
+        "name": "第三卷金错刀 第一百八十四章 别有洞天 · 曹峻与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "曹峻",
           "陈平安",
           "李希圣"
         ],
-        "description": "陈平安快步跑到李希圣身边，忧心忡忡道：“没事吧？ 狐狸又开始作妖，讥讽道：“哇，咱们南婆娑洲一百年前的那个头号剑仙胚子，如今的九境大剑修，今天突然这么听话？ ”",
+        "description": "“年纪轻轻”曹峻，原来早已百岁高龄，他此时举目远望，嘴唇抿起，对于那头狐狸在耳边的挖苦，置若罔闻。 陈平安快步跑到李希圣身边，忧心忡忡道：“没事吧？ 狐狸又开始作妖，讥讽道：“哇，咱们南婆娑洲一百年前的那个头号剑仙胚子，如今的九境大剑修，今天突然这么听话？",
         "background": "",
-        "significance": "推动陈平安与李希圣之间的讥讽关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动曹峻与陈平安之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -781,34 +1433,8 @@
         "segment_index": 17
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "李希圣"
-        ],
-        "action": "讥讽",
-        "context": "狐狸又开始作妖，讥讽道：“哇，咱们南婆娑洲一百年前的那个头号剑仙胚子，如今的九境大剑修，今天突然这么听话？ ” “年纪轻轻”曹峻，原来早已百岁高龄，他此时举目远望，嘴唇抿起，对于那头狐狸在耳边的挖苦，置若罔闻。 ———— 陈平安快步跑到李希圣身边，忧心忡忡道：“没事吧？ ”",
-        "result": null,
-        "event_name": "第三卷金错刀 第一百八十四章 别有洞天 · 陈平安与李希圣讥讽",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 184,
-        "segment_index": 17
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.952427",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -855,6 +1481,19 @@
         ],
         "juan_index": 184,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "袖中那枚银锭剑胚已经恢复寂静，在曹峻离去之后，就不再滚烫颤动。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 184,
+        "segment_index": 18
       }
     ],
     "locations": [
@@ -895,14 +1534,13 @@
         "participants": [
           "陈平安",
           "魏檗",
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
-        "description": "李希圣微笑道：“头一回打架，于是遇上了剑修，其实心里挺慌的，不过结果还不错。 陈平安如释重负。 青衣小童突然一个飞身直扑，抱住陈平安的腰，“太可怕了太可怕了！",
+        "description": "李希圣微笑道：“头一回打架，于是遇上了剑修，其实心里挺慌的，不过结果还不错。 陈平安如释重负。 袖中那枚银锭剑胚已经恢复寂静，在曹峻离去之后，就不再滚烫颤动。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百八十四章 别有洞天 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -916,34 +1554,8 @@
         "segment_index": 18
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李希圣"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "李希圣微笑道：“头一回打架，于是遇上了剑修，其实心里挺慌的，不过结果还不错。 ” 陈平安如释重负。 袖中那枚银锭剑胚已经恢复寂静，在曹峻离去之后，就不再滚烫颤动。 青衣小童突然一个飞身直扑，抱住陈平安的腰，“太可怕了太可怕了！ 果然猜得没错，一不小心走在路上，就要被人打死的，小镇待不得，待不得啊，老爷，你行行好，放我滚去落魄山修行吧，我保证，我发誓从今天起，一定勤勉修行，日夜不歇，别说是餐霞饮露，就是在落魄山吃草根嚼烂泥，我都干！",
-        "result": null,
-        "event_name": "落魄山起势",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 184,
-        "segment_index": 18
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.952427",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -980,6 +1592,20 @@
       },
       {
         "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "李希圣忍俊不禁，赶忙安慰道：“曹峻之流，终究是极少数。 我虽然不曾走出小镇，不过可以确定，曹峻这样修为高、脾气怪的人物，屈指可数，你不用太紧张。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 184,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "青衣小童没有理会李希圣，只顾着跟陈平安哀求不已，被陈平安推开脑袋后，就转为死死抱住他的一条胳膊，身体后倾倒去，死活不让陈平安继续前行，“老爷，发发善心，求你啦！",
@@ -1000,7 +1626,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹峻"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1016,7 +1644,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "李希圣"
+          "李希圣",
+          "曹峻"
         ],
         "description": "李希圣忍俊不禁，赶忙安慰道：“曹峻之流，终究是极少数。 我虽然不曾走出小镇，不过可以确定，曹峻这样修为高、脾气怪的人物，屈指可数，你不用太紧张。 青衣小童没有理会李希圣，只顾着跟陈平安哀求不已，被陈平安推开脑袋后，就转为死死抱住他的一条胳膊，身体后倾倒去，死活不让陈平安继续前行，“老爷，发发善心，求你啦！",
         "background": "",
@@ -1036,7 +1665,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.952427",
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1130,7 +1759,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.952427",
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1211,7 +1840,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.952427",
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1273,7 +1902,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.788806",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1335,7 +1964,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1397,7 +2026,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1475,7 +2104,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1554,7 +2183,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1615,7 +2244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1725,7 +2354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.953430",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1816,7 +2445,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.954434",
+    "extracted_at": "2026-03-25T17:27:37.789810",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1921,7 +2550,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.954434",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2026,7 +2655,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.954434",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2102,7 +2731,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.954434",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2223,7 +2852,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.954434",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2306,7 +2935,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.955437",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2368,7 +2997,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.955437",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2423,7 +3052,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.955437",
+    "extracted_at": "2026-03-25T17:27:37.790813",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

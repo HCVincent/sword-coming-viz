@@ -16,6 +16,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "东华山在皇帝陛下那次御驾亲临之后，就已经撤去所有谍子密探，就连一位十境练气士，都只是在东华山近处隐藏，不可轻易踏足书院，这是大隋对山崖书院给予的尊重，或者说是大隋皇帝对老夫子茅小冬的信任。 白衣少年在山脚书院门口递交过了通关文牒，一路走到此处，往大堂内探头探脑一番，便打死不往里走了，站在门槛外头，气呼呼道：“茅小冬，你是成心恶心我，还是想坑害我？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -25,6 +39,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           4
+        ],
+        "juan_index": 167,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年在山脚书院门口递交过了通关文牒，一路走到此处，往大堂内探头探脑一番，便打死不往里走了，站在门槛外头，气呼呼道：“茅小冬，你是成心恶心我，还是想坑害我？",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 167,
         "segment_index": 1
@@ -39,6 +66,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -56,9 +84,11 @@
         "location": "山崖书院",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "茅小冬",
+          "白衣少年"
         ],
-        "description": "东华山在皇帝陛下那次御驾亲临之后，就已经撤去所有谍子密探，就连一位十境练气士，都只是在东华山近处隐藏，不可轻易踏足书院，这是大隋对山崖书院给予的尊重，或者说是大隋皇帝对老夫子茅小冬的信任。 文正堂内，香火祭祀着山崖书院这一脉尊奉的三位圣人，居中自然是至圣先师，天底下所有儒家门生一同顶礼膜拜的老祖宗，然后就是有意在挂像上隐去身份的文圣，以及第一任书院山主齐静春。 （昨天5500字，你们说不算大章节……今天来一个大的。",
+        "description": "东华山在皇帝陛下那次御驾亲临之后，就已经撤去所有谍子密探，就连一位十境练气士，都只是在东华山近处隐藏，不可轻易踏足书院，这是大隋对山崖书院给予的尊重，或者说是大隋皇帝对老夫子茅小冬的信任。 文正堂内，香火祭祀着山崖书院这一脉尊奉的三位圣人，居中自然是至圣先师，天底下所有儒家门生一同顶礼膜拜的老祖宗，然后就是有意在挂像上隐去身份的文圣，以及第一任书院山主齐静春。 白衣少年在山脚书院门口递交过了通关文牒，一路走到此处，往大堂内探头探脑一番，便打死不往里走了，站在门槛外头，气呼呼道：“茅小冬，你是成心恶心我，还是想坑害我？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -76,7 +106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.876152",
+    "extracted_at": "2026-03-25T17:27:37.690466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -99,6 +129,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬犹然闭着眼睛，满脸淡漠，开口道：“你要么进去敬香，要么把事情掰扯清楚，否则我只要看你一眼，我就是孙子。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -116,16 +159,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
-        "description": "崔瀺一屁股坐在门槛上，“你就算愿意给我当孙子，那也得看我收不收啊。 你今儿撂下一句明白话，如果我不满意，这就拍拍屁股走人，以后再也不来这山头碍你的眼！ ”",
+        "description": "茅小冬犹然闭着眼睛，满脸淡漠，开口道：“你要么进去敬香，要么把事情掰扯清楚，否则我只要看你一眼，我就是孙子。 崔瀺一屁股坐在门槛上，“你就算愿意给我当孙子，那也得看我收不收啊。 你今儿撂下一句明白话，如果我不满意，这就拍拍屁股走人，以后再也不来这山头碍你的眼！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -139,8 +185,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.876152",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "你今儿撂下一句明白话，如果我不满意，这就拍拍屁股走人，以后再也不来这山头碍你的眼！ ” 茅小冬犹然闭着眼睛，满脸淡漠，开口道：“你要么进去敬香，要么把事情掰扯清楚，否则我只要看你一眼，我就是孙子。 ” 崔瀺一屁股坐在门槛上，“你就算愿意给我当孙子，那也得看我收不收啊。 啧啧，也不知道当年是谁挂着两条鼻涕虫跟我学下棋，然后打了一万年的谱，到最后还是我让两子，依旧被我杀得脸色铁青、双手颤抖，恨不得举棋不定，拖延个一百年。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.690466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -163,6 +235,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬淡然道：“围棋只是小道。 呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -175,21 +261,38 @@
         ],
         "juan_index": 167,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？ 尤其这位圣人，可还是老秀才的死对头，怎么，你围棋学我，做人也要学我？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与老秀才对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "茅小冬",
+          "老秀才"
         ],
-        "description": "崔瀺讥笑道：“‘弈之为数，小数也’？ ” 茅小冬淡然道：“围棋只是小道。",
+        "description": "茅小冬淡然道：“围棋只是小道。 崔瀺讥笑道：“‘弈之为数，小数也’？ 呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与老秀才之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -203,8 +306,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.876152",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "师承",
+        "context": "呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与老秀才对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.690466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -227,6 +351,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "始终闭目养神的茅小冬冷笑道：“我再跟你歪理半句，我是你儿子。 崔瀺眼珠子一转，“我这趟来东华山就是无家可归，暂住而已，你茅小冬如今贵为书院山主，睁一只眼闭一只眼就过去了，不想看我就别看嘛，你眼不见心不烦，我也逍遥自在，皆大欢喜。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -245,16 +384,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
-        "description": "崔瀺眼珠子一转，“我这趟来东华山就是无家可归，暂住而已，你茅小冬如今贵为书院山主，睁一只眼闭一只眼就过去了，不想看我就别看嘛，你眼不见心不烦，我也逍遥自在，皆大欢喜。 茅小冬嗤笑道：“就你那无利不起早的性子，我怕过不了几天，书院就要被你害得给大隋拆掉，你要跟大隋较劲，我不拦着，但是你别想着在东华山这里折腾，书院就是书院，是做道德学问的地方，不是你崔瀺可以随便拉屎撒尿还不擦屁股的地儿！ ”",
+        "description": "始终闭目养神的茅小冬冷笑道：“我再跟你歪理半句，我是你儿子。 崔瀺眼珠子一转，“我这趟来东华山就是无家可归，暂住而已，你茅小冬如今贵为书院山主，睁一只眼闭一只眼就过去了，不想看我就别看嘛，你眼不见心不烦，我也逍遥自在，皆大欢喜。 茅小冬嗤笑道：“就你那无利不起早的性子，我怕过不了几天，书院就要被你害得给大隋拆掉，你要跟大隋较劲，我不拦着，但是你别想着在东华山这里折腾，书院就是书院，是做道德学问的地方，不是你崔瀺可以随便拉屎撒尿还不擦屁股的地儿！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -268,8 +410,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.876152",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "茅小冬嗤笑道：“就你那无利不起早的性子，我怕过不了几天，书院就要被你害得给大隋拆掉，你要跟大隋较劲，我不拦着，但是你别想着在东华山这里折腾，书院就是书院，是做道德学问的地方，不是你崔瀺可以随便拉屎撒尿还不擦屁股的地儿！",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.690466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -304,20 +467,34 @@
         ],
         "juan_index": 167,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬点头道：“收到是收到了，但是没拆开，赶紧丢火炉里，然后跑去洗手了，要不然我都不敢拿起筷子吃饭。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "茅小冬"
         ],
-        "description": "崔瀺皱眉道：“你没有收到我的那封密信？ ” 就是里头有一颗棋子的那封。",
+        "description": "崔瀺皱眉道：“你没有收到我的那封密信？ 茅小冬点头道：“收到是收到了，但是没拆开，赶紧丢火炉里，然后跑去洗手了，要不然我都不敢拿起筷子吃饭。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与茅小冬之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段5",
         "sentence_indexes_in_segment": [
@@ -333,7 +510,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "extracted_at": "2026-03-25T17:27:37.690466",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -369,6 +546,19 @@
         ],
         "juan_index": 167,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬呵呵笑道：“信你？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -391,16 +581,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺在骊珠洞天对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "茅小冬"
         ],
-        "description": "这话说得足够难听，只是崔瀺半点不恼，站起身来到高大老人身边，嬉皮笑脸道：“小冬啊，我这次来真不是为了啥谋划来着，就是好好读书，没事晒晒太阳，陪你下下棋，顺便照顾那帮骊珠洞天来的孩子。 崔瀺这下子有些纳闷，指了指自己鼻子，“做我祖宗咋了？ ”",
+        "description": "这话说得足够难听，只是崔瀺半点不恼，站起身来到高大老人身边，嬉皮笑脸道：“小冬啊，我这次来真不是为了啥谋划来着，就是好好读书，没事晒晒太阳，陪你下下棋，顺便照顾那帮骊珠洞天来的孩子。 茅小冬呵呵笑道：“信你？ 崔瀺这下子有些纳闷，指了指自己鼻子，“做我祖宗咋了？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在骊珠洞天推动崔瀺与茅小冬之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -414,8 +607,96 @@
         "segment_index": 6
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "这话说得足够难听，只是崔瀺半点不恼，站起身来到高大老人身边，嬉皮笑脸道：“小冬啊，我这次来真不是为了啥谋划来着，就是好好读书，没事晒晒太阳，陪你下下棋，顺便照顾那帮骊珠洞天来的孩子。 ” 茅小冬呵呵笑道：“信你？ 那我就是你祖宗。 ” 崔瀺这下子有些纳闷，指了指自己鼻子，“做我祖宗咋了？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬在骊珠洞天对话",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.691469",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "167-7-0": {
+    "juan_index": 167,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
+    "source_sentences": [
+      "坏事吗？",
+      "你占了多大便宜？",
+      "”",
+      "茅小冬扯了扯嘴角，“是你祖宗的话，还不得气得棺材板都盖不住？",
+      "我自然不愿意当啊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬扯了扯嘴角，“是你祖宗的话，还不得气得棺材板都盖不住？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "茅小冬扯了扯嘴角，“是你祖宗的话，还不得气得棺材板都盖不住？ 坏事吗？ 你占了多大便宜？",
+        "background": "",
+        "significance": "对应茅小冬在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 7
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "extracted_at": "2026-03-25T17:27:37.691469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -451,21 +732,38 @@
         ],
         "juan_index": 167,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "崔瀺怒道：“茅小冬！ 崔瀺手指点了点茅小冬，“想打架？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺指点",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬指点",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "茅小冬"
         ],
         "description": "崔瀺怒道：“茅小冬！ 崔瀺手指点了点茅小冬，“想打架？ 你差不多就可以了啊！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与茅小冬之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -479,8 +777,29 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "指点",
+        "context": "崔瀺手指点了点茅小冬，“想打架？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.691469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -501,6 +820,20 @@
       "茅小冬伸手按住腰间戒尺，“打死你之后，给你烧香便是。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬蓦然睁开眼睛，气势惊人，如寺庙里的一尊怒目金刚，“打架好啊，以前在大骊，是打不过你，现在嘛，我让你一只手！ 茅小冬伸手按住腰间戒尺，“打死你之后，给你烧香便是。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -527,7 +860,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -537,15 +872,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺在大骊剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
-        "description": "茅小冬蓦然睁开眼睛，气势惊人，如寺庙里的一尊怒目金刚，“打架好啊，以前在大骊，是打不过你，现在嘛，我让你一只手！ 崔瀺眨了眨眼睛，“你现在是我孙子了，孙子打爷爷不合适吧？ ”",
+        "description": "茅小冬蓦然睁开眼睛，气势惊人，如寺庙里的一尊怒目金刚，“打架好啊，以前在大骊，是打不过你，现在嘛，我让你一只手！ 崔瀺眨了眨眼睛，“你现在是我孙子了，孙子打爷爷不合适吧？ 茅小冬伸手按住腰间戒尺，“打死你之后，给你烧香便是。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动茅小冬与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段9",
         "sentence_indexes_in_segment": [
@@ -561,7 +897,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "extracted_at": "2026-03-25T17:27:37.691469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -600,6 +936,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "崔瀺赶紧伸出一只手，“打住打住，老秀才和齐静春都要我捎句话给你，你听过再说。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 167,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -609,6 +958,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 167,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬眯起眼，一身杀气浓重无比，比起睁眼瞬间反而有增无减，“小心是你的遗言。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 167,
         "segment_index": 10
@@ -623,9 +985,10 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
-        "description": "崔瀺赶紧伸出一只手，“打住打住，老秀才和齐静春都要我捎句话给你，你听过再说。 崔瀺嘴唇微动。 ”",
+        "description": "崔瀺赶紧伸出一只手，“打住打住，老秀才和齐静春都要我捎句话给你，你听过再说。 茅小冬眯起眼，一身杀气浓重无比，比起睁眼瞬间反而有增无减，“小心是你的遗言。 崔瀺嘴唇微动。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -643,7 +1006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "extracted_at": "2026-03-25T17:27:37.691469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -664,6 +1027,35 @@
       "茅小冬收起视线，大踏步离去。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬听过心声之后，紧紧盯住一身修为不过第五境的白衣少年，尤其是崔瀺的那双眼眸。 如果茅小冬是在大骊的旧山崖书院，遇上大骊国师崔瀺，那么茅小冬根本不会多此一举，因为两人境界差距摆在那里，两境之差，云泥之别。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "茅小冬听过心声之后，紧紧盯住一身修为不过第五境的白衣少年，尤其是崔瀺的那双眼眸。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -692,6 +1084,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "崔瀺"
         ],
         "sentence_indexes_in_segment": [
@@ -708,6 +1101,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "茅小冬",
           "崔瀺"
         ],
         "sentence_indexes_in_segment": [
@@ -719,15 +1113,17 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺在大骊剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "茅小冬",
+          "崔瀺",
+          "白衣少年"
         ],
-        "description": "茅小冬听过心声之后，紧紧盯住一身修为不过第五境的白衣少年，尤其是崔瀺的那双眼眸。 如果茅小冬是在大骊的旧山崖书院，遇上大骊国师崔瀺，那么茅小冬根本不会多此一举，因为两人境界差距摆在那里，两境之差，云泥之别。 人之双眼，之所以被誉为灵气所钟，就在于若说心境如湖，那么眼眸就如深井的泉眼，身正则神气清，心邪则眼神浊。",
+        "description": "茅小冬听过心声之后，紧紧盯住一身修为不过第五境的白衣少年，尤其是崔瀺的那双眼眸。 如果茅小冬是在大骊的旧山崖书院，遇上大骊国师崔瀺，那么茅小冬根本不会多此一举，因为两人境界差距摆在那里，两境之差，云泥之别。 可如今形势颠倒，换成了他茅小冬在修为上居高临下，当然就有些用处了，关键是他们曾经位于同一条圣人文脉，相对会看得更加清晰。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动茅小冬与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段11",
         "sentence_indexes_in_segment": [
@@ -743,7 +1139,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "extracted_at": "2026-03-25T17:27:37.691469",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -779,21 +1175,37 @@
         ],
         "juan_index": 167,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬冷哼道：“赶紧洗眼睛，要不然得瞎！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "茅小冬"
         ],
-        "description": "崔瀺笑问道：“你干啥去？ 崔瀺伸手弹了弹衣襟，沾沾自喜道：“我这副少年皮囊，确实是倾国倾城。 不再聊聊？",
+        "description": "崔瀺笑问道：“你干啥去？ 茅小冬冷哼道：“赶紧洗眼睛，要不然得瞎！ 崔瀺伸手弹了弹衣襟，沾沾自喜道：“我这副少年皮囊，确实是倾国倾城。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与茅小冬之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -807,8 +1219,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔瀺笑问道：“你干啥去？ 不再聊聊？ ” 茅小冬冷哼道：“赶紧洗眼睛，要不然得瞎！ ” 崔瀺伸手弹了弹衣襟，沾沾自喜道：“我这副少年皮囊，确实是倾国倾城。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.692473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -831,6 +1269,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬停下脚步，就要转身动手打人，毕竟老人想打死这个欺师灭祖的王八蛋，已经不是十年二十年了。 咱们儒家圣人以德化人，君子以理服人，虽说你茅小冬被师门牵累，到如今还只是个贤人身份，可贤人也没用卷起袖子干架的说法啊。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -848,15 +1301,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺揭示",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺揭示",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
-        "description": "崔瀺袖中掠出一抹细微金光，蓄势待发，他震惊道：“你真要动手打人啊？ ” 茅小冬停下脚步，就要转身动手打人，毕竟老人想打死这个欺师灭祖的王八蛋，已经不是十年二十年了。",
+        "description": "茅小冬停下脚步，就要转身动手打人，毕竟老人想打死这个欺师灭祖的王八蛋，已经不是十年二十年了。 崔瀺袖中掠出一抹细微金光，蓄势待发，他震惊道：“你真要动手打人啊？ 咱们儒家圣人以德化人，君子以理服人，虽说你茅小冬被师门牵累，到如今还只是个贤人身份，可贤人也没用卷起袖子干架的说法啊。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键揭示节点。",
+        "significance": "推动茅小冬与崔瀺之间的揭示关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段13",
         "sentence_indexes_in_segment": [
@@ -872,7 +1326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.877155",
+    "extracted_at": "2026-03-25T17:27:37.692473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -921,6 +1375,19 @@
         ],
         "juan_index": 167,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬没好气道：“有。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 14
       }
     ],
     "locations": [],
@@ -931,9 +1398,10 @@
         "location": null,
         "participants": [
           "崔瀺",
-          "李宝瓶"
+          "李宝瓶",
+          "茅小冬"
         ],
-        "description": "崔瀺快步跟上，双手负后，飘逸非凡，纠缠不休道：“李宝瓶他们在这边求学如何了？ 崔瀺脸色阴沉，“该不会是有人想要杀鸡儆猴吧？ 有没有让书院鸡飞狗跳？",
+        "description": "崔瀺快步跟上，双手负后，飘逸非凡，纠缠不休道：“李宝瓶他们在这边求学如何了？ 茅小冬没好气道：“有。 崔瀺脸色阴沉，“该不会是有人想要杀鸡儆猴吧？",
         "background": "",
         "significance": "推动崔瀺与李宝瓶之间的剧情推进关系。",
         "related_action_indices": [],
@@ -951,7 +1419,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "extracted_at": "2026-03-25T17:27:37.692473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -972,6 +1440,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬冷笑道：“我还以为是国师你暗中作祟呢，试图离间书院和大隋的关系，让大隋皇帝下不来台，好彻底断了山崖书院的文脉香火。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 167,
+        "segment_index": 15
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -996,7 +1477,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1006,16 +1489,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺在山崖书院对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺在山崖书院对话",
         "time": null,
         "location": "山崖书院",
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
         "description": "茅小冬冷笑道：“我还以为是国师你暗中作祟呢，试图离间书院和大隋的关系，让大隋皇帝下不来台，好彻底断了山崖书院的文脉香火。 崔瀺有些尴尬，抬起手臂挠挠头，干笑道：“京城的老家伙做得出来这种勾当，我可不会。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在山崖书院推动茅小冬与崔瀺之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1029,8 +1515,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "” 茅小冬冷笑道：“我还以为是国师你暗中作祟呢，试图离间书院和大隋的关系，让大隋皇帝下不来台，好彻底断了山崖书院的文脉香火。 ” 崔瀺有些尴尬，抬起手臂挠挠头，干笑道：“京城的老家伙做得出来这种勾当，我可不会。 我如今时时将心比心，事事与人为善，改正归邪……哦不对，是改邪归正很久了。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.692473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1053,6 +1565,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬叹了口气，仰头望向东华山之巅的凉亭，嗓音不重，但是语气坚定道：“崔瀺，你如果胆敢做出有害书院的事情，一次，我就出手杀你。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -1071,16 +1596,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
         "description": "茅小冬叹了口气，仰头望向东华山之巅的凉亭，嗓音不重，但是语气坚定道：“崔瀺，你如果胆敢做出有害书院的事情，一次，我就出手杀你。 崔瀺浑然不放在心上，“随你随你，你开心就好。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1094,8 +1622,29 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "冲突",
+        "context": "茅小冬叹了口气，仰头望向东华山之巅的凉亭，嗓音不重，但是语气坚定道：“崔瀺，你如果胆敢做出有害书院的事情，一次，我就出手杀你。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.692473",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1118,6 +1667,33 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬眼神古怪地斜瞥了眼白衣少年，摇摇头，继续前行，然后将大致情况说了一遍。 这一下子，就算是副山主茅小冬都压不住这个天大消息。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "茅小冬眼神古怪地斜瞥了眼白衣少年，摇摇头，继续前行，然后将大致情况说了一遍。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "于禄",
         "alias": [],
         "original_description_in_book": "尤其是最后一场书楼之战，于禄一人对阵两人，结果双方两败俱伤，三人竖着进去，一位洞府境的年轻贤人，一位观海境的老剑修，一个武夫第六境巅峰的高大少年，到最后全部横着出来的。",
@@ -1133,15 +1709,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 于禄剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
+          "白衣少年",
           "于禄"
         ],
-        "description": "尤其是最后一场书楼之战，于禄一人对阵两人，结果双方两败俱伤，三人竖着进去，一位洞府境的年轻贤人，一位观海境的老剑修，一个武夫第六境巅峰的高大少年，到最后全部横着出来的。 不过记得带上几壶酒，大隋皇帝是个不小气的，肯定赏赐下来不少好酒。 ”",
+        "description": "茅小冬眼神古怪地斜瞥了眼白衣少年，摇摇头，继续前行，然后将大致情况说了一遍。 尤其是最后一场书楼之战，于禄一人对阵两人，结果双方两败俱伤，三人竖着进去，一位洞府境的年轻贤人，一位观海境的老剑修，一个武夫第六境巅峰的高大少年，到最后全部横着出来的。 这一下子，就算是副山主茅小冬都压不住这个天大消息。",
         "background": "",
-        "significance": "对应于禄在叙事中的关键剧情推进节点。",
+        "significance": "推动茅小冬与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段17",
         "sentence_indexes_in_segment": [
@@ -1157,7 +1735,113 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "extracted_at": "2026-03-25T17:27:37.692473",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "167-18-0": {
+    "juan_index": 167,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
+    "source_sentences": [
+      "只不过茅小冬面对三人，只说这件事情，他自会给大隋皇帝一个交待，其余人等，任你是藩王还是尚书，都没资格对书院指手画脚。",
+      "三人其实上山后并没有半点兴师问罪的意思，可是茅小冬依旧不近人情，态度强硬至极，让三人碰了一个天大的钉子。",
+      "那名十境练气士当场就要动手，所幸被礼部天官给拦住了，一同火速下山，进宫面圣。",
+      "下山队伍中，多了老剑修和李长英两人，当时已经能走，但是气色糟糕，如大病未愈。",
+      "茅小冬最后问道：“你以什么身份待在这里？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "只不过茅小冬面对三人，只说这件事情，他自会给大隋皇帝一个交待，其余人等，任你是藩王还是尚书，都没资格对书院指手画脚。 三人其实上山后并没有半点兴师问罪的意思，可是茅小冬依旧不近人情，态度强硬至极，让三人碰了一个天大的钉子。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "李长英",
+        "alias": [],
+        "original_description_in_book": "下山队伍中，多了老剑修和李长英两人，当时已经能走，但是气色糟糕，如大病未愈。",
+        "description": "书院求学线的重要人物，适合补强李宝瓶一行相关的人物网络。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与李长英对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "茅小冬",
+          "李长英"
+        ],
+        "description": "只不过茅小冬面对三人，只说这件事情，他自会给大隋皇帝一个交待，其余人等，任你是藩王还是尚书，都没资格对书院指手画脚。 三人其实上山后并没有半点兴师问罪的意思，可是茅小冬依旧不近人情，态度强硬至极，让三人碰了一个天大的钉子。 下山队伍中，多了老剑修和李长英两人，当时已经能走，但是气色糟糕，如大病未愈。",
+        "background": "",
+        "significance": "推动茅小冬与李长英之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 18
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "李长英"
+        ],
+        "action": "对话",
+        "context": "只不过茅小冬面对三人，只说这件事情，他自会给大隋皇帝一个交待，其余人等，任你是藩王还是尚书，都没资格对书院指手画脚。 三人其实上山后并没有半点兴师问罪的意思，可是茅小冬依旧不近人情，态度强硬至极，让三人碰了一个天大的钉子。 那名十境练气士当场就要动手，所幸被礼部天官给拦住了，一同火速下山，进宫面圣。 下山队伍中，多了老剑修和李长英两人，当时已经能走，但是气色糟糕，如大病未愈。 茅小冬最后问道：“你以什么身份待在这里？ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与李长英对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.693476",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1219,6 +1903,19 @@
         ],
         "juan_index": 167,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬仍是不太放心，忧心忡忡道：“大隋的谍报，可不比大骊差。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 19
       }
     ],
     "locations": [
@@ -1231,7 +1928,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1332,7 +2031,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "extracted_at": "2026-03-25T17:27:37.693476",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1355,6 +2054,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "两人分别之际，积怨已久的茅小冬忍不住骂道：“你是谁？ 茅小冬愣了愣，气恼得咬紧牙关，身形直接一闪而逝。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -1372,16 +2085,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺别离",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
-        "description": "崔瀺哎了一声，乐呵呵喊道：“爹！ 两人分别之际，积怨已久的茅小冬忍不住骂道：“你是谁？ 你是我儿子！",
+        "description": "两人分别之际，积怨已久的茅小冬忍不住骂道：“你是谁？ 崔瀺哎了一声，乐呵呵喊道：“爹！ 茅小冬愣了愣，气恼得咬紧牙关，身形直接一闪而逝。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与崔瀺之间的别离关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1395,8 +2111,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "别离",
+        "context": "两人分别之际，积怨已久的茅小冬忍不住骂道：“你是谁？ 你是我儿子！ ” 崔瀺哎了一声，乐呵呵喊道：“爹！ ” 茅小冬愣了愣，气恼得咬紧牙关，身形直接一闪而逝。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺别离",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.693476",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1432,20 +2174,34 @@
         ],
         "juan_index": 167,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "文正堂内，茅小冬去而复返，站在堂下，敬完三炷香后，伤感道：“先生，师兄，为何要如此，我如何都想不明白！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 21
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺与茅小冬剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "茅小冬"
         ],
-        "description": "崔瀺喊道：“那帮孩子住哪儿呢，爹你告诉我一声啊！ 崔瀺翻了个白眼，“我自己挨家挨户敲门找过去，谁怕谁啊。 ”",
+        "description": "崔瀺喊道：“那帮孩子住哪儿呢，爹你告诉我一声啊！ 崔瀺翻了个白眼，“我自己挨家挨户敲门找过去，谁怕谁啊。 文正堂内，茅小冬去而复返，站在堂下，敬完三炷香后，伤感道：“先生，师兄，为何要如此，我如何都想不明白！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与茅小冬之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段21",
         "sentence_indexes_in_segment": [
@@ -1461,7 +2217,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "extracted_at": "2026-03-25T17:27:37.693476",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1526,7 +2282,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.878158",
+    "extracted_at": "2026-03-25T17:27:37.693476",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1647,7 +2403,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.693476",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1754,7 +2510,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.694480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1850,7 +2606,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.694480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1966,7 +2722,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.694480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2171,7 +2927,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.694480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2278,7 +3034,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.694480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2370,7 +3126,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.879162",
+    "extracted_at": "2026-03-25T17:27:37.694480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2448,7 +3204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.695483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2508,6 +3264,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0,
+          1
+        ],
+        "juan_index": 167,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "李长英",
+        "alias": [],
+        "original_description_in_book": "李槐继续留在那边，是下策，搬来这里是中策，搬去李长英学舍才是上策。",
+        "description": "书院求学线的重要人物，适合补强李宝瓶一行相关的人物网络。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
           1
         ],
         "juan_index": 167,
@@ -2635,7 +3404,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.695483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2714,7 +3483,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.695483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2821,7 +3590,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.695483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2901,7 +3670,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.695483",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3008,7 +3777,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.696487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3114,7 +3883,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.880165",
+    "extracted_at": "2026-03-25T17:27:37.696487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3192,7 +3961,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.881168",
+    "extracted_at": "2026-03-25T17:27:37.696487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3363,7 +4132,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.881168",
+    "extracted_at": "2026-03-25T17:27:37.696487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3441,7 +4210,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.881168",
+    "extracted_at": "2026-03-25T17:27:37.696487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3563,7 +4332,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.881168",
+    "extracted_at": "2026-03-25T17:27:37.696487",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3665,6 +4434,32 @@
         ],
         "juan_index": 167,
         "segment_index": 41
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "少女紧绷心弦，小心翼翼跟在白衣少年身后，她当下比面对那个“死了爹的大隋将种”，还要紧张万分。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 41
+      },
+      {
+        "entity_type": "person",
+        "name": "李长英",
+        "alias": [],
+        "original_description_in_book": "没了李宝瓶三个孩子在场，崔瀺面无表情，头也不转，冷声问道：“为什么面对李长英，没有出手？",
+        "description": "书院求学线的重要人物，适合补强李宝瓶一行相关的人物网络。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 41
       }
     ],
     "locations": [],
@@ -3685,7 +4480,9 @@
         "related_action_indices": [
           0,
           1,
-          2
+          2,
+          3,
+          4
         ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段41",
         "sentence_indexes_in_segment": [
@@ -3760,9 +4557,49 @@
         ],
         "juan_index": 167,
         "segment_index": 41
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "李长英"
+        ],
+        "action": "对话",
+        "context": "没了李宝瓶三个孩子在场，崔瀺面无表情，头也不转，冷声问道：“为什么面对李长英，没有出手？",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 41
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "李长英"
+        ],
+        "action": "对话",
+        "context": "没了李宝瓶三个孩子在场，崔瀺面无表情，头也不转，冷声问道：“为什么面对李长英，没有出手？",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.881168",
+    "extracted_at": "2026-03-25T17:27:37.697490",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3868,7 +4705,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.697490",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3947,7 +4784,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.697490",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4012,7 +4849,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.697490",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4106,7 +4943,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.697490",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4170,7 +5007,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.697490",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4234,7 +5071,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.698494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4313,7 +5150,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.698494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4393,7 +5230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.698494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4485,7 +5322,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.882172",
+    "extracted_at": "2026-03-25T17:27:37.698494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4564,7 +5401,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.883176",
+    "extracted_at": "2026-03-25T17:27:37.698494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4680,7 +5517,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.883176",
+    "extracted_at": "2026-03-25T17:27:37.698494",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4708,6 +5545,19 @@
         "original_description_in_book": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。",
         "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
         "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 53
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -4756,7 +5606,9 @@
         "description": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。 “第二，是它山之石可以攻玉，一路行来，有些不甘心，总想着学以致用，可是陈平安境界太低，公子架子太大，那些魑魅魍魉都给林守一收拾掉了，其实道行也不够看，怎么办？ ”",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段53",
         "sentence_indexes_in_segment": [
           0,
@@ -4770,8 +5622,29 @@
         "segment_index": 53
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.883176",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "于禄"
+        ],
+        "to_roles": [
+          "白衣少年"
+        ],
+        "action": "对话",
+        "context": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 53
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.699497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4878,7 +5751,7 @@
         "segment_index": 54
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.883176",
+    "extracted_at": "2026-03-25T17:27:37.699497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5072,7 +5945,7 @@
         "segment_index": 55
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.883176",
+    "extracted_at": "2026-03-25T17:27:37.699497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5150,7 +6023,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.883176",
+    "extracted_at": "2026-03-25T17:27:37.699497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5217,6 +6090,19 @@
         ],
         "juan_index": 167,
         "segment_index": 57
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "于禄和谢谢，与白衣少年朝夕相处，实则无时无地不是在与之手谈，谢谢下棋下得太用力了，反而会让崔瀺觉得愚不可及，眼皮子都懒得搭一下。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 57
       }
     ],
     "locations": [
@@ -5247,7 +6133,8 @@
         "participants": [
           "崔瀺",
           "于禄",
-          "谢谢"
+          "谢谢",
+          "白衣少年"
         ],
         "description": "于禄大大方方坐下。 估计这就是他跟谢谢最大的不同。 那个少女一样聪明，只是她想要很多可能一辈子都争取不来的东西，反观这位高大少年，什么都放得下，想要拿起来的东西，又不会太重，而且从来无关崔瀺的大局，所以过得更加轻松。",
         "background": "",
@@ -5267,7 +6154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.699497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5382,7 +6269,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.700501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5490,7 +6377,7 @@
         "segment_index": 59
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.700501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5594,7 +6481,7 @@
         "segment_index": 60
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.700501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5717,7 +6604,7 @@
         "segment_index": 61
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.700501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5779,7 +6666,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.700501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5832,6 +6719,19 @@
         ],
         "juan_index": 167,
         "segment_index": 63
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "崔瀺不去看至圣先师，看了眼齐静春的挂像，最后转移视线，望向那个老秀才的图像，双手捧香在额头，在心中默念。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 63
       }
     ],
     "locations": [],
@@ -5843,7 +6743,8 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
         "description": "崔瀺来到之前打死不走入的文正堂外，直接一步跨过门槛，拿起一炷香，只是一炷香，而不是按照规矩的三炷。 崔瀺不去看至圣先师，看了眼齐静春的挂像，最后转移视线，望向那个老秀才的图像，双手捧香在额头，在心中默念。 然后睁开眼睛，崔瀺可没有半点烧香人的虔诚肃穆，将手中那炷香插入神坛上的香炉，扬起脑袋，对着那副画像嬉皮笑脸道：“老头子，跟你借一下而已，可别太小气啊，不多，就三境，三境而已，而且只在东华山管用，这总行了吧？",
         "background": "",
@@ -5863,7 +6764,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.700501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5973,7 +6874,7 @@
         "segment_index": 64
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.884179",
+    "extracted_at": "2026-03-25T17:27:37.701504",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6109,7 +7010,7 @@
         "segment_index": 65
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.885183",
+    "extracted_at": "2026-03-25T17:27:37.701504",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6176,7 +7077,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.885183",
+    "extracted_at": "2026-03-25T17:27:37.701504",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6270,7 +7171,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.885183",
+    "extracted_at": "2026-03-25T17:27:37.701504",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6335,7 +7236,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.886186",
+    "extracted_at": "2026-03-25T17:27:37.701504",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6372,21 +7273,37 @@
         ],
         "juan_index": 167,
         "segment_index": 69
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬打量着崔瀺，观其气象，看出深浅后，板着脸走下山去，与崔瀺擦肩而过的时候冷声道：“既然如此，你就老实一点在书院待着，我茅小冬就当捏鼻子忍着粪臭了，别忘了这里是大隋京城，做事情三思而后行！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 69
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 崔瀺试探",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺试探",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔瀺"
         ],
         "description": "崔瀺怒道：“姓茅的，这兔崽子姓甚名甚，家住何方！ 茅小冬打量着崔瀺，观其气象，看出深浅后，板着脸走下山去，与崔瀺擦肩而过的时候冷声道：“既然如此，你就老实一点在书院待着，我茅小冬就当捏鼻子忍着粪臭了，别忘了这里是大隋京城，做事情三思而后行！ 崔瀺一步飞掠到那棵千年银杏树枝头，四处眺望一番后，定睛望去，最终对着东华山附近一栋幽静宅子，开始破口大骂：“那个叫蔡京神的老乌龟王八蛋，对，就是喊你呢，快来认祖归宗！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键试探节点。",
-        "related_action_indices": [],
+        "significance": "推动茅小冬与崔瀺之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段69",
         "sentence_indexes_in_segment": [
           0,
@@ -6400,8 +7317,258 @@
         "segment_index": 69
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "试探",
+        "context": "茅小冬打量着崔瀺，观其气象，看出深浅后，板着脸走下山去，与崔瀺擦肩而过的时候冷声道：“既然如此，你就老实一点在书院待着，我茅小冬就当捏鼻子忍着粪臭了，别忘了这里是大隋京城，做事情三思而后行！",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 69
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.701504",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "167-70-0": {
+    "juan_index": 167,
+    "segment_index": 70,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
+    "source_sentences": [
+      "快点沐浴更衣，磕头听训！",
+      "”",
+      "茅小冬深呼吸一口气，加快步伐下山。",
+      "白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！",
+      "”",
+      "东华山附近那栋宅子，一道虹光平地暴起，升至与东华山山巅齐平的高空，一道魁梧身影怒吼道：“找死！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬深呼吸一口气，加快步伐下山。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 167,
+        "segment_index": 70
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 70
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与白衣少年同行",
+        "time": null,
+        "location": null,
+        "participants": [
+          "茅小冬",
+          "白衣少年"
+        ],
+        "description": "茅小冬深呼吸一口气，加快步伐下山。 白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！ 快点沐浴更衣，磕头听训！",
+        "background": "",
+        "significance": "推动茅小冬与白衣少年之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段70",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 70
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
+          "白衣少年"
+        ],
+        "action": "同行",
+        "context": "快点沐浴更衣，磕头听训！ ” 茅小冬深呼吸一口气，加快步伐下山。 白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！ ” 东华山附近那栋宅子，一道虹光平地暴起，升至与东华山山巅齐平的高空，一道魁梧身影怒吼道：“找死！",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与白衣少年同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 70
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.701504",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "167-71-0": {
+    "juan_index": 167,
+    "segment_index": 71,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
+    "source_sentences": [
+      "”",
+      "白衣少年以更大的嗓门答复道：“老祖宗在这里找龟孙子，不找死！",
+      "”",
+      "魁梧老人吼道：“滚出来！",
+      "”",
+      "当老者升空之后，以东华山为中心，四周不断有灯光亮起，由近及远，越来越多。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年以更大的嗓门答复道：“老祖宗在这里找龟孙子，不找死！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 167,
+        "segment_index": 71
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年以更大的嗓门答复道：“老祖宗在这里找龟孙子，不找死！ ” ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段71",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 71
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.886186",
+    "extracted_at": "2026-03-25T17:27:37.702508",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "167-72-0": {
+    "juan_index": 167,
+    "segment_index": 72,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
+    "source_sentences": [
+      "白衣少年在众目睽睽之下，嘿嘿笑道：“乖孙儿你快点滚进来！",
+      "”",
+      "老人似乎被那个小疯子的言语给震惊到了，竟是一时半会儿有些发愣。",
+      "白衣少年趁胜追击道：“他娘的谁接给你的狗胆，敢欺负老子的门下弟子？",
+      "蔡京神，手脚利索点，快点拿刀砍死自己，记得砍得心诚一些，砍出十境修士该有的风采！",
+      "那么祖宗我就当你认错了，说不定还能既往不咎……”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年在众目睽睽之下，嘿嘿笑道：“乖孙儿你快点滚进来！ 白衣少年趁胜追击道：“他娘的谁接给你的狗胆，敢欺负老子的门下弟子？",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 72
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年在众目睽睽之下，嘿嘿笑道：“乖孙儿你快点滚进来！ 白衣少年趁胜追击道：“他娘的谁接给你的狗胆，敢欺负老子的门下弟子？ ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段72",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 72
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.702508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6421,7 +7588,21 @@
       "老人御风而立，面朝山崖书院，一脚重重踏出，抡起手臂，最终做出一个丢掷姿势。",
       "一根雷电交织的雪白长矛，呼啸而去，直刺东华山之巅的那棵银杏树。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "那名享誉大隋的魁梧老者，愤怒的咆哮声，几乎响彻方圆十里，“茅小冬！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 73
+      }
+    ],
     "locations": [
       {
         "name": "山崖书院",
@@ -6440,13 +7621,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 山崖书院剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬在山崖书院剧情推进",
         "time": null,
         "location": "山崖书院",
-        "participants": [],
-        "description": "老人御风而立，面朝山崖书院，一脚重重踏出，抡起手臂，最终做出一个丢掷姿势。 那名享誉大隋的魁梧老者，愤怒的咆哮声，几乎响彻方圆十里，“茅小冬！ 你们书院不管这混账疯子，我蔡京神来帮你管！",
+        "participants": [
+          "茅小冬"
+        ],
+        "description": "那名享誉大隋的魁梧老者，愤怒的咆哮声，几乎响彻方圆十里，“茅小冬！ 老人御风而立，面朝山崖书院，一脚重重踏出，抡起手臂，最终做出一个丢掷姿势。 你们书院不管这混账疯子，我蔡京神来帮你管！",
         "background": "",
-        "significance": "对应山崖书院相关的关键剧情推进场景。",
+        "significance": "对应茅小冬在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段73",
         "sentence_indexes_in_segment": [
@@ -6462,7 +7645,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.886186",
+    "extracted_at": "2026-03-25T17:27:37.702508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6482,7 +7665,34 @@
       "这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。",
       "银杏树这边，亦是有一抹细微金光当空炸起，相对长达两丈、气势威严的巨大电矛，那点金光实在是小到忽略不计。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 167,
+        "segment_index": 74
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 167,
+        "segment_index": 74
+      }
+    ],
     "locations": [
       {
         "name": "山崖书院",
@@ -6491,7 +7701,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -6501,14 +7713,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 山崖书院冲突",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年与茅小冬在山崖书院冲突",
         "time": null,
         "location": "山崖书院",
-        "participants": [],
-        "description": "这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。 那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！ 来而不往非礼也，老祖宗打赏，孙儿蔡京神好好接着！",
+        "participants": [
+          "白衣少年",
+          "茅小冬"
+        ],
+        "description": "那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！ 这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。 来而不往非礼也，老祖宗打赏，孙儿蔡京神好好接着！",
         "background": "",
-        "significance": "对应山崖书院相关的关键冲突场景。",
-        "related_action_indices": [],
+        "significance": "在山崖书院推动白衣少年与茅小冬之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段74",
         "sentence_indexes_in_segment": [
           0,
@@ -6522,8 +7739,34 @@
         "segment_index": 74
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.886186",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "白衣少年"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "冲突",
+        "context": "那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！ 来而不往非礼也，老祖宗打赏，孙儿蔡京神好好接着！ ” 电矛扑向山巅大树，很快闯入书院地界的上空。 这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。 银杏树这边，亦是有一抹细微金光当空炸起，相对长达两丈、气势威严的巨大电矛，那点金光实在是小到忽略不计。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年与茅小冬在山崖书院冲突",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 167,
+        "segment_index": 74
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.702508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6588,7 +7831,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.886186",
+    "extracted_at": "2026-03-25T17:27:37.702508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6689,6 +7932,19 @@
         ],
         "juan_index": 167,
         "segment_index": 78
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "李宝瓶，林守一，于禄，谢谢，自称崔东山的白衣少年。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 167,
+        "segment_index": 78
       }
     ],
     "locations": [],
@@ -6721,7 +7977,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.887189",
+    "extracted_at": "2026-03-25T17:27:37.703511",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6782,7 +8038,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.887189",
+    "extracted_at": "2026-03-25T17:27:37.703511",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6845,7 +8101,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.887189",
+    "extracted_at": "2026-03-25T17:27:37.703511",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6903,7 +8159,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.887189",
+    "extracted_at": "2026-03-25T17:27:37.703511",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

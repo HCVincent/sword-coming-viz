@@ -1,4 +1,67 @@
 {
+  "282-1-0": {
+    "juan_index": 282,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百八十一章 天真",
+    "source_sentences": [
+      "小道童起身走出蒲团，将那卷道家典籍卷起来，轻轻怕打手心，看着失魂落魄的少年，这位能征善战却在浩然天下名声不显的天君，便有些高兴起来。",
+      "多半是跟那个惹人厌的姑娘分手了吧？",
+      "小道童难得安慰人，尽量挤出一张自认慈祥、真诚的脸庞，笑眯眯道：“那样的臭丫头，脾气太差，性子太冷，也就模样好一点，家世好一点，资质好一点，前程好一点……你喜欢她作甚？",
+      "所以说嘛，分开就分开了，你瞧瞧这倒悬山，随便走街上，一抓打一把的温柔姑娘，瞧那腰肢细的，跟一条条腌白菜似的，最不稀罕了，你看上了哪个？",
+      "我帮你。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童起身走出蒲团，将那卷道家典籍卷起来，轻轻怕打手心，看着失魂落魄的少年，这位能征善战却在浩然天下名声不显的天君，便有些高兴起来。 小道童难得安慰人，尽量挤出一张自认慈祥、真诚的脸庞，笑眯眯道：“那样的臭丫头，脾气太差，性子太冷，也就模样好一点，家世好一点，资质好一点，前程好一点……你喜欢她作甚？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 282,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百八十一章 天真 · 小道童剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童起身走出蒲团，将那卷道家典籍卷起来，轻轻怕打手心，看着失魂落魄的少年，这位能征善战却在浩然天下名声不显的天君，便有些高兴起来。 小道童难得安慰人，尽量挤出一张自认慈祥、真诚的脸庞，笑眯眯道：“那样的臭丫头，脾气太差，性子太冷，也就模样好一点，家世好一点，资质好一点，前程好一点……你喜欢她作甚？ 多半是跟那个惹人厌的姑娘分手了吧？",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百八十一章 天真 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 282,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.379377",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "282-2-0": {
     "juan_index": 282,
     "segment_index": 2,
@@ -23,6 +86,19 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0,
+          1
+        ],
+        "juan_index": 282,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "跟嬉皮笑脸的小道童，陈平安只是不缺礼节地告辞离去，至于那个抱剑汉子，只要是大白天，依旧是万年不变的打瞌睡，陈平安便没有打搅人家的白日美梦。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
           1
         ],
         "juan_index": 282,
@@ -63,16 +139,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十一章 天真 · 陈平安与宁姚在剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百八十一章 天真 · 陈平安与小道童在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
         "participants": [
           "陈平安",
+          "小道童",
           "宁姚"
         ],
         "description": "陈平安无奈一笑，没有附和，这种法力通天的人物，就不要招惹了。 跟嬉皮笑脸的小道童，陈平安只是不缺礼节地告辞离去，至于那个抱剑汉子，只要是大白天，依旧是万年不变的打瞌睡，陈平安便没有打搅人家的白日美梦。 宁姚之前提起过这位，十三之战，此人出战第九场，输了，而且是输给一位不过百岁的十二境大妖，输得极为可惜，那头手握仙兵的年轻大妖则算横空出世，一战成名，传遍剑气长城以南的那座天下，抱剑汉子则来此受罚，在倒悬山画地为牢。",
         "background": "",
-        "significance": "在剑气长城推动陈平安与宁姚之间的剧情推进线。",
+        "significance": "在剑气长城推动陈平安与小道童之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十一章 天真 · 段2",
         "sentence_indexes_in_segment": [
@@ -88,7 +165,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "extracted_at": "2026-03-25T17:27:38.379377",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -116,6 +193,19 @@
         "original_description_in_book": "例如骊珠洞天走出去修道天才，就有俱芦洲谢实、婆娑洲曹曦，以及帮助宋氏延续国祚的大骊双璧等等。",
         "description": "老龙城海上与家族势力线的重要枢纽人物。",
         "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 282,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "例如骊珠洞天走出去修道天才，就有俱芦洲谢实、婆娑洲曹曦，以及帮助宋氏延续国祚的大骊双璧等等。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
         "sentence_indexes_in_segment": [
           1
         ],
@@ -163,7 +253,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -180,7 +271,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -213,7 +305,8 @@
         "location": "宝瓶洲",
         "participants": [
           "陈平安",
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
         "description": "宝瓶洲大骊王朝上空的骊珠洞天，虽然是三十六小洞天里，占地最小的一座，方圆千里之地而已，可之所以引人瞩目，就在于这座小洞天的人物，资质之好，匪夷所思，寻常市井男女的成亲生子，就有望诞下洞天之外，两位地仙眷侣苦心孤诣的结果。 例如骊珠洞天走出去修道天才，就有俱芦洲谢实、婆娑洲曹曦，以及帮助宋氏延续国祚的大骊双璧等等。 陈平安回到鹳雀客栈，得知桂花岛已经返航回去老龙城，陈平安跟年轻掌柜问过了去往桐叶洲中部的渡船有哪些，大致是在倒悬山哪个方向的渡口登船。",
         "background": "",
@@ -233,7 +326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.419136",
+    "extracted_at": "2026-03-25T17:27:38.379887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -294,7 +387,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.419136",
+    "extracted_at": "2026-03-25T17:27:38.379887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -374,7 +467,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.419136",
+    "extracted_at": "2026-03-25T17:27:38.380397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -540,7 +633,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.419136",
+    "extracted_at": "2026-03-25T17:27:38.380397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -601,6 +694,32 @@
         ],
         "juan_index": 282,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "金粟",
+        "alias": [],
+        "original_description_in_book": "陈平安在鹳雀客栈买了书籍之后，就去往灵芝斋，第一次跟金粟来此游览，走马观花，看得不够仔细，多是当神仙宝贝在那边欣赏，这次陈平安带了目的，就更加明确针对，价值连城、并且对练气士境界有门槛的法宝，看也不用去看一眼，陈平安希望找一样适合修行雷法的道书或是灵器，要不然就是当初张山峰机缘获得的甘露碗，能够日积月累，帮助修行之人收集天地灵气。",
+        "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 282,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "陈平安在鹳雀客栈买了书籍之后，就去往灵芝斋，第一次跟金粟来此游览，走马观花，看得不够仔细，多是当神仙宝贝在那边欣赏，这次陈平安带了目的，就更加明确针对，价值连城、并且对练气士境界有门槛的法宝，看也不用去看一眼，陈平安希望找一样适合修行雷法的道书或是灵器，要不然就是当初张山峰机缘获得的甘露碗，能够日积月累，帮助修行之人收集天地灵气。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 282,
+        "segment_index": 8
       }
     ],
     "locations": [],
@@ -633,7 +752,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.419136",
+    "extracted_at": "2026-03-25T17:27:38.380397",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -695,7 +814,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.419136",
+    "extracted_at": "2026-03-25T17:27:38.380910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -757,7 +876,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.380910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -836,7 +955,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.380910",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -857,6 +976,19 @@
       "灵芝斋那边说今天是一位掌教祖师爷的诞辰，灵芝斋每逢佳辰，都会给一些花钱足够多的贵客，赠送一件小礼物，只是后天灵器之中最便宜的，属于富贵门庭的案头清供，随手把玩而已。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "不是心疼钱才脸色这么差，而是背负着那把老剑仙暂借十年的“长气”，陈平安遭受到丝丝缕缕的剑气不断渗透神魂，一时半会儿，呼吸吐纳绝无太多影响，可是当背着这把剑时间久了，就要大吃苦头，有点类似崔姓老人的神人擂鼓式，重在累加。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 282,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -940,7 +1072,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.381424",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1019,7 +1151,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.381424",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1082,7 +1214,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.381424",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1144,7 +1276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.381939",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1274,7 +1406,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.381939",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1329,7 +1461,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.420139",
+    "extracted_at": "2026-03-25T17:27:38.381939",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

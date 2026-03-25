@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.384014",
+    "extracted_at": "2026-03-25T17:27:38.334501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -77,7 +77,21 @@
       "”",
       "抱剑汉子打了个哈欠，“你有本事打她啊。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "又他娘的见着了这个不讲规矩的家伙，小道童都快气炸了，狠狠摔了手中书籍，从蒲团上跳起，大骂道：“小丫头片子，你真当倒悬山是你家院子啊？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 275,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -96,13 +110,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 小道童在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "哪怕是剑气长城的剑仙，一辈子都未必能有一次，你倒好，一天之内就两次！ 又他娘的见着了这个不讲规矩的家伙，小道童都快气炸了，狠狠摔了手中书籍，从蒲团上跳起，大骂道：“小丫头片子，你真当倒悬山是你家院子啊？ ！",
+        "participants": [
+          "小道童"
+        ],
+        "description": "又他娘的见着了这个不讲规矩的家伙，小道童都快气炸了，狠狠摔了手中书籍，从蒲团上跳起，大骂道：“小丫头片子，你真当倒悬山是你家院子啊？ 哪怕是剑气长城的剑仙，一辈子都未必能有一次，你倒好，一天之内就两次！ ！",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段2",
         "sentence_indexes_in_segment": [
@@ -118,7 +134,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.384014",
+    "extracted_at": "2026-03-25T17:27:38.334501",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-3-0": {
+    "juan_index": 275,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "”",
+      "小道童怒道：“你真以为我不敢？",
+      "我如果不是可怜她的身世，早一拳打得她……”",
+      "那位英气少女面无表情地走入镜面大门，身体微微后仰，转头道：“你可怜我做什么，我跟你又不熟。",
+      "”",
+      "小道童总觉得小姑娘的这句话，说得好没道理，又好像有点道理。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童怒道：“你真以为我不敢？ 小道童总觉得小姑娘的这句话，说得好没道理，又好像有点道理。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 小道童剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童怒道：“你真以为我不敢？ 小道童总觉得小姑娘的这句话，说得好没道理，又好像有点道理。 ”",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.335505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -151,21 +230,52 @@
         ],
         "juan_index": 275,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州却是在一棵庭院高墙外的古槐树下，蹲在那边百无聊赖地数蚂蚁。 天边泛起鱼肚白，眼神明亮的刘幽州站起身，转头对好似老妪邀功献宝说道：“我算是瞧明白了，倒悬山长大的蚂蚁，跟市井坊间的蚂蚁也没啥两样嘛。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "地仙老妪便安安静静守候在一旁，不打搅自家少爷的发呆。 天边泛起鱼肚白，眼神明亮的刘幽州站起身，转头对好似老妪邀功献宝说道：“我算是瞧明白了，倒悬山长大的蚂蚁，跟市井坊间的蚂蚁也没啥两样嘛。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "刘幽州",
+          "老妪"
         ],
-        "description": "同样是倒悬山酒铺门口，陈平安离开铺子后是一条僻静小巷。 抱剑汉子在拴马桩那边捧腹大笑。 刘幽州却是在一棵庭院高墙外的古槐树下，蹲在那边百无聊赖地数蚂蚁。",
+        "description": "同样是倒悬山酒铺门口，陈平安离开铺子后是一条僻静小巷。 刘幽州却是在一棵庭院高墙外的古槐树下，蹲在那边百无聊赖地数蚂蚁。 地仙老妪便安安静静守候在一旁，不打搅自家少爷的发呆。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动刘幽州与老妪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -179,8 +289,314 @@
         "segment_index": 4
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘幽州"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "天边泛起鱼肚白，眼神明亮的刘幽州站起身，转头对好似老妪邀功献宝说道：“我算是瞧明白了，倒悬山长大的蚂蚁，跟市井坊间的蚂蚁也没啥两样嘛。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.335505",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-5-0": {
+    "juan_index": 275,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "老妪习惯了少年天马行空的想象力，微微一笑，轻轻点头。",
+      "刘幽州瞥了眼老槐树，兴致不高，“不买了不买了，太贵了，我还是心疼自己攒了那么多年的压岁钱。",
+      "”",
+      "老妪松了口气，她还真怕少爷一时冲动，砸锅卖铁买下一坛忘忧酒，中五境的练气士喝此黄粱酒，意义不大，皑皑洲刘氏再有钱，也不该如此挥霍，到时候少爷是注定不会挨罚的，说不定家主和老祖宗们还要咬着牙挤出笑脸，夸奖一句你这孩子不愧是刘氏子弟，有大将风度，花钱眨眼那还是未来刘氏家主该有的样子吗？",
+      "而她肯定免不了要被训斥几句。",
+      "她倒不是因此埋怨少年，而是她想着少年更好，那么多压岁钱，买一把半仙兵不是挺好？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪习惯了少年天马行空的想象力，微微一笑，轻轻点头。 老妪松了口气，她还真怕少爷一时冲动，砸锅卖铁买下一坛忘忧酒，中五境的练气士喝此黄粱酒，意义不大，皑皑洲刘氏再有钱，也不该如此挥霍，到时候少爷是注定不会挨罚的，说不定家主和老祖宗们还要咬着牙挤出笑脸，夸奖一句你这孩子不愧是刘氏子弟，有大将风度，花钱眨眼那还是未来刘氏家主该有的样子吗？",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州瞥了眼老槐树，兴致不高，“不买了不买了，太贵了，我还是心疼自己攒了那么多年的压岁钱。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 275,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪",
+          "刘幽州"
+        ],
+        "description": "老妪习惯了少年天马行空的想象力，微微一笑，轻轻点头。 刘幽州瞥了眼老槐树，兴致不高，“不买了不买了，太贵了，我还是心疼自己攒了那么多年的压岁钱。 老妪松了口气，她还真怕少爷一时冲动，砸锅卖铁买下一坛忘忧酒，中五境的练气士喝此黄粱酒，意义不大，皑皑洲刘氏再有钱，也不该如此挥霍，到时候少爷是注定不会挨罚的，说不定家主和老祖宗们还要咬着牙挤出笑脸，夸奖一句你这孩子不愧是刘氏子弟，有大将风度，花钱眨眼那还是未来刘氏家主该有的样子吗？",
+        "background": "",
+        "significance": "推动老妪与刘幽州之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 5
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.384014",
+    "extracted_at": "2026-03-25T17:27:38.335505",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-6-0": {
+    "juan_index": 275,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "何必跟一坛酒怄气？",
+      "刘幽州开始返回打道回府，冷不丁问道：“柳婆婆，你说柳姨有没有从最北边的冰原回来？",
+      "”",
+      "当少年提及“柳姨”的时候，老妪褶皱沧桑的脸庞，立即洋溢起骄傲的光彩，“应该回了，运气好的话，这个死妮子也许已经跻身武道第九境。",
+      "少爷，按照约定，到时候就可以让她带你去北边冰原游历，斩杀大妖。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州开始返回打道回府，冷不丁问道：“柳婆婆，你说柳姨有没有从最北边的冰原回来？",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 275,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "当少年提及“柳姨”的时候，老妪褶皱沧桑的脸庞，立即洋溢起骄傲的光彩，“应该回了，运气好的话，这个死妮子也许已经跻身武道第九境。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 6
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州",
+          "老妪"
+        ],
+        "description": "刘幽州开始返回打道回府，冷不丁问道：“柳婆婆，你说柳姨有没有从最北边的冰原回来？ 当少年提及“柳姨”的时候，老妪褶皱沧桑的脸庞，立即洋溢起骄傲的光彩，“应该回了，运气好的话，这个死妮子也许已经跻身武道第九境。 何必跟一坛酒怄气？",
+        "background": "",
+        "significance": "推动刘幽州与老妪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 6
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘幽州"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "何必跟一坛酒怄气？ 刘幽州开始返回打道回府，冷不丁问道：“柳婆婆，你说柳姨有没有从最北边的冰原回来？ ” 当少年提及“柳姨”的时候，老妪褶皱沧桑的脸庞，立即洋溢起骄傲的光彩，“应该回了，运气好的话，这个死妮子也许已经跻身武道第九境。 少爷，按照约定，到时候就可以让她带你去北边冰原游历，斩杀大妖。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.335505",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-7-0": {
+    "juan_index": 275,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "刘幽州到底还是有些少年心性，言语有些孩子气，“那么快到第九境做什么，我爹说柳姨的武道最强第八境，意义之重大，不比寻常的弱十止境宗师差了。",
+      "我爹就当面劝过柳姨，如果不是迫不得已，不要随随便便破境。",
+      "”",
+      "老妪轻声笑道：“家主当然是好心，可万事莫走极端，若是能够顺利破境而强压境界，对于纯粹武夫而言，反而不美，恐怕就要失去十境之上的所有可能性。",
+      "当然，一般的天才也就算了，能够勉强跻身十境，已是天大的奢望，可是你柳姨不一样。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州到底还是有些少年心性，言语有些孩子气，“那么快到第九境做什么，我爹说柳姨的武道最强第八境，意义之重大，不比寻常的弱十止境宗师差了。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 275,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪轻声笑道：“家主当然是好心，可万事莫走极端，若是能够顺利破境而强压境界，对于纯粹武夫而言，反而不美，恐怕就要失去十境之上的所有可能性。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州",
+          "老妪"
+        ],
+        "description": "刘幽州到底还是有些少年心性，言语有些孩子气，“那么快到第九境做什么，我爹说柳姨的武道最强第八境，意义之重大，不比寻常的弱十止境宗师差了。 老妪轻声笑道：“家主当然是好心，可万事莫走极端，若是能够顺利破境而强压境界，对于纯粹武夫而言，反而不美，恐怕就要失去十境之上的所有可能性。 我爹就当面劝过柳姨，如果不是迫不得已，不要随随便便破境。",
+        "background": "",
+        "significance": "推动刘幽州与老妪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 7
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘幽州"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "刘幽州到底还是有些少年心性，言语有些孩子气，“那么快到第九境做什么，我爹说柳姨的武道最强第八境，意义之重大，不比寻常的弱十止境宗师差了。 我爹就当面劝过柳姨，如果不是迫不得已，不要随随便便破境。 ” 老妪轻声笑道：“家主当然是好心，可万事莫走极端，若是能够顺利破境而强压境界，对于纯粹武夫而言，反而不美，恐怕就要失去十境之上的所有可能性。 当然，一般的天才也就算了，能够勉强跻身十境，已是天大的奢望，可是你柳姨不一样。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.335505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -200,7 +616,35 @@
       "树底下那窝蚂蚁，爬得那么慢，到时候搬家会来不及吧？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州对这些涉及大道根本的事情，一直不太感兴趣，反而想着最不打紧的，叹气道：“柳姨也真是的，天天嚷着天底下的好男人死哪里去了，还喜欢问我有没有遇上好男人，我一个大老爷们，怎么回答她？ 刘幽州的想法实在羚羊挂角，又问了让老妪觉得好笑的问题，“如果有一天妖族大军淹没了剑气长城，倒悬山咋办？",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "刘幽州的想法实在羚羊挂角，又问了让老妪觉得好笑的问题，“如果有一天妖族大军淹没了剑气长城，倒悬山咋办？",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 8
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -209,7 +653,10 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "刘幽州",
+          "老妪"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -219,13 +666,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "刘幽州的想法实在羚羊挂角，又问了让老妪觉得好笑的问题，“如果有一天妖族大军淹没了剑气长城，倒悬山咋办？ 刘幽州对这些涉及大道根本的事情，一直不太感兴趣，反而想着最不打紧的，叹气道：“柳姨也真是的，天天嚷着天底下的好男人死哪里去了，还喜欢问我有没有遇上好男人，我一个大老爷们，怎么回答她？ 可我爹给她介绍了那么多皑皑洲的年轻俊彦，也没见柳姨对谁心动，真是头疼。",
+        "participants": [
+          "刘幽州",
+          "老妪"
+        ],
+        "description": "刘幽州对这些涉及大道根本的事情，一直不太感兴趣，反而想着最不打紧的，叹气道：“柳姨也真是的，天天嚷着天底下的好男人死哪里去了，还喜欢问我有没有遇上好男人，我一个大老爷们，怎么回答她？ 刘幽州的想法实在羚羊挂角，又问了让老妪觉得好笑的问题，“如果有一天妖族大军淹没了剑气长城，倒悬山咋办？ 可我爹给她介绍了那么多皑皑洲的年轻俊彦，也没见柳姨对谁心动，真是头疼。",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "在剑气长城推动刘幽州与老妪之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段8",
         "sentence_indexes_in_segment": [
@@ -241,7 +691,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.385017",
+    "extracted_at": "2026-03-25T17:27:38.335505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -261,7 +711,48 @@
       "”",
       "老妪被少爷的杞人忧天给逗乐，忍俊不禁道：“对啊，咱们皑皑洲跟这座倒悬山，不但隔着一个南婆娑洲，还隔着一个八洲版图加在一起都不如它的中土神洲，少爷担心什么。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪神色和蔼，温声道：“少爷，剑气长城屹立不倒，这都多少年了，隔壁那座天下，妖族差不多每百年就要掀起一场大战，这么多年来，那帮茹毛饮血的畜生，在城墙下都撂下多少具尸体了，不一样次次无功而返？ 老妪被少爷的杞人忧天给逗乐，忍俊不禁道：“对啊，咱们皑皑洲跟这座倒悬山，不但隔着一个南婆娑洲，还隔着一个八洲版图加在一起都不如它的中土神洲，少爷担心什么。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "一些个战力惊人的大妖，它们最多只是在城头上待一会儿，最后都会被一些个老剑仙们撵下去。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 275,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州哦了一声，结果又跳回自己的想法当中，不可自拔，忧心忡忡道：“咱们家那座猿蹂府比蚂蚁窝还不如，是没办法挪走搬家的，好在皑皑洲离着倒悬山最远，唉，婆娑洲就有点惨了，到时候一定会硝烟万里吧，不知道醇儒陈氏那位肩挑日月的老祖，能不能力挽狂澜，将瞒天过海的妖族阻挡在陆地之外。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -270,7 +761,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "老妪"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -280,13 +773,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与老剑仙在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "老妪神色和蔼，温声道：“少爷，剑气长城屹立不倒，这都多少年了，隔壁那座天下，妖族差不多每百年就要掀起一场大战，这么多年来，那帮茹毛饮血的畜生，在城墙下都撂下多少具尸体了，不一样次次无功而返？ 一些个战力惊人的大妖，它们最多只是在城头上待一会儿，最后都会被一些个老剑仙们撵下去。 ”",
+        "participants": [
+          "老妪",
+          "老剑仙",
+          "刘幽州"
+        ],
+        "description": "老妪神色和蔼，温声道：“少爷，剑气长城屹立不倒，这都多少年了，隔壁那座天下，妖族差不多每百年就要掀起一场大战，这么多年来，那帮茹毛饮血的畜生，在城墙下都撂下多少具尸体了，不一样次次无功而返？ 一些个战力惊人的大妖，它们最多只是在城头上待一会儿，最后都会被一些个老剑仙们撵下去。 刘幽州哦了一声，结果又跳回自己的想法当中，不可自拔，忧心忡忡道：“咱们家那座猿蹂府比蚂蚁窝还不如，是没办法挪走搬家的，好在皑皑洲离着倒悬山最远，唉，婆娑洲就有点惨了，到时候一定会硝烟万里吧，不知道醇儒陈氏那位肩挑日月的老祖，能不能力挽狂澜，将瞒天过海的妖族阻挡在陆地之外。",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "在剑气长城推动老妪与老剑仙之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段9",
         "sentence_indexes_in_segment": [
@@ -302,7 +799,250 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.385017",
+    "extracted_at": "2026-03-25T17:27:38.336508",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-10-0": {
+    "juan_index": 275,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "”",
+      "刘幽州喃喃道：“我不是担忧皑皑洲的安危，只是觉得打仗就要死很多人，心里有点不舒服，婆娑洲好歹还有那位亚圣弟子第一人坐镇，可是我们逛过的东南桐叶洲，还有马上要去游历的扶摇洲，好像没有特别拿得出手的厉害家伙啊。",
+      "”",
+      "老妪还是笑，“少爷，不能把所有人都拿来跟你爹作比较啊，一位练气士，不如咱们家主，就是不厉害啦？",
+      "可没有这样的说法。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州喃喃道：“我不是担忧皑皑洲的安危，只是觉得打仗就要死很多人，心里有点不舒服，婆娑洲好歹还有那位亚圣弟子第一人坐镇，可是我们逛过的东南桐叶洲，还有马上要去游历的扶摇洲，好像没有特别拿得出手的厉害家伙啊。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 275,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪还是笑，“少爷，不能把所有人都拿来跟你爹作比较啊，一位练气士，不如咱们家主，就是不厉害啦？",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州",
+          "老妪"
+        ],
+        "description": "刘幽州喃喃道：“我不是担忧皑皑洲的安危，只是觉得打仗就要死很多人，心里有点不舒服，婆娑洲好歹还有那位亚圣弟子第一人坐镇，可是我们逛过的东南桐叶洲，还有马上要去游历的扶摇洲，好像没有特别拿得出手的厉害家伙啊。 老妪还是笑，“少爷，不能把所有人都拿来跟你爹作比较啊，一位练气士，不如咱们家主，就是不厉害啦？ ”",
+        "background": "",
+        "significance": "推动刘幽州与老妪之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 10
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘幽州"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "冲突",
+        "context": "” 刘幽州喃喃道：“我不是担忧皑皑洲的安危，只是觉得打仗就要死很多人，心里有点不舒服，婆娑洲好歹还有那位亚圣弟子第一人坐镇，可是我们逛过的东南桐叶洲，还有马上要去游历的扶摇洲，好像没有特别拿得出手的厉害家伙啊。 ” 老妪还是笑，“少爷，不能把所有人都拿来跟你爹作比较啊，一位练气士，不如咱们家主，就是不厉害啦？ 可没有这样的说法。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.336508",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-11-0": {
+    "juan_index": 275,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "皑皑洲最有钱的人，跟皑皑洲最强大的练气士，是同一个人。",
+      "刘幽州的父亲。",
+      "这个男人，比刘氏家族历史上任何一位老祖都要修为更高，战力更强。",
+      "最可怕的地方在于民风彪悍、仙师好战的皑皑洲，从来没有人能够成功验证这个男人的最终实力。",
+      "这个男人有一句在山上脍炙人口的名言：能够用仙兵和半仙兵解决的事情，就不要用拳脚了吧？",
+      "刘幽州似乎对他爹颇有怨言，“妻妾成群，有什么好的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州的父亲。 刘幽州似乎对他爹颇有怨言，“妻妾成群，有什么好的。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "刘幽州的父亲。 刘幽州似乎对他爹颇有怨言，“妻妾成群，有什么好的。 皑皑洲最有钱的人，跟皑皑洲最强大的练气士，是同一个人。",
+        "background": "",
+        "significance": "对应刘幽州在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.336508",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-12-0": {
+    "juan_index": 275,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "”",
+      "老妪打死也不敢置喙这位家主的好与坏。",
+      "家主脾气好是一回事，当奴作婢的人如果不懂规矩，又是一回事。",
+      "刘家死死掌握住那条雪花钱玉矿山脉，树大招风，每年死在嘴巴上的下人，很多，暴毙的刘氏家族各房子弟，也不少。",
+      "刘幽州此刻身穿明黄色竹衣“清凉”，这件曾是大王朝皇帝心头好的法宝，被誉为小洞天。",
+      "而另外一件被皑皑洲刘氏凑成对的竹衣“避暑”，则有小福地的美誉。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪打死也不敢置喙这位家主的好与坏。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 275,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州此刻身穿明黄色竹衣“清凉”，这件曾是大王朝皇帝心头好的法宝，被誉为小洞天。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪",
+          "刘幽州"
+        ],
+        "description": "老妪打死也不敢置喙这位家主的好与坏。 刘幽州此刻身穿明黄色竹衣“清凉”，这件曾是大王朝皇帝心头好的法宝，被誉为小洞天。 ”",
+        "background": "",
+        "significance": "推动老妪与刘幽州之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.336508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -322,7 +1062,23 @@
       "刘幽州叹了口气，“柳婆婆，我真不能去剑气长城啊？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州喜欢换着穿它们。 再说了，其实我刘幽州也没不算真有钱，这不昨夜一坛忘忧酒都不舍得买吗？",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 13
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -331,7 +1087,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "刘幽州"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -341,13 +1099,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "刘幽州叹了口气，“柳婆婆，我真不能去剑气长城啊？ 刘幽州喜欢换着穿它们。 穿着舒服，还不招摇过市，否则那些道家符箓法袍和神人承露甲之类的，太扎眼了，这不明摆着跟人说我有钱吗？",
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "刘幽州喜欢换着穿它们。 再说了，其实我刘幽州也没不算真有钱，这不昨夜一坛忘忧酒都不舍得买吗？ 刘幽州叹了口气，“柳婆婆，我真不能去剑气长城啊？",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应刘幽州在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段13",
         "sentence_indexes_in_segment": [
@@ -363,7 +1123,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.385017",
+    "extracted_at": "2026-03-25T17:27:38.336508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -383,7 +1143,48 @@
       "老妪想了想，“剑气长城有那些老剑仙和三教高人盯着，应该出不了大的乱子，但是这类人，肯定会有的，想来是剑气长城不愿意宣扬家丑。",
       "少爷，其实你不用太在乎那边的形势，按照猿蹂府的谍报显示，这一代剑气长城的年轻剑修，资质尤其好，而且不是几个人，是雨后春笋一般，一起冒尖，几乎能够媲美三千年前那一拨剑仙，那一辈人，可真是厉害，压得妖族整整八百年都不敢挑衅剑气长城，许多妖族终其一生，都没能见到过那堵城墙。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪语气坚定，“家主吩咐过，绝对不许去。 老妪想了想，“剑气长城有那些老剑仙和三教高人盯着，应该出不了大的乱子，但是这类人，肯定会有的，想来是剑气长城不愿意宣扬家丑。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州问了一个很直指人心的问题，“剑气长城归根结底，还是浩然天下的刑徒流民，跟咱们这边关系其实没想象中那么好，倒悬山的龌龊事多了去，他们跟妖族打生打死了这么久，难道就没有人一怒之下，干脆就反出剑气长城，投靠妖族？",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 275,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老妪想了想，“剑气长城有那些老剑仙和三教高人盯着，应该出不了大的乱子，但是这类人，肯定会有的，想来是剑气长城不愿意宣扬家丑。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 14
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -392,7 +1193,11 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "刘幽州",
+          "老妪",
+          "老剑仙"
+        ],
         "sentence_indexes_in_segment": [
           2,
           4,
@@ -404,13 +1209,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与刘幽州在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "刘幽州问了一个很直指人心的问题，“剑气长城归根结底，还是浩然天下的刑徒流民，跟咱们这边关系其实没想象中那么好，倒悬山的龌龊事多了去，他们跟妖族打生打死了这么久，难道就没有人一怒之下，干脆就反出剑气长城，投靠妖族？ 老妪想了想，“剑气长城有那些老剑仙和三教高人盯着，应该出不了大的乱子，但是这类人，肯定会有的，想来是剑气长城不愿意宣扬家丑。 少爷，其实你不用太在乎那边的形势，按照猿蹂府的谍报显示，这一代剑气长城的年轻剑修，资质尤其好，而且不是几个人，是雨后春笋一般，一起冒尖，几乎能够媲美三千年前那一拨剑仙，那一辈人，可真是厉害，压得妖族整整八百年都不敢挑衅剑气长城，许多妖族终其一生，都没能见到过那堵城墙。",
+        "participants": [
+          "老妪",
+          "刘幽州",
+          "老剑仙"
+        ],
+        "description": "老妪语气坚定，“家主吩咐过，绝对不许去。 刘幽州问了一个很直指人心的问题，“剑气长城归根结底，还是浩然天下的刑徒流民，跟咱们这边关系其实没想象中那么好，倒悬山的龌龊事多了去，他们跟妖族打生打死了这么久，难道就没有人一怒之下，干脆就反出剑气长城，投靠妖族？ 老妪想了想，“剑气长城有那些老剑仙和三教高人盯着，应该出不了大的乱子，但是这类人，肯定会有的，想来是剑气长城不愿意宣扬家丑。",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "在剑气长城推动老妪与刘幽州之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段14",
         "sentence_indexes_in_segment": [
@@ -426,7 +1235,260 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.385017",
+    "extracted_at": "2026-03-25T17:27:38.337512",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-15-0": {
+    "juan_index": 275,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "所以啊，我看未来几百年，倒悬山都会是生意兴隆的太平光景。",
+      "”",
+      "少年有些伤感，喃喃道：“可是我们刘家挣钱的大头，就是发死人财啊。",
+      "”",
+      "老妪想要提醒少爷在倒悬山要慎言，可看着少年神色失落的侧脸，有些于心不忍。",
+      "一位猿蹂府管事出现在两人前方，路边停着两辆马车，老管事轻声道：“少爷，府上有贵客登门。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪想要提醒少爷在倒悬山要慎言，可看着少年神色失落的侧脸，有些于心不忍。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪指点",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪"
+        ],
+        "description": "老妪想要提醒少爷在倒悬山要慎言，可看着少年神色失落的侧脸，有些于心不忍。 所以啊，我看未来几百年，倒悬山都会是生意兴隆的太平光景。 ”",
+        "background": "",
+        "significance": "对应老妪在叙事中的关键指点节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 15
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.337512",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-16-0": {
+    "juan_index": 275,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "”",
+      "刘幽州点点头，登上一辆马车。",
+      "到了猿蹂府，刘幽州看到一个斯文男人和一位高大女子，满身书卷气的中年男人站着欣赏一幅挂画，女子坐在那边喝茶。",
+      "男子似乎是一位书画行家，赞叹道：“不曾想这幅老莲佝偻图才是真迹，不愧是力量气局，卓尔磊落，仅就画莲而言，五百年间无此笔墨者。",
+      "”",
+      "在来的路上，管事小心起见，都没有跟刘幽州说到底是谁，直到跨过猿蹂府大门门槛，才小声告诉刘幽州，是中土神洲的大端王朝皇帝与国师联袂莅临府邸。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州点点头，登上一辆马车。 到了猿蹂府，刘幽州看到一个斯文男人和一位高大女子，满身书卷气的中年男人站着欣赏一幅挂画，女子坐在那边喝茶。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "刘幽州点点头，登上一辆马车。 到了猿蹂府，刘幽州看到一个斯文男人和一位高大女子，满身书卷气的中年男人站着欣赏一幅挂画，女子坐在那边喝茶。 在来的路上，管事小心起见，都没有跟刘幽州说到底是谁，直到跨过猿蹂府大门门槛，才小声告诉刘幽州，是中土神洲的大端王朝皇帝与国师联袂莅临府邸。",
+        "background": "",
+        "significance": "对应刘幽州在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.337512",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-17-0": {
+    "juan_index": 275,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "刘幽州作揖行礼，“刘幽州见过陛下和国师。",
+      "”",
+      "那男子转过头，对少年笑道：“这次寡人是借着国师需要借助小雷泽淬剑的机会，才能够忙里偷闲，来这倒悬山透口气，本来不愿叨扰猿蹂府，只是听说刘公子刚好也在倒悬山，便想着如何都要来此讨要一杯茶水了。",
+      "”",
+      "刘幽州再次作揖，“陛下太客气了。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州作揖行礼，“刘幽州见过陛下和国师。 刘幽州再次作揖，“陛下太客气了。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "刘幽州作揖行礼，“刘幽州见过陛下和国师。 刘幽州再次作揖，“陛下太客气了。 ”",
+        "background": "",
+        "significance": "对应刘幽州在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.337512",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-18-0": {
+    "juan_index": 275,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "大端，浩然天下最新的九大王朝之一。",
+      "吞并了某个旧王朝的大半版图，新的大端如今百废待兴，照理说不该皇帝和国师都离开庙堂。",
+      "只是这些机密内幕，暂时不是刘幽州能够去揣测的，至于为何大端皇帝如此卖猿蹂府面子，刘幽州倒是一清二楚，大端能够打烂一个前九大王朝之一的太玄王朝，一场牵扯到无数势力的灭国之战，持续了将近十年，大端硬生生拖垮了太玄谢氏，皑皑洲的刘氏，或者说他爹的钱袋子，出力极大。",
+      "刘幽州直腰起身后，又对那位大端女子国师作揖道：“小子仰慕国师已久。",
+      "”",
+      "其实刘家是大端王朝的幕后恩人之一，作为未来家主的刘幽州，不用如此放低身价。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "只是这些机密内幕，暂时不是刘幽州能够去揣测的，至于为何大端皇帝如此卖猿蹂府面子，刘幽州倒是一清二楚，大端能够打烂一个前九大王朝之一的太玄王朝，一场牵扯到无数势力的灭国之战，持续了将近十年，大端硬生生拖垮了太玄谢氏，皑皑洲的刘氏，或者说他爹的钱袋子，出力极大。 刘幽州直腰起身后，又对那位大端女子国师作揖道：“小子仰慕国师已久。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "只是这些机密内幕，暂时不是刘幽州能够去揣测的，至于为何大端皇帝如此卖猿蹂府面子，刘幽州倒是一清二楚，大端能够打烂一个前九大王朝之一的太玄王朝，一场牵扯到无数势力的灭国之战，持续了将近十年，大端硬生生拖垮了太玄谢氏，皑皑洲的刘氏，或者说他爹的钱袋子，出力极大。 刘幽州直腰起身后，又对那位大端女子国师作揖道：“小子仰慕国师已久。 其实刘家是大端王朝的幕后恩人之一，作为未来家主的刘幽州，不用如此放低身价。",
+        "background": "",
+        "significance": "对应刘幽州在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.337512",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,7 +1549,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.385017",
+    "extracted_at": "2026-03-25T17:27:38.337512",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -507,7 +1569,34 @@
       "老妪与猿蹂府老管事视线交汇，都觉得有些棘手。",
       "倒不是觉得大端国师在吹牛，而是涉及到家主意愿，下人们不敢擅自做主。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州甚至连落座都没有，一直毕恭毕敬站着，摇头道：“还不曾，家父不许我去，怕出意外。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 275,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪与猿蹂府老管事视线交汇，都觉得有些棘手。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 20
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -526,14 +1615,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪在剑气长城同行",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "女子想了想，“我唯一的弟子，如今正在剑气长城那边砥砺武道，刘公子若是愿意，可以与我同行，不会有意外。 刘幽州甚至连落座都没有，一直毕恭毕敬站着，摇头道：“还不曾，家父不许我去，怕出意外。 ”",
+        "participants": [
+          "刘幽州",
+          "老妪"
+        ],
+        "description": "刘幽州甚至连落座都没有，一直毕恭毕敬站着，摇头道：“还不曾，家父不许我去，怕出意外。 女子想了想，“我唯一的弟子，如今正在剑气长城那边砥砺武道，刘公子若是愿意，可以与我同行，不会有意外。 老妪与猿蹂府老管事视线交汇，都觉得有些棘手。",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
-        "related_action_indices": [],
+        "significance": "在剑气长城推动刘幽州与老妪之间的同行线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -547,8 +1641,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.386021",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘幽州"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "同行",
+        "context": "刘幽州甚至连落座都没有，一直毕恭毕敬站着，摇头道：“还不曾，家父不许我去，怕出意外。 ” 女子想了想，“我唯一的弟子，如今正在剑气长城那边砥砺武道，刘公子若是愿意，可以与我同行，不会有意外。 ” 老妪与猿蹂府老管事视线交汇，都觉得有些棘手。 倒不是觉得大端国师在吹牛，而是涉及到家主意愿，下人们不敢擅自做主。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州与老妪在剑气长城同行",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.338515",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -568,7 +1688,22 @@
       "刘幽州神色轻松一些，语气也轻快许多，笑道：“乐意至极！",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "好在刘幽州已经摇头婉拒，“不好违背家父，还望国师见谅。 刘幽州神色轻松一些，语气也轻快许多，笑道：“乐意至极！",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 21
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -587,13 +1722,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城对话",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州在剑气长城对话",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "高大女子不以为意，点头道：“我那弟子很快就需要离开剑气长城和倒悬山，让他去皑皑洲历练也好，刘公子不介意的话，可以捎上他。 好在刘幽州已经摇头婉拒，“不好违背家父，还望国师见谅。 ”",
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "好在刘幽州已经摇头婉拒，“不好违背家父，还望国师见谅。 高大女子不以为意，点头道：“我那弟子很快就需要离开剑气长城和倒悬山，让他去皑皑洲历练也好，刘公子不介意的话，可以捎上他。 刘幽州神色轻松一些，语气也轻快许多，笑道：“乐意至极！",
         "background": "",
-        "significance": "对应剑气长城相关的关键对话场景。",
+        "significance": "对应刘幽州在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段21",
         "sentence_indexes_in_segment": [
@@ -609,7 +1746,313 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.386021",
+    "extracted_at": "2026-03-25T17:27:38.338515",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-23-0": {
+    "juan_index": 275,
+    "segment_index": 23,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "或者准确说来，是一女一男。",
+      "因为不管怎么看，都像高大女子才是大端皇帝，男子只像个跟班扈从。",
+      "刘幽州这才落座，扯了扯竹衣清凉的领口，大汗淋漓，瞥了眼墙壁上那幅猿蹂府的镇宅之宝，老莲佝偻图，对老管事吩咐道：“拿下来装好，给大端皇帝送去。",
+      "”",
+      "老管事一脸为难。",
+      "刘幽州灿烂一笑，“听我的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州这才落座，扯了扯竹衣清凉的领口，大汗淋漓，瞥了眼墙壁上那幅猿蹂府的镇宅之宝，老莲佝偻图，对老管事吩咐道：“拿下来装好，给大端皇帝送去。 刘幽州灿烂一笑，“听我的。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 23
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "刘幽州这才落座，扯了扯竹衣清凉的领口，大汗淋漓，瞥了眼墙壁上那幅猿蹂府的镇宅之宝，老莲佝偻图，对老管事吩咐道：“拿下来装好，给大端皇帝送去。 刘幽州灿烂一笑，“听我的。 或者准确说来，是一女一男。",
+        "background": "",
+        "significance": "对应刘幽州在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段23",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 23
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.338515",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-24-0": {
+    "juan_index": 275,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "”",
+      "老管事默默点头，听令行事。",
+      "少年在老管事拿着那幅古画离开正厅后，望着突兀的空白墙壁，笑问道：“柳婆婆，你觉得挂那幅少年泛舟图，好不好？",
+      "”",
+      "老妪满脸惶恐，正要劝说少年千万别意气用事。",
+      "刘幽州已经自顾自笑道：“不挂在这里，回到了家里，我挂自己书房！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪满脸惶恐，正要劝说少年千万别意气用事。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州已经自顾自笑道：“不挂在这里，回到了家里，我挂自己书房！",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与刘幽州对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪",
+          "刘幽州"
+        ],
+        "description": "老妪满脸惶恐，正要劝说少年千万别意气用事。 刘幽州已经自顾自笑道：“不挂在这里，回到了家里，我挂自己书房！ ”",
+        "background": "",
+        "significance": "推动老妪与刘幽州之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 24
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老妪"
+        ],
+        "to_roles": [
+          "刘幽州"
+        ],
+        "action": "对话",
+        "context": "” 老管事默默点头，听令行事。 少年在老管事拿着那幅古画离开正厅后，望着突兀的空白墙壁，笑问道：“柳婆婆，你觉得挂那幅少年泛舟图，好不好？ ” 老妪满脸惶恐，正要劝说少年千万别意气用事。 刘幽州已经自顾自笑道：“不挂在这里，回到了家里，我挂自己书房！",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与刘幽州对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 24
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.338515",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-25-0": {
+    "juan_index": 275,
+    "segment_index": 25,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "走走走，为表诚意，我要自己作画一幅！",
+      "柳婆婆，赶紧让下人笔墨伺候！",
+      "”",
+      "老妪脸色玩味。",
+      "猿蹂府的四位侍女生得楚楚动人，其中两位还是洞府境的练气士，当她们满怀期待地看着传说中的少主，耗尽力气画完那幅画后，侍女们就愈发楚楚动人了，费了好的劲，才忍住没笑出声。",
+      "刘幽州颇为自得，虽然难看是难看了点，可诚意十足。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪脸色玩味。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州颇为自得，虽然难看是难看了点，可诚意十足。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 25
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老妪与刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪",
+          "刘幽州"
+        ],
+        "description": "老妪脸色玩味。 刘幽州颇为自得，虽然难看是难看了点，可诚意十足。 走走走，为表诚意，我要自己作画一幅！",
+        "background": "",
+        "significance": "推动老妪与刘幽州之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段25",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 25
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.338515",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-26-0": {
+    "juan_index": 275,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "刘幽州的画，跟店铺里墙壁上某人的字，有异曲同工之妙。",
+      "只可惜刘幽州当时没舍得花钱买一坛黄粱酒，否则见到了那些蚯蚓爬爬，说不定就要英雄相惜、相见恨晚了。",
+      "天地间有一堵城墙，刻有十八个大字。",
+      "道法，浩然，西天。",
+      "剑气长存，雷池重地。",
+      "齐，陈，董，猛。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘幽州",
+        "alias": [],
+        "original_description_in_book": "刘幽州的画，跟店铺里墙壁上某人的字，有异曲同工之妙。 只可惜刘幽州当时没舍得花钱买一坛黄粱酒，否则见到了那些蚯蚓爬爬，说不定就要英雄相惜、相见恨晚了。",
+        "description": "与陈平安有直接交集的年轻人物，可扩充大骊支线与同行线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 275,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 刘幽州剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘幽州"
+        ],
+        "description": "刘幽州的画，跟店铺里墙壁上某人的字，有异曲同工之妙。 只可惜刘幽州当时没舍得花钱买一坛黄粱酒，否则见到了那些蚯蚓爬爬，说不定就要英雄相惜、相见恨晚了。 天地间有一堵城墙，刻有十八个大字。",
+        "background": "",
+        "significance": "对应刘幽州在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.338515",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -671,7 +2114,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.386021",
+    "extracted_at": "2026-03-25T17:27:38.339519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -691,7 +2134,21 @@
       "而在剑气长城，大剑仙，老剑仙，一字之差，一样悬殊很大。",
       "因为一名剑修，想要在剑气长城活得长久，不靠姓氏，只能靠战力。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "而在剑气长城，大剑仙，老剑仙，一字之差，一样悬殊很大。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 275,
+        "segment_index": 28
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -700,7 +2157,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "老剑仙"
+        ],
         "sentence_indexes_in_segment": [
           1,
           4,
@@ -712,13 +2171,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老剑仙在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
+        "participants": [
+          "老剑仙"
+        ],
         "description": "有一位不知岁数的老人就在城头上结茅而居，老人的子孙早已在剑气长城的北方城池之中，开枝散叶，成为最大几个家族之一，但是老人从未下过城头，年复一年，就在这里守着，老人脾气古怪，也从不许家族子孙来见他，倒是对一些别姓的孩子，偶尔有些笑脸。 而在剑气长城，大剑仙，老剑仙，一字之差，一样悬殊很大。 因为一名剑修，想要在剑气长城活得长久，不靠姓氏，只能靠战力。",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应老剑仙在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段28",
         "sentence_indexes_in_segment": [
@@ -734,7 +2195,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.386021",
+    "extracted_at": "2026-03-25T17:27:38.339519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -796,7 +2257,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.386021",
+    "extracted_at": "2026-03-25T17:27:38.339519",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-30-0": {
+    "juan_index": 275,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "前些年，倒是有个不知来历背景的外乡少年，死皮赖脸在老人茅屋后边，又搭建了一座小茅屋。",
+      "最近每次妖族攻城，少年就只是守着老人和自己的茅屋，否则都不会出手。",
+      "其实也没有人苛责外乡少年，毕竟一个四境的纯粹武夫，能够待在城头上吃喝拉撒就很不容易了。",
+      "眼眶凹陷、颧骨突出沧桑老人陷入沉思。",
+      "如果不是在这座城头上，而是在倒悬山那边的浩然天下，恐怕谁看到这位弱不禁风的瘦小老人，都不会相信，老人会被某个吊儿郎当却刻下一个猛字的家伙，昵称为“老大剑仙”。",
+      "一对夫妇模样的男女出现在老人身后，老人没有转头，沙哑道：“你们剩下的光阴不多了，还需要我做什么吗？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "一对夫妇模样的男女出现在老人身后，老人没有转头，沙哑道：“你们剩下的光阴不多了，还需要我做什么吗？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 沙哑冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "沙哑"
+        ],
+        "description": "一对夫妇模样的男女出现在老人身后，老人没有转头，沙哑道：“你们剩下的光阴不多了，还需要我做什么吗？ 前些年，倒是有个不知来历背景的外乡少年，死皮赖脸在老人茅屋后边，又搭建了一座小茅屋。 最近每次妖族攻城，少年就只是守着老人和自己的茅屋，否则都不会出手。",
+        "background": "",
+        "significance": "对应沙哑在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.339519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -857,7 +2380,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.387025",
+    "extracted_at": "2026-03-25T17:27:38.340522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -919,7 +2442,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.387025",
+    "extracted_at": "2026-03-25T17:27:38.340522",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "275-38-0": {
+    "juan_index": 275,
+    "segment_index": 38,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十四章 剑气长城陈见陈",
+    "source_sentences": [
+      "”",
+      "妇人也是使劲点头，神色坦然。",
+      "唯恐这位受人敬仰的老剑仙，误以为是他们在算计他。",
+      "老人一怒。",
+      "后果……不堪设想！",
+      "老人随随便便伸出一手。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "唯恐这位受人敬仰的老剑仙，误以为是他们在算计他。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 275,
+        "segment_index": 38
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 老剑仙剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老剑仙"
+        ],
+        "description": "唯恐这位受人敬仰的老剑仙，误以为是他们在算计他。 ” 妇人也是使劲点头，神色坦然。",
+        "background": "",
+        "significance": "对应老剑仙在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段38",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 275,
+        "segment_index": 38
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.340522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -954,20 +2539,34 @@
         ],
         "juan_index": 275,
         "segment_index": 40
+      },
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "孤峰山脚广场那边，一位腰悬双剑的少女，走出镜面后，她想了想，略微放缓脚步，不过还是面无表情，勉强算是对那个呆若木鸡的小道童，主动打了招呼：“这次比上次，跟你熟悉了一点点。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 275,
+        "segment_index": 40
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 陈平安迁移",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 陈平安与小道童迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "小道童"
         ],
         "description": "陈平安摇摇晃晃，好不容易才站稳身形。 如今藏在剑匣内的那张符箓，寄居着那位在彩衣国被陈平安降服的枯骨女鬼，这一趟“远游”，陈平安很遭罪，其实她更惨，差点彻底烟消云散，所幸时间短暂，而且剑匣这座天然“槐宅”之内，阴气浓郁，抵挡住了绝大部分剑气。 当时悬在空中的陈平安，看到了一位枯瘦老人，那对夫妇，以及惊鸿一瞥的长城城头。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "推动陈平安与小道童之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段40",
         "sentence_indexes_in_segment": [
@@ -983,7 +2582,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.387025",
+    "extracted_at": "2026-03-25T17:27:38.340522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1001,7 +2600,21 @@
       "抱剑汉子仰头望向只有一轮明月的夜空，自言自语道：“为了你们，我们死了那么多人，浩然天下不管管？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童呐呐道：“如此无法无天，你们剑气长城不管管？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 275,
+        "segment_index": 41
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -1010,7 +2623,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "小道童"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -1020,13 +2635,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 小道童在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
+        "participants": [
+          "小道童"
+        ],
         "description": "小道童呐呐道：“如此无法无天，你们剑气长城不管管？ ” 抱剑汉子仰头望向只有一轮明月的夜空，自言自语道：“为了你们，我们死了那么多人，浩然天下不管管？",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十四章 剑气长城陈见陈 · 段41",
         "sentence_indexes_in_segment": [
@@ -1040,7 +2657,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.387025",
+    "extracted_at": "2026-03-25T17:27:38.340522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

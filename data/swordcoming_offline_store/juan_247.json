@@ -113,7 +113,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.243512",
+    "extracted_at": "2026-03-25T17:27:38.149054",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -249,7 +249,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "extracted_at": "2026-03-25T17:27:38.149054",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -354,7 +354,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "extracted_at": "2026-03-25T17:27:38.150057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -448,7 +448,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "extracted_at": "2026-03-25T17:27:38.150057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -524,7 +524,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "extracted_at": "2026-03-25T17:27:38.150057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -624,7 +624,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "extracted_at": "2026-03-25T17:27:38.150057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -657,6 +657,19 @@
         ],
         "juan_index": 247,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "老剑客微笑道：“苏琅，上次江畔一别，有五六年时间了吧？",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 247,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -679,16 +692,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧在州城对话",
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与苏琅在州城对话",
         "time": null,
         "location": "州城",
         "participants": [
-          "宋雨烧"
+          "宋雨烧",
+          "苏琅"
         ],
-        "description": "青竹剑仙不惧宋雨烧和少年追杀自己，沿着官路悠悠然返回州城，突然转头望向远处的路旁山林，他站定后，伸手握住挂在腰侧的那截青竹。 从山林中缓缓走出一位青竹剑仙的熟人，古稀之年，面容棱角分明，一看就不是个好相与的江湖中人，腰间佩剑，以不知材质的绿色丝线缠绕剑鞘，长度远胜寻常剑客的长剑，极为扎眼。 青竹剑仙走出官路，迎面走向那位有过数面之缘的古榆国剑客，两人不约而同地停下脚步，相距二十步。",
+        "description": "青竹剑仙不惧宋雨烧和少年追杀自己，沿着官路悠悠然返回州城，突然转头望向远处的路旁山林，他站定后，伸手握住挂在腰侧的那截青竹。 老剑客微笑道：“苏琅，上次江畔一别，有五六年时间了吧？ 从山林中缓缓走出一位青竹剑仙的熟人，古稀之年，面容棱角分明，一看就不是个好相与的江湖中人，腰间佩剑，以不知材质的绿色丝线缠绕剑鞘，长度远胜寻常剑客的长剑，极为扎眼。",
         "background": "",
-        "significance": "对应宋雨烧在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在州城推动宋雨烧与苏琅之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -702,8 +718,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "苏琅"
+        ],
+        "action": "对话",
+        "context": "青竹剑仙不惧宋雨烧和少年追杀自己，沿着官路悠悠然返回州城，突然转头望向远处的路旁山林，他站定后，伸手握住挂在腰侧的那截青竹。 从山林中缓缓走出一位青竹剑仙的熟人，古稀之年，面容棱角分明，一看就不是个好相与的江湖中人，腰间佩剑，以不知材质的绿色丝线缠绕剑鞘，长度远胜寻常剑客的长剑，极为扎眼。 青竹剑仙走出官路，迎面走向那位有过数面之缘的古榆国剑客，两人不约而同地停下脚步，相距二十步。 老剑客微笑道：“苏琅，上次江畔一别，有五六年时间了吧？ ” 青竹剑仙淡然道：“林孤山，找我有何事？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与苏琅在州城对话",
+        "location": "州城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.150057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -749,6 +791,19 @@
         ],
         "juan_index": 247,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅瞥了眼山岭密林，问了两个问题，“来得及？",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 247,
+        "segment_index": 8
       }
     ],
     "locations": [],
@@ -761,7 +816,7 @@
           "陈平安",
           "宋雨烧"
         ],
-        "description": "对于一位江湖晚辈的盛气凌人，老剑客不以为意，果真开门见山道：“我这次是受国师所托，来此截杀陈平安，先前有过交手，一位皇室供奉练气士以及蛇蝎夫人，先后死在陈平安之手，如今只剩下我和买椟楼楼主，不愿就此收手，之前在山中见识过了一场神仙凿阵的精彩好戏，就想着能不能与你联手，一起追杀陈平安和宋雨烧，得手之后，无论死活，宋雨烧归你处置，陈平安交由我们带回古榆国。 有话直说，我现在心情不太好。 ”",
+        "description": "对于一位江湖晚辈的盛气凌人，老剑客不以为意，果真开门见山道：“我这次是受国师所托，来此截杀陈平安，先前有过交手，一位皇室供奉练气士以及蛇蝎夫人，先后死在陈平安之手，如今只剩下我和买椟楼楼主，不愿就此收手，之前在山中见识过了一场神仙凿阵的精彩好戏，就想着能不能与你联手，一起追杀陈平安和宋雨烧，得手之后，无论死活，宋雨烧归你处置，陈平安交由我们带回古榆国。 苏琅瞥了眼山岭密林，问了两个问题，“来得及？ 有话直说，我现在心情不太好。",
         "background": "",
         "significance": "推动陈平安与宋雨烧之间的冲突关系。",
         "related_action_indices": [
@@ -802,7 +857,69 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.244516",
+    "extracted_at": "2026-03-25T17:27:38.150057",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-9-0": {
+    "juan_index": 247,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "”",
+      "古榆国剑尊林孤山点头道：“买椟楼楼主最擅长刺杀，他会先行动手，进行袭扰，足够拖延住两人脚步。",
+      "至于胜算，我只能说，事在人为。",
+      "我们三人即便联手，最后能活下几个，我林孤山不敢保证。",
+      "”",
+      "苏琅笑道：“林前辈如果说胜算极大，那我就不点这个头了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅笑道：“林前辈如果说胜算极大，那我就不点这个头了。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "苏琅笑道：“林前辈如果说胜算极大，那我就不点这个头了。 ” 古榆国剑尊林孤山点头道：“买椟楼楼主最擅长刺杀，他会先行动手，进行袭扰，足够拖延住两人脚步。",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 9
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.151060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -823,6 +940,19 @@
       "林孤山有些犹豫不决。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅点头道：“你先去支援买椟楼楼主，我要原路返回，去找楚氏精骑的副将，以及那两位梳水国供奉练气士，你们两个只要能够拦下宋雨烧和陈平安，我就能让胜算变得更大。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 247,
+        "segment_index": 10
+      },
       {
         "entity_type": "person",
         "name": "宋雨烧",
@@ -853,19 +983,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与陈平安对话",
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅与宋雨烧对话",
         "time": null,
         "location": null,
         "participants": [
+          "苏琅",
           "宋雨烧",
           "陈平安"
         ],
         "description": "苏琅点头道：“你先去支援买椟楼楼主，我要原路返回，去找楚氏精骑的副将，以及那两位梳水国供奉练气士，你们两个只要能够拦下宋雨烧和陈平安，我就能让胜算变得更大。 ” 林孤山问道：“这算是答应了？",
         "background": "",
-        "significance": "推动宋雨烧与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动苏琅与宋雨烧之间的对话关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -879,21 +1008,57 @@
         "segment_index": 10
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.151060",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-11-0": {
+    "juan_index": 247,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "苏琅微笑道：“这次匆忙联手，有利则聚，无利则散，你信不过我苏琅很正常，但是好歹要相信亲手斩下一颗梳水国老剑圣的头颅，对于一位松溪国剑仙而言，诱惑到底有多大。",
+      "”",
+      "林孤山冷笑道：“是不是顺手也将古榆国剑尊的头颅，一并取走？",
+      "届时十数国江湖，唯你剑仙一人独尊剑道，岂不更好！",
+      "”",
+      "苏琅一手双指捻住鬓角垂下的一缕青丝，一手屈指轻轻敲打那截青竹，显得无比随意散漫，“你林孤山的剑，从来不曾入我的眼啊。"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅微笑道：“这次匆忙联手，有利则聚，无利则散，你信不过我苏琅很正常，但是好歹要相信亲手斩下一颗梳水国老剑圣的头颅，对于一位松溪国剑仙而言，诱惑到底有多大。 苏琅一手双指捻住鬓角垂下的一缕青丝，一手屈指轻轻敲打那截青竹，显得无比随意散漫，“你林孤山的剑，从来不曾入我的眼啊。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅对话",
         "time": null,
-        "from_roles": [
-          "宋雨烧"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "” 林孤山问道：“这算是答应了？ ” 苏琅点头道：“你先去支援买椟楼楼主，我要原路返回，去找楚氏精骑的副将，以及那两位梳水国供奉练气士，你们两个只要能够拦下宋雨烧和陈平安，我就能让胜算变得更大。 ” 林孤山有些犹豫不决。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与陈平安对话",
         "location": null,
-        "is_commentary": false,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "苏琅微笑道：“这次匆忙联手，有利则聚，无利则散，你信不过我苏琅很正常，但是好歹要相信亲手斩下一颗梳水国老剑圣的头颅，对于一位松溪国剑仙而言，诱惑到底有多大。 苏琅一手双指捻住鬓角垂下的一缕青丝，一手屈指轻轻敲打那截青竹，显得无比随意散漫，“你林孤山的剑，从来不曾入我的眼啊。 ”",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段11",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -903,10 +1068,138 @@
           5
         ],
         "juan_index": 247,
-        "segment_index": 10
+        "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.245519",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.151060",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-12-0": {
+    "juan_index": 247,
+    "segment_index": 12,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "”",
+      "江湖口碑极差的林孤山眯起眼，皮笑肉不笑道：“口气恁大。",
+      "”",
+      "苏琅神色坦然，“真话一向不太好听。",
+      "”",
+      "林孤山嗤笑一声，冷声道：“不管如何，今天宋陈二人，才是我们的大敌，我与买椟楼楼主静候佳音！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅神色坦然，“真话一向不太好听。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 247,
+        "segment_index": 12
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "苏琅神色坦然，“真话一向不太好听。 ” 江湖口碑极差的林孤山眯起眼，皮笑肉不笑道：“口气恁大。",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段12",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 12
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.151060",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-13-0": {
+    "juan_index": 247,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "若是你们来晚了，我不敢说那位记仇的买椟楼楼主，会不会报复你苏琅，我林孤山肯定会跟你和松溪国皇室，讨要一个公道。",
+      "”",
+      "苏琅伸出一只手，示意林孤山先行。",
+      "这位剑尊一掠长去。",
+      "苏琅亦是转身掠向官路。",
+      "只是在半道上，苏琅骤然停下身形，他看到了一位天真无邪的动人少女，一袭鹅黄粉裙，全身纤尘不染地站在道路中央。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "若是你们来晚了，我不敢说那位记仇的买椟楼楼主，会不会报复你苏琅，我林孤山肯定会跟你和松溪国皇室，讨要一个公道。 苏琅伸出一只手，示意林孤山先行。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "若是你们来晚了，我不敢说那位记仇的买椟楼楼主，会不会报复你苏琅，我林孤山肯定会跟你和松溪国皇室，讨要一个公道。 苏琅伸出一只手，示意林孤山先行。 苏琅亦是转身掠向官路。",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 13
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.151060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -929,6 +1222,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅缓缓前行。 少女从袖中掏出一封密信，上头有有朱红色的封泥，是写信人以防送信人私自拆开，少女笑眯眯道：“宋凤山要我交给你的，说你打开信封一看便知，那个家伙还说如果你答应，就当着我的面点个头，就行了，宋凤山承诺之后一甲子的十数国江湖，你苏琅会以剑仙身份，稳稳占据半壁江山。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "宋雨烧",
         "alias": [],
         "original_description_in_book": "少女正是古寺“嬷嬷”的梳水国四煞之一，此次离开剑水山庄，除了盯住宋雨烧之外，以防不测，更重要的还是这封密信，找机会亲手交到苏琅手上，这位享誉江湖的青竹剑仙，其实还是松溪国的皇亲国戚，只不过血统不正，早早没有了继承皇位的机会。",
@@ -944,16 +1253,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧迁移",
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与苏琅迁移",
         "time": null,
         "location": null,
         "participants": [
-          "宋雨烧"
+          "宋雨烧",
+          "苏琅"
         ],
-        "description": "少女正是古寺“嬷嬷”的梳水国四煞之一，此次离开剑水山庄，除了盯住宋雨烧之外，以防不测，更重要的还是这封密信，找机会亲手交到苏琅手上，这位享誉江湖的青竹剑仙，其实还是松溪国的皇亲国戚，只不过血统不正，早早没有了继承皇位的机会。 苏琅缓缓前行。 少女从袖中掏出一封密信，上头有有朱红色的封泥，是写信人以防送信人私自拆开，少女笑眯眯道：“宋凤山要我交给你的，说你打开信封一看便知，那个家伙还说如果你答应，就当着我的面点个头，就行了，宋凤山承诺之后一甲子的十数国江湖，你苏琅会以剑仙身份，稳稳占据半壁江山。",
+        "description": "苏琅缓缓前行。 少女从袖中掏出一封密信，上头有有朱红色的封泥，是写信人以防送信人私自拆开，少女笑眯眯道：“宋凤山要我交给你的，说你打开信封一看便知，那个家伙还说如果你答应，就当着我的面点个头，就行了，宋凤山承诺之后一甲子的十数国江湖，你苏琅会以剑仙身份，稳稳占据半壁江山。 苏琅思量片刻，从袖子掏出两只雪白丝线缝制而成的手套，戴上后，招手道：“丢过来。",
         "background": "",
-        "significance": "对应宋雨烧在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动宋雨烧与苏琅之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -967,8 +1279,220 @@
         "segment_index": 14
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋雨烧"
+        ],
+        "to_roles": [
+          "苏琅"
+        ],
+        "action": "别离",
+        "context": "少女正是古寺“嬷嬷”的梳水国四煞之一，此次离开剑水山庄，除了盯住宋雨烧之外，以防不测，更重要的还是这封密信，找机会亲手交到苏琅手上，这位享誉江湖的青竹剑仙，其实还是松溪国的皇亲国戚，只不过血统不正，早早没有了继承皇位的机会。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与苏琅迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.151060",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-15-0": {
+    "juan_index": 247,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "苏琅小心翼翼剔除封泥，拆开信封后，快速浏览了一遍密信内容，嘴角勾起一个弧度，然后手腕一抖，震碎密信，摘下手套收回袖中，苏琅点头道：“姑娘可以去宋凤山那边交差了，既然剑水山庄这么有诚意，我苏琅也投桃报李，姑娘你告诉宋凤山，很快就会有一个不大不小的好消息，跟老剑圣有关系。",
+      "信上之事，我希望宋凤山说到做到。",
+      "”",
+      "当下少女无事一身轻，双手搁在身后，十指交缠，巧笑盼兮，“宋凤山虽然不解风情，可做事情还是很稳重的，比咱们这些活了百年、几百年的魔头，还要老练。",
+      "所以苏琅你大可放心，将来你就是十数国版图的江湖君主，不坐龙椅胜似龙椅。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅小心翼翼剔除封泥，拆开信封后，快速浏览了一遍密信内容，嘴角勾起一个弧度，然后手腕一抖，震碎密信，摘下手套收回袖中，苏琅点头道：“姑娘可以去宋凤山那边交差了，既然剑水山庄这么有诚意，我苏琅也投桃报李，姑娘你告诉宋凤山，很快就会有一个不大不小的好消息，跟老剑圣有关系。 所以苏琅你大可放心，将来你就是十数国版图的江湖君主，不坐龙椅胜似龙椅。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 247,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "苏琅小心翼翼剔除封泥，拆开信封后，快速浏览了一遍密信内容，嘴角勾起一个弧度，然后手腕一抖，震碎密信，摘下手套收回袖中，苏琅点头道：“姑娘可以去宋凤山那边交差了，既然剑水山庄这么有诚意，我苏琅也投桃报李，姑娘你告诉宋凤山，很快就会有一个不大不小的好消息，跟老剑圣有关系。 所以苏琅你大可放心，将来你就是十数国版图的江湖君主，不坐龙椅胜似龙椅。 信上之事，我希望宋凤山说到做到。",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 15
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.245519",
+    "extracted_at": "2026-03-25T17:27:38.152064",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-16-0": {
+    "juan_index": 247,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "苏琅笑道：“那就借姑娘吉言。",
+      "”",
+      "“苏大剑仙以后若是缺少枕边人，只管知会一声，奴家随叫随到！",
+      "”少女向玉树临风的男子抛了一个媚眼，发出一串银铃笑声，身形飘摇涣散，然后化作一股滚滚青烟，拔地而起，很快在空中消逝不见。",
+      "苏琅继续独自前行，只是开始权衡利弊。",
+      "是急功近利一些，早早将好处落袋为安。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅笑道：“那就借姑娘吉言。 苏琅继续独自前行，只是开始权衡利弊。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 247,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "苏琅笑道：“那就借姑娘吉言。 苏琅继续独自前行，只是开始权衡利弊。 ”",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.152064",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-17-0": {
+    "juan_index": 247,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "还是与宋凤山联手，让他将自己推到的江湖君王的那个高位上？",
+      "苏琅突然哑然失笑，密信上有个提议，实在有趣，宋凤山承诺他们之间，大约每十年会有一场浩浩荡荡的江湖造势，两人进行一场巅峰之战，他宋凤山届时会继承剑水山庄的剑圣头衔，以剑圣身份，与独占剑仙名头的苏琅，进行所谓的生死之战，其实不过是给江湖演戏罢了。",
+      "宋凤山在信上，甚至已经挑好了三个交手地点，第一次是他宋凤山挑战苏琅，地点选在松溪国皇宫大内的大殿之巅，苏琅大胜，第二次选在剑水山庄的瀑布之顶，宋凤山略胜一筹，第三次约在彩衣国胭脂郡的乱葬岗，苏琅胜出。",
+      "苏琅觉得挺有意思的。",
+      "所以他决定把古榆国的剑尊和买椟楼楼主的脑袋，一起摘下来，作为礼尚往来。",
+      "苏琅很快就看到了梳水国朝廷兵马的身影，脑子里还是宋凤山的那些环环相扣的谋划，喃喃道：“江湖还可以这么玩啊？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "苏琅突然哑然失笑，密信上有个提议，实在有趣，宋凤山承诺他们之间，大约每十年会有一场浩浩荡荡的江湖造势，两人进行一场巅峰之战，他宋凤山届时会继承剑水山庄的剑圣头衔，以剑圣身份，与独占剑仙名头的苏琅，进行所谓的生死之战，其实不过是给江湖演戏罢了。 宋凤山在信上，甚至已经挑好了三个交手地点，第一次是他宋凤山挑战苏琅，地点选在松溪国皇宫大内的大殿之巅，苏琅大胜，第二次选在剑水山庄的瀑布之顶，宋凤山略胜一筹，第三次约在彩衣国胭脂郡的乱葬岗，苏琅胜出。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅揭示",
+        "time": null,
+        "location": null,
+        "participants": [
+          "苏琅"
+        ],
+        "description": "苏琅突然哑然失笑，密信上有个提议，实在有趣，宋凤山承诺他们之间，大约每十年会有一场浩浩荡荡的江湖造势，两人进行一场巅峰之战，他宋凤山届时会继承剑水山庄的剑圣头衔，以剑圣身份，与独占剑仙名头的苏琅，进行所谓的生死之战，其实不过是给江湖演戏罢了。 宋凤山在信上，甚至已经挑好了三个交手地点，第一次是他宋凤山挑战苏琅，地点选在松溪国皇宫大内的大殿之巅，苏琅大胜，第二次选在剑水山庄的瀑布之顶，宋凤山略胜一筹，第三次约在彩衣国胭脂郡的乱葬岗，苏琅胜出。 苏琅觉得挺有意思的。",
+        "background": "",
+        "significance": "对应苏琅在叙事中的关键揭示节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.152064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1014,24 +1538,37 @@
         ],
         "juan_index": 247,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "苏琅",
+        "alias": [],
+        "original_description_in_book": "还是三对二，只不过这个三，是宋雨烧，陈平安，加他苏琅。 苏琅进入林间山路之后，开始故意放慢脚步，笑道：“江湖险恶啊。",
+        "description": "山上支线人物，适合补足高位修士与对战网络。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 247,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与陈平安对话",
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 苏琅与宋雨烧对话",
         "time": null,
         "location": null,
         "participants": [
+          "苏琅",
           "宋雨烧",
           "陈平安"
         ],
-        "description": "还是三对二，只不过这个三，是宋雨烧，陈平安，加他苏琅。 ” 最终这位松溪国剑仙，没有径直去往大军之中，而是一个骤然转向，独自掠向山林。",
+        "description": "还是三对二，只不过这个三，是宋雨烧，陈平安，加他苏琅。 苏琅进入林间山路之后，开始故意放慢脚步，笑道：“江湖险恶啊。 ”",
         "background": "",
-        "significance": "推动宋雨烧与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动苏琅与宋雨烧之间的对话关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1045,34 +1582,8 @@
         "segment_index": 18
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宋雨烧"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "” 最终这位松溪国剑仙，没有径直去往大军之中，而是一个骤然转向，独自掠向山林。 还是三对二，只不过这个三，是宋雨烧，陈平安，加他苏琅。 将会一起对付林孤山和买椟楼楼主。 苏琅进入林间山路之后，开始故意放慢脚步，笑道：“江湖险恶啊。 ”",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 宋雨烧与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 247,
-        "segment_index": 18
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.245519",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.152064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1133,7 +1644,605 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.245519",
+    "extracted_at": "2026-03-25T17:27:38.152064",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-24-0": {
+    "juan_index": 247,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "但是双方都没有想到，一位不速之客的登门，打破了两边苦心孤诣的多年谋划。",
+      "根本没有门房禀报，更没有剑水山庄的弟子出手阻拦，见到那位自报名号的人物后，几乎所有人都下意识作揖致礼，以儒家礼仪待客。",
+      "而那个身穿儒衫、头戴文巾的年轻男子，腰间悬挂有一枚玉佩，以一种说不清道不明的步伐和节奏，不急不缓地走入剑水山庄群雄会聚的大堂内，他跨过门槛之后，环顾四周后，再一次自报身份，“观湖书院，贤人周矩。",
+      "”",
+      "大堂之内，几乎所有人都哗啦啦站起身，向此人作揖。",
+      "年轻人作揖还礼，然后向前走出两三步，望向主位上的剑水山庄少庄主。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "而那个身穿儒衫、头戴文巾的年轻男子，腰间悬挂有一枚玉佩，以一种说不清道不明的步伐和节奏，不急不缓地走入剑水山庄群雄会聚的大堂内，他跨过门槛之后，环顾四周后，再一次自报身份，“观湖书院，贤人周矩。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 247,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "而那个身穿儒衫、头戴文巾的年轻男子，腰间悬挂有一枚玉佩，以一种说不清道不明的步伐和节奏，不急不缓地走入剑水山庄群雄会聚的大堂内，他跨过门槛之后，环顾四周后，再一次自报身份，“观湖书院，贤人周矩。 但是双方都没有想到，一位不速之客的登门，打破了两边苦心孤诣的多年谋划。 根本没有门房禀报，更没有剑水山庄的弟子出手阻拦，见到那位自报名号的人物后，几乎所有人都下意识作揖致礼，以儒家礼仪待客。",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 24
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.153067",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-26-0": {
+    "juan_index": 247,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "”",
+      "年轻贤人笑了笑，“韩元善身为梳水国进士，已是我儒家门生，却修习魔道功夫，居心叵测，祸害一国社稷，我要带他去观湖书院接受责罚，至于如何处置，到了书院，自有定论。",
+      "宋凤山，我不以书院贤人身份，只是我周矩想要劝你一句，悬崖勒马犹未晚，亡羊补牢不算迟。",
+      "”",
+      "宋凤山手肘抵在椅把手上，拖住腮帮，就这么歪着脑袋，笑望向这位观湖书院的贤人，好整以暇地打量起来。",
+      "传闻这些贵不可言的夫子先生们，每次离开书院，奉命行事，腰间都会悬挂上那枚书院圣人赐下的玉佩，能够记录一路见闻和自身修养，以示言行之光明磊落。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "宋凤山，我不以书院贤人身份，只是我周矩想要劝你一句，悬崖勒马犹未晚，亡羊补牢不算迟。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 247,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩试探",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "宋凤山，我不以书院贤人身份，只是我周矩想要劝你一句，悬崖勒马犹未晚，亡羊补牢不算迟。 ” 年轻贤人笑了笑，“韩元善身为梳水国进士，已是我儒家门生，却修习魔道功夫，居心叵测，祸害一国社稷，我要带他去观湖书院接受责罚，至于如何处置，到了书院，自有定论。",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键试探节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.153067",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-27-0": {
+    "juan_index": 247,
+    "segment_index": 27,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "玉佩样式是世间最简单素雅的平安牌，但是不同的贤人君子，上边篆刻的文字，内容不同，但是无一例外，大有深意，往往蕴含着书院圣人对此人的期许和提点。",
+      "宋凤山无礼至极，没有答话的意思，年轻妇人当然就要圆场，站起身向那位书院贤人行礼之后，微笑道：“若韩元善真是如此，我剑水山庄自当秉公行事，义之所在，一定全力帮助书院擒拿此人。",
+      "”",
+      "周矩望向妇人，沉声道：“若非早早断了长生桥，你才能站在这里大言不惭，否则你的下场，不比韩元善好到哪里去。",
+      "魔道中人，在江湖兴风作浪，自有侠义之士除魔卫道，可如果胆敢侵扰一国之山河社稷，我书院决不轻饶！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "周矩望向妇人，沉声道：“若非早早断了长生桥，你才能站在这里大言不惭，否则你的下场，不比韩元善好到哪里去。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 247,
+        "segment_index": 27
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "周矩望向妇人，沉声道：“若非早早断了长生桥，你才能站在这里大言不惭，否则你的下场，不比韩元善好到哪里去。 玉佩样式是世间最简单素雅的平安牌，但是不同的贤人君子，上边篆刻的文字，内容不同，但是无一例外，大有深意，往往蕴含着书院圣人对此人的期许和提点。 宋凤山无礼至极，没有答话的意思，年轻妇人当然就要圆场，站起身向那位书院贤人行礼之后，微笑道：“若韩元善真是如此，我剑水山庄自当秉公行事，义之所在，一定全力帮助书院擒拿此人。",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段27",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 27
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.153067",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-28-0": {
+    "juan_index": 247,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "宋凤山坐直身体，死死盯住周矩，“跟我妻子说话，你最好客气一点。",
+      "”",
+      "“凤山！",
+      "”",
+      "年轻妇人转过头，轻轻低呼一声，宋凤山看到她的焦急眼神，心中叹息一声，身体后仰靠着椅背，不再说话。",
+      "这个时候，自封魔教教主的窦阳灌了口酒，将酒杯重重拍在桌上，冷笑出声。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "宋凤山坐直身体，死死盯住周矩，“跟我妻子说话，你最好客气一点。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 247,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "宋凤山坐直身体，死死盯住周矩，“跟我妻子说话，你最好客气一点。 ” “凤山！",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.153067",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-29-0": {
+    "juan_index": 247,
+    "segment_index": 29,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "年轻贤人转头望向这位练气士，道：“等我办完书院正事，就会摘下腰间玉佩，希望到时候你窦阳还能笑得出来。",
+      "”",
+      "窦阳斜眼瞥向应该还不到三十岁的书院夫子，呵呵道：“别人怕你观湖书院的名头，怕得要死，我窦阳也怕，但因为知道你们书院的规矩，倒也不至于战战兢兢，儒家贤人的门槛如何，瓶颈又是如何，与君子差距大致有多大，我一清二楚，所以你周矩不用拿话压我。",
+      "说句难听的，你摘了玉牌，我还是会忌惮你们书院，哪敢放开手脚与你交手，但如果你周矩有本事连儒衫文巾一并摘了，以江湖人行事，那我窦阳不把你打出屎来，我随你姓！",
+      "”",
+      "魔头窦阳这番话，说得霸气且解气，哪怕是一些白道大佬，都觉得此人虽然作恶多端，是江湖上掀起过一场场血雨腥风，可能够当着一位观湖书院贤人的面，说出这样的言语，实在是无愧江湖二字！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "窦阳斜眼瞥向应该还不到三十岁的书院夫子，呵呵道：“别人怕你观湖书院的名头，怕得要死，我窦阳也怕，但因为知道你们书院的规矩，倒也不至于战战兢兢，儒家贤人的门槛如何，瓶颈又是如何，与君子差距大致有多大，我一清二楚，所以你周矩不用拿话压我。 说句难听的，你摘了玉牌，我还是会忌惮你们书院，哪敢放开手脚与你交手，但如果你周矩有本事连儒衫文巾一并摘了，以江湖人行事，那我窦阳不把你打出屎来，我随你姓！",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 247,
+        "segment_index": 29
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "窦阳斜眼瞥向应该还不到三十岁的书院夫子，呵呵道：“别人怕你观湖书院的名头，怕得要死，我窦阳也怕，但因为知道你们书院的规矩，倒也不至于战战兢兢，儒家贤人的门槛如何，瓶颈又是如何，与君子差距大致有多大，我一清二楚，所以你周矩不用拿话压我。 说句难听的，你摘了玉牌，我还是会忌惮你们书院，哪敢放开手脚与你交手，但如果你周矩有本事连儒衫文巾一并摘了，以江湖人行事，那我窦阳不把你打出屎来，我随你姓！ 年轻贤人转头望向这位练气士，道：“等我办完书院正事，就会摘下腰间玉佩，希望到时候你窦阳还能笑得出来。",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段29",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 29
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.153067",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-30-0": {
+    "juan_index": 247,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "梳水国能有这样一尊魔道巨擘，算不算也压过过彩衣国古榆国的江湖一头？",
+      "贤人周矩微微一笑。",
+      "他低头对那块玉牌小声嘀咕道：“先生，你听听，这我还能忍？",
+      "忍住不打那些个书院贤人，也就罢了，难道出门在外，离着书院千万里，还要忍一个魔道练气士？",
+      "好吧，你肯定会说一忍再忍，忍着忍着就能重新当回君子了，但是……我真忍不了啊……啥，先生你要说啥……喂喂喂，听得到我说话吗？",
+      "哎呦，玉牌咋出问题了呢，先生，你回头一定要好好管管书院制造局那些家伙……那就这样啊，不聊了啊，回到书院先生你帮我换一块玉佩啊……”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "贤人周矩微微一笑。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 247,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "贤人周矩微微一笑。 梳水国能有这样一尊魔道巨擘，算不算也压过过彩衣国古榆国的江湖一头？ 他低头对那块玉牌小声嘀咕道：“先生，你听听，这我还能忍？",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.154095",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-31-0": {
+    "juan_index": 247,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "到最后，众人只见那个满嘴胡说八道的书院年轻夫子，伸手死死攥紧了好似自行颤抖起来的玉牌，将其使劲摇晃起来，到最后，就双指掐诀，轻轻转动，有清风萦绕罩住那块玉牌，将其包裹得如一颗蚕茧，年轻贤人这才笑着将玉佩摘下，收入袖中。",
+      "年轻妇人趁人不注意，走到宋凤山身边，苦笑道：“凤山，我记起来了，此人是观湖书院那位圣人的嫡传弟子之一。",
+      "在弟子当中，此人年纪最小，脾气最差，本事……哪怕没有最高，但肯定能排第二，他在弱冠之龄就获得了君子身份，当时极为轰动，被誉为崔明皇之后的又一位‘正人’君子最佳人选，很有可能会让学宫圣人亲自勘验考核，所以观湖书院对他保护得很好，我们谍报上一直记载为周巨然，而不是周矩。",
+      "”",
+      "窦阳呆呆坐在原地，咽了口唾沫。",
+      "他虽然不知道周矩就是周巨然，但是“殴打贤人”“重回君子”这些内容，窦阳还是抓住了蛛丝马迹。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "在弟子当中，此人年纪最小，脾气最差，本事……哪怕没有最高，但肯定能排第二，他在弱冠之龄就获得了君子身份，当时极为轰动，被誉为崔明皇之后的又一位‘正人’君子最佳人选，很有可能会让学宫圣人亲自勘验考核，所以观湖书院对他保护得很好，我们谍报上一直记载为周巨然，而不是周矩。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 247,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "在弟子当中，此人年纪最小，脾气最差，本事……哪怕没有最高，但肯定能排第二，他在弱冠之龄就获得了君子身份，当时极为轰动，被誉为崔明皇之后的又一位‘正人’君子最佳人选，很有可能会让学宫圣人亲自勘验考核，所以观湖书院对他保护得很好，我们谍报上一直记载为周巨然，而不是周矩。 他虽然不知道周矩就是周巨然，但是“殴打贤人”“重回君子”这些内容，窦阳还是抓住了蛛丝马迹。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 31
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 崔明皇与周矩对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "崔明皇",
+          "周矩"
+        ],
+        "description": "在弟子当中，此人年纪最小，脾气最差，本事……哪怕没有最高，但肯定能排第二，他在弱冠之龄就获得了君子身份，当时极为轰动，被誉为崔明皇之后的又一位‘正人’君子最佳人选，很有可能会让学宫圣人亲自勘验考核，所以观湖书院对他保护得很好，我们谍报上一直记载为周巨然，而不是周矩。 他虽然不知道周矩就是周巨然，但是“殴打贤人”“重回君子”这些内容，窦阳还是抓住了蛛丝马迹。 到最后，众人只见那个满嘴胡说八道的书院年轻夫子，伸手死死攥紧了好似自行颤抖起来的玉牌，将其使劲摇晃起来，到最后，就双指掐诀，轻轻转动，有清风萦绕罩住那块玉牌，将其包裹得如一颗蚕茧，年轻贤人这才笑着将玉佩摘下，收入袖中。",
+        "background": "",
+        "significance": "推动崔明皇与周矩之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 31
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔明皇"
+        ],
+        "to_roles": [
+          "周矩"
+        ],
+        "action": "守护",
+        "context": "在弟子当中，此人年纪最小，脾气最差，本事……哪怕没有最高，但肯定能排第二，他在弱冠之龄就获得了君子身份，当时极为轰动，被誉为崔明皇之后的又一位‘正人’君子最佳人选，很有可能会让学宫圣人亲自勘验考核，所以观湖书院对他保护得很好，我们谍报上一直记载为周巨然，而不是周矩。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 崔明皇与周矩对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 247,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.154095",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-32-0": {
+    "juan_index": 247,
+    "segment_index": 32,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "所以窦阳站起身，就要赔罪道歉。",
+      "向一位儒家君子服软认输，绝不丢人。",
+      "只是暂时以贤人身份离开书院的周矩，伸出一手，双指指向在梳水国不可一世的魔头窦阳，微笑道：“我儒家先贤曾有雄奇诗篇，问于后人，君不见，一川碎石大如斗，随风满地石乱走？",
+      "后世周矩在此答曰，我已见！",
+      "”",
+      "魁梧身躯的窦阳，以他为圆心的一丈内，罡风席卷，凌厉劲风如一道陆地龙卷，疯狂环绕这位魔道巨擘。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "只是暂时以贤人身份离开书院的周矩，伸出一手，双指指向在梳水国不可一世的魔头窦阳，微笑道：“我儒家先贤曾有雄奇诗篇，问于后人，君不见，一川碎石大如斗，随风满地石乱走？ 后世周矩在此答曰，我已见！",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 247,
+        "segment_index": 32
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "只是暂时以贤人身份离开书院的周矩，伸出一手，双指指向在梳水国不可一世的魔头窦阳，微笑道：“我儒家先贤曾有雄奇诗篇，问于后人，君不见，一川碎石大如斗，随风满地石乱走？ 后世周矩在此答曰，我已见！ 所以窦阳站起身，就要赔罪道歉。",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段32",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 32
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.154095",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "247-34-0": {
+    "juan_index": 247,
+    "segment_index": 34,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子",
+    "source_sentences": [
+      "周矩笑了笑，“既然韩元善不在场，那我就不打搅你们的盟主大典了，我去找他，你们继续。",
+      "”",
+      "书院贤人潇洒转身，就这么走向大门，刚巧外边有一老一少返回剑水山庄，往大堂这边并肩走来，好像经历过连番凶险大战，身上都沾染了血迹。",
+      "双方都没有停步，也没有出声，刚好在各自跨过门槛的时候，擦肩而过。",
+      "年轻贤人一直盯着那位背剑少年看，后者有些奇怪，便回望向他，两者视线交汇。",
+      "哪怕少年已经进入大堂，也不再与他对视，曾是观湖书院君子的年轻贤人，还是一直转头望向少年。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周矩",
+        "alias": [],
+        "original_description_in_book": "周矩笑了笑，“既然韩元善不在场，那我就不打搅你们的盟主大典了，我去找他，你们继续。",
+        "description": "外围修士与谋划线人物，可扩展山上冲突关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 247,
+        "segment_index": 34
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 周矩剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周矩"
+        ],
+        "description": "周矩笑了笑，“既然韩元善不在场，那我就不打搅你们的盟主大典了，我去找他，你们继续。 ” 书院贤人潇洒转身，就这么走向大门，刚巧外边有一老一少返回剑水山庄，往大堂这边并肩走来，好像经历过连番凶险大战，身上都沾染了血迹。",
+        "background": "",
+        "significance": "对应周矩在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百四十六章 一团乱麻,既见君子 · 段34",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 247,
+        "segment_index": 34
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.154095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

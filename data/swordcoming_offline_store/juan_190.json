@@ -29,6 +29,21 @@
         ],
         "juan_index": 190,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "河水滔滔，光阴流逝，四下无人的铁符江畔，那棵主干横出水面的老柳树上，名为杨花的铁符江水神正坐在杨柳树上，闭目凝神，覆甲遮掩容颜的女子江神，突然睁开眼眸，伸手一招，一尾活蹦乱跳的青鱼被她抓取到手中，她以一根手指到刀刃，剖开青鱼腹部，然后发现了那颗灵气充沛的白球，她拇指轻柔一抹，先将那条“寄信”的青鱼腹部重新缝合，从她手心滑入江水，青鱼入水之后，欢快异常，一身鱼鳞似乎多出些神润光泽。 杨花低头凝视着手心白球，其中夹杂有丝丝缕缕的云根气息，珍贵异常，对于任何江河正神，这都是大补之物，山水神灵眼中，也有自己的山珍海味，水精云根等，皆由虚无缥缈的山水气数凝聚成实质，去芜存菁，这就像斩龙台之于神兵利器，蛇胆石之于蛟龙之属的孽种遗种，意义非凡。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 190,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -73,12 +88,15 @@
         "participants": [
           "宁姚",
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "杨花"
         ],
-        "description": "魏檗又点到即止地聊了一些，就不愿泄露更多，字画有留白，说话聊天是一样的。 魏檗离开落魄山后，放缓速度，随手捻起一团团云气，捏雪球似的，不断加大重量，最后双手抱在一起，狠狠挤压，最后魏檗手心多出一颗鹅卵石大小的白球，他在空中找到小镇龙须河的源头之一，对着山中溪涧轻轻一抛，白球坠入其中，很快就有一尾青鱼将其吞入腹中，然后顺流向下，出山，青牛背，石拱桥，铁匠铺子，再从龙须河和铁符江交界处的瀑布，随着迅猛水流一起跌下。 一袭白衣御风凌空，在云海山风之中飘然而行。",
+        "description": "魏檗又点到即止地聊了一些，就不愿泄露更多，字画有留白，说话聊天是一样的。 魏檗离开落魄山后，放缓速度，随手捻起一团团云气，捏雪球似的，不断加大重量，最后双手抱在一起，狠狠挤压，最后魏檗手心多出一颗鹅卵石大小的白球，他在空中找到小镇龙须河的源头之一，对着山中溪涧轻轻一抛，白球坠入其中，很快就有一尾青鱼将其吞入腹中，然后顺流向下，出山，青牛背，石拱桥，铁匠铺子，再从龙须河和铁符江交界处的瀑布，随着迅猛水流一起跌下。 河水滔滔，光阴流逝，四下无人的铁符江畔，那棵主干横出水面的老柳树上，名为杨花的铁符江水神正坐在杨柳树上，闭目凝神，覆甲遮掩容颜的女子江神，突然睁开眼眸，伸手一招，一尾活蹦乱跳的青鱼被她抓取到手中，她以一根手指到刀刃，剖开青鱼腹部，然后发现了那颗灵气充沛的白球，她拇指轻柔一抹，先将那条“寄信”的青鱼腹部重新缝合，从她手心滑入江水，青鱼入水之后，欢快异常，一身鱼鳞似乎多出些神润光泽。",
         "background": "",
         "significance": "引入陈平安后续最关键的人物关系线。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十章 我是一名剑客 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -92,8 +110,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.981528",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏檗"
+        ],
+        "to_roles": [
+          "杨花"
+        ],
+        "action": "对话",
+        "context": "魏檗又点到即止地聊了一些，就不愿泄露更多，字画有留白，说话聊天是一样的。 一袭白衣御风凌空，在云海山风之中飘然而行。 魏檗离开落魄山后，放缓速度，随手捻起一团团云气，捏雪球似的，不断加大重量，最后双手抱在一起，狠狠挤压，最后魏檗手心多出一颗鹅卵石大小的白球，他在空中找到小镇龙须河的源头之一，对着山中溪涧轻轻一抛，白球坠入其中，很快就有一尾青鱼将其吞入腹中，然后顺流向下，出山，青牛背，石拱桥，铁匠铺子，再从龙须河和铁符江交界处的瀑布，随着迅猛水流一起跌下。 河水滔滔，光阴流逝，四下无人的铁符江畔，那棵主干横出水面的老柳树上，名为杨花的铁符江水神正坐在杨柳树上，闭目凝神，覆甲遮掩容颜的女子江神，突然睁开眼眸，伸手一招，一尾活蹦乱跳的青鱼被她抓取到手中，她以一根手指到刀刃，剖开青鱼腹部，然后发现了那颗灵气充沛的白球，她拇指轻柔一抹，先将那条“寄信”的青鱼腹部重新缝合，从她手心滑入江水，青鱼入水之后，欢快异常，一身鱼鳞似乎多出些神润光泽。 杨花低头凝视着手心白球，其中夹杂有丝丝缕缕的云根气息，珍贵异常，对于任何江河正神，这都是大补之物，山水神灵眼中，也有自己的山珍海味，水精云根等，皆由虚无缥缈的山水气数凝聚成实质，去芜存菁，这就像斩龙台之于神兵利器，蛇胆石之于蛟龙之属的孽种遗种，意义非凡。 杨花抬起头望去，云雾之中，隐隐约约，有一位白衣男子站在群山之巅，一侧耳朵垂挂着一只金色圆环。",
+        "result": null,
+        "event_name": "宁姚坠入小镇",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 190,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.824931",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -129,6 +173,21 @@
       },
       {
         "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "但是杨花没有想到，这个魏檗竟然会一跃成为大骊北岳正神，品秩远远在她之上。 杨花不知为何魏檗要向自己表现出善意，地位不稳，所以需要拉拢人心？",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 190,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "魏檗",
         "alias": [
           "魏山君"
@@ -158,6 +217,7 @@
         "coordinates": null,
         "related_entities": [
           "许弱",
+          "杨花",
           "魏檗"
         ],
         "sentence_indexes_in_segment": [
@@ -192,14 +252,13 @@
         "participants": [
           "魏檗",
           "陈平安",
+          "杨花",
           "许弱"
         ],
         "description": "她之前就在这里，亲眼见过此人与大骊守门人之一的墨家豪侠许弱，一同骑乘着那条道行平平的黑蛇，沿着江水逆行，去往大山之中。 但是杨花没有想到，这个魏檗竟然会一跃成为大骊北岳正神，品秩远远在她之上。 杨花不知为何魏檗要向自己表现出善意，地位不稳，所以需要拉拢人心？",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十章 我是一名剑客 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -213,34 +272,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "许弱"
-        ],
-        "to_roles": [
-          "魏檗"
-        ],
-        "action": "讥讽",
-        "context": "她之前就在这里，亲眼见过此人与大骊守门人之一的墨家豪侠许弱，一同骑乘着那条道行平平的黑蛇，沿着江水逆行，去往大山之中。 但是杨花没有想到，这个魏檗竟然会一跃成为大骊北岳正神，品秩远远在她之上。 杨花不知为何魏檗要向自己表现出善意，地位不稳，所以需要拉拢人心？ 杨花冷笑不已，攥紧拳头，毫不犹豫地将手心白球捏爆，灵气全部流淌进入她体内，发丝飞扬，脚下的江水起浪，似乎在为主人的修为递增而感到喜悦。 魏檗收回远眺铁符江的视线，返回他的老巢披云山。 御风路过各座山头，脚下偶有练气士朗声问好，魏檗以往都笑着会应答，今天却没有这个心情。",
-        "result": null,
-        "event_name": "魏檗现身",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 190,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.981528",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.824931",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -322,7 +355,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.981528",
+    "extracted_at": "2026-03-25T17:27:37.824931",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -409,7 +442,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.981528",
+    "extracted_at": "2026-03-25T17:27:37.824931",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -543,7 +576,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.981528",
+    "extracted_at": "2026-03-25T17:27:37.825935",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -655,7 +688,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.981528",
+    "extracted_at": "2026-03-25T17:27:37.825935",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -717,7 +750,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.825935",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -811,7 +844,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.825935",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -890,7 +923,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.825935",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -984,7 +1017,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.825935",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1088,7 +1121,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.826938",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1168,7 +1201,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.826938",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1278,7 +1311,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.826938",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1340,7 +1373,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.982531",
+    "extracted_at": "2026-03-25T17:27:37.826938",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -33,6 +33,19 @@
       },
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "小镇其实在县令吴鸢出现之前，只知道自己是大骊子民，龙窑是为大骊皇帝家里烧制瓷器，仅此而已，其余一概不知，小镇人员流通极少，根本不存在什么拜访亲戚、出门游学、远嫁他乡，书上不教，老辈不说，世世代代皆是如此，四姓十族当中知道一些内幕的人物，更不敢泄露天机。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 94,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "大骊皇帝",
         "alias": [],
         "original_description_in_book": "小镇其实在县令吴鸢出现之前，只知道自己是大骊子民，龙窑是为大骊皇帝家里烧制瓷器，仅此而已，其余一概不知，小镇人员流通极少，根本不存在什么拜访亲戚、出门游学、远嫁他乡，书上不教，老辈不说，世世代代皆是如此，四姓十族当中知道一些内幕的人物，更不敢泄露天机。",
@@ -70,6 +83,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "大骊皇帝"
         ],
         "sentence_indexes_in_segment": [
@@ -88,6 +102,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "大骊皇帝"
         ],
         "sentence_indexes_in_segment": [
@@ -105,7 +120,7 @@
         "participants": [
           "阿良",
           "陈平安",
-          "阮邛",
+          "吴鸢",
           "大骊皇帝"
         ],
         "description": "传言那个曾经在骑龙巷住过一段时间的阮师傅，是会铸剑的神仙，连朝廷也敬重得很。 所以阮师傅的身份不简单，绝对假不了。 很多人都想着把孩子塞进铁匠铺子，只可惜已经不招人了，不过阮师傅倒是有次去镇上买酒，挑中了两个孩子做学徒，第二天酒铺子就人满为患，全是大人长辈拎着自家孩子，问题在于也没人真正买酒，全眼巴巴等着阮师傅能够看中谁，孩子可不管什么前程不前程，撒腿闹得欢，鸡飞狗跳吵翻天。",
@@ -131,30 +146,25 @@
       {
         "time": null,
         "from_roles": [
-          "阮邛"
+          "吴鸢"
         ],
         "to_roles": [
           "大骊皇帝"
         ],
         "action": "会见",
-        "context": "铁匠铺子那边总计挖出七口水井，井水甘甜，冷气森森。 传言那个曾经在骑龙巷住过一段时间的阮师傅，是会铸剑的神仙，连朝廷也敬重得很。 礼部官老爷和小吴大人，都曾经亲自去拜访过。 所以阮师傅的身份不简单，绝对假不了。 很多人都想着把孩子塞进铁匠铺子，只可惜已经不招人了，不过阮师傅倒是有次去镇上买酒，挑中了两个孩子做学徒，第二天酒铺子就人满为患，全是大人长辈拎着自家孩子，问题在于也没人真正买酒，全眼巴巴等着阮师傅能够看中谁，孩子可不管什么前程不前程，撒腿闹得欢，鸡飞狗跳吵翻天。 小镇其实在县令吴鸢出现之前，只知道自己是大骊子民，龙窑是为大骊皇帝家里烧制瓷器，仅此而已，其余一概不知，小镇人员流通极少，根本不存在什么拜访亲戚、出门游学、远嫁他乡，书上不教，老辈不说，世世代代皆是如此，四姓十族当中知道一些内幕的人物，更不敢泄露天机。",
+        "context": "小镇其实在县令吴鸢出现之前，只知道自己是大骊子民，龙窑是为大骊皇帝家里烧制瓷器，仅此而已，其余一概不知，小镇人员流通极少，根本不存在什么拜访亲戚、出门游学、远嫁他乡，书上不教，老辈不说，世世代代皆是如此，四姓十族当中知道一些内幕的人物，更不敢泄露天机。",
         "result": null,
         "event_name": "阿良过境",
-        "location": "骑龙巷",
+        "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 94,
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "extracted_at": "2026-03-25T17:27:37.360481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -175,6 +185,19 @@
       "她自从遇到某个矮冬瓜之后，就心情郁郁。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "四姓十族对此并未展露出太过热情，更没有帮着县衙出面做点力所能及的意思，更多还是冷眼旁观，至于是不是等着看县衙闹笑话，就只有吴鸢和那帮老狐狸肚子里清楚了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 94,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "阮秀",
@@ -264,12 +287,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "吴鸢",
           "阮秀"
         ],
         "description": "那些本命瓷被挑中的幸运儿，能够走出去欣赏外边的大好河山，在骊珠洞天破碎下坠之前，根本没有衣锦还乡的机会，这是小镇四方圣人早年订立的规矩之一。 如今按照县衙张贴的告示和识字之人的讲解，才知道以前是因为龙泉县的山路，太过险峻，如今朝廷花了大力气才开通道路，是为了开山一事，要把那些山头送给某些相中此地风水的大人物，与此同时，县衙礼房吏员为首的一拨人，开始为辖境百姓讲解各种规矩，应该如何与外乡人相处， 比如不可胡乱对着外乡人指指点点，稚童不可冲撞街道行人，绝对不许擅自触碰外乡人的坐骑等等，如果一旦出现任何争执，百姓则必须如实向龙泉县衙禀报，不可自作主张，官府会秉公处理。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十四章 秀色可餐 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -283,8 +309,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "阮秀"
+        ],
+        "action": "指点",
+        "context": "那些本命瓷被挑中的幸运儿，能够走出去欣赏外边的大好河山，在骊珠洞天破碎下坠之前，根本没有衣锦还乡的机会，这是小镇四方圣人早年订立的规矩之一。 如今按照县衙张贴的告示和识字之人的讲解，才知道以前是因为龙泉县的山路，太过险峻，如今朝廷花了大力气才开通道路，是为了开山一事，要把那些山头送给某些相中此地风水的大人物，与此同时，县衙礼房吏员为首的一拨人，开始为辖境百姓讲解各种规矩，应该如何与外乡人相处， 比如不可胡乱对着外乡人指指点点，稚童不可冲撞街道行人，绝对不许擅自触碰外乡人的坐骑等等，如果一旦出现任何争执，百姓则必须如实向龙泉县衙禀报，不可自作主张，官府会秉公处理。 四姓十族对此并未展露出太过热情，更没有帮着县衙出面做点力所能及的意思，更多还是冷眼旁观，至于是不是等着看县衙闹笑话，就只有吴鸢和那帮老狐狸肚子里清楚了。 小镇的巨大变化，对自幼在兵家祖庭风雪庙长大的阮秀而言，感触不深，或者说也不在意。 她自从遇到某个矮冬瓜之后，就心情郁郁。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 94,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.360481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -398,7 +450,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "extracted_at": "2026-03-25T17:27:37.360481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -495,7 +547,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "extracted_at": "2026-03-25T17:27:37.361484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -608,7 +660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "extracted_at": "2026-03-25T17:27:37.361484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -810,7 +862,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.361484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -958,7 +1010,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.361484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1040,7 +1092,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.361484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1102,7 +1154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.361484",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1164,7 +1216,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.362488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1226,7 +1278,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.362488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1303,7 +1355,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.613211",
+    "extracted_at": "2026-03-25T17:27:37.362488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1366,7 +1418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.614214",
+    "extracted_at": "2026-03-25T17:27:37.362488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1429,7 +1481,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.614214",
+    "extracted_at": "2026-03-25T17:27:37.362488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1491,7 +1543,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.614214",
+    "extracted_at": "2026-03-25T17:27:37.362488",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1569,7 +1621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.614214",
+    "extracted_at": "2026-03-25T17:27:37.363491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1649,7 +1701,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.614214",
+    "extracted_at": "2026-03-25T17:27:37.363491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1746,7 +1798,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.614214",
+    "extracted_at": "2026-03-25T17:27:37.363491",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

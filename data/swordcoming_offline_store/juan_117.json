@@ -100,7 +100,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.453338",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -266,7 +266,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.453338",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -391,7 +391,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.453338",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -521,7 +521,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.453338",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -603,7 +603,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.454341",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -666,7 +666,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.454341",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +730,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.688973",
+    "extracted_at": "2026-03-25T17:27:37.454341",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -868,7 +868,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.454341",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -930,7 +930,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.454341",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -953,6 +953,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人尖声道：“崔瀺你根本一开始就认识那个人，对不对？",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 117,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -970,15 +983,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宫装妇人与崔瀺剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "宫装妇人",
           "崔瀺"
         ],
         "description": "宫装妇人尖声道：“崔瀺你根本一开始就认识那个人，对不对？ 所以你为了讨好他，故意打开京城大门，任由他一路杀到那座白玉京之前？ ！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动宫装妇人与崔瀺之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段11",
         "sentence_indexes_in_segment": [
@@ -994,7 +1008,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.454341",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1098,7 +1112,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.455345",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1199,7 +1213,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.455345",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1234,6 +1248,32 @@
         ],
         "juan_index": 117,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "咱们皇帝陛下心疼归心疼，却也没问责于谁，之后看似临时起意，干脆将它转赠给了名叫杨花的女子，正是娘娘你身边的那位婢女，但是同时下令让那名女子，成为铁符江的江神。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 117,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人笑道：“你是想说陛下在对我敲打提醒？",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -1262,9 +1302,10 @@
         "participants": [
           "阿良",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "杨花"
         ],
-        "description": "崔瀺自顾自说道：“不料斩龙台过于巨大，两次出剑，剑身就宛如小镇龙窑瓷器的冰裂纹，内里剑元破碎不堪，完全失去了修复原样的可能性。 ” 咱们皇帝陛下心疼归心疼，却也没问责于谁，之后看似临时起意，干脆将它转赠给了名叫杨花的女子，正是娘娘你身边的那位婢女，但是同时下令让那名女子，成为铁符江的江神。",
+        "description": "崔瀺自顾自说道：“不料斩龙台过于巨大，两次出剑，剑身就宛如小镇龙窑瓷器的冰裂纹，内里剑元破碎不堪，完全失去了修复原样的可能性。 咱们皇帝陛下心疼归心疼，却也没问责于谁，之后看似临时起意，干脆将它转赠给了名叫杨花的女子，正是娘娘你身边的那位婢女，但是同时下令让那名女子，成为铁符江的江神。 宫装妇人笑道：“你是想说陛下在对我敲打提醒？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1282,7 +1323,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.455345",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1318,21 +1359,37 @@
         ],
         "juan_index": 117,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人冷笑连连。",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 117,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宫装妇人讥讽",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "宫装妇人"
         ],
-        "description": "崔瀺讥讽道：“娘娘果然一向秀外慧中。 崔瀺啧啧道：“不妨想一想咱们五岳正神们的下场？ ”",
+        "description": "崔瀺讥讽道：“娘娘果然一向秀外慧中。 宫装妇人冷笑连连。 崔瀺啧啧道：“不妨想一想咱们五岳正神们的下场？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与宫装妇人之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1346,8 +1403,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "宫装妇人"
+        ],
+        "action": "讥讽",
+        "context": "” 崔瀺讥讽道：“娘娘果然一向秀外慧中。 ” 宫装妇人冷笑连连。 崔瀺啧啧道：“不妨想一想咱们五岳正神们的下场？ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宫装妇人讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.455345",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,7 +1564,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.689977",
+    "extracted_at": "2026-03-25T17:27:37.455345",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1584,7 +1667,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.690980",
+    "extracted_at": "2026-03-25T17:27:37.455345",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1687,7 +1770,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.690980",
+    "extracted_at": "2026-03-25T17:27:37.456348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1793,7 +1876,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.690980",
+    "extracted_at": "2026-03-25T17:27:37.456348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1920,7 +2003,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.690980",
+    "extracted_at": "2026-03-25T17:27:37.456348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2063,7 +2146,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.690980",
+    "extracted_at": "2026-03-25T17:27:37.456348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2115,6 +2198,19 @@
       },
       {
         "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "所以就有了那个名叫杨花的心腹大将，被强行担任铁符江江神一事，其实那名宫女虽然确实天赋异禀，可是正常情况下，绝对不至于如此仓促上位，以大骊皇帝的勤俭精明，一定会更好地利用她的潜力。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 117,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "大骊皇帝",
         "alias": [],
         "original_description_in_book": "所以就有了那个名叫杨花的心腹大将，被强行担任铁符江江神一事，其实那名宫女虽然确实天赋异禀，可是正常情况下，绝对不至于如此仓促上位，以大骊皇帝的勤俭精明，一定会更好地利用她的潜力。",
@@ -2153,6 +2249,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "杨花",
           "大骊皇帝"
         ],
         "sentence_indexes_in_segment": [
@@ -2170,8 +2267,8 @@
         "participants": [
           "崔瀺",
           "宋长镜",
-          "大骊皇帝",
-          "宋集薪"
+          "杨花",
+          "大骊皇帝"
         ],
         "description": "崔瀺私下认为，一座王朝的庙堂之上，始终需要两件东西，不起眼的垫脚地砖，和撑起殿阁的栋梁廊柱，缺一不可。 他国师崔瀺，和藩王宋长镜，还有那些六部主官，则都属于后者。 所以就有了那个名叫杨花的心腹大将，被强行担任铁符江江神一事，其实那名宫女虽然确实天赋异禀，可是正常情况下，绝对不至于如此仓促上位，以大骊皇帝的勤俭精明，一定会更好地利用她的潜力。",
         "background": "",
@@ -2191,7 +2288,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.690980",
+    "extracted_at": "2026-03-25T17:27:37.456348",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2244,6 +2341,19 @@
         ],
         "juan_index": 117,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人笑道：“我已经知道自己错在哪里了，可是你崔瀺知道呢？",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 23
       }
     ],
     "locations": [
@@ -2284,16 +2394,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宋集薪与崔瀺在骊珠洞天对话",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宫装妇人与崔瀺在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "宋集薪",
+          "宫装妇人",
           "崔瀺"
         ],
         "description": "毕竟一个朝夕相处，一点一点亲眼看着长大，方方面面都让她顺心顺意，一个远在骊珠洞天，在满是鸡粪狗屎的市井陋巷里摸爬滚打，皇帝陛下的那本密档，她在最早的时候，试图偷看过一次，但是被严惩，估计就是从那个时候，对那个长子，由痛心转为死心，加上大骊宗人府上的宋睦，清清楚楚写着早夭，名字被朱笔勾去，触目惊心。 至于她的内心深处，是否有煎熬、痛苦，女人心海底针，崔瀺不知道，谁也不知道。 以及她为何以及如何，将长子宋睦作为弟弟宋和的垫脚石，那些不为人知的血腥细节和心路历程，崔瀺不感兴趣。",
         "background": "",
-        "significance": "在骊珠洞天推动宋集薪与崔瀺之间的对话线。",
+        "significance": "在骊珠洞天推动宫装妇人与崔瀺之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -2314,30 +2424,25 @@
       {
         "time": null,
         "from_roles": [
-          "宋集薪"
+          "宫装妇人"
         ],
         "to_roles": [
           "崔瀺"
         ],
         "action": "对话",
-        "context": "看似是母亲对失散多年的亲生儿子，做出补偿。 事实上，没有这么简单，宋和，才是她真正视为己出的心头肉，是寄予极大厚望的。 毕竟一个朝夕相处，一点一点亲眼看着长大，方方面面都让她顺心顺意，一个远在骊珠洞天，在满是鸡粪狗屎的市井陋巷里摸爬滚打，皇帝陛下的那本密档，她在最早的时候，试图偷看过一次，但是被严惩，估计就是从那个时候，对那个长子，由痛心转为死心，加上大骊宗人府上的宋睦，清清楚楚写着早夭，名字被朱笔勾去，触目惊心。 至于她的内心深处，是否有煎熬、痛苦，女人心海底针，崔瀺不知道，谁也不知道。 以及她为何以及如何，将长子宋睦作为弟弟宋和的垫脚石，那些不为人知的血腥细节和心路历程，崔瀺不感兴趣。 宫装妇人笑道：“我已经知道自己错在哪里了，可是你崔瀺知道呢？",
+        "context": "宫装妇人笑道：“我已经知道自己错在哪里了，可是你崔瀺知道呢？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宋集薪与崔瀺在骊珠洞天对话",
+        "event_name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宫装妇人与崔瀺在骊珠洞天对话",
         "location": "骊珠洞天",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 117,
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.457352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2437,7 +2542,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.457352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2521,7 +2626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.457352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2585,7 +2690,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.457352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2621,20 +2726,34 @@
         ],
         "juan_index": 117,
         "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人难得说了句真心话，“崔瀺，你这个人很可怕。",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 117,
+        "segment_index": 27
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宫装妇人剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "宫装妇人"
         ],
         "description": "崔瀺摆手道：“莫要拿话吓我，我崔瀺什么性格，娘娘清楚得很，山高水长，将来的事情谁也说不定，只要娘娘能够熬过这一关，崔瀺自然愿意与你结盟。 宫装妇人难得说了句真心话，“崔瀺，你这个人很可怕。 若是熬不过，娘娘且放心，我也不会落井下石。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与宫装妇人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段27",
         "sentence_indexes_in_segment": [
@@ -2650,7 +2769,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.457352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2718,7 +2837,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.457352",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2754,21 +2873,37 @@
         ],
         "juan_index": 117,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "崔瀺后撤一步，微微低头，宫装妇人赶紧侧身施了一个婀娜多姿的万福。",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 117,
+        "segment_index": 29
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺迁移",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宫装妇人迁移",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "宫装妇人"
         ],
         "description": "此时城头，崔瀺的话语尚未落地，一只金羽鹰隼就破空而至。 崔瀺后撤一步，微微低头，宫装妇人赶紧侧身施了一个婀娜多姿的万福。 大道之上，走出第一步之后，往往就再无半步退路了。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与宫装妇人之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -2782,8 +2917,34 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "宫装妇人"
+        ],
+        "action": "别离",
+        "context": "大道之上，走出第一步之后，往往就再无半步退路了。 此时城头，崔瀺的话语尚未落地，一只金羽鹰隼就破空而至。 它骤然停在箭垛之上。 崔瀺后撤一步，微微低头，宫装妇人赶紧侧身施了一个婀娜多姿的万福。 它死死盯住妇人。 一个清脆稚嫩的孩童嗓音响起，“宋正醇说了，让你去长春宫结茅修行，什么时候跻身上五境了，才可以离开长春宫返回京城。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宫装妇人迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.458355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2867,7 +3028,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.458355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2905,6 +3066,19 @@
       },
       {
         "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人只问了一个问题，“能否让睦儿、和儿，时不时去长春宫探望我。",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 117,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -2922,16 +3096,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宋集薪剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 崔瀺与宫装妇人剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "崔瀺",
+          "宫装妇人",
           "宋集薪"
         ],
-        "description": "崔瀺点了点头，没有任何多余的言语。 宋正醇还说了，宋和要留在养心房继续读书，你若是觉得在山上一人孤寂，可以携带宋睦去往长春宫修行雷法。 ”",
+        "description": "崔瀺点了点头，没有任何多余的言语。 宫装妇人只问了一个问题，“能否让睦儿、和儿，时不时去长春宫探望我。 宋正醇还说了，宋和要留在养心房继续读书，你若是觉得在山上一人孤寂，可以携带宋睦去往长春宫修行雷法。",
         "background": "",
-        "significance": "推动崔瀺与宋集薪之间的剧情推进关系。",
+        "significance": "推动崔瀺与宫装妇人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段31",
         "sentence_indexes_in_segment": [
@@ -2947,7 +3122,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.691984",
+    "extracted_at": "2026-03-25T17:27:37.458355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2967,7 +3142,21 @@
       "”",
       "宫装妇人泫然欲泣，抬头望向宫城方向，这一刻真是风情万种，娇柔颤声道：“陛下……”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人泫然欲泣，抬头望向宫城方向，这一刻真是风情万种，娇柔颤声道：“陛下……”",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 32
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2988,13 +3177,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宫装妇人在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "它依旧有些不耐烦，“宋正醇最后要我告诉你，大骊因为那人而国力受损，这件事情，是他自己的决定，与你无关，你不用多想。 一切由你自己决定。 ”",
+        "participants": [
+          "宫装妇人"
+        ],
+        "description": "它依旧有些不耐烦，“宋正醇最后要我告诉你，大骊因为那人而国力受损，这件事情，是他自己的决定，与你无关，你不用多想。 宫装妇人泫然欲泣，抬头望向宫城方向，这一刻真是风情万种，娇柔颤声道：“陛下……” 一切由你自己决定。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应宫装妇人在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段32",
         "sentence_indexes_in_segment": [
@@ -3010,7 +3201,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.458355",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "117-33-0": {
+    "juan_index": 117,
+    "segment_index": 33,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百一十七章 人间有个老秀才 下",
+    "source_sentences": [
+      "它骤然间嗓音尖刻起来，“臭婊子烂婆娘狐狸精，还不快滚出京城，老子忍你很久了！",
+      "”",
+      "宫装妇人笑问道：“这句话也是陛下说的？",
+      "”",
+      "它冷哼一声，振翅高飞，转瞬即逝。",
+      "等到这头金色鹰隼离去，宫装妇人一个踉跄，双手撑在城墙上，脸色煞白。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "宫装妇人",
+        "alias": [],
+        "original_description_in_book": "宫装妇人笑问道：“这句话也是陛下说的？ 等到这头金色鹰隼离去，宫装妇人一个踉跄，双手撑在城墙上，脸色煞白。",
+        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 33
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 宫装妇人对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "宫装妇人"
+        ],
+        "description": "宫装妇人笑问道：“这句话也是陛下说的？ 等到这头金色鹰隼离去，宫装妇人一个踉跄，双手撑在城墙上，脸色煞白。 它骤然间嗓音尖刻起来，“臭婊子烂婆娘狐狸精，还不快滚出京城，老子忍你很久了！",
+        "background": "",
+        "significance": "对应宫装妇人在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段33",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 33
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.458355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3111,7 +3365,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.458355",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3175,7 +3429,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3238,7 +3492,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3301,7 +3555,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3384,7 +3638,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3447,7 +3701,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3545,7 +3799,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.692987",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3608,7 +3862,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.693991",
+    "extracted_at": "2026-03-25T17:27:37.459358",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3631,6 +3885,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "那老秀才登岸后，缓缓离去。 老秀才一路询问，走到了枕头驿门口，问那个叫陈平安的少年还在不在。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 117,
+        "segment_index": 49
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老秀才一路询问，走到了枕头驿门口，问那个叫陈平安的少年还在不在。",
@@ -3646,15 +3915,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 陈平安剧情推进",
+        "name": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 老秀才与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安"
         ],
-        "description": "老秀才一路询问，走到了枕头驿门口，问那个叫陈平安的少年还在不在。 那老秀才登岸后，缓缓离去。 这名船夫热泪盈眶，等到终于能够动弹的时候，立即跃上岸，对着老人的背影，扑通一声跪下，行那三跪九叩之大礼。",
+        "description": "那老秀才登岸后，缓缓离去。 老秀才一路询问，走到了枕头驿门口，问那个叫陈平安的少年还在不在。 老秀才想了想，说是那少年的半个先生。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动老秀才与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十七章 人间有个老秀才 下 · 段49",
         "sentence_indexes_in_segment": [
@@ -3670,7 +3940,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.693991",
+    "extracted_at": "2026-03-25T17:27:37.460362",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

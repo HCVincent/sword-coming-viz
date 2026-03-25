@@ -88,7 +88,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.570745",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -111,6 +111,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "可是眉心有痣的少年，衙署县令吴鸢，曾经一起出现在铁匠铺子。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 144,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "最后陈平安再一次走向凉亭，来到水井，坐在井口等人。",
@@ -126,16 +139,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 陈平安遭遇",
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 吴鸢与陈平安遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "陈平安"
         ],
-        "description": "最后陈平安再一次走向凉亭，来到水井，坐在井口等人。 可是眉心有痣的少年，衙署县令吴鸢，曾经一起出现在铁匠铺子。 而这些地图，听阮姑娘当时的无心之语，正是县令衙署慷慨奉上的。",
+        "description": "可是眉心有痣的少年，衙署县令吴鸢，曾经一起出现在铁匠铺子。 最后陈平安再一次走向凉亭，来到水井，坐在井口等人。 而这些地图，听阮姑娘当时的无心之语，正是县令衙署慷慨奉上的。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与陈平安之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -149,8 +165,96 @@
         "segment_index": 2
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "可是眉心有痣的少年，衙署县令吴鸢，曾经一起出现在铁匠铺子。 而这些地图，听阮姑娘当时的无心之语，正是县令衙署慷慨奉上的。 自己一行人一路南下，野夫关外相逢，两拨人汇合，一起进入黄庭国，所见所闻，神神怪怪。 最后陈平安再一次走向凉亭，来到水井，坐在井口等人。 大水府邸，愁云惨淡，堂下满地的鲜血淋漓。 原本歌舞升平的一座热闹大堂，此时没剩下几个了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 吴鸢与陈平安遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.570745",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-3-0": {
+    "juan_index": 144,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "白衣少年依旧高坐白玉椅，神游万里。",
+      "青袍男子站在堂下，正在以水法神通驱散满身血迹和血腥味。",
+      "那些大水府妙龄婢女，无论是寒食江的落水鬼，还是活人，都已被青袍男子解决干净。",
+      "君不密则失臣，事不密则失身。",
+      "这么点道理，青袍男子威震黄庭国北部十八条江水，将这块小江山打造得铁桶一块，对此当然深有体会。",
+      "两名心腹当中，大水府邸的军师，儒衫文士正襟危坐，既不喝酒也不吃肉，像一尊毫无生气的泥菩萨。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年依旧高坐白玉椅，神游万里。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 144,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年依旧高坐白玉椅，神游万里。 青袍男子站在堂下，正在以水法神通驱散满身血迹和血腥味。 那些大水府妙龄婢女，无论是寒食江的落水鬼，还是活人，都已被青袍男子解决干净。",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 3
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.570745",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -214,7 +318,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.570745",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-5-0": {
+    "juan_index": 144,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "正是那两位出身迥异的年轻剑修，白衣少年先前给了他们一个活命的机会，大堂上还有两头灵韵派修士留下的畜生，两位尚未跻身中五境的剑修，如果能够不用佩剑的情况下，只以本命飞剑各自斩杀一头畜生，就可以从此成为大水府的真正贵客。",
+      "白衣少年甚至答应他们可以与寒食江水神称兄道弟，这份殊荣，无疑会帮助两人鲤鱼跳龙门，一跃成为黄庭国北方炙手可热的权势角色，尤其是那位伏龙观练气士，之前不过是掌门真人的爱徒之一，从今往后，多半是内定的下一任掌门，无人敢争。",
+      "两名剑修皆是三境巅峰，本命飞剑的威势，还十分力弱气短，与两头畜生的厮杀，险象环生，只能算作惨胜，都负伤不轻，好在本命飞剑折损不多。",
+      "白衣少年怔怔出神，无人胆敢打扰。",
+      "可总这么冷场也不是个事儿，青袍男子只好轻声问道：“真仙？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "正是那两位出身迥异的年轻剑修，白衣少年先前给了他们一个活命的机会，大堂上还有两头灵韵派修士留下的畜生，两位尚未跻身中五境的剑修，如果能够不用佩剑的情况下，只以本命飞剑各自斩杀一头畜生，就可以从此成为大水府的真正贵客。 白衣少年甚至答应他们可以与寒食江水神称兄道弟，这份殊荣，无疑会帮助两人鲤鱼跳龙门，一跃成为黄庭国北方炙手可热的权势角色，尤其是那位伏龙观练气士，之前不过是掌门真人的爱徒之一，从今往后，多半是内定的下一任掌门，无人敢争。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3
+        ],
+        "juan_index": 144,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "正是那两位出身迥异的年轻剑修，白衣少年先前给了他们一个活命的机会，大堂上还有两头灵韵派修士留下的畜生，两位尚未跻身中五境的剑修，如果能够不用佩剑的情况下，只以本命飞剑各自斩杀一头畜生，就可以从此成为大水府的真正贵客。 白衣少年甚至答应他们可以与寒食江水神称兄道弟，这份殊荣，无疑会帮助两人鲤鱼跳龙门，一跃成为黄庭国北方炙手可热的权势角色，尤其是那位伏龙观练气士，之前不过是掌门真人的爱徒之一，从今往后，多半是内定的下一任掌门，无人敢争。 白衣少年怔怔出神，无人胆敢打扰。",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 5
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.570745",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -279,7 +447,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.571748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -300,6 +468,19 @@
       "崔瀺不耐烦道：“就当是大骊欠你的，不拿白不拿。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "他刚要离去，只听那白衣少年没好气道：“就不晓得顺手牵羊，拿走几张桌子上剩下的大水府金玉液？",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 144,
+        "segment_index": 7
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -338,15 +519,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 崔瀺在大骊剧情推进",
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "白衣少年",
           "崔瀺"
         ],
-        "description": "崔瀺不耐烦道：“就当是大骊欠你的，不拿白不拿。 ” 唐疆迅速起身领命。",
+        "description": "他刚要离去，只听那白衣少年没好气道：“就不晓得顺手牵羊，拿走几张桌子上剩下的大水府金玉液？ 崔瀺不耐烦道：“就当是大骊欠你的，不拿白不拿。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动白衣少年与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段7",
         "sentence_indexes_in_segment": [
@@ -362,7 +544,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.571748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -382,7 +564,21 @@
       "”",
       "少年笑骂道：“呦呵，这马屁功夫，还真有点炉火纯青啊，只可惜老子不吃这一套，滚滚滚。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "唐疆那张毫无出奇的脸庞上，没来由绽放出一股异样神采，抱拳转身，大踏步离去，跨过门槛后，背对着主位上的白衣少年，这个男人高高抱拳，高出一侧肩头，始终不敢转身，红着眼睛望向远方，朗声道：“这位大人，大骊从不欠唐疆分毫！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 144,
+        "segment_index": 8
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -393,7 +589,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "白衣少年"
+        ],
         "sentence_indexes_in_segment": [
           1,
           2
@@ -404,13 +602,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "白衣少年"
+        ],
         "description": "唐疆那张毫无出奇的脸庞上，没来由绽放出一股异样神采，抱拳转身，大踏步离去，跨过门槛后，背对着主位上的白衣少年，这个男人高高抱拳，高出一侧肩头，始终不敢转身，红着眼睛望向远方，朗声道：“这位大人，大骊从不欠唐疆分毫！ 哪怕只能远远看着我大骊蒸蒸日上，国势鼎盛，啧啧，这份滋味，好过那金玉液何止千百倍？ ”",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段8",
         "sentence_indexes_in_segment": [
@@ -426,7 +626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.571748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -510,7 +710,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.779784",
+    "extracted_at": "2026-03-25T17:27:37.571748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -594,7 +794,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.780787",
+    "extracted_at": "2026-03-25T17:27:37.571748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,7 +907,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.780787",
+    "extracted_at": "2026-03-25T17:27:37.571748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -788,7 +988,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.780787",
+    "extracted_at": "2026-03-25T17:27:37.572751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -852,7 +1052,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.780787",
+    "extracted_at": "2026-03-25T17:27:37.572751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -916,7 +1116,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.780787",
+    "extracted_at": "2026-03-25T17:27:37.572751",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-16-0": {
+    "juan_index": 144,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "这位脸色黑青的文士，在白衣少年的眼皮子底下，弯腰拿起酒杯，喝了口酒，这才重新说道：“那魏礼有野心又有本事，靠自己走到郡守高位，还愿意低头隐忍，这样的人，一旦脱离掌控，当了刺史，以后入京为官高升为一部主官，尤其是礼部，成了黄庭国皇帝的嫡系心腹，加上早年在地方上积攒了一肚子委屈，就不怕他一发狠，矛头一转，就对准我们这座大水府邸？",
+      "所以我告诉水神老爷，这种官员可以用，只要此人心胸之中，还有一口……正气，就决不可大用。",
+      "”",
+      "白衣少年斜眼看着儒衫文士，“好一个诛心。",
+      "你如果当年不是做官，而是去山上修行，说不定有希望跻身第十境。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "这位脸色黑青的文士，在白衣少年的眼皮子底下，弯腰拿起酒杯，喝了口酒，这才重新说道：“那魏礼有野心又有本事，靠自己走到郡守高位，还愿意低头隐忍，这样的人，一旦脱离掌控，当了刺史，以后入京为官高升为一部主官，尤其是礼部，成了黄庭国皇帝的嫡系心腹，加上早年在地方上积攒了一肚子委屈，就不怕他一发狠，矛头一转，就对准我们这座大水府邸？ 白衣少年斜眼看着儒衫文士，“好一个诛心。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 144,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "这位脸色黑青的文士，在白衣少年的眼皮子底下，弯腰拿起酒杯，喝了口酒，这才重新说道：“那魏礼有野心又有本事，靠自己走到郡守高位，还愿意低头隐忍，这样的人，一旦脱离掌控，当了刺史，以后入京为官高升为一部主官，尤其是礼部，成了黄庭国皇帝的嫡系心腹，加上早年在地方上积攒了一肚子委屈，就不怕他一发狠，矛头一转，就对准我们这座大水府邸？ 白衣少年斜眼看着儒衫文士，“好一个诛心。 所以我告诉水神老爷，这种官员可以用，只要此人心胸之中，还有一口……正气，就决不可大用。",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.572751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1000,7 +1263,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.780787",
+    "extracted_at": "2026-03-25T17:27:37.572751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1036,6 +1299,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "女子身形逐渐稳固、面容愈发清晰，最终飘落在堂下，是横山那座青娘娘庙中所祭祀的女子，曾经跟林守一下过棋，最后被白衣少年要求于禄敬了一炷香。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "于禄",
         "alias": [],
         "original_description_in_book": "女子身形逐渐稳固、面容愈发清晰，最终飘落在堂下，是横山那座青娘娘庙中所祭祀的女子，曾经跟林守一下过棋，最后被白衣少年要求于禄敬了一炷香。",
@@ -1063,9 +1339,7 @@
         "description": "女子身形逐渐稳固、面容愈发清晰，最终飘落在堂下，是横山那座青娘娘庙中所祭祀的女子，曾经跟林守一下过棋，最后被白衣少年要求于禄敬了一炷香。 那些烟雾并未消散于空中，而是在空中缓缓凝聚成一位年轻女子的曼妙身形。 那河伯文士脸色剧变，终于无法保持先前的止水心境，“怎么可能？",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1079,34 +1353,8 @@
         "segment_index": 18
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "林守一"
-        ],
-        "to_roles": [
-          "于禄"
-        ],
-        "action": "试探",
-        "context": "那些烟雾并未消散于空中，而是在空中缓缓凝聚成一位年轻女子的曼妙身形。 那河伯文士脸色剧变，终于无法保持先前的止水心境，“怎么可能？ ！ ” 青袍男子眯起眼，眼角余光打量着心腹军师，虽然惊讶少年国师的玄妙神通，但更多还是隔岸观火的轻松心态。 女子身形逐渐稳固、面容愈发清晰，最终飘落在堂下，是横山那座青娘娘庙中所祭祀的女子，曾经跟林守一下过棋，最后被白衣少年要求于禄敬了一炷香。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 144,
-        "segment_index": 18
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.781791",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.572751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1232,7 +1480,256 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.781791",
+    "extracted_at": "2026-03-25T17:27:37.573755",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-20-0": {
+    "juan_index": 144,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "年轻女子看到文士后，满脸惶恐惊惧，怯生生道：“爹……”",
+      "喊出这个字眼后，女子便羞愧难当，掩面哭泣起来，可怜无助。",
+      "白衣少年盘腿坐在椅子上，幸灾乐祸道：“意外不意外？",
+      "”",
+      "他随即转头望向青袍男子，哈哈笑道：“我看过一本蜀国琐碎闻，上头所记载的怪谈轶事，其中就有写到横山青娘娘庙，上边是说携带家眷的某位前朝大臣，在横山古柏那里，殉国自尽，家眷不愿跟着一起死，便逃光了，只有小女儿跟着父亲，提剑自刎，鲜血抛洒到古柏树上，得以魂魄寄居其中，最后成了横山的青娘娘，这故事可歌可泣，可歌可泣啊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年盘腿坐在椅子上，幸灾乐祸道：“意外不意外？",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 144,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年盘腿坐在椅子上，幸灾乐祸道：“意外不意外？ 年轻女子看到文士后，满脸惶恐惊惧，怯生生道：“爹……” 喊出这个字眼后，女子便羞愧难当，掩面哭泣起来，可怜无助。",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 20
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.573755",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-21-0": {
+    "juan_index": 144,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "青袍男子挑了一张空位坐下，笑道：“讹传罢了，事实与传闻刚好相反，当隋彬决意在那座小庙不再逃亡，要以死明志后，举家跟随这位亡国侍郎自尽而死，女眷大多悬梁，其余有撞墙、吞金而死的，唯独小女儿不愿死，跑出小庙之外，被隋彬追上，一剑刺死在了古柏树下，她成为一位怨灵，不过一点灵光不散，死后还算良善，对凡夫俗子多有阴荫庇护，这才得以在那本琐碎闻上有了好名声。",
+      "”",
+      "青袍男子喝了口酒，“后来，她父亲成了我麾下的鬼魅，后来在我推荐下，当上了横山附近一条河流的河伯，不知是隋彬心生愧疚，还是怎的，原本已经快要被罡风、烈日冲散魂魄的怨灵，在隋彬的暗中帮助下，找人修建了一尊泥塑金身，这才得以存活至今。",
+      "”",
+      "白衣少年啧啧称奇。",
+      "河伯隋彬怒意更甚，“禽兽不如！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年啧啧称奇。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 144,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年啧啧称奇。 青袍男子挑了一张空位坐下，笑道：“讹传罢了，事实与传闻刚好相反，当隋彬决意在那座小庙不再逃亡，要以死明志后，举家跟随这位亡国侍郎自尽而死，女眷大多悬梁，其余有撞墙、吞金而死的，唯独小女儿不愿死，跑出小庙之外，被隋彬追上，一剑刺死在了古柏树下，她成为一位怨灵，不过一点灵光不散，死后还算良善，对凡夫俗子多有阴荫庇护，这才得以在那本琐碎闻上有了好名声。 ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.573755",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-22-0": {
+    "juan_index": 144,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "我隋彬一生光明磊落，我隋氏家风醇正三百年，最后怎会有你这么个孽障！",
+      "”",
+      "白衣少年恢复身体歪斜、手托腮帮的懒散姿态，看着堂下那对父女反目成仇的凄凉画面，突然说道：“隋彬，差不多就可以了。",
+      "”",
+      "河伯文士震怒之下，顾不得少年什么国师不国师的了，反驳道：“我隋彬管教女儿，有何不妥？",
+      "！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年恢复身体歪斜、手托腮帮的懒散姿态，看着堂下那对父女反目成仇的凄凉画面，突然说道：“隋彬，差不多就可以了。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 144,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年恢复身体歪斜、手托腮帮的懒散姿态，看着堂下那对父女反目成仇的凄凉画面，突然说道：“隋彬，差不多就可以了。 我隋彬一生光明磊落，我隋氏家风醇正三百年，最后怎会有你这么个孽障！ ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 22
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.573755",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-24-0": {
+    "juan_index": 144,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "青袍男子在今晚，是第一次主动为属下求情，再次起身，对白衣少年低头祈求：“恳请国师大人不要跟隋彬一般见识。",
+      "”",
+      "白衣少年跳下椅子，伸了个懒腰，“走了走了，再不回去就要被人猜疑喽。",
+      "”",
+      "他绕过大案，走下台阶，对那始终不敢抬头见人的女子，少年双手拢袖，嘿嘿笑道：“别听你爹的混账话，你这般岁数的柔弱女子，可不就是学学琴棋书画啊，春心萌动就躲在闺楼上，偷偷想一想情郎啊，这才对嘛。",
+      "什么山河破碎，家国覆灭啊，本来就是你爹这样男人没用处，所以是他隋彬臭不要脸，竟然还好意思拉着你一起陪葬，你羞愧什么，是你爹应该羞愧得上吊自杀才对。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "青袍男子在今晚，是第一次主动为属下求情，再次起身，对白衣少年低头祈求：“恳请国师大人不要跟隋彬一般见识。 白衣少年跳下椅子，伸了个懒腰，“走了走了，再不回去就要被人猜疑喽。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 144,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "青袍男子在今晚，是第一次主动为属下求情，再次起身，对白衣少年低头祈求：“恳请国师大人不要跟隋彬一般见识。 白衣少年跳下椅子，伸了个懒腰，“走了走了，再不回去就要被人猜疑喽。 ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 24
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.573755",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1253,6 +1750,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年气得快步走去，一巴掌拍在女子脑袋上，笑骂道：“你个没出息的。 白衣少年说道：“这么大杀气，我害怕。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 144,
+        "segment_index": 26
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -1291,16 +1802,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 崔瀺在大骊对话",
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年与崔瀺在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "白衣少年",
           "崔瀺"
         ],
-        "description": "青袍男子眼见着那位大骊国师要离去，赶紧尾随其后，轻声问道：“国师大人今夜不在这里休憩？ 白衣少年气得快步走去，一巴掌拍在女子脑袋上，笑骂道：“你个没出息的。 ”",
+        "description": "白衣少年气得快步走去，一巴掌拍在女子脑袋上，笑骂道：“你个没出息的。 青袍男子眼见着那位大骊国师要离去，赶紧尾随其后，轻声问道：“国师大人今夜不在这里休憩？ 白衣少年说道：“这么大杀气，我害怕。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动白衣少年与崔瀺之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -1314,8 +1828,97 @@
         "segment_index": 26
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "白衣少年"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "白衣少年气得快步走去，一巴掌拍在女子脑袋上，笑骂道：“你个没出息的。 ” 青袍男子眼见着那位大骊国师要离去，赶紧尾随其后，轻声问道：“国师大人今夜不在这里休憩？ ” 白衣少年说道：“这么大杀气，我害怕。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年与崔瀺在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.574758",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-27-0": {
+    "juan_index": 144,
+    "segment_index": 27,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "青袍男子哭笑不得。",
+      "走到门槛的时候，白衣少年先看了眼两两无言的父女，才对寒食江水神说道：“你运气比她好多了，有个不这么迂腐刻板的亲爹。",
+      "”",
+      "青袍男子愈发低眉顺眼，“国师大人已经见过我父亲了？",
+      "”",
+      "白衣少年点头道：“他老人家，还请我们吃了几顿山野时令佳肴，说实话，比你这大鱼大肉搭配庸脂俗粉，要好太多了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "走到门槛的时候，白衣少年先看了眼两两无言的父女，才对寒食江水神说道：“你运气比她好多了，有个不这么迂腐刻板的亲爹。 白衣少年点头道：“他老人家，还请我们吃了几顿山野时令佳肴，说实话，比你这大鱼大肉搭配庸脂俗粉，要好太多了。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 27
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "走到门槛的时候，白衣少年先看了眼两两无言的父女，才对寒食江水神说道：“你运气比她好多了，有个不这么迂腐刻板的亲爹。 白衣少年点头道：“他老人家，还请我们吃了几顿山野时令佳肴，说实话，比你这大鱼大肉搭配庸脂俗粉，要好太多了。 青袍男子哭笑不得。",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段27",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 27
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.781791",
+    "extracted_at": "2026-03-25T17:27:37.574758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1335,7 +1938,21 @@
       "那张白玉椅子，对你们这一族还算有点用处，送你了。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年停下脚步，拍了拍这位水神的肩膀，“我那两脚的折损，等到大骊吃下了黄庭国，只会补偿你更多。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 144,
+        "segment_index": 28
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1346,7 +1963,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "白衣少年"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1356,13 +1975,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 大骊对话",
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "白衣少年"
+        ],
         "description": "白衣少年停下脚步，拍了拍这位水神的肩膀，“我那两脚的折损，等到大骊吃下了黄庭国，只会补偿你更多。 ” 青袍男子笑道：“我岂敢跟父亲相提并论。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段28",
         "sentence_indexes_in_segment": [
@@ -1378,7 +1999,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.781791",
+    "extracted_at": "2026-03-25T17:27:37.574758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1413,6 +2034,20 @@
         ],
         "juan_index": 144,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年在江水中，不见手脚任何动作，便能够灵活游曳，身姿飘逸，像一条上古时代就生活在古蜀国版图上的白色蛟龙。 白衣少年双手负后，站在井中抬头观天。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 144,
+        "segment_index": 29
       }
     ],
     "locations": [
@@ -1437,15 +2072,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 崔瀺在大骊剧情推进",
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年与崔瀺在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "白衣少年",
           "崔瀺"
         ],
-        "description": "这位大骊国师显然并未当真，让青袍男子不用相送，独自走出大水府邸，跃入寒食江之中。 低头弯腰的青袍男子沉声道：“愿为国师大人效死！ ”",
+        "description": "这位大骊国师显然并未当真，让青袍男子不用相送，独自走出大水府邸，跃入寒食江之中。 白衣少年在江水中，不见手脚任何动作，便能够灵活游曳，身姿飘逸，像一条上古时代就生活在古蜀国版图上的白色蛟龙。 白衣少年双手负后，站在井中抬头观天。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动白衣少年与崔瀺之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段29",
         "sentence_indexes_in_segment": [
@@ -1461,7 +2097,65 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.781791",
+    "extracted_at": "2026-03-25T17:27:37.574758",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "144-30-0": {
+    "juan_index": 144,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 4,
+    "segment_start_time": "第二卷山水郎 第一百四十四章 一个坐井一个观天",
+    "source_sentences": [
+      "井口那边，突然有人开口询问：“你怎么不上来？",
+      "”",
+      "白衣少年笑道：“我不敢。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年笑道：“我不敢。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 144,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "白衣少年笑道：“我不敢。 井口那边，突然有人开口询问：“你怎么不上来？ ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十四章 一个坐井一个观天 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "juan_index": 144,
+        "segment_index": 30
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.574758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -16,6 +16,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台当时指了指院门口那边，说贴了那张宝塔镇妖符，门外是江湖，门内就已是山上了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 297,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "把陈平安给说得想喝酒。",
@@ -31,15 +44,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "把陈平安给说得想喝酒。 （这一章不是大章节，只有七千字，因为晚上还有一章。 ）",
+        "description": "陆台当时指了指院门口那边，说贴了那张宝塔镇妖符，门外是江湖，门内就已是山上了。 把陈平安给说得想喝酒。 （这一章不是大章节，只有七千字，因为晚上还有一章。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段1",
         "sentence_indexes_in_segment": [
@@ -55,7 +69,68 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.474327",
+    "extracted_at": "2026-03-25T17:27:38.451826",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "297-2-0": {
+    "juan_index": 297,
+    "segment_index": 2,
+    "chunk_start_index": 0,
+    "chunk_end_index": 5,
+    "segment_start_time": "第五卷道观道 第二百九十六章 作别",
+    "source_sentences": [
+      "那位堡主盛情邀请而来的中年男子，在飞鹰堡的大街小巷，牵白马而行，马鞍两侧挂了两大捆松柏枝条，每次人马停步，手持拂尘的男子就会烧掉一根树枝，也不见他使用火石，双指一搓，松柏树枝便会燃烧起来，泛起阵阵清香，袅袅升空。",
+      "凑在远处旁观的飞鹰堡人氏，其中有些略通老黄历的白发老者，开始显摆起学问来，说这叫庭燎，是一门了不得的仙家术法，能够驱邪祛秽，因为松是万木之长，被誉为十八公，相当于朝廷的国公爷，柏树则是仅次于松木的侯爷，尤其是一些个名山大岳上的松柏，显贵着呢，所以燃烧松柏，配合仙家口诀，就能够通神。",
+      "相较高大男子的拂尘白马，另外一位邋遢老人，就显得俗气多了，卖相比不过同行，手段也透着股乡土气，故而跑去凑热闹长见识的飞鹰堡百姓，实在不多。",
+      "老人的身份，说是年轻道人黄尚的师父，是位居山道士，跟老堡主是江湖上结识的故交，这次老人家在山上掐指一算，算准了飞鹰堡有难，才下山来此帮着祈福消灾。",
+      "邋遢老人既没有身穿道袍，也不会画符踏罡，只是让人抓了七八只雄鸡，分别挂在了飞鹰堡大门、祠堂门口、水井、校武场等地，然后就一天到晚盯着那些大公鸡，腰间挎着只小米袋子，装满糯米，还有一壶清水，伺候着那些雄鸡，壶中水，却不是飞鹰堡日常饮用的井水，而是让弟子黄尚从远处深山打来的山泉之水。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "老人的身份，说是年轻道人黄尚的师父，是位居山道士，跟老堡主是江湖上结识的故交，这次老人家在山上掐指一算，算准了飞鹰堡有难，才下山来此帮着祈福消灾。 邋遢老人既没有身穿道袍，也不会画符踏罡，只是让人抓了七八只雄鸡，分别挂在了飞鹰堡大门、祠堂门口、水井、校武场等地，然后就一天到晚盯着那些大公鸡，腰间挎着只小米袋子，装满糯米，还有一壶清水，伺候着那些雄鸡，壶中水，却不是飞鹰堡日常饮用的井水，而是让弟子黄尚从远处深山打来的山泉之水。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 2
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十六章 作别 · 黄尚遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "黄尚"
+        ],
+        "description": "老人的身份，说是年轻道人黄尚的师父，是位居山道士，跟老堡主是江湖上结识的故交，这次老人家在山上掐指一算，算准了飞鹰堡有难，才下山来此帮着祈福消灾。 邋遢老人既没有身穿道袍，也不会画符踏罡，只是让人抓了七八只雄鸡，分别挂在了飞鹰堡大门、祠堂门口、水井、校武场等地，然后就一天到晚盯着那些大公鸡，腰间挎着只小米袋子，装满糯米，还有一壶清水，伺候着那些雄鸡，壶中水，却不是飞鹰堡日常饮用的井水，而是让弟子黄尚从远处深山打来的山泉之水。 那位堡主盛情邀请而来的中年男子，在飞鹰堡的大街小巷，牵白马而行，马鞍两侧挂了两大捆松柏枝条，每次人马停步，手持拂尘的男子就会烧掉一根树枝，也不见他使用火石，双指一搓，松柏树枝便会燃烧起来，泛起阵阵清香，袅袅升空。",
+        "background": "",
+        "significance": "对应黄尚在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十六章 作别 · 段2",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 2
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.451826",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -91,6 +166,35 @@
       },
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 陆台并未明言两人道行的高低，只说那男子肯定不是什么桐叶洲太平山的练气士，而邋遢老人是位名副其实的山居道人，讲究一个幽潜学道，仁智自安，与山水为邻。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 在老人给雄鸡喂养糯米和清水的时候，从他忧心忡忡的脸色就能够看出，老道人也瞧出了端倪，心情并不轻松。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
@@ -101,23 +205,43 @@
         ],
         "juan_index": 297,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陶斜阳冲突",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "陆台",
+          "老道人",
           "陶斜阳"
         ],
-        "description": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。 在老人给雄鸡喂养糯米和清水的时候，从他忧心忡忡的脸色就能够看出，老道人也瞧出了端倪，心情并不轻松。",
+        "description": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 在老人给雄鸡喂养糯米和清水的时候，从他忧心忡忡的脸色就能够看出，老道人也瞧出了端倪，心情并不轻松。 陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
         "background": "",
-        "significance": "推动陈平安与陶斜阳之间的冲突关系。",
+        "significance": "推动陈平安与陆台之间的冲突关系。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段3",
         "sentence_indexes_in_segment": [
@@ -139,27 +263,122 @@
           "陈平安"
         ],
         "to_roles": [
-          "陶斜阳"
+          "陆台"
         ],
         "action": "冲突",
-        "context": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 在老人给雄鸡喂养糯米和清水的时候，从他忧心忡忡的脸色就能够看出，老道人也瞧出了端倪，心情并不轻松。 至于那位招摇过市的拂尘男子，神色自得，像是弹指间就要一切邪祟灰飞烟灭。 桓常桓淑兄妹，负责为此人开道。 陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。 陆台并未明言两人道行的高低，只说那男子肯定不是什么桐叶洲太平山的练气士，而邋遢老人是位名副其实的山居道人，讲究一个幽潜学道，仁智自安，与山水为邻。",
+        "context": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。",
         "result": null,
-        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陶斜阳冲突",
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "冲突",
+        "context": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "冲突",
+        "context": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "黄尚"
+        ],
+        "action": "同行",
+        "context": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "同行",
+        "context": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "黄尚"
+        ],
+        "to_roles": [
+          "老道人"
+        ],
+        "action": "同行",
+        "context": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 297,
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "extracted_at": "2026-03-25T17:27:38.452829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,6 +401,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "太平山是桐叶洲中部首屈一指的大宗门，比起扶乩宗只强不弱，只是隐世到了近乎厌世的地步，极少有修士下山外出，是内外丹法集大成者，陆台在中土神洲都有所耳闻，只是在世间的名气远远不如桐叶、玉圭两宗。 陈平安在院子里练习拳桩，早早发现了天象的诡谲，陆台坐在石桌旁默默掐指推演，神色自若。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安在院子里练习拳桩，早早发现了天象的诡谲，陆台坐在石桌旁默默掐指推演，神色自若。",
@@ -197,16 +430,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安指点",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安指点",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安在院子里练习拳桩，早早发现了天象的诡谲，陆台坐在石桌旁默默掐指推演，神色自若。 太平山是桐叶洲中部首屈一指的大宗门，比起扶乩宗只强不弱，只是隐世到了近乎厌世的地步，极少有修士下山外出，是内外丹法集大成者，陆台在中土神洲都有所耳闻，只是在世间的名气远远不如桐叶、玉圭两宗。 又过了两天安静祥和的日子。",
+        "description": "太平山是桐叶洲中部首屈一指的大宗门，比起扶乩宗只强不弱，只是隐世到了近乎厌世的地步，极少有修士下山外出，是内外丹法集大成者，陆台在中土神洲都有所耳闻，只是在世间的名气远远不如桐叶、玉圭两宗。 陈平安在院子里练习拳桩，早早发现了天象的诡谲，陆台坐在石桌旁默默掐指推演，神色自若。 又过了两天安静祥和的日子。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -220,8 +456,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "太平山是桐叶洲中部首屈一指的大宗门，比起扶乩宗只强不弱，只是隐世到了近乎厌世的地步，极少有修士下山外出，是内外丹法集大成者，陆台在中土神洲都有所耳闻，只是在世间的名气远远不如桐叶、玉圭两宗。 又过了两天安静祥和的日子。 就算是居住在市井巷弄的飞鹰堡百姓，都察觉到了天色的异样。 本该旭日东升的晨曦时分，飞鹰堡的头顶上空，却是黑云翻滚，层层叠叠，像是活物一般在对着飞鹰堡张牙舞爪，压得所有人心头沉甸甸的，担任教书先生的老管事何崖，放出话来，今天学塾不用上课，要他们赶紧回家待着，让蒙学稚童们好一阵欢天喜地，回去的路上，成群结伴，对着那些黑云指指点点，说这像一只蜈蚣，说那像一头水牛，最后瞧见了如同一张女子狰狞面孔的黑云，把孩子们吓得顿时作鸟兽散，赶紧跑回家中。 陈平安在院子里练习拳桩，早早发现了天象的诡谲，陆台坐在石桌旁默默掐指推演，神色自若。 本该日头高照的清晨时分，昏暗如深夜，阳光竟是半点洒不进飞鹰堡。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.452829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -257,21 +519,37 @@
         ],
         "juan_index": 297,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台双手拢袖走出院门口，与陈平安并肩而立，仰头看着那张趋于腐朽的丹书真迹，自言自语道：“距今极其遥远的时代，相当于七境武夫修为的人，画出来的符，不过是刚刚抓到了一点皮毛，九境实力的人，画符才算登堂入室，所以那会儿的符箓，威力之大，可想而知。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 297,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安遭遇",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安遭遇",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "陈平安又听到了巷子外边的阴森嬉笑声，飘来荡去。 陈平安停下拳桩，跑去打开门，转身抬头一看，那张普通材质的镇妖符，随着这些天时间的推移，符胆蕴含灵气也在不断流逝，已经变得黯淡无光，一张原本崭新的黄色符纸，像是张贴了大半年的春联，褪色严重，褶皱得厉害，还有几处被渗透的黑色墨块，难怪那群阴物鬼魅胆敢现身挑衅。 陆台双手拢袖走出院门口，与陈平安并肩而立，仰头看着那张趋于腐朽的丹书真迹，自言自语道：“距今极其遥远的时代，相当于七境武夫修为的人，画出来的符，不过是刚刚抓到了一点皮毛，九境实力的人，画符才算登堂入室，所以那会儿的符箓，威力之大，可想而知。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -285,8 +563,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "陆台双手拢袖走出院门口，与陈平安并肩而立，仰头看着那张趋于腐朽的丹书真迹，自言自语道：“距今极其遥远的时代，相当于七境武夫修为的人，画出来的符，不过是刚刚抓到了一点皮毛，九境实力的人，画符才算登堂入室，所以那会儿的符箓，威力之大，可想而知。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 297,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.452829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -322,21 +621,37 @@
         ],
         "juan_index": 297,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "还有许多渗人的污秽阴物，一并往巷弄尽头的这座院子走来，有生了一双死鱼眼的老妪手脚着地，灵活攀爬在院墙上，对着陈平安不断重复呢喃着要吃肉。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安迁移",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与老妪迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老妪"
         ],
         "description": "陈平安就像打开锅盖，立即就是雾气腾腾，只不过灶台雾气是热腾腾的米香菜香，小巷这边是黏糊糊的潮湿阴雾，泛着淡淡的腥臭气味。 陈平安转头望去，好在雾气并未一鼓作气，涌入那些市井门户的院子里，只是家家户户张贴在大门上的各类门神，武圣人或是文武财神什么的，发出一阵细微的呲呲作响，本就涣散浅淡的那点灵气，烟消云散，再也庇护不得主人家。 在陈平安视野中，小巷尽头，又出现了那对身穿缟素白衣的大小人物，小孩子依旧盯着陈平安，一对鲜红的眼珠子，不断有血迹渗出，流淌在雪白的脸庞上，只是鲜血并不会离开那张脸，会像一条条蚯蚓爬来爬去，从双眼进进出出，像是将孩子的眼窝子，当做了巢穴。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老妪之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -350,8 +665,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "守护",
+        "context": "四周顿时响起鼓噪之声，雾气从小巷泥路升起，迅速弥漫开来，雾气先是脚踝高度，然后是膝盖，很快就到了半腰。 陈平安就像打开锅盖，立即就是雾气腾腾，只不过灶台雾气是热腾腾的米香菜香，小巷这边是黏糊糊的潮湿阴雾，泛着淡淡的腥臭气味。 陈平安转头望去，好在雾气并未一鼓作气，涌入那些市井门户的院子里，只是家家户户张贴在大门上的各类门神，武圣人或是文武财神什么的，发出一阵细微的呲呲作响，本就涣散浅淡的那点灵气，烟消云散，再也庇护不得主人家。 在陈平安视野中，小巷尽头，又出现了那对身穿缟素白衣的大小人物，小孩子依旧盯着陈平安，一对鲜红的眼珠子，不断有血迹渗出，流淌在雪白的脸庞上，只是鲜血并不会离开那张脸，会像一条条蚯蚓爬来爬去，从双眼进进出出，像是将孩子的眼窝子，当做了巢穴。 牵着孩子的大人，脸上竟然并无五官，像是覆着一层厚重的白布，让人瞧不见耳鼻眉眼口。 还有许多渗人的污秽阴物，一并往巷弄尽头的这座院子走来，有生了一双死鱼眼的老妪手脚着地，灵活攀爬在院墙上，对着陈平安不断重复呢喃着要吃肉。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与老妪迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.452829",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -415,7 +756,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "extracted_at": "2026-03-25T17:27:38.453833",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -451,20 +792,35 @@
         ],
         "juan_index": 297,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "那位沿着墙壁行走的老妪率先发难，一个纵身而跃，扑向陈平安。 陈平安看也不看，一步向前踏出，走下台阶，不等靴子触及巷弄地面，轻描淡写一拳砸出，击中那位老妪的头颅，阴物老妪被打得向后倒撞回对面的墙壁，砰然粉碎，它甚至来不及哀嚎。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与老妪剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老妪"
         ],
         "description": "孩子的言语说得极为缓慢，而且前行的脚步不停，等到“心肝”二字说出口的时候，已经背对陈平安，但是它的头颅已经拧转过来，依然在“正视”着陈平安，它还伸出一条漆黑的舌头，舔-弄着嘴角的血迹。 那位沿着墙壁行走的老妪率先发难，一个纵身而跃，扑向陈平安。 陈平安看也不看，一步向前踏出，走下台阶，不等靴子触及巷弄地面，轻描淡写一拳砸出，击中那位老妪的头颅，阴物老妪被打得向后倒撞回对面的墙壁，砰然粉碎，它甚至来不及哀嚎。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老妪之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段8",
         "sentence_indexes_in_segment": [
@@ -480,7 +836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "extracted_at": "2026-03-25T17:27:38.453879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -514,20 +870,34 @@
         ],
         "juan_index": 297,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台不知何时已经坐在门槛上，袖手旁观，笑意吟吟。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安一手负后，收在袖中，只以右手对敌。 这点拳意，这对于如今的陈平安而言，就像只从一口深井中汲水一桶罢了。 拳意依旧点到为止，只在右臂流淌，罡气凝聚而不外泻，可是每一次出拳，就打烂一头来势汹汹的阴物。",
+        "description": "陈平安一手负后，收在袖中，只以右手对敌。 这点拳意，这对于如今的陈平安而言，就像只从一口深井中汲水一桶罢了。 陆台不知何时已经坐在门槛上，袖手旁观，笑意吟吟。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段9",
         "sentence_indexes_in_segment": [
@@ -543,7 +913,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.475331",
+    "extracted_at": "2026-03-25T17:27:38.453879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,20 +948,34 @@
         ],
         "juan_index": 297,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台打趣道：“这就有点欺负人了啊。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 297,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "那个扬言要吃掉陈平安半付心肝的小孩子，挣脱开大人的手，一闪而逝，来到陈平安身后，手掌作刀，戳向陈平安后背心，试图一记手刀从背后剖出心脏。 陈平安负于背后的左手，依旧不见丝毫动静，眼角余光始终盯着那个没有五官面容的阴物，只是向后一靠，撞在孩子阴物身上，身上的法袍金醴触及后者，孩子刹那之间便如蜡烛熔融，化作一缕极为精粹的黑烟，就要掠向远方，结果被陈平安转身，拧转手腕，画弧一拳，打得黑烟无头也无尾。 陈平安撇撇嘴，“哪里是人。",
+        "description": "那个扬言要吃掉陈平安半付心肝的小孩子，挣脱开大人的手，一闪而逝，来到陈平安身后，手掌作刀，戳向陈平安后背心，试图一记手刀从背后剖出心脏。 陈平安负于背后的左手，依旧不见丝毫动静，眼角余光始终盯着那个没有五官面容的阴物，只是向后一靠，撞在孩子阴物身上，身上的法袍金醴触及后者，孩子刹那之间便如蜡烛熔融，化作一缕极为精粹的黑烟，就要掠向远方，结果被陈平安转身，拧转手腕，画弧一拳，打得黑烟无头也无尾。 陆台打趣道：“这就有点欺负人了啊。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段10",
         "sentence_indexes_in_segment": [
@@ -607,7 +991,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "extracted_at": "2026-03-25T17:27:38.453879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -673,7 +1057,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "extracted_at": "2026-03-25T17:27:38.453879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -736,7 +1120,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "extracted_at": "2026-03-25T17:27:38.454836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -773,21 +1157,37 @@
         ],
         "juan_index": 297,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台站起身，轻声提醒道：“陈平安，可以了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安指点",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安指点",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "这一幕，看得陈平安心中大恨。 那男子刚要掠起升空离开巷弄，就被怒极的陈平安转身伸手，一把抓住那张没有五官的脸面，五指如钩，法袍金醴的袖口飘摇，散发出一阵阵如同享受千年香火的神龛光彩，那头阴物发出来自神魂深处的祈求哀鸣，陈平安右手抓住阴物，左手一拳打穿阴物心脏，整条胳膊金光暴涨，既有自身拳罡，也有金醴的灵气。 陈平安搅动右手手臂，硬生生在阴物心口处捅出一个大窟窿。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -801,8 +1201,29 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "陆台站起身，轻声提醒道：“陈平安，可以了。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.454836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -869,7 +1290,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "extracted_at": "2026-03-25T17:27:38.454836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -903,21 +1324,38 @@
         ],
         "juan_index": 297,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安收回手，抬起手背，抹了抹眼眶，转头望向陆台，问道：“有法子吗？ 陆台缓缓走来，没有了先前的那种云淡风轻，点头道：“你不是会阳气挑灯符吗，只要反画此符，就是阴气指引符，然后我再画一张冥府摆渡符，就能够超度这些小家伙。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 16
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安对话",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安觉得这样不对，这样不好。 陈平安收回手，抬起手背，抹了抹眼眶，转头望向陆台，问道：“有法子吗？ 世间万般苦难，哪怕是在劫难逃的前世因果报应，可总该等到孩子稍稍长大，略微懂事之后吧？",
+        "description": "陈平安觉得这样不对，这样不好。 陈平安收回手，抬起手背，抹了抹眼眶，转头望向陆台，问道：“有法子吗？ 陆台缓缓走来，没有了先前的那种云淡风轻，点头道：“你不是会阳气挑灯符吗，只要反画此符，就是阴气指引符，然后我再画一张冥府摆渡符，就能够超度这些小家伙。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -931,8 +1369,29 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安收回手，抬起手背，抹了抹眼眶，转头望向陆台，问道：“有法子吗？",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 297,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.454836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -967,21 +1426,37 @@
         ],
         "juan_index": 297,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安从方寸物中取出一张黄色符纸，以及那支小雪锥，盘腿而坐，一手持笔，一手掌托符纸，在陆台的指点下，开始第一次尝试着反画阳气挑灯符，因为心境不稳，最终失败，陆台也没有说什么，陈平安深呼吸一口气，再次取出符纸，竟然还是功亏一篑，这对于练拳以后的陈平安而言，是极其罕见的事情。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安指点",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台指点",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安在心中轻声呼唤了一声飞剑十五。 陈平安从方寸物中取出一张黄色符纸，以及那支小雪锥，盘腿而坐，一手持笔，一手掌托符纸，在陆台的指点下，开始第一次尝试着反画阳气挑灯符，因为心境不稳，最终失败，陆台也没有说什么，陈平安深呼吸一口气，再次取出符纸，竟然还是功亏一篑，这对于练拳以后的陈平安而言，是极其罕见的事情。 陈平安自己都有些茫然。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -995,8 +1470,29 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "指点",
+        "context": "陈平安从方寸物中取出一张黄色符纸，以及那支小雪锥，盘腿而坐，一手持笔，一手掌托符纸，在陆台的指点下，开始第一次尝试着反画阳气挑灯符，因为心境不稳，最终失败，陆台也没有说什么，陈平安深呼吸一口气，再次取出符纸，竟然还是功亏一篑，这对于练拳以后的陈平安而言，是极其罕见的事情。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.454836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1019,6 +1515,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台叹息一声。 陆台干脆拿出那把竹扇，轻轻扇动起来，看也不看陈平安，微笑道：“不要人人事事都设身处地，要学会置身事外。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 297,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "因为陈平安心境的其中一块碎片心镜，在摇晃。 陆台干脆拿出那把竹扇，轻轻扇动起来，看也不看陈平安，微笑道：“不要人人事事都设身处地，要学会置身事外。",
@@ -1035,16 +1545,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安对话",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "因为陈平安心境的其中一块碎片心镜，在摇晃。 陆台干脆拿出那把竹扇，轻轻扇动起来，看也不看陈平安，微笑道：“不要人人事事都设身处地，要学会置身事外。 陆台叹息一声。",
+        "description": "陆台叹息一声。 因为陈平安心境的其中一块碎片心镜，在摇晃。 陆台干脆拿出那把竹扇，轻轻扇动起来，看也不看陈平安，微笑道：“不要人人事事都设身处地，要学会置身事外。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1058,8 +1571,29 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.476334",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台干脆拿出那把竹扇，轻轻扇动起来，看也不看陈平安，微笑道：“不要人人事事都设身处地，要学会置身事外。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 297,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.454836",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1082,6 +1616,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台扇动清风，帮着这条阴风云雾散尽的巷弄，重新遮掩那些从头顶黑云中渗透落下的无形阳气，缓缓道：“等到这边的事情解决掉，我会直接去竹楼找到那个堡主夫人，陈平安，你不用跟我一起，因为我需要你帮我打散那些黑云，以及潜藏暗处的一些阴物，道行可能不会太低。 陆台仰头望向天空，“大致可以确定真相了，飞鹰堡这几十年的阴盛阳衰，是幕后有人故意为之，为的就是让那位天生极阴之身的堡主夫人，孕育出一头百年难遇的鬼婴，从女子心窍之中诞生，需要耗费数年时光，以女子气血和元气为食，而不是寻常妇人的腹中怀胎十月，俗语所谓的心怀鬼胎，即是说这种情况，那位堡主夫人不是修行中人，所以元气不够，这才有了飞鹰堡的诸多古怪，为的就是维持她的性命，只等鬼婴破心而出，就是妇人死绝的时候，而且造孽太深，妇人死后魂魄多半是不要奢望安宁了，活着的时候，生不如死，死了的时候，死不如生，真是凄惨。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台扇动清风，帮着这条阴风云雾散尽的巷弄，重新遮掩那些从头顶黑云中渗透落下的无形阳气，缓缓道：“等到这边的事情解决掉，我会直接去竹楼找到那个堡主夫人，陈平安，你不用跟我一起，因为我需要你帮我打散那些黑云，以及潜藏暗处的一些阴物，道行可能不会太低。 陈平安嗯了一声。",
@@ -1098,16 +1646,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安揭示",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安揭示",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台扇动清风，帮着这条阴风云雾散尽的巷弄，重新遮掩那些从头顶黑云中渗透落下的无形阳气，缓缓道：“等到这边的事情解决掉，我会直接去竹楼找到那个堡主夫人，陈平安，你不用跟我一起，因为我需要你帮我打散那些黑云，以及潜藏暗处的一些阴物，道行可能不会太低。 陈平安嗯了一声。 我这边你不用担心。",
+        "description": "陆台扇动清风，帮着这条阴风云雾散尽的巷弄，重新遮掩那些从头顶黑云中渗透落下的无形阳气，缓缓道：“等到这边的事情解决掉，我会直接去竹楼找到那个堡主夫人，陈平安，你不用跟我一起，因为我需要你帮我打散那些黑云，以及潜藏暗处的一些阴物，道行可能不会太低。 陈平安嗯了一声。 陆台仰头望向天空，“大致可以确定真相了，飞鹰堡这几十年的阴盛阳衰，是幕后有人故意为之，为的就是让那位天生极阴之身的堡主夫人，孕育出一头百年难遇的鬼婴，从女子心窍之中诞生，需要耗费数年时光，以女子气血和元气为食，而不是寻常妇人的腹中怀胎十月，俗语所谓的心怀鬼胎，即是说这种情况，那位堡主夫人不是修行中人，所以元气不够，这才有了飞鹰堡的诸多古怪，为的就是维持她的性命，只等鬼婴破心而出，就是妇人死绝的时候，而且造孽太深，妇人死后魂魄多半是不要奢望安宁了，活着的时候，生不如死，死了的时候，死不如生，真是凄惨。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的揭示关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1121,8 +1672,29 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "陆台扇动清风，帮着这条阴风云雾散尽的巷弄，重新遮掩那些从头顶黑云中渗透落下的无形阳气，缓缓道：“等到这边的事情解决掉，我会直接去竹楼找到那个堡主夫人，陈平安，你不用跟我一起，因为我需要你帮我打散那些黑云，以及潜藏暗处的一些阴物，道行可能不会太低。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安揭示",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 297,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.455840",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1155,21 +1727,38 @@
         ],
         "juan_index": 297,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台缓缓道：“根据我家藏书楼上的几本道家典籍记载，这种肮脏东西一生出来，就拥有六境修为，颇为难缠，聚散不定，除非一击必杀，否则很难消灭，它嗜好吞食活人的内脏，如果没有人约束，无需百年，只要给它祸害个几座城池，吃掉十几万人，就可以顺顺利利跻身元婴境。 陆台冷笑道：“这等手笔，在中土神洲算不得什么，可搁在这桐叶洲，算是很大了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安对话",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安眉头紧皱。 陆台缓缓道：“根据我家藏书楼上的几本道家典籍记载，这种肮脏东西一生出来，就拥有六境修为，颇为难缠，聚散不定，除非一击必杀，否则很难消灭，它嗜好吞食活人的内脏，如果没有人约束，无需百年，只要给它祸害个几座城池，吃掉十几万人，就可以顺顺利利跻身元婴境。 鬼婴本就极难捕杀，那么一位地仙鬼婴，恐怕没有三位地仙联手追杀，根本不用奢望将其铲除，一个元婴境修士独自前往，主动上门，沦为它的饵料还差不多。",
+        "description": "陈平安眉头紧皱。 陆台缓缓道：“根据我家藏书楼上的几本道家典籍记载，这种肮脏东西一生出来，就拥有六境修为，颇为难缠，聚散不定，除非一击必杀，否则很难消灭，它嗜好吞食活人的内脏，如果没有人约束，无需百年，只要给它祸害个几座城池，吃掉十几万人，就可以顺顺利利跻身元婴境。 陆台冷笑道：“这等手笔，在中土神洲算不得什么，可搁在这桐叶洲，算是很大了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1183,8 +1772,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安眉头紧皱。 陆台缓缓道：“根据我家藏书楼上的几本道家典籍记载，这种肮脏东西一生出来，就拥有六境修为，颇为难缠，聚散不定，除非一击必杀，否则很难消灭，它嗜好吞食活人的内脏，如果没有人约束，无需百年，只要给它祸害个几座城池，吃掉十几万人，就可以顺顺利利跻身元婴境。 鬼婴本就极难捕杀，那么一位地仙鬼婴，恐怕没有三位地仙联手追杀，根本不用奢望将其铲除，一个元婴境修士独自前往，主动上门，沦为它的饵料还差不多。 ” 陆台冷笑道：“这等手笔，在中土神洲算不得什么，可搁在这桐叶洲，算是很大了。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.455840",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1207,6 +1822,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "然后陆台不再多说什么，手摇竹扇，清风拂面。 陆台瞥了眼身边的陈平安，笑了笑。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安沉默片刻，轻声道：“可以继续画符了。 陆台瞥了眼身边的陈平安，笑了笑。",
@@ -1224,15 +1854,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安沉默片刻，轻声道：“可以继续画符了。 陆台瞥了眼身边的陈平安，笑了笑。 陈平安抹了抹额头汗水，就要将那张阴气指引符收起来，陆台一脸茫然，“这是做什么？",
+        "description": "然后陆台不再多说什么，手摇竹扇，清风拂面。 陈平安沉默片刻，轻声道：“可以继续画符了。 陆台瞥了眼身边的陈平安，笑了笑。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段21",
         "sentence_indexes_in_segment": [
@@ -1248,7 +1879,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "extracted_at": "2026-03-25T17:27:38.455840",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1282,21 +1913,38 @@
         ],
         "juan_index": 297,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台一把夺过那张符箓，没好气道：“傻了吧唧的，一群小不点，这张符箓已经绰绰有余，再好一些，说不定引来它们的贪恋，继续选择在阴阳缝隙之间，做这种孤魂野鬼，反而是坏事。 陈平安点点头，先将那支小雪锥递给陆台，在取出符纸之前，问道：“你那张冥府摆渡符，毕竟要破开阴阳界线，跟我这张简单的指引符，很不一样，所以材质是不是越好越灵验？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安对话",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安答道：“符纸材质不高，只是拿来练笔的……” 陈平安点点头，先将那支小雪锥递给陆台，在取出符纸之前，问道：“你那张冥府摆渡符，毕竟要破开阴阳界线，跟我这张简单的指引符，很不一样，所以材质是不是越好越灵验？ ”",
+        "description": "陈平安答道：“符纸材质不高，只是拿来练笔的……” 陆台一把夺过那张符箓，没好气道：“傻了吧唧的，一群小不点，这张符箓已经绰绰有余，再好一些，说不定引来它们的贪恋，继续选择在阴阳缝隙之间，做这种孤魂野鬼，反而是坏事。 陈平安点点头，先将那支小雪锥递给陆台，在取出符纸之前，问道：“你那张冥府摆渡符，毕竟要破开阴阳界线，跟我这张简单的指引符，很不一样，所以材质是不是越好越灵验？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -1310,8 +1958,29 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安点点头，先将那支小雪锥递给陆台，在取出符纸之前，问道：“你那张冥府摆渡符，毕竟要破开阴阳界线，跟我这张简单的指引符，很不一样，所以材质是不是越好越灵验？",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.455840",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1334,6 +2003,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台欲言又止，没有开口说话。 陆台没有去接，问道：“值得吗？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安便已经知道了答案，直接取出一张金色材质的符纸。 陈平安点点头。",
@@ -1350,16 +2034,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安对话",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安便已经知道了答案，直接取出一张金色材质的符纸。 陈平安点点头。 陆台欲言又止，没有开口说话。",
+        "description": "陆台欲言又止，没有开口说话。 陈平安便已经知道了答案，直接取出一张金色材质的符纸。 陆台没有去接，问道：“值得吗？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1373,8 +2060,34 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台欲言又止，没有开口说话。 陈平安便已经知道了答案，直接取出一张金色材质的符纸。 陆台没有去接，问道：“值得吗？ ” 陈平安点点头。 陆台摇头道：“我觉得不值得。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.455840",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1408,20 +2121,36 @@
         ],
         "juan_index": 297,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安转头看了那墙根两排的孩子，转头对陆台咧嘴一笑，眼神坚定，“你只管用这张符纸好了，但是千万别画错了。 陆台叹息一声，先闭眼片刻，郑重其事地屏气凝神，这才睁开眼，握紧小雪锥，在金色符纸上画那摆渡符，这是中土神洲阴阳家陆氏的独门符箓，图案为一片孤舟，舟上有老翁撑蒿，两边各有一串古篆文字。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 297,
+        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安转头看了那墙根两排的孩子，转头对陆台咧嘴一笑，眼神坚定，“你只管用这张符纸好了，但是千万别画错了。 陈平安相信陆台的画符，转头望向那些孩子。 ”",
+        "description": "陈平安转头看了那墙根两排的孩子，转头对陆台咧嘴一笑，眼神坚定，“你只管用这张符纸好了，但是千万别画错了。 陆台叹息一声，先闭眼片刻，郑重其事地屏气凝神，这才睁开眼，握紧小雪锥，在金色符纸上画那摆渡符，这是中土神洲阴阳家陆氏的独门符箓，图案为一片孤舟，舟上有老翁撑蒿，两边各有一串古篆文字。 陈平安相信陆台的画符，转头望向那些孩子。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段24",
         "sentence_indexes_in_segment": [
@@ -1437,7 +2166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "extracted_at": "2026-03-25T17:27:38.456843",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1472,21 +2201,40 @@
         ],
         "juan_index": 297,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "片刻之后，陆台笑道：“大功告成！ 陆台交还那支小雪锥，之后两人起身，陈平安捻起那张阴气指引符，浇灌入一缕纯粹真气后，符箓灵光流溢，光线轻柔，比起阳气挑灯符，是截然不同的两种光景，果不其然，在指引符彰显后，墙根下的那些孩童便懵懵懂懂抬起头，痴痴望向陈平安手中的符箓，充满了眷念和欢喜。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安对话",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安看着那些孩子，就像是看着数十个自己，在等待一个答案。 陆台交还那支小雪锥，之后两人起身，陈平安捻起那张阴气指引符，浇灌入一缕纯粹真气后，符箓灵光流溢，光线轻柔，比起阳气挑灯符，是截然不同的两种光景，果不其然，在指引符彰显后，墙根下的那些孩童便懵懵懂懂抬起头，痴痴望向陈平安手中的符箓，充满了眷念和欢喜。 陆台让手持指引符的陈平安走向那道大门，脚步要缓。",
+        "description": "陈平安看着那些孩子，就像是看着数十个自己，在等待一个答案。 片刻之后，陆台笑道：“大功告成！ 陆台交还那支小雪锥，之后两人起身，陈平安捻起那张阴气指引符，浇灌入一缕纯粹真气后，符箓灵光流溢，光线轻柔，比起阳气挑灯符，是截然不同的两种光景，果不其然，在指引符彰显后，墙根下的那些孩童便懵懵懂懂抬起头，痴痴望向陈平安手中的符箓，充满了眷念和欢喜。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1500,8 +2248,34 @@
         "segment_index": 25
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安看着那些孩子，就像是看着数十个自己，在等待一个答案。 片刻之后，陆台笑道：“大功告成！ ” 陆台交还那支小雪锥，之后两人起身，陈平安捻起那张阴气指引符，浇灌入一缕纯粹真气后，符箓灵光流溢，光线轻柔，比起阳气挑灯符，是截然不同的两种光景，果不其然，在指引符彰显后，墙根下的那些孩童便懵懵懂懂抬起头，痴痴望向陈平安手中的符箓，充满了眷念和欢喜。 陆台将金色符纸的冥府摆渡符，往巷弄尽头的那堵尸骸墙壁一丢而去，符箓贴在墙上，符箓四周边框各自出现一条金线，符纸中央地带则开始消散，金线不断往外扩张，最终出现一道金色的门框。 陆台让手持指引符的陈平安走向那道大门，脚步要缓。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 25
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.456843",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1536,21 +2310,38 @@
         ],
         "juan_index": 297,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台坐在院门口台阶上，单手托起腮帮，望向陈平安的背影。 陈平安按照陆台的吩咐，轻轻将阴气指引符放在大门内，仿佛刚好在门槛上方，符箓悬停不动。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 297,
+        "segment_index": 26
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台同行",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "孩童阴物们纷纷站起身，跟着在前方指引方向的陈平安，一起走向巷弄尽头。 陆台坐在院门口台阶上，单手托起腮帮，望向陈平安的背影。 陈平安按照陆台的吩咐，轻轻将阴气指引符放在大门内，仿佛刚好在门槛上方，符箓悬停不动。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -1564,8 +2355,34 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "同行",
+        "context": "孩童阴物们纷纷站起身，跟着在前方指引方向的陈平安，一起走向巷弄尽头。 陆台坐在院门口台阶上，单手托起腮帮，望向陈平安的背影。 陈平安按照陆台的吩咐，轻轻将阴气指引符放在大门内，仿佛刚好在门槛上方，符箓悬停不动。 数十位孩子阴物先后走入其中，有人蹦蹦跳跳，有人摇摇晃晃，还有大一些的孩子牵着小一些的孩子。 它们陆陆续续走入大门之后，突然所有脑袋都挤在门槛后边，对那个站在门外的白袍少年，笑了起来。 它们虽是阴物，这一刻的笑脸，却是那般天真灿烂。",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 297,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.456843",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1583,6 +2400,19 @@
       "她只看到陈平安在跟那些孩子挥手作别。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台看不到陈平安的神色表情。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 297,
+        "segment_index": 27
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1616,16 +2446,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆沉剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "陆台",
           "陆沉"
         ],
         "description": "陆台看不到陈平安的神色表情。 身穿男子青衫的她，其实本名“陆抬”，高高抬起的抬，好似与那老祖宗“陆沉”赌气作对。 她只看到陈平安在跟那些孩子挥手作别。",
         "background": "",
-        "significance": "推动陈平安与陆沉之间的剧情推进关系。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段27",
         "sentence_indexes_in_segment": [
@@ -1638,7 +2469,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.477338",
+    "extracted_at": "2026-03-25T17:27:38.456843",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -1,4 +1,66 @@
 {
+  "148-1-0": {
+    "juan_index": 148,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十八章 少年有事问春风",
+    "source_sentences": [
+      "老秀才一跺脚，气呼呼道：“唯小人与女子难养也，古人诚不欺我！",
+      "”",
+      "高大女子拧转那株不知何处摘来的雪白荷叶，杀机重重，虽然她脸上笑意犹在，可怎么看都寒意森森，“打不过就骂人？",
+      "你找削？",
+      "！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才一跺脚，气呼呼道：“唯小人与女子难养也，古人诚不欺我！",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 148,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才一跺脚，气呼呼道：“唯小人与女子难养也，古人诚不欺我！ ” 高大女子拧转那株不知何处摘来的雪白荷叶，杀机重重，虽然她脸上笑意犹在，可怎么看都寒意森森，“打不过就骂人？",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 148,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.588165",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "148-2-0": {
     "juan_index": 148,
     "segment_index": 2,
@@ -16,6 +78,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才缩了缩脖子，灵光乍现，立即有了底气，大声问道：“打架可以，但是咱俩能不能换一个打法？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 148,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "你放心，我这个要求，能够顺带捎上陈平安，保证合情合理，合你心愿！",
@@ -31,16 +106,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 陈平安对话",
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 老秀才与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安"
         ],
-        "description": "你放心，我这个要求，能够顺带捎上陈平安，保证合情合理，合你心愿！ 原先遍布于十里之外的圆形剑阵，瞬间收拢，变成只围困住河畔山崖这点地方，与此同时，剑气愈发凌厉惊人，剑气凝聚而成的剑阵墙壁，以至于天地间无形流转的虚无大道，都被迫显现出来，黑白两色激烈碰撞，火光四溅，最终一起归于混沌虚无。 老秀才缩了缩脖子，灵光乍现，立即有了底气，大声问道：“打架可以，但是咱俩能不能换一个打法？",
+        "description": "老秀才缩了缩脖子，灵光乍现，立即有了底气，大声问道：“打架可以，但是咱俩能不能换一个打法？ 你放心，我这个要求，能够顺带捎上陈平安，保证合情合理，合你心愿！ 原先遍布于十里之外的圆形剑阵，瞬间收拢，变成只围困住河畔山崖这点地方，与此同时，剑气愈发凌厉惊人，剑气凝聚而成的剑阵墙壁，以至于天地间无形流转的虚无大道，都被迫显现出来，黑白两色激烈碰撞，火光四溅，最终一起归于混沌虚无。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老秀才与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -54,8 +132,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "原先遍布于十里之外的圆形剑阵，瞬间收拢，变成只围困住河畔山崖这点地方，与此同时，剑气愈发凌厉惊人，剑气凝聚而成的剑阵墙壁，以至于天地间无形流转的虚无大道，都被迫显现出来，黑白两色激烈碰撞，火光四溅，最终一起归于混沌虚无。 老秀才缩了缩脖子，灵光乍现，立即有了底气，大声问道：“打架可以，但是咱俩能不能换一个打法？ 你放心，我这个要求，能够顺带捎上陈平安，保证合情合理，合你心愿！ ” 高大女子沉默不语，突然看到老人在可劲儿使眼色给自己。 她犹豫片刻，点头道：“可以。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 老秀才与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 148,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.588165",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -133,7 +237,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "extracted_at": "2026-03-25T17:27:37.588165",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -154,6 +258,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "古井内的白衣少年，身形已经被镇压向下一丈多，仍是用双手和肩膀死死抵住镜子底部，被剑气冲撞，镜面震动不已，不断崩开碎裂，但是很快就被镜子内蕴含的残余雷电，自动修复为完整原貌。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 148,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -186,16 +303,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与陈平安剧情推进",
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 白衣少年与崔瀺剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "白衣少年",
           "崔瀺",
           "陈平安"
         ],
-        "description": "少年崔瀺咬紧牙关，满脸鲜血，模糊了那张俊美容颜，此时已经没有多余力气撂狠话，只能在心中默念道：“熬过这一场剑气暴雨，我上去后一定百倍奉还！ 一定可以的，剑雨气势由盛转衰，我只要再坚持一会儿，陈平安你等着！ 古井内的白衣少年，身形已经被镇压向下一丈多，仍是用双手和肩膀死死抵住镜子底部，被剑气冲撞，镜面震动不已，不断崩开碎裂，但是很快就被镜子内蕴含的残余雷电，自动修复为完整原貌。",
+        "description": "古井内的白衣少年，身形已经被镇压向下一丈多，仍是用双手和肩膀死死抵住镜子底部，被剑气冲撞，镜面震动不已，不断崩开碎裂，但是很快就被镜子内蕴含的残余雷电，自动修复为完整原貌。 少年崔瀺咬紧牙关，满脸鲜血，模糊了那张俊美容颜，此时已经没有多余力气撂狠话，只能在心中默念道：“熬过这一场剑气暴雨，我上去后一定百倍奉还！ 一定可以的，剑雨气势由盛转衰，我只要再坚持一会儿，陈平安你等着！",
         "background": "",
-        "significance": "推动崔瀺与陈平安之间的剧情推进关系。",
+        "significance": "推动白衣少年与崔瀺之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段4",
         "sentence_indexes_in_segment": [
@@ -211,7 +329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "extracted_at": "2026-03-25T17:27:37.589168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -312,7 +430,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "extracted_at": "2026-03-25T17:27:37.589168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -379,7 +497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "extracted_at": "2026-03-25T17:27:37.589168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -502,7 +620,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "extracted_at": "2026-03-25T17:27:37.589168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -768,7 +886,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.792829",
+    "extracted_at": "2026-03-25T17:27:37.589168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -919,7 +1037,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.589168",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1094,7 +1212,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.590172",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1133,6 +1251,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年几乎已经双脚踩在井底水道的底部，井水和与大江相通的城中地下水，早已被剑气蒸发殆尽。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 148,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "他不想杀陈平安，千真万确，最少暂时是如此。",
@@ -1148,16 +1279,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与陈平安剧情推进",
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "崔瀺",
+          "白衣少年",
           "陈平安"
         ],
-        "description": "所以这才让寒食江水神吓得肝胆欲裂，否则以青袍男子统率北地水运数百年的阅历和城府，不吃足苦头，怎么可能被崔瀺驯服得像条溪涧小鲶？ 少年崔瀺在心中开始倒数。 他不想杀陈平安，千真万确，最少暂时是如此。",
+        "description": "所以这才让寒食江水神吓得肝胆欲裂，否则以青袍男子统率北地水运数百年的阅历和城府，不吃足苦头，怎么可能被崔瀺驯服得像条溪涧小鲶？ 白衣少年几乎已经双脚踩在井底水道的底部，井水和与大江相通的城中地下水，早已被剑气蒸发殆尽。 少年崔瀺在心中开始倒数。",
         "background": "",
-        "significance": "推动崔瀺与陈平安之间的剧情推进关系。",
+        "significance": "推动崔瀺与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段11",
         "sentence_indexes_in_segment": [
@@ -1173,7 +1305,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.590172",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1272,7 +1404,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.590172",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1378,7 +1510,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.590172",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1498,7 +1630,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.590172",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1608,7 +1740,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.793832",
+    "extracted_at": "2026-03-25T17:27:37.591175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1673,7 +1805,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.591175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1752,7 +1884,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.591175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1845,7 +1977,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.591175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1962,7 +2094,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.591175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2043,7 +2175,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.591175",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2080,20 +2212,49 @@
         ],
         "juan_index": 148,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "镜子巨震不已，带给下边的白衣少年，巨大的冲撞力，以及剑气流淌过镜面后的剑气“水流”，带给少年身躯的巨大灼烧感，都让他开始意识模糊。 白衣少年精神一振，如人久旱逢甘霖后，格外精神奕奕，崔瀺哪里还敢留有余力，此时不拼命更待何时，“哈哈，天助我也！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 148,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才烙印在少年崔瀺神魂之上的禁锢，竟然消失不见了。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 148,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "白衣少年",
+          "老秀才"
         ],
-        "description": "虽然竭尽全力，在做最后的垂死挣扎，可其实崔瀺心底，已经万念俱灰了。 老秀才烙印在少年崔瀺神魂之上的禁锢，竟然消失不见了。 白衣少年精神一振，如人久旱逢甘霖后，格外精神奕奕，崔瀺哪里还敢留有余力，此时不拼命更待何时，“哈哈，天助我也！",
+        "description": "虽然竭尽全力，在做最后的垂死挣扎，可其实崔瀺心底，已经万念俱灰了。 镜子巨震不已，带给下边的白衣少年，巨大的冲撞力，以及剑气流淌过镜面后的剑气“水流”，带给少年身躯的巨大灼烧感，都让他开始意识模糊。 老秀才烙印在少年崔瀺神魂之上的禁锢，竟然消失不见了。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段22",
         "sentence_indexes_in_segment": [
@@ -2109,7 +2270,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.592179",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2146,20 +2307,34 @@
         ],
         "juan_index": 148,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "可是崔瀺头脑愈发清明，“圣人教诲，以文载道”，白衣少年驾驭那些暂时无主的金字，去撞击那道剑气瀑布。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 148,
+        "segment_index": 23
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "白衣少年"
         ],
         "description": "老不死你也会有弄巧成拙的一天，真真正正是天助我崔瀺，天无绝人之路！ 只见一个个充满浩然正气的金色大字，被满脸痛苦扭曲的崔瀺，一点点从神魂之中被剥离而出，这种让人意念无处可躲的痛楚，可比千刀万剐还要来得恐怖。 可是崔瀺头脑愈发清明，“圣人教诲，以文载道”，白衣少年驾驭那些暂时无主的金字，去撞击那道剑气瀑布。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段23",
         "sentence_indexes_in_segment": [
@@ -2175,7 +2350,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.794835",
+    "extracted_at": "2026-03-25T17:27:37.592179",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2213,6 +2388,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "他向一侧挪步，镜面瞬间歪斜，将最后剑气全部倒向井口内壁另一侧，白衣少年干脆随手丢了那把古镜，双脚点地，整个人冲天而起，然后身形瞬间消失不见，只有愤恨至极的阴沉嗓音，不断回荡在古井之内：“你现在就算有第三道剑气，你也来不及了！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 148,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安站在井口，双手剑炉立桩，在最后一道剑气离去之后，就准备以拳法迎敌。",
@@ -2228,16 +2416,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与陈平安剧情推进",
+        "name": "第二卷山水郎 第一百四十八章 少年有事问春风 · 崔瀺与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "崔瀺",
+          "白衣少年",
           "陈平安"
         ],
-        "description": "崔瀺在察觉到机遇之后，早就没有束手待毙，开始小心翼翼坐起身，然后一点一点蹲起，最后总算是被他弯腰站立。 陈平安站在井口，双手剑炉立桩，在最后一道剑气离去之后，就准备以拳法迎敌。 他向一侧挪步，镜面瞬间歪斜，将最后剑气全部倒向井口内壁另一侧，白衣少年干脆随手丢了那把古镜，双脚点地，整个人冲天而起，然后身形瞬间消失不见，只有愤恨至极的阴沉嗓音，不断回荡在古井之内：“你现在就算有第三道剑气，你也来不及了！",
+        "description": "崔瀺在察觉到机遇之后，早就没有束手待毙，开始小心翼翼坐起身，然后一点一点蹲起，最后总算是被他弯腰站立。 他向一侧挪步，镜面瞬间歪斜，将最后剑气全部倒向井口内壁另一侧，白衣少年干脆随手丢了那把古镜，双脚点地，整个人冲天而起，然后身形瞬间消失不见，只有愤恨至极的阴沉嗓音，不断回荡在古井之内：“你现在就算有第三道剑气，你也来不及了！ 陈平安站在井口，双手剑炉立桩，在最后一道剑气离去之后，就准备以拳法迎敌。",
         "background": "",
-        "significance": "推动崔瀺与陈平安之间的剧情推进关系。",
+        "significance": "推动崔瀺与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十八章 少年有事问春风 · 段25",
         "sentence_indexes_in_segment": [
@@ -2253,7 +2442,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.795839",
+    "extracted_at": "2026-03-25T17:27:37.592179",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2358,7 +2547,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.795839",
+    "extracted_at": "2026-03-25T17:27:37.592179",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2437,7 +2626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.795839",
+    "extracted_at": "2026-03-25T17:27:37.592179",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2455,6 +2644,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "就看到一个莫名其妙出现在井口上空的白衣少年，额头上被一方印章重重砸中，整个人倒飞出去，摔在地面上。 一身修为点滴不剩的白衣少年，在昏死过去的前一刻，喃喃道：“齐静春，算你狠，我认输。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 148,
+        "segment_index": 28
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -2479,9 +2682,10 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "白衣少年"
         ],
-        "description": "一身修为点滴不剩的白衣少年，在昏死过去的前一刻，喃喃道：“齐静春，算你狠，我认输。 就看到一个莫名其妙出现在井口上空的白衣少年，额头上被一方印章重重砸中，整个人倒飞出去，摔在地面上。 ”",
+        "description": "就看到一个莫名其妙出现在井口上空的白衣少年，额头上被一方印章重重砸中，整个人倒飞出去，摔在地面上。 一身修为点滴不剩的白衣少年，在昏死过去的前一刻，喃喃道：“齐静春，算你狠，我认输。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -2496,7 +2700,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.795839",
+    "extracted_at": "2026-03-25T17:27:37.592179",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

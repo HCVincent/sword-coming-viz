@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.481352",
+    "extracted_at": "2026-03-25T17:27:38.462864",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.481352",
+    "extracted_at": "2026-03-25T17:27:38.462864",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -152,21 +152,37 @@
         ],
         "juan_index": 300,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "但是早早准备好方寸符的陈平安，惊讶发现在山岳压顶的阴影之中，如同置身于一座陆台所谓的“无法之地”，数次大战都立下奇功的方寸符，竟是没了丝毫反应。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 300,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陈平安迁移",
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陈平安与陆台迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安气血翻涌，尚未出现衰竭迹象，但是陈平安并不想自己被这三座山岳困住，天晓得高冠老人还有什么山上秘法，趁着神人擂鼓式的拳意牵引，暂时能够藕断丝连，于是就准备撤离校武场，转移战场，然后赶紧递出第十四拳。 但是早早准备好方寸符的陈平安，惊讶发现在山岳压顶的阴影之中，如同置身于一座陆台所谓的“无法之地”，数次大战都立下奇功的方寸符，竟是没了丝毫反应。 陈平安则只好递出新一拳，打得山岳下坠势头微微凝滞，然后前冲，试图离开山岳阴影笼罩之地。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -180,8 +196,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.481352",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "别离",
+        "context": "老人头顶上的五岳冠，已经黯淡无光，再无悠扬的鹤鸣松涛之声。 陈平安气血翻涌，尚未出现衰竭迹象，但是陈平安并不想自己被这三座山岳困住，天晓得高冠老人还有什么山上秘法，趁着神人擂鼓式的拳意牵引，暂时能够藕断丝连，于是就准备撤离校武场，转移战场，然后赶紧递出第十四拳。 但是早早准备好方寸符的陈平安，惊讶发现在山岳压顶的阴影之中，如同置身于一座陆台所谓的“无法之地”，数次大战都立下奇功的方寸符，竟是没了丝毫反应。 不得已，养剑葫内初一十五两把飞剑，一左一右散开，高高掠入云海。 陈平安则只好递出新一拳，打得山岳下坠势头微微凝滞，然后前冲，试图离开山岳阴影笼罩之地。 高冠老人哈哈大笑，“想跑？",
+        "result": null,
+        "event_name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陈平安与陆台迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.462864",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -243,7 +285,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.482355",
+    "extracted_at": "2026-03-25T17:27:38.463868",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -305,7 +347,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.482355",
+    "extracted_at": "2026-03-25T17:27:38.463868",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -367,7 +409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.482355",
+    "extracted_at": "2026-03-25T17:27:38.463868",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -429,7 +471,72 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.482355",
+    "extracted_at": "2026-03-25T17:27:38.464871",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-10-0": {
+    "juan_index": 300,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "人人庆幸之余，有难免心生绝望，我辈江湖武夫，面对这些神通广大的山上仙师，实在不值一提。",
+      "陆台没有静观其变，并未由着针尖麦芒两柄品相极高的飞剑，慢慢耗死那个观海境练气士，而是一件件从那条彩带之中，取出了从四处搜刮而来的法宝器物，借着飞剑劈斩而出的牢笼缝隙，一穿而入，对那位将拂尘丝绳化作白蛇的家伙，阴险袭击，对于那位练气士而言，这无异于雪上加霜，苦不堪言。",
+      "高大男子先是百般求饶，苦劝陆台万事好商量，只要陆台收手，他愿意交出一切家当，并且任由陆台在他的神魂上动手脚。",
+      "眼见着陆台无动于衷，手中只余下一枝拂尘铁柄的男子，便开始厉色威胁，扬言要与陆台的两把本命飞剑来一个玉石俱焚，一定要陆台神魂受损，此生再难修为精进。",
+      "陆台斜靠在堡主夫人椅子旁边，手摇折扇，根本不理睬捉襟见肘的观海境修士，厅堂大门已经被他强行打开，所以外边飞鹰堡的景象，一览无余。",
+      "天昏地暗。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台没有静观其变，并未由着针尖麦芒两柄品相极高的飞剑，慢慢耗死那个观海境练气士，而是一件件从那条彩带之中，取出了从四处搜刮而来的法宝器物，借着飞剑劈斩而出的牢笼缝隙，一穿而入，对那位将拂尘丝绳化作白蛇的家伙，阴险袭击，对于那位练气士而言，这无异于雪上加霜，苦不堪言。 高大男子先是百般求饶，苦劝陆台万事好商量，只要陆台收手，他愿意交出一切家当，并且任由陆台在他的神魂上动手脚。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 300,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台没有静观其变，并未由着针尖麦芒两柄品相极高的飞剑，慢慢耗死那个观海境练气士，而是一件件从那条彩带之中，取出了从四处搜刮而来的法宝器物，借着飞剑劈斩而出的牢笼缝隙，一穿而入，对那位将拂尘丝绳化作白蛇的家伙，阴险袭击，对于那位练气士而言，这无异于雪上加霜，苦不堪言。 高大男子先是百般求饶，苦劝陆台万事好商量，只要陆台收手，他愿意交出一切家当，并且任由陆台在他的神魂上动手脚。 眼见着陆台无动于衷，手中只余下一枝拂尘铁柄的男子，便开始厉色威胁，扬言要与陆台的两把本命飞剑来一个玉石俱焚，一定要陆台神魂受损，此生再难修为精进。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.464871",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -450,6 +557,21 @@
       "陆台的那付身躯皮囊，本身就像是一件法宝，甚至比起陈平安的那个“学生”，少年崔瀺早年谋夺窃据的那付遗蜕躯壳，更加妙不可言。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台是一个陆氏阴阳家子弟，对于人之本性，见解更深。 陆台的存在，在中土神洲的陆氏，有些禁制意味，对于那些沉默寡言、暮气沉沉的陆氏老祖而言，这个晚辈，太让人感到“别扭”了，同时又让人倍感惊艳，仿佛契道而生，在历史上几乎没有先例，所以对于陆台的态度，庞大的陆氏一直很含糊不清。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 13
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -482,16 +604,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陈平安与崔瀺揭示",
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台与陈平安揭示",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安",
           "崔瀺"
         ],
-        "description": "陆台的那付身躯皮囊，本身就像是一件法宝，甚至比起陈平安的那个“学生”，少年崔瀺早年谋夺窃据的那付遗蜕躯壳，更加妙不可言。 山上山下皆如此。 陆台是一个陆氏阴阳家子弟，对于人之本性，见解更深。",
+        "description": "陆台是一个陆氏阴阳家子弟，对于人之本性，见解更深。 陆台的存在，在中土神洲的陆氏，有些禁制意味，对于那些沉默寡言、暮气沉沉的陆氏老祖而言，这个晚辈，太让人感到“别扭”了，同时又让人倍感惊艳，仿佛契道而生，在历史上几乎没有先例，所以对于陆台的态度，庞大的陆氏一直很含糊不清。 陆台的那付身躯皮囊，本身就像是一件法宝，甚至比起陈平安的那个“学生”，少年崔瀺早年谋夺窃据的那付遗蜕躯壳，更加妙不可言。",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的揭示关系。",
+        "significance": "推动陆台与陈平安之间的揭示关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段13",
         "sentence_indexes_in_segment": [
@@ -507,7 +630,447 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.482355",
+    "extracted_at": "2026-03-25T17:27:38.464871",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-14-0": {
+    "juan_index": 300,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "陆台关注着楼外的云海，在寻找出手的最佳时机。",
+      "主楼大堂此处景象，早已遮蔽起来，拂尘男子想要传递信息出去，难如登天。",
+      "那位堡主夫人轻声道：“仙师，我想好了。",
+      "”",
+      "陆台有些疑惑，低头望去，“怎么说？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台关注着楼外的云海，在寻找出手的最佳时机。 陆台有些疑惑，低头望去，“怎么说？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 300,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台关注着楼外的云海，在寻找出手的最佳时机。 陆台有些疑惑，低头望去，“怎么说？ 主楼大堂此处景象，早已遮蔽起来，拂尘男子想要传递信息出去，难如登天。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.465875",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-15-0": {
+    "juan_index": 300,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "妇人面容凄然却眼神坚毅，伸手捂住心口，道：“他能活下来吗？",
+      "”",
+      "女子虽然不是修行中人，可是心脏处的异样，已经持续数年时光，她又不是痴儿，联系飞鹰堡的飞来横祸，以及拂尘男子与陆台的对话，当然已经猜出个七七八八。",
+      "陆台摇头道：“小家伙先天就背离大道，天性暴戾，残忍嗜血，就算你死它活，以后还是祸害，到时候一座小小的飞鹰堡，给它陪葬都没资格，极可能是整个沉香国……”",
+      "妇人哀伤哭泣道：“可是我想它活下来，我能感觉到它的存在，它毕竟就像是我的子女……”",
+      "陆台既没有感动，也没有鄙夷，只是淡然而笑，为可怜妇人陈述了一个事实：“那你知不知道小家伙早已开了灵智，所以会故意传递给你虚假的情绪，它甚至会凭借本能，潜移默化地影响你这位寄主的心智，不然你为何明知道自己身体异样，始终不曾开口跟丈夫说清楚此事？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "女子虽然不是修行中人，可是心脏处的异样，已经持续数年时光，她又不是痴儿，联系飞鹰堡的飞来横祸，以及拂尘男子与陆台的对话，当然已经猜出个七七八八。 陆台摇头道：“小家伙先天就背离大道，天性暴戾，残忍嗜血，就算你死它活，以后还是祸害，到时候一座小小的飞鹰堡，给它陪葬都没资格，极可能是整个沉香国……”",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "女子虽然不是修行中人，可是心脏处的异样，已经持续数年时光，她又不是痴儿，联系飞鹰堡的飞来横祸，以及拂尘男子与陆台的对话，当然已经猜出个七七八八。 陆台摇头道：“小家伙先天就背离大道，天性暴戾，残忍嗜血，就算你死它活，以后还是祸害，到时候一座小小的飞鹰堡，给它陪葬都没资格，极可能是整个沉香国……” 陆台既没有感动，也没有鄙夷，只是淡然而笑，为可怜妇人陈述了一个事实：“那你知不知道小家伙早已开了灵智，所以会故意传递给你虚假的情绪，它甚至会凭借本能，潜移默化地影响你这位寄主的心智，不然你为何明知道自己身体异样，始终不曾开口跟丈夫说清楚此事？",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 15
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.465875",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-16-0": {
+    "juan_index": 300,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "”",
+      "妇人一手使劲捂住心口，一手抬起，赶紧抵住嘴巴，满脸痛苦之色，她茫然失措，只是对着陆台摇头。",
+      "妇人默默承受那份揪心之痛，望着陆台，眼神充满了哀求。",
+      "陆台叹息一声，“你这是何苦来哉？",
+      "难道真要对飞鹰堡几百条人命弃之不顾？",
+      "你想想看，丈夫桓阳，子女桓常桓淑，还有生你养你的这座城堡，都不管了？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "妇人一手使劲捂住心口，一手抬起，赶紧抵住嘴巴，满脸痛苦之色，她茫然失措，只是对着陆台摇头。 妇人默默承受那份揪心之痛，望着陆台，眼神充满了哀求。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 300,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "妇人一手使劲捂住心口，一手抬起，赶紧抵住嘴巴，满脸痛苦之色，她茫然失措，只是对着陆台摇头。 妇人默默承受那份揪心之痛，望着陆台，眼神充满了哀求。 陆台叹息一声，“你这是何苦来哉？",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.465875",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-17-0": {
+    "juan_index": 300,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "就为了这个尚未出身、就位列歪门邪道的脏东西？",
+      "”",
+      "妇人只是含泪摇头，放下胳膊，满嘴血污立即涌出，漆黑如墨，极为渗人可怕，妇人顾不得什么主妇仪容，已经有些神智涣散，眼神恍惚，开口向陆台祈求道：“让它活下来吧，求求仙师了，它有什么错？",
+      "如今不过是害死了它娘亲一个人，我不怪它，一点都不怪它啊，所以仙师你以后多教教它，劝它向善，不要误入歧途，仙师你道法通天，无所不能，一定可以做到的，我的这个孩子一定会做个好人……”",
+      "妇人就像一件千疮百孔的瓷片，随着心脏的剧烈颤动，不堪重负，终于彻底碎了。",
+      "可她始终死死盯住陆台的那张脸庞。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "妇人只是含泪摇头，放下胳膊，满嘴血污立即涌出，漆黑如墨，极为渗人可怕，妇人顾不得什么主妇仪容，已经有些神智涣散，眼神恍惚，开口向陆台祈求道：“让它活下来吧，求求仙师了，它有什么错？ 可她始终死死盯住陆台的那张脸庞。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "妇人只是含泪摇头，放下胳膊，满嘴血污立即涌出，漆黑如墨，极为渗人可怕，妇人顾不得什么主妇仪容，已经有些神智涣散，眼神恍惚，开口向陆台祈求道：“让它活下来吧，求求仙师了，它有什么错？ 可她始终死死盯住陆台的那张脸庞。 就为了这个尚未出身、就位列歪门邪道的脏东西？",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.465875",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-18-0": {
+    "juan_index": 300,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "陆台微笑点头，“好吧，它可以活。",
+      "”",
+      "妇人这才嘴角抽动，缓缓闭上眼睛，触目惊心的黑色鲜血，犹然从她的眼眶中潺潺而流，原来是她的眼睑都破碎了，两粒眼珠子也坠落在身前，再从衣裙上滑落地面，滚动到了椅子后方。",
+      "大堂上，死寂一片，没有任何人胆敢出声，唯独被封禁五感的飞鹰堡堡主桓阳，束缚在椅子上，男人眼眶通红，对那个朝夕相处的枕边人，充满了刻骨铭心的怒气。",
+      "她怎么可以如此自私！",
+      "她一定是鬼迷心窍，走火入魔了！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台微笑点头，“好吧，它可以活。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 300,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台微笑点头，“好吧，它可以活。 ” 妇人这才嘴角抽动，缓缓闭上眼睛，触目惊心的黑色鲜血，犹然从她的眼眶中潺潺而流，原来是她的眼睑都破碎了，两粒眼珠子也坠落在身前，再从衣裙上滑落地面，滚动到了椅子后方。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.466878",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-19-0": {
+    "juan_index": 300,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "她死了一点都不冤枉，就应该跟那个小杂种、心中怪胎一起去死！",
+      "陆台来到已死妇人的身前，弯下腰，凝视着她被鲜血浸透的心口处，喃喃道：“你娘亲为了你，付出了这么多，什么都给你了，连为人的良心都不要了，你呢？",
+      "怎么还在疯狂汲取尸体的灵气和魂魄，她活着的时候，你已经足够折腾她了，现在她死了，就不能让她死后有片刻的安宁吗？",
+      "”",
+      "妇人起伏不定的心口，骤然静止，似乎有细细微微的哀嚎哭泣声，来到人间，一如世上所有的婴儿。",
+      "哭着来到。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台来到已死妇人的身前，弯下腰，凝视着她被鲜血浸透的心口处，喃喃道：“你娘亲为了你，付出了这么多，什么都给你了，连为人的良心都不要了，你呢？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 300,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台来到已死妇人的身前，弯下腰，凝视着她被鲜血浸透的心口处，喃喃道：“你娘亲为了你，付出了这么多，什么都给你了，连为人的良心都不要了，你呢？ 她死了一点都不冤枉，就应该跟那个小杂种、心中怪胎一起去死！ 怎么还在疯狂汲取尸体的灵气和魂魄，她活着的时候，你已经足够折腾她了，现在她死了，就不能让她死后有片刻的安宁吗？",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.466878",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "300-20-0": {
+    "juan_index": 300,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第二百九十九章 人间无趣,不如不来",
+    "source_sentences": [
+      "“晚了。",
+      "”",
+      "陆台手中竹扇猛然一戳，穿透妇人心脏，钉入椅背，面无表情道：“人间很无趣的，来不如不来。",
+      "”",
+      "刺破耳膜的一声尖叫，蓦然响彻大堂，烛光熄灭，一根根大柱同时响起碎裂的声响。",
+      "众人肝胆欲裂。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台手中竹扇猛然一戳，穿透妇人心脏，钉入椅背，面无表情道：“人间很无趣的，来不如不来。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 300,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 陆台剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台手中竹扇猛然一戳，穿透妇人心脏，钉入椅背，面无表情道：“人间很无趣的，来不如不来。 “晚了。 ”",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第二百九十九章 人间无趣,不如不来 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 300,
+        "segment_index": 20
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.466878",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

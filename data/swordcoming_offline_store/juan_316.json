@@ -16,6 +16,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "紧接着占尽先机和上风的陆舫，被一拳拳打回这条街道，最后一拳，更是打得陆舫陷入墙壁。 被誉为天下第一手的种秋，一拳击退那位年轻人，救下了已经没有还手之力的陆舫。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "最后便是南苑国国师种秋，前来收官。 被誉为天下第一手的种秋，一拳击退那位年轻人，救下了已经没有还手之力的陆舫。",
@@ -34,16 +49,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋护持",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陆舫护持",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "种秋",
+          "陆舫"
         ],
-        "description": "最后便是南苑国国师种秋，前来收官。 被誉为天下第一手的种秋，一拳击退那位年轻人，救下了已经没有还手之力的陆舫。 冯青白借机收回了自己的佩剑，不但如此，还曾试图找机会将大椿还给陆舫，只是种秋的横空出世，冯青白便打消了念头，以免画蛇添足。",
+        "description": "紧接着占尽先机和上风的陆舫，被一拳拳打回这条街道，最后一拳，更是打得陆舫陷入墙壁。 最后便是南苑国国师种秋，前来收官。 被誉为天下第一手的种秋，一拳击退那位年轻人，救下了已经没有还手之力的陆舫。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键护持节点。",
-        "related_action_indices": [],
+        "significance": "推动种秋与陆舫之间的护持关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -57,8 +75,302 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.533532",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "守护",
+        "context": "被誉为天下第一手的种秋，一拳击退那位年轻人，救下了已经没有还手之力的陆舫。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陆舫护持",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.544146",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-2-0": {
+    "juan_index": 316,
+    "segment_index": 2,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "而那个人的座下童子，就是负责煽风点火之人。",
+      "那个人从来不现身，不愿见世人。",
+      "只有一位手持芭蕉扇的小道童，具体负责整座藕花福地的运转，当然也与各方有资格接触福地内幕的桐叶洲地仙打交道，冯青白下来之前，在师门祖师的带领下，见过那位童子，玉璞境的开山老祖，都要对那个说话很冲的小家伙持平辈之礼。",
+      "来到藕花福地，短短十数年过后，已有恍若隔世之感。",
+      "冥冥之中，冯青白生出一种直觉，自己这次砥砺大道剑心，多半到此为止了，运气好的话，撑死了获得一件法宝品秩的仙家重器。",
+      "毕竟他现在战力完整，反观陆舫已经落幕，说不得道心都要受损，哪怕回到桐叶洲，都是大麻烦。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "只有一位手持芭蕉扇的小道童，具体负责整座藕花福地的运转，当然也与各方有资格接触福地内幕的桐叶洲地仙打交道，冯青白下来之前，在师门祖师的带领下，见过那位童子，玉璞境的开山老祖，都要对那个说话很冲的小家伙持平辈之礼。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "毕竟他现在战力完整，反观陆舫已经落幕，说不得道心都要受损，哪怕回到桐叶洲，都是大麻烦。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 2
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 小道童与陆舫遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童",
+          "陆舫"
+        ],
+        "description": "只有一位手持芭蕉扇的小道童，具体负责整座藕花福地的运转，当然也与各方有资格接触福地内幕的桐叶洲地仙打交道，冯青白下来之前，在师门祖师的带领下，见过那位童子，玉璞境的开山老祖，都要对那个说话很冲的小家伙持平辈之礼。 毕竟他现在战力完整，反观陆舫已经落幕，说不得道心都要受损，哪怕回到桐叶洲，都是大麻烦。 而那个人的座下童子，就是负责煽风点火之人。",
+        "background": "",
+        "significance": "推动小道童与陆舫之间的遭遇关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段2",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 2
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "小道童"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "对话",
+        "context": "而那个人的座下童子，就是负责煽风点火之人。 那个人从来不现身，不愿见世人。 只有一位手持芭蕉扇的小道童，具体负责整座藕花福地的运转，当然也与各方有资格接触福地内幕的桐叶洲地仙打交道，冯青白下来之前，在师门祖师的带领下，见过那位童子，玉璞境的开山老祖，都要对那个说话很冲的小家伙持平辈之礼。 来到藕花福地，短短十数年过后，已有恍若隔世之感。 冥冥之中，冯青白生出一种直觉，自己这次砥砺大道剑心，多半到此为止了，运气好的话，撑死了获得一件法宝品秩的仙家重器。 毕竟他现在战力完整，反观陆舫已经落幕，说不得道心都要受损，哪怕回到桐叶洲，都是大麻烦。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 小道童与陆舫遭遇",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.544146",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-3-0": {
+    "juan_index": 316,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "谪仙人谪仙人，听着很是美好，实则不然，只有推崇“人生不享福，与草木畜生何异”的周肥那样，下来之后，根本不涉修行根本，自然轻松惬意。",
+      "可像他冯青白、陆舫这些人，十分凶险，前辈童青青，哪怕已经贵为镜心斋掌门，身为天下四大宗师之一，仍是东躲西藏了数十年，至今尚未露面，就是一个绝佳例子。",
+      "收敛杂乱思绪，冯青白开始复盘这场战事，尽可能多琢磨出些门道。",
+      "他先前一直在远远观摩这场巅峰厮杀，他山之石可以攻玉，这是修道路上的心境借势，与佛家观想之法，有异曲同工之妙。",
+      "在冯青白眼中，藕花福地的山巅之战，其实比起桐叶洲的金丹、元婴之争，并不逊色。",
+      "白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "谪仙人谪仙人，听着很是美好，实则不然，只有推崇“人生不享福，与草木畜生何异”的周肥那样，下来之后，根本不涉修行根本，自然轻松惬意。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "可像他冯青白、陆舫这些人，十分凶险，前辈童青青，哪怕已经贵为镜心斋掌门，身为天下四大宗师之一，仍是东躲西藏了数十年，至今尚未露面，就是一个绝佳例子。 白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与丁婴冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫",
+          "丁婴",
+          "俞真意"
+        ],
+        "description": "谪仙人谪仙人，听着很是美好，实则不然，只有推崇“人生不享福，与草木畜生何异”的周肥那样，下来之后，根本不涉修行根本，自然轻松惬意。 可像他冯青白、陆舫这些人，十分凶险，前辈童青青，哪怕已经贵为镜心斋掌门，身为天下四大宗师之一，仍是东躲西藏了数十年，至今尚未露面，就是一个绝佳例子。 白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "background": "",
+        "significance": "推动陆舫与丁婴之间的冲突关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "丁婴"
+        ],
+        "action": "冲突",
+        "context": "白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与丁婴冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "冲突",
+        "context": "白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与丁婴冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "丁婴"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "冲突",
+        "context": "白袍年轻人和陆舫的交手，已是如此精彩，若是正邪双方压轴的丁婴、俞真意最终出手，又是何等气象？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与丁婴冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.544146",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -91,21 +403,52 @@
         ],
         "juan_index": 316,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "冯青白原本并不看好陈平安，因为陆舫不愧是名动桐叶洲的剑仙胚子，已经在重重压制之下，在灵气稀薄的藕花福地，逆流而上，另辟蹊径，再次摸着了剑道门槛，陆舫的剑，远攻近守，不在话下。 破局的神仙手，在于那人竟然看出了陆舫必救周仕。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "江湖传闻，陆舫与周肥是不共戴天的死敌，陆舫还曾仗剑登山，在春潮宫跟陆舫有过生死战，做不得假。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与周肥敌对",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陆舫",
+          "周肥"
         ],
-        "description": "冯青白原本并不看好陈平安，因为陆舫不愧是名动桐叶洲的剑仙胚子，已经在重重压制之下，在灵气稀薄的藕花福地，逆流而上，另辟蹊径，再次摸着了剑道门槛，陆舫的剑，远攻近守，不在话下。 可是结果出人意料。 破局的神仙手，在于那人竟然看出了陆舫必救周仕。",
+        "description": "冯青白原本并不看好陈平安，因为陆舫不愧是名动桐叶洲的剑仙胚子，已经在重重压制之下，在灵气稀薄的藕花福地，逆流而上，另辟蹊径，再次摸着了剑道门槛，陆舫的剑，远攻近守，不在话下。 破局的神仙手，在于那人竟然看出了陆舫必救周仕。 江湖传闻，陆舫与周肥是不共戴天的死敌，陆舫还曾仗剑登山，在春潮宫跟陆舫有过生死战，做不得假。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与周肥之间的敌对关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -119,8 +462,91 @@
         "segment_index": 4
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "周肥"
+        ],
+        "action": "敌对",
+        "context": "江湖传闻，陆舫与周肥是不共戴天的死敌，陆舫还曾仗剑登山，在春潮宫跟陆舫有过生死战，做不得假。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与周肥敌对",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.544146",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-5-0": {
+    "juan_index": 316,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "伤势虽重，整个肩头都稀巴烂，所幸是外伤，周仕以周肥烧制的春潮宫疗伤圣药，勉强止住了血，与鸦儿并排靠在墙根下，笑容惨淡道：“我已经尽力了。",
+      "”",
+      "风流倜傥簪花郎，引来无数美娇娘尽羞赧，可惜此刻没了风流，只有落魄。",
+      "鸦儿正在竭力以一门魔教秘法压抑絮乱气机，这是魔教三门之一垂花门的武学宝典，有枯树开花之功效，传闻是垂花门某一代门主，诱骗了那一代镜心斋的圣女，得以偷窥到半部返璞真经，真经能够让人返老还童，垂花门门主可谓天纵奇才，逆推真经，化为己用，编撰了这部魔教秘典，但是后遗症巨大，使用之人，虽然能够强行压下重伤，可是会迅速衰老，加快肉身腐朽，垂花门历代枭雄，只有在没了退路的生死战中，才会使用此法。",
+      "鸦儿脸色铁青，鬓角竟然出现了丝丝白霜之色。",
+      "周仕叹息一声，若是此时递过去一把铜镜，最是自傲姿容的鸦儿姑娘，会不会直接走火入魔？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "伤势虽重，整个肩头都稀巴烂，所幸是外伤，周仕以周肥烧制的春潮宫疗伤圣药，勉强止住了血，与鸦儿并排靠在墙根下，笑容惨淡道：“我已经尽力了。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 316,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 周肥剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周肥"
+        ],
+        "description": "伤势虽重，整个肩头都稀巴烂，所幸是外伤，周仕以周肥烧制的春潮宫疗伤圣药，勉强止住了血，与鸦儿并排靠在墙根下，笑容惨淡道：“我已经尽力了。 ” 风流倜傥簪花郎，引来无数美娇娘尽羞赧，可惜此刻没了风流，只有落魄。",
+        "background": "",
+        "significance": "对应周肥在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 5
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.533532",
+    "extracted_at": "2026-03-25T17:27:38.544146",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -153,21 +579,39 @@
         ],
         "juan_index": 316,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "当陈平安站起身，手持长剑的冯青白，瘫坐在地的周仕，还有前去查看陆舫伤势的笑脸儿，同时心一紧。 陆舫将自己从墙壁中“拔”出来，轻轻落地，身形不稳，笑脸儿想要伸手搀扶，陆舫摇摇头，一伸手，将那把大椿驾驭回来，途中剑鞘合一，再次长剑拄地，陆舫一身在藕花福地可谓通天的深厚修为，跌落谷底，十拳神人擂鼓式，连绵不绝，打得体魄并不拔尖的陆舫差点魂飞魄散。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安对话",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安与陆舫对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "当陈平安站起身，手持长剑的冯青白，瘫坐在地的周仕，还有前去查看陆舫伤势的笑脸儿，同时心一紧。 周仕不知是安慰她，还是安慰自己，“放心吧，我爹很快就会赶来，到时候我安全了，你也不会死。 ”",
+        "description": "当陈平安站起身，手持长剑的冯青白，瘫坐在地的周仕，还有前去查看陆舫伤势的笑脸儿，同时心一紧。 陆舫将自己从墙壁中“拔”出来，轻轻落地，身形不稳，笑脸儿想要伸手搀扶，陆舫摇摇头，一伸手，将那把大椿驾驭回来，途中剑鞘合一，再次长剑拄地，陆舫一身在藕花福地可谓通天的深厚修为，跌落谷底，十拳神人擂鼓式，连绵不绝，打得体魄并不拔尖的陆舫差点魂飞魄散。 陆舫眼神晦暗，转头对真名钱塘的笑脸儿说道：“容我稍作休息，你陪我去喝酒。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆舫之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -181,8 +625,97 @@
         "segment_index": 6
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "对话",
+        "context": "周仕不知是安慰她，还是安慰自己，“放心吧，我爹很快就会赶来，到时候我安全了，你也不会死。 ” 远处墙根下，有把破损的琵琶，孤零零躺在地上，主人已经不知所踪，每隔一段路程，地上就会有点点滴滴的鲜血。 当陈平安站起身，手持长剑的冯青白，瘫坐在地的周仕，还有前去查看陆舫伤势的笑脸儿，同时心一紧。 陆舫将自己从墙壁中“拔”出来，轻轻落地，身形不稳，笑脸儿想要伸手搀扶，陆舫摇摇头，一伸手，将那把大椿驾驭回来，途中剑鞘合一，再次长剑拄地，陆舫一身在藕花福地可谓通天的深厚修为，跌落谷底，十拳神人擂鼓式，连绵不绝，打得体魄并不拔尖的陆舫差点魂飞魄散。 陆舫眼神晦暗，转头对真名钱塘的笑脸儿说道：“容我稍作休息，你陪我去喝酒。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安与陆舫对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.545149",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-7-0": {
+    "juan_index": 316,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "笑脸儿黯然点头。",
+      "一如初次相逢于江湖，又是那个失意人。",
+      "陆舫这次选择率先出手，除了庇护周仕，更多是为了他钱塘，笑脸儿不在天下二十人之列，来到南苑国京城之前，陆舫却说要带着他钱塘去家乡看一看，去见一见真正的御风仙人。",
+      "当时陆舫虽然言语平淡，可是那份鸟瞰峰剑仙独一份的意气飞扬，笑脸儿就是瞎子都感受得到。",
+      "两人一起离开这条街道。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫这次选择率先出手，除了庇护周仕，更多是为了他钱塘，笑脸儿不在天下二十人之列，来到南苑国京城之前，陆舫却说要带着他钱塘去家乡看一看，去见一见真正的御风仙人。 当时陆舫虽然言语平淡，可是那份鸟瞰峰剑仙独一份的意气飞扬，笑脸儿就是瞎子都感受得到。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫这次选择率先出手，除了庇护周仕，更多是为了他钱塘，笑脸儿不在天下二十人之列，来到南苑国京城之前，陆舫却说要带着他钱塘去家乡看一看，去见一见真正的御风仙人。 当时陆舫虽然言语平淡，可是那份鸟瞰峰剑仙独一份的意气飞扬，笑脸儿就是瞎子都感受得到。 ”",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 7
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.533532",
+    "extracted_at": "2026-03-25T17:27:38.545149",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -205,6 +738,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫离开之前，对着种秋抱拳致谢，然后对周仕撂下一句好自为之。 到了那间妇人沽酒的酒肆，妇人见着了偷走那把剑的汉子，一身精壮肌肉也不管用了，骂骂咧咧，陆舫好说歹说，才拎了两壶最差的酒水上桌，狠狠一摔，笑脸儿钱塘差点没忍住一巴掌拍死这长舌妇。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "陆舫离开之前，对着种秋抱拳致谢，然后对周仕撂下一句好自为之。",
@@ -220,16 +768,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋迁移",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋迁移",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "种秋"
         ],
         "description": "陆舫离开之前，对着种秋抱拳致谢，然后对周仕撂下一句好自为之。 到了那间妇人沽酒的酒肆，妇人见着了偷走那把剑的汉子，一身精壮肌肉也不管用了，骂骂咧咧，陆舫好说歹说，才拎了两壶最差的酒水上桌，狠狠一摔，笑脸儿钱塘差点没忍住一巴掌拍死这长舌妇。 陆舫从怀中摸出一支古朴小篪，递给笑脸儿，沉声道：“接下来二十年，可能要劳烦你做两件辛苦事，一是随身携带此物，找到我的转世之身，若是靠近了我，小篪就会滚烫，让你心生感应。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与种秋之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -243,8 +794,261 @@
         "segment_index": 8
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "别离",
+        "context": "陆舫离开之前，对着种秋抱拳致谢，然后对周仕撂下一句好自为之。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 316,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.545149",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-9-0": {
+    "juan_index": 316,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "“我意已决。",
+      "”",
+      "陆舫没有解释更多，“拿好小篪，喝过了这壶酒，赶紧离开南苑国。",
+      "你留在这里，只会让我死得更快。",
+      "”",
+      "笑脸儿从未见过如此郑重其事的陆舫，只得仔细收好那支小篪，点头答应下来。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫没有解释更多，“拿好小篪，喝过了这壶酒，赶紧离开南苑国。 笑脸儿从未见过如此郑重其事的陆舫，只得仔细收好那支小篪，点头答应下来。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫没有解释更多，“拿好小篪，喝过了这壶酒，赶紧离开南苑国。 笑脸儿从未见过如此郑重其事的陆舫，只得仔细收好那支小篪，点头答应下来。 “我意已决。",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 9
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.533532",
+    "extracted_at": "2026-03-25T17:27:38.545149",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-10-0": {
+    "juan_index": 316,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "喝过了闷酒，笑脸儿看了眼这位至交好友，陆舫只是淡然道：“如果真被你找到了我，什么都不用管，尤其是不要刻意传授我武学。",
+      "”",
+      "“我记下了。",
+      "”",
+      "笑脸儿再也不笑了，嗓音带着哭腔。",
+      "陆舫却没有什么悲春伤秋，默默将笑脸儿送出酒肆后，陆舫转头望向一处，嗤笑道：“可以现身了，我这颗谪仙人的头颅，凭本事拿去便是。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "喝过了闷酒，笑脸儿看了眼这位至交好友，陆舫只是淡然道：“如果真被你找到了我，什么都不用管，尤其是不要刻意传授我武学。 陆舫却没有什么悲春伤秋，默默将笑脸儿送出酒肆后，陆舫转头望向一处，嗤笑道：“可以现身了，我这颗谪仙人的头颅，凭本事拿去便是。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "喝过了闷酒，笑脸儿看了眼这位至交好友，陆舫只是淡然道：“如果真被你找到了我，什么都不用管，尤其是不要刻意传授我武学。 陆舫却没有什么悲春伤秋，默默将笑脸儿送出酒肆后，陆舫转头望向一处，嗤笑道：“可以现身了，我这颗谪仙人的头颅，凭本事拿去便是。 ”",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.545149",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-11-0": {
+    "juan_index": 316,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "拐角处走出一位身形佝偻的耄耋老人，边走边咳嗽，若是笑脸儿钱塘还留在陆舫身边，一定会认得这位风吹即倒的老者，老一辈天下十人之列的八臂神灵薛渊，二十年前被挤掉前十人，江河日下，只在后十人垫底，曾经被笑脸儿凭借身法纠缠了一年，沦为江湖笑谈。",
+      "陆舫心中叹息。",
+      "不曾想在牯牛降那边一语成谶。",
+      "俞真意当时秘密聚集群雄，点名要围剿丁婴、周肥、童青青和冯青白四位谪仙人，陆舫笑言算不算他一个，现在看来，答案很显然，未必是俞真意初衷如此，但是眼见着陆舫重伤落败，以俞真意的冷漠心性，自然不会错过这个千载难逢的机会。",
+      "“鸟瞰峰剑仙沦落到这般田地，真是让人心酸。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "拐角处走出一位身形佝偻的耄耋老人，边走边咳嗽，若是笑脸儿钱塘还留在陆舫身边，一定会认得这位风吹即倒的老者，老一辈天下十人之列的八臂神灵薛渊，二十年前被挤掉前十人，江河日下，只在后十人垫底，曾经被笑脸儿凭借身法纠缠了一年，沦为江湖笑谈。 陆舫心中叹息。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "俞真意当时秘密聚集群雄，点名要围剿丁婴、周肥、童青青和冯青白四位谪仙人，陆舫笑言算不算他一个，现在看来，答案很显然，未必是俞真意初衷如此，但是眼见着陆舫重伤落败，以俞真意的冷漠心性，自然不会错过这个千载难逢的机会。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "俞真意当时秘密聚集群雄，点名要围剿丁婴、周肥、童青青和冯青白四位谪仙人，陆舫笑言算不算他一个，现在看来，答案很显然，未必是俞真意初衷如此，但是眼见着陆舫重伤落败，以俞真意的冷漠心性，自然不会错过这个千载难逢的机会。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "俞真意当时秘密聚集群雄，点名要围剿丁婴、周肥、童青青和冯青白四位谪仙人，陆舫笑言算不算他一个，现在看来，答案很显然，未必是俞真意初衷如此，但是眼见着陆舫重伤落败，以俞真意的冷漠心性，自然不会错过这个千载难逢的机会。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与俞真意揭示",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫",
+          "俞真意",
+          "丁婴",
+          "周肥"
+        ],
+        "description": "拐角处走出一位身形佝偻的耄耋老人，边走边咳嗽，若是笑脸儿钱塘还留在陆舫身边，一定会认得这位风吹即倒的老者，老一辈天下十人之列的八臂神灵薛渊，二十年前被挤掉前十人，江河日下，只在后十人垫底，曾经被笑脸儿凭借身法纠缠了一年，沦为江湖笑谈。 陆舫心中叹息。 俞真意当时秘密聚集群雄，点名要围剿丁婴、周肥、童青青和冯青白四位谪仙人，陆舫笑言算不算他一个，现在看来，答案很显然，未必是俞真意初衷如此，但是眼见着陆舫重伤落败，以俞真意的冷漠心性，自然不会错过这个千载难逢的机会。",
+        "background": "",
+        "significance": "推动陆舫与俞真意之间的揭示关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.545149",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -267,6 +1071,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "薛渊咧嘴而笑，调侃着陆舫，老人牙齿缺了好几颗，缓缓走向酒肆，很难想象，这是种秋之前的天下外家拳第一人。 陆舫笑道：“俞真意倒是大方，舍得让你来捡人头。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "薛渊咧嘴而笑，调侃着陆舫，老人牙齿缺了好几颗，缓缓走向酒肆，很难想象，这是种秋之前的天下外家拳第一人。",
@@ -277,21 +1095,39 @@
         ],
         "juan_index": 316,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "陆舫笑道：“俞真意倒是大方，舍得让你来捡人头。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋对话",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋对话",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "陆舫",
+          "种秋",
+          "俞真意"
         ],
-        "description": "薛渊咧嘴而笑，调侃着陆舫，老人牙齿缺了好几颗，缓缓走向酒肆，很难想象，这是种秋之前的天下外家拳第一人。 如果不是亲眼所见，老夫万万不敢相信。 ”",
+        "description": "薛渊咧嘴而笑，调侃着陆舫，老人牙齿缺了好几颗，缓缓走向酒肆，很难想象，这是种秋之前的天下外家拳第一人。 陆舫笑道：“俞真意倒是大方，舍得让你来捡人头。 如果不是亲眼所见，老夫万万不敢相信。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与种秋之间的对话关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -305,8 +1141,644 @@
         "segment_index": 12
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "讥讽",
+        "context": "薛渊咧嘴而笑，调侃着陆舫，老人牙齿缺了好几颗，缓缓走向酒肆，很难想象，这是种秋之前的天下外家拳第一人。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "对话",
+        "context": "陆舫笑道：“俞真意倒是大方，舍得让你来捡人头。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.546153",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-13-0": {
+    "juan_index": 316,
+    "segment_index": 13,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "陆舫冷笑道：“大剑仙？",
+      "你见过？",
+      "你配吗？",
+      "”",
+      "薛渊还是笑呵呵道：“不配不配，陆大剑仙说什么就是什么。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫冷笑道：“大剑仙？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 316,
+        "segment_index": 13
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫冷笑道：“大剑仙？ ” 你见过？",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段13",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 13
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.534535",
+    "extracted_at": "2026-03-25T17:27:38.546153",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-14-0": {
+    "juan_index": 316,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "陆舫眼神充满了讥讽。",
+      "薛渊对上了陆舫的视线，摇摇头，随着这位八臂神灵一抖背脊，如蛟龙抬头，薛渊气势浑然一变，这才是曾经跻身天下十人该有的宗师气度，薛渊脸色变得阴沉恐怖，勃然大怒，言语之间充满了积怨和愤懑，“你们这些高高在上的谪仙人，全部该死！",
+      "对，就是你陆舫现在的这种眼神，哪怕明明掉毛凤凰不如鸡了，看待天下所有人，还都是这样，看待蝼蚁一般！",
+      "”",
+      "陆舫不置可否。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫眼神充满了讥讽。 薛渊对上了陆舫的视线，摇摇头，随着这位八臂神灵一抖背脊，如蛟龙抬头，薛渊气势浑然一变，这才是曾经跻身天下十人该有的宗师气度，薛渊脸色变得阴沉恐怖，勃然大怒，言语之间充满了积怨和愤懑，“你们这些高高在上的谪仙人，全部该死！",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫眼神充满了讥讽。 薛渊对上了陆舫的视线，摇摇头，随着这位八臂神灵一抖背脊，如蛟龙抬头，薛渊气势浑然一变，这才是曾经跻身天下十人该有的宗师气度，薛渊脸色变得阴沉恐怖，勃然大怒，言语之间充满了积怨和愤懑，“你们这些高高在上的谪仙人，全部该死！ 对，就是你陆舫现在的这种眼神，哪怕明明掉毛凤凰不如鸡了，看待天下所有人，还都是这样，看待蝼蚁一般！",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.546153",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-16-0": {
+    "juan_index": 316,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "沽酒妇人尖声大叫起来，酒肆客人嚷嚷着杀人了杀人了，鸟兽散。",
+      "没了薛渊阻挡视线，那人是一位翩翩公子哥，正是从金刚寺赶来的周肥。",
+      "周肥手中还拎着一颗死不瞑目的头颅，向前一抛，丢在了陆舫身前，头颅滚动，鲜血淋漓。",
+      "竟是笑脸儿钱塘。",
+      "周肥又随手丢出那支小篪。",
+      "陆舫缓缓蹲下身，轻轻在那颗脑袋的面容上轻轻一抹，让好友闭上眼睛，呆呆望着笑脸儿，陆舫没有去看周肥，也没有捡起那支小篪，只是颤声问道：“为什么？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "没了薛渊阻挡视线，那人是一位翩翩公子哥，正是从金刚寺赶来的周肥。 周肥手中还拎着一颗死不瞑目的头颅，向前一抛，丢在了陆舫身前，头颅滚动，鲜血淋漓。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "周肥手中还拎着一颗死不瞑目的头颅，向前一抛，丢在了陆舫身前，头颅滚动，鲜血淋漓。 陆舫缓缓蹲下身，轻轻在那颗脑袋的面容上轻轻一抹，让好友闭上眼睛，呆呆望着笑脸儿，陆舫没有去看周肥，也没有捡起那支小篪，只是颤声问道：“为什么？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与周肥对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫",
+          "周肥"
+        ],
+        "description": "没了薛渊阻挡视线，那人是一位翩翩公子哥，正是从金刚寺赶来的周肥。 周肥手中还拎着一颗死不瞑目的头颅，向前一抛，丢在了陆舫身前，头颅滚动，鲜血淋漓。 周肥又随手丢出那支小篪。",
+        "background": "",
+        "significance": "推动陆舫与周肥之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 16
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "周肥"
+        ],
+        "action": "对话",
+        "context": "陆舫缓缓蹲下身，轻轻在那颗脑袋的面容上轻轻一抹，让好友闭上眼睛，呆呆望着笑脸儿，陆舫没有去看周肥，也没有捡起那支小篪，只是颤声问道：“为什么？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与周肥对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.546153",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-17-0": {
+    "juan_index": 316,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "周肥沉默片刻，答非所问，“什么时候，陆舫成了一个拖泥带水的废物？",
+      "来这里，是为了破情关，结果到头来看破勘不破，这也就罢了，大不了无功而返，最后连一颗比陌生人好不到哪里去的死人脑袋，拿不起，放不下，陆舫，你就算回了桐叶洲，别说跻身上五境，我坚信你连元婴境都待不住！",
+      "”",
+      "周肥蹲下身，“你自己说说看，来这一遭，图什么？",
+      "老子堂堂玉圭宗姜氏家主，陪着你在这藕花福地，耗费这么多年光阴，又图什么？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "周肥沉默片刻，答非所问，“什么时候，陆舫成了一个拖泥带水的废物？ 周肥蹲下身，“你自己说说看，来这一遭，图什么？",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "周肥沉默片刻，答非所问，“什么时候，陆舫成了一个拖泥带水的废物？ 来这里，是为了破情关，结果到头来看破勘不破，这也就罢了，大不了无功而返，最后连一颗比陌生人好不到哪里去的死人脑袋，拿不起，放不下，陆舫，你就算回了桐叶洲，别说跻身上五境，我坚信你连元婴境都待不住！",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 周肥与陆舫剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周肥",
+          "陆舫"
+        ],
+        "description": "周肥沉默片刻，答非所问，“什么时候，陆舫成了一个拖泥带水的废物？ 来这里，是为了破情关，结果到头来看破勘不破，这也就罢了，大不了无功而返，最后连一颗比陌生人好不到哪里去的死人脑袋，拿不起，放不下，陆舫，你就算回了桐叶洲，别说跻身上五境，我坚信你连元婴境都待不住！ 周肥蹲下身，“你自己说说看，来这一遭，图什么？",
+        "background": "",
+        "significance": "推动周肥与陆舫之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.546153",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-18-0": {
+    "juan_index": 316,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "不知何时，佩剑大椿在陆舫脚边安安静静搁着，加上一支小篪和一颗头颅，都躺在这条街面上。",
+      "周肥身后远处，站着那些倾国倾城的绝色美人，有人身段纤细像杨柳，有人体态丰盈得像是秋天的饱满稻谷。",
+      "陆舫抬起头，“怎么不先去找周仕？",
+      "”",
+      "周肥气笑道：“儿子死了，再生便是。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "不知何时，佩剑大椿在陆舫脚边安安静静搁着，加上一支小篪和一颗头颅，都躺在这条街面上。 陆舫抬起头，“怎么不先去找周仕？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "周肥身后远处，站着那些倾国倾城的绝色美人，有人身段纤细像杨柳，有人体态丰盈得像是秋天的饱满稻谷。 周肥气笑道：“儿子死了，再生便是。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与周肥对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫",
+          "周肥"
+        ],
+        "description": "不知何时，佩剑大椿在陆舫脚边安安静静搁着，加上一支小篪和一颗头颅，都躺在这条街面上。 周肥身后远处，站着那些倾国倾城的绝色美人，有人身段纤细像杨柳，有人体态丰盈得像是秋天的饱满稻谷。 陆舫抬起头，“怎么不先去找周仕？",
+        "background": "",
+        "significance": "推动陆舫与周肥之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 18
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "周肥"
+        ],
+        "action": "对话",
+        "context": "” 不知何时，佩剑大椿在陆舫脚边安安静静搁着，加上一支小篪和一颗头颅，都躺在这条街面上。 周肥身后远处，站着那些倾国倾城的绝色美人，有人身段纤细像杨柳，有人体态丰盈得像是秋天的饱满稻谷。 陆舫抬起头，“怎么不先去找周仕？ ” 周肥气笑道：“儿子死了，再生便是。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与周肥对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.546153",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-19-0": {
+    "juan_index": 316,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "可你陆舫死在藕花福地，我难道再浪费六十年光阴？",
+      "”",
+      "周肥站起身，招了招手，将一位风韵犹存的美妇人喊到身边，“去，陪你这位当年最敬重仰慕的陆师兄喝喝酒，这么多年没见了，你们一定会有很多的话要讲。",
+      "”",
+      "妇人脸色发白。",
+      "周肥拍了拍她的脸颊，“乖，听话。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "可你陆舫死在藕花福地，我难道再浪费六十年光阴？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 316,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "周肥站起身，招了招手，将一位风韵犹存的美妇人喊到身边，“去，陪你这位当年最敬重仰慕的陆师兄喝喝酒，这么多年没见了，你们一定会有很多的话要讲。 周肥拍了拍她的脸颊，“乖，听话。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 周肥与陆舫剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周肥",
+          "陆舫"
+        ],
+        "description": "可你陆舫死在藕花福地，我难道再浪费六十年光阴？ 周肥站起身，招了招手，将一位风韵犹存的美妇人喊到身边，“去，陪你这位当年最敬重仰慕的陆师兄喝喝酒，这么多年没见了，你们一定会有很多的话要讲。 周肥拍了拍她的脸颊，“乖，听话。",
+        "background": "",
+        "significance": "推动周肥与陆舫之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.547156",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "316-20-0": {
+    "juan_index": 316,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十五章 他人争渡我破境",
+    "source_sentences": [
+      "”",
+      "地面一震，周肥身形消逝不见。",
+      "那些女子如振翅而飞的鸟雀，纷纷掠空而去，衣袂飘飘，彩带当空，这一幕旖旎风景，看得附近街道的行人如痴如醉。",
+      "陆舫站起身，对着那位面容陌生又熟悉的女子，说道：“坐下聊？",
+      "”",
+      "妇人战战兢兢，点点头。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "地面一震，周肥身形消逝不见。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 316,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫站起身，对着那位面容陌生又熟悉的女子，说道：“坐下聊？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 周肥与陆舫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周肥",
+          "陆舫"
+        ],
+        "description": "地面一震，周肥身形消逝不见。 陆舫站起身，对着那位面容陌生又熟悉的女子，说道：“坐下聊？ ”",
+        "background": "",
+        "significance": "推动周肥与陆舫之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 20
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "周肥"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "对话",
+        "context": "” 地面一震，周肥身形消逝不见。 那些女子如振翅而飞的鸟雀，纷纷掠空而去，衣袂飘飘，彩带当空，这一幕旖旎风景，看得附近街道的行人如痴如醉。 陆舫站起身，对着那位面容陌生又熟悉的女子，说道：“坐下聊？ ” 妇人战战兢兢，点点头。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 周肥与陆舫对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.547156",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -329,6 +1801,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "两人对坐，酒肆老板娘躲在柜台后边蹲着，陆舫就去自己拿了两壶酒，不等陆舫倒酒，在春潮宫待了这么多年，早已习惯了伺候人的妇人，赶紧起身为陆舫斟酒，之后才给自己倒了一碗。 陆舫没有看那张曾经令人心碎的容颜，只是瞥了眼那双保养如少女的青葱玉手，他端起酒碗，笑了笑。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "种秋眼中只有那个白袍年轻人，开口说道：“你我交手之时，不会有人插手，所以你只管全心全意出拳。",
@@ -344,16 +1832,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋对话",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "种秋"
         ],
-        "description": "种秋眼中只有那个白袍年轻人，开口说道：“你我交手之时，不会有人插手，所以你只管全心全意出拳。 两人对坐，酒肆老板娘躲在柜台后边蹲着，陆舫就去自己拿了两壶酒，不等陆舫倒酒，在春潮宫待了这么多年，早已习惯了伺候人的妇人，赶紧起身为陆舫斟酒，之后才给自己倒了一碗。 陆舫没有看那张曾经令人心碎的容颜，只是瞥了眼那双保养如少女的青葱玉手，他端起酒碗，笑了笑。",
+        "description": "两人对坐，酒肆老板娘躲在柜台后边蹲着，陆舫就去自己拿了两壶酒，不等陆舫倒酒，在春潮宫待了这么多年，早已习惯了伺候人的妇人，赶紧起身为陆舫斟酒，之后才给自己倒了一碗。 陆舫没有看那张曾经令人心碎的容颜，只是瞥了眼那双保养如少女的青葱玉手，他端起酒碗，笑了笑。 妇人微微松口气，想了想，又起身去酒肆外边的街上，帮着陆舫取回了那支小篪和大椿剑，就连笑脸儿的头颅，也被她拿起，只是放在了酒肆另外一张桌上，落座后，她这才嫣然一笑。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与种秋之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -367,8 +1858,34 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.534535",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "对话",
+        "context": "两人对坐，酒肆老板娘躲在柜台后边蹲着，陆舫就去自己拿了两壶酒，不等陆舫倒酒，在春潮宫待了这么多年，早已习惯了伺候人的妇人，赶紧起身为陆舫斟酒，之后才给自己倒了一碗。 陆舫没有看那张曾经令人心碎的容颜，只是瞥了眼那双保养如少女的青葱玉手，他端起酒碗，笑了笑。 妇人微微松口气，想了想，又起身去酒肆外边的街上，帮着陆舫取回了那支小篪和大椿剑，就连笑脸儿的头颅，也被她拿起，只是放在了酒肆另外一张桌上，落座后，她这才嫣然一笑。 陆舫一手端着酒碗，转头望向空落落的街道。 好像看到了一双天作之合的少年少女，在追逐打闹。 种秋眼中只有那个白袍年轻人，开口说道：“你我交手之时，不会有人插手，所以你只管全心全意出拳。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陆舫与种秋对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.547156",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -405,6 +1922,32 @@
       },
       {
         "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 316,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 316,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安抬起手背，擦了擦嘴角血迹，胳膊上露出一道伤口，可见森森白骨，为了挡住陆舫那一剑，雪白长袍的袖子，被撕裂出一条大口子，这是金醴法袍第一次破损，虽说被禁锢了法宝功效，但是韧性还在，足可见陆舫剑术的上乘杀力。",
@@ -415,23 +1958,39 @@
         ],
         "juan_index": 316,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陈平安抬起手背，擦了擦嘴角血迹，胳膊上露出一道伤口，可见森森白骨，为了挡住陆舫那一剑，雪白长袍的袖子，被撕裂出一条大口子，这是金醴法袍第一次破损，虽说被禁锢了法宝功效，但是韧性还在，足可见陆舫剑术的上乘杀力。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 316,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陈平安冲突",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与丁婴冲突",
         "time": null,
         "location": null,
         "participants": [
           "种秋",
-          "陈平安"
+          "丁婴",
+          "俞真意"
         ],
         "description": "种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。 陈平安抬起手背，擦了擦嘴角血迹，胳膊上露出一道伤口，可见森森白骨，为了挡住陆舫那一剑，雪白长袍的袖子，被撕裂出一条大口子，这是金醴法袍第一次破损，虽说被禁锢了法宝功效，但是韧性还在，足可见陆舫剑术的上乘杀力。 种秋说完之后，就开始向前走去。",
         "background": "",
-        "significance": "推动种秋与陈平安之间的冲突关系。",
+        "significance": "推动种秋与丁婴之间的冲突关系。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段22",
         "sentence_indexes_in_segment": [
@@ -453,27 +2012,62 @@
           "种秋"
         ],
         "to_roles": [
-          "陈平安"
+          "丁婴"
         ],
         "action": "冲突",
-        "context": "” 种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。 ” 陈平安抬起手背，擦了擦嘴角血迹，胳膊上露出一道伤口，可见森森白骨，为了挡住陆舫那一剑，雪白长袍的袖子，被撕裂出一条大口子，这是金醴法袍第一次破损，虽说被禁锢了法宝功效，但是韧性还在，足可见陆舫剑术的上乘杀力。 种秋说完之后，就开始向前走去。 看似步伐缓慢，其实一步飘出两三丈，而且没有丝毫的气机波动。",
+        "context": "种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。",
         "result": null,
-        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陈平安冲突",
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与丁婴冲突",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
+        ],
+        "juan_index": 316,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "冲突",
+        "context": "种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与丁婴冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 316,
+        "segment_index": 22
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "丁婴"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "冲突",
+        "context": "种秋补充了一句，“如果有人依然对你暗中出手，我种秋肯定拼死杀之，不管是丁婴，还是俞真意。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与丁婴冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
         ],
         "juan_index": 316,
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.534535",
+    "extracted_at": "2026-03-25T17:27:38.547156",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -511,6 +2105,19 @@
       },
       {
         "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "丁婴看轻天下武人，却对种秋青眼相加，当然有其理由。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 316,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安站在原地，纹丝不动。",
@@ -526,16 +2133,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与丁婴剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "种秋",
+          "丁婴",
           "陈平安"
         ],
         "description": "种秋是南苑国国师，更是书画俱佳的名士。 种秋两者皆是。 丁婴看轻天下武人，却对种秋青眼相加，当然有其理由。",
         "background": "",
-        "significance": "推动种秋与陈平安之间的剧情推进关系。",
+        "significance": "推动种秋与丁婴之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段23",
         "sentence_indexes_in_segment": [
@@ -551,7 +2159,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.535540",
+    "extracted_at": "2026-03-25T17:27:38.547156",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -584,6 +2192,20 @@
           3,
           4,
           5
+        ],
+        "juan_index": 316,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "种秋的“闲庭信步”，让他想起了当初丁婴迈入白河寺大殿的场景。 但是丁婴和种秋这种天人合一的独到意味，第一次，陈平安感触不深，第二次，就有了嚼劲，尝出了些许味道。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          3
         ],
         "juan_index": 316,
         "segment_index": 24
@@ -630,14 +2252,13 @@
         "participants": [
           "陈平安",
           "魏檗",
-          "种秋"
+          "种秋",
+          "丁婴"
         ],
         "description": "种秋的“闲庭信步”，让他想起了当初丁婴迈入白河寺大殿的场景。 落魄山竹楼的老人，那种无敌之姿，陈平安只可粗略意会几分，实在是修为悬殊，双方距离太远，陈平安琢磨不透其中宗旨。 崔姓老人武道太高，虽然不是对陈平安拔苗助长，但是陈平安在跻身四境后的每一境攀爬，具体到每一步的行走，反而裨益不大。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -651,34 +2272,8 @@
         "segment_index": 24
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "种秋"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "敌对",
-        "context": "种秋的“闲庭信步”，让他想起了当初丁婴迈入白河寺大殿的场景。 落魄山竹楼的老人，那种无敌之姿，陈平安只可粗略意会几分，实在是修为悬殊，双方距离太远，陈平安琢磨不透其中宗旨。 崔姓老人武道太高，虽然不是对陈平安拔苗助长，但是陈平安在跻身四境后的每一境攀爬，具体到每一步的行走，反而裨益不大。 但是丁婴和种秋这种天人合一的独到意味，第一次，陈平安感触不深，第二次，就有了嚼劲，尝出了些许味道。 种秋就这样简简单单地迎面而来，没有粉金刚马宣那种气势汹汹，没有笑脸儿的诡谲阴险，更没有冯青白那刺杀一剑的一往无前和锋芒毕露。 种秋不易察觉的双肩微晃，他一袭青衫，肩头的玄妙，如古松侧的行云掠过。",
-        "result": null,
-        "event_name": "落魄山起势",
-        "location": "落魄山",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 316,
-        "segment_index": 24
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.535540",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.548160",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -759,7 +2354,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.535540",
+    "extracted_at": "2026-03-25T17:27:38.548160",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -806,6 +2401,19 @@
         ],
         "juan_index": 316,
         "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "打那陆舫的十拳，你大概是可以确定陆舫必死无疑，所以期间故意左右拳互换，左六右四，想来是那会儿就开始准备下一场大战了吧？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 26
       }
     ],
     "locations": [],
@@ -816,14 +2424,13 @@
         "location": null,
         "participants": [
           "种秋",
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
         "description": "种秋依然一手负后，淡然道：“分心可要不得。 陈平安左手攥紧又松开，好似被雷劈中的手心酥麻感觉，这才一扫而空。 种秋笑道：“你这家伙，也太聪明了，如果没有这一试探，我都不敢确定你是不是左撇子。",
         "background": "",
         "significance": "推动种秋与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -837,34 +2444,8 @@
         "segment_index": 26
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "种秋"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "身形一拧，两只雪白大袖在空中翻摇，重新站定在三丈外。 种秋依然一手负后，淡然道：“分心可要不得。 ” 陈平安左手攥紧又松开，好似被雷劈中的手心酥麻感觉，这才一扫而空。 种秋笑道：“你这家伙，也太聪明了，如果没有这一试探，我都不敢确定你是不是左撇子。 打那陆舫的十拳，你大概是可以确定陆舫必死无疑，所以期间故意左右拳互换，左六右四，想来是那会儿就开始准备下一场大战了吧？",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 316,
-        "segment_index": 26
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.535540",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.548160",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -913,21 +2494,34 @@
         ],
         "juan_index": 316,
         "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "种秋不以为意，“之所以拗着自己的心性，与你说这些有的没的，是因为先前为了救下陆舫，我那一拳很不厚道，所以刚才你分心，我是手下留情了的，并未痛下杀手，接下来，可就不跟你客气了。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 27
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安与种秋对话",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陆舫对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "种秋"
+          "种秋",
+          "陆舫"
         ],
         "description": "陈平安没有说话。 种秋不以为意，“之所以拗着自己的心性，与你说这些有的没的，是因为先前为了救下陆舫，我那一拳很不厚道，所以刚才你分心，我是手下留情了的，并未痛下杀手，接下来，可就不跟你客气了。 种秋转头对冯青白他们说道：“板凳上那个小丫头，谁都不要动她，不然别怪我滥杀无辜……”",
         "background": "",
-        "significance": "推动陈平安与种秋之间的对话关系。",
+        "significance": "推动种秋与陆舫之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -948,30 +2542,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
           "种秋"
         ],
-        "action": "对话",
-        "context": "” 陈平安没有说话。 种秋不以为意，“之所以拗着自己的心性，与你说这些有的没的，是因为先前为了救下陆舫，我那一拳很不厚道，所以刚才你分心，我是手下留情了的，并未痛下杀手，接下来，可就不跟你客气了。 ” 种秋转头对冯青白他们说道：“板凳上那个小丫头，谁都不要动她，不然别怪我滥杀无辜……” 陈平安转瞬即至种秋身后，抡大臂，然后骤然抖小臂，一拳劲出如箭矢，打在种秋后脑勺上。",
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "守护",
+        "context": "种秋不以为意，“之所以拗着自己的心性，与你说这些有的没的，是因为先前为了救下陆舫，我那一拳很不厚道，所以刚才你分心，我是手下留情了的，并未痛下杀手，接下来，可就不跟你客气了。",
         "result": null,
-        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安与种秋对话",
+        "event_name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 种秋与陆舫对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 316,
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.535540",
+    "extracted_at": "2026-03-25T17:27:38.548160",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1052,7 +2641,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.548160",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1085,20 +2674,34 @@
         ],
         "juan_index": 316,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "比起之前陈平安跟陆舫那一战的惊天动地，截然相反。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 29
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十五章 他人争渡我破境 · 陈平安与陆舫剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
         "description": "比起之前陈平安跟陆舫那一战的惊天动地，截然相反。 两人几乎同时对冲。 经常是方寸之地，双方拳头要么相互落空，或是看似蜻蜓点水地互换一拳，这场架，打得竟是无声无息。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆舫之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十五章 他人争渡我破境 · 段29",
         "sentence_indexes_in_segment": [
@@ -1114,7 +2717,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.549193",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1166,6 +2769,20 @@
         ],
         "juan_index": 316,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "种秋一步跨过被陆舫一剑划出的沟壑。 陈平安却没有像先前琵琶女、陆舫那样一蹶不振，抖肩振衣，被后背撞碎的墙壁石块，哗啦啦落下，陈平安正要有所动作，种秋出拳蓦然变快了极多，一拳至，拳拳至，刹那之间就是十拳。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 316,
+        "segment_index": 30
       }
     ],
     "locations": [],
@@ -1176,7 +2793,8 @@
         "location": null,
         "participants": [
           "种秋",
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
         "description": "种秋曾经只用一拳，就打得一位横炼宗师在病床上躺了数年之久，衣衫之下，肌肤如瓷器碎裂，更别提内里的五脏六腑。 小板凳上的枯瘦小女孩，听到那个教书先生的言语后，如获大赦，笑逐颜开，这会儿没心没肺地张牙舞爪，学着陈平安和种秋出拳。 陈平安被刁钻一肘撇开自己拳头，给种秋一掌推在胸口，身形跃过沟壑，撞在对面那堵墙壁上。",
         "background": "",
@@ -1196,7 +2814,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.549193",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1301,7 +2919,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.549193",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1380,7 +2998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.549193",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1486,7 +3104,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.550166",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1591,7 +3209,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.536544",
+    "extracted_at": "2026-03-25T17:27:38.550166",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1688,7 +3306,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.537547",
+    "extracted_at": "2026-03-25T17:27:38.550166",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1752,7 +3370,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.537547",
+    "extracted_at": "2026-03-25T17:27:38.550166",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1790,6 +3408,19 @@
       },
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "与陆舫为敌之前，拳法做到了收放自如。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 316,
+        "segment_index": 38
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "但是与种秋搏杀之后，心境也补上了一补。 尤其在学了种秋的大拳架后，并且记起了“校大龙”后，陈平安便心弦一动，念头一起，不由自主地以最初的撼山拳六步走桩，径直向前，拳意是收是放，已经全然不在意，不知不觉中，步步凌空。",
@@ -1813,7 +3444,7 @@
           "种秋",
           "陈平安"
         ],
-        "description": "陈平安当时看得津津有味，事后却未深思。 直到今天这一刻，莫名其妙给人堵在这边，一场场接连不断的厮杀，身陷重围，几乎是必死之境，陈平安蓦然开了窍。 但是与种秋搏杀之后，心境也补上了一补。",
+        "description": "陈平安当时看得津津有味，事后却未深思。 直到今天这一刻，莫名其妙给人堵在这边，一场场接连不断的厮杀，身陷重围，几乎是必死之境，陈平安蓦然开了窍。 与陆舫为敌之前，拳法做到了收放自如。",
         "background": "",
         "significance": "推动种秋与陈平安之间的冲突关系。",
         "related_action_indices": [
@@ -1854,7 +3485,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.537547",
+    "extracted_at": "2026-03-25T17:27:38.550166",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1933,7 +3564,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.537547",
+    "extracted_at": "2026-03-25T17:27:38.551170",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1989,7 +3620,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.537547",
+    "extracted_at": "2026-03-25T17:27:38.551170",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

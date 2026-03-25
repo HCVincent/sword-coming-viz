@@ -44,6 +44,21 @@
         ],
         "juan_index": 212,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "回过神，陆沉抬起手臂，随后一抓，从鲲船御风离开的贺小凉，竟然直接被他从滔滔云海之中，“捞”了出来，哪怕是贺小凉这样的金丹境练气士，千万里路途的转瞬即至，都觉得头晕目眩，踉跄一下，才站稳身形。 贺小凉肃容，正衣襟，定心湖凝神魂，后退三步，伏地叩拜，“弟子贺小凉，拜见师父。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -91,14 +106,15 @@
         "participants": [
           "顾璨",
           "陈平安",
-          "齐静春",
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "龙泉小镇，一座已经弃而不用的老旧学塾内，头顶莲花冠的年轻道人，独自坐在一张小书桌后，望向齐静春站了一甲子的那个位置，道人沉默不言，手指下意识在桌面上轻轻划来抹去。 回过神，陆沉抬起手臂，随后一抓，从鲲船御风离开的贺小凉，竟然直接被他从滔滔云海之中，“捞”了出来，哪怕是贺小凉这样的金丹境练气士，千万里路途的转瞬即至，都觉得头晕目眩，踉跄一下，才站稳身形。 陆沉点点头，抬手示意贺小凉可以起身，“起来吧，在贫道门下，不用拘泥拜师仪轨，心意到了就行。",
+        "description": "龙泉小镇，一座已经弃而不用的老旧学塾内，头顶莲花冠的年轻道人，独自坐在一张小书桌后，望向齐静春站了一甲子的那个位置，道人沉默不言，手指下意识在桌面上轻轻划来抹去。 回过神，陆沉抬起手臂，随后一抓，从鲲船御风离开的贺小凉，竟然直接被他从滔滔云海之中，“捞”了出来，哪怕是贺小凉这样的金丹境练气士，千万里路途的转瞬即至，都觉得头晕目眩，踉跄一下，才站稳身形。 贺小凉肃容，正衣襟，定心湖凝神魂，后退三步，伏地叩拜，“弟子贺小凉，拜见师父。",
         "background": "",
         "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段1",
         "sentence_indexes_in_segment": [
@@ -117,30 +133,45 @@
       {
         "time": null,
         "from_roles": [
-          "齐静春"
-        ],
-        "to_roles": [
           "陆沉"
         ],
-        "action": "师承",
-        "context": "龙泉小镇，一座已经弃而不用的老旧学塾内，头顶莲花冠的年轻道人，独自坐在一张小书桌后，望向齐静春站了一甲子的那个位置，道人沉默不言，手指下意识在桌面上轻轻划来抹去。 回过神，陆沉抬起手臂，随后一抓，从鲲船御风离开的贺小凉，竟然直接被他从滔滔云海之中，“捞”了出来，哪怕是贺小凉这样的金丹境练气士，千万里路途的转瞬即至，都觉得头晕目眩，踉跄一下，才站稳身形。 贺小凉肃容，正衣襟，定心湖凝神魂，后退三步，伏地叩拜，“弟子贺小凉，拜见师父。 ” 从一洲道统的玉女，一跃成为道家一教教主的嫡传弟子，无异于鲤鱼跳龙门。 陆沉点点头，抬手示意贺小凉可以起身，“起来吧，在贫道门下，不用拘泥拜师仪轨，心意到了就行。",
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "别离",
+        "context": "回过神，陆沉抬起手臂，随后一抓，从鲲船御风离开的贺小凉，竟然直接被他从滔滔云海之中，“捞”了出来，哪怕是贺小凉这样的金丹境练气士，千万里路途的转瞬即至，都觉得头晕目眩，踉跄一下，才站稳身形。",
         "result": null,
         "event_name": "顾璨离开小镇",
         "location": "龙泉",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
+          1
+        ],
+        "juan_index": 212,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "师承",
+        "context": "陆沉点点头，抬手示意贺小凉可以起身，“起来吧，在贫道门下，不用拘泥拜师仪轨，心意到了就行。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 212,
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.081372",
+    "extracted_at": "2026-03-25T17:27:37.971439",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -206,7 +237,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.081372",
+    "extracted_at": "2026-03-25T17:27:37.971439",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -238,6 +269,20 @@
         "power": "道家",
         "sentence_indexes_in_segment": [
           4
+        ],
+        "juan_index": 212,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。 而你贺小凉，则是贫道挑中的人选，因为你的道心，与贫道当初的修行历程很像，破开迷障，直指本心。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4,
+          5
         ],
         "juan_index": 212,
         "segment_index": 3
@@ -294,6 +339,7 @@
         "coordinates": null,
         "related_entities": [
           "陆沉",
+          "贺小凉",
           "谢实",
           "李希圣",
           "马苦玄"
@@ -307,18 +353,18 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
           "陆沉",
+          "贺小凉",
           "谢实",
-          "李希圣",
-          "马苦玄"
+          "李希圣"
         ],
-        "description": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。 所以我说每句话，你都得小心琢磨、仔细掂量？ 那你就错了，过犹不及，不好，你这趟之所以能够成为贫道的嫡传，在于你连过了三座扪心关，第一，察觉到了贫道的算计，当机立断，赶紧回溯追问自己的本心，拨开了‘天作之合’的假象，抓住了‘缘浅’的真相。",
+        "description": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。 而你贺小凉，则是贫道挑中的人选，因为你的道心，与贫道当初的修行历程很像，破开迷障，直指本心。 所以我说每句话，你都得小心琢磨、仔细掂量？",
         "background": "",
-        "significance": "在大骊推动陆沉与谢实之间的对话线。",
+        "significance": "在大骊推动陆沉与贺小凉之间的对话线。",
         "related_action_indices": [
           0,
           1,
@@ -347,12 +393,32 @@
           "陆沉"
         ],
         "to_roles": [
+          "贺小凉"
+        ],
+        "action": "对话",
+        "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
           "谢实"
         ],
         "action": "对话",
         "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
         "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -372,7 +438,7 @@
         "action": "对话",
         "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
         "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -384,15 +450,35 @@
       {
         "time": null,
         "from_roles": [
-          "陆沉"
+          "贺小凉"
         ],
         "to_roles": [
-          "马苦玄"
+          "谢实"
         ],
         "action": "对话",
         "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
         "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 3
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -412,47 +498,7 @@
         "action": "对话",
         "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
         "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 212,
-        "segment_index": 3
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "谢实"
-        ],
-        "to_roles": [
-          "马苦玄"
-        ],
-        "action": "对话",
-        "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 212,
-        "segment_index": 3
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "李希圣"
-        ],
-        "to_roles": [
-          "马苦玄"
-        ],
-        "action": "对话",
-        "context": "陆沉伸出手指点了点贺小凉，微笑道：“你要知道，这次谢实跟大骊讨要三人，李希圣且不去说他，马苦玄是我二师兄挑中的幸运儿，一老一小，臭味相投，至于有没有其它内幕，道统内自有规矩，不许师兄弟三人之间相互推衍演算。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实在大骊对话",
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在大骊对话",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -462,7 +508,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.081372",
+    "extracted_at": "2026-03-25T17:27:37.971439",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -485,6 +531,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "所以说，这就是堂堂正正的阳谋，你贺小凉以后能不能在俱芦洲站稳脚跟，好好活到最后，只看你自己的能耐，贫道远去青冥天下之后，不会刻意照拂弟子，儒家圣人们不会故意坑害于你，而且你还有一位在中土神洲云游的师兄，以及在长剑长城那边历练的师姐，真出了事情，你可以找他们帮忙，既然你们如今已是同道中人，有了同门之谊……就要给贫道这个当师傅的，争一口气嘛。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -502,16 +561,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陆沉对话",
         "time": null,
         "location": null,
         "participants": [
+          "贺小凉",
           "陆沉"
         ],
-        "description": "说到这里，陆沉微笑道：“放心，贫道可不是你在神诰宗的师父，不会要你做什么双修道侣。 所以比你想象中的什么棋子傀儡，什么道家在这座天下百家之争的布局，要简单得多，贫道只是看你顺眼，便选你做弟子了。 ”",
+        "description": "所以说，这就是堂堂正正的阳谋，你贺小凉以后能不能在俱芦洲站稳脚跟，好好活到最后，只看你自己的能耐，贫道远去青冥天下之后，不会刻意照拂弟子，儒家圣人们不会故意坑害于你，而且你还有一位在中土神洲云游的师兄，以及在长剑长城那边历练的师姐，真出了事情，你可以找他们帮忙，既然你们如今已是同道中人，有了同门之谊……就要给贫道这个当师傅的，争一口气嘛。 说到这里，陆沉微笑道：“放心，贫道可不是你在神诰宗的师父，不会要你做什么双修道侣。 所以比你想象中的什么棋子傀儡，什么道家在这座天下百家之争的布局，要简单得多，贫道只是看你顺眼，便选你做弟子了。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动贺小凉与陆沉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -525,8 +587,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.081372",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "师承",
+        "context": "所以比你想象中的什么棋子傀儡，什么道家在这座天下百家之争的布局，要简单得多，贫道只是看你顺眼，便选你做弟子了。 ” “你真以为文庙里那些老头子，不会死死盯着贫道的一举一动？ 所以说，这就是堂堂正正的阳谋，你贺小凉以后能不能在俱芦洲站稳脚跟，好好活到最后，只看你自己的能耐，贫道远去青冥天下之后，不会刻意照拂弟子，儒家圣人们不会故意坑害于你，而且你还有一位在中土神洲云游的师兄，以及在长剑长城那边历练的师姐，真出了事情，你可以找他们帮忙，既然你们如今已是同道中人，有了同门之谊……就要给贫道这个当师傅的，争一口气嘛。 ” 说到这里，陆沉微笑道：“放心，贫道可不是你在神诰宗的师父，不会要你做什么双修道侣。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陆沉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.971439",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -547,6 +635,19 @@
       "你会不会以为马苦玄、魏晋、宋长镜之流，就是最顶尖的天之骄子啦？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉又变成了那个气质清凉的貌美道姑，大道之外皆是身外物。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 212,
+        "segment_index": 5
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -605,18 +706,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与马苦玄剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陆沉剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "贺小凉",
           "陆沉",
           "马苦玄",
-          "魏晋",
-          "宋长镜"
+          "魏晋"
         ],
-        "description": "陆沉哈哈大笑，“这是当然，哪里都一样，谁都忙得很。 你会不会以为马苦玄、魏晋、宋长镜之流，就是最顶尖的天之骄子啦？ ”",
+        "description": "贺小凉又变成了那个气质清凉的貌美道姑，大道之外皆是身外物。 陆沉哈哈大笑，“这是当然，哪里都一样，谁都忙得很。 你会不会以为马苦玄、魏晋、宋长镜之流，就是最顶尖的天之骄子啦？",
         "background": "",
-        "significance": "推动陆沉与马苦玄之间的剧情推进关系。",
+        "significance": "推动贺小凉与陆沉之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段5",
         "sentence_indexes_in_segment": [
@@ -632,7 +733,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.081372",
+    "extracted_at": "2026-03-25T17:27:37.972442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,21 +770,37 @@
         ],
         "juan_index": 212,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉坐在不远处一张书桌后，腰肢拧转，就这么与陆沉对视，她闻言后眉头微皱，似乎有些想不明白。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉对话",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
         "description": "陆沉笑得很开心，“那你以后真该去中土神洲看看，或者将来去往青冥天下的白玉京，你就会明白，一山总有一山高。 贺小凉坐在不远处一张书桌后，腰肢拧转，就这么与陆沉对视，她闻言后眉头微皱，似乎有些想不明白。 陆沉玩味问道：“你是想问为何三教为何不干脆约好，只在自家地盘上发展势力，排挤其它教派学说？",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与贺小凉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -697,8 +814,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.081372",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "对话",
+        "context": "” 陆沉笑得很开心，“那你以后真该去中土神洲看看，或者将来去往青冥天下的白玉京，你就会明白，一山总有一山高。 ” 贺小凉坐在不远处一张书桌后，腰肢拧转，就这么与陆沉对视，她闻言后眉头微皱，似乎有些想不明白。 陆沉玩味问道：“你是想问为何三教为何不干脆约好，只在自家地盘上发展势力，排挤其它教派学说？ 省得如此糟心？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.972442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -719,6 +862,19 @@
       "陆沉随手一指，是小镇神仙坟的方向，“山河依旧，但是曾经高高在上的主人，已经沦为烂泥地里的一堆残肢断骸。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉点点头，这正是她心中所想。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 212,
+        "segment_index": 7
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -762,9 +918,10 @@
         "participants": [
           "阿良",
           "陈平安",
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "陆沉感慨道：“因为如今这一座座地盘，完全就是最大的几处古战场，那可是先贤们用性命换来的成果，我们也怕后世天地变色嘛。 陆沉随手一指，是小镇神仙坟的方向，“山河依旧，但是曾经高高在上的主人，已经沦为烂泥地里的一堆残肢断骸。 ”",
+        "description": "贺小凉点点头，这正是她心中所想。 陆沉感慨道：“因为如今这一座座地盘，完全就是最大的几处古战场，那可是先贤们用性命换来的成果，我们也怕后世天地变色嘛。 陆沉随手一指，是小镇神仙坟的方向，“山河依旧，但是曾经高高在上的主人，已经沦为烂泥地里的一堆残肢断骸。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -782,7 +939,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "extracted_at": "2026-03-25T17:27:37.972442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -803,6 +960,19 @@
       "你的第二关，在于贫道需要确定你这趟去往俱芦洲，是让你依附于天君谢实，还是由着你自立门户，开宗立派。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉有些明悟。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 212,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -835,16 +1005,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与谢实迁移",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陆沉迁移",
         "time": null,
         "location": null,
         "participants": [
+          "贺小凉",
           "陆沉",
           "谢实"
         ],
-        "description": "陆沉笑了笑，“扯远了，回到正题。 你的第二关，在于贫道需要确定你这趟去往俱芦洲，是让你依附于天君谢实，还是由着你自立门户，开宗立派。 ”",
+        "description": "贺小凉有些明悟。 陆沉笑了笑，“扯远了，回到正题。 你的第二关，在于贫道需要确定你这趟去往俱芦洲，是让你依附于天君谢实，还是由着你自立门户，开宗立派。",
         "background": "",
-        "significance": "推动陆沉与谢实之间的迁移关系。",
+        "significance": "推动贺小凉与陆沉之间的迁移关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段8",
         "sentence_indexes_in_segment": [
@@ -860,7 +1031,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "extracted_at": "2026-03-25T17:27:37.972442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -881,6 +1052,19 @@
       "先说那最后一关，相对复杂一些，是一座连环关隘。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉坦然道：“只是靠着脑子里仅剩的一丝清明，才能够过关。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 212,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -920,7 +1104,7 @@
           "陆沉",
           "陈平安"
         ],
-        "description": "陆沉笑道：“关于这一点，贫道最后用作收官，来解释你与陈平安为何能够结缘。 所以故意设置了一个陷阱给你，让你以为自己，竟然舍弃了两个都对的选择，偏偏选了一个最错的决定，让你误以为就要与大道擦肩而过，要你心生悔恨，质疑自己的大道本心。 ”",
+        "description": "贺小凉坦然道：“只是靠着脑子里仅剩的一丝清明，才能够过关。 陆沉笑道：“关于这一点，贫道最后用作收官，来解释你与陈平安为何能够结缘。 所以故意设置了一个陷阱给你，让你以为自己，竟然舍弃了两个都对的选择，偏偏选了一个最错的决定，让你误以为就要与大道擦肩而过，要你心生悔恨，质疑自己的大道本心。",
         "background": "",
         "significance": "推动陆沉与陈平安之间的对话关系。",
         "related_action_indices": [
@@ -961,7 +1145,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "extracted_at": "2026-03-25T17:27:37.972442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -982,6 +1166,20 @@
       "唯独最后一关，因为贫道刻意刁难，帮着铺路搭桥，才让你贺小凉陷入两难境地，你若是……”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "“男女之间，则最易动心，所以贫道早早在你心湖之间，种下了一粒情种，在不知不觉中，它一遇机缘之雨水，就会生根发芽，迅猛无匹，这本是不入流的速成之法，但是对你贺小凉反而管用，何况再不入流的法门，贫道使出，一样入流。 唯独最后一关，因为贫道刻意刁难，帮着铺路搭桥，才让你贺小凉陷入两难境地，你若是……”",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 10
+      },
       {
         "entity_type": "person",
         "name": "魏晋",
@@ -1032,16 +1230,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 魏晋在风雪庙剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与魏晋在风雪庙师承",
         "time": null,
         "location": "风雪庙",
         "participants": [
+          "贺小凉",
           "魏晋"
         ],
-        "description": "“有师徒之恩的神诰宗师父，惊才绝艳的同辈人风雪庙魏晋，泥瓶巷的市井少年，前两者你顺利闯过，成功恪守本心，丝毫不为所动。 情之一字，可作万般解。 ”",
+        "description": "“男女之间，则最易动心，所以贫道早早在你心湖之间，种下了一粒情种，在不知不觉中，它一遇机缘之雨水，就会生根发芽，迅猛无匹，这本是不入流的速成之法，但是对你贺小凉反而管用，何况再不入流的法门，贫道使出，一样入流。 “有师徒之恩的神诰宗师父，惊才绝艳的同辈人风雪庙魏晋，泥瓶巷的市井少年，前两者你顺利闯过，成功恪守本心，丝毫不为所动。 唯独最后一关，因为贫道刻意刁难，帮着铺路搭桥，才让你贺小凉陷入两难境地，你若是……”",
         "background": "",
-        "significance": "对应魏晋在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在风雪庙推动贺小凉与魏晋之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -1055,8 +1256,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
+          "魏晋"
+        ],
+        "action": "师承",
+        "context": "情之一字，可作万般解。 ” “男女之间，则最易动心，所以贫道早早在你心湖之间，种下了一粒情种，在不知不觉中，它一遇机缘之雨水，就会生根发芽，迅猛无匹，这本是不入流的速成之法，但是对你贺小凉反而管用，何况再不入流的法门，贫道使出，一样入流。 ” “有师徒之恩的神诰宗师父，惊才绝艳的同辈人风雪庙魏晋，泥瓶巷的市井少年，前两者你顺利闯过，成功恪守本心，丝毫不为所动。 唯独最后一关，因为贫道刻意刁难，帮着铺路搭桥，才让你贺小凉陷入两难境地，你若是……”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与魏晋在风雪庙师承",
+        "location": "风雪庙",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.972442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1121,7 +1348,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "extracted_at": "2026-03-25T17:27:37.973446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1144,6 +1371,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "饶是贺小凉这般性情凉薄的人物，心底都油然生出悚然和敬意。 她站起身，对陆沉毕恭毕敬行礼道：“希望终有一日，弟子贺小凉能够与师父同席而坐，坐而论道。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -1161,16 +1402,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉师承",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "她站起身，对陆沉毕恭毕敬行礼道：“希望终有一日，弟子贺小凉能够与师父同席而坐，坐而论道。 离的什么经，经不过是先贤所写而已，叛的是什么道？ 道不过是先贤所走的路罢了，为何不自己去试试看？",
+        "description": "饶是贺小凉这般性情凉薄的人物，心底都油然生出悚然和敬意。 她站起身，对陆沉毕恭毕敬行礼道：“希望终有一日，弟子贺小凉能够与师父同席而坐，坐而论道。 离的什么经，经不过是先贤所写而已，叛的是什么道？",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与贺小凉之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1184,8 +1428,29 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "师承",
+        "context": "她站起身，对陆沉毕恭毕敬行礼道：“希望终有一日，弟子贺小凉能够与师父同席而坐，坐而论道。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.973446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1224,6 +1489,19 @@
       },
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉重新坐下，问道：“师父所谓的‘收官’作何解？",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 212,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "弟子与陈平安的结缘，也有深意？",
@@ -1239,19 +1517,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉对话",
         "time": null,
         "location": null,
         "participants": [
           "陆沉",
+          "贺小凉",
           "陈平安"
         ],
-        "description": "陆沉啧啧道：“有点难。 弟子与陈平安的结缘，也有深意？ 陆沉点头道：“当然。",
+        "description": "陆沉啧啧道：“有点难。 贺小凉重新坐下，问道：“师父所谓的‘收官’作何解？ 弟子与陈平安的结缘，也有深意？",
         "background": "",
-        "significance": "推动陆沉与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陆沉与贺小凉之间的对话关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1265,34 +1542,8 @@
         "segment_index": 13
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陆沉"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "师承",
-        "context": "陆沉啧啧道：“有点难。 ” 贺小凉重新坐下，问道：“师父所谓的‘收官’作何解？ 弟子与陈平安的结缘，也有深意？ ” 陆沉点头道：“当然。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 212,
-        "segment_index": 13
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.973446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1313,6 +1564,21 @@
       "贺小凉轻声问道：“师父，这又是考验吗？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "若是寻常人，你不是贺小凉，他不是陈平安，那么贫道这次辛辛苦苦当月老牵红线，半点看不出高明。 陆沉转头望向贺小凉现身之前的方向，“陈平安的心性，天下奇人怪人万万千，贫道也看过千千万，未必有多出奇，但是恰好与你贺小凉的心性，相似而又不雷同，冥冥之中颇为契合，所以连你们初次相逢，两人身份悬殊，你仍是看出了‘缘浅’，其实你不是缘浅，而是你修为有限，看浅了。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1368,13 +1634,16 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
         "description": "若是寻常人，你不是贺小凉，他不是陈平安，那么贫道这次辛辛苦苦当月老牵红线，半点看不出高明。 齐静春的乱点鸳鸯谱，是给担子，希望有朝一日，少年能够以人心挑山岳，而贫道的手中红线两端，是两个人，更是两面明澈无垢的镜子，相互映照，而不只是让陈平安分摊你的福缘，再拿陈平安帮你渡过情关而已。 陆沉转头望向贺小凉现身之前的方向，“陈平安的心性，天下奇人怪人万万千，贫道也看过千千万，未必有多出奇，但是恰好与你贺小凉的心性，相似而又不雷同，冥冥之中颇为契合，所以连你们初次相逢，两人身份悬殊，你仍是看出了‘缘浅’，其实你不是缘浅，而是你修为有限，看浅了。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段14",
         "sentence_indexes_in_segment": [
@@ -1396,6 +1665,46 @@
           "陆沉"
         ],
         "to_roles": [
+          "贺小凉"
+        ],
+        "action": "会见",
+        "context": "陆沉转头望向贺小凉现身之前的方向，“陈平安的心性，天下奇人怪人万万千，贫道也看过千千万，未必有多出奇，但是恰好与你贺小凉的心性，相似而又不雷同，冥冥之中颇为契合，所以连你们初次相逢，两人身份悬殊，你仍是看出了‘缘浅’，其实你不是缘浅，而是你修为有限，看浅了。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "陆沉转头望向贺小凉现身之前的方向，“陈平安的心性，天下奇人怪人万万千，贫道也看过千千万，未必有多出奇，但是恰好与你贺小凉的心性，相似而又不雷同，冥冥之中颇为契合，所以连你们初次相逢，两人身份悬殊，你仍是看出了‘缘浅’，其实你不是缘浅，而是你修为有限，看浅了。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
           "陈平安"
         ],
         "action": "会见",
@@ -1411,7 +1720,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.082376",
+    "extracted_at": "2026-03-25T17:27:37.973446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1447,21 +1756,37 @@
         ],
         "juan_index": 212,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉眼神清澈，摇头笑道：“不愿做此想。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉对话",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "陆沉哈哈大笑，“你都已经当了贫道的弟子，还要什么考验？ 怎么，想一鼓作气成为道祖老爷的嫡传、与陆沉平起平坐，才罢休？ ”",
+        "description": "陆沉哈哈大笑，“你都已经当了贫道的弟子，还要什么考验？ 怎么，想一鼓作气成为道祖老爷的嫡传、与陆沉平起平坐，才罢休？ 贺小凉眼神清澈，摇头笑道：“不愿做此想。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与贺小凉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1475,8 +1800,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "对话",
+        "context": "” 陆沉哈哈大笑，“你都已经当了贫道的弟子，还要什么考验？ 怎么，想一鼓作气成为道祖老爷的嫡传、与陆沉平起平坐，才罢休？ ” 贺小凉眼神清澈，摇头笑道：“不愿做此想。 ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.973446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1515,6 +1866,20 @@
       },
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉愣了一下。 才刚刚在鲲船上切断与陈平安的那座“桥梁”，自己就又变成那个洪福齐天的贺小凉了？",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "才刚刚在鲲船上切断与陈平安的那座“桥梁”，自己就又变成那个洪福齐天的贺小凉了？",
@@ -1530,19 +1895,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安会见",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉会见",
         "time": null,
         "location": null,
         "participants": [
           "陆沉",
+          "贺小凉",
           "陈平安"
         ],
-        "description": "陆沉笑眯眯道：“既然当了师父，就该送新弟子一份见面礼。 才刚刚在鲲船上切断与陈平安的那座“桥梁”，自己就又变成那个洪福齐天的贺小凉了？ 陆沉好似看穿貌美道姑的心中所想，放声大笑，一掌拍在桌面，“贫道带你去走一趟光阴长河，逆流而上！",
+        "description": "陆沉笑眯眯道：“既然当了师父，就该送新弟子一份见面礼。 贺小凉愣了一下。 才刚刚在鲲船上切断与陈平安的那座“桥梁”，自己就又变成那个洪福齐天的贺小凉了？",
         "background": "",
-        "significance": "推动陆沉与陈平安之间的会见关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陆沉与贺小凉之间的会见关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1556,34 +1920,8 @@
         "segment_index": 16
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陆沉"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "师承",
-        "context": "陆沉笑眯眯道：“既然当了师父，就该送新弟子一份见面礼。 这份礼，可不小，还是你师父下来之前，好不容易才从你师祖那边得来的一点‘道’。 ” 贺小凉愣了一下。 才刚刚在鲲船上切断与陈平安的那座“桥梁”，自己就又变成那个洪福齐天的贺小凉了？ 陆沉好似看穿貌美道姑的心中所想，放声大笑，一掌拍在桌面，“贫道带你去走一趟光阴长河，逆流而上！",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安会见",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 212,
-        "segment_index": 16
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.973446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1618,6 +1956,19 @@
         ],
         "juan_index": 212,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "仍是置身于天地间的学塾、却仿佛与天地暂时无关联的贺小凉，看着身边光怪陆离的一幕幕倒退而去，貌美道姑眼神熠熠。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 17
       }
     ],
     "locations": [
@@ -1638,15 +1989,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉在骊珠洞天剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "一座骊珠洞天，哪怕术法禁绝，可自然还是难逃天道之间的大规矩，比如春夏秋冬，生老病死。 然后在掌教陆沉的大神通之下。 ”",
+        "description": "一座骊珠洞天，哪怕术法禁绝，可自然还是难逃天道之间的大规矩，比如春夏秋冬，生老病死。 然后在掌教陆沉的大神通之下。 仍是置身于天地间的学塾、却仿佛与天地暂时无关联的贺小凉，看着身边光怪陆离的一幕幕倒退而去，貌美道姑眼神熠熠。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
+        "significance": "在骊珠洞天推动陆沉与贺小凉之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段17",
         "sentence_indexes_in_segment": [
@@ -1662,7 +2014,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "extracted_at": "2026-03-25T17:27:37.974449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1715,6 +2067,20 @@
         ],
         "juan_index": 212,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "一路穿街过巷，贺小凉紧紧跟随在莲花冠道人身后，生怕自己一个走错，就会迷失其中。 最后陆沉停下脚步，说稍等片刻，贺小凉不敢动弹，站在原地。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 18
       }
     ],
     "locations": [],
@@ -1726,6 +2092,7 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "贺小凉",
           "陆沉"
         ],
         "description": "陆沉微笑道：“跟在贫道身后，去往一处地方，带你见两个人。 两人起步离开，身后是越来越崭新的学塾和孩子们的琅琅读书声，蒙学稚童们名副其实地倒背如流，只是大概是某种禁制，或者说是齐静春跟道祖做过交易的关系，稚童们的容貌，纤毫毕现，声音，清晰入耳，但是他们面对的那位教书先生，已经并不存在，仿佛完全消逝于光阴长河中了。 一路穿街过巷，贺小凉紧紧跟随在莲花冠道人身后，生怕自己一个走错，就会迷失其中。",
@@ -1751,30 +2118,25 @@
       {
         "time": null,
         "from_roles": [
-          "陆沉"
+          "贺小凉"
         ],
         "to_roles": [
-          "齐静春"
+          "陆沉"
         ],
-        "action": "对话",
-        "context": "陆沉微笑道：“跟在贫道身后，去往一处地方，带你见两个人。 ” 两人起步离开，身后是越来越崭新的学塾和孩子们的琅琅读书声，蒙学稚童们名副其实地倒背如流，只是大概是某种禁制，或者说是齐静春跟道祖做过交易的关系，稚童们的容貌，纤毫毕现，声音，清晰入耳，但是他们面对的那位教书先生，已经并不存在，仿佛完全消逝于光阴长河中了。 一路穿街过巷，贺小凉紧紧跟随在莲花冠道人身后，生怕自己一个走错，就会迷失其中。 最后陆沉停下脚步，说稍等片刻，贺小凉不敢动弹，站在原地。 陆沉一挥袖子，乾坤倒转，一切恢复正常的秩序，岁月长河开始顺流而下。",
+        "action": "同行",
+        "context": "一路穿街过巷，贺小凉紧紧跟随在莲花冠道人身后，生怕自己一个走错，就会迷失其中。",
         "result": null,
         "event_name": "齐静春现身",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 212,
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "extracted_at": "2026-03-25T17:27:37.974449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1810,6 +2172,21 @@
         ],
         "juan_index": 212,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "之后陆沉才带着她来到一座摊子附近，贺小凉不知道这位掌教师父为何要带自己来此，难道那个摊子有古怪？ 贺小凉凝神望去，是一位貌似质朴憨厚的中年男人，正在兜售糖葫芦。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 212,
+        "segment_index": 19
       }
     ],
     "locations": [
@@ -1830,16 +2207,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉在泥瓶巷剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷师承",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "之后陆沉才带着她来到一座摊子附近，贺小凉不知道这位掌教师父为何要带自己来此，难道那个摊子有古怪？ 陆沉打了个响指，白昼夜幕转瞬即逝。 终于有一天，本该去上山采药换钱的孩子，哪怕已经背着篓筐走到了泥瓶巷口子上，可是一想到之前那趟运气好，摘到了几味值钱草药，家里的小米缸，破天荒装满了大半，最少之后一旬时光都不用担心饿着，于是孩子便抬头看了眼阴沉沉的天色，似乎在告诉自己天要下大雨，就算去了山上，也多半会半路返回。",
+        "description": "之后陆沉才带着她来到一座摊子附近，贺小凉不知道这位掌教师父为何要带自己来此，难道那个摊子有古怪？ 贺小凉凝神望去，是一位貌似质朴憨厚的中年男人，正在兜售糖葫芦。 然后贺小凉看到一个黝黑消瘦的孩子缓缓而来，就站在她身边，悄悄望向生意忙碌的摊子，咽了咽口水，等到生意冷清一些，孩子就默默走开。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动陆沉与贺小凉之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1853,8 +2233,29 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "师承",
+        "context": "之后陆沉才带着她来到一座摊子附近，贺小凉不知道这位掌教师父为何要带自己来此，难道那个摊子有古怪？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷师承",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 212,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.974449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1890,6 +2291,19 @@
         ],
         "juan_index": 212,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "陆沉和贺小凉就站在那个孩子身边。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 20
       }
     ],
     "locations": [
@@ -1910,16 +2324,19 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉在泥瓶巷对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
         "description": "于是孩子跑回祖宅院子，将箩筐一放，从墙脚根一只小陶罐里摸出几颗铜钱，然后飞快奔跑在泥瓶巷，去往那座摊子。 陆沉和贺小凉就站在那个孩子身边。 陆沉笑问道：“如果设身处地，你觉得孩子在想什么，才算人之常情？",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动陆沉与贺小凉之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1933,8 +2350,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "贺小凉"
+        ],
+        "action": "对话",
+        "context": "于是孩子跑回祖宅院子，将箩筐一放，从墙脚根一只小陶罐里摸出几颗铜钱，然后飞快奔跑在泥瓶巷，去往那座摊子。 但是当孩子距离摊子越来越近的时候，脚步就越来越沉重，跑得越来越慢，以至于离着还挺远的地方，孩子站在原地，一脸天人交战的滑稽模样，死死攥紧拳头，握着那多余出来的几颗铜钱。 最后孩子走近几步，蹲下身，就那么抬头痴痴看着那些鲜红鲜红的冰糖葫芦。 陆沉和贺小凉就站在那个孩子身边。 陆沉笑问道：“如果设身处地，你觉得孩子在想什么，才算人之常情？ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.974449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1957,6 +2400,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉毫不犹豫道：“想着若是能够吃了糖葫芦，而不用花钱就好了。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 212,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -1974,16 +2430,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉对话",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陆沉对话",
         "time": null,
         "location": null,
         "participants": [
+          "贺小凉",
           "陆沉"
         ],
-        "description": "陆沉笑着点头，“拭目以待。 贺小凉毫不犹豫道：“想着若是能够吃了糖葫芦，而不用花钱就好了。 ”",
+        "description": "贺小凉毫不犹豫道：“想着若是能够吃了糖葫芦，而不用花钱就好了。 陆沉笑着点头，“拭目以待。 ”",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动贺小凉与陆沉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1997,8 +2456,34 @@
         "segment_index": 21
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.083379",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "对话",
+        "context": "贺小凉毫不犹豫道：“想着若是能够吃了糖葫芦，而不用花钱就好了。 ” 陆沉笑着点头，“拭目以待。 ” 之后，摊贩做完了生意，在休息的时候，似乎无意间看见了那个一次次路过自己摊子、却从来不买糖葫芦的孩子，汉子想了想，坐在凳子上没有作声，最后仿佛实在是起了恻隐之心，站起身，对那个孩子招手笑道：“来来，我这就要收摊子回去了，还剩下些糖葫芦卖不出去，你想吃的话，我可以送你一串，不要钱！ ”",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陆沉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.974449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2019,6 +2504,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉有些疑惑，如果这就是小时候的陈平安，做出这样的选择，她其实并不奇怪。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 22
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2051,16 +2549,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陈平安与陆沉剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 贺小凉与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "贺小凉",
           "陈平安",
           "陆沉"
         ],
         "description": "贺小凉有些疑惑，如果这就是小时候的陈平安，做出这样的选择，她其实并不奇怪。 陆沉伸手指向那个卖糖葫芦的汉子，“此人，是中土神洲一位在世俗当中，名声不显的阴阳家，事实上以一己之力就能够抗衡整个阴阳家陆氏了，相当了不起的一个怪人，就连大师兄都无法完全猜到此人的想法。 汉子笑得极为憨厚本分，跟庄稼汉无异，拔出一串糖葫芦，对着那个少年晃了晃，“拿去吧。",
         "background": "",
-        "significance": "推动陈平安与陆沉之间的剧情推进关系。",
+        "significance": "推动贺小凉与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段22",
         "sentence_indexes_in_segment": [
@@ -2076,7 +2575,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.084383",
+    "extracted_at": "2026-03-25T17:27:37.974449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2097,6 +2596,21 @@
       "这个刚刚习惯了吃苦的贫苦孩子，惰心渐起，时不时就会想起那些糖葫芦，上山采药便比往常少抓了……如此日复一日，年复一年，少年并未变成什么坏人，但是在贺小凉眼中，的的确确，已经不再是那个青牛背初次相逢的草鞋少年。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉愈发疑惑。 陆沉伸出手掌，由上往下缓缓一抹，贺小凉身边出现了一个小“陈平安”。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 212,
+        "segment_index": 23
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -2145,18 +2659,21 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安在泥瓶巷遭遇",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷遭遇",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
           "陆沉",
+          "贺小凉",
           "陈平安"
         ],
-        "description": "陆沉笑道：“这些都不是关键，接下来才是。 陆沉伸出手掌，由上往下缓缓一抹，贺小凉身边出现了一个小“陈平安”。 这个孩子，跑过去收下了那串不要钱的糖葫芦，蹦蹦跳跳返回泥瓶巷，很开心，吃过了糖葫芦，便嘴馋上瘾了，隔了几天，第二次又去了摊子，又拿到手一串不花钱的糖葫芦。",
+        "description": "贺小凉愈发疑惑。 陆沉笑道：“这些都不是关键，接下来才是。 陆沉伸出手掌，由上往下缓缓一抹，贺小凉身边出现了一个小“陈平安”。",
         "background": "",
-        "significance": "在泥瓶巷推动陆沉与陈平安之间的遭遇线。",
+        "significance": "在泥瓶巷推动陆沉与贺小凉之间的遭遇线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段23",
         "sentence_indexes_in_segment": [
@@ -2178,12 +2695,52 @@
           "陆沉"
         ],
         "to_roles": [
+          "贺小凉"
+        ],
+        "action": "冲突",
+        "context": "陆沉伸出手掌，由上往下缓缓一抹，贺小凉身边出现了一个小“陈平安”。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷遭遇",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 23
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
           "陈平安"
         ],
         "action": "冲突",
         "context": "陆沉伸出手掌，由上往下缓缓一抹，贺小凉身边出现了一个小“陈平安”。",
         "result": null,
-        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安在泥瓶巷遭遇",
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷遭遇",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 23
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "陆沉伸出手掌，由上往下缓缓一抹，贺小凉身边出现了一个小“陈平安”。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉在泥瓶巷遭遇",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2193,7 +2750,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.084383",
+    "extracted_at": "2026-03-25T17:27:37.975453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2233,6 +2790,21 @@
       },
       {
         "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "在这之后，重回原地，陆沉又是手掌一抹，小平安再次出现，这一次他没有选择白收糖葫芦，而是选择花钱购买，在那之后，孩子愈发愿意吃苦，拼了命挣钱，但是吃腻了糖葫芦，有次又喜欢上了糕点，当孩子一年年成长为少年，在贺小凉眼中，好像这个陈平安，也不太对劲。 随着陆沉一次次抬起手掌，贺小凉看过了一个个陈平安，一种种出现微妙偏差的人生境遇。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 212,
+        "segment_index": 24
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "在这之后，重回原地，陆沉又是手掌一抹，小平安再次出现，这一次他没有选择白收糖葫芦，而是选择花钱购买，在那之后，孩子愈发愿意吃苦，拼了命挣钱，但是吃腻了糖葫芦，有次又喜欢上了糕点，当孩子一年年成长为少年，在贺小凉眼中，好像这个陈平安，也不太对劲。 随着陆沉一次次抬起手掌，贺小凉看过了一个个陈平安，一种种出现微妙偏差的人生境遇。",
@@ -2249,16 +2821,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与陈平安剧情推进",
+        "name": "第三卷金错刀 第二百一十二章 道高一尺 · 陆沉与贺小凉剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陆沉",
+          "贺小凉",
           "陈平安"
         ],
-        "description": "在这之后，重回原地，陆沉又是手掌一抹，小平安再次出现，这一次他没有选择白收糖葫芦，而是选择花钱购买，在那之后，孩子愈发愿意吃苦，拼了命挣钱，但是吃腻了糖葫芦，有次又喜欢上了糕点，当孩子一年年成长为少年，在贺小凉眼中，好像这个陈平安，也不太对劲。 随着陆沉一次次抬起手掌，贺小凉看过了一个个陈平安，一种种出现微妙偏差的人生境遇。 陆沉笑了笑，“回去了。",
+        "description": "在这之后，重回原地，陆沉又是手掌一抹，小平安再次出现，这一次他没有选择白收糖葫芦，而是选择花钱购买，在那之后，孩子愈发愿意吃苦，拼了命挣钱，但是吃腻了糖葫芦，有次又喜欢上了糕点，当孩子一年年成长为少年，在贺小凉眼中，好像这个陈平安，也不太对劲。 随着陆沉一次次抬起手掌，贺小凉看过了一个个陈平安，一种种出现微妙偏差的人生境遇。 贺小凉到最后，陷入沉思。",
         "background": "",
-        "significance": "推动陆沉与陈平安之间的剧情推进关系。",
+        "significance": "推动陆沉与贺小凉之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段24",
         "sentence_indexes_in_segment": [
@@ -2274,7 +2847,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.084383",
+    "extracted_at": "2026-03-25T17:27:37.975453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2325,6 +2898,19 @@
         ],
         "juan_index": 212,
         "segment_index": 25
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉轻声回答道：“唯有守心，方是一人。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 212,
+        "segment_index": 25
       }
     ],
     "locations": [],
@@ -2336,14 +2922,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "此时此景，其实很像真实流淌过人世间的那条岁月长河之中，当初齐静春带着少年去往老槐树，讨要一张槐叶。 陆沉双手负后走在前方，问道：“想明白了什么吗？ 陆沉嗯了一声，不再说话。",
+        "description": "此时此景，其实很像真实流淌过人世间的那条岁月长河之中，当初齐静春带着少年去往老槐树，讨要一张槐叶。 陆沉双手负后走在前方，问道：“想明白了什么吗？ 贺小凉轻声回答道：“唯有守心，方是一人。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -2357,34 +2942,8 @@
         "segment_index": 25
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "齐静春"
-        ],
-        "to_roles": [
-          "陆沉"
-        ],
-        "action": "对话",
-        "context": "此时此景，其实很像真实流淌过人世间的那条岁月长河之中，当初齐静春带着少年去往老槐树，讨要一张槐叶。 陆沉双手负后走在前方，问道：“想明白了什么吗？ ” 贺小凉轻声回答道：“唯有守心，方是一人。 ” 陆沉嗯了一声，不再说话。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 212,
-        "segment_index": 25
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.084383",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.975453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2405,6 +2964,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "贺小凉问道：“难道弟子想岔了，还是看得不够高不够远？ 在陆沉带着贺小凉看遍人生百态的时候，在某一截光阴长河的河段之间，有一位双鬓微霜的儒士，在蒙童下课后，坐在屋内独自打谱，面容清晰，不再模糊，在陆沉和贺小凉的“当下”，或者说骊珠洞天的“当年”，齐静春弯腰拈起一枚棋子，微笑道：“不过尔尔。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 26
+      },
       {
         "entity_type": "person",
         "name": "陆沉",
@@ -2447,6 +3020,7 @@
         "coordinates": null,
         "related_entities": [
           "陆沉",
+          "贺小凉",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -2464,13 +3038,16 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "陆沉"
+          "陆沉",
+          "贺小凉"
         ],
-        "description": "陆沉突然转头笑道：“没有没有，想得挺好，唯一美中不足的，就是你这个弟子总不能灯下黑，瞧不出自家师父的道法通天啊。 在陆沉带着贺小凉看遍人生百态的时候，在某一截光阴长河的河段之间，有一位双鬓微霜的儒士，在蒙童下课后，坐在屋内独自打谱，面容清晰，不再模糊，在陆沉和贺小凉的“当下”，或者说骊珠洞天的“当年”，齐静春弯腰拈起一枚棋子，微笑道：“不过尔尔。 贺小凉问道：“难道弟子想岔了，还是看得不够高不够远？",
+        "description": "贺小凉问道：“难道弟子想岔了，还是看得不够高不够远？ 陆沉突然转头笑道：“没有没有，想得挺好，唯一美中不足的，就是你这个弟子总不能灯下黑，瞧不出自家师父的道法通天啊。 在陆沉带着贺小凉看遍人生百态的时候，在某一截光阴长河的河段之间，有一位双鬓微霜的儒士，在蒙童下课后，坐在屋内独自打谱，面容清晰，不再模糊，在陆沉和贺小凉的“当下”，或者说骊珠洞天的“当年”，齐静春弯腰拈起一枚棋子，微笑道：“不过尔尔。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第三卷金错刀 第二百一十二章 道高一尺 · 段26",
         "sentence_indexes_in_segment": [
@@ -2492,6 +3069,46 @@
           "陆沉"
         ],
         "to_roles": [
+          "贺小凉"
+        ],
+        "action": "对话",
+        "context": "在陆沉带着贺小凉看遍人生百态的时候，在某一截光阴长河的河段之间，有一位双鬓微霜的儒士，在蒙童下课后，坐在屋内独自打谱，面容清晰，不再模糊，在陆沉和贺小凉的“当下”，或者说骊珠洞天的“当年”，齐静春弯腰拈起一枚棋子，微笑道：“不过尔尔。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 26
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "在陆沉带着贺小凉看遍人生百态的时候，在某一截光阴长河的河段之间，有一位双鬓微霜的儒士，在蒙童下课后，坐在屋内独自打谱，面容清晰，不再模糊，在陆沉和贺小凉的“当下”，或者说骊珠洞天的“当年”，齐静春弯腰拈起一枚棋子，微笑道：“不过尔尔。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "骊珠洞天",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 212,
+        "segment_index": 26
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "贺小凉"
+        ],
+        "to_roles": [
           "齐静春"
         ],
         "action": "对话",
@@ -2507,7 +3124,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.084383",
+    "extracted_at": "2026-03-25T17:27:37.975453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

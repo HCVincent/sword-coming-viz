@@ -71,7 +71,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.379343",
+    "extracted_at": "2026-03-25T17:27:37.079265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -193,7 +193,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.379343",
+    "extracted_at": "2026-03-25T17:27:37.079265",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -293,7 +293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.379343",
+    "extracted_at": "2026-03-25T17:27:37.080268",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -313,7 +313,21 @@
       "他和贺小凉，被誉为东宝瓶洲的金童玉女，一洲道家的天之骄女，便是人间君王，遇到他们，也要以礼相待，并且礼仪之重，完全不输大国真君。",
       "因为他们是一洲之内，最有望跻身上五境的修行天才。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "他和贺小凉，被誉为东宝瓶洲的金童玉女，一洲道家的天之骄女，便是人间君王，遇到他们，也要以礼相待，并且礼仪之重，完全不输大国真君。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 40,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -322,7 +336,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "贺小凉"
+        ],
         "sentence_indexes_in_segment": [
           0,
           4
@@ -333,13 +349,15 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第四十章 还礼 · 宝瓶洲剧情推进",
+        "name": "第一卷笼中雀 第四十章 还礼 · 贺小凉在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
+        "participants": [
+          "贺小凉"
+        ],
         "description": "两人所在师门，是东宝瓶洲的道家三宗之一，而且是一洲道统之首宗，尊贵无比。 他和贺小凉，被誉为东宝瓶洲的金童玉女，一洲道家的天之骄女，便是人间君王，遇到他们，也要以礼相待，并且礼仪之重，完全不输大国真君。 他这次和贺师姐两人联袂出山，作为报酬，每人都有一个为宗门招收真传弟子的宝贵名额，这名弟子同时会被他们各自收为徒弟。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应贺小凉在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第四十章 还礼 · 段5",
         "sentence_indexes_in_segment": [
@@ -355,7 +373,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.379343",
+    "extracted_at": "2026-03-25T17:27:37.080268",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -420,7 +438,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.379343",
+    "extracted_at": "2026-03-25T17:27:37.080268",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -498,7 +516,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.379343",
+    "extracted_at": "2026-03-25T17:27:37.080268",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -561,7 +579,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.081272",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -666,7 +684,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.081272",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -728,7 +746,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.081272",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -819,7 +837,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.081272",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -896,7 +914,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.082275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -974,7 +992,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.082275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1038,7 +1056,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.082275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1084,6 +1102,19 @@
         ],
         "juan_index": 40,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "贺小凉",
+        "alias": [],
+        "original_description_in_book": "东宝瓶洲的道家门派，多如牛毛，每三十年都会选出一对“金童玉女”，他和师姐贺小凉便是这一届的天生道侣，只不过让人惊讶的事情出现了，金童的资质不比以往逊色，但是那位玉女的机缘之好，简直是好到令人发指，出生之时，便有祥瑞之一的白鹿，主动走出山野大泽，来到她身边认主，之后涉足修行大道，好像从无坎坷，一路顺风顺水，甚至有人扬言她只有等到跻身上五境之后，才会遇到第一个瓶颈。",
+        "description": "山上女性人物，可补足外围修士关系链。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 40,
+        "segment_index": 15
       }
     ],
     "locations": [
@@ -1110,7 +1141,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "贺小凉"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1126,7 +1159,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "蔡金简"
+          "蔡金简",
+          "贺小凉"
         ],
         "description": "陈平安背起箩筐，跟年轻道姑告辞离去，朝小女孩挥了挥手，独自小跑返回小镇。 同样是仙子，这位年轻女冠的含金量，远不是云霞山蔡金简能够媲美的，几乎是仙家金精之于世俗金子。 东宝瓶洲的道家门派，多如牛毛，每三十年都会选出一对“金童玉女”，他和师姐贺小凉便是这一届的天生道侣，只不过让人惊讶的事情出现了，金童的资质不比以往逊色，但是那位玉女的机缘之好，简直是好到令人发指，出生之时，便有祥瑞之一的白鹿，主动走出山野大泽，来到她身边认主，之后涉足修行大道，好像从无坎坷，一路顺风顺水，甚至有人扬言她只有等到跻身上五境之后，才会遇到第一个瓶颈。",
         "background": "",
@@ -1146,7 +1180,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.380346",
+    "extracted_at": "2026-03-25T17:27:37.082275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1281,7 +1315,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.082275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1343,7 +1377,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.082275",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1404,7 +1438,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.083278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1468,7 +1502,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.083278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1575,7 +1609,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.083278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1640,7 +1674,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.083278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1751,7 +1785,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.381350",
+    "extracted_at": "2026-03-25T17:27:37.084282",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1871,7 +1905,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.382353",
+    "extracted_at": "2026-03-25T17:27:37.084282",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1967,7 +2001,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.382353",
+    "extracted_at": "2026-03-25T17:27:37.084282",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2047,7 +2081,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.382353",
+    "extracted_at": "2026-03-25T17:27:37.084282",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2106,7 +2140,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.382353",
+    "extracted_at": "2026-03-25T17:27:37.084282",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

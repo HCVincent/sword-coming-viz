@@ -160,7 +160,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.200756",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -258,7 +258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.201788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -321,7 +321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.201788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -387,7 +387,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.201788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -470,7 +470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.201788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -533,7 +533,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.201788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -598,7 +598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.284655",
+    "extracted_at": "2026-03-25T17:27:38.202763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -660,7 +660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.285658",
+    "extracted_at": "2026-03-25T17:27:38.202763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -760,7 +760,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.285658",
+    "extracted_at": "2026-03-25T17:27:38.202763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -808,6 +808,19 @@
         ],
         "juan_index": 255,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥……",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -833,13 +846,16 @@
         "location": "老龙城",
         "participants": [
           "孙嘉树",
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "description": "孙嘉树好奇询问，在此隐居三百余年的老祖便将那场风波说出，孙嘉树手掌拍在额头，无奈道：“真神仙也。 一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥…… 陈平安误以为是早上那次拳打游龙，给孙氏祖宅带来了麻烦，担忧问道：“怎么了？",
         "background": "",
         "significance": "连接陈平安与老龙城线，为海上城池群像打开入口。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段11",
         "sentence_indexes_in_segment": [
@@ -874,9 +890,49 @@
         ],
         "juan_index": 255,
         "segment_index": 11
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "同行",
+        "context": "一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥……",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 11
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "孙嘉树"
+        ],
+        "to_roles": [
+          "刘灞桥"
+        ],
+        "action": "同行",
+        "context": "一起吃饭的时候，陈平安发现孙嘉树的眼神有些古怪，有点类似自己早些时候看刘灞桥……",
+        "result": null,
+        "event_name": "孙嘉树结识陈平安",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.285658",
+    "extracted_at": "2026-03-25T17:27:38.202763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -996,7 +1052,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.285658",
+    "extracted_at": "2026-03-25T17:27:38.202763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1097,7 +1153,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.285658",
+    "extracted_at": "2026-03-25T17:27:38.202763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1176,7 +1232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.285658",
+    "extracted_at": "2026-03-25T17:27:38.203767",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1256,7 +1312,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.203767",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1318,7 +1374,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.203767",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1380,7 +1436,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.203767",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1458,7 +1514,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.203767",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1574,7 +1630,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.203767",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1688,7 +1744,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.204770",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1739,6 +1795,19 @@
         ],
         "juan_index": 255,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "在孙氏祖宅那边，老人看着尚未平息的水面涟漪，对孙嘉树啧啧称奇道：“这位大骊少年，好稳的神魂，好重的骨气，难怪会被刘灞桥当做朋友。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 21
       }
     ],
     "locations": [
@@ -1768,7 +1837,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "孙嘉树"
+          "孙嘉树",
+          "刘灞桥"
         ],
         "sentence_indexes_in_segment": [
           5
@@ -1827,7 +1897,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.286662",
+    "extracted_at": "2026-03-25T17:27:38.204770",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1865,6 +1935,20 @@
       },
       {
         "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 孙嘉树想了想，坦言道：“到底不是相逢于患难，不如刘灞桥和陈平安。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 孙嘉树想了想，坦言道：“到底不是相逢于患难，不如刘灞桥和陈平安。",
@@ -1886,7 +1970,8 @@
         "location": null,
         "participants": [
           "孙嘉树",
-          "陈平安"
+          "陈平安",
+          "刘灞桥"
         ],
         "description": "孙嘉树笑着摇头反驳，“刘灞桥并不是因此而将陈平安视为朋友。 老人又直指人心，询问孙嘉树，“那你呢？ 孙嘉树想了想，坦言道：“到底不是相逢于患难，不如刘灞桥和陈平安。",
         "background": "",
@@ -1906,7 +1991,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.287666",
+    "extracted_at": "2026-03-25T17:27:38.204770",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2032,7 +2117,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.287666",
+    "extracted_at": "2026-03-25T17:27:38.204770",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2124,7 +2209,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.287666",
+    "extracted_at": "2026-03-25T17:27:38.204770",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2232,7 +2317,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.287666",
+    "extracted_at": "2026-03-25T17:27:38.205774",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2368,7 +2453,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.287666",
+    "extracted_at": "2026-03-25T17:27:38.205774",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2728,7 +2813,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.205774",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2823,7 +2908,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.205774",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2921,7 +3006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.205774",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3079,7 +3164,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.206777",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3145,7 +3230,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.206777",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3249,7 +3334,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.206777",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3356,7 +3441,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.288669",
+    "extracted_at": "2026-03-25T17:27:38.206777",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3422,7 +3507,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "extracted_at": "2026-03-25T17:27:38.206777",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3514,7 +3599,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "extracted_at": "2026-03-25T17:27:38.206777",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3649,7 +3734,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "extracted_at": "2026-03-25T17:27:38.207781",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3728,7 +3813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "extracted_at": "2026-03-25T17:27:38.207781",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3875,7 +3960,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "extracted_at": "2026-03-25T17:27:38.207781",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3911,6 +3996,19 @@
         ],
         "juan_index": 255,
         "segment_index": 39
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "一尊青烟凝聚而成的阴神，出现在两人对面的墙角光线阴暗处，冷笑道：“郑大风现在一脑子浆糊，想不明白护道人和传道人到底是什么，就托范家花重金找人算了一卦，卦象为大火之中取得栗，上上大吉。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 39
       }
     ],
     "locations": [
@@ -3931,16 +4029,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风在老龙城对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阴神与郑大风在老龙城对话",
         "time": null,
         "location": "老龙城",
         "participants": [
+          "阴神",
           "郑大风"
         ],
         "description": "郑大风也是个混不吝的，惊讶道：“这也能看穿？ 一尊青烟凝聚而成的阴神，出现在两人对面的墙角光线阴暗处，冷笑道：“郑大风现在一脑子浆糊，想不明白护道人和传道人到底是什么，就托范家花重金找人算了一卦，卦象为大火之中取得栗，上上大吉。 所以想着让你身陷险境，到时候他大打出手，再由我护送你离开老龙城，在这期间，他说不定能够搞清楚所谓的两个身份，万一还能顺势破开八境武道瓶颈，刚好符合卦象所言。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动阴神与郑大风之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段39",
         "sentence_indexes_in_segment": [
           0,
@@ -3954,8 +4055,29 @@
         "segment_index": 39
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阴神"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "对话",
+        "context": "一尊青烟凝聚而成的阴神，出现在两人对面的墙角光线阴暗处，冷笑道：“郑大风现在一脑子浆糊，想不明白护道人和传道人到底是什么，就托范家花重金找人算了一卦，卦象为大火之中取得栗，上上大吉。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阴神与郑大风在老龙城对话",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 39
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.207781",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4117,7 +4239,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.289672",
+    "extracted_at": "2026-03-25T17:27:38.207781",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4166,21 +4288,36 @@
         ],
         "juan_index": 255,
         "segment_index": 41
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "别好养剑葫，站起身，将那只空碟子放在板凳上，陈平安对那尊阴神拱手抱拳，“虽然不知道你为何愿意道破真相，可能归根结底，还是杨老头的意思，但我还是要感谢你！ 阴神点点头。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 41
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 杨老头与陈平安揭示",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 杨老头与阴神揭示",
         "time": null,
         "location": null,
         "participants": [
           "杨老头",
+          "阴神",
           "陈平安"
         ],
-        "description": "如果我没有猜错，当时要我送信之人，是杨老头，要你欠钱之人，也还是杨老头吧？ 别好养剑葫，站起身，将那只空碟子放在板凳上，陈平安对那尊阴神拱手抱拳，“虽然不知道你为何愿意道破真相，可能归根结底，还是杨老头的意思，但我还是要感谢你！ 现在是不是悔青肠子了？",
+        "description": "如果我没有猜错，当时要我送信之人，是杨老头，要你欠钱之人，也还是杨老头吧？ 别好养剑葫，站起身，将那只空碟子放在板凳上，陈平安对那尊阴神拱手抱拳，“虽然不知道你为何愿意道破真相，可能归根结底，还是杨老头的意思，但我还是要感谢你！ 阴神点点头。",
         "background": "",
-        "significance": "推动杨老头与陈平安之间的揭示关系。",
+        "significance": "推动杨老头与阴神之间的揭示关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段41",
         "sentence_indexes_in_segment": [
@@ -4196,7 +4333,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "extracted_at": "2026-03-25T17:27:38.207781",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4245,21 +4382,36 @@
         ],
         "juan_index": 255,
         "segment_index": 42
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "郑大风冷冷望向那尊极有可能坏了自己大吉卦象的阴神，“是你的意思，还是老头子的意思？ 阴神淡然道：“你猜？",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 42
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与陈平安剧情推进",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风与阴神剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "郑大风",
+          "阴神",
           "陈平安"
         ],
         "description": "陈平安大步离去。 郑大风确实如少年所说，的的确确，悔青了肠子。 郑大风冷冷望向那尊极有可能坏了自己大吉卦象的阴神，“是你的意思，还是老头子的意思？",
         "background": "",
-        "significance": "推动郑大风与陈平安之间的剧情推进关系。",
+        "significance": "推动郑大风与阴神之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段42",
         "sentence_indexes_in_segment": [
@@ -4275,7 +4427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "extracted_at": "2026-03-25T17:27:38.208784",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4312,21 +4464,38 @@
         ],
         "juan_index": 255,
         "segment_index": 43
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神讥笑道：“一个八境巅峰的纯粹武夫，神君之徒，竟然跑去相信所谓的卦象，你难道不知道哪怕范家没有动手脚，可之于世间任何人都是上上大吉，对你郑大风，会不会就是乾坤颠倒，货真价实的大凶之兆？ 郑大风神情凝重起来，抬头望向那尊阴神，点头道：“受教了。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 43
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风对话",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阴神与郑大风对话",
         "time": null,
         "location": null,
         "participants": [
+          "阴神",
           "郑大风"
         ],
         "description": "郑大风哈哈一笑，瞬间变得云淡风轻，“你从来不会擅自行事，多半是老头子的意思了。 阴神讥笑道：“一个八境巅峰的纯粹武夫，神君之徒，竟然跑去相信所谓的卦象，你难道不知道哪怕范家没有动手脚，可之于世间任何人都是上上大吉，对你郑大风，会不会就是乾坤颠倒，货真价实的大凶之兆？ 郑大风神情凝重起来，抬头望向那尊阴神，点头道：“受教了。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动阴神与郑大风之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段43",
         "sentence_indexes_in_segment": [
           0,
@@ -4340,8 +4509,29 @@
         "segment_index": 43
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阴神"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "对话",
+        "context": "阴神讥笑道：“一个八境巅峰的纯粹武夫，神君之徒，竟然跑去相信所谓的卦象，你难道不知道哪怕范家没有动手脚，可之于世间任何人都是上上大吉，对你郑大风，会不会就是乾坤颠倒，货真价实的大凶之兆？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阴神与郑大风对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 255,
+        "segment_index": 43
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.208784",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4364,6 +4554,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神对此不以为然，“既然神君愿意让你独掌一方，那你就别自作聪明，老老实实做事就是了。 阴神消逝。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 44
+      },
+      {
+        "entity_type": "person",
         "name": "郑大风",
         "alias": [
           "郑掌柜"
@@ -4381,16 +4585,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 郑大风迁移",
+        "name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阴神与郑大风迁移",
         "time": null,
         "location": null,
         "participants": [
+          "阴神",
           "郑大风"
         ],
-        "description": "郑大风挥挥手道：“给那少年摆了一道，又给你教训了一通，我烦得很，得离开巷子透口气。 ” 阴神对此不以为然，“既然神君愿意让你独掌一方，那你就别自作聪明，老老实实做事就是了。",
+        "description": "阴神对此不以为然，“既然神君愿意让你独掌一方，那你就别自作聪明，老老实实做事就是了。 郑大风挥挥手道：“给那少年摆了一道，又给你教训了一通，我烦得很，得离开巷子透口气。 阴神消逝。",
         "background": "",
-        "significance": "对应郑大风在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动阴神与郑大风之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段44",
         "sentence_indexes_in_segment": [
           0,
@@ -4404,8 +4611,34 @@
         "segment_index": 44
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阴神"
+        ],
+        "to_roles": [
+          "郑大风"
+        ],
+        "action": "别离",
+        "context": "” 阴神对此不以为然，“既然神君愿意让你独掌一方，那你就别自作聪明，老老实实做事就是了。 ” 郑大风挥挥手道：“给那少年摆了一道，又给你教训了一通，我烦得很，得离开巷子透口气。 ” 阴神消逝。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 阴神与郑大风迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 255,
+        "segment_index": 44
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.208784",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4454,6 +4687,19 @@
         ],
         "juan_index": 255,
         "segment_index": 45
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神的冰凉嗓音从墙角阴影中渗出，“应该是。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 255,
+        "segment_index": 45
       }
     ],
     "locations": [],
@@ -4466,7 +4712,7 @@
           "郑大风",
           "陈平安"
         ],
-        "description": "郑大风突然问道：“孙氏祖宅的异象，是不是陈平安破境引起的？ 郑大风腋下夹书，拎着板凳和瓜子来到街巷口，再次坐在槐树底下乘凉看美人。 ”",
+        "description": "郑大风突然问道：“孙氏祖宅的异象，是不是陈平安破境引起的？ 阴神的冰凉嗓音从墙角阴影中渗出，“应该是。 郑大风腋下夹书，拎着板凳和瓜子来到街巷口，再次坐在槐树底下乘凉看美人。",
         "background": "",
         "significance": "推动郑大风与陈平安之间的对话关系。",
         "related_action_indices": [
@@ -4507,7 +4753,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "extracted_at": "2026-03-25T17:27:38.208784",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4618,7 +4864,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "extracted_at": "2026-03-25T17:27:38.208784",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4742,7 +4988,7 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.290675",
+    "extracted_at": "2026-03-25T17:27:38.208784",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4850,7 +5096,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.209788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4973,7 +5219,7 @@
         "segment_index": 49
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.209788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5038,7 +5284,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.209788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5103,7 +5349,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.209788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5167,7 +5413,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.209788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5274,7 +5520,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.209788",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5336,7 +5582,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.291679",
+    "extracted_at": "2026-03-25T17:27:38.210791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5385,6 +5631,19 @@
         ],
         "juan_index": 255,
         "segment_index": 55
+      },
+      {
+        "entity_type": "person",
+        "name": "李抟景",
+        "alias": [],
+        "original_description_in_book": "既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。",
+        "description": "山上剑修线人物，可增强外部强者与宗门关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 255,
+        "segment_index": 55
       }
     ],
     "locations": [
@@ -5396,7 +5655,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "苻畦"
+          "苻畦",
+          "李抟景"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -5413,14 +5673,13 @@
         "location": "宝瓶洲",
         "participants": [
           "苻春花",
-          "苻畦"
+          "苻畦",
+          "李抟景"
         ],
         "description": "女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。 既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。 苻春花也已将近三百岁，与兄长苻东海都是成名已久的金丹境，而且擅长搏杀，各自护送一艘渡船去往倒悬山百余年，历练丰富，遭遇深海大妖，生死一线的险境，早已不是一两次了。",
         "background": "",
         "significance": "在宝瓶洲推动苻春花与苻畦之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 段55",
         "sentence_indexes_in_segment": [
           0,
@@ -5434,34 +5693,8 @@
         "segment_index": 55
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "苻春花"
-        ],
-        "to_roles": [
-          "苻畦"
-        ],
-        "action": "对话",
-        "context": "女子叫苻春花，是苻畦的长女，与苻畦长子苻东海，都是有望接过家主之位的继承人之一。 既然是家主或者说那件老龙袍的继承人，那么必然是天资极好的年轻人，苻畦看似中年，实则已是四百岁高龄，十境修为，虽然比不上风雷园李抟景的那些名头，“宝瓶洲最强十境修士”、“上五境之下第一人”，可是身穿老龙袍，加上家族坐拥四件半仙兵，苻畦完全有资格被视为一位货真价实的玉璞境。 苻春花也已将近三百岁，与兄长苻东海都是成名已久的金丹境，而且擅长搏杀，各自护送一艘渡船去往倒悬山百余年，历练丰富，遭遇深海大妖，生死一线的险境，早已不是一两次了。 关键是苻家子弟跻身金丹境，就意味着能够驾驭半仙兵，所以宝瓶洲一直流传这个说法，苻家练气士的真实境界，需要往上提高半个境界才准确。 苻春花犹豫了半天，终于忍不住问道：“爹，为什么带我来见此人，而不是南华？ ”",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百五十四章 精诚动人也伤人 · 苻春花与苻畦在宝瓶洲对话",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 255,
-        "segment_index": 55
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.292652",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.210791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5631,7 +5864,7 @@
         "segment_index": 56
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.292652",
+    "extracted_at": "2026-03-25T17:27:38.210791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5801,7 +6034,7 @@
         "segment_index": 57
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.293156",
+    "extracted_at": "2026-03-25T17:27:38.210791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5950,7 +6183,7 @@
         "segment_index": 58
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.293162",
+    "extracted_at": "2026-03-25T17:27:38.210791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6027,7 +6260,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.293162",
+    "extracted_at": "2026-03-25T17:27:38.211795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6146,7 +6379,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.293162",
+    "extracted_at": "2026-03-25T17:27:38.211795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6266,7 +6499,7 @@
         "segment_index": 61
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.293162",
+    "extracted_at": "2026-03-25T17:27:38.211795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6393,7 +6626,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.293162",
+    "extracted_at": "2026-03-25T17:27:38.211795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6540,7 +6773,7 @@
         "segment_index": 63
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.293162",
+    "extracted_at": "2026-03-25T17:27:38.211795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6706,7 +6939,7 @@
         "segment_index": 64
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.294157",
+    "extracted_at": "2026-03-25T17:27:38.212798",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6802,7 +7035,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.294157",
+    "extracted_at": "2026-03-25T17:27:38.212798",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6930,7 +7163,7 @@
         "segment_index": 66
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.294157",
+    "extracted_at": "2026-03-25T17:27:38.212798",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7086,7 +7319,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.294157",
+    "extracted_at": "2026-03-25T17:27:38.212798",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7377,7 +7610,7 @@
         "segment_index": 68
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.294157",
+    "extracted_at": "2026-03-25T17:27:38.212798",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7526,7 +7759,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.294157",
+    "extracted_at": "2026-03-25T17:27:38.212798",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7647,7 +7880,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.213802",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7725,7 +7958,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.213802",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7816,7 +8049,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.213802",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7893,7 +8126,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.213802",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7972,7 +8205,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.213802",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8034,7 +8267,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.213802",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8096,7 +8329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.214805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8175,7 +8408,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.214805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8282,7 +8515,7 @@
         "segment_index": 78
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.295161",
+    "extracted_at": "2026-03-25T17:27:38.214805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8345,7 +8578,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.296164",
+    "extracted_at": "2026-03-25T17:27:38.214805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8441,7 +8674,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.296164",
+    "extracted_at": "2026-03-25T17:27:38.214805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

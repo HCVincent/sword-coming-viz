@@ -27,6 +27,19 @@
         ],
         "juan_index": 243,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰多问了一句，跟老人询问渡口那边是否有练气士开设的店铺，用以交易货物。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -52,7 +65,8 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "张山峰"
         ],
         "description": "夜幕降临，剑水山庄灯火辉煌，大小院落高朋满座，觥筹交错，喝掉醇酒无数坛，事后据说连小镇那边都闻到了庄子飘来的酒香。 陈平安跟楚老管事询问了仙家渡口的事情，梳水国确实有这么一处地方，距离剑水山庄还有六百余里，位于梳水国和松溪国接壤边境，听说时常有山上练气士出没，但是方圆三百里地界，早已被梳水国皇室圈为禁地，如果没有州府一级颁发的官家文牒，无论是百姓还是武人，擅自闯入，一律杀无赦。 老管事人情达练，善解人意，主动笑言剑水山庄与一座边境上的大都督府，关系相当不错，是世交，只需老庄主书信一封，就可以拿到通关文牒，不用陈平安他们劳心劳力。",
         "background": "",
@@ -72,7 +86,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.220432",
+    "extracted_at": "2026-03-25T17:27:38.119953",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -120,24 +134,36 @@
         ],
         "juan_index": 243,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "在张山峰的屋内，三人吃过一顿满是山珍野味的丰盛晚餐，陈平安就要去往瀑布练拳，突然被张山峰喊住，让陈平安等会儿，大髯汉子一条腿踩在长凳上，用竹签剔牙缝，问张山峰要不要避讳什么，年轻道士一边跑去打开行囊，一边说不用。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧归属",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "宋雨烧"
+          "宋雨烧",
+          "张山峰"
         ],
         "description": "这当然不是老管事被江湖义气四个字，冲昏了头脑，半点不晓得交浅言深的忌讳，而是宋老剑圣私底下叮嘱过他，对待三人，尤其是背剑少年陈平安，可以当做他宋雨烧的忘年好友对待，山庄不用有任何提防。 这是宋雨烧老一辈人推崇的江湖道义，楚老管事追随梳水国剑圣已经一甲子光阴，为山庄出生入死，荣辱与共，未尝不是被宋雨烧的这份江湖气所感染，才能如此兢兢业业，无怨无悔。 在张山峰的屋内，三人吃过一顿满是山珍野味的丰盛晚餐，陈平安就要去往瀑布练拳，突然被张山峰喊住，让陈平安等会儿，大髯汉子一条腿踩在长凳上，用竹签剔牙缝，问张山峰要不要避讳什么，年轻道士一边跑去打开行囊，一边说不用。",
         "background": "",
-        "significance": "推动陈平安与宋雨烧之间的归属关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与宋雨烧之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -151,34 +177,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "宋雨烧"
-        ],
-        "action": "归属",
-        "context": "老管事说有的，因为少庄主宋凤山在原本佩剑损毁后，就曾亲自去过一趟渡口，带回来了那把如今时刻悬挂腰间的短剑。 老管事可谓知无不言言无不尽，不但泄露了这些梳水国内幕，甚至连宋凤山为了购买那把名为“沧水”的仙家神兵，耗费掉九百枚山上雪花钱，几乎是山庄半数的金银积蓄了，竹筒倒豆子，将这些密事一并说给了三人听。 这当然不是老管事被江湖义气四个字，冲昏了头脑，半点不晓得交浅言深的忌讳，而是宋老剑圣私底下叮嘱过他，对待三人，尤其是背剑少年陈平安，可以当做他宋雨烧的忘年好友对待，山庄不用有任何提防。 一诺千金，生死相交，朋友二字重若山岳。 这是宋雨烧老一辈人推崇的江湖道义，楚老管事追随梳水国剑圣已经一甲子光阴，为山庄出生入死，荣辱与共，未尝不是被宋雨烧的这份江湖气所感染，才能如此兢兢业业，无怨无悔。 在张山峰的屋内，三人吃过一顿满是山珍野味的丰盛晚餐，陈平安就要去往瀑布练拳，突然被张山峰喊住，让陈平安等会儿，大髯汉子一条腿踩在长凳上，用竹签剔牙缝，问张山峰要不要避讳什么，年轻道士一边跑去打开行囊，一边说不用。",
-        "result": null,
-        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与宋雨烧归属",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 243,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.220432",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.119953",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -201,6 +201,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰很快拿出一双竹筷，放在桌上，推向陈平安。 桌上那双竹筷，正是张山峰在胭脂郡获得的战利品之一，一只篆刻青神山，一只刻有神霄竹。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "张山峰很快拿出一双竹筷，放在桌上，推向陈平安。 陈平安好奇问道：“干嘛？",
@@ -217,16 +232,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安对话",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 张山峰与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "张山峰",
           "陈平安"
         ],
-        "description": "张山峰很快拿出一双竹筷，放在桌上，推向陈平安。 陈平安好奇问道：“干嘛？ 饭都吃完了，你再给我筷子做啥？",
+        "description": "张山峰很快拿出一双竹筷，放在桌上，推向陈平安。 陈平安好奇问道：“干嘛？ 桌上那双竹筷，正是张山峰在胭脂郡获得的战利品之一，一只篆刻青神山，一只刻有神霄竹。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动张山峰与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -240,8 +258,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.220432",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "张山峰很快拿出一双竹筷，放在桌上，推向陈平安。 陈平安好奇问道：“干嘛？ 饭都吃完了，你再给我筷子做啥？ ” 桌上那双竹筷，正是张山峰在胭脂郡获得的战利品之一，一只篆刻青神山，一只刻有神霄竹。 张山峰笑道：“送你了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 张山峰与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.119953",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -274,20 +318,34 @@
         ],
         "juan_index": 243,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "你张山峰当我是放高利贷的无良奸商？",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与张山峰剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "张山峰"
         ],
-        "description": "陈平安无奈道：“你傻啊，这双筷子，如果真是青竹洞天的神霄竹制造而成，说不定就能卖个几百枚雪花钱，退一万步说，不是青神山的竹子，可筷子上边数百年灵气凝聚不散，总归做不得假，既然是一件后天灵器，最少也能卖个几十枚雪花钱吧？ 就当是那枚墨家甲丸光明铠的利息，贫道生平最怕欠人钱，一想到这个就寝食难安，何况一欠就是五百枚雪花钱，换做真金白银，那就是五十万两银子，按照楚老管事的说法，身为梳水国江湖的头把交椅，整座剑水山庄的百年家底，总计不过两百余万两，不还给你一点什么，贫道今晚肯定要睡不着。 ”",
+        "description": "陈平安无奈道：“你傻啊，这双筷子，如果真是青竹洞天的神霄竹制造而成，说不定就能卖个几百枚雪花钱，退一万步说，不是青神山的竹子，可筷子上边数百年灵气凝聚不散，总归做不得假，既然是一件后天灵器，最少也能卖个几十枚雪花钱吧？ 你张山峰当我是放高利贷的无良奸商？ 就当是那枚墨家甲丸光明铠的利息，贫道生平最怕欠人钱，一想到这个就寝食难安，何况一欠就是五百枚雪花钱，换做真金白银，那就是五十万两银子，按照楚老管事的说法，身为梳水国江湖的头把交椅，整座剑水山庄的百年家底，总计不过两百余万两，不还给你一点什么，贫道今晚肯定要睡不着。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与张山峰之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段4",
         "sentence_indexes_in_segment": [
@@ -303,7 +361,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "extracted_at": "2026-03-25T17:27:38.119953",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -337,20 +395,34 @@
         ],
         "juan_index": 243,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰摇摇头，语气坚决道：“不行！",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 243,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与张山峰剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "张山峰"
         ],
-        "description": "陈平安越说越气，将筷子推回给年轻道人，“再说了，咱们马上就要去梳水国那座仙家渡口，既然有交易重器法宝的店铺，一切等确定了竹筷的价格再说，如果只值十几枚雪花钱，我就收下，如果过了五十枚价格，你就不能当是利息还我。 贫道良心难安，道家求道，最怕心魔，你陈平安不要误我大道修行！ ”",
+        "description": "陈平安越说越气，将筷子推回给年轻道人，“再说了，咱们马上就要去梳水国那座仙家渡口，既然有交易重器法宝的店铺，一切等确定了竹筷的价格再说，如果只值十几枚雪花钱，我就收下，如果过了五十枚价格，你就不能当是利息还我。 张山峰摇摇头，语气坚决道：“不行！ 贫道良心难安，道家求道，最怕心魔，你陈平安不要误我大道修行！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与张山峰之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段5",
         "sentence_indexes_in_segment": [
@@ -366,7 +438,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "extracted_at": "2026-03-25T17:27:38.120956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -400,21 +472,38 @@
         ],
         "juan_index": 243,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰默然无声。 张山峰叹了口气，望向大髯汉子，“如何是好？",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安迁移",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与张山峰迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "张山峰"
         ],
-        "description": "陈平安站起身，笑骂道：“你就可劲儿瞎扯吧，滚滚滚，这事儿没得商量，拿回去！ 陈平安推门离开，去瀑布那边练拳。 不然有本事咱俩打一架，谁赢谁说了算？",
+        "description": "陈平安站起身，笑骂道：“你就可劲儿瞎扯吧，滚滚滚，这事儿没得商量，拿回去！ 张山峰默然无声。 陈平安推门离开，去瀑布那边练拳。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与张山峰之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -428,8 +517,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "别离",
+        "context": "陈平安站起身，笑骂道：“你就可劲儿瞎扯吧，滚滚滚，这事儿没得商量，拿回去！ 不然有本事咱俩打一架，谁赢谁说了算？ ” 张山峰默然无声。 陈平安推门离开，去瀑布那边练拳。 张山峰叹了口气，望向大髯汉子，“如何是好？",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与张山峰迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.120956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -452,6 +567,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "徐远霞幸灾乐祸道：“跟陈平安比散财童子，你差了十万八千里啊。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 243,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "徐远霞幸灾乐祸道：“跟陈平安比散财童子，你差了十万八千里啊。 在那之后，年轻道士一直心头萦绕此事，又不知道如何跟陈平安开口，后来古寺变故，七百里山路，陈平安走得异常沉闷，张山峰就更不好跟陈平安坦诚相见地谈一次。",
@@ -460,6 +588,33 @@
         "sentence_indexes_in_segment": [
           1,
           5
+        ],
+        "juan_index": 243,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰有些郁闷，给自己倒了一碗烧酒，低头小酌一口，顿时满脸通红。 在那之后，年轻道士一直心头萦绕此事，又不知道如何跟陈平安开口，后来古寺变故，七百里山路，陈平安走得异常沉闷，张山峰就更不好跟陈平安坦诚相见地谈一次。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "原来在彩衣国胭脂郡，那场追杀米老魔大弟子的生死大战中，年轻道士在生死一线间，灵犀一动，浇灌灵气入甲丸，一副光明铠宝甲护身，才为崇妙道人挡下了魔头的致命一击，识货的老道人满脸震惊，直呼不可思议，说这兵家至宝，只听说宝瓶洲中部彩衣国在内十数国，古榆国皇家库藏有一件价值连城的甲丸，传言曾有松溪国有武道第一人，出价六千枚小雪钱，跟古榆国皇帝购买，都被拒绝。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 243,
         "segment_index": 7
@@ -473,7 +628,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "老道人"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -483,16 +640,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安在宝瓶洲冲突",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与张山峰在宝瓶洲冲突",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "张山峰"
         ],
-        "description": "徐远霞幸灾乐祸道：“跟陈平安比散财童子，你差了十万八千里啊。 原来在彩衣国胭脂郡，那场追杀米老魔大弟子的生死大战中，年轻道士在生死一线间，灵犀一动，浇灌灵气入甲丸，一副光明铠宝甲护身，才为崇妙道人挡下了魔头的致命一击，识货的老道人满脸震惊，直呼不可思议，说这兵家至宝，只听说宝瓶洲中部彩衣国在内十数国，古榆国皇家库藏有一件价值连城的甲丸，传言曾有松溪国有武道第一人，出价六千枚小雪钱，跟古榆国皇帝购买，都被拒绝。 在那之后，年轻道士一直心头萦绕此事，又不知道如何跟陈平安开口，后来古寺变故，七百里山路，陈平安走得异常沉闷，张山峰就更不好跟陈平安坦诚相见地谈一次。",
+        "description": "徐远霞幸灾乐祸道：“跟陈平安比散财童子，你差了十万八千里啊。 张山峰有些郁闷，给自己倒了一碗烧酒，低头小酌一口，顿时满脸通红。 原来在彩衣国胭脂郡，那场追杀米老魔大弟子的生死大战中，年轻道士在生死一线间，灵犀一动，浇灌灵气入甲丸，一副光明铠宝甲护身，才为崇妙道人挡下了魔头的致命一击，识货的老道人满脸震惊，直呼不可思议，说这兵家至宝，只听说宝瓶洲中部彩衣国在内十数国，古榆国皇家库藏有一件价值连城的甲丸，传言曾有松溪国有武道第一人，出价六千枚小雪钱，跟古榆国皇帝购买，都被拒绝。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动陈平安与张山峰之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -506,8 +666,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "对话",
+        "context": "在那之后，年轻道士一直心头萦绕此事，又不知道如何跟陈平安开口，后来古寺变故，七百里山路，陈平安走得异常沉闷，张山峰就更不好跟陈平安坦诚相见地谈一次。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与张山峰在宝瓶洲冲突",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.120956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -530,6 +711,36 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "如今到了剑水山庄，即将去往仙家渡口，实在受不了那份内心煎熬，张山峰便跟老江湖的大髯汉子吐露心扉，徐远霞帮着年轻道士确定了两件事，一是陈平安肯定清楚甲丸的真正价值，当时随口报价五百枚雪花钱，是故意半卖半送给张山峰。 二是根据张山峰的讲述，陈平安乘坐北俱芦洲打醮山鲲船的时候，是住在天字号厢房，虽然毋庸置疑，背剑南下的少年是那市井底层的穷苦出身，但是显然拥有自己的独到机缘，而且对于财货一事，陈平安似乎一直不太看重，最少对朋友是如此。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "juan_index": 243,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "如今到了剑水山庄，即将去往仙家渡口，实在受不了那份内心煎熬，张山峰便跟老江湖的大髯汉子吐露心扉，徐远霞帮着年轻道士确定了两件事，一是陈平安肯定清楚甲丸的真正价值，当时随口报价五百枚雪花钱，是故意半卖半送给张山峰。 最后徐远霞没有直接告诉张山峰如何做，而是说了两句话，一句是不要把朋友的善意付出，当做天经地义的事情。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 243,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "如今到了剑水山庄，即将去往仙家渡口，实在受不了那份内心煎熬，张山峰便跟老江湖的大髯汉子吐露心扉，徐远霞帮着年轻道士确定了两件事，一是陈平安肯定清楚甲丸的真正价值，当时随口报价五百枚雪花钱，是故意半卖半送给张山峰。 二是根据张山峰的讲述，陈平安乘坐北俱芦洲打醮山鲲船的时候，是住在天字号厢房，虽然毋庸置疑，背剑南下的少年是那市井底层的穷苦出身，但是显然拥有自己的独到机缘，而且对于财货一事，陈平安似乎一直不太看重，最少对朋友是如此。",
@@ -546,15 +757,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安迁移",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 张山峰与徐远霞迁移",
         "time": null,
         "location": null,
         "participants": [
+          "张山峰",
+          "徐远霞",
           "陈平安"
         ],
-        "description": "如今到了剑水山庄，即将去往仙家渡口，实在受不了那份内心煎熬，张山峰便跟老江湖的大髯汉子吐露心扉，徐远霞帮着年轻道士确定了两件事，一是陈平安肯定清楚甲丸的真正价值，当时随口报价五百枚雪花钱，是故意半卖半送给张山峰。 二是根据张山峰的讲述，陈平安乘坐北俱芦洲打醮山鲲船的时候，是住在天字号厢房，虽然毋庸置疑，背剑南下的少年是那市井底层的穷苦出身，但是显然拥有自己的独到机缘，而且对于财货一事，陈平安似乎一直不太看重，最少对朋友是如此。 所以这已经不纯粹是欠钱，而是欠了一份天大人情的麻烦事。",
+        "description": "如今到了剑水山庄，即将去往仙家渡口，实在受不了那份内心煎熬，张山峰便跟老江湖的大髯汉子吐露心扉，徐远霞帮着年轻道士确定了两件事，一是陈平安肯定清楚甲丸的真正价值，当时随口报价五百枚雪花钱，是故意半卖半送给张山峰。 二是根据张山峰的讲述，陈平安乘坐北俱芦洲打醮山鲲船的时候，是住在天字号厢房，虽然毋庸置疑，背剑南下的少年是那市井底层的穷苦出身，但是显然拥有自己的独到机缘，而且对于财货一事，陈平安似乎一直不太看重，最少对朋友是如此。 最后徐远霞没有直接告诉张山峰如何做，而是说了两句话，一句是不要把朋友的善意付出，当做天经地义的事情。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "推动张山峰与徐远霞之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段8",
         "sentence_indexes_in_segment": [
@@ -570,7 +783,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "extracted_at": "2026-03-25T17:27:38.120956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -593,6 +806,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "之所以不是那只能够缓慢汲取天地灵气、凝聚为一滴甘露的白碗，因为张山峰自己是练气士，白碗对张山峰而言，属于修行路上的必需品，堪称久旱逢甘霖，雪中送炭，而陈平安是纯粹武夫，用不着，最多只是锦上添花，哪怕收到了白碗，多半也只会折价卖出，换成小雪钱。 张山峰喝着酒，红光满脸，醉醺醺道：“徐大哥，你给支个招？",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 243,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "之所以不是那只能够缓慢汲取天地灵气、凝聚为一滴甘露的白碗，因为张山峰自己是练气士，白碗对张山峰而言，属于修行路上的必需品，堪称久旱逢甘霖，雪中送炭，而陈平安是纯粹武夫，用不着，最多只是锦上添花，哪怕收到了白碗，多半也只会折价卖出，换成小雪钱。 我看那陈平安这一路，对女子女鬼可都没半点兴趣，该打该杀，从不含糊……”",
@@ -609,15 +836,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 张山峰与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "张山峰",
           "陈平安"
         ],
-        "description": "之所以不是那只能够缓慢汲取天地灵气、凝聚为一滴甘露的白碗，因为张山峰自己是练气士，白碗对张山峰而言，属于修行路上的必需品，堪称久旱逢甘霖，雪中送炭，而陈平安是纯粹武夫，用不着，最多只是锦上添花，哪怕收到了白碗，多半也只会折价卖出，换成小雪钱。 我看那陈平安这一路，对女子女鬼可都没半点兴趣，该打该杀，从不含糊……” 张山峰喝着酒，红光满脸，醉醺醺道：“徐大哥，你给支个招？",
+        "description": "之所以不是那只能够缓慢汲取天地灵气、凝聚为一滴甘露的白碗，因为张山峰自己是练气士，白碗对张山峰而言，属于修行路上的必需品，堪称久旱逢甘霖，雪中送炭，而陈平安是纯粹武夫，用不着，最多只是锦上添花，哪怕收到了白碗，多半也只会折价卖出，换成小雪钱。 张山峰喝着酒，红光满脸，醉醺醺道：“徐大哥，你给支个招？ 我看那陈平安这一路，对女子女鬼可都没半点兴趣，该打该杀，从不含糊……”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动张山峰与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段9",
         "sentence_indexes_in_segment": [
@@ -633,7 +861,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "extracted_at": "2026-03-25T17:27:38.120956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -656,6 +884,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "徐远霞用手心摩挲胡须，脑子里浮现出两幅画面，全是在那座破败古寺内，少年对着一位体态婀娜的女子，说着天气冷就伸手烤火。 徐远霞又想起方才饭桌上，陈平安说起那桩瀑布风波，有位反向挎刀的年轻女子，被他一拳打入了水潭。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 243,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "徐远霞又想起方才饭桌上，陈平安说起那桩瀑布风波，有位反向挎刀的年轻女子，被他一拳打入了水潭。 汉子打了个激灵，心惊胆战道：“陈平安！",
@@ -672,15 +914,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 徐远霞与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "徐远霞",
           "陈平安"
         ],
-        "description": "徐远霞又想起方才饭桌上，陈平安说起那桩瀑布风波，有位反向挎刀的年轻女子，被他一拳打入了水潭。 汉子打了个激灵，心惊胆战道：“陈平安！ 听着大髯汉子的胡说八道，年轻道士哀叹一声，脑袋一磕桌面，醉倒了。",
+        "description": "徐远霞用手心摩挲胡须，脑子里浮现出两幅画面，全是在那座破败古寺内，少年对着一位体态婀娜的女子，说着天气冷就伸手烤火。 徐远霞又想起方才饭桌上，陈平安说起那桩瀑布风波，有位反向挎刀的年轻女子，被他一拳打入了水潭。 汉子打了个激灵，心惊胆战道：“陈平安！",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动徐远霞与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段10",
         "sentence_indexes_in_segment": [
@@ -696,7 +939,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "extracted_at": "2026-03-25T17:27:38.121960",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -758,7 +1001,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.221436",
+    "extracted_at": "2026-03-25T17:27:38.121960",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -975,7 +1218,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.122963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1109,7 +1352,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.122963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1188,7 +1431,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.122963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1253,7 +1496,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.122963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1336,7 +1579,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.123966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1445,7 +1688,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.123966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1553,7 +1796,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.223444",
+    "extracted_at": "2026-03-25T17:27:38.123966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1637,7 +1880,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "extracted_at": "2026-03-25T17:27:38.123966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1701,7 +1944,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "extracted_at": "2026-03-25T17:27:38.123966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1767,7 +2010,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "extracted_at": "2026-03-25T17:27:38.123966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1805,6 +2048,19 @@
       },
       {
         "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "直到正午时分，又原路返回，只是这一次，陈平安不得不让张山峰去告知剑水山庄，他需要一只大水桶，等到楚老管事派遣信得过的山庄丫鬟，搬来水桶，装满热水后，陈平安关上房门，浸泡其中。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 243,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "魏檗",
         "alias": [
           "魏山君"
@@ -1827,14 +2083,13 @@
         "location": null,
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "张山峰"
         ],
         "description": "陈平安一身湿淋淋地走出水榭，路过那座山水亭，返回院子。 只睡了不到三个时辰，第二天清晨，陈平安潦草吃过了早餐，就六步走桩去往瀑布水榭。 直到正午时分，又原路返回，只是这一次，陈平安不得不让张山峰去告知剑水山庄，他需要一只大水桶，等到楚老管事派遣信得过的山庄丫鬟，搬来水桶，装满热水后，陈平安关上房门，浸泡其中。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -1848,34 +2103,8 @@
         "segment_index": 30
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "魏檗"
-        ],
-        "action": "会见",
-        "context": "陈平安一身湿淋淋地走出水榭，路过那座山水亭，返回院子。 只睡了不到三个时辰，第二天清晨，陈平安潦草吃过了早餐，就六步走桩去往瀑布水榭。 直到正午时分，又原路返回，只是这一次，陈平安不得不让张山峰去告知剑水山庄，他需要一只大水桶，等到楚老管事派遣信得过的山庄丫鬟，搬来水桶，装满热水后，陈平安关上房门，浸泡其中。 魏檗从牛角山包袱斋购置的药材，只够使用三次，胭脂郡用掉一次，这次之后，就只剩下最后一次机会了。 今天剑水山庄还是迎接陆续登门的各路江湖人士，明天才是选举武林盟主的黄道吉日。 如此更好，绿林好汉、江湖豪杰忙着走门串户，要么相互切磋武学，要么跟前辈请教难题，或者去大宗师面前混个熟脸，来来往往，成群结队，热闹非凡。",
-        "result": null,
-        "event_name": "魏檗现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 243,
-        "segment_index": 30
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.124970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1913,21 +2142,53 @@
         ],
         "juan_index": 243,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "夜幕中，陈平安跟徐远霞张山峰一起吃过了晚饭，就又独自去往瀑布那边。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 243,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "夜幕中，陈平安跟徐远霞张山峰一起吃过了晚饭，就又独自去往瀑布那边。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 243,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安指点",
+        "name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与徐远霞指点",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "徐远霞",
+          "张山峰"
         ],
         "description": "夜幕中，陈平安跟徐远霞张山峰一起吃过了晚饭，就又独自去往瀑布那边。 这一次，陈平安除了以崔姓老人传授的拳招打瀑，因为在距离水面两尺左右的一处潭水中，不在瀑布正中地带，有一块高耸的石墩，棋盘大小，不知为何千百年水流冲击之下，都没有被削掉，陈平安就突发奇想，站在那块石头上，以剑炉立桩站定不动，任由瀑布大水轰砸在头顶，被砸得陈平安不得不以站姿，变为坐姿，最后坐不稳，摔入水底。 数次之后，陈平安能够以剑炉立桩坚持小半炷香，再以昂首挺胸的坐姿坚持半炷香，最后低下脑袋，伸出瀑布之外，更多让背脊承担冲击力，大致上加在一起刚好熬足一炷香功夫。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与徐远霞之间的指点关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 段31",
         "sentence_indexes_in_segment": [
           0,
@@ -1941,8 +2202,69 @@
         "segment_index": 31
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "徐远霞"
+        ],
+        "action": "同行",
+        "context": "夜幕中，陈平安跟徐远霞张山峰一起吃过了晚饭，就又独自去往瀑布那边。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与徐远霞指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 243,
+        "segment_index": 31
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "同行",
+        "context": "夜幕中，陈平安跟徐远霞张山峰一起吃过了晚饭，就又独自去往瀑布那边。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与徐远霞指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 243,
+        "segment_index": 31
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "徐远霞"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "同行",
+        "context": "夜幕中，陈平安跟徐远霞张山峰一起吃过了晚饭，就又独自去往瀑布那边。",
+        "result": null,
+        "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与徐远霞指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 243,
+        "segment_index": 31
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.124970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2005,7 +2327,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "extracted_at": "2026-03-25T17:27:38.124970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2105,7 +2427,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.224447",
+    "extracted_at": "2026-03-25T17:27:38.124970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2211,7 +2533,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.124970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2316,7 +2638,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.124970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2421,7 +2743,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.125973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2497,7 +2819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.125973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2560,7 +2882,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.125973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2638,7 +2960,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.125973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2717,7 +3039,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.225450",
+    "extracted_at": "2026-03-25T17:27:38.125973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2794,7 +3116,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.226453",
+    "extracted_at": "2026-03-25T17:27:38.125973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2873,7 +3195,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.226453",
+    "extracted_at": "2026-03-25T17:27:38.126977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2936,7 +3258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.226453",
+    "extracted_at": "2026-03-25T17:27:38.126977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2990,7 +3312,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.226453",
+    "extracted_at": "2026-03-25T17:27:38.126977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

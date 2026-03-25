@@ -30,6 +30,21 @@
         ],
         "juan_index": 293,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安眼力本就好，又是观察细微的性子，一下子就看到这两张不太显眼的符箓，转头看了眼陆台，后者正忙着跟女子桓淑闲聊沉香国江湖往事，陈平安便默默记下符箓图案。 陈平安和陆台两位不速之客，被管事何崖安置在飞鹰堡东边的一座独门小院，何崖亲自领着两人去往住处。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 293,
+        "segment_index": 1
       }
     ],
     "locations": [
@@ -52,16 +67,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安在泥瓶巷迁移",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台在泥瓶巷迁移",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安眼力本就好，又是观察细微的性子，一下子就看到这两张不太显眼的符箓，转头看了眼陆台，后者正忙着跟女子桓淑闲聊沉香国江湖往事，陈平安便默默记下符箓图案。 世上符箓千万种，流派驳杂，有资格被誉为符箓正宗，唯有三家，中土神洲龙虎山天师府是其中之一，其余两脉分别在南婆娑洲的灵宝派，和陈平安脚下的这块陆地，桐叶洲的桐叶宗。 陈平安和陆台两位不速之客，被管事何崖安置在飞鹰堡东边的一座独门小院，何崖亲自领着两人去往住处。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动陈平安与陆台之间的迁移线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -75,8 +93,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.463288",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "别离",
+        "context": "桓常桓淑兄弟二人，与他们告别，约好今天只管安心住下，好好休息，明晚主楼会有一场接风宴，希望陈平安陆台按时赴约。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台在泥瓶巷迁移",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 293,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.436257",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -99,6 +138,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "在领着陆台和陈平安住下后，一身书卷气的老管事很快去往主楼顶层，见到了飞鹰堡堡主桓阳。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 293,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "在领着陆台和陈平安住下后，一身书卷气的老管事很快去往主楼顶层，见到了飞鹰堡堡主桓阳。",
@@ -114,15 +166,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "在领着陆台和陈平安住下后，一身书卷气的老管事很快去往主楼顶层，见到了飞鹰堡堡主桓阳。 桓阳是一位面如冠玉的美男子，虽然不再年轻，已是双鬓微白，反而增添了桓阳的风采，归根结底，长得好，无论男女，怎么都是对的，长得不好看，大概就是万般皆罪。 桓阳坐在一条造型古朴的罗汉榻上，伸手示意何崖落座，老管事低头看了眼满是泥土的靴子，笑着摇头，搬了条椅子坐在旁边。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段2",
         "sentence_indexes_in_segment": [
@@ -138,7 +191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.463288",
+    "extracted_at": "2026-03-25T17:27:38.436257",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -161,6 +214,34 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台对于这栋院落比较满意，位于小巷尽头，环境安静，院子里的墙上爬满了薜荔。 然后陆台仰起头，对远处屋檐笑着挥了挥手，屋脊那边，一位飞鹰堡子弟大口喘气，猫腰下了屋顶，跑去跟何管事通风报信，自己的行踪已经被人察觉，再待下去，恐怕会被误认为是心怀歹意，极有可能捅娄子。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "然后陆台仰起头，对远处屋檐笑着挥了挥手，屋脊那边，一位飞鹰堡子弟大口喘气，猫腰下了屋顶，跑去跟何管事通风报信，自己的行踪已经被人察觉，再待下去，恐怕会被误认为是心怀歹意，极有可能捅娄子。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 293,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安坐在石凳上，轻声道：“我觉得这里有点怪。",
@@ -176,15 +257,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与仰起头剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
+          "仰起头",
           "陈平安"
         ],
-        "description": "陈平安坐在石凳上，轻声道：“我觉得这里有点怪。 ” 陆台对于这栋院落比较满意，位于小巷尽头，环境安静，院子里的墙上爬满了薜荔。",
+        "description": "陆台对于这栋院落比较满意，位于小巷尽头，环境安静，院子里的墙上爬满了薜荔。 然后陆台仰起头，对远处屋檐笑着挥了挥手，屋脊那边，一位飞鹰堡子弟大口喘气，猫腰下了屋顶，跑去跟何管事通风报信，自己的行踪已经被人察觉，再待下去，恐怕会被误认为是心怀歹意，极有可能捅娄子。 陈平安坐在石凳上，轻声道：“我觉得这里有点怪。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与仰起头之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段10",
         "sentence_indexes_in_segment": [
@@ -200,7 +283,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.464292",
+    "extracted_at": "2026-03-25T17:27:38.437260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -235,21 +318,38 @@
         ],
         "juan_index": 293,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台去屋内寻找茶具，既然寄人篱下，就要入乡随俗，两个人都是没有携带包裹行囊的，总不好随随便便凭空拿出东西来，不用如何翻箱倒柜，陆台就搬出一套物件来，然后拿着小水桶准备出门，跟陈平安说是要去挑水，方才路过一座水井，有点意思，本来井水是最下等的煮茶之水，但是那边的井水，水气质地极佳，说不定会有意外之喜。 至于符箓一事，陆台说得直白，他哪里有本事认识天底下所有的符箓样式，大门上那两张，脉络不明，有可能是桐叶洲符箓派的旁门手笔，反正符胆品秩不太入流，灵气早就消逝一空，也就飞鹰堡这帮不识货的莽夫，才傻了吧唧当个宝贝供奉在上头，估计是图个心安吧。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 293,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安记起飞鹰堡大门上的两张古旧符箓，伸出一根手指，依葫芦画瓢，在凌空画符，问道：“知道是什么符吗？ 陆台去屋内寻找茶具，既然寄人篱下，就要入乡随俗，两个人都是没有携带包裹行囊的，总不好随随便便凭空拿出东西来，不用如何翻箱倒柜，陆台就搬出一套物件来，然后拿着小水桶准备出门，跟陈平安说是要去挑水，方才路过一座水井，有点意思，本来井水是最下等的煮茶之水，但是那边的井水，水气质地极佳，说不定会有意外之喜。 陈平安总觉得飞鹰堡有淡淡的阴气萦绕，盘桓不去，只不过相比那位邪道修士打破陶罐后的黑烟滚滚，煞气滔天，不值一提。",
+        "description": "陈平安记起飞鹰堡大门上的两张古旧符箓，伸出一根手指，依葫芦画瓢，在凌空画符，问道：“知道是什么符吗？ 陆台去屋内寻找茶具，既然寄人篱下，就要入乡随俗，两个人都是没有携带包裹行囊的，总不好随随便便凭空拿出东西来，不用如何翻箱倒柜，陆台就搬出一套物件来，然后拿着小水桶准备出门，跟陈平安说是要去挑水，方才路过一座水井，有点意思，本来井水是最下等的煮茶之水，但是那边的井水，水气质地极佳，说不定会有意外之喜。 至于符箓一事，陆台说得直白，他哪里有本事认识天底下所有的符箓样式，大门上那两张，脉络不明，有可能是桐叶洲符箓派的旁门手笔，反正符胆品秩不太入流，灵气早就消逝一空，也就飞鹰堡这帮不识货的莽夫，才傻了吧唧当个宝贝供奉在上头，估计是图个心安吧。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -263,8 +363,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.464292",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "” 陈平安记起飞鹰堡大门上的两张古旧符箓，伸出一根手指，依葫芦画瓢，在凌空画符，问道：“知道是什么符吗？ ” 陆台去屋内寻找茶具，既然寄人篱下，就要入乡随俗，两个人都是没有携带包裹行囊的，总不好随随便便凭空拿出东西来，不用如何翻箱倒柜，陆台就搬出一套物件来，然后拿着小水桶准备出门，跟陈平安说是要去挑水，方才路过一座水井，有点意思，本来井水是最下等的煮茶之水，但是那边的井水，水气质地极佳，说不定会有意外之喜。 至于符箓一事，陆台说得直白，他哪里有本事认识天底下所有的符箓样式，大门上那两张，脉络不明，有可能是桐叶洲符箓派的旁门手笔，反正符胆品秩不太入流，灵气早就消逝一空，也就飞鹰堡这帮不识货的莽夫，才傻了吧唧当个宝贝供奉在上头，估计是图个心安吧。 陈平安总觉得飞鹰堡有淡淡的阴气萦绕，盘桓不去，只不过相比那位邪道修士打破陶罐后的黑烟滚滚，煞气滔天，不值一提。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.437260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -287,6 +413,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台提这个空桶就回来了。 陆台撇撇嘴，“飞鹰堡的风水明显给人动了手脚，井水格外-阴沉，别说是煮茶，就是烧水做饭，阳气不够重的凡俗夫子，日积月累，都会有麻烦，不过问题不大。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 293,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安问道：“怎么，井水不合适煮茶？",
@@ -302,16 +442,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安问道：“怎么，井水不合适煮茶？ 陆台提这个空桶就回来了。 ”",
+        "description": "陆台提这个空桶就回来了。 陈平安问道：“怎么，井水不合适煮茶？ 陆台撇撇嘴，“飞鹰堡的风水明显给人动了手脚，井水格外-阴沉，别说是煮茶，就是烧水做饭，阳气不够重的凡俗夫子，日积月累，都会有麻烦，不过问题不大。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -325,8 +468,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台提这个空桶就回来了。 陈平安问道：“怎么，井水不合适煮茶？ ” 陆台撇撇嘴，“飞鹰堡的风水明显给人动了手脚，井水格外-阴沉，别说是煮茶，就是烧水做饭，阳气不够重的凡俗夫子，日积月累，都会有麻烦，不过问题不大。 我猜这十几二十年来，诞下的女孩肯定比男孩多出很多，长久下去，就要阴盛阳衰了。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.437260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -360,21 +529,38 @@
         ],
         "juan_index": 293,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台笑问道：“不管管？ 陆台笑道：“那我就放心了，我还怕你一个热血上头，就要路见不平拔刀相助来着。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安皱眉不语。 陈平安瞥了他一眼，“不提那江湖恩怨江湖了，我们现在什么都不明不白的，是帮人还是要害人？ 陆台笑问道：“不管管？",
+        "description": "陈平安皱眉不语。 陆台笑问道：“不管管？ 陈平安瞥了他一眼，“不提那江湖恩怨江湖了，我们现在什么都不明不白的，是帮人还是要害人？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -388,8 +574,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安皱眉不语。 陆台笑问道：“不管管？ ” 陈平安瞥了他一眼，“不提那江湖恩怨江湖了，我们现在什么都不明不白的，是帮人还是要害人？ ” 陆台笑道：“那我就放心了，我还怕你一个热血上头，就要路见不平拔刀相助来着。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.437260",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -424,21 +636,37 @@
         ],
         "juan_index": 293,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台丢了水桶在一旁，双手负后，玩味打量着陈平安，啧啧道：“呦，陈平安，可以啊，如今都会讲笑话了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 293,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安试探",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安试探",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "陈平安没好气道：“我没刀。 陆台丢了水桶在一旁，双手负后，玩味打量着陈平安，啧啧道：“呦，陈平安，可以啊，如今都会讲笑话了。 陈平安一笑置之。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键试探节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的试探关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -452,8 +680,29 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "试探",
+        "context": "陆台丢了水桶在一旁，双手负后，玩味打量着陈平安，啧啧道：“呦，陈平安，可以啊，如今都会讲笑话了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安试探",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 293,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.438264",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -476,6 +725,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台坐在台阶上，抬头看了眼天色，轻轻挥动竹扇，“要下雨了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 293,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安身穿法袍金醴，无需担心受寒丝毫，甚至不用担心衣衫浸透，就继续练拳不停，而且每次出拳，骤然打碎一团雨水的感觉，让陈平安沉迷其中。",
@@ -491,15 +753,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安身穿法袍金醴，无需担心受寒丝毫，甚至不用担心衣衫浸透，就继续练拳不停，而且每次出拳，骤然打碎一团雨水的感觉，让陈平安沉迷其中。 开始在院子内练习六步走桩。 陆台坐在台阶上，抬头看了眼天色，轻轻挥动竹扇，“要下雨了。",
+        "description": "陆台坐在台阶上，抬头看了眼天色，轻轻挥动竹扇，“要下雨了。 陈平安身穿法袍金醴，无需担心受寒丝毫，甚至不用担心衣衫浸透，就继续练拳不停，而且每次出拳，骤然打碎一团雨水的感觉，让陈平安沉迷其中。 开始在院子内练习六步走桩。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段15",
         "sentence_indexes_in_segment": [
@@ -515,7 +778,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "extracted_at": "2026-03-25T17:27:38.438264",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -538,6 +801,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台为了躲雨，已经坐在屋门口那边，虽然一场秋风秋雨，天气阴凉，可他还是在那边摇着扇子，要么发呆，要么偶尔瞥几眼陈平安的拳法。 陆台见到陈平安由练拳转为练剑，依然是虚握长剑的古怪路数。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台为了躲雨，已经坐在屋门口那边，虽然一场秋风秋雨，天气阴凉，可他还是在那边摇着扇子，要么发呆，要么偶尔瞥几眼陈平安的拳法。 陆台见到陈平安由练拳转为练剑，依然是虚握长剑的古怪路数。",
@@ -555,16 +834,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陆台为了躲雨，已经坐在屋门口那边，虽然一场秋风秋雨，天气阴凉，可他还是在那边摇着扇子，要么发呆，要么偶尔瞥几眼陈平安的拳法。 陆台见到陈平安由练拳转为练剑，依然是虚握长剑的古怪路数。 陈平安没有说话，陆台经常这么神神道道，不用理会。",
+        "description": "陆台为了躲雨，已经坐在屋门口那边，虽然一场秋风秋雨，天气阴凉，可他还是在那边摇着扇子，要么发呆，要么偶尔瞥几眼陈平安的拳法。 陆台见到陈平安由练拳转为练剑，依然是虚握长剑的古怪路数。 陆台笑道：“古人看待下雨，一直视为是天地交-合，阴阳交泰。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -578,8 +860,29 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安没有说话，陆台经常这么神神道道，不用理会。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.438264",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -602,6 +905,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "当天夜里，陆台那间屋子已经熄灯睡觉。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 293,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安像往常那般挑灯夜读，翻阅那本山海志。 陈平安耳朵微动，依稀听到院子外边的巷弄，有稚童追逐打闹的嬉笑声一闪而过。",
@@ -620,16 +936,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安别离",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安像往常那般挑灯夜读，翻阅那本山海志。 陈平安耳朵微动，依稀听到院子外边的巷弄，有稚童追逐打闹的嬉笑声一闪而过。 片刻之后，陈平安刚刚翻过一页书，就又听到外边响起细微的女子嗓音，如泣如诉。",
+        "description": "当天夜里，陆台那间屋子已经熄灯睡觉。 陈平安像往常那般挑灯夜读，翻阅那本山海志。 陈平安耳朵微动，依稀听到院子外边的巷弄，有稚童追逐打闹的嬉笑声一闪而过。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的别离关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -643,8 +962,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "当天夜里，陆台那间屋子已经熄灯睡觉。 陈平安像往常那般挑灯夜读，翻阅那本山海志。 窗外依旧大雨磅礴，这么大的雨，少见。 陈平安耳朵微动，依稀听到院子外边的巷弄，有稚童追逐打闹的嬉笑声一闪而过。 片刻之后，陈平安刚刚翻过一页书，就又听到外边响起细微的女子嗓音，如泣如诉。 陈平安无动于衷，再有一连串老翁的咳嗽声响，渐渐远去。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安别离",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.438264",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -708,7 +1053,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.465296",
+    "extracted_at": "2026-03-25T17:27:38.438264",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -771,7 +1116,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "extracted_at": "2026-03-25T17:27:38.438264",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -794,6 +1139,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台突然打开门，打着哈欠说道：“赶紧收起来，一不小心会把鬼魅给吓死的。 陆台提醒道：“可别打草惊蛇啊。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 293,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安没理睬这个冷笑话。",
@@ -809,16 +1168,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安没理睬这个冷笑话。 陆台突然打开门，打着哈欠说道：“赶紧收起来，一不小心会把鬼魅给吓死的。 ”",
+        "description": "陆台突然打开门，打着哈欠说道：“赶紧收起来，一不小心会把鬼魅给吓死的。 陈平安没理睬这个冷笑话。 陆台提醒道：“可别打草惊蛇啊。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十二章 小巷雨夜 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -832,8 +1194,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台突然打开门，打着哈欠说道：“赶紧收起来，一不小心会把鬼魅给吓死的。 ” 陈平安没理睬这个冷笑话。 他就要打开门，先什么都不管，先往巷子丢出这张符箓再说其他。 陆台提醒道：“可别打草惊蛇啊。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十二章 小巷雨夜 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 293,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.439267",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -891,7 +1279,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "extracted_at": "2026-03-25T17:27:38.439267",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -57,7 +57,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "extracted_at": "2026-03-25T17:27:38.439267",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -92,21 +92,39 @@
         ],
         "juan_index": 294,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "一想到这里，陈平安就有些恼火，那些鬼祟阴邪的大致意思，陈平安心知肚明，这是在下马威，大概是想要他和陆台这么两个阳气旺盛的外乡人，识趣一些，早早离开此地，双方井水不犯河水。 陈平安走入院子，关门上拴，陆台既然醒了，就彻底没了睡意，跟陈平安一样搬了条椅子坐在门口，不用陈平安开口，陆台就主动解释道：“一些个道行浅薄的阴物，也就吓唬吓唬人，最多祸害那些先天阳气薄弱的市井百姓，要么在他们走夜路的时候，突然吓他们一跳，趁着魂魄颤动的瞬间，吸取偷走一点魂魄，或是在那些祖上没积德、门神失灵的门户里，挑选老百姓做噩梦的时候，做那鬼压床的勾当，嗯，还有一些家伙是自己找不自在，不懂规矩，在一些个阴物游荡的鬼路岔口撒尿，自己惹祸上身。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安迁移",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陈平安叹息一声，踮起脚跟，用手指抚平那张符箓的细微褶皱，一张宝塔镇妖符，按照市价来算，能买多少对彩绘门神了？ 一想到这里，陈平安就有些恼火，那些鬼祟阴邪的大致意思，陈平安心知肚明，这是在下马威，大概是想要他和陆台这么两个阳气旺盛的外乡人，识趣一些，早早离开此地，双方井水不犯河水。 陈平安走入院子，关门上拴，陆台既然醒了，就彻底没了睡意，跟陈平安一样搬了条椅子坐在门口，不用陈平安开口，陆台就主动解释道：“一些个道行浅薄的阴物，也就吓唬吓唬人，最多祸害那些先天阳气薄弱的市井百姓，要么在他们走夜路的时候，突然吓他们一跳，趁着魂魄颤动的瞬间，吸取偷走一点魂魄，或是在那些祖上没积德、门神失灵的门户里，挑选老百姓做噩梦的时候，做那鬼压床的勾当，嗯，还有一些家伙是自己找不自在，不懂规矩，在一些个阴物游荡的鬼路岔口撒尿，自己惹祸上身。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的迁移关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -120,8 +138,49 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "别离",
+        "context": "一想到这里，陈平安就有些恼火，那些鬼祟阴邪的大致意思，陈平安心知肚明，这是在下马威，大概是想要他和陆台这么两个阳气旺盛的外乡人，识趣一些，早早离开此地，双方井水不犯河水。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 2
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安走入院子，关门上拴，陆台既然醒了，就彻底没了睡意，跟陈平安一样搬了条椅子坐在门口，不用陈平安开口，陆台就主动解释道：“一些个道行浅薄的阴物，也就吓唬吓唬人，最多祸害那些先天阳气薄弱的市井百姓，要么在他们走夜路的时候，突然吓他们一跳，趁着魂魄颤动的瞬间，吸取偷走一点魂魄，或是在那些祖上没积德、门神失灵的门户里，挑选老百姓做噩梦的时候，做那鬼压床的勾当，嗯，还有一些家伙是自己找不自在，不懂规矩，在一些个阴物游荡的鬼路岔口撒尿，自己惹祸上身。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.439267",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -144,6 +203,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台拿出那把竹扇，哗啦啦扇动起来，院内凉意顿消，没来由多出几分和煦暖意，雨水之中，一丝丝灰烟袅袅升起，旋而消散。 陆台笑道：“这帮鬼魅没啥见识，跟飞鹰堡的活人们一个德行，半点看不出咱俩的深浅，可惜了那张镇妖符，要是换成张家天师来画，或是灵宝派的高功法师，凭借你这种材质……”",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台停顿片刻，故意要在陈平安伤口上撒盐，“只需一张符贴在飞鹰堡大门口，就能够庇护这几百口人，最少三年五载，不至于被阴物袭扰，哪像你这种门外汉，只靠一口纯粹真气吐在符上，注定无法勾连天地灵气，这张符箓就是无源之水，所以能有几天风光？ 陈平安坐在对面的椅子上，“你怎么早不露面？",
@@ -160,16 +234,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台停顿片刻，故意要在陈平安伤口上撒盐，“只需一张符贴在飞鹰堡大门口，就能够庇护这几百口人，最少三年五载，不至于被阴物袭扰，哪像你这种门外汉，只靠一口纯粹真气吐在符上，注定无法勾连天地灵气，这张符箓就是无源之水，所以能有几天风光？ 陈平安坐在对面的椅子上，“你怎么早不露面？ 陆台拿出那把竹扇，哗啦啦扇动起来，院内凉意顿消，没来由多出几分和煦暖意，雨水之中，一丝丝灰烟袅袅升起，旋而消散。",
+        "description": "陆台拿出那把竹扇，哗啦啦扇动起来，院内凉意顿消，没来由多出几分和煦暖意，雨水之中，一丝丝灰烟袅袅升起，旋而消散。 陆台笑道：“这帮鬼魅没啥见识，跟飞鹰堡的活人们一个德行，半点看不出咱俩的深浅，可惜了那张镇妖符，要是换成张家天师来画，或是灵宝派的高功法师，凭借你这种材质……” 陆台停顿片刻，故意要在陈平安伤口上撒盐，“只需一张符贴在飞鹰堡大门口，就能够庇护这几百口人，最少三年五载，不至于被阴物袭扰，哪像你这种门外汉，只靠一口纯粹真气吐在符上，注定无法勾连天地灵气，这张符箓就是无源之水，所以能有几天风光？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -183,8 +260,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "守护",
+        "context": "陆台停顿片刻，故意要在陈平安伤口上撒盐，“只需一张符贴在飞鹰堡大门口，就能够庇护这几百口人，最少三年五载，不至于被阴物袭扰，哪像你这种门外汉，只靠一口纯粹真气吐在符上，注定无法勾连天地灵气，这张符箓就是无源之水，所以能有几天风光？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.439267",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -207,6 +305,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台微笑道：“我露面做什么？ 陆台越说越不像话，陈平安提着酒葫芦指了指门外，示意陆台可以出去跟它们套近乎了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台越说越不像话，陈平安提着酒葫芦指了指门外，示意陆台可以出去跟它们套近乎了。",
@@ -222,16 +334,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台越说越不像话，陈平安提着酒葫芦指了指门外，示意陆台可以出去跟它们套近乎了。 陆台微笑道：“我露面做什么？ 跟他们唠嗑，聊一聊这边的风土人情啊？",
+        "description": "陆台微笑道：“我露面做什么？ 陆台越说越不像话，陈平安提着酒葫芦指了指门外，示意陆台可以出去跟它们套近乎了。 跟他们唠嗑，聊一聊这边的风土人情啊？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -245,8 +360,34 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台微笑道：“我露面做什么？ 跟他们唠嗑，聊一聊这边的风土人情啊？ 问它们为了吓唬你，是如何安排出场次序的？ 是如何让那雨水变作血水？ 我只会语重心长告诉它们，鬼吓人的手段，它们实在不够看，我到时候可能会忍不住教它们几招绝活……” 陆台越说越不像话，陈平安提着酒葫芦指了指门外，示意陆台可以出去跟它们套近乎了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.440271",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -269,6 +410,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台坐在原地，不动如山，啪一声收起折扇，“我自幼就喜欢跟饲养在家族里的妖魔精魅打交道，甚至能说是朝夕相处，早就习惯了，如果不是你陈平安嫌它们烦，有他们在外边飘来荡去，我睡觉只会更安稳香甜。 陆台仰头望向雨幕，轻声道：“不近恶，不知善。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台坐在原地，不动如山，啪一声收起折扇，“我自幼就喜欢跟饲养在家族里的妖魔精魅打交道，甚至能说是朝夕相处，早就习惯了，如果不是你陈平安嫌它们烦，有他们在外边飘来荡去，我睡觉只会更安稳香甜。 陈平安疑惑道：“你们阴阳家子弟，不用忌讳这个？",
@@ -285,15 +440,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台坐在原地，不动如山，啪一声收起折扇，“我自幼就喜欢跟饲养在家族里的妖魔精魅打交道，甚至能说是朝夕相处，早就习惯了，如果不是你陈平安嫌它们烦，有他们在外边飘来荡去，我睡觉只会更安稳香甜。 陈平安疑惑道：“你们阴阳家子弟，不用忌讳这个？ ”",
+        "description": "陆台坐在原地，不动如山，啪一声收起折扇，“我自幼就喜欢跟饲养在家族里的妖魔精魅打交道，甚至能说是朝夕相处，早就习惯了，如果不是你陈平安嫌它们烦，有他们在外边飘来荡去，我睡觉只会更安稳香甜。 陈平安疑惑道：“你们阴阳家子弟，不用忌讳这个？ 陆台仰头望向雨幕，轻声道：“不近恶，不知善。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆台与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段5",
         "sentence_indexes_in_segment": [
@@ -309,7 +465,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "extracted_at": "2026-03-25T17:27:38.440271",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -343,21 +499,38 @@
         ],
         "juan_index": 294,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台点点头，“不然为何当初在打架之前，我要说一句‘栽赃嫁祸的风水宝地’？ 陆台两只手慵懒搭在椅把手上，大袖垂落，“若是我们俩死翘翘了，在那边的深山老林做了亡命鸳鸯，你觉得栽赃给飞鹰堡这帮武林莽夫，会有人信吗？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安好奇问道：“飞鹰堡是不是隐匿有真正的厉鬼？ 陈平安点点头，清楚记得此事。 ”",
+        "description": "陈平安好奇问道：“飞鹰堡是不是隐匿有真正的厉鬼？ 陆台点点头，“不然为何当初在打架之前，我要说一句‘栽赃嫁祸的风水宝地’？ 陈平安点点头，清楚记得此事。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -371,8 +544,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.466299",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安好奇问道：“飞鹰堡是不是隐匿有真正的厉鬼？ ” 陆台点点头，“不然为何当初在打架之前，我要说一句‘栽赃嫁祸的风水宝地’？ ” 陈平安点点头，清楚记得此事。 陆台两只手慵懒搭在椅把手上，大袖垂落，“若是我们俩死翘翘了，在那边的深山老林做了亡命鸳鸯，你觉得栽赃给飞鹰堡这帮武林莽夫，会有人信吗？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.440271",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -405,21 +604,37 @@
         ],
         "juan_index": 294,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台转头笑道：“不用去了，那些鬼魅不死心，一定要吃点亏才愿意长记性，现在领教过了，近期应该会对我们敬而远之，我以后想要再听到那些动人的天籁之音，想要睡个好觉，难喽。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安心头一动，猛然站起身，走向大门。 自然是嫁祸给这里边的那窝阴物鬼魅。 ”",
+        "description": "陈平安心头一动，猛然站起身，走向大门。 陆台转头笑道：“不用去了，那些鬼魅不死心，一定要吃点亏才愿意长记性，现在领教过了，近期应该会对我们敬而远之，我以后想要再听到那些动人的天籁之音，想要睡个好觉，难喽。 自然是嫁祸给这里边的那窝阴物鬼魅。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -433,8 +648,34 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "自然是嫁祸给这里边的那窝阴物鬼魅。 ” 陈平安心头一动，猛然站起身，走向大门。 院外小巷传出一阵动静，大门上那张镇妖符金光暴涨，一闪而逝， 陆台转头笑道：“不用去了，那些鬼魅不死心，一定要吃点亏才愿意长记性，现在领教过了，近期应该会对我们敬而远之，我以后想要再听到那些动人的天籁之音，想要睡个好觉，难喽。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.440271",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -472,6 +713,21 @@
       },
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陈平安打开院门，跨过门槛后，抬头打量了一下宝塔镇妖符，除了一粒印痕浅淡的污渍，符箓并未出现符胆崩碎、灵光摇晃的迹象，前来试探符箓身前的鬼魅，如陆台所说，确实道行不高。 陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "谢实",
         "alias": [],
         "original_description_in_book": "陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。 陈平安在台阶上蹭了蹭靴底的泥泞，想了想，缓缓道：“宝瓶洲距离俱芦洲太近，大骊跟谢实关系也很神秘，都有关系，不全是一洲风土民风的事情。",
@@ -494,6 +750,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "陆台",
           "谢实",
           "陈平安"
         ],
@@ -526,16 +783,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与谢实在宝瓶洲试探",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台在宝瓶洲试探",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
           "陈平安",
-          "谢实"
+          "陆台"
         ],
         "description": "陈平安打开院门，跨过门槛后，抬头打量了一下宝塔镇妖符，除了一粒印痕浅淡的污渍，符箓并未出现符胆崩碎、灵光摇晃的迹象，前来试探符箓身前的鬼魅，如陆台所说，确实道行不高。 陈平安返回院子，打定主意，如果还来挑衅，那就别怪他当个恶邻了。 陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。",
         "background": "",
-        "significance": "在宝瓶洲推动陈平安与谢实之间的试探线。",
+        "significance": "在宝瓶洲推动陈平安与陆台之间的试探线。",
         "related_action_indices": [
           0
         ],
@@ -559,27 +816,22 @@
           "陈平安"
         ],
         "to_roles": [
-          "谢实"
+          "陆台"
         ],
         "action": "试探",
-        "context": "陈平安打开院门，跨过门槛后，抬头打量了一下宝塔镇妖符，除了一粒印痕浅淡的污渍，符箓并未出现符胆崩碎、灵光摇晃的迹象，前来试探符箓身前的鬼魅，如陆台所说，确实道行不高。 陈平安返回院子，打定主意，如果还来挑衅，那就别怪他当个恶邻了。 陆台双手抱住后脑勺，道：“这桐叶洲是一个很守旧的地方，不太喜欢别洲的外乡人，换成是这边，俱芦洲的天君谢实，早就给人围殴得半死了，哪像你们宝瓶洲，竟然还能客客气气坐下来喝茶、讲理、讨价还价。 ” 陈平安在台阶上蹭了蹭靴底的泥泞，想了想，缓缓道：“宝瓶洲距离俱芦洲太近，大骊跟谢实关系也很神秘，都有关系，不全是一洲风土民风的事情。 陆台，你觉得呢？",
+        "context": "陈平安打开院门，跨过门槛后，抬头打量了一下宝塔镇妖符，除了一粒印痕浅淡的污渍，符箓并未出现符胆崩碎、灵光摇晃的迹象，前来试探符箓身前的鬼魅，如陆台所说，确实道行不高。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与谢实在宝瓶洲试探",
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台在宝瓶洲试探",
         "location": "宝瓶洲",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
         ],
         "juan_index": 294,
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "extracted_at": "2026-03-25T17:27:38.440271",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -600,6 +852,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台啧啧道：“可以可以，陈平安，你如今越来越能够站在山上看待问题了，不愧是闯荡过倒悬山和剑气长城的人物。 陈平安准备将椅子搬回屋子，陆台突然说道：“陈平安，如果把马万法计算在内，其实他们对付一个半金丹修士，都不难。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -624,6 +890,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "陆台",
           "陈平安"
         ],
         "sentence_indexes_in_segment": [
@@ -635,16 +902,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安在剑气长城对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台在剑气长城对话",
         "time": null,
         "location": "剑气长城",
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
         "description": "陆台啧啧道：“可以可以，陈平安，你如今越来越能够站在山上看待问题了，不愧是闯荡过倒悬山和剑气长城的人物。 陈平安准备将椅子搬回屋子，陆台突然说道：“陈平安，如果把马万法计算在内，其实他们对付一个半金丹修士，都不难。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在剑气长城推动陈平安与陆台之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -658,8 +928,29 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安准备将椅子搬回屋子，陆台突然说道：“陈平安，如果把马万法计算在内，其实他们对付一个半金丹修士，都不难。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台在剑气长城对话",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.441274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -692,21 +983,37 @@
         ],
         "juan_index": 294,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台笑道，“每一个金丹修士，几乎都是心性坚韧之辈，而且术法神通，层出不穷。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安便站在椅子旁边，问道：“如果我们俩对上一个金丹练气士，有胜算吗？ ” “有，但是胜算不大。",
+        "description": "陈平安便站在椅子旁边，问道：“如果我们俩对上一个金丹练气士，有胜算吗？ 陆台笑道，“每一个金丹修士，几乎都是心性坚韧之辈，而且术法神通，层出不穷。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -720,8 +1027,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安便站在椅子旁边，问道：“如果我们俩对上一个金丹练气士，有胜算吗？ ” “有，但是胜算不大。 ” 陆台笑道，“每一个金丹修士，几乎都是心性坚韧之辈，而且术法神通，层出不穷。 所以我们要么跟他拼命，不然就会被他活活耗死。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.441274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -754,21 +1087,37 @@
         ],
         "juan_index": 294,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台眼睛一亮，“给你讲了这些，能不能下次正式分赃的时候，少给你一百颗雪花钱？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 11
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安坐回椅子，摇头道：“我其实不太清楚，你给说道说道？ 你应该知道吧，练气士的第九境金丹境，纯粹武夫的第七境，与各自之前的那些个境界，合在一起，被说成是‘翻天覆地’。 ”",
+        "description": "陈平安坐回椅子，摇头道：“我其实不太清楚，你给说道说道？ 陆台眼睛一亮，“给你讲了这些，能不能下次正式分赃的时候，少给你一百颗雪花钱？ 你应该知道吧，练气士的第九境金丹境，纯粹武夫的第七境，与各自之前的那些个境界，合在一起，被说成是‘翻天覆地’。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -782,8 +1131,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "你应该知道吧，练气士的第九境金丹境，纯粹武夫的第七境，与各自之前的那些个境界，合在一起，被说成是‘翻天覆地’。 ” 陈平安坐回椅子，摇头道：“我其实不太清楚，你给说道说道？ ” 陆台眼睛一亮，“给你讲了这些，能不能下次正式分赃的时候，少给你一百颗雪花钱？ ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.441274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -817,21 +1192,39 @@
         ],
         "juan_index": 294,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台哈哈笑道：“我当然不在意雪花钱，我只是喜欢这种占便宜的感觉。 陈平安伸出一只手，示意陆台可以挣钱了。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安哭笑不得，“你还会在意一百雪花钱？ 陈平安伸出一只手，示意陆台可以挣钱了。 ”",
+        "description": "陈平安哭笑不得，“你还会在意一百雪花钱？ 陆台哈哈笑道：“我当然不在意雪花钱，我只是喜欢这种占便宜的感觉。 陈平安伸出一只手，示意陆台可以挣钱了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -845,8 +1238,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安哭笑不得，“你还会在意一百雪花钱？ ” 陆台哈哈笑道：“我当然不在意雪花钱，我只是喜欢这种占便宜的感觉。 ” 陈平安伸出一只手，示意陆台可以挣钱了。 陆台心情大好，踢了靴子，在椅子上盘腿而坐，微笑道：“纯粹武夫六升七，被誉为‘覆地’，除了讲第七境御风境，能够使得武夫像仙人那般御风远游之外，还有就是魂魄胆凝为一体，展现在眼前的天地，是另外一番光景了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.441274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -908,7 +1327,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "extracted_at": "2026-03-25T17:27:38.441274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -942,21 +1361,37 @@
         ],
         "juan_index": 294,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台笑问道：“所以我们两个打死了马万法这么多人，却未必打赢一个金丹修士，就变得不奇怪了？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安听得认真用心。 陈平安点头，“原来如此。 ”",
+        "description": "陈平安听得认真用心。 陆台笑问道：“所以我们两个打死了马万法这么多人，却未必打赢一个金丹修士，就变得不奇怪了？ 陈平安点头，“原来如此。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -970,8 +1405,34 @@
         "segment_index": 14
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.467302",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "” 陈平安听得认真用心。 陆台笑问道：“所以我们两个打死了马万法这么多人，却未必打赢一个金丹修士，就变得不奇怪了？ ” 陈平安点头，“原来如此。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 14
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.441274",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -994,6 +1455,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台一脸见鬼的模样，疑惑道：“教你拳法、剑术和符箓的人，一个都不跟你说这些？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 294,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安摇头道：“不教这些，传授我拳法的老人，只教我……” 陈平安站起身，轻轻一拳递向雨幕，“要随手一拳，打退雨幕十丈百丈。",
@@ -1011,16 +1485,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安指点",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安指点",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安摇头道：“不教这些，传授我拳法的老人，只教我……” 陈平安站起身，轻轻一拳递向雨幕，“要随手一拳，打退雨幕十丈百丈。 陈平安收起拳头，轻轻拧转手腕，如提笔画符，“要在笔端流泻符箓真意，一点浩然气，千里快哉风。",
+        "description": "陆台一脸见鬼的模样，疑惑道：“教你拳法、剑术和符箓的人，一个都不跟你说这些？ 陈平安摇头道：“不教这些，传授我拳法的老人，只教我……” 陈平安站起身，轻轻一拳递向雨幕，“要随手一拳，打退雨幕十丈百丈。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1034,8 +1511,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "陆台一脸见鬼的模样，疑惑道：“教你拳法、剑术和符箓的人，一个都不跟你说这些？ ” 陈平安摇头道：“不教这些，传授我拳法的老人，只教我……” 陈平安站起身，轻轻一拳递向雨幕，“要随手一拳，打退雨幕十丈百丈。 ” 陈平安收起拳头，轻轻拧转手腕，如提笔画符，“要在笔端流泻符箓真意，一点浩然气，千里快哉风。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.442278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1069,20 +1572,35 @@
         ],
         "juan_index": 294,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台怔怔看着对面屋檐下，那个跟平常不太一样的白袍少年。 陆台蜷缩在椅子上，双手笼袖，久久无言。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 16
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安再虚握长剑式，轻轻向前一挥，“大千世界，无奇不有，我唯有一剑。 陈平安咧嘴一笑，拿了椅子就要回屋，“你也早点睡。 ”",
+        "description": "陈平安再虚握长剑式，轻轻向前一挥，“大千世界，无奇不有，我唯有一剑。 陆台怔怔看着对面屋檐下，那个跟平常不太一样的白袍少年。 陆台蜷缩在椅子上，双手笼袖，久久无言。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段16",
         "sentence_indexes_in_segment": [
@@ -1098,7 +1616,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "extracted_at": "2026-03-25T17:27:38.442278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1121,6 +1639,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台认真问道：“陈平安，三者之间，你如果只能选一样，会选什么？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 294,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台认真问道：“陈平安，三者之间，你如果只能选一样，会选什么？ 陈平安愣在当场，这个问题还真没有想过，思量片刻，回答道：“当初练拳，是为了延续寿命，算是我的立身之本，以后会一直练拳，如果活得够久，我希望能够打上一千万拳，当然在这期间，一定要跻身武道第七境。",
@@ -1137,16 +1668,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "陆台认真问道：“陈平安，三者之间，你如果只能选一样，会选什么？ 陈平安愣在当场，这个问题还真没有想过，思量片刻，回答道：“当初练拳，是为了延续寿命，算是我的立身之本，以后会一直练拳，如果活得够久，我希望能够打上一千万拳，当然在这期间，一定要跻身武道第七境。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1160,8 +1694,29 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台认真问道：“陈平安，三者之间，你如果只能选一样，会选什么？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 294,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.442278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1195,20 +1750,34 @@
         ],
         "juan_index": 294,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台歪着脑袋，“图什么呢？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安伸出大拇指，指了指背后的那把剑，“是练剑。 陈平安神色平静，眼神坚毅，“我要成为一名剑仙，大剑仙！ ”",
+        "description": "陈平安伸出大拇指，指了指背后的那把剑，“是练剑。 陈平安神色平静，眼神坚毅，“我要成为一名剑仙，大剑仙！ 陆台歪着脑袋，“图什么呢？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与陆台之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段18",
         "sentence_indexes_in_segment": [
@@ -1224,7 +1793,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "extracted_at": "2026-03-25T17:27:38.442278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1259,21 +1828,38 @@
         ],
         "juan_index": 294,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台翻了个白眼，没了睡意，他便百无聊赖地哼着乡谣小曲，最后干脆站起身，在椅子上缓缓起舞，大袖翻转如流水。 陆台瞥了眼陈平安的靴子，“回头给你找一双咱们仙家穿的，就不用再担心雨雪天气，贵一点的，甚至可以水火不侵。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安嘿嘿笑着，不说话，搬了椅子小跑回屋子，关门睡觉。 陈平安按时起床，先去开门收回了镇妖符，然后在屋檐下来来回回走桩练拳。 陆台瞥了眼陈平安的靴子，“回头给你找一双咱们仙家穿的，就不用再担心雨雪天气，贵一点的，甚至可以水火不侵。",
+        "description": "陈平安嘿嘿笑着，不说话，搬了椅子小跑回屋子，关门睡觉。 陆台翻了个白眼，没了睡意，他便百无聊赖地哼着乡谣小曲，最后干脆站起身，在椅子上缓缓起舞，大袖翻转如流水。 陈平安按时起床，先去开门收回了镇妖符，然后在屋檐下来来回回走桩练拳。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1287,8 +1873,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安嘿嘿笑着，不说话，搬了椅子小跑回屋子，关门睡觉。 陆台翻了个白眼，没了睡意，他便百无聊赖地哼着乡谣小曲，最后干脆站起身，在椅子上缓缓起舞，大袖翻转如流水。 之后坐回椅子打哈欠摇扇子，要不就是手指掐诀推算运势，还会把脑袋搁在椅把手上，翻白眼吐舌头假装吊死鬼…… 就这么熬到了天亮。 陈平安按时起床，先去开门收回了镇妖符，然后在屋檐下来来回回走桩练拳。 陆台瞥了眼陈平安的靴子，“回头给你找一双咱们仙家穿的，就不用再担心雨雪天气，贵一点的，甚至可以水火不侵。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.442278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1322,21 +1934,37 @@
         ],
         "juan_index": 294,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台叹息道：“你就没有享福的命。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安没好气道：“要那玩意儿干啥，跟人打架还得担心靴子会不会破，多碍事，白白多了一件心事。 陈平安问道：“昨夜后边没发生什么怪事吧？ ”",
+        "description": "陈平安没好气道：“要那玩意儿干啥，跟人打架还得担心靴子会不会破，多碍事，白白多了一件心事。 陆台叹息道：“你就没有享福的命。 陈平安问道：“昨夜后边没发生什么怪事吧？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1350,8 +1978,34 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "” 陈平安没好气道：“要那玩意儿干啥，跟人打架还得担心靴子会不会破，多碍事，白白多了一件心事。 ” 陆台叹息道：“你就没有享福的命。 ” 陈平安问道：“昨夜后边没发生什么怪事吧？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.442278",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1374,6 +2028,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台点了点头，“还真有，好像飞鹰堡有人撞见鬼了，离着这边不算太远，双方大打出手，挺血腥的，不过没死人。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 294,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安想了想，“那咱们白天走动走动，看能不能发现真相。",
@@ -1389,16 +2056,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安冲突",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陈平安想了想，“那咱们白天走动走动，看能不能发现真相。 ” 陆台点了点头，“还真有，好像飞鹰堡有人撞见鬼了，离着这边不算太远，双方大打出手，挺血腥的，不过没死人。",
+        "description": "陆台点了点头，“还真有，好像飞鹰堡有人撞见鬼了，离着这边不算太远，双方大打出手，挺血腥的，不过没死人。 陈平安想了想，“那咱们白天走动走动，看能不能发现真相。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -1412,8 +2082,97 @@
         "segment_index": 21
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "” 陆台点了点头，“还真有，好像飞鹰堡有人撞见鬼了，离着这边不算太远，双方大打出手，挺血腥的，不过没死人。 ” 陈平安想了想，“那咱们白天走动走动，看能不能发现真相。 心里有数之后，再确定要不要出手。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.443281",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-22-0": {
+    "juan_index": 294,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "陆台对此无所谓。",
+      "风水堪舆，寻龙点穴，奇门遁甲，医卜星相，他都挺擅长的，没办法，祖师爷赏饭吃，哪怕学得不用功，整天变着法子偷懒，可还是在同龄人当中一骑绝尘，这让他很烦恼啊。",
+      "陆台的三言两语，轻描淡写，就概括了一场血腥厮杀。",
+      "其实对于当时的局中人而言，远远没有这么轻松。",
+      "昨晚的雨幕中，有一个腰挂朴刀身穿黑衣的年轻人，与一位游历至此的道士，结伴夜行，斗笠之下的神色，一个慷慨赴死，一个忧心忡忡。",
+      "滂沱大雨转为软绵小雨后，两人走入一条巷弄，来到一栋荒废已久的破败屋舍前。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台对此无所谓。 陆台的三言两语，轻描淡写，就概括了一场血腥厮杀。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台冲突",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆台"
+        ],
+        "description": "陆台对此无所谓。 陆台的三言两语，轻描淡写，就概括了一场血腥厮杀。 风水堪舆，寻龙点穴，奇门遁甲，医卜星相，他都挺擅长的，没办法，祖师爷赏饭吃，哪怕学得不用功，整天变着法子偷懒，可还是在同龄人当中一骑绝尘，这让他很烦恼啊。",
+        "background": "",
+        "significance": "对应陆台在叙事中的关键冲突节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 22
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.468306",
+    "extracted_at": "2026-03-25T17:27:38.443281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1475,7 +2234,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "extracted_at": "2026-03-25T17:27:38.443281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1541,7 +2300,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "extracted_at": "2026-03-25T17:27:38.443281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1576,21 +2335,38 @@
         ],
         "juan_index": 294,
         "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "年轻道人名叫黄尚，是个科举无望的士族子弟，练习道法将近五年，画符还是没能登堂入室，传授道法的师父又常年不在身边，黄尚几乎花光了所有积蓄，才凑出了那把前朝神册、元光、正德“三通宝”的铜钱剑，师父说过这三种通宝铜钱，九叠篆，蕴含的阳气最足。 至于黄尚所画之符，品秩不行，就只能靠数量来垫补。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 27
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳冲突",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与黄尚冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陶斜阳"
+          "陶斜阳",
+          "黄尚"
         ],
-        "description": "而与之同行的年轻道人，是陶斜阳在江湖上认识的至交好友，一见如故，陶斜阳知道年轻道人的一些秘密，能够看得见那些阴秽东西，还有一些江湖上闻所未闻的压胜手段。 道人收到陶斜阳的密信求助后，二话不说就来到飞鹰堡，一番小心探寻，年轻道人心情愈发沉重，果然如陶斜阳信上所说，飞鹰堡的确是鬼物作祟，而且道行高深，直接坏了飞鹰堡的风水根本。 让他这么个半吊子道士，对付飞鹰堡的凶煞恶鬼，实在是硬着头皮，只是与陶斜阳相交莫逆，义气使然，见陶斜阳铁了心要来此为民除害，总不能眼睁睁见着兄弟夭折在这边。",
+        "description": "而与之同行的年轻道人，是陶斜阳在江湖上认识的至交好友，一见如故，陶斜阳知道年轻道人的一些秘密，能够看得见那些阴秽东西，还有一些江湖上闻所未闻的压胜手段。 道人收到陶斜阳的密信求助后，二话不说就来到飞鹰堡，一番小心探寻，年轻道人心情愈发沉重，果然如陶斜阳信上所说，飞鹰堡的确是鬼物作祟，而且道行高深，直接坏了飞鹰堡的风水根本。 年轻道人名叫黄尚，是个科举无望的士族子弟，练习道法将近五年，画符还是没能登堂入室，传授道法的师父又常年不在身边，黄尚几乎花光了所有积蓄，才凑出了那把前朝神册、元光、正德“三通宝”的铜钱剑，师父说过这三种通宝铜钱，九叠篆，蕴含的阳气最足。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陶斜阳与黄尚之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -1604,8 +2380,34 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "黄尚"
+        ],
+        "action": "同行",
+        "context": "而与之同行的年轻道人，是陶斜阳在江湖上认识的至交好友，一见如故，陶斜阳知道年轻道人的一些秘密，能够看得见那些阴秽东西，还有一些江湖上闻所未闻的压胜手段。 道人收到陶斜阳的密信求助后，二话不说就来到飞鹰堡，一番小心探寻，年轻道人心情愈发沉重，果然如陶斜阳信上所说，飞鹰堡的确是鬼物作祟，而且道行高深，直接坏了飞鹰堡的风水根本。 年轻道人自知斤两，从来不是什么真正的山上人，跟随那个喜欢云游四方的师父，修习道法不过五年，只学到了一些望气、画符的皮毛功夫，而且他画的符箓，时灵时不灵，背着的那把铜钱剑，由七七四十九颗铜钱串成，至今还没有出手的机会，是不是真的能够镇煞斩邪，心里完全没谱。 年轻道人名叫黄尚，是个科举无望的士族子弟，练习道法将近五年，画符还是没能登堂入室，传授道法的师父又常年不在身边，黄尚几乎花光了所有积蓄，才凑出了那把前朝神册、元光、正德“三通宝”的铜钱剑，师父说过这三种通宝铜钱，九叠篆，蕴含的阳气最足。 至于黄尚所画之符，品秩不行，就只能靠数量来垫补。 让他这么个半吊子道士，对付飞鹰堡的凶煞恶鬼，实在是硬着头皮，只是与陶斜阳相交莫逆，义气使然，见陶斜阳铁了心要来此为民除害，总不能眼睁睁见着兄弟夭折在这边。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与黄尚冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.444285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1628,6 +2430,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "道士黄尚从袖中摸出一张黄纸符箓，先前大雨磅礴，此时道人看着湿漉漉的大门和高墙，苦笑道：“天时地利都不在我们这边啊。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！",
@@ -1643,16 +2458,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳对话",
         "time": null,
         "location": null,
         "participants": [
+          "黄尚",
           "陶斜阳"
         ],
-        "description": "刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！ 两人的称兄道弟，并非那江湖豪客在酒桌上的推杯换盏，而是换命。 这栋宅子在荒废之前，原先的主人应该家境殷实，门槛颇高，大门也是上好的柏木，还装饰有兽面门环，古老而深沉。",
+        "description": "道士黄尚从袖中摸出一张黄纸符箓，先前大雨磅礴，此时道人看着湿漉漉的大门和高墙，苦笑道：“天时地利都不在我们这边啊。 刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！ 两人的称兄道弟，并非那江湖豪客在酒桌上的推杯换盏，而是换命。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动黄尚与陶斜阳之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -1666,8 +2484,34 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "黄尚"
+        ],
+        "to_roles": [
+          "陶斜阳"
+        ],
+        "action": "对话",
+        "context": "两人的称兄道弟，并非那江湖豪客在酒桌上的推杯换盏，而是换命。 这栋宅子在荒废之前，原先的主人应该家境殷实，门槛颇高，大门也是上好的柏木，还装饰有兽面门环，古老而深沉。 道士黄尚从袖中摸出一张黄纸符箓，先前大雨磅礴，此时道人看着湿漉漉的大门和高墙，苦笑道：“天时地利都不在我们这边啊。 ” 刀客陶斜阳嗯了一声，死死盯住那扇大门，一手按住刀柄，突然转身，余下一手狠狠拍了一下道士的肩膀，“我先行一步，若是形势严峻，救我不得，你不用管我，回头帮我找个风水好点的阴宅即可！ ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.444285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1690,6 +2534,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "黄尚正要说话。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 294,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！ 陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！",
@@ -1706,16 +2563,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳对话",
         "time": null,
         "location": null,
         "participants": [
+          "黄尚",
           "陶斜阳"
         ],
-        "description": "陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！ 陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！ 黄尚正要说话。",
+        "description": "黄尚正要说话。 陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！ 陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动黄尚与陶斜阳之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -1729,8 +2589,34 @@
         "segment_index": 29
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "黄尚"
+        ],
+        "to_roles": [
+          "陶斜阳"
+        ],
+        "action": "对话",
+        "context": "黄尚正要说话。 陶斜阳已经咧嘴，笑容灿烂，“可不是客气话！ 若是两人都死在这边，在下边还不得抢酒喝？ ！ ” 陶斜阳收起手，气沉丹田，一刀劈向大门，“给我开！",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.444285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1765,21 +2651,37 @@
         ],
         "juan_index": 294,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "黄尚正要快步跟上，只觉得阴风阵阵，从门内扑出，只得在大门内壁，找了两处稍稍干燥的地方，张贴了两张镇宅符箓，这才稍稍好受，不至于呼吸凝滞，然后双手各捻住一张符箓，分别是“光华真君持剑符”和“黄神越章之印符”，皆是上古遗留下来的著名护身符，广为流传。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 30
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与黄尚别离",
         "time": null,
         "location": null,
         "participants": [
-          "陶斜阳"
+          "陶斜阳",
+          "黄尚"
         ],
         "description": "刀势凶猛，竟是直接劈开了大门，陶斜阳大步走入其中，毅然决然。 一时间步伐沉沉，如陷泥潭，陶斜阳毫无畏惧，轻喝一声，挥刀向前，一刀刀劈在虚空处，刀光森森，略带莹光，显然是在武道窥得门径了。 陶斜阳以刀开路，笔直向前。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陶斜阳与黄尚之间的别离关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -1793,8 +2695,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陶斜阳"
+        ],
+        "to_roles": [
+          "黄尚"
+        ],
+        "action": "别离",
+        "context": "” 刀势凶猛，竟是直接劈开了大门，陶斜阳大步走入其中，毅然决然。 一时间步伐沉沉，如陷泥潭，陶斜阳毫无畏惧，轻喝一声，挥刀向前，一刀刀劈在虚空处，刀光森森，略带莹光，显然是在武道窥得门径了。 陶斜阳以刀开路，笔直向前。 藏在他怀中和腰间的两张“君子佩符”，瞬间黑化，染满墨汁一般，本就不多的灵气，消逝干净。 黄尚正要快步跟上，只觉得阴风阵阵，从门内扑出，只得在大门内壁，找了两处稍稍干燥的地方，张贴了两张镇宅符箓，这才稍稍好受，不至于呼吸凝滞，然后双手各捻住一张符箓，分别是“光华真君持剑符”和“黄神越章之印符”，皆是上古遗留下来的著名护身符，广为流传。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与黄尚别离",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.444285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1817,6 +2745,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "只是黄尚才顶着阴风向前走出三步，就发现持剑符合印章符变得漆黑大半，好像刚从砚台里扯出来的两张符箓，年轻道人心中大骇，忍不住高喊道：“煞气浓重似水，此地鬼魅绝不是当年死于小巷的冤魂！ 黄尚满脸悲痛，竭力往手中两张遭殃的符箓，浇灌入淡薄的灵气，怒喝道：“移殃去咎！",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "只是远处的正屋房门，自行打开，陶斜阳挥刀而入，房门便砰然关闭。",
@@ -1832,15 +2774,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "黄尚",
           "陶斜阳"
         ],
-        "description": "只是远处的正屋房门，自行打开，陶斜阳挥刀而入，房门便砰然关闭。 只是黄尚才顶着阴风向前走出三步，就发现持剑符合印章符变得漆黑大半，好像刚从砚台里扯出来的两张符箓，年轻道人心中大骇，忍不住高喊道：“煞气浓重似水，此地鬼魅绝不是当年死于小巷的冤魂！ 必然是游荡百年以上的厉鬼！",
+        "description": "只是黄尚才顶着阴风向前走出三步，就发现持剑符合印章符变得漆黑大半，好像刚从砚台里扯出来的两张符箓，年轻道人心中大骇，忍不住高喊道：“煞气浓重似水，此地鬼魅绝不是当年死于小巷的冤魂！ 只是远处的正屋房门，自行打开，陶斜阳挥刀而入，房门便砰然关闭。 黄尚满脸悲痛，竭力往手中两张遭殃的符箓，浇灌入淡薄的灵气，怒喝道：“移殃去咎！",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
+        "significance": "推动黄尚与陶斜阳之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段31",
         "sentence_indexes_in_segment": [
@@ -1856,7 +2799,71 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "extracted_at": "2026-03-25T17:27:38.444285",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "294-32-0": {
+    "juan_index": 294,
+    "segment_index": 32,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百九十三章 鹰不飞",
+    "source_sentences": [
+      "持剑符毫无动静，被凶地煞气凝聚而成的墨汁浸透，捻符的双指如被火烫，黄尚赶紧丢了符箓。",
+      "好在那张印章符灵光荡漾，骤然亮起，映照出四周的异象。",
+      "符箓猛然点燃，熊熊燃烧，黄纸急剧消耗，散发出刺鼻的青烟。",
+      "在黄尚周围，阴恻恻的嬉笑声此起彼伏，却不见半点人影。",
+      "脖颈处好似被冰凉长舌舔过，让年轻道人起了一身鸡皮疙瘩。",
+      "黄尚丢了烧完的印章符，正要再从袖中摸出一张压箱底的符箓。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "持剑符毫无动静，被凶地煞气凝聚而成的墨汁浸透，捻符的双指如被火烫，黄尚赶紧丢了符箓。 在黄尚周围，阴恻恻的嬉笑声此起彼伏，却不见半点人影。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 32
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "黄尚"
+        ],
+        "description": "持剑符毫无动静，被凶地煞气凝聚而成的墨汁浸透，捻符的双指如被火烫，黄尚赶紧丢了符箓。 在黄尚周围，阴恻恻的嬉笑声此起彼伏，却不见半点人影。 黄尚丢了烧完的印章符，正要再从袖中摸出一张压箱底的符箓。",
+        "background": "",
+        "significance": "对应黄尚在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段32",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 32
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.444285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1879,6 +2886,23 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "往袖子伸去的左手手背处，好似给人针刺了一下，黄尚打了个寒颤，头顶又有莫名其妙的骤雨淋下，黄尚环顾四周，小雨绵绵，年轻道人怔怔抬手抹了一把脸，摊手一看，竟是满是鲜血。 下一刻，黄尚下意识抬起头。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "只看到一个熟悉的高瘦背影，正是飞鹰堡老管事何崖，陶斜阳的师父。",
@@ -1894,16 +2918,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳剧情推进",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳师承",
         "time": null,
         "location": null,
         "participants": [
+          "黄尚",
           "陶斜阳"
         ],
-        "description": "只看到一个熟悉的高瘦背影，正是飞鹰堡老管事何崖，陶斜阳的师父。 往袖子伸去的左手手背处，好似给人针刺了一下，黄尚打了个寒颤，头顶又有莫名其妙的骤雨淋下，黄尚环顾四周，小雨绵绵，年轻道人怔怔抬手抹了一把脸，摊手一看，竟是满是鲜血。 下一刻，黄尚下意识抬起头。",
+        "description": "往袖子伸去的左手手背处，好似给人针刺了一下，黄尚打了个寒颤，头顶又有莫名其妙的骤雨淋下，黄尚环顾四周，小雨绵绵，年轻道人怔怔抬手抹了一把脸，摊手一看，竟是满是鲜血。 下一刻，黄尚下意识抬起头。 一张没了眼珠的苍白脸庞近在咫尺，几乎要贴上黄尚的鼻尖。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动黄尚与陶斜阳之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -1917,8 +2944,34 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.469310",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "黄尚"
+        ],
+        "to_roles": [
+          "陶斜阳"
+        ],
+        "action": "师承",
+        "context": "往袖子伸去的左手手背处，好似给人针刺了一下，黄尚打了个寒颤，头顶又有莫名其妙的骤雨淋下，黄尚环顾四周，小雨绵绵，年轻道人怔怔抬手抹了一把脸，摊手一看，竟是满是鲜血。 下一刻，黄尚下意识抬起头。 一张没了眼珠的苍白脸庞近在咫尺，几乎要贴上黄尚的鼻尖。 黄尚呆若木鸡。 刹那之间，肩膀被人使劲按住，往后一拽，黄尚整个人倒飞出宅子，摔在外边的泥泞巷弄中，晕晕乎乎。 只看到一个熟悉的高瘦背影，正是飞鹰堡老管事何崖，陶斜阳的师父。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.445288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1941,6 +2994,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "黄尚刚刚松了口气，脖子就被指甲极长的雪白双手掐住，一下子往后拽去，年轻道士双手胡乱拍打泥泞地面，毫无作用，后脑勺和后背重重撞在强巷弄墙壁上，像是有人渗透墙壁之中，也希望黄尚这个大活人跟着进入其中。 黄尚一翻白眼，晕厥过去。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 34
+      },
+      {
+        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "等到年轻道人清醒过来，已经回到飞鹰堡主楼的那间客房，隔壁就是陶斜阳的住处。",
@@ -1956,15 +3024,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳迁移",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳迁移",
         "time": null,
         "location": null,
         "participants": [
+          "黄尚",
           "陶斜阳"
         ],
-        "description": "等到年轻道人清醒过来，已经回到飞鹰堡主楼的那间客房，隔壁就是陶斜阳的住处。 老人双手持符，符纸应该不是普通符箓的黄纸材质，莹光流淌，晶莹剔透，虽然在阴风煞雨之中，光彩飘荡，如大风之中的两支烛火，可是符箓灵光始终摇而不散。 老管事脚踩罡步，念念有词。",
+        "description": "黄尚刚刚松了口气，脖子就被指甲极长的雪白双手掐住，一下子往后拽去，年轻道士双手胡乱拍打泥泞地面，毫无作用，后脑勺和后背重重撞在强巷弄墙壁上，像是有人渗透墙壁之中，也希望黄尚这个大活人跟着进入其中。 黄尚一翻白眼，晕厥过去。 等到年轻道人清醒过来，已经回到飞鹰堡主楼的那间客房，隔壁就是陶斜阳的住处。",
         "background": "",
-        "significance": "对应陶斜阳在叙事中的关键迁移节点。",
+        "significance": "推动黄尚与陶斜阳之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段34",
         "sentence_indexes_in_segment": [
@@ -1980,7 +3049,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.470313",
+    "extracted_at": "2026-03-25T17:27:38.445288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2001,6 +3070,20 @@
       "今晚陈平安和陆台要去桓家府邸赴宴。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "黄尚",
+        "alias": [],
+        "original_description_in_book": "何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。 黄尚几次想要推门而入，都收回手，失魂落魄。",
+        "description": "山上人物，适合扩展外围修士节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 35
+      },
       {
         "entity_type": "person",
         "name": "陶斜阳",
@@ -2026,24 +3109,37 @@
         ],
         "juan_index": 294,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "今晚陈平安和陆台要去桓家府邸赴宴。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与陈平安迁移",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 黄尚与陶斜阳迁移",
         "time": null,
         "location": null,
         "participants": [
+          "黄尚",
           "陶斜阳",
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。 今晚陈平安和陆台要去桓家府邸赴宴。 何崖叹息一声，“斜阳的身体并无重伤，只是……”",
+        "description": "何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。 黄尚几次想要推门而入，都收回手，失魂落魄。 今晚陈平安和陆台要去桓家府邸赴宴。",
         "background": "",
-        "significance": "推动陶斜阳与陈平安之间的迁移关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动黄尚与陶斜阳之间的迁移关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段35",
         "sentence_indexes_in_segment": [
           0,
@@ -2057,34 +3153,8 @@
         "segment_index": 35
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陶斜阳"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "别离",
-        "context": "何崖叹息一声，“斜阳的身体并无重伤，只是……” 老人没有继续说下去。 何崖本想说一两句黄尚，不该如此冒冒失失，陪着陶斜阳擅自闯入那条巷弄。 只是看着年轻道士的仓皇失措，尤其是脖颈处还有黑如浓墨的一条条抓痕，过了一宿，尚未淡去，老人便有些于心不忍，叹息一声，快步离开，要去煮一付药，帮着徒弟培本固元。 黄尚几次想要推门而入，都收回手，失魂落魄。 今晚陈平安和陆台要去桓家府邸赴宴。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陶斜阳与陈平安迁移",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 294,
-        "segment_index": 35
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.470313",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.445288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2107,6 +3177,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台观察了家家户户大门上的各式门神，陈平安则偶尔会蹲下身，默默捻起一小撮土壤，放入嘴中嚼着。 陆台点点头，“驱狼吞虎之计，多半是飞鹰堡已经走投无路，死马当活马医。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 294,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陆台观察了家家户户大门上的各式门神，陈平安则偶尔会蹲下身，默默捻起一小撮土壤，放入嘴中嚼着。 回到院子后，陈平安突然想起一事，“何管事让我们进入飞鹰堡，尤其是将我们安排在这里，是不是有他的私心？",
@@ -2123,15 +3207,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安迁移",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
-        "description": "陆台观察了家家户户大门上的各式门神，陈平安则偶尔会蹲下身，默默捻起一小撮土壤，放入嘴中嚼着。 回到院子后，陈平安突然想起一事，“何管事让我们进入飞鹰堡，尤其是将我们安排在这里，是不是有他的私心？ 距离宴席还有半个时辰，今天白天两人四处闲逛，大小街道，各处水井，桓氏祠堂，演武场，飞鹰堡的行刑台等地，都走了一遍。",
+        "description": "陆台观察了家家户户大门上的各式门神，陈平安则偶尔会蹲下身，默默捻起一小撮土壤，放入嘴中嚼着。 回到院子后，陈平安突然想起一事，“何管事让我们进入飞鹰堡，尤其是将我们安排在这里，是不是有他的私心？ 陆台点点头，“驱狼吞虎之计，多半是飞鹰堡已经走投无路，死马当活马医。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "significance": "推动陆台与陈平安之间的迁移关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段36",
         "sentence_indexes_in_segment": [
@@ -2147,7 +3232,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.470313",
+    "extracted_at": "2026-03-25T17:27:38.445288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2181,21 +3266,37 @@
         ],
         "juan_index": 294,
         "segment_index": 37
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台好似看穿陈平安的心事，笑道：“在感慨江湖险恶？",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 37
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "陈平安叹了口气，若是他们俩道行低微，敌不过那些游魂荡鬼，是不是昨晚在那座宅子暴毙，死了就死了？ 陆台好似看穿陈平安的心事，笑道：“在感慨江湖险恶？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段37",
         "sentence_indexes_in_segment": [
           0,
@@ -2209,8 +3310,29 @@
         "segment_index": 37
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.470313",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "陆台好似看穿陈平安的心事，笑道：“在感慨江湖险恶？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 294,
+        "segment_index": 37
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.445288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2244,21 +3366,37 @@
         ],
         "juan_index": 294,
         "segment_index": 38
+      },
+      {
+        "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "陆台笑道：“听着简单，做起来可不容易。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 38
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安对话",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆台"
         ],
-        "description": "陈平安摇摇头，轻声道：“事有先后，对错分大小，顺序不可乱，之后才是权衡轻重，界定善恶，最终选择如何去做一件事。 陈平安嗯了一声，“难得很。 ”",
+        "description": "陈平安摇摇头，轻声道：“事有先后，对错分大小，顺序不可乱，之后才是权衡轻重，界定善恶，最终选择如何去做一件事。 陆台笑道：“听着简单，做起来可不容易。 陈平安嗯了一声，“难得很。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆台之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段38",
         "sentence_indexes_in_segment": [
           0,
@@ -2272,8 +3410,34 @@
         "segment_index": 38
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.470313",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆台"
+        ],
+        "action": "对话",
+        "context": "陈平安摇摇头，轻声道：“事有先后，对错分大小，顺序不可乱，之后才是权衡轻重，界定善恶，最终选择如何去做一件事。 ” 陆台笑道：“听着简单，做起来可不容易。 ” 陈平安嗯了一声，“难得很。 ”",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安与陆台对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 38
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.446291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2296,6 +3460,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆台",
+        "alias": [],
+        "original_description_in_book": "在这之前，陆台询问陈平安，要不要给飞鹰堡和桓淑一个惊喜，不等陆台说完，陈平安黑着脸，一拍养剑葫，陆台立即住嘴，双手合十，作求饶状。",
+        "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 294,
+        "segment_index": 39
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "在这之前，陆台询问陈平安，要不要给飞鹰堡和桓淑一个惊喜，不等陆台说完，陈平安黑着脸，一拍养剑葫，陆台立即住嘴，双手合十，作求饶状。",
@@ -2311,16 +3488,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陈平安会见",
+        "name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安会见",
         "time": null,
         "location": null,
         "participants": [
+          "陆台",
           "陈平安"
         ],
         "description": "在这之前，陆台询问陈平安，要不要给飞鹰堡和桓淑一个惊喜，不等陆台说完，陈平安黑着脸，一拍养剑葫，陆台立即住嘴，双手合十，作求饶状。 没过多久，桓常桓淑兄妹二人，联袂而至，今天桓淑换了一身暖黄色的衣裳，亭亭玉立。 桓常还是那般妆扮，只是摘掉了那张牛角弓。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "推动陆台与陈平安之间的会见关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百九十三章 鹰不飞 · 段39",
         "sentence_indexes_in_segment": [
           0,
@@ -2334,8 +3514,34 @@
         "segment_index": 39
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.470313",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆台"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "会见",
+        "context": "没过多久，桓常桓淑兄妹二人，联袂而至，今天桓淑换了一身暖黄色的衣裳，亭亭玉立。 桓常还是那般妆扮，只是摘掉了那张牛角弓。 在这之前，陆台询问陈平安，要不要给飞鹰堡和桓淑一个惊喜，不等陆台说完，陈平安黑着脸，一拍养剑葫，陆台立即住嘴，双手合十，作求饶状。 远处高楼栏杆处，一位心情不错的妇人容光焕发，笑意温柔，昨夜听女儿说了些闺房话，说有位外乡的翩翩佳公子，今儿要和朋友一起登门拜访，要她这个当娘亲的帮着掌掌眼。 妇人觉得有趣，便答应下来。 至于早年那桩有些儿戏的娃娃亲，别说是飞鹰堡不再当真，对方更希望根本没这么回事，省得被落魄不堪的飞鹰堡拖累。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百九十三章 鹰不飞 · 陆台与陈平安会见",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 294,
+        "segment_index": 39
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.446291",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

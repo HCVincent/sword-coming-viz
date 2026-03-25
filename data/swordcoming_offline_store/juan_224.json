@@ -16,6 +16,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "刘高华",
+        "alias": [],
+        "original_description_in_book": "书生刘高华也是个棋痴，很好奇青衫老人和那位女子的手谈局势，只恨自己是个没出息的宦官子弟，没机会亲眼去湖心高台瞧一瞧。",
+        "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 224,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "道士张山峰是真急了，左等右看，陈平安就是没出现，总不能是真掉进茅坑里了，便顾不得给人白眼，跟两人知会一声，就起身去找陈平安。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 224,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "道士张山峰是真急了，左等右看，陈平安就是没出现，总不能是真掉进茅坑里了，便顾不得给人白眼，跟两人知会一声，就起身去找陈平安。",
@@ -31,15 +57,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十四章 才子佳人 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百二十四章 才子佳人 · 刘高华与张山峰剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "刘高华",
+          "张山峰",
           "陈平安"
         ],
-        "description": "道士张山峰是真急了，左等右看，陈平安就是没出现，总不能是真掉进茅坑里了，便顾不得给人白眼，跟两人知会一声，就起身去找陈平安。 正所谓琴以禁制淫邪，正人心也。 游廊内，大髯汉子嗑着瓜子，啧啧道：“花样挺多啊，只是温吞吞的，差了点意思。",
+        "description": "书生刘高华也是个棋痴，很好奇青衫老人和那位女子的手谈局势，只恨自己是个没出息的宦官子弟，没机会亲眼去湖心高台瞧一瞧。 道士张山峰是真急了，左等右看，陈平安就是没出现，总不能是真掉进茅坑里了，便顾不得给人白眼，跟两人知会一声，就起身去找陈平安。 正所谓琴以禁制淫邪，正人心也。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动刘高华与张山峰之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百二十四章 才子佳人 · 段5",
         "sentence_indexes_in_segment": [
@@ -55,7 +83,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.029640",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -119,7 +147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.029640",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -221,7 +249,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.030644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -378,7 +406,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.030644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -484,7 +512,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.030644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -546,7 +574,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.030644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -608,7 +636,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.154625",
+    "extracted_at": "2026-03-25T17:27:38.030644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -721,7 +749,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "extracted_at": "2026-03-25T17:27:38.030644",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -783,7 +811,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "extracted_at": "2026-03-25T17:27:38.031647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -884,7 +912,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "extracted_at": "2026-03-25T17:27:38.031647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -948,7 +976,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "extracted_at": "2026-03-25T17:27:38.031647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1064,7 +1092,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "extracted_at": "2026-03-25T17:27:38.031647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1100,21 +1128,37 @@
         ],
         "juan_index": 224,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "刘高华",
+        "alias": [],
+        "original_description_in_book": "总不能跟人说去了趟茅厕，然后跑回去的时候浑身是血，不说大髯汉子和年轻道士会起疑心，恐怕整条游廊都要起哄，今天这么个热闹日子，陈平安不希望自己成为焦点，更不愿意因此给刘高华惹麻烦。",
+        "description": "江湖同行线人物，可补足陈平安早期外出见闻与同伴网络。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 224,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百二十四章 才子佳人 · 陈平安揭示",
+        "name": "第三卷金错刀 第二百二十四章 才子佳人 · 陈平安与刘高华揭示",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘高华"
         ],
         "description": "陈平安犹豫片刻，还是过去蹲下，拿起那截不过尺余长的乌木，极有分量，竟有八九斤重，再拿起小白碗，手指拧转小碗，仔细凝视，白碗所绘五座山岳，看名字，如果陈平安没有记错的话，应该是古榆国的五岳图。 刺客的身份，陈平安其实不难猜测，多半是古宅楚氏书生的手下，那人言语之中，便是古榆国皇帝都要与他平起平坐，死前身躯又化作朽木，分明是用了替死之法，更撂下狠话，要找他陈平安的麻烦，后来伥鬼杨晃聊起了妻子的雌榆木芯一事，这就很简单明了，楚氏书生的大道根本，一是一截古榆所化身躯，二是古宅女鬼的雌榆木芯，故而那个树妖精魅用了“接连”二字。 既然是仇家死敌的遗物，陈平安拿得心安理得，不但如此，还有些埋怨这名刺客的家底，也太薄了些，怎么连几十颗雪花钱都不带在身上？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键揭示节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与刘高华之间的揭示关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百二十四章 才子佳人 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1127,8 +1171,33 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘高华"
+        ],
+        "action": "敌对",
+        "context": "陈平安犹豫片刻，还是过去蹲下，拿起那截不过尺余长的乌木，极有分量，竟有八九斤重，再拿起小白碗，手指拧转小碗，仔细凝视，白碗所绘五座山岳，看名字，如果陈平安没有记错的话，应该是古榆国的五岳图。 刺客的身份，陈平安其实不难猜测，多半是古宅楚氏书生的手下，那人言语之中，便是古榆国皇帝都要与他平起平坐，死前身躯又化作朽木，分明是用了替死之法，更撂下狠话，要找他陈平安的麻烦，后来伥鬼杨晃聊起了妻子的雌榆木芯一事，这就很简单明了，楚氏书生的大道根本，一是一截古榆所化身躯，二是古宅女鬼的雌榆木芯，故而那个树妖精魅用了“接连”二字。 既然是仇家死敌的遗物，陈平安拿得心安理得，不但如此，还有些埋怨这名刺客的家底，也太薄了些，怎么连几十颗雪花钱都不带在身上？ 陈平安将轻巧小碗和沉重乌木一并收入方寸物中，实在是走不动路了，蹒跚着走出十数步，来到一棵墙边的粗壮杏树下，背靠墙壁，缓缓坐下，从飞剑十五当中取出一件洁净衣衫，仔细擦拭血迹。 总不能跟人说去了趟茅厕，然后跑回去的时候浑身是血，不说大髯汉子和年轻道士会起疑心，恐怕整条游廊都要起哄，今天这么个热闹日子，陈平安不希望自己成为焦点，更不愿意因此给刘高华惹麻烦。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百二十四章 才子佳人 · 陈平安与刘高华揭示",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 224,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.031647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1255,7 +1324,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.155629",
+    "extracted_at": "2026-03-25T17:27:38.031647",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1349,7 +1418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.032650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1432,7 +1501,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.032650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1558,7 +1627,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.032650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1621,7 +1690,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.032650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1684,7 +1753,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.032650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1747,7 +1816,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.032650",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1810,7 +1879,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.156632",
+    "extracted_at": "2026-03-25T17:27:38.033654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

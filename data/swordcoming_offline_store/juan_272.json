@@ -89,7 +89,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.371972",
+    "extracted_at": "2026-03-25T17:27:38.317442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -282,7 +282,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.317442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -383,7 +383,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.318446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -486,7 +486,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.318446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -593,7 +593,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.318446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -736,7 +736,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.318446",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -834,7 +834,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.319449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -931,7 +931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.372976",
+    "extracted_at": "2026-03-25T17:27:38.319449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -994,7 +994,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "extracted_at": "2026-03-25T17:27:38.319449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1119,7 +1119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "extracted_at": "2026-03-25T17:27:38.319449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1139,7 +1139,21 @@
       "真正的中转枢纽，在倒悬山的山腹之中。",
       "捉放亭上香楼在内的附近八座渡口，各有一条倾斜向下的大路通往山腹，早年为了是否需要凿开山壁，在山腹之中建造新的大渡口，是否要请示青冥天下的那位掌教师尊，师兄弟二人起了争执，倒悬山大天君认为大势所趋，倒悬山为什么放着那么多香火钱不挣？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "孤峰山脚的白玉广场上，头戴鱼尾冠的小道童继续坐在蒲团上翻书，这几日是青冥天下的重要斋戒日，倒悬山一向不以浩然天下自居，所以通往剑气长城的这道大门，需要后天子时才会重新开启，否则这里就是倒悬山最热闹的地带，之一。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 272,
+        "segment_index": 11
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -1148,7 +1162,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "小道童"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -1158,13 +1174,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 剑气长城遭遇",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童在剑气长城遭遇",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
+        "participants": [
+          "小道童"
+        ],
         "description": "孤峰山脚的白玉广场上，头戴鱼尾冠的小道童继续坐在蒲团上翻书，这几日是青冥天下的重要斋戒日，倒悬山一向不以浩然天下自居，所以通往剑气长城的这道大门，需要后天子时才会重新开启，否则这里就是倒悬山最热闹的地带，之一。 宁姑娘，遇见你，我很高兴。 ————",
         "background": "",
-        "significance": "对应剑气长城相关的关键遭遇场景。",
+        "significance": "对应小道童在叙事中的关键遭遇节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段11",
         "sentence_indexes_in_segment": [
@@ -1180,7 +1198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "extracted_at": "2026-03-25T17:27:38.319449",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1203,6 +1221,22 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "真实身份除了看门人之外，更是倒悬山第二把交椅的小道童，则觉得倒悬山的破土动工，只要涉及到山字印本体，哪怕一丝一毫，就是对师尊的大不敬。 当时两人争吵不出答案，不惜为此大打出手，事后又各自在上香楼点燃三炷香，惊动了常年待在天外天的掌教师尊，师尊先是返回青冥天下的白玉京，然后亲自颁布了一封旨意，两位师兄弟这才消停，但是在那之后，原本手握大权、几乎不输师兄的小道童，一气之下，就不再处理任何倒悬山事务，全部甩给大天君，自己就守着这么一块蒲团。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "juan_index": 272,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陆沉",
         "alias": [
           "莲花冠道人"
@@ -1220,16 +1254,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 陆沉冲突",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童与陆沉冲突",
         "time": null,
         "location": null,
         "participants": [
+          "小道童",
           "陆沉"
         ],
-        "description": "小道童最近心情本来就很糟糕，他虽是大天君这一脉的道人，却与三掌教陆沉关系亲近，见到那个姓陆的娘娘腔，就烦。 真实身份除了看门人之外，更是倒悬山第二把交椅的小道童，则觉得倒悬山的破土动工，只要涉及到山字印本体，哪怕一丝一毫，就是对师尊的大不敬。 当时两人争吵不出答案，不惜为此大打出手，事后又各自在上香楼点燃三炷香，惊动了常年待在天外天的掌教师尊，师尊先是返回青冥天下的白玉京，然后亲自颁布了一封旨意，两位师兄弟这才消停，但是在那之后，原本手握大权、几乎不输师兄的小道童，一气之下，就不再处理任何倒悬山事务，全部甩给大天君，自己就守着这么一块蒲团。",
+        "description": "真实身份除了看门人之外，更是倒悬山第二把交椅的小道童，则觉得倒悬山的破土动工，只要涉及到山字印本体，哪怕一丝一毫，就是对师尊的大不敬。 当时两人争吵不出答案，不惜为此大打出手，事后又各自在上香楼点燃三炷香，惊动了常年待在天外天的掌教师尊，师尊先是返回青冥天下的白玉京，然后亲自颁布了一封旨意，两位师兄弟这才消停，但是在那之后，原本手握大权、几乎不输师兄的小道童，一气之下，就不再处理任何倒悬山事务，全部甩给大天君，自己就守着这么一块蒲团。 左等右等，没有等到意料中人，他便有些不耐烦，跳下拴马桩，绕过镜面大门，来到小道童旁边蹲着，耳畔唯有小道童慢悠悠的翻书声。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动小道童与陆沉之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -1243,8 +1280,34 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "小道童"
+        ],
+        "to_roles": [
+          "陆沉"
+        ],
+        "action": "冲突",
+        "context": "真实身份除了看门人之外，更是倒悬山第二把交椅的小道童，则觉得倒悬山的破土动工，只要涉及到山字印本体，哪怕一丝一毫，就是对师尊的大不敬。 当时两人争吵不出答案，不惜为此大打出手，事后又各自在上香楼点燃三炷香，惊动了常年待在天外天的掌教师尊，师尊先是返回青冥天下的白玉京，然后亲自颁布了一封旨意，两位师兄弟这才消停，但是在那之后，原本手握大权、几乎不输师兄的小道童，一气之下，就不再处理任何倒悬山事务，全部甩给大天君，自己就守着这么一块蒲团。 坐在拴马桩上的抱剑男子，整个大白天都在酣睡，到了晚上反而清醒得很，眼神明亮得如同皎皎明月，满脸看热闹的笑意，左右张望，似乎在等人。 左等右等，没有等到意料中人，他便有些不耐烦，跳下拴马桩，绕过镜面大门，来到小道童旁边蹲着，耳畔唯有小道童慢悠悠的翻书声。 小道童最近心情本来就很糟糕，他虽是大天君这一脉的道人，却与三掌教陆沉关系亲近，见到那个姓陆的娘娘腔，就烦。 小娘娘腔口气恁大，更烦。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童与陆沉冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.320453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1279,21 +1342,37 @@
         ],
         "juan_index": 272,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童受不了身边这抱剑汉子，“归根结底，不就还是个小姑娘嘛，有什么好瞧的。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 272,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 陆沉对话",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 陆沉与小道童对话",
         "time": null,
         "location": null,
         "participants": [
-          "陆沉"
+          "陆沉",
+          "小道童"
         ],
-        "description": "之前没有被小掌教陆沉骗到这座天下的倒悬山，待在那座白玉京，可没有这么多烦心事，每天陪着陆掌教在顶楼的栏杆上散步，眼巴巴等着师尊从天外天返回白玉京休养生息，偶尔运气好，还能遇到百年难遇的道祖老爷，道祖老爷是个大忙人，很少出现在白玉京，要么在不知名的秘境云游，帮忙稳固气运，打造成可供修士居住修道的洞天，要么在那座小莲花洞天观道，道祖老爷当然已经不需要悟道了，所谓观道，按照自家师尊的说法，也只是观看别人的小道罢了。 师兄大天君跟人打架打输了，还是烦。 天底下怎么就有这么多烦心事？",
+        "description": "之前没有被小掌教陆沉骗到这座天下的倒悬山，待在那座白玉京，可没有这么多烦心事，每天陪着陆掌教在顶楼的栏杆上散步，眼巴巴等着师尊从天外天返回白玉京休养生息，偶尔运气好，还能遇到百年难遇的道祖老爷，道祖老爷是个大忙人，很少出现在白玉京，要么在不知名的秘境云游，帮忙稳固气运，打造成可供修士居住修道的洞天，要么在那座小莲花洞天观道，道祖老爷当然已经不需要悟道了，所谓观道，按照自家师尊的说法，也只是观看别人的小道罢了。 小道童受不了身边这抱剑汉子，“归根结底，不就还是个小姑娘嘛，有什么好瞧的。 师兄大天君跟人打架打输了，还是烦。",
         "background": "",
-        "significance": "对应陆沉在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陆沉与小道童之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1307,8 +1386,158 @@
         "segment_index": 13
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆沉"
+        ],
+        "to_roles": [
+          "小道童"
+        ],
+        "action": "对话",
+        "context": "师兄大天君跟人打架打输了，还是烦。 天底下怎么就有这么多烦心事？ 之前没有被小掌教陆沉骗到这座天下的倒悬山，待在那座白玉京，可没有这么多烦心事，每天陪着陆掌教在顶楼的栏杆上散步，眼巴巴等着师尊从天外天返回白玉京休养生息，偶尔运气好，还能遇到百年难遇的道祖老爷，道祖老爷是个大忙人，很少出现在白玉京，要么在不知名的秘境云游，帮忙稳固气运，打造成可供修士居住修道的洞天，要么在那座小莲花洞天观道，道祖老爷当然已经不需要悟道了，所谓观道，按照自家师尊的说法，也只是观看别人的小道罢了。 小道童受不了身边这抱剑汉子，“归根结底，不就还是个小姑娘嘛，有什么好瞧的。 ” 抱剑汉子笑道：“你不懂，我这戴罪之身，在此受罚，难得有点小兴趣。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 陆沉与小道童对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.320453",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "272-14-0": {
+    "juan_index": 272,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十一章 宁姑娘,对不起",
+    "source_sentences": [
+      "”",
+      "小道童合上书籍，咧嘴笑道：“呦，一门之隔，身处浩然天下，还拥有仙人境的大剑仙呢，小兴趣？",
+      "多小？",
+      "”",
+      "中年男子摇头叹息道：“跟你这种家伙聊天，真没啥意思。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童合上书籍，咧嘴笑道：“呦，一门之隔，身处浩然天下，还拥有仙人境的大剑仙呢，小兴趣？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 272,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童合上书籍，咧嘴笑道：“呦，一门之隔，身处浩然天下，还拥有仙人境的大剑仙呢，小兴趣？ ” 多小？",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 14
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "extracted_at": "2026-03-25T17:27:38.320453",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "272-15-0": {
+    "juan_index": 272,
+    "segment_index": 15,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十一章 宁姑娘,对不起",
+    "source_sentences": [
+      "汉子又补了一句，“还是咱们隔壁那一对，比咱们合得来，这不现在都已经开始小赌怡情了。",
+      "”",
+      "小道童这才有了点兴致，“赌什么？",
+      "”",
+      "抱剑汉子试探性问道：“蒲团借我一半坐坐？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童这才有了点兴致，“赌什么？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 272,
+        "segment_index": 15
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童这才有了点兴致，“赌什么？ 汉子又补了一句，“还是咱们隔壁那一对，比咱们合得来，这不现在都已经开始小赌怡情了。 ”",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段15",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 15
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.320453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1328,7 +1557,22 @@
       "小道童问道：“就不能是一个都不回？",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童纹丝不动，冷笑道：“你觉得呢？ 小道童问道：“就不能是一个都不回？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 272,
+        "segment_index": 16
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -1347,13 +1591,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 剑气长城对话",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童在剑气长城对话",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "汉子不再纠缠这点，继续道：“隔壁老姚在跟那位佩刀的道姑，在赌小姑娘天亮之前，返回剑气长城的时候，是一个人还是两个人。 小道童纹丝不动，冷笑道：“你觉得呢？ ”",
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童纹丝不动，冷笑道：“你觉得呢？ 汉子不再纠缠这点，继续道：“隔壁老姚在跟那位佩刀的道姑，在赌小姑娘天亮之前，返回剑气长城的时候，是一个人还是两个人。 小道童问道：“就不能是一个都不回？",
         "background": "",
-        "significance": "对应剑气长城相关的关键对话场景。",
+        "significance": "对应小道童在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段16",
         "sentence_indexes_in_segment": [
@@ -1369,7 +1615,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "extracted_at": "2026-03-25T17:27:38.320453",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1389,7 +1635,22 @@
       "汉子叹息一声，神色复杂。",
       "小道童眼睛一亮，随手挥袖，心中以东宝瓶洲口音默念两个名字后，有两道青色符箓随手画符而成的同时，一闪而逝。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童问道：“因为宁、姚两个姓氏的荣光？ 小道童眼睛一亮，随手挥袖，心中以东宝瓶洲口音默念两个名字后，有两道青色符箓随手画符而成的同时，一闪而逝。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 17
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -1412,7 +1673,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "小道童"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -1422,13 +1685,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 剑气长城对话",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童在剑气长城对话",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "抱剑汉子摇摇头，望向远方，“她一定会回剑气长城的。 小道童眼睛一亮，随手挥袖，心中以东宝瓶洲口音默念两个名字后，有两道青色符箓随手画符而成的同时，一闪而逝。 ”",
+        "participants": [
+          "小道童"
+        ],
+        "description": "抱剑汉子摇摇头，望向远方，“她一定会回剑气长城的。 小道童问道：“因为宁、姚两个姓氏的荣光？ 小道童眼睛一亮，随手挥袖，心中以东宝瓶洲口音默念两个名字后，有两道青色符箓随手画符而成的同时，一闪而逝。",
         "background": "",
-        "significance": "对应剑气长城相关的关键对话场景。",
+        "significance": "对应小道童在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段17",
         "sentence_indexes_in_segment": [
@@ -1444,7 +1709,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.373979",
+    "extracted_at": "2026-03-25T17:27:38.320453",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "272-19-0": {
+    "juan_index": 272,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十一章 宁姑娘,对不起",
+    "source_sentences": [
+      "所以两张符箓，只适合于“无法”之地的游荡侦查。",
+      "不过小道童在倒悬山自家地盘驾驭两道符箓，当然没有任何问题。",
+      "只可惜被那位倒悬山剑仙弹指破去。",
+      "抱剑汉子问道：“赌不赌？",
+      "”",
+      "小道童兴致缺缺，摇头道：“不赌，你这么个烂赌鬼，赌品之差，在倒悬山能排进前三甲，我跟你赌，赌输了，我肯定给你东西，赌赢了，肯定拿不到东西。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "不过小道童在倒悬山自家地盘驾驭两道符箓，当然没有任何问题。 小道童兴致缺缺，摇头道：“不赌，你这么个烂赌鬼，赌品之差，在倒悬山能排进前三甲，我跟你赌，赌输了，我肯定给你东西，赌赢了，肯定拿不到东西。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "不过小道童在倒悬山自家地盘驾驭两道符箓，当然没有任何问题。 小道童兴致缺缺，摇头道：“不赌，你这么个烂赌鬼，赌品之差，在倒悬山能排进前三甲，我跟你赌，赌输了，我肯定给你东西，赌赢了，肯定拿不到东西。 所以两张符箓，只适合于“无法”之地的游荡侦查。",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.321456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1464,7 +1792,21 @@
       "小道童想起一件有意思的事情，笑哈哈道：“你算好的了，瞧瞧敬剑阁里头那两把破剑，你再回头看看自己，路过此地的各方人士，不论是剑气长城还是浩然天下的，谁不对你毕恭毕敬？",
       "在他们看来，你这位活着的大剑仙放个屁都是香的。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童想起一件有意思的事情，笑哈哈道：“你算好的了，瞧瞧敬剑阁里头那两把破剑，你再回头看看自己，路过此地的各方人士，不论是剑气长城还是浩然天下的，谁不对你毕恭毕敬？",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 272,
+        "segment_index": 20
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -1473,7 +1815,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "小道童"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1483,13 +1827,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
+        "participants": [
+          "小道童"
+        ],
         "description": "小道童想起一件有意思的事情，笑哈哈道：“你算好的了，瞧瞧敬剑阁里头那两把破剑，你再回头看看自己，路过此地的各方人士，不论是剑气长城还是浩然天下的，谁不对你毕恭毕敬？ 赌什么赌，不赌。 ”",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段20",
         "sentence_indexes_in_segment": [
@@ -1505,7 +1851,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.321456",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "272-21-0": {
+    "juan_index": 272,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十一章 宁姑娘,对不起",
+    "source_sentences": [
+      "”",
+      "抱剑汉子没有恼火，自嘲道：“这么说来，我在这儿看门，确实不该有什么怨言。",
+      "”",
+      "小道童放下书籍，双手抱住后脑勺，仰头望向天幕。",
+      "汉子喃喃道：“对于市井百姓而言，离家一百年后，家乡差不多就该变成故乡了，对于练气士，一千年怎么也算，那我们这拨一万年往上的刑徒流民呢？",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童放下书籍，双手抱住后脑勺，仰头望向天幕。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 272,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童放下书籍，双手抱住后脑勺，仰头望向天幕。 ” 抱剑汉子没有恼火，自嘲道：“这么说来，我在这儿看门，确实不该有什么怨言。",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 21
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.321456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1525,7 +1933,21 @@
       "同样有两人坐镇门口，还是剑气长城和倒悬山各一人。",
       "一名灰衣老剑修正在正大光明地淬炼本命飞剑，旁边站着一位悬佩法刀的中年道姑。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "小道童没有回答这个问题。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 272,
+        "segment_index": 22
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -1544,13 +1966,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
-        "description": "同样有两人坐镇门口，还是剑气长城和倒悬山各一人。 小道童没有回答这个问题。 回答不了。",
+        "participants": [
+          "小道童"
+        ],
+        "description": "小道童没有回答这个问题。 同样有两人坐镇门口，还是剑气长城和倒悬山各一人。 回答不了。",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段22",
         "sentence_indexes_in_segment": [
@@ -1566,7 +1990,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.321456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1627,7 +2051,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.321456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1688,7 +2112,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.321456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1752,7 +2176,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.321456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1814,7 +2238,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.322460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1895,7 +2319,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.374983",
+    "extracted_at": "2026-03-25T17:27:38.322460",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "272-28-0": {
+    "juan_index": 272,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十一章 宁姑娘,对不起",
+    "source_sentences": [
+      "”",
+      "独臂少女认真想了想，惜字如金的她盖棺定论道：“难！",
+      "”",
+      "————",
+      "倒悬山后半夜，一位墨绿长袍腰悬双剑的英气少女，出现在孤峰山脚附近，她看也不看抱剑汉子和小道童一眼，径直走入镜面。",
+      "刹那之间，她又由镜面走出，烈日当空，她抬起头，下意识眯起了眼睛。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "倒悬山后半夜，一位墨绿长袍腰悬双剑的英气少女，出现在孤峰山脚附近，她看也不看抱剑汉子和小道童一眼，径直走入镜面。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 272,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 小道童剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "小道童"
+        ],
+        "description": "倒悬山后半夜，一位墨绿长袍腰悬双剑的英气少女，出现在孤峰山脚附近，她看也不看抱剑汉子和小道童一眼，径直走入镜面。 ” 独臂少女认真想了想，惜字如金的她盖棺定论道：“难！",
+        "background": "",
+        "significance": "对应小道童在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 272,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.322460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1916,6 +2402,19 @@
       "又越过他们。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "小道童",
+        "alias": [],
+        "original_description_in_book": "大门内外，抱剑男子和游鱼冠小道童，灰衣老剑修和师刀道姑，不约而同地相视一眼。",
+        "description": "道门称谓人物，可扩展道家支线关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 272,
+        "segment_index": 29
+      },
       {
         "entity_type": "person",
         "name": "宁姚",
@@ -1951,15 +2450,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 宁姚在剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 宁姚与小道童在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
         "participants": [
-          "宁姚"
+          "宁姚",
+          "小道童"
         ],
-        "description": "至于那些少女的同龄人，对她充满了仰慕和敬重的朋友们，一个个没心没肺地如释重负，觉得只有宁姚一个人返回剑气长城的今天，天气真不错。 宁姚嗯了一声，加快步伐，跟上他们。 大门内外，抱剑男子和游鱼冠小道童，灰衣老剑修和师刀道姑，不约而同地相视一眼。",
+        "description": "大门内外，抱剑男子和游鱼冠小道童，灰衣老剑修和师刀道姑，不约而同地相视一眼。 至于那些少女的同龄人，对她充满了仰慕和敬重的朋友们，一个个没心没肺地如释重负，觉得只有宁姚一个人返回剑气长城的今天，天气真不错。 宁姚嗯了一声，加快步伐，跟上他们。",
         "background": "",
-        "significance": "对应宁姚在叙事中的关键剧情推进节点。",
+        "significance": "在剑气长城推动宁姚与小道童之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十一章 宁姑娘,对不起 · 段29",
         "sentence_indexes_in_segment": [
@@ -1975,7 +2475,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.322460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2038,7 +2538,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.322460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2098,7 +2598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.375986",
+    "extracted_at": "2026-03-25T17:27:38.322460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

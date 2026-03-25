@@ -16,6 +16,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "打完最后一场架，曹慈就跟他师父告辞离去，师徒二人应该是就此离开剑气长城，返回中土大端。 曹慈临行前，对陈平安说道：“陈平安，你回倒悬山之前，那座小茅屋，能不能帮我照看一下？",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "曹慈临行前，对陈平安说道：“陈平安，你回倒悬山之前，那座小茅屋，能不能帮我照看一下？ 陈平安抹了把额头汗水，笑道：“没问题。",
@@ -37,7 +51,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹慈"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -47,16 +63,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安在剑气长城对话",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安在剑气长城对话",
         "time": null,
         "location": "剑气长城",
         "participants": [
+          "曹慈",
           "陈平安"
         ],
         "description": "打完最后一场架，曹慈就跟他师父告辞离去，师徒二人应该是就此离开剑气长城，返回中土大端。 曹慈临行前，对陈平安说道：“陈平安，你回倒悬山之前，那座小茅屋，能不能帮我照看一下？ 陈平安抹了把额头汗水，笑道：“没问题。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在剑气长城推动曹慈与陈平安之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -70,8 +89,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹慈"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "曹慈临行前，对陈平安说道：“陈平安，你回倒悬山之前，那座小茅屋，能不能帮我照看一下？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安在剑气长城对话",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.360592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -94,6 +134,45 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "这是曹慈独有的善意。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 279,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年和女子武神在走马道上愈行愈远。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 279,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙对陈平安提醒道：“我要撤去小天地了。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老剑仙对陈平安提醒道：“我要撤去小天地了。 陈平安点点头，示意自己没问题。",
@@ -110,16 +189,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安指点",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安指点",
         "time": null,
         "location": null,
         "participants": [
+          "老剑仙",
           "陈平安"
         ],
-        "description": "老剑仙对陈平安提醒道：“我要撤去小天地了。 陈平安点点头，示意自己没问题。 ”",
+        "description": "这是曹慈独有的善意。 白衣少年和女子武神在走马道上愈行愈远。 老剑仙对陈平安提醒道：“我要撤去小天地了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动老剑仙与陈平安之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -133,8 +215,29 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老剑仙"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "老剑仙对陈平安提醒道：“我要撤去小天地了。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.360592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -155,6 +258,19 @@
       "宁姚皱眉，指了指心坎，“我是说这里。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙随手撤去那方天地的禁制，剑气顿时汹涌而至，陈平安当下神魂震荡，受伤不轻，只能老老实实以剑炉立桩与之抗衡。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 279,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -236,7 +352,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "extracted_at": "2026-03-25T17:27:38.360592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -314,7 +430,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "extracted_at": "2026-03-25T17:27:38.360592",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -363,6 +479,19 @@
         ],
         "juan_index": 279,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "第一次是陈平安和曹慈切磋拳法技击，双方如有默契，都很纯粹，可陈平安次次出拳，好像刚好要比曹慈慢上一线。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 279,
+        "segment_index": 5
       }
     ],
     "locations": [],
@@ -373,14 +502,13 @@
         "location": null,
         "participants": [
           "陈平安",
-          "宁姚"
+          "宁姚",
+          "曹慈"
         ],
         "description": "但是这种话，陈平安哪里敢讲。 宁姚背靠城墙，忧心问道：“真没事？ 一天之内，陈平安输了三次，输得不能再输了。",
         "background": "",
         "significance": "推动陈平安与宁姚之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -394,34 +522,8 @@
         "segment_index": 5
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "宁姚"
-        ],
-        "action": "对话",
-        "context": "但是这种话，陈平安哪里敢讲。 宁姚背靠城墙，忧心问道：“真没事？ ” 一天之内，陈平安输了三次，输得不能再输了。 第一次是陈平安和曹慈切磋拳法技击，双方如有默契，都很纯粹，可陈平安次次出拳，好像刚好要比曹慈慢上一线。 不是说陈平安的拳法不入流，恰恰相反，崔姓老人传授的神人擂鼓式，云蒸大泽式等拳招，一旁观战的女子武神都有数次点头。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与宁姚对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 279,
-        "segment_index": 5
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.361595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -444,6 +546,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "反观曹慈显得太写意闲适了，闲庭信步，未卜先知，料敌先机，陈平安的拳脚，就像刚好凑到他想要到的地方。 陈平安就没有打中过曹慈，一拳都没有。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 279,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "反观曹慈显得太写意闲适了，闲庭信步，未卜先知，料敌先机，陈平安的拳脚，就像刚好凑到他想要到的地方。 陈平安就没有打中过曹慈，一拳都没有。",
@@ -455,6 +572,19 @@
           2,
           3,
           5
+        ],
+        "juan_index": 279,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "在老剑仙和宁姚都觉得一场足矣的时候，这次轮到女子武神微笑建议，再打一架，并且让陈平安放开手脚，不用拘束于拳法。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 279,
         "segment_index": 6
@@ -477,16 +607,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与宁姚剧情推进",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "宁姚"
+          "曹慈",
+          "宁姚",
+          "老剑仙"
         ],
         "description": "反观曹慈显得太写意闲适了，闲庭信步，未卜先知，料敌先机，陈平安的拳脚，就像刚好凑到他想要到的地方。 陈平安就没有打中过曹慈，一拳都没有。 在老剑仙和宁姚都觉得一场足矣的时候，这次轮到女子武神微笑建议，再打一架，并且让陈平安放开手脚，不用拘束于拳法。",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的剧情推进关系。",
+        "significance": "推动陈平安与曹慈之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段6",
         "sentence_indexes_in_segment": [
@@ -502,7 +634,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.403080",
+    "extracted_at": "2026-03-25T17:27:38.361595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -542,6 +674,21 @@
       },
       {
         "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "最后一场架，是陈平安自己提出来，曹慈点头答应。 变得不像是在跟曹慈过招，而是跟自己较劲，不断强行变更既定拳招的路数，试想一下，神人擂鼓式也好，铁骑凿阵式也罢，都是崔姓老人锤炼千百万遍的“神仙手”，陈平安这种行径，看上去有些自乱阵脚。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 279,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "但是在场三人，哪怕是武道之外的宁姚，最终都看出了陈平安的临时变阵，大方向是对的。",
@@ -557,16 +704,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与宁姚剧情推进",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "曹慈",
           "宁姚"
         ],
         "description": "最后一场架，是陈平安自己提出来，曹慈点头答应。 第三场，陈平安开始变了。 变得不像是在跟曹慈过招，而是跟自己较劲，不断强行变更既定拳招的路数，试想一下，神人擂鼓式也好，铁骑凿阵式也罢，都是崔姓老人锤炼千百万遍的“神仙手”，陈平安这种行径，看上去有些自乱阵脚。",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的剧情推进关系。",
+        "significance": "推动陈平安与曹慈之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段7",
         "sentence_indexes_in_segment": [
@@ -582,7 +730,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.361595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -603,6 +751,22 @@
       "所以“剑心澄澈、锋芒毕露”的宁姚才有此问，她担心陈平安输了第四场。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "第三场之后，曹慈对陈平安伸出了大拇指，只说了四个字，再接再厉。 如果不是曹慈，也不是陈平安，恐怕所有人都觉得曹慈这是在挑衅，是在耀武扬威，或是在居高临下，俯瞰败者。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "juan_index": 279,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -637,16 +801,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与宁姚剧情推进",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "曹慈",
           "宁姚"
         ],
         "description": "第三场之后，曹慈对陈平安伸出了大拇指，只说了四个字，再接再厉。 如果不是曹慈，也不是陈平安，恐怕所有人都觉得曹慈这是在挑衅，是在耀武扬威，或是在居高临下，俯瞰败者。 但是，曹慈的心平气和，陈平安的心境安定，并不能改变一个事实。",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的剧情推进关系。",
+        "significance": "推动陈平安与曹慈之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段8",
         "sentence_indexes_in_segment": [
@@ -662,7 +827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.361595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -683,6 +848,19 @@
       "但是不怕死，不意味着就不怕输。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "一旦武道心境被曹慈碾压破碎，恐怕陈平安别说是武道止境，此生跻身七境都难。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 279,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -746,17 +924,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与宁姚在骊珠洞天剧情推进",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
           "陈平安",
+          "曹慈",
           "宁姚",
           "马苦玄"
         ],
         "description": "一旦武道心境被曹慈碾压破碎，恐怕陈平安别说是武道止境，此生跻身七境都难。 好在陈平安说没事。 宁姚相信他。",
         "background": "",
-        "significance": "在骊珠洞天推动陈平安与宁姚之间的剧情推进线。",
+        "significance": "在骊珠洞天推动陈平安与曹慈之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段9",
         "sentence_indexes_in_segment": [
@@ -772,7 +951,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.361595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -881,7 +1060,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.362598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -931,6 +1110,32 @@
         ],
         "juan_index": 279,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "从老剑仙陈爷爷，到曹慈和女子武神，以及他们所在的中土神洲大端王朝，再到拥有四大仙剑之一的龙虎山大天师，谈到了仙剑，自然而然就牵扯到了被誉为真无敌的道老二，因为他那把仙剑被誉为“道高人间一尺”，然后就是道老二座下一脉的倒悬山，最后回到了剑气长城，陈平安的拳法。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 279,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "从老剑仙陈爷爷，到曹慈和女子武神，以及他们所在的中土神洲大端王朝，再到拥有四大仙剑之一的龙虎山大天师，谈到了仙剑，自然而然就牵扯到了被誉为真无敌的道老二，因为他那把仙剑被誉为“道高人间一尺”，然后就是道老二座下一脉的倒悬山，最后回到了剑气长城，陈平安的拳法。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 279,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -943,7 +1148,9 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "宁姚"
+          "宁姚",
+          "老剑仙",
+          "曹慈"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -1003,7 +1210,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.362598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1066,7 +1273,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.362598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1144,7 +1351,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.404084",
+    "extracted_at": "2026-03-25T17:27:38.362598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1302,7 +1509,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.362598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1392,7 +1599,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.363602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1440,6 +1647,19 @@
         ],
         "juan_index": 279,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "那个曹慈肯定不会想这么多。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 279,
+        "segment_index": 16
       }
     ],
     "locations": [],
@@ -1452,7 +1672,7 @@
           "宁姚",
           "陈平安"
         ],
-        "description": "陈平安满脸笑意，出拳舒展自如，慢悠悠，却不是懒散，而是自然。 宁姚转头看着一身拳法真意如流水潺潺的陈平安，问道：“那你有没有想过，你想了这么多，会拖慢你的武道修行。 陈平安练拳不停，笑道：“他是天才啊，而且肯定是最了不起的那种天才，我又不是，我得每一步都多想多做，我一个凡俗夫子，你不也说我是泥腿子，所以必须每一步都先做到“不错”，然后才是对，很对，最对的。",
+        "description": "陈平安满脸笑意，出拳舒展自如，慢悠悠，却不是懒散，而是自然。 宁姚转头看着一身拳法真意如流水潺潺的陈平安，问道：“那你有没有想过，你想了这么多，会拖慢你的武道修行。 那个曹慈肯定不会想这么多。",
         "background": "",
         "significance": "推动宁姚与陈平安之间的对话关系。",
         "related_action_indices": [
@@ -1493,7 +1713,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.363602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1598,7 +1818,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.363602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1703,7 +1923,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.363602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1810,7 +2030,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.363602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1887,7 +2107,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.405088",
+    "extracted_at": "2026-03-25T17:27:38.363602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1994,7 +2214,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "extracted_at": "2026-03-25T17:27:38.364606",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2085,7 +2305,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "extracted_at": "2026-03-25T17:27:38.364606",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2163,7 +2383,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "extracted_at": "2026-03-25T17:27:38.364606",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2243,7 +2463,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "extracted_at": "2026-03-25T17:27:38.364606",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2323,7 +2543,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "extracted_at": "2026-03-25T17:27:38.364606",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2401,7 +2621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "extracted_at": "2026-03-25T17:27:38.364606",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2424,6 +2644,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "裴杯曹慈师徒二人缓缓走在城头上，曹慈回望一眼茅屋方向，神色认真道：“虽然他的第三境底子，跟我之前的差距，还是比较大。 曹慈问道：“师父，你觉得呢？",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "但是我觉得陈平安，他是有希望跟在我后面的。",
@@ -2439,16 +2673,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "曹慈",
           "陈平安"
         ],
-        "description": "但是我觉得陈平安，他是有希望跟在我后面的。 裴杯曹慈师徒二人缓缓走在城头上，曹慈回望一眼茅屋方向，神色认真道：“虽然他的第三境底子，跟我之前的差距，还是比较大。 ”",
+        "description": "裴杯曹慈师徒二人缓缓走在城头上，曹慈回望一眼茅屋方向，神色认真道：“虽然他的第三境底子，跟我之前的差距，还是比较大。 但是我觉得陈平安，他是有希望跟在我后面的。 曹慈问道：“师父，你觉得呢？",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动曹慈与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -2462,8 +2699,34 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹慈"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "裴杯曹慈师徒二人缓缓走在城头上，曹慈回望一眼茅屋方向，神色认真道：“虽然他的第三境底子，跟我之前的差距，还是比较大。 但是我觉得陈平安，他是有希望跟在我后面的。 ” 女武神笑道：“这可是很高的评价了。 ” 曹慈问道：“师父，你觉得呢？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.365609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2496,21 +2759,37 @@
         ],
         "juan_index": 279,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈点点头，问道：“师父，若是没有大的意外，你大概能活多久？",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 28
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "曹慈"
         ],
-        "description": "她轻轻摇头，“我觉得如何，没有意义，要看你和陈平安以后走得如何，各自升境的快慢，每一境底子的厚薄，最终武道的高低，当然，谁能活得更长久，至关重要。 ” ”",
+        "description": "她轻轻摇头，“我觉得如何，没有意义，要看你和陈平安以后走得如何，各自升境的快慢，每一境底子的厚薄，最终武道的高低，当然，谁能活得更长久，至关重要。 曹慈点点头，问道：“师父，若是没有大的意外，你大概能活多久？ ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与曹慈之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -2524,8 +2803,34 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.406091",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "曹慈"
+        ],
+        "action": "对话",
+        "context": "” 她轻轻摇头，“我觉得如何，没有意义，要看你和陈平安以后走得如何，各自升境的快慢，每一境底子的厚薄，最终武道的高低，当然，谁能活得更长久，至关重要。 ” 曹慈点点头，问道：“师父，若是没有大的意外，你大概能活多久？ ” 关于这种生死大事，她语气平淡，“寻常十境武夫，尽量减少本元的消耗，少些病根难除的生死大战，可以活到三百岁左右。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.365609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2548,6 +2853,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈感叹道：“到底还是练气士更长寿。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 29
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "裴杯对此不置可否，问道：“关于陈平安，还有什么想法吗？",
@@ -2563,16 +2881,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "曹慈",
           "陈平安"
         ],
-        "description": "裴杯对此不置可否，问道：“关于陈平安，还有什么想法吗？ 我大概能多个两百年。 但是多出的两百年，又可以做更多的事情了。",
+        "description": "曹慈感叹道：“到底还是练气士更长寿。 裴杯对此不置可否，问道：“关于陈平安，还有什么想法吗？ 我大概能多个两百年。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动曹慈与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段29",
         "sentence_indexes_in_segment": [
           0,
@@ -2586,8 +2907,222 @@
         "segment_index": 29
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹慈"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "我大概能多个两百年。 但是多出的两百年，又可以做更多的事情了。 ” 曹慈感叹道：“到底还是练气士更长寿。 ” 裴杯对此不置可否，问道：“关于陈平安，还有什么想法吗？",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 29
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.365609",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "279-30-0": {
+    "juan_index": 279,
+    "segment_index": 30,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十八章 武无第二,拳高天外",
+    "source_sentences": [
+      "”",
+      "曹慈摇摇头，“没了。",
+      "”",
+      "裴杯叮嘱道：“跻身七境之前，你可以离开大端王朝，但是绝对不许去往别洲。",
+      "”",
+      "“晓得了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈摇摇头，“没了。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 279,
+        "segment_index": 30
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹慈"
+        ],
+        "description": "曹慈摇摇头，“没了。 ” ”",
+        "background": "",
+        "significance": "对应曹慈在叙事中的关键迁移节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段30",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 30
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.407094",
+    "extracted_at": "2026-03-25T17:27:38.365609",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "279-31-0": {
+    "juan_index": 279,
+    "segment_index": 31,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十八章 武无第二,拳高天外",
+    "source_sentences": [
+      "”",
+      "曹慈还是无所谓，他的武道，真正的对手，只有自己。",
+      "中土神洲的高大女武神忍不住笑了起来，伸手揉了揉曹慈的脑袋。",
+      "曹慈无奈道：“师父，别总拿我当孩子啊。",
+      "”",
+      "裴杯走下城头之前，回望一眼茅屋那边，她很快就收回视线，笑了笑。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "曹慈还是无所谓，他的武道，真正的对手，只有自己。 中土神洲的高大女武神忍不住笑了起来，伸手揉了揉曹慈的脑袋。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 31
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹慈"
+        ],
+        "description": "曹慈还是无所谓，他的武道，真正的对手，只有自己。 中土神洲的高大女武神忍不住笑了起来，伸手揉了揉曹慈的脑袋。 曹慈无奈道：“师父，别总拿我当孩子啊。",
+        "background": "",
+        "significance": "对应曹慈在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段31",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 31
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.365609",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "279-32-0": {
+    "juan_index": 279,
+    "segment_index": 32,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百七十八章 武无第二,拳高天外",
+    "source_sentences": [
+      "跟曹慈同处一个时代的纯粹武夫，想来会很悲哀。",
+      "尊重仰慕他的，高山仰止，只能一辈子抬着头看着。",
+      "羡慕嫉妒他的，望尘莫及。",
+      "仇恨敌视他的，抓心挠肝。",
+      "裴杯很期待自己弟子的最终巅峰。",
+      "毕竟武无第二！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "跟曹慈同处一个时代的纯粹武夫，想来会很悲哀。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 279,
+        "segment_index": 32
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹慈"
+        ],
+        "description": "跟曹慈同处一个时代的纯粹武夫，想来会很悲哀。 尊重仰慕他的，高山仰止，只能一辈子抬着头看着。 羡慕嫉妒他的，望尘莫及。",
+        "background": "",
+        "significance": "对应曹慈在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段32",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 32
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.365609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2709,7 +3244,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.407094",
+    "extracted_at": "2026-03-25T17:27:38.366613",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2774,7 +3309,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.407094",
+    "extracted_at": "2026-03-25T17:27:38.366613",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2852,7 +3387,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.407094",
+    "extracted_at": "2026-03-25T17:27:38.366613",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2914,7 +3449,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.407094",
+    "extracted_at": "2026-03-25T17:27:38.366613",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2980,7 +3515,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.407094",
+    "extracted_at": "2026-03-25T17:27:38.366613",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3011,6 +3546,19 @@
         "sentence_indexes_in_segment": [
           0,
           2,
+          3
+        ],
+        "juan_index": 279,
+        "segment_index": 39
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "在城头结茅守城的老剑仙不知不觉来到陈平安身边，笑着解释道：“对她而言，没打死对方，就是自己输了，所以比较恼火，这时候谁都不要管她，否则会很麻烦。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
           3
         ],
         "juan_index": 279,
@@ -3056,14 +3604,13 @@
         "location": "剑气长城",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "老剑仙"
         ],
         "description": "然后陈平安就看到城头这边，先前那位隐官大人坠落方向，炸开一团巨大的雪白光芒，如一粒珠子滚向那条大妖。 在约莫一炷香后，扎羊角辫的黑袍“小姑娘”返回城头，就在陈平安不远处，她站在城头上，使劲张大嘴巴，伸出双指摇了摇一颗牙齿，最后好像不舍得拔下来，只是朝走马道吐了一口血水，有些生气的她大摇大摆走在城头上，城头走马道给她踩得一步一震。 在城头结茅守城的老剑仙不知不觉来到陈平安身边，笑着解释道：“对她而言，没打死对方，就是自己输了，所以比较恼火，这时候谁都不要管她，否则会很麻烦。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段39",
         "sentence_indexes_in_segment": [
           0,
@@ -3077,34 +3624,8 @@
         "segment_index": 39
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "阿良"
-        ],
-        "action": "别离",
-        "context": "然后陈平安就看到城头这边，先前那位隐官大人坠落方向，炸开一团巨大的雪白光芒，如一粒珠子滚向那条大妖。 之后峡谷内，尘土飞扬，打得翻天覆地。 在约莫一炷香后，扎羊角辫的黑袍“小姑娘”返回城头，就在陈平安不远处，她站在城头上，使劲张大嘴巴，伸出双指摇了摇一颗牙齿，最后好像不舍得拔下来，只是朝走马道吐了一口血水，有些生气的她大摇大摆走在城头上，城头走马道给她踩得一步一震。 在城头结茅守城的老剑仙不知不觉来到陈平安身边，笑着解释道：“对她而言，没打死对方，就是自己输了，所以比较恼火，这时候谁都不要管她，否则会很麻烦。 以前也就阿良乐意跟她唠叨唠叨，喜欢火上加油和雪上加霜，反正经得起她的揍。 如今阿良离开剑气长城，估计她有点无聊吧。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "剑气长城",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 279,
-        "segment_index": 39
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.366613",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3127,6 +3648,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 279,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。 陈平安点了点头，没有说什么。",
@@ -3139,21 +3673,39 @@
         ],
         "juan_index": 279,
         "segment_index": 40
+      },
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "这天夜幕降临，陈平安离开曹慈建造的那座小茅屋，坐在了北边的城头上喝酒，眺望着那座巨大城池的灯火通明。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 40
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安对话",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "老剑仙",
+          "陈平安",
+          "曹慈"
         ],
         "description": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。 陈平安点了点头，没有说什么。 这天夜幕降临，陈平安离开曹慈建造的那座小茅屋，坐在了北边的城头上喝酒，眺望着那座巨大城池的灯火通明。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老剑仙与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段40",
         "sentence_indexes_in_segment": [
           0,
@@ -3167,8 +3719,49 @@
         "segment_index": 40
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老剑仙"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 279,
+        "segment_index": 40
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "曹慈"
+        ],
+        "action": "别离",
+        "context": "这天夜幕降临，陈平安离开曹慈建造的那座小茅屋，坐在了北边的城头上喝酒，眺望着那座巨大城池的灯火通明。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 40
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.367616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3277,7 +3870,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "extracted_at": "2026-03-25T17:27:38.367616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3341,7 +3934,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "extracted_at": "2026-03-25T17:27:38.367616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3404,7 +3997,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "extracted_at": "2026-03-25T17:27:38.367616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3480,7 +4073,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "extracted_at": "2026-03-25T17:27:38.367616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3581,7 +4174,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "extracted_at": "2026-03-25T17:27:38.367616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3661,7 +4254,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.408098",
+    "extracted_at": "2026-03-25T17:27:38.368619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3766,7 +4359,7 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.409101",
+    "extracted_at": "2026-03-25T17:27:38.368619",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

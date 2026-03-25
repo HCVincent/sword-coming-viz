@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.431050",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -119,7 +119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.431050",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -183,7 +183,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.432053",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -246,7 +246,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.432053",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -308,7 +308,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.432053",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -370,7 +370,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.432053",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -434,7 +434,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.670911",
+    "extracted_at": "2026-03-25T17:27:37.432053",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -466,6 +466,19 @@
           2,
           3,
           5
+        ],
+        "juan_index": 112,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阿良似乎不太放心，望向某处，又叮嘱道：“你虽是一尊修道有成的阴神，但是大骊如今国势蒸蒸日上，每座雄关大城，往往阳气刚烈，先天克制你们这类鬼魅阴物，你可以让林守一尝试着炼化那叠符箓里的几张纯阳符，作为你的通关文牒。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 112,
         "segment_index": 9
@@ -509,6 +522,7 @@
         "coordinates": null,
         "related_entities": [
           "阿良",
+          "阴神",
           "林守一"
         ],
         "sentence_indexes_in_segment": [
@@ -526,6 +540,7 @@
         "participants": [
           "阿良",
           "陈平安",
+          "阴神",
           "林守一"
         ],
         "description": "阿良来到廊道外的空地，衣袖猎猎，双手分别按住绿色竹刀和狭刀祥符，大口呼吸了一下，好像没有了斗笠的遮蔽天机，没有了某种刻意为之的压制，这个男人终于能够舒展身姿，不用再束手束脚。 阿良似乎不太放心，望向某处，又叮嘱道：“你虽是一尊修道有成的阴神，但是大骊如今国势蒸蒸日上，每座雄关大城，往往阳气刚烈，先天克制你们这类鬼魅阴物，你可以让林守一尝试着炼化那叠符箓里的几张纯阳符，作为你的通关文牒。 廊道不远处，在阿良出声后，出现一团阴影，有一人缓缓浮现，出现在陈平安四人视野，黑雾缭绕，黑雾缭绕，除了一颗清晰可见的头颅，五官分明，一双没有瞳孔的雪白眼眸，诡异瘆人，高大身形隐隐约约，模模糊糊，如一条入云蛟龙，见首不见尾。",
@@ -546,7 +561,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "extracted_at": "2026-03-25T17:27:37.433057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -569,6 +584,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "这尊所谓的阴神点了点头。 那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 112,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "阿良",
         "alias": [],
         "original_description_in_book": "阿良笑道：“那我就把这些孩子交给你了，最少护送到大骊野夫关之后，之后就看他们自己的造化吧。",
@@ -576,6 +605,19 @@
         "power": "剑气长城",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 112,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
         ],
         "juan_index": 112,
         "segment_index": 10
@@ -607,7 +649,10 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "阴神",
+          "沙哑"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -622,12 +667,16 @@
         "location": "大骊",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "阴神",
+          "沙哑"
         ],
-        "description": "阿良笑道：“那我就把这些孩子交给你了，最少护送到大骊野夫关之后，之后就看他们自己的造化吧。 那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？ 这尊所谓的阴神点了点头。",
+        "description": "这尊所谓的阴神点了点头。 阿良笑道：“那我就把这些孩子交给你了，最少护送到大骊野夫关之后，之后就看他们自己的造化吧。 那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十二章 强者 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -641,8 +690,29 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阴神"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "对话",
+        "context": "那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 112,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.433057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -676,6 +746,19 @@
         ],
         "juan_index": 112,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神犹豫了一下，“是因为像前辈吗？",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 112,
+        "segment_index": 11
       }
     ],
     "locations": [],
@@ -686,12 +769,15 @@
         "location": null,
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "阴神"
         ],
-        "description": "阿良乐了，直白道：“看你的面相啊，长得这么不近人情，一看就是面冷心热侠义心肠的。 阿良给这句话噎得不行，“你这个不人不鬼的王八蛋……说话挺逗啊。 ”",
+        "description": "阿良乐了，直白道：“看你的面相啊，长得这么不近人情，一看就是面冷心热侠义心肠的。 阴神犹豫了一下，“是因为像前辈吗？ 阿良给这句话噎得不行，“你这个不人不鬼的王八蛋……说话挺逗啊。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十二章 强者 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -705,8 +791,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阿良"
+        ],
+        "to_roles": [
+          "阴神"
+        ],
+        "action": "对话",
+        "context": "” 阿良乐了，直白道：“看你的面相啊，长得这么不近人情，一看就是面冷心热侠义心肠的。 ” 阴神犹豫了一下，“是因为像前辈吗？ ” 阿良给这句话噎得不行，“你这个不人不鬼的王八蛋……说话挺逗啊。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 112,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.433057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -769,6 +881,20 @@
       },
       {
         "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "林守一满脸好奇，但是尽量克制好奇心，以免太过直接的打量眼神，惹到那尊阴神，云上琅琅书粗略介绍过，阴物成神亦有道，一是凭借信徒的香火愿力，二是寄生于兵家的胆魄之中，三是如练气士修行，这条道路最为崎岖难行，但是一旦成势，阴神魂魄也最为稳固，便是烈日曝晒，罡风吹拂，梵音沐浴等等，都能够反过来成为砥砺自家修为的捷径法门。 那尊阴神看了眼陈平安，然后望向躲在最后边的胆小鬼李槐。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 112,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "那尊阴神看了眼陈平安，然后望向躲在最后边的胆小鬼李槐。",
@@ -796,7 +922,9 @@
         "description": "李槐早已躲在李宝瓶身后，扯了扯红棉袄小姑娘的袖子，胆战心惊道：“宝瓶宝瓶，是鬼，真的是鬼。 林守一满脸好奇，但是尽量克制好奇心，以免太过直接的打量眼神，惹到那尊阴神，云上琅琅书粗略介绍过，阴物成神亦有道，一是凭借信徒的香火愿力，二是寄生于兵家的胆魄之中，三是如练气士修行，这条道路最为崎岖难行，但是一旦成势，阴神魂魄也最为稳固，便是烈日曝晒，罡风吹拂，梵音沐浴等等，都能够反过来成为砥砺自家修为的捷径法门。 那尊阴神看了眼陈平安，然后望向躲在最后边的胆小鬼李槐。",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十二章 强者 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -810,8 +938,29 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "阴神"
+        ],
+        "action": "试探",
+        "context": "林守一满脸好奇，但是尽量克制好奇心，以免太过直接的打量眼神，惹到那尊阴神，云上琅琅书粗略介绍过，阴物成神亦有道，一是凭借信徒的香火愿力，二是寄生于兵家的胆魄之中，三是如练气士修行，这条道路最为崎岖难行，但是一旦成势，阴神魂魄也最为稳固，便是烈日曝晒，罡风吹拂，梵音沐浴等等，都能够反过来成为砥砺自家修为的捷径法门。",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 112,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.433057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -888,6 +1037,19 @@
       },
       {
         "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "那尊一路尾随却拿捏分寸的奇怪阴神，缓缓散去身影，阴气森森的廊道随之恢复正常。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 112,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "李宝瓶第一个开口，“阿良，如果刀坏了，就不用还我，因为我跟你是朋友！",
@@ -912,7 +1074,7 @@
           "李槐",
           "于禄"
         ],
-        "description": "李槐哭丧着脸，“你别一个劲看我啊，看林守一，看陈平安，要不然看阿良也行。 阿良举目眺望了一眼北边的远方，没有急于离去，嘿嘿笑道：“有点小意外，所以咱们还有点时间可以聊聊，大伙儿有什么想说的话，赶紧的，麻溜的，阿谀奉承，溜须拍马，尽管来，以后再见面，就不知道牛年马月喽。 李宝瓶第一个开口，“阿良，如果刀坏了，就不用还我，因为我跟你是朋友！",
+        "description": "李槐哭丧着脸，“你别一个劲看我啊，看林守一，看陈平安，要不然看阿良也行。 那尊一路尾随却拿捏分寸的奇怪阴神，缓缓散去身影，阴气森森的廊道随之恢复正常。 阿良举目眺望了一眼北边的远方，没有急于离去，嘿嘿笑道：“有点小意外，所以咱们还有点时间可以聊聊，大伙儿有什么想说的话，赶紧的，麻溜的，阿谀奉承，溜须拍马，尽管来，以后再见面，就不知道牛年马月喽。",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
@@ -953,7 +1115,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "extracted_at": "2026-03-25T17:27:37.433057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1054,7 +1216,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "extracted_at": "2026-03-25T17:27:37.433057",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1170,7 +1332,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "extracted_at": "2026-03-25T17:27:37.434060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1276,7 +1438,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.671914",
+    "extracted_at": "2026-03-25T17:27:37.434060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1393,7 +1555,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.434060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1477,7 +1639,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.434060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1574,7 +1736,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.434060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1681,7 +1843,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.434060",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1757,7 +1919,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.435063",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1778,6 +1940,19 @@
       "高台底下，站着一位身材高大的白袍男子，正是从骊珠洞天赶赴京城的大骊军神，藩王宋长镜。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "那尊阴神眼神恍惚，站在廊道顶端，仰头望向那些奇异景象，喃喃道：“实在太强了，不讲道理的强啊……”",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 112,
+        "segment_index": 22
+      },
       {
         "entity_type": "person",
         "name": "宋长镜",
@@ -1846,15 +2021,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十二章 强者 · 宋长镜在大骊剧情推进",
+        "name": "第二卷山水郎 第一百一十二章 强者 · 阴神与宋长镜在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "阴神",
           "宋长镜"
         ],
-        "description": "大骊京城。 一位身穿明黄色衮服的中年男子，在司礼监两大貂寺屏气凝神的领路下，来到一座祭祀社稷的高台，大骊在东宝瓶洲王朝眼中，属于未开化的北方蛮子，对于礼乐一事，粗鄙不堪，这其实不算冤枉大骊宋氏。 高台底下，站着一位身材高大的白袍男子，正是从骊珠洞天赶赴京城的大骊军神，藩王宋长镜。",
+        "description": "那尊阴神眼神恍惚，站在廊道顶端，仰头望向那些奇异景象，喃喃道：“实在太强了，不讲道理的强啊……” 大骊京城。 一位身穿明黄色衮服的中年男子，在司礼监两大貂寺屏气凝神的领路下，来到一座祭祀社稷的高台，大骊在东宝瓶洲王朝眼中，属于未开化的北方蛮子，对于礼乐一事，粗鄙不堪，这其实不算冤枉大骊宋氏。",
         "background": "",
-        "significance": "对应宋长镜在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动阴神与宋长镜之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十二章 强者 · 段22",
         "sentence_indexes_in_segment": [
@@ -1870,7 +2046,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.435063",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1934,7 +2110,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.672918",
+    "extracted_at": "2026-03-25T17:27:37.435063",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2059,7 +2235,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.673921",
+    "extracted_at": "2026-03-25T17:27:37.435063",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2122,7 +2298,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.673921",
+    "extracted_at": "2026-03-25T17:27:37.435063",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2229,7 +2405,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.673921",
+    "extracted_at": "2026-03-25T17:27:37.435063",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -1,4 +1,67 @@
 {
+  "93-1-0": {
+    "juan_index": 93,
+    "segment_index": 1,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第九十三章 墙上有个字",
+    "source_sentences": [
+      "一座高不过十多丈的小山坡，分散站着二十余个人，穿着衣饰并无定数，但是脸色、眼神都像是一个模子里刻出来的。",
+      "一名魁梧男子单膝跪地，正在仔细查探身躯僵硬的两具尸体，他用手指撑开一具尸体的眼皮，露出冰裂纹瓷片一样的眼珠子。",
+      "一名换上一身市井妇人棉布衣裳的矮小女子，缓缓走上山坡，身后跟着捧剑女子和白脸老人。",
+      "她没有靠近那两具尸体，捂住鼻子，用浓重的鼻音问道：“王毅甫，怎么说？",
+      "”",
+      "王毅甫叹息道：“两人都是被高手一刀毙命，不伤身体，但是经脉皆碎，五脏六腑都烂透了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "她没有靠近那两具尸体，捂住鼻子，用浓重的鼻音问道：“王毅甫，怎么说？ 王毅甫叹息道：“两人都是被高手一刀毙命，不伤身体，但是经脉皆碎，五脏六腑都烂透了。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 1
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "她没有靠近那两具尸体，捂住鼻子，用浓重的鼻音问道：“王毅甫，怎么说？ 王毅甫叹息道：“两人都是被高手一刀毙命，不伤身体，但是经脉皆碎，五脏六腑都烂透了。 一座高不过十多丈的小山坡，分散站着二十余个人，穿着衣饰并无定数，但是脸色、眼神都像是一个模子里刻出来的。",
+        "background": "",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第九十三章 墙上有个字 · 段1",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 1
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.350932",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
   "93-2-0": {
     "juan_index": 93,
     "segment_index": 2,
@@ -13,7 +76,21 @@
       "”",
       "妇人骤然眯眼，气势凌人，“你说什么？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫有些犹豫，“娘娘，如果我没有看错，是一人所为。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 93,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -34,13 +111,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 大骊剧情推进",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "妇人脸色阴沉不定，“我们大骊出现了这么强大的武道宗师，而且还是两位同行，咱们那位藩王殿下，一向负责边关监视，号称，难道偏偏这次就一点蛛丝马迹也不曾抓到，总不可能是故意放跑漏网之鱼吧？ ” ”",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "妇人脸色阴沉不定，“我们大骊出现了这么强大的武道宗师，而且还是两位同行，咱们那位藩王殿下，一向负责边关监视，号称，难道偏偏这次就一点蛛丝马迹也不曾抓到，总不可能是故意放跑漏网之鱼吧？ 王毅甫有些犹豫，“娘娘，如果我没有看错，是一人所为。 ”",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应王毅甫在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段2",
         "sentence_indexes_in_segment": [
@@ -56,7 +135,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.605183",
+    "extracted_at": "2026-03-25T17:27:37.351442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -76,7 +155,21 @@
       "妇人深呼吸一口气，竭力让自己的怒气杀机不要太明显外露，讥笑道：“风雪庙什么时候这么天下无敌了？",
       "随便跑出来一个莫名其妙的家伙，就能杀人跟杀鸡一样简单？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫指了指两人的脖颈，出现一缕细微的红线，“两名死者之间的这条线，气势衔接紧密，分明是一人以刀横抹。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 3
+      }
+    ],
     "locations": [
       {
         "name": "风雪庙",
@@ -95,13 +188,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 风雪庙对话",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫在风雪庙对话",
         "time": null,
         "location": "风雪庙",
-        "participants": [],
-        "description": "妇人深呼吸一口气，竭力让自己的怒气杀机不要太明显外露，讥笑道：“风雪庙什么时候这么天下无敌了？ ！ ”",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "王毅甫指了指两人的脖颈，出现一缕细微的红线，“两名死者之间的这条线，气势衔接紧密，分明是一人以刀横抹。 妇人深呼吸一口气，竭力让自己的怒气杀机不要太明显外露，讥笑道：“风雪庙什么时候这么天下无敌了？ ！",
         "background": "",
-        "significance": "对应风雪庙相关的关键对话场景。",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段3",
         "sentence_indexes_in_segment": [
@@ -117,7 +212,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.605183",
+    "extracted_at": "2026-03-25T17:27:37.351442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -137,7 +232,21 @@
       "妇人愤怒至极，只是一直在苦苦压抑而已，此时便迁怒这位大骊第一剑师，尖声道：“徐浑然！",
       "报上他们的名字！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "这两个人是谁，你王毅甫不知道，徐浑然知道，来，说说看，让我们王大将军如雷贯耳一下。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 93,
+        "segment_index": 4
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -158,13 +267,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 大骊冲突",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫在大骊冲突",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "妇人愤怒至极，只是一直在苦苦压抑而已，此时便迁怒这位大骊第一剑师，尖声道：“徐浑然！ 这两个人是谁，你王毅甫不知道，徐浑然知道，来，说说看，让我们王大将军如雷贯耳一下。 ”",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "这两个人是谁，你王毅甫不知道，徐浑然知道，来，说说看，让我们王大将军如雷贯耳一下。 妇人愤怒至极，只是一直在苦苦压抑而已，此时便迁怒这位大骊第一剑师，尖声道：“徐浑然！ ”",
         "background": "",
-        "significance": "对应大骊相关的关键冲突场景。",
+        "significance": "对应王毅甫在叙事中的关键冲突节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段4",
         "sentence_indexes_in_segment": [
@@ -180,7 +291,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.605183",
+    "extracted_at": "2026-03-25T17:27:37.351442",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -200,7 +311,22 @@
       "妇人这才神色微微转好，只是很快满脸颓然，有气无力道：“对，李侯和胡英麟，当年你们卢氏王朝的边关砥柱叶庆，就是这两人杀掉的。",
       "没死在敌国境内，没有死在沙场上，而是死在了我们大骊自己疆土上。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "李侯",
+        "alias": [],
+        "original_description_in_book": "老人心中悚然，微微低头道：“武人名叫李侯，修士名为胡英麟，都曾为娘娘一次次出生入死，为我大骊立下汗马功劳。 妇人这才神色微微转好，只是很快满脸颓然，有气无力道：“对，李侯和胡英麟，当年你们卢氏王朝的边关砥柱叶庆，就是这两人杀掉的。",
+        "description": "龙泉地界人物，适合增强地方秩序与山水网络。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -211,7 +337,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "李侯"
+        ],
         "sentence_indexes_in_segment": [
           2,
           5
@@ -222,13 +350,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 大骊剧情推进",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 李侯在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "老人心中悚然，微微低头道：“武人名叫李侯，修士名为胡英麟，都曾为娘娘一次次出生入死，为我大骊立下汗马功劳。 没死在敌国境内，没有死在沙场上，而是死在了我们大骊自己疆土上。 死人也有名字！",
+        "participants": [
+          "李侯"
+        ],
+        "description": "老人心中悚然，微微低头道：“武人名叫李侯，修士名为胡英麟，都曾为娘娘一次次出生入死，为我大骊立下汗马功劳。 妇人这才神色微微转好，只是很快满脸颓然，有气无力道：“对，李侯和胡英麟，当年你们卢氏王朝的边关砥柱叶庆，就是这两人杀掉的。 没死在敌国境内，没有死在沙场上，而是死在了我们大骊自己疆土上。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应李侯在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段5",
         "sentence_indexes_in_segment": [
@@ -244,7 +374,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.605183",
+    "extracted_at": "2026-03-25T17:27:37.351952",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "93-6-0": {
+    "juan_index": 93,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第九十三章 墙上有个字",
+    "source_sentences": [
+      "”",
+      "妇人兴许是意识到自己的失态，会让王毅甫看笑话，就拿这位武将曾经效忠的卢氏开刀，“说来可笑，开始我们觉得叶庆这么一号重要人物，身边肯定会有数名大练气士暗中保护，为了除掉他，我甚至不得不和我家叔叔联手。",
+      "哪里想得到，从渗透边境，潜入杀人，再到功成身退，卢氏王朝竟然一点反应也没有。",
+      "他叶庆不过是惹恼了几股边境仙家势力而已，至于在朝堂上也被孤立到这一步？",
+      "卢氏皇帝不是最推崇山上仙人吗？",
+      "为何最后愿意陪你们卢氏殉葬的仙家宗门，就只有一家而已？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "妇人兴许是意识到自己的失态，会让王毅甫看笑话，就拿这位武将曾经效忠的卢氏开刀，“说来可笑，开始我们觉得叶庆这么一号重要人物，身边肯定会有数名大练气士暗中保护，为了除掉他，我甚至不得不和我家叔叔联手。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 93,
+        "segment_index": 6
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫护持",
+        "time": null,
+        "location": null,
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "妇人兴许是意识到自己的失态，会让王毅甫看笑话，就拿这位武将曾经效忠的卢氏开刀，“说来可笑，开始我们觉得叶庆这么一号重要人物，身边肯定会有数名大练气士暗中保护，为了除掉他，我甚至不得不和我家叔叔联手。 ” 哪里想得到，从渗透边境，潜入杀人，再到功成身退，卢氏王朝竟然一点反应也没有。",
+        "background": "",
+        "significance": "对应王毅甫在叙事中的关键护持节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第九十三章 墙上有个字 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 6
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.351952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -294,6 +486,19 @@
         ],
         "juan_index": 93,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫脸色闪过一抹黯然。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -323,9 +528,10 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "王毅甫"
         ],
-        "description": "这恐怕就是她愿意将其中一个孩子交给国师崔瀺，而不是山崖书院齐静春的理由了。 ” 说完这些，妇人有些神清气爽，心里痛快多了。",
+        "description": "这恐怕就是她愿意将其中一个孩子交给国师崔瀺，而不是山崖书院齐静春的理由了。 王毅甫脸色闪过一抹黯然。 ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -343,7 +549,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.605183",
+    "extracted_at": "2026-03-25T17:27:37.351952",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -427,7 +633,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.606187",
+    "extracted_at": "2026-03-25T17:27:37.352461",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -508,7 +714,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.606187",
+    "extracted_at": "2026-03-25T17:27:37.352461",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "93-10-0": {
+    "juan_index": 93,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第九十三章 墙上有个字",
+    "source_sentences": [
+      "若是连人之常情都失去了，必是怀有坚忍不拔之志。",
+      "做什么？",
+      "除了复国能够做什么？",
+      "那么王毅甫就真是找死了。",
+      "若是王毅甫只知道打打杀杀的一介武夫，能够心思细腻到演戏到如此境界，那也算王毅甫有本事。",
+      "不过她一样不怕。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "那么王毅甫就真是找死了。 若是王毅甫只知道打打杀杀的一介武夫，能够心思细腻到演戏到如此境界，那也算王毅甫有本事。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 93,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "那么王毅甫就真是找死了。 若是王毅甫只知道打打杀杀的一介武夫，能够心思细腻到演戏到如此境界，那也算王毅甫有本事。 若是连人之常情都失去了，必是怀有坚忍不拔之志。",
+        "background": "",
+        "significance": "对应王毅甫在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第九十三章 墙上有个字 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 93,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.352461",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -545,6 +814,32 @@
         ],
         "juan_index": 93,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "李侯",
+        "alias": [],
+        "original_description_in_book": "老剑师徐浑然疑惑问道：“娘娘分明已经跟阮师打过招呼，答应不会在龙泉县境内动手，咱们也传信给李侯胡英麟，让他们近期不要轻举妄动，一切等走到大骊边境再说。",
+        "description": "龙泉地界人物，适合增强地方秩序与山水网络。",
+        "power": "龙泉",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 93,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫问道：“那名佩刀男子的详细身份，依然没有查出来？",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 93,
+        "segment_index": 11
       }
     ],
     "locations": [
@@ -559,7 +854,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "李侯"
         ],
         "sentence_indexes_in_segment": [
           0
@@ -577,7 +873,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "李侯"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -606,16 +903,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 阮邛在龙泉对话",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 阮邛与李侯在龙泉对话",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "阮邛"
+          "阮邛",
+          "李侯"
         ],
-        "description": "老剑师徐浑然疑惑问道：“娘娘分明已经跟阮师打过招呼，答应不会在龙泉县境内动手，咱们也传信给李侯胡英麟，让他们近期不要轻举妄动，一切等走到大骊边境再说。 照理说阮师怎么都该卖娘娘这个面子才对，总不至于是那风雪庙的人，连娘娘和阮师的面子都不在乎吧？ 捧剑女子摇头道：“尚未有结果，这种事情，我们不好找上门去问阮师，更不好去找那拨风雪庙兵家修士，只能靠大骊自己的谍报机构寻找蛛丝马迹，而边境谍报事务，娘娘不方便插手……”",
+        "description": "老剑师徐浑然疑惑问道：“娘娘分明已经跟阮师打过招呼，答应不会在龙泉县境内动手，咱们也传信给李侯胡英麟，让他们近期不要轻举妄动，一切等走到大骊边境再说。 照理说阮师怎么都该卖娘娘这个面子才对，总不至于是那风雪庙的人，连娘娘和阮师的面子都不在乎吧？ 王毅甫问道：“那名佩刀男子的详细身份，依然没有查出来？",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在龙泉推动阮邛与李侯之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -629,8 +929,29 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.606187",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "李侯"
+        ],
+        "action": "对话",
+        "context": "老剑师徐浑然疑惑问道：“娘娘分明已经跟阮师打过招呼，答应不会在龙泉县境内动手，咱们也传信给李侯胡英麟，让他们近期不要轻举妄动，一切等走到大骊边境再说。",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 阮邛与李侯在龙泉对话",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 93,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.352461",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -651,6 +972,19 @@
       "李家更没有胆子在我的眼皮子底下捣乱。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫问道：“有没有可能是那个叫朱河的李家扈从，其实深藏不露？",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "朱河",
@@ -685,16 +1019,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十三章 墙上有个字 · 朱河在大骊对话",
+        "name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫与朱河在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "王毅甫",
           "朱河"
         ],
         "description": "这涉及到了大骊朝政最高层的暗流涌动。 王毅甫问道：“有没有可能是那个叫朱河的李家扈从，其实深藏不露？ 说到这里就停下，年轻女子不再说话。",
         "background": "",
-        "significance": "对应朱河在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动王毅甫与朱河之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十三章 墙上有个字 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -708,8 +1045,29 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.606187",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "王毅甫"
+        ],
+        "to_roles": [
+          "朱河"
+        ],
+        "action": "对话",
+        "context": "王毅甫问道：“有没有可能是那个叫朱河的李家扈从，其实深藏不露？",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 王毅甫与朱河在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.353456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -836,7 +1194,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.606187",
+    "extracted_at": "2026-03-25T17:27:37.353456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -940,7 +1298,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.606187",
+    "extracted_at": "2026-03-25T17:27:37.353456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1037,7 +1395,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.353456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1131,7 +1489,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.353456",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1232,7 +1590,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.354460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1348,7 +1706,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.354460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1486,7 +1844,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.354460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1621,7 +1979,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.354460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1766,7 +2124,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.607190",
+    "extracted_at": "2026-03-25T17:27:37.354460",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1842,6 +2200,19 @@
         ],
         "juan_index": 93,
         "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "李槐跟顾粲看着差不多的性格，嘴里跟长了一窝蜈蚣蝎子似的，毒的很，能够一句话把人气得够呛，在陈平安眼中，其实大不一样，同样是没心没肺，同样穷苦出身，顾粲看似贼兮兮，转起眼珠子来比谁都快，但顾粲身上那股超乎年纪的精明，更多是一种自保，李槐则是纯粹的小刺猬一个，逮着谁都要刺一下，这是因为李槐到底父母健在，上边还有个姐姐，心性其实不复杂，而且上过学塾读过书，身边的同窗蒙童是李宝瓶，林守一，石春嘉这些稍大的孩子，大体上李槐是没吃过大苦头的。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 93,
+        "segment_index": 23
       }
     ],
     "locations": [
@@ -1906,7 +2277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.355464",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2012,7 +2383,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.355464",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2134,7 +2505,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.355464",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2210,7 +2581,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.355464",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2273,7 +2644,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.355464",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2429,7 +2800,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.355464",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2557,7 +2928,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.356467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2661,7 +3032,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.608194",
+    "extracted_at": "2026-03-25T17:27:37.356467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2766,7 +3137,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.356467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2897,7 +3268,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.356467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3038,7 +3409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.356467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3147,7 +3518,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.356467",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3318,7 +3689,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3409,7 +3780,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3500,7 +3871,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3657,7 +4028,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.609197",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3748,7 +4119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3810,7 +4181,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3915,7 +4286,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.357470",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3979,7 +4350,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4042,7 +4413,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4118,7 +4489,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4197,7 +4568,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4298,7 +4669,7 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4375,7 +4746,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.610201",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4476,7 +4847,7 @@
         "segment_index": 48
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.358474",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4539,7 +4910,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4645,7 +5016,7 @@
         "segment_index": 50
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4803,7 +5174,7 @@
         "segment_index": 51
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4915,7 +5286,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5021,7 +5392,7 @@
         "segment_index": 53
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5122,7 +5493,7 @@
         "segment_index": 54
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5237,7 +5608,7 @@
         "segment_index": 55
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.611204",
+    "extracted_at": "2026-03-25T17:27:37.359477",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5317,7 +5688,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "extracted_at": "2026-03-25T17:27:37.360481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5381,7 +5752,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.612208",
+    "extracted_at": "2026-03-25T17:27:37.360481",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

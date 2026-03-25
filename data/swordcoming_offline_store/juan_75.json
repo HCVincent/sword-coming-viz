@@ -33,6 +33,19 @@
       },
       {
         "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "阮邛得知此人身份后，没有像上次接待观湖书院崔明皇那么随意，只是在铸剑室门口聊了几句，这次让阮秀搬了两张竹椅到廊中，还拿出来两壶好酒，一人一壶，那男人也不扭捏，拿过酒壶解开泥封就灌了一口酒，笑道：“阮师，你此次出手，朝野震动，朝廷那边具体如何应对，我暂时不知，但是作为新任窑务督造官、兼首任龙泉县衙主官，我倒是省去许多口水。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 75,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "阮秀",
         "alias": [],
         "original_description_in_book": "阮邛得知此人身份后，没有像上次接待观湖书院崔明皇那么随意，只是在铸剑室门口聊了几句，这次让阮秀搬了两张竹椅到廊中，还拿出来两壶好酒，一人一壶，那男人也不扭捏，拿过酒壶解开泥封就灌了一口酒，笑道：“阮师，你此次出手，朝野震动，朝廷那边具体如何应对，我暂时不知，但是作为新任窑务督造官、兼首任龙泉县衙主官，我倒是省去许多口水。",
@@ -58,6 +71,7 @@
         "coordinates": null,
         "related_entities": [
           "阮邛",
+          "崔明皇",
           "阮秀"
         ],
         "sentence_indexes_in_segment": [
@@ -90,13 +104,16 @@
         "location": "龙泉",
         "participants": [
           "阮邛",
+          "崔明皇",
           "阮秀"
         ],
         "description": "阮邛得知此人身份后，没有像上次接待观湖书院崔明皇那么随意，只是在铸剑室门口聊了几句，这次让阮秀搬了两张竹椅到廊中，还拿出来两壶好酒，一人一壶，那男人也不扭捏，拿过酒壶解开泥封就灌了一口酒，笑道：“阮师，你此次出手，朝野震动，朝廷那边具体如何应对，我暂时不知，但是作为新任窑务督造官、兼首任龙泉县衙主官，我倒是省去许多口水。 照理说，该我拎着好酒登门拜访才是，只是当时在半路听闻变故后，快马加鞭，实在是来的匆忙，骑龙巷压岁铺子的两大坛子杏花酿，就当我先欠着阮师。 阮师挥挥手，“这些客套话就不用多说了，如果今天你我谈妥，以后有的是机会喝酒聊天，如果谈崩了，你我更不用费劲笼络感情。",
         "background": "",
         "significance": "对应龙泉线的重要山上势力节点。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段1",
         "sentence_indexes_in_segment": [
@@ -118,6 +135,46 @@
           "阮邛"
         ],
         "to_roles": [
+          "崔明皇"
+        ],
+        "action": "对话",
+        "context": "阮邛得知此人身份后，没有像上次接待观湖书院崔明皇那么随意，只是在铸剑室门口聊了几句，这次让阮秀搬了两张竹椅到廊中，还拿出来两壶好酒，一人一壶，那男人也不扭捏，拿过酒壶解开泥封就灌了一口酒，笑道：“阮师，你此次出手，朝野震动，朝廷那边具体如何应对，我暂时不知，但是作为新任窑务督造官、兼首任龙泉县衙主官，我倒是省去许多口水。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 75,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "阮秀"
+        ],
+        "action": "对话",
+        "context": "阮邛得知此人身份后，没有像上次接待观湖书院崔明皇那么随意，只是在铸剑室门口聊了几句，这次让阮秀搬了两张竹椅到廊中，还拿出来两壶好酒，一人一壶，那男人也不扭捏，拿过酒壶解开泥封就灌了一口酒，笑道：“阮师，你此次出手，朝野震动，朝廷那边具体如何应对，我暂时不知，但是作为新任窑务督造官、兼首任龙泉县衙主官，我倒是省去许多口水。",
+        "result": null,
+        "event_name": "阮邛铸剑",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 75,
+        "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔明皇"
+        ],
+        "to_roles": [
           "阮秀"
         ],
         "action": "对话",
@@ -133,7 +190,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.525349",
+    "extracted_at": "2026-03-25T17:27:37.254406",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -236,7 +293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.525349",
+    "extracted_at": "2026-03-25T17:27:37.255409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -370,7 +427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.525349",
+    "extracted_at": "2026-03-25T17:27:37.255409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -521,7 +578,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.525349",
+    "extracted_at": "2026-03-25T17:27:37.255409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -671,7 +728,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "extracted_at": "2026-03-25T17:27:37.255409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,6 +764,20 @@
         ],
         "juan_index": 75,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "毕竟之后很长一段时间，自己都需要跟这个名叫吴鸢的男人直接打交道，如果是个蠢人，会很累。 吴鸢犹豫了一下，喝了口酒，有点像是给自己壮胆的意味，道：“阮师，首先，小镇外大小三十余口龙窑，会重新开窑烧瓷，只不过从今往后，只是烧制普通的朝廷御用礼器而已。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 75,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -718,6 +789,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "阮邛"
         ],
         "sentence_indexes_in_segment": [
@@ -752,9 +824,10 @@
         "participants": [
           "阿良",
           "陈平安",
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
-        "description": "阮邛点点头，喝了口酒，比较满意此人的姿态和魄力。 吴鸢犹豫了一下，喝了口酒，有点像是给自己壮胆的意味，道：“阮师，首先，小镇外大小三十余口龙窑，会重新开窑烧瓷，只不过从今往后，只是烧制普通的朝廷御用礼器而已。 其次，新建于小镇东边的县衙，建成之后，县衙就会张榜贴出大骊律法，也会让略通文采的户房衙役在小镇各处宣讲解释，为的是让小镇普通百姓，真正晓得自己的身份，是大骊子民。",
+        "description": "阮邛点点头，喝了口酒，比较满意此人的姿态和魄力。 毕竟之后很长一段时间，自己都需要跟这个名叫吴鸢的男人直接打交道，如果是个蠢人，会很累。 吴鸢犹豫了一下，喝了口酒，有点像是给自己壮胆的意味，道：“阮师，首先，小镇外大小三十余口龙窑，会重新开窑烧瓷，只不过从今往后，只是烧制普通的朝廷御用礼器而已。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -772,7 +845,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "extracted_at": "2026-03-25T17:27:37.255409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -810,6 +883,19 @@
         ],
         "juan_index": 75,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "阮邛神色冷峻，瞥了眼名义上的龙泉县令吴鸢，后者笑着解释道：“这只是针对凡俗夫子的表面功夫罢了，小镇六十年内，仍是以阮师的规矩最大，四姓十族的规矩，紧随其后，大骊律法最低，若有冲突，一律以这个排序为准绳。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 75,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -824,7 +910,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -840,7 +927,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -859,7 +947,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -878,12 +967,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "description": "阮邛神色冷峻，瞥了眼名义上的龙泉县令吴鸢，后者笑着解释道：“这只是针对凡俗夫子的表面功夫罢了，小镇六十年内，仍是以阮师的规矩最大，四姓十族的规矩，紧随其后，大骊律法最低，若有冲突，一律以这个排序为准绳。 阮师在小镇方圆千里之内，一切所作所为，大骊不但不干涉，还会毫无悬念地站在阮师这一边。 就像阮师先前打烂紫烟河修士的肉身，那人死不悔改，竟然疏通京城关系，试图向皇帝陛下告御状，我恩师得知消息后，二话不说，便派人镇杀了这位修士的元神。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -897,8 +989,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阮邛"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "冲突",
+        "context": "阮邛神色冷峻，瞥了眼名义上的龙泉县令吴鸢，后者笑着解释道：“这只是针对凡俗夫子的表面功夫罢了，小镇六十年内，仍是以阮师的规矩最大，四姓十族的规矩，紧随其后，大骊律法最低，若有冲突，一律以这个排序为准绳。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "龙泉",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 75,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.255409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -919,6 +1032,19 @@
       "吴鸢脸色微白，嗓音微涩道：“阮师，本官知道了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢脸色微白，嗓音微涩道：“阮师，本官知道了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 75,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "阮邛",
@@ -955,15 +1081,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十五章 占山为王 · 阮邛在大骊剧情推进",
+        "name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与阮邛在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
+          "吴鸢",
           "阮邛"
         ],
         "description": "要是真想杀人，你们大骊有几个人拦得住？ 吴鸢脸色微白，嗓音微涩道：“阮师，本官知道了。 紫烟河修士这种废物，我当时要是真想杀他，他跑得了？",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动吴鸢与阮邛之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段8",
         "sentence_indexes_in_segment": [
@@ -979,7 +1106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "extracted_at": "2026-03-25T17:27:37.256413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1016,6 +1143,19 @@
         ],
         "juan_index": 75,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "刚刚才吃过亏的吴鸢小心措辞回答道：“关于文昌阁和武圣庙，目前我们大骊钦天监地师相中的两处，分别是小镇北边的瓷山和东南方位的神仙坟，祭祀之人，分别是当年从小镇走出去的那两位，刚好一文一武，对我大骊也是功莫大焉，阮师意下如何？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 75,
+        "segment_index": 9
       }
     ],
     "locations": [
@@ -1027,7 +1167,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           1,
@@ -1046,6 +1187,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "阮邛"
         ],
         "sentence_indexes_in_segment": [
@@ -1063,12 +1205,15 @@
         "participants": [
           "阿良",
           "陈平安",
+          "吴鸢",
           "阮邛"
         ],
         "description": "阮邛也不愿闹得太僵，毕竟两人是初次交往，不能奢望别人处处顺遂自己的心意，那就是强人所难了，于是主动开口问道：“世俗王朝，建造文昌阁和武圣庙，敕封山水正神和禁绝地方淫祠，都是一个朝廷的应有之义，在小镇这边，你们是怎么个打算的？ 刚刚才吃过亏的吴鸢小心措辞回答道：“关于文昌阁和武圣庙，目前我们大骊钦天监地师相中的两处，分别是小镇北边的瓷山和东南方位的神仙坟，祭祀之人，分别是当年从小镇走出去的那两位，刚好一文一武，对我大骊也是功莫大焉，阮师意下如何？ 阮邛语气并不轻松，“享受文武香火的两人，挺合适，但是选址就这么敲定了？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -1082,8 +1227,29 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "对话",
+        "context": "刚刚才吃过亏的吴鸢小心措辞回答道：“关于文昌阁和武圣庙，目前我们大骊钦天监地师相中的两处，分别是小镇北边的瓷山和东南方位的神仙坟，祭祀之人，分别是当年从小镇走出去的那两位，刚好一文一武，对我大骊也是功莫大焉，阮师意下如何？",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 75,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.256413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1106,6 +1272,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢愣在当场，小心翼翼问道：“阮师，敢问杨老先生是谁？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 75,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
@@ -1124,16 +1303,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十五章 占山为王 · 阮邛对话",
+        "name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与阮邛对话",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "阮邛"
         ],
         "description": "吴鸢愣在当场，小心翼翼问道：“阮师，敢问杨老先生是谁？ 阮邛也愣了一下，打趣道：“你那位绣虎先生，连这个也没告诉你？ 你们有没有问过杨老先生的意思？",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与阮邛之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -1147,8 +1329,29 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "对话",
+        "context": "吴鸢愣在当场，小心翼翼问道：“阮师，敢问杨老先生是谁？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与阮邛对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 75,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.256413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1169,6 +1372,20 @@
       "“你们继续聊你们的窍穴气府啊，你们别这么小气，我听一听又如何？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢，你老老实说告诉我，你是不是跟齐静春差不多，官场失意，沦为弃子，被贬谪至此？ 吴鸢百口莫辩，既不知道如何解释，自己更是一头雾水。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 75,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1240,7 +1457,7 @@
           "陈平安",
           "阮秀"
         ],
-        "description": "吴鸢，你老老实说告诉我，你是不是跟齐静春差不多，官场失意，沦为弃子，被贬谪至此？ 远处一口水井旁边，三个同龄人蹲在地上，阮秀在教陈平安那些窍穴的名称、作用和修行意义，多余的那个少年，是自己死皮赖脸凑上去的，一开始阮秀和陈平安就抹去字迹，不说话，两个人盯着他，少年长得眉清目秀，眉心处还有一粒画龙点睛似的红痣，挺招人喜欢的喜庆模样，可是陈平安和阮秀都低估了他的耐心和脸皮，笑呵呵左看看草鞋少年，右看看青衣少女，三人熬了半炷香后，少年仿佛觉得自己同样低估了身边两人的毅力，终于主动开口说话，用流畅圆润的小镇方言，说他是从京城来的，跟随督造官大人来这里看看风景，尤其想要去看那座瓷山。 如果是这样的话，之前谈妥的事情，我可就要反悔了。",
+        "description": "吴鸢，你老老实说告诉我，你是不是跟齐静春差不多，官场失意，沦为弃子，被贬谪至此？ 吴鸢百口莫辩，既不知道如何解释，自己更是一头雾水。 远处一口水井旁边，三个同龄人蹲在地上，阮秀在教陈平安那些窍穴的名称、作用和修行意义，多余的那个少年，是自己死皮赖脸凑上去的，一开始阮秀和陈平安就抹去字迹，不说话，两个人盯着他，少年长得眉清目秀，眉心处还有一粒画龙点睛似的红痣，挺招人喜欢的喜庆模样，可是陈平安和阮秀都低估了他的耐心和脸皮，笑呵呵左看看草鞋少年，右看看青衣少女，三人熬了半炷香后，少年仿佛觉得自己同样低估了身边两人的毅力，终于主动开口说话，用流畅圆润的小镇方言，说他是从京城来的，跟随督造官大人来这里看看风景，尤其想要去看那座瓷山。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
@@ -1281,7 +1498,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.526352",
+    "extracted_at": "2026-03-25T17:27:37.256413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1357,7 +1574,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.527355",
+    "extracted_at": "2026-03-25T17:27:37.256413",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1378,6 +1595,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "到最后，是督造官吴鸢的出现，帮助陈平安和阮秀脱离了困境，眉心有痣的话痨少年和沉默寡言的年轻大骊官员，并肩离开铁匠铺子。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 75,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1418,6 +1648,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "陈平安",
           "阮秀"
         ],
@@ -1430,18 +1661,21 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十五章 占山为王 · 陈平安与阮秀在大骊迁移",
+        "name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与陈平安在大骊迁移",
         "time": null,
         "location": "大骊",
         "participants": [
+          "吴鸢",
           "陈平安",
           "阮秀"
         ],
         "description": "到最后，是督造官吴鸢的出现，帮助陈平安和阮秀脱离了困境，眉心有痣的话痨少年和沉默寡言的年轻大骊官员，并肩离开铁匠铺子。 陈平安和阮秀坐在水井口子上，阮秀瞥了眼那两人的背影，轻声道：“年纪大的，是个当官的，刚才在我们身边的这个，不清楚，我也感觉不到异样，可能是年轻人的书童吧，外边很多大家族都有这样的伴读。 ”",
         "background": "",
-        "significance": "在大骊推动陈平安与阮秀之间的迁移线。",
+        "significance": "在大骊推动吴鸢与陈平安之间的迁移线。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2
         ],
         "source": "第一卷笼中雀 第七十五章 占山为王 · 段14",
         "sentence_indexes_in_segment": [
@@ -1460,6 +1694,46 @@
       {
         "time": null,
         "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "同行",
+        "context": "到最后，是督造官吴鸢的出现，帮助陈平安和阮秀脱离了困境，眉心有痣的话痨少年和沉默寡言的年轻大骊官员，并肩离开铁匠铺子。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与陈平安在大骊迁移",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 75,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "阮秀"
+        ],
+        "action": "同行",
+        "context": "到最后，是督造官吴鸢的出现，帮助陈平安和阮秀脱离了困境，眉心有痣的话痨少年和沉默寡言的年轻大骊官员，并肩离开铁匠铺子。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与陈平安在大骊迁移",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 75,
+        "segment_index": 14
+      },
+      {
+        "time": null,
+        "from_roles": [
           "陈平安"
         ],
         "to_roles": [
@@ -1468,7 +1742,7 @@
         "action": "同行",
         "context": "到最后，是督造官吴鸢的出现，帮助陈平安和阮秀脱离了困境，眉心有痣的话痨少年和沉默寡言的年轻大骊官员，并肩离开铁匠铺子。",
         "result": null,
-        "event_name": "第一卷笼中雀 第七十五章 占山为王 · 陈平安与阮秀在大骊迁移",
+        "event_name": "第一卷笼中雀 第七十五章 占山为王 · 吴鸢与陈平安在大骊迁移",
         "location": "大骊",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1478,7 +1752,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.527355",
+    "extracted_at": "2026-03-25T17:27:37.257416",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1531,6 +1805,19 @@
         ],
         "juan_index": 75,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "阮邛坐在竹椅上，让陈平安坐在之前吴鸢坐的椅子上。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 75,
+        "segment_index": 15
       }
     ],
     "locations": [],
@@ -1541,7 +1828,8 @@
         "location": null,
         "participants": [
           "陈平安",
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "description": "陈平安点点头。 阮邛板着脸走到水井附近，撂下一句就转身，“陈平安，你跟我来。 陈平安茫然起身，阮姑娘之前说她爹答应借钱给自己，不过得等一旬左右，难道是反悔了？",
         "background": "",
@@ -1561,7 +1849,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.527355",
+    "extracted_at": "2026-03-25T17:27:37.257416",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1678,7 +1966,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.527355",
+    "extracted_at": "2026-03-25T17:27:37.257416",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1791,7 +2079,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.527355",
+    "extracted_at": "2026-03-25T17:27:37.257416",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1941,7 +2229,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.527355",
+    "extracted_at": "2026-03-25T17:27:37.257416",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2041,7 +2329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.258420",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2199,7 +2487,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.258420",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2343,7 +2631,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.258420",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2445,7 +2733,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.258420",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2572,7 +2860,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.258420",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2712,7 +3000,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.258420",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2820,7 +3108,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.528358",
+    "extracted_at": "2026-03-25T17:27:37.259423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2944,7 +3232,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.529362",
+    "extracted_at": "2026-03-25T17:27:37.259423",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

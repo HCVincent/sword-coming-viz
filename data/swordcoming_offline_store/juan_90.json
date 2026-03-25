@@ -130,7 +130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.335105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -223,7 +223,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.335105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -301,7 +301,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.335105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -415,7 +415,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.335105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -729,7 +729,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.593141",
+    "extracted_at": "2026-03-25T17:27:37.336109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -844,7 +844,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.593141",
+    "extracted_at": "2026-03-25T17:27:37.336109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -936,7 +936,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.593141",
+    "extracted_at": "2026-03-25T17:27:37.336109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -956,7 +956,23 @@
       "吴鸢突然笑着说道：“放心，我没事，这会儿就是有点馋咱们京城的酒水了。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "不但要亲自盯着小镇东边的衙署建造，还有为了商定文昌阁武圣庙的选址一事，父母官吴鸢一天到晚忙得脚不着地，四姓十族除去已经举族迁出小镇的六个，还剩下八个，礼部右侍郎董湖靠着牌坊楼拓碑一事，过江龙压过了地头蛇吴鸢的风头，如今那些个土生土长的老油子，全在福禄街和桃叶巷看他吴鸢的笑话，可他还是得一家一户登门拜访过去，忙得吴鸢最后嘴唇干裂，嗓子眼都快冒烟了，一回到督造官衙署，瘫软在椅子上，扯了扯领口，直愣愣盯着房梁雕花，脸色阴沉不定。 身边站着那位豪阀出身的文秘书郎，今天是他陪同吴鸢拜访了各大家主，吃闭门羹不至于，但是软钉子碰了一大堆，相互推诿，这个说老瓷山能不能搭建文昌阁，得去问刘家老爷，那个说神仙坟是魏家占地最多，只有魏家老爷子点头才能坐下来谈，然后刘家魏家又说这种涉及祖宗基业的天大事情，一定要大伙儿聚起来慎重商议，否则是要被街坊邻居们戳脊梁骨的。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 90,
+        "segment_index": 8
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -965,7 +981,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -979,7 +997,9 @@
         "description": "小镇富户聚居之地，牵连多方利益。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -993,7 +1013,9 @@
         "description": "小镇重要街巷，与福禄街共同承载豪族活动。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -1008,9 +1030,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "吴鸢"
         ],
-        "description": "不但要亲自盯着小镇东边的衙署建造，还有为了商定文昌阁武圣庙的选址一事，父母官吴鸢一天到晚忙得脚不着地，四姓十族除去已经举族迁出小镇的六个，还剩下八个，礼部右侍郎董湖靠着牌坊楼拓碑一事，过江龙压过了地头蛇吴鸢的风头，如今那些个土生土长的老油子，全在福禄街和桃叶巷看他吴鸢的笑话，可他还是得一家一户登门拜访过去，忙得吴鸢最后嘴唇干裂，嗓子眼都快冒烟了，一回到督造官衙署，瘫软在椅子上，扯了扯领口，直愣愣盯着房梁雕花，脸色阴沉不定。 ” 身边站着那位豪阀出身的文秘书郎，今天是他陪同吴鸢拜访了各大家主，吃闭门羹不至于，但是软钉子碰了一大堆，相互推诿，这个说老瓷山能不能搭建文昌阁，得去问刘家老爷，那个说神仙坟是魏家占地最多，只有魏家老爷子点头才能坐下来谈，然后刘家魏家又说这种涉及祖宗基业的天大事情，一定要大伙儿聚起来慎重商议，否则是要被街坊邻居们戳脊梁骨的。",
+        "description": "不但要亲自盯着小镇东边的衙署建造，还有为了商定文昌阁武圣庙的选址一事，父母官吴鸢一天到晚忙得脚不着地，四姓十族除去已经举族迁出小镇的六个，还剩下八个，礼部右侍郎董湖靠着牌坊楼拓碑一事，过江龙压过了地头蛇吴鸢的风头，如今那些个土生土长的老油子，全在福禄街和桃叶巷看他吴鸢的笑话，可他还是得一家一户登门拜访过去，忙得吴鸢最后嘴唇干裂，嗓子眼都快冒烟了，一回到督造官衙署，瘫软在椅子上，扯了扯领口，直愣愣盯着房梁雕花，脸色阴沉不定。 身边站着那位豪阀出身的文秘书郎，今天是他陪同吴鸢拜访了各大家主，吃闭门羹不至于，但是软钉子碰了一大堆，相互推诿，这个说老瓷山能不能搭建文昌阁，得去问刘家老爷，那个说神仙坟是魏家占地最多，只有魏家老爷子点头才能坐下来谈，然后刘家魏家又说这种涉及祖宗基业的天大事情，一定要大伙儿聚起来慎重商议，否则是要被街坊邻居们戳脊梁骨的。 吴鸢突然笑着说道：“放心，我没事，这会儿就是有点馋咱们京城的酒水了。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1028,7 +1051,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.593141",
+    "extracted_at": "2026-03-25T17:27:37.336109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1048,7 +1071,21 @@
       "这种事情，不是之前你跟人求匾额榜书那么简单的，所以你别瞎搀和。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢瞪眼训斥道：“你傻啊，你家族积攒下来的人脉，不等于你的人脉，你每用上一次，就会让自己在家族地位下降一大截。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 90,
+        "segment_index": 9
+      }
+    ],
     "locations": [
       {
         "name": "小镇",
@@ -1072,9 +1109,10 @@
         "location": "小镇",
         "participants": [
           "阿良",
-          "陈平安"
+          "陈平安",
+          "吴鸢"
         ],
-        "description": "我们家跟京城李家关系还不错，那边发话，这里的小镇李氏肯定要卖这个面子。 那位世家子这才落座，遗憾道：“可惜李家已经搬去京城，要不然可以让他们家主李虹帮着牵线搭桥，有些事情能够私下说，就会好办许多。 ”",
+        "description": "我们家跟京城李家关系还不错，那边发话，这里的小镇李氏肯定要卖这个面子。 吴鸢瞪眼训斥道：“你傻啊，你家族积攒下来的人脉，不等于你的人脉，你每用上一次，就会让自己在家族地位下降一大截。 那位世家子这才落座，遗憾道：“可惜李家已经搬去京城，要不然可以让他们家主李虹帮着牵线搭桥，有些事情能够私下说，就会好办许多。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1092,7 +1130,132 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.593141",
+    "extracted_at": "2026-03-25T17:27:37.336109",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "90-10-0": {
+    "juan_index": 90,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第九十章 大雨滂沱",
+    "source_sentences": [
+      "世家子笑道：“我这不是担心吴大人钻牛角尖嘛。",
+      "”",
+      "吴鸢嗤笑道：“我如果是钻牛角尖的人，早把那位上柱国老丈人的腿打断了，然后带着他的宝贝闺女一起私奔。",
+      "”",
+      "满堂寂静。",
+      "世家子忍住笑，低声道：“这种大话，吴大人在咱们这儿吹吹牛就可以了。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢嗤笑道：“我如果是钻牛角尖的人，早把那位上柱国老丈人的腿打断了，然后带着他的宝贝闺女一起私奔。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 90,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "吴鸢"
+        ],
+        "description": "吴鸢嗤笑道：“我如果是钻牛角尖的人，早把那位上柱国老丈人的腿打断了，然后带着他的宝贝闺女一起私奔。 世家子笑道：“我这不是担心吴大人钻牛角尖嘛。 ”",
+        "background": "",
+        "significance": "对应吴鸢在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第九十章 大雨滂沱 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.336109",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "90-11-0": {
+    "juan_index": 90,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第九十章 大雨滂沱",
+    "source_sentences": [
+      "”",
+      "吴鸢舒舒服服瘫靠在椅背上，一点也没有被揭穿真相的窘态，反而笑呵呵道：“那当然，老丈人要真大驾光临，我这会儿早跑去低头哈腰端茶送水了，还得问上柱国大人你老累不累啊，要不然揉揉肩膀啊。",
+      "”",
+      "衙署大堂内笑声四起。",
+      "就连门口那两位腰悬绣金刀的武秘书郎，也相视一笑。",
+      "吴鸢坐直身体的那一刻，大堂内所有人都下意识屏气凝神，吴鸢不急不缓道：“李氏已经迁出去，卢家铁了心要当缩头乌龟，万事不管。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢舒舒服服瘫靠在椅背上，一点也没有被揭穿真相的窘态，反而笑呵呵道：“那当然，老丈人要真大驾光临，我这会儿早跑去低头哈腰端茶送水了，还得问上柱国大人你老累不累啊，要不然揉揉肩膀啊。 吴鸢坐直身体的那一刻，大堂内所有人都下意识屏气凝神，吴鸢不急不缓道：“李氏已经迁出去，卢家铁了心要当缩头乌龟，万事不管。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢揭示",
+        "time": null,
+        "location": null,
+        "participants": [
+          "吴鸢"
+        ],
+        "description": "吴鸢舒舒服服瘫靠在椅背上，一点也没有被揭穿真相的窘态，反而笑呵呵道：“那当然，老丈人要真大驾光临，我这会儿早跑去低头哈腰端茶送水了，还得问上柱国大人你老累不累啊，要不然揉揉肩膀啊。 吴鸢坐直身体的那一刻，大堂内所有人都下意识屏气凝神，吴鸢不急不缓道：“李氏已经迁出去，卢家铁了心要当缩头乌龟，万事不管。 ”",
+        "background": "",
+        "significance": "对应吴鸢在叙事中的关键揭示节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第九十章 大雨滂沱 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.336109",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1186,7 +1349,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.593141",
+    "extracted_at": "2026-03-25T17:27:37.337112",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "90-14-0": {
+    "juan_index": 90,
+    "segment_index": 14,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第九十章 大雨滂沱",
+    "source_sentences": [
+      "！",
+      "先生，说好的醉卧美人膝呢？",
+      "衙署上下，不是老妪便是稚童，就没一个妙龄女子啊。",
+      "说好的这里人杰地灵女子秀美呢？",
+      "”",
+      "就在这个时候，眉心有痣的清秀少年被两名扈从伸手拦在门外，少年微笑道：“吴大人，不然我写信帮你问问京城的袁柱国？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "衙署上下，不是老妪便是稚童，就没一个妙龄女子啊。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 90,
+        "segment_index": 14
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 老妪对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪"
+        ],
+        "description": "衙署上下，不是老妪便是稚童，就没一个妙龄女子啊。 ！ 先生，说好的醉卧美人膝呢？",
+        "background": "",
+        "significance": "对应老妪在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第九十章 大雨滂沱 · 段14",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 14
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.337112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1209,6 +1434,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢立即站起身，脸色尴尬，又不好说破自家先生的国师身份，也没那脸皮和胆识，为了掩人耳目就对先生大加呵斥。 吴鸢心底满是疑惑，不知先生为何要登门衙署，而且看样子一点不介意泄露身份。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3
+        ],
+        "juan_index": 90,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -1226,16 +1465,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十章 大雨滂沱 · 崔瀺会见",
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢与崔瀺会见",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "崔瀺懒得跟那些文武秘书郎计较，转身撂下一句，“随我来。 帮你要两个眉眼可爱的小丫鬟过来？ ”",
+        "description": "吴鸢立即站起身，脸色尴尬，又不好说破自家先生的国师身份，也没那脸皮和胆识，为了掩人耳目就对先生大加呵斥。 吴鸢心底满是疑惑，不知先生为何要登门衙署，而且看样子一点不介意泄露身份。 崔瀺懒得跟那些文武秘书郎计较，转身撂下一句，“随我来。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键会见节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与崔瀺之间的会见关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十章 大雨滂沱 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1249,8 +1491,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "会见",
+        "context": "帮你要两个眉眼可爱的小丫鬟过来？ ” 吴鸢立即站起身，脸色尴尬，又不好说破自家先生的国师身份，也没那脸皮和胆识，为了掩人耳目就对先生大加呵斥。 吴鸢心底满是疑惑，不知先生为何要登门衙署，而且看样子一点不介意泄露身份。 崔瀺懒得跟那些文武秘书郎计较，转身撂下一句，“随我来。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢与崔瀺会见",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.337112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1273,6 +1541,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢对屋内所有人伸手虚压了两次，示意他们不要声张，独自快步走出门槛，当两名沙场出身的武秘书郎想要贴身跟随，吴鸢仍是摆手拒绝。 吴鸢摇头道：“还剩下六百刑徒，尚未到达最北边君神山的山口，这拨人身份也最为尊贵，多是卢氏王朝的功勋豪阀之后，年纪也不大，十四五岁到二十岁之间。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -1290,16 +1573,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十章 大雨滂沱 · 崔瀺对话",
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "走在僻静无人的石子小径上，崔瀺问道：“卢氏刑徒都已经进山了？ 吴鸢对屋内所有人伸手虚压了两次，示意他们不要声张，独自快步走出门槛，当两名沙场出身的武秘书郎想要贴身跟随，吴鸢仍是摆手拒绝。 ”",
+        "description": "吴鸢对屋内所有人伸手虚压了两次，示意他们不要声张，独自快步走出门槛，当两名沙场出身的武秘书郎想要贴身跟随，吴鸢仍是摆手拒绝。 走在僻静无人的石子小径上，崔瀺问道：“卢氏刑徒都已经进山了？ 吴鸢摇头道：“还剩下六百刑徒，尚未到达最北边君神山的山口，这拨人身份也最为尊贵，多是卢氏王朝的功勋豪阀之后，年纪也不大，十四五岁到二十岁之间。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十章 大雨滂沱 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1313,8 +1599,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "吴鸢对屋内所有人伸手虚压了两次，示意他们不要声张，独自快步走出门槛，当两名沙场出身的武秘书郎想要贴身跟随，吴鸢仍是摆手拒绝。 走在僻静无人的石子小径上，崔瀺问道：“卢氏刑徒都已经进山了？ ” 吴鸢摇头道：“还剩下六百刑徒，尚未到达最北边君神山的山口，这拨人身份也最为尊贵，多是卢氏王朝的功勋豪阀之后，年纪也不大，十四五岁到二十岁之间。 ” 吴鸢疑惑道：“这不是先生你之前就安排好的吗？",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 90,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.337112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1352,6 +1664,19 @@
       },
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢小心问道：“这次是宋长镜的嫡系心腹护送他们赶来龙泉县，我就这么上门要人，那帮六亲不认的兵痞，肯乖乖放人？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 90,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "宋长镜",
         "alias": [],
         "original_description_in_book": "吴鸢小心问道：“这次是宋长镜的嫡系心腹护送他们赶来龙泉县，我就这么上门要人，那帮六亲不认的兵痞，肯乖乖放人？",
@@ -1376,6 +1701,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "宋长镜"
         ],
         "sentence_indexes_in_segment": [
@@ -1387,16 +1713,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第九十章 大雨滂沱 · 崔瀺与宋长镜在龙泉对话",
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢与宋长镜在龙泉对话",
         "time": null,
         "location": "龙泉",
         "participants": [
-          "崔瀺",
+          "吴鸢",
           "宋长镜"
         ],
         "description": "崔瀺没好气道：“天有不测风云，你家先生我现在算是龙游浅滩了，所以得再跟你确定一下。 吴鸢小心问道：“这次是宋长镜的嫡系心腹护送他们赶来龙泉县，我就这么上门要人，那帮六亲不认的兵痞，肯乖乖放人？ ”",
         "background": "",
-        "significance": "在龙泉推动崔瀺与宋长镜之间的对话线。",
+        "significance": "在龙泉推动吴鸢与宋长镜之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -1417,30 +1743,25 @@
       {
         "time": null,
         "from_roles": [
-          "崔瀺"
+          "吴鸢"
         ],
         "to_roles": [
           "宋长镜"
         ],
         "action": "对话",
-        "context": "” 崔瀺没好气道：“天有不测风云，你家先生我现在算是龙游浅滩了，所以得再跟你确定一下。 你现在什么事情都别管，快马加鞭赶往神君山的入山口子，找到一个叫夏余禄的刑徒少年，安排他去京城。 ” 吴鸢小心问道：“这次是宋长镜的嫡系心腹护送他们赶来龙泉县，我就这么上门要人，那帮六亲不认的兵痞，肯乖乖放人？ ”",
+        "context": "吴鸢小心问道：“这次是宋长镜的嫡系心腹护送他们赶来龙泉县，我就这么上门要人，那帮六亲不认的兵痞，肯乖乖放人？",
         "result": null,
-        "event_name": "第二卷山水郎 第九十章 大雨滂沱 · 崔瀺与宋长镜在龙泉对话",
+        "event_name": "第二卷山水郎 第九十章 大雨滂沱 · 吴鸢与宋长镜在龙泉对话",
         "location": "龙泉",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          4
         ],
         "juan_index": 90,
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "extracted_at": "2026-03-25T17:27:37.337112",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1476,20 +1797,34 @@
         ],
         "juan_index": 90,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢担忧道：“先生，你这边？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 90,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十章 大雨滂沱 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第九十章 大雨滂沱 · 崔瀺与吴鸢剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺挥挥手，不耐烦道：“我那边自有后手，你只要露面就行。 崔瀺冷哼道：“死不了！ ”",
+        "description": "崔瀺挥挥手，不耐烦道：“我那边自有后手，你只要露面就行。 吴鸢担忧道：“先生，你这边？ 崔瀺冷哼道：“死不了！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与吴鸢之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第九十章 大雨滂沱 · 段18",
         "sentence_indexes_in_segment": [
@@ -1505,7 +1840,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1526,6 +1861,20 @@
       "“我不就是先熬死了先生，又熬死了你齐静春？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢不再犹豫，立即喊上那两名武秘书郎，一同骑马出门。 崔瀺等到吴鸢离去之后，独自行走在衙署小路，脸色阴沉，“一着不慎满盘皆……还没完全输，满盘皆溃倒是事实，不过没事，只要还有一丝胜算就行，熬着，就当修心养性了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 90,
+        "segment_index": 19
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -1566,9 +1915,10 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "崔瀺等到吴鸢离去之后，独自行走在衙署小路，脸色阴沉，“一着不慎满盘皆……还没完全输，满盘皆溃倒是事实，不过没事，只要还有一丝胜算就行，熬着，就当修心养性了。 “我不就是先熬死了先生，又熬死了你齐静春？ 吴鸢不再犹豫，立即喊上那两名武秘书郎，一同骑马出门。",
+        "description": "吴鸢不再犹豫，立即喊上那两名武秘书郎，一同骑马出门。 崔瀺等到吴鸢离去之后，独自行走在衙署小路，脸色阴沉，“一着不慎满盘皆……还没完全输，满盘皆溃倒是事实，不过没事，只要还有一丝胜算就行，熬着，就当修心养性了。 “我不就是先熬死了先生，又熬死了你齐静春？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1586,7 +1936,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1650,7 +2000,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1714,7 +2064,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1855,7 +2205,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.594145",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1941,7 +2291,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2067,7 +2417,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.338116",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2148,7 +2498,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.339119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2229,7 +2579,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.339119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2354,7 +2704,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.339119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2418,7 +2768,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.339119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2542,7 +2892,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.595148",
+    "extracted_at": "2026-03-25T17:27:37.339119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2635,7 +2985,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.339119",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2749,7 +3099,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.340122",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2849,7 +3199,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.340122",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2976,7 +3326,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.340122",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3060,7 +3410,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.340122",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3180,7 +3530,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.340122",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3282,7 +3632,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.340122",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3386,7 +3736,7 @@
         "segment_index": 37
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.596152",
+    "extracted_at": "2026-03-25T17:27:37.341145",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3503,7 +3853,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.597155",
+    "extracted_at": "2026-03-25T17:27:37.341145",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

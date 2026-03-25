@@ -154,7 +154,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.540400",
+    "extracted_at": "2026-03-25T17:27:37.274475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -295,7 +295,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.274475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -348,6 +348,19 @@
       },
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "眉心一点朱砂的少年说自己不是大骊的官员，不似作伪，但当时出现在铁匠铺子，却跟随在督造官吴鸢身边，阮秀说有可能是吴大人的伴读书童，所谓书童，就是自家公子负笈游学时，在那个在旁边背着书箱的家伙。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 81,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "阮秀",
         "alias": [],
         "original_description_in_book": "眉心一点朱砂的少年说自己不是大骊的官员，不似作伪，但当时出现在铁匠铺子，却跟随在督造官吴鸢身边，阮秀说有可能是吴大人的伴读书童，所谓书童，就是自家公子负笈游学时，在那个在旁边背着书箱的家伙。",
@@ -387,6 +400,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "吴鸢",
           "阮秀"
         ],
         "sentence_indexes_in_segment": [
@@ -404,13 +418,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "崔瀺",
+          "吴鸢",
           "阮秀"
         ],
         "description": "崔瀺继续说道：“作为拓碑的那些纸张，极其名贵，每一张都厚如木片，是别洲道教真诰宗独有的宝贝，名叫风雷笺，写字的时候，笔尖与纸张摩擦，带起一阵阵风雷之声，咱们皇帝陛下也库藏不多，平时根本舍不得用，偶尔会拿出来犒赏功勋大臣，或是年末赏赐给六部里某个衙门，所以这次礼部对那些字是志在必得，咱们这位前程远大的小吴大人，心思太重，方方面面都想抓住，抓稳，估计在小镇以后会处处碰壁，别处的灭门太守、破家县令，到了他这里，就当得殊为不易啊。 陈平安听天书一般。 虽然身边少年的口气很大，但是陈平安没觉得他是在胡说八道。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十一章 国师 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -424,8 +440,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "阮秀"
+        ],
+        "action": "同行",
+        "context": "眉心一点朱砂的少年说自己不是大骊的官员，不似作伪，但当时出现在铁匠铺子，却跟随在督造官吴鸢身边，阮秀说有可能是吴大人的伴读书童，所谓书童，就是自家公子负笈游学时，在那个在旁边背着书箱的家伙。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 81,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.274475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -590,7 +627,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.274475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,6 +706,19 @@
       },
       {
         "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "当然，少年的话痨，只有风雷园的刘灞桥，能够与之媲美。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 81,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "宋集薪",
         "alias": [
           "宋睦"
@@ -693,7 +743,7 @@
           "陈平安",
           "宋集薪"
         ],
-        "description": "就像是比苻南华蔡金简这拨神仙子弟，更高高在上的存在，陈平安甚至觉得哪怕截江真君在他面前，崔瀺的眼神脸色一样是这么漫不经心。 少年突然笑问道：“陈平安，你能不能带我去一趟宋集薪家的院子？ 陈平安心弦一紧，貌似随意问道：“可是牌坊这边还没散呢？",
+        "description": "就像是比苻南华蔡金简这拨神仙子弟，更高高在上的存在，陈平安甚至觉得哪怕截江真君在他面前，崔瀺的眼神脸色一样是这么漫不经心。 当然，少年的话痨，只有风雷园的刘灞桥，能够与之媲美。 少年突然笑问道：“陈平安，你能不能带我去一趟宋集薪家的院子？",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
         "related_action_indices": [
@@ -734,7 +784,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.274475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -854,7 +904,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -978,7 +1028,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1040,7 +1090,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1103,7 +1153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.541403",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1198,7 +1248,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1303,7 +1353,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1396,7 +1446,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.275479",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1474,7 +1524,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.276482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1553,7 +1603,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.276482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1616,7 +1666,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.276482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1731,7 +1781,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.276482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1793,7 +1843,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.276482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1899,7 +1949,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.542407",
+    "extracted_at": "2026-03-25T17:27:37.276482",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2036,7 +2086,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2163,7 +2213,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2243,7 +2293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2377,7 +2427,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2506,7 +2556,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2600,7 +2650,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

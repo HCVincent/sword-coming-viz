@@ -70,7 +70,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.203373",
+    "extracted_at": "2026-03-25T17:27:38.098879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -249,7 +249,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.203373",
+    "extracted_at": "2026-03-25T17:27:38.098879",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -386,7 +386,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.203373",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -449,7 +449,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.203373",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -472,6 +472,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 239,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。",
@@ -479,6 +492,20 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 239,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。 徐远霞连忙抱拳还礼。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          0,
+          3
         ],
         "juan_index": 239,
         "segment_index": 5
@@ -507,13 +534,16 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "张山峰",
+          "徐远霞"
         ],
-        "description": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。 齐静春笑问道：“前辈可是白帝城的琉璃阁主？ ”",
+        "description": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。 徐远霞连忙抱拳还礼。 齐静春笑问道：“前辈可是白帝城的琉璃阁主？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第三卷金错刀 第二百三十八章 春风送君千万里 · 段5",
         "sentence_indexes_in_segment": [
@@ -532,30 +562,45 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "张山峰"
         ],
         "to_roles": [
-          "齐静春"
+          "陈平安"
         ],
-        "action": "对话",
-        "context": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。 ” 然后大髯汉子看到那位青衫儒士向他们望来，微笑点头致意。 徐远霞连忙抱拳还礼。 齐静春笑问道：“前辈可是白帝城的琉璃阁主？ ”",
+        "action": "指点",
+        "context": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。",
         "result": null,
         "event_name": "齐静春现身",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
+        ],
+        "juan_index": 239,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "张山峰"
+        ],
+        "to_roles": [
+          "徐远霞"
+        ],
+        "action": "指点",
+        "context": "张山峰就要起身去往陈平安那边，却被徐远霞一把抓住胳膊，轻声提醒道：“我们继续聊我们的，那边的事情，绝对不要掺和，咱俩最好就是非礼勿视，非礼勿听。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 239,
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -635,7 +680,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -700,7 +745,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -810,7 +855,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -972,7 +1017,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.099883",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1037,7 +1082,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.100887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1130,7 +1175,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.100887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1238,7 +1283,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.204377",
+    "extracted_at": "2026-03-25T17:27:38.100887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1346,7 +1391,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.100887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1518,7 +1563,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.100887",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1600,7 +1645,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.101890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1700,7 +1745,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.101890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1804,7 +1849,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.101890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1897,7 +1942,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.101890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1961,7 +2006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.101890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2220,7 +2265,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.205380",
+    "extracted_at": "2026-03-25T17:27:38.101890",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2269,6 +2314,19 @@
         ],
         "juan_index": 239,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "没关系，你不认老秀才当先生，我还是认你做小师弟的。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 239,
+        "segment_index": 21
       }
     ],
     "locations": [],
@@ -2279,14 +2337,13 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "老秀才"
         ],
-        "description": "陈平安欲言又止。 齐静春笑道：“你是说没答应我先生的要求，所以不算我的小师弟？ 陈平安挠挠头，点头道：“好！",
+        "description": "陈平安欲言又止。 齐静春笑道：“你是说没答应我先生的要求，所以不算我的小师弟？ 没关系，你不认老秀才当先生，我还是认你做小师弟的。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十八章 春风送君千万里 · 段21",
         "sentence_indexes_in_segment": [
           0,
@@ -2300,34 +2357,8 @@
         "segment_index": 21
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "陈平安欲言又止。 齐静春笑道：“你是说没答应我先生的要求，所以不算我的小师弟？ 没关系，你不认老秀才当先生，我还是认你做小师弟的。 ” 陈平安挠挠头，点头道：“好！ ”",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 239,
-        "segment_index": 21
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.206384",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.102894",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2375,6 +2406,19 @@
           0,
           2,
           4
+        ],
+        "juan_index": 239,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "陈平安摇头道：“精彩得很，除了练拳，还会逢山遇水，结识了徐大侠和张山峰这样的新朋友，而且见到了许许多多的精魅神怪，不累。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 239,
         "segment_index": 22
@@ -2431,7 +2475,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.206384",
+    "extracted_at": "2026-03-25T17:27:38.102894",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2484,6 +2528,19 @@
       },
       {
         "entity_type": "person",
+        "name": "沈温",
+        "alias": [],
+        "original_description_in_book": "得知齐先生不是事事知晓后，陈平安就一股脑跟他说起了神奇的过山鲫，黄庭国客栈的那条行云流水巷，说了胭脂郡城隍殿的沈温，对齐先生的仰慕，还说了那对山水印的厉害，说了棋墩山搬到家乡披云山的魏檗，说了性情各异的嫁衣女鬼、枯骨艳鬼们，当然，陈平安说得最多的，还是戴斗笠的那个男人，说了那个男人在说起齐先生的时候，分明笑脸灿烂，整张脸都挤在了一起，那一刻却好像是阿良最伤感的时候。",
+        "description": "山水与庙堂边缘的支线人物，适合补足外围山上关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 239,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "魏檗",
         "alias": [
           "魏山君"
@@ -2523,6 +2580,7 @@
         "related_entities": [
           "齐静春",
           "陈平安",
+          "沈温",
           "魏檗",
           "阿良"
         ],
@@ -2541,8 +2599,8 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "魏檗",
-          "阿良"
+          "沈温",
+          "魏檗"
         ],
         "description": "齐静春嗯了一声。 得知齐先生不是事事知晓后，陈平安就一股脑跟他说起了神奇的过山鲫，黄庭国客栈的那条行云流水巷，说了胭脂郡城隍殿的沈温，对齐先生的仰慕，还说了那对山水印的厉害，说了棋墩山搬到家乡披云山的魏檗，说了性情各异的嫁衣女鬼、枯骨艳鬼们，当然，陈平安说得最多的，还是戴斗笠的那个男人，说了那个男人在说起齐先生的时候，分明笑脸灿烂，整张脸都挤在了一起，那一刻却好像是阿良最伤感的时候。 最后笑着说了他给一个叫道老二的家伙，一拳打回了人间，不过重逢之后，阿良还告诉自己，不用着急练剑，练拳练到了极致，就已经是在练剑了，所以他陈平安不是特别着急……",
         "background": "",
@@ -2551,7 +2609,10 @@
           0,
           1,
           2,
-          3
+          3,
+          4,
+          5,
+          6
         ],
         "source": "第三卷金错刀 第二百三十八章 春风送君千万里 · 段23",
         "sentence_indexes_in_segment": [
@@ -2567,6 +2628,26 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "沈温"
+        ],
+        "action": "同行",
+        "context": "得知齐先生不是事事知晓后，陈平安就一股脑跟他说起了神奇的过山鲫，黄庭国客栈的那条行云流水巷，说了胭脂郡城隍殿的沈温，对齐先生的仰慕，还说了那对山水印的厉害，说了棋墩山搬到家乡披云山的魏檗，说了性情各异的嫁衣女鬼、枯骨艳鬼们，当然，陈平安说得最多的，还是戴斗笠的那个男人，说了那个男人在说起齐先生的时候，分明笑脸灿烂，整张脸都挤在了一起，那一刻却好像是阿良最伤感的时候。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 239,
+        "segment_index": 23
+      },
       {
         "time": null,
         "from_roles": [
@@ -2591,6 +2672,46 @@
         "time": null,
         "from_roles": [
           "陈平安"
+        ],
+        "to_roles": [
+          "阿良"
+        ],
+        "action": "同行",
+        "context": "得知齐先生不是事事知晓后，陈平安就一股脑跟他说起了神奇的过山鲫，黄庭国客栈的那条行云流水巷，说了胭脂郡城隍殿的沈温，对齐先生的仰慕，还说了那对山水印的厉害，说了棋墩山搬到家乡披云山的魏檗，说了性情各异的嫁衣女鬼、枯骨艳鬼们，当然，陈平安说得最多的，还是戴斗笠的那个男人，说了那个男人在说起齐先生的时候，分明笑脸灿烂，整张脸都挤在了一起，那一刻却好像是阿良最伤感的时候。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 239,
+        "segment_index": 23
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "沈温"
+        ],
+        "to_roles": [
+          "魏檗"
+        ],
+        "action": "同行",
+        "context": "得知齐先生不是事事知晓后，陈平安就一股脑跟他说起了神奇的过山鲫，黄庭国客栈的那条行云流水巷，说了胭脂郡城隍殿的沈温，对齐先生的仰慕，还说了那对山水印的厉害，说了棋墩山搬到家乡披云山的魏檗，说了性情各异的嫁衣女鬼、枯骨艳鬼们，当然，陈平安说得最多的，还是戴斗笠的那个男人，说了那个男人在说起齐先生的时候，分明笑脸灿烂，整张脸都挤在了一起，那一刻却好像是阿良最伤感的时候。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 239,
+        "segment_index": 23
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "沈温"
         ],
         "to_roles": [
           "阿良"
@@ -2648,7 +2769,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.206384",
+    "extracted_at": "2026-03-25T17:27:38.102894",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2766,7 +2887,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.206384",
+    "extracted_at": "2026-03-25T17:27:38.102894",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2870,7 +2991,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.206384",
+    "extracted_at": "2026-03-25T17:27:38.102894",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2966,7 +3087,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.207387",
+    "extracted_at": "2026-03-25T17:27:38.102894",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3071,7 +3192,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.207387",
+    "extracted_at": "2026-03-25T17:27:38.103897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3179,7 +3300,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.207387",
+    "extracted_at": "2026-03-25T17:27:38.103897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3254,7 +3375,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.207387",
+    "extracted_at": "2026-03-25T17:27:38.103897",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

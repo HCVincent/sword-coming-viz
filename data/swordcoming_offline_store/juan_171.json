@@ -16,6 +16,33 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。 茅小冬来到石桌旁，瞥了眼胜负趋于明朗的棋局，没看出太大的明堂，就不再费神，坐在一旁，“你，或者说你们两个，到底有什么谋划？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 171,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "崔东山",
         "alias": [],
         "original_description_in_book": "在高大老人出现后，崔东山轻声问道：“如何了？",
@@ -44,16 +71,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与李二对话",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与白衣少年对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山",
-          "李二"
+          "茅小冬",
+          "白衣少年"
         ],
-        "description": "在高大老人出现后，崔东山轻声问道：“如何了？ 李二大爷有没有拆烂皇宫？ 茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。",
+        "description": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。 在高大老人出现后，崔东山轻声问道：“如何了？ 李二大爷有没有拆烂皇宫？",
         "background": "",
-        "significance": "推动崔东山与李二之间的对话关系。",
+        "significance": "推动茅小冬与白衣少年之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -74,30 +101,25 @@
       {
         "time": null,
         "from_roles": [
-          "崔东山"
+          "茅小冬"
         ],
         "to_roles": [
-          "李二"
+          "白衣少年"
         ],
-        "action": "对话",
-        "context": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。 在高大老人出现后，崔东山轻声问道：“如何了？ 李二大爷有没有拆烂皇宫？ ” 茅小冬来到石桌旁，瞥了眼胜负趋于明朗的棋局，没看出太大的明堂，就不再费神，坐在一旁，“你，或者说你们两个，到底有什么谋划？ ”",
+        "action": "别离",
+        "context": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与李二对话",
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与白衣少年对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          0
         ],
         "juan_index": 171,
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "extracted_at": "2026-03-25T17:27:37.725588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -131,6 +153,20 @@
         ],
         "juan_index": 171,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬一掌拍在石桌上。 所有棋子从棋盘上蹦跳起来，悬停在空中，黑高白低，像是两幅上下叠加的图画，但是不管茅小冬横看竖看，不论如何打量，都看不出更多玄机，冷哼一声，棋子瞬间落回原处，丝毫不差。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -153,16 +189,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山在山崖书院试探",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬在山崖书院试探",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "崔东山"
+          "崔东山",
+          "茅小冬"
         ],
-        "description": "崔东山不转头，啧啧道：“这才到了东华山没几天，就开始为大隋江山操心啦？ 崔东山始终保持之前的古怪姿势，“山崖书院该如何就如何，不过就是兵来将挡水来土掩，咸吃萝卜淡操心作甚？ 小冬啊，真不是我说你，见异思迁没啥，可喜新厌旧如此之快，可就不厚道喽。",
+        "description": "崔东山不转头，啧啧道：“这才到了东华山没几天，就开始为大隋江山操心啦？ 茅小冬一掌拍在石桌上。 所有棋子从棋盘上蹦跳起来，悬停在空中，黑高白低，像是两幅上下叠加的图画，但是不管茅小冬横看竖看，不论如何打量，都看不出更多玄机，冷哼一声，棋子瞬间落回原处，丝毫不差。",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键试探节点。",
-        "related_action_indices": [],
+        "significance": "在山崖书院推动崔东山与茅小冬之间的试探线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -176,8 +215,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "试探",
+        "context": "崔东山不转头，啧啧道：“这才到了东华山没几天，就开始为大隋江山操心啦？ 小冬啊，真不是我说你，见异思迁没啥，可喜新厌旧如此之快，可就不厚道喽。 ” 茅小冬一掌拍在石桌上。 所有棋子从棋盘上蹦跳起来，悬停在空中，黑高白低，像是两幅上下叠加的图画，但是不管茅小冬横看竖看，不论如何打量，都看不出更多玄机，冷哼一声，棋子瞬间落回原处，丝毫不差。 崔东山始终保持之前的古怪姿势，“山崖书院该如何就如何，不过就是兵来将挡水来土掩，咸吃萝卜淡操心作甚？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬在山崖书院试探",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.725588",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -197,7 +262,21 @@
       "且不说书院里那些大隋学子，便是跟随我离开大骊的那拨孩子，如今尚显稚嫩，他们的精神气，如何经得起多次折腾！",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬厉色道：“书院书院，重在学生，重在夫子，而不是山崖书院这四个字！",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 171,
+        "segment_index": 3
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -224,7 +303,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           0,
           3
@@ -235,13 +316,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 大骊迁移",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬在大骊迁移",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "茅小冬"
+        ],
         "description": "难道大骊吞并了大隋，山崖书院就没啦？ 我看不会嘛，既然大隋一样给不了你们七十二书院之一的身份，以后重归大骊，大不了寄人篱下，反正相差不多。 茅小冬厉色道：“书院书院，重在学生，重在夫子，而不是山崖书院这四个字！",
         "background": "",
-        "significance": "对应大骊相关的关键迁移场景。",
+        "significance": "对应茅小冬在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段3",
         "sentence_indexes_in_segment": [
@@ -257,7 +340,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "extracted_at": "2026-03-25T17:27:37.726591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -292,21 +375,38 @@
         ],
         "juan_index": 171,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "崔东山缓缓收回手，不过攥紧了一把棋子，在手心咯吱作响，转头望向勃然大怒的茅小冬， 崔东山脸色如常，微笑道：“说得挺大义凛然，只可惜你茅小冬终究学问有限，想事情想得太浅太近了。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 171,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山对话",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山"
+          "崔东山",
+          "茅小冬"
         ],
         "description": "崔东山缓缓收回手，不过攥紧了一把棋子，在手心咯吱作响，转头望向勃然大怒的茅小冬， 崔东山脸色如常，微笑道：“说得挺大义凛然，只可惜你茅小冬终究学问有限，想事情想得太浅太近了。 崔东山站起身，攥着手心那把棋子，围绕石凳缓缓踱步，打趣道：“寺庙不在僧人在，僧人不在佛经在，佛经不在佛法在，佛法不在佛祖在。",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔东山与茅小冬之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -320,8 +420,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔东山脸色如常，微笑道：“说得挺大义凛然，只可惜你茅小冬终究学问有限，想事情想得太浅太近了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 171,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.726591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -354,6 +475,19 @@
         ],
         "juan_index": 171,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬嗤笑道：“当山崖书院是学宫啊，不管风吹雨打，我自屹立不倒？",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -364,7 +498,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "茅小冬"
+        ],
         "sentence_indexes_in_segment": [
           2,
           4
@@ -375,16 +511,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山在山崖书院对话",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬在山崖书院对话",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "崔东山"
+          "崔东山",
+          "茅小冬"
         ],
         "description": "崔东山扬起脑袋，一手负后，一手轻轻拧转手腕，闲庭信步道：“一切有为法，应作如是观啊。 等到你什么时候真的想通了书院的存在意义，山崖书院才算真正找到了一处不败之地，至于是在哪家哪姓哪国的疆土上，都无所谓了。 茅小冬嗤笑道：“当山崖书院是学宫啊，不管风吹雨打，我自屹立不倒？",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在山崖书院推动崔东山与茅小冬之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -398,8 +537,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "” 崔东山扬起脑袋，一手负后，一手轻轻拧转手腕，闲庭信步道：“一切有为法，应作如是观啊。 等到你什么时候真的想通了书院的存在意义，山崖书院才算真正找到了一处不败之地，至于是在哪家哪姓哪国的疆土上，都无所谓了。 ” 茅小冬嗤笑道：“当山崖书院是学宫啊，不管风吹雨打，我自屹立不倒？ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬在山崖书院对话",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.726591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -433,21 +598,37 @@
         ],
         "juan_index": 171,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬神色凝重，摇头道：“你这是站着说话不腰疼。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山对话",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山"
+          "崔东山",
+          "茅小冬"
         ],
-        "description": "崔东山停下脚步，隔着一张石桌一副棋盘，凝视着高大老人，反问道：“有何不可？ 崔东山轻轻跨出一步，“走走看？ ”",
+        "description": "崔东山停下脚步，隔着一张石桌一副棋盘，凝视着高大老人，反问道：“有何不可？ 崔东山轻轻跨出一步，“走走看？ 茅小冬神色凝重，摇头道：“你这是站着说话不腰疼。",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔东山与茅小冬之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -461,8 +642,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔东山"
+        ],
+        "to_roles": [
+          "茅小冬"
+        ],
+        "action": "对话",
+        "context": "崔东山停下脚步，隔着一张石桌一副棋盘，凝视着高大老人，反问道：“有何不可？ ” 崔东山轻轻跨出一步，“走走看？ ” 茅小冬神色凝重，摇头道：“你这是站着说话不腰疼。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.726591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,7 +785,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.905263",
+    "extracted_at": "2026-03-25T17:27:37.726591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -599,6 +806,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬不愿在这里跟这家伙勾心斗角，站起身，“就你那点狗屁学问，丢地上，路边的狗都不稀罕叼一口。 茅小冬大步离开院子，背对着崔东山，“李二这趟硬闯皇宫，火候正好，你别得寸进尺，只要之后惹出任何麻烦，我拿你是问，别怪事先没跟你打招呼。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "崔东山",
@@ -630,18 +851,20 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与李二对话",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与崔东山对话",
         "time": null,
         "location": null,
         "participants": [
+          "茅小冬",
           "崔东山",
           "李二"
         ],
-        "description": "崔东山哈哈笑道：“嫉妒，嫉妒。 茅小冬大步离开院子，背对着崔东山，“李二这趟硬闯皇宫，火候正好，你别得寸进尺，只要之后惹出任何麻烦，我拿你是问，别怪事先没跟你打招呼。 茅小冬不愿在这里跟这家伙勾心斗角，站起身，“就你那点狗屁学问，丢地上，路边的狗都不稀罕叼一口。",
+        "description": "茅小冬不愿在这里跟这家伙勾心斗角，站起身，“就你那点狗屁学问，丢地上，路边的狗都不稀罕叼一口。 崔东山哈哈笑道：“嫉妒，嫉妒。 茅小冬大步离开院子，背对着崔东山，“李二这趟硬闯皇宫，火候正好，你别得寸进尺，只要之后惹出任何麻烦，我拿你是问，别怪事先没跟你打招呼。",
         "background": "",
-        "significance": "推动崔东山与李二之间的对话关系。",
+        "significance": "推动茅小冬与崔东山之间的对话关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段8",
         "sentence_indexes_in_segment": [
@@ -660,7 +883,27 @@
       {
         "time": null,
         "from_roles": [
+          "茅小冬"
+        ],
+        "to_roles": [
           "崔东山"
+        ],
+        "action": "别离",
+        "context": "茅小冬大步离开院子，背对着崔东山，“李二这趟硬闯皇宫，火候正好，你别得寸进尺，只要之后惹出任何麻烦，我拿你是问，别怪事先没跟你打招呼。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与崔东山对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "茅小冬"
         ],
         "to_roles": [
           "李二"
@@ -668,7 +911,7 @@
         "action": "别离",
         "context": "茅小冬大步离开院子，背对着崔东山，“李二这趟硬闯皇宫，火候正好，你别得寸进尺，只要之后惹出任何麻烦，我拿你是问，别怪事先没跟你打招呼。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与李二对话",
+        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与崔东山对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -678,7 +921,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.726591",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,6 +967,19 @@
         ],
         "juan_index": 171,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬转头望向那个一脸故作为难的家伙，“心平气和”道：“如果可以的话，我真想打烂你那颗脑袋，看看里头到底装着什么。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 9
       }
     ],
     "locations": [],
@@ -734,9 +990,10 @@
         "location": null,
         "participants": [
           "崔东山",
-          "李二"
+          "李二",
+          "茅小冬"
         ],
-        "description": "崔东山望向那个背影，尴尬道：“这样不好吧？ 李二大爷想做什么，我一个九境小蝼蚁，拦得住？ 如果我先生在这里，倒是真不难，心平气和讲道理，他比我擅长。",
+        "description": "崔东山望向那个背影，尴尬道：“这样不好吧？ 李二大爷想做什么，我一个九境小蝼蚁，拦得住？ 茅小冬转头望向那个一脸故作为难的家伙，“心平气和”道：“如果可以的话，我真想打烂你那颗脑袋，看看里头到底装着什么。",
         "background": "",
         "significance": "推动崔东山与李二之间的剧情推进关系。",
         "related_action_indices": [],
@@ -754,7 +1011,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.727594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -792,6 +1049,21 @@
       },
       {
         "entity_type": "person",
+        "name": "茅小冬",
+        "alias": [],
+        "original_description_in_book": "茅小冬黑着脸转身离去，老人一脸踩到稀烂狗屎的恶心模样。 崔东山在茅小冬离去后，重新坐回石凳，攥着棋子的拳头悬停在棋盘上空，漏出一颗颗棋子，一口气在棋盘上落下了七八颗棋子，清一色白棋，所以这局棋下得很不合规矩。",
+        "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -809,16 +1081,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与茅小冬剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "崔东山",
+          "茅小冬",
           "崔瀺"
         ],
-        "description": "崔东山伸出一只手，翘起兰花指，故作娇羞道：“讨厌。 崔东山在茅小冬离去后，重新坐回石凳，攥着棋子的拳头悬停在棋盘上空，漏出一颗颗棋子，一口气在棋盘上落下了七八颗棋子，清一色白棋，所以这局棋下得很不合规矩。 最后崔东山两手空空地蹲在石凳上，下巴枕在膝盖上，不知道在想什么。",
+        "description": "崔东山伸出一只手，翘起兰花指，故作娇羞道：“讨厌。 茅小冬黑着脸转身离去，老人一脸踩到稀烂狗屎的恶心模样。 崔东山在茅小冬离去后，重新坐回石凳，攥着棋子的拳头悬停在棋盘上空，漏出一颗颗棋子，一口气在棋盘上落下了七八颗棋子，清一色白棋，所以这局棋下得很不合规矩。",
         "background": "",
-        "significance": "推动崔东山与崔瀺之间的剧情推进关系。",
+        "significance": "推动崔东山与茅小冬之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段10",
         "sentence_indexes_in_segment": [
@@ -834,7 +1107,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.727594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -947,7 +1220,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.727594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1027,7 +1300,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.727594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1132,7 +1405,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.727594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1196,7 +1469,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.727594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1230,20 +1503,34 @@
         ],
         "juan_index": 171,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "到了空落落的正屋内，一张大草席上，放着一块茅草蒲团，崔东山一挥袖，从墙角一座小山堆里抽出一本儒家典籍，安安静静躺在他身前，然后便有一阵翻书风出现，围绕着俊秀神逸的白衣少年打转。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山剧情推进",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山"
+          "崔东山",
+          "白衣少年"
         ],
         "description": "崔东山哀叹一声，轻轻挥手，将棋盘棋盒一同收入袖内那块方寸物玉玺，“你哪里是扫地，分明是扫你家公子的兴致。 到了空落落的正屋内，一张大草席上，放着一块茅草蒲团，崔东山一挥袖，从墙角一座小山堆里抽出一本儒家典籍，安安静静躺在他身前，然后便有一阵翻书风出现，围绕着俊秀神逸的白衣少年打转。 ”",
         "background": "",
-        "significance": "对应崔东山在叙事中的关键剧情推进节点。",
+        "significance": "推动崔东山与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段15",
         "sentence_indexes_in_segment": [
@@ -1259,7 +1546,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.906267",
+    "extracted_at": "2026-03-25T17:27:37.728598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1336,7 +1623,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.728598",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "171-17-0": {
+    "juan_index": 171,
+    "segment_index": 17,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十一章 杨柳依依的少女",
+    "source_sentences": [
+      "一页页翻过，光阴缓缓流逝。",
+      "书页上的字里行间，出现了两军对垒的画面，一位位武将士卒远远比米粒还要细微，气势却是金戈铁马，纵横捭阖，书页上空黄雾迷茫，如真正战场上扬起的黄沙万里。",
+      "又有不过寸余高的女子婀娜，挎着花篮，从书页里姗姗而来。",
+      "还有大髯莽汉，袒胸露腹，作击节高歌状。",
+      "书页上有老妪捣衣，竖耳聆听，果真能够听到咄咄的玄妙声响。",
+      "有稚童两两，骑着竹马追逐嬉戏。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "书页上有老妪捣衣，竖耳聆听，果真能够听到咄咄的玄妙声响。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 17
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 老妪剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪"
+        ],
+        "description": "书页上有老妪捣衣，竖耳聆听，果真能够听到咄咄的玄妙声响。 一页页翻过，光阴缓缓流逝。 书页上的字里行间，出现了两军对垒的画面，一位位武将士卒远远比米粒还要细微，气势却是金戈铁马，纵横捭阖，书页上空黄雾迷茫，如真正战场上扬起的黄沙万里。",
+        "background": "",
+        "significance": "对应老妪在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段17",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 17
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.728598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,6 +1737,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "门口的少女谢谢，不管她内心深处如何仇恨、畏惧这个大骊国师，她不得不承认，专心致志读书时的白衣少年，实在是一身风流，两袖清风。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 171,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "崔东山",
         "alias": [],
         "original_description_in_book": "在谢谢怔怔出神的时候，她没有察觉到今天的崔东山，在翻书到最后，神色间有些异样，眼神炙热，但是满脸痛苦和挣扎。",
@@ -1412,7 +1774,8 @@
         "coordinates": null,
         "related_entities": [
           "谢谢",
-          "崔瀺"
+          "崔瀺",
+          "白衣少年"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -1429,6 +1792,7 @@
         "participants": [
           "谢谢",
           "崔瀺",
+          "白衣少年",
           "崔东山"
         ],
         "description": "门口的少女谢谢，不管她内心深处如何仇恨、畏惧这个大骊国师，她不得不承认，专心致志读书时的白衣少年，实在是一身风流，两袖清风。 在谢谢怔怔出神的时候，她没有察觉到今天的崔东山，在翻书到最后，神色间有些异样，眼神炙热，但是满脸痛苦和挣扎。 有骷髅仗剑佩刀，行走于坟茔枯冢。",
@@ -1449,7 +1813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.728598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1512,7 +1876,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.728598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1616,7 +1980,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.728598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1712,7 +2076,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.729601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1802,7 +2166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.729601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1864,7 +2228,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.907270",
+    "extracted_at": "2026-03-25T17:27:37.729601",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "171-24-0": {
+    "juan_index": 171,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十一章 杨柳依依的少女",
+    "source_sentences": [
+      "并无反应。",
+      "这栋院子早已租借出去，平时老人深居简出，几乎从不露面，但是那天晚上一场跌宕起伏的神仙打架，让有心人意识到此地有蛟龙盘踞。",
+      "虽说那场交手，是自称崔家老祖宗的白衣少年，在东华山之巅的出手，更胜一筹，一整宿的法宝乱轰，堪称绚烂，但是魁梧老人的种种应对，亦是不俗，哪怕是境界足够高的行家里手，自认若是站在老人的位置上，亲身对阵那个乱丢法宝好似丢烂白菜的白衣少年，绝对支撑不到天亮。",
+      "汉子一脚踹开大门，大踏步走进去，看到一个脸色阴沉的魁梧老人，正是十境练气士蔡京神，站在院子里，桌上有一壶酒，有许多精致的下酒菜，醇酒佳肴。",
+      "对于他这种凡夫俗子眼中的陆地仙人而言，这点聊胜于无的享受，实在微不足道。",
+      "蔡京神是昨天皇宫大战的旁观者之一，此时看到跻身武道止境的外乡汉子，自然没有半点底气，可是没有底气，不代表老人就要低头哈腰，神色不卑不亢地问道：“我与你无冤无仇，你破门而入，有何贵干？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "虽说那场交手，是自称崔家老祖宗的白衣少年，在东华山之巅的出手，更胜一筹，一整宿的法宝乱轰，堪称绚烂，但是魁梧老人的种种应对，亦是不俗，哪怕是境界足够高的行家里手，自认若是站在老人的位置上，亲身对阵那个乱丢法宝好似丢烂白菜的白衣少年，绝对支撑不到天亮。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 171,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 白衣少年对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "虽说那场交手，是自称崔家老祖宗的白衣少年，在东华山之巅的出手，更胜一筹，一整宿的法宝乱轰，堪称绚烂，但是魁梧老人的种种应对，亦是不俗，哪怕是境界足够高的行家里手，自认若是站在老人的位置上，亲身对阵那个乱丢法宝好似丢烂白菜的白衣少年，绝对支撑不到天亮。 并无反应。 这栋院子早已租借出去，平时老人深居简出，几乎从不露面，但是那天晚上一场跌宕起伏的神仙打架，让有心人意识到此地有蛟龙盘踞。",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 24
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.729601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1928,7 +2354,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.908274",
+    "extracted_at": "2026-03-25T17:27:37.729601",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "171-26-0": {
+    "juan_index": 171,
+    "segment_index": 26,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百七十一章 杨柳依依的少女",
+    "source_sentences": [
+      "堂堂十境练气士，大隋豪阀蔡家的老祖宗，忍不住破口大骂道：“有本事再来一场！",
+      "”",
+      "然后那汉子就从已经没了大门遮掩的门口，再次走入院子，站在那里，望向屋内的蔡京神。",
+      "老人咽了口唾沫，“我在跟那天的白衣少年说话呢，跟你没关系。",
+      "”",
+      "这句话脱口而出后，老人恨不得挖个地洞钻下去。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "老人咽了口唾沫，“我在跟那天的白衣少年说话呢，跟你没关系。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 171,
+        "segment_index": 26
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 白衣少年剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "老人咽了口唾沫，“我在跟那天的白衣少年说话呢，跟你没关系。 堂堂十境练气士，大隋豪阀蔡家的老祖宗，忍不住破口大骂道：“有本事再来一场！ ”",
+        "background": "",
+        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段26",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 171,
+        "segment_index": 26
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.729601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1990,7 +2478,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.908274",
+    "extracted_at": "2026-03-25T17:27:37.729601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2052,7 +2540,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.908274",
+    "extracted_at": "2026-03-25T17:27:37.730605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2171,7 +2659,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.908274",
+    "extracted_at": "2026-03-25T17:27:37.730605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2277,7 +2765,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.908274",
+    "extracted_at": "2026-03-25T17:27:37.730605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2524,7 +3012,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.908274",
+    "extracted_at": "2026-03-25T17:27:37.730605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2623,7 +3111,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.730605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2715,7 +3203,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2806,7 +3294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2869,6 +3357,19 @@
       },
       {
         "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "李二走入屋子，妇人正在对儿子耳提面命，“这个小姑娘还不错，就是性子太大大咧咧了点，不像是会照顾人的，我看那个叫石春嘉就蛮好，虽说家里不如李宝瓶家大富大贵，可到底是自己家里有那么大一间铺子的，跟咱们家勉强算是门当户对，李槐娶了石春嘉，以后不会受白眼，石春嘉那丫头，瞧着喜气，两根小辫子扎的……”",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 171,
+        "segment_index": 35
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "李二走入屋子，妇人正在对儿子耳提面命，“这个小姑娘还不错，就是性子太大大咧咧了点，不像是会照顾人的，我看那个叫石春嘉就蛮好，虽说家里不如李宝瓶家大富大贵，可到底是自己家里有那么大一间铺子的，跟咱们家勉强算是门当户对，李槐娶了石春嘉，以后不会受白眼，石春嘉那丫头，瞧着喜气，两根小辫子扎的……”",
@@ -2925,7 +3426,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2967,6 +3468,20 @@
         "original_description_in_book": "李槐一拍额头，“我的亲娘，这种话千万千万别对外说，要不然我真的会被李宝瓶活活打死，石春嘉虽然不敢打我，可就她那噼里啪啦肚子里小算盘打的，一定会记恨我一辈子。 她最记仇了，揪她一次辫子而已，她就能跟齐先生告状十次，每次都跟说得真的似的，什么李槐今天课业没做好，被先生你打手心了，看我笑话他，就揪我辫子，什么李槐今天迟到，我好心说他几句，他就揪我辫子，还有什么李槐打不过李宝瓶，就来揪我辫子……我的天，石春嘉这丫头片子要是做了我媳妇，我得哭死啊。",
         "description": "自带强烈气场的少女，和陈平安等人共同构成成长线与书院线。",
         "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 171,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "李槐一拍额头，“我的亲娘，这种话千万千万别对外说，要不然我真的会被李宝瓶活活打死，石春嘉虽然不敢打我，可就她那噼里啪啦肚子里小算盘打的，一定会记恨我一辈子。 她最记仇了，揪她一次辫子而已，她就能跟齐先生告状十次，每次都跟说得真的似的，什么李槐今天课业没做好，被先生你打手心了，看我笑话他，就揪我辫子，什么李槐今天迟到，我好心说他几句，他就揪我辫子，还有什么李槐打不过李宝瓶，就来揪我辫子……我的天，石春嘉这丫头片子要是做了我媳妇，我得哭死啊。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
         "sentence_indexes_in_segment": [
           3,
           4
@@ -3020,7 +3535,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3082,7 +3597,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3145,7 +3660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3207,7 +3722,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.909277",
+    "extracted_at": "2026-03-25T17:27:37.731609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3283,7 +3798,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.910281",
+    "extracted_at": "2026-03-25T17:27:37.732612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3389,7 +3904,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.910281",
+    "extracted_at": "2026-03-25T17:27:37.732612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3493,7 +4008,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.910281",
+    "extracted_at": "2026-03-25T17:27:37.732612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3571,7 +4086,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.910281",
+    "extracted_at": "2026-03-25T17:27:37.732612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3599,6 +4114,19 @@
         "original_description_in_book": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。",
         "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
         "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 171,
+        "segment_index": 44
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -3679,12 +4207,14 @@
           "阿良",
           "陈平安",
           "李柳",
-          "崔瀺"
+          "白衣少年"
         ],
         "description": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。 一直给人印象就是柔柔弱弱、杨柳依依的少女，在这一瞬间，她迅速收敛笑意，对着那位她在小镇便从师公那边，久闻其名的大骊国师，偷偷做了一个隐秘且骇人的警告动作。 本就是故意来此见她一面的崔东山，啧啧称奇，感慨道：“怪胎年年有，今年特别多啊。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段44",
         "sentence_indexes_in_segment": [
           0,
@@ -3698,8 +4228,29 @@
         "segment_index": 44
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.910281",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李柳"
+        ],
+        "to_roles": [
+          "白衣少年"
+        ],
+        "action": "同行",
+        "context": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 171,
+        "segment_index": 44
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.732612",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

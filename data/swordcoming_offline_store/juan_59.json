@@ -76,7 +76,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.462129",
+    "extracted_at": "2026-03-25T17:27:37.174595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -110,6 +110,19 @@
         ],
         "juan_index": 59,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "马苦玄脸色狰狞，仰起头对着那尊神将咆哮道：“我不管你用什么法子，快去给我把奶奶的魂魄找回来！",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 59,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -132,16 +145,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄在宝瓶洲对话",
+        "name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄与仰起头在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "马苦玄"
+          "马苦玄",
+          "仰起头"
         ],
         "description": "马苦玄脸色狰狞，仰起头对着那尊神将咆哮道：“我不管你用什么法子，快去给我把奶奶的魂魄找回来！ 真武山剑修脸色剧变，生怕马苦玄惹恼了这尊姓殷的真神，正要出声阻拦少年的时候，金甲神人不知为何，竟然以东宝瓶洲正统官话开口说道：“非不为，实不能也。 ”",
         "background": "",
-        "significance": "对应马苦玄在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动马苦玄与仰起头之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十九章 睡去 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -155,8 +171,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.462129",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马苦玄"
+        ],
+        "to_roles": [
+          "仰起头"
+        ],
+        "action": "对话",
+        "context": "马苦玄脸色狰狞，仰起头对着那尊神将咆哮道：“我不管你用什么法子，快去给我把奶奶的魂魄找回来！ ” 真武山剑修脸色剧变，生怕马苦玄惹恼了这尊姓殷的真神，正要出声阻拦少年的时候，金甲神人不知为何，竟然以东宝瓶洲正统官话开口说道：“非不为，实不能也。 ” 说完这句话后，笼罩在金光之内的威武神将望向屋内的真武山剑修，后者深呼吸一口气，双手作捧香状，对着院中神将拜了三拜。 每拜一次，就有一股如发丝粗细的淡金色气息，从真武山剑修泥丸穴中飘出，然后被金甲神人轻轻吸入鼻中。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄与仰起头在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 59,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.174595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -189,21 +231,37 @@
         ],
         "juan_index": 59,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "马苦玄脸色冷漠地收回视线后，转身走入屋内，坐在那具冰冷尸体旁边，伸手抓住老妪的干枯手掌，死死盯着她那张脸庞，少年长久不说话。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 59,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄迁移",
+        "name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄与老妪迁移",
         "time": null,
         "location": null,
         "participants": [
-          "马苦玄"
+          "马苦玄",
+          "老妪"
         ],
         "description": "马苦玄脸色冷漠地收回视线后，转身走入屋内，坐在那具冰冷尸体旁边，伸手抓住老妪的干枯手掌，死死盯着她那张脸庞，少年长久不说话。 三次过后，神人拔地而起，化作一道璀璨光柱离开此方天地。 真武山剑修脸色惨白，搬了条椅子坐下，轻轻吐出一口浊气。",
         "background": "",
-        "significance": "对应马苦玄在叙事中的关键迁移节点。",
-        "related_action_indices": [],
+        "significance": "推动马苦玄与老妪之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十九章 睡去 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -217,8 +275,29 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.463133",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马苦玄"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "马苦玄脸色冷漠地收回视线后，转身走入屋内，坐在那具冰冷尸体旁边，伸手抓住老妪的干枯手掌，死死盯着她那张脸庞，少年长久不说话。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄与老妪迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 59,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.174595",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -356,7 +435,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.463133",
+    "extracted_at": "2026-03-25T17:27:37.175598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -418,7 +497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.463133",
+    "extracted_at": "2026-03-25T17:27:37.175598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -480,7 +559,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.463133",
+    "extracted_at": "2026-03-25T17:27:37.175598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -513,21 +592,37 @@
         ],
         "juan_index": 59,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "少年低头看了眼老妪的面容，然后转头对正堂八仙桌那边怒吼道：“滚去带路！",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 59,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄对话",
+        "name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄与老妪对话",
         "time": null,
         "location": null,
         "participants": [
-          "马苦玄"
+          "马苦玄",
+          "老妪"
         ],
-        "description": "马苦玄突然嗤笑道道：“杀不杀人，如何杀人，我问你作甚，难不成还需要你帮忙不成！ 可能我杀了一百人，全是该杀之人，而你只杀了两三个，便有不该杀之人。 ”",
+        "description": "马苦玄突然嗤笑道道：“杀不杀人，如何杀人，我问你作甚，难不成还需要你帮忙不成！ 少年低头看了眼老妪的面容，然后转头对正堂八仙桌那边怒吼道：“滚去带路！ 可能我杀了一百人，全是该杀之人，而你只杀了两三个，便有不该杀之人。",
         "background": "",
-        "significance": "对应马苦玄在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动马苦玄与老妪之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十九章 睡去 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -541,8 +636,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.463133",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马苦玄"
+        ],
+        "to_roles": [
+          "老妪"
+        ],
+        "action": "对话",
+        "context": "可能我杀了一百人，全是该杀之人，而你只杀了两三个，便有不该杀之人。 ” 马苦玄突然嗤笑道道：“杀不杀人，如何杀人，我问你作甚，难不成还需要你帮忙不成！ 差点忘了，我现在还不是正式的真武山弟子！ ” 少年低头看了眼老妪的面容，然后转头对正堂八仙桌那边怒吼道：“滚去带路！",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十九章 睡去 · 马苦玄与老妪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 59,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.175598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -619,7 +740,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.463133",
+    "extracted_at": "2026-03-25T17:27:37.175598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -756,7 +877,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "extracted_at": "2026-03-25T17:27:37.175598",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -913,7 +1034,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "extracted_at": "2026-03-25T17:27:37.176602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -993,7 +1114,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "extracted_at": "2026-03-25T17:27:37.176602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1075,7 +1196,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "extracted_at": "2026-03-25T17:27:37.176602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1137,7 +1258,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "extracted_at": "2026-03-25T17:27:37.176602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1201,7 +1322,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "extracted_at": "2026-03-25T17:27:37.176602",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1234,6 +1355,19 @@
         ],
         "juan_index": 59,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "剑修淡然道：“是儒家七十二书院之一、观湖书院的未来山主，叫崔明皇，身世显赫。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 59,
+        "segment_index": 17
       }
     ],
     "locations": [
@@ -1260,12 +1394,15 @@
         "participants": [
           "阿良",
           "陈平安",
-          "马苦玄"
+          "马苦玄",
+          "崔明皇"
         ],
-        "description": "还有那个不在小镇的家伙，你一定要好好感谢他，要不然我们关系也不会这么好。 马苦玄最后吐了一口唾沫在女子脸上。 ”",
+        "description": "还有那个不在小镇的家伙，你一定要好好感谢他，要不然我们关系也不会这么好。 马苦玄最后吐了一口唾沫在女子脸上。 剑修淡然道：“是儒家七十二书院之一、观湖书院的未来山主，叫崔明皇，身世显赫。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十九章 睡去 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1279,8 +1416,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.464136",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马苦玄"
+        ],
+        "to_roles": [
+          "崔明皇"
+        ],
+        "action": "对话",
+        "context": "还有那个不在小镇的家伙，你一定要好好感谢他，要不然我们关系也不会这么好。 ” 马苦玄最后吐了一口唾沫在女子脸上。 少年起身走向真武山男子，低声问道：“那人是谁？ ” 剑修淡然道：“是儒家七十二书院之一、观湖书院的未来山主，叫崔明皇，身世显赫。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 59,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.177605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1388,7 +1551,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "extracted_at": "2026-03-25T17:27:37.177605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1496,7 +1659,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "extracted_at": "2026-03-25T17:27:37.177605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1579,7 +1742,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "extracted_at": "2026-03-25T17:27:37.177605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1705,7 +1868,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "extracted_at": "2026-03-25T17:27:37.177605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1759,6 +1922,19 @@
       },
       {
         "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "杨老头不紧不慢地站起身，一手负后，一手持烟杆，来到少女身前，与少年对视，沙哑道：“与你说过多少次了，越是命贱福薄，就越要惜命惜福，怎么，稍稍遇到一些挫折，就要死要活，那你怎么当初不跟着你娘亲一起走，岂不是更省事一些？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 59,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "宁姚目瞪口呆，在她印象中，杨老头应该是一个慈眉善目的老人，成天笑眯眯的。",
@@ -1774,18 +1950,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第五十九章 睡去 · 杨老头与陈平安剧情推进",
+        "name": "第一卷笼中雀 第五十九章 睡去 · 杨老头与沙哑同行",
         "time": null,
         "location": null,
         "participants": [
           "杨老头",
-          "陈平安",
-          "宁姚"
+          "沙哑"
         ],
         "description": "杨老头望着少女背后的熟悉少年，陈平安。 陈平安此时嘴唇发白，浑身颤抖，双手几乎是拼死环住少女的脖子。 杨老头不紧不慢地站起身，一手负后，一手持烟杆，来到少女身前，与少年对视，沙哑道：“与你说过多少次了，越是命贱福薄，就越要惜命惜福，怎么，稍稍遇到一些挫折，就要死要活，那你怎么当初不跟着你娘亲一起走，岂不是更省事一些？",
         "background": "",
-        "significance": "推动杨老头与陈平安之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动杨老头与沙哑之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第五十九章 睡去 · 段23",
         "sentence_indexes_in_segment": [
           0,
@@ -1799,8 +1976,29 @@
         "segment_index": 23
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "同行",
+        "context": "杨老头不紧不慢地站起身，一手负后，一手持烟杆，来到少女身前，与少年对视，沙哑道：“与你说过多少次了，越是命贱福薄，就越要惜命惜福，怎么，稍稍遇到一些挫折，就要死要活，那你怎么当初不跟着你娘亲一起走，岂不是更省事一些？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第五十九章 睡去 · 杨老头与沙哑同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 59,
+        "segment_index": 23
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.177605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1923,7 +2121,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "extracted_at": "2026-03-25T17:27:37.178609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2000,7 +2198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.465140",
+    "extracted_at": "2026-03-25T17:27:37.178609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2076,7 +2274,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.466143",
+    "extracted_at": "2026-03-25T17:27:37.178609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2181,7 +2379,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.466143",
+    "extracted_at": "2026-03-25T17:27:37.178609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2243,7 +2441,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.466143",
+    "extracted_at": "2026-03-25T17:27:37.178609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2299,7 +2497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.466143",
+    "extracted_at": "2026-03-25T17:27:37.178609",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

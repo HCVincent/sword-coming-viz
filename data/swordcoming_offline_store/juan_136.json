@@ -142,7 +142,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.758710",
+    "extracted_at": "2026-03-25T17:27:37.543651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -243,7 +243,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.758710",
+    "extracted_at": "2026-03-25T17:27:37.543651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -345,7 +345,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.758710",
+    "extracted_at": "2026-03-25T17:27:37.543651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -450,7 +450,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.759714",
+    "extracted_at": "2026-03-25T17:27:37.543651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -584,7 +584,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.759714",
+    "extracted_at": "2026-03-25T17:27:37.544654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -617,6 +617,20 @@
           1,
           4,
           5
+        ],
+        "juan_index": 136,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "除了陈平安身边渐小的篝火，远处车厢内，早早点燃起一盏灯火，亮了一宿，不知白衣少年在翻看什么书籍，如此入迷。 于禄和谢谢对此见怪不怪，今天白衣少年掀起帘子，站在马车上，看着他们一板一眼的打拳，最早的时候，会嗤之以鼻，斜瞥一眼便绝不再旁观，只是随着时间的推移，这位少年国师在远处袖手旁观的时间，越来越长。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2
         ],
         "juan_index": 136,
         "segment_index": 6
@@ -689,6 +703,19 @@
         ],
         "juan_index": 136,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "林守一本以为陈平安会继续赶路，但是没想到陈平安去庙里看了看，然后把他和李宝瓶李槐都喊进去，原来小庙内遍地狼藉，酒气冲天，那尊立于神龛的泥塑像，李槐扬起脑袋怎么看都不像昨夜与林守一下棋的女鬼姑娘，林守一这一路行来，与那尊阴神打交道最多，知晓许多内幕，便解释给李槐听，说许多地方的老百姓，感恩于庇佑一方的显灵神祇，立像祭祀，享受香火的那尊金身，往往失真，与真实容貌甚至可能毫不相似，但这不会影响到供奉神灵的香火。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 136,
+        "segment_index": 6
       }
     ],
     "locations": [
@@ -736,7 +763,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.759714",
+    "extracted_at": "2026-03-25T17:27:37.544654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -757,6 +784,20 @@
       "少女谢谢站在门外，腰间已经系着那支竹笛。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "与此同时，白衣少年带着于禄跨过门槛，崔瀺环顾四周，然后走到神坛前，看了眼积满灰烬的那盏小香炉，是个质地普通的铜炉，可能是经过了数百年悠久岁月的沉淀，铜炉表面光亮熠熠。 白衣少年突然开口道：“于禄，遇庙逢祠，就拜一拜，这是与山水结缘的善事。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 136,
+        "segment_index": 7
+      },
       {
         "entity_type": "person",
         "name": "于禄",
@@ -804,18 +845,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十六章 山下皆如此 · 于禄与崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百三十六章 山下皆如此 · 白衣少年与于禄对话",
         "time": null,
         "location": null,
         "participants": [
-          "于禄",
-          "崔瀺",
-          "谢谢"
+          "白衣少年",
+          "于禄"
         ],
         "description": "与此同时，白衣少年带着于禄跨过门槛，崔瀺环顾四周，然后走到神坛前，看了眼积满灰烬的那盏小香炉，是个质地普通的铜炉，可能是经过了数百年悠久岁月的沉淀，铜炉表面光亮熠熠。 白衣少年突然开口道：“于禄，遇庙逢祠，就拜一拜，这是与山水结缘的善事。 于禄虽然不解缘由，仍是象征性低头弯腰，拜了三拜。",
         "background": "",
-        "significance": "推动于禄与崔瀺之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动白衣少年与于禄之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十六章 山下皆如此 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -829,8 +871,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.759714",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "白衣少年"
+        ],
+        "to_roles": [
+          "于禄"
+        ],
+        "action": "对话",
+        "context": "白衣少年突然开口道：“于禄，遇庙逢祠，就拜一拜，这是与山水结缘的善事。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十六章 山下皆如此 · 白衣少年与于禄对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 136,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.544654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1000,7 +1063,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.759714",
+    "extracted_at": "2026-03-25T17:27:37.544654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1081,7 +1144,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.760717",
+    "extracted_at": "2026-03-25T17:27:37.544654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1158,6 +1221,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年乘坐的马车在车夫于禄的驾驭下，同样偏离原先道路，停在靠近路边的地方。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 136,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "于禄",
         "alias": [],
         "original_description_in_book": "白衣少年乘坐的马车在车夫于禄的驾驭下，同样偏离原先道路，停在靠近路边的地方。",
@@ -1200,7 +1276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.760717",
+    "extracted_at": "2026-03-25T17:27:37.545658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1329,7 +1405,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.760717",
+    "extracted_at": "2026-03-25T17:27:37.545658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1436,7 +1512,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.760717",
+    "extracted_at": "2026-03-25T17:27:37.545658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1492,7 +1568,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.760717",
+    "extracted_at": "2026-03-25T17:27:37.545658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

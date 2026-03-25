@@ -16,6 +16,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才再次走出山水画卷的时候，看到少年崔瀺仍然躺在地上装死，冷哼道：“成何体统。 老秀才走过去就是一脚，“少在这里装可怜，就不想知道为何小齐只是要你跌境，而没有除之后快？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 154,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -34,15 +48,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与崔瀺剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "崔瀺"
         ],
-        "description": "老秀才再次走出山水画卷的时候，看到少年崔瀺仍然躺在地上装死，冷哼道：“成何体统。 崔瀺直愣愣望向天幕，“活着没半点盼头，死了拉倒。 ”",
+        "description": "老秀才再次走出山水画卷的时候，看到少年崔瀺仍然躺在地上装死，冷哼道：“成何体统。 崔瀺直愣愣望向天幕，“活着没半点盼头，死了拉倒。 老秀才走过去就是一脚，“少在这里装可怜，就不想知道为何小齐只是要你跌境，而没有除之后快？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动老秀才与崔瀺之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段1",
         "sentence_indexes_in_segment": [
@@ -58,7 +73,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.811928",
+    "extracted_at": "2026-03-25T17:27:37.614255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -108,6 +123,19 @@
         ],
         "juan_index": 154,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才怒其不争，又是一脚，“以小人之心度君子之腹，说的就是你这种人！",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 154,
+        "segment_index": 2
       }
     ],
     "locations": [],
@@ -119,9 +147,10 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
-        "description": "崔瀺眼神恍惚，喃喃道：“当初你被赶出文庙，齐静春非但没有被你牵连，反而继续境界高涨，本就说明很多问题了，他齐静春早就有资格自立门户，跟你文圣一脉早已貌合神离，所以他自觉没有资格杀我，希望将来由你来清理门户。 ” 老秀才怒其不争，又是一脚，“以小人之心度君子之腹，说的就是你这种人！",
+        "description": "崔瀺眼神恍惚，喃喃道：“当初你被赶出文庙，齐静春非但没有被你牵连，反而继续境界高涨，本就说明很多问题了，他齐静春早就有资格自立门户，跟你文圣一脉早已貌合神离，所以他自觉没有资格杀我，希望将来由你来清理门户。 老秀才怒其不争，又是一脚，“以小人之心度君子之腹，说的就是你这种人！ ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -139,7 +168,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.811928",
+    "extracted_at": "2026-03-25T17:27:37.614255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -179,6 +208,20 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "把老秀才给尴尬得一塌糊涂，只得转身朝陈平安使眼色，帮忙解围。 陈平安收起剑，对老秀才点点头，意思是说老先生你的燃眉之急已经摆平。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "把老秀才给尴尬得一塌糊涂，只得转身朝陈平安使眼色，帮忙解围。 陈平安点点头，从李宝瓶手中接过槐木剑，大步前行，来到崔瀺身边之后，面无表情地说了个“一”字后，对着白衣少年的脖子就是一剑刺下。",
@@ -205,6 +248,19 @@
         ],
         "juan_index": 154,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "陈平安点点头，从李宝瓶手中接过槐木剑，大步前行，来到崔瀺身边之后，面无表情地说了个“一”字后，对着白衣少年的脖子就是一剑刺下。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 154,
+        "segment_index": 3
       }
     ],
     "locations": [],
@@ -216,6 +272,7 @@
         "participants": [
           "陈平安",
           "崔瀺",
+          "老秀才",
           "李宝瓶"
         ],
         "description": "崔瀺打定主意不起身。 把老秀才给尴尬得一塌糊涂，只得转身朝陈平安使眼色，帮忙解围。 陈平安点点头，从李宝瓶手中接过槐木剑，大步前行，来到崔瀺身边之后，面无表情地说了个“一”字后，对着白衣少年的脖子就是一剑刺下。",
@@ -236,7 +293,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.811928",
+    "extracted_at": "2026-03-25T17:27:37.614255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -257,6 +314,20 @@
       "一行人走向院子，老秀才环顾四周，瞥了眼由那株雪白荷叶支撑起来的“小天幕”，手指掐诀，犹豫片刻，“找间屋子进去聊，陈平安，有没有合适的地儿，能说话就行，有没有凳子椅子无所谓。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才叹了口气，望向陈平安和不远处的白衣女子，“找个地方，说些事情。 一行人走向院子，老秀才环顾四周，瞥了眼由那株雪白荷叶支撑起来的“小天幕”，手指掐诀，犹豫片刻，“找间屋子进去聊，陈平安，有没有合适的地儿，能说话就行，有没有凳子椅子无所谓。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 4
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -291,16 +362,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安与崔瀺对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "崔瀺"
+          "老秀才",
+          "陈平安"
         ],
         "description": "老秀才叹了口气，望向陈平安和不远处的白衣女子，“找个地方，说些事情。 老人转头对崔瀺瞪眼道：“跟上！ 涉及你的大道契机，你再装模作样，干脆让陈平安一剑砍死算数。",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的对话关系。",
+        "significance": "推动老秀才与陈平安之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -321,30 +392,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "老秀才"
         ],
         "to_roles": [
-          "崔瀺"
+          "陈平安"
         ],
         "action": "对话",
-        "context": "老秀才叹了口气，望向陈平安和不远处的白衣女子，“找个地方，说些事情。 ” 老人转头对崔瀺瞪眼道：“跟上！ 涉及你的大道契机，你再装模作样，干脆让陈平安一剑砍死算数。 ” 一行人走向院子，老秀才环顾四周，瞥了眼由那株雪白荷叶支撑起来的“小天幕”，手指掐诀，犹豫片刻，“找间屋子进去聊，陈平安，有没有合适的地儿，能说话就行，有没有凳子椅子无所谓。",
+        "context": "一行人走向院子，老秀才环顾四周，瞥了眼由那株雪白荷叶支撑起来的“小天幕”，手指掐诀，犹豫片刻，“找间屋子进去聊，陈平安，有没有合适的地儿，能说话就行，有没有凳子椅子无所谓。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安与崔瀺对话",
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与陈平安对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 154,
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.811928",
+    "extracted_at": "2026-03-25T17:27:37.614255",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -401,6 +467,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           1,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "最后，老秀才，陈平安，少年崔瀺，李宝瓶分别坐在四张凳子上，围桌而坐，李槐躺在床上沉沉熟睡，是个睡相不好的孩子，已经变成横着睡觉了，脑袋垂在床沿外，还能睡得很香，",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 154,
@@ -472,7 +551,27 @@
       {
         "time": null,
         "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
           "陈平安"
+        ],
+        "action": "别离",
+        "context": "最后，老秀才，陈平安，少年崔瀺，李宝瓶分别坐在四张凳子上，围桌而坐，李槐躺在床上沉沉熟睡，是个睡相不好的孩子，已经变成横着睡觉了，脑袋垂在床沿外，还能睡得很香，",
+        "result": null,
+        "event_name": "书院同行南下",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
         ],
         "to_roles": [
           "崔瀺"
@@ -492,7 +591,7 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "老秀才"
         ],
         "to_roles": [
           "李宝瓶"
@@ -508,29 +607,9 @@
         ],
         "juan_index": 154,
         "segment_index": 5
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "李槐"
-        ],
-        "action": "别离",
-        "context": "最后，老秀才，陈平安，少年崔瀺，李宝瓶分别坐在四张凳子上，围桌而坐，李槐躺在床上沉沉熟睡，是个睡相不好的孩子，已经变成横着睡觉了，脑袋垂在床沿外，还能睡得很香，",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 154,
-        "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.811928",
+    "extracted_at": "2026-03-25T17:27:37.615259",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,7 +748,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.811928",
+    "extracted_at": "2026-03-25T17:27:37.615259",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -719,6 +798,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才望向小姑娘，笑问道：“你大哥是不是住在福禄街上的李希圣？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 154,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
         "name": "李希圣",
         "alias": [],
         "original_description_in_book": "老秀才望向小姑娘，笑问道：“你大哥是不是住在福禄街上的李希圣？",
@@ -740,6 +832,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "老秀才",
           "李希圣"
         ],
         "sentence_indexes_in_segment": [
@@ -751,18 +844,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安与李宝瓶在福禄街对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与李希圣在福禄街对话",
         "time": null,
         "location": "福禄街",
         "participants": [
-          "陈平安",
-          "李宝瓶",
+          "老秀才",
           "李希圣"
         ],
         "description": "陈平安笑道：“以后回到家乡，我要好好感谢你大哥。 一路行来，李宝瓶说起最多的家人，就是这个大哥，所以陈平安对这个喜欢躲在书斋里读书的读书人，印象很好。 老秀才望向小姑娘，笑问道：“你大哥是不是住在福禄街上的李希圣？",
         "background": "",
-        "significance": "在福禄街推动陈平安与李宝瓶之间的对话线。",
-        "related_action_indices": [],
+        "significance": "在福禄街推动老秀才与李希圣之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -776,8 +870,29 @@
         "segment_index": 7
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "李希圣"
+        ],
+        "action": "对话",
+        "context": "老秀才望向小姑娘，笑问道：“你大哥是不是住在福禄街上的李希圣？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与李希圣在福禄街对话",
+        "location": "福禄街",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 154,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.615259",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -814,6 +929,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才笑呵呵道：“这个名字取的有点大啊。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 154,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -831,16 +959,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶与崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶与老秀才剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
+          "老秀才",
           "崔瀺"
         ],
-        "description": "李宝瓶点点头，疑惑道：“咋了？ 崔瀺听到这里的时候忍不住翻了个白眼。 李宝瓶有些担忧，“名字太大，是不是不好？",
+        "description": "李宝瓶点点头，疑惑道：“咋了？ 老秀才笑呵呵道：“这个名字取的有点大啊。 崔瀺听到这里的时候忍不住翻了个白眼。",
         "background": "",
-        "significance": "推动李宝瓶与崔瀺之间的剧情推进关系。",
+        "significance": "推动李宝瓶与老秀才之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段8",
         "sentence_indexes_in_segment": [
@@ -856,7 +985,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "extracted_at": "2026-03-25T17:27:37.615259",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -877,6 +1006,19 @@
       "崔瀺又翻白眼，完蛋喽，这下子正中下怀，好为人师的老头子，肯定要开始传道授业解惑了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才更乐了，摇头道：“取得大，只要压得住，就是好。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 154,
+        "segment_index": 9
+      },
       {
         "entity_type": "person",
         "name": "李宝瓶",
@@ -909,19 +1051,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶与崔瀺指点",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与李宝瓶指点",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "李宝瓶",
           "崔瀺"
         ],
-        "description": "李宝瓶是个最喜欢钻牛角的小姑娘，“老先生，怎么才算压得住呢？ 崔瀺又翻白眼，完蛋喽，这下子正中下怀，好为人师的老头子，肯定要开始传道授业解惑了。 ”",
+        "description": "老秀才更乐了，摇头道：“取得大，只要压得住，就是好。 李宝瓶是个最喜欢钻牛角的小姑娘，“老先生，怎么才算压得住呢？ 崔瀺又翻白眼，完蛋喽，这下子正中下怀，好为人师的老头子，肯定要开始传道授业解惑了。",
         "background": "",
-        "significance": "推动李宝瓶与崔瀺之间的指点关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动老秀才与李宝瓶之间的指点关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -935,34 +1076,8 @@
         "segment_index": 9
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李宝瓶"
-        ],
-        "to_roles": [
-          "崔瀺"
-        ],
-        "action": "指点",
-        "context": "” 老秀才更乐了，摇头道：“取得大，只要压得住，就是好。 ” 李宝瓶是个最喜欢钻牛角的小姑娘，“老先生，怎么才算压得住呢？ ” 崔瀺又翻白眼，完蛋喽，这下子正中下怀，好为人师的老头子，肯定要开始传道授业解惑了。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶与崔瀺指点",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 154,
-        "segment_index": 9
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.615259",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1026,7 +1141,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "extracted_at": "2026-03-25T17:27:37.615259",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1104,6 +1219,19 @@
         ],
         "juan_index": 154,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才变出一壶酒来，仰头小抿了一口，瞥了眼小姑娘重新放回桌子的印章，有些伤感。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 11
       }
     ],
     "locations": [],
@@ -1136,7 +1264,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "extracted_at": "2026-03-25T17:27:37.616262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1204,7 +1332,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "extracted_at": "2026-03-25T17:27:37.616262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1280,6 +1408,19 @@
         "sentence_indexes_in_segment": [
           3,
           5
+        ],
+        "juan_index": 154,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才咳嗽一声，看了眼在座三人，“好了，说正题。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 154,
         "segment_index": 13
@@ -1408,7 +1549,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.812932",
+    "extracted_at": "2026-03-25T17:27:37.616262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1593,7 +1734,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "extracted_at": "2026-03-25T17:27:37.616262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1659,6 +1800,19 @@
         ],
         "juan_index": 154,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才转换话题，望向陈平安，“有件事，先跟你打声招呼，你若是答应我再做，我想要在你身上截取一段光阴溪水，放心，不涉及太多隐私，来作为今夜聊天的开场，你愿意不愿意？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 154,
+        "segment_index": 15
       }
     ],
     "locations": [
@@ -1689,7 +1843,8 @@
         "participants": [
           "崔瀺",
           "杨老头",
-          "陈平安"
+          "陈平安",
+          "老秀才"
         ],
         "description": "崔瀺实在是太熟悉陈平安的性格了，毕竟他比杨老头更加关注留心泥瓶巷少年的成长经历。 崔瀺尽量保持镇定，但是心中默念，死定了死定了，老头子你害人不浅。 老秀才转换话题，望向陈平安，“有件事，先跟你打声招呼，你若是答应我再做，我想要在你身上截取一段光阴溪水，放心，不涉及太多隐私，来作为今夜聊天的开场，你愿意不愿意？",
         "background": "",
@@ -1709,7 +1864,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "extracted_at": "2026-03-25T17:27:37.616262",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1730,6 +1885,19 @@
       "最后风雪庙剑仙魏晋一剑破万法，潇洒而至，打破僵局，成功带着一行人离开那里。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才伸出一只手掌，对着相对而坐的陈平安，抖腕卷袖，很快陈平安四周就浮现出丝丝缕缕的水雾，缓缓流淌向老人的手心，最终变成一只晶莹剔透的幽绿水球，老人手掌一翻，手心朝下，在水球上轻柔一抹，那些水流便往低处流向桌面，一幅幅生动活泼的画面由此在桌上显现。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 154,
+        "segment_index": 16
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1844,7 +2012,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "extracted_at": "2026-03-25T17:27:37.617266",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1865,6 +2033,20 @@
       "当然可恨，滥杀无辜，罪行累累。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才往桌上一抓，那一段光阴溪流重新汇聚成团，往陈平安身上一推，再度涣散重归天地。 老秀才轻声道：“这女鬼可不可恨？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 154,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1910,17 +2092,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安与李宝瓶剧情推进",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安",
           "李宝瓶",
           "崔瀺"
         ],
         "description": "老秀才往桌上一抓，那一段光阴溪流重新汇聚成团，往陈平安身上一推，再度涣散重归天地。 李宝瓶只觉得神奇有趣。 崔瀺却是识货的，心中愈发惊讶，老头子到底是怎么回事，一身圣人修为明明全没了，为何还能够如此神通广大？",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的剧情推进关系。",
+        "significance": "推动老秀才与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段17",
         "sentence_indexes_in_segment": [
@@ -1936,7 +2119,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "extracted_at": "2026-03-25T17:27:37.617266",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1959,6 +2142,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才叹了口气，“所以说可恨之人必有可怜之处，是不是？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 154,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -1976,15 +2172,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与崔瀺剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "崔瀺"
         ],
-        "description": "崔瀺如临大敌，不敢点头也不敢摇头。 可怜不可怜？ 也有几分可怜，身为鬼魅，原先本性向善，于朝廷，不但有镇压气运之功，于地方，多有善行善举，更与读书人相亲相爱，本是一桩美谈才对，最后两两沦落得这般境地，神憎鬼厌，皆为大道排挤，一身因果纠缠，浑身拖泥带水，几辈子都偿还不了这笔糊涂债。",
+        "description": "老秀才叹了口气，“所以说可恨之人必有可怜之处，是不是？ 崔瀺如临大敌，不敢点头也不敢摇头。 可怜不可怜？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动老秀才与崔瀺之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段18",
         "sentence_indexes_in_segment": [
@@ -2000,7 +2197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "extracted_at": "2026-03-25T17:27:37.617266",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2033,21 +2230,37 @@
         ],
         "juan_index": 154,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才对小姑娘点头笑道：“那么可恨可怜，可恨多出多少？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 154,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶与老秀才对话",
         "time": null,
         "location": null,
         "participants": [
-          "李宝瓶"
+          "李宝瓶",
+          "老秀才"
         ],
-        "description": "李宝瓶很快进入“上山打死拦路虎”的模式，认真思考片刻，道：“可恨更多。 ” 老秀才对小姑娘点头笑道：“那么可恨可怜，可恨多出多少？",
+        "description": "李宝瓶很快进入“上山打死拦路虎”的模式，认真思考片刻，道：“可恨更多。 老秀才对小姑娘点头笑道：“那么可恨可怜，可恨多出多少？ ”",
         "background": "",
-        "significance": "对应李宝瓶在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动李宝瓶与老秀才之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -2061,8 +2274,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "对话",
+        "context": "李宝瓶很快进入“上山打死拦路虎”的模式，认真思考片刻，道：“可恨更多。 ” 老秀才对小姑娘点头笑道：“那么可恨可怜，可恨多出多少？ 可怜又占多少？ ” 小姑娘又用心想了想，“合情合理合法，倒退回去，仔细算一算？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶与老秀才对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.617266",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2085,6 +2324,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才又笑眯眯问道：“李宝瓶，合法合法，当然不坏，可问题又来了，你如何确定世间的律法，是善法还是恶法？ 老秀才笑容和蔼，点头称赞道：“善。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "老秀才又笑眯眯问道：“李宝瓶，合法合法，当然不坏，可问题又来了，你如何确定世间的律法，是善法还是恶法？",
@@ -2100,16 +2353,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 李宝瓶对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与李宝瓶对话",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "李宝瓶"
         ],
-        "description": "老秀才又笑眯眯问道：“李宝瓶，合法合法，当然不坏，可问题又来了，你如何确定世间的律法，是善法还是恶法？ ” ”",
+        "description": "老秀才又笑眯眯问道：“李宝瓶，合法合法，当然不坏，可问题又来了，你如何确定世间的律法，是善法还是恶法？ 老秀才笑容和蔼，点头称赞道：“善。 ”",
         "background": "",
-        "significance": "对应李宝瓶在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老秀才与李宝瓶之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -2123,8 +2379,29 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.813936",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "李宝瓶"
+        ],
+        "action": "对话",
+        "context": "老秀才又笑眯眯问道：“李宝瓶，合法合法，当然不坏，可问题又来了，你如何确定世间的律法，是善法还是恶法？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与李宝瓶对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 154,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.617266",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2177,6 +2454,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才难住了小姑娘后，转头望向眼神清澈的陈平安，“我以往做学问想难题，喜欢先往坏处设想，今天也不例外，可恨之人必有可怜之处，这句话本身没有太大问题，但是世间许多自作聪明之人，喜欢摆出众人皆醉我独醒的姿态，只谈可怜之处，故意略过了可恨之处。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 154,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老秀才难住了小姑娘后，转头望向眼神清澈的陈平安，“我以往做学问想难题，喜欢先往坏处设想，今天也不例外，可恨之人必有可怜之处，这句话本身没有太大问题，但是世间许多自作聪明之人，喜欢摆出众人皆醉我独醒的姿态，只谈可怜之处，故意略过了可恨之处。",
@@ -2198,7 +2488,8 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
         "description": "崔瀺看着老人熟悉的笑容，看着聚精会神板着脸的小姑娘，冷哼一声。 不愧是齐静春的先生和齐静春的得意弟子，薪火相传，一脉相承，就连授业的氛围，都一个德行！ 老秀才难住了小姑娘后，转头望向眼神清澈的陈平安，“我以往做学问想难题，喜欢先往坏处设想，今天也不例外，可恨之人必有可怜之处，这句话本身没有太大问题，但是世间许多自作聪明之人，喜欢摆出众人皆醉我独醒的姿态，只谈可怜之处，故意略过了可恨之处。",
         "background": "",
@@ -2218,7 +2509,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.814939",
+    "extracted_at": "2026-03-25T17:27:37.617266",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2282,7 +2573,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.814939",
+    "extracted_at": "2026-03-25T17:27:37.618269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2334,6 +2625,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才看了眼左右李宝瓶和崔瀺，缓缓道：“是非功过有人心，善恶斤两问阎王。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 154,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "老秀才看了眼左右李宝瓶和崔瀺，缓缓道：“是非功过有人心，善恶斤两问阎王。",
@@ -2355,6 +2659,7 @@
         "participants": [
           "崔瀺",
           "陈平安",
+          "老秀才",
           "李宝瓶"
         ],
         "description": "崔瀺已经顾不上陈平安的回答是什么，开始默默推演，思考为何老头子要说这些。 老秀才看了眼左右李宝瓶和崔瀺，缓缓道：“是非功过有人心，善恶斤两问阎王。 ”",
@@ -2375,7 +2680,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.814939",
+    "extracted_at": "2026-03-25T17:27:37.618269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2396,6 +2701,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "说到这里，老秀才又伸出手，往屋顶指了指。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 154,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -2437,14 +2755,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
-        "description": "老人转头望着崔瀺，“知道为什么当时你提出那个问题，我回答得那么快吗？ 崔瀺愤愤道：“因为你更喜欢也更器重齐静春，觉得我崔瀺的学问，都是垃圾篓里的废纸团，要你这位文圣大人揉开摊平了，都嫌弃脏手！ 说到这里，老秀才又伸出手，往屋顶指了指。",
+        "description": "说到这里，老秀才又伸出手，往屋顶指了指。 老人转头望着崔瀺，“知道为什么当时你提出那个问题，我回答得那么快吗？ 崔瀺愤愤道：“因为你更喜欢也更器重齐静春，觉得我崔瀺的学问，都是垃圾篓里的废纸团，要你这位文圣大人揉开摊平了，都嫌弃脏手！",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -2458,34 +2775,8 @@
         "segment_index": 25
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "冲突",
-        "context": "说到这里，老秀才又伸出手，往屋顶指了指。 老人转头望着崔瀺，“知道为什么当时你提出那个问题，我回答得那么快吗？ ” 哪壶不开提哪壶。 崔瀺愤愤道：“因为你更喜欢也更器重齐静春，觉得我崔瀺的学问，都是垃圾篓里的废纸团，要你这位文圣大人揉开摊平了，都嫌弃脏手！ ”",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 154,
-        "segment_index": 25
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.814939",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.618269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2549,7 +2840,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.814939",
+    "extracted_at": "2026-03-25T17:27:37.618269",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2654,7 +2945,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.814939",
+    "extracted_at": "2026-03-25T17:27:37.619273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2690,21 +2981,37 @@
         ],
         "juan_index": 154,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才有些疲惫，“你这门事功学问，虽是我更早想到，但是你潜心其中，之后比我想得更远一些。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 154,
+        "segment_index": 30
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺冲突",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺与老秀才冲突",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
-        "description": "就算这几位出手相救，可你崔瀺又如何确定，到时候释道两教的圣人，不添乱？ 崔瀺犹然不愿服输。 不将这座浩然天下，变成推广他们两教教义的天下？",
+        "description": "就算这几位出手相救，可你崔瀺又如何确定，到时候释道两教的圣人，不添乱？ 崔瀺犹然不愿服输。 老秀才有些疲惫，“你这门事功学问，虽是我更早想到，但是你潜心其中，之后比我想得更远一些。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与老秀才之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -2718,8 +3025,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.815942",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "冲突",
+        "context": "就算这几位出手相救，可你崔瀺又如何确定，到时候释道两教的圣人，不添乱？ 不将这座浩然天下，变成推广他们两教教义的天下？ ” 崔瀺犹然不愿服输。 老秀才有些疲惫，“你这门事功学问，虽是我更早想到，但是你潜心其中，之后比我想得更远一些。 最后我也有所意动，觉得是不是可以试一试，所以那场躲在台面下的真正‘三四之争’，是在中土神洲的两大王朝，各自推广‘礼乐’与‘事功’，然后看六十年之后，各自胜负优劣，当然，结局如何，天下皆知，是我输了，所以不得不自囚于功德林。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺与老秀才冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.619273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2783,7 +3116,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.815942",
+    "extracted_at": "2026-03-25T17:27:37.619273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2818,20 +3151,35 @@
         ],
         "juan_index": 154,
         "segment_index": 32
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才转头望向院子那边，“注意啊，千万千万别不当回事啊。 老秀才这才喝了一大口酒，自嘲道：“借酒浇愁也是，酒壮怂人胆更是啊。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 32
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与崔瀺剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "崔瀺"
         ],
-        "description": "崔瀺失魂落魄地颓然坐回凳子，喃喃道：“你怎么可能会赌这个，我怎么可能会输……” 老秀才转头望向院子那边，“注意啊，千万千万别不当回事啊。 ”",
+        "description": "崔瀺失魂落魄地颓然坐回凳子，喃喃道：“你怎么可能会赌这个，我怎么可能会输……” 老秀才转头望向院子那边，“注意啊，千万千万别不当回事啊。 老秀才这才喝了一大口酒，自嘲道：“借酒浇愁也是，酒壮怂人胆更是啊。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动老秀才与崔瀺之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段32",
         "sentence_indexes_in_segment": [
@@ -2847,7 +3195,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.815942",
+    "extracted_at": "2026-03-25T17:27:37.619273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2870,6 +3218,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才放下酒壶，正了正衣襟，缓缓道：“礼圣在我们这座正气天下，写满了两个字。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 154,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -2888,16 +3249,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "崔瀺"
         ],
-        "description": "崔瀺，作何解？ 崔瀺根本就是下意识回答道：“秩序！ ”",
+        "description": "老秀才放下酒壶，正了正衣襟，缓缓道：“礼圣在我们这座正气天下，写满了两个字。 崔瀺，作何解？ 崔瀺根本就是下意识回答道：“秩序！",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老秀才与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -2911,8 +3275,34 @@
         "segment_index": 33
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.815942",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "” 老秀才放下酒壶，正了正衣襟，缓缓道：“礼圣在我们这座正气天下，写满了两个字。 崔瀺，作何解？ ” 崔瀺根本就是下意识回答道：“秩序！ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 33
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.619273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3073,7 +3463,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.815942",
+    "extracted_at": "2026-03-25T17:27:37.619273",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3108,20 +3498,34 @@
         ],
         "juan_index": 154,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年此时此刻，满脸锋芒，气势逼人。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 崔瀺与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "白衣少年"
         ],
-        "description": "说到这里，崔瀺下意识伸手指向这间屋子的房门。 这些人该怎么办？ 这些人间的天之骄子，凭什么不可以走出自己的道路，打开那扇礼圣老爷打造的屋门，去往别处另外建造一栋崭新的茅庐？",
+        "description": "说到这里，崔瀺下意识伸手指向这间屋子的房门。 白衣少年此时此刻，满脸锋芒，气势逼人。 这些人该怎么办？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段35",
         "sentence_indexes_in_segment": [
@@ -3137,7 +3541,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.620276",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3202,7 +3606,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.620276",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3266,7 +3670,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.620276",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3331,7 +3735,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.620276",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3354,6 +3758,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "最后，仿佛天地之间，只剩下老秀才和陈平安两个人，一老一小，相对而坐。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 154,
+        "segment_index": 39
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "最后，仿佛天地之间，只剩下老秀才和陈平安两个人，一老一小，相对而坐。",
@@ -3369,16 +3786,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安"
         ],
         "description": "最后，仿佛天地之间，只剩下老秀才和陈平安两个人，一老一小，相对而坐。 老人微笑道：“礼圣要秩序，所有人都懂规矩，希望所有人都讲规矩，之后散播学问的游士，当游士成为世族，就有了帝王师学，后来又有了科举，广收寒庶，有教无类，提供了鲤鱼跳龙门的可能性，寒门不再无贵子。 规矩啊，面面俱到，劳心劳力，而且越往后，人心浮动，越吃力不讨好。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老秀才与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段39",
         "sentence_indexes_in_segment": [
           0,
@@ -3392,8 +3812,34 @@
         "segment_index": 39
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "最后，仿佛天地之间，只剩下老秀才和陈平安两个人，一老一小，相对而坐。 老人微笑道：“礼圣要秩序，所有人都懂规矩，希望所有人都讲规矩，之后散播学问的游士，当游士成为世族，就有了帝王师学，后来又有了科举，广收寒庶，有教无类，提供了鲤鱼跳龙门的可能性，寒门不再无贵子。 规矩啊，面面俱到，劳心劳力，而且越往后，人心浮动，越吃力不讨好。 人性本恶嘛，吃饱肚子就放下筷子骂娘的人，人世间何其多哉。 ” 老人抬头望向少年，“所以我呢，如今在找两个字，顺序。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 39
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.620276",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3456,7 +3902,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.620276",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3518,7 +3964,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.621279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3580,7 +4026,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.816946",
+    "extracted_at": "2026-03-25T17:27:37.621279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3687,7 +4133,7 @@
         "segment_index": 44
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.817949",
+    "extracted_at": "2026-03-25T17:27:37.621279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3908,7 +4354,69 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.817949",
+    "extracted_at": "2026-03-25T17:27:37.621279",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "154-47-0": {
+    "juan_index": 154,
+    "segment_index": 47,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百五十四章 老先生坐而论道",
+    "source_sentences": [
+      "就因为不好意思吗？",
+      "因为不答应让别人失望吗？",
+      "可问题的答案，很简单啊，你答应了，一直没有信心去做，以后如果做不到，别人不是更加失望吗？",
+      "”",
+      "老秀才收敛笑意，满脸正色，思量片刻后微微失神，习惯性伸出两根手指，像是从菜碟里捻起一粒花生米。",
+      "小院内，高大女子眯眼而笑。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才收敛笑意，满脸正色，思量片刻后微微失神，习惯性伸出两根手指，像是从菜碟里捻起一粒花生米。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 154,
+        "segment_index": 47
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "老秀才收敛笑意，满脸正色，思量片刻后微微失神，习惯性伸出两根手指，像是从菜碟里捻起一粒花生米。 就因为不好意思吗？ 因为不答应让别人失望吗？",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段47",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 47
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.621279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3954,6 +4462,19 @@
         ],
         "juan_index": 154,
         "segment_index": 48
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "若是换作马苦玄或是谢实曹曦之流？",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 154,
+        "segment_index": 48
       }
     ],
     "locations": [],
@@ -3964,7 +4485,8 @@
         "location": null,
         "participants": [
           "马苦玄",
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
         "description": "若是换作马苦玄或是谢实曹曦之流？ 先前她故意摆出幽怨伤心的姿态，少年不一样义正言辞地拒绝自己？ 为了一个已经远在天边、相识不过一月的少女，就去冒险惹恼一位存活万年、以后需要相依为命的剑灵？",
         "background": "",
@@ -3984,7 +4506,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.817949",
+    "extracted_at": "2026-03-25T17:27:37.621279",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4078,7 +4600,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.817949",
+    "extracted_at": "2026-03-25T17:27:37.622283",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4140,7 +4662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.817949",
+    "extracted_at": "2026-03-25T17:27:37.622283",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4233,7 +4755,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.818953",
+    "extracted_at": "2026-03-25T17:27:37.622283",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4335,7 +4857,7 @@
         "segment_index": 53
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.818953",
+    "extracted_at": "2026-03-25T17:27:37.622283",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4368,21 +4890,39 @@
         ],
         "juan_index": 154,
         "segment_index": 54
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才已经缓缓起身，看着三个孩子，“坐而论道，是很好的事情。 老秀才笑道：“但是别忘了，起而行之，则更重要，否则一切道德文章就没了立身之处。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 54
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安对话",
+        "name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安与老秀才对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老秀才"
         ],
-        "description": "陈平安听得莫名其妙。 老秀才已经缓缓起身，看着三个孩子，“坐而论道，是很好的事情。 ”",
+        "description": "陈平安听得莫名其妙。 老秀才已经缓缓起身，看着三个孩子，“坐而论道，是很好的事情。 老秀才笑道：“但是别忘了，起而行之，则更重要，否则一切道德文章就没了立身之处。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老秀才之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 段54",
         "sentence_indexes_in_segment": [
           0,
@@ -4396,8 +4936,34 @@
         "segment_index": 54
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.818953",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "对话",
+        "context": "陈平安听得莫名其妙。 老秀才已经缓缓起身，看着三个孩子，“坐而论道，是很好的事情。 ” 老秀才笑道：“但是别忘了，起而行之，则更重要，否则一切道德文章就没了立身之处。 ” 老秀才蓦然开始自得其乐，笑逐颜开，双手负后，摇头晃脑地走出屋子，啧啧道：“老先生坐而论道，少年郎起而行之，善，大善！",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十四章 老先生坐而论道 · 陈平安与老秀才对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 154,
+        "segment_index": 54
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.622283",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4477,7 +5043,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.818953",
+    "extracted_at": "2026-03-25T17:27:37.623286",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4580,7 +5146,7 @@
         "segment_index": 56
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.819956",
+    "extracted_at": "2026-03-25T17:27:37.623286",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4658,7 +5224,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.819956",
+    "extracted_at": "2026-03-25T17:27:37.623286",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4728,7 +5294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.819956",
+    "extracted_at": "2026-03-25T17:27:37.623286",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

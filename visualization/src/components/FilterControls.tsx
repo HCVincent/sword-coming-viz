@@ -1,4 +1,4 @@
-import type { KeyboardEvent } from 'react';
+import type { CSSProperties, KeyboardEvent } from 'react';
 import type { BookConfig } from '../types/pipelineArtifacts';
 
 interface FilterControlsProps {
@@ -30,140 +30,183 @@ export function FilterControls({
 }: FilterControlsProps) {
   const unitLabel = bookConfig?.unit_label ?? '章节';
   const progressLabel = bookConfig?.progress_label ?? '叙事进度';
+  const unitRangeSpan = Math.max(maxUnit - 1, 1);
+  const unitRangeTrackStyle = {
+    '--range-start': `${((unitRange[0] - 1) / unitRangeSpan) * 100}%`,
+    '--range-end': `${((unitRange[1] - 1) / unitRangeSpan) * 100}%`,
+  } as CSSProperties;
 
   const commitUnitOnEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      onUnitRangeCommit(unitRange);
-    }
+    if (e.key === 'Enter') onUnitRangeCommit(unitRange);
   };
 
   const commitProgressOnEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      onProgressRangeCommit(progressRange);
-    }
+    if (e.key === 'Enter') onProgressRangeCommit(progressRange);
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
-      <h3 className="text-lg font-bold text-[#2c1810] mb-4">筛选控制</h3>
-
-      <div className="mb-6">
-        <label className="flex items-center gap-2 text-sm text-[#2c1810]">
-          <input
-            type="checkbox"
-            checked={syncUnitProgress}
-            disabled={!syncAvailable}
-            onChange={(e) => onSyncUnitProgressChange(e.target.checked)}
-            className="accent-[#8b4513]"
-          />
-          <span className={!syncAvailable ? 'text-gray-400' : undefined}>
-            {unitLabel}↔{progressLabel}联动
-          </span>
-        </label>
-        {!syncAvailable && (
-          <p className="text-xs text-gray-400 mt-1">缺少 /data/unit_progress_index.json，联动不可用</p>
-        )}
+    <section className="control-panel">
+      <div className="control-panel-header">
+        <div>
+          <p className="section-kicker">筛选控制</p>
+          <h2 className="control-panel-title">筛选条件</h2>
+          <p className="control-panel-copy">这里保留原有联动逻辑，只把筛选方式整理得更清楚，方便你顺着章节往下看。</p>
+        </div>
       </div>
 
-      <div className="mb-6">
-        <label className="block text-sm font-semibold text-[#8b4513] mb-2">{unitLabel}范围</label>
-        <div className="flex items-center gap-4">
-          <div className="flex-1">
-            <label className="text-xs text-gray-500">起始{unitLabel}</label>
+      <div className="control-stack">
+        <div className="control-group">
+          <div className="control-label">
+            <span>联动模式</span>
+            <span className="tag-pill">{syncAvailable ? '可用' : '不可用'}</span>
+          </div>
+          <label className="toggle-row text-sm text-[var(--text-secondary)]">
             <input
-              type="number"
+              type="checkbox"
+              checked={syncUnitProgress}
+              disabled={!syncAvailable}
+              onChange={(e) => onSyncUnitProgressChange(e.target.checked)}
+            />
+            <span className={!syncAvailable ? 'text-[var(--text-muted)]' : ''}>
+              {unitLabel}与{progressLabel}联动
+            </span>
+          </label>
+          {!syncAvailable && <p className="control-help">缺少 `unit_progress_index.json`，因此当前不能做章节与进度联动。</p>}
+        </div>
+
+        <div className="control-group">
+          <div className="control-label">
+            <span>{unitLabel}范围</span>
+            <span className="tag-pill">
+              {unitRange[0]} - {unitRange[1]}
+            </span>
+          </div>
+          <div className="control-grid control-grid--two">
+            <div>
+              <label className="field-label">起始{unitLabel}</label>
+              <input
+                type="number"
+                min={1}
+                max={maxUnit}
+                value={unitRange[0]}
+                onChange={(e) => onUnitRangeChange([parseInt(e.target.value, 10) || 1, unitRange[1]])}
+                onBlur={() => onUnitRangeCommit(unitRange)}
+                onKeyDown={commitUnitOnEnter}
+                className="form-input"
+              />
+            </div>
+            <div>
+              <label className="field-label">结束{unitLabel}</label>
+              <input
+                type="number"
+                min={1}
+                max={maxUnit}
+                value={unitRange[1]}
+                onChange={(e) => onUnitRangeChange([unitRange[0], parseInt(e.target.value, 10) || maxUnit])}
+                onBlur={() => onUnitRangeCommit(unitRange)}
+                onKeyDown={commitUnitOnEnter}
+                className="form-input"
+              />
+            </div>
+          </div>
+          <div className="range-dual" style={unitRangeTrackStyle}>
+            <div className="range-dual-track" aria-hidden="true" />
+            <input
+              type="range"
               min={1}
               max={maxUnit}
               value={unitRange[0]}
-              onChange={(e) => onUnitRangeChange([parseInt(e.target.value) || 1, unitRange[1]])}
-              onBlur={() => onUnitRangeCommit(unitRange)}
-              onKeyDown={commitUnitOnEnter}
-              className="w-full mt-1 px-3 py-2 border border-[#d4c5b5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8b4513]"
+              onChange={(e) => onUnitRangeChange([parseInt(e.target.value, 10), unitRange[1]])}
+              onMouseUp={(e) => onUnitRangeCommit([parseInt(e.currentTarget.value, 10), unitRange[1]])}
+              onTouchEnd={(e) => onUnitRangeCommit([parseInt(e.currentTarget.value, 10), unitRange[1]])}
+              className="range-input range-input--start"
+              aria-label={`起始${unitLabel}滑杆`}
             />
-          </div>
-          <span className="text-gray-400 mt-6">—</span>
-          <div className="flex-1">
-            <label className="text-xs text-gray-500">结束{unitLabel}</label>
             <input
-              type="number"
+              type="range"
               min={1}
               max={maxUnit}
               value={unitRange[1]}
-              onChange={(e) => onUnitRangeChange([unitRange[0], parseInt(e.target.value) || maxUnit])}
-              onBlur={() => onUnitRangeCommit(unitRange)}
-              onKeyDown={commitUnitOnEnter}
-              className="w-full mt-1 px-3 py-2 border border-[#d4c5b5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8b4513]"
+              onChange={(e) => onUnitRangeChange([unitRange[0], parseInt(e.target.value, 10)])}
+              onMouseUp={(e) => onUnitRangeCommit([unitRange[0], parseInt(e.currentTarget.value, 10)])}
+              onTouchEnd={(e) => onUnitRangeCommit([unitRange[0], parseInt(e.currentTarget.value, 10)])}
+              className="range-input range-input--end"
+              aria-label={`结束${unitLabel}滑杆`}
             />
           </div>
+          <div className="range-dual-labels" aria-hidden="true">
+            <span>起始</span>
+            <span>结束</span>
+          </div>
+          <p className="control-help">起始和结束都可以拖动，数字输入仍然保持回车和失焦提交。</p>
         </div>
-        <input
-          type="range"
-          min={1}
-          max={maxUnit}
-          value={unitRange[1]}
-          onChange={(e) => onUnitRangeChange([unitRange[0], parseInt(e.target.value)])}
-          onMouseUp={() => onUnitRangeCommit(unitRange)}
-          onTouchEnd={() => onUnitRangeCommit(unitRange)}
-          className="w-full mt-2 accent-[#8b4513]"
-        />
-      </div>
 
-      <div>
-        <label className="block text-sm font-semibold text-[#8b4513] mb-2">{progressLabel}范围</label>
-        <div className="flex items-center gap-4">
-          <div className="flex-1">
-            <label className="text-xs text-gray-500">起始{progressLabel}</label>
-            <input
-              type="number"
-              placeholder="不限"
-              value={progressRange[0] !== null ? progressRange[0] : ''}
-              onChange={(e) => {
-                const val = e.target.value ? parseInt(e.target.value) : null;
-                onProgressRangeChange([val, progressRange[1]]);
-              }}
-              onBlur={() => onProgressRangeCommit(progressRange)}
-              onKeyDown={commitProgressOnEnter}
-              className="w-full mt-1 px-3 py-2 border border-[#d4c5b5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8b4513]"
-            />
+        <div className="control-group">
+          <div className="control-label">
+            <span>{progressLabel}范围</span>
+            <span className="tag-pill">
+              {progressRange[0] ?? '不限'} - {progressRange[1] ?? '不限'}
+            </span>
           </div>
-          <span className="text-gray-400 mt-6">—</span>
-          <div className="flex-1">
-            <label className="text-xs text-gray-500">结束{progressLabel}</label>
-            <input
-              type="number"
-              placeholder="不限"
-              value={progressRange[1] !== null ? progressRange[1] : ''}
-              onChange={(e) => {
-                const val = e.target.value ? parseInt(e.target.value) : null;
-                onProgressRangeChange([progressRange[0], val]);
-              }}
-              onBlur={() => onProgressRangeCommit(progressRange)}
-              onKeyDown={commitProgressOnEnter}
-              className="w-full mt-1 px-3 py-2 border border-[#d4c5b5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8b4513]"
-            />
+          <div className="control-grid control-grid--two">
+            <div>
+              <label className="field-label">起始{progressLabel}</label>
+              <input
+                type="number"
+                placeholder="不限"
+                value={progressRange[0] !== null ? progressRange[0] : ''}
+                onChange={(e) => {
+                  const value = e.target.value ? parseInt(e.target.value, 10) : null;
+                  onProgressRangeChange([value, progressRange[1]]);
+                }}
+                onBlur={() => onProgressRangeCommit(progressRange)}
+                onKeyDown={commitProgressOnEnter}
+                className="form-input"
+              />
+            </div>
+            <div>
+              <label className="field-label">结束{progressLabel}</label>
+              <input
+                type="number"
+                placeholder="不限"
+                value={progressRange[1] !== null ? progressRange[1] : ''}
+                onChange={(e) => {
+                  const value = e.target.value ? parseInt(e.target.value, 10) : null;
+                  onProgressRangeChange([progressRange[0], value]);
+                }}
+                onBlur={() => onProgressRangeCommit(progressRange)}
+                onKeyDown={commitProgressOnEnter}
+                className="form-input"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="mt-4">
-        <label className="block text-sm font-semibold text-[#8b4513] mb-2">快速筛选</label>
-        <div className="flex flex-wrap gap-2">
-          {bookConfig?.quick_filters.map((filter) => (
-            <button
-              key={filter.label}
-              onClick={() => {
-                onUnitRangeChange(filter.unit_range);
-                onProgressRangeChange(filter.progress_range);
-                onUnitRangeCommit(filter.unit_range);
-                onProgressRangeCommit(filter.progress_range);
-              }}
-              className="px-3 py-1 text-sm border border-[#8b4513] text-[#8b4513] rounded-full hover:bg-[#8b4513] hover:text-white transition-colors"
-            >
-              {filter.label}
-            </button>
-          ))}
+        <div className="control-group">
+          <div className="control-label">
+            <span>快速跳转</span>
+            <span className="tag-pill">{bookConfig?.quick_filters.length ?? 0} 项</span>
+          </div>
+          <div className="quick-filter-grid">
+            {bookConfig?.quick_filters.map((filter) => (
+              <button
+                key={filter.label}
+                type="button"
+                className="chip-button"
+                data-active={unitRange[0] === filter.unit_range[0] && unitRange[1] === filter.unit_range[1]}
+                onClick={() => {
+                  onUnitRangeChange(filter.unit_range);
+                  onProgressRangeChange(filter.progress_range);
+                  onUnitRangeCommit(filter.unit_range);
+                  onProgressRangeCommit(filter.progress_range);
+                }}
+              >
+                {filter.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

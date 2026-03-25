@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { WriterConflictChain, WriterCuratedRelationship } from '../types/writerInsights';
+import { toChineseRelationshipKind } from '../utils/writerInsightText';
 
 interface ConflictChainsViewProps {
   curatedRelationships: WriterCuratedRelationship[];
@@ -116,14 +117,16 @@ export function ConflictChainsView({
                       >
                         {relationship.source_role_name}
                       </button>
-                      <span className="text-gray-400">vs</span>
+                      <span className="text-gray-400">对</span>
                       <button
                         onClick={() => onRoleClick?.(relationship.target_role_name)}
                         className="text-[#5d2e0c] hover:underline"
                       >
                         {relationship.target_role_name}
                       </button>
-                      <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white text-xs">{relationship.kind}</span>
+                      <span className="px-2 py-1 rounded-full bg-[#8b4513] text-white text-xs">
+                        {toChineseRelationshipKind(relationship.kind)}
+                      </span>
                     </div>
                   </div>
                   <button
@@ -210,7 +213,7 @@ export function ConflictChainsView({
                   <button onClick={() => onRoleClick?.(chain.source_role_name)} className="text-sm hover:underline text-[#5d2e0c]">
                     {chain.source_role_name}
                   </button>
-                  <span className="text-gray-400">vs</span>
+                  <span className="text-gray-400">对</span>
                   <button onClick={() => onRoleClick?.(chain.target_role_name)} className="text-sm hover:underline text-[#5d2e0c]">
                     {chain.target_role_name}
                   </button>

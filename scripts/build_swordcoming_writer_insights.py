@@ -11,6 +11,21 @@ from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 from model.unified import UnifiedEvent, UnifiedKnowledgeBase, UnifiedRelation, UnifiedRole
 
 
+RELATION_KIND_LABELS = {
+    "mirror": "镜像",
+    "emotion": "情感",
+    "mentor": "引路",
+    "friend": "同伴",
+    "guide": "指引",
+    "mystery": "隐线",
+    "opposition": "对立",
+}
+
+DISPLAY_COPY_REPLACEMENTS = {
+    "抓手": "线索",
+}
+
+
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -37,6 +52,20 @@ def get_event_units(event: UnifiedEvent) -> List[int]:
 
 def get_relation_units(relation: UnifiedRelation) -> List[int]:
     return sorted(relation.source_units or relation.source_juans)
+
+
+def normalize_relationship_kind(kind: Any) -> str:
+    normalized = str(kind or "").strip()
+    if not normalized:
+        return "关系"
+    return RELATION_KIND_LABELS.get(normalized.lower(), normalized)
+
+
+def normalize_display_copy(text: Any) -> str:
+    normalized = str(text or "").strip()
+    for source, target in DISPLAY_COPY_REPLACEMENTS.items():
+        normalized = normalized.replace(source, target)
+    return normalized
 
 
 def range_overlaps(
@@ -137,10 +166,10 @@ def build_curated_relationship_configs(writer_focus: dict) -> List[dict]:
                 "id": str(item.get("id") or f"curated-{index + 1}"),
                 "order": index,
                 "roles": roles,
-                "kind": str(item.get("kind", "主线")).strip() or "主线",
+                "kind": normalize_relationship_kind(item.get("kind", "主线")),
                 "title": str(item.get("title") or f"{roles[0]}与{roles[1]}关系线").strip(),
-                "focus": str(item.get("focus", "")).strip(),
-                "adaptation_value": str(item.get("adaptation_value", "")).strip(),
+                "focus": normalize_display_copy(item.get("focus", "")),
+                "adaptation_value": normalize_display_copy(item.get("adaptation_value", "")),
                 "manual_beats": manual_beats,
             }
         )
@@ -157,7 +186,7 @@ def build_curated_relationship_configs(writer_focus: dict) -> List[dict]:
                 "id": str(item.get("id") or f"priority-{index + 1}"),
                 "order": index,
                 "roles": roles,
-                "kind": str(item.get("kind", "主线")).strip() or "主线",
+                "kind": normalize_relationship_kind(item.get("kind", "主线")),
                 "title": f"{roles[0]}与{roles[1]}关系线",
                 "focus": "",
                 "adaptation_value": "",
@@ -1664,15 +1693,15 @@ def build_season_overviews(
 
         adaptation_hooks = [
             (
-                f"人物抓手：优先抓{('、'.join(top_role_names) if top_role_names else '当季核心人物')}的出场密度与关系变化，"
+                f"人物重点：优先看{('、'.join(top_role_names) if top_role_names else '当季核心人物')}的出场密度与关系变化，"
                 f"其中{spotlight_role if spotlight_role else (top_role_names[0] if top_role_names else '核心角色')}应作为叙事主轴。"
             ),
             (
-                f"关系抓手：重点保留{('、'.join(item['title'] for item in priority_relationships) if priority_relationships else '当季主要关系推进')}，"
+                f"关系重点：重点保留{('、'.join(item['title'] for item in priority_relationships) if priority_relationships else '当季主要关系推进')}，"
                 f"并让{('、'.join(conflict_titles) if conflict_titles else '主线冲突')}承担阶段转折。"
             ),
             (
-                f"场景抓手：优先把{('、'.join(top_location_names) if top_location_names else '关键场域')}拍出明确层次，"
+                f"场景重点：优先把{('、'.join(top_location_names) if top_location_names else '关键场域')}拍出明确层次，"
                 f"再用{('、'.join(event['name'] for event in season_anchor_events[:2]) if season_anchor_events else '锚点事件')}做结构落点。"
             ),
         ]
@@ -1834,7 +1863,7 @@ def build_writer_insights_payload(
     )
 
     return {
-        "version": "swordcoming-writer-insights-v3",
+        "version": "swordcoming-writer-insights-v4",
         "generated_at": datetime.now().isoformat(),
         "book_id": kb.book_id,
         "unit_label": kb.unit_label,

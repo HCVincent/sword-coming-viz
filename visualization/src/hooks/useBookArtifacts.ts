@@ -11,13 +11,13 @@ export function useUnitProgressIndex() {
       try {
         const response = await fetch('/data/unit_progress_index.json');
         if (!response.ok) {
-          throw new Error(`Failed to load unit progress index: ${response.status}`);
+          throw new Error(`读取章节进度索引失败：${response.status}`);
         }
         const data = (await response.json()) as UnitProgressIndex;
         setUnitProgressIndex(data);
       } catch (err) {
         console.error('Error loading unit progress index:', err);
-        setError(err instanceof Error ? err.message : 'Unknown error loading unit progress index');
+        setError(err instanceof Error ? err.message : '读取章节进度索引时发生未知错误');
       } finally {
         setLoading(false);
       }
@@ -39,13 +39,13 @@ export function useBookConfig() {
       try {
         const response = await fetch('/data/book_config.json');
         if (!response.ok) {
-          throw new Error(`Failed to load book config: ${response.status}`);
+          throw new Error(`读取图书配置失败：${response.status}`);
         }
         const data = (await response.json()) as BookConfig;
         setBookConfig(data);
       } catch (err) {
         console.error('Error loading book config:', err);
-        setError(err instanceof Error ? err.message : 'Unknown error loading book config');
+        setError(err instanceof Error ? err.message : '读取图书配置时发生未知错误');
       } finally {
         setLoading(false);
       }

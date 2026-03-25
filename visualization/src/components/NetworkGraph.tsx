@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState, useMemo, useCallback } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import type { RoleNodeUnified, RoleLinkUnified } from '../types/unified';
+import type { RoleLinkUnified, RoleNodeUnified } from '../types/unified';
 
 interface NetworkGraphProps {
   allNodes: RoleNodeUnified[];
@@ -9,54 +9,76 @@ interface NetworkGraphProps {
   links: RoleLinkUnified[];
   totalRoleCount: number;
   linkedRoleCount: number;
+  spotlightRoleName?: string | null;
   onNodeClick?: (node: RoleNodeUnified) => void;
   onLinkClick?: (sourceId: string, targetId: string) => void;
-  focusNodeId?: string | null; // Node ID to focus/highlight from external trigger
-  onFocusNodeHandled?: () => void; // Callback when focus is handled
+  focusNodeId?: string | null;
+  onFocusNodeHandled?: () => void;
 }
 
-interface SimulationNode extends RoleNodeUnified {
-  x?: number;
-  y?: number;
-  fx?: number | null;
-  fy?: number | null;
+type GraphMode = 'overview' | 'mainline';
+type GraphNode = RoleNodeUnified & { x?: number; y?: number; fx?: number | null; fy?: number | null; importanceScore: number; linkCount: number; weightSum: number; clusterKey: string };
+type GraphLink = Omit<RoleLinkUnified, 'source' | 'target'> & { source: string; target: string; edgeScore: number; unitSpan: number; isMainline: boolean };
+type GraphEndpoint = string | GraphNode | { id: string; name?: string } | null | undefined;
+
+const GRAPH_HEIGHT = 800;
+const DEFAULT_EDGE_DENSITY = 34;
+const PRIMARY_ROLE_FALLBACK = '陈平安';
+const ACTION_STRENGTH: Record<string, number> = { 冲突: 4, 对峙: 4, 交手: 4, 敌对: 4, 对话: 3, 会见: 3, 同行: 3, 试探: 3, 拜访: 2, 庇护: 2, 归属: 2, 指点: 2, 师承: 2, 等待: 1 };
+
+function createDataKey(nodes: RoleNodeUnified[], links: Array<{ source: string; target: string }>) {
+  return `${nodes.map((node) => node.id).sort().join(',')}|${links.map((link) => `${link.source}-${link.target}`).sort().join(',')}`;
 }
 
-interface SimulationLink {
-  source: SimulationNode;
-  target: SimulationNode;
-  action: string;
-  weight: number;
-  timeText: string | null;
+function buildClusterPositions(keys: string[], width: number, height: number) {
+  const positions = new Map<string, { x: number; y: number }>();
+  const cols = Math.max(2, Math.ceil(Math.sqrt(keys.length || 1)));
+  const rows = Math.max(1, Math.ceil((keys.length || 1) / cols));
+  keys.forEach((key, index) => {
+    positions.set(key, {
+      x: 110 + ((width - 220) * ((index % cols) + 0.5)) / cols,
+      y: 110 + ((height - 220) * (Math.floor(index / cols) + 0.5)) / rows,
+    });
+  });
+  return positions;
 }
 
-/**
- * PERFORMANCE CRITICAL: Helper to create a stable key for data comparison.
- * 
- * This function is essential to prevent unnecessary D3 force simulation rebuilds.
- * 
- * Problem it solves:
- * - React's useMemo creates new array references even when data content is identical
- * - D3 force simulation is expensive to rebuild - it resets all node positions
- * - Without this check, clicking a node would cause the entire graph to "refresh"
- *   because the click handler triggers URL updates, which causes parent re-renders,
- *   which creates new array references for nodes/links props
- * 
- * How it works:
- * - Generates a string key from node IDs and link source-target pairs
- * - If the key matches the previous render, we skip rebuilding the simulation
- * - This allows interactions (clicks, hovers) without disrupting the graph layout
- * 
- * DO NOT REMOVE THIS - it's critical for usable graph interactions!
- */
-function createDataKey(nodes: RoleNodeUnified[], links: RoleLinkUnified[]): string {
-  const nodeIds = nodes.map(n => n.id).sort().join(',');
-  const linkIds = links.map(l => {
-    const sourceId = typeof l.source === 'object' ? (l.source as any).id : l.source;
-    const targetId = typeof l.target === 'object' ? (l.target as any).id : l.target;
-    return `${sourceId}-${targetId}`;
-  }).sort().join(',');
-  return `${nodeIds}|${linkIds}`;
+function buildNodeRadius(node: GraphNode, compact: boolean) {
+  return Math.min(compact ? 14 : 18, (compact ? 4.5 : 6) + Math.log2((node.appearances ?? 0) + 1) * (compact ? 0.9 : 1.3) + node.linkCount * 0.18);
+}
+
+function isGraphEndpointObject(endpoint: GraphEndpoint): endpoint is GraphNode | { id: string; name?: string } {
+  return typeof endpoint === 'object' && endpoint !== null && 'id' in endpoint && typeof endpoint.id === 'string';
+}
+
+function getGraphEndpointId(endpoint: GraphEndpoint) {
+  if (typeof endpoint === 'string') return endpoint;
+  if (isGraphEndpointObject(endpoint)) return endpoint.id;
+  return '';
+}
+
+function isLinkConnectedToNode(link: GraphLink, nodeId: string | null) {
+  if (!nodeId) return false;
+  const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+  const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+  return sourceId === nodeId || targetId === nodeId;
+}
+
+function getLinkEndpoints(source: GraphNode, target: GraphNode, sourceRadius: number, targetRadius: number) {
+  const dx = (target.x ?? 0) - (source.x ?? 0);
+  const dy = (target.y ?? 0) - (source.y ?? 0);
+  const distance = Math.sqrt(dx * dx + dy * dy) || 1;
+  const sourceInset = Math.min(sourceRadius + 2, Math.max(0, distance / 3));
+  const targetInset = Math.min(targetRadius + 10, Math.max(0, distance / 3));
+  const ux = dx / distance;
+  const uy = dy / distance;
+
+  return {
+    x1: (source.x ?? 0) + ux * sourceInset,
+    y1: (source.y ?? 0) + uy * sourceInset,
+    x2: (target.x ?? 0) - ux * targetInset,
+    y2: (target.y ?? 0) - uy * targetInset,
+  };
 }
 
 export function NetworkGraph({
@@ -66,6 +88,7 @@ export function NetworkGraph({
   links,
   totalRoleCount,
   linkedRoleCount,
+  spotlightRoleName,
   onNodeClick,
   onLinkClick,
   focusNodeId,
@@ -73,684 +96,378 @@ export function NetworkGraph({
 }: NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; content: RoleNodeUnified } | null>(null);
-  const [linkTooltip, setLinkTooltip] = useState<{ x: number; y: number; content: RoleLinkUnified; sourceName: string; targetName: string } | null>(null);
-  
-  // Use refs for callbacks to avoid re-triggering useEffect
+  const simulationRef = useRef<d3.Simulation<GraphNode, d3.SimulationLinkDatum<GraphNode>> | null>(null);
+  const prevKeyRef = useRef('');
+  const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
+  const nodesRef = useRef<GraphNode[]>([]);
   const onNodeClickRef = useRef(onNodeClick);
   const onLinkClickRef = useRef(onLinkClick);
-  useEffect(() => { onNodeClickRef.current = onNodeClick; }, [onNodeClick]);
-  useEffect(() => { onLinkClickRef.current = onLinkClick; }, [onLinkClick]);
-  
-  // PERFORMANCE: Refs to track simulation state and avoid unnecessary rebuilds.
-  // The D3 force simulation is expensive - rebuilding it resets all node positions.
-  // These refs allow us to check if data actually changed before rebuilding.
-  // See createDataKey() for detailed explanation.
-  const simulationRef = useRef<d3.Simulation<SimulationNode, SimulationLink> | null>(null);
-  const prevDataKeyRef = useRef<string>('');
-  
-  // Refs for zoom/pan functionality to center on focused nodes
-  const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
-  const nodesDataRef = useRef<SimulationNode[]>([]);
-  
-  // Interactive state
+  const pinnedNodeIdRef = useRef<string | null>(null);
+  const focusNodeIdRef = useRef<string | null>(null);
+  const searchResultIdRef = useRef<string | null>(null);
+  const activeEdgeNodeIdRef = useRef<string | null>(null);
+
   const [searchTerm, setSearchTerm] = useState('');
   const [importanceFilter, setImportanceFilter] = useState(0);
-  const [selectedPower, setSelectedPower] = useState<string>('all');
+  const [selectedPower, setSelectedPower] = useState('all');
   const [showIsolated, setShowIsolated] = useState(false);
+  const [graphMode, setGraphMode] = useState<GraphMode>('overview');
+  const [edgeDensity, setEdgeDensity] = useState(DEFAULT_EDGE_DENSITY);
   const [highlightedNode, setHighlightedNode] = useState<string | null>(null);
+  const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null);
+  const [tooltip, setTooltip] = useState<{ x: number; y: number; node: GraphNode } | null>(null);
   const [notFoundMessage, setNotFoundMessage] = useState<string | null>(null);
 
-  // Get unique powers for filter dropdown
-  const availablePowers = useMemo(() => {
-    const powers = new Set(allNodes.map(n => n.power).filter(Boolean) as string[]);
-    return Array.from(powers).sort();
-  }, [allNodes]);
+  useEffect(() => void (onNodeClickRef.current = onNodeClick), [onNodeClick]);
+  useEffect(() => void (onLinkClickRef.current = onLinkClick), [onLinkClick]);
+  useEffect(() => void (pinnedNodeIdRef.current = pinnedNodeId), [pinnedNodeId]);
+  useEffect(() => void (focusNodeIdRef.current = focusNodeId ?? null), [focusNodeId]);
 
-  const candidateNodes = useMemo(
-    () => (showIsolated ? [...linkedNodes, ...isolatedNodes] : linkedNodes),
-    [isolatedNodes, linkedNodes, showIsolated]
-  );
-
-  const powerFilteredNodes = useMemo(
-    () => candidateNodes.filter((node) => selectedPower === 'all' || node.power === selectedPower),
-    [candidateNodes, selectedPower]
-  );
+  const availablePowers = useMemo(() => Array.from(new Set(allNodes.map((node) => node.power).filter(Boolean) as string[])).sort(), [allNodes]);
+  const baseNodes = useMemo(() => (showIsolated ? [...linkedNodes, ...isolatedNodes] : linkedNodes), [isolatedNodes, linkedNodes, showIsolated]);
+  const powerNodes = useMemo(() => baseNodes.filter((node) => selectedPower === 'all' || node.power === selectedPower), [baseNodes, selectedPower]);
 
   const scoredNodes = useMemo(() => {
-    const nodeIds = new Set(powerFilteredNodes.map((node) => node.id));
-    const nodeStats = new Map<string, { linkCount: number; weightSum: number }>();
+    const nodeIds = new Set(powerNodes.map((node) => node.id));
+    const stats = new Map<string, { linkCount: number; weightSum: number }>();
+    powerNodes.forEach((node) => stats.set(node.id, { linkCount: 0, weightSum: 0 }));
+    links.forEach((link) => {
+      const source = typeof link.source === 'object' ? (link.source as never as { id: string }).id : link.source;
+      const target = typeof link.target === 'object' ? (link.target as never as { id: string }).id : link.target;
+      if (!nodeIds.has(source) || !nodeIds.has(target)) return;
+      const sourceStats = stats.get(source);
+      const targetStats = stats.get(target);
+      if (sourceStats) { sourceStats.linkCount += 1; sourceStats.weightSum += link.weight; }
+      if (targetStats) { targetStats.linkCount += 1; targetStats.weightSum += link.weight; }
+    });
+    return powerNodes.map((node) => {
+      const info = stats.get(node.id) ?? { linkCount: 0, weightSum: 0 };
+      return { ...node, importanceScore: info.weightSum * 2.6 + info.linkCount * 4.4 + Math.log2((node.appearances ?? 0) + 1) * 2.4, linkCount: info.linkCount, weightSum: info.weightSum, clusterKey: node.power || '未归类' } satisfies GraphNode;
+    }).sort((a, b) => b.importanceScore - a.importanceScore || b.appearances - a.appearances);
+  }, [links, powerNodes]);
 
-    for (const node of powerFilteredNodes) {
-      nodeStats.set(node.id, { linkCount: 0, weightSum: 0 });
-    }
-
-    for (const link of links) {
-      const sourceId = typeof link.source === 'object' ? (link.source as any).id : link.source;
-      const targetId = typeof link.target === 'object' ? (link.target as any).id : link.target;
-      if (!nodeIds.has(sourceId) || !nodeIds.has(targetId)) continue;
-
-      const sourceStats = nodeStats.get(sourceId);
-      const targetStats = nodeStats.get(targetId);
-      if (sourceStats) {
-        sourceStats.linkCount += 1;
-        sourceStats.weightSum += link.weight;
-      }
-      if (targetStats) {
-        targetStats.linkCount += 1;
-        targetStats.weightSum += link.weight;
-      }
-    }
-
-    return powerFilteredNodes
-      .map((node) => {
-        const stats = nodeStats.get(node.id) ?? { linkCount: 0, weightSum: 0 };
-        const mentionScore = Math.log2((node.appearances ?? 0) + 1);
-        const importanceScore = stats.weightSum * 3 + stats.linkCount * 5 + mentionScore;
-        return {
-          ...node,
-          importanceScore,
-          linkCount: stats.linkCount,
-          weightSum: stats.weightSum,
-        };
-      })
-      .sort((a, b) => b.importanceScore - a.importanceScore || b.appearances - a.appearances);
-  }, [links, powerFilteredNodes]);
-
-  const importanceThreshold = useMemo(() => {
-    if (!scoredNodes.length || importanceFilter <= 0) return -Infinity;
-    const scores = scoredNodes.map((node) => node.importanceScore).sort((a, b) => a - b);
-    const index = Math.min(
-      scores.length - 1,
-      Math.floor((importanceFilter / 100) * (scores.length - 1))
-    );
-    return scores[index];
+  const filteredNodes = useMemo(() => {
+    if (!scoredNodes.length || importanceFilter <= 0) return scoredNodes.map((node) => ({ ...node }));
+    const sortedScores = scoredNodes.map((node) => node.importanceScore).sort((a, b) => a - b);
+    const threshold = sortedScores[Math.min(sortedScores.length - 1, Math.floor((sortedScores.length - 1) * (importanceFilter / 100)))];
+    return scoredNodes.filter((node) => node.importanceScore >= threshold).map((node) => ({ ...node }));
   }, [importanceFilter, scoredNodes]);
 
-  // Filter nodes based on current-range importance score and create fresh copies to avoid D3 mutation.
-  const filteredNodes = useMemo(() => {
-    return scoredNodes
-      .filter((node) => node.importanceScore >= importanceThreshold)
-      .map((node) => ({ ...node }));
-  }, [importanceThreshold, scoredNodes]);
+  const baseLinks = useMemo(() => {
+    const visibleIds = new Set(filteredNodes.map((node) => node.id));
+    return links.flatMap((link) => {
+      const source = typeof link.source === 'object' ? (link.source as never as { id: string }).id : link.source;
+      const target = typeof link.target === 'object' ? (link.target as never as { id: string }).id : link.target;
+      if (!visibleIds.has(source) || !visibleIds.has(target)) return [];
+      const actionBoost = Math.max(ACTION_STRENGTH[link.action] ?? 1, ...(link.actionTypes?.map((action) => ACTION_STRENGTH[action] ?? 1) ?? [1]));
+      const unitSpan = new Set(link.sourceUnits ?? []).size;
+      const progressSpan = link.progressStart != null && link.progressEnd != null ? Math.max(0, link.progressEnd - link.progressStart) : 0;
+      return [{ ...link, source, target, unitSpan, edgeScore: link.weight * 5 + actionBoost * 4 + unitSpan * 2 + Math.min(progressSpan, 24) * 0.35, isMainline: false } satisfies GraphLink];
+    });
+  }, [filteredNodes, links]);
 
-  // Filter links to match filtered nodes
-  // Note: We need to create fresh copies of links to avoid D3 mutating them with object references
-  const filteredLinks = useMemo(() => {
-    const nodeIds = new Set(filteredNodes.map(n => n.id));
-    return links
-      .filter(l => {
-        const sourceId = typeof l.source === 'object' ? (l.source as any).id : l.source;
-        const targetId = typeof l.target === 'object' ? (l.target as any).id : l.target;
-        return nodeIds.has(sourceId) && nodeIds.has(targetId);
-      })
-      .map(l => ({
-        ...l,
-        // Reset source/target to string IDs for fresh simulation
-        source: typeof l.source === 'object' ? (l.source as any).id : l.source,
-        target: typeof l.target === 'object' ? (l.target as any).id : l.target,
-      }));
-  }, [links, filteredNodes]);
-
-  const filteredLinkedRoleCount = useMemo(
-    () => filteredNodes.filter((node) => !node.isIsolated).length,
-    [filteredNodes]
-  );
-
-  const filteredIsolatedRoleCount = useMemo(
-    () => filteredNodes.filter((node) => node.isIsolated).length,
-    [filteredNodes]
-  );
-
-  // Search functionality
-  const searchResult = useMemo(() => {
-    if (!searchTerm) return null;
-    return filteredNodes.find(n => 
-      n.name.includes(searchTerm) || 
-      n.aliases.some(a => a.includes(searchTerm))
-    );
-  }, [filteredNodes, searchTerm]);
+  const primaryRole = useMemo(() => filteredNodes.find((node) => node.name === spotlightRoleName) ?? filteredNodes.find((node) => node.name === PRIMARY_ROLE_FALLBACK) ?? filteredNodes[0] ?? null, [filteredNodes, spotlightRoleName]);
+  const searchResult = useMemo(() => (!searchTerm ? null : filteredNodes.find((node) => node.name.includes(searchTerm) || node.aliases.some((alias) => alias.includes(searchTerm))) ?? null), [filteredNodes, searchTerm]);
+  const activeEdgeNodeId = highlightedNode ?? pinnedNodeId ?? searchResult?.id ?? focusNodeId ?? null;
+  useEffect(() => void (searchResultIdRef.current = searchResult?.id ?? null), [searchResult]);
+  useEffect(() => void (activeEdgeNodeIdRef.current = activeEdgeNodeId), [activeEdgeNodeId]);
 
   useEffect(() => {
     if (searchResult) {
       setHighlightedNode(searchResult.id);
-    } else {
-      setHighlightedNode(null);
-    }
-  }, [searchResult]);
-
-  /**
-   * Center the graph view on a specific node with smooth animation.
-   * 
-   * This is called when:
-   * - User clicks on a related entity in a detail panel (RoleDetail, EventDetail, etc.)
-   * - The entity should become visually prominent in the network graph
-   * 
-   * The function:
-   * 1. Finds the node's current position from the simulation
-   * 2. Calculates a transform to center and zoom in on that node
-   * 3. Applies a smooth animated transition
-   */
-  const centerOnNode = useCallback((nodeId: string) => {
-    if (!svgRef.current || !containerRef.current || !zoomRef.current) return;
-    
-    // Find the node in the simulation data (which has x, y positions)
-    const node = nodesDataRef.current.find(n => n.id === nodeId || n.name === nodeId);
-    if (!node || node.x === undefined || node.y === undefined) return;
-    
-    const svg = d3.select(svgRef.current);
-    const container = containerRef.current;
-    const width = container.clientWidth;
-    const height = 600;
-    
-    // Calculate transform to center on the node with a nice zoom level
-    const scale = 1.5; // Zoom in a bit to make the focused node prominent
-    const x = width / 2 - node.x * scale;
-    const y = height / 2 - node.y * scale;
-    
-    // Apply smooth transition to center on the node
-    svg.transition()
-      .duration(750)
-      .call(
-        zoomRef.current.transform,
-        d3.zoomIdentity.translate(x, y).scale(scale)
-      );
-  }, []);
-
-  /**
-   * Handle external focus request - highlight AND center on the node.
-   * 
-   * This effect responds to `focusNodeId` prop changes, which occur when:
-   * - User clicks on a related entity button in detail panels (EventDetail, RoleDetail, etc.)
-   * - User navigates via URL with a focus parameter
-   * 
-   * The effect:
-   * 1. Finds the node (by ID or name) in filtered nodes, or adjusts filters if needed
-   * 2. Sets the node as highlighted (dims other nodes, shows connections)
-   * 3. Centers the view on the node with a smooth zoom animation
-   * 
-   * The setTimeout delay ensures that if filters were changed, the simulation
-   * has time to include the newly visible node before we try to center on it.
-   */
-  useEffect(() => {
-    if (focusNodeId) {
-      // Clear any previous not-found message
-      setNotFoundMessage(null);
-      
-      // Check if the node exists in filtered nodes (by ID, name, or alias)
-      let targetNodeId: string | null = null;
-      const nodeInFiltered = filteredNodes.find(n => 
-        n.id === focusNodeId || 
-        n.name === focusNodeId ||
-        n.aliases?.some(alias => alias === focusNodeId)
-      );
-      
-      if (nodeInFiltered) {
-        targetNodeId = nodeInFiltered.id;
-        setHighlightedNode(targetNodeId);
-        setSearchTerm(''); // Clear search when focusing externally
-      } else {
-        // Try to find by ID, name, or alias in all nodes and adjust filters
-        const node = allNodes.find(n => 
-          n.id === focusNodeId || 
-          n.name === focusNodeId ||
-          n.aliases?.some(alias => alias === focusNodeId)
-        );
-        if (node) {
-          // Reset filters to show this node
-          setImportanceFilter(0);
-          setSelectedPower('all');
-          if (node.isIsolated && !showIsolated) {
-            setShowIsolated(true);
-          }
-          targetNodeId = node.id;
-          setHighlightedNode(node.id);
-          setSearchTerm('');
-        } else {
-          // Node not found in the knowledge base
-          // This can happen when a related entity is mentioned but not extracted as a proper node
-          console.warn(`[NetworkGraph] Entity "${focusNodeId}" not found in graph nodes. It may be a generic term or an unextracted entity.`);
-          setNotFoundMessage(`"${focusNodeId}" 未在图谱中找到，可能是通用术语或未被提取的实体`);
-          // Auto-hide after 3 seconds
-          setTimeout(() => setNotFoundMessage(null), 3000);
-        }
-      }
-      
-      // Center view on the focused node after a short delay
-      // (allows time for filter changes to take effect if needed)
-      if (targetNodeId) {
-        const nodeIdToCenter = targetNodeId;
-        setTimeout(() => {
-          centerOnNode(nodeIdToCenter);
-        }, 100);
-      }
-      
-      onFocusNodeHandled?.();
-    }
-  }, [allNodes, centerOnNode, filteredNodes, focusNodeId, onFocusNodeHandled, showIsolated]);
-
-  useEffect(() => {
-    if (!svgRef.current || !containerRef.current || filteredNodes.length === 0) return;
-
-    // PERFORMANCE CRITICAL: Check if the data actually changed by comparing keys.
-    // This prevents simulation rebuild when only interactions (clicks, hovers) occur.
-    // Without this check, clicking a node would reset all node positions!
-    // See createDataKey() function for detailed explanation.
-    const currentDataKey = createDataKey(filteredNodes, filteredLinks);
-    if (currentDataKey === prevDataKeyRef.current && simulationRef.current) {
-      // Data hasn't changed, skip rebuilding the simulation
       return;
     }
-    prevDataKeyRef.current = currentDataKey;
-
-    // Stop previous simulation if exists
-    if (simulationRef.current) {
-      simulationRef.current.stop();
-      simulationRef.current = null;
+    if (pinnedNodeId) {
+      setHighlightedNode(pinnedNodeId);
+      return;
     }
+    if (!focusNodeId) setHighlightedNode(null);
+  }, [focusNodeId, pinnedNodeId, searchResult]);
 
-    const container = containerRef.current;
-    const width = container.clientWidth;
-    const height = 600;
+  const graphData = useMemo(() => {
+    if (!filteredNodes.length || !baseLinks.length) return { nodes: filteredNodes, links: [] as GraphLink[] };
+    if (graphMode === 'mainline' && primaryRole) {
+      const scope = new Set<string>([primaryRole.id]);
+      baseLinks.filter((link) => link.source === primaryRole.id || link.target === primaryRole.id).sort((a, b) => b.edgeScore - a.edgeScore).slice(0, 12 + Math.round(edgeDensity * 0.1)).forEach((link) => { scope.add(link.source); scope.add(link.target); });
+      const keptLinks = baseLinks.filter((link) => scope.has(link.source) && scope.has(link.target)).sort((a, b) => b.edgeScore - a.edgeScore).slice(0, Math.max(18, Math.round(baseLinks.length * (0.16 + edgeDensity / 160)))).map((link) => ({ ...link, isMainline: link.source === primaryRole.id || link.target === primaryRole.id }));
+      const ids = new Set<string>(); keptLinks.forEach((link) => { ids.add(link.source); ids.add(link.target); }); ids.add(primaryRole.id);
+      return { nodes: filteredNodes.filter((node) => ids.has(node.id) || (showIsolated && node.isIsolated)), links: keptLinks };
+    }
+    const sorted = [...baseLinks].sort((a, b) => b.edgeScore - a.edgeScore);
+    const keepCount = Math.max(filteredNodes.length - 1, Math.round(sorted.length * (0.16 + edgeDensity / 300)));
+    const perNodeCap = Math.max(2, 2 + Math.round(edgeDensity / 25));
+    const nodeCounts = new Map<string, number>();
+    const kept = new Map<string, GraphLink>();
+    filteredNodes.forEach((node) => {
+      const strongest = sorted.find((link) => link.source === node.id || link.target === node.id);
+      if (!strongest) return;
+      const key = strongest.source < strongest.target ? `${strongest.source}::${strongest.target}` : `${strongest.target}::${strongest.source}`;
+      if (kept.has(key)) return;
+      kept.set(key, strongest);
+      nodeCounts.set(strongest.source, (nodeCounts.get(strongest.source) ?? 0) + 1);
+      nodeCounts.set(strongest.target, (nodeCounts.get(strongest.target) ?? 0) + 1);
+    });
+    sorted.forEach((link) => {
+      if (kept.size >= keepCount) return;
+      const key = link.source < link.target ? `${link.source}::${link.target}` : `${link.target}::${link.source}`;
+      if (kept.has(key)) return;
+      if ((nodeCounts.get(link.source) ?? 0) >= perNodeCap || (nodeCounts.get(link.target) ?? 0) >= perNodeCap) return;
+      kept.set(key, link);
+      nodeCounts.set(link.source, (nodeCounts.get(link.source) ?? 0) + 1);
+      nodeCounts.set(link.target, (nodeCounts.get(link.target) ?? 0) + 1);
+    });
+    const keptLinks = Array.from(kept.values()).sort((a, b) => b.edgeScore - a.edgeScore);
+    const ids = new Set<string>(); keptLinks.forEach((link) => { ids.add(link.source); ids.add(link.target); });
+    return { nodes: filteredNodes.filter((node) => ids.has(node.id) || (showIsolated && node.isIsolated)), links: keptLinks };
+  }, [baseLinks, edgeDensity, filteredNodes, graphMode, primaryRole, showIsolated]);
 
-    // Clear previous content
+  const renderedNodes = graphData.nodes;
+  const renderedLinks = graphData.links;
+  const connectedLabelIds = useMemo(() => {
+    if (!activeEdgeNodeId) return new Set<string>();
+    const ids = new Set<string>([activeEdgeNodeId]);
+    renderedLinks.forEach((link) => {
+      const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+      const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+      if (sourceId === activeEdgeNodeId) ids.add(targetId);
+      if (targetId === activeEdgeNodeId) ids.add(sourceId);
+    });
+    return ids;
+  }, [activeEdgeNodeId, renderedLinks]);
+
+  const labelIds = useMemo(() => {
+    const ids = new Set<string>();
+    renderedNodes.forEach((node) => ids.add(node.id));
+    if (activeEdgeNodeId) {
+      connectedLabelIds.forEach((id) => ids.add(id));
+    }
+    if (primaryRole) ids.add(primaryRole.id);
+    if (focusNodeId) ids.add(focusNodeId);
+    if (highlightedNode) ids.add(highlightedNode);
+    return ids;
+  }, [activeEdgeNodeId, connectedLabelIds, focusNodeId, highlightedNode, primaryRole, renderedNodes]);
+
+  const centerOnNode = useCallback((nodeId: string) => {
+    if (!svgRef.current || !zoomRef.current || !containerRef.current) return;
+    const node = nodesRef.current.find((item) => item.id === nodeId);
+    if (!node || node.x == null || node.y == null) return;
+    const width = containerRef.current.clientWidth;
+    d3.select(svgRef.current).transition().duration(700).call(zoomRef.current.transform, d3.zoomIdentity.translate(width / 2 - node.x * 1.45, GRAPH_HEIGHT / 2 - node.y * 1.45).scale(1.45));
+  }, []);
+
+  useEffect(() => {
+    if (!focusNodeId) return;
+    const visible = renderedNodes.find((node) => node.id === focusNodeId || node.name === focusNodeId);
+    if (visible) {
+      setHighlightedNode(visible.id);
+      setSearchTerm('');
+      setTimeout(() => centerOnNode(visible.id), 100);
+      onFocusNodeHandled?.();
+      return;
+    }
+    const existing = allNodes.find((node) => node.id === focusNodeId || node.name === focusNodeId);
+    if (existing) {
+      setGraphMode('overview'); setEdgeDensity(65); setImportanceFilter(0); setSelectedPower('all');
+      if (existing.isIsolated) setShowIsolated(true);
+      setHighlightedNode(existing.id);
+      setTimeout(() => centerOnNode(existing.id), 180);
+    } else {
+      setNotFoundMessage(`“${focusNodeId}”当前没有进入关系图数据。`);
+      window.setTimeout(() => setNotFoundMessage(null), 2600);
+    }
+    onFocusNodeHandled?.();
+  }, [allNodes, centerOnNode, focusNodeId, onFocusNodeHandled, renderedNodes]);
+
+  useEffect(() => {
+    if (!svgRef.current || !containerRef.current || !renderedNodes.length) return;
+    const key = createDataKey(renderedNodes, renderedLinks);
+    if (key === prevKeyRef.current && simulationRef.current) return;
+    prevKeyRef.current = key;
+    simulationRef.current?.stop();
+
+    const width = containerRef.current.clientWidth;
+    const compact = renderedNodes.length >= 90;
+    const colorScale = d3.scaleOrdinal<string, string>(d3.schemeTableau10).domain([...new Set(renderedNodes.map((node) => node.clusterKey))]);
+    const clusterPositions = buildClusterPositions([...new Set(renderedNodes.map((node) => node.clusterKey))], width, GRAPH_HEIGHT);
+    const radiusMap = new Map(renderedNodes.map((node) => [node.id, buildNodeRadius(node, compact)]));
+    const seededNodes = renderedNodes.map((node, index) => {
+      const cluster = clusterPositions.get(node.clusterKey) ?? { x: width / 2, y: GRAPH_HEIGHT / 2 };
+      return { ...node, x: cluster.x + ((index % 6) - 3) * 16, y: cluster.y + (Math.floor(index / 6) % 6 - 3) * 14 };
+    });
+
     d3.select(svgRef.current).selectAll('*').remove();
-
-    const svg = d3
-      .select(svgRef.current)
-      .attr('width', width)
-      .attr('height', height)
-      .attr('viewBox', [0, 0, width, height]);
-
-    // Create a container group for zoom/pan
-    const g = svg.append('g');
-
-    // Add zoom behavior
-    const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.1, 4])
-      .on('zoom', (event) => {
-        g.attr('transform', event.transform);
-      });
-
+    const svg = d3.select(svgRef.current).attr('width', width).attr('height', GRAPH_HEIGHT).attr('viewBox', [0, 0, width, GRAPH_HEIGHT]);
+    const root = svg.append('g');
+    const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.32, 4.2]).on('zoom', (event) => root.attr('transform', event.transform));
     svg.call(zoom);
-    
-    // Store zoom ref for external centering functionality
     zoomRef.current = zoom;
+    svg.on('click', () => {
+      setPinnedNodeId(null);
+      setHighlightedNode(searchResultIdRef.current ?? focusNodeIdRef.current ?? null);
+      setTooltip(null);
+    });
+    svg.append('defs').append('marker').attr('id', 'network-arrowhead').attr('viewBox', '0 -5 10 10').attr('refX', 9).attr('refY', 0).attr('orient', 'auto').attr('markerWidth', 6).attr('markerHeight', 6).append('path').attr('d', 'M 0,-4 L 8,0 L 0,4 Z').attr('fill', '#7f98a0');
 
-    // Color scale for powers
-    const powers = [...new Set(filteredNodes.map((n) => n.power || '无'))];
-    const colorScale = d3.scaleOrdinal(d3.schemeTableau10).domain(powers);
+    const simulation = d3.forceSimulation<GraphNode>(seededNodes)
+      .force('link', d3.forceLink<GraphNode, d3.SimulationLinkDatum<GraphNode>>(renderedLinks as unknown as d3.SimulationLinkDatum<GraphNode>[]).id((node) => node.id).distance((link) => Math.max(80, (graphMode === 'mainline' ? 118 : 148) - ((link as never as GraphLink).edgeScore * 1.2))).strength((link) => Math.min(0.9, 0.15 + (link as never as GraphLink).edgeScore / 120)))
+      .force('charge', d3.forceManyBody().strength(graphMode === 'mainline' ? -(380 + renderedNodes.length * 4) : -(520 + renderedNodes.length * 6)))
+      .force('collision', d3.forceCollide<GraphNode>().radius((node) => (radiusMap.get(node.id) ?? 8) + (labelIds.has(node.id) ? 18 : 10)))
+      .force('x', d3.forceX<GraphNode>((node) => (clusterPositions.get(node.clusterKey) ?? { x: width / 2 }).x).strength(graphMode === 'mainline' ? 0.08 : 0.16))
+      .force('y', d3.forceY<GraphNode>((node) => (clusterPositions.get(node.clusterKey) ?? { y: GRAPH_HEIGHT / 2 }).y).strength(graphMode === 'mainline' ? 0.08 : 0.16))
+      .force('center', d3.forceCenter(width / 2, GRAPH_HEIGHT / 2).strength(0.04));
 
-    // Create force simulation
-    const simulation = d3
-      .forceSimulation<SimulationNode>(filteredNodes as SimulationNode[])
-      .force(
-        'link',
-        d3
-          .forceLink<SimulationNode, SimulationLink>(filteredLinks as unknown as SimulationLink[])
-          .id((d) => d.id)
-          .distance(120)
-      )
-      .force('charge', d3.forceManyBody().strength(-300))
-      .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(40));
-    
-    // Store simulation reference
     simulationRef.current = simulation;
-    
-    // Store nodes data ref for external access to node positions
-    nodesDataRef.current = filteredNodes as SimulationNode[];
+    nodesRef.current = seededNodes;
 
-    // Create arrow marker
-    svg
-      .append('defs')
-      .append('marker')
-      .attr('id', 'arrowhead')
-      .attr('viewBox', '-0 -5 10 10')
-      .attr('refX', 20)
-      .attr('refY', 0)
-      .attr('orient', 'auto')
-      .attr('markerWidth', 6)
-      .attr('markerHeight', 6)
-      .append('path')
-      .attr('d', 'M 0,-5 L 10,0 L 0,5')
-      .attr('fill', '#999');
-
-    // Draw links
-    const link = g
-      .append('g')
-      .selectAll('line')
-      .data(filteredLinks)
-      .enter()
-      .append('line')
-      .attr('stroke', '#999')
-      .attr('stroke-opacity', 0.6)
-      .attr('stroke-width', (d) => Math.min(d.weight, 5))
-      .attr('marker-end', 'url(#arrowhead)')
-      .style('cursor', 'pointer')
-      .on('click', (event, d) => {
+    const linkSelection = root.append('g').selectAll('line').data(renderedLinks).enter().append('line')
+      .attr('stroke', (link) => (link.isMainline ? '#7b1e1e' : '#7f98a0'))
+      .attr('stroke-opacity', (link) => (link.isMainline ? 0.68 : 0.24))
+      .attr('stroke-width', (link) => Math.min(5, 0.9 + link.edgeScore / 16))
+      .attr('marker-end', 'url(#network-arrowhead)')
+      .style('cursor', (link) => (isLinkConnectedToNode(link, activeEdgeNodeIdRef.current) ? 'pointer' : 'default'))
+      .style('pointer-events', (link) => (isLinkConnectedToNode(link, activeEdgeNodeIdRef.current) ? 'stroke' : 'none'))
+      .on('click', (event, link) => {
+        if (!isLinkConnectedToNode(link, activeEdgeNodeIdRef.current)) return;
         event.preventDefault();
         event.stopPropagation();
-        event.stopImmediatePropagation();
-        const linkData = d as RoleLinkUnified;
-        const sourceId = typeof linkData.source === 'object' ? (linkData.source as any).id : linkData.source;
-        const targetId = typeof linkData.target === 'object' ? (linkData.target as any).id : linkData.target;
-        onLinkClickRef.current?.(sourceId, targetId);
-      })
-      .on('mouseover', (event, d) => {
-        const linkData = d as RoleLinkUnified;
-        const sourceId = typeof linkData.source === 'object' ? (linkData.source as any).id : linkData.source;
-        const targetId = typeof linkData.target === 'object' ? (linkData.target as any).id : linkData.target;
-        const sourceNode = filteredNodes.find(n => n.id === sourceId);
-        const targetNode = filteredNodes.find(n => n.id === targetId);
-        setLinkTooltip({
-          x: event.pageX,
-          y: event.pageY,
-          content: linkData,
-          sourceName: sourceNode?.name || sourceId,
-          targetName: targetNode?.name || targetId,
-        });
-        d3.select(event.currentTarget)
-          .attr('stroke', '#8b4513')
-          .attr('stroke-opacity', 1)
-          .attr('stroke-width', Math.min(linkData.weight + 2, 8));
-      })
-      .on('mouseout', (event, d) => {
-        setLinkTooltip(null);
-        const linkData = d as RoleLinkUnified;
-        d3.select(event.currentTarget)
-          .attr('stroke', '#999')
-          .attr('stroke-opacity', 0.6)
-          .attr('stroke-width', Math.min(linkData.weight, 5));
+        onLinkClickRef.current?.(getGraphEndpointId(link.source as GraphEndpoint), getGraphEndpointId(link.target as GraphEndpoint));
       });
 
-    // Draw nodes
-    const node = g
-      .append('g')
-      .attr('class', 'nodes-container')
-      .selectAll('g')
-      .data(filteredNodes as SimulationNode[])
-      .enter()
-      .append('g')
-      .attr('class', 'node-group')
-      .style('cursor', 'pointer')
-      .call(
-        d3
-          .drag<SVGGElement, SimulationNode>()
-          .on('start', (event, d) => {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-          })
-          .on('drag', (event, d) => {
-            d.fx = event.x;
-            d.fy = event.y;
-          })
-          .on('end', (event, d) => {
-            if (!event.active) simulation.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-          })
-      )
-      .on('click', (_, d) => onNodeClickRef.current?.(d))
-      .on('mouseover', (event, d) => {
-        setTooltip({
-          x: event.pageX,
-          y: event.pageY,
-          content: d,
-        });
-        setHighlightedNode(d.id);
+    const dragBehavior = d3.drag<SVGGElement, GraphNode>()
+      .on('start', (event, node) => { if (!event.active) simulation.alphaTarget(0.22).restart(); node.fx = node.x; node.fy = node.y; })
+      .on('drag', (event, node) => { node.fx = event.x; node.fy = event.y; })
+      .on('end', (event, node) => { if (!event.active) simulation.alphaTarget(0); node.fx = null; node.fy = null; });
+
+    const nodeSelection = root.append('g').selectAll<SVGGElement, GraphNode>('g').data(seededNodes).enter().append('g').attr('class', 'node-group').style('cursor', 'pointer')
+      .call(dragBehavior as never)
+      .on('click', (event, node) => {
+        event.preventDefault();
+        event.stopPropagation();
+        setPinnedNodeId(node.id);
+        setHighlightedNode(node.id);
+        onNodeClickRef.current?.(node);
+      })
+      .on('mouseover', (event, node) => {
+        setTooltip({ x: event.pageX, y: event.pageY, node });
+        setHighlightedNode(node.id);
       })
       .on('mouseout', () => {
         setTooltip(null);
-        setHighlightedNode(searchResult ? searchResult.id : null);
+        setHighlightedNode(searchResultIdRef.current ?? pinnedNodeIdRef.current ?? focusNodeIdRef.current ?? null);
       });
 
-    // Node circles
-    node
-      .append('circle')
-      .attr('r', (d) => (d.isIsolated ? Math.min(6 + d.appearances * 1.2, 14) : Math.min(8 + d.appearances * 2, 20)))
-      .attr('fill', (d) => colorScale(d.power || '无'))
-      .attr('fill-opacity', (d) => (d.isIsolated ? 0.45 : 1))
-      .attr('stroke', (d) => (d.isIsolated ? '#c9b6a0' : '#fff'))
-      .attr('stroke-width', (d) => (d.isIsolated ? 1.5 : 2))
-      .attr('stroke-dasharray', (d) => (d.isIsolated ? '3,2' : null));
+    nodeSelection.append('circle')
+      .attr('r', (node) => radiusMap.get(node.id) ?? 8)
+      .attr('fill', (node) => colorScale(node.clusterKey))
+      .attr('fill-opacity', (node) => (node.isIsolated ? 0.32 : 0.92))
+      .attr('stroke', (node) => (node.id === primaryRole?.id ? '#7b1e1e' : '#ffffff'))
+      .attr('stroke-width', (node) => (node.id === primaryRole?.id ? 2.8 : node.isIsolated ? 1.3 : 1.9))
+      .attr('stroke-dasharray', (node) => (node.isIsolated ? '3,2' : null));
 
-    // Node labels
-    node
-      .append('text')
-      .attr('x', 0)
-      .attr('y', -15)
-      .attr('text-anchor', 'middle')
-      .style('font-size', '10px')
-      .style('fill', '#2c1810')
-      .text((d) => d.name);
+    nodeSelection.append('text')
+      .attr('class', 'node-label')
+      .attr('x', 0).attr('y', (node) => -(radiusMap.get(node.id) ?? 8) - 7).attr('text-anchor', 'middle')
+      .style('font-size', compact ? '9px' : '10px').style('font-weight', (node) => (node.id === primaryRole?.id ? '700' : '500'))
+      .style('fill', '#183441').style('paint-order', 'stroke').style('stroke', 'rgba(249,252,252,0.92)').style('stroke-width', '3px').style('stroke-linejoin', 'round')
+      .style('opacity', (node) => (labelIds.has(node.id) ? 1 : 0)).text((node) => node.name);
 
-    // Update positions on simulation tick
     simulation.on('tick', () => {
-      link
-        .attr('x1', (d) => (d.source as unknown as SimulationNode).x ?? 0)
-        .attr('y1', (d) => (d.source as unknown as SimulationNode).y ?? 0)
-        .attr('x2', (d) => (d.target as unknown as SimulationNode).x ?? 0)
-        .attr('y2', (d) => (d.target as unknown as SimulationNode).y ?? 0);
-
-      node.attr('transform', (d) => `translate(${d.x ?? 0}, ${d.y ?? 0})`);
+      linkSelection
+        .attr('x1', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).x1)
+        .attr('y1', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).y1)
+        .attr('x2', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).x2)
+        .attr('y2', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).y2);
+      nodeSelection.attr('transform', (node) => `translate(${node.x ?? 0}, ${node.y ?? 0})`);
     });
 
-    // Add legend
-    const legend = svg
-      .append('g')
-      .attr('class', 'legend')
-      .attr('transform', `translate(${width - 120}, 20)`);
+    return () => { simulation.stop(); simulationRef.current = null; };
+  }, [graphMode, primaryRole, renderedLinks, renderedNodes]);
 
-    powers.slice(0, 8).forEach((power, i) => {
-      const legendRow = legend.append('g').attr('transform', `translate(0, ${i * 20})`);
-
-      legendRow
-        .append('circle')
-        .attr('r', 6)
-        .attr('fill', colorScale(power));
-
-      legendRow
-        .append('text')
-        .attr('x', 12)
-        .attr('y', 4)
-        .style('font-size', '11px')
-        .style('fill', '#2c1810')
-        .text(power.length > 6 ? power.slice(0, 6) + '...' : power);
-    });
-
-    // Cleanup
-    return () => {
-      simulation.stop();
-      simulationRef.current = null;
-    };
-  }, [filteredNodes, filteredLinks]); // Re-run only when filtered data changes, not on callback changes
-
-  // Effect for highlighting
   useEffect(() => {
     if (!svgRef.current) return;
-    
     const svg = d3.select(svgRef.current);
-    const node = svg.selectAll('.node-group'); // Select only node groups, not legend
-    const link = svg.selectAll('line');
+    svg
+      .selectAll<SVGTextElement, GraphNode>('.node-label')
+      .style('opacity', (node) => (labelIds.has(node.id) ? 1 : 0));
+  }, [labelIds]);
 
-    if (highlightedNode) {
-      // Find connected nodes
-      const connectedNodeIds = new Set<string>();
-      connectedNodeIds.add(highlightedNode);
-      
-      filteredLinks.forEach(l => {
-        const sourceId = typeof l.source === 'object' ? (l.source as any).id : l.source;
-        const targetId = typeof l.target === 'object' ? (l.target as any).id : l.target;
-        
-        if (sourceId === highlightedNode) connectedNodeIds.add(targetId);
-        if (targetId === highlightedNode) connectedNodeIds.add(sourceId);
-      });
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const svg = d3.select(svgRef.current);
+    svg
+      .selectAll<SVGLineElement, GraphLink>('line')
+      .style('cursor', (link) => (isLinkConnectedToNode(link, activeEdgeNodeId) ? 'pointer' : 'default'))
+      .style('pointer-events', (link) => (isLinkConnectedToNode(link, activeEdgeNodeId) ? 'stroke' : 'none'));
+  }, [activeEdgeNodeId]);
 
-      // Dim unconnected nodes
-      node.style('opacity', (d: any) => d && d.id && connectedNodeIds.has(d.id) ? 1 : 0.1);
-      
-      // Dim unconnected links
-      link.style('opacity', (d: any) => {
-        if (!d) return 0.1;
-        const sourceId = typeof d.source === 'object' ? d.source?.id : d.source;
-        const targetId = typeof d.target === 'object' ? d.target?.id : d.target;
-        return (sourceId === highlightedNode || targetId === highlightedNode) ? 1 : 0.1;
-      });
-    } else {
-      // Reset opacity
-      node.style('opacity', (d: any) => (d?.isIsolated ? 0.55 : 1));
-      link.style('opacity', 1);
-    }
-  }, [highlightedNode, filteredLinks]);
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const svg = d3.select(svgRef.current);
+    const nodeSelection = svg.selectAll<SVGGElement, GraphNode>('.node-group');
+    const linkSelection = svg.selectAll<SVGLineElement, GraphLink>('line');
+    if (!highlightedNode) { nodeSelection.style('opacity', (node) => (node.isIsolated ? 0.58 : 1)); linkSelection.style('opacity', (link) => (link.isMainline ? 0.72 : 1)); return; }
+    const connected = new Set<string>([highlightedNode]);
+    renderedLinks.forEach((link) => {
+      const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+      const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+      if (sourceId === highlightedNode) connected.add(targetId);
+      if (targetId === highlightedNode) connected.add(sourceId);
+    });
+    nodeSelection.style('opacity', (node) => (connected.has(node.id) ? 1 : 0.12));
+    linkSelection.style('opacity', (link) => {
+      const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+      const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+      return sourceId === highlightedNode || targetId === highlightedNode ? 1 : 0.08;
+    });
+  }, [highlightedNode, renderedLinks]);
+
+  const renderedLinkedCount = renderedNodes.filter((node) =>
+    renderedLinks.some((link) => {
+      const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+      const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+      return sourceId === node.id || targetId === node.id;
+    }),
+  ).length;
+  const renderedIsolatedCount = renderedNodes.length - renderedLinkedCount;
 
   return (
-    <div ref={containerRef} className="w-full bg-white rounded-lg shadow-md p-4 relative">
-      <div className="flex flex-wrap justify-between items-center mb-4 gap-2">
-        <div>
-          <h3 className="text-lg font-bold text-[#2c1810]">人物关系网络图</h3>
-          <p className="text-sm text-gray-500 mt-1">
-            当前范围内共 {totalRoleCount} 人，其中 {linkedRoleCount} 人已形成关系边，
-            {Math.max(totalRoleCount - linkedRoleCount, 0)} 人暂为孤立人物。
-          </p>
-          <p className="text-xs text-[#8b4513] mt-1">
-            当前筛选后显示 {filteredNodes.length} 人，其中连边人物 {filteredLinkedRoleCount} 人，
-            孤立人物 {filteredIsolatedRoleCount} 人。
-          </p>
-          <p className="text-xs text-gray-500 mt-1">
-            重要度按当前范围内的关系边数量、边权和出场次数综合计算。
-          </p>
+    <div ref={containerRef} className="relative overflow-hidden rounded-[32px] border border-[rgba(49,86,98,0.12)] bg-white/90 p-5 shadow-[0_22px_60px_rgba(22,47,60,0.08)] md:p-6">
+      <div className="flex flex-col gap-4 border-b border-[rgba(49,86,98,0.1)] pb-5">
+        <div className="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
+          <div>
+            <h3 className="text-[1.55rem] font-semibold tracking-[0.02em] text-[var(--accent-deep)]">人物关系网络图</h3>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--text-secondary)]">全景关系适合看群像分布，主线关系适合围绕 {primaryRole?.name ?? PRIMARY_ROLE_FALLBACK} 拆主干互动。默认图只画骨干边，关系详情仍保留当前范围内的完整记录。</p>
+          </div>
+          <div className="grid min-w-[280px] grid-cols-3 gap-3 text-sm">
+            <div className="rounded-2xl border border-[rgba(49,86,98,0.12)] bg-[rgba(244,248,248,0.9)] px-4 py-3"><div className="text-[0.75rem] tracking-[0.08em] text-[var(--text-muted)]">知识库人物</div><div className="mt-1 text-2xl font-semibold text-[var(--accent-deep)]">{totalRoleCount}</div></div>
+            <div className="rounded-2xl border border-[rgba(49,86,98,0.12)] bg-[rgba(244,248,248,0.9)] px-4 py-3"><div className="text-[0.75rem] tracking-[0.08em] text-[var(--text-muted)]">当前可见人物</div><div className="mt-1 text-2xl font-semibold text-[var(--accent-deep)]">{renderedNodes.length}</div></div>
+            <div className="rounded-2xl border border-[rgba(49,86,98,0.12)] bg-[rgba(244,248,248,0.9)] px-4 py-3"><div className="text-[0.75rem] tracking-[0.08em] text-[var(--text-muted)]">当前渲染关系</div><div className="mt-1 text-2xl font-semibold text-[var(--accent-deep)]">{renderedLinks.length}</div></div>
+          </div>
         </div>
-        
-        <div className="flex flex-wrap gap-3 items-center">
-          {/* Search Input */}
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="搜索人物..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="px-3 py-1 border border-[#d4c5b5] rounded-md text-sm focus:outline-none focus:border-[#8b4513] w-32"
-            />
-            {searchResult && (
-              <div className="absolute right-2 top-1.5 text-green-600 text-xs">
-                ✓
-              </div>
-            )}
+        <div className="grid gap-3 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
+          <div className="flex flex-wrap items-center gap-3">
+            <label className="flex min-w-[180px] flex-1 items-center gap-2 rounded-full border border-[rgba(49,86,98,0.14)] bg-[rgba(244,248,248,0.9)] px-4 py-2 text-sm text-[var(--text-secondary)]"><span>搜索人物</span><input type="text" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} placeholder="输入姓名或别名" className="min-w-0 flex-1 bg-transparent text-[var(--accent-deep)] outline-none placeholder:text-[var(--text-muted)]" /></label>
+            <label className="flex items-center gap-2 rounded-full border border-[rgba(49,86,98,0.14)] bg-[rgba(244,248,248,0.9)] px-4 py-2 text-sm text-[var(--text-secondary)]"><span>阵营筛选</span><select value={selectedPower} onChange={(event) => setSelectedPower(event.target.value)} className="bg-transparent text-[var(--accent-deep)] outline-none"><option value="all">全部</option>{availablePowers.map((power) => <option key={power} value={power}>{power}</option>)}</select></label>
+            <label className="flex items-center gap-2 rounded-full border border-[rgba(49,86,98,0.14)] bg-[rgba(244,248,248,0.9)] px-4 py-2 text-sm text-[var(--text-secondary)]"><span>显示模式</span><select value={graphMode} onChange={(event) => setGraphMode(event.target.value as GraphMode)} className="bg-transparent text-[var(--accent-deep)] outline-none"><option value="overview">全景关系</option><option value="mainline">主线关系</option></select></label>
           </div>
-
-          {/* Power Filter */}
-          <div className="flex items-center gap-1 text-sm text-gray-600">
-            <span>阵营:</span>
-            <select
-              value={selectedPower}
-              onChange={(e) => setSelectedPower(e.target.value)}
-              className="px-2 py-1 border border-[#d4c5b5] rounded-md text-sm focus:outline-none focus:border-[#8b4513] bg-white"
-            >
-              <option value="all">全部</option>
-              {availablePowers.map(power => (
-                <option key={power} value={power}>{power}</option>
-              ))}
-            </select>
+          <div className="flex flex-wrap items-center justify-start gap-4 lg:justify-end">
+            <label className="flex items-center gap-3 text-sm text-[var(--text-secondary)]"><span>连线强度</span><input type="range" min="10" max="100" step="5" value={edgeDensity} onChange={(event) => setEdgeDensity(parseInt(event.target.value, 10))} className="w-28 accent-[var(--accent-strong)]" /><span className="w-10 text-right text-[var(--accent-deep)]">{edgeDensity}%</span></label>
+            <label className="flex items-center gap-3 text-sm text-[var(--text-secondary)]"><span>重要度</span><input type="range" min="0" max="100" step="5" value={importanceFilter} onChange={(event) => setImportanceFilter(parseInt(event.target.value, 10))} className="w-24 accent-[var(--accent-strong)]" /><span className="w-10 text-right text-[var(--accent-deep)]">{importanceFilter}%</span></label>
+            <label className="flex items-center gap-2 text-sm text-[var(--text-secondary)]"><input type="checkbox" checked={showIsolated} onChange={(event) => setShowIsolated(event.target.checked)} className="accent-[var(--accent-strong)]" /><span>显示孤立人物</span></label>
           </div>
-
-          {/* Importance Filter */}
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span>重要度:</span>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              step="5"
-              value={importanceFilter}
-              onChange={(e) => setImportanceFilter(parseInt(e.target.value))}
-              className="w-20 accent-[#8b4513]"
-            />
-            <span className="w-12 text-right">{importanceFilter}%</span>
-          </div>
-
-          <label className="flex items-center gap-2 text-sm text-gray-600">
-            <input
-              type="checkbox"
-              checked={showIsolated}
-              onChange={(e) => setShowIsolated(e.target.checked)}
-              className="accent-[#8b4513]"
-            />
-            <span>显示孤立人物</span>
-          </label>
+        </div>
+        <div className="grid gap-2 text-xs leading-6 text-[var(--text-muted)] md:grid-cols-3">
+          <div>当前范围共有 {totalRoleCount} 位人物，其中 {linkedRoleCount} 位已有关系记录。</div>
+          <div>当前图中保留 {renderedNodes.length} 位人物，连边人物 {renderedLinkedCount} 位，孤立人物 {renderedIsolatedCount} 位。</div>
+          <div>先点人物，再看关系；没有选中人物时，关系线不会抢占鼠标。</div>
         </div>
       </div>
 
-      <svg ref={svgRef} className="w-full" />
-      
-      {/* Toast notification for entity not found */}
-      {notFoundMessage && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-amber-100 border border-amber-400 text-amber-800 px-4 py-2 rounded-lg shadow-lg z-20 animate-fade-in">
-          <div className="flex items-center gap-2">
-            <span className="text-lg">⚠️</span>
-            <span className="text-sm">{notFoundMessage}</span>
-          </div>
-        </div>
-      )}
-      
-      {tooltip && (
-        <div
-          className="absolute bg-white border border-[#d4c5b5] rounded-lg shadow-lg p-3 z-10 w-80 max-w-[90vw] pointer-events-none break-words"
-          style={{
-            left: Math.max(8, Math.min(tooltip.x - 100, (containerRef.current?.clientWidth ?? 800) - 340)),
-            top: Math.max(8, Math.min(tooltip.y - 200, 400)),
-          }}
-        >
-          <h4 className="font-bold text-[#8b4513]">{tooltip.content.name}</h4>
-          {tooltip.content.isIsolated && (
-            <p className="text-xs text-amber-700 mt-1">当前范围内已识别，但暂未抽取到高置信关系边。</p>
-          )}
-          <p className="text-sm text-gray-600">阵营: {tooltip.content.power || '无'}</p>
-          <p className="text-sm mt-1 line-clamp-3 break-words">{tooltip.content.description}</p>
-          <p className="text-xs text-gray-500 mt-1">出现次数: {tooltip.content.appearances}</p>
-          <p className="text-xs text-[#8b4513] mt-1 font-medium">点击查看详情</p>
-        </div>
-      )}
+      <div className="relative mt-5 overflow-hidden rounded-[28px] border border-[rgba(49,86,98,0.1)] bg-[linear-gradient(180deg,rgba(250,252,252,0.98),rgba(242,247,247,0.96))]"><svg ref={svgRef} className="block w-full" /></div>
 
-      {linkTooltip && (
-        <div
-          className="absolute bg-white border border-[#8b4513] rounded-lg shadow-lg p-3 z-10 w-[28rem] max-w-[90vw] pointer-events-none break-words"
-          style={{
-            left: Math.max(8, Math.min(linkTooltip.x + 10, (containerRef.current?.clientWidth ?? 800) - 460)),
-            top: Math.max(8, Math.min(linkTooltip.y - 100, 400)),
-          }}
-        >
-          <h4 className="font-bold text-[#8b4513]">
-            {linkTooltip.sourceName} → {linkTooltip.targetName}
-          </h4>
-          <p className="text-sm text-gray-700 mt-1">
-            <span className="font-medium">主要行动:</span> {linkTooltip.content.action}
-          </p>
-          <div className="text-sm mt-1">
-            <span className="font-medium text-gray-700">行动类型:</span>
-            <div className="flex flex-wrap gap-1 mt-1">
-              {linkTooltip.content.actionTypes?.slice(0, 5).map((type, i) => (
-                <span key={i} className="px-2 py-0.5 bg-[#f5f0e8] text-[#8b4513] rounded text-xs">
-                  {type}
-                </span>
-              ))}
-              {linkTooltip.content.actionTypes && linkTooltip.content.actionTypes.length > 5 && (
-                <span className="text-xs text-gray-500">
-                  +{linkTooltip.content.actionTypes.length - 5}更多
-                </span>
-              )}
-            </div>
-          </div>
-          <p className="text-xs text-gray-500 mt-2">
-            互动次数: {linkTooltip.content.weight}
-          </p>
-          {linkTooltip.content.timeText && (
-            <p className="text-xs text-gray-500">首次互动: {linkTooltip.content.timeText}</p>
-          )}
-          <p className="text-xs text-[#8b4513] mt-2 font-medium">点击查看详细记录</p>
-        </div>
-      )}
+      {notFoundMessage && <div className="absolute left-1/2 top-24 z-20 -translate-x-1/2 rounded-full border border-[rgba(123,30,30,0.16)] bg-[rgba(255,248,246,0.98)] px-4 py-2 text-sm text-[#7b1e1e] shadow-lg">{notFoundMessage}</div>}
+
+      {tooltip && <div className="pointer-events-none absolute z-20 w-[320px] max-w-[92vw] rounded-[22px] border border-[rgba(49,86,98,0.12)] bg-white/96 p-4 shadow-[0_18px_42px_rgba(22,47,60,0.18)]" style={{ left: Math.max(12, Math.min(tooltip.x - 120, (containerRef.current?.clientWidth ?? 900) - 340)), top: Math.max(12, Math.min(tooltip.y - 220, GRAPH_HEIGHT - 220)) }}><div className="flex items-start justify-between gap-3"><div><h4 className="text-lg font-semibold text-[var(--accent-deep)]">{tooltip.node.name}</h4><p className="mt-1 text-sm text-[var(--text-secondary)]">{tooltip.node.power || '未归类'}</p></div><span className="rounded-full bg-[rgba(183,59,59,0.1)] px-2.5 py-1 text-xs font-medium text-[var(--accent-strong)]">重要度 {Math.round(tooltip.node.importanceScore)}</span></div><p className="mt-3 text-sm leading-6 text-[var(--text-secondary)]">{tooltip.node.description}</p><div className="mt-3 grid grid-cols-3 gap-2 text-xs text-[var(--text-muted)]"><div className="rounded-2xl bg-[rgba(244,248,248,0.92)] px-3 py-2">出场 {tooltip.node.appearances}</div><div className="rounded-2xl bg-[rgba(244,248,248,0.92)] px-3 py-2">关系 {tooltip.node.linkCount}</div><div className="rounded-2xl bg-[rgba(244,248,248,0.92)] px-3 py-2">权重 {Math.round(tooltip.node.weightSum)}</div></div><p className="mt-3 text-xs text-[var(--text-muted)]">点击可查看该人物在当前范围内的关系列表。</p></div>}
     </div>
   );
 }

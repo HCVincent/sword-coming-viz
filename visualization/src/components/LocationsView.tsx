@@ -4,14 +4,9 @@ import type { UnifiedLocation } from '../types/unified';
 interface LocationsViewProps {
   locations: UnifiedLocation[];
   onLocationClick?: (location: UnifiedLocation) => void;
-  onNavigateToMap?: (location: UnifiedLocation) => void;
 }
 
-export function LocationsView({
-  locations,
-  onLocationClick,
-  onNavigateToMap,
-}: LocationsViewProps) {
+export function LocationsView({ locations, onLocationClick }: LocationsViewProps) {
   const [searchQuery, setSearchQuery] = useState('');
 
   const { withCoords, withoutCoords } = useMemo(() => {
@@ -30,80 +25,71 @@ export function LocationsView({
     return locations.filter((loc) => {
       if (loc.canonical_name.toLowerCase().includes(query)) return true;
       if (loc.modern_name?.toLowerCase().includes(query)) return true;
-      if (loc.all_names?.some((n) => n.toLowerCase().includes(query))) return true;
+      if (loc.all_names?.some((name) => name.toLowerCase().includes(query))) return true;
       if (loc.description?.toLowerCase().includes(query)) return true;
       return false;
     });
   }, [locations, searchQuery]);
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-bold text-[#2c1810]">地点列表</h3>
-        <div className="text-sm text-gray-500">
-          {withCoords.length} 个有坐标 / {withoutCoords.length} 个无坐标
+    <div className="view-shell">
+      <div className="view-header">
+        <div>
+          <h3 className="view-title">地点</h3>
+          <p className="view-copy">按叙事承载能力优先排列地点，先抓高频场域，再进入人物、事件和地点详情。</p>
+        </div>
+        <div className="view-toolbar">
+          <input
+            type="text"
+            placeholder="搜索地点"
+            value={searchQuery}
+            onChange={(event) => setSearchQuery(event.target.value)}
+            className="search-input md:w-72"
+          />
+          <div className="float-stat">
+            {withCoords.length} 个有坐标地点 / {withoutCoords.length} 个无坐标地点
+          </div>
         </div>
       </div>
 
-      {/* Search input */}
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="搜索地点..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full px-3 py-2 border border-[#d4c5b5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8b4513] focus:border-transparent"
-        />
-        {searchQuery && (
-          <div className="text-xs text-gray-500 mt-1">
-            找到 {filteredLocations.length} 个结果
-          </div>
-        )}
-      </div>
-
-      <div className="space-y-2 max-h-[520px] overflow-y-auto">
+      <div className="view-grid max-h-[620px] overflow-y-auto pr-1">
         {filteredLocations.map((loc) => (
-          <div
+          <button
             key={loc.id}
-            className="p-3 border border-[#d4c5b5] rounded-lg hover:bg-[#faf8f5] cursor-pointer transition-colors"
+            type="button"
+            className="detail-card text-left hover:border-[var(--accent-deep)]"
             onClick={() => onLocationClick?.(loc)}
           >
-            <div className="flex justify-between items-start">
-              <h4 className="font-semibold text-[#8b4513]">{loc.canonical_name}</h4>
-              <div className="flex gap-1 items-center">
-                {loc.location_type && (
-                  <span className="text-xs px-2 py-1 bg-[#d4a574] text-white rounded">{loc.location_type}</span>
-                )}
-                {loc.coordinates && onNavigateToMap && (
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onNavigateToMap(loc);
-                    }}
-                    className="text-xs px-2 py-1 bg-[#faf8f5] border border-[#d4c5b5] text-[#8b4513] rounded hover:bg-white transition-colors"
-                    title="在地图中查看"
-                  >
-                    地图
-                  </button>
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <div className="text-lg font-semibold text-[var(--accent-deep)]">{loc.canonical_name}</div>
+                {loc.modern_name && (
+                  <div className="mt-1 text-sm text-[var(--text-muted)]">现代地名：{loc.modern_name}</div>
                 )}
               </div>
+              <div className="chip-wrap">
+                {loc.location_type && <span className="pill-chip pill-chip--strong">{loc.location_type}</span>}
+              </div>
             </div>
-            {loc.modern_name && <p className="text-sm text-gray-500 mt-1">今：{loc.modern_name}</p>}
-            {loc.description && <p className="text-sm text-gray-700 mt-1 line-clamp-2">{loc.description}</p>}
-            <div className="mt-2 flex flex-wrap gap-2 text-xs text-gray-500">
-              <span>关联人物 {loc.associated_entities?.length ?? 0}</span>
-              <span>关联事件 {loc.associated_events?.length ?? 0}</span>
+
+            {loc.description && <p className="detail-text mt-3">{loc.description}</p>}
+
+            <div className="dashboard-meta-row mt-4">
+              <span className="dashboard-pill">关联人物 {loc.associated_entities?.length ?? 0}</span>
+              <span className="dashboard-pill">关联事件 {loc.associated_events?.length ?? 0}</span>
+              <span className="dashboard-pill">总提及 {loc.total_mentions}</span>
             </div>
+
             {(loc.associated_entities?.length ?? 0) > 0 && (
-              <div className="mt-2 flex flex-wrap gap-2">
-                {loc.associated_entities.slice(0, 4).map((name) => (
-                  <span key={`${loc.id}-${name}`} className="px-2 py-1 rounded-full bg-[#faf8f5] text-xs text-[#8b4513]">
+              <div className="chip-wrap mt-4">
+                {loc.associated_entities.slice(0, 5).map((name) => (
+                  <span key={`${loc.id}-${name}`} className="pill-chip">
                     {name}
                   </span>
                 ))}
               </div>
             )}
-          </div>
+          </button>
         ))}
       </div>
     </div>

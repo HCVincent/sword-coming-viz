@@ -40,24 +40,39 @@
         ],
         "juan_index": 195,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "可在剑修曹峻那边的感知中，陈平安的神魂剧烈震荡，江水滔滔，一叶扁舟，随时都有倾覆的危险。 火红狐狸站在曹峻肩头，调侃道：“那块剑胚虽然不知来历，但是可以确定，品秩极高，便是我都要眼馋，你不过是吃了点小亏，就放弃？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 稚圭与陈平安讥讽",
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "稚圭",
-          "陈平安"
+          "曹峻",
+          "陈平安",
+          "稚圭"
         ],
         "description": "在隔着一堵院墙的稚圭眼中，陈平安坐在小板凳上，摇摇晃晃，像是在打瞌睡。 可在剑修曹峻那边的感知中，陈平安的神魂剧烈震荡，江水滔滔，一叶扁舟，随时都有倾覆的危险。 火红狐狸站在曹峻肩头，调侃道：“那块剑胚虽然不知来历，但是可以确定，品秩极高，便是我都要眼馋，你不过是吃了点小亏，就放弃？",
         "background": "",
-        "significance": "推动稚圭与陈平安之间的讥讽关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动曹峻与陈平安之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -71,21 +86,58 @@
         "segment_index": 1
       }
     ],
-    "relations": [
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.847008",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-2-0": {
+    "juan_index": 195,
+    "segment_index": 2,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "”",
+      "火红狐狸蛊惑人心道：“事不过三，还有一次机会，搏一搏，马无野草不肥，人无横财不富，你曹峻既然早年跌了个大跟头，给人把你的心湖搅成了一滩烂泥塘，害你修为阻滞不前，如今不剑走偏锋，怎么成大事？",
+      "”",
+      "曹峻默不作声，只是低头嗑瓜子，眼神晦暗。",
+      "曹峻自出生起，就享有大名，本是南婆娑洲百年一遇的大剑仙胚子，在心湖之内，先天生成的一缕缕纯粹剑气，亭亭玉立，恰似满湖荷花，只需要等待含苞待放的一天。",
+      "只是后来遭遇一场变故，被一位巅峰强者硬生生打烂心湖，剑气凋零得七七八八，沦为枯荷。"
+    ],
+    "entities": [
       {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "火红狐狸蛊惑人心道：“事不过三，还有一次机会，搏一搏，马无野草不肥，人无横财不富，你曹峻既然早年跌了个大跟头，给人把你的心湖搅成了一滩烂泥塘，害你修为阻滞不前，如今不剑走偏锋，怎么成大事？ 曹峻默不作声，只是低头嗑瓜子，眼神晦暗。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 195,
+        "segment_index": 2
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻等待",
         "time": null,
-        "from_roles": [
-          "稚圭"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "讥讽",
-        "context": "在隔着一堵院墙的稚圭眼中，陈平安坐在小板凳上，摇摇晃晃，像是在打瞌睡。 可在剑修曹峻那边的感知中，陈平安的神魂剧烈震荡，江水滔滔，一叶扁舟，随时都有倾覆的危险。 火红狐狸站在曹峻肩头，调侃道：“那块剑胚虽然不知来历，但是可以确定，品秩极高，便是我都要眼馋，你不过是吃了点小亏，就放弃？ 这可不像你曹峻的行事风格。 ” 曹峻往隔壁院子丢出瓜子壳，摇头道：“不抢了，老曹说得对，近期宜静不宜动，人死卵朝天，命没了，一切白搭。",
-        "result": null,
-        "event_name": "第三卷金错刀 第一百九十五章 镇剑楼 · 稚圭与陈平安讥讽",
         "location": null,
-        "is_commentary": false,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "火红狐狸蛊惑人心道：“事不过三，还有一次机会，搏一搏，马无野草不肥，人无横财不富，你曹峻既然早年跌了个大跟头，给人把你的心湖搅成了一滩烂泥塘，害你修为阻滞不前，如今不剑走偏锋，怎么成大事？ 曹峻默不作声，只是低头嗑瓜子，眼神晦暗。 曹峻自出生起，就享有大名，本是南婆娑洲百年一遇的大剑仙胚子，在心湖之内，先天生成的一缕缕纯粹剑气，亭亭玉立，恰似满湖荷花，只需要等待含苞待放的一天。",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键等待节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段2",
         "sentence_indexes_in_segment": [
           0,
           1,
@@ -95,10 +147,139 @@
           5
         ],
         "juan_index": 195,
-        "segment_index": 1
+        "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.999590",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.847008",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-3-0": {
+    "juan_index": 195,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "从此曹峻就沦为整座南婆娑洲的笑柄，昔年被他远远抛在身后的同辈剑道天才，如今一个个超越曹峻。",
+      "火红狐狸哀叹一声，用爪子拍了拍曹峻的脑袋，“可怜的娃。",
+      "剑道根基崩碎，前程毁了，这么多年，就连跟老天爷掰手腕的心气都没有了。",
+      "”",
+      "曹峻略微讶异，扭头望向少年祖宅，“这家伙心性很不错啊，之前竟然半点看不出，竟然给他找到了自己的方便法门。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "从此曹峻就沦为整座南婆娑洲的笑柄，昔年被他远远抛在身后的同辈剑道天才，如今一个个超越曹峻。 火红狐狸哀叹一声，用爪子拍了拍曹峻的脑袋，“可怜的娃。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          4
+        ],
+        "juan_index": 195,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "从此曹峻就沦为整座南婆娑洲的笑柄，昔年被他远远抛在身后的同辈剑道天才，如今一个个超越曹峻。 火红狐狸哀叹一声，用爪子拍了拍曹峻的脑袋，“可怜的娃。 曹峻略微讶异，扭头望向少年祖宅，“这家伙心性很不错啊，之前竟然半点看不出，竟然给他找到了自己的方便法门。",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.848011",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-4-0": {
+    "juan_index": 195,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "世间很多事情，对于见多识广的山上神仙而言，不会吓人，但一样会觉得有意思。",
+      "火红狐狸亦是微微惊愕，一个蹦跶，跳到了曹峻脑袋上，伸长脖子望去，凝神观摩少年与剑胚在体内角斗的气象，轻声道：“嗯，类似佛家的拴马柱，帮着少年的神魂小舟，起到了船锚的作用。",
+      "这少年身躯破败，缝缝补补，能够走到这一步，殊为不易。",
+      "但是能够降伏那块剑胚，还不够。",
+      "曹峻，你在被人坑害之前，太过顺遂，之后又太过坎坷，说不定少年今天的经历，会成为你修行路上的一点启发……”",
+      "曹峻不再微笑示人，收敛了全部笑容，脸色凝重起来，"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "火红狐狸亦是微微惊愕，一个蹦跶，跳到了曹峻脑袋上，伸长脖子望去，凝神观摩少年与剑胚在体内角斗的气象，轻声道：“嗯，类似佛家的拴马柱，帮着少年的神魂小舟，起到了船锚的作用。 曹峻，你在被人坑害之前，太过顺遂，之后又太过坎坷，说不定少年今天的经历，会成为你修行路上的一点启发……”",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "火红狐狸亦是微微惊愕，一个蹦跶，跳到了曹峻脑袋上，伸长脖子望去，凝神观摩少年与剑胚在体内角斗的气象，轻声道：“嗯，类似佛家的拴马柱，帮着少年的神魂小舟，起到了船锚的作用。 曹峻，你在被人坑害之前，太过顺遂，之后又太过坎坷，说不定少年今天的经历，会成为你修行路上的一点启发……” 曹峻不再微笑示人，收敛了全部笑容，脸色凝重起来，",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.848011",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -118,7 +299,21 @@
       "剑胚明显刚刚生出灵性，不晓得运用自身蕴含的天赋神通，否则少年支撑不到这个时候。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "这一路远游，从气象万千的南婆娑洲，赶到蛮夷之地的东宝瓶洲，曹峻一路上反而收益颇丰，点点滴滴，皆是裨益。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 195,
+        "segment_index": 5
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -127,7 +322,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹峻"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -137,13 +334,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 宝瓶洲迁移",
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻在宝瓶洲迁移",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
+        "participants": [
+          "曹峻"
+        ],
         "description": "这一路远游，从气象万千的南婆娑洲，赶到蛮夷之地的东宝瓶洲，曹峻一路上反而收益颇丰，点点滴滴，皆是裨益。 修行，天赋大小，好比祖师爷赏饭吃的那只碗，即便有些人的碗很大，可如果里头盛放的米饭太少，还是吃不饱的惨淡光景，成就自然有限。 与剑胚的角力过程当中，少年虽然心智坚韧，又有船锚帮着沉下心，不至于让神魂随波逐流，可是剑胚的精气神实在太过鼎盛，气势汹汹，横冲直撞，是一力降十会的蛮横路数，",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键迁移场景。",
+        "significance": "对应曹峻在叙事中的关键迁移节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段5",
         "sentence_indexes_in_segment": [
@@ -159,7 +358,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.000594",
+    "extracted_at": "2026-03-25T17:27:37.848011",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-6-0": {
+    "juan_index": 195,
+    "segment_index": 6,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "曹峻虽然修为不如头顶狐魅，可是隔行如隔山，他作为曾经有望登顶的剑修，自有其独到眼光，“未必。",
+      "”",
+      "火红狐狸惊讶出声：“咦？",
+      "那少年体内，有三座好深的城府，难道还是个不错的剑修胚子？",
+      "不对不对，应该是后天开凿而成，不过浑然天成，好大的手笔，难怪会让我看走了眼。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻虽然修为不如头顶狐魅，可是隔行如隔山，他作为曾经有望登顶的剑修，自有其独到眼光，“未必。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 6
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻虽然修为不如头顶狐魅，可是隔行如隔山，他作为曾经有望登顶的剑修，自有其独到眼光，“未必。 ” 火红狐狸惊讶出声：“咦？",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段6",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 6
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.848011",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -179,7 +440,22 @@
       "曹峻点点头，“是要夹着尾巴做人。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "火红狐狸轻轻叹息，“这么个不起眼的少年，都有不容小觑的古怪，曹峻，你还是乖乖听老王八蛋的，最近别折腾了，这座破碎的骊珠洞天，虽是螺蛳壳里做道场，可藏龙卧虎，行事确实不宜太过嚣张。 曹峻点点头，“是要夹着尾巴做人。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 195,
+        "segment_index": 7
+      }
+    ],
     "locations": [
       {
         "name": "骊珠洞天",
@@ -188,7 +464,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹峻"
+        ],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -198,13 +476,15 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 骊珠洞天剧情推进",
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
-        "participants": [],
-        "description": "火红狐狸轻轻叹息，“这么个不起眼的少年，都有不容小觑的古怪，曹峻，你还是乖乖听老王八蛋的，最近别折腾了，这座破碎的骊珠洞天，虽是螺蛳壳里做道场，可藏龙卧虎，行事确实不宜太过嚣张。 城府深沉，多是世俗说法，形容某人深谋远虑，略带贬义。 可是在山上，却是很大的褒奖，窍穴如城池府邸，自然是越高越大越壮观。",
+        "participants": [
+          "曹峻"
+        ],
+        "description": "火红狐狸轻轻叹息，“这么个不起眼的少年，都有不容小觑的古怪，曹峻，你还是乖乖听老王八蛋的，最近别折腾了，这座破碎的骊珠洞天，虽是螺蛳壳里做道场，可藏龙卧虎，行事确实不宜太过嚣张。 曹峻点点头，“是要夹着尾巴做人。 城府深沉，多是世俗说法，形容某人深谋远虑，略带贬义。",
         "background": "",
-        "significance": "对应骊珠洞天相关的关键剧情推进场景。",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段7",
         "sentence_indexes_in_segment": [
@@ -220,7 +500,285 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.000594",
+    "extracted_at": "2026-03-25T17:27:37.848011",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-8-0": {
+    "juan_index": 195,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "火红狐狸气恼得一脚踩在曹峻脑袋上，“养不熟的小王八蛋，好心提醒你，怎么还骂人呢！",
+      "”",
+      "少年的气息逐渐趋于稳定，占据上风的剑胚不知为何，突然鸣金收兵，在一座巍峨气府内安静游曳。",
+      "曹峻不再偷窥那边的景象，促狭笑道：“听说你有个妹妹叫青婴，跟你都是狐族老祖之一，有希望生出第九条尾巴，老曹垂涎她的美貌很多年了，真的很漂亮吗？",
+      "”",
+      "火红狐狸提起自己的尾巴，当做扇子轻轻扇动清风，呲牙道：“好看个屁，长了一张死人脸，从小就不爱笑，还眼高于顶，一看就知道是个没福气的。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "火红狐狸气恼得一脚踩在曹峻脑袋上，“养不熟的小王八蛋，好心提醒你，怎么还骂人呢！ 曹峻不再偷窥那边的景象，促狭笑道：“听说你有个妹妹叫青婴，跟你都是狐族老祖之一，有希望生出第九条尾巴，老曹垂涎她的美貌很多年了，真的很漂亮吗？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 195,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "火红狐狸气恼得一脚踩在曹峻脑袋上，“养不熟的小王八蛋，好心提醒你，怎么还骂人呢！ 曹峻不再偷窥那边的景象，促狭笑道：“听说你有个妹妹叫青婴，跟你都是狐族老祖之一，有希望生出第九条尾巴，老曹垂涎她的美貌很多年了，真的很漂亮吗？ ”",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 8
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.848011",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-9-0": {
+    "juan_index": 195,
+    "segment_index": 9,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "就老王八蛋那种眼光，哪怕是头母猪，只要是腚大的，都觉得美若天仙。",
+      "”",
+      "曹峻犹豫了一下，轻声问道：“听说她在那座雄镇楼附近，徘徊百年，难道是希冀着成为那个家伙的侍妾？",
+      "”",
+      "火红狐狸松开尾巴，捧腹大笑，仿佛听到了天底下最滑稽的笑话，“白老爷会看上她？",
+      "白老爷作为所有天下，存世最久的大妖之王之一，曾经走遍了两座天下的角角落落，什么雌的母的没看到过？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻犹豫了一下，轻声问道：“听说她在那座雄镇楼附近，徘徊百年，难道是希冀着成为那个家伙的侍妾？",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 195,
+        "segment_index": 9
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "曹峻犹豫了一下，轻声问道：“听说她在那座雄镇楼附近，徘徊百年，难道是希冀着成为那个家伙的侍妾？ 就老王八蛋那种眼光，哪怕是头母猪，只要是腚大的，都觉得美若天仙。 ”",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段9",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 9
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.848011",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-10-0": {
+    "juan_index": 195,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "会看上那么个稀拉平常的小狐狸？",
+      "”",
+      "镇海楼矗立于婆娑洲的南海之滨，而曹氏刚好是看门人之一，所以曹峻知晓诸多内幕。",
+      "火红狐狸嗓音低沉，“三教圣人，待我们白老爷不公！",
+      "分明是白老爷帮着……”",
+      "屋内曹曦暴喝道：“臭婆娘找死？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "镇海楼矗立于婆娑洲的南海之滨，而曹氏刚好是看门人之一，所以曹峻知晓诸多内幕。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 195,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "屋内曹曦暴喝道：“臭婆娘找死？",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻与曹曦剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻",
+          "曹曦"
+        ],
+        "description": "镇海楼矗立于婆娑洲的南海之滨，而曹氏刚好是看门人之一，所以曹峻知晓诸多内幕。 屋内曹曦暴喝道：“臭婆娘找死？ 会看上那么个稀拉平常的小狐狸？",
+        "background": "",
+        "significance": "推动曹峻与曹曦之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.849015",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-11-0": {
+    "juan_index": 195,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "还不闭嘴！",
+      "”",
+      "火红狐狸猛然回神，自知失言，竟是仰头望向天空，双手合十，鞠躬弯腰，像是在虔诚地作揖赔罪，躲也不躲，任由身躯皮囊被曹曦弹指一缕剑气给炸裂。",
+      "“二十个字，乖乖挨罚！",
+      "”",
+      "曹曦接连使出二十缕凌厉剑气，火红狐狸一次都没有躲避，到最后，曹峻双手抱住奄奄一息的它，走回屋子。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "火红狐狸猛然回神，自知失言，竟是仰头望向天空，双手合十，鞠躬弯腰，像是在虔诚地作揖赔罪，躲也不躲，任由身躯皮囊被曹曦弹指一缕剑气给炸裂。 曹曦接连使出二十缕凌厉剑气，火红狐狸一次都没有躲避，到最后，曹峻双手抱住奄奄一息的它，走回屋子。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹曦接连使出二十缕凌厉剑气，火红狐狸一次都没有躲避，到最后，曹峻双手抱住奄奄一息的它，走回屋子。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹曦与曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "火红狐狸猛然回神，自知失言，竟是仰头望向天空，双手合十，鞠躬弯腰，像是在虔诚地作揖赔罪，躲也不躲，任由身躯皮囊被曹曦弹指一缕剑气给炸裂。 曹曦接连使出二十缕凌厉剑气，火红狐狸一次都没有躲避，到最后，曹峻双手抱住奄奄一息的它，走回屋子。 还不闭嘴！",
+        "background": "",
+        "significance": "推动曹曦与曹峻之间的剧情推进关系。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.849015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -243,6 +801,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦仍是怒火未消，指着曹峻怀中的狐狸破口大骂道：“找死就往阮邛的剑炉一跳，阮邛还能念你一点好，别在这边瞎嚷嚷，连累我曹氏跟你一起陪葬！",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹曦仍是怒火未消，指着曹峻怀中的狐狸破口大骂道：“找死就往阮邛的剑炉一跳，阮邛还能念你一点好，别在这边瞎嚷嚷，连累我曹氏跟你一起陪葬！",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
@@ -260,16 +844,22 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 阮邛剧情推进",
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹曦与曹峻同行",
         "time": null,
         "location": null,
         "participants": [
+          "曹曦",
+          "曹峻",
           "阮邛"
         ],
         "description": "曹曦仍是怒火未消，指着曹峻怀中的狐狸破口大骂道：“找死就往阮邛的剑炉一跳，阮邛还能念你一点好，别在这边瞎嚷嚷，连累我曹氏跟你一起陪葬！ 天大地大，三位教主可以不计较，那么他们座下的弟子门生呢，不说其它，只说倒悬山的主人，脾气如何，你不知道？ ！",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动曹曦与曹峻之间的同行关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段12",
         "sentence_indexes_in_segment": [
           0,
@@ -283,8 +873,69 @@
         "segment_index": 12
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.001597",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "曹峻"
+        ],
+        "action": "同行",
+        "context": "曹曦仍是怒火未消，指着曹峻怀中的狐狸破口大骂道：“找死就往阮邛的剑炉一跳，阮邛还能念你一点好，别在这边瞎嚷嚷，连累我曹氏跟你一起陪葬！",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹曦与曹峻同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "同行",
+        "context": "曹曦仍是怒火未消，指着曹峻怀中的狐狸破口大骂道：“找死就往阮邛的剑炉一跳，阮邛还能念你一点好，别在这边瞎嚷嚷，连累我曹氏跟你一起陪葬！",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹曦与曹峻同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 12
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "曹峻"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "同行",
+        "context": "曹曦仍是怒火未消，指着曹峻怀中的狐狸破口大骂道：“找死就往阮邛的剑炉一跳，阮邛还能念你一点好，别在这边瞎嚷嚷，连累我曹氏跟你一起陪葬！",
+        "result": null,
+        "event_name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹曦与曹峻同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 12
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.849015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -304,7 +955,36 @@
       "曹曦骤然停下，眼神阴沉，死死盯住这个没了笑脸的子孙。",
       "曹曦一脸嫌弃厌恶，挥袖道：“滚去告诉那个叫曹茂的小崽子，让他别跟袁氏一般见识，米粒大小的眼界，只盯着大骊一座庙堂的得失，一群废物，怎么不去死！"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻轻声道：“差不多就可以了。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "没有它，就没有你曹曦的今天。 曹曦骤然停下，眼神阴沉，死死盯住这个没了笑脸的子孙。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 13
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -315,7 +995,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "曹曦"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -325,13 +1007,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 大骊剧情推进",
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹曦与曹峻在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "曹曦一脸嫌弃厌恶，挥袖道：“滚去告诉那个叫曹茂的小崽子，让他别跟袁氏一般见识，米粒大小的眼界，只盯着大骊一座庙堂的得失，一群废物，怎么不去死！ 曹峻轻声道：“差不多就可以了。 没有它，就没有你曹曦的今天。",
+        "participants": [
+          "曹曦",
+          "曹峻"
+        ],
+        "description": "曹峻轻声道：“差不多就可以了。 没有它，就没有你曹曦的今天。 曹曦骤然停下，眼神阴沉，死死盯住这个没了笑脸的子孙。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "在大骊推动曹曦与曹峻之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段13",
         "sentence_indexes_in_segment": [
@@ -347,7 +1032,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.001597",
+    "extracted_at": "2026-03-25T17:27:37.849015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -367,7 +1052,34 @@
       "曾几何时，这里有个病秧子老人，一年到头躺在光线昏暗的屋子里，有个不孝顺的烂酒鬼汉子，一天到晚都在头疼以后办白事的开销，有个嚅嚅喏喏毫无主见的妇人，起早摸黑，既要做着家务事，还要忙着地里活，三十岁的年龄，就比泥瓶巷其她四十岁的女子还要显老了。",
       "但是在那个时候，有个性情顽劣的寒酸少年，天不怕地不怕，每天都嘻嘻哈哈，书也不读，事也不做，就是做着白日梦，总觉得自己迟早有一天，会在福禄街那边买下一栋最大的宅子。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "曹峻抱着狐狸，脸色漠然地转身离去。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 195,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦独自一人留在祖宅，开始围绕着天井缓缓散步。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 195,
+        "segment_index": 14
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -400,13 +1112,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 泥瓶巷剧情推进",
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻与曹曦在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "曾几何时，这里有个病秧子老人，一年到头躺在光线昏暗的屋子里，有个不孝顺的烂酒鬼汉子，一天到晚都在头疼以后办白事的开销，有个嚅嚅喏喏毫无主见的妇人，起早摸黑，既要做着家务事，还要忙着地里活，三十岁的年龄，就比泥瓶巷其她四十岁的女子还要显老了。 但是在那个时候，有个性情顽劣的寒酸少年，天不怕地不怕，每天都嘻嘻哈哈，书也不读，事也不做，就是做着白日梦，总觉得自己迟早有一天，会在福禄街那边买下一栋最大的宅子。 还有脸来见老祖，让他滚蛋！",
+        "participants": [
+          "曹峻",
+          "曹曦"
+        ],
+        "description": "曹峻抱着狐狸，脸色漠然地转身离去。 曹曦独自一人留在祖宅，开始围绕着天井缓缓散步。 曾几何时，这里有个病秧子老人，一年到头躺在光线昏暗的屋子里，有个不孝顺的烂酒鬼汉子，一天到晚都在头疼以后办白事的开销，有个嚅嚅喏喏毫无主见的妇人，起早摸黑，既要做着家务事，还要忙着地里活，三十岁的年龄，就比泥瓶巷其她四十岁的女子还要显老了。",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键剧情推进场景。",
+        "significance": "在泥瓶巷推动曹峻与曹曦之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段14",
         "sentence_indexes_in_segment": [
@@ -422,7 +1137,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.001597",
+    "extracted_at": "2026-03-25T17:27:37.849015",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -443,6 +1158,19 @@
       "粉裙女童闻声抬头，道：“老爷，我在帮铺子算账呢，很快就好了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "曹曦收起思绪，环顾四周，自嘲道：“成了仙，人气儿，都没啦。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 195,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -515,12 +1243,15 @@
         "location": "泥瓶巷",
         "participants": [
           "顾璨",
-          "陈平安"
+          "陈平安",
+          "曹曦"
         ],
-        "description": "陈平安锁好门，离开泥瓶巷，来到骑龙巷的压岁铺子，青衣小童坐在门槛上发呆，见着了陈平安，也只是有气无力地喊了声老爷，陈平安跨过门槛，发现粉裙女童站在一条板凳上，神色肃穆认真，正在柜台后边，对着桌上摊放的账本打着算盘，双手十指如蝴蝶绕花，让人眼花缭乱，噼里啪啦，清脆悦耳，身边围绕着几位小镇出身的妇人少女，充满了震惊和佩服。 性情质朴的妇人和少女们，看到陈平安的身影后，都笑着称呼为“陈掌柜。 曹曦收起思绪，环顾四周，自嘲道：“成了仙，人气儿，都没啦。",
+        "description": "曹曦收起思绪，环顾四周，自嘲道：“成了仙，人气儿，都没啦。 陈平安锁好门，离开泥瓶巷，来到骑龙巷的压岁铺子，青衣小童坐在门槛上发呆，见着了陈平安，也只是有气无力地喊了声老爷，陈平安跨过门槛，发现粉裙女童站在一条板凳上，神色肃穆认真，正在柜台后边，对着桌上摊放的账本打着算盘，双手十指如蝴蝶绕花，让人眼花缭乱，噼里啪啦，清脆悦耳，身边围绕着几位小镇出身的妇人少女，充满了震惊和佩服。 性情质朴的妇人和少女们，看到陈平安的身影后，都笑着称呼为“陈掌柜。",
         "background": "",
         "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -534,8 +1265,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.002600",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "曹曦"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "曹曦收起思绪，环顾四周，自嘲道：“成了仙，人气儿，都没啦。 ” 陈平安锁好门，离开泥瓶巷，来到骑龙巷的压岁铺子，青衣小童坐在门槛上发呆，见着了陈平安，也只是有气无力地喊了声老爷，陈平安跨过门槛，发现粉裙女童站在一条板凳上，神色肃穆认真，正在柜台后边，对着桌上摊放的账本打着算盘，双手十指如蝴蝶绕花，让人眼花缭乱，噼里啪啦，清脆悦耳，身边围绕着几位小镇出身的妇人少女，充满了震惊和佩服。 性情质朴的妇人和少女们，看到陈平安的身影后，都笑着称呼为“陈掌柜。 ” 粉裙女童闻声抬头，道：“老爷，我在帮铺子算账呢，很快就好了。",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.850100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -674,7 +1431,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.002600",
+    "extracted_at": "2026-03-25T17:27:37.850100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -752,7 +1509,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.002600",
+    "extracted_at": "2026-03-25T17:27:37.850100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -816,7 +1573,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.002600",
+    "extracted_at": "2026-03-25T17:27:37.850100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -879,7 +1636,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.002600",
+    "extracted_at": "2026-03-25T17:27:37.850100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -957,7 +1714,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.003604",
+    "extracted_at": "2026-03-25T17:27:37.851022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1050,7 +1807,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.003604",
+    "extracted_at": "2026-03-25T17:27:37.851022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1112,7 +1869,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.003604",
+    "extracted_at": "2026-03-25T17:27:37.851022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1174,7 +1931,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.003604",
+    "extracted_at": "2026-03-25T17:27:37.851022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1236,7 +1993,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.003604",
+    "extracted_at": "2026-03-25T17:27:37.851022",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "195-28-0": {
+    "juan_index": 195,
+    "segment_index": 28,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第一百九十五章 镇剑楼",
+    "source_sentences": [
+      "！",
+      "老爷，这仨全是烂大街的名字啊。",
+      "不单单没有气势，而且一点都不新颖啊！",
+      "看看别人家的剑名，老爷你那个学生的，金穗，既符合形象，又不流于世俗，还有那曹峻的白鱼、墨螭，再看看老爷你的，降妖除魔初一早上的，我要是开了窍的剑灵，得一口老血喷出来。",
+      "”",
+      "“认可意见。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹峻",
+        "alias": [],
+        "original_description_in_book": "看看别人家的剑名，老爷你那个学生的，金穗，既符合形象，又不流于世俗，还有那曹峻的白鱼、墨螭，再看看老爷你的，降妖除魔初一早上的，我要是开了窍的剑灵，得一口老血喷出来。",
+        "description": "山上人物，适合补强前三季外围修士群像与冲突关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 195,
+        "segment_index": 28
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第一百九十五章 镇剑楼 · 曹峻剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹峻"
+        ],
+        "description": "看看别人家的剑名，老爷你那个学生的，金穗，既符合形象，又不流于世俗，还有那曹峻的白鱼、墨螭，再看看老爷你的，降妖除魔初一早上的，我要是开了窍的剑灵，得一口老血喷出来。 ！ 老爷，这仨全是烂大街的名字啊。",
+        "background": "",
+        "significance": "对应曹峻在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第一百九十五章 镇剑楼 · 段28",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 195,
+        "segment_index": 28
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.851022",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1313,7 +2132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.004608",
+    "extracted_at": "2026-03-25T17:27:37.852025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1529,7 +2348,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.004608",
+    "extracted_at": "2026-03-25T17:27:37.852025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1648,7 +2467,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.005611",
+    "extracted_at": "2026-03-25T17:27:37.852025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1809,7 +2628,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.005611",
+    "extracted_at": "2026-03-25T17:27:37.852025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1917,7 +2736,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.005611",
+    "extracted_at": "2026-03-25T17:27:37.852025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2011,7 +2830,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.005611",
+    "extracted_at": "2026-03-25T17:27:37.852025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2135,7 +2954,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.005611",
+    "extracted_at": "2026-03-25T17:27:37.853029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2199,6 +3018,19 @@
       },
       {
         "entity_type": "person",
+        "name": "曹曦",
+        "alias": [],
+        "original_description_in_book": "杨老头淡然道：“看在金色香火小人的份上，我可以泄露给你一些天机，比如那座小庙里头，当年鬼使神差写上自己名字的小镇孩子，如今大多陨落了，但是活下来的，无一例外，都是雄踞一方的豪杰枭雄，比如俱芦洲的天君谢实和婆娑洲的剑仙曹曦。",
+        "description": "山上强者支线人物，可补足正阳山等外围宗门关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 195,
+        "segment_index": 36
+      },
+      {
+        "entity_type": "person",
         "name": "马苦玄",
         "alias": [],
         "original_description_in_book": "最早在此签订盟约，三教一家总计四位圣人，马苦玄跟其中一位有关系。",
@@ -2221,7 +3053,8 @@
         "coordinates": null,
         "related_entities": [
           "杨老头",
-          "谢实"
+          "谢实",
+          "曹曦"
         ],
         "sentence_indexes_in_segment": [
           1
@@ -2259,7 +3092,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.005611",
+    "extracted_at": "2026-03-25T17:27:37.853029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2323,7 +3156,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.006615",
+    "extracted_at": "2026-03-25T17:27:37.853029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2429,7 +3262,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.006615",
+    "extracted_at": "2026-03-25T17:27:37.853029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2537,7 +3370,7 @@
         "segment_index": 39
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.006615",
+    "extracted_at": "2026-03-25T17:27:37.853029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2640,7 +3473,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.006615",
+    "extracted_at": "2026-03-25T17:27:37.853029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2742,7 +3575,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.006615",
+    "extracted_at": "2026-03-25T17:27:37.854032",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2802,7 +3635,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.006615",
+    "extracted_at": "2026-03-25T17:27:37.854032",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

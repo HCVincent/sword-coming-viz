@@ -28,6 +28,19 @@
         ],
         "juan_index": 89,
         "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "妇人走到书桌旁，发现正中央还叠放着三本书籍，随手一翻，并无出奇，只是寻常学塾蒙童的入门书籍，小学，礼乐，观止，是大骊王朝豪阀市井贵贱通用的蒙学经典，妇人发现三本书旧归旧，却没有半点泥垢污渍，脑海中一下子浮现出某个人的形象，妇人摇摇头，随口问道：“杨花，小学这本书在大骊京城市价多少？",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 89,
+        "segment_index": 2
       }
     ],
     "locations": [
@@ -54,7 +67,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "杨花"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -64,16 +79,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 宋集薪在泥瓶巷对话",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 宋集薪与杨花在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "宋集薪"
+          "宋集薪",
+          "杨花"
         ],
         "description": "跟随妇人来到泥瓶巷的三名扈从，魁梧男子留在院外泥瓶巷当中，闭目养神。 妇人独自走入宋集薪的住处，环顾四周，床榻书桌皆有，书桌上还留下一些价格不菲的清供雅玩，应该是主人不愿随身携带，便干脆弃之不用了。 妇人走到书桌旁，发现正中央还叠放着三本书籍，随手一翻，并无出奇，只是寻常学塾蒙童的入门书籍，小学，礼乐，观止，是大骊王朝豪阀市井贵贱通用的蒙学经典，妇人发现三本书旧归旧，却没有半点泥垢污渍，脑海中一下子浮现出某个人的形象，妇人摇摇头，随口问道：“杨花，小学这本书在大骊京城市价多少？",
         "background": "",
-        "significance": "对应宋集薪在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动宋集薪与杨花之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -87,8 +105,34 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.589127",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "宋集薪"
+        ],
+        "to_roles": [
+          "杨花"
+        ],
+        "action": "对话",
+        "context": "跟随妇人来到泥瓶巷的三名扈从，魁梧男子留在院外泥瓶巷当中，闭目养神。 面白无须的眯眼老人走到院中。 唯独那名捧剑女子跟随妇人走入正屋。 妇人独自走入宋集薪的住处，环顾四周，床榻书桌皆有，书桌上还留下一些价格不菲的清供雅玩，应该是主人不愿随身携带，便干脆弃之不用了。 妇人走到书桌旁，发现正中央还叠放着三本书籍，随手一翻，并无出奇，只是寻常学塾蒙童的入门书籍，小学，礼乐，观止，是大骊王朝豪阀市井贵贱通用的蒙学经典，妇人发现三本书旧归旧，却没有半点泥垢污渍，脑海中一下子浮现出某个人的形象，妇人摇摇头，随口问道：“杨花，小学这本书在大骊京城市价多少？ ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第八十九章 两颗人头 · 宋集薪与杨花在泥瓶巷对话",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.331091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -170,7 +214,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.589127",
+    "extracted_at": "2026-03-25T17:27:37.331091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -233,7 +277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.589127",
+    "extracted_at": "2026-03-25T17:27:37.331091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -313,7 +357,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.589127",
+    "extracted_at": "2026-03-25T17:27:37.331091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -374,7 +418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.590131",
+    "extracted_at": "2026-03-25T17:27:37.331091",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -465,7 +509,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.590131",
+    "extracted_at": "2026-03-25T17:27:37.332095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -548,7 +592,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.590131",
+    "extracted_at": "2026-03-25T17:27:37.332095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -568,7 +612,21 @@
       "”",
       "捧剑女子领命前行，六十三步后停下身形。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "妇人走出院子后，突然停下脚步，“杨花，你按照我家睦儿七岁时的步子大小，往右手边走上六十三步。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 89,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -587,13 +645,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 泥瓶巷剧情推进",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 杨花在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "站在泥瓶巷中的魁梧男子皱了皱眉头。 ” 老剑师和捧剑女子显然对此习以为常。",
+        "participants": [
+          "杨花"
+        ],
+        "description": "站在泥瓶巷中的魁梧男子皱了皱眉头。 妇人走出院子后，突然停下脚步，“杨花，你按照我家睦儿七岁时的步子大小，往右手边走上六十三步。 ”",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键剧情推进场景。",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段12",
         "sentence_indexes_in_segment": [
@@ -609,7 +669,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.590131",
+    "extracted_at": "2026-03-25T17:27:37.332095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -740,7 +800,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.590131",
+    "extracted_at": "2026-03-25T17:27:37.332095",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -802,7 +862,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.590131",
+    "extracted_at": "2026-03-25T17:27:37.333098",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -822,7 +882,21 @@
       "几乎同时，年轻女子和老剑师就分别向左右两侧挪步，为妇人让出视野。",
       "妇人此时已经满脸笑容，既妩媚，又纯真，有种矛盾的诱人，她柔声问道：“怎么，王毅甫，你觉得不对？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "妇人此时已经满脸笑容，既妩媚，又纯真，有种矛盾的诱人，她柔声问道：“怎么，王毅甫，你觉得不对？",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 18
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -841,13 +915,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 泥瓶巷对话",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "妇人在即将走出泥瓶巷的时候，猛然转身。 一缕金色剑穗轻轻躺在胸脯上的捧剑女子，脸色平静。 剑师徐浑然对此更是置若罔闻，毫不上心。",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "妇人在即将走出泥瓶巷的时候，猛然转身。 妇人此时已经满脸笑容，既妩媚，又纯真，有种矛盾的诱人，她柔声问道：“怎么，王毅甫，你觉得不对？ 一缕金色剑穗轻轻躺在胸脯上的捧剑女子，脸色平静。",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键对话场景。",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段18",
         "sentence_indexes_in_segment": [
@@ -863,7 +939,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.333098",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "89-19-0": {
+    "juan_index": 89,
+    "segment_index": 19,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第八十九章 两颗人头",
+    "source_sentences": [
+      "”",
+      "男人沉声道：“虽然不知更多的内幕，但是我确实觉得这样不对。",
+      "”",
+      "妇人没有丝毫意外，反而大笑道：“不愧是卢氏王朝头号猛将王毅甫！",
+      "”",
+      "习惯性眯眼看人看物的老剑师，几乎已经看不到眼睛，一身剑气充斥于狭窄小巷。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "妇人没有丝毫意外，反而大笑道：“不愧是卢氏王朝头号猛将王毅甫！",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 89,
+        "segment_index": 19
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "妇人没有丝毫意外，反而大笑道：“不愧是卢氏王朝头号猛将王毅甫！ ” 男人沉声道：“虽然不知更多的内幕，但是我确实觉得这样不对。",
+        "background": "",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第八十九章 两颗人头 · 段19",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 19
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.333098",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -884,6 +1022,20 @@
       "大骊军神宋长镜很久之前，就点名要跟王毅甫痛痛快快打一场，此人领军打仗本事，算不得出类拔萃，但是个人武力极高。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "这个名为王毅甫的男人，曾是卢氏王朝大将之一，出身头等将种门庭，祖辈皆是沙场大将，王毅甫归降之前，身份相当于大骊王朝的上柱国。 大骊军神宋长镜很久之前，就点名要跟王毅甫痛痛快快打一场，此人领军打仗本事，算不得出类拔萃，但是个人武力极高。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 20
+      },
       {
         "entity_type": "person",
         "name": "宋长镜",
@@ -909,6 +1061,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "王毅甫",
           "宋长镜"
         ],
         "sentence_indexes_in_segment": [
@@ -921,16 +1074,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 宋长镜在大骊揭示",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫与宋长镜在大骊揭示",
         "time": null,
         "location": "大骊",
         "participants": [
+          "王毅甫",
           "宋长镜"
         ],
         "description": "这个名为王毅甫的男人，曾是卢氏王朝大将之一，出身头等将种门庭，祖辈皆是沙场大将，王毅甫归降之前，身份相当于大骊王朝的上柱国。 大骊军神宋长镜很久之前，就点名要跟王毅甫痛痛快快打一场，此人领军打仗本事，算不得出类拔萃，但是个人武力极高。 不断有泥墙碎屑摔落地面。",
         "background": "",
-        "significance": "对应宋长镜在叙事中的关键揭示节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动王毅甫与宋长镜之间的揭示线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -944,8 +1100,202 @@
         "segment_index": 20
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "王毅甫"
+        ],
+        "to_roles": [
+          "宋长镜"
+        ],
+        "action": "讥讽",
+        "context": "不断有泥墙碎屑摔落地面。 捧剑女子悄然后退一步，像是要给剑道宗师徐浑然让出更多的战场空间。 她望着不远处的魁梧男人，嘴角勾起一抹讥讽笑意。 一条断了脊梁的丧家之犬，也敢乱吠？ 这个名为王毅甫的男人，曾是卢氏王朝大将之一，出身头等将种门庭，祖辈皆是沙场大将，王毅甫归降之前，身份相当于大骊王朝的上柱国。 大骊军神宋长镜很久之前，就点名要跟王毅甫痛痛快快打一场，此人领军打仗本事，算不得出类拔萃，但是个人武力极高。",
+        "result": null,
+        "event_name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫与宋长镜在大骊揭示",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.333098",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "89-21-0": {
+    "juan_index": 89,
+    "segment_index": 21,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第八十九章 两颗人头",
+    "source_sentences": [
+      "虽然是练气士，却拥有第八境武人的雄厚体魄，精通刀法，能够驾驭那尊著名玉石的强大阴神随同作战，可谓卢氏王朝屈指可数的真正高手。",
+      "妇人伸出羊脂美玉一般的小巧手掌，晃了晃，“徐浑然，不用紧张，王将军是讲道理的人，就是为人过于正直了一些，如今身处一个阵营，别一言不合就要打打杀杀的。",
+      "我很不喜欢。",
+      "”",
+      "徐浑然默默收起了一只袖管内浩浩荡荡的剑气。",
+      "只是妇人在下一刻又说道：“我只会将王毅甫舍了性命和尊严也要护住的人，不送往之前说好的地方，而是送入皇宫，或是教坊司？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "虽然是练气士，却拥有第八境武人的雄厚体魄，精通刀法，能够驾驭那尊著名玉石的强大阴神随同作战，可谓卢氏王朝屈指可数的真正高手。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 89,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "只是妇人在下一刻又说道：“我只会将王毅甫舍了性命和尊严也要护住的人，不送往之前说好的地方，而是送入皇宫，或是教坊司？",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 21
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 阴神与王毅甫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "阴神",
+          "王毅甫"
+        ],
+        "description": "虽然是练气士，却拥有第八境武人的雄厚体魄，精通刀法，能够驾驭那尊著名玉石的强大阴神随同作战，可谓卢氏王朝屈指可数的真正高手。 只是妇人在下一刻又说道：“我只会将王毅甫舍了性命和尊严也要护住的人，不送往之前说好的地方，而是送入皇宫，或是教坊司？ 妇人伸出羊脂美玉一般的小巧手掌，晃了晃，“徐浑然，不用紧张，王将军是讲道理的人，就是为人过于正直了一些，如今身处一个阵营，别一言不合就要打打杀杀的。",
+        "background": "",
+        "significance": "推动阴神与王毅甫之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第二卷山水郎 第八十九章 两颗人头 · 段21",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 21
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "阴神"
+        ],
+        "to_roles": [
+          "王毅甫"
+        ],
+        "action": "对话",
+        "context": "虽然是练气士，却拥有第八境武人的雄厚体魄，精通刀法，能够驾驭那尊著名玉石的强大阴神随同作战，可谓卢氏王朝屈指可数的真正高手。 妇人伸出羊脂美玉一般的小巧手掌，晃了晃，“徐浑然，不用紧张，王将军是讲道理的人，就是为人过于正直了一些，如今身处一个阵营，别一言不合就要打打杀杀的。 我很不喜欢。 ” 徐浑然默默收起了一只袖管内浩浩荡荡的剑气。 只是妇人在下一刻又说道：“我只会将王毅甫舍了性命和尊严也要护住的人，不送往之前说好的地方，而是送入皇宫，或是教坊司？",
+        "result": null,
+        "event_name": "第二卷山水郎 第八十九章 两颗人头 · 阴神与王毅甫对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 21
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.333098",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "89-22-0": {
+    "juan_index": 89,
+    "segment_index": 22,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第八十九章 两颗人头",
+    "source_sentences": [
+      "”",
+      "与她对视的王毅甫双拳紧握，青筋暴起，眼珠子泛出血丝。",
+      "妇人云淡风轻道：“之前只说保住性命即可，所以你王毅甫可别把我的菩萨心肠，当做天经地义的事情。",
+      "”",
+      "王毅甫突然笑道：“娘娘说得对，是属下错了。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "与她对视的王毅甫双拳紧握，青筋暴起，眼珠子泛出血丝。 妇人云淡风轻道：“之前只说保住性命即可，所以你王毅甫可别把我的菩萨心肠，当做天经地义的事情。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          4
+        ],
+        "juan_index": 89,
+        "segment_index": 22
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "与她对视的王毅甫双拳紧握，青筋暴起，眼珠子泛出血丝。 妇人云淡风轻道：“之前只说保住性命即可，所以你王毅甫可别把我的菩萨心肠，当做天经地义的事情。 王毅甫突然笑道：“娘娘说得对，是属下错了。",
+        "background": "",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第八十九章 两颗人头 · 段22",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 22
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.333098",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -965,7 +1315,21 @@
       "妇人笑着反问道：“杀人还需要理由？",
       "那我当这个娘娘做什么？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫错愕道：“宋煜章是皇帝点名要求来这里的官员，娘娘你之前也说过，此人在礼部和钦天监都有靠山，为何要杀他？",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 89,
+        "segment_index": 23
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -984,13 +1348,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 泥瓶巷对话",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "妇人笑道：“知错就好，那你等下出了这条泥瓶巷，就不用跟着我们了，去把上上任督造官大人的脑袋，摘下来，然后随便找个木盒子装好，以后我可能用得着。 ” 王毅甫错愕道：“宋煜章是皇帝点名要求来这里的官员，娘娘你之前也说过，此人在礼部和钦天监都有靠山，为何要杀他？",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "妇人笑道：“知错就好，那你等下出了这条泥瓶巷，就不用跟着我们了，去把上上任督造官大人的脑袋，摘下来，然后随便找个木盒子装好，以后我可能用得着。 王毅甫错愕道：“宋煜章是皇帝点名要求来这里的官员，娘娘你之前也说过，此人在礼部和钦天监都有靠山，为何要杀他？ ”",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键对话场景。",
+        "significance": "对应王毅甫在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段23",
         "sentence_indexes_in_segment": [
@@ -1006,7 +1372,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1026,7 +1392,23 @@
       "等到那个归降大骊效忠娘娘的魁梧男人，身影彻底不见，徐浑然忍不住出声讥讽道：“好一个铁骨铮铮王毅甫，哈哈，如今连骨头和骨气一并没了。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫叹了口气，抱拳低头道：“属下领命。 四人先后走出泥瓶巷后，王毅甫与其余三人分道扬镳。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 89,
+        "segment_index": 24
+      }
+    ],
     "locations": [
       {
         "name": "泥瓶巷",
@@ -1035,7 +1417,9 @@
         "description": "陈平安自幼生活的小镇街巷，是故事开篇最重要的场景。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "王毅甫"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1051,7 +1435,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "王毅甫"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -1061,13 +1447,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 泥瓶巷剧情推进",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
-        "participants": [],
-        "description": "四人先后走出泥瓶巷后，王毅甫与其余三人分道扬镳。 等到那个归降大骊效忠娘娘的魁梧男人，身影彻底不见，徐浑然忍不住出声讥讽道：“好一个铁骨铮铮王毅甫，哈哈，如今连骨头和骨气一并没了。 ”",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "王毅甫叹了口气，抱拳低头道：“属下领命。 四人先后走出泥瓶巷后，王毅甫与其余三人分道扬镳。 等到那个归降大骊效忠娘娘的魁梧男人，身影彻底不见，徐浑然忍不住出声讥讽道：“好一个铁骨铮铮王毅甫，哈哈，如今连骨头和骨气一并没了。",
         "background": "",
-        "significance": "对应泥瓶巷相关的关键剧情推进场景。",
+        "significance": "对应王毅甫在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段24",
         "sentence_indexes_in_segment": [
@@ -1083,7 +1471,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1165,7 +1553,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1247,7 +1635,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.334101",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "89-27-0": {
+    "juan_index": 89,
+    "segment_index": 27,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第八十九章 两颗人头",
+    "source_sentences": [
+      "当妇人沉默许久，不再说话。",
+      "徐浑然记起一事，先是挥袖，剑气遍布四周，然后低声问道：“娘娘，杀一个骤然富贵的陋巷少年而已，我们是不是有些大题小做了？",
+      "”",
+      "妇人好像根本懒得回答这种问题，随口道：“杨花，你来说。",
+      "”",
+      "捧剑女子冷声道：“狮子搏兔，一击致命。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "妇人好像根本懒得回答这种问题，随口道：“杨花，你来说。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 89,
+        "segment_index": 27
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 杨花对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "杨花"
+        ],
+        "description": "妇人好像根本懒得回答这种问题，随口道：“杨花，你来说。 当妇人沉默许久，不再说话。 徐浑然记起一事，先是挥袖，剑气遍布四周，然后低声问道：“娘娘，杀一个骤然富贵的陋巷少年而已，我们是不是有些大题小做了？",
+        "background": "",
+        "significance": "对应杨花在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第八十九章 两颗人头 · 段27",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 89,
+        "segment_index": 27
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1339,7 +1789,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.591134",
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1403,7 +1853,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,7 +1928,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.334101",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1498,7 +1948,23 @@
       "身为亡国之人，败军之将，王毅甫给自己倒了一碗酒，默默喝着，最后跟桌那边的那个死人说了句话：“原来读书人，也有大好头颅。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "王毅甫",
+        "alias": [],
+        "original_description_in_book": "王毅甫大步上前，一手拧断这名大骊礼部官员的脖子。 杀人之后，王毅甫心中毫无快意，轻轻让其趴在桌上如酩酊大醉状。",
+        "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          4
+        ],
+        "juan_index": 89,
+        "segment_index": 31
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1509,7 +1975,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "王毅甫"
+        ],
         "sentence_indexes_in_segment": [
           0,
           2
@@ -1520,13 +1988,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第八十九章 两颗人头 · 大骊剧情推进",
+        "name": "第二卷山水郎 第八十九章 两颗人头 · 王毅甫在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "那就当这一碗大骊酒，是那南海大潮之水。 王毅甫大步上前，一手拧断这名大骊礼部官员的脖子。 ”",
+        "participants": [
+          "王毅甫"
+        ],
+        "description": "那就当这一碗大骊酒，是那南海大潮之水。 王毅甫大步上前，一手拧断这名大骊礼部官员的脖子。 杀人之后，王毅甫心中毫无快意，轻轻让其趴在桌上如酩酊大醉状。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应王毅甫在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第八十九章 两颗人头 · 段31",
         "sentence_indexes_in_segment": [
@@ -1542,7 +2012,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.592138",
+    "extracted_at": "2026-03-25T17:27:37.335105",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

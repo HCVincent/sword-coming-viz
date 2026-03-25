@@ -16,6 +16,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "少年嗯了一声，随手把对联交给吴鸢，摸出钥匙打开门，刚要跨过门槛，突然后退一步，重新拉上两扇院门。 吴鸢差点撞上自家先生的后背，这位龙泉县的父母官连忙后退数步，有些奇怪先生的举措。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -55,7 +69,9 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -65,16 +81,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在泥瓶巷等待",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺在泥瓶巷等待",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "离开了狭窄阴暗的泥瓶巷，走在宽阔明亮的二郎巷，眉眼灵动的少年脚步轻盈，大袖晃荡，手里拿着那副从泥瓶巷墙头偷来的对联。 吴鸢差点撞上自家先生的后背，这位龙泉县的父母官连忙后退数步，有些奇怪先生的举措。 名叫崔瀺的少年双手拢袖，朝两位彩绘门神努了努嘴，“你那位老丈人的先祖，就挂在这儿呢，威风吧？",
+        "description": "离开了狭窄阴暗的泥瓶巷，走在宽阔明亮的二郎巷，眉眼灵动的少年脚步轻盈，大袖晃荡，手里拿着那副从泥瓶巷墙头偷来的对联。 少年嗯了一声，随手把对联交给吴鸢，摸出钥匙打开门，刚要跨过门槛，突然后退一步，重新拉上两扇院门。 吴鸢差点撞上自家先生的后背，这位龙泉县的父母官连忙后退数步，有些奇怪先生的举措。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键等待节点。",
-        "related_action_indices": [],
+        "significance": "在泥瓶巷推动吴鸢与崔瀺之间的等待线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -88,8 +107,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "等待",
+        "context": "离开了狭窄阴暗的泥瓶巷，走在宽阔明亮的二郎巷，眉眼灵动的少年脚步轻盈，大袖晃荡，手里拿着那副从泥瓶巷墙头偷来的对联。 一位本该出现在督造官衙署的高大男子，此时站在门外，已经等候良久，始终闭眼屏气凝神，听到脚步声后，睁眼看到那位熟悉又陌生的少年后，赶紧侧过身，束手而立，恭声道：“先生。 ” 少年嗯了一声，随手把对联交给吴鸢，摸出钥匙打开门，刚要跨过门槛，突然后退一步，重新拉上两扇院门。 吴鸢差点撞上自家先生的后背，这位龙泉县的父母官连忙后退数步，有些奇怪先生的举措。 名叫崔瀺的少年双手拢袖，朝两位彩绘门神努了努嘴，“你那位老丈人的先祖，就挂在这儿呢，威风吧？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺在泥瓶巷等待",
+        "location": "泥瓶巷",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.277486",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -110,6 +155,21 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "这个别扭至极的说法，让吴鸢一阵头大。 他虽然跟顶着上柱国头衔的老丈人不对付，可跟那位尚未娶过门的媳妇，那真是情投意合，是京城出了名的一双良人美眷，尤其是一位英俊潇洒的寒族书生，饱读诗书，赶赴京城，科举落第，却赢得美人心，在不被所有人看好这段姻缘的形势下，一举成为大骊国师的亲传弟子，名动朝野，瞬间传为美谈，以至于惊动了皇帝陛下，下旨在养正斋召见吴鸢。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 2
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -138,7 +198,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           2
@@ -149,16 +210,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在大骊剧情推进",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊师承",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "他虽然跟顶着上柱国头衔的老丈人不对付，可跟那位尚未娶过门的媳妇，那真是情投意合，是京城出了名的一双良人美眷，尤其是一位英俊潇洒的寒族书生，饱读诗书，赶赴京城，科举落第，却赢得美人心，在不被所有人看好这段姻缘的形势下，一举成为大骊国师的亲传弟子，名动朝野，瞬间传为美谈，以至于惊动了皇帝陛下，下旨在养正斋召见吴鸢。 崔瀺跨过门槛，随口道：“我一直思考一个问题，咱们儒家信誓旦旦的‘谆信明义，崇德报功，垂拱而天下治’，到底有没有机会实现。 ”",
+        "description": "这个别扭至极的说法，让吴鸢一阵头大。 他虽然跟顶着上柱国头衔的老丈人不对付，可跟那位尚未娶过门的媳妇，那真是情投意合，是京城出了名的一双良人美眷，尤其是一位英俊潇洒的寒族书生，饱读诗书，赶赴京城，科举落第，却赢得美人心，在不被所有人看好这段姻缘的形势下，一举成为大骊国师的亲传弟子，名动朝野，瞬间传为美谈，以至于惊动了皇帝陛下，下旨在养正斋召见吴鸢。 在那之后，未来老丈人就对吴鸢睁一只眼闭一只眼，不再对女儿扬言要打断吴鸢三条腿了。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与吴鸢之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -172,8 +236,29 @@
         "segment_index": 2
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.543410",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "师承",
+        "context": "他虽然跟顶着上柱国头衔的老丈人不对付，可跟那位尚未娶过门的媳妇，那真是情投意合，是京城出了名的一双良人美眷，尤其是一位英俊潇洒的寒族书生，饱读诗书，赶赴京城，科举落第，却赢得美人心，在不被所有人看好这段姻缘的形势下，一举成为大骊国师的亲传弟子，名动朝野，瞬间传为美谈，以至于惊动了皇帝陛下，下旨在养正斋召见吴鸢。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊师承",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 2
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.278489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -196,6 +281,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢轻声问道：“先生想出答案了吗？ 吴鸢哑然。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 3
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -214,16 +313,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "崔瀺撇撇嘴，“很难。 崔瀺笑问道：“是不是觉得问了句废话？ 吴鸢轻声问道：“先生想出答案了吗？",
+        "description": "吴鸢轻声问道：“先生想出答案了吗？ 崔瀺撇撇嘴，“很难。 吴鸢哑然。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -237,8 +339,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "吴鸢轻声问道：“先生想出答案了吗？ ” 崔瀺撇撇嘴，“很难。 ” 吴鸢哑然。 崔瀺笑问道：“是不是觉得问了句废话？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.278489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -261,6 +389,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢诚实回答：“有一些。 大概是师生之间的对话，一贯如此坦诚相见，崔瀺并未恼火，只是斜眼瞥了一下吴鸢，惋惜道：“世间很多事情，珍贵之处不在结果，而在过程。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -278,16 +421,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "大概是师生之间的对话，一贯如此坦诚相见，崔瀺并未恼火，只是斜眼瞥了一下吴鸢，惋惜道：“世间很多事情，珍贵之处不在结果，而在过程。 ” 吴鸢诚实回答：“有一些。",
+        "description": "吴鸢诚实回答：“有一些。 大概是师生之间的对话，一贯如此坦诚相见，崔瀺并未恼火，只是斜眼瞥了一下吴鸢，惋惜道：“世间很多事情，珍贵之处不在结果，而在过程。 吴鸢鼓起勇气问道：“先生能否举例？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与吴鸢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -301,8 +447,29 @@
         "segment_index": 4
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "会见",
+        "context": "大概是师生之间的对话，一贯如此坦诚相见，崔瀺并未恼火，只是斜眼瞥了一下吴鸢，惋惜道：“世间很多事情，珍贵之处不在结果，而在过程。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.278489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -338,21 +505,40 @@
         ],
         "juan_index": 82,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "崔瀺一边领着吴鸢走向正堂匾额下的朱漆大方桌，一边说道：“比如你跟袁上柱国家的千金小姐，如今恩恩爱爱，缠缠绵绵，牵个小手都能开心好几天，可是等到哪天总算把她给明媒正娶了，上了床一番神仙打架之后，你很快就会感到失落的，原来不过如此啊。 吴鸢龇牙咧嘴，这话没法接。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺一边领着吴鸢走向正堂匾额下的朱漆大方桌，一边说道：“比如你跟袁上柱国家的千金小姐，如今恩恩爱爱，缠缠绵绵，牵个小手都能开心好几天，可是等到哪天总算把她给明媒正娶了，上了床一番神仙打架之后，你很快就会感到失落的，原来不过如此啊。 崔瀺示意吴鸢自己找位置坐下，自己继续站着仰头望向那块匾额，说道：“可是你会因为这个无趣的结果，而放弃跟袁家大小姐滚被子的机会吗？ ”",
+        "description": "崔瀺一边领着吴鸢走向正堂匾额下的朱漆大方桌，一边说道：“比如你跟袁上柱国家的千金小姐，如今恩恩爱爱，缠缠绵绵，牵个小手都能开心好几天，可是等到哪天总算把她给明媒正娶了，上了床一番神仙打架之后，你很快就会感到失落的，原来不过如此啊。 吴鸢龇牙咧嘴，这话没法接。 崔瀺示意吴鸢自己找位置坐下，自己继续站着仰头望向那块匾额，说道：“可是你会因为这个无趣的结果，而放弃跟袁家大小姐滚被子的机会吗？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与吴鸢之间的对话关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -366,8 +552,49 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺一边领着吴鸢走向正堂匾额下的朱漆大方桌，一边说道：“比如你跟袁上柱国家的千金小姐，如今恩恩爱爱，缠缠绵绵，牵个小手都能开心好几天，可是等到哪天总算把她给明媒正娶了，上了床一番神仙打架之后，你很快就会感到失落的，原来不过如此啊。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 5
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺示意吴鸢自己找位置坐下，自己继续站着仰头望向那块匾额，说道：“可是你会因为这个无趣的结果，而放弃跟袁家大小姐滚被子的机会吗？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.278489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -402,21 +629,37 @@
         ],
         "juan_index": 82,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢陷入沉思。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺剧情推进",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢指点",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺自己也觉得这说法不太入流，“那我就换个说法，比如修行，寻常练气士，目标肯定是中五境，天才一些的，会选择上五境。 ” 又比如为官，野心小的，是入流品就行，志向大的，是做黄紫公卿。",
+        "description": "崔瀺自己也觉得这说法不太入流，“那我就换个说法，比如修行，寻常练气士，目标肯定是中五境，天才一些的，会选择上五境。 吴鸢陷入沉思。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与吴鸢之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -430,8 +673,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "指点",
+        "context": "” 崔瀺自己也觉得这说法不太入流，“那我就换个说法，比如修行，寻常练气士，目标肯定是中五境，天才一些的，会选择上五境。 又比如为官，野心小的，是入流品就行，志向大的，是做黄紫公卿。 然后在漫长的登山途中，很多人会一直抬着头盯着山顶的风光，身边的树木葱茏，脚下的春花烂漫，都是看不到的，就算看到了，也不会驻足欣赏，枉费了圣人的谆谆教导，天地有大美而不言啊。 ” 吴鸢陷入沉思。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.278489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -467,6 +736,19 @@
         ],
         "juan_index": 82,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢无奈道：“要是以前，我肯定不会在这种问题上深思，可是先生此次出关，先是换了这身‘行头’，又莫名其妙要来这座小镇见故人，学生实在是吃不准了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 7
       }
     ],
     "locations": [
@@ -477,7 +759,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -493,7 +777,8 @@
         "participants": [
           "阿良",
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
         "description": "崔瀺突然哈哈大笑起来，“你连这种狗屁道理也相信？ 吴鸢无奈道：“要是以前，我肯定不会在这种问题上深思，可是先生此次出关，先是换了这身‘行头’，又莫名其妙要来这座小镇见故人，学生实在是吃不准了。 崔瀺笑过之后，懒洋洋瘫靠在宽大的椅子上，“话说回来，这番大道理不全是废话，我虽然重事功而轻学问，但这不意味着学问一事，就不需要用心对待，说句最实在的话，凡夫俗子不下苦功夫、死力气去努力做成一件事，根本就没资格去谈什么天赋不天赋。",
         "background": "",
@@ -513,7 +798,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "extracted_at": "2026-03-25T17:27:37.278489",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -549,6 +834,19 @@
         ],
         "juan_index": 82,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢笑道：“围棋一道，整个东宝瓶洲的国手和棋待诏，想必都是以这种心态面对先生。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 8
       }
     ],
     "locations": [
@@ -559,7 +857,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -569,16 +869,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在宝瓶洲对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
         "description": "崔瀺一根手指轻轻敲击椅子把手，脸色平淡从容，微笑道：“只有真正努力之后的人，才会对真正有天赋的人，生出绝望的念头，那个时候，会幡然醒悟，留着眼泪告诉自己，原来我是真的比不上那个天才。 吴鸢笑道：“围棋一道，整个东宝瓶洲的国手和棋待诏，想必都是以这种心态面对先生。 崔瀺扯了扯嘴角，“可是在有些事情，天纵奇才如先生我，也一样用这种眼光看待某些人。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在宝瓶洲推动崔瀺与吴鸢之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -592,8 +895,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "” 崔瀺一根手指轻轻敲击椅子把手，脸色平淡从容，微笑道：“只有真正努力之后的人，才会对真正有天赋的人，生出绝望的念头，那个时候，会幡然醒悟，留着眼泪告诉自己，原来我是真的比不上那个天才。 ” 吴鸢笑道：“围棋一道，整个东宝瓶洲的国手和棋待诏，想必都是以这种心态面对先生。 ” 崔瀺扯了扯嘴角，“可是在有些事情，天纵奇才如先生我，也一样用这种眼光看待某些人。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在宝瓶洲对话",
+        "location": "宝瓶洲",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.279493",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -616,6 +945,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢摇头道：“学生不信！ 吴鸢哈哈大笑，抱拳作揖讨饶道：“先生慧眼如炬。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -633,16 +976,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺冲突",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺冲突",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "崔瀺伸出手指，点了点满身正气的督造官大人，笑嘻嘻道：“小吴大人，这激将法用得拙劣了啊。 ” 吴鸢摇头道：“学生不信！",
+        "description": "吴鸢摇头道：“学生不信！ 崔瀺伸出手指，点了点满身正气的督造官大人，笑嘻嘻道：“小吴大人，这激将法用得拙劣了啊。 吴鸢哈哈大笑，抱拳作揖讨饶道：“先生慧眼如炬。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与崔瀺之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -656,8 +1002,140 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "冲突",
+        "context": "” 吴鸢摇头道：“学生不信！ ” 崔瀺伸出手指，点了点满身正气的督造官大人，笑嘻嘻道：“小吴大人，这激将法用得拙劣了啊。 ” 吴鸢哈哈大笑，抱拳作揖讨饶道：“先生慧眼如炬。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.279493",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "82-10-0": {
+    "juan_index": 82,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第八十二章 先生学生,师兄师弟",
+    "source_sentences": [
+      "”",
+      "吴鸢的眼角余光，时不时掠过一位肌肤晶莹的木讷少年，他呆呆痴痴，眼神空洞，就坐在不远处天井旁边的小板凳上，双手轻轻放在膝盖上，微微仰起头，姿势如坐井观天。",
+      "其实吴鸢刚才一进屋子就看到了他，便觉得浑身不舒服，但既然先生不愿主动开口，他就不好问什么。",
+      "吴鸢望向桌上那副春联，拿回一张仔细观摩，抬头问道：“先生，这幅对联是谁写的？",
+      "这个人很有意思啊。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢的眼角余光，时不时掠过一位肌肤晶莹的木讷少年，他呆呆痴痴，眼神空洞，就坐在不远处天井旁边的小板凳上，双手轻轻放在膝盖上，微微仰起头，姿势如坐井观天。 其实吴鸢刚才一进屋子就看到了他，便觉得浑身不舒服，但既然先生不愿主动开口，他就不好问什么。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "吴鸢的眼角余光，时不时掠过一位肌肤晶莹的木讷少年，他呆呆痴痴，眼神空洞，就坐在不远处天井旁边的小板凳上，双手轻轻放在膝盖上，微微仰起头，姿势如坐井观天。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与仰起头对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "吴鸢",
+          "仰起头"
+        ],
+        "description": "吴鸢的眼角余光，时不时掠过一位肌肤晶莹的木讷少年，他呆呆痴痴，眼神空洞，就坐在不远处天井旁边的小板凳上，双手轻轻放在膝盖上，微微仰起头，姿势如坐井观天。 其实吴鸢刚才一进屋子就看到了他，便觉得浑身不舒服，但既然先生不愿主动开口，他就不好问什么。 吴鸢望向桌上那副春联，拿回一张仔细观摩，抬头问道：“先生，这幅对联是谁写的？",
+        "background": "",
+        "significance": "推动吴鸢与仰起头之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 10
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "仰起头"
+        ],
+        "action": "对话",
+        "context": "” 吴鸢的眼角余光，时不时掠过一位肌肤晶莹的木讷少年，他呆呆痴痴，眼神空洞，就坐在不远处天井旁边的小板凳上，双手轻轻放在膝盖上，微微仰起头，姿势如坐井观天。 其实吴鸢刚才一进屋子就看到了他，便觉得浑身不舒服，但既然先生不愿主动开口，他就不好问什么。 吴鸢望向桌上那副春联，拿回一张仔细观摩，抬头问道：“先生，这幅对联是谁写的？ 这个人很有意思啊。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与仰起头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.279493",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -708,6 +1186,19 @@
         ],
         "juan_index": 82,
         "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢立即觉得这张轻飘飘的对联很烫手。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 11
       }
     ],
     "locations": [],
@@ -718,14 +1209,13 @@
         "location": null,
         "participants": [
           "崔瀺",
-          "宋集薪"
+          "宋集薪",
+          "吴鸢"
         ],
-        "description": "崔瀺打了个哈欠，换了个更慵懒舒服的姿势缩在椅子里，“暂时还是名叫宋集薪吧，不过估计过几年，会改回宗人府档案上那个被划掉的老名字，宋睦。 崔瀺笑道：“给你那位宝贝师兄长长见识，省得经常说我是仗着年纪大，才能字写得比他好，现在好了，这副春联是他的同胞兄弟写的，我不信他还能找到什么借口。 ”",
+        "description": "崔瀺打了个哈欠，换了个更慵懒舒服的姿势缩在椅子里，“暂时还是名叫宋集薪吧，不过估计过几年，会改回宗人府档案上那个被划掉的老名字，宋睦。 吴鸢立即觉得这张轻飘飘的对联很烫手。 崔瀺笑道：“给你那位宝贝师兄长长见识，省得经常说我是仗着年纪大，才能字写得比他好，现在好了，这副春联是他的同胞兄弟写的，我不信他还能找到什么借口。",
         "background": "",
         "significance": "推动崔瀺与宋集薪之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -739,34 +1229,8 @@
         "segment_index": 11
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "宋集薪"
-        ],
-        "action": "对话",
-        "context": "崔瀺打了个哈欠，换了个更慵懒舒服的姿势缩在椅子里，“暂时还是名叫宋集薪吧，不过估计过几年，会改回宗人府档案上那个被划掉的老名字，宋睦。 ” 吴鸢立即觉得这张轻飘飘的对联很烫手。 他忍不住问道：“先生要这春联做什么？ ” 崔瀺笑道：“给你那位宝贝师兄长长见识，省得经常说我是仗着年纪大，才能字写得比他好，现在好了，这副春联是他的同胞兄弟写的，我不信他还能找到什么借口。",
-        "result": null,
-        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与宋集薪对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 82,
-        "segment_index": 11
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.544414",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.279493",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -787,6 +1251,20 @@
       "吴鸢笑着点头，“小师兄做得出来。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢想了想，忍住笑意，轻声道：“比如宋集薪在乡野之地，整天没事做，光顾着练字，所以勤能补拙，所以写出来的字就好一些？ 吴鸢笑着点头，“小师兄做得出来。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 12
+      },
       {
         "entity_type": "person",
         "name": "宋集薪",
@@ -821,16 +1299,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 宋集薪与崔瀺剧情推进",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与宋集薪剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "宋集薪",
           "崔瀺"
         ],
-        "description": "吴鸢想了想，忍住笑意，轻声道：“比如宋集薪在乡野之地，整天没事做，光顾着练字，所以勤能补拙，所以写出来的字就好一些？ 崔瀺一脸惊讶，“这也行？ ”",
+        "description": "吴鸢想了想，忍住笑意，轻声道：“比如宋集薪在乡野之地，整天没事做，光顾着练字，所以勤能补拙，所以写出来的字就好一些？ 崔瀺一脸惊讶，“这也行？ 吴鸢笑着点头，“小师兄做得出来。",
         "background": "",
-        "significance": "推动宋集薪与崔瀺之间的剧情推进关系。",
+        "significance": "推动吴鸢与宋集薪之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段12",
         "sentence_indexes_in_segment": [
@@ -846,7 +1325,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "extracted_at": "2026-03-25T17:27:37.279493",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -881,21 +1360,38 @@
         ],
         "juan_index": 82,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢把那张春联放回桌上，随意说道：“先生你的先生，一定规矩很重。 吴鸢一直不知道自家先生师承何处，甚至连大致文脉流传都不清楚。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺摇头道：“说一千道一万，还是打得少了，规矩从来棍棒出啊。 ” ”",
+        "description": "崔瀺摇头道：“说一千道一万，还是打得少了，规矩从来棍棒出啊。 吴鸢把那张春联放回桌上，随意说道：“先生你的先生，一定规矩很重。 吴鸢一直不知道自家先生师承何处，甚至连大致文脉流传都不清楚。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与吴鸢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -909,8 +1405,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "” 崔瀺摇头道：“说一千道一万，还是打得少了，规矩从来棍棒出啊。 ” 吴鸢把那张春联放回桌上，随意说道：“先生你的先生，一定规矩很重。 ” 吴鸢一直不知道自家先生师承何处，甚至连大致文脉流传都不清楚。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.279493",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -946,6 +1468,19 @@
         ],
         "juan_index": 82,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢以为自己听错了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -968,15 +1503,16 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在大骊剧情推进",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "恐怕整个大骊，晓得此事的人物，屈指可数。 崔瀺突然微微坐直身体，“错喽，先生教我，就跟我教你们差不多，一样的，所以我的先生，才教出我这么个学生，数典忘祖，做人忘本，嗯，还有欺师灭祖。 崔瀺淡然道：“你没有听错。",
+        "description": "恐怕整个大骊，晓得此事的人物，屈指可数。 崔瀺突然微微坐直身体，“错喽，先生教我，就跟我教你们差不多，一样的，所以我的先生，才教出我这么个学生，数典忘祖，做人忘本，嗯，还有欺师灭祖。 吴鸢以为自己听错了。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动崔瀺与吴鸢之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段14",
         "sentence_indexes_in_segment": [
@@ -992,7 +1528,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "extracted_at": "2026-03-25T17:27:37.280497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1057,7 +1593,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "extracted_at": "2026-03-25T17:27:37.280497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1093,6 +1629,20 @@
         ],
         "juan_index": 82,
         "segment_index": 16
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢尽可能往多了去想，试探性说道：“一个月？ 吴鸢咽了咽口水，再也不敢多说一个字。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 16
       }
     ],
     "locations": [
@@ -1117,16 +1667,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在大骊对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺伸出一根手指。 这一刻，以清秀少年面貌现世的大骊国师，脸色古怪至极，似笑非笑，似哭非哭，“十年。 吴鸢尽可能往多了去想，试探性说道：“一个月？",
+        "description": "崔瀺伸出一根手指。 吴鸢尽可能往多了去想，试探性说道：“一个月？ 这一刻，以清秀少年面貌现世的大骊国师，脸色古怪至极，似笑非笑，似哭非哭，“十年。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与吴鸢之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1140,8 +1693,34 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺伸出一根手指。 吴鸢尽可能往多了去想，试探性说道：“一个月？ ” 这一刻，以清秀少年面貌现世的大骊国师，脸色古怪至极，似笑非笑，似哭非哭，“十年。 ” 吴鸢咽了咽口水，再也不敢多说一个字。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.280497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1177,21 +1756,38 @@
         ],
         "juan_index": 82,
         "segment_index": 17
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "崔瀺站起身，收起那股罕见的复杂情绪，对吴鸢说道：“今天让你来这里，是要你见一个人，我先忙点事情，你去门口等着。 吴鸢如获大赦，起身离开。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 17
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢"
         ],
-        "description": "崔瀺重重呼出一口气，自嘲道：“故人故事故纸堆，都无所谓了。 崔瀺站起身，收起那股罕见的复杂情绪，对吴鸢说道：“今天让你来这里，是要你见一个人，我先忙点事情，你去门口等着。 何况不无所谓，又能如何呢？",
+        "description": "崔瀺重重呼出一口气，自嘲道：“故人故事故纸堆，都无所谓了。 崔瀺站起身，收起那股罕见的复杂情绪，对吴鸢说道：“今天让你来这里，是要你见一个人，我先忙点事情，你去门口等着。 吴鸢如获大赦，起身离开。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动崔瀺与吴鸢之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1205,8 +1801,29 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺站起身，收起那股罕见的复杂情绪，对吴鸢说道：“今天让你来这里，是要你见一个人，我先忙点事情，你去门口等着。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.280497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1242,21 +1859,51 @@
         ],
         "juan_index": 82,
         "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "暮色中，吴鸢带着一名戴着斗笠的男子走入大堂，崔瀺这才站起身，对他们两人说道：“自己人，随便坐。 吴鸢脸色凝重：“观湖书院崔明皇？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 18
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "吴鸢脸色凝重：“观湖书院崔明皇？",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
+          "吴鸢",
           "崔瀺"
         ],
-        "description": "崔瀺走到那个容貌精致的痴呆少年身边，蹲下身后，揉着下巴，像是在寻找瑕疵。 暮色中，吴鸢带着一名戴着斗笠的男子走入大堂，崔瀺这才站起身，对他们两人说道：“自己人，随便坐。 ”",
+        "description": "崔瀺走到那个容貌精致的痴呆少年身边，蹲下身后，揉着下巴，像是在寻找瑕疵。 暮色中，吴鸢带着一名戴着斗笠的男子走入大堂，崔瀺这才站起身，对他们两人说道：“自己人，随便坐。 吴鸢脸色凝重：“观湖书院崔明皇？",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与崔瀺之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1270,8 +1917,29 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "对话",
+        "context": "暮色中，吴鸢带着一名戴着斗笠的男子走入大堂，崔瀺这才站起身，对他们两人说道：“自己人，随便坐。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.280497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1294,6 +1962,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "然后吴鸢迅速望向自家先生。 吴鸢头皮发麻，心头震动，开始担心自家能否活着离开这座宅子了。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -1304,6 +1986,19 @@
         "sentence_indexes_in_segment": [
           2,
           3
+        ],
+        "juan_index": 82,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔瀺，崔明皇。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 82,
         "segment_index": 19
@@ -1331,15 +2026,17 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在大骊迁移",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与崔瀺在大骊迁移",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "吴鸢",
+          "崔瀺",
+          "崔明皇"
         ],
-        "description": "崔瀺，崔明皇。 大骊国师，观湖书院。 ”",
+        "description": "然后吴鸢迅速望向自家先生。 崔瀺，崔明皇。 大骊国师，观湖书院。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键迁移节点。",
+        "significance": "在大骊推动吴鸢与崔瀺之间的迁移线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段19",
         "sentence_indexes_in_segment": [
@@ -1355,7 +2052,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.545417",
+    "extracted_at": "2026-03-25T17:27:37.280497",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1378,12 +2075,40 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "就算是吴鸢这种嫡传弟子，也从来不敢认为自己真正了解先生的心思。 崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          3,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
         ],
         "original_description_in_book": "崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
         "description": "大骊国师，是王朝布局和小镇暗线的核心操盘者之一。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
         "power": "大骊",
         "sentence_indexes_in_segment": [
           3
@@ -1412,16 +2137,22 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在大骊对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢",
+          "崔明皇"
         ],
-        "description": "但问题是大骊王朝的练气士，几乎没有谁能够理解先生的规矩。 崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。 先生杀人，口头禅是按规矩办事。",
+        "description": "但问题是大骊王朝的练气士，几乎没有谁能够理解先生的规矩。 就算是吴鸢这种嫡传弟子，也从来不敢认为自己真正了解先生的心思。 崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与吴鸢之间的对话线。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1435,8 +2166,69 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 20
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "崔明皇"
+        ],
+        "action": "对话",
+        "context": "崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 20
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "崔明皇"
+        ],
+        "action": "对话",
+        "context": "崔瀺搬了条椅子到木讷少年身边，背对着吴鸢和崔明皇，笑道：“不用紧张，一位是我难得欣赏的家族子弟，一位是有望继承我衣钵的得意门生，所以你们两个不用猜来猜去，可以把事情往好处想。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.281500",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1472,20 +2264,48 @@
         ],
         "juan_index": 82,
         "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇苦笑道：“师伯祖早就被崔家逐出宗族，还下令生不同祖堂，死不共坟山。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢脸色阴晴不定。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 21
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与崔明皇对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "崔明皇",
+          "吴鸢"
         ],
-        "description": "崔瀺没理睬。 始终没有回头的崔瀺笑着说道：“放心，这些腌臜往事，咱们英明神武的皇帝陛下，一开始就知道的。 ”",
+        "description": "崔瀺没理睬。 崔明皇苦笑道：“师伯祖早就被崔家逐出宗族，还下令生不同祖堂，死不共坟山。 吴鸢脸色阴晴不定。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
+        "significance": "推动崔瀺与崔明皇之间的对话关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段21",
         "sentence_indexes_in_segment": [
@@ -1501,7 +2321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "extracted_at": "2026-03-25T17:27:37.281500",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1522,6 +2342,34 @@
       "崔明皇脸色如常，回答道：“齐静春之前得到过一封密信，来自山崖书院，写信之人告诉齐静春，他们那位自囚于某座学宫功德林的先生，真的死了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "对了，崔明皇，吴鸢接下来任何问题，你知无不言，言无不尽。 崔明皇脸色如常，回答道：“齐静春之前得到过一封密信，来自山崖书院，写信之人告诉齐静春，他们那位自囚于某座学宫功德林的先生，真的死了。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "对了，崔明皇，吴鸢接下来任何问题，你知无不言，言无不尽。 吴鸢灵犀一动，直接问了一个最大的问题，“齐静春之死，是先生的手笔？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 22
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1563,6 +2411,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -1580,9 +2429,9 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺"
+          "崔明皇"
         ],
-        "description": "吴鸢灵犀一动，直接问了一个最大的问题，“齐静春之死，是先生的手笔？ 崔瀺不愿意开口说话。 崔明皇脸色如常，回答道：“齐静春之前得到过一封密信，来自山崖书院，写信之人告诉齐静春，他们那位自囚于某座学宫功德林的先生，真的死了。",
+        "description": "对了，崔明皇，吴鸢接下来任何问题，你知无不言，言无不尽。 吴鸢灵犀一动，直接问了一个最大的问题，“齐静春之死，是先生的手笔？ 崔瀺不愿意开口说话。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
@@ -1605,30 +2454,25 @@
       {
         "time": null,
         "from_roles": [
-          "齐静春"
+          "崔明皇"
         ],
         "to_roles": [
-          "崔瀺"
+          "齐静春"
         ],
         "action": "对话",
-        "context": "对了，崔明皇，吴鸢接下来任何问题，你知无不言，言无不尽。 ” 吴鸢灵犀一动，直接问了一个最大的问题，“齐静春之死，是先生的手笔？ ” 崔瀺不愿意开口说话。 崔明皇脸色如常，回答道：“齐静春之前得到过一封密信，来自山崖书院，写信之人告诉齐静春，他们那位自囚于某座学宫功德林的先生，真的死了。",
+        "context": "崔明皇脸色如常，回答道：“齐静春之前得到过一封密信，来自山崖书院，写信之人告诉齐静春，他们那位自囚于某座学宫功德林的先生，真的死了。",
         "result": null,
         "event_name": "齐静春现身",
         "location": "山崖书院",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
           5
         ],
         "juan_index": 82,
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "extracted_at": "2026-03-25T17:27:37.281500",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1649,6 +2493,33 @@
       "崔明皇将一桩惊人阴谋娓娓道来，“山崖书院如今已经被撤掉了七十二书院的身份，你们大骊虽然对此心有不甘，毕竟齐静春和书院对于教化百姓一事，以及帮助大骊摆脱北方蛮夷的身份，居功至伟再者，没了书院吸引东宝瓶洲北方门阀士子，大骊的文官体系，必然遭受巨大冲击。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢皱了皱眉头，这是他不曾听闻的一桩天大秘事，估计是只有儒家三大学宫和七十二书院的当家人物，才有资格知晓内幕。 但是其它一些风言风语，吴鸢和许多出身世族的读书种子一样，大多有所耳闻。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 23
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇将一桩惊人阴谋娓娓道来，“山崖书院如今已经被撤掉了七十二书院的身份，你们大骊虽然对此心有不甘，毕竟齐静春和书院对于教化百姓一事，以及帮助大骊摆脱北方蛮夷的身份，居功至伟再者，没了书院吸引东宝瓶洲北方门阀士子，大骊的文官体系，必然遭受巨大冲击。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 23
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -1674,6 +2545,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -1692,6 +2564,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -1708,6 +2581,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -1724,9 +2598,11 @@
         "location": "山崖书院",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "吴鸢",
+          "崔明皇"
         ],
-        "description": "崔明皇将一桩惊人阴谋娓娓道来，“山崖书院如今已经被撤掉了七十二书院的身份，你们大骊虽然对此心有不甘，毕竟齐静春和书院对于教化百姓一事，以及帮助大骊摆脱北方蛮夷的身份，居功至伟再者，没了书院吸引东宝瓶洲北方门阀士子，大骊的文官体系，必然遭受巨大冲击。 ” 吴鸢皱了皱眉头，这是他不曾听闻的一桩天大秘事，估计是只有儒家三大学宫和七十二书院的当家人物，才有资格知晓内幕。",
+        "description": "吴鸢皱了皱眉头，这是他不曾听闻的一桩天大秘事，估计是只有儒家三大学宫和七十二书院的当家人物，才有资格知晓内幕。 但是其它一些风言风语，吴鸢和许多出身世族的读书种子一样，大多有所耳闻。 崔明皇将一桩惊人阴谋娓娓道来，“山崖书院如今已经被撤掉了七十二书院的身份，你们大骊虽然对此心有不甘，毕竟齐静春和书院对于教化百姓一事，以及帮助大骊摆脱北方蛮夷的身份，居功至伟再者，没了书院吸引东宝瓶洲北方门阀士子，大骊的文官体系，必然遭受巨大冲击。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -1744,7 +2620,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "extracted_at": "2026-03-25T17:27:37.281500",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1902,7 +2778,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "extracted_at": "2026-03-25T17:27:37.281500",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1923,6 +2799,21 @@
       "崔瀺不知何时已经站起身，正在用手指轻轻撑开少年的眼帘，听到崔明皇的言语后，喃喃道：“酒呢？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇露出一丝笑容，下意识望向那个依旧在凝视少年的家族前辈，崔瀺。 崔明皇眼神当中满是钦佩，道：“这个时候，阮邛的提前出现，就成了一招胜负手。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          2,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -1979,8 +2870,8 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺",
-          "阮邛"
+          "崔明皇",
+          "崔瀺"
         ],
         "description": "崔明皇露出一丝笑容，下意识望向那个依旧在凝视少年的家族前辈，崔瀺。 崔明皇眼神当中满是钦佩，道：“这个时候，阮邛的提前出现，就成了一招胜负手。 彻底断绝了齐静春原先最有可能会走的一条退路。",
         "background": "",
@@ -2000,7 +2891,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "extracted_at": "2026-03-25T17:27:37.282503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2021,6 +2912,33 @@
       "崔明皇微笑道：“自家先生死了，先生的道德文章没人读了，政策主张也无人推行了。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇眼见吴鸢有些疑惑，解释道：“阮邛早早来到骊珠洞天，虽然这位兵家宗师并不插手小镇事务，保持绝对中立，但是阮邛的存在本身，就意味深长。 崔明皇微笑道：“自家先生死了，先生的道德文章没人读了，政策主张也无人推行了。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "崔明皇眼见吴鸢有些疑惑，解释道：“阮邛早早来到骊珠洞天，虽然这位兵家宗师并不插手小镇事务，保持绝对中立，但是阮邛的存在本身，就意味深长。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 26
+      },
       {
         "entity_type": "person",
         "name": "阮邛",
@@ -2061,6 +2979,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
+          "吴鸢",
           "阮邛"
         ],
         "sentence_indexes_in_segment": [
@@ -2077,6 +2997,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
+          "吴鸢",
           "阮邛",
           "齐静春"
         ],
@@ -2112,14 +3034,13 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "阮邛"
+          "崔明皇",
+          "吴鸢"
         ],
-        "description": "崔明皇眼见吴鸢有些疑惑，解释道：“阮邛早早来到骊珠洞天，虽然这位兵家宗师并不插手小镇事务，保持绝对中立，但是阮邛的存在本身，就意味深长。 这意味着齐静春再没有办法开口讨价还价，跟三教一家的四方圣人提议自己继续留在小镇，再画地为牢六十年，以此换取山崖书院的又一个六十年的苟延残喘。 方才路过酒肆的时候，应该买几壶的。",
+        "description": "崔明皇眼见吴鸢有些疑惑，解释道：“阮邛早早来到骊珠洞天，虽然这位兵家宗师并不插手小镇事务，保持绝对中立，但是阮邛的存在本身，就意味深长。 这意味着齐静春再没有办法开口讨价还价，跟三教一家的四方圣人提议自己继续留在小镇，再画地为牢六十年，以此换取山崖书院的又一个六十年的苟延残喘。 崔明皇微笑道：“自家先生死了，先生的道德文章没人读了，政策主张也无人推行了。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -2133,34 +3054,8 @@
         "segment_index": 26
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阮邛"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "方才路过酒肆的时候，应该买几壶的。 ” 崔明皇眼见吴鸢有些疑惑，解释道：“阮邛早早来到骊珠洞天，虽然这位兵家宗师并不插手小镇事务，保持绝对中立，但是阮邛的存在本身，就意味深长。 这意味着齐静春再没有办法开口讨价还价，跟三教一家的四方圣人提议自己继续留在小镇，再画地为牢六十年，以此换取山崖书院的又一个六十年的苟延残喘。 ” 崔明皇微笑道：“自家先生死了，先生的道德文章没人读了，政策主张也无人推行了。",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 82,
-        "segment_index": 26
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.282503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2296,7 +3191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.546421",
+    "extracted_at": "2026-03-25T17:27:37.282503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2317,6 +3212,19 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇发自肺腑地赞美道：“师伯祖真知灼见，一针见血！",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 28
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -2374,7 +3282,7 @@
           "崔瀺",
           "陈平安"
         ],
-        "description": "崔瀺总算不再折腾那个没有半点“人气”的少年，站在并无积水的水池旁边，跟随少年一起仰头望向蔚蓝天空，收回视线后，说了一句很奇怪的定论，“所以我精心安排了一场大考，考生只有一人，就是那个泥瓶巷叫陈平安的孤儿，他只是很普通的出身背景，但是有着很有趣的成长经历。 在接下来的大争变局当中，只会一步慢步步慢，逐渐消亡。 ”",
+        "description": "崔明皇发自肺腑地赞美道：“师伯祖真知灼见，一针见血！ 崔瀺总算不再折腾那个没有半点“人气”的少年，站在并无积水的水池旁边，跟随少年一起仰头望向蔚蓝天空，收回视线后，说了一句很奇怪的定论，“所以我精心安排了一场大考，考生只有一人，就是那个泥瓶巷叫陈平安的孤儿，他只是很普通的出身背景，但是有着很有趣的成长经历。 在接下来的大争变局当中，只会一步慢步步慢，逐渐消亡。",
         "background": "",
         "significance": "在泥瓶巷推动崔瀺与陈平安之间的同行线。",
         "related_action_indices": [
@@ -2415,7 +3323,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.547424",
+    "extracted_at": "2026-03-25T17:27:37.282503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2436,6 +3344,19 @@
       "“想着让赵繇将师门学问发扬光大，至于是不是在大骊王朝，甚至是不是在东宝瓶洲，也无所谓。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢愈发丈二和尚摸不着头脑，这是什么意思？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 82,
+        "segment_index": 29
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -2576,7 +3497,7 @@
           "崔瀺",
           "赵繇"
         ],
-        "description": "崔瀺开始绕着水池慢慢绕圈踱步，双手负后，低着头自言自语道：“照理说，齐静春在必死无疑的情况下，会垂死挣扎一番，那么有三个人就不得不注意，一起在骊珠洞天陪他吃苦的师弟马瞻，手把手传授学问的书童赵繇，看似关系一般的宋集薪，因为这三个人，最有可能让齐静春寄托希望。 “想着让马瞻延续山崖书院的香火，哪怕只有一名弟子，也无所谓。 “想着让赵繇将师门学问发扬光大，至于是不是在大骊王朝，甚至是不是在东宝瓶洲，也无所谓。",
+        "description": "吴鸢愈发丈二和尚摸不着头脑，这是什么意思？ 崔瀺开始绕着水池慢慢绕圈踱步，双手负后，低着头自言自语道：“照理说，齐静春在必死无疑的情况下，会垂死挣扎一番，那么有三个人就不得不注意，一起在骊珠洞天陪他吃苦的师弟马瞻，手把手传授学问的书童赵繇，看似关系一般的宋集薪，因为这三个人，最有可能让齐静春寄托希望。 “想着让马瞻延续山崖书院的香火，哪怕只有一名弟子，也无所谓。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
@@ -2722,7 +3643,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.547424",
+    "extracted_at": "2026-03-25T17:27:37.282503",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2790,6 +3711,19 @@
       },
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢小心翼翼插嘴道：“障眼法之后，藏着那个叫陈平安的人？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 30
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "吴鸢小心翼翼插嘴道：“障眼法之后，藏着那个叫陈平安的人？",
@@ -2832,7 +3766,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.547424",
+    "extracted_at": "2026-03-25T17:27:37.283506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2871,6 +3805,20 @@
       },
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "被打断思绪的崔瀺停下脚步，猛然抬起头，冷冷看着吴鸢。 吴鸢立即站起身，冷汗渗出额头，作揖低头道：“还望先生恕罪。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 31
+      },
+      {
+        "entity_type": "person",
         "name": "齐静春",
         "alias": [
           "齐先生"
@@ -2896,7 +3844,7 @@
           "陈平安",
           "崔瀺"
         ],
-        "description": "被打断思绪的崔瀺停下脚步，猛然抬起头，冷冷看着吴鸢。 崔瀺继续散步，“马瞻，算是那人的半个弟子吧，只不过比起齐静春，差太远了。 吴鸢立即站起身，冷汗渗出额头，作揖低头道：“还望先生恕罪。",
+        "description": "被打断思绪的崔瀺停下脚步，猛然抬起头，冷冷看着吴鸢。 吴鸢立即站起身，冷汗渗出额头，作揖低头道：“还望先生恕罪。 崔瀺继续散步，“马瞻，算是那人的半个弟子吧，只不过比起齐静春，差太远了。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
@@ -2937,7 +3885,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.547424",
+    "extracted_at": "2026-03-25T17:27:37.283506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2958,6 +3906,19 @@
       "反正儒家内部本来就有一些声音，要求文圣、齐静春和山崖书院，三者一起消失，省得人心反复，死灰复燃。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "“我让崔明皇去骗马瞻，骗他可以顶替齐静春担任山崖书院下一任山主。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 82,
+        "segment_index": 32
+      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -2985,6 +3946,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "崔明皇",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -3020,12 +3982,15 @@
         "location": "山崖书院",
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "崔明皇"
         ],
         "description": "“我让崔明皇去骗马瞻，骗他可以顶替齐静春担任山崖书院下一任山主。 如此一来，对齐静春这一支文脉，对咱们大骊的皇帝陛下，其实面子上都说得过去，这也是一开始各方势力默认的一个结局。 反正儒家内部本来就有一些声音，要求文圣、齐静春和山崖书院，三者一起消失，省得人心反复，死灰复燃。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段32",
         "sentence_indexes_in_segment": [
           0,
@@ -3039,8 +4004,34 @@
         "segment_index": 32
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.547424",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔明皇"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "同行",
+        "context": "“我让崔明皇去骗马瞻，骗他可以顶替齐静春担任山崖书院下一任山主。 虽然七十二书院之一的名头没了，但是书院本身还在，书院在，就需要山主。 如此一来，对齐静春这一支文脉，对咱们大骊的皇帝陛下，其实面子上都说得过去，这也是一开始各方势力默认的一个结局。 ” “但是我不喜欢啊，这么团团圆圆的结局，太无趣了。 反正儒家内部本来就有一些声音，要求文圣、齐静春和山崖书院，三者一起消失，省得人心反复，死灰复燃。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 32
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.283506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3072,6 +4063,20 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 82,
+        "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "“于是崔明皇再骗马瞻，告诉他既然事已至此，不如退而求其次，干脆改换门庭，跟山崖书院撇清关系，回到小镇后就能够担任新书院的山主，而且是新书院的第一位山主，比起在山崖书院拾人牙慧，仰人鼻息，不是更好？ 崔瀺继续行走，不过望向默默呼吸吐纳的崔明皇，“是不是在这个时候出现了问题？",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
+          5
         ],
         "juan_index": 82,
         "segment_index": 33
@@ -3134,7 +4139,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "崔明皇"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -3148,7 +4155,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "崔明皇"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -3164,6 +4173,7 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "崔明皇",
           "崔瀺"
         ],
         "description": "“所以我提议在披云山新起一座书院，而儒教三座学宫也答应在五十年内，会提拔这座书院为七十二书院之一，咱们皇帝陛下一听，好像不错嘛，比起齐静春这么个鸡肋，换上一个能够完全听从大骊的傀儡，当然更适合大骊的南下霸业？ “于是崔明皇再骗马瞻，告诉他既然事已至此，不如退而求其次，干脆改换门庭，跟山崖书院撇清关系，回到小镇后就能够担任新书院的山主，而且是新书院的第一位山主，比起在山崖书院拾人牙慧，仰人鼻息，不是更好？ 崔瀺继续行走，不过望向默默呼吸吐纳的崔明皇，“是不是在这个时候出现了问题？",
@@ -3184,7 +4194,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.547424",
+    "extracted_at": "2026-03-25T17:27:37.283506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3205,6 +4215,20 @@
       "崔明皇用手捂住嘴巴，吐出一口淤血，握紧拳头后，脸色反而轻松几分，多了几丝红润，问道：“师伯祖，为何要允许山崖书院那位仅剩的老夫子，带领学生离开大骊，去往敌国大隋，继续使用山崖书院的名号？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇点头道：“应该就是在这个时候起了疑心，开始与我虚与委蛇，当时他不露声色，我虽然小心提防，但是没有想到马瞻这么个废物，发起狠来，是如此不留余力，拼得经脉寸断，窍穴炸碎，也要杀我。 崔明皇用手捂住嘴巴，吐出一口淤血，握紧拳头后，脸色反而轻松几分，多了几丝红润，问道：“师伯祖，为何要允许山崖书院那位仅剩的老夫子，带领学生离开大骊，去往敌国大隋，继续使用山崖书院的名号？",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 34
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -3244,7 +4268,9 @@
         "description": "齐静春所在书院，是儒家线与成长线的重要节点。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "崔明皇"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -3260,7 +4286,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "崔明皇"
+        ],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -3276,14 +4304,13 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "崔明皇",
           "崔瀺"
         ],
-        "description": "崔瀺点点头，“马瞻虽然远不如齐静春，可到底是在那人门下待了十多年，不能纯粹以蠢人视之。 崔明皇用手捂住嘴巴，吐出一口淤血，握紧拳头后，脸色反而轻松几分，多了几丝红润，问道：“师伯祖，为何要允许山崖书院那位仅剩的老夫子，带领学生离开大骊，去往敌国大隋，继续使用山崖书院的名号？ ”",
+        "description": "崔明皇点头道：“应该就是在这个时候起了疑心，开始与我虚与委蛇，当时他不露声色，我虽然小心提防，但是没有想到马瞻这么个废物，发起狠来，是如此不留余力，拼得经脉寸断，窍穴炸碎，也要杀我。 崔瀺点点头，“马瞻虽然远不如齐静春，可到底是在那人门下待了十多年，不能纯粹以蠢人视之。 崔明皇用手捂住嘴巴，吐出一口淤血，握紧拳头后，脸色反而轻松几分，多了几丝红润，问道：“师伯祖，为何要允许山崖书院那位仅剩的老夫子，带领学生离开大骊，去往敌国大隋，继续使用山崖书院的名号？",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段34",
         "sentence_indexes_in_segment": [
           0,
@@ -3297,34 +4324,8 @@
         "segment_index": 34
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "” 崔明皇点头道：“应该就是在这个时候起了疑心，开始与我虚与委蛇，当时他不露声色，我虽然小心提防，但是没有想到马瞻这么个废物，发起狠来，是如此不留余力，拼得经脉寸断，窍穴炸碎，也要杀我。 ” 崔瀺点点头，“马瞻虽然远不如齐静春，可到底是在那人门下待了十多年，不能纯粹以蠢人视之。 ” 崔明皇用手捂住嘴巴，吐出一口淤血，握紧拳头后，脸色反而轻松几分，多了几丝红润，问道：“师伯祖，为何要允许山崖书院那位仅剩的老夫子，带领学生离开大骊，去往敌国大隋，继续使用山崖书院的名号？",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "山崖书院",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 82,
-        "segment_index": 34
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.283506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3471,7 +4472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "extracted_at": "2026-03-25T17:27:37.283506",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3571,7 +4572,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "extracted_at": "2026-03-25T17:27:37.284510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3670,7 +4671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "extracted_at": "2026-03-25T17:27:37.284510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3735,7 +4736,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "extracted_at": "2026-03-25T17:27:37.284510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3801,7 +4802,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "extracted_at": "2026-03-25T17:27:37.284510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3824,6 +4825,46 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "别说是算不得修行人的吴鸢，就连崔明皇看到这一幕后，也是目瞪口呆。 吴鸢不知为何，今天听到先生一席话后，只觉得自己遍体发凉，有气无力，嗓音沙哑问道：“先生，就不能杀人了事吗？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "别说是算不得修行人的吴鸢，就连崔明皇看到这一幕后，也是目瞪口呆。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 82,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "吴鸢不知为何，今天听到先生一席话后，只觉得自己遍体发凉，有气无力，嗓音沙哑问道：“先生，就不能杀人了事吗？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 40
+      },
+      {
+        "entity_type": "person",
         "name": "崔瀺",
         "alias": [
           "大骊国师"
@@ -3841,16 +4882,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺对话",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与沙哑对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "吴鸢",
+          "沙哑"
         ],
-        "description": "崔瀺哈哈大笑，好像等了半天，终于到了一个真正有趣的问题了，啧啧道：“大道之争，可不是俗世间抄家灭族、灭人满门那么简单的事情，想要真真正正的斩草除根，很难很难，很多时候杀人，反而会让简单的事情变成一团乱麻，所以要诛心啊。 别说是算不得修行人的吴鸢，就连崔明皇看到这一幕后，也是目瞪口呆。 吴鸢不知为何，今天听到先生一席话后，只觉得自己遍体发凉，有气无力，嗓音沙哑问道：“先生，就不能杀人了事吗？",
+        "description": "别说是算不得修行人的吴鸢，就连崔明皇看到这一幕后，也是目瞪口呆。 吴鸢不知为何，今天听到先生一席话后，只觉得自己遍体发凉，有气无力，嗓音沙哑问道：“先生，就不能杀人了事吗？ 崔瀺哈哈大笑，好像等了半天，终于到了一个真正有趣的问题了，啧啧道：“大道之争，可不是俗世间抄家灭族、灭人满门那么简单的事情，想要真真正正的斩草除根，很难很难，很多时候杀人，反而会让简单的事情变成一团乱麻，所以要诛心啊。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动吴鸢与沙哑之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段40",
         "sentence_indexes_in_segment": [
           0,
@@ -3864,8 +4908,29 @@
         "segment_index": 40
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "对话",
+        "context": "吴鸢不知为何，今天听到先生一席话后，只觉得自己遍体发凉，有气无力，嗓音沙哑问道：“先生，就不能杀人了事吗？",
+        "result": null,
+        "event_name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 吴鸢与沙哑对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 82,
+        "segment_index": 40
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.284510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3929,7 +4994,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.548428",
+    "extracted_at": "2026-03-25T17:27:37.284510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4031,7 +5096,7 @@
         "segment_index": 43
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.285514",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4064,6 +5129,19 @@
         ],
         "juan_index": 82,
         "segment_index": 44
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "试想一下，小镇之外日入斗金的五座山头，小镇之内两座老字号铺子，以后山下有县令吴鸢与之一见如故，山上会有书院副山主崔先生，对其青眼相加。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 82,
+        "segment_index": 44
       }
     ],
     "locations": [
@@ -4074,7 +5152,9 @@
         "description": "骊珠洞天中的小镇，是故事起点与多条命运线的汇聚处。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           0,
           4
@@ -4120,7 +5200,8 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "吴鸢"
         ],
         "description": "“一个贫贱至极的陋巷孤儿，吃尽苦头，内心深处无比希望有一份安稳，如今真的梦想成真，一下子成为小镇最阔绰的有钱人，又突然迎来了千载难逢的发财机会，福地之上的五座山头，全部收入囊中，三百年，整整三百年细水长流的富贵，都属于他了。 “除了这些雪中送炭，我又帮他锦上添花了两次，第一次是帮他选中那座落魄山，而这座山头，我会让大骊敕封一位山神坐镇，你说少年会不会觉得很惊喜？ 第二次，则是草头铺子和压岁铺子，很快都会以低价出售，然后不出意外，就会由他陈平安‘顺理成章’地买下来。",
         "background": "",
@@ -4140,7 +5221,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.285514",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4204,7 +5285,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.285514",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4253,6 +5334,32 @@
         ],
         "juan_index": 82,
         "segment_index": 46
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢小心翼翼问道：“那些已经担惊受怕的孩子，如果想要留在小镇家中，岂不是让陈平安名正言顺地不用走出去？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 46
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "崔明皇笑道：“在这些孩子离开小镇没多久，他们的家族就已经被强行迁往大骊京城了，大骊当然不会缺了他们的富贵荣华。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 46
       }
     ],
     "locations": [
@@ -4267,7 +5374,8 @@
         "coordinates": null,
         "related_entities": [
           "陈平安",
-          "齐静春"
+          "齐静春",
+          "崔明皇"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -4301,7 +5409,9 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "吴鸢",
+          "陈平安",
+          "崔明皇"
         ],
         "sentence_indexes_in_segment": [
           2,
@@ -4319,13 +5429,15 @@
         "participants": [
           "顾璨",
           "陈平安",
-          "齐静春"
+          "齐静春",
+          "吴鸢"
         ],
         "description": "然后那位车夫就会找到陈平安了，告诉这位少年，学塾齐先生和马先生，生前都希望他能够带着那……六个蒙童赶赴大骊王朝的死敌，去那座迁往大隋的山崖书院继续求学，此次出行，路途艰辛，虎狼环视，最后那个车夫就会善解人意地劝解少年，如果齐先生还活着，一定不希望你涉险去往大隋山崖书院。 吴鸢小心翼翼问道：“那些已经担惊受怕的孩子，如果想要留在小镇家中，岂不是让陈平安名正言顺地不用走出去？ 崔明皇笑道：“在这些孩子离开小镇没多久，他们的家族就已经被强行迁往大骊京城了，大骊当然不会缺了他们的富贵荣华。",
         "background": "",
         "significance": "推动陈平安与顾璨这条情感底色极重的关系线发生阶段性分叉。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段46",
         "sentence_indexes_in_segment": [
@@ -4360,9 +5472,29 @@
         ],
         "juan_index": 82,
         "segment_index": 46
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "吴鸢小心翼翼问道：“那些已经担惊受怕的孩子，如果想要留在小镇家中，岂不是让陈平安名正言顺地不用走出去？",
+        "result": null,
+        "event_name": "顾璨离开小镇",
+        "location": "小镇",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 82,
+        "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.285514",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4394,6 +5526,20 @@
         "power": "大骊",
         "sentence_indexes_in_segment": [
           2,
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 47
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢愈发小心谨慎，问道：“先生，是如何肯定这场大考，能够让齐静春这一支文脉，彻底断绝香火。 崔瀺挑了一下眉头，转头望向吴鸢，笑道：“难道你没有听出来，我和齐静春是同门师兄弟吗？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3,
           5
         ],
         "juan_index": 82,
@@ -4440,13 +5586,17 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "吴鸢",
           "崔瀺"
         ],
         "description": "但是每个家族都会留下来几个人，会告诉那些孩子进入山崖书院是何等机会难得，以及家中父母长辈又是如何殷切希望他们能够去书院学成归来。 崔瀺站在天井正下方，面无表情。 吴鸢愈发小心谨慎，问道：“先生，是如何肯定这场大考，能够让齐静春这一支文脉，彻底断绝香火。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段47",
         "sentence_indexes_in_segment": [
@@ -4462,6 +5612,46 @@
       }
     ],
     "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "吴鸢愈发小心谨慎，问道：“先生，是如何肯定这场大考，能够让齐静春这一支文脉，彻底断绝香火。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 82,
+        "segment_index": 47
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "崔瀺挑了一下眉头，转头望向吴鸢，笑道：“难道你没有听出来，我和齐静春是同门师兄弟吗？",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 47
+      },
       {
         "time": null,
         "from_roles": [
@@ -4481,9 +5671,29 @@
         ],
         "juan_index": 82,
         "segment_index": 47
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "吴鸢"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "对话",
+        "context": "崔瀺挑了一下眉头，转头望向吴鸢，笑道：“难道你没有听出来，我和齐静春是同门师兄弟吗？",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "山崖书院",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.286517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4566,7 +5776,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.286517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4603,6 +5813,32 @@
         ],
         "juan_index": 82,
         "segment_index": 49
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "吴鸢和崔明皇望着那个略显纤细的少年背影，面面相觑，不知道发生了什么。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 49
+      },
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "吴鸢和崔明皇望着那个略显纤细的少年背影，面面相觑，不知道发生了什么。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 82,
+        "segment_index": 49
       }
     ],
     "locations": [
@@ -4627,15 +5863,17 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺在大骊剧情推进",
+        "name": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 崔瀺与吴鸢在大骊剧情推进",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "吴鸢",
+          "崔明皇"
         ],
         "description": "崔瀺举起手，拇指抵住食指，啧啧道，“这要是还输了的话……” 最后崔瀺所说的那几个字，细微不可闻。 崔瀺刚打开门，一步跨过门槛，突然停下身形，原本想要去买酒喝的大骊国师，突然觉得好像喝酒也没啥意思。",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "在大骊推动崔瀺与吴鸢之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第八十二章 先生学生,师兄师弟 · 段49",
         "sentence_indexes_in_segment": [
@@ -4651,7 +5889,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.286517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4734,7 +5972,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.549431",
+    "extracted_at": "2026-03-25T17:27:37.286517",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

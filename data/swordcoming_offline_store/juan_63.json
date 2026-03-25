@@ -88,7 +88,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.481196",
+    "extracted_at": "2026-03-25T17:27:37.198211",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -211,7 +211,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.481196",
+    "extracted_at": "2026-03-25T17:27:37.199214",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -376,7 +376,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.481196",
+    "extracted_at": "2026-03-25T17:27:37.199214",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,7 +487,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.481196",
+    "extracted_at": "2026-03-25T17:27:37.199214",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -562,6 +562,19 @@
         ],
         "juan_index": 63,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "与此同时，杨家铺子积水众多、小水塘一般的后院，涟漪阵阵，重新恢复浑浊泥泞的面貌，就像世间所有的后院，水面之上，立着一位浑身烟气弥漫的模糊身影，依稀可见，是一位面容不清的驼背老妪。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 5
       }
     ],
     "locations": [
@@ -614,7 +627,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "extracted_at": "2026-03-25T17:27:37.199214",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -650,21 +663,37 @@
         ],
         "juan_index": 63,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "沙哑",
+        "alias": [],
+        "original_description_in_book": "那道身影如一株水草，不由自主地“随水”摇曳，沙哑开口道：“那小丫头片子，好歹是咱们这儿下一位圣人的独女，身份何等尊贵，为何偏偏钟情于陋巷少年？",
+        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 63,
+        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头对话",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头与沙哑对话",
         "time": null,
         "location": null,
         "participants": [
-          "杨老头"
+          "杨老头",
+          "沙哑"
         ],
-        "description": "杨老头对此见怪不怪，又抽起了旱烟，问道：“你看出了什么？ 杨老头嗤笑道：“就这？ ”",
+        "description": "杨老头对此见怪不怪，又抽起了旱烟，问道：“你看出了什么？ 那道身影如一株水草，不由自主地“随水”摇曳，沙哑开口道：“那小丫头片子，好歹是咱们这儿下一位圣人的独女，身份何等尊贵，为何偏偏钟情于陋巷少年？ 杨老头嗤笑道：“就这？",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动杨老头与沙哑之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -678,8 +707,97 @@
         "segment_index": 6
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "杨老头"
+        ],
+        "to_roles": [
+          "沙哑"
+        ],
+        "action": "对话",
+        "context": "杨老头对此见怪不怪，又抽起了旱烟，问道：“你看出了什么？ ” 那道身影如一株水草，不由自主地“随水”摇曳，沙哑开口道：“那小丫头片子，好歹是咱们这儿下一位圣人的独女，身份何等尊贵，为何偏偏钟情于陋巷少年？ ” 杨老头嗤笑道：“就这？ ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头与沙哑对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.199214",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "63-7-0": {
+    "juan_index": 63,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第一卷笼中雀 第六十三章 原来如此",
+    "source_sentences": [
+      "水上老妪战战兢兢，再不敢开口。",
+      "老人缓缓说道：“你既然如今已经走到这一步，有些规矩就该跟你说清楚，免得以后身死道消，也不晓得怎么回事，还觉得自个儿委屈。",
+      "”",
+      "老人似乎在酝酿天机，没有急着开口。",
+      "雨停之后，院中积水渐渐下潜，老妪身影便愈发模糊，可怜兮兮道：“大仙，我只想多看孙子几眼。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "水上老妪战战兢兢，再不敢开口。 雨停之后，院中积水渐渐下潜，老妪身影便愈发模糊，可怜兮兮道：“大仙，我只想多看孙子几眼。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 63,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪"
+        ],
+        "description": "水上老妪战战兢兢，再不敢开口。 雨停之后，院中积水渐渐下潜，老妪身影便愈发模糊，可怜兮兮道：“大仙，我只想多看孙子几眼。 老人缓缓说道：“你既然如今已经走到这一步，有些规矩就该跟你说清楚，免得以后身死道消，也不晓得怎么回事，还觉得自个儿委屈。",
+        "background": "",
+        "significance": "对应老妪在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第一卷笼中雀 第六十三章 原来如此 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 7
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "extracted_at": "2026-03-25T17:27:37.200218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -743,7 +861,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "extracted_at": "2026-03-25T17:27:37.200218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -766,6 +884,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "抽着旱烟的老人如云海滔滔里的隐龙，那老妪听得更是如坠云雾，她毕竟是此地土生土长的人物，又没有读过书，自然听不懂这些玄之又玄的学问道理，她只能硬着头皮死记硬背。 老妪呆住。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 63,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "杨老头",
         "alias": [
           "杨掌柜"
@@ -784,16 +916,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头对话",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头对话",
         "time": null,
         "location": null,
         "participants": [
+          "老妪",
           "杨老头"
         ],
-        "description": "杨老头突然笑道：“你倒是不用记这些，因为我们不管这个。 杨老头重复一遍，“我们不管你们怎么想，只看你们怎么做。 抽着旱烟的老人如云海滔滔里的隐龙，那老妪听得更是如坠云雾，她毕竟是此地土生土长的人物，又没有读过书，自然听不懂这些玄之又玄的学问道理，她只能硬着头皮死记硬背。",
+        "description": "抽着旱烟的老人如云海滔滔里的隐龙，那老妪听得更是如坠云雾，她毕竟是此地土生土长的人物，又没有读过书，自然听不懂这些玄之又玄的学问道理，她只能硬着头皮死记硬背。 杨老头突然笑道：“你倒是不用记这些，因为我们不管这个。 老妪呆住。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老妪与杨老头之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -807,8 +942,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老妪"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "对话",
+        "context": "抽着旱烟的老人如云海滔滔里的隐龙，那老妪听得更是如坠云雾，她毕竟是此地土生土长的人物，又没有读过书，自然听不懂这些玄之又玄的学问道理，她只能硬着头皮死记硬背。 杨老头突然笑道：“你倒是不用记这些，因为我们不管这个。 ” 老妪呆住。 杨老头重复一遍，“我们不管你们怎么想，只看你们怎么做。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.200218",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -831,6 +992,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪忐忑道：“大仙，我记住了。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 63,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
         "name": "杨老头",
         "alias": [
           "杨掌柜"
@@ -848,16 +1022,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头对话",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头对话",
         "time": null,
         "location": null,
         "participants": [
+          "老妪",
           "杨老头"
         ],
-        "description": "杨老头扯了扯嘴角，说道：“既然身为河婆，就要负责所有河中事务，既是为自己积攒阴德，也要为自己赢得一方水土的百姓香火。 老妪忐忑道：“大仙，我记住了。 ”",
+        "description": "老妪忐忑道：“大仙，我记住了。 杨老头扯了扯嘴角，说道：“既然身为河婆，就要负责所有河中事务，既是为自己积攒阴德，也要为自己赢得一方水土的百姓香火。 ”",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动老妪与杨老头之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -871,8 +1048,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老妪"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "对话",
+        "context": "老妪忐忑道：“大仙，我记住了。 ” 杨老头扯了扯嘴角，说道：“既然身为河婆，就要负责所有河中事务，既是为自己积攒阴德，也要为自己赢得一方水土的百姓香火。 你若是能够让人为你建立祠庙，塑造金身，使得一缕分身立于其中，那就是你的本事，在这之后，就要争取让朝廷容纳你，跻身一国之内山岳江河的正统谱牒，得一个官方认可的身份，做不到的话，最少也要被载入地方县志。 要是供奉你的祠庙，最后被当做一座淫祠，给官府奉命铲除，金身推倒，那你的日子就不好过了，比孤魂野鬼还难受。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.201263",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -893,6 +1096,20 @@
       "老妪一咬牙，问道：“大仙，之所以愿意庇护我，是不是因为我那孙子？"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪壮起胆子问道：“大仙，如你先前所说，咱们这儿一律禁绝，那我这小小河婆，除了沾光续命，又能做什么？ 老妪一咬牙，问道：“大仙，之所以愿意庇护我，是不是因为我那孙子？",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 11
+      },
       {
         "entity_type": "person",
         "name": "杨老头",
@@ -944,19 +1161,18 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头与大骊皇帝在大骊对话",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
+          "老妪",
           "杨老头",
           "大骊皇帝"
         ],
-        "description": "杨老头说道：“这是以前，以后就不好说了，将来这里，会从一座小洞天，降格成为一块没了门槛的小福地，谁都能来此，再也不用缴纳那三袋子铜钱。 这也是大骊皇帝为何如此不择手段的根源所在，有些事情早六十年做，还是晚六十年再做，结果会截然不同。 老妪壮起胆子问道：“大仙，如你先前所说，咱们这儿一律禁绝，那我这小小河婆，除了沾光续命，又能做什么？",
+        "description": "老妪壮起胆子问道：“大仙，如你先前所说，咱们这儿一律禁绝，那我这小小河婆，除了沾光续命，又能做什么？ 杨老头说道：“这是以前，以后就不好说了，将来这里，会从一座小洞天，降格成为一块没了门槛的小福地，谁都能来此，再也不用缴纳那三袋子铜钱。 这也是大骊皇帝为何如此不择手段的根源所在，有些事情早六十年做，还是晚六十年再做，结果会截然不同。",
         "background": "",
-        "significance": "在大骊推动杨老头与大骊皇帝之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在大骊推动老妪与杨老头之间的对话线。",
+        "related_action_indices": [],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -970,34 +1186,8 @@
         "segment_index": 11
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "杨老头"
-        ],
-        "to_roles": [
-          "大骊皇帝"
-        ],
-        "action": "对话",
-        "context": "老妪壮起胆子问道：“大仙，如你先前所说，咱们这儿一律禁绝，那我这小小河婆，除了沾光续命，又能做什么？ 大仙你所说的祠庙香火、山河谱牒什么的，还有那地方县志……” 杨老头说道：“这是以前，以后就不好说了，将来这里，会从一座小洞天，降格成为一块没了门槛的小福地，谁都能来此，再也不用缴纳那三袋子铜钱。 这也是大骊皇帝为何如此不择手段的根源所在，有些事情早六十年做，还是晚六十年再做，结果会截然不同。 ” 老妪一咬牙，问道：“大仙，之所以愿意庇护我，是不是因为我那孙子？",
-        "result": null,
-        "event_name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头与大骊皇帝在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 63,
-        "segment_index": 11
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.201263",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1035,6 +1225,20 @@
       },
       {
         "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪又问，“既然如此，大仙为何任由那真武山兵家，带走我家马苦玄？ 原来这位化身为河婆的老妪，便是被人一巴掌打死的杏花巷马婆婆。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "马苦玄",
         "alias": [],
         "original_description_in_book": "老妪又问，“既然如此，大仙为何任由那真武山兵家，带走我家马苦玄？",
@@ -1050,16 +1254,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头与马苦玄剧情推进",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老妪",
           "杨老头",
           "马苦玄"
         ],
-        "description": "杨老头点了点头，并未隐瞒初衷。 老妪又问，“既然如此，大仙为何任由那真武山兵家，带走我家马苦玄？ ”",
+        "description": "杨老头点了点头，并未隐瞒初衷。 老妪又问，“既然如此，大仙为何任由那真武山兵家，带走我家马苦玄？ 原来这位化身为河婆的老妪，便是被人一巴掌打死的杏花巷马婆婆。",
         "background": "",
-        "significance": "推动杨老头与马苦玄之间的剧情推进关系。",
+        "significance": "推动老妪与杨老头之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段12",
         "sentence_indexes_in_segment": [
@@ -1075,7 +1280,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.482199",
+    "extracted_at": "2026-03-25T17:27:37.201263",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1111,20 +1316,36 @@
         ],
         "juan_index": 63,
         "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "杨老头轻轻一磕烟杆，老妪魂魄凝聚而成的水上身影，顿时扭曲不定，哀嚎不止。 这份毫无征兆的疼痛，就像一个凡夫俗子，突然遭受到摧心裂骨搅肺腑的苦痛，老妪如何能够承受？",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头剧情推进",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老妪",
           "杨老头"
         ],
-        "description": "杨老头轻轻一磕烟杆，老妪魂魄凝聚而成的水上身影，顿时扭曲不定，哀嚎不止。 杨老头淡然道：“虽然在我眼中，没有好坏之分，没有正邪之别，不以此来称量阴德，可不意味着我就喜欢你的所作所为。 这份毫无征兆的疼痛，就像一个凡夫俗子，突然遭受到摧心裂骨搅肺腑的苦痛，老妪如何能够承受？",
+        "description": "杨老头轻轻一磕烟杆，老妪魂魄凝聚而成的水上身影，顿时扭曲不定，哀嚎不止。 这份毫无征兆的疼痛，就像一个凡夫俗子，突然遭受到摧心裂骨搅肺腑的苦痛，老妪如何能够承受？ 杨老头淡然道：“虽然在我眼中，没有好坏之分，没有正邪之别，不以此来称量阴德，可不意味着我就喜欢你的所作所为。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键剧情推进节点。",
+        "significance": "推动老妪与杨老头之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段13",
         "sentence_indexes_in_segment": [
@@ -1140,7 +1361,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "extracted_at": "2026-03-25T17:27:37.201263",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1202,7 +1423,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "extracted_at": "2026-03-25T17:27:37.201263",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1327,7 +1548,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "extracted_at": "2026-03-25T17:27:37.202225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1513,7 +1734,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "extracted_at": "2026-03-25T17:27:37.202225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1534,6 +1755,21 @@
       "“师父师父！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "老妪惶恐道：“大仙，廊桥那边，尤其是那口深潭，连我也无法靠近，每次只要过去些许，就像在油锅里煮似的……” 老妪连忙领命离去。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          4
+        ],
+        "juan_index": 63,
+        "segment_index": 17
+      },
       {
         "entity_type": "person",
         "name": "杨老头",
@@ -1559,6 +1795,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "老妪",
           "杨老头"
         ],
         "sentence_indexes_in_segment": [
@@ -1571,16 +1808,19 @@
     ],
     "events": [
       {
-        "name": "第一卷笼中雀 第六十三章 原来如此 · 杨老头在廊桥剧情推进",
+        "name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头在廊桥师承",
         "time": null,
         "location": "廊桥",
         "participants": [
+          "老妪",
           "杨老头"
         ],
-        "description": "老妪惶恐道：“大仙，廊桥那边，尤其是那口深潭，连我也无法靠近，每次只要过去些许，就像在油锅里煮似的……” 杨老头笑了笑，“不用靠近，只要眼睛盯住那座廊桥即可，比如说日后有什么东西从廊桥底下飞出，你看准它的去向即可。 ”",
+        "description": "老妪惶恐道：“大仙，廊桥那边，尤其是那口深潭，连我也无法靠近，每次只要过去些许，就像在油锅里煮似的……” 杨老头笑了笑，“不用靠近，只要眼睛盯住那座廊桥即可，比如说日后有什么东西从廊桥底下飞出，你看准它的去向即可。 老妪连忙领命离去。",
         "background": "",
-        "significance": "对应杨老头在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "在廊桥推动老妪与杨老头之间的师承线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第六十三章 原来如此 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1594,8 +1834,34 @@
         "segment_index": 17
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老妪"
+        ],
+        "to_roles": [
+          "杨老头"
+        ],
+        "action": "师承",
+        "context": "老妪惶恐道：“大仙，廊桥那边，尤其是那口深潭，连我也无法靠近，每次只要过去些许，就像在油锅里煮似的……” 杨老头笑了笑，“不用靠近，只要眼睛盯住那座廊桥即可，比如说日后有什么东西从廊桥底下飞出，你看准它的去向即可。 ” 老妪连忙领命离去。 院中积水之上，瞬间没了老妪如烟似雾的缥缈身影。 “师父师父！",
+        "result": null,
+        "event_name": "第一卷笼中雀 第六十三章 原来如此 · 老妪与杨老头在廊桥师承",
+        "location": "廊桥",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 63,
+        "segment_index": 17
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.202225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1677,7 +1943,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "extracted_at": "2026-03-25T17:27:37.202225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1769,7 +2035,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.483202",
+    "extracted_at": "2026-03-25T17:27:37.202225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1864,7 +2130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.202225",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1961,7 +2227,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.203228",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2086,7 +2352,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.203228",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2168,7 +2434,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.203228",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2270,7 +2536,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.203228",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2334,7 +2600,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.203228",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2396,7 +2662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.203228",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2498,7 +2764,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.204232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2605,7 +2871,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.484206",
+    "extracted_at": "2026-03-25T17:27:37.204232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2669,7 +2935,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.204232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2794,7 +3060,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.204232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2995,7 +3261,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.204232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3121,7 +3387,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.204232",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3230,7 +3496,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.205235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3341,7 +3607,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.205235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3475,7 +3741,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.485209",
+    "extracted_at": "2026-03-25T17:27:37.205235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3573,7 +3839,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.205235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3668,7 +3934,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.205235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3730,7 +3996,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.205235",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3823,7 +4089,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.206239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3904,7 +4170,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.206239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3986,7 +4252,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.206239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4041,7 +4307,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.486213",
+    "extracted_at": "2026-03-25T17:27:37.206239",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -27,21 +27,37 @@
         ],
         "juan_index": 314,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫始终没有出手。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十三章 驭剑 · 陈平安冲突",
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 陈平安与陆舫冲突",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "陆舫"
         ],
-        "description": "不管各自初衷为何，围剿陈平安的三拨人，七位大名鼎鼎的江湖高手，其中粉金刚马宣，琵琶女子，魔教鸦儿，已经折了这条街上。 以游侠身份闯荡天下的冯青白，是个疯子，为达目的，不择手段，破墙偷袭，没能一剑刺杀陈平安，反倒是赔上了鸦儿的大半条命。 那位有望以女子身份继承魔教教主的木屐美人，至今还没能翻转过身，一侧脸颊贴在冰凉街面上，一只纤纤玉手的秀美指甲，轻轻滑动着青石，视线对着簪花郎周仕，眼神充满了痛苦和哀求。",
+        "description": "不管各自初衷为何，围剿陈平安的三拨人，七位大名鼎鼎的江湖高手，其中粉金刚马宣，琵琶女子，魔教鸦儿，已经折了这条街上。 以游侠身份闯荡天下的冯青白，是个疯子，为达目的，不择手段，破墙偷袭，没能一剑刺杀陈平安，反倒是赔上了鸦儿的大半条命。 陆舫始终没有出手。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与陆舫之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十三章 驭剑 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -55,8 +71,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.528514",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "陆舫"
+        ],
+        "action": "冲突",
+        "context": "不管各自初衷为何，围剿陈平安的三拨人，七位大名鼎鼎的江湖高手，其中粉金刚马宣，琵琶女子，魔教鸦儿，已经折了这条街上。 以游侠身份闯荡天下的冯青白，是个疯子，为达目的，不择手段，破墙偷袭，没能一剑刺杀陈平安，反倒是赔上了鸦儿的大半条命。 那位有望以女子身份继承魔教教主的木屐美人，至今还没能翻转过身，一侧脸颊贴在冰凉街面上，一只纤纤玉手的秀美指甲，轻轻滑动着青石，视线对着簪花郎周仕，眼神充满了痛苦和哀求。 之前虽是戏言，要周仕答应不许她死在这边，可他终究是答应了的，为何迟迟不愿出手？ 簪花郎周仕没有任何愧疚，甚至还与她对视了一眼，微笑致意。 陆舫始终没有出手。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十三章 驭剑 · 陈平安与陆舫冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.535114",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -119,7 +161,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.528514",
+    "extracted_at": "2026-03-25T17:27:38.535114",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "314-3-0": {
+    "juan_index": 314,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十三章 驭剑",
+    "source_sentences": [
+      "”",
+      "周仕看了眼奄奄一息的鸦儿，笑道：“我只要她。",
+      "”",
+      "陆舫一锤定音，“那就这么说定了。",
+      "”",
+      "冯青白横剑身前，手指弯曲，轻轻弹击剑身，笑容玩味，“陆剑仙，你老人家可别再袖手旁观了，小心偷鸡不成蚀把米，最后咱们一个个成了此人的武道磨刀石。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫一锤定音，“那就这么说定了。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 314,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 陆舫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫一锤定音，“那就这么说定了。 ” 周仕看了眼奄奄一息的鸦儿，笑道：“我只要她。",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十三章 驭剑 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.536118",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "314-4-0": {
+    "juan_index": 314,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十三章 驭剑",
+    "source_sentences": [
+      "你作为咱们这边最拿得出手的高手，若还是藏藏掖掖，拿咱们的性命，去试探深浅，我可不乐意伺候，大不了就不搅和这一摊，你们爱咋咋的。",
+      "”",
+      "陆舫笑道：“只管放心。",
+      "”",
+      "说完这句话，手心抵住剑柄的鸟瞰峰剑仙，以握拳之姿，将那把“大椿”连剑带鞘一起拔出了地面。",
+      "仙家术士曾在书中记载，上古有树名为大椿，八千年为春，八千年为秋，结实之后，凡人食之可举霞飞升。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "陆舫笑道：“只管放心。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 314,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 陆舫对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "陆舫笑道：“只管放心。 你作为咱们这边最拿得出手的高手，若还是藏藏掖掖，拿咱们的性命，去试探深浅，我可不乐意伺候，大不了就不搅和这一摊，你们爱咋咋的。 ”",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十三章 驭剑 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 4
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.536118",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -154,21 +320,38 @@
         ],
         "juan_index": 314,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "崔姓老人传授的拳法当中，云蒸大泽式或是铁骑凿阵式，还好说，无非是出拳轻重有别，可像神人擂鼓式这种拳架，差之毫厘谬以千里，而且需要时刻提防那个陆舫，陈平安必须拿捏好每一拳的分寸。 陆舫微笑提醒众人，“也真是的，动手之前都不打声招呼，太没有宗师气度了。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十三章 驭剑 · 陈平安指点",
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 陆舫与陈平安指点",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "陈平安"
         ],
         "description": "陈平安一直在默默蓄势，而且也要适应没了法袍金醴束缚后的状态。 崔姓老人传授的拳法当中，云蒸大泽式或是铁骑凿阵式，还好说，无非是出拳轻重有别，可像神人擂鼓式这种拳架，差之毫厘谬以千里，而且需要时刻提防那个陆舫，陈平安必须拿捏好每一拳的分寸。 这是陈平安自习武以来的拳法巅峰，体魄、神魂和精气神皆是如此。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与陈平安之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十三章 驭剑 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -182,8 +365,29 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.528514",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "崔姓老人传授的拳法当中，云蒸大泽式或是铁骑凿阵式，还好说，无非是出拳轻重有别，可像神人擂鼓式这种拳架，差之毫厘谬以千里，而且需要时刻提防那个陆舫，陈平安必须拿捏好每一拳的分寸。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十三章 驭剑 · 陆舫与陈平安指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 314,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.536118",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -206,6 +410,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "与此同时，手腕拧转，陆舫第一次正儿八经握住剑柄，握住那把名剑大椿之后，由于陆舫一身剑气过于充沛，哪怕有意压制收敛，仍是不断向外倾泻，使得一身衣衫无风而飘荡，尤其是握剑那只手的袖管，剑气充盈，激荡不已，袖口大开，里边竟然传出丝丝缕缕的嘶鸣声。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 314,
+        "segment_index": 6
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "刹那之间，笑脸儿心弦紧绷，二话不说，使了偶然所得的那部仙家残本秘术，以玄之又玄的奇门遁甲，由震位瞬间转移到了坎位，只是不等笑脸儿查看陈平安身形，拳罡已至身前，扑面而来，脸上一阵刺痛。",
@@ -221,15 +438,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十三章 驭剑 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 陆舫与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
           "陈平安"
         ],
-        "description": "刹那之间，笑脸儿心弦紧绷，二话不说，使了偶然所得的那部仙家残本秘术，以玄之又玄的奇门遁甲，由震位瞬间转移到了坎位，只是不等笑脸儿查看陈平安身形，拳罡已至身前，扑面而来，脸上一阵刺痛。 ” 与此同时，手腕拧转，陆舫第一次正儿八经握住剑柄，握住那把名剑大椿之后，由于陆舫一身剑气过于充沛，哪怕有意压制收敛，仍是不断向外倾泻，使得一身衣衫无风而飘荡，尤其是握剑那只手的袖管，剑气充盈，激荡不已，袖口大开，里边竟然传出丝丝缕缕的嘶鸣声。",
+        "description": "与此同时，手腕拧转，陆舫第一次正儿八经握住剑柄，握住那把名剑大椿之后，由于陆舫一身剑气过于充沛，哪怕有意压制收敛，仍是不断向外倾泻，使得一身衣衫无风而飘荡，尤其是握剑那只手的袖管，剑气充盈，激荡不已，袖口大开，里边竟然传出丝丝缕缕的嘶鸣声。 刹那之间，笑脸儿心弦紧绷，二话不说，使了偶然所得的那部仙家残本秘术，以玄之又玄的奇门遁甲，由震位瞬间转移到了坎位，只是不等笑脸儿查看陈平安身形，拳罡已至身前，扑面而来，脸上一阵刺痛。 ”",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十三章 驭剑 · 段6",
         "sentence_indexes_in_segment": [
@@ -245,7 +463,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.528514",
+    "extracted_at": "2026-03-25T17:27:38.536118",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -307,7 +525,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.528514",
+    "extracted_at": "2026-03-25T17:27:38.536118",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "314-10-0": {
+    "juan_index": 314,
+    "segment_index": 10,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百一十三章 驭剑",
+    "source_sentences": [
+      "街道之上，一团白雪，一抹白虹。",
+      "簪花郎周仕先是小心翼翼将鸦儿扶起，让她靠坐在一侧墙根下，免得她莫名其妙就死在交手双方的剑气拳罡之下。",
+      "冯青白穿透她后背心的那一剑，真是凌厉狠辣，竟是直接打烂了鸦儿的丹田牵连，不但如此，还有一缕剑气滞留在她体内，使得她无法运气疗伤，如果没有高人相救，帮她剥离出那缕剑气，她就只能等死了，哪怕是金刚寺的疗伤圣药，一样毫无裨益。",
+      "周仕当然没有在大战之际，跟她卿卿我我，蹲在墙根阴影中，拇指微微加重力道，那串缠绕拳头的念珠被推出去一颗，猩红色的珠子没有随意滚落，在青色石板街面上弹了两次，就凭空消失。",
+      "周仕不断将念珠散出去。",
+      "这是他爹周肥交给他的一件护身符，说是运用得当的话，面对天下上十人，可以保命，面对下十人，则能杀敌。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "这是他爹周肥交给他的一件护身符，说是运用得当的话，面对天下上十人，可以保命，面对下十人，则能杀敌。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 10
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 周肥剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周肥"
+        ],
+        "description": "这是他爹周肥交给他的一件护身符，说是运用得当的话，面对天下上十人，可以保命，面对下十人，则能杀敌。 街道之上，一团白雪，一抹白虹。 簪花郎周仕先是小心翼翼将鸦儿扶起，让她靠坐在一侧墙根下，免得她莫名其妙就死在交手双方的剑气拳罡之下。",
+        "background": "",
+        "significance": "对应周肥在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百一十三章 驭剑 · 段10",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 10
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.537121",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -330,6 +610,32 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "丁婴",
+        "alias": [],
+        "original_description_in_book": "当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。",
+        "description": "高强度冲突线人物，可强化外围强者与江湖武道层面的关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 314,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 314,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "冯青白闲庭信步，缓缓走动，以酣畅淋漓的驭剑术，追杀那一袭白袍，陈平安几次想要摆脱，仍是被风驰电掣的飞剑缠上。",
@@ -345,15 +651,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十三章 驭剑 · 陈平安冲突",
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 丁婴与俞真意冲突",
         "time": null,
         "location": null,
         "participants": [
+          "丁婴",
+          "俞真意",
           "陈平安"
         ],
-        "description": "冯青白闲庭信步，缓缓走动，以酣畅淋漓的驭剑术，追杀那一袭白袍，陈平安几次想要摆脱，仍是被风驰电掣的飞剑缠上。 当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。 飞剑之快，让人只能看到剑光流转。",
+        "description": "当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。 冯青白闲庭信步，缓缓走动，以酣畅淋漓的驭剑术，追杀那一袭白袍，陈平安几次想要摆脱，仍是被风驰电掣的飞剑缠上。 飞剑之快，让人只能看到剑光流转。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键冲突节点。",
+        "significance": "推动丁婴与俞真意之间的冲突关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十三章 驭剑 · 段11",
         "sentence_indexes_in_segment": [
@@ -369,7 +677,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.528514",
+    "extracted_at": "2026-03-25T17:27:38.537121",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -432,7 +740,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.529518",
+    "extracted_at": "2026-03-25T17:27:38.537121",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -490,7 +798,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.529518",
+    "extracted_at": "2026-03-25T17:27:38.537121",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

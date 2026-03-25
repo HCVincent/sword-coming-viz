@@ -27,21 +27,37 @@
         ],
         "juan_index": 158,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "趴在少年后背上酣畅大睡的老秀才，之所以选择泄露天机，恐怕正是珍惜这份殊为不易的娇憨。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 158,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶指点",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶与老秀才指点",
         "time": null,
         "location": null,
         "participants": [
-          "李宝瓶"
+          "李宝瓶",
+          "老秀才"
         ],
-        "description": "至于那一天蕴藏的杀机和危险，李宝瓶想得不多，毕竟小姑娘再早慧，也想不到那些书上不曾描绘的人心险恶，她就算想破了小脑袋，都想不出那些暗流涌动，藏在高冠博带之后的冷酷杀机。 李宝瓶轻声提醒道：“小师叔，如果到时候你吵不过别人，你又打不过别人，咱们可以跑路的。 小姑娘已经开始憧憬着那一天的到来，非但没有畏惧，反而充满了稚气的期待，等着小师叔踩着飞剑，咻一下从天涯海角那么远的地方，落在她身边，告诉所有人，他是自己的小师叔。",
+        "description": "至于那一天蕴藏的杀机和危险，李宝瓶想得不多，毕竟小姑娘再早慧，也想不到那些书上不曾描绘的人心险恶，她就算想破了小脑袋，都想不出那些暗流涌动，藏在高冠博带之后的冷酷杀机。 趴在少年后背上酣畅大睡的老秀才，之所以选择泄露天机，恐怕正是珍惜这份殊为不易的娇憨。 李宝瓶轻声提醒道：“小师叔，如果到时候你吵不过别人，你又打不过别人，咱们可以跑路的。",
         "background": "",
-        "significance": "对应李宝瓶在叙事中的关键指点节点。",
-        "related_action_indices": [],
+        "significance": "推动李宝瓶与老秀才之间的指点关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -55,8 +71,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.831998",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "李宝瓶"
+        ],
+        "to_roles": [
+          "老秀才"
+        ],
+        "action": "指点",
+        "context": "小姑娘已经开始憧憬着那一天的到来，非但没有畏惧，反而充满了稚气的期待，等着小师叔踩着飞剑，咻一下从天涯海角那么远的地方，落在她身边，告诉所有人，他是自己的小师叔。 至于那一天蕴藏的杀机和危险，李宝瓶想得不多，毕竟小姑娘再早慧，也想不到那些书上不曾描绘的人心险恶，她就算想破了小脑袋，都想不出那些暗流涌动，藏在高冠博带之后的冷酷杀机。 涉世未深的小姑娘，只是单纯地选择全心全意信赖一个人。 趴在少年后背上酣畅大睡的老秀才，之所以选择泄露天机，恐怕正是珍惜这份殊为不易的娇憨。 李宝瓶轻声提醒道：“小师叔，如果到时候你吵不过别人，你又打不过别人，咱们可以跑路的。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶与老秀才指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.636896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -214,7 +256,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.833002",
+    "extracted_at": "2026-03-25T17:27:37.636896",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -235,6 +277,21 @@
       "老秀才缓缓道：“陈平安，那半个崔瀺呢，善恶已分，虽然不彻底，但是大致分明，以后就交给你了，言传身教，其中身教重于言传，这也是我把他放在你身边的原因。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "逛铺子的时候，老秀才还在酩酊大睡，陈平安就只能始终背着，好在不沉，估摸着还不到一百斤，陈平安真不知道这么个老先生，怎么肚子里就装得下那么多的学问？ 到了刻有两尊高大彩绘门神的客栈门口，老人突然醒来，双脚落地的瞬间，背后就多出了那只行囊，手里握着一块银锭，老秀才看着两个满脸茫然的家伙，笑道：“天下没有不散的筵席，我还要去很多地方，需要一直往西边去，不能再在这里耽搁下去了。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          3,
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -283,17 +340,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与李宝瓶对话",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与老秀才对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "老秀才",
           "李宝瓶",
           "崔瀺"
         ],
         "description": "逛铺子的时候，老秀才还在酩酊大睡，陈平安就只能始终背着，好在不沉，估摸着还不到一百斤，陈平安真不知道这么个老先生，怎么肚子里就装得下那么多的学问？ 回去秋芦客栈的路上，李宝瓶的书箱装得满满当当，不过这一路数千里走下来，小姑娘看着愈发黝黑消瘦，可长得结结实实，气力和精气神都很好，陈平安倒是不担心这点重量会伤了李宝瓶的身子骨。 到了那条行云流水巷，依旧是云雾蒸腾的玄妙场景，陈平安看了多次，仍是觉得匪夷所思，目盲老道临别赠送的那幅搜山图，虽然上头绘画的神神怪怪，也很惊奇怪异，可还不是不如当下置身其中来得震撼人心。",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的对话关系。",
+        "significance": "推动陈平安与老秀才之间的对话关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段3",
         "sentence_indexes_in_segment": [
@@ -309,7 +367,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.833002",
+    "extracted_at": "2026-03-25T17:27:37.637401",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -358,6 +416,19 @@
         ],
         "juan_index": 158,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才有些无奈，笑着耐心解释道：“我已经撤去他身上的禁制，如果下一次你觉得他还是该杀，那就不用管我这个糟透老子怎么想的，该如何就如何，我之所以如此偏袒护短于他，一是他的走错道路，大半在于我当年的教导有误，不该那么斩钉截铁全盘否定，给崔瀺造成一种我很武断下了结论的误会。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 4
       }
     ],
     "locations": [],
@@ -368,13 +439,15 @@
         "location": null,
         "participants": [
           "李宝瓶",
-          "崔瀺"
+          "崔瀺",
+          "老秀才"
         ],
         "description": "李宝瓶皱眉道：“那个叫崔瀺的家伙，是个大坏蛋唉，文圣老爷你怎么总护着他啊？ 老秀才有些无奈，笑着耐心解释道：“我已经撤去他身上的禁制，如果下一次你觉得他还是该杀，那就不用管我这个糟透老子怎么想的，该如何就如何，我之所以如此偏袒护短于他，一是他的走错道路，大半在于我当年的教导有误，不该那么斩钉截铁全盘否定，给崔瀺造成一种我很武断下了结论的误会。 ”",
         "background": "",
         "significance": "推动李宝瓶与崔瀺之间的守护关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段4",
         "sentence_indexes_in_segment": [
@@ -409,9 +482,29 @@
         ],
         "juan_index": 158,
         "segment_index": 4
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "崔瀺"
+        ],
+        "action": "指点",
+        "context": "老秀才有些无奈，笑着耐心解释道：“我已经撤去他身上的禁制，如果下一次你觉得他还是该杀，那就不用管我这个糟透老子怎么想的，该如何就如何，我之所以如此偏袒护短于他，一是他的走错道路，大半在于我当年的教导有误，不该那么斩钉截铁全盘否定，给崔瀺造成一种我很武断下了结论的误会。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 李宝瓶与崔瀺守护",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.833002",
+    "extracted_at": "2026-03-25T17:27:37.637401",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -487,7 +580,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.833002",
+    "extracted_at": "2026-03-25T17:27:37.637401",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -589,7 +682,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.833002",
+    "extracted_at": "2026-03-25T17:27:37.637401",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -651,7 +744,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.833002",
+    "extracted_at": "2026-03-25T17:27:37.637401",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -672,6 +765,20 @@
       "”"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才伸手递出那颗银锭，陈平安看着它，问道：“不会是虫银吧？ 老秀才摇头笑道：“那小玩意儿，也就小时候的崔瀺会稀罕，觉得有趣，换成老的崔瀺，懒得多看一眼。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 158,
+        "segment_index": 8
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -706,18 +813,20 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺对话",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 老秀才与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安",
           "崔瀺"
         ],
         "description": "老秀才伸手递出那颗银锭，陈平安看着它，问道：“不会是虫银吧？ 崔瀺就有一颗。 老秀才摇头笑道：“那小玩意儿，也就小时候的崔瀺会稀罕，觉得有趣，换成老的崔瀺，懒得多看一眼。",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的对话关系。",
+        "significance": "推动老秀才与陈平安之间的对话关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段8",
         "sentence_indexes_in_segment": [
@@ -736,30 +845,45 @@
       {
         "time": null,
         "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
           "陈平安"
+        ],
+        "action": "对话",
+        "context": "老秀才伸手递出那颗银锭，陈平安看着它，问道：“不会是虫银吧？",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 老秀才与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 158,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
         ],
         "to_roles": [
           "崔瀺"
         ],
         "action": "对话",
-        "context": "老秀才伸手递出那颗银锭，陈平安看着它，问道：“不会是虫银吧？ 崔瀺就有一颗。 ” 老秀才摇头笑道：“那小玩意儿，也就小时候的崔瀺会稀罕，觉得有趣，换成老的崔瀺，懒得多看一眼。 这颗看着像是银锭的东西，是一块没了主人的剑胚，比起崔瀺藏在方寸物里头的那一块，品秩要高出许多，关键是渊源很深，以后你要是有机会去往中土神洲，一定要带着它去趟穗山，说不定还能喝上某个家伙的一顿美酒，穗山的花果酿，世间一绝！ ”",
+        "context": "老秀才摇头笑道：“那小玩意儿，也就小时候的崔瀺会稀罕，觉得有趣，换成老的崔瀺，懒得多看一眼。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺对话",
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 老秀才与陈平安对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 158,
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.637401",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -782,6 +906,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才伸出大拇指，“神仙也要醉倒。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 158,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安接过银锭。 陈平安尴尬道：“觉得要是再拒绝好意，就伤感情了。",
@@ -798,16 +935,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安剧情推进",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 老秀才与陈平安师承",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安"
         ],
-        "description": "陈平安接过银锭。 陈平安尴尬道：“觉得要是再拒绝好意，就伤感情了。 老秀才伸出大拇指，“神仙也要醉倒。",
+        "description": "老秀才伸出大拇指，“神仙也要醉倒。 陈平安接过银锭。 陈平安尴尬道：“觉得要是再拒绝好意，就伤感情了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动老秀才与陈平安之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -821,8 +961,34 @@
         "segment_index": 9
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老秀才"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "师承",
+        "context": "老秀才伸出大拇指，“神仙也要醉倒。 ” 陈平安接过银锭。 老人打趣道：“呦，之前不乐意做我的弟子，我说磨破嘴皮子都不肯点头答应，现在怎么收下了。 ” 陈平安尴尬道：“觉得要是再拒绝好意，就伤感情了。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 老秀才与陈平安师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 9
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.638402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -915,7 +1081,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.638402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -977,7 +1143,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.638402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1024,21 +1190,36 @@
         ],
         "juan_index": 158,
         "segment_index": 12
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才颠了颠身后行囊，叹了口气，“剑胚名为‘小酆都’，只管放心收下，剑胚上头的因果缘分，早已被切断得一干二净，至于怎么驾驭使用，很简单，只要用心，船到桥头自然直，它就会自动认主，如果不用心，你就算捧着它一万年，它都不会醒过来，比一块破铜烂铁还不如。 老秀才点头道：“走喽。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 12
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与李宝瓶剧情推进",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与老秀才剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "老秀才",
           "李宝瓶"
         ],
-        "description": "小姑娘连忙作揖行礼，弯了一个大腰，只是忘了自己还背着一只略显沉重书箱，身体重心不稳，李宝瓶差点摔了个狗吃屎，陈平安赶紧帮忙提了提小书箱。 陈平安将它小心收起。 老人挺直腰杆，一动不动，坦然接受这份拜礼。",
+        "description": "小姑娘连忙作揖行礼，弯了一个大腰，只是忘了自己还背着一只略显沉重书箱，身体重心不稳，李宝瓶差点摔了个狗吃屎，陈平安赶紧帮忙提了提小书箱。 老秀才颠了颠身后行囊，叹了口气，“剑胚名为‘小酆都’，只管放心收下，剑胚上头的因果缘分，早已被切断得一干二净，至于怎么驾驭使用，很简单，只要用心，船到桥头自然直，它就会自动认主，如果不用心，你就算捧着它一万年，它都不会醒过来，比一块破铜烂铁还不如。 陈平安将它小心收起。",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的剧情推进关系。",
+        "significance": "推动陈平安与老秀才之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段12",
         "sentence_indexes_in_segment": [
@@ -1054,7 +1235,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.638402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1116,7 +1297,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.638402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1137,6 +1318,20 @@
       "但其实在靠近街道那头的行云流水巷，有个老秀才，转头望向秋芦客栈门口那边，缓缓离去。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才忍俊不禁，点头笑了笑，果真嗖一下就不见了身影。 但其实在靠近街道那头的行云流水巷，有个老秀才，转头望向秋芦客栈门口那边，缓缓离去。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 14
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1167,16 +1362,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与李宝瓶剧情推进",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 老秀才与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老秀才",
           "陈平安",
           "李宝瓶"
         ],
-        "description": "陈平安和李宝瓶不约而同地抬起脑袋，望向天空，早已没了老人的身影。 小姑娘指了指天上，“师公，你不是要走远路吗？ 怎么不咻一下，然后就消失啦？",
+        "description": "老秀才忍俊不禁，点头笑了笑，果真嗖一下就不见了身影。 陈平安和李宝瓶不约而同地抬起脑袋，望向天空，早已没了老人的身影。 但其实在靠近街道那头的行云流水巷，有个老秀才，转头望向秋芦客栈门口那边，缓缓离去。",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的剧情推进关系。",
+        "significance": "推动老秀才与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段14",
         "sentence_indexes_in_segment": [
@@ -1192,7 +1388,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.638402",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1296,7 +1492,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.834005",
+    "extracted_at": "2026-03-25T17:27:37.639405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1374,7 +1570,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.835008",
+    "extracted_at": "2026-03-25T17:27:37.639405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1524,7 +1720,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.835008",
+    "extracted_at": "2026-03-25T17:27:37.639405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1587,7 +1783,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.835008",
+    "extracted_at": "2026-03-25T17:27:37.639405",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1649,7 +1845,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.835008",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1712,7 +1908,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.835008",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1838,7 +2034,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.835008",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1922,7 +2118,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1942,7 +2138,21 @@
       "刘嘉卉欲哭无泪，脸色惨白。",
       "少年摆摆手，“善解人意”道：“但是要你亲手杀人，太残忍了，况且紫阳府如今跟大骊结盟，我不会让兢兢业业操持这份家业的刘夫人为难，我身后这位水神老爷，本就跟那魏大人关系一般，由他来杀好了。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "只见那位白衣少年自顾自点头笑道：“对啊，我就是这种人。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 158,
+        "segment_index": 26
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -1963,13 +2173,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 大骊对话",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 白衣少年在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "少年摆摆手，“善解人意”道：“但是要你亲手杀人，太残忍了，况且紫阳府如今跟大骊结盟，我不会让兢兢业业操持这份家业的刘夫人为难，我身后这位水神老爷，本就跟那魏大人关系一般，由他来杀好了。 ” 刘嘉卉微微抬起视线。",
+        "participants": [
+          "白衣少年"
+        ],
+        "description": "只见那位白衣少年自顾自点头笑道：“对啊，我就是这种人。 少年摆摆手，“善解人意”道：“但是要你亲手杀人，太残忍了，况且紫阳府如今跟大骊结盟，我不会让兢兢业业操持这份家业的刘夫人为难，我身后这位水神老爷，本就跟那魏大人关系一般，由他来杀好了。 ”",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应白衣少年在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段26",
         "sentence_indexes_in_segment": [
@@ -1985,7 +2197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2068,7 +2280,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2132,7 +2344,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.640409",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2216,7 +2428,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.641412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2302,7 +2514,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.641412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2366,7 +2578,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.641412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2449,7 +2661,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.836012",
+    "extracted_at": "2026-03-25T17:27:37.641412",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2534,7 +2746,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.642432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2598,7 +2810,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.642432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2633,20 +2845,34 @@
         ],
         "juan_index": 158,
         "segment_index": 35
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "这位白衣少年晃了晃脑袋，“是魏礼这些个真正的读书人，身为儒家门生，为了一个所谓的天下太平，毅然入世，在官场摸爬滚打，满身伤痕，但是到最后，他对这个世界付出了最大的心血，最多的善意，可是得到的却不是同等的善意，甚至反而会是扑面而来的恶意，他真正想要的，一点，一丁点儿，都没有得到，众叛亲离不说，看似他辜负了国家百姓不说，事实上所有人也都辜负了他。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 35
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百五十八章 吃掉 · 崔瀺剧情推进",
+        "name": "第二卷山水郎 第一百五十八章 吃掉 · 崔瀺与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺"
+          "崔瀺",
+          "白衣少年"
         ],
-        "description": "崔瀺懒洋洋缩在椅子里，“真正的读书人，知道他们最受不了什么吗？ ” 不是当了官，却碰到一个王八蛋昏君，不得不为社稷苍生仗义执言，不惜死谏君王，然后被咔嚓一下砍了头，因为这样是无愧良知的，说不得还会青史留名。",
+        "description": "崔瀺懒洋洋缩在椅子里，“真正的读书人，知道他们最受不了什么吗？ 这位白衣少年晃了晃脑袋，“是魏礼这些个真正的读书人，身为儒家门生，为了一个所谓的天下太平，毅然入世，在官场摸爬滚打，满身伤痕，但是到最后，他对这个世界付出了最大的心血，最多的善意，可是得到的却不是同等的善意，甚至反而会是扑面而来的恶意，他真正想要的，一点，一丁点儿，都没有得到，众叛亲离不说，看似他辜负了国家百姓不说，事实上所有人也都辜负了他。 ”",
         "background": "",
-        "significance": "对应崔瀺在叙事中的关键剧情推进节点。",
+        "significance": "推动崔瀺与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段35",
         "sentence_indexes_in_segment": [
@@ -2662,7 +2888,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.642432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2746,7 +2972,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.642432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2810,7 +3036,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.642432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2891,7 +3117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.642432",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2975,7 +3201,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.643419",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3041,7 +3267,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.643419",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3134,7 +3360,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.837015",
+    "extracted_at": "2026-03-25T17:27:37.643419",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3213,7 +3439,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.838019",
+    "extracted_at": "2026-03-25T17:27:37.643419",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3276,6 +3502,19 @@
         ],
         "juan_index": 158,
         "segment_index": 44
+      },
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "老秀才不才刚刚滚蛋吗？",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 158,
+        "segment_index": 44
       }
     ],
     "locations": [],
@@ -3287,7 +3526,8 @@
         "participants": [
           "陈平安",
           "崔瀺",
-          "李宝瓶"
+          "李宝瓶",
+          "老秀才"
         ],
         "description": "陈平安无意间记起一事，就问小姑娘崔瀺的那个瀺字，到底怎么写来着。 李宝瓶知道啊，就在石桌上用手指一笔一画写了出来。 陈平安就随便感叹了一句，“这么难写的字啊。",
         "background": "",
@@ -3307,7 +3547,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.838019",
+    "extracted_at": "2026-03-25T17:27:37.643419",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3337,6 +3577,19 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0,
+          1
+        ],
+        "juan_index": 158,
+        "segment_index": 45
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "陈平安转过头，看到呆若木鸡的白衣少年杵在那边。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
           1
         ],
         "juan_index": 158,
@@ -3386,14 +3639,13 @@
         "location": "大骊",
         "participants": [
           "陈平安",
-          "崔瀺"
+          "崔瀺",
+          "白衣少年"
         ],
         "description": "陈平安这个比自己更心狠手辣的王八蛋，就要开始着手准备给自己花钱造坟，写墓碑啦？ 陈平安转过头，看到呆若木鸡的白衣少年杵在那边。 崔瀺吓得转身就跑，火急火燎找到了胆战心惊的刘嘉卉，拉着她到了一个僻静地方，尽量和颜悦色道：“刘夫人啊，我刚才想明白了一个道理，要与人为善啊，只要你对我大骊忠心耿耿，以后保证你和魏礼和和美美，子孙满堂！",
         "background": "",
         "significance": "在大骊推动陈平安与崔瀺之间的冲突线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百五十八章 吃掉 · 段45",
         "sentence_indexes_in_segment": [
           0,
@@ -3407,34 +3659,8 @@
         "segment_index": 45
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "崔瀺"
-        ],
-        "action": "冲突",
-        "context": "陈平安这个比自己更心狠手辣的王八蛋，就要开始着手准备给自己花钱造坟，写墓碑啦？ 陈平安转过头，看到呆若木鸡的白衣少年杵在那边。 崔瀺吓得转身就跑，火急火燎找到了胆战心惊的刘嘉卉，拉着她到了一个僻静地方，尽量和颜悦色道：“刘夫人啊，我刚才想明白了一个道理，要与人为善啊，只要你对我大骊忠心耿耿，以后保证你和魏礼和和美美，子孙满堂！ ” 崔瀺这才心满意足地转身离去，伸出手挥了挥，不去看那个吓得扑通跪下的妇人，骂骂咧咧道：“信不信由你！ 他娘的假话听得欢天喜地，真话反而不信了，反正你和魏礼这次算是撞了大运，以后可劲儿恩爱缠绵去吧！",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百五十八章 吃掉 · 陈平安与崔瀺在大骊冲突",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 158,
-        "segment_index": 45
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.838019",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.643419",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3559,7 +3785,7 @@
         "segment_index": 46
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.838019",
+    "extracted_at": "2026-03-25T17:27:37.644422",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3638,7 +3864,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.838019",
+    "extracted_at": "2026-03-25T17:27:37.644422",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3719,7 +3945,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.838019",
+    "extracted_at": "2026-03-25T17:27:37.644422",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3826,7 +4052,7 @@
         "segment_index": 49
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.839022",
+    "extracted_at": "2026-03-25T17:27:37.644422",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3878,7 +4104,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.839022",
+    "extracted_at": "2026-03-25T17:27:37.644422",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -195,7 +195,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.616222",
+    "extracted_at": "2026-03-25T17:27:37.365498",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -301,7 +301,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.617225",
+    "extracted_at": "2026-03-25T17:27:37.366502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -396,7 +396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.617225",
+    "extracted_at": "2026-03-25T17:27:37.366502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -489,7 +489,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.617225",
+    "extracted_at": "2026-03-25T17:27:37.366502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -608,7 +608,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.617225",
+    "extracted_at": "2026-03-25T17:27:37.366502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -745,7 +745,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.618229",
+    "extracted_at": "2026-03-25T17:27:37.366502",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -835,7 +835,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.618229",
+    "extracted_at": "2026-03-25T17:27:37.367505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -939,7 +939,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.618229",
+    "extracted_at": "2026-03-25T17:27:37.367505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1075,7 +1075,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.618229",
+    "extracted_at": "2026-03-25T17:27:37.367505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1187,7 +1187,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.618229",
+    "extracted_at": "2026-03-25T17:27:37.367505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1266,7 +1266,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.618229",
+    "extracted_at": "2026-03-25T17:27:37.367505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1383,7 +1383,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "extracted_at": "2026-03-25T17:27:37.367505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1525,7 +1525,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "extracted_at": "2026-03-25T17:27:37.368509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1621,7 +1621,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "extracted_at": "2026-03-25T17:27:37.368509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1644,6 +1644,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "再也不是毙命之时老妪模样的长发妇人，眯起眼，望向铁符河对岸做贼似的五人。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 96,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "阮邛",
         "alias": [
           "阮师"
@@ -1661,16 +1674,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第九十六章 山水有神怪 · 阮邛剧情推进",
+        "name": "第二卷山水郎 第九十六章 山水有神怪 · 老妪与阮邛讥讽",
         "time": null,
         "location": null,
         "participants": [
+          "老妪",
           "阮邛"
         ],
-        "description": "只是后来那五个妖气轻重不一的家伙，不知为何吓得屁滚尿流撒腿就跑，如此一来，不管那五位为何而退，总之她就再无惧意了，心中反而只剩下讥讽和洋洋得意，自己如今不但正儿八经为圣人阮师做事，为他的铸剑用水加重阴寒之气，还是曾被秀秀姑娘那条火龙踩在脚底下、还能劫后余生的角色！ 总算来了。 再也不是毙命之时老妪模样的长发妇人，眯起眼，望向铁符河对岸做贼似的五人。",
+        "description": "再也不是毙命之时老妪模样的长发妇人，眯起眼，望向铁符河对岸做贼似的五人。 只是后来那五个妖气轻重不一的家伙，不知为何吓得屁滚尿流撒腿就跑，如此一来，不管那五位为何而退，总之她就再无惧意了，心中反而只剩下讥讽和洋洋得意，自己如今不但正儿八经为圣人阮师做事，为他的铸剑用水加重阴寒之气，还是曾被秀秀姑娘那条火龙踩在脚底下、还能劫后余生的角色！ 总算来了。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动老妪与阮邛之间的讥讽关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第九十六章 山水有神怪 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -1684,8 +1700,34 @@
         "segment_index": 15
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老妪"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "讥讽",
+        "context": "总算来了。 再也不是毙命之时老妪模样的长发妇人，眯起眼，望向铁符河对岸做贼似的五人。 之前她躲在瀑布顶部的溪水当中，举目远眺，那五人来势汹汹，架子摆得很足，一个比一个像神仙中人，差点就要让她生出退避三舍的怯懦念头。 只是后来那五个妖气轻重不一的家伙，不知为何吓得屁滚尿流撒腿就跑，如此一来，不管那五位为何而退，总之她就再无惧意了，心中反而只剩下讥讽和洋洋得意，自己如今不但正儿八经为圣人阮师做事，为他的铸剑用水加重阴寒之气，还是曾被秀秀姑娘那条火龙踩在脚底下、还能劫后余生的角色！ 这难道还不值得骄傲？ 一想到这些，她便心稳许多，竭力让自己面容平淡，装模作样坐在大石崖畔，冷冷望着溪水对岸的五位妖物，有白发苍苍的老人身披蓑衣，如人间喜好游山玩水的年迈儒士。",
+        "result": null,
+        "event_name": "第二卷山水郎 第九十六章 山水有神怪 · 老妪与阮邛讥讽",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 96,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.368509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1765,7 +1807,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "extracted_at": "2026-03-25T17:27:37.368509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1867,7 +1909,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "extracted_at": "2026-03-25T17:27:37.368509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1931,7 +1973,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.619232",
+    "extracted_at": "2026-03-25T17:27:37.368509",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

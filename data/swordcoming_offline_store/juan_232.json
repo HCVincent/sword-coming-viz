@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.175141",
+    "extracted_at": "2026-03-25T17:27:38.060748",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -79,6 +79,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "大髯汉子率先飞身而出，披甲武将和道士张山峰紧随其后。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 232,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "一尊丈余高的黄铜力士大踏步轰然冲来，二话不说对着陈平安就是一拳砸下，陈平安只得伸出手掌，挡住那只拳头，崇妙道人精心画符打造而成的这尊黄铜力士，实力不俗，虽然品相不高，但是战力足以媲美二境巅峰的纯粹武夫，可被陈平安五指挡住拳头后，身躯关节处剧烈颤动，发出阵阵嘶鸣声，却始终无法前进分毫。 大髯刀客也跟旁人赶紧解释道：“是我们朋友，名叫陈平安，之前去往调查城隍阁的虚实。",
@@ -87,6 +100,19 @@
         "sentence_indexes_in_segment": [
           2,
           5
+        ],
+        "juan_index": 232,
+        "segment_index": 2
+      },
+      {
+        "entity_type": "person",
+        "name": "刘太守",
+        "alias": [],
+        "original_description_in_book": "刘太守也快步跑出大门，仰头望去，见着了那位站在墙头上的银铃少女，立即高呼道：“是我女儿，是我女儿刘高馨，诸位猛士莫要误伤了她！",
+        "description": "地方官面人物，适合强化郡城治理与王朝支线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 232,
         "segment_index": 2
@@ -100,9 +126,11 @@
         "location": "泥瓶巷",
         "participants": [
           "陈平安",
-          "宋集薪"
+          "宋集薪",
+          "张山峰",
+          "刘太守"
         ],
-        "description": "一尊丈余高的黄铜力士大踏步轰然冲来，二话不说对着陈平安就是一拳砸下，陈平安只得伸出手掌，挡住那只拳头，崇妙道人精心画符打造而成的这尊黄铜力士，实力不俗，虽然品相不高，但是战力足以媲美二境巅峰的纯粹武夫，可被陈平安五指挡住拳头后，身躯关节处剧烈颤动，发出阵阵嘶鸣声，却始终无法前进分毫。 大髯刀客也跟旁人赶紧解释道：“是我们朋友，名叫陈平安，之前去往调查城隍阁的虚实。 ”",
+        "description": "大髯汉子率先飞身而出，披甲武将和道士张山峰紧随其后。 一尊丈余高的黄铜力士大踏步轰然冲来，二话不说对着陈平安就是一拳砸下，陈平安只得伸出手掌，挡住那只拳头，崇妙道人精心画符打造而成的这尊黄铜力士，实力不俗，虽然品相不高，但是战力足以媲美二境巅峰的纯粹武夫，可被陈平安五指挡住拳头后，身躯关节处剧烈颤动，发出阵阵嘶鸣声，却始终无法前进分毫。 刘太守也快步跑出大门，仰头望去，见着了那位站在墙头上的银铃少女，立即高呼道：“是我女儿，是我女儿刘高馨，诸位猛士莫要误伤了她！",
         "background": "",
         "significance": "建立陈平安与宋集薪之间的早期对照关系。",
         "related_action_indices": [],
@@ -120,7 +148,231 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.175141",
+    "extracted_at": "2026-03-25T17:27:38.060748",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "232-3-0": {
+    "juan_index": 232,
+    "segment_index": 3,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十一章 又见城隍爷",
+    "source_sentences": [
+      "”",
+      "披甲武将点了点头，抬起手臂做了一个军中手势，潜伏在各处的弓箭手，没有立即收起手中一架架强弓，只是箭头往下一压，紧绷如满月的弧度，同时缩回弧月形状，如出一辙，几乎连弧度变化都丝毫不差。",
+      "游历过许多国家的徐远霞，心细如发，在见到这一幕后，顿时大为叹服，不曾想彩衣国这般书卷气弥漫的地方，还有这么一支训练有素的虎狼之师。",
+      "那位如今负责坐镇城东门的马将军，必然是一位治军有方的大才。",
+      "崇妙道人掐诀召回那尊出师不利的黄铜力士，脸色不太好看，冷笑道：“黄老神仙是主谋？",
+      "哈哈哈，你这黄口白牙的少年郎，我倒是觉得你才是想要浑水摸鱼的歹人！"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "游历过许多国家的徐远霞，心细如发，在见到这一幕后，顿时大为叹服，不曾想彩衣国这般书卷气弥漫的地方，还有这么一支训练有素的虎狼之师。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 232,
+        "segment_index": 3
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 徐远霞对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "徐远霞"
+        ],
+        "description": "游历过许多国家的徐远霞，心细如发，在见到这一幕后，顿时大为叹服，不曾想彩衣国这般书卷气弥漫的地方，还有这么一支训练有素的虎狼之师。 ” 披甲武将点了点头，抬起手臂做了一个军中手势，潜伏在各处的弓箭手，没有立即收起手中一架架强弓，只是箭头往下一压，紧绷如满月的弧度，同时缩回弧月形状，如出一辙，几乎连弧度变化都丝毫不差。",
+        "background": "",
+        "significance": "对应徐远霞在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段3",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 3
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.060748",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "232-4-0": {
+    "juan_index": 232,
+    "segment_index": 4,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十一章 又见城隍爷",
+    "source_sentences": [
+      "”",
+      "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。",
+      "再说了，黄老是幕后凶手的话，何必脱裤子放屁，主动为我们示警？",
+      "”",
+      "刘太守沉吟道：“道理是说不通。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 232,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "刘太守",
+        "alias": [],
+        "original_description_in_book": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。 刘太守沉吟道：“道理是说不通。",
+        "description": "地方官面人物，适合强化郡城治理与王朝支线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 232,
+        "segment_index": 4
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 老道人与刘太守对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老道人",
+          "刘太守"
+        ],
+        "description": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。 刘太守沉吟道：“道理是说不通。 ”",
+        "background": "",
+        "significance": "推动老道人与刘太守之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
+        "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段4",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 4
+      }
+    ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "老道人"
+        ],
+        "to_roles": [
+          "刘太守"
+        ],
+        "action": "对话",
+        "context": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 老道人与刘太守对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 232,
+        "segment_index": 4
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.060748",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "232-5-0": {
+    "juan_index": 232,
+    "segment_index": 5,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十一章 又见城隍爷",
+    "source_sentences": [
+      "武将倒是为那少年说了一句公道话，“邪魔外道，最擅长兵行险着，不可以常理揣度。",
+      "我们目前最好谁都不要轻信，不妨先听那少年怎么说。",
+      "”",
+      "少女刘高馨跳下墙头，一路飞奔而来，身法充满灵气，尤其是银质铃铛的叮叮咚咚，身边荡漾出阵阵金色涟漪，分明是登堂入室的修行中人，刘太守顾不得深思为何女儿变成了飞来飞去的神仙，等到小女儿来到身边，立即着急道：“有没有哪里受伤？",
+      "你这个臭丫头，现在郡城这么乱，瞎跑什么，胡闹！",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘太守",
+        "alias": [],
+        "original_description_in_book": "少女刘高馨跳下墙头，一路飞奔而来，身法充满灵气，尤其是银质铃铛的叮叮咚咚，身边荡漾出阵阵金色涟漪，分明是登堂入室的修行中人，刘太守顾不得深思为何女儿变成了飞来飞去的神仙，等到小女儿来到身边，立即着急道：“有没有哪里受伤？",
+        "description": "地方官面人物，适合强化郡城治理与王朝支线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 232,
+        "segment_index": 5
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 刘太守剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘太守"
+        ],
+        "description": "少女刘高馨跳下墙头，一路飞奔而来，身法充满灵气，尤其是银质铃铛的叮叮咚咚，身边荡漾出阵阵金色涟漪，分明是登堂入室的修行中人，刘太守顾不得深思为何女儿变成了飞来飞去的神仙，等到小女儿来到身边，立即着急道：“有没有哪里受伤？ 武将倒是为那少年说了一句公道话，“邪魔外道，最擅长兵行险着，不可以常理揣度。 我们目前最好谁都不要轻信，不妨先听那少年怎么说。",
+        "background": "",
+        "significance": "对应刘太守在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段5",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 5
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.061751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -184,7 +436,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.175141",
+    "extracted_at": "2026-03-25T17:27:38.061751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -217,20 +469,62 @@
         ],
         "juan_index": 232,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "刘太守",
+        "alias": [],
+        "original_description_in_book": "正厅内气氛凝重，刘太守强自镇定，开始排兵布阵，除了派人火速前往城东门，通知马将军小心那位黄老神仙之外，厅内众人两人组成一队，联手去往各处古怪，以防不测，只要发现魔障百姓或是妖头阴物，可斩立决。",
+        "description": "地方官面人物，适合强化郡城治理与王朝支线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 232,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "大髯刀客徐远霞和张山峰一路，一位纯粹武夫，一位道士，正好配合。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "张山峰",
+        "alias": [],
+        "original_description_in_book": "大髯刀客徐远霞和张山峰一路，一位纯粹武夫，一位道士，正好配合。",
+        "description": "道门支线人物，能扩展前三季陈平安外部世界的接触面。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 7
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 朱鹿迁移",
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 朱鹿与刘太守迁移",
         "time": null,
         "location": null,
         "participants": [
-          "朱鹿"
+          "朱鹿",
+          "刘太守",
+          "徐远霞",
+          "张山峰"
         ],
-        "description": "比起棋墩山的朱鹿，以及当初破败寺庙前，那伙鲜衣怒马的江湖儿女，名叫刘高馨的银铃少女，确实要强上太多了。 众人一起快步返回正厅，不等落座，就有一身血污的披甲锐士进入，说是郡城之内，多处出现如同陷入魔障的百姓，开始疯狂杀人，无论是亲朋好友还是街坊邻居，都不能幸免，这些好似纯粹武夫走火入魔的郡城百姓，有一个共同点，就是眼眶渗出鲜血，而且身形颇为矫健，极为棘手，已经有许多官府兵丁和捕快受伤。 不但如此，郡城有数处地方，既有游人如织的石拱桥，也有僻静巷弄，几乎同时出现了猩红光芒，方圆十数丈内，草木枯黄，游鱼翻起肚白。",
+        "description": "比起棋墩山的朱鹿，以及当初破败寺庙前，那伙鲜衣怒马的江湖儿女，名叫刘高馨的银铃少女，确实要强上太多了。 正厅内气氛凝重，刘太守强自镇定，开始排兵布阵，除了派人火速前往城东门，通知马将军小心那位黄老神仙之外，厅内众人两人组成一队，联手去往各处古怪，以防不测，只要发现魔障百姓或是妖头阴物，可斩立决。 大髯刀客徐远霞和张山峰一路，一位纯粹武夫，一位道士，正好配合。",
         "background": "",
-        "significance": "对应朱鹿在叙事中的关键迁移节点。",
+        "significance": "推动朱鹿与刘太守之间的迁移关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段7",
         "sentence_indexes_in_segment": [
@@ -246,7 +540,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.175141",
+    "extracted_at": "2026-03-25T17:27:38.061751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -281,21 +575,53 @@
         ],
         "juan_index": 232,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "刘太守",
+        "alias": [],
+        "original_description_in_book": "崇妙道人和那位披甲武将一伙，在刘高馨的竭力要求下，她追随陈平安，刘太守再大公无私，哪里放心自己宝贝闺女去涉险，好在那位江湖武人义士主动请缨，协助陈平安去往赵府门口，刘太守这才千叮咛万嘱咐，要刘高馨不许冲动，一切听从两位高人的吩咐。 刘高馨当然欢天喜地，满口答应下来，刘太守怕她不上心，又拉住她叮嘱一番。",
+        "description": "地方官面人物，适合强化郡城治理与王朝支线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "少女便有些不耐烦了，突然身边那位不显老的“老剑仙”提了一嘴，“刘小姐，不要让太守大人担心。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 232,
+        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安与刘太守归属",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘太守"
         ],
-        "description": "崇妙道人和那位披甲武将一伙，在刘高馨的竭力要求下，她追随陈平安，刘太守再大公无私，哪里放心自己宝贝闺女去涉险，好在那位江湖武人义士主动请缨，协助陈平安去往赵府门口，刘太守这才千叮咛万嘱咐，要刘高馨不许冲动，一切听从两位高人的吩咐。 刘高馨愣了一下，转头望去，看到陈平安既不是生气恼火，也不是倚老卖老，就像是简简单单，要她把当下这件事情做得更好一些。 刘高馨虽然不明就里，还是耐着性子跟父亲告别，保证自己不会意气用事，刘太守这才略微放心，最后向陈平安和那位武人抱拳致谢，诚恳道：“小女就有劳两位侠士多加照顾了。",
+        "description": "崇妙道人和那位披甲武将一伙，在刘高馨的竭力要求下，她追随陈平安，刘太守再大公无私，哪里放心自己宝贝闺女去涉险，好在那位江湖武人义士主动请缨，协助陈平安去往赵府门口，刘太守这才千叮咛万嘱咐，要刘高馨不许冲动，一切听从两位高人的吩咐。 刘高馨当然欢天喜地，满口答应下来，刘太守怕她不上心，又拉住她叮嘱一番。 少女便有些不耐烦了，突然身边那位不显老的“老剑仙”提了一嘴，“刘小姐，不要让太守大人担心。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与刘太守之间的归属关系。",
+        "related_action_indices": [
+          0,
+          1
+        ],
         "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -309,8 +635,49 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.175141",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘太守"
+        ],
+        "action": "归属",
+        "context": "崇妙道人和那位披甲武将一伙，在刘高馨的竭力要求下，她追随陈平安，刘太守再大公无私，哪里放心自己宝贝闺女去涉险，好在那位江湖武人义士主动请缨，协助陈平安去往赵府门口，刘太守这才千叮咛万嘱咐，要刘高馨不许冲动，一切听从两位高人的吩咐。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安与刘太守归属",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 232,
+        "segment_index": 8
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "刘太守"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "别离",
+        "context": "刘高馨虽然不明就里，还是耐着性子跟父亲告别，保证自己不会意气用事，刘太守这才略微放心，最后向陈平安和那位武人抱拳致谢，诚恳道：“小女就有劳两位侠士多加照顾了。",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安与刘太守归属",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.061751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -372,7 +739,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.175141",
+    "extracted_at": "2026-03-25T17:27:38.061751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -405,20 +772,34 @@
         ],
         "juan_index": 232,
         "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "徐远霞",
+        "alias": [],
+        "original_description_in_book": "姓窦的刀客抽刀出鞘后，刀身绽放出刺眼的雪白光芒，每一刀下去，就直接将魔障男女老幼一刀劈成两半，这位武人的刀法极其不俗，分明已经到了返璞归真的宗师境界，直截了当，招式直来直往，毫不拖泥带水，但是比起大髯刀客徐远霞的刀法，此人出刀少了沙场粗粝气息，多了几分出神入化的气象，极有可能是一位四境武夫往上走的武道宗师，由此可见，在官邸正厅那边的不显山不露水，更多还是江湖上所谓的真人不露相。",
+        "description": "江湖线人物，可补足陈平安早期外部同行与见闻线。",
+        "power": "江湖",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 232,
+        "segment_index": 10
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安剧情推进",
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安与徐远霞剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "徐远霞"
         ],
         "description": "三人到了赵府门外，已经有眼眶渗血的魔障男女往外冲杀，张牙舞爪，奔跑迅捷，外边刀客和弓箭手多是郡城捕快和官邸衙役，平日子最多是和江洋大盗和小蟊贼打交道，哪里见识过这番画面，大多脸色雪白，弓箭的准头不堪入目，而且那些魔障了的赵府家丁婢女，哪怕身中箭矢，竟然依然能够继续向前，陈平安亲眼看到一位满脸鲜血的少年，被一支势大力沉的箭矢在二十步距离内-射中胸口，整个人都被巨大的贯穿力带飞出去，后仰倒地后，一个挣扎就站起身，胸口还插着大半支箭矢，一边呕血，一边继续向前冲来。 弓手和捕快刀客的粗劣阵型，几乎是被一冲即溃，只得与那些悍不畏死的魔障近身肉搏，若非陈平安三人刚好赶到，源源不断涌出的赵府人氏，恐怕就要流窜各地，形成一股类似蝗群的灾祸。 陈平安不知魔障是否有化解之法，更多还是以拳脚将那些赵府魔障打飞回大门附近，刘高馨铃铛大振，金花朵朵飘散四方，那些魔障只要被金色花朵沾边，就会全身溃烂，变成一摊鲜血脓水，腥臭冲天。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与徐远霞之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段10",
         "sentence_indexes_in_segment": [
@@ -432,7 +813,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.061751",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -496,7 +877,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.062755",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -558,7 +939,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.062755",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -623,7 +1004,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.062755",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -689,7 +1070,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.062755",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "232-16-0": {
+    "juan_index": 232,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第三卷金错刀 第二百三十一章 又见城隍爷",
+    "source_sentences": [
+      "文士先作揖行礼，起身后微笑道：“这是咱们第二次见面了，本官沈温，正是胭脂郡城的城隍爷，看着这座城池已经好几百年了。",
+      "今日果，是往日因，是本官失职在先，若非你破了禁制，成功阻止了本官堕入魔道，说不定堂堂正正的彩衣国金城隍，到最后还要为虎作伥，沦为祸害辖境百姓的凶手。",
+      "本官要谢你。",
+      "”",
+      "说到这里，文士洒然笑道：“之前入魔在即而不自知，所以种种作为，都让小仙师笑话了。",
+      "这次感谢，既谢你帮了本官，不至于出去伤害黎民百姓，在史书上遗臭万年，还要谢你赤子之心，之前愿意主动交还那只青色木盒。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "沈温",
+        "alias": [],
+        "original_description_in_book": "文士先作揖行礼，起身后微笑道：“这是咱们第二次见面了，本官沈温，正是胭脂郡城的城隍爷，看着这座城池已经好几百年了。",
+        "description": "山水与庙堂边缘的支线人物，适合补足外围山上关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 232,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 沈温对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "沈温"
+        ],
+        "description": "文士先作揖行礼，起身后微笑道：“这是咱们第二次见面了，本官沈温，正是胭脂郡城的城隍爷，看着这座城池已经好几百年了。 今日果，是往日因，是本官失职在先，若非你破了禁制，成功阻止了本官堕入魔道，说不定堂堂正正的彩衣国金城隍，到最后还要为虎作伥，沦为祸害辖境百姓的凶手。 本官要谢你。",
+        "background": "",
+        "significance": "对应沈温在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 16
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.062755",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -751,7 +1194,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.062755",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -813,7 +1256,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.176144",
+    "extracted_at": "2026-03-25T17:27:38.063758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -875,7 +1318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.177148",
+    "extracted_at": "2026-03-25T17:27:38.063758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -908,21 +1351,50 @@
         ],
         "juan_index": 232,
         "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "刘太守",
+        "alias": [],
+        "original_description_in_book": "陈平安想了想，问道：“需要我帮你交给刘太守吗？",
+        "description": "地方官面人物，适合强化郡城治理与王朝支线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 232,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "沈温",
+        "alias": [],
+        "original_description_in_book": "城隍爷沈温仔细看着那双清澈的眼眸，一挥袖子，朗声笑道：“圣人教诲，天地神器，唯有德者持之！",
+        "description": "山水与庙堂边缘的支线人物，适合补足外围山上关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 232,
+        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安对话",
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安与刘太守对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "刘太守"
         ],
-        "description": "陈平安想了想，问道：“需要我帮你交给刘太守吗？ 若非这方小天师印无形中震慑群魔，城外那座乱葬岗在形成早起，怨气很重，早就要冲入胭脂郡城了。 ”",
+        "description": "陈平安想了想，问道：“需要我帮你交给刘太守吗？ 城隍爷沈温仔细看着那双清澈的眼眸，一挥袖子，朗声笑道：“圣人教诲，天地神器，唯有德者持之！ 若非这方小天师印无形中震慑群魔，城外那座乱葬岗在形成早起，怨气很重，早就要冲入胭脂郡城了。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与刘太守之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -936,8 +1408,29 @@
         "segment_index": 20
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.177148",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "刘太守"
+        ],
+        "action": "对话",
+        "context": "陈平安想了想，问道：“需要我帮你交给刘太守吗？",
+        "result": null,
+        "event_name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 陈平安与刘太守对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 232,
+        "segment_index": 20
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.063758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

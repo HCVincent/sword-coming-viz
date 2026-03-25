@@ -28,21 +28,38 @@
         ],
         "juan_index": 308,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "但是陈平安当时看着嚎啕大哭的那颗小光头，使劲摇晃着老僧的手臂，像是想要把师父给睡梦中摇醒，陈平安觉得如此这般，才是人之常情。 陈平安一直帮着寺庙打理老僧的后事，忙前忙后，私底下与心相寺新任住持，说了老僧的想法，舍利子一事，不要急着对外宣扬，免得在这个当下，白白惹来市井非议，甚至有可能引起官府的揣测。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          4
+        ],
+        "juan_index": 308,
+        "segment_index": 1
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安剧情推进",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与老僧师承",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老僧"
         ],
         "description": "但是陈平安当时看着嚎啕大哭的那颗小光头，使劲摇晃着老僧的手臂，像是想要把师父给睡梦中摇醒，陈平安觉得如此这般，才是人之常情。 陈平安一直帮着寺庙打理老僧的后事，忙前忙后，私底下与心相寺新任住持，说了老僧的想法，舍利子一事，不要急着对外宣扬，免得在这个当下，白白惹来市井非议，甚至有可能引起官府的揣测。 新住持对此没有异议，对陈平安低头合十，以表谢意。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与老僧之间的师承关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零七章 眼底脚下 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -56,8 +73,29 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "老僧"
+        ],
+        "action": "师承",
+        "context": "但是陈平安当时看着嚎啕大哭的那颗小光头，使劲摇晃着老僧的手臂，像是想要把师父给睡梦中摇醒，陈平安觉得如此这般，才是人之常情。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与老僧师承",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.508021",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -120,7 +158,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "extracted_at": "2026-03-25T17:27:38.508021",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,7 +220,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "extracted_at": "2026-03-25T17:27:38.508021",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -245,7 +283,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "extracted_at": "2026-03-25T17:27:38.508021",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -307,7 +345,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "extracted_at": "2026-03-25T17:27:38.508021",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -412,7 +450,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.511455",
+    "extracted_at": "2026-03-25T17:27:38.509024",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "308-8-0": {
+    "juan_index": 308,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零七章 眼底脚下",
+    "source_sentences": [
+      "有个市井坊间的憔悴妇人不知为何，逮住顽劣稚童就是一顿打屁股，孩子嘴上干嚎，其实对着不远处的小伙伴们挤眉弄眼，衣衫寒酸的妇人打着打着，就自己哭出声，孩子一愣，这才真哭了起来。",
+      "一场滂沱大雨过后，京城终于重新见着了暖洋洋的日头，一伙锦衣玉食的膏粱子弟纵马大街，扬鞭策马，踩得泥泞飞溅，路旁一个老妪的摊子，来不及撤离，上边摆了些做工粗糙的针织物件，不小心给烂泥溅得惨不忍睹，顿时脸色惨白，末尾一骑，是个眉眼倨傲的年轻女子，见着了这一幕，马不停蹄向前，却随手丢了一只钱袋子在摊子上边，只是由于她骑术算不得熟谙，太想着将那只沉甸甸的钱袋抛得有准头，一不小心就歪斜着坠马，好一顿驴打滚，哎哎呦呦起身后，原本秀美的脸庞和昂贵的衣裙，都不能看了。",
+      "女子踉跄着走向那匹停下的骏马，略微艰辛地爬上马背，扬鞭而去。",
+      "满身泥污的高高仰着脑袋，眼角余光发现一位身穿雪白长袍的剑客，正站在街边望向自己，她忍不住转过头。",
+      "那人朝她抬起手臂，竖起大拇指。",
+      "女子翻了个白眼，没有放在心上。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "一场滂沱大雨过后，京城终于重新见着了暖洋洋的日头，一伙锦衣玉食的膏粱子弟纵马大街，扬鞭策马，踩得泥泞飞溅，路旁一个老妪的摊子，来不及撤离，上边摆了些做工粗糙的针织物件，不小心给烂泥溅得惨不忍睹，顿时脸色惨白，末尾一骑，是个眉眼倨傲的年轻女子，见着了这一幕，马不停蹄向前，却随手丢了一只钱袋子在摊子上边，只是由于她骑术算不得熟谙，太想着将那只沉甸甸的钱袋抛得有准头，一不小心就歪斜着坠马，好一顿驴打滚，哎哎呦呦起身后，原本秀美的脸庞和昂贵的衣裙，都不能看了。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 老妪剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪"
+        ],
+        "description": "一场滂沱大雨过后，京城终于重新见着了暖洋洋的日头，一伙锦衣玉食的膏粱子弟纵马大街，扬鞭策马，踩得泥泞飞溅，路旁一个老妪的摊子，来不及撤离，上边摆了些做工粗糙的针织物件，不小心给烂泥溅得惨不忍睹，顿时脸色惨白，末尾一骑，是个眉眼倨傲的年轻女子，见着了这一幕，马不停蹄向前，却随手丢了一只钱袋子在摊子上边，只是由于她骑术算不得熟谙，太想着将那只沉甸甸的钱袋抛得有准头，一不小心就歪斜着坠马，好一顿驴打滚，哎哎呦呦起身后，原本秀美的脸庞和昂贵的衣裙，都不能看了。 有个市井坊间的憔悴妇人不知为何，逮住顽劣稚童就是一顿打屁股，孩子嘴上干嚎，其实对着不远处的小伙伴们挤眉弄眼，衣衫寒酸的妇人打着打着，就自己哭出声，孩子一愣，这才真哭了起来。 女子踉跄着走向那匹停下的骏马，略微艰辛地爬上马背，扬鞭而去。",
+        "background": "",
+        "significance": "对应老妪在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零七章 眼底脚下 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 8
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.509024",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -447,6 +547,20 @@
       },
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "南苑国显然有高人在为皇帝陛下出谋划策，白河寺丑闻被一种拦腰斩断的方式，迅速消停沉寂下去，因为朝野上下的注意力，很快就转移到了另外一场盛事上，天下四大宗师之一的湖山派掌门俞真意，闭关十年，成功破关，召开武林大会，召集群雄，商议围剿魔教三门一事。 这四人，皆是各自所在国家的武林魁首，跺跺脚，就能让一国江湖掀起惊涛骇浪，尤其是南苑国国师种秋和松籁国俞真意之间，恩怨纠缠了足足甲子光阴，两人是松籁国的市井出身，自幼就是街坊邻居，一对生死兄弟，机缘巧合下，开始一起行走江湖，各有奇遇，成为当时江湖最引人瞩目的一双武道天才，最终不知为何，却反目成仇，一场只有寥寥四五人观战的生死战后，两人都身负重伤，种秋这才来到南苑国，两人在那之后，老死不相往来，不谈恩情也不说仇怨。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          2,
+          4
+        ],
+        "juan_index": 308,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "届时被誉为“天下第一手”的南苑国国师种秋，镜心斋童青青，号称能够在山雾云海中温养剑意的鸟瞰峰山主陆舫，都会出现，四大宗师齐聚于毗邻南苑国京师的牯牛山，这是江湖百年未有的大气象。 这四人，皆是各自所在国家的武林魁首，跺跺脚，就能让一国江湖掀起惊涛骇浪，尤其是南苑国国师种秋和松籁国俞真意之间，恩怨纠缠了足足甲子光阴，两人是松籁国的市井出身，自幼就是街坊邻居，一对生死兄弟，机缘巧合下，开始一起行走江湖，各有奇遇，成为当时江湖最引人瞩目的一双武道天才，最终不知为何，却反目成仇，一场只有寥寥四五人观战的生死战后，两人都身负重伤，种秋这才来到南苑国，两人在那之后，老死不相往来，不谈恩情也不说仇怨。",
@@ -458,21 +572,34 @@
         ],
         "juan_index": 308,
         "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "届时被誉为“天下第一手”的南苑国国师种秋，镜心斋童青青，号称能够在山雾云海中温养剑意的鸟瞰峰山主陆舫，都会出现，四大宗师齐聚于毗邻南苑国京师的牯牛山，这是江湖百年未有的大气象。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与种秋同行",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋与俞真意同行",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "种秋"
+          "种秋",
+          "俞真意"
         ],
-        "description": "陈平安就这样走走停停，看了许多士子风流和市井百态。 届时被誉为“天下第一手”的南苑国国师种秋，镜心斋童青青，号称能够在山雾云海中温养剑意的鸟瞰峰山主陆舫，都会出现，四大宗师齐聚于毗邻南苑国京师的牯牛山，这是江湖百年未有的大气象。 这四人，皆是各自所在国家的武林魁首，跺跺脚，就能让一国江湖掀起惊涛骇浪，尤其是南苑国国师种秋和松籁国俞真意之间，恩怨纠缠了足足甲子光阴，两人是松籁国的市井出身，自幼就是街坊邻居，一对生死兄弟，机缘巧合下，开始一起行走江湖，各有奇遇，成为当时江湖最引人瞩目的一双武道天才，最终不知为何，却反目成仇，一场只有寥寥四五人观战的生死战后，两人都身负重伤，种秋这才来到南苑国，两人在那之后，老死不相往来，不谈恩情也不说仇怨。",
+        "description": "陈平安就这样走走停停，看了许多士子风流和市井百态。 南苑国显然有高人在为皇帝陛下出谋划策，白河寺丑闻被一种拦腰斩断的方式，迅速消停沉寂下去，因为朝野上下的注意力，很快就转移到了另外一场盛事上，天下四大宗师之一的湖山派掌门俞真意，闭关十年，成功破关，召开武林大会，召集群雄，商议围剿魔教三门一事。 届时被誉为“天下第一手”的南苑国国师种秋，镜心斋童青青，号称能够在山雾云海中温养剑意的鸟瞰峰山主陆舫，都会出现，四大宗师齐聚于毗邻南苑国京师的牯牛山，这是江湖百年未有的大气象。",
         "background": "",
-        "significance": "推动陈平安与种秋之间的同行关系。",
+        "significance": "推动种秋与俞真意之间的同行关系。",
         "related_action_indices": [
           0
         ],
@@ -492,29 +619,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
           "种秋"
         ],
+        "to_roles": [
+          "俞真意"
+        ],
         "action": "同行",
-        "context": "陈平安就这样走走停停，看了许多士子风流和市井百态。 白河寺的丑剧，只蔓延了不到一旬时间，就已经迅速拉下帷幕，朝廷已经盖棺定论，白河寺的僧人几乎没剩下几个，除去斩立决的几个罪魁祸首，下狱的下狱，驱逐的驱逐，白河寺的财产一律充公，至于谁会接受这颗烫手山芋，有说是其余京城三大寺里的高僧，也有说是地方上几座著名大寺的住持。 南苑国显然有高人在为皇帝陛下出谋划策，白河寺丑闻被一种拦腰斩断的方式，迅速消停沉寂下去，因为朝野上下的注意力，很快就转移到了另外一场盛事上，天下四大宗师之一的湖山派掌门俞真意，闭关十年，成功破关，召开武林大会，召集群雄，商议围剿魔教三门一事。 届时被誉为“天下第一手”的南苑国国师种秋，镜心斋童青青，号称能够在山雾云海中温养剑意的鸟瞰峰山主陆舫，都会出现，四大宗师齐聚于毗邻南苑国京师的牯牛山，这是江湖百年未有的大气象。 这四人，皆是各自所在国家的武林魁首，跺跺脚，就能让一国江湖掀起惊涛骇浪，尤其是南苑国国师种秋和松籁国俞真意之间，恩怨纠缠了足足甲子光阴，两人是松籁国的市井出身，自幼就是街坊邻居，一对生死兄弟，机缘巧合下，开始一起行走江湖，各有奇遇，成为当时江湖最引人瞩目的一双武道天才，最终不知为何，却反目成仇，一场只有寥寥四五人观战的生死战后，两人都身负重伤，种秋这才来到南苑国，两人在那之后，老死不相往来，不谈恩情也不说仇怨。",
+        "context": "这四人，皆是各自所在国家的武林魁首，跺跺脚，就能让一国江湖掀起惊涛骇浪，尤其是南苑国国师种秋和松籁国俞真意之间，恩怨纠缠了足足甲子光阴，两人是松籁国的市井出身，自幼就是街坊邻居，一对生死兄弟，机缘巧合下，开始一起行走江湖，各有奇遇，成为当时江湖最引人瞩目的一双武道天才，最终不知为何，却反目成仇，一场只有寥寥四五人观战的生死战后，两人都身负重伤，种秋这才来到南苑国，两人在那之后，老死不相往来，不谈恩情也不说仇怨。",
         "result": null,
-        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与种秋同行",
+        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋与俞真意同行",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
           4
         ],
         "juan_index": 308,
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.512459",
+    "extracted_at": "2026-03-25T17:27:38.509024",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -580,7 +703,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.512459",
+    "extracted_at": "2026-03-25T17:27:38.509024",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -645,7 +768,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.512459",
+    "extracted_at": "2026-03-25T17:27:38.509024",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,7 +830,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.512459",
+    "extracted_at": "2026-03-25T17:27:38.510027",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,6 +853,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "“湖山派的俞真意，这南苑国的种秋，镜心亭的童青青，鸟瞰峰的陆舫，可都是了不起的神仙人物，其中童青青这老婆姨更是跟师爷爷一个辈分的，反观咱们，势单力薄，真要玩这一出火中取栗吗？",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 14
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "“湖山派的俞真意，这南苑国的种秋，镜心亭的童青青，鸟瞰峰的陆舫，可都是了不起的神仙人物，其中童青青这老婆姨更是跟师爷爷一个辈分的，反观咱们，势单力薄，真要玩这一出火中取栗吗？",
@@ -740,20 +876,35 @@
         ],
         "juan_index": 308,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "“湖山派的俞真意，这南苑国的种秋，镜心亭的童青青，鸟瞰峰的陆舫，可都是了不起的神仙人物，其中童青青这老婆姨更是跟师爷爷一个辈分的，反观咱们，势单力薄，真要玩这一出火中取栗吗？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋迁移",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 俞真意与种秋迁移",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "俞真意",
+          "种秋",
+          "陆舫"
         ],
         "description": "“湖山派的俞真意，这南苑国的种秋，镜心亭的童青青，鸟瞰峰的陆舫，可都是了不起的神仙人物，其中童青青这老婆姨更是跟师爷爷一个辈分的，反观咱们，势单力薄，真要玩这一出火中取栗吗？ 貌若少女、可气质风情却如妇人的“鸦儿”，掩嘴娇笑，秋波流转，风情流泻，竟是让一座原本阴森吓人的大殿，都有些春意盎然。 名为周仕、绰号“簪花郎”的年轻人，无奈一笑，“丁老教主就莫要欺负我这么个晚辈了。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键迁移节点。",
+        "significance": "推动俞真意与种秋之间的迁移关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零七章 眼底脚下 · 段14",
         "sentence_indexes_in_segment": [
@@ -769,7 +920,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.512459",
+    "extracted_at": "2026-03-25T17:27:38.510027",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -792,6 +943,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "女子掰着手指头，一个个点名道姓过去，说着这方江湖最为帷幕重重的密事，“虽说师爷爷你才是真正的天下第一，可是好汉双拳难敌四手，俞真意的徒子徒孙那么多，南苑国种秋又是地头蛇，童青青这个老妖婆，最喜欢蛊惑人心，说不得上次簪花郎负伤归来，嘴上说是给她打得半死，其实是被老妖婆的美色迷得神魂颠倒，在跟咱们演一出苦肉计呢。 尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 15
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "女子掰着手指头，一个个点名道姓过去，说着这方江湖最为帷幕重重的密事，“虽说师爷爷你才是真正的天下第一，可是好汉双拳难敌四手，俞真意的徒子徒孙那么多，南苑国种秋又是地头蛇，童青青这个老妖婆，最喜欢蛊惑人心，说不得上次簪花郎负伤归来，嘴上说是给她打得半死，其实是被老妖婆的美色迷得神魂颠倒，在跟咱们演一出苦肉计呢。 尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？",
@@ -803,21 +968,40 @@
         ],
         "juan_index": 308,
         "segment_index": 15
+      },
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋冲突",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫与俞真意冲突",
         "time": null,
         "location": null,
         "participants": [
+          "陆舫",
+          "俞真意",
           "种秋"
         ],
         "description": "女子掰着手指头，一个个点名道姓过去，说着这方江湖最为帷幕重重的密事，“虽说师爷爷你才是真正的天下第一，可是好汉双拳难敌四手，俞真意的徒子徒孙那么多，南苑国种秋又是地头蛇，童青青这个老妖婆，最喜欢蛊惑人心，说不得上次簪花郎负伤归来，嘴上说是给她打得半死，其实是被老妖婆的美色迷得神魂颠倒，在跟咱们演一出苦肉计呢。 尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？ ”",
         "background": "",
-        "significance": "对应种秋在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动陆舫与俞真意之间的冲突关系。",
+        "related_action_indices": [
+          0,
+          1,
+          2
+        ],
         "source": "第五卷道观道 第三百零七章 眼底脚下 · 段15",
         "sentence_indexes_in_segment": [
           0,
@@ -831,8 +1015,131 @@
         "segment_index": 15
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "俞真意"
+        ],
+        "action": "冲突",
+        "context": "尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫与俞真意冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "陆舫"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "冲突",
+        "context": "尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫与俞真意冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 15
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "俞真意"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "冲突",
+        "context": "尤其是那个陆舫，几十年来出手的次数，屈指可数，江湖上都说他是走了正道的师爷爷，由此可见，天赋该有多好，经过这么多年潜心练剑，说不定都已经超过俞真意和种秋了吧？",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫与俞真意冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 15
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.510027",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "308-16-0": {
+    "juan_index": 308,
+    "segment_index": 16,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零七章 眼底脚下",
+    "source_sentences": [
+      "周仕出言宽慰女子，“这四人并非铁板一块，真到了生死关头，恐怕没谁乐意舍生取义。",
+      "”",
+      "女子笑道：“咱们中就有人愿意啦？",
+      "”",
+      "周仕神色自若，继续道：“其实光是我爹，加上臂圣程元山和磨刀人刘宗，仅就顶尖战力来说，已经不比这四位大宗师联手逊色，我们这次是密谋行事，又不是沙场上的两军对垒，不用讲究兵力多寡，鸦儿你不用担心。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘宗",
+        "alias": [],
+        "original_description_in_book": "周仕神色自若，继续道：“其实光是我爹，加上臂圣程元山和磨刀人刘宗，仅就顶尖战力来说，已经不比这四位大宗师联手逊色，我们这次是密谋行事，又不是沙场上的两军对垒，不用讲究兵力多寡，鸦儿你不用担心。",
+        "description": "武道支线人物，能补足高强度对峙与外部强者关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 308,
+        "segment_index": 16
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 刘宗对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "刘宗"
+        ],
+        "description": "周仕神色自若，继续道：“其实光是我爹，加上臂圣程元山和磨刀人刘宗，仅就顶尖战力来说，已经不比这四位大宗师联手逊色，我们这次是密谋行事，又不是沙场上的两军对垒，不用讲究兵力多寡，鸦儿你不用担心。 周仕出言宽慰女子，“这四人并非铁板一块，真到了生死关头，恐怕没谁乐意舍生取义。 ”",
+        "background": "",
+        "significance": "对应刘宗在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零七章 眼底脚下 · 段16",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 16
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.512459",
+    "extracted_at": "2026-03-25T17:27:38.510027",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -855,6 +1162,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "从武道一途转入修习仙家道法的白道第一人，俞真意。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 17
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "世间外家拳第一人种秋。",
@@ -870,15 +1190,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 俞真意与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "俞真意",
           "种秋"
         ],
-        "description": "世间外家拳第一人种秋。 其实四大宗师，只是江湖正道的自家之言，故意撇干净了那些魔教中人和黑道枭雄，属于关起门来自己乐呵乐呵，真正服众的说法，是更有含金量的十大高手。 刚好正邪皆有对半分。",
+        "description": "从武道一途转入修习仙家道法的白道第一人，俞真意。 世间外家拳第一人种秋。 其实四大宗师，只是江湖正道的自家之言，故意撇干净了那些魔教中人和黑道枭雄，属于关起门来自己乐呵乐呵，真正服众的说法，是更有含金量的十大高手。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动俞真意与种秋之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零七章 眼底脚下 · 段17",
         "sentence_indexes_in_segment": [
@@ -894,7 +1215,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.513462",
+    "extracted_at": "2026-03-25T17:27:38.510027",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "308-18-0": {
+    "juan_index": 308,
+    "segment_index": 18,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零七章 眼底脚下",
+    "source_sentences": [
+      "排第六。",
+      "传言九十高龄却青春常驻的童青青，都说在她之后，数位你方唱罢我登场的所谓第一美人，姿色、风韵加在一起，都不如她一人。",
+      "排第九。",
+      "隐世独居鸟瞰峰的剑客陆舫，是四大宗师中最年轻的一位，如今还不到五十岁。",
+      "排第十。",
+      "但是随着时间的推移，几乎所有人都坚信，在二十年前榜上垫底的陆舫，才是最有资格挑战并且战胜那位第一人的存在。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "隐世独居鸟瞰峰的剑客陆舫，是四大宗师中最年轻的一位，如今还不到五十岁。 但是随着时间的推移，几乎所有人都坚信，在二十年前榜上垫底的陆舫，才是最有资格挑战并且战胜那位第一人的存在。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 18
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫"
+        ],
+        "description": "隐世独居鸟瞰峰的剑客陆舫，是四大宗师中最年轻的一位，如今还不到五十岁。 但是随着时间的推移，几乎所有人都坚信，在二十年前榜上垫底的陆舫，才是最有资格挑战并且战胜那位第一人的存在。 排第六。",
+        "background": "",
+        "significance": "对应陆舫在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零七章 眼底脚下 · 段18",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 18
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.510027",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -917,6 +1301,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "甚至有人认为如今的陆舫，已经超出南苑国国师种秋，跻身前五之列。 但是让人无奈的是周肥，排第四，而且公认横炼功夫天下第一，年轻时候的陆舫，曾经以一把佩剑“龙绕梁”，成功刺穿周肥身躯三次，周肥依然安然无事，战力折损几乎可以忽略不计，陆舫就此主动退去。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "甚至有人认为如今的陆舫，已经超出南苑国国师种秋，跻身前五之列。",
@@ -927,20 +1325,50 @@
         ],
         "juan_index": 308,
         "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "刘宗",
+        "alias": [],
+        "original_description_in_book": "磨刀人刘宗，是名副其实的顶尖邪道高手，纯粹喜好杀人，恶名昭彰，排第七。",
+        "description": "武道支线人物，能补足高强度对峙与外部强者关系。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 19
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "至于周仕的父亲，周肥，更是无数正道人士做梦都想大卸八块的大魔头，武学奇高，品行极为低劣，创建了一座春潮宫，搜罗天下美女，除了几个儿子，数百人的春潮宫，再没有一个男人，周肥因此自诩为“山上帝王，陆地神仙”。 但是让人无奈的是周肥，排第四，而且公认横炼功夫天下第一，年轻时候的陆舫，曾经以一把佩剑“龙绕梁”，成功刺穿周肥身躯三次，周肥依然安然无事，战力折损几乎可以忽略不计，陆舫就此主动退去。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋剧情推进",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫与周肥剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "陆舫",
+          "周肥",
+          "种秋",
+          "刘宗"
         ],
-        "description": "甚至有人认为如今的陆舫，已经超出南苑国国师种秋，跻身前五之列。 而簪花郎周仕所说的臂圣程元山，武功极高，对人对敌，必分生死，所以不被名门正派认可，觉得武德太差，不配享有宗师头衔。 此人排在第八。",
+        "description": "甚至有人认为如今的陆舫，已经超出南苑国国师种秋，跻身前五之列。 磨刀人刘宗，是名副其实的顶尖邪道高手，纯粹喜好杀人，恶名昭彰，排第七。 至于周仕的父亲，周肥，更是无数正道人士做梦都想大卸八块的大魔头，武学奇高，品行极为低劣，创建了一座春潮宫，搜罗天下美女，除了几个儿子，数百人的春潮宫，再没有一个男人，周肥因此自诩为“山上帝王，陆地神仙”。",
         "background": "",
-        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "significance": "推动陆舫与周肥之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零七章 眼底脚下 · 段19",
         "sentence_indexes_in_segment": [
@@ -956,7 +1384,99 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.513462",
+    "extracted_at": "2026-03-25T17:27:38.511031",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "308-20-0": {
+    "juan_index": 308,
+    "segment_index": 20,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零七章 眼底脚下",
+    "source_sentences": [
+      "孤身一人，仗剑闯入春潮宫的陆舫，也为自己的意气用事，付出了巨大的代价，在他一次出门远游的三年期间，师门六百人，被周肥半点不讲高手风范，亲手慢慢折磨殆尽，传言陆舫的师娘和十数位师姐师妹，如今尚且在春潮宫担任侍女。",
+      "至于为何陆舫游历归来，听闻噩耗，没有再度登山挑战周肥，就成了天底下最大的几个江湖秘密之一，与天下第一人的那个大魔头到底有多强、镜心亭董青青到底有多美、俞真意到底可以活到几岁，并称为天下四大谜案。",
+      "从南苑国京城，到城外那座牯牛山，在这条线上，处处云波诡谲。",
+      "有一位万里迢迢赶来的中年男子，带着一身酒气进入南苑国京城后，如鱼得水，终日在街边酒铺酗酒，浑浑噩噩，最后以至于不得不将佩剑押在了酒铺，五两银子，那还是掌柜妇人看他一身腱子肉的份上，可以趁着他睡着了，偷摸几把，不然最多三两银子顶天了。",
+      "牯牛山顶，一位身材如稚童、面容纯真的人物，每天闲来无事，就细细打磨一把玉竹折扇，而负责山脚下那八百御林军的南苑国武将，见到此人后，却要毕恭毕敬尊称一声俞老真人。",
+      "太子府第，一位多年来担任掌勺厨子的佝偻老人，对着一大缸时候未到的腌菜，揭了盖子，酸味扑鼻，嘴上呢喃着多事之秋，多事之秋。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "陆舫",
+        "alias": [],
+        "original_description_in_book": "孤身一人，仗剑闯入春潮宫的陆舫，也为自己的意气用事，付出了巨大的代价，在他一次出门远游的三年期间，师门六百人，被周肥半点不讲高手风范，亲手慢慢折磨殆尽，传言陆舫的师娘和十数位师姐师妹，如今尚且在春潮宫担任侍女。 至于为何陆舫游历归来，听闻噩耗，没有再度登山挑战周肥，就成了天底下最大的几个江湖秘密之一，与天下第一人的那个大魔头到底有多强、镜心亭董青青到底有多美、俞真意到底可以活到几岁，并称为天下四大谜案。",
+        "description": "山上人物，适合补强高位修士群像。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "孤身一人，仗剑闯入春潮宫的陆舫，也为自己的意气用事，付出了巨大的代价，在他一次出门远游的三年期间，师门六百人，被周肥半点不讲高手风范，亲手慢慢折磨殆尽，传言陆舫的师娘和十数位师姐师妹，如今尚且在春潮宫担任侍女。 至于为何陆舫游历归来，听闻噩耗，没有再度登山挑战周肥，就成了天底下最大的几个江湖秘密之一，与天下第一人的那个大魔头到底有多强、镜心亭董青青到底有多美、俞真意到底可以活到几岁，并称为天下四大谜案。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
+        "name": "俞真意",
+        "alias": [],
+        "original_description_in_book": "至于为何陆舫游历归来，听闻噩耗，没有再度登山挑战周肥，就成了天底下最大的几个江湖秘密之一，与天下第一人的那个大魔头到底有多强、镜心亭董青青到底有多美、俞真意到底可以活到几岁，并称为天下四大谜案。",
+        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 20
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 陆舫与周肥迁移",
+        "time": null,
+        "location": null,
+        "participants": [
+          "陆舫",
+          "周肥",
+          "俞真意"
+        ],
+        "description": "孤身一人，仗剑闯入春潮宫的陆舫，也为自己的意气用事，付出了巨大的代价，在他一次出门远游的三年期间，师门六百人，被周肥半点不讲高手风范，亲手慢慢折磨殆尽，传言陆舫的师娘和十数位师姐师妹，如今尚且在春潮宫担任侍女。 至于为何陆舫游历归来，听闻噩耗，没有再度登山挑战周肥，就成了天底下最大的几个江湖秘密之一，与天下第一人的那个大魔头到底有多强、镜心亭董青青到底有多美、俞真意到底可以活到几岁，并称为天下四大谜案。 从南苑国京城，到城外那座牯牛山，在这条线上，处处云波诡谲。",
+        "background": "",
+        "significance": "推动陆舫与周肥之间的迁移关系。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零七章 眼底脚下 · 段20",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 20
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.511031",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -989,21 +1509,50 @@
         ],
         "juan_index": 308,
         "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "樊莞尔",
+        "alias": [],
+        "original_description_in_book": "女子伸手揉着脸颊，自怨自艾道：“樊莞尔，周姝真，一个当今第一美人，一个在二十年前，颜色甲于天下，你爹的眼光真高，难怪会难入他老人家的法眼，哪怕见面了，一起喝茶，也是客客气气的，目不斜视。",
+        "description": "老龙城相关的重要女性人物，适合补充城池与家族支线。",
+        "power": "老龙城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "周姝真",
+        "alias": [],
+        "original_description_in_book": "女子伸手揉着脸颊，自怨自艾道：“樊莞尔，周姝真，一个当今第一美人，一个在二十年前，颜色甲于天下，你爹的眼光真高，难怪会难入他老人家的法眼，哪怕见面了，一起喝茶，也是客客气气的，目不斜视。",
+        "description": "外围修士与高位布局线人物，适合补足山上势力层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零七章 眼底脚下 · 种秋对话",
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 樊莞尔与周姝真对话",
         "time": null,
         "location": null,
         "participants": [
-          "种秋"
+          "樊莞尔",
+          "周姝真"
         ],
-        "description": "说好听点，是爱美人不爱江山，说难听点，就是见色忘命，如果不是种秋就住在南苑国皇宫旁边，他都能进宫去抢那位周皇后。 周仕苦笑道：“我爹什么脾性，你还不清楚？ ”",
+        "description": "说好听点，是爱美人不爱江山，说难听点，就是见色忘命，如果不是种秋就住在南苑国皇宫旁边，他都能进宫去抢那位周皇后。 女子伸手揉着脸颊，自怨自艾道：“樊莞尔，周姝真，一个当今第一美人，一个在二十年前，颜色甲于天下，你爹的眼光真高，难怪会难入他老人家的法眼，哪怕见面了，一起喝茶，也是客客气气的，目不斜视。 周仕苦笑道：“我爹什么脾性，你还不清楚？",
         "background": "",
-        "significance": "对应种秋在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动樊莞尔与周姝真之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零七章 眼底脚下 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -1017,8 +1566,91 @@
         "segment_index": 22
       }
     ],
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "樊莞尔"
+        ],
+        "to_roles": [
+          "周姝真"
+        ],
+        "action": "会见",
+        "context": "女子伸手揉着脸颊，自怨自艾道：“樊莞尔，周姝真，一个当今第一美人，一个在二十年前，颜色甲于天下，你爹的眼光真高，难怪会难入他老人家的法眼，哪怕见面了，一起喝茶，也是客客气气的，目不斜视。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 樊莞尔与周姝真对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 308,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.511031",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "308-24-0": {
+    "juan_index": 308,
+    "segment_index": 24,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第五卷道观道 第三百零七章 眼底脚下",
+    "source_sentences": [
+      "绝色女子和周仕并无异议，也不敢有丝毫质疑，别看女子在口口声声“师爷爷”，十分娇憨亲昵，实则胆战心惊，生怕一个不留神，就要被老人拍碎头颅。",
+      "周仕也好不到哪里去，一个父亲周肥，至多是一张可有可无的护身符，远远不足够成为真正的保命符。",
+      "一举一动都仿佛与天地契合的老人，跨出门槛的时候，脚步略作停滞。",
+      "只是这么一个不起眼的小动作，就让女子和周仕气息絮乱，胸口发闷，额头渗出汗水，停步站立不动。",
+      "老人又稍稍加快速度，跨过了门槛，走下台阶。",
+      "两个在江湖上已经赢得极大名头的年轻武学天才，又觉得气血疾速奔走，牵线木偶一般，情不自禁地跟着老人一起快步前行。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "周肥",
+        "alias": [],
+        "original_description_in_book": "周仕也好不到哪里去，一个父亲周肥，至多是一张可有可无的护身符，远远不足够成为真正的保命符。",
+        "description": "高位修士支线人物，适合扩充外围势力与家族博弈线。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 308,
+        "segment_index": 24
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第五卷道观道 第三百零七章 眼底脚下 · 周肥剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "周肥"
+        ],
+        "description": "周仕也好不到哪里去，一个父亲周肥，至多是一张可有可无的护身符，远远不足够成为真正的保命符。 绝色女子和周仕并无异议，也不敢有丝毫质疑，别看女子在口口声声“师爷爷”，十分娇憨亲昵，实则胆战心惊，生怕一个不留神，就要被老人拍碎头颅。 一举一动都仿佛与天地契合的老人，跨出门槛的时候，脚步略作停滞。",
+        "background": "",
+        "significance": "对应周肥在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第五卷道观道 第三百零七章 眼底脚下 · 段24",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 308,
+        "segment_index": 24
+      }
+    ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.513462",
+    "extracted_at": "2026-03-25T17:27:38.511031",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1080,7 +1712,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.513462",
+    "extracted_at": "2026-03-25T17:27:38.512034",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1142,7 +1774,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.513462",
+    "extracted_at": "2026-03-25T17:27:38.512034",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1205,7 +1837,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.512034",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1269,7 +1901,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.512034",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1334,7 +1966,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.512034",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1386,7 +2018,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.514466",
+    "extracted_at": "2026-03-25T17:27:38.512034",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

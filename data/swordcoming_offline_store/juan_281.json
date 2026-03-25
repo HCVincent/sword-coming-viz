@@ -13,7 +13,21 @@
       "苍老嗓音无奈而笑，尽量劝解道：“跟陈清都讲你们这套儒家规矩，鸡同鸭讲，有何意义？",
       "再者，你们儒家学说是‘近人之学’，不求成佛，不求长生，脚下大道不高也不远，何必苛责陈清都事事奉行规矩，岂不是圣贤完人？"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "剑气长城某处响起一声叹息，似乎并不认可老剑仙的暴起杀人，但是又不愿出面理论。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 281,
+        "segment_index": 1
+      }
+    ],
     "locations": [
       {
         "name": "剑气长城",
@@ -22,7 +36,9 @@
         "description": "宁姚与阿良等人所牵连的关键世界坐标。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "老剑仙"
+        ],
         "sentence_indexes_in_segment": [
           0
         ],
@@ -32,13 +48,15 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 老剑仙在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
-        "participants": [],
+        "participants": [
+          "老剑仙"
+        ],
         "description": "剑气长城某处响起一声叹息，似乎并不认可老剑仙的暴起杀人，但是又不愿出面理论。 叹息之人身边，有个苍老嗓音随之响起，“玉璞境而已，何况陈陈清都事出有因，你就忍忍吧。 ”",
         "background": "",
-        "significance": "对应剑气长城相关的关键剧情推进场景。",
+        "significance": "对应老剑仙在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段1",
         "sentence_indexes_in_segment": [
@@ -54,7 +72,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.413115",
+    "extracted_at": "2026-03-25T17:27:38.373637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -115,7 +133,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.414118",
+    "extracted_at": "2026-03-25T17:27:38.373637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -192,7 +210,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.414118",
+    "extracted_at": "2026-03-25T17:27:38.373637",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -253,7 +271,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.414118",
+    "extracted_at": "2026-03-25T17:27:38.373637",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "281-7-0": {
+    "juan_index": 281,
+    "segment_index": 7,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百八十章 离别而已",
+    "source_sentences": [
+      "”",
+      "董三更一步向前踏出，怒极而笑道：“别人都怕你陈清都，我不怕！",
+      "出手就出手，有何不可？",
+      "！",
+      "”",
+      "一个稚声稚气的嗓音在远处城头响起，有些哀怨委屈，“行了，都怪我，是我舍不得董观瀑那么快死，毕竟小董是我最喜欢的几个家伙之一，我现在多喜欢曹慈，当年就有多喜欢董小鼻涕虫，既然现在已经死了……就死了吧。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "曹慈",
+        "alias": [],
+        "original_description_in_book": "一个稚声稚气的嗓音在远处城头响起，有些哀怨委屈，“行了，都怪我，是我舍不得董观瀑那么快死，毕竟小董是我最喜欢的几个家伙之一，我现在多喜欢曹慈，当年就有多喜欢董小鼻涕虫，既然现在已经死了……就死了吧。",
+        "description": "武道线代表人物，适合补足前三季高水平对照线。",
+        "power": "武道",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 281,
+        "segment_index": 7
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 曹慈对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "曹慈"
+        ],
+        "description": "一个稚声稚气的嗓音在远处城头响起，有些哀怨委屈，“行了，都怪我，是我舍不得董观瀑那么快死，毕竟小董是我最喜欢的几个家伙之一，我现在多喜欢曹慈，当年就有多喜欢董小鼻涕虫，既然现在已经死了……就死了吧。 ” 董三更一步向前踏出，怒极而笑道：“别人都怕你陈清都，我不怕！",
+        "background": "",
+        "significance": "对应曹慈在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百八十章 离别而已 · 段7",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 281,
+        "segment_index": 7
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.374640",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -335,7 +415,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.414118",
+    "extracted_at": "2026-03-25T17:27:38.374763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -412,7 +492,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.414118",
+    "extracted_at": "2026-03-25T17:27:38.374763",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "281-11-0": {
+    "juan_index": 281,
+    "segment_index": 11,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第四卷剑气近 第二百八十章 离别而已",
+    "source_sentences": [
+      "一位相貌清癯的长衫负剑老者，轻轻点头：“不管如何，当下最重要的还是应对妖族的攻势，不可自乱阵营，白白便宜了南边的那些孽畜。",
+      "”",
+      "老剑仙根本不理睬这两位好心捣浆糊的，更没有息事宁人的意思，盯着董三更，笑道：“如果立功就可以赎罪，那我是不是可以今天宰了你董三更，然后让隐官撕去几页功劳簿，就算没事了？",
+      "”",
+      "董三更哑口无言。",
+      "气氛尴尬，凝滞沉重。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙根本不理睬这两位好心捣浆糊的，更没有息事宁人的意思，盯着董三更，笑道：“如果立功就可以赎罪，那我是不是可以今天宰了你董三更，然后让隐官撕去几页功劳簿，就算没事了？",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 281,
+        "segment_index": 11
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 老剑仙对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老剑仙"
+        ],
+        "description": "老剑仙根本不理睬这两位好心捣浆糊的，更没有息事宁人的意思，盯着董三更，笑道：“如果立功就可以赎罪，那我是不是可以今天宰了你董三更，然后让隐官撕去几页功劳簿，就算没事了？ 一位相貌清癯的长衫负剑老者，轻轻点头：“不管如何，当下最重要的还是应对妖族的攻势，不可自乱阵营，白白便宜了南边的那些孽畜。 ”",
+        "background": "",
+        "significance": "对应老剑仙在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第四卷剑气近 第二百八十章 离别而已 · 段11",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 281,
+        "segment_index": 11
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.374763",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -449,6 +591,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "陈平安在老剑仙身后看着这一幕，只觉得城头上的剑气，在这些人出现后，都开始有了重量，压得他几乎喘不过气来。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 281,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "当众人纷纷退散，陈平安这才看到原来宁姚也在其中，她缓缓御剑靠近城头，董三更瞥了眼小丫头，没好气道：“宁丫头，莫要学你那废物爹娘，你，我还是很喜欢的。",
@@ -479,16 +634,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安与宁姚在剑气长城剧情推进",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安与老剑仙在剑气长城剧情推进",
         "time": null,
         "location": "剑气长城",
         "participants": [
           "陈平安",
+          "老剑仙",
           "宁姚"
         ],
         "description": "陈平安在老剑仙身后看着这一幕，只觉得城头上的剑气，在这些人出现后，都开始有了重量，压得他几乎喘不过气来。 十数位剑气长城的中流砥柱，知道这是董老匹夫再给自己找台阶下了，今天这架打不起来，便纷纷身形消散，返回北边的城中。 当众人纷纷退散，陈平安这才看到原来宁姚也在其中，她缓缓御剑靠近城头，董三更瞥了眼小丫头，没好气道：“宁丫头，莫要学你那废物爹娘，你，我还是很喜欢的。",
         "background": "",
-        "significance": "在剑气长城推动陈平安与宁姚之间的剧情推进线。",
+        "significance": "在剑气长城推动陈平安与老剑仙之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段12",
         "sentence_indexes_in_segment": [
@@ -504,7 +660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.414118",
+    "extracted_at": "2026-03-25T17:27:38.375280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -537,6 +693,19 @@
           3,
           4,
           5
+        ],
+        "juan_index": 281,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙陈清都对于今夜风波，好似见怪不怪，对宁姚笑了笑，掠下城头，走向那座老茅屋。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          3
         ],
         "juan_index": 281,
         "segment_index": 13
@@ -623,7 +792,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.375280",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -702,7 +871,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.375793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -825,7 +994,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.375793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -916,7 +1085,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.375793",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -997,7 +1166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.376305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1074,7 +1243,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.376305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1181,7 +1350,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.376305",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1351,7 +1520,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.415122",
+    "extracted_at": "2026-03-25T17:27:38.376809",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1474,7 +1643,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.416125",
+    "extracted_at": "2026-03-25T17:27:38.376818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1579,7 +1748,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.416125",
+    "extracted_at": "2026-03-25T17:27:38.376818",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1684,7 +1853,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.416125",
+    "extracted_at": "2026-03-25T17:27:38.377330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1734,6 +1903,19 @@
         ],
         "juan_index": 281,
         "segment_index": 24
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "陈平安赶紧缩回手，喝酒掩饰自己的尴尬，宁姚则转头望去，狭长双眉上，挂满了杀气，那位不速之客，正是老剑仙陈爷爷，站在两人不远处，负手而立，满脸笑意，“突然想起一件事，怕回头就给忘了，要赶紧跟陈平安说一下。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 281,
+        "segment_index": 24
       }
     ],
     "locations": [],
@@ -1744,7 +1926,8 @@
         "location": null,
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "老剑仙"
         ],
         "description": "宁姚眼眶红润。 陈平安伸出一只手，微微颤抖，轻轻抚在宁姚的脸颊上。 宁姚有些脸红，但是没有拒绝，她只是闭上了眼睛，不敢看他。",
         "background": "",
@@ -1764,7 +1947,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.416125",
+    "extracted_at": "2026-03-25T17:27:38.377330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1800,6 +1983,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "宁姚拿过酒壶后，面向城池而坐，背对着老剑仙。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 281,
+        "segment_index": 25
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安跳下城头，问道：“陈爷爷，什么事情？",
@@ -1815,19 +2011,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与陈平安对话",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与老剑仙对话",
         "time": null,
         "location": null,
         "participants": [
           "宁姚",
+          "老剑仙",
           "陈平安"
         ],
         "description": "宁姚拿过酒壶后，面向城池而坐，背对着老剑仙。 陈平安跳下城头，问道：“陈爷爷，什么事情？ “你们讲就是了。",
         "background": "",
-        "significance": "推动宁姚与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动宁姚与老剑仙之间的对话关系。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -1841,34 +2036,8 @@
         "segment_index": 25
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宁姚"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "“你们讲就是了。 ” 宁姚拿过酒壶后，面向城池而坐，背对着老剑仙。 陈平安跳下城头，问道：“陈爷爷，什么事情？ ” 老人笑道：“南边老瞎子的画，好看，西边老秃驴的鸡汤，好喝，中土那个读书人的字，俊俏。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 281,
-        "segment_index": 25
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.416125",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.377330",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1904,6 +2073,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙点头道：“就是想到了这个家伙，才想跟陈平安说一声。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 281,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老剑仙点头道：“就是想到了这个家伙，才想跟陈平安说一声。",
@@ -1919,16 +2101,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与老剑仙剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "宁姚",
+          "老剑仙",
           "陈平安"
         ],
         "description": "宁姚忍不住转头道：“陈爷爷，按照你以前的说法，东海不是还有个臭牛鼻子道人吗？ 老剑仙点头道：“就是想到了这个家伙，才想跟陈平安说一声。 这几个人，我都觉得很有意思。",
         "background": "",
-        "significance": "推动宁姚与陈平安之间的剧情推进关系。",
+        "significance": "推动宁姚与老剑仙之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段26",
         "sentence_indexes_in_segment": [
@@ -1944,7 +2127,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.416125",
+    "extracted_at": "2026-03-25T17:27:38.377842",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1974,6 +2157,19 @@
         "power": "剑气长城",
         "sentence_indexes_in_segment": [
           1
+        ],
+        "juan_index": 281,
+        "segment_index": 27
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙伸手指了指陈平安，“你的长生桥，修不修，其实意义不大，不如另辟蹊径，所以就要去找这个道人，但是极有可能你会被拒之门外，可是我觉得你既然能走到这里，说不定会是个例外。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2
         ],
         "juan_index": 281,
         "segment_index": 27
@@ -2011,19 +2207,18 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与陈平安在宝瓶洲对话",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安与宁姚在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
+          "陈平安",
           "宁姚",
-          "陈平安"
+          "老剑仙"
         ],
         "description": "宁姚疑惑不解。 老剑仙伸手指了指陈平安，“你的长生桥，修不修，其实意义不大，不如另辟蹊径，所以就要去找这个道人，但是极有可能你会被拒之门外，可是我觉得你既然能走到这里，说不定会是个例外。 陈平安心弦一震，问道：“陈爷爷，该怎么找这位高人，是去东海吗？",
         "background": "",
-        "significance": "在宝瓶洲推动宁姚与陈平安之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "在宝瓶洲推动陈平安与宁姚之间的对话线。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -2037,34 +2232,8 @@
         "segment_index": 27
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宁姚"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "” 宁姚疑惑不解。 老剑仙伸手指了指陈平安，“你的长生桥，修不修，其实意义不大，不如另辟蹊径，所以就要去找这个道人，但是极有可能你会被拒之门外，可是我觉得你既然能走到这里，说不定会是个例外。 ” 陈平安心弦一震，问道：“陈爷爷，该怎么找这位高人，是去东海吗？ 好像我们宝瓶洲就在东海之上。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与陈平安在宝瓶洲对话",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 281,
-        "segment_index": 27
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.417129",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.377842",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2087,6 +2256,21 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙摇头道：“是去东南方的桐叶洲，找一座观道观。 陈平安愣在当场，有些犹豫，这与他的初衷不太相符，但是既然老剑仙都这么说了，肯定有其深意，可陈平安还是会担心那场十年之约，自己跻身第四境之艰辛，让陈平安对接下来五六七三次破境，不敢有任何乐观。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1,
+          3,
+          4
+        ],
+        "juan_index": 281,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安愣在当场，有些犹豫，这与他的初衷不太相符，但是既然老剑仙都这么说了，肯定有其深意，可陈平安还是会担心那场十年之约，自己跻身第四境之艰辛，让陈平安对接下来五六七三次破境，不敢有任何乐观。 然后这把剑，会在你到达桐叶洲后，帮你指明大致方向，去寻找那个东海老道人，至于你侥幸找到他之后，人家愿不愿意帮你，还得看你陈平安自己的造化。",
@@ -2094,6 +2278,19 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           3,
+          5
+        ],
+        "juan_index": 281,
+        "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "老道人",
+        "alias": [],
+        "original_description_in_book": "然后这把剑，会在你到达桐叶洲后，帮你指明大致方向，去寻找那个东海老道人，至于你侥幸找到他之后，人家愿不愿意帮你，还得看你陈平安自己的造化。",
+        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
+        "power": "道家",
+        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 281,
@@ -2108,7 +2305,9 @@
         "description": "第三季后段的重要地点，承接道家线与人物命运转向。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "老剑仙"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -2118,15 +2317,17 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安在观道观对话",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 老剑仙与陈平安在观道观对话",
         "time": null,
         "location": "观道观",
         "participants": [
-          "陈平安"
+          "老剑仙",
+          "陈平安",
+          "老道人"
         ],
-        "description": "老剑仙摇头道：“是去东南方的桐叶洲，找一座观道观。 陈平安愣在当场，有些犹豫，这与他的初衷不太相符，但是既然老剑仙都这么说了，肯定有其深意，可陈平安还是会担心那场十年之约，自己跻身第四境之艰辛，让陈平安对接下来五六七三次破境，不敢有任何乐观。 然后这把剑，会在你到达桐叶洲后，帮你指明大致方向，去寻找那个东海老道人，至于你侥幸找到他之后，人家愿不愿意帮你，还得看你陈平安自己的造化。",
+        "description": "老剑仙摇头道：“是去东南方的桐叶洲，找一座观道观。 陈平安愣在当场，有些犹豫，这与他的初衷不太相符，但是既然老剑仙都这么说了，肯定有其深意，可陈平安还是会担心那场十年之约，自己跻身第四境之艰辛，让陈平安对接下来五六七三次破境，不敢有任何乐观。 老剑仙说道：“你这剑匣槐木，很有来历，不如借我十年，我可以拿一把剑跟你换，十年之后再换回来便是。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "significance": "在观道观推动老剑仙与陈平安之间的对话线。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段28",
         "sentence_indexes_in_segment": [
@@ -2142,7 +2343,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.417129",
+    "extracted_at": "2026-03-25T17:27:38.377842",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2242,7 +2443,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.417129",
+    "extracted_at": "2026-03-25T17:27:38.378354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2305,6 +2506,20 @@
         ],
         "juan_index": 281,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "宁姚招招手，陈平安便将槐木剑轻轻抛给她，然后将剑匣递给老剑仙。 最后老剑仙一手负后，一手双指并拢在身前迅速一抹。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          2,
+          5
+        ],
+        "juan_index": 281,
+        "segment_index": 30
       }
     ],
     "locations": [
@@ -2335,6 +2550,7 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "老剑仙",
           "宁姚"
         ],
         "description": "陈平安挠头道：“槐木剑是齐先生送给我的，不能转送给你，但是你留在身边没问题，还有，你不用给我剑，剑气长城这么缺剑，我暂时也用不着。 宁姚招招手，陈平安便将槐木剑轻轻抛给她，然后将剑匣递给老剑仙。 那张原本放置在剑匣内的符箓，早已在进入倒悬山之前，就被陈平安放入飞剑十五之中，否则那头枯骨女鬼恐怕早就在剑气长城灰飞烟灭。",
@@ -2355,7 +2571,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "extracted_at": "2026-03-25T17:27:38.378354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2390,20 +2606,35 @@
         ],
         "juan_index": 281,
         "segment_index": 31
+      },
+      {
+        "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙眼神示意陈平安接住长剑。 老剑仙神色淡然，“剑名长气，剑鞘与身不过七斤重，剑气却重达八十斤。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1,
+          3
+        ],
+        "juan_index": 281,
+        "segment_index": 31
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安剧情推进",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安与老剑仙剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "老剑仙"
         ],
         "description": "老人和陈平安之间，露出一把带鞘长剑的真容。 老剑仙眼神示意陈平安接住长剑。 陈平安伸出双手，长剑坠落，陈平安本以为可以轻松接住这把剑，结果一个踉跄，差点摔了个狗吃屎。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与老剑仙之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段31",
         "sentence_indexes_in_segment": [
@@ -2419,7 +2650,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "extracted_at": "2026-03-25T17:27:38.378354",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2456,6 +2687,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老剑仙",
+        "alias": [],
+        "original_description_in_book": "老剑仙打量了一眼陈平安，点头道：“总算有点剑修的样子了。",
+        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 281,
+        "segment_index": 32
+      },
+      {
+        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "宁姚猛然转头望向南方。",
@@ -2471,16 +2715,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安与宁姚试探",
+        "name": "第四卷剑气近 第二百八十章 离别而已 · 老剑仙与陈平安试探",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "宁姚"
+          "老剑仙",
+          "陈平安"
         ],
         "description": "陈平安没了剑匣，暂时没办法背负这把“长气”，只好捧剑而立。 老剑仙打量了一眼陈平安，点头道：“总算有点剑修的样子了。 宁姚猛然转头望向南方。",
         "background": "",
-        "significance": "推动陈平安与宁姚之间的试探关系。",
+        "significance": "推动老剑仙与陈平安之间的试探关系。",
         "related_action_indices": [
           0
         ],
@@ -2501,30 +2745,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "老剑仙"
         ],
         "to_roles": [
-          "宁姚"
+          "陈平安"
         ],
         "action": "试探",
-        "context": "陈平安没了剑匣，暂时没办法背负这把“长气”，只好捧剑而立。 老剑仙打量了一眼陈平安，点头道：“总算有点剑修的样子了。 ” 宁姚猛然转头望向南方。 老人笑了笑，“现在知道为何打搅你们两个了吧。 ”",
+        "context": "老剑仙打量了一眼陈平安，点头道：“总算有点剑修的样子了。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百八十章 离别而已 · 陈平安与宁姚试探",
+        "event_name": "第四卷剑气近 第二百八十章 离别而已 · 老剑仙与陈平安试探",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
         ],
         "juan_index": 281,
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "extracted_at": "2026-03-25T17:27:38.378865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2574,6 +2813,19 @@
         ],
         "juan_index": 281,
         "segment_index": 33
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "陈平安抱剑而立，仰起头，望向宁姚，但是一时间却说不出一个字。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 281,
+        "segment_index": 33
       }
     ],
     "locations": [],
@@ -2584,14 +2836,13 @@
         "location": null,
         "participants": [
           "宁姚",
-          "陈平安"
+          "陈平安",
+          "仰起头"
         ],
         "description": "宁姚眼神凌厉，刹那之间御剑升空。 老人转头对陈平安说道：“赶紧跟宁丫头告个别，我送你回倒悬山。 陈平安抱剑而立，仰起头，望向宁姚，但是一时间却说不出一个字。",
         "background": "",
         "significance": "推动宁姚与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百八十章 离别而已 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -2605,34 +2856,8 @@
         "segment_index": 33
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宁姚"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "宁姚眼神凌厉，刹那之间御剑升空。 老人转头对陈平安说道：“赶紧跟宁丫头告个别，我送你回倒悬山。 ” 陈平安抱剑而立，仰起头，望向宁姚，但是一时间却说不出一个字。 宁姚也低头望去，她赶紧将养剑葫丢给陈平安。 老人笑道：“儿女情长，倒是不输剑气。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百八十章 离别而已 · 宁姚与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 281,
-        "segment_index": 33
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:38.378865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2695,7 +2920,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "extracted_at": "2026-03-25T17:27:38.378865",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2772,7 +2997,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.418132",
+    "extracted_at": "2026-03-25T17:27:38.379377",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

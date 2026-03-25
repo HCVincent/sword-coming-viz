@@ -121,7 +121,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.517321",
+    "extracted_at": "2026-03-25T17:27:37.244371",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -271,7 +271,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.517321",
+    "extracted_at": "2026-03-25T17:27:37.244371",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -402,7 +402,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.517321",
+    "extracted_at": "2026-03-25T17:27:37.245375",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -743,7 +743,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.517321",
+    "extracted_at": "2026-03-25T17:27:37.245375",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -777,21 +777,37 @@
         ],
         "juan_index": 72,
         "segment_index": 5
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "扎两根羊角辫的小姑娘淡然道：“我啊，叫石春嘉，所以你可以喊我石姑娘。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 72,
+        "segment_index": 5
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十二章 黑云 · 陈平安对话",
+        "name": "第一卷笼中雀 第七十二章 黑云 · 陈平安与石春嘉对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "石春嘉"
         ],
-        "description": "陈平安没来由就想起了顾粲，只不过她跟刺猬似的鼻涕虫，还是不太一样的。 陈平安笑问道：“那你叫什么？ ”",
+        "description": "陈平安没来由就想起了顾粲，只不过她跟刺猬似的鼻涕虫，还是不太一样的。 陈平安笑问道：“那你叫什么？ 扎两根羊角辫的小姑娘淡然道：“我啊，叫石春嘉，所以你可以喊我石姑娘。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键对话节点。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与石春嘉之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第七十二章 黑云 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -805,8 +821,34 @@
         "segment_index": 5
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.517321",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "石春嘉"
+        ],
+        "action": "对话",
+        "context": "” 小女孩说话稚声稚气，但是条理清晰，有些早慧且性情温和，像个小大人。 陈平安没来由就想起了顾粲，只不过她跟刺猬似的鼻涕虫，还是不太一样的。 陈平安笑问道：“那你叫什么？ ” 扎两根羊角辫的小姑娘淡然道：“我啊，叫石春嘉，所以你可以喊我石姑娘。",
+        "result": null,
+        "event_name": "第一卷笼中雀 第七十二章 黑云 · 陈平安与石春嘉对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 72,
+        "segment_index": 5
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.245375",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -854,6 +896,19 @@
         ],
         "juan_index": 72,
         "segment_index": 6
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉像是一只炸毛的小猫，对李宝瓶怒色道：“不许喊小石头！",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 72,
+        "segment_index": 6
       }
     ],
     "locations": [],
@@ -864,7 +919,8 @@
         "location": null,
         "participants": [
           "李宝瓶",
-          "陈平安"
+          "陈平安",
+          "石春嘉"
         ],
         "description": "陈平安无言以对。 李宝瓶拆台道：“你喊她小石头就行了。 石春嘉像是一只炸毛的小猫，对李宝瓶怒色道：“不许喊小石头！",
         "background": "",
@@ -884,7 +940,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.517321",
+    "extracted_at": "2026-03-25T17:27:37.245375",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -912,6 +968,20 @@
         "original_description_in_book": "喜欢成天胡思乱想的李宝瓶，此时她的想法念头，早已从小伙伴的绰号，转移到别处去了，所以根本没搭理石春嘉的反驳。 石春嘉却是喜欢较真的性子，不厌其烦地跟李宝瓶晓之以理动之以情，只为了摆脱“小石头”这个不讨喜的绰号，因为石春嘉知道，将来到了齐先生的那座山崖书院，只要李宝瓶开口喊她一次小石头，那么这个绰号估计就要彻底甩不掉了。",
         "description": "自带强烈气场的少女，和陈平安等人共同构成成长线与书院线。",
         "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          1,
+          2
+        ],
+        "juan_index": 72,
+        "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "喜欢成天胡思乱想的李宝瓶，此时她的想法念头，早已从小伙伴的绰号，转移到别处去了，所以根本没搭理石春嘉的反驳。 石春嘉却是喜欢较真的性子，不厌其烦地跟李宝瓶晓之以理动之以情，只为了摆脱“小石头”这个不讨喜的绰号，因为石春嘉知道，将来到了齐先生的那座山崖书院，只要李宝瓶开口喊她一次小石头，那么这个绰号估计就要彻底甩不掉了。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
         "sentence_indexes_in_segment": [
           1,
           2
@@ -958,6 +1028,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "石春嘉",
           "李宝瓶",
           "齐静春"
         ],
@@ -992,6 +1063,7 @@
         "participants": [
           "齐静春",
           "陈平安",
+          "石春嘉",
           "李宝瓶"
         ],
         "description": "喜欢成天胡思乱想的李宝瓶，此时她的想法念头，早已从小伙伴的绰号，转移到别处去了，所以根本没搭理石春嘉的反驳。 石春嘉却是喜欢较真的性子，不厌其烦地跟李宝瓶晓之以理动之以情，只为了摆脱“小石头”这个不讨喜的绰号，因为石春嘉知道，将来到了齐先生的那座山崖书院，只要李宝瓶开口喊她一次小石头，那么这个绰号估计就要彻底甩不掉了。 听着身后两个小姑娘你来我往的鸡同鸭讲，陈平安在临近福禄街的时候，问道：“福禄街这边有很多户李姓人的宅子，你家在哪边？",
@@ -1017,10 +1089,10 @@
       {
         "time": null,
         "from_roles": [
-          "李宝瓶"
+          "石春嘉"
         ],
         "to_roles": [
-          "齐静春"
+          "李宝瓶"
         ],
         "action": "对话",
         "context": "石春嘉却是喜欢较真的性子，不厌其烦地跟李宝瓶晓之以理动之以情，只为了摆脱“小石头”这个不讨喜的绰号，因为石春嘉知道，将来到了齐先生的那座山崖书院，只要李宝瓶开口喊她一次小石头，那么这个绰号估计就要彻底甩不掉了。",
@@ -1035,7 +1107,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.245375",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1065,6 +1137,20 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 72,
+        "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉没好气道：“她啊，就是墙外有槐树的那户人家，以前每次家里不让她出门，怕她疯玩，她就自己偷偷架梯子上墙，再沿着槐树落在福禄街上。 石春嘉气呼呼道：“不就是又休学半个月吗？",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          5
         ],
         "juan_index": 72,
         "segment_index": 8
@@ -1108,7 +1194,8 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "陈平安"
+          "陈平安",
+          "石春嘉"
         ],
         "sentence_indexes_in_segment": [
           0,
@@ -1126,6 +1213,7 @@
         "participants": [
           "陈平安",
           "宋集薪",
+          "石春嘉",
           "李宝瓶"
         ],
         "description": "毕竟当时为了诱使正阳山老猿出山，他利用福禄街那棵子孙槐爬上了李家大宅的墙头，说起来陈平安还用弹弓打碎了李家的两只鸟食罐。 石春嘉没好气道：“她啊，就是墙外有槐树的那户人家，以前每次家里不让她出门，怕她疯玩，她就自己偷偷架梯子上墙，再沿着槐树落在福禄街上。 李宝瓶并没有觉得丢人现眼，而是一本正经道：“我事后反省了，那次是我落地姿势不对，不该直不隆冬双脚戳下去的，所以等我腿好了之后，我再去试就……”",
@@ -1146,7 +1234,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.246378",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1182,6 +1270,19 @@
       },
       {
         "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉愤愤道：“那是因为一年后，你长身体了，个子窜得很快，所以才经得起折腾，跟你落地姿势正确与否，没有半颗铜钱关系！",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 72,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安对于两个小姑娘的吵吵闹闹，没有掺和，一来是正在头疼，到时候自己会不会被李家认出来，一怒之下就关门放狗。",
@@ -1197,16 +1298,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十二章 黑云 · 李宝瓶与陈平安剧情推进",
+        "name": "第一卷笼中雀 第七十二章 黑云 · 李宝瓶与石春嘉剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
+          "石春嘉",
           "陈平安"
         ],
-        "description": "李宝瓶撇撇嘴，“第三次不就没事了。 陈平安对于两个小姑娘的吵吵闹闹，没有掺和，一来是正在头疼，到时候自己会不会被李家认出来，一怒之下就关门放狗。 ”",
+        "description": "李宝瓶撇撇嘴，“第三次不就没事了。 石春嘉愤愤道：“那是因为一年后，你长身体了，个子窜得很快，所以才经得起折腾，跟你落地姿势正确与否，没有半颗铜钱关系！ 陈平安对于两个小姑娘的吵吵闹闹，没有掺和，一来是正在头疼，到时候自己会不会被李家认出来，一怒之下就关门放狗。",
         "background": "",
-        "significance": "推动李宝瓶与陈平安之间的剧情推进关系。",
+        "significance": "推动李宝瓶与石春嘉之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第七十二章 黑云 · 段9",
         "sentence_indexes_in_segment": [
@@ -1222,7 +1324,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.246378",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1302,7 +1404,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.246378",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1338,6 +1440,20 @@
       },
       {
         "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉瞥了眼身边的李宝瓶，嘿嘿笑道：“就是他啊，害得你摔掉了一颗大门牙？ 李宝瓶突然走到石春嘉身后，双手握住她的两根羊角辫，准备往上提，“相信我，这次肯定行。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3,
+          5
+        ],
+        "juan_index": 72,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "石春嘉瞥了眼身边的李宝瓶，嘿嘿笑道：“就是他啊，害得你摔掉了一颗大门牙？ 李宝瓶突然走到石春嘉身后，双手握住她的两根羊角辫，准备往上提，“相信我，这次肯定行。",
@@ -1354,16 +1470,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十二章 黑云 · 陈平安与李宝瓶对话",
+        "name": "第一卷笼中雀 第七十二章 黑云 · 石春嘉与李宝瓶对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
+          "石春嘉",
           "李宝瓶"
         ],
         "description": "看着陈平安的离去身影。 石春嘉瞥了眼身边的李宝瓶，嘿嘿笑道：“就是他啊，害得你摔掉了一颗大门牙？ 李宝瓶突然走到石春嘉身后，双手握住她的两根羊角辫，准备往上提，“相信我，这次肯定行。",
         "background": "",
-        "significance": "推动陈平安与李宝瓶之间的对话关系。",
+        "significance": "推动石春嘉与李宝瓶之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -1384,30 +1500,25 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "石春嘉"
         ],
         "to_roles": [
           "李宝瓶"
         ],
         "action": "对话",
-        "context": "自家这位小姐，在不到五岁的时候，就能够自己去小溪抓来一只大螃蟹，到家后，一边流眼泪，一边高高举起小手，小手上头有一只死也不愿松开钳子的螃蟹，把爹娘和老祖宗给心疼得不行。 到如今，那只蟹壳青黑色、蟹钳却是赤红的螃蟹，还养在她的大鱼缸里，小姐实在是不喜欢读书，有事没事就跟它聊天说话。 看着陈平安的离去身影。 石春嘉瞥了眼身边的李宝瓶，嘿嘿笑道：“就是他啊，害得你摔掉了一颗大门牙？ ” 李宝瓶突然走到石春嘉身后，双手握住她的两根羊角辫，准备往上提，“相信我，这次肯定行。",
+        "context": "石春嘉瞥了眼身边的李宝瓶，嘿嘿笑道：“就是他啊，害得你摔掉了一颗大门牙？",
         "result": null,
-        "event_name": "第一卷笼中雀 第七十二章 黑云 · 陈平安与李宝瓶对话",
+        "event_name": "第一卷笼中雀 第七十二章 黑云 · 石春嘉与李宝瓶对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 72,
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.246378",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1430,6 +1541,20 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉吓得连忙蹲下身，闭着眼睛，双手胡乱在头顶挥动，以免自己又被李宝瓶扯住辫子往上“拔草”。 石春嘉吓得哇哇大哭。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 72,
+        "segment_index": 12
+      },
+      {
+        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "石春嘉吓得连忙蹲下身，闭着眼睛，双手胡乱在头顶挥动，以免自己又被李宝瓶扯住辫子往上“拔草”。 李宝瓶蹲在比自己矮小一圈的她身边，自信满满道：“小石头，不疼的，你没有试过第二次，怎么知道不行呢？",
@@ -1446,15 +1571,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第一卷笼中雀 第七十二章 黑云 · 李宝瓶剧情推进",
+        "name": "第一卷笼中雀 第七十二章 黑云 · 石春嘉与李宝瓶剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "石春嘉",
           "李宝瓶"
         ],
-        "description": "石春嘉吓得连忙蹲下身，闭着眼睛，双手胡乱在头顶挥动，以免自己又被李宝瓶扯住辫子往上“拔草”。 李宝瓶蹲在比自己矮小一圈的她身边，自信满满道：“小石头，不疼的，你没有试过第二次，怎么知道不行呢？ ”",
+        "description": "石春嘉吓得连忙蹲下身，闭着眼睛，双手胡乱在头顶挥动，以免自己又被李宝瓶扯住辫子往上“拔草”。 李宝瓶蹲在比自己矮小一圈的她身边，自信满满道：“小石头，不疼的，你没有试过第二次，怎么知道不行呢？ 石春嘉吓得哇哇大哭。",
         "background": "",
-        "significance": "对应李宝瓶在叙事中的关键剧情推进节点。",
+        "significance": "推动石春嘉与李宝瓶之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第七十二章 黑云 · 段12",
         "sentence_indexes_in_segment": [
@@ -1470,7 +1596,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.246378",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1511,6 +1637,19 @@
         "original_description_in_book": "李宝瓶只好先放过石春嘉，满脸失望，一起走进大门的时候，还不忘替石春嘉感到可惜。",
         "description": "自带强烈气场的少女，和陈平安等人共同构成成长线与书院线。",
         "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 72,
+        "segment_index": 13
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "李宝瓶只好先放过石春嘉，满脸失望，一起走进大门的时候，还不忘替石春嘉感到可惜。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
         "sentence_indexes_in_segment": [
           3
         ],
@@ -1603,30 +1742,25 @@
       {
         "time": null,
         "from_roles": [
-          "李槐"
-        ],
-        "to_roles": [
           "李宝瓶"
         ],
-        "action": "对话",
-        "context": "那个门房于心不忍，为骑龙巷那间压岁铺子的小掌柜解围，说道：“方才一个学塾马先生让李槐来捎话，让府上这边准备好一辆马车，小姐你带上行李，先去学塾，然后离开小镇，与石小姐一起游学至山崖书院。 当然，在去学塾之前，小姐可以顺路去趟骑龙巷，把石小姐的东西装上马车。 ” 李宝瓶只好先放过石春嘉，满脸失望，一起走进大门的时候，还不忘替石春嘉感到可惜。 劫后余生的羊角辫小姑娘，默默下定决心今天就要拆掉辫子。 “咦？",
+        "to_roles": [
+          "石春嘉"
+        ],
+        "action": "同行",
+        "context": "李宝瓶只好先放过石春嘉，满脸失望，一起走进大门的时候，还不忘替石春嘉感到可惜。",
         "result": null,
         "event_name": "书院同行南下",
         "location": "骑龙巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 72,
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.518324",
+    "extracted_at": "2026-03-25T17:27:37.246378",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1659,6 +1793,19 @@
         ],
         "juan_index": 72,
         "segment_index": 14
+      },
+      {
+        "entity_type": "person",
+        "name": "石春嘉",
+        "alias": [],
+        "original_description_in_book": "石春嘉顺着她的视线望去，纳闷道：“不会下雨吧。",
+        "description": "小镇旧人旧事中的稳定角色，可补足街巷人情与日常关系层。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 72,
+        "segment_index": 14
       }
     ],
     "locations": [
@@ -1685,9 +1832,10 @@
         "participants": [
           "阿良",
           "陈平安",
-          "李宝瓶"
+          "李宝瓶",
+          "石春嘉"
         ],
-        "description": "李宝瓶突然惊讶出声，抬着头。 一大朵黑云从小镇上空飘过。 ”",
+        "description": "李宝瓶突然惊讶出声，抬着头。 石春嘉顺着她的视线望去，纳闷道：“不会下雨吧。 一大朵黑云从小镇上空飘过。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -1705,7 +1853,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.519328",
+    "extracted_at": "2026-03-25T17:27:37.247381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1766,7 +1914,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.519328",
+    "extracted_at": "2026-03-25T17:27:37.247381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1858,7 +2006,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.519328",
+    "extracted_at": "2026-03-25T17:27:37.247381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1951,7 +2099,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.519328",
+    "extracted_at": "2026-03-25T17:27:37.247381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

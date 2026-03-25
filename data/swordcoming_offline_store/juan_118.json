@@ -13,7 +13,21 @@
       "女子先将那柄本名为符箓的东宝瓶洲剑中重器，猛然掷入江水。",
       "她深呼吸一口气，开始脱衣，一件件褪去，随手丢入水花四起的铁符江水之中。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "她正是那位娘娘身边的贴身婢女，虽然极貌美，却有一个乡野村妇的粗俗名字，杨花。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 118,
+        "segment_index": 1
+      }
+    ],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -32,13 +46,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十八章 天地有气 · 宝瓶洲剧情推进",
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 杨花在宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [],
-        "description": "女子先将那柄本名为符箓的东宝瓶洲剑中重器，猛然掷入江水。 先前龙须溪与铁符河交界处，正是一条水势磅礴的瀑布。 只是现如今龙须溪应当称呼龙须河才对，铁符河亦是改成了铁符江。",
+        "participants": [
+          "杨花"
+        ],
+        "description": "她正是那位娘娘身边的贴身婢女，虽然极貌美，却有一个乡野村妇的粗俗名字，杨花。 女子先将那柄本名为符箓的东宝瓶洲剑中重器，猛然掷入江水。 先前龙须溪与铁符河交界处，正是一条水势磅礴的瀑布。",
         "background": "",
-        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十八章 天地有气 · 段1",
         "sentence_indexes_in_segment": [
@@ -54,7 +70,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.694994",
+    "extracted_at": "2026-03-25T17:27:37.460362",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -74,7 +90,21 @@
       "大骊王朝的县，分大中小三等，河水也是如此，河水之下的溪水，为最底层的水运神灵，即便朝廷敕封了神祇坐镇一方水路，一律只赐号为河婆，不得僭越获封为神，之上的河水，各自分上中下三等，龙须溪如今连升两级，即从溪水升为中等河水。",
       "河水之上的江水，并无高下区别，如今铁符河一跃成为大江。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "已经获得大骊朝廷敕令的女子杨花，今夜要成为这条铁符江的一尊江水正神。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 118,
+        "segment_index": 2
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -85,7 +115,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "杨花"
+        ],
         "sentence_indexes_in_segment": [
           3,
           4
@@ -96,13 +128,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十八章 天地有气 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 杨花在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "杨花"
+        ],
         "description": "已经获得大骊朝廷敕令的女子杨花，今夜要成为这条铁符江的一尊江水正神。 大骊王朝的县，分大中小三等，河水也是如此，河水之下的溪水，为最底层的水运神灵，即便朝廷敕封了神祇坐镇一方水路，一律只赐号为河婆，不得僭越获封为神，之上的河水，各自分上中下三等，龙须溪如今连升两级，即从溪水升为中等河水。 最终她露出一副曲线婀娜、洁白无瑕的完美胴-体，沐浴在月光水雾之中，衬托得她愈发仙气袅袅。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十八章 天地有气 · 段2",
         "sentence_indexes_in_segment": [
@@ -118,7 +152,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.694994",
+    "extracted_at": "2026-03-25T17:27:37.461366",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -139,6 +173,19 @@
       "东宝瓶洲的山神，分五岳正神，一般的山神，土地，总共三层，老百姓俗称的土地爷，有点类似官场候补。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "两位新晋江河正神神，都不是龙泉县熟悉的名字，其中铁符江正神，叫杨花。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 118,
+        "segment_index": 3
+      },
       {
         "entity_type": "person",
         "name": "大骊皇帝",
@@ -166,6 +213,19 @@
         ],
         "juan_index": 118,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "封神仪式，声势浩荡，大骊皇帝的亲笔圣旨，圣人阮师帮忙宣告开坛，礼部侍郎的宣读内容，钦天监青乌先生的“埋金藏玉”，当地父母官、龙泉县县令吴鸢，为两尊泥塑金身神像揭幕，等等，一系列繁文缛节，半点不差。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 118,
+        "segment_index": 3
       }
     ],
     "locations": [
@@ -180,8 +240,10 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "杨花",
           "大骊皇帝",
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           2,
@@ -201,7 +263,8 @@
         "coordinates": null,
         "related_entities": [
           "大骊皇帝",
-          "阮邛"
+          "阮邛",
+          "吴鸢"
         ],
         "sentence_indexes_in_segment": [
           3,
@@ -261,15 +324,13 @@
         "participants": [
           "魏檗",
           "陈平安",
-          "大骊皇帝",
-          "阮邛"
+          "杨花",
+          "大骊皇帝"
         ],
         "description": "两位新晋江河正神神，都不是龙泉县熟悉的名字，其中铁符江正神，叫杨花。 相比江神敕封的雷声大雨点小，大骊朝廷一口气敕封了三位正统山神，分别是披云山、点香山和落魄山。 封神仪式，声势浩荡，大骊皇帝的亲笔圣旨，圣人阮师帮忙宣告开坛，礼部侍郎的宣读内容，钦天监青乌先生的“埋金藏玉”，当地父母官、龙泉县县令吴鸢，为两尊泥塑金身神像揭幕，等等，一系列繁文缛节，半点不差。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十八章 天地有气 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -283,34 +344,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "大骊皇帝"
-        ],
-        "to_roles": [
-          "阮邛"
-        ],
-        "action": "别离",
-        "context": "只是铁符江、龙须河这首尾相连的两条江河，皆暂时不建江神祠，不塑神像金身。 一切从简。 两位新晋江河正神神，都不是龙泉县熟悉的名字，其中铁符江正神，叫杨花。 相比江神敕封的雷声大雨点小，大骊朝廷一口气敕封了三位正统山神，分别是披云山、点香山和落魄山。 封神仪式，声势浩荡，大骊皇帝的亲笔圣旨，圣人阮师帮忙宣告开坛，礼部侍郎的宣读内容，钦天监青乌先生的“埋金藏玉”，当地父母官、龙泉县县令吴鸢，为两尊泥塑金身神像揭幕，等等，一系列繁文缛节，半点不差。 东宝瓶洲的山神，分五岳正神，一般的山神，土地，总共三层，老百姓俗称的土地爷，有点类似官场候补。",
-        "result": null,
-        "event_name": "魏檗现身",
-        "location": "龙泉",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 118,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.694994",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.461366",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -371,7 +406,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.694994",
+    "extracted_at": "2026-03-25T17:27:37.461366",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -434,7 +469,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.694994",
+    "extracted_at": "2026-03-25T17:27:37.461366",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -455,6 +490,19 @@
       "她摒弃一切杂念，开始静心凝神，双手掐诀，不动如山。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "刘灞桥",
+        "alias": [],
+        "original_description_in_book": "因为她获得了那柄京城符剑的认可，在风雷园年轻剑修刘灞桥出手之前，成功掌控了符箓。",
+        "description": "前三季叙事中多次出现，常与陈对、陈平安同场，推动相关支线发展。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 118,
+        "segment_index": 6
+      },
       {
         "entity_type": "person",
         "name": "阮邛",
@@ -491,16 +539,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十八章 天地有气 · 阮邛在大骊冲突",
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 刘灞桥与阮邛在大骊冲突",
         "time": null,
         "location": "大骊",
         "participants": [
+          "刘灞桥",
           "阮邛"
         ],
-        "description": "获得这桩天大机缘之后，她的修为更是一路暴涨，就当她觉得上五境也指日可待的时候，但是与此同时，接连的噩耗，来得悄无声息，先是娘娘需要她拿出符剑，交给坐镇骊珠的阮邛去两次劈开斩龙台。 一位是恩同再造的娘娘，一位是被大骊奉为座上宾的兵家圣人，她只得咬牙接受这个结果，可是她怎么都没有想到，皇帝陛下一纸令下，临时敕封她成为铁符江的水神。 因为她获得了那柄京城符剑的认可，在风雷园年轻剑修刘灞桥出手之前，成功掌控了符箓。",
+        "description": "因为她获得了那柄京城符剑的认可，在风雷园年轻剑修刘灞桥出手之前，成功掌控了符箓。 获得这桩天大机缘之后，她的修为更是一路暴涨，就当她觉得上五境也指日可待的时候，但是与此同时，接连的噩耗，来得悄无声息，先是娘娘需要她拿出符剑，交给坐镇骊珠的阮邛去两次劈开斩龙台。 一位是恩同再造的娘娘，一位是被大骊奉为座上宾的兵家圣人，她只得咬牙接受这个结果，可是她怎么都没有想到，皇帝陛下一纸令下，临时敕封她成为铁符江的水神。",
         "background": "",
-        "significance": "对应阮邛在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "在大骊推动刘灞桥与阮邛之间的冲突线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百一十八章 天地有气 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -514,8 +565,34 @@
         "segment_index": 6
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.694994",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "刘灞桥"
+        ],
+        "to_roles": [
+          "阮邛"
+        ],
+        "action": "冲突",
+        "context": "因为她获得了那柄京城符剑的认可，在风雷园年轻剑修刘灞桥出手之前，成功掌控了符箓。 获得这桩天大机缘之后，她的修为更是一路暴涨，就当她觉得上五境也指日可待的时候，但是与此同时，接连的噩耗，来得悄无声息，先是娘娘需要她拿出符剑，交给坐镇骊珠的阮邛去两次劈开斩龙台。 然后交还到她手中的符剑，就已经是差点支离破碎的境地，她还能如何？ 一位是恩同再造的娘娘，一位是被大骊奉为座上宾的兵家圣人，她只得咬牙接受这个结果，可是她怎么都没有想到，皇帝陛下一纸令下，临时敕封她成为铁符江的水神。 江水之中，踩在剑上的女子，静止悬停，恰似一尊神祇立于神龛。 她摒弃一切杂念，开始静心凝神，双手掐诀，不动如山。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百一十八章 天地有气 · 刘灞桥与阮邛在大骊冲突",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 118,
+        "segment_index": 6
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.461366",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,7 +655,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.695998",
+    "extracted_at": "2026-03-25T17:27:37.461366",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "118-8-0": {
+    "juan_index": 118,
+    "segment_index": 8,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百一十八章 天地有气",
+    "source_sentences": [
+      "那柄半毁弃的符剑在江底，始终纹丝不动，但是依稀可见女子形态的恐怖白骨，开始摇晃起来，如水草飘忽，脆弱至极，好像随时都有可能被江水一冲而走。",
+      "就在千钧一发之际，那柄道家符剑“符箓”的金色剑穗，一缕缕金黄丝线，开始散发出金黄色的光芒，不但将女子的脚踝捆绑得更加紧密，还不断向上缓缓攀援，最终在白骨膝盖处停滞不前。",
+      "这才让白骨稳住了身形，帮助她不至于被江水蕴藉的玄妙神意所鄙弃，彻底沦为最低贱的水鬼阴物一流。",
+      "凝聚神性，重塑金身，肉身成就伪圣。",
+      "只见白骨头顶，开始生出第一缕发丝。",
+      "不是之前龙须溪河婆“老妪”的那头鸦青色长发，而是淡金色的发丝，一根根头发出现在白骨之上，愈发茂盛，最终汇聚出一头长达数丈的金色长发，无比绚烂。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "不是之前龙须溪河婆“老妪”的那头鸦青色长发，而是淡金色的发丝，一根根头发出现在白骨之上，愈发茂盛，最终汇聚出一头长达数丈的金色长发，无比绚烂。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 118,
+        "segment_index": 8
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 老妪剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老妪"
+        ],
+        "description": "不是之前龙须溪河婆“老妪”的那头鸦青色长发，而是淡金色的发丝，一根根头发出现在白骨之上，愈发茂盛，最终汇聚出一头长达数丈的金色长发，无比绚烂。 那柄半毁弃的符剑在江底，始终纹丝不动，但是依稀可见女子形态的恐怖白骨，开始摇晃起来，如水草飘忽，脆弱至极，好像随时都有可能被江水一冲而走。 就在千钧一发之际，那柄道家符剑“符箓”的金色剑穗，一缕缕金黄丝线，开始散发出金黄色的光芒，不但将女子的脚踝捆绑得更加紧密，还不断向上缓缓攀援，最终在白骨膝盖处停滞不前。",
+        "background": "",
+        "significance": "对应老妪在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百一十八章 天地有气 · 段8",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 118,
+        "segment_index": 8
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.462369",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -655,7 +794,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.695998",
+    "extracted_at": "2026-03-25T17:27:37.462369",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -675,7 +814,21 @@
       "“我不会嫌弃你的，断头路也好，我们一起走到最后。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "已成大骊江神的杨花手腕一转，将符箓剑锋竖起，低头望去，凝视着唯有锋锐不减当年的它，柔声道：“到头来只有你，对我不离不弃。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          1
+        ],
+        "juan_index": 118,
+        "segment_index": 11
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -686,7 +839,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "杨花"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -696,13 +851,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十八章 天地有气 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 杨花在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "杨花"
+        ],
         "description": "已成大骊江神的杨花手腕一转，将符箓剑锋竖起，低头望去，凝视着唯有锋锐不减当年的它，柔声道：“到头来只有你，对我不离不弃。 女子抬手一招，那柄一直不曾出鞘的符剑从江底自行跳出，被她握在手中，横在身前，她轻轻拔剑出鞘，凝视着那些触目惊心的裂缝，如同一位美人脸上的道道伤疤，让人遗憾让人可怜。 ”",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十八章 天地有气 · 段11",
         "sentence_indexes_in_segment": [
@@ -718,7 +875,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.695998",
+    "extracted_at": "2026-03-25T17:27:37.462369",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -738,7 +895,21 @@
       "龙须河畔的青牛背那边，老人蹲在石崖上抽着旱烟，石崖边缘小心翼翼坐着一位“年轻妇人”，头发下垂，一直延伸到河水之中。",
       "如今升为被大骊朝廷认可的正统河神，她已经能够靠这种方式短暂上岸，不要小看这一小步，河婆河伯之流，任你修行百年千年，依然有心无力。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "杨花",
+        "alias": [],
+        "original_description_in_book": "杨花低下头颅，微微侧过脸颊，用锋刃在她脸上割出一条条血槽，深可见骨。",
+        "description": "小镇旧线人物，可补齐街巷人情与早期命运分流。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 118,
+        "segment_index": 12
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -759,13 +930,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十八章 天地有气 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 杨花在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "如今升为被大骊朝廷认可的正统河神，她已经能够靠这种方式短暂上岸，不要小看这一小步，河婆河伯之流，任你修行百年千年，依然有心无力。 杨花低下头颅，微微侧过脸颊，用锋刃在她脸上割出一条条血槽，深可见骨。 铁符江水，滚滚流逝，水势愈发雄浑壮烈，杀气腾腾，绝无半点幽怨惆怅。",
+        "participants": [
+          "杨花"
+        ],
+        "description": "杨花低下头颅，微微侧过脸颊，用锋刃在她脸上割出一条条血槽，深可见骨。 如今升为被大骊朝廷认可的正统河神，她已经能够靠这种方式短暂上岸，不要小看这一小步，河婆河伯之流，任你修行百年千年，依然有心无力。 铁符江水，滚滚流逝，水势愈发雄浑壮烈，杀气腾腾，绝无半点幽怨惆怅。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应杨花在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十八章 天地有气 · 段12",
         "sentence_indexes_in_segment": [
@@ -781,7 +954,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.695998",
+    "extracted_at": "2026-03-25T17:27:37.462369",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -862,7 +1035,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.695998",
+    "extracted_at": "2026-03-25T17:27:37.462369",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -942,7 +1115,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.463373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1006,7 +1179,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.463373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1070,7 +1243,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.463373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1152,7 +1325,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.463373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1216,7 +1389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.463373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1278,7 +1451,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.463373",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1453,7 +1626,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.464376",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1562,7 +1735,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.464376",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1626,7 +1799,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.697001",
+    "extracted_at": "2026-03-25T17:27:37.464376",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1692,7 +1865,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.464376",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1840,7 +2013,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.464376",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1933,7 +2106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.464376",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2049,7 +2222,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.465381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2145,7 +2318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.465381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2209,7 +2382,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.465381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2274,7 +2447,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.465381",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2354,7 +2527,69 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.698004",
+    "extracted_at": "2026-03-25T17:27:37.465381",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "118-38-0": {
+    "juan_index": 118,
+    "segment_index": 38,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百一十八章 天地有气",
+    "source_sentences": [
+      "自从那些孩子来了枕头驿之后，就怪事接连不断，最后还害得为人厚道的驿丞大人丢了官身，真是一帮扫把星。",
+      "背负行囊的老人走在街道上，仔细想了想后，临时决定就此作罢，路遥知人心而已。",
+      "老人悄然一伸手，握住了一枚碧玉簪子，随手放回袖中。",
+      "那些孩子往南去大隋，老秀才则去往了西边。",
+      "大路朝天，各走半边。",
+      "是否殊途同归，不知道，不好说。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "那些孩子往南去大隋，老秀才则去往了西边。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 118,
+        "segment_index": 38
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "那些孩子往南去大隋，老秀才则去往了西边。 自从那些孩子来了枕头驿之后，就怪事接连不断，最后还害得为人厚道的驿丞大人丢了官身，真是一帮扫把星。 背负行囊的老人走在街道上，仔细想了想后，临时决定就此作罢，路遥知人心而已。",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百一十八章 天地有气 · 段38",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 118,
+        "segment_index": 38
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.466383",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2449,7 +2684,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.699008",
+    "extracted_at": "2026-03-25T17:27:37.466383",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2553,7 +2788,61 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.699008",
+    "extracted_at": "2026-03-25T17:27:37.466383",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "118-41-0": {
+    "juan_index": 118,
+    "segment_index": 41,
+    "chunk_start_index": 0,
+    "chunk_end_index": 2,
+    "segment_start_time": "第二卷山水郎 第一百一十八章 天地有气",
+    "source_sentences": [
+      "走在红烛镇街上的老秀才，会心一笑，低声道：“善。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "老秀才",
+        "alias": [],
+        "original_description_in_book": "走在红烛镇街上的老秀才，会心一笑，低声道：“善。",
+        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
+        "power": "山崖书院",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 118,
+        "segment_index": 41
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百一十八章 天地有气 · 老秀才剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "老秀才"
+        ],
+        "description": "走在红烛镇街上的老秀才，会心一笑，低声道：“善。 ”",
+        "background": "",
+        "significance": "对应老秀才在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百一十八章 天地有气 · 段41",
+        "sentence_indexes_in_segment": [
+          0,
+          1
+        ],
+        "juan_index": 118,
+        "segment_index": 41
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.466383",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

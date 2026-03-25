@@ -40,6 +40,19 @@
         ],
         "juan_index": 265,
         "segment_index": 1
+      },
+      {
+        "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "老汉快速收回视线，轻声道：“桂夫人，桂花岛危在旦夕，陈平安和这道符，暂时就交由我来保护，桂夫人只管去坐镇渡船，再让马致和几位管事，赶紧对山上所有客人晓以利害，莫要再藏掖修为了，所有私人恩怨，以及报酬和赔偿，等桂花岛渡过此劫再谈。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 265,
+        "segment_index": 1
       }
     ],
     "locations": [],
@@ -50,13 +63,15 @@
         "location": null,
         "participants": [
           "桂夫人",
-          "陈平安"
+          "陈平安",
+          "马致"
         ],
         "description": "在陈平安提笔画符的第一时间，在金色老蛟的示意下，蛟龙沟就已经有所动作，而且是狮子搏兔亦用全力，潜伏在这道沟壑的成百上千条蛟龙之属，与原本高耸空中的海水一起涌向桂花岛。 老汉快速收回视线，轻声道：“桂夫人，桂花岛危在旦夕，陈平安和这道符，暂时就交由我来保护，桂夫人只管去坐镇渡船，再让马致和几位管事，赶紧对山上所有客人晓以利害，莫要再藏掖修为了，所有私人恩怨，以及报酬和赔偿，等桂花岛渡过此劫再谈。 唯独金色老蛟盘踞的那个方向，显得格外平静。",
         "background": "",
         "significance": "推动桂夫人与陈平安之间的护持关系。",
         "related_action_indices": [
-          0
+          0,
+          1
         ],
         "source": "第四卷剑气近 第二百六十四章 大道之上 · 段1",
         "sentence_indexes_in_segment": [
@@ -91,9 +106,29 @@
         ],
         "juan_index": 265,
         "segment_index": 1
+      },
+      {
+        "time": null,
+        "from_roles": [
+          "桂夫人"
+        ],
+        "to_roles": [
+          "马致"
+        ],
+        "action": "守护",
+        "context": "老汉快速收回视线，轻声道：“桂夫人，桂花岛危在旦夕，陈平安和这道符，暂时就交由我来保护，桂夫人只管去坐镇渡船，再让马致和几位管事，赶紧对山上所有客人晓以利害，莫要再藏掖修为了，所有私人恩怨，以及报酬和赔偿，等桂花岛渡过此劫再谈。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十四章 大道之上 · 桂夫人与陈平安护持",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 265,
+        "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.341869",
+    "extracted_at": "2026-03-25T17:27:38.277303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -155,7 +190,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.341869",
+    "extracted_at": "2026-03-25T17:27:38.278307",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -192,6 +227,19 @@
       },
       {
         "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "待在岛上的马致应该已经跟客人交涉，就是不知道能否众志成城，一起合力渡过难关。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 265,
+        "segment_index": 4
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "在陈平安竭力书写那张斩锁符的时刻，金色老蛟除了发号施令，让蛟龙沟一鼓作气攻破桂花岛，可是它自己却没有出手的意思，只是略作思量，摇晃百丈金鳞身躯，缓缓游向清澈海水的边缘，最后从涟漪之中走出一位身穿金色长袍的威严老人，双眉极长，垂挂到胸前，他凌空前行，这条化为人形的老蛟，没有理睬需要分心去驾驭桂花岛的桂夫人，就连那条幼蛟的生死，金袍老者一样漠不关心，他像是一位缓缓走下山坡的登山游客，居高临下，俯瞰山脚的那两条小舟和三人。",
@@ -214,7 +262,7 @@
           "陈平安",
           "桂夫人"
         ],
-        "description": "舟子老汉看到这一幕后，心疼不已，这可是桂夫人拼着一身来之不易的地仙道行，任由真身的根本元气急剧损耗，在为所有人谋取一线生机。 在陈平安竭力书写那张斩锁符的时刻，金色老蛟除了发号施令，让蛟龙沟一鼓作气攻破桂花岛，可是它自己却没有出手的意思，只是略作思量，摇晃百丈金鳞身躯，缓缓游向清澈海水的边缘，最后从涟漪之中走出一位身穿金色长袍的威严老人，双眉极长，垂挂到胸前，他凌空前行，这条化为人形的老蛟，没有理睬需要分心去驾驭桂花岛的桂夫人，就连那条幼蛟的生死，金袍老者一样漠不关心，他像是一位缓缓走下山坡的登山游客，居高临下，俯瞰山脚的那两条小舟和三人。 只不过多了一个水字，就要比单个字称呼的虬，比起这种名副其实的皇亲国戚，还是要差上一截，水虬是上古大虬与海中青蛇交-媾的种类，故而又被称为青虬，与喜好藏身于雄山峻岭的白螭，一在深海一在陆地，经常出现在文人骚客的文章之中，更是游仙诗的常客。",
+        "description": "舟子老汉看到这一幕后，心疼不已，这可是桂夫人拼着一身来之不易的地仙道行，任由真身的根本元气急剧损耗，在为所有人谋取一线生机。 待在岛上的马致应该已经跟客人交涉，就是不知道能否众志成城，一起合力渡过难关。 在陈平安竭力书写那张斩锁符的时刻，金色老蛟除了发号施令，让蛟龙沟一鼓作气攻破桂花岛，可是它自己却没有出手的意思，只是略作思量，摇晃百丈金鳞身躯，缓缓游向清澈海水的边缘，最后从涟漪之中走出一位身穿金色长袍的威严老人，双眉极长，垂挂到胸前，他凌空前行，这条化为人形的老蛟，没有理睬需要分心去驾驭桂花岛的桂夫人，就连那条幼蛟的生死，金袍老者一样漠不关心，他像是一位缓缓走下山坡的登山游客，居高临下，俯瞰山脚的那两条小舟和三人。",
         "background": "",
         "significance": "推动陈平安与桂夫人之间的对话关系。",
         "related_action_indices": [
@@ -255,7 +303,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.342872",
+    "extracted_at": "2026-03-25T17:27:38.278307",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -317,7 +365,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.342872",
+    "extracted_at": "2026-03-25T17:27:38.278307",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -379,7 +427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.342872",
+    "extracted_at": "2026-03-25T17:27:38.278307",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -459,7 +507,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.343876",
+    "extracted_at": "2026-03-25T17:27:38.278307",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -522,7 +570,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.343876",
+    "extracted_at": "2026-03-25T17:27:38.279310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -560,6 +608,19 @@
       },
       {
         "entity_type": "person",
+        "name": "老僧",
+        "alias": [],
+        "original_description_in_book": "陈平安好似不问世事的入定老僧，只是缓缓画符。",
+        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 265,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
         "name": "桂夫人",
         "alias": [],
         "original_description_in_book": "桂夫人和舟子老汉同时有所动作，她丢出一截桂花枝，落在小舟船头，妇人默念一句“结根依青天”，桂枝瞬间生长成一棵小桂树，枝叶婆娑，开出了一丛丛金黄桂花，芬香扑鼻，桂树高达一丈，树荫覆盖住陈平安。",
@@ -575,16 +636,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十四章 大道之上 · 陈平安与桂夫人剧情推进",
+        "name": "第四卷剑气近 第二百六十四章 大道之上 · 陈平安与老僧剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "老僧",
           "桂夫人"
         ],
         "description": "老人一步踏出，瞬间来到陈平安乘坐小舟一侧十数丈外。 陈平安好似不问世事的入定老僧，只是缓缓画符。 桂夫人和舟子老汉同时有所动作，她丢出一截桂花枝，落在小舟船头，妇人默念一句“结根依青天”，桂枝瞬间生长成一棵小桂树，枝叶婆娑，开出了一丛丛金黄桂花，芬香扑鼻，桂树高达一丈，树荫覆盖住陈平安。",
         "background": "",
-        "significance": "推动陈平安与桂夫人之间的剧情推进关系。",
+        "significance": "推动陈平安与老僧之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十四章 大道之上 · 段9",
         "sentence_indexes_in_segment": [
@@ -600,7 +662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.343876",
+    "extracted_at": "2026-03-25T17:27:38.279310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -662,7 +724,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.343876",
+    "extracted_at": "2026-03-25T17:27:38.279310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,7 +786,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.343876",
+    "extracted_at": "2026-03-25T17:27:38.279310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -747,6 +809,19 @@
     "entities": [
       {
         "entity_type": "person",
+        "name": "马致",
+        "alias": [],
+        "original_description_in_book": "许多原本马致说得口干舌燥也不愿拿出压箱底法宝的中五境练气士，顿时脸色巨变，再不敢藏私，纷纷祭出法宝灵器，一时间，桂花岛上流光溢彩，纷纷向高空掠去，帮助桂夫人和那棵祖宗桂一起抵御金色老蛟的踩踏阵势。",
+        "description": "外围修士人物，适合增加山上群像与冲突节点。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 265,
+        "segment_index": 16
+      },
+      {
+        "entity_type": "person",
         "name": "桂夫人",
         "alias": [],
         "original_description_in_book": "许多原本马致说得口干舌燥也不愿拿出压箱底法宝的中五境练气士，顿时脸色巨变，再不敢藏私，纷纷祭出法宝灵器，一时间，桂花岛上流光溢彩，纷纷向高空掠去，帮助桂夫人和那棵祖宗桂一起抵御金色老蛟的踩踏阵势。",
@@ -762,16 +837,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十四章 大道之上 · 桂夫人冲突",
+        "name": "第四卷剑气近 第二百六十四章 大道之上 · 马致与桂夫人冲突",
         "time": null,
         "location": null,
         "participants": [
+          "马致",
           "桂夫人"
         ],
         "description": "许多原本马致说得口干舌燥也不愿拿出压箱底法宝的中五境练气士，顿时脸色巨变，再不敢藏私，纷纷祭出法宝灵器，一时间，桂花岛上流光溢彩，纷纷向高空掠去，帮助桂夫人和那棵祖宗桂一起抵御金色老蛟的踩踏阵势。 但是当岛上练气士倾力出手之后，一些个之前始终袖手远观的蛟龙沟大物，也终于运用水术神通，如一阵箭雨洒向桂花岛。 因此桂花岛哪怕有了练气士助阵，竟是依然处于下风。",
         "background": "",
-        "significance": "对应桂夫人在叙事中的关键冲突节点。",
-        "related_action_indices": [],
+        "significance": "推动马致与桂夫人之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十四章 大道之上 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -785,8 +863,29 @@
         "segment_index": 16
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马致"
+        ],
+        "to_roles": [
+          "桂夫人"
+        ],
+        "action": "同行",
+        "context": "许多原本马致说得口干舌燥也不愿拿出压箱底法宝的中五境练气士，顿时脸色巨变，再不敢藏私，纷纷祭出法宝灵器，一时间，桂花岛上流光溢彩，纷纷向高空掠去，帮助桂夫人和那棵祖宗桂一起抵御金色老蛟的踩踏阵势。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十四章 大道之上 · 马致与桂夫人冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 265,
+        "segment_index": 16
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:38.280314",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -864,7 +963,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.280314",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -970,7 +1069,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.280314",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1033,7 +1132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.280314",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1113,7 +1212,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.280314",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1175,7 +1274,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.281317",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1238,7 +1337,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.281317",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1300,7 +1399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.281317",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1362,7 +1461,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.344879",
+    "extracted_at": "2026-03-25T17:27:38.281317",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1442,7 +1541,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.345882",
+    "extracted_at": "2026-03-25T17:27:38.281317",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1463,6 +1562,19 @@
       "袖中滑出一对印章，山水印，停在头顶上空。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "老妪",
+        "alias": [],
+        "original_description_in_book": "有人能救一救，但是不愿意，例如那位竹衣少年身边的元婴老妪。",
+        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 265,
+        "segment_index": 28
+      },
       {
         "entity_type": "person",
         "name": "桂夫人",
@@ -1493,16 +1605,17 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十四章 大道之上 · 桂夫人与陈平安剧情推进",
+        "name": "第四卷剑气近 第二百六十四章 大道之上 · 老妪与桂夫人剧情推进",
         "time": null,
         "location": null,
         "participants": [
+          "老妪",
           "桂夫人",
           "陈平安"
         ],
-        "description": "有人想要救，但是为了范家大业，只能选择退缩不前，比如桂夫人。 陈平安在这一刻，好似一切人心世情都已洞悉，可是神色不悲不喜。 有人能救一救，但是不愿意，例如那位竹衣少年身边的元婴老妪。",
+        "description": "有人能救一救，但是不愿意，例如那位竹衣少年身边的元婴老妪。 有人想要救，但是为了范家大业，只能选择退缩不前，比如桂夫人。 陈平安在这一刻，好似一切人心世情都已洞悉，可是神色不悲不喜。",
         "background": "",
-        "significance": "推动桂夫人与陈平安之间的剧情推进关系。",
+        "significance": "推动老妪与桂夫人之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十四章 大道之上 · 段28",
         "sentence_indexes_in_segment": [
@@ -1518,7 +1631,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:31.345882",
+    "extracted_at": "2026-03-25T17:27:38.281317",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

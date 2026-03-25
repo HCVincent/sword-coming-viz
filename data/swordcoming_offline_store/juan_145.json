@@ -30,6 +30,19 @@
       },
       {
         "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "井底的白衣少年摇头道：“我不。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 145,
+        "segment_index": 1
+      },
+      {
+        "entity_type": "person",
         "name": "崔东山",
         "alias": [],
         "original_description_in_book": "再说了，我就会那么一点蛮力，真要打架，打得过你崔东山？",
@@ -45,19 +58,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔东山对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与白衣少年对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
+          "白衣少年",
           "崔东山"
         ],
-        "description": "井口上的陈平安说道：“你上来。 陈平安心平气和道：“我们好好聊聊，先讲道理，不会一开始就打打杀杀。 再说了，我就会那么一点蛮力，真要打架，打得过你崔东山？",
+        "description": "井口上的陈平安说道：“你上来。 井底的白衣少年摇头道：“我不。 陈平安心平气和道：“我们好好聊聊，先讲道理，不会一开始就打打杀杀。",
         "background": "",
-        "significance": "推动陈平安与崔东山之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陈平安与白衣少年之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -71,34 +83,8 @@
         "segment_index": 1
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "崔东山"
-        ],
-        "action": "对话",
-        "context": "井口上的陈平安说道：“你上来。 ” 井底的白衣少年摇头道：“我不。 ” 陈平安心平气和道：“我们好好聊聊，先讲道理，不会一开始就打打杀杀。 再说了，我就会那么一点蛮力，真要打架，打得过你崔东山？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔东山对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 145,
-        "segment_index": 1
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.782794",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.574758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -177,7 +163,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.782794",
+    "extracted_at": "2026-03-25T17:27:37.574758",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -211,20 +197,34 @@
         ],
         "juan_index": 145,
         "segment_index": 3
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年笑呵呵说着话，他踩在微漾的水面上，白衣少年伸手向老井内壁，幽绿青苔，柔滑冰凉。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安剧情推进",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与白衣少年剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安"
+          "陈平安",
+          "白衣少年"
         ],
-        "description": "陈平安深呼吸一口气，站起身，绕着古井缓缓而走。 下边很快传来嗓音，“陈平安，你别装了，你不认我是学生，可我认定你是我先生啊，所以我打不能打你，杀不敢杀你，一旦你执意要动手，我肯定吃闷亏。 ”",
+        "description": "陈平安深呼吸一口气，站起身，绕着古井缓缓而走。 下边很快传来嗓音，“陈平安，你别装了，你不认我是学生，可我认定你是我先生啊，所以我打不能打你，杀不敢杀你，一旦你执意要动手，我肯定吃闷亏。 白衣少年笑呵呵说着话，他踩在微漾的水面上，白衣少年伸手向老井内壁，幽绿青苔，柔滑冰凉。",
         "background": "",
-        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "significance": "推动陈平安与白衣少年之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段3",
         "sentence_indexes_in_segment": [
@@ -240,7 +240,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.782794",
+    "extracted_at": "2026-03-25T17:27:37.575762",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -291,21 +291,34 @@
         ],
         "juan_index": 145,
         "segment_index": 4
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "陈平安脚下在绕圈子，但是不愿跟那家伙兜圈子，直截了当问道：“那些出自县衙署的形势图，你是不是让县令吴鸢偷偷动了手脚？",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          2
+        ],
+        "juan_index": 145,
+        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 崔瀺与陈平安对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与吴鸢对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺",
-          "陈平安"
+          "陈平安",
+          "吴鸢"
         ],
         "description": "因为从江底沿着地下水来到井底后，崔瀺第一次意识到，上边那个姓陈的小子，竟然真的能够威胁到他的性命，虽然不清楚陈平安隐藏了什么惊世骇俗的手段，但是他的直觉一向很准。 陈平安脚下在绕圈子，但是不愿跟那家伙兜圈子，直截了当问道：“那些出自县衙署的形势图，你是不是让县令吴鸢偷偷动了手脚？ 崔瀺喊道：“喂喂喂？",
         "background": "",
-        "significance": "推动崔瀺与陈平安之间的对话关系。",
+        "significance": "推动陈平安与吴鸢之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -326,30 +339,25 @@
       {
         "time": null,
         "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
           "陈平安"
         ],
+        "to_roles": [
+          "吴鸢"
+        ],
         "action": "对话",
-        "context": "虽然嘴上的言语轻松随意，可是他此刻的心情，一点都不惬意，简直比起在大水府邸装大爷，更加耗费心神和所剩不多的家底。 因为从江底沿着地下水来到井底后，崔瀺第一次意识到，上边那个姓陈的小子，竟然真的能够威胁到他的性命，虽然不清楚陈平安隐藏了什么惊世骇俗的手段，但是他的直觉一向很准。 陈平安脚下在绕圈子，但是不愿跟那家伙兜圈子，直截了当问道：“那些出自县衙署的形势图，你是不是让县令吴鸢偷偷动了手脚？ ” 崔瀺喊道：“喂喂喂？ 陈平安，你说什么，我听不太清楚。",
+        "context": "陈平安脚下在绕圈子，但是不愿跟那家伙兜圈子，直截了当问道：“那些出自县衙署的形势图，你是不是让县令吴鸢偷偷动了手脚？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 崔瀺与陈平安对话",
+        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与吴鸢对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 145,
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.782794",
+    "extracted_at": "2026-03-25T17:27:37.575762",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -427,7 +435,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.782794",
+    "extracted_at": "2026-03-25T17:27:37.575762",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -542,7 +550,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.782794",
+    "extracted_at": "2026-03-25T17:27:37.575762",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -592,6 +600,19 @@
         ],
         "juan_index": 145,
         "segment_index": 7
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "只可惜人在屋檐下，不得不低头啊，白衣少年赶紧伸长脖子嚷嚷道：“陈平安陈公子陈兄弟陈大爷陈老祖宗！",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 7
       }
     ],
     "locations": [],
@@ -602,7 +623,8 @@
         "location": null,
         "participants": [
           "崔瀺",
-          "陈平安"
+          "陈平安",
+          "白衣少年"
         ],
         "description": "崔瀺气得跳脚，“那你问个屁啊！ 崔瀺竖起耳朵听了听，没有动静，顿时有些慌张，一肚子委屈，神情悲壮，心想他娘的真是虎落平阳被犬欺啊，换成今夜大水府邸，随便拎出一只蝼蚁，丢在你陈平安面前，你再这么嚣张试试看？ 只可惜人在屋檐下，不得不低头啊，白衣少年赶紧伸长脖子嚷嚷道：“陈平安陈公子陈兄弟陈大爷陈老祖宗！",
         "background": "",
@@ -622,7 +644,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.575762",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -657,6 +679,19 @@
         ],
         "juan_index": 145,
         "segment_index": 8
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "水井底的水面上，白衣少年彻底沉默下去。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 8
       }
     ],
     "locations": [],
@@ -667,9 +702,10 @@
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安"
+          "陈平安",
+          "白衣少年"
         ],
-        "description": "上边终于有了回应，“我答应过齐先生，要把他们安全送到大隋书院。 不讲情分的话，咱俩稍微讲一点江湖道义也行啊！ ”",
+        "description": "上边终于有了回应，“我答应过齐先生，要把他们安全送到大隋书院。 水井底的水面上，白衣少年彻底沉默下去。 不讲情分的话，咱俩稍微讲一点江湖道义也行啊！",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
         "related_action_indices": [],
@@ -687,7 +723,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.575762",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -718,6 +754,19 @@
         "sentence_indexes_in_segment": [
           0,
           2
+        ],
+        "juan_index": 145,
+        "segment_index": 9
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "陈平安一直不信任白衣少年，对这个人戒心很重。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 145,
         "segment_index": 9
@@ -838,7 +887,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.576766",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -883,6 +932,19 @@
         "sentence_indexes_in_segment": [
           0,
           5
+        ],
+        "juan_index": 145,
+        "segment_index": 10
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "至于谢谢和于禄，本就是白衣少年带入队伍的，另当别论。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
         ],
         "juan_index": 145,
         "segment_index": 10
@@ -1074,7 +1136,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.576766",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1119,6 +1181,19 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0
+        ],
+        "juan_index": 145,
+        "segment_index": 11
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "然后陈平安想起了一个局外人，县令吴鸢。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 145,
         "segment_index": 11
@@ -1204,7 +1279,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.576766",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1312,7 +1387,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.576766",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1430,7 +1505,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.783797",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1494,7 +1569,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1585,7 +1660,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1690,7 +1765,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,7 +1857,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1886,7 +1961,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1949,7 +2024,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.577769",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1985,6 +2060,19 @@
       },
       {
         "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "李宝瓶坐在长椅上，晃荡着那双踩着小草鞋的脚丫，仰起头，无意间发现檐下挂着一串小风铃。",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 145,
+        "segment_index": 20
+      },
+      {
+        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安点点头。",
@@ -2000,19 +2088,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 李宝瓶与陈平安对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 李宝瓶与仰起头对话",
         "time": null,
         "location": null,
         "participants": [
           "李宝瓶",
+          "仰起头",
           "陈平安"
         ],
         "description": "李宝瓶坐在长椅上，晃荡着那双踩着小草鞋的脚丫，仰起头，无意间发现檐下挂着一串小风铃。 陈平安点点头。 小姑娘没来由说道：“小师叔，我总觉得先生在想念我们。",
         "background": "",
-        "significance": "推动李宝瓶与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动李宝瓶与仰起头之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -2026,34 +2113,8 @@
         "segment_index": 20
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李宝瓶"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "李宝瓶坐在长椅上，晃荡着那双踩着小草鞋的脚丫，仰起头，无意间发现檐下挂着一串小风铃。 小姑娘没来由说道：“小师叔，我总觉得先生在想念我们。 ” 陈平安点点头。 小姑娘脑袋靠在朱漆亭柱上，闭上眼睛，侧耳聆听。 仿佛是世间最后一缕春风，吹动着檐下铃铛。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 李宝瓶与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 145,
-        "segment_index": 20
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.578772",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2083,6 +2144,19 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           3
+        ],
+        "juan_index": 145,
+        "segment_index": 21
+      },
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年始终待在原地，既没有从井底离去，也没有出现在井口。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
         ],
         "juan_index": 145,
         "segment_index": 21
@@ -2128,9 +2202,10 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗"
+          "魏檗",
+          "白衣少年"
         ],
-        "description": "陈平安笑着摆了摆手，然后返回老水井那边。 龙泉西边山脉绵延，其中有一座山头叫落魄山。 叮咚叮咚叮叮咚……",
+        "description": "陈平安笑着摆了摆手，然后返回老水井那边。 白衣少年始终待在原地，既没有从井底离去，也没有出现在井口。 龙泉西边山脉绵延，其中有一座山头叫落魄山。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
         "related_action_indices": [],
@@ -2148,7 +2223,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "extracted_at": "2026-03-25T17:27:37.578772",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2168,7 +2243,37 @@
       "傅玉脸色淡然，开门见山地解释道：“吴鸢是娘娘安插在他先生身边的棋子，而我是国师大人安插在龙泉县令身边的棋子。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "一位名叫傅玉的文秘书郎，作为县令吴鸢的头号心腹，之前在县城与外人起了纷争，吴鸢不愿在这个关头节外生枝，更不希望有人拿此做文章，便让傅玉负责盯着这座山神庙的建造，事实上算是避风头来了。 那位看到傅玉后，笑问道：“不应该是那位崔国师的学生，吴县尊亲自找我吗？",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          2,
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 22
+      },
+      {
+        "entity_type": "person",
+        "name": "吴鸢",
+        "alias": [],
+        "original_description_in_book": "一位名叫傅玉的文秘书郎，作为县令吴鸢的头号心腹，之前在县城与外人起了纷争，吴鸢不愿在这个关头节外生枝，更不希望有人拿此做文章，便让傅玉负责盯着这座山神庙的建造，事实上算是避风头来了。 傅玉脸色淡然，开门见山地解释道：“吴鸢是娘娘安插在他先生身边的棋子，而我是国师大人安插在龙泉县令身边的棋子。",
+        "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          0,
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 22
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -2210,7 +2315,10 @@
         "description": "小镇并入大骊版图后的核心地域，是多条线交汇的主要舞台。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "傅玉",
+          "吴鸢"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -2220,14 +2328,19 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 大骊对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 傅玉与吴鸢在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "在一个月明星稀的深夜，这位大骊豪族出身却沦为浊流胥吏的京城年轻人，独自一人，找到了一个在落魄山搭建竹楼的奇怪家伙。 傅玉脸色淡然，开门见山地解释道：“吴鸢是娘娘安插在他先生身边的棋子，而我是国师大人安插在龙泉县令身边的棋子。 一位名叫傅玉的文秘书郎，作为县令吴鸢的头号心腹，之前在县城与外人起了纷争，吴鸢不愿在这个关头节外生枝，更不希望有人拿此做文章，便让傅玉负责盯着这座山神庙的建造，事实上算是避风头来了。",
+        "participants": [
+          "傅玉",
+          "吴鸢"
+        ],
+        "description": "一位名叫傅玉的文秘书郎，作为县令吴鸢的头号心腹，之前在县城与外人起了纷争，吴鸢不愿在这个关头节外生枝，更不希望有人拿此做文章，便让傅玉负责盯着这座山神庙的建造，事实上算是避风头来了。 在一个月明星稀的深夜，这位大骊豪族出身却沦为浊流胥吏的京城年轻人，独自一人，找到了一个在落魄山搭建竹楼的奇怪家伙。 那位看到傅玉后，笑问道：“不应该是那位崔国师的学生，吴县尊亲自找我吗？",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
-        "related_action_indices": [],
+        "significance": "在大骊推动傅玉与吴鸢之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -2241,8 +2354,34 @@
         "segment_index": 22
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.784801",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "傅玉"
+        ],
+        "to_roles": [
+          "吴鸢"
+        ],
+        "action": "对话",
+        "context": "一位名叫傅玉的文秘书郎，作为县令吴鸢的头号心腹，之前在县城与外人起了纷争，吴鸢不愿在这个关头节外生枝，更不希望有人拿此做文章，便让傅玉负责盯着这座山神庙的建造，事实上算是避风头来了。 在一个月明星稀的深夜，这位大骊豪族出身却沦为浊流胥吏的京城年轻人，独自一人，找到了一个在落魄山搭建竹楼的奇怪家伙。 那位看到傅玉后，笑问道：“不应该是那位崔国师的学生，吴县尊亲自找我吗？ ” 傅玉脸色淡然，开门见山地解释道：“吴鸢是娘娘安插在他先生身边的棋子，而我是国师大人安插在龙泉县令身边的棋子。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 傅玉与吴鸢在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 22
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.578772",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2263,6 +2402,22 @@
       "他坦然坐在小竹椅上，转头看了眼夜色里远未完工的竹楼，竹楼不大，耗时已久，却只搭建了一半还不到，因为魏檗并未花钱雇佣小镇青壮男子，也不愿意跟龙泉县衙署打招呼，借调一拨卢氏刑徒，始终亲力亲为。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "俊朗的外貌，世家子的风范，漠然的眼神，最后加上冷冰冰的措辞，与傅玉在衙署一贯给人温文尔雅的印象，天壤之别。 傅玉一语道破天机后，伸出一只手掌，摊开在对方眼前。",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 23
+      },
       {
         "entity_type": "person",
         "name": "魏檗",
@@ -2325,9 +2480,10 @@
         "participants": [
           "阿良",
           "陈平安",
+          "傅玉",
           "魏檗"
         ],
-        "description": "傅玉看着这位昔年的神水国北岳正神，点了点头，对于魏檗的冷嘲热讽，没有恼羞成怒。 他坦然坐在小竹椅上，转头看了眼夜色里远未完工的竹楼，竹楼不大，耗时已久，却只搭建了一半还不到，因为魏檗并未花钱雇佣小镇青壮男子，也不愿意跟龙泉县衙署打招呼，借调一拨卢氏刑徒，始终亲力亲为。 俊朗的外貌，世家子的风范，漠然的眼神，最后加上冷冰冰的措辞，与傅玉在衙署一贯给人温文尔雅的印象，天壤之别。",
+        "description": "俊朗的外貌，世家子的风范，漠然的眼神，最后加上冷冰冰的措辞，与傅玉在衙署一贯给人温文尔雅的印象，天壤之别。 傅玉一语道破天机后，伸出一只手掌，摊开在对方眼前。 那人从傅玉手掌拿起一枚黑色棋子，伸手示意傅玉坐在一条竹椅上，满脸笑意：“明白了，那么咱们就一个漫天要价，一个坐地还钱，在这明月清风之下，行蝇营狗苟之事？",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2345,7 +2501,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.785804",
+    "extracted_at": "2026-03-25T17:27:37.578772",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2427,7 +2583,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.785804",
+    "extracted_at": "2026-03-25T17:27:37.578772",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2448,6 +2604,20 @@
       "傅玉脸色有些难看。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "傅玉犹豫了一下，先说一句题外话，作为开场白，“虽然阵营不同，可吴大人是个好人，以后更会是一个好官。 傅玉脸色有些难看。",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 25
+      },
       {
         "entity_type": "person",
         "name": "魏檗",
@@ -2487,9 +2657,10 @@
         "location": "福禄街",
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "傅玉"
         ],
-        "description": "仿佛是福禄街那个红棉袄小姑娘，在地上跳着炭笔画出来的方格，一下子就从春天跳到了秋天。 魏檗满脸不以为然，笑了，“那也得活着才行。 傅玉犹豫了一下，先说一句题外话，作为开场白，“虽然阵营不同，可吴大人是个好人，以后更会是一个好官。",
+        "description": "仿佛是福禄街那个红棉袄小姑娘，在地上跳着炭笔画出来的方格，一下子就从春天跳到了秋天。 傅玉犹豫了一下，先说一句题外话，作为开场白，“虽然阵营不同，可吴大人是个好人，以后更会是一个好官。 魏檗满脸不以为然，笑了，“那也得活着才行。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
         "related_action_indices": [],
@@ -2507,7 +2678,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.785804",
+    "extracted_at": "2026-03-25T17:27:37.578772",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2547,6 +2718,19 @@
       },
       {
         "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "傅玉深呼吸一口气，“成为大骊北岳正神！",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 145,
+        "segment_index": 26
+      },
+      {
+        "entity_type": "person",
         "name": "大骊皇帝",
         "alias": [],
         "original_description_in_book": "魏檗神色从容，微笑道：“如果我没有记错的话，你们的北岳正神在那场大战之后，依然安然无恙啊，大骊皇帝总不可能随随便便，就拿掉这么一个重要角色的神位吧？",
@@ -2570,6 +2754,7 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
+          "傅玉",
           "魏檗",
           "大骊皇帝"
         ],
@@ -2632,7 +2817,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.785804",
+    "extracted_at": "2026-03-25T17:27:37.579776",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2653,6 +2838,20 @@
       "傅玉点头，“当真。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "傅玉放低嗓音，“之前陛下提议将此处的披云山，升为新的大骊北岳，后来被搁置，但是近期有了新的进展，陛下决定大刀阔斧地推进此事。 傅玉点头，“当真。",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          1,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 27
+      },
       {
         "entity_type": "person",
         "name": "魏檗",
@@ -2677,7 +2876,9 @@
         "description": "魏檗坐镇之地，是陈平安和落魄山的重要支援场。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "傅玉"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -2693,7 +2894,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "傅玉"
+        ],
         "sentence_indexes_in_segment": [
           1
         ],
@@ -2708,12 +2911,15 @@
         "location": "披云山",
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "傅玉"
         ],
-        "description": "傅玉放低嗓音，“之前陛下提议将此处的披云山，升为新的大骊北岳，后来被搁置，但是近期有了新的进展，陛下决定大刀阔斧地推进此事。 魏檗问道：“当真？ ”",
+        "description": "傅玉放低嗓音，“之前陛下提议将此处的披云山，升为新的大骊北岳，后来被搁置，但是近期有了新的进展，陛下决定大刀阔斧地推进此事。 魏檗问道：“当真？ 傅玉点头，“当真。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -2727,8 +2933,34 @@
         "segment_index": 27
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.785804",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "傅玉"
+        ],
+        "to_roles": [
+          "魏檗"
+        ],
+        "action": "对话",
+        "context": "” 傅玉放低嗓音，“之前陛下提议将此处的披云山，升为新的大骊北岳，后来被搁置，但是近期有了新的进展，陛下决定大刀阔斧地推进此事。 ” 魏檗问道：“当真？ ” 傅玉点头，“当真。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "披云山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 27
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.579776",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2764,6 +2996,19 @@
         ],
         "juan_index": 145,
         "segment_index": 28
+      },
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "傅玉坚决沉默，嘴巴很严实，绝不轻易评价皇帝陛下的决定。",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 28
       }
     ],
     "locations": [
@@ -2794,12 +3039,15 @@
         "location": "大骊",
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "傅玉"
         ],
-        "description": "魏檗玩味笑道：“是不是仓促了些？ 别说大隋高氏，你们大骊连黄庭国都还没拿下，就开始把北岳放在一国版图的最南端？ 魏檗收起折扇，思考许久，感慨道：“大骊画了这么大一个饼给我啊。",
+        "description": "魏檗玩味笑道：“是不是仓促了些？ 别说大隋高氏，你们大骊连黄庭国都还没拿下，就开始把北岳放在一国版图的最南端？ 傅玉坚决沉默，嘴巴很严实，绝不轻易评价皇帝陛下的决定。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段28",
         "sentence_indexes_in_segment": [
           0,
@@ -2813,8 +3061,34 @@
         "segment_index": 28
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.785804",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏檗"
+        ],
+        "to_roles": [
+          "傅玉"
+        ],
+        "action": "对话",
+        "context": "” 魏檗玩味笑道：“是不是仓促了些？ 别说大隋高氏，你们大骊连黄庭国都还没拿下，就开始把北岳放在一国版图的最南端？ ” 傅玉坚决沉默，嘴巴很严实，绝不轻易评价皇帝陛下的决定。 魏檗收起折扇，思考许久，感慨道：“大骊画了这么大一个饼给我啊。",
+        "result": null,
+        "event_name": "魏檗现身",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 28
+      }
+    ],
+    "extracted_at": "2026-03-25T17:27:37.579776",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2875,6 +3149,19 @@
         ],
         "juan_index": 145,
         "segment_index": 29
+      },
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "最后他凝视着傅玉，眯眼道：“好了，你可以说说看，到底要我做什么？",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 29
       }
     ],
     "locations": [
@@ -2910,7 +3197,7 @@
           "大骊皇帝",
           "魏檗"
         ],
-        "description": "“哈哈，你们大骊皇帝眼光真不错，我魏檗可是被阿良捅了一刀、还能够活蹦乱跳的存在。 ” 他站起身，用折扇拍打手心，转头瞥了眼竹楼。",
+        "description": "“哈哈，你们大骊皇帝眼光真不错，我魏檗可是被阿良捅了一刀、还能够活蹦乱跳的存在。 最后他凝视着傅玉，眯眼道：“好了，你可以说说看，到底要我做什么？ ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [],
@@ -2928,7 +3215,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.786808",
+    "extracted_at": "2026-03-25T17:27:37.579776",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2963,6 +3250,19 @@
         ],
         "juan_index": 145,
         "segment_index": 30
+      },
+      {
+        "entity_type": "person",
+        "name": "傅玉",
+        "alias": [],
+        "original_description_in_book": "傅玉有些紧张。",
+        "description": "山上人物，适合增强外围势力和人物关系层次。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 30
       }
     ],
     "locations": [],
@@ -2973,9 +3273,10 @@
         "location": null,
         "participants": [
           "魏檗",
-          "陈平安"
+          "陈平安",
+          "傅玉"
         ],
-        "description": "这一刻的魏檗。 ” 不再是那个在棋墩山石坪初次露面的白发苍苍土地爷。",
+        "description": "这一刻的魏檗。 傅玉有些紧张。 ”",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
         "related_action_indices": [],
@@ -2993,7 +3294,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.786808",
+    "extracted_at": "2026-03-25T17:27:37.579776",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3054,7 +3355,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.786808",
+    "extracted_at": "2026-03-25T17:27:37.579776",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3115,7 +3416,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.786808",
+    "extracted_at": "2026-03-25T17:27:37.580780",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3179,7 +3480,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.786808",
+    "extracted_at": "2026-03-25T17:27:37.580780",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3241,7 +3542,131 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.786808",
+    "extracted_at": "2026-03-25T17:27:37.580780",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "145-41-0": {
+    "juan_index": 145,
+    "segment_index": 41,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十五章 草灰蛇线",
+    "source_sentences": [
+      "一名脸色雪白的女子从府内飞掠而出，悬停在匾额之前，厉色怒容道：“你还来做什么？",
+      "怎么，先前你失心疯，差点坏我山根水源，是没打过瘾，还是如何？",
+      "”",
+      "不知为何，女鬼已经不再穿那件鲜红嫁衣。",
+      "阴神说道：“你想不想离开此地？",
+      "如果想的话，你需要要付出不小的代价，比如换我来做这座府邸的新主人。"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神说道：“你想不想离开此地？",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 41
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 阴神对话",
+        "time": null,
+        "location": null,
+        "participants": [
+          "阴神"
+        ],
+        "description": "阴神说道：“你想不想离开此地？ 一名脸色雪白的女子从府内飞掠而出，悬停在匾额之前，厉色怒容道：“你还来做什么？ 怎么，先前你失心疯，差点坏我山根水源，是没打过瘾，还是如何？",
+        "background": "",
+        "significance": "对应阴神在叙事中的关键对话节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段41",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 41
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.581783",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "145-42-0": {
+    "juan_index": 145,
+    "segment_index": 42,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十五章 草灰蛇线",
+    "source_sentences": [
+      "”",
+      "女鬼一手捧腹作大笑状：“失心疯，你这次是真的失心疯了。",
+      "”",
+      "阴神面无表情道：“你知道我不是在开玩笑。",
+      "你就不想去观湖书院，从湖底打捞起那具尸骨？",
+      "就不想寻找蛛丝马迹，为他报仇？"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神面无表情道：“你知道我不是在开玩笑。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 145,
+        "segment_index": 42
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 阴神剧情推进",
+        "time": null,
+        "location": null,
+        "participants": [
+          "阴神"
+        ],
+        "description": "阴神面无表情道：“你知道我不是在开玩笑。 ” 女鬼一手捧腹作大笑状：“失心疯，你这次是真的失心疯了。",
+        "background": "",
+        "significance": "对应阴神在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段42",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 42
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.581783",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3261,7 +3686,21 @@
       "”",
       "阴神敷衍答道：“我自有门路，无需夫人操心。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神敷衍答道：“我自有门路，无需夫人操心。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 43
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -3282,13 +3721,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 大骊对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 阴神在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
-        "description": "她问了一个关键问题，“就算我愿意交出此处，你凭什么让大骊朝廷认可你的身份？ 已经拖了这么多年，再拖下去，估计当年的仇人，都已经舒舒服服地安享晚年，然后一个个陆续老死了吧。 ”",
+        "participants": [
+          "阴神"
+        ],
+        "description": "她问了一个关键问题，“就算我愿意交出此处，你凭什么让大骊朝廷认可你的身份？ 阴神敷衍答道：“我自有门路，无需夫人操心。 已经拖了这么多年，再拖下去，估计当年的仇人，都已经舒舒服服地安享晚年，然后一个个陆续老死了吧。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应阴神在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段43",
         "sentence_indexes_in_segment": [
@@ -3304,7 +3745,70 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.787812",
+    "extracted_at": "2026-03-25T17:27:37.581783",
+    "model_name": "offline-rules-v2",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "145-45-0": {
+    "juan_index": 145,
+    "segment_index": 45,
+    "chunk_start_index": 0,
+    "chunk_end_index": 6,
+    "segment_start_time": "第二卷山水郎 第一百四十五章 草灰蛇线",
+    "source_sentences": [
+      "阴神点头道：“有何不可？",
+      "至多百年，我就会将这座府邸原封不动地还给夫人。",
+      "”",
+      "女鬼缓缓前行，与阴神擦肩而过，就这样走向远方。",
+      "她自言自语道：“山水相逢，再无重逢。",
+      "”"
+    ],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神点头道：“有何不可？ 女鬼缓缓前行，与阴神擦肩而过，就这样走向远方。",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          0,
+          3
+        ],
+        "juan_index": 145,
+        "segment_index": 45
+      }
+    ],
+    "locations": [],
+    "events": [
+      {
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 阴神遭遇",
+        "time": null,
+        "location": null,
+        "participants": [
+          "阴神"
+        ],
+        "description": "阴神点头道：“有何不可？ 女鬼缓缓前行，与阴神擦肩而过，就这样走向远方。 至多百年，我就会将这座府邸原封不动地还给夫人。",
+        "background": "",
+        "significance": "对应阴神在叙事中的关键遭遇节点。",
+        "related_action_indices": [],
+        "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段45",
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 145,
+        "segment_index": 45
+      }
+    ],
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.581783",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3324,7 +3828,21 @@
       "他们为了让你继续坐镇此地气运，故意对你隐瞒了实情真相。",
       "”"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "阴神",
+        "alias": [],
+        "original_description_in_book": "阴神疑惑问道：“你不恨大骊王朝？",
+        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
+        "power": "小镇",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 145,
+        "segment_index": 46
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -3335,7 +3853,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "阴神"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -3345,13 +3865,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 大骊对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 阴神在大骊对话",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "阴神"
+        ],
         "description": "阴神疑惑问道：“你不恨大骊王朝？ 她转头笑道：“府邸枢纽，就在匾额。 我已经放弃对它的掌控，之后能够取得几分山水气运，就看你自己本事了。",
         "background": "",
-        "significance": "对应大骊相关的关键对话场景。",
+        "significance": "对应阴神在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段46",
         "sentence_indexes_in_segment": [
@@ -3367,7 +3889,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.787812",
+    "extracted_at": "2026-03-25T17:27:37.581783",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3387,7 +3909,21 @@
       "准确说来，其实有人在不久之前，给出正确答案了，是一位大骊王朝的白衣少年，看着不过十五六岁，却能够一语道破天机，说那是“雷部天君亲手刻就，天帝申饬蛟龙之辞”。",
       "哪怕老人见过了无数次的春荣秋枯，那一刻内心仍是惊涛骇浪，只是脸色没有流露出来而已。"
     ],
-    "entities": [],
+    "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "准确说来，其实有人在不久之前，给出正确答案了，是一位大骊王朝的白衣少年，看着不过十五六岁，却能够一语道破天机，说那是“雷部天君亲手刻就，天帝申饬蛟龙之辞”。",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          4
+        ],
+        "juan_index": 145,
+        "segment_index": 48
+      }
+    ],
     "locations": [
       {
         "name": "大骊",
@@ -3398,7 +3934,9 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "白衣少年"
+        ],
         "sentence_indexes_in_segment": [
           4
         ],
@@ -3408,13 +3946,15 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 大骊剧情推进",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 白衣少年在大骊剧情推进",
         "time": null,
         "location": "大骊",
-        "participants": [],
+        "participants": [
+          "白衣少年"
+        ],
         "description": "准确说来，其实有人在不久之前，给出正确答案了，是一位大骊王朝的白衣少年，看着不过十五六岁，却能够一语道破天机，说那是“雷部天君亲手刻就，天帝申饬蛟龙之辞”。 老人抬起手中灯笼，松开手指后，去抽出腋下书籍，那盏本该坠落的灯笼，诡谲地悬停在空中，散发出柔和的洁白灯光。 老人盘腿而坐，一手捧书，一手翻书，小舟自行驶出小水湾，去往水流相通的大江。",
         "background": "",
-        "significance": "对应大骊相关的关键剧情推进场景。",
+        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段48",
         "sentence_indexes_in_segment": [
@@ -3430,7 +3970,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.787812",
+    "extracted_at": "2026-03-25T17:27:37.582786",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3491,7 +4031,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.788815",
+    "extracted_at": "2026-03-25T17:27:37.582786",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3512,6 +4052,19 @@
       "因为大骊如今拥有世间最后的半条真龙。"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "崔明皇",
+        "alias": [],
+        "original_description_in_book": "正是观湖书院的崔明皇，作为宝瓶洲最著名的两大儒家君子之一，他曾经亲身参与过骊珠洞天收官。",
+        "description": "大骊支线人物，适合加强王朝线的层次。",
+        "power": "大骊",
+        "sentence_indexes_in_segment": [
+          3
+        ],
+        "juan_index": 145,
+        "segment_index": 52
+      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -3551,7 +4104,9 @@
         "description": "《剑来》前三季主要世界舞台之一。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "崔明皇"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -3565,7 +4120,9 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [],
+        "related_entities": [
+          "崔明皇"
+        ],
         "sentence_indexes_in_segment": [
           3
         ],
@@ -3656,7 +4213,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-25T01:03:30.788815",
+    "extracted_at": "2026-03-25T17:27:37.582786",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3732,7 +4289,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T01:03:30.788815",
+    "extracted_at": "2026-03-25T17:27:37.582786",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3753,6 +4310,32 @@
       "紧接着，一条雪白虹光从井口撞入井底！"
     ],
     "entities": [
+      {
+        "entity_type": "person",
+        "name": "白衣少年",
+        "alias": [],
+        "original_description_in_book": "白衣少年双手负后，仰起头，笑眯眯道：“怎么，终于想通了？",
+        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
+        "power": "山上",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 145,
+        "segment_index": 54
+      },
+      {
+        "entity_type": "person",
+        "name": "仰起头",
+        "alias": [],
+        "original_description_in_book": "白衣少年双手负后，仰起头，笑眯眯道：“怎么，终于想通了？",
+        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
+        "power": "剑气长城",
+        "sentence_indexes_in_segment": [
+          0
+        ],
+        "juan_index": 145,
+        "segment_index": 54
+      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -3785,19 +4368,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔瀺对话",
+        "name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 白衣少年与仰起头对话",
         "time": null,
         "location": null,
         "participants": [
+          "白衣少年",
+          "仰起头",
           "陈平安",
           "崔瀺"
         ],
-        "description": "陈平安继续说道：“我们第一次见面，你自称什么来着？ 一瞬间，少年崔瀺猛然警觉，头皮发麻，心湖沸腾。 白衣少年双手负后，仰起头，笑眯眯道：“怎么，终于想通了？",
+        "description": "白衣少年双手负后，仰起头，笑眯眯道：“怎么，终于想通了？ 陈平安继续说道：“我们第一次见面，你自称什么来着？ 一瞬间，少年崔瀺猛然警觉，头皮发麻，心湖沸腾。",
         "background": "",
-        "significance": "推动陈平安与崔瀺之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动白衣少年与仰起头之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百四十五章 草灰蛇线 · 段54",
         "sentence_indexes_in_segment": [
           0,
@@ -3811,34 +4394,8 @@
         "segment_index": 54
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "崔瀺"
-        ],
-        "action": "对话",
-        "context": "白衣少年双手负后，仰起头，笑眯眯道：“怎么，终于想通了？ ” 陈平安继续说道：“我们第一次见面，你自称什么来着？ ” 一瞬间，少年崔瀺猛然警觉，头皮发麻，心湖沸腾。 紧接着，一条雪白虹光从井口撞入井底！",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百四十五章 草灰蛇线 · 陈平安与崔瀺对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 145,
-        "segment_index": 54
-      }
-    ],
-    "extracted_at": "2026-03-25T01:03:30.788815",
+    "relations": [],
+    "extracted_at": "2026-03-25T17:27:37.583605",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
