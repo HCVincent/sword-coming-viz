@@ -618,18 +618,39 @@ class EntityResolver:
                 self.location_occurrences[alias_norm].append((location, occurrence))
     
     def add_event(self, event: Event, juan_index: int, segment_index: int) -> None:
-        """Add an event occurrence for later merging."""
+        """Add an event occurrence for later merging.
+
+        Events with the same name are merged only within the same juan (volume).
+        Using a composite key ``"<name>@<juan_index>"`` prevents the mega-merge
+        where a recurring event name (e.g. '阿良过境') collapses every occurrence
+        across all 328 chapters into a single UnifiedEvent.
+        """
         if event.name:
-            self.event_occurrences[event.name].append((event, juan_index, segment_index))
+            key = f"{event.name}@{juan_index}"
+            self.event_occurrences[key].append((event, juan_index, segment_index))
     
+    @staticmethod
+    def _canonical_relation_key(a: str, b: str) -> str:
+        """Return a stable undirected key for the entity pair (a, b).
+
+        The smaller name (lexicographic) is always placed first so that
+        'A->B' and 'B->A' map to the same bucket, preventing the 252
+        bidirectional-duplicate relations observed in the current output.
+        """
+        return f"{min(a, b)}->{max(a, b)}"
+
     def add_relation(self, action: Action) -> None:
         """Add a relation for later aggregation."""
         if action.is_commentary:
             return
-        
+
         for from_role in action.from_roles:
             for to_role in action.to_roles:
-                key = f"{self._normalize_name(from_role)}->{self._normalize_name(to_role)}"
+                a = self._normalize_name(from_role)
+                b = self._normalize_name(to_role)
+                if not a or not b or a == b:
+                    continue
+                key = self._canonical_relation_key(a, b)
                 self.relation_pairs[key].append(action)
     
     def _select_best_description(self, descriptions: List[str]) -> str:
@@ -906,10 +927,21 @@ class EntityResolver:
         return unified_organizations
     
     def resolve_events(self) -> Dict[str, UnifiedEvent]:
-        """Resolve events with the same name."""
+        """Resolve events with the same name within the same juan.
+
+        The internal key is ``"<event_name>@<juan_index>"``; the public ``name``
+        field is restored to the original event name without the suffix.
+        """
         unified_events: Dict[str, UnifiedEvent] = {}
-        
-        for event_name, occurrences in self.event_occurrences.items():
+
+        for event_key, occurrences in self.event_occurrences.items():
+            # Strip the @juan suffix to recover the human-readable event name.
+            # The key itself is kept as the stable id to keep each juan's
+            # occurrence distinct in the output.
+            if "@" in event_key:
+                event_name, _juan_suffix = event_key.rsplit("@", 1)
+            else:
+                event_name = event_key
             all_participants: Set[str] = set()
             source_juans: Set[int] = set()
             source_segments: List[str] = []
@@ -957,7 +989,7 @@ class EntityResolver:
                         imputed_years.append(int(year))
             
             unified = UnifiedEvent(
-                id=event_name,
+                id=event_key,
                 name=event_name,
                 time=time_str,
                 time_text=time_str,
@@ -978,8 +1010,14 @@ class EntityResolver:
                 source_segments=source_segments,
                 action_count=len(occurrences)
             )
-            
-            unified_events[event_name] = unified
+
+            # Backward compatibility:
+            # - keep legacy lookup by plain event_name when it is unique
+            # - use event_key for additional same-name events from other juans
+            if event_name not in unified_events:
+                unified_events[event_name] = unified
+            else:
+                unified_events[event_key] = unified
         
         return unified_events
     
@@ -988,6 +1026,7 @@ class EntityResolver:
         unified_relations: Dict[str, UnifiedRelation] = {}
         
         for pair_key, actions in self.relation_pairs.items():
+            # pair_key is always "<min_name>-><max_name>" (canonical order)
             from_entity, to_entity = pair_key.split("->")
             
             action_types: List[str] = []

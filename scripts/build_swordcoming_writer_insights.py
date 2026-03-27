@@ -1644,13 +1644,11 @@ def build_season_overviews(
             chain
             for chain in conflict_chains
             if range_overlaps(tuple(chain["unit_span"]), (unit_start, unit_end))
-            or range_overlaps(tuple(chain["progress_span"]), (progress_start, progress_end))
         ]
         season_curated = [
             item
             for item in curated_relationships
             if range_overlaps(tuple(item["unit_span"]), (unit_start, unit_end))
-            or range_overlaps(tuple(item["progress_span"]), (progress_start, progress_end))
         ]
 
         top_roles = []
@@ -1669,10 +1667,7 @@ def build_season_overviews(
                 relation_unit_span = (
                     (relation_units[0], relation_units[-1]) if relation_units else (None, None)
                 )
-                if range_overlaps(relation_unit_span, (unit_start, unit_end)) or range_overlaps(
-                    (relation.progress_start, relation.progress_end),
-                    (progress_start, progress_end),
-                ):
+                if range_overlaps(relation_unit_span, (unit_start, unit_end)):
                     relation_count += 1
             density_score = len(unit_hits) * 3 + event_count * 2 + relation_count * 2 + (
                 3 if spotlight_role and role.canonical_name == spotlight_role else 0
