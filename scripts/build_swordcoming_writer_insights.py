@@ -148,19 +148,32 @@ def build_season_priority_roles(
     top_roles: Sequence[dict],
     season_focus: dict,
     limit: int = 8,
-) -> List[dict]:
+) -> Tuple[List[dict], List[str]]:
+    """Build priority roles for a season overview.
+
+    Returns ``(priority_roles, dropped_names)`` where *dropped_names*
+    lists any season_focus names that had **zero** unit appearances in
+    the season (evidence-gated: only roles actually present in the
+    season's chapter data are included).
+    """
     role_index = {item["role_name"]: item for item in top_roles}
     priority_roles: List[dict] = []
-    seen = set()
+    dropped_names: List[str] = []
+    seen: set[str] = set()
 
     for role_name in [str(name).strip() for name in season_focus.get("priority_roles", []) if str(name).strip()]:
         role = role_index.get(role_name)
-        if role is None or role_name in seen:
+        if role_name in seen:
+            continue
+        if role is None:
+            # Evidence gate: name is in season_focus but has no appearances
+            # in this season's chapters — drop it.
+            dropped_names.append(role_name)
             continue
         priority_roles.append(role)
         seen.add(role_name)
         if len(priority_roles) >= limit:
-            return priority_roles[:limit]
+            return priority_roles[:limit], dropped_names
 
     for item in top_roles:
         if item["role_name"] in seen:
@@ -170,7 +183,7 @@ def build_season_priority_roles(
         if len(priority_roles) >= limit:
             break
 
-    return priority_roles[:limit]
+    return priority_roles[:limit], dropped_names
 
 
 def get_season_pair_priority(season_focus: dict, left: str, right: str) -> int:
@@ -357,6 +370,14 @@ def make_event_ref(
     unit_index = units[0] if units else None
     meta = unit_meta.get(unit_index or -1, {})
     event_type = classify_event_type(event, event_type_rules)
+
+    # Collect all chapter titles this event spans — serves as audit evidence
+    source_unit_titles = []
+    for u in units:
+        m = unit_meta.get(u)
+        if m and m.get("unit_title"):
+            source_unit_titles.append(m["unit_title"])
+
     return {
         "event_id": event.id,
         "name": event.name,
@@ -371,6 +392,7 @@ def make_event_ref(
         "participants": sorted(event.participants),
         "description": event.description,
         "significance": event.significance,
+        "source_unit_titles": source_unit_titles,
     }
 
 
@@ -1809,7 +1831,7 @@ def build_season_overviews(
                 item["role_name"],
             )
         )
-        priority_roles = build_season_priority_roles(
+        priority_roles, _dropped_focus_names = build_season_priority_roles(
             top_roles=top_roles,
             season_focus=season_focus,
             limit=8,
@@ -2027,11 +2049,12 @@ def build_season_overviews(
                 "anchor_events": season_anchor_events,
                 "must_keep_scenes": must_keep_scenes,
                 "data_provenance": {
-                    "priority_roles_source": "season_focus" if season_focus.get("priority_roles") else "density_ranking",
+                    "priority_roles_source": "season_focus+evidence_gated" if season_focus.get("priority_roles") else "density_ranking",
+                    "priority_roles_dropped": _dropped_focus_names,
                     "priority_relationships_source": "season_focus" if season_focus.get("priority_relationship_pairs") else "score_ranking",
                     "summary_source": "template_from_data",
                     "story_beats_source": "score_ranking",
-                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text.",
+                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped.",
                 },
             }
         )

@@ -852,3 +852,260 @@ def test_build_writer_insights_payload_uses_season_focus_roles_and_relationships
     assert "陈平安与阿良：小镇之外的世界入口" in [
         relation["title"] for relation in second_overview["priority_relationships"]
     ]
+
+
+def test_season_overview_evidence_gates_priority_roles():
+    """Season_focus roles with zero chapter appearances are dropped."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1},
+        {"1-1": "第一季 · 段1"},
+    )
+    resolver.set_manual_overrides(
+        {"role_primary_powers": {"陈平安": "泥瓶巷", "宋集薪": "大骊"}}
+    )
+
+    # Only add 陈平安 as a role — 宋集薪 is NOT present in chapter data
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0, source_sentence="陈平安。",
+    )
+    resolver.add_event(
+        Event(name="守夜", time=None, location="泥瓶巷",
+              participants=["陈平安"], description="陈平安守夜。",
+              significance="开篇。", juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                "1": {
+                    "unit_index": 1,
+                    "unit_title": "第一章 惊蛰",
+                    "season_name": "第一季",
+                    "progress_start": 1,
+                    "progress_end": 1,
+                },
+            }
+        },
+        core_cast={
+            "event_type_rules": [],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                # season_focus lists 宋集薪, but he has no chapter appearances
+                "season_focus": {
+                    "第一季": {
+                        "priority_roles": ["陈平安", "宋集薪"],
+                    }
+                },
+                "priority_characters": ["陈平安"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    overview = payload["season_overviews"][0]
+    role_names = [r["role_name"] for r in overview["priority_roles"]]
+    assert "陈平安" in role_names, "陈平安 should be kept (has chapter data)"
+    assert "宋集薪" not in role_names, "宋集薪 should be dropped (no chapter data)"
+    # data_provenance should record the drop
+    assert "宋集薪" in overview["data_provenance"]["priority_roles_dropped"]
+    assert "evidence_gated" in overview["data_provenance"]["priority_roles_source"]
+
+
+def test_season_overview_story_beats_have_unique_names():
+    """Each season's story beats should have distinct event names."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1, "1-2": 2, "1-3": 3},
+        {"1-1": "第一季 · 段1", "1-2": "第一季 · 段2", "1-3": "第一季 · 段3"},
+    )
+    resolver.set_manual_overrides({"role_primary_powers": {"陈平安": "泥瓶巷"}})
+
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0, source_sentence="陈平安。",
+    )
+    # Create multiple events spread across the season progress range
+    for i, (name, loc, prog) in enumerate([
+        ("惊蛰守夜", "泥瓶巷", 1),
+        ("墙头对话", "泥瓶巷", 2),
+        ("出城", "城门", 3),
+    ], start=1):
+        resolver.add_event(
+            Event(name=name, time=None, location=loc,
+                  participants=["陈平安"], description=f"{name}描述",
+                  significance=f"{name}意义", juan_index=i, segment_index=1),
+            juan_index=i, segment_index=1,
+        )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                str(i): {
+                    "unit_index": i,
+                    "unit_title": f"第{i}章",
+                    "season_name": "第一季",
+                    "progress_start": i,
+                    "progress_end": i,
+                }
+                for i in range(1, 4)
+            }
+        },
+        core_cast={
+            "event_type_rules": [],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "priority_characters": ["陈平安"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    for overview in payload["season_overviews"]:
+        beats = overview.get("story_beats", [])
+        beat_names = [
+            b["event"]["name"]
+            for b in beats
+            if b.get("event") and b["event"].get("name")
+        ]
+        assert len(beat_names) == len(set(beat_names)), (
+            f"Season {overview['season_name']} has duplicate beat names: {beat_names}"
+        )
+
+
+def test_event_refs_contain_source_unit_titles():
+    """Every event ref in season overviews should carry source_unit_titles."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1},
+        {"1-1": "第一季 · 段1"},
+    )
+    resolver.set_manual_overrides({"role_primary_powers": {"陈平安": "泥瓶巷"}})
+
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0, source_sentence="陈平安。",
+    )
+    resolver.add_event(
+        Event(name="惊蛰守夜", time=None, location="泥瓶巷",
+              participants=["陈平安"], description="陈平安守夜。",
+              significance="开篇。", juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                "1": {
+                    "unit_index": 1,
+                    "unit_title": "第一章 惊蛰",
+                    "season_name": "第一季",
+                    "progress_start": 1,
+                    "progress_end": 1,
+                },
+            }
+        },
+        core_cast={
+            "event_type_rules": [],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "priority_characters": ["陈平安"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    # Check anchor events carry source_unit_titles
+    for overview in payload["season_overviews"]:
+        for ev in overview.get("anchor_events", []):
+            assert "source_unit_titles" in ev, (
+                f"Anchor event {ev.get('name')} missing source_unit_titles"
+            )
+        for beat in overview.get("story_beats", []):
+            ev = beat.get("event")
+            if ev:
+                assert "source_unit_titles" in ev, (
+                    f"Story beat event {ev.get('name')} missing source_unit_titles"
+                )
+
+
+def test_data_provenance_present_on_every_season_overview():
+    """Every season overview must include a data_provenance dict."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1},
+        {"1-1": "第一季 · 段1"},
+    )
+    resolver.set_manual_overrides({"role_primary_powers": {"陈平安": "泥瓶巷"}})
+
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0, source_sentence="陈平安。",
+    )
+    resolver.add_event(
+        Event(name="守夜", time=None, location="泥瓶巷",
+              participants=["陈平安"], description="陈平安守夜。",
+              significance="开篇。", juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                "1": {
+                    "unit_index": 1,
+                    "unit_title": "第一章 惊蛰",
+                    "season_name": "第一季",
+                    "progress_start": 1,
+                    "progress_end": 1,
+                },
+            }
+        },
+        core_cast={
+            "event_type_rules": [],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "priority_characters": ["陈平安"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    for overview in payload["season_overviews"]:
+        prov = overview.get("data_provenance")
+        assert prov is not None, f"Missing data_provenance on {overview['season_name']}"
+        assert "priority_roles_source" in prov
+        assert "priority_roles_dropped" in prov
+        assert isinstance(prov["priority_roles_dropped"], list)
+        assert "priority_relationships_source" in prov
+        assert "note" in prov
