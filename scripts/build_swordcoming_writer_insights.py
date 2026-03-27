@@ -1643,12 +1643,18 @@ def build_season_overviews(
         season_conflicts = [
             chain
             for chain in conflict_chains
-            if range_overlaps(tuple(chain["unit_span"]), (unit_start, unit_end))
+            if any(
+                beat.get("unit_index") is not None and unit_start <= beat["unit_index"] <= unit_end
+                for beat in chain.get("beats", [])
+            )
         ]
         season_curated = [
             item
             for item in curated_relationships
-            if range_overlaps(tuple(item["unit_span"]), (unit_start, unit_end))
+            if any(
+                ev.get("unit_index") is not None and unit_start <= ev["unit_index"] <= unit_end
+                for ev in item.get("key_events", []) + item.get("manual_beats", [])
+            )
         ]
 
         top_roles = []
@@ -1716,6 +1722,13 @@ def build_season_overviews(
             for location_name, count in location_counter.most_common(4)
         ]
 
+        def _season_beat_count(chain: dict) -> int:
+            return sum(
+                1
+                for beat in chain.get("beats", [])
+                if beat.get("unit_index") is not None and unit_start <= beat["unit_index"] <= unit_end
+            )
+
         main_conflicts = [
             {
                 "chain_id": chain["id"],
@@ -1726,7 +1739,12 @@ def build_season_overviews(
             }
             for chain in sorted(
                 season_conflicts,
-                key=lambda item: (0 if item.get("spotlight") else 1, -item["tension_score"], item["title"]),
+                key=lambda item: (
+                    0 if item.get("spotlight") else 1,
+                    -item["tension_score"],
+                    -_season_beat_count(item),
+                    item["title"],
+                ),
             )[:4]
         ]
 

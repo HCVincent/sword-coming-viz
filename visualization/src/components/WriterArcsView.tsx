@@ -113,7 +113,7 @@ export function WriterArcsView({
               <div className="rounded-xl bg-white/80 p-3">
                 <div className="text-xs text-gray-500">关系重心</div>
                 <div className="mt-1 font-semibold">
-                  {joinNames(spotlightArc.relationship_phases.slice(0, 3).map((phase) => phase.counterpart_name))}
+                  {joinNames([...new Set(spotlightArc.relationship_phases.map((phase) => phase.counterpart_name))].slice(0, 3))}
                 </div>
               </div>
             </div>
