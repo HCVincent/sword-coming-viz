@@ -127,7 +127,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.747664",
+    "extracted_at": "2026-03-26T11:46:48.506025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -191,7 +191,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.747664",
+    "extracted_at": "2026-03-26T11:46:48.506025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -254,7 +254,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.747664",
+    "extracted_at": "2026-03-26T11:46:48.506025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -317,7 +317,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.747664",
+    "extracted_at": "2026-03-26T11:46:48.506025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -399,7 +399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.748667",
+    "extracted_at": "2026-03-26T11:46:48.506025",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -667,7 +667,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.748667",
+    "extracted_at": "2026-03-26T11:46:48.507028",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +730,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.748667",
+    "extracted_at": "2026-03-26T11:46:48.507028",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -753,19 +753,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "青衣小童判定那宫装妇人最少九境，甚至有可能已经是十境的通天大佬，好在这个可能性并不大。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 175,
-        "segment_index": 8
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安不清楚其中的门道，但是危机临头，不耽误他的蓄势待发，听到男人的称赞后，没有任何掉以轻心，只是客套回答道：“谢过先生美言。",
@@ -781,19 +768,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人与陈平安对话",
+        "name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "宫装妇人",
           "陈平安"
         ],
-        "description": "青衣小童判定那宫装妇人最少九境，甚至有可能已经是十境的通天大佬，好在这个可能性并不大。 陈平安不清楚其中的门道，但是危机临头，不耽误他的蓄势待发，听到男人的称赞后，没有任何掉以轻心，只是客套回答道：“谢过先生美言。 浩然天下的妖物，能否跻身十境，是一道巨大的风水岭，丝毫不弱于人族修士破开十境瓶颈的难度。",
+        "description": "陈平安不清楚其中的门道，但是危机临头，不耽误他的蓄势待发，听到男人的称赞后，没有任何掉以轻心，只是客套回答道：“谢过先生美言。 青衣小童判定那宫装妇人最少九境，甚至有可能已经是十境的通天大佬，好在这个可能性并不大。 浩然天下的妖物，能否跻身十境，是一道巨大的风水岭，丝毫不弱于人族修士破开十境瓶颈的难度。",
         "background": "",
-        "significance": "推动宫装妇人与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十五章 敕令 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -807,407 +791,8 @@
         "segment_index": 8
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宫装妇人"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "青衣小童判定那宫装妇人最少九境，甚至有可能已经是十境的通天大佬，好在这个可能性并不大。 浩然天下的妖物，能否跻身十境，是一道巨大的风水岭，丝毫不弱于人族修士破开十境瓶颈的难度。 这意味着已经被这座天下的大道所认可，何其艰难？ 其中需要多大的机缘和磨砺，可想而知。 所以那条身份隐蔽的老蛟，寒食江水神的父亲，十境修为，已经足够媲美十一境的修士实力。 陈平安不清楚其中的门道，但是危机临头，不耽误他的蓄势待发，听到男人的称赞后，没有任何掉以轻心，只是客套回答道：“谢过先生美言。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 8
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.748667",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "175-9-0": {
-    "juan_index": 175,
-    "segment_index": 9,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十五章 敕令",
-    "source_sentences": [
-      "”",
-      "男人小口喝着酒，一语道破天机，“公子你这长生桥，断得有些可惜了，想要修补，难如登天，不如另辟蹊径，干脆重建一座……”",
-      "说到这里，男人咦了一声，似乎有些惊讶，思量片刻，瞥了眼少年腿上的那本书籍，笑道：“好吧，真是无巧不成书。",
-      "”",
-      "男人缓缓起身，就这么离去，走到崖洞外，宫装妇人已经默然前行带路。",
-      "男人转头看了眼客栈上的雪人，笑了笑，感慨道：“无巧不成书啊。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "男人缓缓起身，就这么离去，走到崖洞外，宫装妇人已经默然前行带路。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 175,
-        "segment_index": 9
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "宫装妇人"
-        ],
-        "description": "男人缓缓起身，就这么离去，走到崖洞外，宫装妇人已经默然前行带路。 ” 男人小口喝着酒，一语道破天机，“公子你这长生桥，断得有些可惜了，想要修补，难如登天，不如另辟蹊径，干脆重建一座……”",
-        "background": "",
-        "significance": "对应宫装妇人在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十五章 敕令 · 段9",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 9
-      }
-    ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.748667",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "175-10-0": {
-    "juan_index": 175,
-    "segment_index": 10,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十五章 敕令",
-    "source_sentences": [
-      "”",
-      "风雪之中，男女继续赶路，宫装妇人没有转头，毕恭毕敬道：“白老爷，此次偶遇，难道是两边圣人的阴谋？",
-      "”",
-      "男人摇头道：“此次远游散心，无欲无求，我很小心隐藏痕迹了，不曾惊扰到任何势力，如果这样还要算计于我，那我……”",
-      "宫装妇人帷帽下的容颜，祸国殃民，眼神炙热。",
-      "不料男人叹息一声，“又能如何呢。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "风雪之中，男女继续赶路，宫装妇人没有转头，毕恭毕敬道：“白老爷，此次偶遇，难道是两边圣人的阴谋？ 宫装妇人帷帽下的容颜，祸国殃民，眼神炙热。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          1,
-          4
-        ],
-        "juan_index": 175,
-        "segment_index": 10
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人迁移",
-        "time": null,
-        "location": null,
-        "participants": [
-          "宫装妇人"
-        ],
-        "description": "风雪之中，男女继续赶路，宫装妇人没有转头，毕恭毕敬道：“白老爷，此次偶遇，难道是两边圣人的阴谋？ 宫装妇人帷帽下的容颜，祸国殃民，眼神炙热。 ”",
-        "background": "",
-        "significance": "对应宫装妇人在叙事中的关键迁移节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十五章 敕令 · 段10",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 10
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.748667",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "175-11-0": {
-    "juan_index": 175,
-    "segment_index": 11,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十五章 敕令",
-    "source_sentences": [
-      "”",
-      "一场大雪。",
-      "天地白茫茫，干干净净的。",
-      "在栈道走出三四里路程后，被尊称为白老爷的男人，停下脚步，仰头望向天幕，神色寂寥。",
-      "宫装妇人只得跟着停下脚步，发现男人没有挪步的迹象，小心翼翼喊了一声，“白老爷？",
-      "”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "宫装妇人只得跟着停下脚步，发现男人没有挪步的迹象，小心翼翼喊了一声，“白老爷？",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 175,
-        "segment_index": 11
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "宫装妇人"
-        ],
-        "description": "宫装妇人只得跟着停下脚步，发现男人没有挪步的迹象，小心翼翼喊了一声，“白老爷？ ” 一场大雪。",
-        "background": "",
-        "significance": "对应宫装妇人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十五章 敕令 · 段11",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 11
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.749671",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "175-12-0": {
-    "juan_index": 175,
-    "segment_index": 12,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十五章 敕令",
-    "source_sentences": [
-      "男人始终望向天空，轻声道：“树欲静而风不止，你说你自幼生长于浩然天下，为什么要惺惺念念想着走过倒悬山？",
-      "若是思乡心切，想着落叶归根，这很合情合理，可你的根子就在这里啊，到底图什么呢？",
-      "天下浩劫，十室九空，很好玩吗？",
-      "”",
-      "宫装妇人吓得魂飞魄散，转身跪倒在地，伏地不起，如果居高临下望去，她那副妖娆身段，如山峦起伏，她颤声道：“白老爷饶命！",
-      "”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "宫装妇人吓得魂飞魄散，转身跪倒在地，伏地不起，如果居高临下望去，她那副妖娆身段，如山峦起伏，她颤声道：“白老爷饶命！",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 175,
-        "segment_index": 12
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "宫装妇人"
-        ],
-        "description": "宫装妇人吓得魂飞魄散，转身跪倒在地，伏地不起，如果居高临下望去，她那副妖娆身段，如山峦起伏，她颤声道：“白老爷饶命！ 男人始终望向天空，轻声道：“树欲静而风不止，你说你自幼生长于浩然天下，为什么要惺惺念念想着走过倒悬山？ 若是思乡心切，想着落叶归根，这很合情合理，可你的根子就在这里啊，到底图什么呢？",
-        "background": "",
-        "significance": "对应宫装妇人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十五章 敕令 · 段12",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 12
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.749671",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "175-13-0": {
-    "juan_index": 175,
-    "segment_index": 13,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十五章 敕令",
-    "source_sentences": [
-      "男人置若罔闻，自问自答道：“我觉得不好玩，一点都不有趣。",
-      "”",
-      "宫装妇人畏惧至极，一咬牙，瞬间爆发出搬山倒海一般的磅礴气机。",
-      "下一刻，栈道之上，出现了一头大如山头的八尾巨狐，通体雪白，攀附在峭壁之上，疯狂向山顶攀援而去，试图远离这个男人。",
-      "男人无动于衷，轻轻喊出一个名字，“青婴。",
-      "”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "宫装妇人畏惧至极，一咬牙，瞬间爆发出搬山倒海一般的磅礴气机。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 175,
-        "segment_index": 13
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "宫装妇人"
-        ],
-        "description": "宫装妇人畏惧至极，一咬牙，瞬间爆发出搬山倒海一般的磅礴气机。 男人置若罔闻，自问自答道：“我觉得不好玩，一点都不有趣。 ”",
-        "background": "",
-        "significance": "对应宫装妇人在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十五章 敕令 · 段13",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 13
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.749671",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "175-17-0": {
-    "juan_index": 175,
-    "segment_index": 17,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十五章 敕令",
-    "source_sentences": [
-      "宫装妇人神色凄凉。",
-      "一尾之差，天壤之别。",
-      "之前足够让它傲视同类，如今已是泯然众矣。",
-      "但是它却没有半点复仇的心思。",
-      "对土生土长于这座天下的它们而言，白老爷的喜怒，就是天威浩荡。",
-      "崖洞内，青衣小童擦着额头汗水，心有余悸道：“太可怕了，太可怕了……”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "宫装妇人神色凄凉。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 175,
-        "segment_index": 17
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 宫装妇人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "宫装妇人"
-        ],
-        "description": "宫装妇人神色凄凉。 一尾之差，天壤之别。 之前足够让它傲视同类，如今已是泯然众矣。",
-        "background": "",
-        "significance": "对应宫装妇人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十五章 敕令 · 段17",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 17
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.749671",
+    "extracted_at": "2026-03-26T11:46:48.507028",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1269,7 +854,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.750674",
+    "extracted_at": "2026-03-26T11:46:48.508032",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1377,7 +962,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.750674",
+    "extracted_at": "2026-03-26T11:46:48.508032",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1426,36 +1011,21 @@
         ],
         "juan_index": 175,
         "segment_index": 21
-      },
-      {
-        "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "已经十分遥远的山崖底部，身后跟着宫装妇人的男人，猛然转过头。 但那宫装妇人已是惊骇失色，几乎要站不稳。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          1,
-          5
-        ],
-        "juan_index": 175,
-        "segment_index": 21
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安与宫装妇人剧情推进",
+        "name": "第二卷山水郎 第一百七十五章 敕令 · 陈平安与陆沉剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "宫装妇人",
           "陆沉"
         ],
-        "description": "当崖洞这边的陈平安，一丝不苟地用树枝写出“陆沉”二字。 已经十分遥远的山崖底部，身后跟着宫装妇人的男人，猛然转过头。 当陈平安最后写完“敕令”二字。",
+        "description": "当崖洞这边的陈平安，一丝不苟地用树枝写出“陆沉”二字。 当陈平安最后写完“敕令”二字。 已经十分遥远的山崖底部，身后跟着宫装妇人的男人，猛然转过头。",
         "background": "",
-        "significance": "推动陈平安与宫装妇人之间的剧情推进关系。",
+        "significance": "推动陈平安与陆沉之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十五章 敕令 · 段21",
         "sentence_indexes_in_segment": [
@@ -1471,7 +1041,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.750674",
+    "extracted_at": "2026-03-26T11:46:48.508032",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -30,19 +30,6 @@
       },
       {
         "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 171,
-        "segment_index": 1
-      },
-      {
-        "entity_type": "person",
         "name": "崔东山",
         "alias": [],
         "original_description_in_book": "在高大老人出现后，崔东山轻声问道：“如何了？",
@@ -71,19 +58,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与白衣少年对话",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与崔东山对话",
         "time": null,
         "location": null,
         "participants": [
           "茅小冬",
-          "白衣少年"
+          "崔东山",
+          "李二"
         ],
         "description": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。 在高大老人出现后，崔东山轻声问道：“如何了？ 李二大爷有没有拆烂皇宫？",
         "background": "",
-        "significance": "推动茅小冬与白衣少年之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动茅小冬与崔东山之间的对话关系。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -97,29 +83,8 @@
         "segment_index": 1
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "茅小冬"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "别离",
-        "context": "茅小冬出现在雅静小院，看到吊儿郎当哼着小曲的白衣少年，正盘腿坐在石凳上，对着那盘棋局，两手张开，分别放在黑白棋盒的边沿上，入神思考的同时，手指轻轻拍打棋子，发出重重叠叠的清脆响声。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 茅小冬与白衣少年对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 171,
-        "segment_index": 1
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.725588",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -242,7 +207,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.725588",
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -340,7 +305,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.726591",
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -442,7 +407,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.726591",
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -564,7 +529,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.726591",
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -669,7 +634,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.726591",
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -785,7 +750,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.726591",
+    "extracted_at": "2026-03-26T11:46:48.485956",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -921,7 +886,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.726591",
+    "extracted_at": "2026-03-26T11:46:48.486959",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1011,7 +976,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.727594",
+    "extracted_at": "2026-03-26T11:46:48.486959",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1107,7 +1072,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.727594",
+    "extracted_at": "2026-03-26T11:46:48.486959",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1220,7 +1185,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.727594",
+    "extracted_at": "2026-03-26T11:46:48.486959",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1300,7 +1265,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.727594",
+    "extracted_at": "2026-03-26T11:46:48.486959",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1405,7 +1370,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.727594",
+    "extracted_at": "2026-03-26T11:46:48.486959",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1469,7 +1434,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.727594",
+    "extracted_at": "2026-03-26T11:46:48.487963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1503,34 +1468,20 @@
         ],
         "juan_index": 171,
         "segment_index": 15
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "到了空落落的正屋内，一张大草席上，放着一块茅草蒲团，崔东山一挥袖，从墙角一座小山堆里抽出一本儒家典籍，安安静静躺在他身前，然后便有一阵翻书风出现，围绕着俊秀神逸的白衣少年打转。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 171,
-        "segment_index": 15
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山与白衣少年剧情推进",
+        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 崔东山剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "崔东山",
-          "白衣少年"
+          "崔东山"
         ],
         "description": "崔东山哀叹一声，轻轻挥手，将棋盘棋盒一同收入袖内那块方寸物玉玺，“你哪里是扫地，分明是扫你家公子的兴致。 到了空落落的正屋内，一张大草席上，放着一块茅草蒲团，崔东山一挥袖，从墙角一座小山堆里抽出一本儒家典籍，安安静静躺在他身前，然后便有一阵翻书风出现，围绕着俊秀神逸的白衣少年打转。 ”",
         "background": "",
-        "significance": "推动崔东山与白衣少年之间的剧情推进关系。",
+        "significance": "对应崔东山在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段15",
         "sentence_indexes_in_segment": [
@@ -1546,7 +1497,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.728598",
+    "extracted_at": "2026-03-26T11:46:48.487963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1623,69 +1574,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.728598",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "171-17-0": {
-    "juan_index": 171,
-    "segment_index": 17,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十一章 杨柳依依的少女",
-    "source_sentences": [
-      "一页页翻过，光阴缓缓流逝。",
-      "书页上的字里行间，出现了两军对垒的画面，一位位武将士卒远远比米粒还要细微，气势却是金戈铁马，纵横捭阖，书页上空黄雾迷茫，如真正战场上扬起的黄沙万里。",
-      "又有不过寸余高的女子婀娜，挎着花篮，从书页里姗姗而来。",
-      "还有大髯莽汉，袒胸露腹，作击节高歌状。",
-      "书页上有老妪捣衣，竖耳聆听，果真能够听到咄咄的玄妙声响。",
-      "有稚童两两，骑着竹马追逐嬉戏。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "书页上有老妪捣衣，竖耳聆听，果真能够听到咄咄的玄妙声响。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 171,
-        "segment_index": 17
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 老妪剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老妪"
-        ],
-        "description": "书页上有老妪捣衣，竖耳聆听，果真能够听到咄咄的玄妙声响。 一页页翻过，光阴缓缓流逝。 书页上的字里行间，出现了两军对垒的画面，一位位武将士卒远远比米粒还要细微，气势却是金戈铁马，纵横捭阖，书页上空黄雾迷茫，如真正战场上扬起的黄沙万里。",
-        "background": "",
-        "significance": "对应老妪在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段17",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 171,
-        "segment_index": 17
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.728598",
+    "extracted_at": "2026-03-26T11:46:48.487963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1737,19 +1626,6 @@
       },
       {
         "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "门口的少女谢谢，不管她内心深处如何仇恨、畏惧这个大骊国师，她不得不承认，专心致志读书时的白衣少年，实在是一身风流，两袖清风。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 171,
-        "segment_index": 18
-      },
-      {
-        "entity_type": "person",
         "name": "崔东山",
         "alias": [],
         "original_description_in_book": "在谢谢怔怔出神的时候，她没有察觉到今天的崔东山，在翻书到最后，神色间有些异样，眼神炙热，但是满脸痛苦和挣扎。",
@@ -1774,8 +1650,7 @@
         "coordinates": null,
         "related_entities": [
           "谢谢",
-          "崔瀺",
-          "白衣少年"
+          "崔瀺"
         ],
         "sentence_indexes_in_segment": [
           3
@@ -1792,7 +1667,6 @@
         "participants": [
           "谢谢",
           "崔瀺",
-          "白衣少年",
           "崔东山"
         ],
         "description": "门口的少女谢谢，不管她内心深处如何仇恨、畏惧这个大骊国师，她不得不承认，专心致志读书时的白衣少年，实在是一身风流，两袖清风。 在谢谢怔怔出神的时候，她没有察觉到今天的崔东山，在翻书到最后，神色间有些异样，眼神炙热，但是满脸痛苦和挣扎。 有骷髅仗剑佩刀，行走于坟茔枯冢。",
@@ -1813,7 +1687,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.728598",
+    "extracted_at": "2026-03-26T11:46:48.487963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1876,7 +1750,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.728598",
+    "extracted_at": "2026-03-26T11:46:48.487963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1980,7 +1854,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.728598",
+    "extracted_at": "2026-03-26T11:46:48.487963",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2076,7 +1950,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
+    "extracted_at": "2026-03-26T11:46:48.488966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2166,7 +2040,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
+    "extracted_at": "2026-03-26T11:46:48.488966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2228,69 +2102,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "171-24-0": {
-    "juan_index": 171,
-    "segment_index": 24,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十一章 杨柳依依的少女",
-    "source_sentences": [
-      "并无反应。",
-      "这栋院子早已租借出去，平时老人深居简出，几乎从不露面，但是那天晚上一场跌宕起伏的神仙打架，让有心人意识到此地有蛟龙盘踞。",
-      "虽说那场交手，是自称崔家老祖宗的白衣少年，在东华山之巅的出手，更胜一筹，一整宿的法宝乱轰，堪称绚烂，但是魁梧老人的种种应对，亦是不俗，哪怕是境界足够高的行家里手，自认若是站在老人的位置上，亲身对阵那个乱丢法宝好似丢烂白菜的白衣少年，绝对支撑不到天亮。",
-      "汉子一脚踹开大门，大踏步走进去，看到一个脸色阴沉的魁梧老人，正是十境练气士蔡京神，站在院子里，桌上有一壶酒，有许多精致的下酒菜，醇酒佳肴。",
-      "对于他这种凡夫俗子眼中的陆地仙人而言，这点聊胜于无的享受，实在微不足道。",
-      "蔡京神是昨天皇宫大战的旁观者之一，此时看到跻身武道止境的外乡汉子，自然没有半点底气，可是没有底气，不代表老人就要低头哈腰，神色不卑不亢地问道：“我与你无冤无仇，你破门而入，有何贵干？"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "虽说那场交手，是自称崔家老祖宗的白衣少年，在东华山之巅的出手，更胜一筹，一整宿的法宝乱轰，堪称绚烂，但是魁梧老人的种种应对，亦是不俗，哪怕是境界足够高的行家里手，自认若是站在老人的位置上，亲身对阵那个乱丢法宝好似丢烂白菜的白衣少年，绝对支撑不到天亮。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 171,
-        "segment_index": 24
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 白衣少年对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "白衣少年"
-        ],
-        "description": "虽说那场交手，是自称崔家老祖宗的白衣少年，在东华山之巅的出手，更胜一筹，一整宿的法宝乱轰，堪称绚烂，但是魁梧老人的种种应对，亦是不俗，哪怕是境界足够高的行家里手，自认若是站在老人的位置上，亲身对阵那个乱丢法宝好似丢烂白菜的白衣少年，绝对支撑不到天亮。 并无反应。 这栋院子早已租借出去，平时老人深居简出，几乎从不露面，但是那天晚上一场跌宕起伏的神仙打架，让有心人意识到此地有蛟龙盘踞。",
-        "background": "",
-        "significance": "对应白衣少年在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段24",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 171,
-        "segment_index": 24
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
+    "extracted_at": "2026-03-26T11:46:48.488966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2354,69 +2166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "171-26-0": {
-    "juan_index": 171,
-    "segment_index": 26,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百七十一章 杨柳依依的少女",
-    "source_sentences": [
-      "堂堂十境练气士，大隋豪阀蔡家的老祖宗，忍不住破口大骂道：“有本事再来一场！",
-      "”",
-      "然后那汉子就从已经没了大门遮掩的门口，再次走入院子，站在那里，望向屋内的蔡京神。",
-      "老人咽了口唾沫，“我在跟那天的白衣少年说话呢，跟你没关系。",
-      "”",
-      "这句话脱口而出后，老人恨不得挖个地洞钻下去。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "老人咽了口唾沫，“我在跟那天的白衣少年说话呢，跟你没关系。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 171,
-        "segment_index": 26
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 白衣少年剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "白衣少年"
-        ],
-        "description": "老人咽了口唾沫，“我在跟那天的白衣少年说话呢，跟你没关系。 堂堂十境练气士，大隋豪阀蔡家的老祖宗，忍不住破口大骂道：“有本事再来一场！ ”",
-        "background": "",
-        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段26",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 171,
-        "segment_index": 26
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
+    "extracted_at": "2026-03-26T11:46:48.488966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2478,7 +2228,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.729601",
+    "extracted_at": "2026-03-26T11:46:48.488966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2540,7 +2290,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.730605",
+    "extracted_at": "2026-03-26T11:46:48.488966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2659,7 +2409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.730605",
+    "extracted_at": "2026-03-26T11:46:48.489970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2765,7 +2515,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.730605",
+    "extracted_at": "2026-03-26T11:46:48.489970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3012,7 +2762,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.730605",
+    "extracted_at": "2026-03-26T11:46:48.489970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3111,7 +2861,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.730605",
+    "extracted_at": "2026-03-26T11:46:48.489970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3203,7 +2953,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.489970",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3294,7 +3044,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3426,7 +3176,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3535,7 +3285,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3597,7 +3347,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3660,7 +3410,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3722,7 +3472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.731609",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3798,7 +3548,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.732612",
+    "extracted_at": "2026-03-26T11:46:48.490973",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3904,7 +3654,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.732612",
+    "extracted_at": "2026-03-26T11:46:48.491977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4008,7 +3758,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.732612",
+    "extracted_at": "2026-03-26T11:46:48.491977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4086,7 +3836,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.732612",
+    "extracted_at": "2026-03-26T11:46:48.491977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4114,19 +3864,6 @@
         "original_description_in_book": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。",
         "description": "李二之女，承接小镇旧脉与后续龙泉、落魄山一线。",
         "power": "小镇",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 171,
-        "segment_index": 44
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -4207,14 +3944,12 @@
           "阿良",
           "陈平安",
           "李柳",
-          "白衣少年"
+          "崔瀺"
         ],
         "description": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。 一直给人印象就是柔柔弱弱、杨柳依依的少女，在这一瞬间，她迅速收敛笑意，对着那位她在小镇便从师公那边，久闻其名的大骊国师，偷偷做了一个隐秘且骇人的警告动作。 本就是故意来此见她一面的崔东山，啧啧称奇，感慨道：“怪胎年年有，今年特别多啊。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百七十一章 杨柳依依的少女 · 段44",
         "sentence_indexes_in_segment": [
           0,
@@ -4228,29 +3963,8 @@
         "segment_index": 44
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李柳"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "同行",
-        "context": "在妇人牵着李柳一起下山的时候，在山脚牌坊下与一位白衣少年擦身而过。",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": "小镇",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 171,
-        "segment_index": 44
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.732612",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.491977",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

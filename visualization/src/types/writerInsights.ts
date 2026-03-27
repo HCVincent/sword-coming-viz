@@ -189,9 +189,10 @@ export interface WriterSeasonOverview {
   summary: string;
   spotlight_summary?: string | null;
   adaptation_hooks: string[];
-  story_beats: WriterSeasonStoryBeat[];
+  story_beats: WriterSeasonStoryBeat[]; 
   must_keep_scenes: WriterSeasonMustKeepScene[];
   top_roles: WriterSeasonOverviewRole[];
+  priority_roles: WriterSeasonOverviewRole[];
   top_locations: WriterSeasonOverviewLocation[];
   main_conflicts: WriterSeasonOverviewConflict[];
   priority_relationships: WriterSeasonOverviewRelationship[];

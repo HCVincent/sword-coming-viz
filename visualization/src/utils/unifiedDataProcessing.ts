@@ -10,6 +10,8 @@ import type {
   UnifiedRole,
 } from '../types/unified';
 
+const GENERIC_POWER_LABELS = new Set(['山上', '山下', '山水', '江湖', '道家', '武道', '未归类']);
+
 function getRoleUnits(role: UnifiedRole): number[] {
   return role.units_appeared && role.units_appeared.length > 0 ? role.units_appeared : role.juans_appeared;
 }
@@ -113,6 +115,15 @@ function toRoleNode(role: UnifiedRole, unitRange?: [number, number], isIsolated:
     relatedEntities: Array.from(role.related_entities),
     isIsolated,
   };
+}
+
+function resolveDisplayPower(role: UnifiedRole): string | null {
+  const candidates = [role.primary_power, ...(role.powers ?? [])]
+    .map((value) => (value ?? '').trim())
+    .filter(Boolean);
+
+  const concrete = candidates.find((value) => !GENERIC_POWER_LABELS.has(value));
+  return concrete ?? null;
 }
 
 export function unifiedRolesToNodes(
@@ -264,7 +275,8 @@ export function calculateUnifiedPowerDistribution(
   const distribution = new Map<string, { count: number; roles: string[] }>();
 
   for (const role of Object.values(kb.roles)) {
-    if (!role.primary_power) continue;
+    const displayPower = resolveDisplayPower(role);
+    if (!displayPower) continue;
     const units = getRoleUnits(role);
     if (!inUnitRange(units, unitRange)) continue;
 
@@ -278,10 +290,10 @@ export function calculateUnifiedPowerDistribution(
       if (!relatedEvent) continue;
     }
 
-    const entry = distribution.get(role.primary_power) ?? { count: 0, roles: [] };
+    const entry = distribution.get(displayPower) ?? { count: 0, roles: [] };
     entry.count += 1;
     entry.roles.push(role.id);
-    distribution.set(role.primary_power, entry);
+    distribution.set(displayPower, entry);
   }
 
   return Array.from(distribution.entries())

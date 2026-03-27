@@ -23,12 +23,10 @@ type GraphEndpoint = string | GraphNode | { id: string; name?: string } | null |
 
 const GRAPH_HEIGHT = 800;
 const DEFAULT_EDGE_DENSITY = 34;
+const MIN_GRAPH_WIDTH = 360;
+const ARROW_MARKER_ID = 'network-arrowhead';
 const PRIMARY_ROLE_FALLBACK = '陈平安';
 const ACTION_STRENGTH: Record<string, number> = { 冲突: 4, 对峙: 4, 交手: 4, 敌对: 4, 对话: 3, 会见: 3, 同行: 3, 试探: 3, 拜访: 2, 庇护: 2, 归属: 2, 指点: 2, 师承: 2, 等待: 1 };
-
-function createDataKey(nodes: RoleNodeUnified[], links: Array<{ source: string; target: string }>) {
-  return `${nodes.map((node) => node.id).sort().join(',')}|${links.map((link) => `${link.source}-${link.target}`).sort().join(',')}`;
-}
 
 function buildClusterPositions(keys: string[], width: number, height: number) {
   const positions = new Map<string, { x: number; y: number }>();
@@ -57,6 +55,10 @@ function getGraphEndpointId(endpoint: GraphEndpoint) {
   return '';
 }
 
+function createDataKey(nodes: RoleNodeUnified[], links: Array<{ source: GraphEndpoint; target: GraphEndpoint }>) {
+  return `${nodes.map((node) => node.id).sort().join(',')}|${links.map((link) => `${getGraphEndpointId(link.source)}-${getGraphEndpointId(link.target)}`).sort().join(',')}`;
+}
+
 function isLinkConnectedToNode(link: GraphLink, nodeId: string | null) {
   if (!nodeId) return false;
   const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
@@ -68,8 +70,9 @@ function getLinkEndpoints(source: GraphNode, target: GraphNode, sourceRadius: nu
   const dx = (target.x ?? 0) - (source.x ?? 0);
   const dy = (target.y ?? 0) - (source.y ?? 0);
   const distance = Math.sqrt(dx * dx + dy * dy) || 1;
-  const sourceInset = Math.min(sourceRadius + 2, Math.max(0, distance / 3));
-  const targetInset = Math.min(targetRadius + 10, Math.max(0, distance / 3));
+  const maxInset = Math.max(0, distance / 2 - 3);
+  const sourceInset = Math.min(Math.max(0, sourceRadius + 1.5), maxInset);
+  const targetInset = Math.min(Math.max(0, targetRadius - 1.5), maxInset);
   const ux = dx / distance;
   const uy = dy / distance;
 
@@ -78,6 +81,26 @@ function getLinkEndpoints(source: GraphNode, target: GraphNode, sourceRadius: nu
     y1: (source.y ?? 0) + uy * sourceInset,
     x2: (target.x ?? 0) - ux * targetInset,
     y2: (target.y ?? 0) - uy * targetInset,
+  };
+}
+
+function shouldShowLinkArrow(link: GraphLink, graphMode: GraphMode, activeNodeId: string | null) {
+  if (!activeNodeId) return false;
+  if (!isLinkConnectedToNode(link, activeNodeId)) return false;
+  if (graphMode === 'mainline') return true;
+  return true;
+}
+
+function getLinkMarkerEnd(link: GraphLink, graphMode: GraphMode, activeNodeId: string | null) {
+  return shouldShowLinkArrow(link, graphMode, activeNodeId) ? `url(#${ARROW_MARKER_ID})` : null;
+}
+
+function cloneGraphLink(link: GraphLink, overrides?: Partial<GraphLink>): GraphLink {
+  return {
+    ...link,
+    source: getGraphEndpointId(link.source as GraphEndpoint),
+    target: getGraphEndpointId(link.target as GraphEndpoint),
+    ...overrides,
   };
 }
 
@@ -97,7 +120,6 @@ export function NetworkGraph({
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const simulationRef = useRef<d3.Simulation<GraphNode, d3.SimulationLinkDatum<GraphNode>> | null>(null);
-  const prevKeyRef = useRef('');
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const nodesRef = useRef<GraphNode[]>([]);
   const onNodeClickRef = useRef(onNodeClick);
@@ -117,11 +139,29 @@ export function NetworkGraph({
   const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; node: GraphNode } | null>(null);
   const [notFoundMessage, setNotFoundMessage] = useState<string | null>(null);
+  const [containerWidth, setContainerWidth] = useState(MIN_GRAPH_WIDTH);
 
   useEffect(() => void (onNodeClickRef.current = onNodeClick), [onNodeClick]);
   useEffect(() => void (onLinkClickRef.current = onLinkClick), [onLinkClick]);
   useEffect(() => void (pinnedNodeIdRef.current = pinnedNodeId), [pinnedNodeId]);
   useEffect(() => void (focusNodeIdRef.current = focusNodeId ?? null), [focusNodeId]);
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const element = containerRef.current;
+    const updateWidth = (nextWidth?: number) => {
+      const measured = Math.max(MIN_GRAPH_WIDTH, Math.round(nextWidth ?? element.clientWidth ?? MIN_GRAPH_WIDTH));
+      setContainerWidth((current) => (current === measured ? current : measured));
+    };
+    updateWidth();
+    if (typeof ResizeObserver === 'undefined') return;
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (!entry) return;
+      updateWidth(entry.contentRect.width);
+    });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
 
   const availablePowers = useMemo(() => Array.from(new Set(allNodes.map((node) => node.power).filter(Boolean) as string[])).sort(), [allNodes]);
   const baseNodes = useMemo(() => (showIsolated ? [...linkedNodes, ...isolatedNodes] : linkedNodes), [isolatedNodes, linkedNodes, showIsolated]);
@@ -188,8 +228,31 @@ export function NetworkGraph({
     if (!filteredNodes.length || !baseLinks.length) return { nodes: filteredNodes, links: [] as GraphLink[] };
     if (graphMode === 'mainline' && primaryRole) {
       const scope = new Set<string>([primaryRole.id]);
-      baseLinks.filter((link) => link.source === primaryRole.id || link.target === primaryRole.id).sort((a, b) => b.edgeScore - a.edgeScore).slice(0, 12 + Math.round(edgeDensity * 0.1)).forEach((link) => { scope.add(link.source); scope.add(link.target); });
-      const keptLinks = baseLinks.filter((link) => scope.has(link.source) && scope.has(link.target)).sort((a, b) => b.edgeScore - a.edgeScore).slice(0, Math.max(18, Math.round(baseLinks.length * (0.16 + edgeDensity / 160)))).map((link) => ({ ...link, isMainline: link.source === primaryRole.id || link.target === primaryRole.id }));
+      baseLinks
+        .filter((link) => {
+          const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+          const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+          return sourceId === primaryRole.id || targetId === primaryRole.id;
+        })
+        .sort((a, b) => b.edgeScore - a.edgeScore)
+        .slice(0, 12 + Math.round(edgeDensity * 0.1))
+        .forEach((link) => {
+          scope.add(getGraphEndpointId(link.source as GraphEndpoint));
+          scope.add(getGraphEndpointId(link.target as GraphEndpoint));
+        });
+      const keptLinks = baseLinks
+        .filter((link) => {
+          const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+          const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+          return scope.has(sourceId) && scope.has(targetId);
+        })
+        .sort((a, b) => b.edgeScore - a.edgeScore)
+        .slice(0, Math.max(18, Math.round(baseLinks.length * (0.16 + edgeDensity / 160))))
+        .map((link) => {
+          const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+          const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+          return cloneGraphLink(link, { isMainline: sourceId === primaryRole.id || targetId === primaryRole.id });
+        });
       const ids = new Set<string>(); keptLinks.forEach((link) => { ids.add(link.source); ids.add(link.target); }); ids.add(primaryRole.id);
       return { nodes: filteredNodes.filter((node) => ids.has(node.id) || (showIsolated && node.isIsolated)), links: keptLinks };
     }
@@ -199,22 +262,30 @@ export function NetworkGraph({
     const nodeCounts = new Map<string, number>();
     const kept = new Map<string, GraphLink>();
     filteredNodes.forEach((node) => {
-      const strongest = sorted.find((link) => link.source === node.id || link.target === node.id);
+      const strongest = sorted.find((link) => {
+        const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+        const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+        return sourceId === node.id || targetId === node.id;
+      });
       if (!strongest) return;
-      const key = strongest.source < strongest.target ? `${strongest.source}::${strongest.target}` : `${strongest.target}::${strongest.source}`;
+      const strongestSourceId = getGraphEndpointId(strongest.source as GraphEndpoint);
+      const strongestTargetId = getGraphEndpointId(strongest.target as GraphEndpoint);
+      const key = strongestSourceId < strongestTargetId ? `${strongestSourceId}::${strongestTargetId}` : `${strongestTargetId}::${strongestSourceId}`;
       if (kept.has(key)) return;
-      kept.set(key, strongest);
-      nodeCounts.set(strongest.source, (nodeCounts.get(strongest.source) ?? 0) + 1);
-      nodeCounts.set(strongest.target, (nodeCounts.get(strongest.target) ?? 0) + 1);
+      kept.set(key, cloneGraphLink(strongest));
+      nodeCounts.set(strongestSourceId, (nodeCounts.get(strongestSourceId) ?? 0) + 1);
+      nodeCounts.set(strongestTargetId, (nodeCounts.get(strongestTargetId) ?? 0) + 1);
     });
     sorted.forEach((link) => {
       if (kept.size >= keepCount) return;
-      const key = link.source < link.target ? `${link.source}::${link.target}` : `${link.target}::${link.source}`;
+      const sourceId = getGraphEndpointId(link.source as GraphEndpoint);
+      const targetId = getGraphEndpointId(link.target as GraphEndpoint);
+      const key = sourceId < targetId ? `${sourceId}::${targetId}` : `${targetId}::${sourceId}`;
       if (kept.has(key)) return;
-      if ((nodeCounts.get(link.source) ?? 0) >= perNodeCap || (nodeCounts.get(link.target) ?? 0) >= perNodeCap) return;
-      kept.set(key, link);
-      nodeCounts.set(link.source, (nodeCounts.get(link.source) ?? 0) + 1);
-      nodeCounts.set(link.target, (nodeCounts.get(link.target) ?? 0) + 1);
+      if ((nodeCounts.get(sourceId) ?? 0) >= perNodeCap || (nodeCounts.get(targetId) ?? 0) >= perNodeCap) return;
+      kept.set(key, cloneGraphLink(link));
+      nodeCounts.set(sourceId, (nodeCounts.get(sourceId) ?? 0) + 1);
+      nodeCounts.set(targetId, (nodeCounts.get(targetId) ?? 0) + 1);
     });
     const keptLinks = Array.from(kept.values()).sort((a, b) => b.edgeScore - a.edgeScore);
     const ids = new Set<string>(); keptLinks.forEach((link) => { ids.add(link.source); ids.add(link.target); });
@@ -223,6 +294,7 @@ export function NetworkGraph({
 
   const renderedNodes = graphData.nodes;
   const renderedLinks = graphData.links;
+  const buildKey = useMemo(() => `${graphMode}|${containerWidth}|${edgeDensity}|${createDataKey(renderedNodes, renderedLinks)}`, [containerWidth, edgeDensity, graphMode, renderedLinks, renderedNodes]);
   const connectedLabelIds = useMemo(() => {
     if (!activeEdgeNodeId) return new Set<string>();
     const ids = new Set<string>([activeEdgeNodeId]);
@@ -248,12 +320,12 @@ export function NetworkGraph({
   }, [activeEdgeNodeId, connectedLabelIds, focusNodeId, highlightedNode, primaryRole, renderedNodes]);
 
   const centerOnNode = useCallback((nodeId: string) => {
-    if (!svgRef.current || !zoomRef.current || !containerRef.current) return;
+    if (!svgRef.current || !zoomRef.current) return;
     const node = nodesRef.current.find((item) => item.id === nodeId);
     if (!node || node.x == null || node.y == null) return;
-    const width = containerRef.current.clientWidth;
+    const width = containerWidth;
     d3.select(svgRef.current).transition().duration(700).call(zoomRef.current.transform, d3.zoomIdentity.translate(width / 2 - node.x * 1.45, GRAPH_HEIGHT / 2 - node.y * 1.45).scale(1.45));
-  }, []);
+  }, [containerWidth]);
 
   useEffect(() => {
     if (!focusNodeId) return;
@@ -279,17 +351,15 @@ export function NetworkGraph({
   }, [allNodes, centerOnNode, focusNodeId, onFocusNodeHandled, renderedNodes]);
 
   useEffect(() => {
-    if (!svgRef.current || !containerRef.current || !renderedNodes.length) return;
-    const key = createDataKey(renderedNodes, renderedLinks);
-    if (key === prevKeyRef.current && simulationRef.current) return;
-    prevKeyRef.current = key;
+    if (!svgRef.current || !renderedNodes.length || !containerWidth) return;
     simulationRef.current?.stop();
 
-    const width = containerRef.current.clientWidth;
+    const width = containerWidth;
     const compact = renderedNodes.length >= 90;
     const colorScale = d3.scaleOrdinal<string, string>(d3.schemeTableau10).domain([...new Set(renderedNodes.map((node) => node.clusterKey))]);
     const clusterPositions = buildClusterPositions([...new Set(renderedNodes.map((node) => node.clusterKey))], width, GRAPH_HEIGHT);
     const radiusMap = new Map(renderedNodes.map((node) => [node.id, buildNodeRadius(node, compact)]));
+    const simulationLinks = renderedLinks.map((link) => cloneGraphLink(link));
     const seededNodes = renderedNodes.map((node, index) => {
       const cluster = clusterPositions.get(node.clusterKey) ?? { x: width / 2, y: GRAPH_HEIGHT / 2 };
       return { ...node, x: cluster.x + ((index % 6) - 3) * 16, y: cluster.y + (Math.floor(index / 6) % 6 - 3) * 14 };
@@ -306,12 +376,24 @@ export function NetworkGraph({
       setHighlightedNode(searchResultIdRef.current ?? focusNodeIdRef.current ?? null);
       setTooltip(null);
     });
-    svg.append('defs').append('marker').attr('id', 'network-arrowhead').attr('viewBox', '0 -5 10 10').attr('refX', 9).attr('refY', 0).attr('orient', 'auto').attr('markerWidth', 6).attr('markerHeight', 6).append('path').attr('d', 'M 0,-4 L 8,0 L 0,4 Z').attr('fill', '#7f98a0');
+    svg.append('defs')
+      .append('marker')
+      .attr('id', ARROW_MARKER_ID)
+      .attr('viewBox', '0 -4 8 8')
+      .attr('refX', 7.2)
+      .attr('refY', 0)
+      .attr('orient', 'auto')
+      .attr('markerUnits', 'userSpaceOnUse')
+      .attr('markerWidth', 5)
+      .attr('markerHeight', 5)
+      .append('path')
+      .attr('d', 'M 0,-3.2 L 7.2,0 L 0,3.2 Z')
+      .attr('fill', '#7f98a0');
 
     const simulation = d3.forceSimulation<GraphNode>(seededNodes)
-      .force('link', d3.forceLink<GraphNode, d3.SimulationLinkDatum<GraphNode>>(renderedLinks as unknown as d3.SimulationLinkDatum<GraphNode>[]).id((node) => node.id).distance((link) => Math.max(80, (graphMode === 'mainline' ? 118 : 148) - ((link as never as GraphLink).edgeScore * 1.2))).strength((link) => Math.min(0.9, 0.15 + (link as never as GraphLink).edgeScore / 120)))
+      .force('link', d3.forceLink<GraphNode, d3.SimulationLinkDatum<GraphNode>>(simulationLinks as unknown as d3.SimulationLinkDatum<GraphNode>[]).id((node) => node.id).distance((link) => Math.max(80, (graphMode === 'mainline' ? 118 : 148) - ((link as never as GraphLink).edgeScore * 1.2))).strength((link) => Math.min(0.9, 0.15 + (link as never as GraphLink).edgeScore / 120)))
       .force('charge', d3.forceManyBody().strength(graphMode === 'mainline' ? -(380 + renderedNodes.length * 4) : -(520 + renderedNodes.length * 6)))
-      .force('collision', d3.forceCollide<GraphNode>().radius((node) => (radiusMap.get(node.id) ?? 8) + (labelIds.has(node.id) ? 18 : 10)))
+      .force('collision', d3.forceCollide<GraphNode>().radius((node) => (radiusMap.get(node.id) ?? 8) + 18))
       .force('x', d3.forceX<GraphNode>((node) => (clusterPositions.get(node.clusterKey) ?? { x: width / 2 }).x).strength(graphMode === 'mainline' ? 0.08 : 0.16))
       .force('y', d3.forceY<GraphNode>((node) => (clusterPositions.get(node.clusterKey) ?? { y: GRAPH_HEIGHT / 2 }).y).strength(graphMode === 'mainline' ? 0.08 : 0.16))
       .force('center', d3.forceCenter(width / 2, GRAPH_HEIGHT / 2).strength(0.04));
@@ -319,11 +401,11 @@ export function NetworkGraph({
     simulationRef.current = simulation;
     nodesRef.current = seededNodes;
 
-    const linkSelection = root.append('g').selectAll('line').data(renderedLinks).enter().append('line')
+    const linkSelection = root.append('g').selectAll('line').data(simulationLinks).enter().append('line')
       .attr('stroke', (link) => (link.isMainline ? '#7b1e1e' : '#7f98a0'))
       .attr('stroke-opacity', (link) => (link.isMainline ? 0.68 : 0.24))
-      .attr('stroke-width', (link) => Math.min(5, 0.9 + link.edgeScore / 16))
-      .attr('marker-end', 'url(#network-arrowhead)')
+      .attr('stroke-width', (link) => Math.min(3.2, 0.85 + link.edgeScore / 22))
+      .attr('marker-end', (link) => getLinkMarkerEnd(link, graphMode, activeEdgeNodeIdRef.current))
       .style('cursor', (link) => (isLinkConnectedToNode(link, activeEdgeNodeIdRef.current) ? 'pointer' : 'default'))
       .style('pointer-events', (link) => (isLinkConnectedToNode(link, activeEdgeNodeIdRef.current) ? 'stroke' : 'none'))
       .on('click', (event, link) => {
@@ -371,17 +453,34 @@ export function NetworkGraph({
       .style('fill', '#183441').style('paint-order', 'stroke').style('stroke', 'rgba(249,252,252,0.92)').style('stroke-width', '3px').style('stroke-linejoin', 'round')
       .style('opacity', (node) => (labelIds.has(node.id) ? 1 : 0)).text((node) => node.name);
 
+    const updateLinkGeometry = () => {
+      linkSelection.each(function updateGeometry(link) {
+        const source = link.source as never as GraphNode;
+        const target = link.target as never as GraphNode;
+        const endpoints = getLinkEndpoints(
+          source,
+          target,
+          radiusMap.get(source.id) ?? 8,
+          radiusMap.get(target.id) ?? 8,
+        );
+        d3.select(this)
+          .attr('x1', endpoints.x1)
+          .attr('y1', endpoints.y1)
+          .attr('x2', endpoints.x2)
+          .attr('y2', endpoints.y2);
+      });
+    };
+
     simulation.on('tick', () => {
-      linkSelection
-        .attr('x1', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).x1)
-        .attr('y1', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).y1)
-        .attr('x2', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).x2)
-        .attr('y2', (link) => getLinkEndpoints(link.source as never as GraphNode, link.target as never as GraphNode, radiusMap.get((link.source as never as GraphNode).id) ?? 8, radiusMap.get((link.target as never as GraphNode).id) ?? 8).y2);
+      updateLinkGeometry();
       nodeSelection.attr('transform', (node) => `translate(${node.x ?? 0}, ${node.y ?? 0})`);
     });
 
+    updateLinkGeometry();
+    nodeSelection.attr('transform', (node) => `translate(${node.x ?? 0}, ${node.y ?? 0})`);
+
     return () => { simulation.stop(); simulationRef.current = null; };
-  }, [graphMode, primaryRole, renderedLinks, renderedNodes]);
+  }, [buildKey, containerWidth, graphMode, primaryRole, renderedLinks, renderedNodes]);
 
   useEffect(() => {
     if (!svgRef.current) return;
@@ -396,9 +495,10 @@ export function NetworkGraph({
     const svg = d3.select(svgRef.current);
     svg
       .selectAll<SVGLineElement, GraphLink>('line')
+      .attr('marker-end', (link) => getLinkMarkerEnd(link, graphMode, activeEdgeNodeId))
       .style('cursor', (link) => (isLinkConnectedToNode(link, activeEdgeNodeId) ? 'pointer' : 'default'))
       .style('pointer-events', (link) => (isLinkConnectedToNode(link, activeEdgeNodeId) ? 'stroke' : 'none'));
-  }, [activeEdgeNodeId]);
+  }, [activeEdgeNodeId, graphMode]);
 
   useEffect(() => {
     if (!svgRef.current) return;

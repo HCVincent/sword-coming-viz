@@ -32,20 +32,6 @@
       },
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "那尊来自小庙的阴神在院中缓缓浮现，哭笑不得。 阴神摇头道：“关于范峻茂此人，我并不比你知道更多。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          2,
-          5
-        ],
-        "juan_index": 262,
-        "segment_index": 1
-      },
-      {
-        "entity_type": "person",
         "name": "范峻茂",
         "alias": [],
         "original_description_in_book": "阴神摇头道：“关于范峻茂此人，我并不比你知道更多。",
@@ -78,18 +64,19 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神在老龙城对话",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与范峻茂在老龙城对话",
         "time": null,
         "location": "老龙城",
         "participants": [
           "郑大风",
-          "阴神",
           "范峻茂"
         ],
-        "description": "郑大风抬头看了眼老龙城上空的那座云海，突然说道：“怎么不是穿裙子呢。 那尊来自小庙的阴神在院中缓缓浮现，哭笑不得。 郑大风收回视线，笑问道：“老赵，是不是我问什么，你都不会说？",
+        "description": "郑大风抬头看了眼老龙城上空的那座云海，突然说道：“怎么不是穿裙子呢。 郑大风收回视线，笑问道：“老赵，是不是我问什么，你都不会说？ 阴神摇头道：“关于范峻茂此人，我并不比你知道更多。",
         "background": "",
-        "significance": "在老龙城推动郑大风与阴神之间的对话线。",
-        "related_action_indices": [],
+        "significance": "在老龙城推动郑大风与范峻茂之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -103,8 +90,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.258237",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "郑大风"
+        ],
+        "to_roles": [
+          "范峻茂"
+        ],
+        "action": "对话",
+        "context": "郑大风抬头看了眼老龙城上空的那座云海，突然说道：“怎么不是穿裙子呢。 ” 那尊来自小庙的阴神在院中缓缓浮现，哭笑不得。 郑大风收回视线，笑问道：“老赵，是不是我问什么，你都不会说？ ” 阴神摇头道：“关于范峻茂此人，我并不比你知道更多。",
+        "result": null,
+        "event_name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与范峻茂在老龙城对话",
+        "location": "老龙城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.981195",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -139,37 +152,21 @@
         ],
         "juan_index": 262,
         "segment_index": 2
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神冷笑道：“是你无所事事，我忙得很，穿针引线的活，不比打打杀杀。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 262,
-        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神对话",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风对话",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风",
-          "阴神"
+          "郑大风"
         ],
-        "description": "郑大风来了兴致，“说说看，反正咱哥俩整天游手好闲……” 阴神冷笑道：“是你无所事事，我忙得很，穿针引线的活，不比打打杀杀。 不过当初在小庙内，听一位陨落的外乡剑仙，说起过一个未必属实的小道传闻。",
+        "description": "郑大风来了兴致，“说说看，反正咱哥俩整天游手好闲……” 不过当初在小庙内，听一位陨落的外乡剑仙，说起过一个未必属实的小道传闻。 ”",
         "background": "",
-        "significance": "推动郑大风与阴神之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应郑大风在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -183,34 +180,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "郑大风"
-        ],
-        "to_roles": [
-          "阴神"
-        ],
-        "action": "对话",
-        "context": "不过当初在小庙内，听一位陨落的外乡剑仙，说起过一个未必属实的小道传闻。 ” 郑大风来了兴致，“说说看，反正咱哥俩整天游手好闲……” 阴神冷笑道：“是你无所事事，我忙得很，穿针引线的活，不比打打杀杀。 也不对，你每天其实也挺忙，忙着跟着一帮市井女子说荤话，君子动嘴不动手，你其实该去观湖书院的。 ”",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 262,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.258237",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.981195",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -246,37 +217,21 @@
         ],
         "juan_index": 262,
         "segment_index": 3
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神顶回去一句，“孽缘罢了。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 262,
-        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神对话",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风对话",
         "time": null,
         "location": null,
         "participants": [
-          "郑大风",
-          "阴神"
+          "郑大风"
         ],
-        "description": "郑大风笑道：“老赵啊，伤感情的话一定要少说，咱俩能够共事一场，多大的缘分。 阴神顶回去一句，“孽缘罢了。 郑大风摇摇头，伸手指了指云海，“她跟我才是孽缘，咱哥俩是善缘。",
+        "description": "郑大风笑道：“老赵啊，伤感情的话一定要少说，咱俩能够共事一场，多大的缘分。 郑大风摇摇头，伸手指了指云海，“她跟我才是孽缘，咱哥俩是善缘。 ”",
         "background": "",
-        "significance": "推动郑大风与阴神之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应郑大风在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -290,34 +245,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "郑大风"
-        ],
-        "to_roles": [
-          "阴神"
-        ],
-        "action": "对话",
-        "context": "郑大风笑道：“老赵啊，伤感情的话一定要少说，咱俩能够共事一场，多大的缘分。 ” 阴神顶回去一句，“孽缘罢了。 ” 郑大风摇摇头，伸手指了指云海，“她跟我才是孽缘，咱哥俩是善缘。 ”",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 262,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.258237",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.981195",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -350,21 +279,6 @@
         ],
         "juan_index": 262,
         "segment_index": 4
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "之前范峻茂进入灰尘药铺后，阴神就自动退散，这既是礼数，也是规矩。 而且那位范家嫡长女的突飞猛进，从范郑二人第一次见面的洞府境，到一趟大骊往返，重回老龙城，站在小巷药铺门口的时候，就已经是金丹境，这种境界攀升的速度，已经不可以用什么不世出的修道天才来解释，太过骇人听闻，赵姓阴神难免想到了骊珠洞天内长大的某位少女，山上修行，所有惹人艳羡惊叹的天赋，可能都敌不过轻飘飘的四个字“生而知之”。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          0,
-          2,
-          4
-        ],
-        "juan_index": 262,
-        "segment_index": 4
       }
     ],
     "locations": [
@@ -377,9 +291,7 @@
         "description": "前三季最重要的世俗权力中心。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [
-          "阴神"
-        ],
+        "related_entities": [],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -393,9 +305,7 @@
         "description": "海上与家族势力交织的重要城市。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [
-          "阴神"
-        ],
+        "related_entities": [],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -409,9 +319,7 @@
         "description": "《剑来》前三季最关键的世界设定所在。",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [
-          "阴神"
-        ],
+        "related_entities": [],
         "sentence_indexes_in_segment": [
           2
         ],
@@ -421,19 +329,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 范峻茂与阴神在大骊会见",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 范峻茂在大骊会见",
         "time": null,
         "location": "大骊",
         "participants": [
-          "范峻茂",
-          "阴神"
+          "范峻茂"
         ],
-        "description": "之前范峻茂进入灰尘药铺后，阴神就自动退散，这既是礼数，也是规矩。 而且那位范家嫡长女的突飞猛进，从范郑二人第一次见面的洞府境，到一趟大骊往返，重回老龙城，站在小巷药铺门口的时候，就已经是金丹境，这种境界攀升的速度，已经不可以用什么不世出的修道天才来解释，太过骇人听闻，赵姓阴神难免想到了骊珠洞天内长大的某位少女，山上修行，所有惹人艳羡惊叹的天赋，可能都敌不过轻飘飘的四个字“生而知之”。 这尊阴神心中微微叹息。",
+        "description": "之前范峻茂进入灰尘药铺后，阴神就自动退散，这既是礼数，也是规矩。 而且那位范家嫡长女的突飞猛进，从范郑二人第一次见面的洞府境，到一趟大骊往返，重回老龙城，站在小巷药铺门口的时候，就已经是金丹境，这种境界攀升的速度，已经不可以用什么不世出的修道天才来解释，太过骇人听闻，赵姓阴神难免想到了骊珠洞天内长大的某位少女，山上修行，所有惹人艳羡惊叹的天赋，可能都敌不过轻飘飘的四个字“生而知之”。 所以并未听到两人之间的对话，但是看得出来，有点不欢而散。",
         "background": "",
-        "significance": "在大骊推动范峻茂与阴神之间的会见线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应范峻茂在叙事中的关键会见节点。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -447,34 +352,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "范峻茂"
-        ],
-        "to_roles": [
-          "阴神"
-        ],
-        "action": "会见",
-        "context": "之前范峻茂进入灰尘药铺后，阴神就自动退散，这既是礼数，也是规矩。 所以并未听到两人之间的对话，但是看得出来，有点不欢而散。 而且那位范家嫡长女的突飞猛进，从范郑二人第一次见面的洞府境，到一趟大骊往返，重回老龙城，站在小巷药铺门口的时候，就已经是金丹境，这种境界攀升的速度，已经不可以用什么不世出的修道天才来解释，太过骇人听闻，赵姓阴神难免想到了骊珠洞天内长大的某位少女，山上修行，所有惹人艳羡惊叹的天赋，可能都敌不过轻飘飘的四个字“生而知之”。 惊为天人？ 这尊阴神心中微微叹息。 好在这种人，放眼五湖四海九大洲，也是屈指可数。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 范峻茂与阴神在大骊会见",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 262,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.258237",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.981195",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -510,19 +389,6 @@
         ],
         "juan_index": 262,
         "segment_index": 5
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神说道：“不想说了，我还有事情要忙。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 262,
-        "segment_index": 5
       }
     ],
     "locations": [
@@ -545,19 +411,16 @@
     ],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神在骊珠洞天对话",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风在骊珠洞天对话",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "郑大风",
-          "阴神"
+          "郑大风"
         ],
-        "description": "郑大风提醒道：“喂喂，老赵，醒醒，别发呆了，继续说那凄凄惨惨死在骊珠洞天里的外乡剑仙，关于苻家这件半仙兵的云海，到底讲了啥内幕？ 阴神说道：“不想说了，我还有事情要忙。 郑大风一脸呆滞，然后怒道：“你大爷啊！",
+        "description": "郑大风提醒道：“喂喂，老赵，醒醒，别发呆了，继续说那凄凄惨惨死在骊珠洞天里的外乡剑仙，关于苻家这件半仙兵的云海，到底讲了啥内幕？ 郑大风一脸呆滞，然后怒道：“你大爷啊！ ”",
         "background": "",
-        "significance": "在骊珠洞天推动郑大风与阴神之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应郑大风在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -571,34 +434,8 @@
         "segment_index": 5
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "郑大风"
-        ],
-        "to_roles": [
-          "阴神"
-        ],
-        "action": "对话",
-        "context": "郑大风提醒道：“喂喂，老赵，醒醒，别发呆了，继续说那凄凄惨惨死在骊珠洞天里的外乡剑仙，关于苻家这件半仙兵的云海，到底讲了啥内幕？ ” 阴神说道：“不想说了，我还有事情要忙。 ” 就此消逝。 郑大风一脸呆滞，然后怒道：“你大爷啊！",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 郑大风与阴神在骊珠洞天对话",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 262,
-        "segment_index": 5
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.258237",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.981195",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -677,7 +514,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.259241",
+    "extracted_at": "2026-03-26T11:46:48.981195",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -742,7 +579,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.259241",
+    "extracted_at": "2026-03-26T11:46:48.982198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -806,7 +643,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.259241",
+    "extracted_at": "2026-03-26T11:46:48.982198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -886,7 +723,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.259241",
+    "extracted_at": "2026-03-26T11:46:48.982198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -965,7 +802,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.259241",
+    "extracted_at": "2026-03-26T11:46:48.982198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1045,7 +882,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.259241",
+    "extracted_at": "2026-03-26T11:46:48.982198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1136,7 +973,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.260244",
+    "extracted_at": "2026-03-26T11:46:48.982198",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1237,7 +1074,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.260244",
+    "extracted_at": "2026-03-26T11:46:48.983202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1342,7 +1179,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.260244",
+    "extracted_at": "2026-03-26T11:46:48.983202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1405,7 +1242,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.260244",
+    "extracted_at": "2026-03-26T11:46:48.983202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1512,7 +1349,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.260244",
+    "extracted_at": "2026-03-26T11:46:48.983202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1563,19 +1400,6 @@
         ],
         "juan_index": 262,
         "segment_index": 18
-      },
-      {
-        "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "陈平安只是岿然不动，欲言又止，这一次他不敢再主动要求马老剑仙增加力道，总觉得会让老人脸上会挂不住，不太妥当。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 262,
-        "segment_index": 18
       }
     ],
     "locations": [
@@ -1605,13 +1429,14 @@
         "participants": [
           "陈平安",
           "魏檗",
-          "马致",
-          "老剑仙"
+          "马致"
         ],
         "description": "但是马致已经高估眼前背剑少年的体魄底子，可还不够，远远不够，陈平安在落魄山竹楼遭受的捶打，一副皮囊身躯，“享受”的是十境武夫崔姓老人的神人擂鼓式，三魂七魄，遭受的是云蒸大泽式和铁骑凿阵式，俱是老人毕生所学的武道精髓，是他走到十境巅峰后仍要引以为傲的招式。 陈平安当时为了承受更多的神人擂鼓式，每一次呼吸吐纳，以及十八停剑气，早已浑然天成，之后又有抽筋剥皮之苦，无数次刺眼锥心之痛，虽然还远远算不得武夫第七境巅峰的无漏金身，可是马致的那条细微剑气，还真无法抓住陈平安的破绽，除非是一力降十会，强行破开。 马致生出一点争胜之心，再从本命飞剑上拨出三缕剑气，化虚入体，这一次三剑齐下，他就不信陈平安的三魂路线，当真无懈可击。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1625,8 +1450,34 @@
         "segment_index": 18
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.261248",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "马致"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "指点",
+        "context": "但是马致已经高估眼前背剑少年的体魄底子，可还不够，远远不够，陈平安在落魄山竹楼遭受的捶打，一副皮囊身躯，“享受”的是十境武夫崔姓老人的神人擂鼓式，三魂七魄，遭受的是云蒸大泽式和铁骑凿阵式，俱是老人毕生所学的武道精髓，是他走到十境巅峰后仍要引以为傲的招式。 陈平安当时为了承受更多的神人擂鼓式，每一次呼吸吐纳，以及十八停剑气，早已浑然天成，之后又有抽筋剥皮之苦，无数次刺眼锥心之痛，虽然还远远算不得武夫第七境巅峰的无漏金身，可是马致的那条细微剑气，还真无法抓住陈平安的破绽，除非是一力降十会，强行破开。 天下最强三境，含金量之重。 只是传授拳法的光脚老人不屑说而已。 马致生出一点争胜之心，再从本命飞剑上拨出三缕剑气，化虚入体，这一次三剑齐下，他就不信陈平安的三魂路线，当真无懈可击。 陈平安只是岿然不动，欲言又止，这一次他不敢再主动要求马老剑仙增加力道，总觉得会让老人脸上会挂不住，不太妥当。",
+        "result": null,
+        "event_name": "落魄山起势",
+        "location": "落魄山",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 262,
+        "segment_index": 18
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.983202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1727,7 +1578,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.261248",
+    "extracted_at": "2026-03-26T11:46:48.983202",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1817,7 +1668,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.261248",
+    "extracted_at": "2026-03-26T11:46:48.984205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1909,7 +1760,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.261248",
+    "extracted_at": "2026-03-26T11:46:48.984205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1972,7 +1823,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.261248",
+    "extracted_at": "2026-03-26T11:46:48.984205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2077,7 +1928,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.262251",
+    "extracted_at": "2026-03-26T11:46:48.984205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2140,7 +1991,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.262251",
+    "extracted_at": "2026-03-26T11:46:48.984205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2358,7 +2209,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.262251",
+    "extracted_at": "2026-03-26T11:46:48.984205",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2463,7 +2314,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.262251",
+    "extracted_at": "2026-03-26T11:46:48.985209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2563,7 +2414,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.262251",
+    "extracted_at": "2026-03-26T11:46:48.985209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2625,7 +2476,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.262251",
+    "extracted_at": "2026-03-26T11:46:48.985209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2744,7 +2595,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.263255",
+    "extracted_at": "2026-03-26T11:46:48.985209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2866,7 +2717,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.263255",
+    "extracted_at": "2026-03-26T11:46:48.985209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2957,7 +2808,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.263255",
+    "extracted_at": "2026-03-26T11:46:48.985209",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3076,7 +2927,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.263255",
+    "extracted_at": "2026-03-26T11:46:48.986212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3099,19 +2950,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "宫装妇人",
-        "alias": [],
-        "original_description_in_book": "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。",
-        "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。",
-        "power": "老龙城",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 262,
-        "segment_index": 33
-      },
-      {
-        "entity_type": "person",
         "name": "桂夫人",
         "alias": [],
         "original_description_in_book": "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。",
@@ -3127,19 +2965,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 宫装妇人与桂夫人对话",
+        "name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 桂夫人对话",
         "time": null,
         "location": null,
         "participants": [
-          "宫装妇人",
           "桂夫人"
         ],
         "description": "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。 好到许多婆娑洲、俱芦洲的修士，都会万里迢迢赶往桐叶洲，各有所求，最终这些以“谪仙人”身份降落福地的修士，收益之高，要远远超过许多福地。 而桐叶洲版图上，桐叶宗和玉圭宗，一北一南，双峰并峙。",
         "background": "",
-        "significance": "推动宫装妇人与桂夫人之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应桂夫人在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第四卷剑气近 第二百六十一章 有剑从云海来 · 段33",
         "sentence_indexes_in_segment": [
           0,
@@ -3153,29 +2988,8 @@
         "segment_index": 33
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "宫装妇人"
-        ],
-        "to_roles": [
-          "桂夫人"
-        ],
-        "action": "对话",
-        "context": "一位宫装妇人笑道：“姜少爷，你在宗门一向深居简出，咱们玉圭宗又不像那喜欢显摆的桐叶宗，一向与人为善，想必是桂夫人听说得少了。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百六十一章 有剑从云海来 · 宫装妇人与桂夫人对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 262,
-        "segment_index": 33
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.263255",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.986212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3269,7 +3083,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.263255",
+    "extracted_at": "2026-03-26T11:46:48.986212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3332,7 +3146,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.264258",
+    "extracted_at": "2026-03-26T11:46:48.986212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3438,7 +3252,7 @@
         "segment_index": 36
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.264258",
+    "extracted_at": "2026-03-26T11:46:48.986212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3515,7 +3329,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.264258",
+    "extracted_at": "2026-03-26T11:46:48.986212",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3577,7 +3391,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.264258",
+    "extracted_at": "2026-03-26T11:46:48.987216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3655,7 +3469,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.264258",
+    "extracted_at": "2026-03-26T11:46:48.987216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3746,7 +3560,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.264258",
+    "extracted_at": "2026-03-26T11:46:48.987216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3850,7 +3664,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.265262",
+    "extracted_at": "2026-03-26T11:46:48.987216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3902,7 +3716,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.265262",
+    "extracted_at": "2026-03-26T11:46:48.987216",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -664,6 +664,8 @@ class EntityResolver:
         
         for _, name_group in groups.items():
             canonical_name = self._select_preferred_role_name(name_group)
+            if canonical_name in self.blocked_aliases:
+                continue
             # Collect all occurrences for this entity group
             all_occurrences: List[EntityOccurrence] = []
             all_descriptions: List[str] = []

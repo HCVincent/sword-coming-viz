@@ -1,67 +1,4 @@
 {
-  "130-1-0": {
-    "juan_index": 130,
-    "segment_index": 1,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百三十章 山水少年",
-    "source_sentences": [
-      "人生河流里的一场萍水相逢，往往各自打个旋儿，就会分别。",
-      "道号为玄谷子的目盲老道人一路沉默，这让小姑娘酒儿反而有些不习惯。",
-      "跛脚少年虽然不愿交出那颗蛇胆石，犹豫纠结之后，仍是主动递给脾气恶劣的师父。",
-      "老道人接过质地细腻的石子，握在手心细细摩挲片刻，破天荒还给少年，“自己收着吧。",
-      "”",
-      "跛脚少年一头雾水接过石子，望向小酒儿，后者也悄悄摇头，表是自己猜不透师父的心思。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "道号为玄谷子的目盲老道人一路沉默，这让小姑娘酒儿反而有些不习惯。 老道人接过质地细腻的石子，握在手心细细摩挲片刻，破天荒还给少年，“自己收着吧。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          1,
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 1
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 老道人遭遇",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "道号为玄谷子的目盲老道人一路沉默，这让小姑娘酒儿反而有些不习惯。 老道人接过质地细腻的石子，握在手心细细摩挲片刻，破天荒还给少年，“自己收着吧。 人生河流里的一场萍水相逢，往往各自打个旋儿，就会分别。",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键遭遇节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百三十章 山水少年 · 段1",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 1
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.512543",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
   "130-2-0": {
     "juan_index": 130,
     "segment_index": 2,
@@ -86,19 +23,6 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           1
-        ],
-        "juan_index": 130,
-        "segment_index": 2
-      },
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "目盲老道人揉了揉小姑娘的脑袋，“你们两个，福气真不错。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          4
         ],
         "juan_index": 130,
         "segment_index": 2
@@ -132,15 +56,12 @@
         "location": "龙泉",
         "participants": [
           "李二",
-          "陈平安",
-          "老道人"
+          "陈平安"
         ],
-        "description": "你以为那个叫陈平安的少年，为何要借助驿站寄信回龙泉县城，贫道估计如果到了那什么太岁、草头铺子，是为师而不是你亲手拿出石子的话，咱们在那边的日子就不好过喽，未必会遭人刁难，但是别想顺顺当当站稳脚跟，更别提找到一座山头，去寄人篱下修行了。 目盲老道人揉了揉小姑娘的脑袋，“你们两个，福气真不错。 老人轻声道：“小跛子，这是你的缘分，师父拿不走的，真拿了，反而不是好事。",
+        "description": "你以为那个叫陈平安的少年，为何要借助驿站寄信回龙泉县城，贫道估计如果到了那什么太岁、草头铺子，是为师而不是你亲手拿出石子的话，咱们在那边的日子就不好过喽，未必会遭人刁难，但是别想顺顺当当站稳脚跟，更别提找到一座山头，去寄人篱下修行了。 老人轻声道：“小跛子，这是你的缘分，师父拿不走的，真拿了，反而不是好事。 ”",
         "background": "",
         "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -154,34 +75,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "老道人"
-        ],
-        "action": "师承",
-        "context": "老人轻声道：“小跛子，这是你的缘分，师父拿不走的，真拿了，反而不是好事。 你以为那个叫陈平安的少年，为何要借助驿站寄信回龙泉县城，贫道估计如果到了那什么太岁、草头铺子，是为师而不是你亲手拿出石子的话，咱们在那边的日子就不好过喽，未必会遭人刁难，但是别想顺顺当当站稳脚跟，更别提找到一座山头，去寄人篱下修行了。 ” 跛脚少年哦了一声，他就不是一个有弯弯肠子的人，不擅长想这些问题。 目盲老道人揉了揉小姑娘的脑袋，“你们两个，福气真不错。 ”",
-        "result": null,
-        "event_name": "李二照面陈平安",
-        "location": "龙泉",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.512543",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.289787",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -202,19 +97,6 @@
       "”"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "老道人点头道：“那个龙泉县，本是大骊王朝上空的骊珠洞天，破碎后落地生根而成，之前有儒家圣人齐静春坐镇一甲子，如今这些孩子背着书箱，一个比一个聪明，说是去大隋书院远游，那么你说，他们会是谁的学生？",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 130,
-        "segment_index": 3
-      },
       {
         "entity_type": "person",
         "name": "齐静春",
@@ -243,7 +125,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "老道人",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -262,7 +143,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "老道人",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -279,7 +159,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "老道人",
           "齐静春"
         ],
         "sentence_indexes_in_segment": [
@@ -296,15 +175,12 @@
         "location": "龙泉",
         "participants": [
           "齐静春",
-          "陈平安",
-          "老道人"
+          "陈平安"
         ],
         "description": "老道人点头道：“那个龙泉县，本是大骊王朝上空的骊珠洞天，破碎后落地生根而成，之前有儒家圣人齐静春坐镇一甲子，如今这些孩子背着书箱，一个比一个聪明，说是去大隋书院远游，那么你说，他们会是谁的学生？ 小酒儿比起哥哥，心思更加细腻，问道：“师父，小姐姐他们一行人，身世是不是不一般啊？ ”",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -318,34 +194,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老道人"
-        ],
-        "to_roles": [
-          "齐静春"
-        ],
-        "action": "对话",
-        "context": "小酒儿比起哥哥，心思更加细腻，问道：“师父，小姐姐他们一行人，身世是不是不一般啊？ ” 老道人点头道：“那个龙泉县，本是大骊王朝上空的骊珠洞天，破碎后落地生根而成，之前有儒家圣人齐静春坐镇一甲子，如今这些孩子背着书箱，一个比一个聪明，说是去大隋书院远游，那么你说，他们会是谁的学生？ ” 小姑娘有些羡慕，“儒家圣人的学生，真厉害。 ”",
-        "result": null,
-        "event_name": "齐静春现身",
-        "location": "龙泉",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.513547",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.289787",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -368,19 +218,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "目盲老道人嗤笑道：“要不然那风雪庙剑仙魏晋，破关第一件事，就是前来相救？",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 4
-      },
-      {
-        "entity_type": "person",
         "name": "魏晋",
         "alias": [],
         "original_description_in_book": "目盲老道人嗤笑道：“要不然那风雪庙剑仙魏晋，破关第一件事，就是前来相救？",
@@ -388,19 +225,6 @@
         "power": "风雪庙",
         "sentence_indexes_in_segment": [
           0
-        ],
-        "juan_index": 130,
-        "segment_index": 4
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "再说了，这些孩子身边有一尊阴神担任扈从，竟然能够威胁到那个凶狠女鬼的山根水源，这些孩子就没一个是省油的灯。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1
         ],
         "juan_index": 130,
         "segment_index": 4
@@ -415,7 +239,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "老道人",
           "魏晋"
         ],
         "sentence_indexes_in_segment": [
@@ -427,19 +250,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 老道人与魏晋在风雪庙对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 魏晋在风雪庙对话",
         "time": null,
         "location": "风雪庙",
         "participants": [
-          "老道人",
           "魏晋"
         ],
         "description": "目盲老道人嗤笑道：“要不然那风雪庙剑仙魏晋，破关第一件事，就是前来相救？ 再说了，这些孩子身边有一尊阴神担任扈从，竟然能够威胁到那个凶狠女鬼的山根水源，这些孩子就没一个是省油的灯。 ”",
         "background": "",
-        "significance": "在风雪庙推动老道人与魏晋之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应魏晋在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -453,217 +273,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老道人"
-        ],
-        "to_roles": [
-          "魏晋"
-        ],
-        "action": "对话",
-        "context": "目盲老道人嗤笑道：“要不然那风雪庙剑仙魏晋，破关第一件事，就是前来相救？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 老道人与魏晋在风雪庙对话",
-        "location": "风雪庙",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.513547",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "130-5-0": {
-    "juan_index": 130,
-    "segment_index": 5,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百三十章 山水少年",
-    "source_sentences": [
-      "”",
-      "老道人习惯性伸手掐了掐小姑娘的脸颊，笑道：“蠢丫头，这叫惠而不费，一颗铜钱不花，就能当回好人，为啥不做？",
-      "”",
-      "小姑娘怯生生道：“可如果人家看穿师父的心思，师父不就是画蛇添足啦？",
-      "”",
-      "老道人哑然，摇头叹息，最后拍了拍小丫头的脑袋，“师父以后要对你们两个好一点。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "老道人习惯性伸手掐了掐小姑娘的脸颊，笑道：“蠢丫头，这叫惠而不费，一颗铜钱不花，就能当回好人，为啥不做？ 老道人哑然，摇头叹息，最后拍了拍小丫头的脑袋，“师父以后要对你们两个好一点。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          1,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 5
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 老道人对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "老道人习惯性伸手掐了掐小姑娘的脸颊，笑道：“蠢丫头，这叫惠而不费，一颗铜钱不花，就能当回好人，为啥不做？ 老道人哑然，摇头叹息，最后拍了拍小丫头的脑袋，“师父以后要对你们两个好一点。 ”",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百三十章 山水少年 · 段5",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 5
-      }
-    ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.513547",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "130-6-0": {
-    "juan_index": 130,
-    "segment_index": 6,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百三十章 山水少年",
-    "source_sentences": [
-      "师父这么多年，总想着哪天捡个天大的漏，能够在路边随手捡个天资卓绝的弟子，经常嫌弃你们两个出身不好，来路不正，不料回头看来，倒是师父灯下黑了。",
-      "”",
-      "小姑娘有些害怕，这样的老道人太陌生了，脸色微白，“师父，你是不是鬼上身了，酒儿都不认识了。",
-      "”",
-      "老道人哈哈大笑，突然低声道：“酒儿啊，之前师父答应一年之内不收符泉，现在跟你商量商量，从一年改为半年，如何？",
-      "你想啊，师父这趟降妖除魔，真是道高一尺魔高一丈啊，给那女鬼狠狠打了一顿不说，不但幡子上少了四个字，还送出去一幅师门祖传的搜山图，你们做徒弟的，就不知道心疼心疼师父，孝敬一二？"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "小姑娘有些害怕，这样的老道人太陌生了，脸色微白，“师父，你是不是鬼上身了，酒儿都不认识了。 老道人哈哈大笑，突然低声道：“酒儿啊，之前师父答应一年之内不收符泉，现在跟你商量商量，从一年改为半年，如何？",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          2,
-          4
-        ],
-        "juan_index": 130,
-        "segment_index": 6
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 老道人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "小姑娘有些害怕，这样的老道人太陌生了，脸色微白，“师父，你是不是鬼上身了，酒儿都不认识了。 老道人哈哈大笑，突然低声道：“酒儿啊，之前师父答应一年之内不收符泉，现在跟你商量商量，从一年改为半年，如何？ 师父这么多年，总想着哪天捡个天大的漏，能够在路边随手捡个天资卓绝的弟子，经常嫌弃你们两个出身不好，来路不正，不料回头看来，倒是师父灯下黑了。",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百三十章 山水少年 · 段6",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 6
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.513547",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "130-7-0": {
-    "juan_index": 130,
-    "segment_index": 7,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百三十章 山水少年",
-    "source_sentences": [
-      "”",
-      "小姑娘如释重负，这才是她熟悉的师父，于是她干脆利落道：“半年就半年！",
-      "”",
-      "跛脚少年仔细收好那颗石子，闷闷道：“石头已经是我的了。",
-      "”",
-      "目盲老道人气不打一处来，破口大骂道：“狗改不了吃屎！"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "目盲老道人气不打一处来，破口大骂道：“狗改不了吃屎！",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 7
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 老道人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "目盲老道人气不打一处来，破口大骂道：“狗改不了吃屎！ ” 小姑娘如释重负，这才是她熟悉的师父，于是她干脆利落道：“半年就半年！",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百三十章 山水少年 · 段7",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 7
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.513547",
+    "extracted_at": "2026-03-26T11:46:48.290791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -686,24 +297,11 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 8
-      },
-      {
-        "entity_type": "person",
         "name": "沙哑",
         "alias": [],
         "original_description_in_book": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。",
-        "description": "前三季叙事中多次出现，常与朱河、朱鹿同场，主要活动于宝瓶洲。",
-        "power": "小镇",
+        "description": "前三季叙事中多次出现，常与朱鹿、傅玉同场，推动相关支线发展。",
+        "power": "正阳山",
         "sentence_indexes_in_segment": [
           3
         ],
@@ -727,16 +325,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 阴神与沙哑对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 沙哑与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "阴神",
-          "沙哑"
+          "沙哑",
+          "陈平安"
         ],
         "description": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。 陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。 ”",
         "background": "",
-        "significance": "推动阴神与沙哑之间的对话关系。",
+        "significance": "推动沙哑与陈平安之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -757,25 +355,30 @@
       {
         "time": null,
         "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
           "沙哑"
         ],
+        "to_roles": [
+          "陈平安"
+        ],
         "action": "对话",
-        "context": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。",
+        "context": "” 小姑娘一手捂嘴偷着笑。 小跛子也跟着笑起来。 人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。 ” 陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 阴神与沙哑对话",
+        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 沙哑与陈平安对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          3
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "juan_index": 130,
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.513547",
+    "extracted_at": "2026-03-26T11:46:48.290791",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -798,19 +401,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神笑容惨淡，“不管怎么说，这次我难辞其咎。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 130,
-        "segment_index": 9
-      },
-      {
-        "entity_type": "person",
         "name": "李宝瓶",
         "alias": [],
         "original_description_in_book": "李宝瓶笑道：“小时候，我大哥喜欢给我讲一些古怪事情，有次讲到一个城隍爷的故事，说考量阴德的方式，不太一样，我记得很清楚，叫有心为善虽善不赏，无心为恶虽恶不罚。",
@@ -826,19 +416,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 阴神与李宝瓶对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 李宝瓶对话",
         "time": null,
         "location": null,
         "participants": [
-          "阴神",
           "李宝瓶"
         ],
-        "description": "阴神笑容惨淡，“不管怎么说，这次我难辞其咎。 李宝瓶笑道：“小时候，我大哥喜欢给我讲一些古怪事情，有次讲到一个城隍爷的故事，说考量阴德的方式，不太一样，我记得很清楚，叫有心为善虽善不赏，无心为恶虽恶不罚。 ”",
+        "description": "李宝瓶笑道：“小时候，我大哥喜欢给我讲一些古怪事情，有次讲到一个城隍爷的故事，说考量阴德的方式，不太一样，我记得很清楚，叫有心为善虽善不赏，无心为恶虽恶不罚。 ” 阴神笑容惨淡，“不管怎么说，这次我难辞其咎。",
         "background": "",
-        "significance": "推动阴神与李宝瓶之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应李宝瓶在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段9",
         "sentence_indexes_in_segment": [
           0,
@@ -852,96 +439,8 @@
         "segment_index": 9
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李宝瓶"
-        ],
-        "action": "对话",
-        "context": "” 阴神笑容惨淡，“不管怎么说，这次我难辞其咎。 尤其是因为我贪图个人修行，才连累你们沦落到这般田地，我实在是良心难安。 如果你们出了事情，我哪怕事后打烂了此处的山根水源，与那女鬼同归于尽，也没有任何意义。 ” 李宝瓶笑道：“小时候，我大哥喜欢给我讲一些古怪事情，有次讲到一个城隍爷的故事，说考量阴德的方式，不太一样，我记得很清楚，叫有心为善虽善不赏，无心为恶虽恶不罚。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 阴神与李宝瓶对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 9
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.514550",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "130-10-0": {
-    "juan_index": 130,
-    "segment_index": 10,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百三十章 山水少年",
-    "source_sentences": [
-      "人力有穷尽之时，尽力又尽心了，就不用太愧疚。",
-      "要不然做人累做鬼也累。",
-      "”",
-      "阴神无言以对，被一个小姑娘传授道理，哪怕她之前展现出了君子气象，可总归是有些别扭。",
-      "小姑娘又陷入自己的世界中去，有些懊恼，以拳头捶掌心，“大哥总说这些稀奇古怪的事情，当时只当有趣故事来听，早知道我该更用心一些的。",
-      "”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神无言以对，被一个小姑娘传授道理，哪怕她之前展现出了君子气象，可总归是有些别扭。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 10
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 阴神指点",
-        "time": null,
-        "location": null,
-        "participants": [
-          "阴神"
-        ],
-        "description": "阴神无言以对，被一个小姑娘传授道理，哪怕她之前展现出了君子气象，可总归是有些别扭。 人力有穷尽之时，尽力又尽心了，就不用太愧疚。 要不然做人累做鬼也累。",
-        "background": "",
-        "significance": "对应阴神在叙事中的关键指点节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百三十章 山水少年 · 段10",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 10
-      }
-    ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.514550",
+    "extracted_at": "2026-03-26T11:46:48.291795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -973,20 +472,6 @@
           0,
           1,
           3
-        ],
-        "juan_index": 130,
-        "segment_index": 11
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神望向陈平安，笑道：“我们能不能单独谈一下？ 阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1,
-          4
         ],
         "juan_index": 130,
         "segment_index": 11
@@ -1052,11 +537,7 @@
         "related_action_indices": [
           0,
           1,
-          2,
-          3,
-          4,
-          5,
-          6
+          2
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段11",
         "sentence_indexes_in_segment": [
@@ -1075,86 +556,6 @@
       {
         "time": null,
         "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "阴神望向陈平安，笑道：“我们能不能单独谈一下？",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 130,
-        "segment_index": 11
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "林守一"
-        ],
-        "action": "对话",
-        "context": "阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 130,
-        "segment_index": 11
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "杨老头"
-        ],
-        "action": "对话",
-        "context": "阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 130,
-        "segment_index": 11
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李槐"
-        ],
-        "action": "对话",
-        "context": "阴神等到林守一他们前行出去约莫半里路，开口道：“我是药铺杨老头安排来保护李槐的。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 130,
-        "segment_index": 11
-      },
-      {
-        "time": null,
-        "from_roles": [
           "林守一"
         ],
         "to_roles": [
@@ -1213,7 +614,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.514550",
+    "extracted_at": "2026-03-26T11:46:48.291795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1256,19 +657,6 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0
-        ],
-        "juan_index": 130,
-        "segment_index": 12
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          2
         ],
         "juan_index": 130,
         "segment_index": 12
@@ -1384,10 +772,7 @@
           1,
           2,
           3,
-          4,
-          5,
-          6,
-          7
+          4
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段12",
         "sentence_indexes_in_segment": [
@@ -1419,66 +804,6 @@
         "is_commentary": false,
         "sentence_indexes_in_segment": [
           0
-        ],
-        "juan_index": 130,
-        "segment_index": 12
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李槐"
-        ],
-        "action": "对话",
-        "context": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 130,
-        "segment_index": 12
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李二"
-        ],
-        "action": "对话",
-        "context": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 130,
-        "segment_index": 12
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "宋长镜"
-        ],
-        "action": "对话",
-        "context": "这尊阴神笑道：“李槐他爹李二，差点打死藩王宋长镜，很厉害的。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": "骊珠洞天",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          2
         ],
         "juan_index": 130,
         "segment_index": 12
@@ -1564,7 +889,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.514550",
+    "extracted_at": "2026-03-26T11:46:48.291795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1624,19 +949,6 @@
         "sentence_indexes_in_segment": [
           2,
           3,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 13
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神似乎提及李二后，心情好转许多，“李二的性子很轴的，要不然也不会娶了李槐的娘亲做媳妇。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 130,
@@ -1754,7 +1066,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.514550",
+    "extracted_at": "2026-03-26T11:46:48.291795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1804,19 +1116,6 @@
       },
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神问道：“你不打算告诉李槐这个？",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 14
-      },
-      {
-        "entity_type": "person",
         "name": "阿良",
         "alias": [],
         "original_description_in_book": "在枕头驿那边，你就直截了当告诉宝瓶真相了，哪怕阿良劝你不要急着告诉她。",
@@ -1838,15 +1137,13 @@
         "participants": [
           "阿良",
           "陈平安",
-          "李槐",
-          "阴神"
+          "李槐"
         ],
         "description": "陈平安开怀笑道：“那以后知道了真相，李槐可得乐坏了。 阴神问道：“你不打算告诉李槐这个？ 在枕头驿那边，你就直截了当告诉宝瓶真相了，哪怕阿良劝你不要急着告诉她。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
-          0,
-          1
+          0
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段14",
         "sentence_indexes_in_segment": [
@@ -1881,29 +1178,9 @@
         ],
         "juan_index": 130,
         "segment_index": 14
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李槐"
-        ],
-        "action": "对话",
-        "context": "阴神问道：“你不打算告诉李槐这个？",
-        "result": null,
-        "event_name": "阿良过境",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.515554",
+    "extracted_at": "2026-03-26T11:46:48.291795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1954,19 +1231,6 @@
       },
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 15
-      },
-      {
-        "entity_type": "person",
         "name": "李二",
         "alias": [],
         "original_description_in_book": "阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
@@ -1988,7 +1252,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "阴神",
           "李二",
           "陈平安"
         ],
@@ -2006,16 +1269,13 @@
         "location": "龙泉",
         "participants": [
           "李二",
-          "陈平安",
-          "阴神"
+          "陈平安"
         ],
         "description": "陈平安向前缓缓而行，“有关我自己的事情，我觉得是对的，当然可以自己做决定。 可李槐他爹既然不愿意告诉自己儿子，我一个外人，凭什么告诉李槐真相？ 难道就因为我觉得这样李槐会开心一点？",
         "background": "",
         "significance": "补强陈平安与李二之间沉默托底的长辈关系线。",
         "related_action_indices": [
-          0,
-          1,
-          2
+          0
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段15",
         "sentence_indexes_in_segment": [
@@ -2034,46 +1294,6 @@
       {
         "time": null,
         "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李二"
-        ],
-        "action": "同行",
-        "context": "阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
-        "result": null,
-        "event_name": "李二照面陈平安",
-        "location": "泥瓶巷",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 15
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "同行",
-        "context": "阴神点点头，心想难怪李二当年，不看好那些个天之骄子，反而更看重这个泥瓶巷少年一些，甚至为此不惜破坏规矩，想要把那尾金色鲤鱼连同龙王篓一起送给陈平安。",
-        "result": null,
-        "event_name": "李二照面陈平安",
-        "location": "泥瓶巷",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 15
-      },
-      {
-        "time": null,
-        "from_roles": [
           "李二"
         ],
         "to_roles": [
@@ -2092,7 +1312,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.515554",
+    "extracted_at": "2026-03-26T11:46:48.292799",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2129,21 +1349,6 @@
       },
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？ 如果不愿意回答，阴神前辈可以当我没问。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          0,
-          2,
-          4
-        ],
-        "juan_index": 130,
-        "segment_index": 16
-      },
-      {
-        "entity_type": "person",
         "name": "李槐",
         "alias": [],
         "original_description_in_book": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？",
@@ -2159,21 +1364,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与阴神对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "阴神",
           "李槐"
         ],
-        "description": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？ 如果不愿意回答，阴神前辈可以当我没问。 阴神如果还是活人的话，一定要口干舌燥、如坐针毡了。",
+        "description": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？ 他当初哪里想到陈平安会如此心细如发，当时自己的视线，一闪而逝，隐藏得不算浅了。 只是无心之举吗？",
         "background": "",
-        "significance": "推动陈平安与阴神之间的对话关系。",
+        "significance": "推动陈平安与李槐之间的对话关系。",
         "related_action_indices": [
-          0,
-          1,
-          2
+          0
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段16",
         "sentence_indexes_in_segment": [
@@ -2195,52 +1397,12 @@
           "陈平安"
         ],
         "to_roles": [
-          "阴神"
-        ],
-        "action": "对话",
-        "context": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与阴神对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 16
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
           "李槐"
         ],
         "action": "对话",
         "context": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与阴神对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 16
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "阴神"
-        ],
-        "to_roles": [
-          "李槐"
-        ],
-        "action": "对话",
-        "context": "陈平安突然停下脚步，问道：“因为我眼力很好，当时又担心你是坏人，所以我记得很清楚，阴神前辈你第一次露面的时候，第一眼看的是我，再去看的李槐，这是为什么？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与阴神对话",
+        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安与李槐对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2250,7 +1412,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.515554",
+    "extracted_at": "2026-03-26T11:46:48.292799",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2280,20 +1442,6 @@
         "power": "泥瓶巷",
         "sentence_indexes_in_segment": [
           0
-        ],
-        "juan_index": 130,
-        "segment_index": 17
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "不过一想到这一路陈平安的表现，阴神就又释然，大概这也是陈平安能够服众的原因所在。 哪怕林守一如今已经跻身中五境，成为真正的山上神仙，李宝瓶还是不会听他的，李槐也一样，至于阴神自己，恐怕一样不会例外，林守一在他眼中，终究还只是一个极其聪明、资质很好的少年晚辈而已。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          0,
-          1
         ],
         "juan_index": 130,
         "segment_index": 17
@@ -2383,7 +1531,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.515554",
+    "extracted_at": "2026-03-26T11:46:48.292799",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2432,19 +1580,6 @@
       },
       {
         "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神最后笑道：“我先不回答这个问题，总之你不用担心，我不会害你。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 18
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安小跑向前，扭头笑道：“我如果不相信前辈，这个问题就不会问了啊。",
@@ -2469,7 +1604,7 @@
           "李槐",
           "于禄"
         ],
-        "description": "他甚至从来没有把李槐当做不懂事的孩子，也愿意跟林守一待在一起聊天，听后者说外边天地的事情。 阴神最后笑道：“我先不回答这个问题，总之你不用担心，我不会害你。 陈平安小跑向前，扭头笑道：“我如果不相信前辈，这个问题就不会问了啊。",
+        "description": "他甚至从来没有把李槐当做不懂事的孩子，也愿意跟林守一待在一起聊天，听后者说外边天地的事情。 陈平安小跑向前，扭头笑道：“我如果不相信前辈，这个问题就不会问了啊。 但是更奇怪的地方，在于少年从来没有刻意炫耀过自己的任何长处。",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
@@ -2510,7 +1645,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.515554",
+    "extracted_at": "2026-03-26T11:46:48.292799",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2531,19 +1666,6 @@
       "一想到这个，李槐就郁闷，自己的彩绘木偶和泥人儿，个头都太小了，哪怕活过来，估计打架的本事还是够戗。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "阴神缓缓逝去身影，叹了口气，跟着这帮孩子一起远游，心真累。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 130,
-        "segment_index": 19
-      },
       {
         "entity_type": "person",
         "name": "朱鹿",
@@ -2570,37 +1692,24 @@
         ],
         "juan_index": 130,
         "segment_index": 19
-      },
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "李槐有些害怕，因为那个乌鸦嘴的目盲老道人，说了他们很快就要经过一个名叫三枝山的鬼地方，有厉鬼，还有什么阴尸当那厉鬼的小喽啰。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 130,
-        "segment_index": 19
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 李槐与阴神迁移",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 朱鹿与李槐迁移",
         "time": null,
         "location": null,
         "participants": [
-          "李槐",
-          "阴神",
           "朱鹿",
-          "老道人"
+          "李槐"
         ],
-        "description": "阴神缓缓逝去身影，叹了口气，跟着这帮孩子一起远游，心真累。 其实那个心性糟糕的婢女朱鹿，搁在山下王朝的一般门阀，也算不容小觑的天才了，只可惜在这支队伍里，从头到尾，都被直接甩开了十万八千里，竟是方方面面，一个也比不过。 李槐有些害怕，因为那个乌鸦嘴的目盲老道人，说了他们很快就要经过一个名叫三枝山的鬼地方，有厉鬼，还有什么阴尸当那厉鬼的小喽啰。",
+        "description": "其实那个心性糟糕的婢女朱鹿，搁在山下王朝的一般门阀，也算不容小觑的天才了，只可惜在这支队伍里，从头到尾，都被直接甩开了十万八千里，竟是方方面面，一个也比不过。 李槐有些害怕，因为那个乌鸦嘴的目盲老道人，说了他们很快就要经过一个名叫三枝山的鬼地方，有厉鬼，还有什么阴尸当那厉鬼的小喽啰。 一想到这个，李槐就郁闷，自己的彩绘木偶和泥人儿，个头都太小了，哪怕活过来，估计打架的本事还是够戗。",
         "background": "",
-        "significance": "推动李槐与阴神之间的迁移关系。",
-        "related_action_indices": [],
+        "significance": "推动朱鹿与李槐之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -2614,8 +1723,34 @@
         "segment_index": 19
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.516557",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "朱鹿"
+        ],
+        "to_roles": [
+          "李槐"
+        ],
+        "action": "同行",
+        "context": "” 阴神缓缓逝去身影，叹了口气，跟着这帮孩子一起远游，心真累。 其实那个心性糟糕的婢女朱鹿，搁在山下王朝的一般门阀，也算不容小觑的天才了，只可惜在这支队伍里，从头到尾，都被直接甩开了十万八千里，竟是方方面面，一个也比不过。 再往南走，好像先是龙须溪和铁符江，之后又是绣花江、冲澹江和，水要多过于山，可接下来一天半行程，像是“水运”都给用光了，竟是连条山涧溪水都难找，其实水也有，但是都是一些无法饮用的死水坑子，更多还是病恹恹的柳树秧子，不高也不茂，还多歪斜，一路上飞虫四起，让人总觉得浑身不舒服。 李槐有些害怕，因为那个乌鸦嘴的目盲老道人，说了他们很快就要经过一个名叫三枝山的鬼地方，有厉鬼，还有什么阴尸当那厉鬼的小喽啰。 一想到这个，李槐就郁闷，自己的彩绘木偶和泥人儿，个头都太小了，哪怕活过来，估计打架的本事还是够戗。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 朱鹿与李槐迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 130,
+        "segment_index": 19
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.292799",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2744,7 +1879,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.516557",
+    "extracted_at": "2026-03-26T11:46:48.292799",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2871,7 +2006,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.516557",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2985,7 +2120,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.516557",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3049,7 +2184,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.516557",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3143,7 +2278,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.516557",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3220,7 +2355,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3325,7 +2460,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3429,7 +2564,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.293801",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3522,7 +2657,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.294805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3601,7 +2736,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.294805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3694,7 +2829,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.294805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3798,7 +2933,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.517560",
+    "extracted_at": "2026-03-26T11:46:48.294805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3843,19 +2978,6 @@
         "sentence_indexes_in_segment": [
           1,
           3
-        ],
-        "juan_index": 130,
-        "segment_index": 32
-      },
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "李槐顿时笑脸僵硬，赶紧转移话题，“那老道人不是要我们只要天黑了，就不要走三枝山吗？",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          4
         ],
         "juan_index": 130,
         "segment_index": 32
@@ -3912,7 +3034,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.518564",
+    "extracted_at": "2026-03-26T11:46:48.294805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3960,19 +3082,6 @@
         ],
         "juan_index": 130,
         "segment_index": 33
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "林守一摇头道：“我跟陈平安还有阴神前辈商量过了，如果我们夜间赶路，那厉鬼出来伤人，就将其镇压，一开始阴神前辈会袖手旁观，先让我出手，尝试着以符箓和雷法退敌，主要是让我历练一二，如果厉鬼躲着不出来，就算了，我们继续赶路就是。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 33
       }
     ],
     "locations": [
@@ -4000,16 +3109,13 @@
         "location": "大骊",
         "participants": [
           "林守一",
-          "陈平安",
-          "阴神"
+          "陈平安"
         ],
         "description": "林守一摇头道：“我跟陈平安还有阴神前辈商量过了，如果我们夜间赶路，那厉鬼出来伤人，就将其镇压，一开始阴神前辈会袖手旁观，先让我出手，尝试着以符箓和雷法退敌，主要是让我历练一二，如果厉鬼躲着不出来，就算了，我们继续赶路就是。 夜幕降临，一行人缓缓登山，三枝山不高，但山势平缓，山坡很大，陈平安还故意绕路了，山上有大片无后人添土的乱葬岗，当然更多还是有子孙祭奠的坟墓，收拾得干干净净，坟头竖碑，碑上有字，碑前散落着一些没有全部烧尽的纸钱。 林守一有些遗憾，不过也不会强求什么。",
         "background": "",
         "significance": "在大骊推动林守一与陈平安之间的冲突线。",
         "related_action_indices": [
-          0,
-          1,
-          2
+          0
         ],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段33",
         "sentence_indexes_in_segment": [
@@ -4044,49 +3150,9 @@
         ],
         "juan_index": 130,
         "segment_index": 33
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "林守一"
-        ],
-        "to_roles": [
-          "阴神"
-        ],
-        "action": "冲突",
-        "context": "林守一摇头道：“我跟陈平安还有阴神前辈商量过了，如果我们夜间赶路，那厉鬼出来伤人，就将其镇压，一开始阴神前辈会袖手旁观，先让我出手，尝试着以符箓和雷法退敌，主要是让我历练一二，如果厉鬼躲着不出来，就算了，我们继续赶路就是。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 林守一与陈平安在大骊冲突",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 33
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "阴神"
-        ],
-        "action": "冲突",
-        "context": "林守一摇头道：“我跟陈平安还有阴神前辈商量过了，如果我们夜间赶路，那厉鬼出来伤人，就将其镇压，一开始阴神前辈会袖手旁观，先让我出手，尝试着以符箓和雷法退敌，主要是让我历练一二，如果厉鬼躲着不出来，就算了，我们继续赶路就是。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 林守一与陈平安在大骊冲突",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 130,
-        "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.518564",
+    "extracted_at": "2026-03-26T11:46:48.294805",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4162,19 +3228,6 @@
         ],
         "juan_index": 130,
         "segment_index": 34
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "不过跟林守一下棋最多的，竟然是那尊阴神。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 34
       }
     ],
     "locations": [
@@ -4224,7 +3277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.518564",
+    "extracted_at": "2026-03-26T11:46:48.295808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4303,7 +3356,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.518564",
+    "extracted_at": "2026-03-26T11:46:48.295808",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

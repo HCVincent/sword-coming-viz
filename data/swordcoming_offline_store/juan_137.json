@@ -103,7 +103,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.545658",
+    "extracted_at": "2026-03-26T11:46:48.320895",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -207,20 +207,6 @@
         ],
         "juan_index": 137,
         "segment_index": 2
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "少年崔瀺很早之前就脱离队伍，独自在一个杂物摊子前驻足不前，于禄想要停车等候，白衣少年并不领情，头也不抬，挥手让于禄跟上陈平安他们，他则左挑右选，有些嫌弃，就打算离开，从头到尾一句话都没说。 摊主是个神色惫懒的年轻人，原先有烧香路过摊子的客人询问价格，爱答不理，所以愈发生意冷清，当下眼见着白衣少年的富贵气态，像是郡城内一等一的豪门子弟，尤其是看到少年毫无动心的迹象，立即变了脸色，慌慌张张从凳子上站起身，低头哈腰说这十数件老物件，都是家里祖上留下来的传家宝，最少也该有两三百年的历史，只是如今家里遭逢大难，急需银子，否则他打死也不会拿出来。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2,
-          3
-        ],
-        "juan_index": 137,
-        "segment_index": 2
       }
     ],
     "locations": [],
@@ -240,8 +226,7 @@
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
           0,
-          1,
-          2
+          1
         ],
         "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段2",
         "sentence_indexes_in_segment": [
@@ -283,26 +268,6 @@
           "崔瀺"
         ],
         "to_roles": [
-          "白衣少年"
-        ],
-        "action": "等待",
-        "context": "少年崔瀺很早之前就脱离队伍，独自在一个杂物摊子前驻足不前，于禄想要停车等候，白衣少年并不领情，头也不抬，挥手让于禄跟上陈平安他们，他则左挑右选，有些嫌弃，就打算离开，从头到尾一句话都没说。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 137,
-        "segment_index": 2
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
           "陈平安"
         ],
         "action": "等待",
@@ -318,69 +283,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.546661",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "137-3-0": {
-    "juan_index": 137,
-    "segment_index": 3,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百三十七章 背着一座银山",
-    "source_sentences": [
-      "”",
-      "年轻人使劲摇头，哭丧着脸道：“这位公子，真不是小的我狮子大开口，这些祖传宝贝真是我家一代一代流传下来的好东西，我家族谱清清白白记载过，祖上做过后蜀吉庆朝的太子少师，这样的老祖宗留下来的东西，哪怕一件卖个七八十两银子，不过分吧？",
-      "”",
-      "年轻人满脸涨红，拿起一件半寸长的琉璃人，只可惜色泽暗淡，卖相不佳，年轻摊贩身体前倾，小心翼翼地递给白衣少年，“公子，你好好瞅瞅，这件琉璃美人，若是眼力好一些，连它的眉毛都能看清楚，还有那衣襟的褶皱，称得上是纤毫毕现啊，退一万步说，这等稀罕的琉璃物品，哪怕琉璃本身的品质确实不高，可这么大一件琉璃美人，卖个三四银子不算昧良心吧？",
-      "加上其它大大小小的宝贝，公子的十两开价，委实是低了，公子你行行好，价格再提提？",
-      "”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "年轻人满脸涨红，拿起一件半寸长的琉璃人，只可惜色泽暗淡，卖相不佳，年轻摊贩身体前倾，小心翼翼地递给白衣少年，“公子，你好好瞅瞅，这件琉璃美人，若是眼力好一些，连它的眉毛都能看清楚，还有那衣襟的褶皱，称得上是纤毫毕现啊，退一万步说，这等稀罕的琉璃物品，哪怕琉璃本身的品质确实不高，可这么大一件琉璃美人，卖个三四银子不算昧良心吧？",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 137,
-        "segment_index": 3
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 白衣少年剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "白衣少年"
-        ],
-        "description": "年轻人满脸涨红，拿起一件半寸长的琉璃人，只可惜色泽暗淡，卖相不佳，年轻摊贩身体前倾，小心翼翼地递给白衣少年，“公子，你好好瞅瞅，这件琉璃美人，若是眼力好一些，连它的眉毛都能看清楚，还有那衣襟的褶皱，称得上是纤毫毕现啊，退一万步说，这等稀罕的琉璃物品，哪怕琉璃本身的品质确实不高，可这么大一件琉璃美人，卖个三四银子不算昧良心吧？ ” 年轻人使劲摇头，哭丧着脸道：“这位公子，真不是小的我狮子大开口，这些祖传宝贝真是我家一代一代流传下来的好东西，我家族谱清清白白记载过，祖上做过后蜀吉庆朝的太子少师，这样的老祖宗留下来的东西，哪怕一件卖个七八十两银子，不过分吧？",
-        "background": "",
-        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段3",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 3
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.546661",
+    "extracted_at": "2026-03-26T11:46:48.320895",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -416,37 +319,21 @@
         ],
         "juan_index": 137,
         "segment_index": 4
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "年轻人差点被自己一口气憋死，呆若木鸡，痴痴看着这位满身神仙气的白衣少年，最后叹气道：“公子你就别逗我玩了。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 137,
-        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺与白衣少年对话",
+        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
-          "崔瀺",
-          "白衣少年"
+          "崔瀺"
         ],
-        "description": "少年崔瀺板着脸思量片刻，“那就十一两？ 年轻人差点被自己一口气憋死，呆若木鸡，痴痴看着这位满身神仙气的白衣少年，最后叹气道：“公子你就别逗我玩了。 少年崔瀺哈哈大笑，问道：“认识雪花纹银吗？",
+        "description": "少年崔瀺板着脸思量片刻，“那就十一两？ 少年崔瀺哈哈大笑，问道：“认识雪花纹银吗？ ”",
         "background": "",
-        "significance": "推动崔瀺与白衣少年之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应崔瀺在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -460,34 +347,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "对话",
-        "context": "少年崔瀺板着脸思量片刻，“那就十一两？ ” 年轻人差点被自己一口气憋死，呆若木鸡，痴痴看着这位满身神仙气的白衣少年，最后叹气道：“公子你就别逗我玩了。 ” 少年崔瀺哈哈大笑，问道：“认识雪花纹银吗？ ”",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺与白衣少年对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.546661",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.321898",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -522,19 +383,6 @@
         ],
         "juan_index": 137,
         "segment_index": 5
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "年轻人从家里偷出这些家当，心理价位本就是二十两银子左右，立即喜逐颜开，赶紧拿起那颗银锭，死死攥紧在手心，悄悄掂量一番，再以指甲轻轻刻划，没错了，是成色极好的真金白银，唯恐少年反悔，藏好银锭后，两手扯起桌沿下的布角，猛然一提，三两下就卷成了一个包裹，里头的物件相互撞击，噼啪作响，系紧后向白衣少年身前一推，笑得合不拢嘴，“这位公子，都归你了。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 137,
-        "segment_index": 5
       }
     ],
     "locations": [
@@ -559,19 +407,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺与白衣少年在大骊对话",
+        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "崔瀺",
-          "白衣少年"
+          "崔瀺"
         ],
-        "description": "崔瀺从袖中掏出一锭银子，拍在桌面上，“二十两大骊官银，折算成你们黄庭国的那种劣质银子，怎么都该有二十五两，绰绰有余，够不够包圆这一桌子破烂东西？ 年轻人从家里偷出这些家当，心理价位本就是二十两银子左右，立即喜逐颜开，赶紧拿起那颗银锭，死死攥紧在手心，悄悄掂量一番，再以指甲轻轻刻划，没错了，是成色极好的真金白银，唯恐少年反悔，藏好银锭后，两手扯起桌沿下的布角，猛然一提，三两下就卷成了一个包裹，里头的物件相互撞击，噼啪作响，系紧后向白衣少年身前一推，笑得合不拢嘴，“这位公子，都归你了。 年轻人愣愣点头，苦笑道：“自然认得，小的父辈那一代，也算阔绰发达的家门，这城隍庙大街隔壁街道，有十数间铺子都曾是小人家的产业。",
+        "description": "崔瀺从袖中掏出一锭银子，拍在桌面上，“二十两大骊官银，折算成你们黄庭国的那种劣质银子，怎么都该有二十五两，绰绰有余，够不够包圆这一桌子破烂东西？ 年轻人愣愣点头，苦笑道：“自然认得，小的父辈那一代，也算阔绰发达的家门，这城隍庙大街隔壁街道，有十数间铺子都曾是小人家的产业。 ”",
         "background": "",
-        "significance": "在大骊推动崔瀺与白衣少年之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应崔瀺在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段5",
         "sentence_indexes_in_segment": [
           0,
@@ -585,34 +430,8 @@
         "segment_index": 5
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "崔瀺"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "对话",
-        "context": "年轻人愣愣点头，苦笑道：“自然认得，小的父辈那一代，也算阔绰发达的家门，这城隍庙大街隔壁街道，有十数间铺子都曾是小人家的产业。 ” 崔瀺从袖中掏出一锭银子，拍在桌面上，“二十两大骊官银，折算成你们黄庭国的那种劣质银子，怎么都该有二十五两，绰绰有余，够不够包圆这一桌子破烂东西？ ” 年轻人从家里偷出这些家当，心理价位本就是二十两银子左右，立即喜逐颜开，赶紧拿起那颗银锭，死死攥紧在手心，悄悄掂量一番，再以指甲轻轻刻划，没错了，是成色极好的真金白银，唯恐少年反悔，藏好银锭后，两手扯起桌沿下的布角，猛然一提，三两下就卷成了一个包裹，里头的物件相互撞击，噼啪作响，系紧后向白衣少年身前一推，笑得合不拢嘴，“这位公子，都归你了。 ”",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺与白衣少年在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 5
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.546661",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.321898",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,7 +543,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.546661",
+    "extracted_at": "2026-03-26T11:46:48.321898",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -839,7 +658,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.546661",
+    "extracted_at": "2026-03-26T11:46:48.321898",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -888,19 +707,6 @@
         ],
         "juan_index": 137,
         "segment_index": 8
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年伸手指了指越来越近的城隍庙，不说话。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 8
       }
     ],
     "locations": [
@@ -930,13 +736,14 @@
         "location": "大骊",
         "participants": [
           "崔瀺",
-          "陈平安",
-          "白衣少年"
+          "陈平安"
         ],
         "description": "崔瀺笑道：“一人一晚，最少白银百两吧，最靠近那口水井的院落房间，估计会翻一番还不止。 身为大骊国师，崔瀺当初掌握着王朝一部分谍报系统，专门针对大骊和周边国家的山上势力，像黄庭国这座郡城的大小内幕，城隍庙的变迁历史，属于必看的谍报内容之一，至于为何了解原址客栈的具体价格，只是国师崔瀺在闲暇之余，权且用来解闷的消遣罢了，而且说不定入宫觐见皇帝陛下的时候，还能当做一个君臣对弈时的有趣谈资。 陈平安压低嗓音问道：“如果我手上有一枚金精铜钱的话，换算成银子，是多少两？",
         "background": "",
         "significance": "在大骊推动崔瀺与陈平安之间的对话线。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -950,8 +757,34 @@
         "segment_index": 8
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.547694",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "崔瀺笑道：“一人一晚，最少白银百两吧，最靠近那口水井的院落房间，估计会翻一番还不止。 ” 身为大骊国师，崔瀺当初掌握着王朝一部分谍报系统，专门针对大骊和周边国家的山上势力，像黄庭国这座郡城的大小内幕，城隍庙的变迁历史，属于必看的谍报内容之一，至于为何了解原址客栈的具体价格，只是国师崔瀺在闲暇之余，权且用来解闷的消遣罢了，而且说不定入宫觐见皇帝陛下的时候，还能当做一个君臣对弈时的有趣谈资。 陈平安压低嗓音问道：“如果我手上有一枚金精铜钱的话，换算成银子，是多少两？ ” 白衣少年伸手指了指越来越近的城隍庙，不说话。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 崔瀺与陈平安在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 137,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.321898",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1058,7 +891,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.547694",
+    "extracted_at": "2026-03-26T11:46:48.321898",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1118,19 +951,6 @@
         "power": "山上",
         "sentence_indexes_in_segment": [
           1
-        ],
-        "juan_index": 137,
-        "segment_index": 10
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年好像一直在等陈平安这句话，双手拢在袖中，笑眯眯点头道：“当然可以啊，你可以把我看作是一位百宝童子，要钱有钱，要法宝有法宝，只有你想不到的，没有你要不到的。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
         ],
         "juan_index": 137,
         "segment_index": 10
@@ -1208,7 +1028,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.547694",
+    "extracted_at": "2026-03-26T11:46:48.322902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1256,19 +1076,6 @@
         ],
         "juan_index": 137,
         "segment_index": 11
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "正在此刻，李槐手里拎着半串糖葫芦，突然蹲下身，瞪大眼睛凝视着白衣少年的靴子。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 11
       }
     ],
     "locations": [],
@@ -1279,8 +1086,7 @@
         "location": null,
         "participants": [
           "崔瀺",
-          "李槐",
-          "白衣少年"
+          "李槐"
         ],
         "description": "崔瀺一只手抽出袖子，摆手道：“利息就算了，到时候还给我本钱就行。 正在此刻，李槐手里拎着半串糖葫芦，突然蹲下身，瞪大眼睛凝视着白衣少年的靴子。 行不行？",
         "background": "",
@@ -1300,7 +1106,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.547694",
+    "extracted_at": "2026-03-26T11:46:48.322902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1346,20 +1152,6 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0
-        ],
-        "juan_index": 137,
-        "segment_index": 12
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年笑脸如常，右手腕一拧，双指抓住蚂蚱，轻轻虚握于手心，往左边袖口塞去。 在袖中藏好银锭或者说是蚂蚱，白衣少年环顾四周，于禄和谢谢这两位来自卢氏王朝的少年少女，神色平淡，而陈平安这伙来自骊珠洞天的小土包子，则一个比一个震惊。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          1,
-          3
         ],
         "juan_index": 137,
         "segment_index": 12
@@ -1415,7 +1207,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "白衣少年",
           "于禄",
           "谢谢",
           "陈平安"
@@ -1438,7 +1229,7 @@
           "李槐",
           "于禄"
         ],
-        "description": "原来崔瀺靴子上边站着一只通体雪白的小蚂蚱，被李槐死死盯住后，原本想要顺着袍子向上攀援的古怪蚂蚱，立即僵硬不动，李槐看着小玩意儿，好奇心大起，就要伸手去逮住它，银白色小蚂蚱受到惊吓，再不敢继续装死，立即动作灵敏地蹦跳起来，前爪勾住崔瀺外袍的细密丝线，飞快奔跑，迅速来到崔瀺腰间，最后一个弹跳，挂在袖口底下，微微晃荡。 白衣少年笑脸如常，右手腕一拧，双指抓住蚂蚱，轻轻虚握于手心，往左边袖口塞去。 在袖中藏好银锭或者说是蚂蚱，白衣少年环顾四周，于禄和谢谢这两位来自卢氏王朝的少年少女，神色平淡，而陈平安这伙来自骊珠洞天的小土包子，则一个比一个震惊。",
+        "description": "原来崔瀺靴子上边站着一只通体雪白的小蚂蚱，被李槐死死盯住后，原本想要顺着袍子向上攀援的古怪蚂蚱，立即僵硬不动，李槐看着小玩意儿，好奇心大起，就要伸手去逮住它，银白色小蚂蚱受到惊吓，再不敢继续装死，立即动作灵敏地蹦跳起来，前爪勾住崔瀺外袍的细密丝线，飞快奔跑，迅速来到崔瀺腰间，最后一个弹跳，挂在袖口底下，微微晃荡。 在袖中藏好银锭或者说是蚂蚱，白衣少年环顾四周，于禄和谢谢这两位来自卢氏王朝的少年少女，神色平淡，而陈平安这伙来自骊珠洞天的小土包子，则一个比一个震惊。 崔瀺显然不愿多说什么，转头对于禄说道：“你和谢谢姑娘去请一些香，等下我们进了城隍庙用得着，最好顺便买个香筒，当然别忘了买个样式素雅一点的，要不然香筒的钱我可不付。",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [
@@ -1521,7 +1312,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.547694",
+    "extracted_at": "2026-03-26T11:46:48.322902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1567,36 +1358,24 @@
         ],
         "juan_index": 137,
         "segment_index": 13
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年一脸无辜，“我分明付过了钱，货钱两清，可是银子自己长脚，非要跑回来找我，我也很为难啊。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 137,
-        "segment_index": 13
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 陈平安与崔东山剧情推进",
+        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 陈平安与崔东山同行",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "崔东山",
-          "白衣少年"
+          "崔东山"
         ],
-        "description": "陈平安一语道破天机，“崔东山，这颗银锭是你先前购买那包囊物品的钱吧？ 白衣少年一脸无辜，“我分明付过了钱，货钱两清，可是银子自己长脚，非要跑回来找我，我也很为难啊。 高大少年带着黝黑少女一起去请香。",
+        "description": "陈平安一语道破天机，“崔东山，这颗银锭是你先前购买那包囊物品的钱吧？ 高大少年带着黝黑少女一起去请香。 它怎么变成蚂蚱跑回来了？",
         "background": "",
-        "significance": "推动陈平安与崔东山之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与崔东山之间的同行关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1610,8 +1389,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.548668",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "崔东山"
+        ],
+        "action": "同行",
+        "context": "高大少年带着黝黑少女一起去请香。 陈平安一语道破天机，“崔东山，这颗银锭是你先前购买那包囊物品的钱吧？ 它怎么变成蚂蚱跑回来了？ ” 白衣少年一脸无辜，“我分明付过了钱，货钱两清，可是银子自己长脚，非要跑回来找我，我也很为难啊。 ”",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 陈平安与崔东山同行",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 137,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.322902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1644,37 +1449,21 @@
         ],
         "juan_index": 137,
         "segment_index": 14
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年低头笑问道：“你喜欢？",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 137,
-        "segment_index": 14
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 李槐与白衣少年对话",
+        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 李槐对话",
         "time": null,
         "location": null,
         "participants": [
-          "李槐",
-          "白衣少年"
+          "李槐"
         ],
-        "description": "李槐还蹲在地上，一脸艳羡，啧啧道：“真是好东西啊，我要是有了这么颗银锭，走遍天下都不难。 白衣少年低头笑问道：“你喜欢？ ”",
+        "description": "李槐还蹲在地上，一脸艳羡，啧啧道：“真是好东西啊，我要是有了这么颗银锭，走遍天下都不难。 ” 白衣少年低头笑问道：“你喜欢？",
         "background": "",
-        "significance": "推动李槐与白衣少年之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应李槐在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十七章 背着一座银山 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1688,34 +1477,8 @@
         "segment_index": 14
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李槐"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "对话",
-        "context": "李槐还蹲在地上，一脸艳羡，啧啧道：“真是好东西啊，我要是有了这么颗银锭，走遍天下都不难。 ” 白衣少年低头笑问道：“你喜欢？ 想不想要？ 这小家伙叫虫银，没什么用处，就是好玩。 这种精怪诞生的缘由，不得而知，反正许多王朝的大型银库，一百年都未必能够出现一只虫银，而且就算出现了，都不大，变幻出来的银子模样，顶多就是大一点的碎银块，像我袖中这么大的个头，很少见很少见，所以我才愿意带在身边，而且它水火不侵，哪怕承受万钧之力，也不伤分毫，任你切割成数十块，只要堆放在一起，它一样可以很快恢复完整面貌。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 李槐与白衣少年对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 14
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.548668",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.322902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1775,19 +1538,6 @@
         ],
         "juan_index": 137,
         "segment_index": 15
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年知道这个小兔崽子的言谈风格，“白送要不要？",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 137,
-        "segment_index": 15
       }
     ],
     "locations": [],
@@ -1802,7 +1552,7 @@
           "李槐",
           "李柳"
         ],
-        "description": "李槐，你要的话，我可以送给你？ 李槐站起身，一本正经回答道：“我只有一个姐姐，叫李柳，可她暂时还算是阿良的媳妇。 白衣少年知道这个小兔崽子的言谈风格，“白送要不要？",
+        "description": "李槐，你要的话，我可以送给你？ 李槐站起身，一本正经回答道：“我只有一个姐姐，叫李柳，可她暂时还算是阿良的媳妇。 ”",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
         "related_action_indices": [
@@ -1885,7 +1635,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.548668",
+    "extracted_at": "2026-03-26T11:46:48.322902",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2003,7 +1753,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.548668",
+    "extracted_at": "2026-03-26T11:46:48.323905",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2064,20 +1814,6 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           0
-        ],
-        "juan_index": 137,
-        "segment_index": 17
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "李槐立即双手放在身后，紧紧贴住屁股，对着白衣少年摇头道：“唉，还是算了吧。 李槐眼睛一亮，一把抢过白衣少年手中的银锭，就要往自己怀里塞，想了想，赶紧转过身，背对众人，打开小书箱，把银锭往里边一丢。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          1,
-          5
         ],
         "juan_index": 137,
         "segment_index": 17
@@ -2149,7 +1885,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.548668",
+    "extracted_at": "2026-03-26T11:46:48.323905",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2241,7 +1977,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.548668",
+    "extracted_at": "2026-03-26T11:46:48.323905",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2392,7 +2128,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.549672",
+    "extracted_at": "2026-03-26T11:46:48.323905",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2549,7 +2285,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.549672",
+    "extracted_at": "2026-03-26T11:46:48.323905",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2655,7 +2391,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.549672",
+    "extracted_at": "2026-03-26T11:46:48.323905",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2701,34 +2437,21 @@
         ],
         "juan_index": 137,
         "segment_index": 22
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "离开这座古老城隍庙后，陈平安向人询问那座客栈的所在，结果人人茫然不知，好像郡城根本就不存在这个地方，只得望向白衣少年。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 137,
-        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 陈平安与白衣少年迁移",
+        "name": "第二卷山水郎 第一百三十七章 背着一座银山 · 李宝瓶与陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "白衣少年"
+          "李宝瓶",
+          "陈平安"
         ],
         "description": "李宝瓶刚好想好一茬问题，打死一头思绪上的拦路虎，凑巧听到一问一答后，小姑娘便下意识补充道：“夜深人静，良知清明，扪心自问，脱口而出。 离开这座古老城隍庙后，陈平安向人询问那座客栈的所在，结果人人茫然不知，好像郡城根本就不存在这个地方，只得望向白衣少年。 ”",
         "background": "",
-        "significance": "推动陈平安与白衣少年之间的迁移关系。",
+        "significance": "推动李宝瓶与陈平安之间的迁移关系。",
         "related_action_indices": [
           0
         ],
@@ -2749,25 +2472,30 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
+          "李宝瓶"
         ],
         "to_roles": [
-          "白衣少年"
+          "陈平安"
         ],
         "action": "别离",
-        "context": "离开这座古老城隍庙后，陈平安向人询问那座客栈的所在，结果人人茫然不知，好像郡城根本就不存在这个地方，只得望向白衣少年。",
+        "context": "” 李宝瓶刚好想好一茬问题，打死一头思绪上的拦路虎，凑巧听到一问一答后，小姑娘便下意识补充道：“夜深人静，良知清明，扪心自问，脱口而出。 ” 白发苍苍的青衫老者缓缓点头。 虽然红棉袄小姑娘最终没能想出合适的下联，但是那位老人仍是执意要将他们一路送出城隍庙，站在门槛内，向众人微笑告别。 离开这座古老城隍庙后，陈平安向人询问那座客栈的所在，结果人人茫然不知，好像郡城根本就不存在这个地方，只得望向白衣少年。",
         "result": null,
-        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 陈平安与白衣少年迁移",
+        "event_name": "第二卷山水郎 第一百三十七章 背着一座银山 · 李宝瓶与陈平安迁移",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
           5
         ],
         "juan_index": 137,
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.549672",
+    "extracted_at": "2026-03-26T11:46:48.324909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2859,7 +2587,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.549672",
+    "extracted_at": "2026-03-26T11:46:48.324909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2908,19 +2636,6 @@
       },
       {
         "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年弯腰掀起车帘子的时候，转头看了眼蒙在鼓里的林守一，眼神阴郁的少年，在这一刻，突然有些嫉妒。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 137,
-        "segment_index": 24
-      },
-      {
-        "entity_type": "person",
         "name": "林守一",
         "alias": [],
         "original_description_in_book": "白衣少年弯腰掀起车帘子的时候，转头看了眼蒙在鼓里的林守一，眼神阴郁的少年，在这一刻，突然有些嫉妒。",
@@ -2942,7 +2657,6 @@
         "participants": [
           "崔瀺",
           "陈平安",
-          "白衣少年",
           "林守一"
         ],
         "description": "少年崔瀺走向马车，神色隐隐不悦，忍不住腹诽，你陈平安哪怕背着一座金山银山，可这是花钱如流水的勾当，最后还是给别人作嫁衣裳，至于如此殷勤吗？ 白衣少年弯腰掀起车帘子的时候，转头看了眼蒙在鼓里的林守一，眼神阴郁的少年，在这一刻，突然有些嫉妒。 背着背篓的草鞋少年，独自快步小跑向前，在队伍远方，问过一人又一人。",
@@ -2961,7 +2675,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.550675",
+    "extracted_at": "2026-03-26T11:46:48.324909",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react';
-import type { BookConfig } from '../types/pipelineArtifacts';
+import type { BookConfig, ChapterIndex } from '../types/pipelineArtifacts';
 import type { TimelineEventUnified } from '../types/unified';
+import { getPrimaryJumpTarget } from '../utils/sourceText';
 
 interface TimelineProps {
   bookConfig: BookConfig | null;
+  chapterIndex: ChapterIndex | null;
   events: TimelineEventUnified[];
   onEventClick?: (event: TimelineEventUnified) => void;
 }
@@ -14,7 +16,7 @@ interface ProgressPoint {
   events: TimelineEventUnified[];
 }
 
-export function Timeline({ bookConfig, events, onEventClick }: TimelineProps) {
+export function Timeline({ bookConfig, chapterIndex, events, onEventClick }: TimelineProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPoint, setSelectedPoint] = useState<ProgressPoint | null>(null);
   const progressLabel = bookConfig?.progress_label ?? '叙事进度';
@@ -163,30 +165,50 @@ export function Timeline({ bookConfig, events, onEventClick }: TimelineProps) {
               </div>
               <div className="mt-4 grid gap-3 max-h-[520px] overflow-y-auto pr-1">
                 {selectedPoint.events.map((event) => (
-                  <button
-                    key={event.id}
-                    type="button"
-                    className="detail-card text-left hover:border-[rgba(182,120,42,0.3)]"
-                    onClick={() => onEventClick?.(event)}
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
-                        {event.location && <div className="mt-1 text-sm text-[var(--text-muted)]">{event.location}</div>}
-                      </div>
-                      <span className="tag-pill">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</span>
-                    </div>
-                    {event.participants.length > 0 && (
-                      <div className="mt-3 chip-wrap">
-                        {event.participants.slice(0, 4).map((participant) => (
-                          <span key={`${event.id}-${participant}`} className="pill-chip">
-                            {participant}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    {event.description && <p className="detail-text mt-3">{event.description}</p>}
-                  </button>
+                  (() => {
+                    const jumpTarget = getPrimaryJumpTarget(chapterIndex, {
+                      unitIndex: event.unitIndex,
+                      progressIndex: event.progressStart,
+                    });
+                    return (
+                      <button
+                        key={event.id}
+                        type="button"
+                        className="detail-card text-left hover:border-[rgba(182,120,42,0.3)]"
+                        onClick={() => onEventClick?.(event)}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div>
+                            <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
+                            {event.location && <div className="mt-1 text-sm text-[var(--text-muted)]">{event.location}</div>}
+                          </div>
+                          <span className="tag-pill">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</span>
+                        </div>
+                        {event.participants.length > 0 && (
+                          <div className="mt-3 chip-wrap">
+                            {event.participants.slice(0, 4).map((participant) => (
+                              <span key={`${event.id}-${participant}`} className="pill-chip">
+                                {participant}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                        {event.description && <p className="detail-text mt-3">{event.description}</p>}
+                        {jumpTarget && (
+                          <div className="mt-3">
+                            <a
+                              href={jumpTarget.href}
+                              className="outline-button inline-flex"
+                              target="_blank"
+                              onClick={(clickEvent) => clickEvent.stopPropagation()}
+                            >
+                              查看原文章节
+                            </a>
+                          </div>
+                        )}
+                      </button>
+                    );
+                  })()
                 ))}
               </div>
             </>

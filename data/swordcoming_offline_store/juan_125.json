@@ -16,19 +16,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "身受重伤的目盲老道人，大概是自觉死到临头，失心疯一般胡乱说话。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 125,
-        "segment_index": 1
-      },
-      {
-        "entity_type": "person",
         "name": "林守一",
         "alias": [],
         "original_description_in_book": "林守一袖中双手各捻盘中珠和火雨两张符箓，尽人事听天命而已。",
@@ -58,18 +45,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百二十五章 一剑破法 · 陈平安与老道人剧情推进",
+        "name": "第二卷山水郎 第一百二十五章 一剑破法 · 林守一与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "老道人",
-          "林守一"
+          "林守一",
+          "陈平安"
         ],
-        "description": "身受重伤的目盲老道人，大概是自觉死到临头，失心疯一般胡乱说话。 林守一袖中双手各捻盘中珠和火雨两张符箓，尽人事听天命而已。 陈平安在默默驾驭体内那条气息游龙，去往那两座气府，确保剑气犹在，并无意外。",
+        "description": "林守一袖中双手各捻盘中珠和火雨两张符箓，尽人事听天命而已。 陈平安在默默驾驭体内那条气息游龙，去往那两座气府，确保剑气犹在，并无意外。 这一次，陈平安觉得一缕剑气未必能够保证杀掉那头嫁衣女鬼。",
         "background": "",
-        "significance": "推动陈平安与老道人之间的剧情推进关系。",
-        "related_action_indices": [],
+        "significance": "推动林守一与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百二十五章 一剑破法 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -83,8 +71,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.495484",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "林守一"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "悬挂“秀水高风”匾额的府邸之前。 身受重伤的目盲老道人，大概是自觉死到临头，失心疯一般胡乱说话。 林守一袖中双手各捻盘中珠和火雨两张符箓，尽人事听天命而已。 陈平安在默默驾驭体内那条气息游龙，去往那两座气府，确保剑气犹在，并无意外。 如何验证，极其简单，只要给经脉带来暖洋洋感觉的那条火龙，不敢在两座气府之前稍作停留，就意味着两缕“极小极小”的剑气，肯定盘踞其中。 这一次，陈平安觉得一缕剑气未必能够保证杀掉那头嫁衣女鬼。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百二十五章 一剑破法 · 林守一与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 125,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.274735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -188,7 +202,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.495484",
+    "extracted_at": "2026-03-26T11:46:48.274735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -296,7 +310,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.496487",
+    "extracted_at": "2026-03-26T11:46:48.274735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -453,7 +467,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.496487",
+    "extracted_at": "2026-03-26T11:46:48.274735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -535,7 +549,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.496487",
+    "extracted_at": "2026-03-26T11:46:48.274735",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -697,7 +711,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.496487",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -803,7 +817,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -868,7 +882,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -948,7 +962,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1042,7 +1056,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1108,7 +1122,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1190,7 +1204,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1227,19 +1241,6 @@
         ],
         "juan_index": 125,
         "segment_index": 13
-      },
-      {
-        "entity_type": "person",
-        "name": "仰起头",
-        "alias": [],
-        "original_description_in_book": "魏檗仰起头，清风拂面，衬托得本就好似谪仙人的“年轻人”，愈发飘然欲仙，眼神柔和，微笑道：“可以换成一份小小的机缘吗？",
-        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 125,
-        "segment_index": 13
       }
     ],
     "locations": [
@@ -1267,15 +1268,12 @@
         "location": "大骊",
         "participants": [
           "魏檗",
-          "陈平安",
-          "仰起头"
+          "陈平安"
         ],
         "description": "魏檗笑而不语。 大骊朝廷由于先前那一役，山河跌宕，一时间国运摇摆不定，五岳正神有三尊元气大伤，暂时只能交由青乌先生勘定此事。 年轻剑客沉声道：“魏檗，相信仅凭此事，你就能够获得朝廷的重赏。",
         "background": "",
         "significance": "把陈平安与山水神灵、落魄山经营线相连。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百二十五章 一剑破法 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1289,29 +1287,8 @@
         "segment_index": 13
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "魏檗"
-        ],
-        "to_roles": [
-          "仰起头"
-        ],
-        "action": "对话",
-        "context": "魏檗仰起头，清风拂面，衬托得本就好似谪仙人的“年轻人”，愈发飘然欲仙，眼神柔和，微笑道：“可以换成一份小小的机缘吗？",
-        "result": null,
-        "event_name": "魏檗现身",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 125,
-        "segment_index": 13
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1376,7 +1353,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.497491",
+    "extracted_at": "2026-03-26T11:46:48.275739",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1442,7 +1419,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.498495",
+    "extracted_at": "2026-03-26T11:46:48.276742",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1505,7 +1482,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.498495",
+    "extracted_at": "2026-03-26T11:46:48.276742",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1585,7 +1562,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.498495",
+    "extracted_at": "2026-03-26T11:46:48.276742",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1710,7 +1687,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.498495",
+    "extracted_at": "2026-03-26T11:46:48.276742",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1789,7 +1766,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.498495",
+    "extracted_at": "2026-03-26T11:46:48.276742",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1870,7 +1847,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.499523",
+    "extracted_at": "2026-03-26T11:46:48.277746",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1933,7 +1910,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.499523",
+    "extracted_at": "2026-03-26T11:46:48.277746",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

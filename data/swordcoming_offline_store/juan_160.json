@@ -54,7 +54,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.651837",
+    "extracted_at": "2026-03-26T11:46:48.415716",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -176,7 +176,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.652659",
+    "extracted_at": "2026-03-26T11:46:48.416719",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -326,7 +326,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.652659",
+    "extracted_at": "2026-03-26T11:46:48.416719",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -453,7 +453,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.652659",
+    "extracted_at": "2026-03-26T11:46:48.416719",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -576,7 +576,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.652659",
+    "extracted_at": "2026-03-26T11:46:48.416719",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -726,7 +726,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.652659",
+    "extracted_at": "2026-03-26T11:46:48.416719",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -845,7 +845,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.653660",
+    "extracted_at": "2026-03-26T11:46:48.416719",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -878,37 +878,21 @@
         ],
         "juan_index": 160,
         "segment_index": 8
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "大隋京城的宽阔大街上，白衣少年喋喋不休地笑问道：“既然这么不舍得，怎么就这么偷偷走了？",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 160,
-        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十章 少年已知愁滋味 · 李宝瓶与白衣少年对话",
+        "name": "第二卷山水郎 第一百六十章 少年已知愁滋味 · 李宝瓶对话",
         "time": null,
         "location": null,
         "participants": [
-          "李宝瓶",
-          "白衣少年"
+          "李宝瓶"
         ],
-        "description": "读着读着，名叫李宝瓶的小姑娘脸庞上，眼泪啪嗒啪嗒往下掉在信纸上，像是下了一场离愁的秋雨。 大隋京城的宽阔大街上，白衣少年喋喋不休地笑问道：“既然这么不舍得，怎么就这么偷偷走了？ 好的就要珍惜，怎么珍惜都不为过。",
+        "description": "读着读着，名叫李宝瓶的小姑娘脸庞上，眼泪啪嗒啪嗒往下掉在信纸上，像是下了一场离愁的秋雨。 好的就要珍惜，怎么珍惜都不为过。 不大不小，可就是伤心。",
         "background": "",
-        "significance": "推动李宝瓶与白衣少年之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应李宝瓶在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十章 少年已知愁滋味 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -922,34 +906,8 @@
         "segment_index": 8
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "李宝瓶"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "对话",
-        "context": "好的就要珍惜，怎么珍惜都不为过。 读着读着，名叫李宝瓶的小姑娘脸庞上，眼泪啪嗒啪嗒往下掉在信纸上，像是下了一场离愁的秋雨。 不大不小，可就是伤心。 倔强的小姑娘还不断告诉自己，“不哭不哭，小师叔如果看到，要伤心死了。 ” 大隋京城的宽阔大街上，白衣少年喋喋不休地笑问道：“既然这么不舍得，怎么就这么偷偷走了？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百六十章 少年已知愁滋味 · 李宝瓶与白衣少年对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 160,
-        "segment_index": 8
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.653660",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.417723",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1055,7 +1013,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.653660",
+    "extracted_at": "2026-03-26T11:46:48.417723",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1171,7 +1129,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.653660",
+    "extracted_at": "2026-03-26T11:46:48.417723",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1275,7 +1233,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.653660",
+    "extracted_at": "2026-03-26T11:46:48.417723",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1383,7 +1341,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.653660",
+    "extracted_at": "2026-03-26T11:46:48.417723",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1460,7 +1418,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.654664",
+    "extracted_at": "2026-03-26T11:46:48.417723",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1596,7 +1554,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.654664",
+    "extracted_at": "2026-03-26T11:46:48.418726",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1796,7 +1754,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.654664",
+    "extracted_at": "2026-03-26T11:46:48.418726",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1903,7 +1861,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.654664",
+    "extracted_at": "2026-03-26T11:46:48.418726",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2011,7 +1969,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.654664",
+    "extracted_at": "2026-03-26T11:46:48.418726",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2115,7 +2073,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.655667",
+    "extracted_at": "2026-03-26T11:46:48.418726",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2196,7 +2154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.655667",
+    "extracted_at": "2026-03-26T11:46:48.418726",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

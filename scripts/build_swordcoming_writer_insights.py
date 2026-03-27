@@ -135,6 +135,123 @@ def build_priority_pair_scores(writer_focus: dict) -> Dict[frozenset[str], int]:
     return pair_scores
 
 
+def get_season_focus(writer_focus: dict, season_name: str) -> dict:
+    season_focus = writer_focus.get("season_focus", {})
+    if not isinstance(season_focus, dict):
+        return {}
+    focused = season_focus.get(season_name, {})
+    return focused if isinstance(focused, dict) else {}
+
+
+def build_season_priority_roles(
+    *,
+    top_roles: Sequence[dict],
+    season_focus: dict,
+    limit: int = 8,
+) -> List[dict]:
+    role_index = {item["role_name"]: item for item in top_roles}
+    priority_roles: List[dict] = []
+    seen = set()
+
+    for role_name in [str(name).strip() for name in season_focus.get("priority_roles", []) if str(name).strip()]:
+        role = role_index.get(role_name)
+        if role is None or role_name in seen:
+            continue
+        priority_roles.append(role)
+        seen.add(role_name)
+        if len(priority_roles) >= limit:
+            return priority_roles[:limit]
+
+    for item in top_roles:
+        if item["role_name"] in seen:
+            continue
+        priority_roles.append(item)
+        seen.add(item["role_name"])
+        if len(priority_roles) >= limit:
+            break
+
+    return priority_roles[:limit]
+
+
+def get_season_pair_priority(season_focus: dict, left: str, right: str) -> int:
+    for index, pair in enumerate(season_focus.get("priority_relationship_pairs", [])):
+        normalized = [str(name).strip() for name in pair if str(name).strip()]
+        if len(normalized) != 2:
+            continue
+        if frozenset(normalized) == frozenset({left, right}):
+            return max(24 - index * 3, 12)
+    return 0
+
+
+def overlap_size(
+    current_range: Tuple[Optional[int], Optional[int]],
+    filter_range: Tuple[Optional[int], Optional[int]],
+) -> int:
+    current_start, current_end = current_range
+    filter_start, filter_end = filter_range
+    if current_start is None and current_end is None:
+        return 0
+
+    effective_current_start = current_start if current_start is not None else current_end
+    effective_current_end = current_end if current_end is not None else current_start
+    if effective_current_start is None or effective_current_end is None:
+        return 0
+
+    normalized_current_start = min(effective_current_start, effective_current_end)
+    normalized_current_end = max(effective_current_start, effective_current_end)
+    normalized_filter_start = filter_start if filter_start is not None else normalized_current_start
+    normalized_filter_end = filter_end if filter_end is not None else normalized_current_end
+
+    overlap_start = max(normalized_current_start, normalized_filter_start)
+    overlap_end = min(normalized_current_end, normalized_filter_end)
+    if overlap_end < overlap_start:
+        return 0
+    return overlap_end - overlap_start + 1
+
+
+def season_relationship_score(
+    relationship: dict,
+    *,
+    season_name: str,
+    season_focus: dict,
+    season_unit_range: Tuple[int, int],
+    season_progress_range: Tuple[int, int],
+    priority_role_names: Sequence[str],
+    anchor_event_ids: Sequence[str],
+    priority_pair_scores: Dict[frozenset[str], int],
+    spotlight_role: Optional[str],
+) -> int:
+    source_name = str(relationship.get("source_role_name", "")).strip()
+    target_name = str(relationship.get("target_role_name", "")).strip()
+    participants = {source_name, target_name}
+    participants.discard("")
+    priority_role_set = {name for name in priority_role_names if name}
+    anchor_event_id_set = {event_id for event_id in anchor_event_ids if event_id}
+
+    score = 0
+    score += min(overlap_size(tuple(relationship["unit_span"]), season_unit_range), 40)
+    score += min(overlap_size(tuple(relationship["progress_span"]), season_progress_range) // 10, 20)
+    score += len(participants & priority_role_set) * 9
+    score += min(
+        sum(1 for beat in relationship.get("manual_beats", []) if beat.get("season_name") == season_name),
+        3,
+    ) * 6
+    score += min(
+        sum(1 for event_ref in relationship.get("key_events", []) if event_ref.get("event_id") in anchor_event_id_set),
+        3,
+    ) * 5
+    if source_name and target_name:
+        score += min(get_pair_priority(source_name, target_name, priority_pair_scores), 10)
+        score += get_season_pair_priority(season_focus, source_name, target_name)
+
+    if relationship.get("spotlight"):
+        score += 5
+    if spotlight_role and spotlight_role in participants:
+        score += 4
+
+    return score
+
+
 def build_curated_relationship_configs(writer_focus: dict) -> List[dict]:
     configs: List[dict] = []
     raw_configs = writer_focus.get("curated_relationships", [])
@@ -758,7 +875,8 @@ def build_curated_relationships(
             ),
         )
         pair_relations = relations_by_pair.get(pair_key, [])
-        if not shared_events and not pair_relations:
+        has_manual_beats = bool(config.get("manual_beats"))
+        if not shared_events and not pair_relations and not has_manual_beats:
             continue
 
         manual_beats: List[dict] = []
@@ -778,6 +896,8 @@ def build_curated_relationships(
                     ]
                     if season_filtered:
                         beat_candidates = season_filtered
+                    else:
+                        beat_candidates = []
 
                 best_event = None
                 best_score = 0
@@ -920,9 +1040,13 @@ def build_curated_relationships(
                 break
 
         units = [ref["unit_index"] for ref in shared_events if ref["unit_index"] is not None]
+        units.extend(beat["unit_index"] for beat in manual_beats if beat.get("unit_index") is not None)
         if not units and primary_relation is not None:
             units = get_relation_units(primary_relation)
         progress_values = [ref["progress_start"] for ref in shared_events if ref["progress_start"] is not None]
+        progress_values.extend(
+            beat["progress_start"] for beat in manual_beats if beat.get("progress_start") is not None
+        )
         if not progress_values and primary_relation is not None:
             progress_values = [value for value in [primary_relation.progress_start, primary_relation.progress_end] if value is not None]
 
@@ -1506,6 +1630,7 @@ def build_season_overviews(
         unit_start, unit_end = season["unit_range"]
         progress_start, progress_end = season["progress_range"]
         season_name = season["season_name"]
+        season_focus = get_season_focus(writer_focus, season_name)
 
         season_events = [
             ref
@@ -1571,6 +1696,12 @@ def build_season_overviews(
                 item["role_name"],
             )
         )
+        priority_roles = build_season_priority_roles(
+            top_roles=top_roles,
+            season_focus=season_focus,
+            limit=8,
+        )
+        priority_role_names = [item["role_name"] for item in priority_roles]
 
         location_counter = Counter(ref["location"] for ref in season_events if ref.get("location"))
         location_roles: Dict[str, set[str]] = defaultdict(set)
@@ -1604,36 +1735,6 @@ def build_season_overviews(
             )[:4]
         ]
 
-        priority_relationships = [
-            {
-                "relationship_id": item["id"],
-                "title": item["title"],
-                "source_role_name": item["source_role_name"],
-                "target_role_name": item["target_role_name"],
-                "kind": item["kind"],
-            }
-            for item in sorted(
-                season_curated,
-                key=lambda item: (
-                    0 if item.get("spotlight") else 1,
-                    0
-                    if get_pair_priority(
-                        item["source_role_name"],
-                        item["target_role_name"],
-                        priority_pair_scores,
-                    )
-                    > 0
-                    else 1,
-                    -get_pair_priority(
-                        item["source_role_name"],
-                        item["target_role_name"],
-                        priority_pair_scores,
-                    ),
-                    item["title"],
-                ),
-            )[:3]
-        ]
-
         season_anchor_events = sorted(
             season_events,
             key=lambda ref: (
@@ -1649,6 +1750,66 @@ def build_season_overviews(
                 ref["name"],
             ),
         )[:4]
+        anchor_event_ids = [
+            str(ref.get("event_id", "")).strip() for ref in season_anchor_events if str(ref.get("event_id", "")).strip()
+        ]
+        priority_relationship_items: List[dict] = []
+        seen_relationship_ids = set()
+        for pair in season_focus.get("priority_relationship_pairs", []):
+            normalized_pair = [str(name).strip() for name in pair if str(name).strip()]
+            if len(normalized_pair) != 2:
+                continue
+            pair_key = frozenset(normalized_pair)
+            matched = next(
+                (
+                    item
+                    for item in season_curated
+                    if frozenset({item["source_role_name"], item["target_role_name"]}) == pair_key
+                ),
+                None,
+            )
+            if not matched or matched["id"] in seen_relationship_ids:
+                continue
+            priority_relationship_items.append(matched)
+            seen_relationship_ids.add(matched["id"])
+            if len(priority_relationship_items) >= 4:
+                break
+
+        ranked_relationship_items = sorted(
+            season_curated,
+            key=lambda item: (
+                -season_relationship_score(
+                    item,
+                    season_name=season_name,
+                    season_focus=season_focus,
+                    season_unit_range=(unit_start, unit_end),
+                    season_progress_range=(progress_start, progress_end),
+                    priority_role_names=priority_role_names,
+                    anchor_event_ids=anchor_event_ids,
+                    priority_pair_scores=priority_pair_scores,
+                    spotlight_role=spotlight_role,
+                ),
+                item["title"],
+            ),
+        )
+        for item in ranked_relationship_items:
+            if len(priority_relationship_items) >= 4:
+                break
+            if item["id"] in seen_relationship_ids:
+                continue
+            priority_relationship_items.append(item)
+            seen_relationship_ids.add(item["id"])
+
+        priority_relationships = [
+            {
+                "relationship_id": item["id"],
+                "title": item["title"],
+                "source_role_name": item["source_role_name"],
+                "target_role_name": item["target_role_name"],
+                "kind": item["kind"],
+            }
+            for item in priority_relationship_items
+        ]
         story_beats = build_story_beats(
             season_events=season_events,
             season_curated=season_curated,
@@ -1665,7 +1826,7 @@ def build_season_overviews(
             spotlight_role=spotlight_role,
         )
 
-        top_role_names = [item["role_name"] for item in top_roles[:3]]
+        top_role_names = [item["role_name"] for item in (priority_roles or top_roles)[:3]]
         top_location_names = [item["location_name"] for item in top_locations[:3]]
         conflict_titles = [item["title"] for item in main_conflicts[:2]]
         summary = (
@@ -1715,7 +1876,8 @@ def build_season_overviews(
                 "spotlight_summary": spotlight_summary,
                 "adaptation_hooks": adaptation_hooks,
                 "story_beats": story_beats,
-                "top_roles": top_roles[:5],
+                "top_roles": top_roles[:8],
+                "priority_roles": priority_roles,
                 "top_locations": top_locations,
                 "main_conflicts": main_conflicts,
                 "priority_relationships": priority_relationships,

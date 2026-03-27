@@ -56,7 +56,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.060748",
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -148,7 +148,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.060748",
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -210,7 +210,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.060748",
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -233,19 +233,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 232,
-        "segment_index": 4
-      },
-      {
-        "entity_type": "person",
         "name": "刘太守",
         "alias": [],
         "original_description_in_book": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。 刘太守沉吟道：“道理是说不通。",
@@ -262,19 +249,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 老道人与刘太守对话",
+        "name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 刘太守对话",
         "time": null,
         "location": null,
         "participants": [
-          "老道人",
           "刘太守"
         ],
         "description": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。 刘太守沉吟道：“道理是说不通。 ”",
         "background": "",
-        "significance": "推动老道人与刘太守之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应刘太守在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第二百三十一章 又见城隍爷 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -288,29 +272,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老道人"
-        ],
-        "to_roles": [
-          "刘太守"
-        ],
-        "action": "对话",
-        "context": "道袍鲜亮的老道人转头，对刘太守和武将说道：“若是道法通天的黄老神仙，是那居心叵测的主谋，那我等还在这里谋划什么，干脆等死好了。",
-        "result": null,
-        "event_name": "第三卷金错刀 第二百三十一章 又见城隍爷 · 老道人与刘太守对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 232,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.060748",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -372,7 +335,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.061751",
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -436,7 +399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.061751",
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -540,7 +503,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.061751",
+    "extracted_at": "2026-03-26T11:46:48.796026",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -590,19 +553,6 @@
         ],
         "juan_index": 232,
         "segment_index": 8
-      },
-      {
-        "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "少女便有些不耐烦了，突然身边那位不显老的“老剑仙”提了一嘴，“刘小姐，不要让太守大人担心。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 232,
-        "segment_index": 8
       }
     ],
     "locations": [],
@@ -615,7 +565,7 @@
           "陈平安",
           "刘太守"
         ],
-        "description": "崇妙道人和那位披甲武将一伙，在刘高馨的竭力要求下，她追随陈平安，刘太守再大公无私，哪里放心自己宝贝闺女去涉险，好在那位江湖武人义士主动请缨，协助陈平安去往赵府门口，刘太守这才千叮咛万嘱咐，要刘高馨不许冲动，一切听从两位高人的吩咐。 刘高馨当然欢天喜地，满口答应下来，刘太守怕她不上心，又拉住她叮嘱一番。 少女便有些不耐烦了，突然身边那位不显老的“老剑仙”提了一嘴，“刘小姐，不要让太守大人担心。",
+        "description": "崇妙道人和那位披甲武将一伙，在刘高馨的竭力要求下，她追随陈平安，刘太守再大公无私，哪里放心自己宝贝闺女去涉险，好在那位江湖武人义士主动请缨，协助陈平安去往赵府门口，刘太守这才千叮咛万嘱咐，要刘高馨不许冲动，一切听从两位高人的吩咐。 刘高馨当然欢天喜地，满口答应下来，刘太守怕她不上心，又拉住她叮嘱一番。 刘高馨愣了一下，转头望去，看到陈平安既不是生气恼火，也不是倚老卖老，就像是简简单单，要她把当下这件事情做得更好一些。",
         "background": "",
         "significance": "推动陈平安与刘太守之间的归属关系。",
         "related_action_indices": [
@@ -677,7 +627,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.061751",
+    "extracted_at": "2026-03-26T11:46:48.797029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -739,7 +689,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.061751",
+    "extracted_at": "2026-03-26T11:46:48.797029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -813,7 +763,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.061751",
+    "extracted_at": "2026-03-26T11:46:48.797029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -877,7 +827,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.062755",
+    "extracted_at": "2026-03-26T11:46:48.797029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -939,7 +889,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.062755",
+    "extracted_at": "2026-03-26T11:46:48.797029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1004,7 +954,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.062755",
+    "extracted_at": "2026-03-26T11:46:48.797029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1070,7 +1020,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.062755",
+    "extracted_at": "2026-03-26T11:46:48.798033",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1132,7 +1082,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.062755",
+    "extracted_at": "2026-03-26T11:46:48.798033",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1194,7 +1144,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.062755",
+    "extracted_at": "2026-03-26T11:46:48.798033",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1256,7 +1206,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.063758",
+    "extracted_at": "2026-03-26T11:46:48.798033",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1318,7 +1268,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.063758",
+    "extracted_at": "2026-03-26T11:46:48.798033",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1430,7 +1380,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.063758",
+    "extracted_at": "2026-03-26T11:46:48.798033",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

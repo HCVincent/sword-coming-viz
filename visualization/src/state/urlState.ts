@@ -24,7 +24,7 @@ export interface UrlGlobalContext {
 
 const DEFAULT_CONTEXT: UrlGlobalContext = {
   tab: 'timeline',
-  unitRange: [1, 3],
+  unitRange: [1, 1],
   progressRange: [null, null],
 };
 
@@ -61,7 +61,7 @@ export function parseUrlGlobalContext(params: URLSearchParams, maxUnit: number):
   const us = toInt(params.get('us'));
   const ue = toInt(params.get('ue'));
   const startUnit = clampUnit(us ?? DEFAULT_CONTEXT.unitRange[0], maxUnit);
-  const endUnit = clampUnit(ue ?? DEFAULT_CONTEXT.unitRange[1], maxUnit);
+  const endUnit = clampUnit(ue ?? maxUnit, maxUnit);
   const unitRange: [number, number] = [Math.min(startUnit, endUnit), Math.max(startUnit, endUnit)];
 
   const ps = toInt(params.get('ps'));

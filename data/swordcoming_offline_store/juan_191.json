@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.826938",
+    "extracted_at": "2026-03-26T11:46:48.580281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -132,7 +132,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.826938",
+    "extracted_at": "2026-03-26T11:46:48.580281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -197,7 +197,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.826938",
+    "extracted_at": "2026-03-26T11:46:48.580281",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -335,7 +335,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.827942",
+    "extracted_at": "2026-03-26T11:46:48.581285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -490,7 +490,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.827942",
+    "extracted_at": "2026-03-26T11:46:48.581285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -566,7 +566,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.827942",
+    "extracted_at": "2026-03-26T11:46:48.581285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -628,7 +628,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.827942",
+    "extracted_at": "2026-03-26T11:46:48.581285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -818,7 +818,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.827942",
+    "extracted_at": "2026-03-26T11:46:48.581285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -972,7 +972,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.828945",
+    "extracted_at": "2026-03-26T11:46:48.581285",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1036,7 +1036,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.828945",
+    "extracted_at": "2026-03-26T11:46:48.582288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1057,19 +1057,6 @@
       "有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 191,
-        "segment_index": 11
-      },
       {
         "entity_type": "person",
         "name": "赵繇",
@@ -1141,7 +1128,6 @@
         "modern_name": "",
         "coordinates": null,
         "related_entities": [
-          "老妪",
           "赵繇",
           "齐静春"
         ],
@@ -1160,13 +1146,14 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "老妪",
           "赵繇"
         ],
         "description": "京城袁曹两大上柱国姓氏，本是关系莫逆的姻亲世交，近百年以来却变得水火不容，帮着两个家族光耀门楣的各自祖辈，曾是一辈子并肩作战的坚定盟友，更是大骊崛起的关键砥柱，加上曹沆、袁瀣两位上柱国是同乡人氏，所以被史书誉为“沆瀣一气、文武双璧”，大骊乡野市井之间，至今还有诸多传奇事迹，广为流传。 如今龙泉郡辖内所有门神，一律统一规制，悬挂那对文武门神，其实就是袁曹两家祖辈曹沆、袁瀣的画像。 有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。",
         "background": "",
         "significance": "把陈平安与更高层次的儒家线联系起来。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第一百九十一章 做买卖也是修行 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -1180,8 +1167,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.828945",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "赵繇"
+        ],
+        "to_roles": [
+          "齐静春"
+        ],
+        "action": "同行",
+        "context": "京城袁曹两大上柱国姓氏，本是关系莫逆的姻亲世交，近百年以来却变得水火不容，帮着两个家族光耀门楣的各自祖辈，曾是一辈子并肩作战的坚定盟友，更是大骊崛起的关键砥柱，加上曹沆、袁瀣两位上柱国是同乡人氏，所以被史书誉为“沆瀣一气、文武双璧”，大骊乡野市井之间，至今还有诸多传奇事迹，广为流传。 如今龙泉郡辖内所有门神，一律统一规制，悬挂那对文武门神，其实就是袁曹两家祖辈曹沆、袁瀣的画像。 至于两家各自让嫡系子弟来此为官，是否有山上高人指点，或是心存接纳某些祖荫的念头，就不得而知了。 毕竟那棵老槐树已经倒塌，枝干尽毁，槐叶散尽，这座袁曹两姓的“龙兴之地”，还能不能剩下点祖宗槐荫，真不好说。 很快又有数人联袂而至，全是上了岁数的老者。 有手持拐杖的赵家老妪，她的孙子赵繇，作为齐静春的书童，在小镇变故之前，就已经乘坐牛车，远离家乡。",
+        "result": null,
+        "event_name": "齐静春现身",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 191,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.582288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1339,7 +1352,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.828945",
+    "extracted_at": "2026-03-26T11:46:48.582288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1459,7 +1472,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.828945",
+    "extracted_at": "2026-03-26T11:46:48.582288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1526,7 +1539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.828945",
+    "extracted_at": "2026-03-26T11:46:48.582288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1690,7 +1703,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.829949",
+    "extracted_at": "2026-03-26T11:46:48.582288",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1831,7 +1844,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.829949",
+    "extracted_at": "2026-03-26T11:46:48.583292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1936,7 +1949,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.829949",
+    "extracted_at": "2026-03-26T11:46:48.583292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2041,7 +2054,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.829949",
+    "extracted_at": "2026-03-26T11:46:48.583292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2164,7 +2177,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.829949",
+    "extracted_at": "2026-03-26T11:46:48.583292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2256,7 +2269,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.830952",
+    "extracted_at": "2026-03-26T11:46:48.583292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2371,7 +2384,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.830952",
+    "extracted_at": "2026-03-26T11:46:48.583292",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2462,7 +2475,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.830952",
+    "extracted_at": "2026-03-26T11:46:48.584295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2558,7 +2571,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.830952",
+    "extracted_at": "2026-03-26T11:46:48.584295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2670,7 +2683,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.830952",
+    "extracted_at": "2026-03-26T11:46:48.584295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2795,7 +2808,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.830952",
+    "extracted_at": "2026-03-26T11:46:48.584295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2922,7 +2935,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.831956",
+    "extracted_at": "2026-03-26T11:46:48.584295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3032,7 +3045,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.831956",
+    "extracted_at": "2026-03-26T11:46:48.584295",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3153,7 +3166,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.831956",
+    "extracted_at": "2026-03-26T11:46:48.585299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3276,7 +3289,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.831956",
+    "extracted_at": "2026-03-26T11:46:48.585299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3421,7 +3434,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.831956",
+    "extracted_at": "2026-03-26T11:46:48.585299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3546,7 +3559,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.831956",
+    "extracted_at": "2026-03-26T11:46:48.585299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3672,7 +3685,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.832959",
+    "extracted_at": "2026-03-26T11:46:48.586302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3801,7 +3814,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.832959",
+    "extracted_at": "2026-03-26T11:46:48.586302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3894,7 +3907,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.832959",
+    "extracted_at": "2026-03-26T11:46:48.586302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3985,7 +3998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.832959",
+    "extracted_at": "2026-03-26T11:46:48.586302",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

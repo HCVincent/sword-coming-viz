@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { useBookConfig, useUnitProgressIndex } from './hooks/useBookArtifacts';
+import { useBookConfig, useChapterIndex, useUnitProgressIndex } from './hooks/useBookArtifacts';
 import { useUnifiedKnowledgeBase, useUnifiedVisualizationData } from './hooks/useUnifiedData';
 import { useFilteredWriterInsights, useWriterInsights } from './hooks/useWriterInsights';
 import {
@@ -102,6 +102,7 @@ function App() {
   const { kb, loading: kbLoading, error: kbError } = useUnifiedKnowledgeBase();
   const { writerInsights, loading: writerLoading, error: writerError } = useWriterInsights();
   const { bookConfig } = useBookConfig();
+  const { chapterIndex } = useChapterIndex();
   const { unitProgressIndex } = useUnitProgressIndex();
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -109,7 +110,7 @@ function App() {
   const dashboardRef = useRef<HTMLElement | null>(null);
   const workbenchRef = useRef<HTMLElement | null>(null);
 
-  const [unitRange, setUnitRange] = useState<[number, number]>([1, Math.min(3, maxUnit)]);
+  const [unitRange, setUnitRange] = useState<[number, number]>([1, maxUnit]);
   const [progressRange, setProgressRange] = useState<[number | null, number | null]>([null, null]);
   const [activeTab, setActiveTab] = useState<TabType>('timeline');
   const [syncUnitProgress, setSyncUnitProgress] = useState(true);
@@ -129,7 +130,7 @@ function App() {
     links: roleLinks,
     totalRoleCount,
     linkedRoleCount,
-    timelineEvents,
+    timelineEvents: rawTimelineEvents,
     locations,
     powerDistribution,
   } = useUnifiedVisualizationData(kb, unitRange, progressRange);
@@ -147,6 +148,25 @@ function App() {
   useEffect(() => {
     roleLinksRef.current = roleLinks;
   }, [roleLinks]);
+
+  const addSeasonPrefixToEvent = useCallback(
+    (event: TimelineEventUnified): TimelineEventUnified => {
+      const unit = chapterIndex?.units.find((item) => item.unit_index === event.unitIndex);
+      if (!unit?.season_name || !event.progressLabel || event.progressLabel.startsWith(unit.season_name)) {
+        return event;
+      }
+      return {
+        ...event,
+        progressLabel: `${unit.season_name} · ${event.progressLabel}`,
+      };
+    },
+    [chapterIndex]
+  );
+
+  const timelineEvents = useMemo(
+    () => rawTimelineEvents.map((event) => addSeasonPrefixToEvent(event)),
+    [addSeasonPrefixToEvent, rawTimelineEvents]
+  );
 
   const clearModalSelections = useCallback(() => {
     setSelectedEvent(null);
@@ -300,7 +320,7 @@ function App() {
 
     if (selection.type === 'event') {
       const event = kb.events?.[selection.id];
-      setSelectedEvent(event ? toTimelineEvent(event) : null);
+      setSelectedEvent(event ? addSeasonPrefixToEvent(toTimelineEvent(event)) : null);
       setSelectedRole(null);
       setSelectedLocation(null);
       setSelectedRelationPair(null);
@@ -346,7 +366,7 @@ function App() {
       setSelectedRole(null);
       setSelectedLocation(null);
     }
-  }, [kb, maxUnit, searchParams]);
+  }, [addSeasonPrefixToEvent, kb, maxUnit, searchParams]);
 
   const selectionForUrl = useMemo(() => {
     if (selectedEvent) return { type: 'event' as const, id: selectedEvent.id };
@@ -424,9 +444,9 @@ function App() {
       const existing = timelineEvents.find((event) => event.id === eventId);
       if (existing) return existing;
       const event = kb?.events?.[eventId];
-      return event ? toTimelineEvent(event) : null;
+      return event ? addSeasonPrefixToEvent(toTimelineEvent(event)) : null;
     },
-    [kb, timelineEvents]
+    [addSeasonPrefixToEvent, kb, timelineEvents]
   );
 
   const switchTab = useCallback(
@@ -645,6 +665,14 @@ function App() {
     );
   }, [roleLinks, roles, selectedRole]);
 
+  const selectedRoleRelatedNames = useMemo(() => {
+    if (!selectedRole) return [];
+    if (selectedRoleRelationGroups.length > 0) {
+      return selectedRoleRelationGroups.map((group) => group.counterpartName);
+    }
+    return selectedRole.relatedEntities;
+  }, [selectedRole, selectedRoleRelationGroups]);
+
   const unitLabel = bookConfig?.unit_label ?? kb?.unit_label ?? '章节';
   const progressLabel = bookConfig?.progress_label ?? kb?.progress_label ?? '叙事进度';
   const title = bookConfig?.title ?? '剑来';
@@ -685,9 +713,56 @@ function App() {
       (spotlightArcInRange.key_events.length > 0 || spotlightArcInRange.relationship_phases.length > 0)
   );
 
+  const spotlightCounterparts = useMemo(() => {
+    if (!spotlightArc) return [];
+    const seen = new Set<string>();
+    return spotlightArc.relationship_phases.filter((phase) => {
+      const key = phase.counterpart_id || phase.counterpart_name;
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }, [spotlightArc]);
+
+  const currentSeasonOverview = useMemo(() => {
+    if (seasonOverviews.length === 0) return null;
+    if (currentSeasonNames.length === 1) {
+      return (
+        seasonOverviews.find((overview) => overview.season_name === currentSeasonNames[0]) ??
+        seasonOverviews[0] ??
+        null
+      );
+    }
+    return seasonOverviews.length === 1 ? seasonOverviews[0] : null;
+  }, [currentSeasonNames, seasonOverviews]);
+
   const dashboardRoles = useMemo(
-    () => [...roles].sort((a, b) => b.appearances - a.appearances || a.name.localeCompare(b.name, 'zh-CN')).slice(0, 6),
-    [roles]
+    () => {
+      const preferredRoles =
+        currentSeasonOverview?.priority_roles.length
+          ? currentSeasonOverview.priority_roles
+          : currentSeasonOverview?.top_roles ?? [];
+
+      if (preferredRoles.length > 0) {
+        const roleByName = new Map(roles.map((role) => [role.name, role]));
+        return preferredRoles
+          .map((item) => {
+            const inRange = roleByName.get(item.role_name);
+            if (inRange) return inRange;
+
+            const roleId = resolveRoleId(kb, item.role_name);
+            const role = roleId ? kb?.roles?.[roleId] : null;
+            return role ? toRoleNode(role) : null;
+          })
+          .filter((role): role is RoleNodeUnified => Boolean(role))
+          .slice(0, 8);
+      }
+
+      return [...roles]
+        .sort((a, b) => b.appearances - a.appearances || a.name.localeCompare(b.name, 'zh-CN'))
+        .slice(0, 8);
+    },
+    [currentSeasonOverview, kb, roles]
   );
 
   const dashboardLocations = useMemo(
@@ -702,7 +777,17 @@ function App() {
     [locations]
   );
 
-  const dashboardRelationships = useMemo(() => curatedRelationships.slice(0, 4), [curatedRelationships]);
+  const dashboardRelationships = useMemo(() => {
+    const preferredRelationships = currentSeasonOverview?.priority_relationships ?? [];
+    if (preferredRelationships.length > 0) {
+      const relationshipById = new Map(curatedRelationships.map((item) => [item.id, item]));
+      return preferredRelationships
+        .map((item) => relationshipById.get(item.relationship_id))
+        .filter((relationship): relationship is (typeof curatedRelationships)[number] => Boolean(relationship))
+        .slice(0, 4);
+    }
+    return curatedRelationships.slice(0, 4);
+  }, [curatedRelationships, currentSeasonOverview]);
 
   const entryCards = useMemo(
     () => [
@@ -1124,7 +1209,7 @@ function App() {
                         <p className="dashboard-copy">{spotlightArc.summary}</p>
                         {spotlightHasCurrentContent ? (
                           <div className="dashboard-meta-row">
-                            {spotlightArc.relationship_phases.slice(0, 4).map((phase) => (
+                            {spotlightCounterparts.slice(0, 4).map((phase) => (
                               <button
                                 key={`${spotlightArc.role_id}-${phase.relation_id}-${phase.counterpart_id}`}
                                 type="button"
@@ -1274,6 +1359,7 @@ function App() {
                     {activeTab === 'timeline' && (
                       <Timeline
                         bookConfig={bookConfig}
+                        chapterIndex={chapterIndex}
                         events={timelineEvents}
                         onEventClick={(event) => openEventDetail(event.id, 'timeline')}
                       />
@@ -1453,6 +1539,7 @@ function App() {
         onBack={modalBackHandler}
         onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
         onLocationClick={(locationName) => openLocationDetail(locationName, activeTab, { pushCurrent: true })}
+        chapterIndex={chapterIndex}
         kb={kb}
         availableRoleIds={availableRoleIds}
       />
@@ -1478,6 +1565,8 @@ function App() {
           onBack={modalBackHandler}
           onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
           onEventClick={(event) => openEventDetail(event.id, activeTab, { pushCurrent: true })}
+          chapterIndex={chapterIndex}
+          relatedRoleNames={selectedRoleRelatedNames}
           relatedEvents={
             selectedRole
               ? timelineEvents.filter(
@@ -1500,6 +1589,7 @@ function App() {
           onBack={modalBackHandler}
           onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
           onEventClick={(event) => openEventDetail(event.id, activeTab, { pushCurrent: true })}
+          chapterIndex={chapterIndex}
           kb={kb}
           availableRoleIds={availableRoleIds}
         />
@@ -1521,6 +1611,7 @@ function App() {
             const targetNames = new Set<string>([selectedRelationPair.targetName, ...(targetRole?.all_names || [])]);
             return event.participants.some((name) => sourceNames.has(name)) && event.participants.some((name) => targetNames.has(name));
           })}
+          chapterIndex={chapterIndex}
           kb={kb}
           availableRoleIds={availableRoleIds}
         />

@@ -111,7 +111,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.360592",
+    "extracted_at": "2026-03-26T11:46:49.075521",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -147,32 +147,6 @@
       },
       {
         "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年和女子武神在走马道上愈行愈远。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 279,
-        "segment_index": 2
-      },
-      {
-        "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "老剑仙对陈平安提醒道：“我要撤去小天地了。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 279,
-        "segment_index": 2
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "老剑仙对陈平安提醒道：“我要撤去小天地了。 陈平安点点头，示意自己没问题。",
@@ -189,16 +163,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安指点",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安指点",
         "time": null,
         "location": null,
         "participants": [
-          "老剑仙",
+          "曹慈",
           "陈平安"
         ],
-        "description": "这是曹慈独有的善意。 白衣少年和女子武神在走马道上愈行愈远。 老剑仙对陈平安提醒道：“我要撤去小天地了。",
+        "description": "这是曹慈独有的善意。 老剑仙对陈平安提醒道：“我要撤去小天地了。 陈平安点点头，示意自己没问题。",
         "background": "",
-        "significance": "推动老剑仙与陈平安之间的指点关系。",
+        "significance": "推动曹慈与陈平安之间的指点关系。",
         "related_action_indices": [
           0
         ],
@@ -219,25 +193,30 @@
       {
         "time": null,
         "from_roles": [
-          "老剑仙"
+          "曹慈"
         ],
         "to_roles": [
           "陈平安"
         ],
         "action": "指点",
-        "context": "老剑仙对陈平安提醒道：“我要撤去小天地了。",
+        "context": "” 这是曹慈独有的善意。 白衣少年和女子武神在走马道上愈行愈远。 老剑仙对陈平安提醒道：“我要撤去小天地了。 ” 陈平安点点头，示意自己没问题。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安指点",
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 曹慈与陈平安指点",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          3
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "juan_index": 279,
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.360592",
+    "extracted_at": "2026-03-26T11:46:49.075521",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -258,19 +237,6 @@
       "宁姚皱眉，指了指心坎，“我是说这里。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "老剑仙随手撤去那方天地的禁制，剑气顿时汹涌而至，陈平安当下神魂震荡，受伤不轻，只能老老实实以剑炉立桩与之抗衡。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 279,
-        "segment_index": 3
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -352,7 +318,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.360592",
+    "extracted_at": "2026-03-26T11:46:49.075521",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -430,7 +396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.360592",
+    "extracted_at": "2026-03-26T11:46:49.075521",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -523,7 +489,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.361595",
+    "extracted_at": "2026-03-26T11:46:49.075521",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -578,19 +544,6 @@
       },
       {
         "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "在老剑仙和宁姚都觉得一场足矣的时候，这次轮到女子武神微笑建议，再打一架，并且让陈平安放开手脚，不用拘束于拳法。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 279,
-        "segment_index": 6
-      },
-      {
-        "entity_type": "person",
         "name": "宁姚",
         "alias": [],
         "original_description_in_book": "在老剑仙和宁姚都觉得一场足矣的时候，这次轮到女子武神微笑建议，再打一架，并且让陈平安放开手脚，不用拘束于拳法。 这一次，就连宁姚都替陈平安感到无奈。",
@@ -613,8 +566,7 @@
         "participants": [
           "陈平安",
           "曹慈",
-          "宁姚",
-          "老剑仙"
+          "宁姚"
         ],
         "description": "反观曹慈显得太写意闲适了，闲庭信步，未卜先知，料敌先机，陈平安的拳脚，就像刚好凑到他想要到的地方。 陈平安就没有打中过曹慈，一拳都没有。 在老剑仙和宁姚都觉得一场足矣的时候，这次轮到女子武神微笑建议，再打一架，并且让陈平安放开手脚，不用拘束于拳法。",
         "background": "",
@@ -634,7 +586,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.361595",
+    "extracted_at": "2026-03-26T11:46:49.075521",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -730,7 +682,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.361595",
+    "extracted_at": "2026-03-26T11:46:49.076524",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -827,7 +779,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.361595",
+    "extracted_at": "2026-03-26T11:46:49.076524",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -951,7 +903,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.361595",
+    "extracted_at": "2026-03-26T11:46:49.076524",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1060,7 +1012,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.362598",
+    "extracted_at": "2026-03-26T11:46:49.076524",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1113,19 +1065,6 @@
       },
       {
         "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "从老剑仙陈爷爷，到曹慈和女子武神，以及他们所在的中土神洲大端王朝，再到拥有四大仙剑之一的龙虎山大天师，谈到了仙剑，自然而然就牵扯到了被誉为真无敌的道老二，因为他那把仙剑被誉为“道高人间一尺”，然后就是道老二座下一脉的倒悬山，最后回到了剑气长城，陈平安的拳法。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 279,
-        "segment_index": 11
-      },
-      {
-        "entity_type": "person",
         "name": "曹慈",
         "alias": [],
         "original_description_in_book": "从老剑仙陈爷爷，到曹慈和女子武神，以及他们所在的中土神洲大端王朝，再到拥有四大仙剑之一的龙虎山大天师，谈到了仙剑，自然而然就牵扯到了被誉为真无敌的道老二，因为他那把仙剑被誉为“道高人间一尺”，然后就是道老二座下一脉的倒悬山，最后回到了剑气长城，陈平安的拳法。",
@@ -1149,7 +1088,6 @@
         "related_entities": [
           "陈平安",
           "宁姚",
-          "老剑仙",
           "曹慈"
         ],
         "sentence_indexes_in_segment": [
@@ -1210,7 +1148,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.362598",
+    "extracted_at": "2026-03-26T11:46:49.077528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1273,7 +1211,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.362598",
+    "extracted_at": "2026-03-26T11:46:49.077528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1351,7 +1289,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.362598",
+    "extracted_at": "2026-03-26T11:46:49.077528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1509,7 +1447,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.362598",
+    "extracted_at": "2026-03-26T11:46:49.077528",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1599,7 +1537,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.363602",
+    "extracted_at": "2026-03-26T11:46:49.078532",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1713,7 +1651,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.363602",
+    "extracted_at": "2026-03-26T11:46:49.078532",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1818,7 +1756,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.363602",
+    "extracted_at": "2026-03-26T11:46:49.078532",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1923,7 +1861,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.363602",
+    "extracted_at": "2026-03-26T11:46:49.078532",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2030,7 +1968,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.363602",
+    "extracted_at": "2026-03-26T11:46:49.078532",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2107,7 +2045,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.363602",
+    "extracted_at": "2026-03-26T11:46:49.078532",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2214,7 +2152,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.364606",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2305,7 +2243,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.364606",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2383,7 +2321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.364606",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2463,7 +2401,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.364606",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2543,7 +2481,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.364606",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2621,7 +2559,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.364606",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2726,7 +2664,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.365609",
+    "extracted_at": "2026-03-26T11:46:49.079535",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2830,7 +2768,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.365609",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2934,7 +2872,7 @@
         "segment_index": 29
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.365609",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2996,7 +2934,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.365609",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3060,7 +2998,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.365609",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3122,7 +3060,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.365609",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3244,7 +3182,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.366613",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3309,7 +3247,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.366613",
+    "extracted_at": "2026-03-26T11:46:49.080538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3387,7 +3325,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.366613",
+    "extracted_at": "2026-03-26T11:46:49.081542",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3449,7 +3387,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.366613",
+    "extracted_at": "2026-03-26T11:46:49.081542",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3515,7 +3453,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.366613",
+    "extracted_at": "2026-03-26T11:46:49.081542",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3546,19 +3484,6 @@
         "sentence_indexes_in_segment": [
           0,
           2,
-          3
-        ],
-        "juan_index": 279,
-        "segment_index": 39
-      },
-      {
-        "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "在城头结茅守城的老剑仙不知不觉来到陈平安身边，笑着解释道：“对她而言，没打死对方，就是自己输了，所以比较恼火，这时候谁都不要管她，否则会很麻烦。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
           3
         ],
         "juan_index": 279,
@@ -3604,13 +3529,14 @@
         "location": "剑气长城",
         "participants": [
           "阿良",
-          "陈平安",
-          "老剑仙"
+          "陈平安"
         ],
         "description": "然后陈平安就看到城头这边，先前那位隐官大人坠落方向，炸开一团巨大的雪白光芒，如一粒珠子滚向那条大妖。 在约莫一炷香后，扎羊角辫的黑袍“小姑娘”返回城头，就在陈平安不远处，她站在城头上，使劲张大嘴巴，伸出双指摇了摇一颗牙齿，最后好像不舍得拔下来，只是朝走马道吐了一口血水，有些生气的她大摇大摆走在城头上，城头走马道给她踩得一步一震。 在城头结茅守城的老剑仙不知不觉来到陈平安身边，笑着解释道：“对她而言，没打死对方，就是自己输了，所以比较恼火，这时候谁都不要管她，否则会很麻烦。",
         "background": "",
         "significance": "把陈平安的世界观拉出小镇，连接更大的剑修世界。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段39",
         "sentence_indexes_in_segment": [
           0,
@@ -3624,8 +3550,34 @@
         "segment_index": 39
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.366613",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "阿良"
+        ],
+        "action": "别离",
+        "context": "然后陈平安就看到城头这边，先前那位隐官大人坠落方向，炸开一团巨大的雪白光芒，如一粒珠子滚向那条大妖。 之后峡谷内，尘土飞扬，打得翻天覆地。 在约莫一炷香后，扎羊角辫的黑袍“小姑娘”返回城头，就在陈平安不远处，她站在城头上，使劲张大嘴巴，伸出双指摇了摇一颗牙齿，最后好像不舍得拔下来，只是朝走马道吐了一口血水，有些生气的她大摇大摆走在城头上，城头走马道给她踩得一步一震。 在城头结茅守城的老剑仙不知不觉来到陈平安身边，笑着解释道：“对她而言，没打死对方，就是自己输了，所以比较恼火，这时候谁都不要管她，否则会很麻烦。 以前也就阿良乐意跟她唠叨唠叨，喜欢火上加油和雪上加霜，反正经得起她的揍。 如今阿良离开剑气长城，估计她有点无聊吧。",
+        "result": null,
+        "event_name": "阿良过境",
+        "location": "剑气长城",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 279,
+        "segment_index": 39
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.081542",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3646,19 +3598,6 @@
       "这天夜幕降临，陈平安离开曹慈建造的那座小茅屋，坐在了北边的城头上喝酒，眺望着那座巨大城池的灯火通明。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老剑仙",
-        "alias": [],
-        "original_description_in_book": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。",
-        "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 279,
-        "segment_index": 40
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -3691,20 +3630,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安对话",
+        "name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈对话",
         "time": null,
         "location": null,
         "participants": [
-          "老剑仙",
           "陈平安",
           "曹慈"
         ],
         "description": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。 陈平安点了点头，没有说什么。 这天夜幕降临，陈平安离开曹慈建造的那座小茅屋，坐在了北边的城头上喝酒，眺望着那座巨大城池的灯火通明。",
         "background": "",
-        "significance": "推动老剑仙与陈平安之间的对话关系。",
+        "significance": "推动陈平安与曹慈之间的对话关系。",
         "related_action_indices": [
-          0,
-          1
+          0
         ],
         "source": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 段40",
         "sentence_indexes_in_segment": [
@@ -3723,26 +3660,6 @@
       {
         "time": null,
         "from_roles": [
-          "老剑仙"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "老剑仙带着陈平安一起走向茅屋，突然说道：“因为某些原因，你是一个例外，所以我跟你也多唠叨一些。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 279,
-        "segment_index": 40
-      },
-      {
-        "time": null,
-        "from_roles": [
           "陈平安"
         ],
         "to_roles": [
@@ -3751,7 +3668,7 @@
         "action": "别离",
         "context": "这天夜幕降临，陈平安离开曹慈建造的那座小茅屋，坐在了北边的城头上喝酒，眺望着那座巨大城池的灯火通明。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 老剑仙与陈平安对话",
+        "event_name": "第四卷剑气近 第二百七十八章 武无第二,拳高天外 · 陈平安与曹慈对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -3761,7 +3678,7 @@
         "segment_index": 40
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.367616",
+    "extracted_at": "2026-03-26T11:46:49.081542",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3870,7 +3787,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.367616",
+    "extracted_at": "2026-03-26T11:46:49.081542",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3934,7 +3851,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.367616",
+    "extracted_at": "2026-03-26T11:46:49.082545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3997,7 +3914,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.367616",
+    "extracted_at": "2026-03-26T11:46:49.082545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4073,7 +3990,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.367616",
+    "extracted_at": "2026-03-26T11:46:49.082545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4174,7 +4091,7 @@
         "segment_index": 45
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.367616",
+    "extracted_at": "2026-03-26T11:46:49.082545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4254,7 +4171,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.368619",
+    "extracted_at": "2026-03-26T11:46:49.082545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4359,7 +4276,7 @@
         "segment_index": 47
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.368619",
+    "extracted_at": "2026-03-26T11:46:49.082545",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

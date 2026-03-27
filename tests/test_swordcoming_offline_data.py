@@ -180,7 +180,29 @@ def test_normalize_mined_candidate_filters_non_person_prefix_phrases():
         known_names=set(),
         location_names=set(),
     )
-    assert titled == "老秀才"
+    assert titled is None
+
+
+def test_normalize_mined_candidate_filters_pseudo_role_fragments():
+    normalized = build_swordcoming_offline_data.normalize_mined_candidate(
+        "管狮子",
+        blocked_names=set(),
+        known_names=set(),
+        location_names=set(),
+        sentence_text="陈平安，只管狮子大开口，条件怎么过分怎么开。",
+        source="dialogue",
+        match_start=4,
+        match_end=7,
+    )
+    assert normalized is None
+
+    normalized = build_swordcoming_offline_data.normalize_mined_candidate(
+        "后笑眯眯",
+        blocked_names=set(),
+        known_names=set(),
+        location_names=set(),
+    )
+    assert normalized is None
 
 
 def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
@@ -367,6 +389,29 @@ def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
     assert writer_payload["season_overviews"][0]["season_name"] == "第一季"
     assert writer_payload["curated_relationships"][0]["title"] == "陈平安与宋集薪：镜像关系"
     assert writer_payload["curated_relationships"][0]["manual_beats"][0]["phase_label"] == "镜像"
+
+
+def test_validate_unified_knowledge_flags_pseudo_role_names(tmp_path):
+    path = tmp_path / "unified_knowledge.json"
+    path.write_text(
+        json.dumps(
+            {
+                "book_id": "swordcoming",
+                "roles": {
+                    "管狮子": {
+                        "canonical_name": "管狮子",
+                        "description": "伪角色",
+                    }
+                },
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    suspicious = validate_unified_knowledge(path)
+    assert any("管狮子" in item for item in suspicious)
 
 
 def test_build_offline_data_includes_curated_extra_seed_characters(tmp_path):
@@ -647,3 +692,163 @@ def test_build_writer_insights_payload_creates_arc_conflict_and_foreshadowing():
     assert payload["season_overviews"][0]["season_name"] == "第一季"
     assert payload["curated_relationships"][0]["title"] == "陈平安与宋集薪：镜像关系"
     assert payload["curated_relationships"][0]["manual_beats"][0]["summary"] == "测试人工节拍。"
+
+
+def test_build_writer_insights_payload_uses_season_focus_roles_and_relationships():
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1, "2-1": 2},
+        {"1-1": "第一季 · 段1", "2-1": "第二季 · 段1"},
+    )
+    resolver.set_manual_overrides(
+        {
+            "role_primary_powers": {
+                "陈平安": "泥瓶巷",
+                "阿良": "剑修",
+                "齐静春": "山崖书院",
+            }
+        }
+    )
+
+    for role_name, power, juan_index in [
+        ("陈平安", "泥瓶巷", 1),
+        ("阿良", "剑修", 2),
+        ("齐静春", "山崖书院", 1),
+    ]:
+        resolver.add_role(
+            Role(
+                name=role_name,
+                alias=[],
+                description=f"{role_name}描述",
+                power=power,
+                sentence_indexes_in_segment=[0],
+                juan_index=juan_index,
+                segment_index=1,
+            ),
+            juan_index=juan_index,
+            segment_index=1,
+            chunk_index=0,
+            source_sentence=f"{role_name}出现。",
+        )
+
+    resolver.add_event(
+        Event(
+            name="阿良现身",
+            time=None,
+            location="小镇",
+            participants=["陈平安", "阿良"],
+            description="阿良在第二季进入陈平安主线。",
+            significance="打开第二季外部世界入口。",
+            juan_index=2,
+            segment_index=1,
+        ),
+        juan_index=2,
+        segment_index=1,
+    )
+    resolver.add_event(
+        Event(
+            name="齐静春点拨",
+            time=None,
+            location="山崖书院",
+            participants=["陈平安", "齐静春"],
+            description="齐静春在第一季点拨陈平安。",
+            significance="提供主线价值奠基。",
+            juan_index=1,
+            segment_index=1,
+        ),
+        juan_index=1,
+        segment_index=1,
+    )
+    resolver.add_relation(
+        Action(
+            time=None,
+            from_roles=["阿良"],
+            to_roles=["陈平安"],
+            action="指引",
+            context="阿良带陈平安看到更大的天地。",
+            event_name="阿良现身",
+            location="小镇",
+            juan_index=2,
+            segment_index=1,
+        )
+    )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                "1": {
+                    "unit_index": 1,
+                    "unit_title": "第一章 惊蛰",
+                    "season_name": "第一季",
+                    "progress_start": 1,
+                    "progress_end": 1,
+                },
+                "2": {
+                    "unit_index": 2,
+                    "unit_title": "第二章 山水",
+                    "season_name": "第二季",
+                    "progress_start": 2,
+                    "progress_end": 2,
+                },
+            }
+        },
+        core_cast={
+            "event_type_rules": [{"type": "指引", "keywords": ["阿良", "点拨", "指引"]}],
+            "phase_rules": [{"label": "引路", "keywords": ["阿良", "指引"], "actions": ["指引"]}],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "season_focus": {
+                    "第二季": {
+                        "priority_roles": ["陈平安", "阿良", "齐静春"],
+                    }
+                },
+                "priority_characters": ["陈平安", "阿良", "齐静春"],
+                "conflict_actions": ["指引"],
+                "priority_pairs": [{"roles": ["陈平安", "阿良"], "weight": 10}],
+                "curated_relationships": [
+                    {
+                        "roles": ["陈平安", "阿良"],
+                        "kind": "guide",
+                        "title": "陈平安与阿良：小镇之外的世界入口",
+                        "focus": "第二季主线外扩。",
+                        "adaptation_value": "适合承担第二季外部世界开启功能。",
+                        "manual_beats": [
+                            {
+                                "season_name": "第二季",
+                                "phase_label": "引路",
+                                "summary": "阿良把陈平安带到更大的世界门口。",
+                                "event_keywords": ["阿良现身"],
+                                "location": "小镇",
+                            }
+                        ],
+                    },
+                    {
+                        "roles": ["陈平安", "齐静春"],
+                        "kind": "mentor",
+                        "title": "陈平安与齐静春：文脉引路与价值奠基",
+                        "focus": "第一季价值奠基。",
+                        "adaptation_value": "保留主角价值来源。",
+                        "manual_beats": [
+                            {
+                                "season_name": "第一季",
+                                "phase_label": "点拨",
+                                "summary": "齐静春为陈平安托底。",
+                                "event_keywords": ["齐静春点拨"],
+                                "location": "山崖书院",
+                            }
+                        ],
+                    },
+                ],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    second_overview = next(item for item in payload["season_overviews"] if item["season_name"] == "第二季")
+    assert second_overview["priority_roles"]
+    assert "阿良" in [role["role_name"] for role in second_overview["priority_roles"]]
+    assert "陈平安与阿良：小镇之外的世界入口" in [
+        relation["title"] for relation in second_overview["priority_relationships"]
+    ]

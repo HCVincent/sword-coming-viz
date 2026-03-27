@@ -58,7 +58,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.621040",
+    "extracted_at": "2026-03-26T11:46:49.310569",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -179,7 +179,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.621040",
+    "extracted_at": "2026-03-26T11:46:49.310569",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -200,19 +200,6 @@
       "”"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "对于这些南苑国游走在朝廷和江湖边缘的谍子而言，就像当时老将军吕霄在城头上，亲眼见到俞真意和女冠黄庭巅峰一战后，会情不自禁地感慨一句“真神仙也”，陈平安如今在这座天下，比起丁婴声势最盛时，犹胜一分。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 327,
-        "segment_index": 3
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -244,18 +231,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与丁婴对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "俞真意",
           "丁婴"
         ],
         "description": "对于这些南苑国游走在朝廷和江湖边缘的谍子而言，就像当时老将军吕霄在城头上，亲眼见到俞真意和女冠黄庭巅峰一战后，会情不自禁地感慨一句“真神仙也”，陈平安如今在这座天下，比起丁婴声势最盛时，犹胜一分。 等到陈平安缓缓走到院门，推门而入，年轻女子这才深呼吸一口气，原来她始终憋着口气不敢喘，细细微微轻声道：“原来真的这么年轻啊。 ”",
         "background": "",
-        "significance": "推动陈平安与俞真意之间的对话关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与丁婴之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -269,8 +257,34 @@
         "segment_index": 3
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.622043",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "丁婴"
+        ],
+        "action": "对话",
+        "context": "对于这些南苑国游走在朝廷和江湖边缘的谍子而言，就像当时老将军吕霄在城头上，亲眼见到俞真意和女冠黄庭巅峰一战后，会情不自禁地感慨一句“真神仙也”，陈平安如今在这座天下，比起丁婴声势最盛时，犹胜一分。 等到陈平安缓缓走到院门，推门而入，年轻女子这才深呼吸一口气，原来她始终憋着口气不敢喘，细细微微轻声道：“原来真的这么年轻啊。 ” 那男子有些无奈，没说话。 她笑道：“长得真好看。 ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与丁婴对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 327,
+        "segment_index": 3
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.310569",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -332,7 +346,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.622043",
+    "extracted_at": "2026-03-26T11:46:49.311572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -413,7 +427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.622043",
+    "extracted_at": "2026-03-26T11:46:49.311572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -464,19 +478,6 @@
       },
       {
         "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "与武学大宗师种秋一战，不但成功破开四境瓶颈，第二场交手，种秋当时还自降身份，主动喂拳，帮助自己稳固五境境界，虽然说种秋也有自己的考量在其中，猜测到丁婴和俞真意极有可能联手布局，不愿让他们得逞，但是不管如何，种秋无论是宗师气度、武夫实力还是心性，都让陈平安心生佩服。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 327,
-        "segment_index": 6
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "与武学大宗师种秋一战，不但成功破开四境瓶颈，第二场交手，种秋当时还自降身份，主动喂拳，帮助自己稳固五境境界，虽然说种秋也有自己的考量在其中，猜测到丁婴和俞真意极有可能联手布局，不愿让他们得逞，但是不管如何，种秋无论是宗师气度、武夫实力还是心性，都让陈平安心生佩服。 之后与丁婴一战，酣畅淋漓，而且一波三折，陈平安第一次真正握剑迎敌，果然纯粹武夫还是要在生死一线砥砺体魄，即便陈平安不清楚浩然天下其他武人的五境，但是自认五境底子，打得相当不错。",
@@ -487,19 +488,6 @@
           1,
           2,
           3,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 6
-      },
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "问题就在于被丁婴的阴神金身从牯牛山之巅，打到牯牛山之外的大坑中，尤其是最后的“雷池”底下，藕花福地被牵扯到牯牛山一带的磅礴灵气和破碎武运，海水倒灌，一股脑涌入陈平安体内，渗入魂魄，陈平安依稀察觉到自己的心湖上，像是泛起了一阵雾霭，萦绕不散，雷电交织，如蛟龙蛇蟒腾云驾雾，并且有一道道剑光在雾霭中，一闪而逝，仿佛是在剑斩蛟龙。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
           5
         ],
         "juan_index": 327,
@@ -515,7 +503,6 @@
         "participants": [
           "种秋",
           "丁婴",
-          "俞真意",
           "陈平安"
         ],
         "description": "与武学大宗师种秋一战，不但成功破开四境瓶颈，第二场交手，种秋当时还自降身份，主动喂拳，帮助自己稳固五境境界，虽然说种秋也有自己的考量在其中，猜测到丁婴和俞真意极有可能联手布局，不愿让他们得逞，但是不管如何，种秋无论是宗师气度、武夫实力还是心性，都让陈平安心生佩服。 之后与丁婴一战，酣畅淋漓，而且一波三折，陈平安第一次真正握剑迎敌，果然纯粹武夫还是要在生死一线砥砺体魄，即便陈平安不清楚浩然天下其他武人的五境，但是自认五境底子，打得相当不错。 这是立身之本，陈平安再财迷，都万金不换。",
@@ -524,10 +511,7 @@
         "related_action_indices": [
           0,
           1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段6",
         "sentence_indexes_in_segment": [
@@ -569,26 +553,6 @@
           "种秋"
         ],
         "to_roles": [
-          "俞真意"
-        ],
-        "action": "冲突",
-        "context": "与武学大宗师种秋一战，不但成功破开四境瓶颈，第二场交手，种秋当时还自降身份，主动喂拳，帮助自己稳固五境境界，虽然说种秋也有自己的考量在其中，猜测到丁婴和俞真意极有可能联手布局，不愿让他们得逞，但是不管如何，种秋无论是宗师气度、武夫实力还是心性，都让陈平安心生佩服。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 种秋与丁婴揭示",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 327,
-        "segment_index": 6
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "种秋"
-        ],
-        "to_roles": [
           "陈平安"
         ],
         "action": "冲突",
@@ -607,46 +571,6 @@
         "time": null,
         "from_roles": [
           "丁婴"
-        ],
-        "to_roles": [
-          "俞真意"
-        ],
-        "action": "冲突",
-        "context": "与武学大宗师种秋一战，不但成功破开四境瓶颈，第二场交手，种秋当时还自降身份，主动喂拳，帮助自己稳固五境境界，虽然说种秋也有自己的考量在其中，猜测到丁婴和俞真意极有可能联手布局，不愿让他们得逞，但是不管如何，种秋无论是宗师气度、武夫实力还是心性，都让陈平安心生佩服。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 种秋与丁婴揭示",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 327,
-        "segment_index": 6
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "丁婴"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "冲突",
-        "context": "与武学大宗师种秋一战，不但成功破开四境瓶颈，第二场交手，种秋当时还自降身份，主动喂拳，帮助自己稳固五境境界，虽然说种秋也有自己的考量在其中，猜测到丁婴和俞真意极有可能联手布局，不愿让他们得逞，但是不管如何，种秋无论是宗师气度、武夫实力还是心性，都让陈平安心生佩服。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 种秋与丁婴揭示",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 327,
-        "segment_index": 6
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "俞真意"
         ],
         "to_roles": [
           "陈平安"
@@ -664,7 +588,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.622043",
+    "extracted_at": "2026-03-26T11:46:49.311572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -685,19 +609,6 @@
       "真是毁桥容易建桥难，自己差点就要死在这座藕花福地，一想到这种可能性，陈平安就难免后怕，即使藕花福地的一甲子，不等于浩然天下的六十年光阴，可肯定会错过跟宁姑娘的十年之约，十年之后，李宝瓶李槐他们都该多大了，在这期间，会不会被人欺负？"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "阴神",
-        "alias": [],
-        "original_description_in_book": "毕竟在浩然天下，练气士和纯粹武夫从一开始，就是截然不同的两条道路，武夫要散尽体内灵气，炼就一条宛若火龙巡狩四野的纯粹真气，而练气士的第一步，则是天地灵气，多多益善，之后无非是去芜存菁，开疆辟土，将一座座气府窍穴打造成府邸城池，成为自身的小洞天，如大江大河旁边的巨湖，无论是洪涝泛滥还是枯水期，练气士都能够始终勾连自身和天地，灵气源源不断，最终辟出丹室，结成金丹客，之后温养出阴神和阳神，最终成就一方地仙境界。",
-        "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 327,
-        "segment_index": 7
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -752,7 +663,7 @@
           "李槐",
           "于禄"
         ],
-        "description": "毕竟在浩然天下，练气士和纯粹武夫从一开始，就是截然不同的两条道路，武夫要散尽体内灵气，炼就一条宛若火龙巡狩四野的纯粹真气，而练气士的第一步，则是天地灵气，多多益善，之后无非是去芜存菁，开疆辟土，将一座座气府窍穴打造成府邸城池，成为自身的小洞天，如大江大河旁边的巨湖，无论是洪涝泛滥还是枯水期，练气士都能够始终勾连自身和天地，灵气源源不断，最终辟出丹室，结成金丹客，之后温养出阴神和阳神，最终成就一方地仙境界。 目前陈平安体内的格局，就是纯粹真气与天地灵气双方对峙，两军对垒，各自结阵，堪堪维持住井水不犯河水的局面。 陈平安收起思绪，拿起桌旁的养剑葫，喝了口酒。",
+        "description": "目前陈平安体内的格局，就是纯粹真气与天地灵气双方对峙，两军对垒，各自结阵，堪堪维持住井水不犯河水的局面。 陈平安收起思绪，拿起桌旁的养剑葫，喝了口酒。 真是毁桥容易建桥难，自己差点就要死在这座藕花福地，一想到这种可能性，陈平安就难免后怕，即使藕花福地的一甲子，不等于浩然天下的六十年光阴，可肯定会错过跟宁姑娘的十年之约，十年之后，李宝瓶李槐他们都该多大了，在这期间，会不会被人欺负？",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
         "related_action_indices": [],
@@ -770,7 +681,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.622043",
+    "extracted_at": "2026-03-26T11:46:49.311572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -938,7 +849,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.311572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1040,7 +951,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1102,7 +1013,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1165,7 +1076,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1270,7 +1181,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1368,7 +1279,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1430,7 +1341,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.623047",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1492,7 +1403,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.624050",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1554,7 +1465,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.624050",
+    "extracted_at": "2026-03-26T11:46:49.312576",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1617,7 +1528,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.624050",
+    "extracted_at": "2026-03-26T11:46:49.313579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1681,7 +1592,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.624050",
+    "extracted_at": "2026-03-26T11:46:49.313579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1702,20 +1613,6 @@
       "”"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意，湖山派掌门，私底下勾结丁婴的所谓正道领袖，雷打不动的天下第二人。 俞真意微笑道：“我这次折返，回到南苑国京城，是一公一私，公事是想要跟种秋商量一下，让他交出那部五岳图集，我和湖山派可以迁入南苑国，并且不跟种秋争抢国师之位。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0,
-          1
-        ],
-        "juan_index": 327,
-        "segment_index": 19
-      },
       {
         "entity_type": "person",
         "name": "丁婴",
@@ -1759,19 +1656,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 俞真意与种秋对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 丁婴与种秋对话",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
-          "种秋"
+          "丁婴",
+          "种秋",
+          "陈平安"
         ],
         "description": "俞真意，湖山派掌门，私底下勾结丁婴的所谓正道领袖，雷打不动的天下第二人。 俞真意微笑道：“我这次折返，回到南苑国京城，是一公一私，公事是想要跟种秋商量一下，让他交出那部五岳图集，我和湖山派可以迁入南苑国，并且不跟种秋争抢国师之位。 陈平安反问道：“我如果真想要，难道我自己就找不到？",
         "background": "",
-        "significance": "推动俞真意与种秋之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动丁婴与种秋之间的对话关系。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段19",
         "sentence_indexes_in_segment": [
           0,
@@ -1785,29 +1681,8 @@
         "segment_index": 19
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "俞真意"
-        ],
-        "to_roles": [
-          "种秋"
-        ],
-        "action": "对话",
-        "context": "俞真意微笑道：“我这次折返，回到南苑国京城，是一公一私，公事是想要跟种秋商量一下，让他交出那部五岳图集，我和湖山派可以迁入南苑国，并且不跟种秋争抢国师之位。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 俞真意与种秋对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 327,
-        "segment_index": 19
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.624050",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.313579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1828,35 +1703,6 @@
       "陈平安问道：“你这次入京，肯定是先找的我，来谈买卖，我可以确定，你俞真意是真心想要做成这桩买卖，但你也想要借势压下种国师吧？"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意摇头道：“你何必虚耗光阴，我终究比你更熟悉藕花福地的四国江湖和庙堂，修道之人，光阴最值钱。 牯牛山一带的灵气汇聚，那是老道人以通天术法，将藕花福地的所有灵气移山倒海而来，绝非常态，可谓百年难遇，但是谪仙人的三种神仙钱，却是天地灵气的具象化，一心证道长生的俞真意急需此物，并且也只有他出得起价格。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0,
-          2,
-          3,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 20
-      },
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "牯牛山一带的灵气汇聚，那是老道人以通天术法，将藕花福地的所有灵气移山倒海而来，绝非常态，可谓百年难遇，但是谪仙人的三种神仙钱，却是天地灵气的具象化，一心证道长生的俞真意急需此物，并且也只有他出得起价格。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 327,
-        "segment_index": 20
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1888,16 +1734,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与丁婴对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "俞真意"
+          "丁婴"
         ],
-        "description": "俞真意摇头道：“你何必虚耗光阴，我终究比你更熟悉藕花福地的四国江湖和庙堂，修道之人，光阴最值钱。 牯牛山一带的灵气汇聚，那是老道人以通天术法，将藕花福地的所有灵气移山倒海而来，绝非常态，可谓百年难遇，但是谪仙人的三种神仙钱，却是天地灵气的具象化，一心证道长生的俞真意急需此物，并且也只有他出得起价格。 俞真意指了指身后背负的琉璃飞剑，“陈平安，除了这把剑可以拿来跟你换神仙钱，我还可以亲自帮你收集遗落在藕花福地的谪仙人遗物，甚至可以帮你拿来唐铁意、云泥和尚等人，新获得的法宝，而且你是纯粹武夫，丁婴的魔教三门，童青青的镜心斋这些武林圣地，收藏了大量武学秘籍，说不定其中就有你能看上眼的。",
+        "description": "俞真意指了指身后背负的琉璃飞剑，“陈平安，除了这把剑可以拿来跟你换神仙钱，我还可以亲自帮你收集遗落在藕花福地的谪仙人遗物，甚至可以帮你拿来唐铁意、云泥和尚等人，新获得的法宝，而且你是纯粹武夫，丁婴的魔教三门，童青青的镜心斋这些武林圣地，收藏了大量武学秘籍，说不定其中就有你能看上眼的。 陈平安问道：“你这次入京，肯定是先找的我，来谈买卖，我可以确定，你俞真意是真心想要做成这桩买卖，但你也想要借势压下种国师吧？ 俞真意摇头道：“你何必虚耗光阴，我终究比你更熟悉藕花福地的四国江湖和庙堂，修道之人，光阴最值钱。",
         "background": "",
-        "significance": "推动陈平安与俞真意之间的对话关系。",
+        "significance": "推动陈平安与丁婴之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -1921,22 +1767,27 @@
           "陈平安"
         ],
         "to_roles": [
-          "俞真意"
+          "丁婴"
         ],
         "action": "对话",
-        "context": "陈平安问道：“你这次入京，肯定是先找的我，来谈买卖，我可以确定，你俞真意是真心想要做成这桩买卖，但你也想要借势压下种国师吧？",
+        "context": "俞真意摇头道：“你何必虚耗光阴，我终究比你更熟悉藕花福地的四国江湖和庙堂，修道之人，光阴最值钱。 ” 牯牛山一带的灵气汇聚，那是老道人以通天术法，将藕花福地的所有灵气移山倒海而来，绝非常态，可谓百年难遇，但是谪仙人的三种神仙钱，却是天地灵气的具象化，一心证道长生的俞真意急需此物，并且也只有他出得起价格。 俞真意指了指身后背负的琉璃飞剑，“陈平安，除了这把剑可以拿来跟你换神仙钱，我还可以亲自帮你收集遗落在藕花福地的谪仙人遗物，甚至可以帮你拿来唐铁意、云泥和尚等人，新获得的法宝，而且你是纯粹武夫，丁婴的魔教三门，童青青的镜心斋这些武林圣地，收藏了大量武学秘籍，说不定其中就有你能看上眼的。 ” 陈平安问道：“你这次入京，肯定是先找的我，来谈买卖，我可以确定，你俞真意是真心想要做成这桩买卖，但你也想要借势压下种国师吧？",
         "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与丁婴对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
           5
         ],
         "juan_index": 327,
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.624050",
+    "extracted_at": "2026-03-26T11:46:49.313579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1957,20 +1808,6 @@
       "俞真意没有否认，点头道：“可你还是会因此受惠，并且从头到尾，根本不需要你抛头露面，恶人我一人来做。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "不然的话，你俞真意一人，哪怕实力再高，还是不敢冒天下之大不韪。 俞真意没有否认，点头道：“可你还是会因此受惠，并且从头到尾，根本不需要你抛头露面，恶人我一人来做。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          2,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 21
-      },
       {
         "entity_type": "person",
         "name": "朱敛",
@@ -2001,17 +1838,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 俞真意与朱敛剧情推进",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 朱敛与丁婴剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
           "朱敛",
           "丁婴"
         ],
-        "description": "不然的话，你俞真意一人，哪怕实力再高，还是不敢冒天下之大不韪。 毕竟武疯子朱敛和魔教丁婴，都是前车之鉴。 俞真意没有否认，点头道：“可你还是会因此受惠，并且从头到尾，根本不需要你抛头露面，恶人我一人来做。",
+        "description": "毕竟武疯子朱敛和魔教丁婴，都是前车之鉴。 一旦我点了头，种国师和南苑国就会有压力。 再者，你所谓的亲自帮我搜集武学秘籍，何尝不是以天下第一和天下第二的名头，以此压下整座江湖一头，任由你找寻那些谪仙人的术法残篇？",
         "background": "",
-        "significance": "推动俞真意与朱敛之间的剧情推进关系。",
+        "significance": "推动朱敛与丁婴之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段21",
         "sentence_indexes_in_segment": [
@@ -2027,7 +1863,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.625054",
+    "extracted_at": "2026-03-26T11:46:49.313579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2062,37 +1898,21 @@
         ],
         "juan_index": 327,
         "segment_index": 22
-      },
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意背后琉璃飞剑，嗡嗡颤鸣，亦是准备出鞘。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 327,
-        "segment_index": 22
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "俞真意"
+          "陈平安"
         ],
-        "description": "陈平安拔出那把狭刀停雪。 俞真意背后琉璃飞剑，嗡嗡颤鸣，亦是准备出鞘。 他脸色阴沉，没有想到这个陈平安，如此不可理喻。",
+        "description": "陈平安拔出那把狭刀停雪。 他脸色阴沉，没有想到这个陈平安，如此不可理喻。 但是接下来陈平安用刀尖在地上，刺出两个小洞，然后在两点之间，划出一条弧线，收刀入鞘后，问道：“初衷是好的，你所希冀的结果也是好的，但这是你不择手段行事的理由吗？",
         "background": "",
-        "significance": "推动陈平安与俞真意之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段22",
         "sentence_indexes_in_segment": [
           0,
@@ -2106,34 +1926,8 @@
         "segment_index": 22
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "俞真意"
-        ],
-        "action": "对话",
-        "context": "” 陈平安拔出那把狭刀停雪。 俞真意背后琉璃飞剑，嗡嗡颤鸣，亦是准备出鞘。 他脸色阴沉，没有想到这个陈平安，如此不可理喻。 但是接下来陈平安用刀尖在地上，刺出两个小洞，然后在两点之间，划出一条弧线，收刀入鞘后，问道：“初衷是好的，你所希冀的结果也是好的，但这是你不择手段行事的理由吗？ ”",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 22
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.625054",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.313579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2154,20 +1948,6 @@
       "不说那些惨绝人寰的战事，只说你见过的榜上十人，春潮宫周肥，祸害了多少人？"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意瞥了眼陈平安脚下的那条弧线，收起视线，淡然道：“欲成大事者，不拘小节。 今日之失，他日之得，有大小之分，而且悬殊极大，我俞真意问心无愧，为何不做一做？",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0,
-          1
-        ],
-        "juan_index": 327,
-        "segment_index": 23
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2198,17 +1978,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 俞真意与陈平安剧情推进",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与周肥剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
           "陈平安",
           "周肥"
         ],
-        "description": "俞真意瞥了眼陈平安脚下的那条弧线，收起视线，淡然道：“欲成大事者，不拘小节。 今日之失，他日之得，有大小之分，而且悬殊极大，我俞真意问心无愧，为何不做一做？ 不说那些惨绝人寰的战事，只说你见过的榜上十人，春潮宫周肥，祸害了多少人？",
+        "description": "俞真意瞥了眼陈平安脚下的那条弧线，收起视线，淡然道：“欲成大事者，不拘小节。 不说那些惨绝人寰的战事，只说你见过的榜上十人，春潮宫周肥，祸害了多少人？ 今日之失，他日之得，有大小之分，而且悬殊极大，我俞真意问心无愧，为何不做一做？",
         "background": "",
-        "significance": "推动俞真意与陈平安之间的剧情推进关系。",
+        "significance": "推动陈平安与周肥之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段23",
         "sentence_indexes_in_segment": [
@@ -2224,7 +2003,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.625054",
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2258,37 +2037,21 @@
         ],
         "juan_index": 327,
         "segment_index": 24
-      },
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意不再说话。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 327,
-        "segment_index": 24
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "俞真意"
+          "陈平安"
         ],
-        "description": "陈平安点头道：“我翻了很多书，不敢说全部知道，但是知道不少，光是历史上可能因为谪仙人而引发的战事名称，我现在就能报出六十多场。 俞真意不再说话。 陈平安犹豫了一下，蹲下身，用手指加了两条线，一条直线，一条位于弧线和直线之间，弧度更小。",
+        "description": "陈平安点头道：“我翻了很多书，不敢说全部知道，但是知道不少，光是历史上可能因为谪仙人而引发的战事名称，我现在就能报出六十多场。 陈平安犹豫了一下，蹲下身，用手指加了两条线，一条直线，一条位于弧线和直线之间，弧度更小。 ”",
         "background": "",
-        "significance": "推动陈平安与俞真意之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段24",
         "sentence_indexes_in_segment": [
           0,
@@ -2302,34 +2065,8 @@
         "segment_index": 24
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "俞真意"
-        ],
-        "action": "对话",
-        "context": "” 陈平安点头道：“我翻了很多书，不敢说全部知道，但是知道不少，光是历史上可能因为谪仙人而引发的战事名称，我现在就能报出六十多场。 ” 俞真意不再说话。 道不同不相为谋。 陈平安犹豫了一下，蹲下身，用手指加了两条线，一条直线，一条位于弧线和直线之间，弧度更小。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 24
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.625054",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2363,38 +2100,21 @@
         ],
         "juan_index": 327,
         "segment_index": 25
-      },
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "陈平安站起身后，“我不苛求你俞真意当道德圣人，也没这本事，目前都不好说你就是错的，但是抛开这些不去管，我不会跟你做买卖，神仙钱，我有，而且不少，但是一颗都不会卖给你。 俞真意眯起眼，“哦？",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0,
-          2
-        ],
-        "juan_index": 327,
-        "segment_index": 25
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "俞真意"
+          "陈平安"
         ],
-        "description": "陈平安站起身后，“我不苛求你俞真意当道德圣人，也没这本事，目前都不好说你就是错的，但是抛开这些不去管，我不会跟你做买卖，神仙钱，我有，而且不少，但是一颗都不会卖给你。 俞真意眯起眼，“哦？ 陈平安笑道：“怎么，不爽了？",
+        "description": "陈平安站起身后，“我不苛求你俞真意当道德圣人，也没这本事，目前都不好说你就是错的，但是抛开这些不去管，我不会跟你做买卖，神仙钱，我有，而且不少，但是一颗都不会卖给你。 陈平安笑道：“怎么，不爽了？ ”",
         "background": "",
-        "significance": "推动陈平安与俞真意之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段25",
         "sentence_indexes_in_segment": [
           0,
@@ -2408,34 +2128,8 @@
         "segment_index": 25
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "俞真意"
-        ],
-        "action": "对话",
-        "context": "陈平安站起身后，“我不苛求你俞真意当道德圣人，也没这本事，目前都不好说你就是错的，但是抛开这些不去管，我不会跟你做买卖，神仙钱，我有，而且不少，但是一颗都不会卖给你。 ” 俞真意眯起眼，“哦？ ” 陈平安笑道：“怎么，不爽了？ 很好，那么我现在挺爽的。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 25
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.625054",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2456,20 +2150,6 @@
       "俞真意脚下飞剑才刚刚升空一丈，就听那人笑着说道：“矮冬瓜，还是别后会有期了。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意突然展颜一笑，“希望我们后会有期。 俞真意脚下飞剑才刚刚升空一丈，就听那人笑着说道：“矮冬瓜，还是别后会有期了。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          1,
-          5
-        ],
-        "juan_index": 327,
-        "segment_index": 26
-      },
       {
         "entity_type": "person",
         "name": "种秋",
@@ -2500,18 +2180,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 俞真意与种秋对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 种秋与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
           "种秋",
           "陈平安"
         ],
-        "description": "俞真意突然展颜一笑，“希望我们后会有期。 至于种秋，不用去找了，如陈平安所揭穿的那样，只有他陈平安点头答应，才有机会说服种秋。 俞真意脚下飞剑才刚刚升空一丈，就听那人笑着说道：“矮冬瓜，还是别后会有期了。",
+        "description": "至于种秋，不用去找了，如陈平安所揭穿的那样，只有他陈平安点头答应，才有机会说服种秋。 ” 俞真意突然展颜一笑，“希望我们后会有期。",
         "background": "",
-        "significance": "推动俞真意与种秋之间的对话关系。",
-        "related_action_indices": [],
+        "significance": "推动种秋与陈平安之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段26",
         "sentence_indexes_in_segment": [
           0,
@@ -2525,8 +2206,34 @@
         "segment_index": 26
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.625054",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "种秋"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 俞真意突然展颜一笑，“希望我们后会有期。 ” 琉璃飞剑瞬间出鞘，悬停在他脚边，踩上飞剑，准备御风离开南苑国京城。 至于种秋，不用去找了，如陈平安所揭穿的那样，只有他陈平安点头答应，才有机会说服种秋。 俞真意脚下飞剑才刚刚升空一丈，就听那人笑着说道：“矮冬瓜，还是别后会有期了。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 种秋与陈平安对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 327,
+        "segment_index": 26
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2549,20 +2256,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意猛然间杀气四溢，调转剑尖，冷冷盯着那个出言不逊的年轻谪仙人。 陈平安神色从容，问道：“你俞真意给人骂一句矮冬瓜，就觉得受到了奇耻大辱？",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          1,
-          2
-        ],
-        "juan_index": 327,
-        "segment_index": 27
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安神色从容，问道：“你俞真意给人骂一句矮冬瓜，就觉得受到了奇耻大辱？ 陈平安双手已经按住痴心剑柄和停雪刀柄。",
@@ -2579,19 +2272,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "俞真意"
+          "陈平安"
         ],
-        "description": "俞真意猛然间杀气四溢，调转剑尖，冷冷盯着那个出言不逊的年轻谪仙人。 陈平安神色从容，问道：“你俞真意给人骂一句矮冬瓜，就觉得受到了奇耻大辱？ 陈平安双手已经按住痴心剑柄和停雪刀柄。",
+        "description": "陈平安神色从容，问道：“你俞真意给人骂一句矮冬瓜，就觉得受到了奇耻大辱？ 陈平安双手已经按住痴心剑柄和停雪刀柄。 ”",
         "background": "",
-        "significance": "推动陈平安与俞真意之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段27",
         "sentence_indexes_in_segment": [
           0,
@@ -2605,29 +2295,8 @@
         "segment_index": 27
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "俞真意"
-        ],
-        "action": "对话",
-        "context": "陈平安神色从容，问道：“你俞真意给人骂一句矮冬瓜，就觉得受到了奇耻大辱？",
-        "result": null,
-        "event_name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安与俞真意对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 327,
-        "segment_index": 27
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.626057",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2720,7 +2389,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.626057",
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2741,19 +2410,6 @@
       "一般来说，立秋之后，市井人家，就可以盼着中秋月圆了。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "老道人不来找他，陈平安就只能等着。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 327,
-        "segment_index": 29
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -2802,16 +2458,15 @@
     ],
     "events": [
       {
-        "name": "第五卷道观道 第三百二十六章 小巷中 · 老道人与陈平安在骊珠洞天剧情推进",
+        "name": "第五卷道观道 第三百二十六章 小巷中 · 陈平安在骊珠洞天剧情推进",
         "time": null,
         "location": "骊珠洞天",
         "participants": [
-          "老道人",
           "陈平安"
         ],
         "description": "老道人不来找他，陈平安就只能等着。 家乡那座骊珠洞天，曾经是一颗悬挂在大骊版图上空的珠子。 倒悬山那座破碎不堪的黄粱福地，也是神仙难寻入口处，天晓得藕花福地到底是什么，在桐叶洲的哪里。",
         "background": "",
-        "significance": "在骊珠洞天推动老道人与陈平安之间的剧情推进线。",
+        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百二十六章 小巷中 · 段29",
         "sentence_indexes_in_segment": [
@@ -2827,7 +2482,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.626057",
+    "extracted_at": "2026-03-26T11:46:49.314583",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2934,7 +2589,7 @@
         "segment_index": 30
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.626057",
+    "extracted_at": "2026-03-26T11:46:49.315616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3039,7 +2694,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.627060",
+    "extracted_at": "2026-03-26T11:46:49.315616",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3109,7 +2764,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.627060",
+    "extracted_at": "2026-03-26T11:46:49.316125",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

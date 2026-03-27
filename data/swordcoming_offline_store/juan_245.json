@@ -89,7 +89,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.138015",
+    "extracted_at": "2026-03-26T11:46:48.868568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -150,7 +150,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.138015",
+    "extracted_at": "2026-03-26T11:46:48.868568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -229,7 +229,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.138015",
+    "extracted_at": "2026-03-26T11:46:48.868568",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -335,7 +335,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.139019",
+    "extracted_at": "2026-03-26T11:46:48.869572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -440,7 +440,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.139019",
+    "extracted_at": "2026-03-26T11:46:48.869572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -546,7 +546,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.139019",
+    "extracted_at": "2026-03-26T11:46:48.869572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -651,7 +651,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.139019",
+    "extracted_at": "2026-03-26T11:46:48.869572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -699,39 +699,23 @@
         ],
         "juan_index": 245,
         "segment_index": 9
-      },
-      {
-        "entity_type": "person",
-        "name": "仰起头",
-        "alias": [],
-        "original_description_in_book": "宋雨烧仰起头，入夏时分，还有这等好似春光明媚的艳阳天，真是不错，转头对那个北方少年微笑道：“陈平安，好意心领了。",
-        "description": "前三季叙事中多次出现，常与阿良、陈平安同场，推动相关支线发展。",
-        "power": "剑气长城",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 245,
-        "segment_index": 9
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 宋雨烧与仰起头对话",
+        "name": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 宋雨烧与陈平安对话",
         "time": null,
         "location": null,
         "participants": [
           "宋雨烧",
-          "仰起头",
           "陈平安"
         ],
         "description": "陈平安反问道：“既然对方这么厉害，老前辈难道只是来送死？ 宋雨烧沉声道：“我要擒贼先擒王，尽量一鼓作气拿下主帅楚濠，好让这支大军群龙无首，然后威胁楚濠交出那名女子。 宋雨烧仰起头，入夏时分，还有这等好似春光明媚的艳阳天，真是不错，转头对那个北方少年微笑道：“陈平安，好意心领了。",
         "background": "",
-        "significance": "推动宋雨烧与仰起头之间的对话关系。",
+        "significance": "推动宋雨烧与陈平安之间的对话关系。",
         "related_action_indices": [
-          0,
-          1,
-          2
+          0
         ],
         "source": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 段9",
         "sentence_indexes_in_segment": [
@@ -753,52 +737,12 @@
           "宋雨烧"
         ],
         "to_roles": [
-          "仰起头"
-        ],
-        "action": "对话",
-        "context": "宋雨烧仰起头，入夏时分，还有这等好似春光明媚的艳阳天，真是不错，转头对那个北方少年微笑道：“陈平安，好意心领了。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 宋雨烧与仰起头对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 245,
-        "segment_index": 9
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "宋雨烧"
-        ],
-        "to_roles": [
           "陈平安"
         ],
         "action": "对话",
         "context": "宋雨烧仰起头，入夏时分，还有这等好似春光明媚的艳阳天，真是不错，转头对那个北方少年微笑道：“陈平安，好意心领了。",
         "result": null,
-        "event_name": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 宋雨烧与仰起头对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 245,
-        "segment_index": 9
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "仰起头"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "宋雨烧仰起头，入夏时分，还有这等好似春光明媚的艳阳天，真是不错，转头对那个北方少年微笑道：“陈平安，好意心领了。",
-        "result": null,
-        "event_name": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 宋雨烧与仰起头对话",
+        "event_name": "第四卷剑气近 第二百四十四章 大骊陈平安在此 · 宋雨烧与陈平安对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -808,7 +752,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.139019",
+    "extracted_at": "2026-03-26T11:46:48.869572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -912,7 +856,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.140022",
+    "extracted_at": "2026-03-26T11:46:48.869572",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -989,7 +933,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.140022",
+    "extracted_at": "2026-03-26T11:46:48.870575",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1065,7 +1009,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.140022",
+    "extracted_at": "2026-03-26T11:46:48.870575",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1143,7 +1087,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.140022",
+    "extracted_at": "2026-03-26T11:46:48.870575",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1248,7 +1192,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.140022",
+    "extracted_at": "2026-03-26T11:46:48.870575",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1407,7 +1351,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.140022",
+    "extracted_at": "2026-03-26T11:46:48.870575",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1470,7 +1414,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.870575",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1532,7 +1476,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1594,7 +1538,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1656,7 +1600,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1718,7 +1662,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1782,7 +1726,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1846,7 +1790,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.141026",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1924,7 +1868,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.142029",
+    "extracted_at": "2026-03-26T11:46:48.871579",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2061,7 +2005,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.142029",
+    "extracted_at": "2026-03-26T11:46:48.872582",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2124,7 +2068,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.142029",
+    "extracted_at": "2026-03-26T11:46:48.872582",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2189,7 +2133,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.142029",
+    "extracted_at": "2026-03-26T11:46:48.872582",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2252,7 +2196,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.142029",
+    "extracted_at": "2026-03-26T11:46:48.872582",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2315,7 +2259,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.143032",
+    "extracted_at": "2026-03-26T11:46:48.872582",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2377,7 +2321,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.143032",
+    "extracted_at": "2026-03-26T11:46:48.872582",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2454,7 +2398,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.143032",
+    "extracted_at": "2026-03-26T11:46:48.873586",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2518,7 +2462,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.143032",
+    "extracted_at": "2026-03-26T11:46:48.873586",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2581,7 +2525,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.143032",
+    "extracted_at": "2026-03-26T11:46:48.873586",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2643,7 +2587,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.144036",
+    "extracted_at": "2026-03-26T11:46:48.873586",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2706,7 +2650,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.144036",
+    "extracted_at": "2026-03-26T11:46:48.873586",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2788,7 +2732,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.144036",
+    "extracted_at": "2026-03-26T11:46:48.874617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2866,7 +2810,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.144036",
+    "extracted_at": "2026-03-26T11:46:48.874617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2944,7 +2888,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.144036",
+    "extracted_at": "2026-03-26T11:46:48.874617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3008,7 +2952,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.144036",
+    "extracted_at": "2026-03-26T11:46:48.874617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3083,7 +3027,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.145039",
+    "extracted_at": "2026-03-26T11:46:48.874617",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

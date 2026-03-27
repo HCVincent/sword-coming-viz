@@ -55,6 +55,36 @@ export interface UnitProgressIndex {
   segments: Record<string, UnitProgressIndexSegment>;
 }
 
+export interface ChapterIndexSegment {
+  segment_index: number;
+  progress_index: number;
+  progress_label: string;
+  anchor: string;
+}
+
+export interface ChapterIndexUnit {
+  unit_index: number;
+  juan_index: number;
+  season_index: number;
+  season_name: string;
+  title: string;
+  volume_index: number;
+  volume_title: string;
+  chapter_title: string;
+  relative_path: string;
+  progress_start: number;
+  progress_end: number;
+  source_document: string;
+  segments: ChapterIndexSegment[];
+}
+
+export interface ChapterIndex {
+  book_id: string;
+  generated_at: string;
+  unit_count: number;
+  units: ChapterIndexUnit[];
+}
+
 export interface BookQuickFilter {
   label: string;
   unit_range: [number, number];

@@ -55,7 +55,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.513038",
+    "extracted_at": "2026-03-26T11:46:49.214237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.513038",
+    "extracted_at": "2026-03-26T11:46:49.214237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -180,7 +180,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.513038",
+    "extracted_at": "2026-03-26T11:46:49.214237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -291,7 +291,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.513038",
+    "extracted_at": "2026-03-26T11:46:49.214237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -426,7 +426,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.513038",
+    "extracted_at": "2026-03-26T11:46:49.214237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -535,7 +535,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.513038",
+    "extracted_at": "2026-03-26T11:46:49.214237",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -637,7 +637,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.514041",
+    "extracted_at": "2026-03-26T11:46:49.215240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -751,7 +751,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.514041",
+    "extracted_at": "2026-03-26T11:46:49.215240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -855,7 +855,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.514041",
+    "extracted_at": "2026-03-26T11:46:49.215240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -962,7 +962,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.514041",
+    "extracted_at": "2026-03-26T11:46:49.215240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1067,7 +1067,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.514041",
+    "extracted_at": "2026-03-26T11:46:49.215240",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1172,7 +1172,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.515045",
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1218,19 +1218,6 @@
         ],
         "juan_index": 309,
         "segment_index": 13
-      },
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "京城外的牯牛山上，今夜站着七八人之多，其中颜色若稚童的湖山派俞真意，神色凝重，远眺夜幕中的京城轮廓。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 309,
-        "segment_index": 13
       }
     ],
     "locations": [],
@@ -1241,13 +1228,14 @@
         "location": null,
         "participants": [
           "魏衍",
-          "樊莞尔",
-          "俞真意"
+          "樊莞尔"
         ],
-        "description": "魏衍点点头，“有啊，怎么没有。 樊莞尔摇摇头。 京城外的牯牛山上，今夜站着七八人之多，其中颜色若稚童的湖山派俞真意，神色凝重，远眺夜幕中的京城轮廓。",
+        "description": "魏衍点点头，“有啊，怎么没有。 樊莞尔摇摇头。 ”",
         "background": "",
         "significance": "推动魏衍与樊莞尔之间的对话关系。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段13",
         "sentence_indexes_in_segment": [
           0,
@@ -1261,8 +1249,34 @@
         "segment_index": 13
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.515045",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "樊莞尔"
+        ],
+        "action": "对话",
+        "context": "魏衍点点头，“有啊，怎么没有。 ” 这位太子殿下觉得有趣，笑问道：“难道樊仙子也相信佛家转世一说？ ” 樊莞尔摇摇头。 京城外的牯牛山上，今夜站着七八人之多，其中颜色若稚童的湖山派俞真意，神色凝重，远眺夜幕中的京城轮廓。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 魏衍与樊莞尔对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 309,
+        "segment_index": 13
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1312,19 +1326,6 @@
       },
       {
         "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 309,
-        "segment_index": 14
-      },
-      {
-        "entity_type": "person",
         "name": "周肥",
         "alias": [],
         "original_description_in_book": "俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
@@ -1340,19 +1341,18 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 俞真意与周肥对话",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陆舫与种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
+          "陆舫",
+          "种秋",
           "周肥"
         ],
         "description": "满身酒气的邋遢汉子，连佩剑都当给了酒铺妇人，名为陆舫。 南苑国国师种秋，是一位不苟言笑的清瘦男子，气质儒雅，很难想象他会是那个天下第一手。 俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
         "background": "",
-        "significance": "推动俞真意与周肥之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "推动陆舫与种秋之间的剧情推进关系。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段14",
         "sentence_indexes_in_segment": [
           0,
@@ -1366,29 +1366,8 @@
         "segment_index": 14
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "俞真意"
-        ],
-        "to_roles": [
-          "周肥"
-        ],
-        "action": "对话",
-        "context": "俞真意嗓音也如容貌一般稚嫩清灵，缓缓开口道：“除了丁老魔，春潮宫周肥，游侠冯冯，镜心斋童青青，这既定四人，我们恐怕要多杀一人了。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 俞真意与周肥对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 309,
-        "segment_index": 14
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.515045",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1478,7 +1457,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.515045",
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1499,19 +1478,6 @@
       "陈平安没有返回宅子，就这么孤魂野鬼似的，独自夜游京城，期间潜入一家书香门第的藏书楼，随手翻阅书籍。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意死死盯住京城某个地方，轻声道：“陆舫，你跟你朋友，先解决掉那个最大的意外，至于是联手杀人，还是独自杀人，我都不管，但是只许成功不许失败，三天之内，将那人的头颅带过来，他身上的所有物件，老规矩，杀人者得之。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 309,
-        "segment_index": 16
-      },
       {
         "entity_type": "person",
         "name": "陆舫",
@@ -1543,17 +1509,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陆舫与俞真意剧情推进",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陆舫与陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "陆舫",
-          "俞真意",
           "陈平安"
         ],
         "description": "俞真意死死盯住京城某个地方，轻声道：“陆舫，你跟你朋友，先解决掉那个最大的意外，至于是联手杀人，还是独自杀人，我都不管，但是只许成功不许失败，三天之内，将那人的头颅带过来，他身上的所有物件，老规矩，杀人者得之。 陆舫摸了摸后脑勺，叹息一声。 陈平安没有返回宅子，就这么孤魂野鬼似的，独自夜游京城，期间潜入一家书香门第的藏书楼，随手翻阅书籍。",
         "background": "",
-        "significance": "推动陆舫与俞真意之间的剧情推进关系。",
+        "significance": "推动陆舫与陈平安之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段16",
         "sentence_indexes_in_segment": [
@@ -1569,7 +1534,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.515045",
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1604,20 +1569,6 @@
         ],
         "juan_index": 309,
         "segment_index": 17
-      },
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "陈平安就假装没看到，回了宅院，晚饭是跟孩子一家人在一张饭桌上，按照事先租房子的时候说好的，这户人家为陈平安添双碗筷，每天多收三十文钱，老妪信誓旦旦说，餐餐必有鱼肉，事实上陈平安经常外出，要么早出晚归，错过吃饭的点，要么干脆一段时间没人影儿，老妪高兴得很。 今天桌上没什么油水，老妪笑着抱歉，说陈公子今儿怎么不早点打声招呼，才好准备食材。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          4,
-          5
-        ],
-        "juan_index": 309,
-        "segment_index": 17
       }
     ],
     "locations": [
@@ -1645,15 +1596,12 @@
         "location": "落魄山",
         "participants": [
           "陈平安",
-          "魏檗",
-          "老妪"
+          "魏檗"
         ],
         "description": "陈平安在一家铺子买了几本文笔散淡的山水游记，近期肯定不会翻看，只是想着让落魄山多些藏书而已。 等陈平安走回住处的巷弄，刚好那个清秀的小家伙下课归来，两人一起走在巷子里，孩子像是有难言之隐，憋了半天也没好意思说出口。 陈平安就假装没看到，回了宅院，晚饭是跟孩子一家人在一张饭桌上，按照事先租房子的时候说好的，这户人家为陈平安添双碗筷，每天多收三十文钱，老妪信誓旦旦说，餐餐必有鱼肉，事实上陈平安经常外出，要么早出晚归，错过吃饭的点，要么干脆一段时间没人影儿，老妪高兴得很。",
         "background": "",
         "significance": "对应陈平安后续立身与势力经营阶段。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段17",
         "sentence_indexes_in_segment": [
           0,
@@ -1667,34 +1615,8 @@
         "segment_index": 17
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "老妪"
-        ],
-        "action": "同行",
-        "context": "在天亮之前，又悄然离去，在京城国子监又旁听那些夫子授课，直到日头高照的正午时分，才走回状元巷那边，有意避开了跟丁姓老人、簪花郎周仕有关的那栋宅子。 状元巷有几间逼仄狭小的书肆，除了卖书，也顺带卖一些称不上案头清供的文房四宝，粗糙简陋，好在价格不高，毕竟这边的买主，都是些进京赶考的穷书生。 陈平安在一家铺子买了几本文笔散淡的山水游记，近期肯定不会翻看，只是想着让落魄山多些藏书而已。 等陈平安走回住处的巷弄，刚好那个清秀的小家伙下课归来，两人一起走在巷子里，孩子像是有难言之隐，憋了半天也没好意思说出口。 陈平安就假装没看到，回了宅院，晚饭是跟孩子一家人在一张饭桌上，按照事先租房子的时候说好的，这户人家为陈平安添双碗筷，每天多收三十文钱，老妪信誓旦旦说，餐餐必有鱼肉，事实上陈平安经常外出，要么早出晚归，错过吃饭的点，要么干脆一段时间没人影儿，老妪高兴得很。 今天桌上没什么油水，老妪笑着抱歉，说陈公子今儿怎么不早点打声招呼，才好准备食材。",
-        "result": null,
-        "event_name": "落魄山起势",
-        "location": "落魄山",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 309,
-        "segment_index": 17
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.515045",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1730,34 +1652,20 @@
         ],
         "juan_index": 309,
         "segment_index": 18
-      },
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "老妪便问明儿怎么说，当听到陈平安说明天要外出后，老妪便唉声叹气，埋怨陈公子也太忙碌了些，吃顿家常饭菜都这么难，其实她儿媳妇的厨艺，还是不错的，不敢说多好，肯定下饭。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 309,
-        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安与老妪剧情推进",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "老妪"
+          "陈平安"
         ],
         "description": "陈平安笑着说能吃饱就行了。 老妪便问明儿怎么说，当听到陈平安说明天要外出后，老妪便唉声叹气，埋怨陈公子也太忙碌了些，吃顿家常饭菜都这么难，其实她儿媳妇的厨艺，还是不错的，不敢说多好，肯定下饭。 陈平安吃过了饭，就搬了条小凳，去那孩子爷爷经常跟人下棋的街角，难得是大条青石铺就的街面，世世代代住在这边的人，在那边看着人来人往，与街坊邻居聊着家长里短，很能解闷，若是见着了有富家子弟骑马疾驰而过，或是某位小有名气的青楼女子姗姗走过，都能让一整条街亮堂起来。",
         "background": "",
-        "significance": "推动陈平安与老妪之间的剧情推进关系。",
+        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段18",
         "sentence_indexes_in_segment": [
@@ -1773,7 +1681,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.516048",
+    "extracted_at": "2026-03-26T11:46:49.216244",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1836,7 +1744,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.516048",
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1870,37 +1778,21 @@
         ],
         "juan_index": 309,
         "segment_index": 20
-      },
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "陈平安愣了一下，本以为是那个言语刻薄的老妪，经常去他房间“串门”，翻翻捡捡，不曾想是那个看着很老实的孩子他娘亲。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 309,
-        "segment_index": 20
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安与老妪迁移",
+        "name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "老妪"
+          "陈平安"
         ],
         "description": "孩子坐在矮矮的板凳上，双手紧握拳头，放在膝盖上，不敢看陈平安，“我娘经常趁着陈公子不在家，就去翻陈公子的东西。 陈平安愣了一下，本以为是那个言语刻薄的老妪，经常去他房间“串门”，翻翻捡捡，不曾想是那个看着很老实的孩子他娘亲。 ”",
         "background": "",
-        "significance": "推动陈平安与老妪之间的迁移关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百零八章 杀机四伏 · 段20",
         "sentence_indexes_in_segment": [
           0,
@@ -1914,34 +1806,8 @@
         "segment_index": 20
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "老妪"
-        ],
-        "action": "别离",
-        "context": "” 孩子坐在矮矮的板凳上，双手紧握拳头，放在膝盖上，不敢看陈平安，“我娘经常趁着陈公子不在家，就去翻陈公子的东西。 ” 陈平安愣了一下，本以为是那个言语刻薄的老妪，经常去他房间“串门”，翻翻捡捡，不曾想是那个看着很老实的孩子他娘亲。 孩子心情愈发沉重，“后来陈公子离开久了，娘亲就偷拿了陈公子放在桌上的书籍给我，我一个忍不住，就翻书偷看了，我知道这样不好。 ”",
-        "result": null,
-        "event_name": "第五卷道观道 第三百零八章 杀机四伏 · 陈平安与老妪迁移",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 309,
-        "segment_index": 20
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.516048",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2005,7 +1871,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.516048",
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2081,7 +1947,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.516048",
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2157,7 +2023,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.516048",
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2220,7 +2086,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.517052",
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2283,7 +2149,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.517052",
+    "extracted_at": "2026-03-26T11:46:49.217247",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2346,7 +2212,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.517052",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2411,7 +2277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.517052",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2474,7 +2340,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.517052",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2536,7 +2402,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.517052",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2599,7 +2465,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.518056",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2662,7 +2528,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.518056",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2724,7 +2590,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.518056",
+    "extracted_at": "2026-03-26T11:46:49.218251",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

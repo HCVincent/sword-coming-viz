@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type { ChapterIndex } from '../types/pipelineArtifacts';
 import type {
   RoleLinkUnified,
   RoleNodeUnified,
@@ -7,6 +8,15 @@ import type {
   UnifiedLocation,
   UnifiedRelation,
 } from '../types/unified';
+import { getJumpTargetsByUnits, getPrimaryJumpTarget, type ChapterJumpTarget } from '../utils/sourceText';
+
+function formatEventContextLabel(event: TimelineEventUnified, chapterIndex: ChapterIndex | null): string {
+  const baseLabel = event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`;
+  if (!chapterIndex) return baseLabel;
+  const unit = chapterIndex.units.find((item) => item.unit_index === event.unitIndex);
+  if (!unit?.season_name) return baseLabel;
+  return baseLabel.startsWith(unit.season_name) ? baseLabel : `${unit.season_name} · ${baseLabel}`;
+}
 
 function resolveRoleId(kb: UnifiedKnowledgeBase | null, nameOrId: string): string | null {
   if (!kb) return null;
@@ -92,28 +102,59 @@ function renderRoleChip(opts: {
   );
 }
 
+function renderJumpLink(target: ChapterJumpTarget, className = 'outline-button') {
+  return (
+    <a
+      key={`${target.unitIndex}-${target.anchor ?? 'chapter'}`}
+      href={target.href}
+      className={className}
+      title={target.title}
+      target="_blank"
+    >
+      {target.label}
+    </a>
+  );
+}
+
+function renderJumpSection(title: string, targets: ChapterJumpTarget[], extraText?: string | null) {
+  if (!targets.length && !extraText) return null;
+  return (
+    <section className="detail-section">
+      <h3 className="detail-heading">{title}</h3>
+      {targets.length > 0 ? <div className="chip-wrap">{targets.map((target) => renderJumpLink(target))}</div> : null}
+      {extraText ? <p className="status-note mt-3">{extraText}</p> : null}
+    </section>
+  );
+}
+
 interface EventDetailProps {
   event: TimelineEventUnified | null;
   onClose: () => void;
   onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onLocationClick?: (locationName: string) => void;
+  chapterIndex: ChapterIndex | null;
   kb: UnifiedKnowledgeBase | null;
   availableRoleIds: Set<string>;
 }
 
-export function EventDetail({ event, onClose, onBack, onEntityClick, onLocationClick, kb, availableRoleIds }: EventDetailProps) {
+export function EventDetail({ event, onClose, onBack, onEntityClick, onLocationClick, chapterIndex, kb, availableRoleIds }: EventDetailProps) {
   if (!event) return null;
 
   const progressLabel = kb?.progress_label ?? '叙事进度';
   const unitLabel = kb?.unit_label ?? '章节';
+  const chapterTarget = getPrimaryJumpTarget(chapterIndex, {
+    unitIndex: event.unitIndex,
+    progressIndex: event.progressStart,
+    fallbackLabel: '查看对应原文',
+  });
 
   return (
     <ModalShell title={event.name} onClose={onClose} onBack={onBack}>
       {(event.progressLabel || event.progressStart !== null) && (
         <section className="detail-section">
           <h3 className="detail-heading">{progressLabel}</h3>
-          <p className="detail-text">{event.progressLabel ?? event.progressStart}</p>
+          <p className="detail-text">{formatEventContextLabel(event, chapterIndex)}</p>
         </section>
       )}
 
@@ -176,6 +217,8 @@ export function EventDetail({ event, onClose, onBack, onEntityClick, onLocationC
         </section>
       )}
 
+      {renderJumpSection('原文定位', chapterTarget ? [chapterTarget] : [], chapterTarget ? `定位到${unitLabel}${chapterTarget.unitIndex}的对应段落。` : null)}
+
       <section className="detail-section divider-line">
         <p className="status-note">
           来源：{unitLabel}
@@ -192,7 +235,9 @@ interface RoleDetailProps {
   onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onEventClick?: (event: TimelineEventUnified) => void;
+  relatedRoleNames?: string[];
   relatedEvents?: TimelineEventUnified[];
+  chapterIndex: ChapterIndex | null;
   kb: UnifiedKnowledgeBase | null;
   availableRoleIds: Set<string>;
 }
@@ -203,13 +248,18 @@ export function RoleDetail({
   onBack,
   onEntityClick,
   onEventClick,
+  relatedRoleNames,
   relatedEvents,
+  chapterIndex,
   kb,
   availableRoleIds,
 }: RoleDetailProps) {
   if (!role) return null;
 
   const unitLabel = kb?.unit_label ?? '章节';
+  const sourceChapterTargets = getJumpTargetsByUnits(chapterIndex, role.units, 10);
+  const visibleRelatedRoleNames =
+    relatedRoleNames && relatedRoleNames.length > 0 ? relatedRoleNames : role.relatedEntities;
 
   return (
     <ModalShell title={role.name} onClose={onClose} onBack={onBack}>
@@ -240,11 +290,11 @@ export function RoleDetail({
         <p className="detail-text">{role.description || '暂无描述。'}</p>
       </section>
 
-      {role.relatedEntities.length > 0 && (
+      {visibleRelatedRoleNames.length > 0 && (
         <section className="detail-section">
           <h3 className="detail-heading">相关人物</h3>
           <div className="chip-wrap">
-            {role.relatedEntities.slice(0, 15).map((name) =>
+            {visibleRelatedRoleNames.slice(0, 15).map((name) =>
               renderRoleChip({
                 name,
                 kb,
@@ -254,8 +304,8 @@ export function RoleDetail({
                 },
               })
             )}
-            {role.relatedEntities.length > 15 && (
-              <span className="pill-chip pill-chip--muted">+{role.relatedEntities.length - 15}</span>
+            {visibleRelatedRoleNames.length > 15 && (
+              <span className="pill-chip pill-chip--muted">+{visibleRelatedRoleNames.length - 15}</span>
             )}
           </div>
         </section>
@@ -280,6 +330,12 @@ export function RoleDetail({
             ))}
           </div>
         </section>
+      )}
+
+      {renderJumpSection(
+        '原文定位',
+        sourceChapterTargets,
+        sourceChapterTargets.length > 0 ? `可直接跳到该人物在当前范围内出现过的${unitLabel}。` : null
       )}
 
       <section className="detail-section divider-line">
@@ -349,6 +405,7 @@ interface LocationDetailProps {
   onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onEventClick?: (event: TimelineEventUnified) => void;
+  chapterIndex: ChapterIndex | null;
   kb: UnifiedKnowledgeBase | null;
   availableRoleIds: Set<string>;
 }
@@ -362,6 +419,7 @@ export function LocationDetail({
   onBack,
   onEntityClick,
   onEventClick,
+  chapterIndex,
   kb,
   availableRoleIds,
 }: LocationDetailProps) {
@@ -369,6 +427,7 @@ export function LocationDetail({
 
   const unitLabel = kb?.unit_label ?? '章节';
   const units = location.units_appeared ?? location.juans_appeared ?? [];
+  const sourceChapterTargets = getJumpTargetsByUnits(chapterIndex, units, 8);
 
   return (
     <ModalShell
@@ -431,6 +490,8 @@ export function LocationDetail({
         </section>
       )}
 
+      {renderJumpSection('原文定位', sourceChapterTargets, sourceChapterTargets.length > 0 ? `可跳到该地点在原文中出现的相关${unitLabel}。` : null)}
+
       {relatedActions.length > 0 && (
         <section className="detail-section">
           <h3 className="detail-heading">关联关系</h3>
@@ -467,7 +528,9 @@ interface RelationDetailProps {
   onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
   onEventClick?: (event: TimelineEventUnified) => void;
+  relatedRoleNames?: string[];
   relatedEvents?: TimelineEventUnified[];
+  chapterIndex: ChapterIndex | null;
   kb: UnifiedKnowledgeBase | null;
   availableRoleIds: Set<string>;
 }
@@ -481,6 +544,7 @@ export function RelationDetail({
   onEntityClick,
   onEventClick,
   relatedEvents,
+  chapterIndex,
   kb,
   availableRoleIds,
 }: RelationDetailProps) {
@@ -495,6 +559,12 @@ export function RelationDetail({
     .map((relation) => relation.progressStart)
     .filter((value): value is number => value !== null)
     .sort((a, b) => a - b)[0];
+  const primaryJumpTarget = getPrimaryJumpTarget(chapterIndex, {
+    unitIndex: allUnits[0] ?? null,
+    progressIndex: earliestProgress ?? null,
+    fallbackLabel: '查看最早原文位置',
+  });
+  const sourceChapterTargets = getJumpTargetsByUnits(chapterIndex, allUnits, 8);
 
   return (
     <ModalShell title="人物关系详情" subtitle={`${sourceName} 与 ${targetName}`} onClose={onClose} onBack={onBack} wide>
@@ -544,6 +614,12 @@ export function RelationDetail({
           )}
         </div>
       </section>
+
+      {renderJumpSection(
+        '原文定位',
+        primaryJumpTarget ? [primaryJumpTarget, ...sourceChapterTargets.filter((item) => item.unitIndex !== primaryJumpTarget.unitIndex)] : sourceChapterTargets,
+        sourceChapterTargets.length > 0 ? `可跳到这组关系涉及的相关${unitLabel}。` : null
+      )}
 
       <section className="detail-section">
         <h3 className="detail-heading">关系记录</h3>

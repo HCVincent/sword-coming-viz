@@ -29,20 +29,6 @@
       },
       {
         "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "周肥双指一捻，女子魂魄在他指尖凝聚为一粒雪白珠子，被他轻轻放入袖中，抬头望向金刚寺老僧，没了先前的清谈意味，直截了当道：“说回那件衣裳的事情，我知道与你有关，种秋为此还来寺里找过你。 可是老僧还是不愿说正事，眼神充满缅怀之意，望向屋外绿意葱葱的茂林，“贫僧有个师弟，年轻的时候，一起修的佛法，说他最看不得人间悲伤的故事，看到了，他就难免会想，世间本来就有佛，人间还是如此这般，就算他修成了佛，又能如何呢？",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0,
-          2
-        ],
-        "juan_index": 313,
-        "segment_index": 1
-      },
-      {
-        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "周肥双指一捻，女子魂魄在他指尖凝聚为一粒雪白珠子，被他轻轻放入袖中，抬头望向金刚寺老僧，没了先前的清谈意味，直截了当道：“说回那件衣裳的事情，我知道与你有关，种秋为此还来寺里找过你。",
@@ -58,18 +44,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 老僧与周肥迁移",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥与种秋迁移",
         "time": null,
         "location": null,
         "participants": [
-          "老僧",
           "周肥",
           "种秋"
         ],
-        "description": "周肥双指一捻，女子魂魄在他指尖凝聚为一粒雪白珠子，被他轻轻放入袖中，抬头望向金刚寺老僧，没了先前的清谈意味，直截了当道：“说回那件衣裳的事情，我知道与你有关，种秋为此还来寺里找过你。 可是老僧还是不愿说正事，眼神充满缅怀之意，望向屋外绿意葱葱的茂林，“贫僧有个师弟，年轻的时候，一起修的佛法，说他最看不得人间悲伤的故事，看到了，他就难免会想，世间本来就有佛，人间还是如此这般，就算他修成了佛，又能如何呢？ ”",
+        "description": "周肥双指一捻，女子魂魄在他指尖凝聚为一粒雪白珠子，被他轻轻放入袖中，抬头望向金刚寺老僧，没了先前的清谈意味，直截了当道：“说回那件衣裳的事情，我知道与你有关，种秋为此还来寺里找过你。 ” 可是老僧还是不愿说正事，眼神充满缅怀之意，望向屋外绿意葱葱的茂林，“贫僧有个师弟，年轻的时候，一起修的佛法，说他最看不得人间悲伤的故事，看到了，他就难免会想，世间本来就有佛，人间还是如此这般，就算他修成了佛，又能如何呢？",
         "background": "",
-        "significance": "推动老僧与周肥之间的迁移关系。",
-        "related_action_indices": [],
+        "significance": "推动周肥与种秋之间的迁移关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十二章 变故 · 段1",
         "sentence_indexes_in_segment": [
           0,
@@ -83,8 +70,34 @@
         "segment_index": 1
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.532105",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "周肥"
+        ],
+        "to_roles": [
+          "种秋"
+        ],
+        "action": "同行",
+        "context": "周肥双指一捻，女子魂魄在他指尖凝聚为一粒雪白珠子，被他轻轻放入袖中，抬头望向金刚寺老僧，没了先前的清谈意味，直截了当道：“说回那件衣裳的事情，我知道与你有关，种秋为此还来寺里找过你。 ” 可是老僧还是不愿说正事，眼神充满缅怀之意，望向屋外绿意葱葱的茂林，“贫僧有个师弟，年轻的时候，一起修的佛法，说他最看不得人间悲伤的故事，看到了，他就难免会想，世间本来就有佛，人间还是如此这般，就算他修成了佛，又能如何呢？ 后来我离开了家乡那座小寺庙，不知那位师弟如今……” “成佛了没有？ ”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十二章 变故 · 周肥与种秋迁移",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 313,
+        "segment_index": 1
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.231296",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -118,37 +131,21 @@
         ],
         "juan_index": 313,
         "segment_index": 2
-      },
-      {
-        "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "老僧摇头道：“我只是想知道师弟是否还在世，这么多年，很是想念师弟做的米粥。",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 313,
-        "segment_index": 2
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 周肥与老僧对话",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥对话",
         "time": null,
         "location": null,
         "participants": [
-          "周肥",
-          "老僧"
+          "周肥"
         ],
-        "description": "周肥压下心中怒意，轻轻摇头，讥笑道：“这么小的地方，成得了什么真佛，老和尚，你想太多了。 老僧摇头道：“我只是想知道师弟是否还在世，这么多年，很是想念师弟做的米粥。 周肥就要站起身，“不陪你绕来绕去了，送你一程，自己去问你师弟在下边还会不会做粥。",
+        "description": "周肥压下心中怒意，轻轻摇头，讥笑道：“这么小的地方，成得了什么真佛，老和尚，你想太多了。 周肥就要站起身，“不陪你绕来绕去了，送你一程，自己去问你师弟在下边还会不会做粥。 ”",
         "background": "",
-        "significance": "推动周肥与老僧之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应周肥在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段2",
         "sentence_indexes_in_segment": [
           0,
@@ -162,34 +159,8 @@
         "segment_index": 2
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "周肥"
-        ],
-        "to_roles": [
-          "老僧"
-        ],
-        "action": "对话",
-        "context": "周肥压下心中怒意，轻轻摇头，讥笑道：“这么小的地方，成得了什么真佛，老和尚，你想太多了。 ” 老僧摇头道：“我只是想知道师弟是否还在世，这么多年，很是想念师弟做的米粥。 ” 周肥就要站起身，“不陪你绕来绕去了，送你一程，自己去问你师弟在下边还会不会做粥。 ”",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 周肥与老僧对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 2
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.532105",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.231296",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -212,20 +183,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "老僧脸色淡然，微笑道：“宫中那具罗汉金身，我若是帮你周肥拿到，你能不能答应我一件事？ 老僧伸出手掌，摸了摸光头，感慨道：“我不打算当和尚了，自幼就被丢在寺庙门口，被师父好心收留，当初跟师弟两个人成天想东想西，其实一直很想要一把梳子来着。",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0,
-          4
-        ],
-        "juan_index": 313,
-        "segment_index": 3
-      },
-      {
-        "entity_type": "person",
         "name": "周肥",
         "alias": [],
         "original_description_in_book": "老僧脸色淡然，微笑道：“宫中那具罗汉金身，我若是帮你周肥拿到，你能不能答应我一件事？ 周肥重新坐下，觉得有趣，“‘我’？",
@@ -242,19 +199,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 老僧与周肥对话",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥对话",
         "time": null,
         "location": null,
         "participants": [
-          "老僧",
           "周肥"
         ],
-        "description": "老僧脸色淡然，微笑道：“宫中那具罗汉金身，我若是帮你周肥拿到，你能不能答应我一件事？ 周肥重新坐下，觉得有趣，“‘我’？ 老僧伸出手掌，摸了摸光头，感慨道：“我不打算当和尚了，自幼就被丢在寺庙门口，被师父好心收留，当初跟师弟两个人成天想东想西，其实一直很想要一把梳子来着。",
+        "description": "老僧脸色淡然，微笑道：“宫中那具罗汉金身，我若是帮你周肥拿到，你能不能答应我一件事？ 周肥重新坐下，觉得有趣，“‘我’？ ”",
         "background": "",
-        "significance": "推动老僧与周肥之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应周肥在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段3",
         "sentence_indexes_in_segment": [
           0,
@@ -268,29 +222,8 @@
         "segment_index": 3
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老僧"
-        ],
-        "to_roles": [
-          "周肥"
-        ],
-        "action": "对话",
-        "context": "老僧脸色淡然，微笑道：“宫中那具罗汉金身，我若是帮你周肥拿到，你能不能答应我一件事？",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 老僧与周肥对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 313,
-        "segment_index": 3
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.532105",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.231296",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -324,35 +257,20 @@
         ],
         "juan_index": 313,
         "segment_index": 4
-      },
-      {
-        "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "老僧摘了外边袈裟，整齐叠好，放在一边，轻声道：“请你帮她找出一个脱身之法，不要再被禁锢在这个‘小地方’了。 衣裙飘到老僧身边，裙角缓缓落在地上，最后依稀可见是一个跪坐姿势。",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          1,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 周肥与老僧剧情推进",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "周肥",
-          "老僧"
+          "周肥"
         ],
-        "description": "周肥捧腹大笑。 老僧摘了外边袈裟，整齐叠好，放在一边，轻声道：“请你帮她找出一个脱身之法，不要再被禁锢在这个‘小地方’了。 屋外那些美人们侍奉周肥多年，见多识广，可是亲眼看到这件飘摇空中的衣裙，还是觉得惊艳。",
+        "description": "周肥捧腹大笑。 屋外那些美人们侍奉周肥多年，见多识广，可是亲眼看到这件飘摇空中的衣裙，还是觉得惊艳。 老僧摘了外边袈裟，整齐叠好，放在一边，轻声道：“请你帮她找出一个脱身之法，不要再被禁锢在这个‘小地方’了。",
         "background": "",
-        "significance": "推动周肥与老僧之间的剧情推进关系。",
+        "significance": "对应周肥在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段4",
         "sentence_indexes_in_segment": [
@@ -368,7 +286,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.532105",
+    "extracted_at": "2026-03-26T11:46:49.231296",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -391,20 +309,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "老僧脱了袈裟后，言语便不再那么讲究，“这么多年，担任这金刚寺的续灯僧和讲经僧，日复一日，年复一年，说了万千句经文佛法与他们听，各色人物，三教九流，他们听了也就只是听了，沙场大仗还是打，江湖仇杀还是照旧，难不成要我一个和尚，拿起刀去除暴安良，以杀止杀？ 老僧盯着周肥，“办得到吗？",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0,
-          4
-        ],
-        "juan_index": 313,
-        "segment_index": 5
-      },
-      {
-        "entity_type": "person",
         "name": "周肥",
         "alias": [],
         "original_description_in_book": "老僧盯着周肥，“办得到吗？",
@@ -420,16 +324,15 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 老僧与周肥剧情推进",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "老僧",
           "周肥"
         ],
-        "description": "老僧脱了袈裟后，言语便不再那么讲究，“这么多年，担任这金刚寺的续灯僧和讲经僧，日复一日，年复一年，说了万千句经文佛法与他们听，各色人物，三教九流，他们听了也就只是听了，沙场大仗还是打，江湖仇杀还是照旧，难不成要我一个和尚，拿起刀去除暴安良，以杀止杀？ 老僧盯着周肥，“办得到吗？ 拿刀架在脖子上，逼着他们向善向佛？",
+        "description": "老僧盯着周肥，“办得到吗？ 老僧脱了袈裟后，言语便不再那么讲究，“这么多年，担任这金刚寺的续灯僧和讲经僧，日复一日，年复一年，说了万千句经文佛法与他们听，各色人物，三教九流，他们听了也就只是听了，沙场大仗还是打，江湖仇杀还是照旧，难不成要我一个和尚，拿起刀去除暴安良，以杀止杀？ 拿刀架在脖子上，逼着他们向善向佛？",
         "background": "",
-        "significance": "推动老僧与周肥之间的剧情推进关系。",
+        "significance": "对应周肥在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段5",
         "sentence_indexes_in_segment": [
@@ -445,7 +348,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.532105",
+    "extracted_at": "2026-03-26T11:46:49.232299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -480,38 +383,21 @@
         ],
         "juan_index": 313,
         "segment_index": 6
-      },
-      {
-        "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "周肥没有急于给出答案，眼前金刚寺老僧，是这方天地的佛门圣人，擅长榜书，字如金刚杵，气势磅礴。 老僧转头看了眼青色衣裙，无奈道：“她不一样啊。",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0,
-          3
-        ],
-        "juan_index": 313,
-        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 周肥与老僧迁移",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥迁移",
         "time": null,
         "location": null,
         "participants": [
-          "周肥",
-          "老僧"
+          "周肥"
         ],
-        "description": "周肥没有急于给出答案，眼前金刚寺老僧，是这方天地的佛门圣人，擅长榜书，字如金刚杵，气势磅礴。 周肥叹了口气，“买卖人还是要讲一点诚信的，你这老和尚，当真不知道得了这类认定的福缘，就可以离开此地？ 老僧转头看了眼青色衣裙，无奈道：“她不一样啊。",
+        "description": "周肥没有急于给出答案，眼前金刚寺老僧，是这方天地的佛门圣人，擅长榜书，字如金刚杵，气势磅礴。 周肥叹了口气，“买卖人还是要讲一点诚信的，你这老和尚，当真不知道得了这类认定的福缘，就可以离开此地？ 周肥虽然是个开窍极早的谪仙人，但是也不敢自称通晓所有规矩，毕竟下来之前，挨上一些个神魂禁锢的真正仙家秘术，是必不可少的。",
         "background": "",
-        "significance": "推动周肥与老僧之间的迁移关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应周肥在叙事中的关键迁移节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -525,34 +411,8 @@
         "segment_index": 6
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "周肥"
-        ],
-        "to_roles": [
-          "老僧"
-        ],
-        "action": "别离",
-        "context": "周肥没有急于给出答案，眼前金刚寺老僧，是这方天地的佛门圣人，擅长榜书，字如金刚杵，气势磅礴。 周肥叹了口气，“买卖人还是要讲一点诚信的，你这老和尚，当真不知道得了这类认定的福缘，就可以离开此地？ ” 老僧转头看了眼青色衣裙，无奈道：“她不一样啊。 ” 周肥虽然是个开窍极早的谪仙人，但是也不敢自称通晓所有规矩，毕竟下来之前，挨上一些个神魂禁锢的真正仙家秘术，是必不可少的。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 周肥与老僧迁移",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 6
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.533108",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.232299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -575,19 +435,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "老僧笑了笑，“周施主能有此问，我就彻底放心了。",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 313,
-        "segment_index": 7
-      },
-      {
-        "entity_type": "person",
         "name": "周肥",
         "alias": [],
         "original_description_in_book": "周肥自言自语道：“对于我而言，最好的情况，当然是带着周仕一起离开。",
@@ -603,19 +450,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 老僧与周肥迁移",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周肥迁移",
         "time": null,
         "location": null,
         "participants": [
-          "老僧",
           "周肥"
         ],
-        "description": "老僧笑了笑，“周施主能有此问，我就彻底放心了。 周肥自言自语道：“对于我而言，最好的情况，当然是带着周仕一起离开。 镜心斋，金刚寺，敬仰楼。",
+        "description": "周肥自言自语道：“对于我而言，最好的情况，当然是带着周仕一起离开。 镜心斋，金刚寺，敬仰楼。 这三个地方的当家人，经过一次次浩劫和积淀，未必知道得比他少。",
         "background": "",
-        "significance": "推动老僧与周肥之间的迁移关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应周肥在叙事中的关键迁移节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -629,34 +473,8 @@
         "segment_index": 7
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老僧"
-        ],
-        "to_roles": [
-          "周肥"
-        ],
-        "action": "同行",
-        "context": "镜心斋，金刚寺，敬仰楼。 这三个地方的当家人，经过一次次浩劫和积淀，未必知道得比他少。 老僧笑了笑，“周施主能有此问，我就彻底放心了。 ” 周肥自言自语道：“对于我而言，最好的情况，当然是带着周仕一起离开。 但是万一有意外呢，比如当下这种，周仕给人打成重伤，几乎没有浑水摸鱼偷偷跑进十人之列的机会了，我就需要保证自己离开后，六十年后，周仕可以多出一些把握。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 老僧与周肥迁移",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 7
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.533108",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.232299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -715,19 +533,6 @@
         ],
         "juan_index": 313,
         "segment_index": 8
-      },
-      {
-        "entity_type": "person",
-        "name": "老僧",
-        "alias": [],
-        "original_description_in_book": "老僧抬头望去。",
-        "description": "带有稳定身份的支线人物，适合作为外围宗门节点。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 8
       }
     ],
     "locations": [],
@@ -739,10 +544,9 @@
         "participants": [
           "樊莞尔",
           "周肥",
-          "陆舫",
-          "老僧"
+          "陆舫"
         ],
-        "description": "周仕，鸦儿，樊莞尔，这些人，不管是谁，去了更大的天地，只要有人愿意照拂他们，一定可以大放光彩。 说到这里，周肥难掩愤懑，“陆舫这个笨蛋，明明看破了，却不曾真正勘破。 老僧抬头望去。",
+        "description": "周仕，鸦儿，樊莞尔，这些人，不管是谁，去了更大的天地，只要有人愿意照拂他们，一定可以大放光彩。 说到这里，周肥难掩愤懑，“陆舫这个笨蛋，明明看破了，却不曾真正勘破。 ”",
         "background": "",
         "significance": "推动樊莞尔与周肥之间的剧情推进关系。",
         "related_action_indices": [],
@@ -760,7 +564,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.533108",
+    "extracted_at": "2026-03-26T11:46:49.232299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -867,7 +671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.533108",
+    "extracted_at": "2026-03-26T11:46:49.232299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -914,19 +718,6 @@
         ],
         "juan_index": 313,
         "segment_index": 10
-      },
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "原来敬仰楼新鲜出炉了一份最新的天下十人，点名道姓，身处何方，武学高低，都有简明扼要的描述，丁婴俞真意之流，都是老面孔，但是其中有一位，就像是突然冒出来的，而且藏匿之地，就在这南苑国京城的太子府，身份竟然是一个厨子。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 313,
-        "segment_index": 10
       }
     ],
     "locations": [],
@@ -937,13 +728,14 @@
         "location": null,
         "participants": [
           "魏衍",
-          "丁婴",
-          "俞真意"
+          "丁婴"
         ],
         "description": "魏衍神色古怪，有些尴尬，但更多还是庆幸，只是碍于恩师在旁，不好流露出来。 传授魏衍一身高深武学的老人气呼呼道：“好家伙，就躲在我眼皮子底下，这么多年，我都没能发现，见着了面，我倒要讨教讨教这天下十人的真本领，种国师是世间少有的豪杰，我素来服气，可我就不信一个烧火做饭的厨子，能厉害到哪里去！ 原来敬仰楼新鲜出炉了一份最新的天下十人，点名道姓，身处何方，武学高低，都有简明扼要的描述，丁婴俞真意之流，都是老面孔，但是其中有一位，就像是突然冒出来的，而且藏匿之地，就在这南苑国京城的太子府，身份竟然是一个厨子。",
         "background": "",
         "significance": "推动魏衍与丁婴之间的指点关系。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十二章 变故 · 段10",
         "sentence_indexes_in_segment": [
           0,
@@ -957,8 +749,34 @@
         "segment_index": 10
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.533108",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "魏衍"
+        ],
+        "to_roles": [
+          "丁婴"
+        ],
+        "action": "指点",
+        "context": "魏衍神色古怪，有些尴尬，但更多还是庆幸，只是碍于恩师在旁，不好流露出来。 传授魏衍一身高深武学的老人气呼呼道：“好家伙，就躲在我眼皮子底下，这么多年，我都没能发现，见着了面，我倒要讨教讨教这天下十人的真本领，种国师是世间少有的豪杰，我素来服气，可我就不信一个烧火做饭的厨子，能厉害到哪里去！ ” 老人骂骂咧咧。 原来敬仰楼新鲜出炉了一份最新的天下十人，点名道姓，身处何方，武学高低，都有简明扼要的描述，丁婴俞真意之流，都是老面孔，但是其中有一位，就像是突然冒出来的，而且藏匿之地，就在这南苑国京城的太子府，身份竟然是一个厨子。 有个满身烟火气、油盐味的高大老人，忙里偷闲，蹲坐在井然有序、一尘不染的灶房外头，拿着一把金灿灿的炒黄豆，一颗颗往嘴里丢。",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十二章 变故 · 魏衍与丁婴指点",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 313,
+        "segment_index": 10
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.232299",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1064,7 +882,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.533108",
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1154,7 +972,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.534111",
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1230,7 +1048,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.534111",
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1292,7 +1110,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.534111",
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1355,7 +1173,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.534111",
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1378,20 +1196,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意要护着这方人间，在我看来，自然也厉害，可在某些人眼中，估计格局还是小了些。 反而是一直被俞真意压一头的国师种秋，前些年，独自一人，走遍四国山河和八风蛮夷之地，我看出息会比较大。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          2,
-          3
-        ],
-        "juan_index": 313,
-        "segment_index": 16
-      },
-      {
-        "entity_type": "person",
         "name": "种秋",
         "alias": [],
         "original_description_in_book": "反而是一直被俞真意压一头的国师种秋，前些年，独自一人，走遍四国山河和八风蛮夷之地，我看出息会比较大。",
@@ -1407,19 +1211,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 俞真意与种秋守护",
+        "name": "第五卷道观道 第三百一十二章 变故 · 种秋剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
           "种秋"
         ],
-        "description": "俞真意要护着这方人间，在我看来，自然也厉害，可在某些人眼中，估计格局还是小了些。 反而是一直被俞真意压一头的国师种秋，前些年，独自一人，走遍四国山河和八风蛮夷之地，我看出息会比较大。 人间无不可恕之人。",
+        "description": "反而是一直被俞真意压一头的国师种秋，前些年，独自一人，走遍四国山河和八风蛮夷之地，我看出息会比较大。 人间无不可恕之人。 已经不比当年那个疯子差了，而且更加聪明，我看这次他多半要得偿所愿。",
         "background": "",
-        "significance": "推动俞真意与种秋之间的守护关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应种秋在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段16",
         "sentence_indexes_in_segment": [
           0,
@@ -1433,34 +1234,8 @@
         "segment_index": 16
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "俞真意"
-        ],
-        "to_roles": [
-          "种秋"
-        ],
-        "action": "守护",
-        "context": "人间无不可恕之人。 已经不比当年那个疯子差了，而且更加聪明，我看这次他多半要得偿所愿。 俞真意要护着这方人间，在我看来，自然也厉害，可在某些人眼中，估计格局还是小了些。 反而是一直被俞真意压一头的国师种秋，前些年，独自一人，走遍四国山河和八风蛮夷之地，我看出息会比较大。 ” 老厨子叹了口气，“至于我嘛，说多做多错就多，不闻不问等个死。",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 俞真意与种秋守护",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 16
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.534111",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1481,20 +1256,6 @@
       "魏衍点点头，“先生只管在府上静养，我绝不会随意打搅先生的清修。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "以前还想着折腾一番，越到后来，看得越多，就越没心气了，这次乱局，丁魔头和俞真意是死对头，有他们两个盯着，这回只要是榜上的，没谁逃得掉，我呢，谪仙人到底是什么东西，已经不好奇了，只想着能够多活个二三十年，就很满足了，所以……” 老厨子骤然出手，双指并拢作剑诀，刺穿了自己数个关键窍穴，顿时鲜血淋漓，一身落在俞真意、或是“谪仙人”陈平安眼中，近乎“合道”的气息，瞬间破功，从这座天下最顶尖的宗师，一路下坠，沦为比瘦猴儿还逊色一筹的高手，选择主动退出这场风起云涌的乱局。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0,
-          1
-        ],
-        "juan_index": 313,
-        "segment_index": 17
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1526,16 +1287,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 俞真意与陈平安对话",
+        "name": "第五卷道观道 第三百一十二章 变故 · 陈平安与魏衍对话",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
-          "陈平安"
+          "陈平安",
+          "魏衍"
         ],
-        "description": "以前还想着折腾一番，越到后来，看得越多，就越没心气了，这次乱局，丁魔头和俞真意是死对头，有他们两个盯着，这回只要是榜上的，没谁逃得掉，我呢，谪仙人到底是什么东西，已经不好奇了，只想着能够多活个二三十年，就很满足了，所以……” 老厨子骤然出手，双指并拢作剑诀，刺穿了自己数个关键窍穴，顿时鲜血淋漓，一身落在俞真意、或是“谪仙人”陈平安眼中，近乎“合道”的气息，瞬间破功，从这座天下最顶尖的宗师，一路下坠，沦为比瘦猴儿还逊色一筹的高手，选择主动退出这场风起云涌的乱局。 老厨子脸色惨白，但是笑容释然，对太子魏衍问道：“这么大一座太子府，再养一个糟老头子二三十年，应该没问题吧？",
+        "description": "老厨子骤然出手，双指并拢作剑诀，刺穿了自己数个关键窍穴，顿时鲜血淋漓，一身落在俞真意、或是“谪仙人”陈平安眼中，近乎“合道”的气息，瞬间破功，从这座天下最顶尖的宗师，一路下坠，沦为比瘦猴儿还逊色一筹的高手，选择主动退出这场风起云涌的乱局。 老厨子脸色惨白，但是笑容释然，对太子魏衍问道：“这么大一座太子府，再养一个糟老头子二三十年，应该没问题吧？ 魏衍点点头，“先生只管在府上静养，我绝不会随意打搅先生的清修。",
         "background": "",
-        "significance": "推动俞真意与陈平安之间的对话关系。",
+        "significance": "推动陈平安与魏衍之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -1556,25 +1317,30 @@
       {
         "time": null,
         "from_roles": [
-          "俞真意"
-        ],
-        "to_roles": [
           "陈平安"
         ],
-        "action": "冲突",
-        "context": "老厨子骤然出手，双指并拢作剑诀，刺穿了自己数个关键窍穴，顿时鲜血淋漓，一身落在俞真意、或是“谪仙人”陈平安眼中，近乎“合道”的气息，瞬间破功，从这座天下最顶尖的宗师，一路下坠，沦为比瘦猴儿还逊色一筹的高手，选择主动退出这场风起云涌的乱局。",
+        "to_roles": [
+          "魏衍"
+        ],
+        "action": "对话",
+        "context": "以前还想着折腾一番，越到后来，看得越多，就越没心气了，这次乱局，丁魔头和俞真意是死对头，有他们两个盯着，这回只要是榜上的，没谁逃得掉，我呢，谪仙人到底是什么东西，已经不好奇了，只想着能够多活个二三十年，就很满足了，所以……” 老厨子骤然出手，双指并拢作剑诀，刺穿了自己数个关键窍穴，顿时鲜血淋漓，一身落在俞真意、或是“谪仙人”陈平安眼中，近乎“合道”的气息，瞬间破功，从这座天下最顶尖的宗师，一路下坠，沦为比瘦猴儿还逊色一筹的高手，选择主动退出这场风起云涌的乱局。 老厨子脸色惨白，但是笑容释然，对太子魏衍问道：“这么大一座太子府，再养一个糟老头子二三十年，应该没问题吧？ 当然，真有需要我出把力的时候，殿下也可以开口。 ” 魏衍点点头，“先生只管在府上静养，我绝不会随意打搅先生的清修。",
         "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 俞真意与陈平安对话",
+        "event_name": "第五卷道观道 第三百一十二章 变故 · 陈平安与魏衍对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          1
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "juan_index": 313,
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.534111",
+    "extracted_at": "2026-03-26T11:46:49.233303",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1608,38 +1374,21 @@
         ],
         "juan_index": 313,
         "segment_index": 18
-      },
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "牯牛山之巅，刚刚走到山脚又去而复还的周姝真拿着一封密信，苦笑不已，递给俞真意。 俞真意接过之后，看了信上内容，皱眉问道：“怎么回事？",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          1,
-          2
-        ],
-        "juan_index": 313,
-        "segment_index": 18
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 周姝真与俞真意对话",
+        "name": "第五卷道观道 第三百一十二章 变故 · 周姝真对话",
         "time": null,
         "location": null,
         "participants": [
-          "周姝真",
-          "俞真意"
+          "周姝真"
         ],
-        "description": "牯牛山之巅，刚刚走到山脚又去而复还的周姝真拿着一封密信，苦笑不已，递给俞真意。 俞真意接过之后，看了信上内容，皱眉问道：“怎么回事？ 周姝真无奈道：“肯定是来自敬仰楼，但绝对不是我们敬仰楼的手笔。",
+        "description": "牯牛山之巅，刚刚走到山脚又去而复还的周姝真拿着一封密信，苦笑不已，递给俞真意。 周姝真无奈道：“肯定是来自敬仰楼，但绝对不是我们敬仰楼的手笔。 ”",
         "background": "",
-        "significance": "推动周姝真与俞真意之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应周姝真在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段18",
         "sentence_indexes_in_segment": [
           0,
@@ -1653,34 +1402,8 @@
         "segment_index": 18
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "周姝真"
-        ],
-        "to_roles": [
-          "俞真意"
-        ],
-        "action": "对话",
-        "context": "” 牯牛山之巅，刚刚走到山脚又去而复还的周姝真拿着一封密信，苦笑不已，递给俞真意。 俞真意接过之后，看了信上内容，皱眉问道：“怎么回事？ ” 周姝真无奈道：“肯定是来自敬仰楼，但绝对不是我们敬仰楼的手笔。 ”",
-        "result": null,
-        "event_name": "第五卷道观道 第三百一十二章 变故 · 周姝真与俞真意对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 18
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.535114",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1701,21 +1424,6 @@
       "这种远观，无需消耗俞真意的积攒多年的灵气，可如果俞真意想要仔细“近看”某一人，就要付出不小的代价。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "俞真意抬头看了眼天幕。 俞真意对此深有体会。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0,
-          2,
-          5
-        ],
-        "juan_index": 313,
-        "segment_index": 19
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1746,17 +1454,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十二章 变故 · 俞真意与陈平安剧情推进",
+        "name": "第五卷道观道 第三百一十二章 变故 · 陈平安与陆舫剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "俞真意",
           "陈平安",
           "陆舫"
         ],
-        "description": "俞真意抬头看了眼天幕。 俞真意对此深有体会。 比如他眼中，看得到状元巷那边的丁老魔、陈平安、陆舫，三人光点尤为刺眼。",
+        "description": "比如他眼中，看得到状元巷那边的丁老魔、陈平安、陆舫，三人光点尤为刺眼。 俞真意抬头看了眼天幕。 当站到足够高的地方，神人观山河，人间即是星星点点的壮观景象，但是很难盯着某一个人仔细瞧。",
         "background": "",
-        "significance": "推动俞真意与陈平安之间的剧情推进关系。",
+        "significance": "推动陈平安与陆舫之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第五卷道观道 第三百一十二章 变故 · 段19",
         "sentence_indexes_in_segment": [
@@ -1772,7 +1479,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.535114",
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1848,7 +1555,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.535114",
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1902,7 +1609,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.535114",
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

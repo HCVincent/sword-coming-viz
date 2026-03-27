@@ -69,7 +69,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.451826",
+    "extracted_at": "2026-03-26T11:46:49.162475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -130,7 +130,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.451826",
+    "extracted_at": "2026-03-26T11:46:49.162475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -180,21 +180,6 @@
       },
       {
         "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 在老人给雄鸡喂养糯米和清水的时候，从他忧心忡忡的脸色就能够看出，老道人也瞧出了端倪，心情并不轻松。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          4
-        ],
-        "juan_index": 297,
-        "segment_index": 3
-      },
-      {
-        "entity_type": "person",
         "name": "陶斜阳",
         "alias": [],
         "original_description_in_book": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
@@ -229,19 +214,15 @@
         "participants": [
           "陈平安",
           "陆台",
-          "老道人",
-          "陶斜阳"
+          "陶斜阳",
+          "黄尚"
         ],
-        "description": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 在老人给雄鸡喂养糯米和清水的时候，从他忧心忡忡的脸色就能够看出，老道人也瞧出了端倪，心情并不轻松。 陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
+        "description": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。 陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。 陆台并未明言两人道行的高低，只说那男子肯定不是什么桐叶洲太平山的练气士，而邋遢老人是位名副其实的山居道人，讲究一个幽潜学道，仁智自安，与山水为邻。",
         "background": "",
         "significance": "推动陈平安与陆台之间的冲突关系。",
         "related_action_indices": [
           0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
         ],
         "source": "第五卷道观道 第二百九十六章 作别 · 段3",
         "sentence_indexes_in_segment": [
@@ -280,90 +261,10 @@
       {
         "time": null,
         "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "老道人"
-        ],
-        "action": "冲突",
-        "context": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。",
-        "result": null,
-        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 297,
-        "segment_index": 3
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "陆台"
-        ],
-        "to_roles": [
-          "老道人"
-        ],
-        "action": "冲突",
-        "context": "陈平安和陆台分道扬镳，陆台喜欢看那所谓的太平山仙师，装神弄鬼，陈平安则去观摩老人的手法，外行看热闹，内行看门道，陈平安介于两者之间，虽然不清楚老道人这种行径的渊源，但是能够确定每处悬挂雄鸡之后，阴风煞气就要浅淡几分，如同两军对垒，一方避其锋芒，只不过这种逼退，并无伤亡，躲在暗中蓄势而已。",
-        "result": null,
-        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 297,
-        "segment_index": 3
-      },
-      {
-        "time": null,
-        "from_roles": [
           "陶斜阳"
         ],
         "to_roles": [
           "黄尚"
-        ],
-        "action": "同行",
-        "context": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
-        "result": null,
-        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 297,
-        "segment_index": 3
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "陶斜阳"
-        ],
-        "to_roles": [
-          "老道人"
-        ],
-        "action": "同行",
-        "context": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
-        "result": null,
-        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与陆台冲突",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 297,
-        "segment_index": 3
-      },
-      {
-        "time": null,
-        "from_roles": [
-          "黄尚"
-        ],
-        "to_roles": [
-          "老道人"
         ],
         "action": "同行",
         "context": "陶斜阳脸色苍白，经常咳嗽，只与黄尚一起跟在老道人身后。",
@@ -378,7 +279,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.452829",
+    "extracted_at": "2026-03-26T11:46:49.162475",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -483,7 +384,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.452829",
+    "extracted_at": "2026-03-26T11:46:49.162989",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -585,7 +486,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.452829",
+    "extracted_at": "2026-03-26T11:46:49.162989",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -621,37 +522,21 @@
         ],
         "juan_index": 297,
         "segment_index": 6
-      },
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "还有许多渗人的污秽阴物，一并往巷弄尽头的这座院子走来，有生了一双死鱼眼的老妪手脚着地，灵活攀爬在院墙上，对着陈平安不断重复呢喃着要吃肉。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 297,
-        "segment_index": 6
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与老妪迁移",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安迁移",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "老妪"
+          "陈平安"
         ],
         "description": "陈平安就像打开锅盖，立即就是雾气腾腾，只不过灶台雾气是热腾腾的米香菜香，小巷这边是黏糊糊的潮湿阴雾，泛着淡淡的腥臭气味。 陈平安转头望去，好在雾气并未一鼓作气，涌入那些市井门户的院子里，只是家家户户张贴在大门上的各类门神，武圣人或是文武财神什么的，发出一阵细微的呲呲作响，本就涣散浅淡的那点灵气，烟消云散，再也庇护不得主人家。 在陈平安视野中，小巷尽头，又出现了那对身穿缟素白衣的大小人物，小孩子依旧盯着陈平安，一对鲜红的眼珠子，不断有血迹渗出，流淌在雪白的脸庞上，只是鲜血并不会离开那张脸，会像一条条蚯蚓爬来爬去，从双眼进进出出，像是将孩子的眼窝子，当做了巢穴。",
         "background": "",
-        "significance": "推动陈平安与老妪之间的迁移关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键迁移节点。",
+        "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段6",
         "sentence_indexes_in_segment": [
           0,
@@ -665,34 +550,8 @@
         "segment_index": 6
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "老妪"
-        ],
-        "action": "守护",
-        "context": "四周顿时响起鼓噪之声，雾气从小巷泥路升起，迅速弥漫开来，雾气先是脚踝高度，然后是膝盖，很快就到了半腰。 陈平安就像打开锅盖，立即就是雾气腾腾，只不过灶台雾气是热腾腾的米香菜香，小巷这边是黏糊糊的潮湿阴雾，泛着淡淡的腥臭气味。 陈平安转头望去，好在雾气并未一鼓作气，涌入那些市井门户的院子里，只是家家户户张贴在大门上的各类门神，武圣人或是文武财神什么的，发出一阵细微的呲呲作响，本就涣散浅淡的那点灵气，烟消云散，再也庇护不得主人家。 在陈平安视野中，小巷尽头，又出现了那对身穿缟素白衣的大小人物，小孩子依旧盯着陈平安，一对鲜红的眼珠子，不断有血迹渗出，流淌在雪白的脸庞上，只是鲜血并不会离开那张脸，会像一条条蚯蚓爬来爬去，从双眼进进出出，像是将孩子的眼窝子，当做了巢穴。 牵着孩子的大人，脸上竟然并无五官，像是覆着一层厚重的白布，让人瞧不见耳鼻眉眼口。 还有许多渗人的污秽阴物，一并往巷弄尽头的这座院子走来，有生了一双死鱼眼的老妪手脚着地，灵活攀爬在院墙上，对着陈平安不断重复呢喃着要吃肉。",
-        "result": null,
-        "event_name": "第五卷道观道 第二百九十六章 作别 · 陈平安与老妪迁移",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 297,
-        "segment_index": 6
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.452829",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:49.162989",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -756,7 +615,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.453833",
+    "extracted_at": "2026-03-26T11:46:49.163501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -792,35 +651,20 @@
         ],
         "juan_index": 297,
         "segment_index": 8
-      },
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "那位沿着墙壁行走的老妪率先发难，一个纵身而跃，扑向陈平安。 陈平安看也不看，一步向前踏出，走下台阶，不等靴子触及巷弄地面，轻描淡写一拳砸出，击中那位老妪的头颅，阴物老妪被打得向后倒撞回对面的墙壁，砰然粉碎，它甚至来不及哀嚎。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          3,
-          4
-        ],
-        "juan_index": 297,
-        "segment_index": 8
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安与老妪剧情推进",
+        "name": "第五卷道观道 第二百九十六章 作别 · 陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "老妪"
+          "陈平安"
         ],
         "description": "孩子的言语说得极为缓慢，而且前行的脚步不停，等到“心肝”二字说出口的时候，已经背对陈平安，但是它的头颅已经拧转过来，依然在“正视”着陈平安，它还伸出一条漆黑的舌头，舔-弄着嘴角的血迹。 那位沿着墙壁行走的老妪率先发难，一个纵身而跃，扑向陈平安。 陈平安看也不看，一步向前踏出，走下台阶，不等靴子触及巷弄地面，轻描淡写一拳砸出，击中那位老妪的头颅，阴物老妪被打得向后倒撞回对面的墙壁，砰然粉碎，它甚至来不及哀嚎。",
         "background": "",
-        "significance": "推动陈平安与老妪之间的剧情推进关系。",
+        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第五卷道观道 第二百九十六章 作别 · 段8",
         "sentence_indexes_in_segment": [
@@ -836,7 +680,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.453879",
+    "extracted_at": "2026-03-26T11:46:49.163501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -913,7 +757,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.453879",
+    "extracted_at": "2026-03-26T11:46:49.163501",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -991,7 +835,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.453879",
+    "extracted_at": "2026-03-26T11:46:49.164010",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1057,7 +901,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.453879",
+    "extracted_at": "2026-03-26T11:46:49.164010",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1120,7 +964,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.454836",
+    "extracted_at": "2026-03-26T11:46:49.164010",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1223,7 +1067,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.454836",
+    "extracted_at": "2026-03-26T11:46:49.164520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1290,7 +1134,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.454836",
+    "extracted_at": "2026-03-26T11:46:49.164520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1391,7 +1235,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.454836",
+    "extracted_at": "2026-03-26T11:46:49.164520",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1492,7 +1336,7 @@
         "segment_index": 17
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.454836",
+    "extracted_at": "2026-03-26T11:46:49.165029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1593,7 +1437,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.454836",
+    "extracted_at": "2026-03-26T11:46:49.165029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1694,7 +1538,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.455840",
+    "extracted_at": "2026-03-26T11:46:49.165029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1799,7 +1643,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.455840",
+    "extracted_at": "2026-03-26T11:46:49.165538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1879,7 +1723,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.455840",
+    "extracted_at": "2026-03-26T11:46:49.165538",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1980,7 +1824,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.455840",
+    "extracted_at": "2026-03-26T11:46:49.166047",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2087,7 +1931,7 @@
         "segment_index": 23
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.455840",
+    "extracted_at": "2026-03-26T11:46:49.166047",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2166,7 +2010,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.456843",
+    "extracted_at": "2026-03-26T11:46:49.166047",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2275,7 +2119,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.456843",
+    "extracted_at": "2026-03-26T11:46:49.166558",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2382,7 +2226,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.456843",
+    "extracted_at": "2026-03-26T11:46:49.166558",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2469,7 +2313,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.456843",
+    "extracted_at": "2026-03-26T11:46:49.166558",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

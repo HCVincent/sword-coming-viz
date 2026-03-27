@@ -23,12 +23,14 @@ from model.action import Action
 from model.event import Event
 from model.location import Location
 from model.role import Role
+from scripts.character_quality import audit_role_name, is_pseudo_role_name
 from scripts.build_swordcoming_writer_insights import build_writer_insights_file
 from scripts.validate_unified_knowledge import validate_unified_knowledge
 
 
 DEFAULT_SYNC_FILES = [
     "book_config.json",
+    "chapter_index.json",
     "unit_progress_index.json",
     "unified_knowledge.json",
     "writer_insights.json",
@@ -40,7 +42,7 @@ SYMMETRIC_ACTIONS = {"对话", "会见", "冲突", "同行"}
 COMMON_SURNAME_CHARS = set(
     "赵钱孙李周吴郑王冯陈卫蒋沈韩杨朱秦许何吕张孔曹严华金魏陶姜戚谢邹喻柏窦章云苏潘葛范彭郎鲁韦马苗凤方俞任袁柳鲍史唐费廉岑薛雷贺倪汤滕殷罗毕郝安常乐于傅卞齐康伍余元顾孟黄穆萧尹姚邵汪祁毛禹狄贝明伏成戴谈宋茅庞熊纪舒屈项祝董梁杜阮蓝闵席季贾路江童颜郭梅盛林刁钟徐邱高夏蔡田樊胡凌霍虞万支柯昝管卢莫房裘缪应宗丁宣邓郁杭洪包诸左石崔吉龚程嵇邢裴陆荣翁荀羊惠甄曲封芮储靳汲松段富巫乌焦巴弓牧车侯宓全班仰秋仲伊宫宁栾甘厉戎祖武符刘景詹龙叶司韶黎蓟薄印白蒲邰从鄂索赖卓蔺屠蒙池乔阴闻党翟谭贡劳姬申扶堵冉宰郦雍桑桂牛寿通边扈燕冀郏浦尚温别庄晏柴瞿阎充慕连茹习艾鱼向古易慎戈廖终暨居衡步都耿弘匡国文寇广禄东欧沃利蔚越夔隆师巩聂晁勾敖融冷辛阚那简饶曾沙养鞠须丰关蒯相查后荆红游竺权盖益桓公"
 )
-COMMON_NAME_PREFIXES = {"阿", "小", "老"}
+COMMON_NAME_PREFIXES = set()
 LEADING_NOISE_TOKENS = (
     "于是",
     "然后",
@@ -166,17 +168,15 @@ NON_PERSON_SUBSTRINGS = (
     "边跑一边",
 )
 ALLOWED_TITLED_CANDIDATES = {
-    "老秀才",
-    "老道人",
-    "老剑仙",
-    "老僧",
-    "老妪",
-    "小道童",
-    "白衣少年",
-    "宫装妇人",
-    "中年儒士",
-    "阴神",
 }
+CONTEXT_DENY_NEXT_PHRASES = (
+    "大开口",
+    "笑眯眯",
+    "笑呵呵",
+    "笑吟吟",
+    "慢悠悠",
+    "慢吞吞",
+)
 LOCATION_POWER_HINTS = {
     "泥瓶巷": "小镇",
     "骑龙巷": "小镇",
@@ -197,13 +197,12 @@ MINED_CHARACTER_PATTERNS = [
     (
         "dialogue",
         re.compile(
-            r"([\u4e00-\u9fff]{2,4})(?=说道|问道|笑道|答道|开口|冷笑|怒道|喝道|骂道|轻声道|沉声道|轻声|沉声|抬头|低头|点头|摇头|看向|看着|望向|望着|转头|抱拳|作揖|行礼|同行|并肩|对视|相视|出声)"
+            r"([\u4e00-\u9fff]{2,4})(?=说道|问道|笑道|答道|冷笑道|怒道|喝道|骂道|轻声道|沉声道|开口道|开口说道|开口问道|开口答道)"
         ),
     ),
 ]
 MANUAL_EXTRA_CHARACTERS = [
     {"name": "陆台", "aliases": [], "power": "道家", "description": "与陈平安有稳定交集的重要人物，能补足前三季山上与命运分叉线。"},
-    {"name": "老秀才", "aliases": [], "power": "山崖书院", "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。"},
     {"name": "吴鸢", "aliases": [], "power": "大骊", "description": "大骊体系中的重要官面人物，补强王朝与地方秩序线。"},
     {"name": "茅小冬", "aliases": [], "power": "山崖书院", "description": "书院线关键人物，能把李宝瓶一行与更高层儒家视角串起来。"},
     {"name": "曹峻", "aliases": [], "power": "山上", "description": "山上人物，适合补强前三季外围修士群像与冲突关系。"},
@@ -225,15 +224,6 @@ MANUAL_EXTRA_CHARACTERS = [
     {"name": "黄尚", "aliases": [], "power": "山上", "description": "山上人物，适合扩展外围修士节点。"},
     {"name": "陆舫", "aliases": [], "power": "山上", "description": "山上人物，适合补强高位修士群像。"},
     {"name": "崔明皇", "aliases": [], "power": "大骊", "description": "大骊支线人物，适合加强王朝线的层次。"},
-    {"name": "老剑仙", "aliases": [], "power": "剑气长城", "description": "剑气长城线的重要称谓人物，可扩展宁姚相关世界。"},
-    {"name": "老僧", "aliases": [], "power": "山上", "description": "带有稳定身份的支线人物，适合作为外围宗门节点。"},
-    {"name": "老妪", "aliases": [], "power": "小镇", "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。"},
-    {"name": "宫装妇人", "aliases": [], "power": "老龙城", "description": "带有稳定身份标签的女性人物，可补足老龙城线层次。"},
-    {"name": "白衣少年", "aliases": [], "power": "山上", "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。"},
-    {"name": "中年儒士", "aliases": [], "power": "山崖书院", "description": "书院相关稳定称谓人物，可补足儒家侧面人物层次。"},
-    {"name": "小道童", "aliases": [], "power": "道家", "description": "道门称谓人物，可扩展道家支线关系。"},
-    {"name": "老道人", "aliases": [], "power": "道家", "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。"},
-    {"name": "阴神", "aliases": [], "power": "小镇", "description": "带有明确身份指向的称谓人物，可补足小镇暗线与命运线。"},
     {"name": "金粟", "aliases": [], "power": "老龙城", "description": "老龙城与渡船线的重要女性人物，可补足陈平安外出途中结识的支线关系。"},
     {"name": "范峻茂", "aliases": [], "power": "山上", "description": "山上修士群像中的关键人物，适合增强外围修士与冲突网络。"},
     {"name": "王毅甫", "aliases": [], "power": "大骊", "description": "大骊官面与调查线人物，可补足王朝视角中的执行层关系。"},
@@ -345,6 +335,10 @@ def normalize_mined_candidate(
     blocked_names: set[str],
     known_names: set[str],
     location_names: set[str],
+    sentence_text: str = "",
+    source: str = "",
+    match_start: int = -1,
+    match_end: int = -1,
 ) -> Optional[str]:
     candidate = trim_candidate_noise(raw_name)
     if len(candidate) < 2 or len(candidate) > 4:
@@ -357,6 +351,8 @@ def normalize_mined_candidate(
         return None
     if any(part in candidate for part in NON_PERSON_SUBSTRINGS):
         return None
+    if is_pseudo_role_name(candidate, blocked_names=blocked_names):
+        return None
     if any(known == candidate or known.startswith(candidate) or candidate.startswith(known) for known in known_names):
         return None
 
@@ -365,7 +361,40 @@ def normalize_mined_candidate(
         return None
     if first_char in COMMON_NAME_PREFIXES and candidate not in ALLOWED_TITLED_CANDIDATES:
         return None
+    if source == "dialogue" and sentence_text and match_end >= 0:
+        trailing_text = sentence_text[match_end : match_end + 6]
+        if any(trailing_text.startswith(phrase) for phrase in CONTEXT_DENY_NEXT_PHRASES):
+            return None
     return candidate
+
+
+def audit_mined_candidate(
+    candidate: str,
+    *,
+    evidence_item: dict,
+    blocked_names: set[str],
+) -> List[str]:
+    reasons = audit_role_name(candidate, blocked_names=blocked_names)
+    intro_hits = int(evidence_item["pattern_hits"].get("intro", 0))
+    dialogue_hits = int(evidence_item["pattern_hits"].get("dialogue", 0))
+    unit_count = len(evidence_item["units"])
+    co_character_count = len(evidence_item["co_characters"])
+    co_location_count = len(evidence_item["co_locations"])
+
+    if dialogue_hits > 0 and intro_hits == 0 and int(evidence_item["sentence_count"]) <= 1:
+        reasons.append("仅单次对话模式命中")
+    if intro_hits == 0 and co_character_count == 0:
+        reasons.append("缺少稳定人物共现")
+    if intro_hits == 0 and unit_count < 3:
+        reasons.append("跨章节单元覆盖不足")
+    if intro_hits == 0 and co_character_count < 2 and not (co_character_count >= 1 and co_location_count >= 1):
+        reasons.append("缺少稳定人物或地点牵连")
+
+    deduped: List[str] = []
+    for reason in reasons:
+        if reason not in deduped:
+            deduped.append(reason)
+    return deduped
 
 
 def infer_candidate_power(
@@ -461,6 +490,10 @@ def mine_character_candidates(
                             blocked_names=blocked_names,
                             known_names=known_names,
                             location_names=location_names,
+                            sentence_text=sentence_text,
+                            source=source,
+                            match_start=match.start(),
+                            match_end=match.end(),
                         )
                         if not candidate:
                             continue
@@ -486,11 +519,17 @@ def mine_character_candidates(
 
     character_config = {str(item["name"]).strip(): item for item in seed_characters}
     selected: List[Tuple[int, str, dict]] = []
+    rejected_audits: List[Tuple[str, List[str]]] = []
 
     for candidate, item in evidence.items():
         unit_count = len(item["units"])
         co_character_count = len(item["co_characters"])
         co_location_count = len(item["co_locations"])
+        audit_reasons = audit_mined_candidate(candidate, evidence_item=item, blocked_names=blocked_names)
+        if audit_reasons:
+            rejected_audits.append((candidate, audit_reasons))
+            continue
+
         if unit_count < 3:
             continue
         if not (co_character_count >= 2 or (co_character_count >= 1 and co_location_count >= 1)):
@@ -498,10 +537,22 @@ def mine_character_candidates(
 
         intro_hits = int(item["pattern_hits"].get("intro", 0))
         dialogue_hits = int(item["pattern_hits"].get("dialogue", 0))
+        if intro_hits == 0 and dialogue_hits < 2:
+            continue
+        if intro_hits == 0 and int(item["sentence_count"]) < 2:
+            continue
+
         score = unit_count * 8 + co_character_count * 5 + co_location_count * 3 + intro_hits * 7 + dialogue_hits * 4 + int(item["sentence_count"])
         selected.append((score, candidate, item))
 
     selected.sort(key=lambda value: (-value[0], value[1]))
+
+    if rejected_audits:
+        print("Rejected suspicious mined role candidates:")
+        for candidate, reasons in rejected_audits[:20]:
+            print(f"  - {candidate}: {'；'.join(reasons)}")
+        if len(rejected_audits) > 20:
+            print(f"  ... and {len(rejected_audits) - 20} more")
 
     mined_characters: List[dict] = []
     for _, candidate, item in selected[:max_new_characters]:
@@ -922,6 +973,47 @@ def write_store(chunks_by_juan: Dict[int, Dict[str, dict]], store_dir: Path) -> 
     (store_dir / "metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def prune_suspicious_roles_from_knowledge_base(kb: Any, blocked_names: set[str]) -> List[Tuple[str, List[str]]]:
+    suspicious_roles = [
+        (role_id, audit_role_name(role.canonical_name, blocked_names=blocked_names))
+        for role_id, role in kb.roles.items()
+    ]
+    suspicious_roles = [(role_id, reasons) for role_id, reasons in suspicious_roles if reasons]
+    if not suspicious_roles:
+        return []
+
+    blocked_role_ids = {role_id for role_id, _ in suspicious_roles}
+    kb.roles = {role_id: role for role_id, role in kb.roles.items() if role_id not in blocked_role_ids}
+    kb.relations = {
+        relation_id: relation
+        for relation_id, relation in kb.relations.items()
+        if relation.from_entity not in blocked_role_ids and relation.to_entity not in blocked_role_ids
+    }
+    kb.name_to_role_id = {
+        name: role_id
+        for name, role_id in kb.name_to_role_id.items()
+        if role_id not in blocked_role_ids and not is_pseudo_role_name(name, blocked_names=blocked_names)
+    }
+    kb.power_to_roles = {
+        power: [role_id for role_id in role_ids if role_id not in blocked_role_ids]
+        for power, role_ids in kb.power_to_roles.items()
+        if [role_id for role_id in role_ids if role_id not in blocked_role_ids]
+    }
+    kb.juan_to_roles = {
+        juan: [role_id for role_id in role_ids if role_id not in blocked_role_ids]
+        for juan, role_ids in kb.juan_to_roles.items()
+    }
+    kb.unit_to_roles = {
+        unit: [role_id for role_id in role_ids if role_id not in blocked_role_ids]
+        for unit, role_ids in kb.unit_to_roles.items()
+    }
+    for event in kb.events.values():
+        event.participants = {participant for participant in event.participants if participant not in blocked_role_ids}
+    kb.total_roles = len(kb.roles)
+    kb.total_relations = len(kb.relations)
+    return suspicious_roles
+
+
 def sync_public_files(source_dir: Path, target_dir: Path, files: Sequence[str]) -> None:
     target_dir.mkdir(parents=True, exist_ok=True)
     for name in files:
@@ -1011,6 +1103,18 @@ def build_offline_data(
         book_config_path=str(book_config_path),
         manual_overrides_path=str(manual_overrides_path),
     )
+    blocked_role_names = {
+        str(name).strip()
+        for name in manual_overrides.get("blocked_aliases", [])
+        if str(name).strip()
+    }
+    pruned_roles = prune_suspicious_roles_from_knowledge_base(kb, blocked_role_names)
+    if pruned_roles:
+        print("Pruned suspicious roles from unified knowledge base:")
+        for role_id, reasons in pruned_roles[:20]:
+            print(f"  - {role_id}: {'；'.join(reasons)}")
+        if len(pruned_roles) > 20:
+            print(f"  ... and {len(pruned_roles) - 20} more")
     save_unified_knowledge_base(kb, str(kb_output))
 
     suspicious = validate_unified_knowledge(kb_output)
@@ -1044,6 +1148,7 @@ def build_offline_data(
         "curated_extra_seed_roles": len(curated_extra_characters),
         "mined_roles": len(mined_characters),
         "augmented_role_seeds": len(augmented_characters),
+        "pruned_suspicious_roles": len(pruned_roles),
         "writer_character_arcs": writer_payload["summary"]["character_arc_count"],
         "writer_season_overviews": writer_payload["summary"]["season_overview_count"],
         "writer_curated_relationships": writer_payload["summary"]["curated_relationship_count"],

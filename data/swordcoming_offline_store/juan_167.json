@@ -42,19 +42,6 @@
         ],
         "juan_index": 167,
         "segment_index": 1
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年在山脚书院门口递交过了通关文牒，一路走到此处，往大堂内探头探脑一番，便打死不往里走了，站在门槛外头，气呼呼道：“茅小冬，你是成心恶心我，还是想坑害我？",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 167,
-        "segment_index": 1
       }
     ],
     "locations": [
@@ -85,8 +72,7 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "茅小冬",
-          "白衣少年"
+          "茅小冬"
         ],
         "description": "东华山在皇帝陛下那次御驾亲临之后，就已经撤去所有谍子密探，就连一位十境练气士，都只是在东华山近处隐藏，不可轻易踏足书院，这是大隋对山崖书院给予的尊重，或者说是大隋皇帝对老夫子茅小冬的信任。 文正堂内，香火祭祀着山崖书院这一脉尊奉的三位圣人，居中自然是至圣先师，天底下所有儒家门生一同顶礼膜拜的老祖宗，然后就是有意在挂像上隐去身份的文圣，以及第一任书院山主齐静春。 白衣少年在山脚书院门口递交过了通关文牒，一路走到此处，往大堂内探头探脑一番，便打死不往里走了，站在门槛外头，气呼呼道：“茅小冬，你是成心恶心我，还是想坑害我？",
         "background": "",
@@ -106,7 +92,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.690466",
+    "extracted_at": "2026-03-26T11:46:48.451841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -212,7 +198,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.690466",
+    "extracted_at": "2026-03-26T11:46:48.451841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -261,35 +247,21 @@
         ],
         "juan_index": 167,
         "segment_index": 3
-      },
-      {
-        "entity_type": "person",
-        "name": "老秀才",
-        "alias": [],
-        "original_description_in_book": "呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？ 尤其这位圣人，可还是老秀才的死对头，怎么，你围棋学我，做人也要学我？",
-        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
-        "power": "山崖书院",
-        "sentence_indexes_in_segment": [
-          4,
-          5
-        ],
-        "juan_index": 167,
-        "segment_index": 3
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与老秀才对话",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
         "time": null,
         "location": null,
         "participants": [
           "茅小冬",
-          "老秀才"
+          "崔瀺"
         ],
         "description": "茅小冬淡然道：“围棋只是小道。 崔瀺讥笑道：“‘弈之为数，小数也’？ 呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？",
         "background": "",
-        "significance": "推动茅小冬与老秀才之间的对话关系。",
+        "significance": "推动茅小冬与崔瀺之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -313,22 +285,27 @@
           "茅小冬"
         ],
         "to_roles": [
-          "老秀才"
+          "崔瀺"
         ],
-        "action": "师承",
-        "context": "呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？",
+        "action": "对话",
+        "context": "” 茅小冬淡然道：“围棋只是小道。 ” 崔瀺讥笑道：“‘弈之为数，小数也’？ 呦呵，谁不知道你茅小冬在不成材的那拨记名弟子当中，学问做得稀拉，可最是尊师重道，侍奉老秀才比亲爹还亲爹，怎么开始推崇别家圣人的道理了？ 尤其这位圣人，可还是老秀才的死对头，怎么，你围棋学我，做人也要学我？",
         "result": null,
-        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与老秀才对话",
+        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与崔瀺对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
-          4
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "juan_index": 167,
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.690466",
+    "extracted_at": "2026-03-26T11:46:48.451841",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -432,7 +409,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.690466",
+    "extracted_at": "2026-03-26T11:46:48.452845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -510,7 +487,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.690466",
+    "extracted_at": "2026-03-26T11:46:48.452845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -634,7 +611,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.691469",
+    "extracted_at": "2026-03-26T11:46:48.452845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -696,7 +673,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.691469",
+    "extracted_at": "2026-03-26T11:46:48.452845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -799,7 +776,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.691469",
+    "extracted_at": "2026-03-26T11:46:48.452845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -897,7 +874,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.691469",
+    "extracted_at": "2026-03-26T11:46:48.452845",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -930,19 +907,6 @@
         "sentence_indexes_in_segment": [
           1,
           5
-        ],
-        "juan_index": 167,
-        "segment_index": 10
-      },
-      {
-        "entity_type": "person",
-        "name": "老秀才",
-        "alias": [],
-        "original_description_in_book": "崔瀺赶紧伸出一只手，“打住打住，老秀才和齐静春都要我捎句话给你，你听过再说。",
-        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
-        "power": "山崖书院",
-        "sentence_indexes_in_segment": [
-          1
         ],
         "juan_index": 167,
         "segment_index": 10
@@ -986,7 +950,7 @@
           "齐静春",
           "陈平安",
           "崔瀺",
-          "老秀才"
+          "茅小冬"
         ],
         "description": "崔瀺赶紧伸出一只手，“打住打住，老秀才和齐静春都要我捎句话给你，你听过再说。 茅小冬眯起眼，一身杀气浓重无比，比起睁眼瞬间反而有增无减，“小心是你的遗言。 崔瀺嘴唇微动。",
         "background": "",
@@ -1006,7 +970,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.691469",
+    "extracted_at": "2026-03-26T11:46:48.453846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1039,19 +1003,6 @@
           2,
           4,
           5
-        ],
-        "juan_index": 167,
-        "segment_index": 11
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "茅小冬听过心声之后，紧紧盯住一身修为不过第五境的白衣少年，尤其是崔瀺的那双眼眸。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0
         ],
         "juan_index": 167,
         "segment_index": 11
@@ -1118,8 +1069,7 @@
         "location": "大骊",
         "participants": [
           "茅小冬",
-          "崔瀺",
-          "白衣少年"
+          "崔瀺"
         ],
         "description": "茅小冬听过心声之后，紧紧盯住一身修为不过第五境的白衣少年，尤其是崔瀺的那双眼眸。 如果茅小冬是在大骊的旧山崖书院，遇上大骊国师崔瀺，那么茅小冬根本不会多此一举，因为两人境界差距摆在那里，两境之差，云泥之别。 可如今形势颠倒，换成了他茅小冬在修为上居高临下，当然就有些用处了，关键是他们曾经位于同一条圣人文脉，相对会看得更加清晰。",
         "background": "",
@@ -1139,7 +1089,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.691469",
+    "extracted_at": "2026-03-26T11:46:48.453846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1246,7 +1196,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.692473",
+    "extracted_at": "2026-03-26T11:46:48.453846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1326,7 +1276,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.692473",
+    "extracted_at": "2026-03-26T11:46:48.453846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1419,7 +1369,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.692473",
+    "extracted_at": "2026-03-26T11:46:48.453846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1542,7 +1492,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.692473",
+    "extracted_at": "2026-03-26T11:46:48.453846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1644,7 +1594,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.692473",
+    "extracted_at": "2026-03-26T11:46:48.454849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1681,19 +1631,6 @@
       },
       {
         "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "茅小冬眼神古怪地斜瞥了眼白衣少年，摇摇头，继续前行，然后将大致情况说了一遍。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 167,
-        "segment_index": 17
-      },
-      {
-        "entity_type": "person",
         "name": "于禄",
         "alias": [],
         "original_description_in_book": "尤其是最后一场书楼之战，于禄一人对阵两人，结果双方两败俱伤，三人竖着进去，一位洞府境的年轻贤人，一位观海境的老剑修，一个武夫第六境巅峰的高大少年，到最后全部横着出来的。",
@@ -1709,17 +1646,16 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与白衣少年剧情推进",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与于禄剧情推进",
         "time": null,
         "location": null,
         "participants": [
           "茅小冬",
-          "白衣少年",
           "于禄"
         ],
         "description": "茅小冬眼神古怪地斜瞥了眼白衣少年，摇摇头，继续前行，然后将大致情况说了一遍。 尤其是最后一场书楼之战，于禄一人对阵两人，结果双方两败俱伤，三人竖着进去，一位洞府境的年轻贤人，一位观海境的老剑修，一个武夫第六境巅峰的高大少年，到最后全部横着出来的。 这一下子，就算是副山主茅小冬都压不住这个天大消息。",
         "background": "",
-        "significance": "推动茅小冬与白衣少年之间的剧情推进关系。",
+        "significance": "推动茅小冬与于禄之间的剧情推进关系。",
         "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段17",
         "sentence_indexes_in_segment": [
@@ -1735,7 +1671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.692473",
+    "extracted_at": "2026-03-26T11:46:48.454849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1841,7 +1777,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.693476",
+    "extracted_at": "2026-03-26T11:46:48.454849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2031,7 +1967,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.693476",
+    "extracted_at": "2026-03-26T11:46:48.454849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2138,7 +2074,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.693476",
+    "extracted_at": "2026-03-26T11:46:48.454849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2217,7 +2153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.693476",
+    "extracted_at": "2026-03-26T11:46:48.454849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2282,7 +2218,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.693476",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2403,7 +2339,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.693476",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2510,7 +2446,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.694480",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2606,7 +2542,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.694480",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2722,7 +2658,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.694480",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2927,7 +2863,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.694480",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3034,7 +2970,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.694480",
+    "extracted_at": "2026-03-26T11:46:48.455853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3126,7 +3062,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.694480",
+    "extracted_at": "2026-03-26T11:46:48.456856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3204,7 +3140,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.695483",
+    "extracted_at": "2026-03-26T11:46:48.456856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3404,7 +3340,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.695483",
+    "extracted_at": "2026-03-26T11:46:48.456856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3483,7 +3419,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.695483",
+    "extracted_at": "2026-03-26T11:46:48.456856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3590,7 +3526,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.695483",
+    "extracted_at": "2026-03-26T11:46:48.456856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3670,7 +3606,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.695483",
+    "extracted_at": "2026-03-26T11:46:48.456856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3777,7 +3713,7 @@
         "segment_index": 35
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.696487",
+    "extracted_at": "2026-03-26T11:46:48.457860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3883,7 +3819,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.696487",
+    "extracted_at": "2026-03-26T11:46:48.457860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3961,7 +3897,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.696487",
+    "extracted_at": "2026-03-26T11:46:48.457860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4132,7 +4068,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.696487",
+    "extracted_at": "2026-03-26T11:46:48.457860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4210,7 +4146,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.696487",
+    "extracted_at": "2026-03-26T11:46:48.457860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4332,7 +4268,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.696487",
+    "extracted_at": "2026-03-26T11:46:48.457860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4431,19 +4367,6 @@
         "power": "山崖书院",
         "sentence_indexes_in_segment": [
           2
-        ],
-        "juan_index": 167,
-        "segment_index": 41
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "少女紧绷心弦，小心翼翼跟在白衣少年身后，她当下比面对那个“死了爹的大隋将种”，还要紧张万分。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
         ],
         "juan_index": 167,
         "segment_index": 41
@@ -4599,7 +4522,7 @@
         "segment_index": 41
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.697490",
+    "extracted_at": "2026-03-26T11:46:48.458863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4705,7 +4628,7 @@
         "segment_index": 42
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.697490",
+    "extracted_at": "2026-03-26T11:46:48.458863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4784,7 +4707,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.697490",
+    "extracted_at": "2026-03-26T11:46:48.458863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4849,7 +4772,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.697490",
+    "extracted_at": "2026-03-26T11:46:48.458863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -4943,7 +4866,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.697490",
+    "extracted_at": "2026-03-26T11:46:48.458863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5007,7 +4930,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.697490",
+    "extracted_at": "2026-03-26T11:46:48.458863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5071,7 +4994,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.698494",
+    "extracted_at": "2026-03-26T11:46:48.459867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5150,7 +5073,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.698494",
+    "extracted_at": "2026-03-26T11:46:48.459867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5230,7 +5153,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.698494",
+    "extracted_at": "2026-03-26T11:46:48.459867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5322,7 +5245,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.698494",
+    "extracted_at": "2026-03-26T11:46:48.459867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5401,7 +5324,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.698494",
+    "extracted_at": "2026-03-26T11:46:48.459867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5517,7 +5440,7 @@
         "segment_index": 52
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.698494",
+    "extracted_at": "2026-03-26T11:46:48.459867",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5545,19 +5468,6 @@
         "original_description_in_book": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。",
         "description": "书院同行线的重要少年角色，能与李宝瓶一行形成稳定关系边。",
         "power": "山崖书院",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 167,
-        "segment_index": 53
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
         "sentence_indexes_in_segment": [
           0
         ],
@@ -5606,9 +5516,7 @@
         "description": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。 “第二，是它山之石可以攻玉，一路行来，有些不甘心，总想着学以致用，可是陈平安境界太低，公子架子太大，那些魑魅魍魉都给林守一收拾掉了，其实道行也不够看，怎么办？ ”",
         "background": "",
         "significance": "标志书院同行线正式成形，并推动少年群像离开小镇。",
-        "related_action_indices": [
-          0
-        ],
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段53",
         "sentence_indexes_in_segment": [
           0,
@@ -5622,29 +5530,8 @@
         "segment_index": 53
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "于禄"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "对话",
-        "context": "于禄坐在那里，双手拢袖，像是在取暖，又因为自己身材高大，而对面的白衣少年又比他矮许多，所以便有些耷拉着肩头，显得缩成一团，他缓缓说道：“头一个原因，当然是原本觉得活着没盼头，但是这一路求学，突然觉得有件事情，还是很有意思的，所以一冲动，就做了。",
-        "result": null,
-        "event_name": "书院同行南下",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 167,
-        "segment_index": 53
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.699497",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.460870",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5751,7 +5638,7 @@
         "segment_index": 54
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.699497",
+    "extracted_at": "2026-03-26T11:46:48.460870",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -5945,7 +5832,7 @@
         "segment_index": 55
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.699497",
+    "extracted_at": "2026-03-26T11:46:48.460870",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6023,7 +5910,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.699497",
+    "extracted_at": "2026-03-26T11:46:48.460870",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6090,19 +5977,6 @@
         ],
         "juan_index": 167,
         "segment_index": 57
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "于禄和谢谢，与白衣少年朝夕相处，实则无时无地不是在与之手谈，谢谢下棋下得太用力了，反而会让崔瀺觉得愚不可及，眼皮子都懒得搭一下。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          4
-        ],
-        "juan_index": 167,
-        "segment_index": 57
       }
     ],
     "locations": [
@@ -6133,8 +6007,7 @@
         "participants": [
           "崔瀺",
           "于禄",
-          "谢谢",
-          "白衣少年"
+          "谢谢"
         ],
         "description": "于禄大大方方坐下。 估计这就是他跟谢谢最大的不同。 那个少女一样聪明，只是她想要很多可能一辈子都争取不来的东西，反观这位高大少年，什么都放得下，想要拿起来的东西，又不会太重，而且从来无关崔瀺的大局，所以过得更加轻松。",
         "background": "",
@@ -6154,7 +6027,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.699497",
+    "extracted_at": "2026-03-26T11:46:48.460870",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6269,7 +6142,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.700501",
+    "extracted_at": "2026-03-26T11:46:48.460870",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6377,7 +6250,7 @@
         "segment_index": 59
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.700501",
+    "extracted_at": "2026-03-26T11:46:48.461873",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6481,7 +6354,7 @@
         "segment_index": 60
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.700501",
+    "extracted_at": "2026-03-26T11:46:48.461873",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6604,7 +6477,7 @@
         "segment_index": 61
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.700501",
+    "extracted_at": "2026-03-26T11:46:48.461873",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6666,7 +6539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.700501",
+    "extracted_at": "2026-03-26T11:46:48.461873",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6719,19 +6592,6 @@
         ],
         "juan_index": 167,
         "segment_index": 63
-      },
-      {
-        "entity_type": "person",
-        "name": "老秀才",
-        "alias": [],
-        "original_description_in_book": "崔瀺不去看至圣先师，看了眼齐静春的挂像，最后转移视线，望向那个老秀才的图像，双手捧香在额头，在心中默念。",
-        "description": "儒家高位人物，对陈平安与书院线的价值观层面有重要牵引。",
-        "power": "山崖书院",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 167,
-        "segment_index": 63
       }
     ],
     "locations": [],
@@ -6743,8 +6603,7 @@
         "participants": [
           "齐静春",
           "陈平安",
-          "崔瀺",
-          "老秀才"
+          "崔瀺"
         ],
         "description": "崔瀺来到之前打死不走入的文正堂外，直接一步跨过门槛，拿起一炷香，只是一炷香，而不是按照规矩的三炷。 崔瀺不去看至圣先师，看了眼齐静春的挂像，最后转移视线，望向那个老秀才的图像，双手捧香在额头，在心中默念。 然后睁开眼睛，崔瀺可没有半点烧香人的虔诚肃穆，将手中那炷香插入神坛上的香炉，扬起脑袋，对着那副画像嬉皮笑脸道：“老头子，跟你借一下而已，可别太小气啊，不多，就三境，三境而已，而且只在东华山管用，这总行了吧？",
         "background": "",
@@ -6764,7 +6623,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.700501",
+    "extracted_at": "2026-03-26T11:46:48.461873",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -6874,7 +6733,7 @@
         "segment_index": 64
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.701504",
+    "extracted_at": "2026-03-26T11:46:48.461873",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7010,7 +6869,7 @@
         "segment_index": 65
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.701504",
+    "extracted_at": "2026-03-26T11:46:48.462877",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7077,7 +6936,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.701504",
+    "extracted_at": "2026-03-26T11:46:48.462877",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7171,7 +7030,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.701504",
+    "extracted_at": "2026-03-26T11:46:48.462877",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7236,7 +7095,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.701504",
+    "extracted_at": "2026-03-26T11:46:48.462877",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7339,7 +7198,7 @@
         "segment_index": 69
       }
     ],
-    "extracted_at": "2026-03-25T17:27:37.701504",
+    "extracted_at": "2026-03-26T11:46:48.462877",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7372,37 +7231,21 @@
         ],
         "juan_index": 167,
         "segment_index": 70
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 167,
-        "segment_index": 70
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与白衣少年同行",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "茅小冬",
-          "白衣少年"
+          "茅小冬"
         ],
-        "description": "茅小冬深呼吸一口气，加快步伐下山。 白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！ 快点沐浴更衣，磕头听训！",
+        "description": "茅小冬深呼吸一口气，加快步伐下山。 快点沐浴更衣，磕头听训！ ”",
         "background": "",
-        "significance": "推动茅小冬与白衣少年之间的同行关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应茅小冬在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段70",
         "sentence_indexes_in_segment": [
           0,
@@ -7416,159 +7259,8 @@
         "segment_index": 70
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "茅小冬"
-        ],
-        "to_roles": [
-          "白衣少年"
-        ],
-        "action": "同行",
-        "context": "快点沐浴更衣，磕头听训！ ” 茅小冬深呼吸一口气，加快步伐下山。 白衣少年犹然骂骂咧咧，“孙子蔡京神，别当缩头乌龟，快点回家喊上你儿子孙子，一起来给祖宗磕头，赶紧的，祖宗在这儿等着呢！ ” 东华山附近那栋宅子，一道虹光平地暴起，升至与东华山山巅齐平的高空，一道魁梧身影怒吼道：“找死！",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬与白衣少年同行",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 167,
-        "segment_index": 70
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.701504",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "167-71-0": {
-    "juan_index": 167,
-    "segment_index": 71,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
-    "source_sentences": [
-      "”",
-      "白衣少年以更大的嗓门答复道：“老祖宗在这里找龟孙子，不找死！",
-      "”",
-      "魁梧老人吼道：“滚出来！",
-      "”",
-      "当老者升空之后，以东华山为中心，四周不断有灯光亮起，由近及远，越来越多。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年以更大的嗓门答复道：“老祖宗在这里找龟孙子，不找死！",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 167,
-        "segment_index": 71
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "白衣少年"
-        ],
-        "description": "白衣少年以更大的嗓门答复道：“老祖宗在这里找龟孙子，不找死！ ” ”",
-        "background": "",
-        "significance": "对应白衣少年在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段71",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 167,
-        "segment_index": 71
-      }
-    ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.702508",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "167-72-0": {
-    "juan_index": 167,
-    "segment_index": 72,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第二卷山水郎 第一百六十七章 我法宝多啊",
-    "source_sentences": [
-      "白衣少年在众目睽睽之下，嘿嘿笑道：“乖孙儿你快点滚进来！",
-      "”",
-      "老人似乎被那个小疯子的言语给震惊到了，竟是一时半会儿有些发愣。",
-      "白衣少年趁胜追击道：“他娘的谁接给你的狗胆，敢欺负老子的门下弟子？",
-      "蔡京神，手脚利索点，快点拿刀砍死自己，记得砍得心诚一些，砍出十境修士该有的风采！",
-      "那么祖宗我就当你认错了，说不定还能既往不咎……”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "白衣少年在众目睽睽之下，嘿嘿笑道：“乖孙儿你快点滚进来！ 白衣少年趁胜追击道：“他娘的谁接给你的狗胆，敢欺负老子的门下弟子？",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0,
-          3
-        ],
-        "juan_index": 167,
-        "segment_index": 72
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "白衣少年"
-        ],
-        "description": "白衣少年在众目睽睽之下，嘿嘿笑道：“乖孙儿你快点滚进来！ 白衣少年趁胜追击道：“他娘的谁接给你的狗胆，敢欺负老子的门下弟子？ ”",
-        "background": "",
-        "significance": "对应白衣少年在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段72",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 167,
-        "segment_index": 72
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.702508",
+    "extracted_at": "2026-03-26T11:46:48.462877",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7645,7 +7337,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.702508",
+    "extracted_at": "2026-03-26T11:46:48.463880",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7666,19 +7358,6 @@
       "银杏树这边，亦是有一抹细微金光当空炸起，相对长达两丈、气势威严的巨大电矛，那点金光实在是小到忽略不计。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 167,
-        "segment_index": 74
-      },
       {
         "entity_type": "person",
         "name": "茅小冬",
@@ -7713,19 +7392,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年与茅小冬在山崖书院冲突",
+        "name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 茅小冬在山崖书院冲突",
         "time": null,
         "location": "山崖书院",
         "participants": [
-          "白衣少年",
           "茅小冬"
         ],
-        "description": "那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！ 这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。 来而不往非礼也，老祖宗打赏，孙儿蔡京神好好接着！",
+        "description": "这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。 那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！ 来而不往非礼也，老祖宗打赏，孙儿蔡京神好好接着！",
         "background": "",
-        "significance": "在山崖书院推动白衣少年与茅小冬之间的冲突线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应茅小冬在叙事中的关键冲突节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百六十七章 我法宝多啊 · 段74",
         "sentence_indexes_in_segment": [
           0,
@@ -7739,34 +7415,8 @@
         "segment_index": 74
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "白衣少年"
-        ],
-        "to_roles": [
-          "茅小冬"
-        ],
-        "action": "冲突",
-        "context": "那白衣少年哈哈大笑，“来得好，乖孙儿总算还知道孝敬你家祖宗！ 来而不往非礼也，老祖宗打赏，孙儿蔡京神好好接着！ ” 电矛扑向山巅大树，很快闯入书院地界的上空。 这座历经坎坷的新山崖书院，虽然已经不是儒家七十二书院之一，但毕竟还有茅小冬坐镇其中，很大程度拥有一方圣人小天地的地利优势，不过不知是书院自觉理亏，还是茅小冬不愿与蔡京神敌对，竟是毫不犹豫地撤去了地界防御，任由山上山外两人，展开一场公平公正地捉对厮杀。 银杏树这边，亦是有一抹细微金光当空炸起，相对长达两丈、气势威严的巨大电矛，那点金光实在是小到忽略不计。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百六十七章 我法宝多啊 · 白衣少年与茅小冬在山崖书院冲突",
-        "location": "山崖书院",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 167,
-        "segment_index": 74
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:37.702508",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.463880",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7831,7 +7481,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.702508",
+    "extracted_at": "2026-03-26T11:46:48.463880",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -7932,19 +7582,6 @@
         ],
         "juan_index": 167,
         "segment_index": 78
-      },
-      {
-        "entity_type": "person",
-        "name": "白衣少年",
-        "alias": [],
-        "original_description_in_book": "李宝瓶，林守一，于禄，谢谢，自称崔东山的白衣少年。",
-        "description": "具有稳定辨识度的称谓人物，可补强外围高位修士关系。",
-        "power": "山上",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 167,
-        "segment_index": 78
       }
     ],
     "locations": [],
@@ -7977,7 +7614,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.703511",
+    "extracted_at": "2026-03-26T11:46:48.463880",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8038,7 +7675,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.703511",
+    "extracted_at": "2026-03-26T11:46:48.463880",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8101,7 +7738,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.703511",
+    "extracted_at": "2026-03-26T11:46:48.464884",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -8159,7 +7796,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:37.703511",
+    "extracted_at": "2026-03-26T11:46:48.464884",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -257,9 +257,9 @@ export function WriterArcsView({
                 </div>
 
                 <div className="mt-4">
-                  <div className="text-sm font-semibold text-[#2c1810] mb-2">角色出场密度</div>
+                  <div className="text-sm font-semibold text-[#2c1810] mb-2">本季重点人物</div>
                   <div className="space-y-2">
-                    {overview.top_roles.slice(0, 4).map((role) => (
+                    {(overview.priority_roles.length > 0 ? overview.priority_roles : overview.top_roles).slice(0, 8).map((role) => (
                       <div key={role.role_id} className="rounded-xl bg-white p-3 border border-[#eadfd2]">
                         <div className="flex items-center justify-between gap-3">
                           <button

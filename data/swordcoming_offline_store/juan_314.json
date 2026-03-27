@@ -98,7 +98,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.535114",
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -161,7 +161,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.535114",
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -223,7 +223,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.536118",
+    "extracted_at": "2026-03-26T11:46:49.234306",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -285,7 +285,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.536118",
+    "extracted_at": "2026-03-26T11:46:49.235310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -387,7 +387,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.536118",
+    "extracted_at": "2026-03-26T11:46:49.235310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -463,7 +463,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.536118",
+    "extracted_at": "2026-03-26T11:46:49.235310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -525,7 +525,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.536118",
+    "extracted_at": "2026-03-26T11:46:49.235310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -587,7 +587,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.537121",
+    "extracted_at": "2026-03-26T11:46:49.235310",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -623,19 +623,6 @@
       },
       {
         "entity_type": "person",
-        "name": "俞真意",
-        "alias": [],
-        "original_description_in_book": "当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。",
-        "description": "前三季叙事中多次出现，常与丁婴、陆舫同场，推动相关支线发展。",
-        "power": "武道",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 314,
-        "segment_index": 11
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "冯青白闲庭信步，缓缓走动，以酣畅淋漓的驭剑术，追杀那一袭白袍，陈平安几次想要摆脱，仍是被风驰电掣的飞剑缠上。",
@@ -651,18 +638,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第五卷道观道 第三百一十三章 驭剑 · 丁婴与俞真意冲突",
+        "name": "第五卷道观道 第三百一十三章 驭剑 · 丁婴与陈平安冲突",
         "time": null,
         "location": null,
         "participants": [
           "丁婴",
-          "俞真意",
           "陈平安"
         ],
         "description": "当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。 冯青白闲庭信步，缓缓走动，以酣畅淋漓的驭剑术，追杀那一袭白袍，陈平安几次想要摆脱，仍是被风驰电掣的飞剑缠上。 飞剑之快，让人只能看到剑光流转。",
         "background": "",
-        "significance": "推动丁婴与俞真意之间的冲突关系。",
-        "related_action_indices": [],
+        "significance": "推动丁婴与陈平安之间的冲突关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第五卷道观道 第三百一十三章 驭剑 · 段11",
         "sentence_indexes_in_segment": [
           0,
@@ -676,8 +664,34 @@
         "segment_index": 11
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.537121",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "丁婴"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "冲突",
+        "context": "当然那位春潮宫宫主也叮嘱过周仕，遇上丁婴和俞真意，能跑就跑，跑不掉就下跪磕头求饶，不丢人。 冯青白闲庭信步，缓缓走动，以酣畅淋漓的驭剑术，追杀那一袭白袍，陈平安几次想要摆脱，仍是被风驰电掣的飞剑缠上。 飞剑之快，让人只能看到剑光流转。 笑脸儿不敢画蛇添足，就默默在远处调整呼吸，见到这一幕，笑脸儿既松了口气，也有些悚然，若是自己遇上冯青白，该如何应对？ 那一袭如雪花翻滚的白袍突然停下，伸手握住了飞剑的剑柄。 冯青白怡然不惧，“哪有这么简单的事情，你肯定抓不住的……”",
+        "result": null,
+        "event_name": "第五卷道观道 第三百一十三章 驭剑 · 丁婴与陈平安冲突",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 314,
+        "segment_index": 11
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:49.236313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -740,7 +754,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.537121",
+    "extracted_at": "2026-03-26T11:46:49.236313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -798,7 +812,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.537121",
+    "extracted_at": "2026-03-26T11:46:49.236313",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

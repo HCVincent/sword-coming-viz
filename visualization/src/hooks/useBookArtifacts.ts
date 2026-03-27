@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { BookConfig, UnitProgressIndex } from '../types/pipelineArtifacts';
+import type { BookConfig, ChapterIndex, UnitProgressIndex } from '../types/pipelineArtifacts';
 
 export function useUnitProgressIndex() {
   const [unitProgressIndex, setUnitProgressIndex] = useState<UnitProgressIndex | null>(null);
@@ -55,4 +55,32 @@ export function useBookConfig() {
   }, []);
 
   return { bookConfig, loading, error };
+}
+
+export function useChapterIndex() {
+  const [chapterIndex, setChapterIndex] = useState<ChapterIndex | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch('/data/chapter_index.json');
+        if (!response.ok) {
+          throw new Error(`读取原文章节索引失败：${response.status}`);
+        }
+        const data = (await response.json()) as ChapterIndex;
+        setChapterIndex(data);
+      } catch (err) {
+        console.error('Error loading chapter index:', err);
+        setError(err instanceof Error ? err.message : '读取原文章节索引时发生未知错误。');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    load();
+  }, []);
+
+  return { chapterIndex, loading, error };
 }

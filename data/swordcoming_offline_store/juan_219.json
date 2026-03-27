@@ -70,7 +70,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.002546",
+    "extracted_at": "2026-03-26T11:46:48.743846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -90,21 +90,7 @@
       "”",
       "年纪最小、手持古木长条的神诰宗小道童，轻轻扯了扯少女道士的袖子，悄悄问道：“师姐，我觉得那个张天师说得挺对唉，你觉得呢？"
     ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "小道童",
-        "alias": [],
-        "original_description_in_book": "年纪最小、手持古木长条的神诰宗小道童，轻轻扯了扯少女道士的袖子，悄悄问道：“师姐，我觉得那个张天师说得挺对唉，你觉得呢？",
-        "description": "道门称谓人物，可扩展道家支线关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 3
-      }
-    ],
+    "entities": [],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -125,15 +111,13 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 小道童在宝瓶洲对话",
+        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [
-          "小道童"
-        ],
+        "participants": [],
         "description": "人的名树的影，名声能够流传到宝瓶洲的宗门，就没有一个是好惹的。 中土神洲的龙虎山，更是赫赫大名，不隶属于道家三教任何一脉，是自立门户的一方道统，神诰宗少年道士当然早有耳闻，但也只限于一些神鬼志怪的传说，多是见识浅陋的市井百姓以讹传讹，寻常山上练气士都不会当真，只当是笑话来听，不过神诰宗到底是宗字头的仙家门阀，对于龙虎山天师府的真正底蕴，了解得远比别人更多，张家天师一手掌印，一手持仙剑，道法无边，杀力无穷，那真是在神人辈出的中土神洲，也能够跻身前十之列的上五境仙人，这有点类似神诰宗掌门、天君祁真在东宝瓶洲的超然地位，所以神诰宗很容易理解龙虎山的仙气冲天。 道士张山乘胜追击，一脸正气，死死盯住那个眼神阴晴不定的领头老道，“杨晃作为神诰宗的前弟子，为一个情字，沦落至此，便是小道这些外人看来，也觉得可歌可泣，要为夫妇二人掬一把同情泪，神诰宗作为宝瓶洲道统之首，想必也该有与之匹配的气度才对？",
         "background": "",
-        "significance": "对应小道童在叙事中的关键对话节点。",
+        "significance": "对应宝瓶洲相关的关键对话场景。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段3",
         "sentence_indexes_in_segment": [
@@ -149,7 +133,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.003550",
+    "extracted_at": "2026-03-26T11:46:48.743846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -182,37 +166,21 @@
         ],
         "juan_index": 219,
         "segment_index": 4
-      },
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "道士张山想要伸出手指，指着那个老道人的鼻子，以此增加言语气势，但是发现自己被捆绑得结结实实，便干脆向前蹦跳了一步，冷笑道：“何况老仙长更是杨晃的昔年同辈师兄弟，有多年同门修行之谊，今日相见，他乡遇故知，为何是刀兵相见，而不是把臂言欢？",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 4
       }
     ],
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 陈平安与老道人对话",
+        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 陈平安对话",
         "time": null,
         "location": null,
         "participants": [
-          "陈平安",
-          "老道人"
+          "陈平安"
         ],
-        "description": "陈平安大开眼界。 道士张山想要伸出手指，指着那个老道人的鼻子，以此增加言语气势，但是发现自己被捆绑得结结实实，便干脆向前蹦跳了一步，冷笑道：“何况老仙长更是杨晃的昔年同辈师兄弟，有多年同门修行之谊，今日相见，他乡遇故知，为何是刀兵相见，而不是把臂言欢？ ”",
+        "description": "陈平安大开眼界。 ” 腰间别有一枝青黄竹鞭的少女摇头道：“虚头巴脑的客套话，别当真。",
         "background": "",
-        "significance": "推动陈平安与老道人之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段4",
         "sentence_indexes_in_segment": [
           0,
@@ -226,34 +194,8 @@
         "segment_index": 4
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "陈平安"
-        ],
-        "to_roles": [
-          "老道人"
-        ],
-        "action": "对话",
-        "context": "” 腰间别有一枝青黄竹鞭的少女摇头道：“虚头巴脑的客套话，别当真。 ” 陈平安大开眼界。 但是与此同时，他眼角余光瞥向绣楼屋脊那边，有些疑惑。 道士张山想要伸出手指，指着那个老道人的鼻子，以此增加言语气势，但是发现自己被捆绑得结结实实，便干脆向前蹦跳了一步，冷笑道：“何况老仙长更是杨晃的昔年同辈师兄弟，有多年同门修行之谊，今日相见，他乡遇故知，为何是刀兵相见，而不是把臂言欢？",
-        "result": null,
-        "event_name": "第三卷金错刀 第两百一十九章 道士吟诗 · 陈平安与老道人对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 4
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.003550",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.743846",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -273,21 +215,7 @@
       "！",
       "还不跪下认错！"
     ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "双手负后的老道人眯起眼，笑而不语。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 219,
-        "segment_index": 6
-      }
-    ],
+    "entities": [],
     "locations": [
       {
         "name": "宝瓶洲",
@@ -307,15 +235,13 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人在宝瓶洲剧情推进",
+        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 宝瓶洲剧情推进",
         "time": null,
         "location": "宝瓶洲",
-        "participants": [
-          "老道人"
-        ],
-        "description": "双手负后的老道人眯起眼，笑而不语。 站在墙头上的青年道人，突然说了一通谁都听不懂言语，道士张山有些犯迷糊，不料那负剑提铃的青年道人，转回宝瓶洲雅言，居高临下，伸手指向道士张山，大怒道：“你这骗子，贫道以俱芦洲官话问你话，为何一个问题也答不上来？ 在东宝瓶洲胆敢冒充龙虎山张家子弟，就是悖逆一洲道统，你知道神诰宗一样有资格将你拿下吗？",
+        "participants": [],
+        "description": "站在墙头上的青年道人，突然说了一通谁都听不懂言语，道士张山有些犯迷糊，不料那负剑提铃的青年道人，转回宝瓶洲雅言，居高临下，伸手指向道士张山，大怒道：“你这骗子，贫道以俱芦洲官话问你话，为何一个问题也答不上来？ 在东宝瓶洲胆敢冒充龙虎山张家子弟，就是悖逆一洲道统，你知道神诰宗一样有资格将你拿下吗？ 双手负后的老道人眯起眼，笑而不语。",
         "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
+        "significance": "对应宝瓶洲相关的关键剧情推进场景。",
         "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段6",
         "sentence_indexes_in_segment": [
@@ -331,7 +257,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.003550",
+    "extracted_at": "2026-03-26T11:46:48.744849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -352,20 +278,6 @@
       "老道人似乎有所意动，正要开口说话之间，大髯刀客徐远霞，终于忍不住心胸间那口恶气，果真如先前所说那般，手持宝刀，挺身而出，向前走出一步，大笑道：“在下只是无名小卒，没办法要神诰宗的仙师卖什么面子，但若是诸位仙师想要责罚杨晃，依法办事，徐某人便洗耳恭听，领教一下宗字头仙家的金科玉律，到底有无法度可循，可若是不给个说法，就要打杀杨晃夫妇，徐某人便是拼了一百几十斤肉不要，只凭手中一口刀，也要领教领教诸位仙师的通天道法！"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "不曾想那墙头上的青年道士，根本不理睬道士张山，已经转头望向老道人，笑眯眯提议道：“师父，已经初步判定此人并非来自俱芦洲，至于是不是龙虎山张家弟子，还需慢慢确定，不如将其先行拿下，丢在一旁，咱们先行清理门户，处置了那对伥鬼树鬼才谈其它？ 老道人似乎有所意动，正要开口说话之间，大髯刀客徐远霞，终于忍不住心胸间那口恶气，果真如先前所说那般，手持宝刀，挺身而出，向前走出一步，大笑道：“在下只是无名小卒，没办法要神诰宗的仙师卖什么面子，但若是诸位仙师想要责罚杨晃，依法办事，徐某人便洗耳恭听，领教一下宗字头仙家的金科玉律，到底有无法度可循，可若是不给个说法，就要打杀杨晃夫妇，徐某人便是拼了一百几十斤肉不要，只凭手中一口刀，也要领教领教诸位仙师的通天道法！",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          3,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 7
-      },
       {
         "entity_type": "person",
         "name": "徐远霞",
@@ -398,19 +310,16 @@
     ],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人与徐远霞在宝瓶洲对话",
+        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 徐远霞在宝瓶洲对话",
         "time": null,
         "location": "宝瓶洲",
         "participants": [
-          "老道人",
           "徐远霞"
         ],
-        "description": "没想到碰到一个比自己还能胡吹法螺的王八蛋，道士张山勃然大怒，开始用真正的俱芦洲雅言大骂那个青年道士，然后转回宝瓶洲言语，“信口雌黄，颠倒黑白，好一个神诰宗，好一个宝瓶洲道主！ 不曾想那墙头上的青年道士，根本不理睬道士张山，已经转头望向老道人，笑眯眯提议道：“师父，已经初步判定此人并非来自俱芦洲，至于是不是龙虎山张家弟子，还需慢慢确定，不如将其先行拿下，丢在一旁，咱们先行清理门户，处置了那对伥鬼树鬼才谈其它？ 老道人似乎有所意动，正要开口说话之间，大髯刀客徐远霞，终于忍不住心胸间那口恶气，果真如先前所说那般，手持宝刀，挺身而出，向前走出一步，大笑道：“在下只是无名小卒，没办法要神诰宗的仙师卖什么面子，但若是诸位仙师想要责罚杨晃，依法办事，徐某人便洗耳恭听，领教一下宗字头仙家的金科玉律，到底有无法度可循，可若是不给个说法，就要打杀杨晃夫妇，徐某人便是拼了一百几十斤肉不要，只凭手中一口刀，也要领教领教诸位仙师的通天道法！",
+        "description": "没想到碰到一个比自己还能胡吹法螺的王八蛋，道士张山勃然大怒，开始用真正的俱芦洲雅言大骂那个青年道士，然后转回宝瓶洲言语，“信口雌黄，颠倒黑白，好一个神诰宗，好一个宝瓶洲道主！ 老道人似乎有所意动，正要开口说话之间，大髯刀客徐远霞，终于忍不住心胸间那口恶气，果真如先前所说那般，手持宝刀，挺身而出，向前走出一步，大笑道：“在下只是无名小卒，没办法要神诰宗的仙师卖什么面子，但若是诸位仙师想要责罚杨晃，依法办事，徐某人便洗耳恭听，领教一下宗字头仙家的金科玉律，到底有无法度可循，可若是不给个说法，就要打杀杨晃夫妇，徐某人便是拼了一百几十斤肉不要，只凭手中一口刀，也要领教领教诸位仙师的通天道法！ ”",
         "background": "",
-        "significance": "在宝瓶洲推动老道人与徐远霞之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应徐远霞在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段7",
         "sentence_indexes_in_segment": [
           0,
@@ -424,29 +333,8 @@
         "segment_index": 7
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老道人"
-        ],
-        "to_roles": [
-          "徐远霞"
-        ],
-        "action": "对话",
-        "context": "老道人似乎有所意动，正要开口说话之间，大髯刀客徐远霞，终于忍不住心胸间那口恶气，果真如先前所说那般，手持宝刀，挺身而出，向前走出一步，大笑道：“在下只是无名小卒，没办法要神诰宗的仙师卖什么面子，但若是诸位仙师想要责罚杨晃，依法办事，徐某人便洗耳恭听，领教一下宗字头仙家的金科玉律，到底有无法度可循，可若是不给个说法，就要打杀杨晃夫妇，徐某人便是拼了一百几十斤肉不要，只凭手中一口刀，也要领教领教诸位仙师的通天道法！",
-        "result": null,
-        "event_name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人与徐远霞在宝瓶洲对话",
-        "location": "宝瓶洲",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 7
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.003550",
+    "relations": [],
+    "extracted_at": "2026-03-26T11:46:48.744849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -508,131 +396,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-10-0": {
-    "juan_index": 219,
-    "segment_index": 10,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "”",
-      "说到最后，杨晃笑声肆意，好似百年苟活，心情从未如此轻松快意，伸出拇指，指向自己，“我神诰宗！",
-      "”",
-      "略作停顿，伥鬼杨晃手指指向那个老道人，“像你这种修道不修心的蠢货，终究是少数，难怪百年光阴弹指而过，你赵鎏还是个五境修为，哈哈，百年之前，我杨晃就已是五境练气士，如果没有记错，你赵鎏当时才三境柳筋境？",
-      "好一个‘留人境’，留住最多的，便是你这种心怀不轨的王八蛋了！",
-      "”"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "略作停顿，伥鬼杨晃手指指向那个老道人，“像你这种修道不修心的蠢货，终究是少数，难怪百年光阴弹指而过，你赵鎏还是个五境修为，哈哈，百年之前，我杨晃就已是五境练气士，如果没有记错，你赵鎏当时才三境柳筋境？",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 219,
-        "segment_index": 10
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "略作停顿，伥鬼杨晃手指指向那个老道人，“像你这种修道不修心的蠢货，终究是少数，难怪百年光阴弹指而过，你赵鎏还是个五境修为，哈哈，百年之前，我杨晃就已是五境练气士，如果没有记错，你赵鎏当时才三境柳筋境？ ” 说到最后，杨晃笑声肆意，好似百年苟活，心情从未如此轻松快意，伸出拇指，指向自己，“我神诰宗！",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段10",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 10
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-11-0": {
-    "juan_index": 219,
-    "segment_index": 11,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "一番话语，古宅男人说得肆无忌惮，酣畅淋漓，却让老道人手底下那拨宗门晚辈听得面面相觑，颇为难堪。",
-      "尤其是那个称呼老道为师父的青年道士，杀机毕露，背后长剑在鞘内蠢蠢欲动，竟然是一名剑修。",
-      "不过杨晃的言语，恰好戳中此人的心窝，师父赵鎏在三境滞留数十年之久，年轻剑修在此境界一样停滞已久，一步步从惊才绝艳的剑修胚子，变成有望中五境的良才美玉，慢慢沦为前途渺茫的绣花枕头，几乎终生无望炼出一口本命飞剑的花架子，他在神诰宗的地位，也在短短十年之内，就一落千丈。",
-      "遥想当年，他甚至能够与那双享誉一洲的金童玉女，偶尔聊上一两句话。",
-      "这是何等殊荣？",
-      "！"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "一番话语，古宅男人说得肆无忌惮，酣畅淋漓，却让老道人手底下那拨宗门晚辈听得面面相觑，颇为难堪。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 219,
-        "segment_index": 11
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "一番话语，古宅男人说得肆无忌惮，酣畅淋漓，却让老道人手底下那拨宗门晚辈听得面面相觑，颇为难堪。 尤其是那个称呼老道为师父的青年道士，杀机毕露，背后长剑在鞘内蠢蠢欲动，竟然是一名剑修。 不过杨晃的言语，恰好戳中此人的心窝，师父赵鎏在三境滞留数十年之久，年轻剑修在此境界一样停滞已久，一步步从惊才绝艳的剑修胚子，变成有望中五境的良才美玉，慢慢沦为前途渺茫的绣花枕头，几乎终生无望炼出一口本命飞剑的花架子，他在神诰宗的地位，也在短短十年之内，就一落千丈。",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段11",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 11
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
+    "extracted_at": "2026-03-26T11:46:48.744849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -707,193 +471,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-13-0": {
-    "juan_index": 219,
-    "segment_index": 13,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "他一怒之下，就要出剑。",
-      "反正杀得也是伥鬼树精，死不足惜，自己再不济，也是三境剑修，与数位长老一起，掌管神诰宗外门事务的那位金童，毕竟当年还积攒下些点头之交的香火情，想必就算有责罚，也不过是面壁抄书之类的，怕什么？",
-      "一个促狭嗓音毫无征兆地响起，“剑可不能随便出鞘。",
-      "”",
-      "众人循着声音，不约而同地抬头望去，那边的夜幕涟漪阵阵，轻轻荡漾，那位不速之客，似乎是用了上乘的隐身符箓，其实一直就在屋脊那边隔岸观火，此刻缓缓显出身形，是一位身材不那么苗条婀娜的少女，倒也谈不上臃肿肥胖，她一张红润圆脸，身穿红缎子衣裳，很有福气相。",
-      "老道人有些惊慌，连忙拱手作揖道：“赵鎏拜见傅师叔。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "老道人有些惊慌，连忙拱手作揖道：“赵鎏拜见傅师叔。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 13
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "老道人有些惊慌，连忙拱手作揖道：“赵鎏拜见傅师叔。 他一怒之下，就要出剑。 反正杀得也是伥鬼树精，死不足惜，自己再不济，也是三境剑修，与数位长老一起，掌管神诰宗外门事务的那位金童，毕竟当年还积攒下些点头之交的香火情，想必就算有责罚，也不过是面壁抄书之类的，怕什么？",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段13",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 13
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-14-0": {
-    "juan_index": 219,
-    "segment_index": 14,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "”",
-      "踩在一把长剑之上的圆脸少女疑惑道：“你认得我？",
-      "”",
-      "老道人满脸笑容，“神诰宗子弟，无论内门外门，岂会有人不认识傅师叔，那也太过孤陋寡闻了。",
-      "”",
-      "圆脸少女突然黑着脸，冷笑道：“怎么，我跟金童告白失败的糗事，整座宗门都已经知道此事了？"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "老道人满脸笑容，“神诰宗子弟，无论内门外门，岂会有人不认识傅师叔，那也太过孤陋寡闻了。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 219,
-        "segment_index": 14
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "老道人满脸笑容，“神诰宗子弟，无论内门外门，岂会有人不认识傅师叔，那也太过孤陋寡闻了。 ” 踩在一把长剑之上的圆脸少女疑惑道：“你认得我？",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段14",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 14
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-15-0": {
-    "juan_index": 219,
-    "segment_index": 15,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "是哪个长舌妇或是闲散汉告诉你的，说出来听听，我回到宗门后，一定要好好感谢一番。",
-      "”",
-      "不但是老道人一头雾水，其实所有人都丈二和尚摸不着头脑。",
-      "他们之所以认得出这位傅师叔祖，可不是什么告白不告白，而是这位辈分极高的少女剑修，在神诰宗靠山惊人，平时最喜欢快速御剑，在一座座山峰之间横冲直撞，而且还是个小胖妞，一年到头这么飞来飞去，最喜欢做的一件事情，就是笔直御剑冲入云霞，然后从百丈千丈高空一头撞下，只在约莫离地两三丈的高度，紧急御剑拉升高度，贴地飞行，潇洒远去，寻常剑修谁敢这么不要命？",
-      "谁会不记住这位小祖宗？",
-      "再说了，少女在两年前试图在离地一丈的高度转向，结果就那么一头撞入地面，连人带剑一个干脆至极的倒栽葱姿势，就那么孤零零杵在那边，看得原本拍手叫好的旁观子弟，一个个哑口无声。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "不但是老道人一头雾水，其实所有人都丈二和尚摸不着头脑。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          2
-        ],
-        "juan_index": 219,
-        "segment_index": 15
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人迁移",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "不但是老道人一头雾水，其实所有人都丈二和尚摸不着头脑。 是哪个长舌妇或是闲散汉告诉你的，说出来听听，我回到宗门后，一定要好好感谢一番。 ”",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键迁移节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段15",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 15
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.004553",
+    "extracted_at": "2026-03-26T11:46:48.744849",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -952,7 +530,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.005557",
+    "extracted_at": "2026-03-26T11:46:48.745853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1036,235 +614,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.005557",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-20-0": {
-    "juan_index": 219,
-    "segment_index": 20,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "”",
-      "既然看完了热闹，圆脸少女就不愿再待在这个山水破落的鬼地方，迅猛御剑，破空而去，速度极快。",
-      "别人御剑飞行，都是沿着一个弧度缓缓爬坡，最后进入高空，傅姓少女却是恨不得笔直一根直线，直冲云霄，看得让人惊心动魄，总觉得她会一个不小心就摔回地面。",
-      "杨晃记起一事，大声道：“谢过傅师叔先前退敌之恩！",
-      "”",
-      "老道人赵鎏拱手作揖，恭送少女离去，在那之后，冷哼一声，一言不发地转身离去。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "老道人赵鎏拱手作揖，恭送少女离去，在那之后，冷哼一声，一言不发地转身离去。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 20
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人"
-        ],
-        "description": "老道人赵鎏拱手作揖，恭送少女离去，在那之后，冷哼一声，一言不发地转身离去。 ” 既然看完了热闹，圆脸少女就不愿再待在这个山水破落的鬼地方，迅猛御剑，破空而去，速度极快。",
-        "background": "",
-        "significance": "对应老道人在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段20",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 20
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.005557",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-21-0": {
-    "juan_index": 219,
-    "segment_index": 21,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "杨晃没有得意忘形，反而对老道人师徒之外的众位神诰宗小仙师，抱拳歉意道：“杨晃一身污秽，不敢相送诸位仙师。",
-      "”",
-      "收回缚妖索的少年道士，以及腰挂打鬼竹鞭的同胞姐姐，犹豫了一下，都微微点头。",
-      "那个手持镇妖木的小道童，大摇大摆离开，突然转过头，作了个鬼脸，对那个树魅女鬼笑道：“丑八怪呀丑八怪！",
-      "”",
-      "原本笑意吟吟的女鬼，顿时神色凄然，缓缓扭过头去，双手捂住脸庞，再不敢见人。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老道人",
-        "alias": [],
-        "original_description_in_book": "杨晃没有得意忘形，反而对老道人师徒之外的众位神诰宗小仙师，抱拳歉意道：“杨晃一身污秽，不敢相送诸位仙师。",
-        "description": "道门稳定称谓人物，可补足高位道家层面的外围关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          0
-        ],
-        "juan_index": 219,
-        "segment_index": 21
-      },
-      {
-        "entity_type": "person",
-        "name": "小道童",
-        "alias": [],
-        "original_description_in_book": "那个手持镇妖木的小道童，大摇大摆离开，突然转过头，作了个鬼脸，对那个树魅女鬼笑道：“丑八怪呀丑八怪！",
-        "description": "道门称谓人物，可扩展道家支线关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 219,
-        "segment_index": 21
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人与小道童对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老道人",
-          "小道童"
-        ],
-        "description": "杨晃没有得意忘形，反而对老道人师徒之外的众位神诰宗小仙师，抱拳歉意道：“杨晃一身污秽，不敢相送诸位仙师。 那个手持镇妖木的小道童，大摇大摆离开，突然转过头，作了个鬼脸，对那个树魅女鬼笑道：“丑八怪呀丑八怪！ ”",
-        "background": "",
-        "significance": "推动老道人与小道童之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段21",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 21
-      }
-    ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "老道人"
-        ],
-        "to_roles": [
-          "小道童"
-        ],
-        "action": "对话",
-        "context": "杨晃没有得意忘形，反而对老道人师徒之外的众位神诰宗小仙师，抱拳歉意道：“杨晃一身污秽，不敢相送诸位仙师。 ” 收回缚妖索的少年道士，以及腰挂打鬼竹鞭的同胞姐姐，犹豫了一下，都微微点头。 那个手持镇妖木的小道童，大摇大摆离开，突然转过头，作了个鬼脸，对那个树魅女鬼笑道：“丑八怪呀丑八怪！ ” 原本笑意吟吟的女鬼，顿时神色凄然，缓缓扭过头去，双手捂住脸庞，再不敢见人。",
-        "result": null,
-        "event_name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老道人与小道童对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 21
-      }
-    ],
-    "extracted_at": "2026-03-25T17:27:38.005557",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-22-0": {
-    "juan_index": 219,
-    "segment_index": 22,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "刹那之间。",
-      "小道童突然停下脚步，就那么直愣愣站在原地，纹丝不动，不是他不想动，而是不敢动弹。",
-      "一行人当中，其实真正最受宗门器重的弟子，是他这个天生直觉卓然的修道良材，而不是那对双胞胎姐弟，甚至不是那个“趴在三境上晒了好多年太阳”的蠢货剑修。",
-      "他迅速转头望去。",
-      "小道士攥紧那块篆刻有“万鬼俯首”的镇妖木，手心满是汗水，他缓缓偏移视线，丑八怪女鬼不去说，病秧子的伥鬼杨晃，只靠一件神兵逞威风的大髯刀客，极有可能是龙虎山张天师的俱芦洲道士，最后才是那个面无表情的背匣少年，",
-      "面容稚嫩的小道士，如此作为，落在别人眼中，只当是孩子心性的玩闹。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "小道童",
-        "alias": [],
-        "original_description_in_book": "小道童突然停下脚步，就那么直愣愣站在原地，纹丝不动，不是他不想动，而是不敢动弹。",
-        "description": "道门称谓人物，可扩展道家支线关系。",
-        "power": "道家",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 219,
-        "segment_index": 22
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 小道童剧情推进",
-        "time": null,
-        "location": null,
-        "participants": [
-          "小道童"
-        ],
-        "description": "小道童突然停下脚步，就那么直愣愣站在原地，纹丝不动，不是他不想动，而是不敢动弹。 刹那之间。 一行人当中，其实真正最受宗门器重的弟子，是他这个天生直觉卓然的修道良材，而不是那对双胞胎姐弟，甚至不是那个“趴在三境上晒了好多年太阳”的蠢货剑修。",
-        "background": "",
-        "significance": "对应小道童在叙事中的关键剧情推进节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段22",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 22
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.005557",
+    "extracted_at": "2026-03-26T11:46:48.745853",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1326,7 +676,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.006560",
+    "extracted_at": "2026-03-26T11:46:48.746856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1389,132 +739,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.006560",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-26-0": {
-    "juan_index": 219,
-    "segment_index": 26,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "雨已停歇，年轻道士望向高空夜幕，感慨道：“真想吟诗一首啊。",
-      "”",
-      "大髯刀客哈哈大笑，痛快痛快。",
-      "不管如何，事情总算有了个圆满结局。",
-      "这比平日里替天行道，斩妖成功，痛饮美酒，还要让大髯汉子感到喜悦。",
-      "倒地不起的老妪在三进院落那边，终于悠悠醒转过来，立即飞掠而来，结果看到相安无事的男女主人，微微放下心，杨晃对老妪轻声笑道：“都过去了，以后不用再担心那些鬼祟小人了。"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "倒地不起的老妪在三进院落那边，终于悠悠醒转过来，立即飞掠而来，结果看到相安无事的男女主人，微微放下心，杨晃对老妪轻声笑道：“都过去了，以后不用再担心那些鬼祟小人了。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 26
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老妪对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老妪"
-        ],
-        "description": "倒地不起的老妪在三进院落那边，终于悠悠醒转过来，立即飞掠而来，结果看到相安无事的男女主人，微微放下心，杨晃对老妪轻声笑道：“都过去了，以后不用再担心那些鬼祟小人了。 雨已停歇，年轻道士望向高空夜幕，感慨道：“真想吟诗一首啊。 ”",
-        "background": "",
-        "significance": "对应老妪在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段26",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 26
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.006560",
-    "model_name": "offline-rules-v2",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0
-  },
-  "219-27-0": {
-    "juan_index": 219,
-    "segment_index": 27,
-    "chunk_start_index": 0,
-    "chunk_end_index": 6,
-    "segment_start_time": "第三卷金错刀 第两百一十九章 道士吟诗",
-    "source_sentences": [
-      "”",
-      "老妪先是愕然，随后喜极而泣，泣不成声。",
-      "闺名莺莺的女鬼缓缓挪动躯干，“游荡”过去，轻轻挽住老妪的肩头，呜呜咽咽，像是在温柔安慰老妪“没事了没事了。",
-      "”",
-      "无事一身轻，再无半点枯槁颓丧神色，伥鬼杨晃大笑道：“徐大侠，张仙师，还有陈公子！",
-      "若是不嫌弃，就让我们，尽尽地主之谊？"
-    ],
-    "entities": [
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "老妪先是愕然，随后喜极而泣，泣不成声。 闺名莺莺的女鬼缓缓挪动躯干，“游荡”过去，轻轻挽住老妪的肩头，呜呜咽咽，像是在温柔安慰老妪“没事了没事了。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1,
-          2
-        ],
-        "juan_index": 219,
-        "segment_index": 27
-      }
-    ],
-    "locations": [],
-    "events": [
-      {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 老妪对话",
-        "time": null,
-        "location": null,
-        "participants": [
-          "老妪"
-        ],
-        "description": "老妪先是愕然，随后喜极而泣，泣不成声。 闺名莺莺的女鬼缓缓挪动躯干，“游荡”过去，轻轻挽住老妪的肩头，呜呜咽咽，像是在温柔安慰老妪“没事了没事了。 ”",
-        "background": "",
-        "significance": "对应老妪在叙事中的关键对话节点。",
-        "related_action_indices": [],
-        "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段27",
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 219,
-        "segment_index": 27
-      }
-    ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.006560",
+    "extracted_at": "2026-03-26T11:46:48.746856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1613,7 +838,7 @@
         "segment_index": 28
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.006560",
+    "extracted_at": "2026-03-26T11:46:48.746856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1675,7 +900,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.006560",
+    "extracted_at": "2026-03-26T11:46:48.746856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1696,19 +921,6 @@
       "陈平安坐在栏杆上，对此根本没有芥蒂，笑道：“行走江湖，小心驶得万年船。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "老妪",
-        "alias": [],
-        "original_description_in_book": "在这之后，老妪就笑逐颜开，仍是不断低头抹着眼泪，快步走去灶房烧菜。",
-        "description": "小镇和旧人旧事相关的稳定称谓人物，可补足街巷关系。",
-        "power": "小镇",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 219,
-        "segment_index": 30
-      },
       {
         "entity_type": "person",
         "name": "陈平安",
@@ -1740,18 +952,19 @@
     "locations": [],
     "events": [
       {
-        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 陈平安与老妪对话",
+        "name": "第三卷金错刀 第两百一十九章 道士吟诗 · 陈平安与张山峰对话",
         "time": null,
         "location": null,
         "participants": [
           "陈平安",
-          "老妪",
           "张山峰"
         ],
-        "description": "在这之后，老妪就笑逐颜开，仍是不断低头抹着眼泪，快步走去灶房烧菜。 道士张山犹豫片刻，还是喊上陈平安，来到院落游廊旁，歉意道：“陈平安，小道其实本名张山峰，并不是张山，对不住了，作为朋友，却瞒了你这么久，不太厚道。 陈平安坐在栏杆上，对此根本没有芥蒂，笑道：“行走江湖，小心驶得万年船。",
+        "description": "道士张山犹豫片刻，还是喊上陈平安，来到院落游廊旁，歉意道：“陈平安，小道其实本名张山峰，并不是张山，对不住了，作为朋友，却瞒了你这么久，不太厚道。 陈平安坐在栏杆上，对此根本没有芥蒂，笑道：“行走江湖，小心驶得万年船。 众人笑声朗朗，古宅再无半点森森阴气，唯有尚未喝酒就醉人的江湖豪气了。",
         "background": "",
-        "significance": "推动陈平安与老妪之间的对话关系。",
-        "related_action_indices": [],
+        "significance": "推动陈平安与张山峰之间的对话关系。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第三卷金错刀 第两百一十九章 道士吟诗 · 段30",
         "sentence_indexes_in_segment": [
           0,
@@ -1765,8 +978,34 @@
         "segment_index": 30
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "陈平安"
+        ],
+        "to_roles": [
+          "张山峰"
+        ],
+        "action": "对话",
+        "context": "众人笑声朗朗，古宅再无半点森森阴气，唯有尚未喝酒就醉人的江湖豪气了。 在这之后，老妪就笑逐颜开，仍是不断低头抹着眼泪，快步走去灶房烧菜。 夫妇二人在三进院落的正房待客，与大髯刀客闲聊江湖事。 道士张山犹豫片刻，还是喊上陈平安，来到院落游廊旁，歉意道：“陈平安，小道其实本名张山峰，并不是张山，对不住了，作为朋友，却瞒了你这么久，不太厚道。 ” 陈平安坐在栏杆上，对此根本没有芥蒂，笑道：“行走江湖，小心驶得万年船。",
+        "result": null,
+        "event_name": "第三卷金错刀 第两百一十九章 道士吟诗 · 陈平安与张山峰对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 219,
+        "segment_index": 30
+      }
+    ],
+    "extracted_at": "2026-03-26T11:46:48.746856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1829,7 +1068,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "extracted_at": "2026-03-26T11:46:48.746856",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1892,7 +1131,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "extracted_at": "2026-03-26T11:46:48.747860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1997,7 +1236,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "extracted_at": "2026-03-26T11:46:48.747860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2097,7 +1336,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "extracted_at": "2026-03-26T11:46:48.747860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2160,7 +1399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "extracted_at": "2026-03-26T11:46:48.747860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2251,7 +1490,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.007564",
+    "extracted_at": "2026-03-26T11:46:48.747860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2328,7 +1567,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.008567",
+    "extracted_at": "2026-03-26T11:46:48.747860",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2433,7 +1672,7 @@
         "segment_index": 38
       }
     ],
-    "extracted_at": "2026-03-25T17:27:38.008567",
+    "extracted_at": "2026-03-26T11:46:48.748863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2497,7 +1736,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.008567",
+    "extracted_at": "2026-03-26T11:46:48.748863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2559,7 +1798,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.008567",
+    "extracted_at": "2026-03-26T11:46:48.748863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2623,7 +1862,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.008567",
+    "extracted_at": "2026-03-26T11:46:48.748863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2700,7 +1939,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-25T17:27:38.008567",
+    "extracted_at": "2026-03-26T11:46:48.748863",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

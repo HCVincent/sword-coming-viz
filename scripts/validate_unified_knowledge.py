@@ -4,8 +4,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Any, List
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from scripts.character_quality import audit_role_name
 
 
 def is_suspicious_placeholder(value: str) -> bool:
@@ -34,7 +41,22 @@ def collect_suspicious_paths(node: Any, path: str = "$") -> List[str]:
 
 def validate_unified_knowledge(path: Path) -> List[str]:
     payload = json.loads(path.read_text(encoding="utf-8"))
-    return collect_suspicious_paths(payload)
+    suspicious = collect_suspicious_paths(payload)
+    roles = payload.get("roles") if isinstance(payload, dict) else None
+    if isinstance(roles, dict):
+        for role_id, role_payload in roles.items():
+            reasons = audit_role_name(str(role_id))
+            if reasons:
+                suspicious.append(f"$.roles.{role_id} [{'；'.join(reasons)}]")
+            if isinstance(role_payload, dict):
+                canonical_name = role_payload.get("canonical_name")
+                if isinstance(canonical_name, str):
+                    canonical_reasons = audit_role_name(canonical_name)
+                    if canonical_reasons:
+                        suspicious.append(
+                            f"$.roles.{role_id}.canonical_name [{'；'.join(canonical_reasons)}]"
+                        )
+    return suspicious
 
 
 def main() -> int:
