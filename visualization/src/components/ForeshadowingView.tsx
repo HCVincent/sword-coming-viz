@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react';
-import type { WriterForeshadowingThread } from '../types/writerInsights';
+import type { WriterForeshadowingThread, WriterInsightEventRef } from '../types/writerInsights';
 
 interface ForeshadowingViewProps {
   threads: WriterForeshadowingThread[];
   onRoleClick?: (roleName: string) => void;
-  onEventClick?: (eventId: string) => void;
+  onEventClick?: (eventId: string, eventRef: WriterInsightEventRef) => void;
 }
 
 export function ForeshadowingView({ threads, onRoleClick, onEventClick }: ForeshadowingViewProps) {
@@ -80,7 +80,7 @@ export function ForeshadowingView({ threads, onRoleClick, onEventClick }: Foresh
                   {thread.clue_events.map((event) => (
                     <button
                       key={event.event_id}
-                      onClick={() => onEventClick?.(event.event_id)}
+                      onClick={() => onEventClick?.(event.event_id, event)}
                       className="w-full text-left rounded-xl border border-[#eadfd2] bg-white p-3 hover:bg-[#fff7ed] hover:border-[#c18a59] transition-colors"
                     >
                       <div className="font-medium text-[#5d2e0c]">{event.name}</div>
@@ -100,7 +100,7 @@ export function ForeshadowingView({ threads, onRoleClick, onEventClick }: Foresh
                   {thread.payoff_events.map((event) => (
                     <button
                       key={event.event_id}
-                      onClick={() => onEventClick?.(event.event_id)}
+                      onClick={() => onEventClick?.(event.event_id, event)}
                       className="w-full text-left rounded-xl border border-[#eadfd2] bg-white p-3 hover:bg-[#fff7ed] hover:border-[#c18a59] transition-colors"
                     >
                       <div className="font-medium text-[#5d2e0c]">{event.name}</div>

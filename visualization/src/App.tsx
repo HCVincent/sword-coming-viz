@@ -27,6 +27,7 @@ import type {
   UnifiedKnowledgeBase,
   UnifiedLocation,
 } from './types/unified';
+import type { WriterInsightEventRef } from './types/writerInsights';
 import { toChineseRelationshipKind } from './utils/writerInsightText';
 
 interface SelectedRelationPair {
@@ -84,6 +85,25 @@ function toRoleNode(role: UnifiedKnowledgeBase['roles'][string]): RoleNodeUnifie
     units: role.units_appeared && role.units_appeared.length > 0 ? role.units_appeared : role.juans_appeared,
     aliases: Array.from(role.all_names || []).filter((name) => name !== role.canonical_name),
     relatedEntities: Array.from(role.related_entities || []),
+  };
+}
+
+function insightEventToTimeline(ref: WriterInsightEventRef): TimelineEventUnified {
+  return {
+    id: ref.event_id,
+    name: ref.name,
+    timeText: null,
+    timeNumeric: null,
+    progressStart: ref.progress_start,
+    progressEnd: ref.progress_end,
+    progressLabel: ref.progress_label ?? null,
+    location: ref.location,
+    participants: Array.from(ref.participants ?? []),
+    description: ref.description,
+    unitIndex: ref.unit_index ?? 0,
+    type: 'event',
+    significance: ref.significance,
+    background: '',
   };
 }
 
@@ -514,24 +534,27 @@ function App() {
   );
 
   const openEventDetail = useCallback(
-    (eventId: string, tab: TabType = activeTab, options?: { pushCurrent?: boolean }) => {
-      const event = resolveTimelineEventById(eventId);
+    (eventId: string, tab: TabType = activeTab, options?: { pushCurrent?: boolean; fallbackEvent?: TimelineEventUnified }) => {
+      const event = resolveTimelineEventById(eventId) ?? options?.fallbackEvent ?? null;
       if (!event) return;
       if (options?.pushCurrent && currentModalEntry) setModalHistory((prev) => [...prev, currentModalEntry]);
       else setModalHistory([]);
       setActiveTab(tab);
       clearModalSelections();
       setSelectedEvent(event);
+      /* Only write event selection into the URL if the event exists in kb.events,
+         so the URL-sync useEffect won't null it out on the next render. */
+      const kbHasEvent = Boolean(kb?.events?.[event.id]);
       const next = writeUrlGlobalContext(searchParams, {
         tab,
         unitRange,
         progressRange,
         focusRoleId: focusNodeId ?? undefined,
-        selection: { type: 'event', id: event.id },
+        selection: kbHasEvent ? { type: 'event', id: event.id } : undefined,
       });
       setSearchParams(next, { replace: false });
     },
-    [activeTab, clearModalSelections, currentModalEntry, focusNodeId, progressRange, resolveTimelineEventById, searchParams, setSearchParams, unitRange]
+    [activeTab, clearModalSelections, currentModalEntry, focusNodeId, kb, progressRange, resolveTimelineEventById, searchParams, setSearchParams, unitRange]
   );
 
   const handleFocusNode = useCallback(
@@ -1092,34 +1115,34 @@ function App() {
                     <h2 className="section-title">当前数据密度</h2>
                     <p className="section-subtitle">左侧保持原有范围筛选逻辑，只把信息组织成更适合连续决策的控制台。</p>
                     <div className="stats-list mt-6">
-                      <div className="stats-row">
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('network')}>
                         <span>人物总数</span>
                         <strong>{totalRoleCount}</strong>
-                      </div>
-                      <div className="stats-row">
+                      </button>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('network')}>
                         <span>关系网人物</span>
                         <strong>{linkedRoleCount}</strong>
-                      </div>
-                      <div className="stats-row">
+                      </button>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('network')}>
                         <span>孤立人物</span>
                         <strong>{isolatedRoleCount}</strong>
-                      </div>
-                      <div className="stats-row">
+                      </button>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('timeline')}>
                         <span>事件</span>
                         <strong>{timelineEvents.length}</strong>
-                      </div>
-                      <div className="stats-row">
+                      </button>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('locations')}>
                         <span>地点</span>
                         <strong>{locations.length}</strong>
-                      </div>
-                      <div className="stats-row">
+                      </button>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('writerArcs')}>
                         <span>人工主线</span>
                         <strong>{curatedRelationships.length}</strong>
-                      </div>
-                      <div className="stats-row">
+                      </button>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('foreshadowing')}>
                         <span>伏笔线</span>
                         <strong>{foreshadowingThreads.length}</strong>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </section>
@@ -1147,22 +1170,22 @@ function App() {
                 </div>
 
                 <dl className="metric-grid">
-                  <div className="metric-card">
+                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('writerArcs')}>
                     <dt>当前季别</dt>
                     <dd>{currentSeasonLabel}</dd>
-                  </div>
-                  <div className="metric-card">
+                  </button>
+                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('timeline')}>
                     <dt>剧情事件</dt>
                     <dd>{timelineEvents.length}</dd>
-                  </div>
-                  <div className="metric-card">
+                  </button>
+                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('network')}>
                     <dt>人物密度</dt>
                     <dd>{totalRoleCount}</dd>
-                  </div>
-                  <div className="metric-card">
+                  </button>
+                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('writerArcs')}>
                     <dt>可改编线索</dt>
                     <dd>{seasonOverviews.length + curatedRelationships.length}</dd>
-                  </div>
+                  </button>
                 </dl>
 
                 <div className="dashboard-grid mt-6">
@@ -1419,7 +1442,11 @@ function App() {
                       <ForeshadowingView
                         threads={foreshadowingThreads}
                         onRoleClick={(roleName) => openRoleDetail(roleName, 'foreshadowing')}
-                        onEventClick={(eventId) => openEventDetail(eventId, 'foreshadowing')}
+                        onEventClick={(eventId, eventRef) =>
+                          openEventDetail(eventId, 'foreshadowing', {
+                            fallbackEvent: insightEventToTimeline(eventRef),
+                          })
+                        }
                       />
                     )}
                   </div>

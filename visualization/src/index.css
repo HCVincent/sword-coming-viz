@@ -590,6 +590,31 @@ a {
   background: rgba(245, 250, 250, 0.84);
 }
 
+.metric-card--clickable {
+  appearance: none;
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
+}
+
+.metric-card--clickable:hover {
+  transform: translateY(-1px);
+  border-color: rgba(140, 92, 43, 0.34);
+  background: rgba(255, 250, 243, 0.98);
+  box-shadow: 0 12px 28px rgba(31, 56, 64, 0.1);
+}
+
+.metric-card--clickable:focus-visible {
+  outline: 2px solid rgba(140, 92, 43, 0.55);
+  outline-offset: 2px;
+}
+
 .metric-card dt {
   color: var(--text-muted);
   font-size: 0.78rem;
@@ -1120,6 +1145,34 @@ button:focus-visible {
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(57, 88, 99, 0.08);
   color: var(--text-secondary);
+}
+
+.stats-row--clickable {
+  appearance: none;
+  border: 0;
+  background: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.stats-row--clickable:hover {
+  transform: translateX(2px);
+  color: var(--text-primary);
+  border-color: rgba(140, 92, 43, 0.24);
+}
+
+.stats-row--clickable:focus-visible {
+  outline: 2px solid rgba(140, 92, 43, 0.5);
+  outline-offset: 3px;
+  border-radius: 10px;
 }
 
 .stats-row:last-child {
