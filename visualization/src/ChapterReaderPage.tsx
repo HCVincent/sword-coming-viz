@@ -155,7 +155,7 @@ function parseChapterSegments(markdown: string, unit: ChapterIndexUnit | null): 
 }
 
 async function fetchChapterMarkdown(relativePath: string) {
-  const response = await fetch(encodeURI(`/chapters/${relativePath}`));
+  const response = await fetch(encodeURI(`${import.meta.env.BASE_URL}chapters/${relativePath}`));
   if (!response.ok) {
     throw new Error(`读取章节原文失败：${response.status}`);
   }

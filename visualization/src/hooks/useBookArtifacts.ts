@@ -9,7 +9,7 @@ export function useUnitProgressIndex() {
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch('/data/unit_progress_index.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/unit_progress_index.json`);
         if (!response.ok) {
           throw new Error(`读取章节进度索引失败：${response.status}`);
         }
@@ -37,7 +37,7 @@ export function useBookConfig() {
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch('/data/book_config.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/book_config.json`);
         if (!response.ok) {
           throw new Error(`读取图书配置失败：${response.status}`);
         }
@@ -65,7 +65,7 @@ export function useChapterIndex() {
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch('/data/chapter_index.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/chapter_index.json`);
         if (!response.ok) {
           throw new Error(`读取原文章节索引失败：${response.status}`);
         }

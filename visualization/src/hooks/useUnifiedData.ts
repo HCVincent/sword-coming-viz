@@ -15,7 +15,7 @@ export function useUnifiedKnowledgeBase() {
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await fetch('/data/unified_knowledge.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/unified_knowledge.json`);
 
         if (!response.ok) {
           throw new Error(`读取统一知识库失败：${response.status}`);

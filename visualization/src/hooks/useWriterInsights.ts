@@ -86,7 +86,7 @@ export function useWriterInsights() {
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch('/data/writer_insights.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/writer_insights.json`);
         if (!response.ok) {
           throw new Error(`读取编剧视图数据失败：${response.status}`);
         }
