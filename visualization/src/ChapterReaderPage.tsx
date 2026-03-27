@@ -110,14 +110,15 @@ function parseBodyParagraphs(body: string) {
 }
 
 function buildReaderHref(unitIndex: number, anchor?: string | null, fromHref?: string | null) {
-  const url = new URL(`/reader/${unitIndex}`, window.location.origin);
+  const params = new URLSearchParams();
   if (anchor) {
-    url.searchParams.set('anchor', anchor);
+    params.set('anchor', anchor);
   }
   if (fromHref) {
-    url.searchParams.set('from', fromHref);
+    params.set('from', fromHref);
   }
-  return `${url.pathname}${url.search}`;
+  const query = params.toString();
+  return `/reader/${unitIndex}${query ? `?${query}` : ''}`;
 }
 
 function parseChapterSegments(markdown: string, unit: ChapterIndexUnit | null): ReaderSegment[] {
@@ -420,14 +421,16 @@ export default function ChapterReaderPage() {
   function handleBack() {
     if (returnHref) {
       try {
-        const target = new URL(returnHref, window.location.origin);
+        // returnHref is a hash-route path like "/" or "/?tab=foo", navigate within HashRouter
+        const base = import.meta.env.BASE_URL ?? '/';
+        const fullUrl = `${window.location.origin}${base}#${returnHref}`;
         if (window.opener && !window.opener.closed) {
           window.opener.focus();
           window.close();
-          window.opener.location.assign(target.toString());
+          window.opener.location.assign(fullUrl);
           return;
         }
-        window.location.assign(target.toString());
+        window.location.assign(fullUrl);
         return;
       } catch {
         // Ignore malformed return targets.

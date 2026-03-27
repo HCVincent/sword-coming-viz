@@ -26,8 +26,10 @@ function resolveAnchor(unit: ChapterIndexUnit, progressIndex: number | null | un
 
 function resolveCurrentAnalysisHref() {
   if (typeof window === 'undefined') return undefined;
-  if (window.location.pathname.startsWith('/reader/')) return undefined;
-  return `${window.location.pathname}${window.location.search}`;
+  // HashRouter: route lives in window.location.hash, e.g. "#/" or "#/reader/73?..."
+  const hash = window.location.hash.replace(/^#/, '') || '/';
+  if (hash.startsWith('/reader/')) return undefined;
+  return hash;
 }
 
 export function buildChapterHref(unitIndex: number, anchor?: string, fromHref?: string) {
@@ -40,7 +42,8 @@ export function buildChapterHref(unitIndex: number, anchor?: string, fromHref?: 
     params.set('from', sourceHref);
   }
   const query = params.toString();
-  return `/reader/${unitIndex}${query ? `?${query}` : ''}`;
+  const base = import.meta.env.BASE_URL ?? '/';
+  return `${base}#/reader/${unitIndex}${query ? `?${query}` : ''}`;
 }
 
 export function getPrimaryJumpTarget(
