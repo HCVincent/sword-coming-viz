@@ -197,6 +197,13 @@ export interface WriterSeasonOverview {
   main_conflicts: WriterSeasonOverviewConflict[];
   priority_relationships: WriterSeasonOverviewRelationship[];
   anchor_events: WriterInsightEventRef[];
+  data_provenance?: {
+    priority_roles_source?: string;
+    priority_relationships_source?: string;
+    summary_source?: string;
+    story_beats_source?: string;
+    note?: string;
+  };
 }
 
 export interface WriterInsightsPayload {

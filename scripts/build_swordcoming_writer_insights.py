@@ -1568,14 +1568,32 @@ def build_story_beats(
         ("payoff", "收束落点", lambda pos: pos >= start + span * 0.7),
     ]
 
-    selected_ids = set()
+    selected_ids: set[str] = set()
+    selected_names: set[str] = set()
     beats: List[dict] = []
     for beat_type, label, predicate in windows:
+        # Prefer events whose name has not been used yet
         candidates = [
             ref
             for ref in ranked_events
-            if ref.get("event_id") not in selected_ids and predicate(event_position(ref))
+            if ref.get("event_id") not in selected_ids
+            and ref.get("name", "") not in selected_names
+            and predicate(event_position(ref))
         ]
+        # Fallback: allow same-name if we can't find distinct ones in this window
+        if not candidates:
+            candidates = [
+                ref
+                for ref in ranked_events
+                if ref.get("event_id") not in selected_ids and predicate(event_position(ref))
+            ]
+        # Final fallback: any remaining event
+        if not candidates:
+            candidates = [
+                ref
+                for ref in ranked_events
+                if ref.get("event_id") not in selected_ids and ref.get("name", "") not in selected_names
+            ]
         if not candidates:
             candidates = [ref for ref in ranked_events if ref.get("event_id") not in selected_ids]
         if not candidates:
@@ -1584,6 +1602,7 @@ def build_story_beats(
 
         chosen = candidates[0]
         selected_ids.add(chosen.get("event_id"))
+        selected_names.add(chosen.get("name", ""))
         beats.append(
             {
                 "beat_type": beat_type,
@@ -1841,7 +1860,7 @@ def build_season_overviews(
             )[:4]
         ]
 
-        season_anchor_events = sorted(
+        _all_anchor_candidates = sorted(
             season_events,
             key=lambda ref: (
                 -screenplay_event_score(
@@ -1855,7 +1874,18 @@ def build_season_overviews(
                 ref["unit_index"] if ref["unit_index"] is not None else 10**12,
                 ref["name"],
             ),
-        )[:4]
+        )
+        # Deduplicate by event name to ensure diverse anchor events
+        season_anchor_events: List[dict] = []
+        _seen_anchor_names: set[str] = set()
+        for _aref in _all_anchor_candidates:
+            _aname = _aref.get("name", "")
+            if _aname in _seen_anchor_names:
+                continue
+            _seen_anchor_names.add(_aname)
+            season_anchor_events.append(_aref)
+            if len(season_anchor_events) >= 4:
+                break
         anchor_event_ids = [
             str(ref.get("event_id", "")).strip() for ref in season_anchor_events if str(ref.get("event_id", "")).strip()
         ]
@@ -1943,14 +1973,21 @@ def build_season_overviews(
 
         spotlight_summary = None
         if spotlight_role:
+            # Use priority_relationships (curated + scored) first, then fall back
+            # to season_curated + season_conflicts for broader coverage
+            spotlight_counterpart_pool = [
+                *priority_relationship_items,
+                *season_curated,
+                *season_conflicts,
+            ]
             spotlight_counterparts = unique_names(
                 (
                     item["target_role_name"]
-                    if item["source_role_name"] == spotlight_role
-                    else item["source_role_name"]
+                    if item.get("source_role_name") == spotlight_role
+                    else item.get("source_role_name", "")
                 )
-                for item in season_curated + season_conflicts
-                if spotlight_role in {item["source_role_name"], item["target_role_name"]}
+                for item in spotlight_counterpart_pool
+                if spotlight_role in {item.get("source_role_name"), item.get("target_role_name")}
             )[:3]
             spotlight_summary = (
                 f"{spotlight_role}在{season_name}主要与"
@@ -1989,6 +2026,13 @@ def build_season_overviews(
                 "priority_relationships": priority_relationships,
                 "anchor_events": season_anchor_events,
                 "must_keep_scenes": must_keep_scenes,
+                "data_provenance": {
+                    "priority_roles_source": "season_focus" if season_focus.get("priority_roles") else "density_ranking",
+                    "priority_relationships_source": "season_focus" if season_focus.get("priority_relationship_pairs") else "score_ranking",
+                    "summary_source": "template_from_data",
+                    "story_beats_source": "score_ranking",
+                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text.",
+                },
             }
         )
 
