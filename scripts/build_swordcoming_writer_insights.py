@@ -1344,6 +1344,7 @@ def focused_event_score(
     writer_focus: dict,
     priority_pair_scores: Dict[frozenset[str], int],
     spotlight_role: Optional[str],
+    name_occurrence_counts: Optional[Dict[str, int]] = None,
 ) -> int:
     score = event_score(
         event_ref,
@@ -1352,6 +1353,14 @@ def focused_event_score(
         priority_pair_scores=priority_pair_scores,
         spotlight_role=spotlight_role,
     )
+    # Penalize event names that appear in many chapters (likely references,
+    # not distinct events).  A name appearing in >5 chapters is suspicious;
+    # each extra occurrence beyond 5 costs 2 points, capped at -30.
+    if name_occurrence_counts:
+        event_name = str(event_ref.get("name", "")).strip()
+        name_freq = name_occurrence_counts.get(event_name, 1)
+        if name_freq > 5:
+            score -= min(name_freq - 5, 15) * 2
     participants = [str(name).strip() for name in event_ref.get("participants", []) if str(name).strip()]
     participant_count = len(participants)
     priority_characters = {
@@ -1486,12 +1495,14 @@ def screenplay_event_score(
     writer_focus: dict,
     priority_pair_scores: Dict[frozenset[str], int],
     spotlight_role: Optional[str],
+    name_occurrence_counts: Optional[Dict[str, int]] = None,
 ) -> int:
     score = focused_event_score(
         event_ref,
         writer_focus=writer_focus,
         priority_pair_scores=priority_pair_scores,
         spotlight_role=spotlight_role,
+        name_occurrence_counts=name_occurrence_counts,
     )
     matched_relationships = match_relationships_for_event(
         event_ref,
@@ -1545,9 +1556,13 @@ def build_story_beats(
     writer_focus: dict,
     priority_pair_scores: Dict[frozenset[str], int],
     spotlight_role: Optional[str],
+    globally_used_names: Optional[set[str]] = None,
+    name_occurrence_counts: Optional[Dict[str, int]] = None,
 ) -> List[dict]:
     if not season_events:
         return []
+
+    _globally_used = globally_used_names or set()
 
     ranked_events = sorted(
         season_events,
@@ -1558,6 +1573,7 @@ def build_story_beats(
                 writer_focus=writer_focus,
                 priority_pair_scores=priority_pair_scores,
                 spotlight_role=spotlight_role,
+                name_occurrence_counts=name_occurrence_counts,
             ),
             ref.get("progress_start") if ref.get("progress_start") is not None else 10**12,
             ref.get("unit_index") if ref.get("unit_index") is not None else 10**12,
@@ -1594,15 +1610,26 @@ def build_story_beats(
     selected_names: set[str] = set()
     beats: List[dict] = []
     for beat_type, label, predicate in windows:
-        # Prefer events whose name has not been used yet
+        # Prefer events whose name is fresh (not used in this season AND not used
+        # in previous seasons)
         candidates = [
             ref
             for ref in ranked_events
             if ref.get("event_id") not in selected_ids
             and ref.get("name", "") not in selected_names
+            and ref.get("name", "") not in _globally_used
             and predicate(event_position(ref))
         ]
-        # Fallback: allow same-name if we can't find distinct ones in this window
+        # Fallback 1: allow names used in previous seasons, but not this season
+        if not candidates:
+            candidates = [
+                ref
+                for ref in ranked_events
+                if ref.get("event_id") not in selected_ids
+                and ref.get("name", "") not in selected_names
+                and predicate(event_position(ref))
+            ]
+        # Fallback 2: allow same-name if we can't find distinct ones in this window
         if not candidates:
             candidates = [
                 ref
@@ -1760,6 +1787,21 @@ def build_season_overviews(
 ) -> List[dict]:
     overviews: List[dict] = []
 
+    # Pre-compute how many distinct event_ids share each event name across
+    # the entire knowledge base.  Names that appear in many chapters are
+    # likely references/flashbacks rather than genuinely distinct events.
+    _name_counter: Dict[str, int] = {}
+    for ref in all_event_refs:
+        _ename = str(ref.get("name", "")).strip()
+        if _ename:
+            _name_counter[_ename] = _name_counter.get(_ename, 0) + 1
+    name_occurrence_counts: Dict[str, int] = _name_counter
+
+    # Track event names already selected by previous seasons so that later
+    # seasons prefer fresh names for their story beats and anchor events.
+    globally_used_beat_names: set[str] = set()
+    globally_used_anchor_names: set[str] = set()
+
     for season in seasons:
         unit_start, unit_end = season["unit_range"]
         progress_start, progress_end = season["progress_range"]
@@ -1891,23 +1933,36 @@ def build_season_overviews(
                     writer_focus=writer_focus,
                     priority_pair_scores=priority_pair_scores,
                     spotlight_role=spotlight_role,
+                    name_occurrence_counts=name_occurrence_counts,
                 ),
                 ref["progress_start"] if ref["progress_start"] is not None else 10**12,
                 ref["unit_index"] if ref["unit_index"] is not None else 10**12,
                 ref["name"],
             ),
         )
-        # Deduplicate by event name to ensure diverse anchor events
+        # Deduplicate by event name to ensure diverse anchor events;
+        # also prefer names not already used in previous seasons.
         season_anchor_events: List[dict] = []
         _seen_anchor_names: set[str] = set()
+        # First pass: skip names already used globally
         for _aref in _all_anchor_candidates:
             _aname = _aref.get("name", "")
-            if _aname in _seen_anchor_names:
+            if _aname in _seen_anchor_names or _aname in globally_used_anchor_names:
                 continue
             _seen_anchor_names.add(_aname)
             season_anchor_events.append(_aref)
             if len(season_anchor_events) >= 4:
                 break
+        # Fallback pass: if we couldn't fill 4 slots, allow globally-used names
+        if len(season_anchor_events) < 4:
+            for _aref in _all_anchor_candidates:
+                _aname = _aref.get("name", "")
+                if _aname in _seen_anchor_names:
+                    continue
+                _seen_anchor_names.add(_aname)
+                season_anchor_events.append(_aref)
+                if len(season_anchor_events) >= 4:
+                    break
         anchor_event_ids = [
             str(ref.get("event_id", "")).strip() for ref in season_anchor_events if str(ref.get("event_id", "")).strip()
         ]
@@ -1984,6 +2039,8 @@ def build_season_overviews(
             writer_focus=writer_focus,
             priority_pair_scores=priority_pair_scores,
             spotlight_role=spotlight_role,
+            globally_used_names=globally_used_beat_names,
+            name_occurrence_counts=name_occurrence_counts,
         )
         must_keep_scenes = build_must_keep_scenes(
             season_name=season_name,
@@ -2063,11 +2120,20 @@ def build_season_overviews(
                     "priority_roles_dropped": _dropped_focus_names,
                     "priority_relationships_source": "season_focus+evidence_gated" if season_focus.get("priority_relationship_pairs") else "score_ranking+evidence_gated",
                     "summary_source": "template_from_data",
-                    "story_beats_source": "score_ranking",
-                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season.",
+                    "story_beats_source": "score_ranking+cross_season_dedup",
+                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty.",
                 },
             }
         )
+
+        # Record names used by this season so later seasons avoid them
+        for beat in story_beats:
+            ev = beat.get("event")
+            if ev and ev.get("name"):
+                globally_used_beat_names.add(ev["name"])
+        for anchor in season_anchor_events:
+            if anchor.get("name"):
+                globally_used_anchor_names.add(anchor["name"])
 
     return overviews
 

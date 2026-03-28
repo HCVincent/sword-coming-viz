@@ -1,11 +1,14 @@
 {
-  "version": "season-overview-audit-v1",
-  "generated_at": "2026-03-28T09:26:03.905844",
+  "version": "season-overview-audit-v2",
+  "generated_at": "2026-03-29T01:29:06.006487",
   "total_seasons": 3,
   "all_seasons_roles_evidence_backed": true,
   "all_seasons_beats_in_range": true,
   "all_seasons_beats_unique_names": true,
   "all_seasons_template_names_backed": true,
+  "cross_season_beat_overlap": [],
+  "cross_season_anchor_overlap": [],
+  "no_cross_season_overlap": true,
   "season_audits": [
     {
       "season_name": "第一季",
@@ -18,14 +21,14 @@
           "role_name": "陈平安",
           "in_season_top_roles": true,
           "unit_appearance_count": 75,
-          "event_count": 702,
+          "event_count": 740,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "宋集薪",
           "in_season_top_roles": true,
           "unit_appearance_count": 62,
-          "event_count": 220,
+          "event_count": 274,
           "evidence_status": "chapter_backed"
         },
         {
@@ -39,21 +42,21 @@
           "role_name": "宁姚",
           "in_season_top_roles": true,
           "unit_appearance_count": 41,
-          "event_count": 193,
+          "event_count": 207,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "刘羡阳",
           "in_season_top_roles": true,
           "unit_appearance_count": 51,
-          "event_count": 198,
+          "event_count": 214,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "稚圭",
           "in_season_top_roles": true,
           "unit_appearance_count": 43,
-          "event_count": 103,
+          "event_count": 115,
           "evidence_status": "chapter_backed"
         },
         {
@@ -111,32 +114,32 @@
       "story_beats_audit": [
         {
           "beat_type": "opening",
-          "event_name": "顾璨离开小镇",
-          "unit_index": 24,
+          "event_name": "第一卷笼中雀 第二十八章 财迷 · 刘羡阳与陈平安在小镇对话",
+          "unit_index": 28,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第一卷笼中雀 第二十四章 相赠"
+            "第一卷笼中雀 第二十八章 财迷"
           ]
         },
         {
           "beat_type": "midpoint",
-          "event_name": "墙头对话",
-          "unit_index": 47,
+          "event_name": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在小镇对话",
+          "unit_index": 51,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第一卷笼中雀 第四十七章 独行"
+            "第一卷笼中雀 第五十一章 对峙"
           ]
         },
         {
           "beat_type": "payoff",
-          "event_name": "宁姚坠入小镇",
-          "unit_index": 84,
+          "event_name": "第一卷笼中雀 第六十三章 原来如此 · 陈平安与阮秀在廊桥遭遇",
+          "unit_index": 63,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第一卷笼中雀 第八十四章 我有一剑"
+            "第一卷笼中雀 第六十三章 原来如此"
           ]
         }
       ],
@@ -144,52 +147,52 @@
       "story_beats_all_unique_names": true,
       "anchor_events_audit": [
         {
-          "event_id": "墙头对话@47",
-          "name": "墙头对话",
-          "unit_index": 47,
+          "event_id": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在小镇对话@51",
+          "name": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在小镇对话",
+          "unit_index": 51,
           "season_name": "第一季",
           "in_season_range": true,
           "source_unit_titles": [
-            "第一卷笼中雀 第四十七章 独行"
+            "第一卷笼中雀 第五十一章 对峙"
           ],
           "has_description": true,
           "has_significance": true,
           "context": "anchor_event"
         },
         {
-          "event_id": "顾璨离开小镇@47",
-          "name": "顾璨离开小镇",
-          "unit_index": 47,
+          "event_id": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在正阳山冲突@51",
+          "name": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在正阳山冲突",
+          "unit_index": 51,
           "season_name": "第一季",
           "in_season_range": true,
           "source_unit_titles": [
-            "第一卷笼中雀 第四十七章 独行"
+            "第一卷笼中雀 第五十一章 对峙"
           ],
           "has_description": true,
           "has_significance": true,
           "context": "anchor_event"
         },
         {
-          "event_id": "齐静春现身@58",
-          "name": "齐静春现身",
-          "unit_index": 58,
+          "event_id": "第一卷笼中雀 第二十八章 财迷 · 刘羡阳与陈平安在小镇对话@28",
+          "name": "第一卷笼中雀 第二十八章 财迷 · 刘羡阳与陈平安在小镇对话",
+          "unit_index": 28,
           "season_name": "第一季",
           "in_season_range": true,
           "source_unit_titles": [
-            "第一卷笼中雀 第五十八章 先生"
+            "第一卷笼中雀 第二十八章 财迷"
           ],
           "has_description": true,
           "has_significance": true,
           "context": "anchor_event"
         },
         {
-          "event_id": "宁姚坠入小镇@84",
-          "name": "宁姚坠入小镇",
-          "unit_index": 84,
+          "event_id": "第一卷笼中雀 第三十一章 敲山 · 宋集薪与陈平安在泥瓶巷迁移@31",
+          "name": "第一卷笼中雀 第三十一章 敲山 · 宋集薪与陈平安在泥瓶巷迁移",
+          "unit_index": 31,
           "season_name": "第一季",
           "in_season_range": true,
           "source_unit_titles": [
-            "第一卷笼中雀 第八十四章 我有一剑"
+            "第一卷笼中雀 第三十一章 敲山"
           ],
           "has_description": true,
           "has_significance": true,
@@ -200,20 +203,20 @@
       "must_keep_scenes_audit": [
         {
           "label": "开场必保留戏",
-          "event_name": "顾璨离开小镇",
-          "unit_index": 24,
+          "event_name": "第一卷笼中雀 第二十八章 财迷 · 刘羡阳与陈平安在小镇对话",
+          "unit_index": 28,
           "in_season_range": true
         },
         {
           "label": "中段必保留戏",
-          "event_name": "墙头对话",
-          "unit_index": 47,
+          "event_name": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在小镇对话",
+          "unit_index": 51,
           "in_season_range": true
         },
         {
           "label": "收束必保留戏",
-          "event_name": "宁姚坠入小镇",
-          "unit_index": 84,
+          "event_name": "第一卷笼中雀 第六十三章 原来如此 · 陈平安与阮秀在廊桥遭遇",
+          "unit_index": 63,
           "in_season_range": true
         }
       ],
@@ -237,10 +240,10 @@
       "data_provenance": {
         "priority_roles_source": "season_focus+evidence_gated",
         "priority_roles_dropped": [],
-        "priority_relationships_source": "season_focus",
+        "priority_relationships_source": "season_focus+evidence_gated",
         "summary_source": "template_from_data",
-        "story_beats_source": "score_ranking",
-        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped."
+        "story_beats_source": "score_ranking+cross_season_dedup",
+        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty."
       }
     },
     {
@@ -254,14 +257,14 @@
           "role_name": "陈平安",
           "in_season_top_roles": true,
           "unit_appearance_count": 109,
-          "event_count": 946,
+          "event_count": 944,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "李宝瓶",
           "in_season_top_roles": true,
           "unit_appearance_count": 77,
-          "event_count": 212,
+          "event_count": 213,
           "evidence_status": "chapter_backed"
         },
         {
@@ -282,21 +285,21 @@
           "role_name": "崔瀺",
           "in_season_top_roles": true,
           "unit_appearance_count": 60,
-          "event_count": 359,
+          "event_count": 362,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "林守一",
           "in_season_top_roles": true,
           "unit_appearance_count": 65,
-          "event_count": 158,
+          "event_count": 159,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "李槐",
           "in_season_top_roles": true,
           "unit_appearance_count": 65,
-          "event_count": 200,
+          "event_count": 201,
           "evidence_status": "chapter_backed"
         },
         {
@@ -347,38 +350,64 @@
       "story_beats_audit": [
         {
           "beat_type": "opening",
-          "event_name": "墙头对话",
-          "unit_index": 86,
+          "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与阮邛冲突",
+          "unit_index": 93,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第二卷山水郎 第八十六章 同道中人"
+            "第二卷山水郎 第九十三章 墙上有个字"
           ]
         },
         {
           "beat_type": "midpoint",
-          "event_name": "顾璨离开小镇",
-          "unit_index": 148,
+          "event_name": "第二卷山水郎 第一百五十章 去开山 · 齐静春与陈平安在骊珠洞天立势",
+          "unit_index": 150,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第二卷山水郎 第一百四十八章 少年有事问春风"
+            "第二卷山水郎 第一百五十章 去开山"
           ]
         },
         {
           "beat_type": "payoff",
-          "event_name": "宁姚坠入小镇",
-          "unit_index": 190,
+          "event_name": "第三卷金错刀 第一百八十章 恍如神人 · 阮秀与刘羡阳在泥瓶巷对话",
+          "unit_index": 180,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第三卷金错刀 第一百九十章 我是一名剑客"
+            "第三卷金错刀 第一百八十章 恍如神人"
           ]
         }
       ],
       "story_beats_all_in_range": true,
       "story_beats_all_unique_names": true,
       "anchor_events_audit": [
+        {
+          "event_id": "第二卷山水郎 第一百五十章 去开山 · 齐静春与陈平安在骊珠洞天立势@150",
+          "name": "第二卷山水郎 第一百五十章 去开山 · 齐静春与陈平安在骊珠洞天立势",
+          "unit_index": 150,
+          "season_name": "第二季",
+          "in_season_range": true,
+          "source_unit_titles": [
+            "第二卷山水郎 第一百五十章 去开山"
+          ],
+          "has_description": true,
+          "has_significance": true,
+          "context": "anchor_event"
+        },
+        {
+          "event_id": "第二卷山水郎 第一百六十一章 山水终有一别 · 齐静春与赵繇在泥瓶巷迁移@161",
+          "name": "第二卷山水郎 第一百六十一章 山水终有一别 · 齐静春与赵繇在泥瓶巷迁移",
+          "unit_index": 161,
+          "season_name": "第二季",
+          "in_season_range": true,
+          "source_unit_titles": [
+            "第二卷山水郎 第一百六十一章 山水终有一别"
+          ],
+          "has_description": true,
+          "has_significance": true,
+          "context": "anchor_event"
+        },
         {
           "event_id": "墙头对话@161",
           "name": "墙头对话",
@@ -393,39 +422,13 @@
           "context": "anchor_event"
         },
         {
-          "event_id": "顾璨离开小镇@148",
-          "name": "顾璨离开小镇",
-          "unit_index": 148,
+          "event_id": "第二卷山水郎 第一百四十九章 约战 · 崔瀺与陈平安冲突@149",
+          "name": "第二卷山水郎 第一百四十九章 约战 · 崔瀺与陈平安冲突",
+          "unit_index": 149,
           "season_name": "第二季",
           "in_season_range": true,
           "source_unit_titles": [
-            "第二卷山水郎 第一百四十八章 少年有事问春风"
-          ],
-          "has_description": true,
-          "has_significance": true,
-          "context": "anchor_event"
-        },
-        {
-          "event_id": "宁姚坠入小镇@150",
-          "name": "宁姚坠入小镇",
-          "unit_index": 150,
-          "season_name": "第二季",
-          "in_season_range": true,
-          "source_unit_titles": [
-            "第二卷山水郎 第一百五十章 去开山"
-          ],
-          "has_description": true,
-          "has_significance": true,
-          "context": "anchor_event"
-        },
-        {
-          "event_id": "袁家祖宅密谈@86",
-          "name": "袁家祖宅密谈",
-          "unit_index": 86,
-          "season_name": "第二季",
-          "in_season_range": true,
-          "source_unit_titles": [
-            "第二卷山水郎 第八十六章 同道中人"
+            "第二卷山水郎 第一百四十九章 约战"
           ],
           "has_description": true,
           "has_significance": true,
@@ -436,20 +439,20 @@
       "must_keep_scenes_audit": [
         {
           "label": "开场必保留戏",
-          "event_name": "墙头对话",
-          "unit_index": 86,
+          "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与阮邛冲突",
+          "unit_index": 93,
           "in_season_range": true
         },
         {
           "label": "中段必保留戏",
-          "event_name": "顾璨离开小镇",
-          "unit_index": 148,
+          "event_name": "第二卷山水郎 第一百五十章 去开山 · 齐静春与陈平安在骊珠洞天立势",
+          "unit_index": 150,
           "in_season_range": true
         },
         {
           "label": "收束必保留戏",
-          "event_name": "宁姚坠入小镇",
-          "unit_index": 190,
+          "event_name": "第三卷金错刀 第一百八十章 恍如神人 · 阮秀与刘羡阳在泥瓶巷对话",
+          "unit_index": 180,
           "in_season_range": true
         }
       ],
@@ -474,10 +477,10 @@
       "data_provenance": {
         "priority_roles_source": "season_focus+evidence_gated",
         "priority_roles_dropped": [],
-        "priority_relationships_source": "season_focus",
+        "priority_relationships_source": "season_focus+evidence_gated",
         "summary_source": "template_from_data",
-        "story_beats_source": "score_ranking",
-        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped."
+        "story_beats_source": "score_ranking+cross_season_dedup",
+        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty."
       }
     },
     {
@@ -491,7 +494,7 @@
           "role_name": "陈平安",
           "in_season_top_roles": true,
           "unit_appearance_count": 121,
-          "event_count": 1445,
+          "event_count": 1439,
           "evidence_status": "chapter_backed"
         },
         {
@@ -584,12 +587,12 @@
       "story_beats_audit": [
         {
           "beat_type": "opening",
-          "event_name": "落魄山起势",
-          "unit_index": 244,
+          "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与刘羡阳在老龙城冲突",
+          "unit_index": 243,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第四卷剑气近 第二百四十三章 千军万马之前,我喝一口酒"
+            "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹"
           ]
         },
         {
@@ -604,7 +607,7 @@
         },
         {
           "beat_type": "payoff",
-          "event_name": "顾璨离开小镇",
+          "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与刘羡阳对话",
           "unit_index": 308,
           "in_season_range": true,
           "name_is_duplicate": false,
@@ -616,32 +619,6 @@
       "story_beats_all_in_range": true,
       "story_beats_all_unique_names": true,
       "anchor_events_audit": [
-        {
-          "event_id": "落魄山起势@327",
-          "name": "落魄山起势",
-          "unit_index": 327,
-          "season_name": "第三季",
-          "in_season_range": true,
-          "source_unit_titles": [
-            "第五卷道观道 第三百二十六章 小巷中"
-          ],
-          "has_description": true,
-          "has_significance": true,
-          "context": "anchor_event"
-        },
-        {
-          "event_id": "齐静春现身@239",
-          "name": "齐静春现身",
-          "unit_index": 239,
-          "season_name": "第三季",
-          "in_season_range": true,
-          "source_unit_titles": [
-            "第三卷金错刀 第二百三十八章 春风送君千万里"
-          ],
-          "has_description": true,
-          "has_significance": true,
-          "context": "anchor_event"
-        },
         {
           "event_id": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 齐静春与宁姚在大骊剧情推进@278",
           "name": "第四卷剑气近 第二百七十七章 城头两人四境三战 · 齐静春与宁姚在大骊剧情推进",
@@ -667,14 +644,40 @@
           "has_description": true,
           "has_significance": true,
           "context": "anchor_event"
+        },
+        {
+          "event_id": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与李希圣在宝瓶洲冲突@250",
+          "name": "第四卷剑气近 第二百四十九章 姹紫嫣红开遍 · 陈平安与李希圣在宝瓶洲冲突",
+          "unit_index": 250,
+          "season_name": "第三季",
+          "in_season_range": true,
+          "source_unit_titles": [
+            "第四卷剑气近 第二百四十九章 姹紫嫣红开遍"
+          ],
+          "has_description": true,
+          "has_significance": true,
+          "context": "anchor_event"
+        },
+        {
+          "event_id": "第三卷金错刀 第二百二十三章 小街一战 · 陈平安与马苦玄揭示@223",
+          "name": "第三卷金错刀 第二百二十三章 小街一战 · 陈平安与马苦玄揭示",
+          "unit_index": 223,
+          "season_name": "第三季",
+          "in_season_range": true,
+          "source_unit_titles": [
+            "第三卷金错刀 第二百二十三章 小街一战"
+          ],
+          "has_description": true,
+          "has_significance": true,
+          "context": "anchor_event"
         }
       ],
       "anchor_events_all_in_range": true,
       "must_keep_scenes_audit": [
         {
           "label": "开场必保留戏",
-          "event_name": "落魄山起势",
-          "unit_index": 244,
+          "event_name": "第四卷剑气近 第两百四十二章 月下打瀑,一挂彩虹 · 陈平安与刘羡阳在老龙城冲突",
+          "unit_index": 243,
           "in_season_range": true
         },
         {
@@ -685,7 +688,7 @@
         },
         {
           "label": "收束必保留戏",
-          "event_name": "顾璨离开小镇",
+          "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与刘羡阳对话",
           "unit_index": 308,
           "in_season_range": true
         }
@@ -710,10 +713,10 @@
       "data_provenance": {
         "priority_roles_source": "season_focus+evidence_gated",
         "priority_roles_dropped": [],
-        "priority_relationships_source": "season_focus",
+        "priority_relationships_source": "season_focus+evidence_gated",
         "summary_source": "template_from_data",
-        "story_beats_source": "score_ranking",
-        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped."
+        "story_beats_source": "score_ranking+cross_season_dedup",
+        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty."
       }
     }
   ]

@@ -223,8 +223,46 @@ def build_audit(wi: dict, upi: dict) -> dict:
             "data_provenance": provenance,
         })
 
+    # --- Cross-season name overlap detection ---
+    # After processing all seasons individually, check whether story beat or
+    # anchor event names are shared across seasons.
+    beat_names_by_season: Dict[str, List[str]] = {}
+    anchor_names_by_season: Dict[str, List[str]] = {}
+    for sa in season_audits:
+        sn = sa["season_name"]
+        beat_names_by_season[sn] = [
+            b["event_name"]
+            for b in sa["story_beats_audit"]
+            if b.get("event_name")
+        ]
+        anchor_names_by_season[sn] = [
+            a["name"]
+            for a in sa.get("anchor_events_audit", [])
+            if a.get("name")
+        ]
+
+    cross_season_beat_overlap: list[dict] = []
+    cross_season_anchor_overlap: list[dict] = []
+    season_list = list(beat_names_by_season.keys())
+    for i, s1 in enumerate(season_list):
+        for s2 in season_list[i + 1:]:
+            shared_beats = set(beat_names_by_season[s1]) & set(beat_names_by_season[s2])
+            if shared_beats:
+                cross_season_beat_overlap.append({
+                    "seasons": [s1, s2],
+                    "shared_names": sorted(shared_beats),
+                })
+            shared_anchors = set(anchor_names_by_season[s1]) & set(anchor_names_by_season[s2])
+            if shared_anchors:
+                cross_season_anchor_overlap.append({
+                    "seasons": [s1, s2],
+                    "shared_names": sorted(shared_anchors),
+                })
+
+    has_cross_season_overlap = bool(cross_season_beat_overlap) or bool(cross_season_anchor_overlap)
+
     return {
-        "version": "season-overview-audit-v1",
+        "version": "season-overview-audit-v2",
         "generated_at": datetime.now().isoformat(),
         "total_seasons": len(season_audits),
         "all_seasons_roles_evidence_backed": all(
@@ -240,6 +278,9 @@ def build_audit(wi: dict, upi: dict) -> dict:
             s.get("template_params_audit", {}).get("all_template_names_backed", False)
             for s in season_audits
         ),
+        "cross_season_beat_overlap": cross_season_beat_overlap,
+        "cross_season_anchor_overlap": cross_season_anchor_overlap,
+        "no_cross_season_overlap": not has_cross_season_overlap,
         "season_audits": season_audits,
     }
 
@@ -258,6 +299,11 @@ def main() -> None:
     print(f"  All beats in range:        {audit['all_seasons_beats_in_range']}")
     print(f"  All beats unique names:    {audit['all_seasons_beats_unique_names']}")
     print(f"  All template names backed: {audit['all_seasons_template_names_backed']}")
+    print(f"  No cross-season overlap:   {audit['no_cross_season_overlap']}")
+    for overlap in audit.get("cross_season_beat_overlap", []):
+        print(f"  WARN: beat name overlap between {overlap['seasons']}: {overlap['shared_names']}")
+    for overlap in audit.get("cross_season_anchor_overlap", []):
+        print(f"  WARN: anchor name overlap between {overlap['seasons']}: {overlap['shared_names']}")
     for sa in audit["season_audits"]:
         dropped = sa.get("priority_roles_dropped", [])
         if dropped:

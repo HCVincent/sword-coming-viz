@@ -1583,3 +1583,282 @@ def test_key_events_use_involved_characters_field():
             assert "involved_characters" in ev, f"Missing involved_characters on {ev['name']}"
             assert "affects_arcs" not in ev, f"Stale affects_arcs field found on {ev['name']}"
             assert ev["involved_characters"] == ev["participants"]
+
+
+# ---------------------------------------------------------------------------
+# Cross-season dedup & frequency penalty tests
+# ---------------------------------------------------------------------------
+
+def _make_cross_season_payload(*, duplicate_names: bool = True):
+    """Build a payload with 2 seasons where the same event name occurs in both.
+
+    When *duplicate_names* is True, both seasons contain events named "墙头对话"
+    (simulating the over-firing rule problem).  The pipeline should still produce
+    distinct beat/anchor names across seasons thanks to the cross-season dedup.
+    """
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1, "1-2": 2, "2-1": 3, "2-2": 4},
+        {"1-1": "第一季 · 段1", "1-2": "第一季 · 段2", "2-1": "第二季 · 段1", "2-2": "第二季 · 段2"},
+    )
+    resolver.set_manual_overrides({"role_primary_powers": {"陈平安": "泥瓶巷", "宋集薪": "大骊", "宁姚": "剑气长城"}})
+
+    for rn, pw, juans in [
+        ("陈平安", "泥瓶巷", [1, 2, 3, 4]),
+        ("宋集薪", "大骊", [1, 2]),
+        ("宁姚", "剑气长城", [3, 4]),
+    ]:
+        for j in juans:
+            resolver.add_role(
+                Role(name=rn, alias=[], description="", power=pw,
+                     sentence_indexes_in_segment=[0], juan_index=j, segment_index=1),
+                juan_index=j, segment_index=1, chunk_index=0, source_sentence=f"{rn}。",
+            )
+
+    # Season 1 events (units 1-2)
+    for name, loc, juan in [
+        ("墙头对话", "泥瓶巷", 1),
+        ("惊蛰守夜", "泥瓶巷", 2),
+    ]:
+        resolver.add_event(
+            Event(name=name, time=None, location=loc,
+                  participants=["陈平安", "宋集薪"], description=f"{name}。",
+                  significance=f"{name}意义。", juan_index=juan, segment_index=1),
+            juan_index=juan, segment_index=1,
+        )
+
+    # Season 2 events (units 3-4)
+    s2_events = [
+        ("宁姚再会", "落魄山", 3),
+        ("练剑", "落魄山", 4),
+        ("落魄山起势", "落魄山", 3),
+        ("崔东山现身", "落魄山", 4),
+    ]
+    if duplicate_names:
+        # Insert a "墙头对话" that fires in season 2 too (the root-cause bug)
+        s2_events.insert(0, ("墙头对话", "泥瓶巷", 3))
+    for name, loc, juan in s2_events:
+        resolver.add_event(
+            Event(name=name, time=None, location=loc,
+                  participants=["陈平安", "宁姚"], description=f"{name}。",
+                  significance=f"{name}意义。", juan_index=juan, segment_index=1),
+            juan_index=juan, segment_index=1,
+        )
+
+    return build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                str(i): {
+                    "unit_index": i,
+                    "unit_title": f"第{i}章",
+                    "season_name": "第一季" if i <= 2 else "第二季",
+                    "progress_start": i,
+                    "progress_end": i,
+                }
+                for i in range(1, 5)
+            }
+        },
+        core_cast={
+            "event_type_rules": [{"type": "对话", "keywords": ["对话"]}],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "priority_characters": ["陈平安", "宋集薪", "宁姚"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+
+def test_cross_season_story_beats_have_distinct_names():
+    """When the same event name exists in both seasons, cross-season dedup
+    should ensure story beats pick different names per season."""
+    payload = _make_cross_season_payload(duplicate_names=True)
+    all_beat_names: list[str] = []
+    for overview in payload["season_overviews"]:
+        for beat in overview.get("story_beats", []):
+            ev = beat.get("event")
+            if ev and ev.get("name"):
+                all_beat_names.append(ev["name"])
+    # There should be no name that appears in both seasons' beats
+    season1_beats = set()
+    season2_beats = set()
+    for overview in payload["season_overviews"]:
+        names = {
+            beat["event"]["name"]
+            for beat in overview.get("story_beats", [])
+            if beat.get("event") and beat["event"].get("name")
+        }
+        if overview["season_name"] == "第一季":
+            season1_beats = names
+        else:
+            season2_beats = names
+    overlap = season1_beats & season2_beats
+    assert not overlap, f"Story beats share names across seasons: {overlap}"
+
+
+def test_cross_season_anchor_events_have_distinct_names():
+    """Anchor events should also be deduplicated across seasons."""
+    payload = _make_cross_season_payload(duplicate_names=True)
+    season1_anchors = set()
+    season2_anchors = set()
+    for overview in payload["season_overviews"]:
+        names = {a["name"] for a in overview.get("anchor_events", []) if a.get("name")}
+        if overview["season_name"] == "第一季":
+            season1_anchors = names
+        else:
+            season2_anchors = names
+    overlap = season1_anchors & season2_anchors
+    assert not overlap, f"Anchor events share names across seasons: {overlap}"
+
+
+def test_frequency_penalty_demotes_high_frequency_event_names():
+    """Events whose name appears in many chapters should score lower than
+    events with unique names, all else being equal."""
+    from scripts.build_swordcoming_writer_insights import focused_event_score
+
+    base_ref = {
+        "event_id": "unique-event@1",
+        "name": "独特事件",
+        "event_type": "冲突",
+        "participants": ["陈平安", "宋集薪"],
+        "location": "泥瓶巷",
+        "significance": "重要。",
+    }
+    common_ref = {
+        **base_ref,
+        "event_id": "common-event@99",
+        "name": "墙头对话",
+    }
+    writer_focus = {
+        "spotlight_role": "陈平安",
+        "priority_characters": ["陈平安"],
+    }
+    counts = {"墙头对话": 30, "独特事件": 1}
+
+    score_unique = focused_event_score(
+        base_ref,
+        writer_focus=writer_focus,
+        priority_pair_scores={},
+        spotlight_role="陈平安",
+        name_occurrence_counts=counts,
+    )
+    score_common = focused_event_score(
+        common_ref,
+        writer_focus=writer_focus,
+        priority_pair_scores={},
+        spotlight_role="陈平安",
+        name_occurrence_counts=counts,
+    )
+    assert score_unique > score_common, (
+        f"Unique event ({score_unique}) should score higher than common event ({score_common})"
+    )
+
+
+def test_audit_detects_cross_season_beat_overlap():
+    """The audit should flag when story beat names overlap across seasons."""
+    # Construct a minimal writer_insights with overlapping beat names
+    wi = {
+        "season_overviews": [
+            {
+                "season_name": "第一季",
+                "unit_range": [1, 2],
+                "progress_range": [1, 2],
+                "story_beats": [
+                    {"beat_type": "opening", "event": {"event_id": "A@1", "name": "墙头对话", "unit_index": 1, "season_name": "第一季"}},
+                ],
+                "anchor_events": [
+                    {"event_id": "A@1", "name": "墙头对话", "unit_index": 1, "season_name": "第一季"},
+                ],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+            {
+                "season_name": "第二季",
+                "unit_range": [3, 4],
+                "progress_range": [3, 4],
+                "story_beats": [
+                    {"beat_type": "opening", "event": {"event_id": "A@3", "name": "墙头对话", "unit_index": 3, "season_name": "第二季"}},
+                ],
+                "anchor_events": [
+                    {"event_id": "A@3", "name": "墙头对话", "unit_index": 3, "season_name": "第二季"},
+                ],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+        ]
+    }
+    upi = {"units": {}}
+    audit = build_audit(wi, upi)
+
+    assert not audit["no_cross_season_overlap"], "Should detect cross-season overlap"
+    assert len(audit["cross_season_beat_overlap"]) >= 1
+    assert "墙头对话" in audit["cross_season_beat_overlap"][0]["shared_names"]
+    assert len(audit["cross_season_anchor_overlap"]) >= 1
+
+
+def test_audit_no_overlap_when_beats_are_distinct():
+    """The audit should report no overlap when each season has unique beat names."""
+    wi = {
+        "season_overviews": [
+            {
+                "season_name": "第一季",
+                "unit_range": [1, 2],
+                "progress_range": [1, 2],
+                "story_beats": [
+                    {"beat_type": "opening", "event": {"event_id": "A@1", "name": "惊蛰守夜", "unit_index": 1, "season_name": "第一季"}},
+                ],
+                "anchor_events": [
+                    {"event_id": "A@1", "name": "惊蛰守夜", "unit_index": 1, "season_name": "第一季"},
+                ],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+            {
+                "season_name": "第二季",
+                "unit_range": [3, 4],
+                "progress_range": [3, 4],
+                "story_beats": [
+                    {"beat_type": "opening", "event": {"event_id": "B@3", "name": "宁姚再会", "unit_index": 3, "season_name": "第二季"}},
+                ],
+                "anchor_events": [
+                    {"event_id": "B@3", "name": "宁姚再会", "unit_index": 3, "season_name": "第二季"},
+                ],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+        ]
+    }
+    upi = {"units": {}}
+    audit = build_audit(wi, upi)
+
+    assert audit["no_cross_season_overlap"], "Should report no cross-season overlap"
+    assert len(audit["cross_season_beat_overlap"]) == 0
+    assert len(audit["cross_season_anchor_overlap"]) == 0
+
+
+def test_provenance_records_cross_season_dedup_source():
+    """data_provenance should indicate cross-season dedup is active."""
+    payload = _make_cross_season_payload(duplicate_names=True)
+    for overview in payload["season_overviews"]:
+        prov = overview.get("data_provenance", {})
+        assert "cross_season_dedup" in prov.get("story_beats_source", ""), (
+            f"{overview['season_name']} should record cross_season_dedup in story_beats_source"
+        )
