@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react';
-import type { BookConfig, ChapterIndex, UnitProgressIndex } from '../types/pipelineArtifacts';
+import type {
+  BookConfig,
+  ChapterIndex,
+  ChapterSynopsesPayload,
+  ChapterSynopsis,
+  UnitProgressIndex,
+} from '../types/pipelineArtifacts';
 
 export function useUnitProgressIndex() {
   const [unitProgressIndex, setUnitProgressIndex] = useState<UnitProgressIndex | null>(null);
@@ -83,4 +89,36 @@ export function useChapterIndex() {
   }, []);
 
   return { chapterIndex, loading, error };
+}
+
+export function useChapterSynopses() {
+  const [synopsesMap, setSynopsesMap] = useState<Map<number, ChapterSynopsis>>(new Map());
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}data/chapter_synopses.json`);
+        if (!response.ok) {
+          throw new Error(`读取章节概要失败：${response.status}`);
+        }
+        const data = (await response.json()) as ChapterSynopsesPayload;
+        const map = new Map<number, ChapterSynopsis>();
+        for (const chapter of data.chapters) {
+          map.set(chapter.unit_index, chapter);
+        }
+        setSynopsesMap(map);
+      } catch (err) {
+        console.error('Error loading chapter synopses:', err);
+        setError(err instanceof Error ? err.message : '读取章节概要时发生未知错误');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    load();
+  }, []);
+
+  return { synopsesMap, loading, error };
 }

@@ -217,6 +217,8 @@ def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
     store_dir = tmp_path / "store"
     kb_output = tmp_path / "unified_knowledge.json"
     writer_output = tmp_path / "writer_insights.json"
+    synopses_output = tmp_path / "chapter_synopses.json"
+    key_events_output = tmp_path / "key_events_index.json"
 
     book_path.write_text(
         json.dumps(
@@ -374,6 +376,8 @@ def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
         unit_progress_index_path=unit_progress_path,
         book_config_path=book_config_path,
         manual_overrides_path=manual_overrides_path,
+        synopses_output=synopses_output,
+        key_events_output=key_events_output,
     )
 
     payload = json.loads(kb_output.read_text(encoding="utf-8"))
@@ -392,6 +396,23 @@ def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
     assert writer_payload["season_overviews"][0]["season_name"] == "第一季"
     assert writer_payload["curated_relationships"][0]["title"] == "陈平安与宋集薪：镜像关系"
     assert writer_payload["curated_relationships"][0]["manual_beats"][0]["phase_label"] == "镜像"
+
+    # chapter_synopses.json must be generated with valid structure
+    assert synopses_output.exists(), "chapter_synopses.json was not generated"
+    synopses_data = json.loads(synopses_output.read_text(encoding="utf-8"))
+    assert synopses_data["version"] == "chapter-synopses-v1"
+    assert synopses_data["chapter_count"] >= 1
+    assert len(synopses_data["chapters"]) == synopses_data["chapter_count"]
+
+    # key_events_index.json must be generated with valid structure
+    assert key_events_output.exists(), "key_events_index.json was not generated"
+    key_events_data = json.loads(key_events_output.read_text(encoding="utf-8"))
+    assert key_events_data["version"] == "key-events-index-v1"
+    assert isinstance(key_events_data["chapters"], list)
+
+    # Stats should include new outputs
+    assert stats["chapter_synopses_count"] >= 1
+    assert isinstance(stats["key_events_chapters"], int)
 
 
 def test_validate_unified_knowledge_flags_pseudo_role_names(tmp_path):
@@ -1531,3 +1552,34 @@ def test_key_events_sorted_by_score_descending():
     for ch in chapters:
         scores = [ev["score"] for ev in ch["key_events"]]
         assert scores == sorted(scores, reverse=True)
+
+
+def test_chapter_synopsis_text_contains_no_abnormal_characters():
+    """Synopsis and key_developments must use only standard Chinese punctuation."""
+    import re
+    ABNORMAL_CHARS = re.compile(r"[\u3129\u02d9\ufe5d\ufe5e\uff62\uff63\u2502\u2500\u2014{2,}]")
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(
+        kb=kb,
+        unit_progress_index=upi,
+        event_type_rules=[{"type": "冲突", "keywords": ["讥讽"]}],
+    )
+    for entry in synopses:
+        assert not ABNORMAL_CHARS.search(entry["synopsis"]), (
+            f"unit {entry['unit_index']} synopsis contains abnormal characters: {entry['synopsis']!r}"
+        )
+        for dev in entry["key_developments"]:
+            assert not ABNORMAL_CHARS.search(dev), (
+                f"unit {entry['unit_index']} key_development contains abnormal characters: {dev!r}"
+            )
+
+
+def test_key_events_use_involved_characters_field():
+    """Key events should have involved_characters (not affects_arcs)."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    for ch in chapters:
+        for ev in ch["key_events"]:
+            assert "involved_characters" in ev, f"Missing involved_characters on {ev['name']}"
+            assert "affects_arcs" not in ev, f"Stale affects_arcs field found on {ev['name']}"
+            assert ev["involved_characters"] == ev["participants"]

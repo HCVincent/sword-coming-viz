@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { useBookConfig, useChapterIndex } from './hooks/useBookArtifacts';
-import type { ChapterIndexUnit } from './types/pipelineArtifacts';
+import { useBookConfig, useChapterIndex, useChapterSynopses } from './hooks/useBookArtifacts';
+import type { ChapterIndexUnit, ChapterSynopsis } from './types/pipelineArtifacts';
 
 interface ReaderSegment {
   anchor: string;
@@ -174,6 +174,8 @@ export default function ChapterReaderPage() {
   const [searchParams] = useSearchParams();
   const { chapterIndex, loading: chapterIndexLoading, error: chapterIndexError } = useChapterIndex();
   const { bookConfig } = useBookConfig();
+  const { synopsesMap } = useChapterSynopses();
+  const [synopsisOpen, setSynopsisOpen] = useState(false);
   const [markdown, setMarkdown] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -238,6 +240,10 @@ export default function ChapterReaderPage() {
     });
     return [...mapped.values()].sort((left, right) => left.season_index - right.season_index);
   }, [allUnits]);
+  const synopsis: ChapterSynopsis | null = useMemo(
+    () => (unit ? synopsesMap.get(unit.unit_index) ?? null : null),
+    [synopsesMap, unit]
+  );
   const showResumeCard =
     !routeAnchor &&
     recentReading &&
@@ -323,6 +329,7 @@ export default function ChapterReaderPage() {
     setVisibleAnchor(null);
     setSettingsOpen(false);
     setMobileNavOpen(false);
+    setSynopsisOpen(false);
   }, [routeAnchor, unitIndex]);
 
   useEffect(() => {
@@ -800,6 +807,65 @@ export default function ChapterReaderPage() {
                     {segments.length} 段
                   </p>
                 </header>
+
+                {synopsis ? (
+                  <section className="reader-synopsis">
+                    <button
+                      type="button"
+                      className="reader-synopsis-toggle"
+                      aria-expanded={synopsisOpen}
+                      onClick={() => setSynopsisOpen((prev) => !prev)}
+                    >
+                      <span className="reader-synopsis-toggle-label">本章概要</span>
+                      <span className="reader-synopsis-badge">{synopsis.narrative_function}</span>
+                      <span className="reader-synopsis-chevron" data-open={synopsisOpen}>
+                        ▾
+                      </span>
+                    </button>
+                    {synopsisOpen ? (
+                      <div className="reader-synopsis-body">
+                        <p className="reader-synopsis-text">{synopsis.synopsis}</p>
+
+                        {synopsis.key_developments.length > 0 ? (
+                          <div className="reader-synopsis-group">
+                            <h4 className="reader-synopsis-group-title">关键进展</h4>
+                            <ul className="reader-synopsis-list">
+                              {synopsis.key_developments.map((item, index) => (
+                                <li key={index}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ) : null}
+
+                        {synopsis.active_characters.length > 0 ? (
+                          <div className="reader-synopsis-group">
+                            <h4 className="reader-synopsis-group-title">出场角色</h4>
+                            <div className="reader-synopsis-chips">
+                              {synopsis.active_characters.map((name) => (
+                                <span key={name} className="reader-synopsis-chip">
+                                  {name}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        ) : null}
+
+                        {synopsis.locations.length > 0 ? (
+                          <div className="reader-synopsis-group">
+                            <h4 className="reader-synopsis-group-title">涉及地点</h4>
+                            <div className="reader-synopsis-chips">
+                              {synopsis.locations.map((name) => (
+                                <span key={name} className="reader-synopsis-chip">
+                                  {name}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </section>
+                ) : null}
 
                 <div className="reader-article-body" ref={contentRef}>
                   {segments.map((segment) => {

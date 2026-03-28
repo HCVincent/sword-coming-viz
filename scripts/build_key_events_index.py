@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Build key_events_index.json – a curated index of the most important events
-grouped by chapter, with importance tiers and cross-references.
+grouped by chapter, with importance tiers.
 
 Output schema per entry:
     unit_index          int
@@ -19,7 +19,7 @@ KeyEvent schema:
     participants        list[str]
     description         str
     significance        str
-    affects_arcs        list[str]    – character arcs this event feeds into
+    involved_characters list[str]    – characters involved in this event
 """
 
 from __future__ import annotations
@@ -135,11 +135,6 @@ def build_key_events_index(
         for uid, meta in unit_progress_index.get("units", {}).items()
     }
 
-    # Build a lookup of which character arcs each participant belongs to.
-    # We approximate by saying an event "affects" the arc of each participant.
-    # If we ever load writer_insights we could be more precise, but this
-    # stays self-contained.
-
     # Group events by unit
     events_by_unit: Dict[int, List[dict]] = defaultdict(list)
     for event in kb.events.values():
@@ -184,7 +179,7 @@ def build_key_events_index(
                 "participants": ref["participants"],
                 "description": ref["description"],
                 "significance": ref["significance"],
-                "affects_arcs": ref["participants"],  # approximation
+                "involved_characters": ref["participants"],
             })
             if len(selected) >= max_events_per_chapter:
                 break

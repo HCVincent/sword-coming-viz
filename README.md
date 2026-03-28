@@ -62,6 +62,8 @@ npm run build
 - `data/unit_progress_index.json`：章节与叙事进度索引
 - `data/unified_knowledge.json`：人物、地点、事件、关系的统一知识库
 - `data/writer_insights.json`：角色弧光、冲突链、伏笔回收等编剧分析数据
+- `data/chapter_synopses.json`：每章概要、关键进展、出场角色与叙事功能
+- `data/key_events_index.json`：每章关键事件排名索引（含重要度评分与涉及角色）
 - `data/swordcoming_core_cast.json`：核心角色、地点、关系规则与编剧聚焦配置
 - `data/swordcoming_manual_overrides.json`：人工覆写与消歧规则
 

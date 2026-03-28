@@ -24,3 +24,5 @@ npm run build
 - `unified_knowledge.json`
 - `writer_insights.json`
 - `swordcoming_book.json`
+- `chapter_synopses.json`
+- `key_events_index.json`
