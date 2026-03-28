@@ -24,7 +24,12 @@ function joinNames(items: string[], fallback = '待补充'): string {
 }
 
 function renderEventMeta(event: WriterInsightEventRef): string {
-  const parts = [event.season_name ?? '当前范围', `章节 ${event.unit_index ?? '—'}`];
+  const parts = [event.season_name ?? '当前范围'];
+  if (event.unit_title) {
+    parts.push(event.unit_title);
+  } else {
+    parts.push(`章节 ${event.unit_index ?? '—'}`);
+  }
   if (event.location) {
     parts.push(event.location);
   }

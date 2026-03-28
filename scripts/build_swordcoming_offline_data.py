@@ -1184,7 +1184,7 @@ def main() -> int:
     parser.add_argument("--unit-progress-index", default="data/unit_progress_index.json", help="Unit progress index path.")
     parser.add_argument("--book-config", default="data/book_config.json", help="Book config path.")
     parser.add_argument("--manual-overrides", default="data/swordcoming_manual_overrides.json", help="Manual overrides path.")
-    parser.add_argument("--sync", action="store_true", help="Sync output files into visualization/public/data.")
+    parser.add_argument("--no-sync", action="store_true", help="Skip syncing output files into visualization/public/data.")
     parser.add_argument("--public-data-dir", default="visualization/public/data", help="Vite public/data directory.")
     parser.add_argument("--max-units", type=int, default=None, help="Optional limit for quick iteration.")
     args = parser.parse_args()
@@ -1198,7 +1198,7 @@ def main() -> int:
         unit_progress_index_path=Path(args.unit_progress_index),
         book_config_path=Path(args.book_config),
         manual_overrides_path=Path(args.manual_overrides),
-        sync_output=args.sync,
+        sync_output=not args.no_sync,
         public_data_dir=Path(args.public_data_dir),
         max_units=args.max_units,
     )
