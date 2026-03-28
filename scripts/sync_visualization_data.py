@@ -9,6 +9,9 @@ DEFAULT_FILES = [
     "unified_knowledge.json",
     "writer_insights.json",
     "swordcoming_book.json",
+    "chapter_synopses.json",
+    "key_events_index.json",
+    "season_overview_audit.json",
 ]
 
 

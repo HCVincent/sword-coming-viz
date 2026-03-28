@@ -174,6 +174,18 @@ def build_chapter_synopses(
         for uid, meta in unit_progress_index.get("units", {}).items()
     }
 
+    # --- Whole-book name frequency for occurrence metadata ---
+    name_counts: Dict[str, int] = {}
+    name_first_unit: Dict[str, int] = {}
+    for event in kb.events.values():
+        n = event.name
+        name_counts[n] = name_counts.get(n, 0) + 1
+        first_u = min(event.source_units or event.source_juans, default=None)
+        if first_u is not None:
+            prev = name_first_unit.get(n)
+            if prev is None or first_u < prev:
+                name_first_unit[n] = first_u
+
     # Group events by unit
     events_by_unit: Dict[int, List[dict]] = defaultdict(list)
     for event in kb.events.values():
@@ -186,9 +198,16 @@ def build_chapter_synopses(
             "participants": sorted(event.participants),
             "description": event.description,
             "significance": event.significance,
+            # Provenance / occurrence metadata
+            "evidence_excerpt": getattr(event, "evidence_excerpt", "") or "",
+            "matched_rule_name": getattr(event, "matched_rule_name", "") or "",
+            "name_occurrence_count": name_counts.get(event.name, 1),
+            "first_occurrence_unit": name_first_unit.get(event.name),
         }
         for uid in _get_event_units(event):
-            events_by_unit[uid].append(ref)
+            ref_copy = dict(ref)
+            ref_copy["is_first_occurrence"] = (uid == name_first_unit.get(event.name))
+            events_by_unit[uid].append(ref_copy)
 
     # Group roles by unit
     roles_by_unit: Dict[int, List[str]] = defaultdict(list)
@@ -221,6 +240,7 @@ def build_chapter_synopses(
         # Key developments: top N unique-name events
         seen_names: set[str] = set()
         key_developments: List[str] = []
+        key_development_events: List[dict] = []
         for ref in scored_events:
             name = ref["name"]
             if name in seen_names:
@@ -229,6 +249,23 @@ def build_chapter_synopses(
             desc = ref.get("description") or ref.get("significance") or ""
             text = f"{name}：{desc}" if desc else name
             key_developments.append(text)
+
+            # Build card-granularity structured development
+            evidence = ref.get("evidence_excerpt") or ""
+            # display_text: event name + evidence sentence excerpt, max 100 chars
+            if evidence:
+                display_text = f"{name}：{evidence}"[:100]
+            else:
+                # Fallback to description truncated
+                display_text = f"{name}：{desc}"[:100] if desc else name[:100]
+            key_development_events.append({
+                "event_id": ref["event_id"],
+                "name": name,
+                "display_text": display_text,
+                "evidence_excerpt": evidence,
+                "participants": ref.get("participants", []),
+                "location": ref.get("location"),
+            })
             if len(key_developments) >= max_developments:
                 break
 
@@ -252,9 +289,21 @@ def build_chapter_synopses(
             loc_counter[ln] += 0
         locations = [name for name, _ in loc_counter.most_common()]
 
-        # Synopsis – concatenate top key_developments into a sentence
-        synopsis_parts = key_developments[:3]
+        # Synopsis – card-granularity: max 2 structured developments, 80 chars
+        # each, total ≤220 chars
+        synopsis_parts: List[str] = []
+        running_len = 0
+        for dev_event in key_development_events[:2]:
+            part = dev_event["display_text"][:80]
+            if running_len + len(part) > 210:
+                part = part[:max(0, 210 - running_len)]
+            if part:
+                synopsis_parts.append(part)
+                running_len += len(part) + 1  # +1 for separator
         synopsis = "；".join(synopsis_parts) + "。" if synopsis_parts else ""
+        # Hard cap at 220
+        if len(synopsis) > 220:
+            synopsis = synopsis[:217] + "…。"
 
         # Narrative function
         season_name = meta.get("season_name", "")
@@ -271,6 +320,7 @@ def build_chapter_synopses(
             "active_characters": active_characters,
             "locations": locations,
             "key_developments": key_developments,
+            "key_development_events": key_development_events,
             "synopsis": synopsis,
             "narrative_function": narrative_function,
         })

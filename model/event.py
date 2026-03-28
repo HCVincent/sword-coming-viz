@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -74,5 +74,19 @@ class Event(BaseModel):
     segment_index: int = Field(
         default=0,
         description="The segment index within the volume."
+    )
+
+    # Provenance fields (populated when event originates from a rule match)
+    evidence_excerpt: str = Field(
+        default="",
+        description="Short excerpt from the source text that evidences this event."
+    )
+    matched_keywords: List[str] = Field(
+        default_factory=list,
+        description="Keywords that triggered the event rule match."
+    )
+    matched_rule_name: str = Field(
+        default="",
+        description="Name of the event rule that fired, if any."
     )
 

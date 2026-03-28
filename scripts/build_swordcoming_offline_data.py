@@ -662,20 +662,111 @@ def classify_event_type(
     return "剧情推进"
 
 
-def match_event_rule(unit_title: str, sentences: Sequence[str], rules: Sequence[dict]) -> Optional[dict]:
-    haystack = "\n".join([unit_title, *sentences])
-    best_rule: Optional[dict] = None
+class EventMatchResult:
+    """Structured result from window-based event rule matching."""
+
+    __slots__ = (
+        "rule",
+        "matched_rule_name",
+        "matched_keywords",
+        "evidence_sentence_indexes",
+        "evidence_excerpt",
+        "match_score",
+    )
+
+    def __init__(
+        self,
+        *,
+        rule: dict,
+        matched_keywords: List[str],
+        evidence_sentence_indexes: List[int],
+        evidence_excerpt: str,
+        match_score: int,
+    ):
+        self.rule = rule
+        self.matched_rule_name = str(rule.get("name", ""))
+        self.matched_keywords = matched_keywords
+        self.evidence_sentence_indexes = evidence_sentence_indexes
+        self.evidence_excerpt = evidence_excerpt
+        self.match_score = match_score
+
+
+def _count_keyword_hits(text: str, keywords: Sequence[str]) -> Tuple[int, List[str]]:
+    """Return (hit_count, list_of_matched_keywords) for *keywords* found in *text*."""
+    matched: List[str] = []
+    for kw in keywords:
+        if kw and kw in text:
+            matched.append(kw)
+    return len(matched), matched
+
+
+def match_event_rule(
+    unit_title: str,
+    sentences: Sequence[str],
+    rules: Sequence[dict],
+) -> Optional[EventMatchResult]:
+    """Window-based event rule matching.
+
+    Instead of concatenating the entire chapter and checking keywords across
+    the whole haystack, this checks keywords within sentence *windows*:
+
+    1. **Single-sentence window** – each sentence is checked individually.
+    2. **Adjacent-pair window** – each pair of consecutive sentences is checked.
+    3. **Title bonus** – the unit title can contribute keyword hits but cannot
+       by itself satisfy ``min_keywords``.
+
+    A rule fires only when ``min_keywords`` are met *within the same window*
+    (title hits may push a close window over the threshold, but at least one
+    window sentence must contribute at least one keyword hit).
+
+    Returns a structured :class:`EventMatchResult` or ``None``.
+    """
+    best: Optional[EventMatchResult] = None
     best_score = 0
 
     for rule in rules:
-        keywords = rule.get("keywords", [])
-        hits = sum(1 for keyword in keywords if keyword and keyword in haystack)
-        min_keywords = int(rule.get("min_keywords", len(keywords) or 1))
-        if hits >= min_keywords and hits > best_score:
-            best_rule = rule
-            best_score = hits
+        keywords = [str(k).strip() for k in rule.get("keywords", []) if str(k).strip()]
+        if not keywords:
+            continue
+        min_kw = int(rule.get("min_keywords", len(keywords) or 1))
 
-    return best_rule
+        # Pre-compute title hits (can boost but not solely trigger)
+        title_hits, title_matched = _count_keyword_hits(unit_title, keywords)
+
+        # --- Single-sentence windows ---
+        for idx, sent in enumerate(sentences):
+            win_hits, win_matched = _count_keyword_hits(sent, keywords)
+            total_hits = win_hits + title_hits
+            combined_matched = list(dict.fromkeys(win_matched + title_matched))
+            if win_hits >= 1 and total_hits >= min_kw and total_hits > best_score:
+                excerpt = sent[:120]
+                best = EventMatchResult(
+                    rule=rule,
+                    matched_keywords=combined_matched,
+                    evidence_sentence_indexes=[idx],
+                    evidence_excerpt=excerpt,
+                    match_score=total_hits,
+                )
+                best_score = total_hits
+
+        # --- Adjacent-pair windows ---
+        for idx in range(len(sentences) - 1):
+            pair_text = sentences[idx] + sentences[idx + 1]
+            win_hits, win_matched = _count_keyword_hits(pair_text, keywords)
+            total_hits = win_hits + title_hits
+            combined_matched = list(dict.fromkeys(win_matched + title_matched))
+            if win_hits >= 1 and total_hits >= min_kw and total_hits > best_score:
+                excerpt = (sentences[idx] + sentences[idx + 1])[:120]
+                best = EventMatchResult(
+                    rule=rule,
+                    matched_keywords=combined_matched,
+                    evidence_sentence_indexes=[idx, idx + 1],
+                    evidence_excerpt=excerpt,
+                    match_score=total_hits,
+                )
+                best_score = total_hits
+
+    return best
 
 
 def build_event_name(
@@ -753,7 +844,8 @@ def build_event(
     characters = unique_names(name for items in sentence_characters for name in items)
     locations = unique_names(name for items in sentence_locations for name in items)
     unit_title = str(unit["unit_title"])
-    rule = match_event_rule(unit_title, sentences, event_rules)
+    match_result = match_event_rule(unit_title, sentences, event_rules)
+    rule = match_result.rule if match_result else None
 
     if not characters and not locations and not rule:
         return None
@@ -781,6 +873,12 @@ def build_event(
         else infer_significance(event_type=event_type, participants=participants, location=location)
     )
 
+    # Build provenance from the match result
+    evidence_excerpt = match_result.evidence_excerpt if match_result else ""
+    matched_keywords = match_result.matched_keywords if match_result else []
+    evidence_sentence_indexes = match_result.evidence_sentence_indexes if match_result else list(range(len(sentences)))
+    matched_rule_name = match_result.matched_rule_name if match_result else ""
+
     return Event(
         name=name,
         time=None,
@@ -791,9 +889,12 @@ def build_event(
         significance=significance,
         related_action_indices=list(range(len(relation_actions))),
         source=f"{unit_title} · 段{int(segment['segment_index'])}",
-        sentence_indexes_in_segment=list(range(len(sentences))),
+        sentence_indexes_in_segment=evidence_sentence_indexes,
         juan_index=int(unit["juan_index"]),
         segment_index=int(segment["segment_index"]),
+        evidence_excerpt=evidence_excerpt,
+        matched_keywords=matched_keywords,
+        matched_rule_name=matched_rule_name,
     )
 
 

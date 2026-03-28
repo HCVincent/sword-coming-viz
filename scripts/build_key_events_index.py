@@ -135,10 +135,25 @@ def build_key_events_index(
         for uid, meta in unit_progress_index.get("units", {}).items()
     }
 
+    # --- Whole-book name frequency ---
+    name_counts: Dict[str, int] = {}
+    name_first_unit: Dict[str, int] = {}
+    for event in kb.events.values():
+        n = event.name
+        name_counts[n] = name_counts.get(n, 0) + 1
+        first_u = min(event.source_units or event.source_juans, default=None)
+        if first_u is not None:
+            prev = name_first_unit.get(n)
+            if prev is None or first_u < prev:
+                name_first_unit[n] = first_u
+
     # Group events by unit
     events_by_unit: Dict[int, List[dict]] = defaultdict(list)
     for event in kb.events.values():
         event_type = _classify_event_type(event, event_type_rules)
+        evidence_excerpt = getattr(event, "evidence_excerpt", "") or ""
+        matched_rule_name = getattr(event, "matched_rule_name", "") or ""
+        noc = name_counts.get(event.name, 1)
         ref = {
             "event_id": event.id,
             "name": event.name,
@@ -147,10 +162,23 @@ def build_key_events_index(
             "participants": sorted(event.participants),
             "description": event.description,
             "significance": event.significance,
+            "evidence_excerpt": evidence_excerpt,
+            "matched_rule_name": matched_rule_name,
+            "name_occurrence_count": noc,
+            "first_occurrence_unit": name_first_unit.get(event.name),
         }
         ref["score"] = _event_score(ref)
+        # Scoring adjustments for card selection
+        if evidence_excerpt:
+            ref["score"] += 1
+        if noc <= 1:
+            ref["score"] += 2  # first/unique occurrence bonus
+        elif noc > 8:
+            ref["score"] -= min(noc - 8, 10)  # soft penalty for high-freq names
         for uid in _get_event_units(event):
-            events_by_unit[uid].append(ref)
+            ref_copy = dict(ref)
+            ref_copy["is_first_occurrence"] = (uid == name_first_unit.get(event.name))
+            events_by_unit[uid].append(ref_copy)
 
     chapters: List[dict] = []
     for uid in sorted(unit_meta):
@@ -169,6 +197,29 @@ def build_key_events_index(
                 continue
             seen_names.add(ref["name"])
 
+            # Build display_summary: evidence_excerpt first, then description truncated
+            evidence = ref.get("evidence_excerpt") or ""
+            desc = ref.get("description") or ""
+            if evidence:
+                display_summary = f"{ref['name']}：{evidence}"[:100]
+            elif desc:
+                display_summary = f"{ref['name']}：{desc}"[:100]
+            else:
+                display_summary = ref["name"][:100]
+
+            # Determine selection reason
+            reasons: List[str] = []
+            if ref.get("is_first_occurrence"):
+                reasons.append("首次出现")
+            if ref.get("matched_rule_name"):
+                reasons.append(f"规则命中:{ref['matched_rule_name']}")
+            if evidence:
+                reasons.append("有证据摘录")
+            noc = ref.get("name_occurrence_count", 1)
+            if noc > 8:
+                reasons.append(f"高频名称({noc})")
+            selection_reason = "；".join(reasons) if reasons else "分数排序"
+
             selected.append({
                 "event_id": ref["event_id"],
                 "name": ref["name"],
@@ -180,6 +231,14 @@ def build_key_events_index(
                 "description": ref["description"],
                 "significance": ref["significance"],
                 "involved_characters": ref["participants"],
+                # New card-granularity fields
+                "display_summary": display_summary,
+                "evidence_excerpt": evidence,
+                "matched_rule_name": ref.get("matched_rule_name", ""),
+                "name_occurrence_count": ref.get("name_occurrence_count", 1),
+                "first_occurrence_unit": ref.get("first_occurrence_unit"),
+                "is_first_occurrence": bool(ref.get("is_first_occurrence")),
+                "selection_reason": selection_reason,
             })
             if len(selected) >= max_events_per_chapter:
                 break

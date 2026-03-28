@@ -56,8 +56,12 @@ def _audit_event_refs(
     return results
 
 
-def build_audit(wi: dict, upi: dict) -> dict:
-    """Build the audit payload from writer_insights and unit_progress_index."""
+def build_audit(wi: dict, upi: dict, chapter_synopses: list | None = None, key_events_index: list | None = None) -> dict:
+    """Build the audit payload from writer_insights and unit_progress_index.
+
+    Optional *chapter_synopses* and *key_events_index* enable card-granularity
+    checks (synopsis length, display_summary length, missing evidence, etc.).
+    """
     # Build a lookup: role_name -> set of season_names where they have units
     role_season_units: Dict[str, Dict[str, int]] = {}
     for uid, meta in upi.get("units", {}).items():
@@ -261,8 +265,55 @@ def build_audit(wi: dict, upi: dict) -> dict:
 
     has_cross_season_overlap = bool(cross_season_beat_overlap) or bool(cross_season_anchor_overlap)
 
+    # --- Card-granularity checks ---
+    _synopsis_too_long = 0
+    _key_event_summary_too_long = 0
+    _missing_evidence_excerpt = 0
+    _high_freq_hotspots: List[dict] = []
+
+    if chapter_synopses:
+        for ch in chapter_synopses:
+            synopsis = ch.get("synopsis", "")
+            if len(synopsis) > 220:
+                _synopsis_too_long += 1
+            for kd in ch.get("key_development_events", []):
+                ds = kd.get("display_text", "")
+                if len(ds) > 100:
+                    _key_event_summary_too_long += 1
+                if not kd.get("evidence_excerpt"):
+                    _missing_evidence_excerpt += 1
+
+    if key_events_index:
+        for ch in key_events_index:
+            for ke in ch.get("key_events", []):
+                ds = ke.get("display_summary", "")
+                if len(ds) > 100:
+                    _key_event_summary_too_long += 1
+                if not ke.get("evidence_excerpt"):
+                    _missing_evidence_excerpt += 1
+                noc = ke.get("name_occurrence_count", 1)
+                if noc > 12:
+                    _high_freq_hotspots.append({
+                        "event_name": ke.get("name", ""),
+                        "name_occurrence_count": noc,
+                        "unit_index": ch.get("unit_index"),
+                    })
+
+    # Adjacent-season beat/anchor overlap hard constraint (>1 shared = failure)
+    _adjacent_season_failures: List[dict] = []
+    for i in range(len(season_list) - 1):
+        s1, s2 = season_list[i], season_list[i + 1]
+        shared_b = set(beat_names_by_season.get(s1, [])) & set(beat_names_by_season.get(s2, []))
+        shared_a = set(anchor_names_by_season.get(s1, [])) & set(anchor_names_by_season.get(s2, []))
+        if len(shared_b) > 1 or len(shared_a) > 1:
+            _adjacent_season_failures.append({
+                "adjacent_seasons": [s1, s2],
+                "shared_beat_names": sorted(shared_b),
+                "shared_anchor_names": sorted(shared_a),
+            })
+
     return {
-        "version": "season-overview-audit-v2",
+        "version": "season-overview-audit-v3",
         "generated_at": datetime.now().isoformat(),
         "total_seasons": len(season_audits),
         "all_seasons_roles_evidence_backed": all(
@@ -281,6 +332,14 @@ def build_audit(wi: dict, upi: dict) -> dict:
         "cross_season_beat_overlap": cross_season_beat_overlap,
         "cross_season_anchor_overlap": cross_season_anchor_overlap,
         "no_cross_season_overlap": not has_cross_season_overlap,
+        "adjacent_season_failures": _adjacent_season_failures,
+        "no_adjacent_season_failures": len(_adjacent_season_failures) == 0,
+        "card_granularity": {
+            "chapter_synopsis_too_long_count": _synopsis_too_long,
+            "key_event_summary_too_long_count": _key_event_summary_too_long,
+            "missing_evidence_excerpt_count": _missing_evidence_excerpt,
+            "high_frequency_event_name_hotspots": _high_freq_hotspots,
+        },
         "season_audits": season_audits,
     }
 
@@ -288,7 +347,15 @@ def build_audit(wi: dict, upi: dict) -> dict:
 def main() -> None:
     wi = load("writer_insights.json")
     upi = load("unit_progress_index.json")
-    audit = build_audit(wi, upi)
+    chapter_synopses = None
+    key_events_index = None
+    cs_path = DATA / "chapter_synopses.json"
+    ke_path = DATA / "key_events_index.json"
+    if cs_path.exists():
+        chapter_synopses = json.loads(cs_path.read_text(encoding="utf-8"))
+    if ke_path.exists():
+        key_events_index = json.loads(ke_path.read_text(encoding="utf-8"))
+    audit = build_audit(wi, upi, chapter_synopses=chapter_synopses, key_events_index=key_events_index)
 
     out = DATA / "season_overview_audit.json"
     out.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -300,6 +367,18 @@ def main() -> None:
     print(f"  All beats unique names:    {audit['all_seasons_beats_unique_names']}")
     print(f"  All template names backed: {audit['all_seasons_template_names_backed']}")
     print(f"  No cross-season overlap:   {audit['no_cross_season_overlap']}")
+    print(f"  No adjacent-season fail:   {audit['no_adjacent_season_failures']}")
+    cg = audit.get("card_granularity", {})
+    if cg.get("chapter_synopsis_too_long_count"):
+        print(f"  WARN: {cg['chapter_synopsis_too_long_count']} chapter synopses > 220 chars")
+    if cg.get("key_event_summary_too_long_count"):
+        print(f"  WARN: {cg['key_event_summary_too_long_count']} key event summaries > 100 chars")
+    if cg.get("missing_evidence_excerpt_count"):
+        print(f"  WARN: {cg['missing_evidence_excerpt_count']} events missing evidence_excerpt")
+    for hs in cg.get("high_frequency_event_name_hotspots", []):
+        print(f"  WARN: high-freq hotspot: {hs['event_name']} (count={hs['name_occurrence_count']}, unit={hs['unit_index']})")
+    for af in audit.get("adjacent_season_failures", []):
+        print(f"  FAIL: adjacent-season overlap > 1: {af['adjacent_seasons']}: beats={af['shared_beat_names']}, anchors={af['shared_anchor_names']}")
     for overlap in audit.get("cross_season_beat_overlap", []):
         print(f"  WARN: beat name overlap between {overlap['seasons']}: {overlap['shared_names']}")
     for overlap in audit.get("cross_season_anchor_overlap", []):

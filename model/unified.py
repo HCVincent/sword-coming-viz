@@ -259,6 +259,38 @@ class UnifiedEvent(BaseModel):
     
     # Related actions that compose this event
     action_count: int = Field(default=0)
+
+    # Provenance – carried from the extraction-time rule match
+    evidence_excerpt: str = Field(
+        default="",
+        description="Short excerpt from the source text that evidences this event."
+    )
+    matched_keywords: List[str] = Field(
+        default_factory=list,
+        description="Keywords that triggered the event rule match."
+    )
+    matched_rule_name: str = Field(
+        default="",
+        description="Name of the event rule that fired, if any."
+    )
+    evidence_sentence_indexes: List[int] = Field(
+        default_factory=list,
+        description="Sentence indexes in the source segment that evidence this event."
+    )
+
+    # Whole-book frequency metadata (set during knowledge-base build)
+    name_occurrence_count: int = Field(
+        default=1,
+        description="Number of distinct event_ids sharing this event name across the entire book."
+    )
+    first_occurrence_unit: Optional[int] = Field(
+        default=None,
+        description="Earliest unit index where an event with this name appears."
+    )
+    is_first_occurrence: bool = Field(
+        default=True,
+        description="Whether this is the first event_id for this name by unit order."
+    )
     
     created_at: str = Field(default_factory=lambda: datetime.now().isoformat())
     updated_at: str = Field(default_factory=lambda: datetime.now().isoformat())

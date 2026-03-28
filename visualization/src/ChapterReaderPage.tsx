@@ -833,13 +833,22 @@ export default function ChapterReaderPage() {
                       <div className="reader-synopsis-body">
                         <p className="reader-synopsis-text">{synopsis.synopsis}</p>
 
-                        {synopsis.key_developments.length > 0 ? (
+                        {(synopsis.key_development_events ?? synopsis.key_developments).length > 0 ? (
                           <div className="reader-synopsis-group">
                             <h4 className="reader-synopsis-group-title">关键进展</h4>
                             <ul className="reader-synopsis-list">
-                              {synopsis.key_developments.map((item, index) => (
-                                <li key={index}>{item}</li>
-                              ))}
+                              {synopsis.key_development_events
+                                ? synopsis.key_development_events.map((kd, index) => (
+                                    <li key={kd.event_id || index}>
+                                      {kd.display_text}
+                                      {kd.evidence_excerpt ? (
+                                        <span className="reader-synopsis-evidence"> — {kd.evidence_excerpt}</span>
+                                      ) : null}
+                                    </li>
+                                  ))
+                                : synopsis.key_developments.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
                             </ul>
                           </div>
                         ) : null}
@@ -902,6 +911,7 @@ export default function ChapterReaderPage() {
                             <div className="reader-keyevents-meta">
                               {evt.event_type ? <span className="reader-keyevents-chip">{evt.event_type}</span> : null}
                               {evt.location ? <span className="reader-keyevents-chip">{evt.location}</span> : null}
+                              {evt.is_first_occurrence ? <span className="reader-keyevents-chip reader-keyevents-chip--first">首次</span> : null}
                             </div>
                             {evt.participants.length > 0 ? (
                               <div className="reader-keyevents-participants">
@@ -910,7 +920,15 @@ export default function ChapterReaderPage() {
                                 ))}
                               </div>
                             ) : null}
-                            <p className="reader-keyevents-desc">{evt.description}</p>
+                            <p className="reader-keyevents-desc">
+                              {evt.display_summary || evt.description}
+                            </p>
+                            {evt.evidence_excerpt ? (
+                              <p className="reader-keyevents-evidence">{evt.evidence_excerpt}</p>
+                            ) : null}
+                            {evt.selection_reason ? (
+                              <p className="reader-keyevents-provenance">{evt.selection_reason}</p>
+                            ) : null}
                           </div>
                         ))
                       ) : (

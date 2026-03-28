@@ -1862,3 +1862,243 @@ def test_provenance_records_cross_season_dedup_source():
         assert "cross_season_dedup" in prov.get("story_beats_source", ""), (
             f"{overview['season_name']} should record cross_season_dedup in story_beats_source"
         )
+
+
+# ---------------------------------------------------------------------------
+# Step 1-2 new tests: window matching, card granularity, provenance
+# ---------------------------------------------------------------------------
+
+
+def test_window_match_keywords_scattered_across_chapter_no_match():
+    """Keywords spread across distant sentences (no window overlap) → no match."""
+    rule = {
+        "name": "远距离事件",
+        "event_type": "冲突",
+        "keywords": ["关键A", "关键B", "关键C"],
+        "min_keywords": 3,
+        "location": "某地",
+        "participants": ["陈平安"],
+        "significance": "测试",
+    }
+    unit = {"unit_title": "第一卷 第一章 测试"}
+    # 10 sentences, keywords scattered: sentence 0, 5, 9
+    sentences = [
+        "关键A出现在开头。",
+        "无关句子。",
+        "无关句子。",
+        "无关句子。",
+        "无关句子。",
+        "关键B出现在中间。",
+        "无关句子。",
+        "无关句子。",
+        "无关句子。",
+        "关键C出现在末尾。",
+    ]
+    segment = {
+        "segment_index": 1,
+        "segment_start_time": "测试",
+        "sentences": sentences,
+    }
+    result = build_swordcoming_offline_data.match_event_rule(
+        unit["unit_title"], sentences, [rule]
+    )
+    # With window-based matching, 3 keywords cannot all fit in any 1 or 2 adjacent
+    # sentences, so the match should fail (None)
+    assert result is None, "Scattered keywords should not trigger window-based match"
+
+
+def test_window_match_keywords_in_adjacent_sentences():
+    """Keywords in 2 adjacent sentences → should match."""
+    rule = {
+        "name": "相邻事件",
+        "event_type": "冲突",
+        "keywords": ["惊蛰", "守夜"],
+        "min_keywords": 2,
+        "location": "泥瓶巷",
+        "participants": ["陈平安"],
+        "significance": "测试",
+    }
+    unit = {"unit_title": "第一卷 第一章 测试"}
+    sentences = [
+        "无关句子。",
+        "今天是惊蛰时节。",
+        "陈平安在守夜。",
+        "无关句子。",
+    ]
+    segment = {
+        "segment_index": 1,
+        "segment_start_time": "测试",
+        "sentences": sentences,
+    }
+    result = build_swordcoming_offline_data.match_event_rule(
+        unit["unit_title"], sentences, [rule]
+    )
+    assert result is not None, "Adjacent keywords should trigger match"
+    assert result.matched_rule_name == "相邻事件"
+    assert set(result.matched_keywords) == {"惊蛰", "守夜"}
+    assert result.evidence_excerpt  # Should have excerpt text
+
+
+def test_title_alone_does_not_trigger_match():
+    """Title keywords alone (without sentence keywords) should not match."""
+    rule = {
+        "name": "仅标题事件",
+        "event_type": "冲突",
+        "keywords": ["惊蛰", "泥瓶巷"],
+        "min_keywords": 2,
+        "location": "泥瓶巷",
+        "participants": ["陈平安"],
+        "significance": "测试",
+    }
+    # Title contains both keywords but sentences don't
+    unit = {"unit_title": "第一卷 惊蛰 泥瓶巷"}
+    sentences = ["无关句子。", "完全不相干的内容。"]
+    segment = {
+        "segment_index": 1,
+        "segment_start_time": "测试",
+        "sentences": sentences,
+    }
+    result = build_swordcoming_offline_data.match_event_rule(
+        unit["unit_title"], sentences, [rule]
+    )
+    assert result is None, "Title keywords alone should not trigger match"
+
+
+def test_chapter_synopsis_card_granularity_fields():
+    """Synopsis should have key_development_events and capped synopsis length."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    for entry in synopses:
+        assert "key_development_events" in entry
+        assert len(entry["synopsis"]) <= 220, (
+            f"unit {entry['unit_index']} synopsis too long: {len(entry['synopsis'])} chars"
+        )
+        for kd in entry["key_development_events"]:
+            assert "event_id" in kd
+            assert "name" in kd
+            assert "display_text" in kd
+            assert len(kd["display_text"]) <= 100
+
+
+def test_key_events_card_fields_present():
+    """Key events should have the new card-granularity fields."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    for ch in chapters:
+        for ev in ch["key_events"]:
+            assert "display_summary" in ev
+            assert "evidence_excerpt" in ev
+            assert "name_occurrence_count" in ev
+            assert "is_first_occurrence" in ev
+            assert "selection_reason" in ev
+            assert len(ev["display_summary"]) <= 100
+
+
+def test_audit_card_granularity_checks():
+    """Audit should include card_granularity section."""
+    wi = {
+        "season_overviews": [
+            {
+                "season_name": "第一季",
+                "unit_range": [1, 2],
+                "progress_range": [1, 2],
+                "story_beats": [],
+                "anchor_events": [],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+        ]
+    }
+    upi = {"units": {}}
+    # Provide synopses with one too-long synopsis
+    synopses = [
+        {
+            "unit_index": 1,
+            "synopsis": "x" * 221,  # over 220
+            "key_development_events": [
+                {"display_text": "y" * 101, "evidence_excerpt": ""},  # over 100 + missing evidence
+            ],
+        }
+    ]
+    key_events = [
+        {
+            "unit_index": 1,
+            "key_events": [
+                {"display_summary": "z" * 101, "evidence_excerpt": "", "name": "频繁事件", "name_occurrence_count": 15},
+            ],
+        }
+    ]
+    audit = build_audit(wi, upi, chapter_synopses=synopses, key_events_index=key_events)
+    cg = audit["card_granularity"]
+    assert cg["chapter_synopsis_too_long_count"] == 1
+    assert cg["key_event_summary_too_long_count"] >= 2  # 1 from synopses + 1 from key_events
+    assert cg["missing_evidence_excerpt_count"] >= 2
+    assert len(cg["high_frequency_event_name_hotspots"]) == 1
+    assert cg["high_frequency_event_name_hotspots"][0]["name_occurrence_count"] == 15
+
+
+def test_audit_adjacent_season_failure():
+    """Audit should flag adjacent seasons with >1 shared beat/anchor name."""
+    wi = {
+        "season_overviews": [
+            {
+                "season_name": "第一季",
+                "unit_range": [1, 2],
+                "progress_range": [1, 2],
+                "story_beats": [
+                    {"beat_type": "opening", "event": {"event_id": "A1", "name": "墙头对话", "unit_index": 1}},
+                    {"beat_type": "midpoint", "event": {"event_id": "A2", "name": "守夜独白", "unit_index": 1}},
+                ],
+                "anchor_events": [
+                    {"event_id": "A1", "name": "墙头对话", "unit_index": 1},
+                    {"event_id": "A2", "name": "守夜独白", "unit_index": 1},
+                ],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+            {
+                "season_name": "第二季",
+                "unit_range": [3, 4],
+                "progress_range": [3, 4],
+                "story_beats": [
+                    {"beat_type": "opening", "event": {"event_id": "B1", "name": "墙头对话", "unit_index": 3}},
+                    {"beat_type": "midpoint", "event": {"event_id": "B2", "name": "守夜独白", "unit_index": 3}},
+                ],
+                "anchor_events": [
+                    {"event_id": "B1", "name": "墙头对话", "unit_index": 3},
+                    {"event_id": "B2", "name": "守夜独白", "unit_index": 3},
+                ],
+                "top_roles": [],
+                "priority_roles": [],
+                "priority_relationships": [],
+                "must_keep_scenes": [],
+                "data_provenance": {},
+            },
+        ]
+    }
+    upi = {"units": {}}
+    audit = build_audit(wi, upi)
+    assert not audit["no_adjacent_season_failures"]
+    assert len(audit["adjacent_season_failures"]) == 1
+    fail = audit["adjacent_season_failures"][0]
+    assert set(fail["shared_beat_names"]) == {"墙头对话", "守夜独白"}
+
+
+def test_provenance_expanded_fields():
+    """data_provenance should include the new expanded fields."""
+    payload = _make_cross_season_payload(duplicate_names=True)
+    for overview in payload["season_overviews"]:
+        prov = overview.get("data_provenance", {})
+        assert "story_beat_name_overlap_with_previous" in prov
+        assert "anchor_name_overlap_with_previous" in prov
+        assert "frequency_penalty_applied" in prov
+        assert "fallback_used" in prov
+        assert "selected_from_season_focus" in prov
+        assert "beat_first_occurrence_count" in prov
+        assert "anchor_first_occurrence_count" in prov

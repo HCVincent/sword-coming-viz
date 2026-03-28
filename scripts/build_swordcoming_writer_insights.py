@@ -1549,6 +1549,54 @@ def build_story_beat_summary(
     return f"建议用“{event_ref['name']}”承接后段收束，让{focus_pair}在{location or '关键场域'}形成落点。"
 
 
+def _pick_best_candidate(
+    candidates: Sequence[dict],
+    *,
+    score_fn,
+    season_focus: dict,
+    name_occurrence_counts: Optional[Dict[str, int]] = None,
+) -> dict:
+    """From *candidates* (already filtered), pick the best one.
+
+    Strategy: consider the top-5 candidates within 5 pts of the best
+    score, then prefer (in order):
+      1. is_first_occurrence (name_occurrence_count == 1 or min first_unit)
+      2. participant overlap with season_focus priority_roles
+      3. has evidence_excerpt
+      4. highest score (original ordering)
+    """
+    if len(candidates) <= 1:
+        return candidates[0]
+
+    scores = [(score_fn(c), i, c) for i, c in enumerate(candidates)]
+    scores.sort(key=lambda t: (-t[0], t[1]))
+    top_score = scores[0][0]
+    shortlist = [(s, i, c) for s, i, c in scores if s >= top_score - 5][:5]
+
+    if len(shortlist) <= 1:
+        return shortlist[0][2]
+
+    _noc = name_occurrence_counts or {}
+    _focus_roles = set(
+        str(n).strip()
+        for n in season_focus.get("priority_roles", [])
+        if str(n).strip()
+    )
+
+    def _preference_key(item):
+        s, i, c = item
+        noc = _noc.get(c.get("name", ""), 1)
+        is_first = 0 if noc <= 1 else 1
+        focus_overlap = -len(
+            _focus_roles & set(str(p).strip() for p in c.get("participants", []))
+        )
+        has_evidence = 0 if c.get("evidence_excerpt") else 1
+        return (is_first, focus_overlap, has_evidence, -s, i)
+
+    shortlist.sort(key=_preference_key)
+    return shortlist[0][2]
+
+
 def build_story_beats(
     *,
     season_events: Sequence[dict],
@@ -1558,23 +1606,29 @@ def build_story_beats(
     spotlight_role: Optional[str],
     globally_used_names: Optional[set[str]] = None,
     name_occurrence_counts: Optional[Dict[str, int]] = None,
+    season_focus: Optional[dict] = None,
 ) -> List[dict]:
     if not season_events:
         return []
 
     _globally_used = globally_used_names or set()
+    _season_focus = season_focus or {}
+    _noc = name_occurrence_counts or {}
+
+    def _score(ref):
+        return screenplay_event_score(
+            ref,
+            season_curated=season_curated,
+            writer_focus=writer_focus,
+            priority_pair_scores=priority_pair_scores,
+            spotlight_role=spotlight_role,
+            name_occurrence_counts=name_occurrence_counts,
+        )
 
     ranked_events = sorted(
         season_events,
         key=lambda ref: (
-            -screenplay_event_score(
-                ref,
-                season_curated=season_curated,
-                writer_focus=writer_focus,
-                priority_pair_scores=priority_pair_scores,
-                spotlight_role=spotlight_role,
-                name_occurrence_counts=name_occurrence_counts,
-            ),
+            -_score(ref),
             ref.get("progress_start") if ref.get("progress_start") is not None else 10**12,
             ref.get("unit_index") if ref.get("unit_index") is not None else 10**12,
             ref.get("name", ""),
@@ -1649,7 +1703,12 @@ def build_story_beats(
             beats.append({"beat_type": beat_type, "label": label, "summary": "当前范围暂无合适锚点。", "event": None})
             continue
 
-        chosen = candidates[0]
+        chosen = _pick_best_candidate(
+            candidates,
+            score_fn=_score,
+            season_focus=_season_focus,
+            name_occurrence_counts=_noc,
+        )
         selected_ids.add(chosen.get("event_id"))
         selected_names.add(chosen.get("name", ""))
         beats.append(
@@ -2041,6 +2100,7 @@ def build_season_overviews(
             spotlight_role=spotlight_role,
             globally_used_names=globally_used_beat_names,
             name_occurrence_counts=name_occurrence_counts,
+            season_focus=season_focus,
         )
         must_keep_scenes = build_must_keep_scenes(
             season_name=season_name,
@@ -2099,6 +2159,44 @@ def build_season_overviews(
             ),
         ]
 
+        # --- Adjacent-season overlap detection ---
+        _beat_names_this_season = {
+            beat.get("event", {}).get("name", "")
+            for beat in story_beats
+            if beat.get("event")
+        }
+        _beat_names_this_season.discard("")
+        _anchor_names_this_season = {
+            a.get("name", "") for a in season_anchor_events
+        }
+        _anchor_names_this_season.discard("")
+
+        # Compare with immediately-previous season (if any)
+        _prev_beat_names: set[str] = set()
+        _prev_anchor_names: set[str] = set()
+        if overviews:
+            prev_overview = overviews[-1]
+            for b in prev_overview.get("story_beats", []):
+                ev = b.get("event")
+                if ev and ev.get("name"):
+                    _prev_beat_names.add(ev["name"])
+            for a in prev_overview.get("anchor_events", []):
+                if a.get("name"):
+                    _prev_anchor_names.add(a["name"])
+
+        beat_overlap_with_previous = sorted(_beat_names_this_season & _prev_beat_names)
+        anchor_overlap_with_previous = sorted(_anchor_names_this_season & _prev_anchor_names)
+
+        # Count how many selected beats/anchors used first-occurrence events
+        _beat_first_occ_count = sum(
+            1 for beat in story_beats
+            if beat.get("event") and name_occurrence_counts.get(beat["event"].get("name", ""), 1) <= 1
+        )
+        _anchor_first_occ_count = sum(
+            1 for a in season_anchor_events
+            if name_occurrence_counts.get(a.get("name", ""), 1) <= 1
+        )
+
         overviews.append(
             {
                 "season_name": season_name,
@@ -2120,8 +2218,26 @@ def build_season_overviews(
                     "priority_roles_dropped": _dropped_focus_names,
                     "priority_relationships_source": "season_focus+evidence_gated" if season_focus.get("priority_relationship_pairs") else "score_ranking+evidence_gated",
                     "summary_source": "template_from_data",
-                    "story_beats_source": "score_ranking+cross_season_dedup",
-                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty.",
+                    "story_beats_source": "score_ranking+top5_within_5pts+cross_season_dedup",
+                    "story_beat_name_overlap_with_previous": beat_overlap_with_previous,
+                    "anchor_name_overlap_with_previous": anchor_overlap_with_previous,
+                    "beat_first_occurrence_count": _beat_first_occ_count,
+                    "anchor_first_occurrence_count": _anchor_first_occ_count,
+                    "frequency_penalty_applied": bool(name_occurrence_counts),
+                    "fallback_used": any(
+                        beat.get("event") and beat["event"].get("name", "") in globally_used_beat_names
+                        for beat in story_beats
+                        if beat.get("event")
+                    ),
+                    "selected_from_season_focus": any(
+                        beat.get("event") and bool(
+                            set(str(p).strip() for p in beat["event"].get("participants", []))
+                            & set(str(n).strip() for n in season_focus.get("priority_roles", []))
+                        )
+                        for beat in story_beats
+                        if beat.get("event")
+                    ),
+                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup, frequency penalty, and top-5-within-5pts candidate window with first-occurrence preference.",
                 },
             }
         )

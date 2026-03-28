@@ -931,13 +931,17 @@ class EntityResolver:
 
         The internal key is ``"<event_name>@<juan_index>"``; the public ``name``
         field is restored to the original event name without the suffix.
+
+        After all events are resolved this method also:
+        - Picks the best provenance (earliest + highest match_score) for each
+          event when multiple occurrences exist.
+        - Computes whole-book frequency metadata: ``name_occurrence_count``,
+          ``first_occurrence_unit`` and ``is_first_occurrence``.
         """
         unified_events: Dict[str, UnifiedEvent] = {}
 
         for event_key, occurrences in self.event_occurrences.items():
             # Strip the @juan suffix to recover the human-readable event name.
-            # The key itself is kept as the stable id to keep each juan's
-            # occurrence distinct in the output.
             if "@" in event_key:
                 event_name, _juan_suffix = event_key.rsplit("@", 1)
             else:
@@ -952,7 +956,15 @@ class EntityResolver:
             locations: List[str] = []
             progress_points: List[int] = []
             progress_labels: List[str] = []
-            
+
+            # Track the best provenance across occurrences:
+            # prefer earliest juan first, then highest match-keyword count.
+            best_evidence_excerpt = ""
+            best_matched_keywords: List[str] = []
+            best_matched_rule_name = ""
+            best_evidence_sentence_indexes: List[int] = []
+            _best_prov_key: tuple[int, int] = (10**9, 0)  # (juan_idx, -match_kw_count)
+
             for event, juan_idx, seg_idx in occurrences:
                 all_participants.update(event.participants)
                 source_juans.add(juan_idx)
@@ -974,7 +986,17 @@ class EntityResolver:
                 label = self.segment_progress_labels.get(seg_key)
                 if label:
                     progress_labels.append(label)
-            
+
+                # Pick best provenance (earliest juan, then most keywords)
+                kw_count = len(getattr(event, "matched_keywords", None) or [])
+                prov_key = (juan_idx, -kw_count)
+                if prov_key < _best_prov_key:
+                    _best_prov_key = prov_key
+                    best_evidence_excerpt = getattr(event, "evidence_excerpt", "") or ""
+                    best_matched_keywords = list(getattr(event, "matched_keywords", None) or [])
+                    best_matched_rule_name = getattr(event, "matched_rule_name", "") or ""
+                    best_evidence_sentence_indexes = list(getattr(event, "sentence_indexes_in_segment", None) or [])
+
             # Parse numeric time
             time_str = times[0] if times else None
             time_numeric = self._parse_year(time_str)
@@ -1008,17 +1030,40 @@ class EntityResolver:
                 source_juans=source_juans,
                 source_units=source_juans,
                 source_segments=source_segments,
-                action_count=len(occurrences)
+                action_count=len(occurrences),
+                # Provenance
+                evidence_excerpt=best_evidence_excerpt,
+                matched_keywords=best_matched_keywords,
+                matched_rule_name=best_matched_rule_name,
+                evidence_sentence_indexes=best_evidence_sentence_indexes,
             )
 
-            # Backward compatibility:
-            # - keep legacy lookup by plain event_name when it is unique
-            # - use event_key for additional same-name events from other juans
             if event_name not in unified_events:
                 unified_events[event_name] = unified
             else:
                 unified_events[event_key] = unified
-        
+
+        # --- Whole-book frequency metadata ---
+        # Count how many distinct event_ids share each event name.
+        name_counts: Dict[str, int] = {}
+        name_first_unit: Dict[str, int] = {}
+        for ue in unified_events.values():
+            name_counts[ue.name] = name_counts.get(ue.name, 0) + 1
+            first_unit = min(ue.source_units) if ue.source_units else None
+            if first_unit is not None:
+                prev = name_first_unit.get(ue.name)
+                if prev is None or first_unit < prev:
+                    name_first_unit[ue.name] = first_unit
+
+        for ue in unified_events.values():
+            ue.name_occurrence_count = name_counts.get(ue.name, 1)
+            ue.first_occurrence_unit = name_first_unit.get(ue.name)
+            first_unit = min(ue.source_units) if ue.source_units else None
+            ue.is_first_occurrence = (
+                first_unit is not None
+                and first_unit == name_first_unit.get(ue.name)
+            )
+
         return unified_events
     
     def resolve_relations(self) -> Dict[str, UnifiedRelation]:
