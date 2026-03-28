@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { useBookConfig, useChapterIndex, useChapterSynopses } from './hooks/useBookArtifacts';
-import type { ChapterIndexUnit, ChapterSynopsis } from './types/pipelineArtifacts';
+import { useBookConfig, useChapterIndex, useChapterSynopses, useKeyEventsIndex } from './hooks/useBookArtifacts';
+import type { ChapterIndexUnit, ChapterSynopsis, KeyEventsChapter } from './types/pipelineArtifacts';
 
 interface ReaderSegment {
   anchor: string;
@@ -175,7 +175,9 @@ export default function ChapterReaderPage() {
   const { chapterIndex, loading: chapterIndexLoading, error: chapterIndexError } = useChapterIndex();
   const { bookConfig } = useBookConfig();
   const { synopsesMap } = useChapterSynopses();
+  const { keyEventsMap } = useKeyEventsIndex();
   const [synopsisOpen, setSynopsisOpen] = useState(false);
+  const [keyEventsOpen, setKeyEventsOpen] = useState(true);
   const [markdown, setMarkdown] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -243,6 +245,10 @@ export default function ChapterReaderPage() {
   const synopsis: ChapterSynopsis | null = useMemo(
     () => (unit ? synopsesMap.get(unit.unit_index) ?? null : null),
     [synopsesMap, unit]
+  );
+  const keyEventsChapter: KeyEventsChapter | null = useMemo(
+    () => (unit ? keyEventsMap.get(unit.unit_index) ?? null : null),
+    [keyEventsMap, unit]
   );
   const showResumeCard =
     !routeAnchor &&
@@ -330,6 +336,7 @@ export default function ChapterReaderPage() {
     setSettingsOpen(false);
     setMobileNavOpen(false);
     setSynopsisOpen(false);
+    setKeyEventsOpen(true);
   }, [routeAnchor, unitIndex]);
 
   useEffect(() => {
@@ -866,6 +873,52 @@ export default function ChapterReaderPage() {
                     ) : null}
                   </section>
                 ) : null}
+
+                {/* ── 本章关键事件 ── */}
+                <section className="reader-keyevents">
+                  <button
+                    type="button"
+                    className="reader-keyevents-toggle"
+                    onClick={() => setKeyEventsOpen((prev) => !prev)}
+                  >
+                    <span className={`reader-keyevents-chevron ${keyEventsOpen ? 'reader-keyevents-chevron--open' : ''}`}>▶</span>
+                    <span>本章关键事件</span>
+                    {keyEventsChapter && keyEventsChapter.key_events.length > 0 ? (
+                      <span className="reader-keyevents-badge">{keyEventsChapter.key_events.length}</span>
+                    ) : null}
+                  </button>
+
+                  {keyEventsOpen ? (
+                    <div className="reader-keyevents-body">
+                      {keyEventsChapter && keyEventsChapter.key_events.length > 0 ? (
+                        keyEventsChapter.key_events.map((evt) => (
+                          <div key={evt.event_id} className="reader-keyevents-card">
+                            <div className="reader-keyevents-card-header">
+                              <span className="reader-keyevents-name">{evt.name}</span>
+                              <span className={`reader-keyevents-tier reader-keyevents-tier--${evt.importance}`}>
+                                {evt.importance === 'critical' ? '核心' : evt.importance === 'major' ? '重要' : '关注'}
+                              </span>
+                            </div>
+                            <div className="reader-keyevents-meta">
+                              {evt.event_type ? <span className="reader-keyevents-chip">{evt.event_type}</span> : null}
+                              {evt.location ? <span className="reader-keyevents-chip">{evt.location}</span> : null}
+                            </div>
+                            {evt.participants.length > 0 ? (
+                              <div className="reader-keyevents-participants">
+                                {evt.participants.map((p) => (
+                                  <span key={p} className="reader-keyevents-participant">{p}</span>
+                                ))}
+                              </div>
+                            ) : null}
+                            <p className="reader-keyevents-desc">{evt.description}</p>
+                          </div>
+                        ))
+                      ) : (
+                        <p className="reader-keyevents-empty">本章暂无已整理的关键事件</p>
+                      )}
+                    </div>
+                  ) : null}
+                </section>
 
                 <div className="reader-article-body" ref={contentRef}>
                   {segments.map((segment) => {

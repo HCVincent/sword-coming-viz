@@ -162,3 +162,34 @@ export interface ChapterSynopsesPayload {
   chapter_count: number;
   chapters: ChapterSynopsis[];
 }
+
+/* ── Key Events Index ── */
+
+export interface KeyEvent {
+  event_id: string;
+  name: string;
+  event_type: string;
+  importance: 'critical' | 'major' | 'notable';
+  score: number;
+  location: string;
+  participants: string[];
+  description: string;
+  significance: string;
+  involved_characters: string[];
+}
+
+export interface KeyEventsChapter {
+  unit_index: number;
+  unit_title: string;
+  season_name: string;
+  key_events: KeyEvent[];
+}
+
+export interface KeyEventsIndexPayload {
+  version: string;
+  generated_at: string;
+  book_id: string;
+  chapter_count: number;
+  total_key_events: number;
+  chapters: KeyEventsChapter[];
+}

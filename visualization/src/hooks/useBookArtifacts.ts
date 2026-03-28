@@ -4,6 +4,8 @@ import type {
   ChapterIndex,
   ChapterSynopsesPayload,
   ChapterSynopsis,
+  KeyEventsChapter,
+  KeyEventsIndexPayload,
   UnitProgressIndex,
 } from '../types/pipelineArtifacts';
 
@@ -121,4 +123,36 @@ export function useChapterSynopses() {
   }, []);
 
   return { synopsesMap, loading, error };
+}
+
+export function useKeyEventsIndex() {
+  const [keyEventsMap, setKeyEventsMap] = useState<Map<number, KeyEventsChapter>>(new Map());
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}data/key_events_index.json`);
+        if (!response.ok) {
+          throw new Error(`读取关键事件索引失败：${response.status}`);
+        }
+        const data = (await response.json()) as KeyEventsIndexPayload;
+        const map = new Map<number, KeyEventsChapter>();
+        for (const chapter of data.chapters) {
+          map.set(chapter.unit_index, chapter);
+        }
+        setKeyEventsMap(map);
+      } catch (err) {
+        console.error('Error loading key events index:', err);
+        setError(err instanceof Error ? err.message : '读取关键事件索引时发生未知错误');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    load();
+  }, []);
+
+  return { keyEventsMap, loading, error };
 }
