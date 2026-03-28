@@ -24,6 +24,7 @@ from model.event import Event
 from model.location import Location
 from model.role import Role
 from scripts.character_quality import audit_role_name, is_pseudo_role_name
+from scripts.build_season_overview_audit import build_audit
 from scripts.build_swordcoming_writer_insights import build_writer_insights_file
 from scripts.validate_unified_knowledge import validate_unified_knowledge
 
@@ -1129,6 +1130,21 @@ def build_offline_data(
     if writer_suspicious:
         raise ValueError(f"Writer insights output still contains placeholder question marks: {writer_suspicious[:5]}")
 
+    # --- Season overview audit ---
+    upi = load_json(unit_progress_index_path)
+    audit = build_audit(writer_payload, upi)
+    audit_output = kb_output.parent / "season_overview_audit.json"
+    audit_output.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Season overview audit → {audit_output}")
+    if not audit.get("all_seasons_roles_evidence_backed"):
+        raise ValueError("Season overview audit FAILED: some priority_roles lack chapter evidence")
+    if not audit.get("all_seasons_beats_in_range"):
+        raise ValueError("Season overview audit FAILED: some story beats are out of season range")
+    if not audit.get("all_seasons_beats_unique_names"):
+        raise ValueError("Season overview audit FAILED: duplicate beat names detected")
+    if not audit.get("all_seasons_template_names_backed"):
+        raise ValueError("Season overview audit FAILED: some template-injected role names lack chapter evidence")
+
     if sync_output and public_data_dir is not None:
         sync_public_files(book_path.parent, public_data_dir, DEFAULT_SYNC_FILES)
 
@@ -1152,6 +1168,9 @@ def build_offline_data(
         "writer_curated_relationships": writer_payload["summary"]["curated_relationship_count"],
         "writer_conflict_chains": writer_payload["summary"]["conflict_chain_count"],
         "writer_foreshadowing_threads": writer_payload["summary"]["foreshadowing_thread_count"],
+        "audit_roles_evidence_backed": audit.get("all_seasons_roles_evidence_backed", False),
+        "audit_beats_in_range": audit.get("all_seasons_beats_in_range", False),
+        "audit_beats_unique_names": audit.get("all_seasons_beats_unique_names", False),
     }
 
 

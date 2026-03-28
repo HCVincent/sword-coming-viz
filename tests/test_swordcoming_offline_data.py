@@ -5,6 +5,7 @@ from model.action import Action
 from model.event import Event
 from model.role import Role
 from scripts import build_swordcoming_offline_data
+from scripts.build_season_overview_audit import build_audit
 from scripts.build_swordcoming_writer_insights import build_writer_insights_payload
 from scripts.validate_unified_knowledge import validate_unified_knowledge
 
@@ -713,6 +714,7 @@ def test_build_writer_insights_payload_uses_season_focus_roles_and_relationships
 
     for role_name, power, juan_index in [
         ("陈平安", "泥瓶巷", 1),
+        ("陈平安", "泥瓶巷", 2),
         ("阿良", "剑修", 2),
         ("齐静春", "山崖书院", 1),
     ]:
@@ -1109,3 +1111,210 @@ def test_data_provenance_present_on_every_season_overview():
         assert isinstance(prov["priority_roles_dropped"], list)
         assert "priority_relationships_source" in prov
         assert "note" in prov
+
+
+def test_priority_relationships_evidence_gate_both_participants():
+    """Relationships where a participant has no chapter appearances are excluded."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1},
+        {"1-1": "第一季 · 段1"},
+    )
+    resolver.set_manual_overrides(
+        {"role_primary_powers": {"陈平安": "泥瓶巷", "阿良": "剑修"}}
+    )
+
+    # Only 陈平安 has chapter data — 阿良 does NOT
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0, source_sentence="陈平安。",
+    )
+    resolver.add_event(
+        Event(name="守夜", time=None, location="泥瓶巷",
+              participants=["陈平安"], description="陈平安守夜。",
+              significance="开篇。", juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                "1": {
+                    "unit_index": 1,
+                    "unit_title": "第一章 惊蛰",
+                    "season_name": "第一季",
+                    "progress_start": 1,
+                    "progress_end": 1,
+                },
+            }
+        },
+        core_cast={
+            "event_type_rules": [],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "season_focus": {
+                    "第一季": {
+                        "priority_roles": ["陈平安"],
+                        "priority_relationship_pairs": [["陈平安", "阿良"]],
+                    }
+                },
+                "priority_characters": ["陈平安"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [
+                    {
+                        "roles": ["陈平安", "阿良"],
+                        "kind": "guide",
+                        "title": "陈平安与阿良：引路",
+                        "focus": "引路。",
+                        "adaptation_value": "重要。",
+                        "manual_beats": [
+                            {
+                                "season_name": "第一季",
+                                "phase_label": "引路",
+                                "summary": "阿良引路。",
+                                "event_keywords": ["守夜"],
+                                "location": "泥瓶巷",
+                            }
+                        ],
+                    },
+                ],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    overview = payload["season_overviews"][0]
+    rel_titles = [r["title"] for r in overview["priority_relationships"]]
+    # 阿良 has no chapter appearances → the relationship should be excluded
+    assert "陈平安与阿良：引路" not in rel_titles, (
+        "Relationship with a participant lacking chapter evidence should be excluded"
+    )
+    assert "evidence_gated" in overview["data_provenance"]["priority_relationships_source"]
+
+
+def test_build_audit_includes_template_params_audit():
+    """build_audit output should contain template_params_audit per season."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1},
+        {"1-1": "第一季 · 段1"},
+    )
+    resolver.set_manual_overrides({"role_primary_powers": {"陈平安": "泥瓶巷"}})
+
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0, source_sentence="陈平安。",
+    )
+    resolver.add_event(
+        Event(name="守夜", time=None, location="泥瓶巷",
+              participants=["陈平安"], description="陈平安守夜。",
+              significance="开篇。", juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+
+    payload = build_writer_insights_payload(
+        kb=resolver.build_knowledge_base(),
+        unit_progress_index={
+            "units": {
+                "1": {
+                    "unit_index": 1,
+                    "unit_title": "第一章 惊蛰",
+                    "season_name": "第一季",
+                    "progress_start": 1,
+                    "progress_end": 1,
+                },
+            }
+        },
+        core_cast={
+            "event_type_rules": [],
+            "phase_rules": [],
+            "writer_focus": {
+                "spotlight_role": "陈平安",
+                "priority_characters": ["陈平安"],
+                "conflict_actions": [],
+                "priority_pairs": [],
+                "curated_relationships": [],
+            },
+            "foreshadowing_patterns": [],
+        },
+    )
+
+    upi = {
+        "units": {
+            "1": {
+                "unit_index": 1,
+                "unit_title": "第一章 惊蛰",
+                "season_name": "第一季",
+                "progress_start": 1,
+                "progress_end": 1,
+            },
+        }
+    }
+    audit = build_audit(payload, upi)
+
+    assert audit.get("all_seasons_template_names_backed") is True
+    for sa in audit["season_audits"]:
+        tpa = sa.get("template_params_audit")
+        assert tpa is not None, f"Missing template_params_audit on {sa['season_name']}"
+        assert tpa["all_template_names_backed"] is True
+        assert isinstance(tpa["unbacked_summary_names"], list)
+        assert isinstance(tpa["unbacked_spotlight_names"], list)
+
+
+def test_build_audit_detects_unbacked_relationship_participant():
+    """Audit should flag when a relationship participant is not in season top_roles."""
+    # Simulate writer_insights data with a relationship where one participant
+    # is not in top_roles or priority_roles.
+    wi = {
+        "season_overviews": [
+            {
+                "season_name": "第一季",
+                "unit_range": [1, 5],
+                "summary": "测试摘要",
+                "spotlight_summary": None,
+                "adaptation_hooks": [],
+                "story_beats": [],
+                "top_roles": [
+                    {"role_name": "陈平安", "unit_appearance_count": 3, "event_count": 2},
+                ],
+                "priority_roles": [
+                    {"role_name": "陈平安", "unit_appearance_count": 3, "event_count": 2},
+                ],
+                "priority_relationships": [
+                    {
+                        "title": "陈平安与鬼魅：对峙",
+                        "source_role_name": "陈平安",
+                        "target_role_name": "鬼魅",
+                    },
+                ],
+                "anchor_events": [],
+                "must_keep_scenes": [],
+                "data_provenance": {
+                    "priority_roles_source": "density_ranking",
+                    "priority_roles_dropped": [],
+                    "priority_relationships_source": "score_ranking",
+                    "note": "test",
+                },
+            }
+        ]
+    }
+    upi = {
+        "units": {
+            "1": {"unit_index": 1, "season_name": "第一季", "progress_start": 1, "progress_end": 1},
+        }
+    }
+    audit = build_audit(wi, upi)
+    sa = audit["season_audits"][0]
+    rel_audit = sa["priority_relationships_audit"]
+    assert len(rel_audit) == 1
+    assert rel_audit[0]["source_in_season"] is True
+    assert rel_audit[0]["target_in_season"] is False
+    assert rel_audit[0]["both_in_season"] is False
+    assert sa["priority_relationships_both_in_season"] is False

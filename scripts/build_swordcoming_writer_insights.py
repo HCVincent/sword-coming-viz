@@ -1911,6 +1911,10 @@ def build_season_overviews(
         anchor_event_ids = [
             str(ref.get("event_id", "")).strip() for ref in season_anchor_events if str(ref.get("event_id", "")).strip()
         ]
+        # Build a set of all role names with at least one chapter appearance
+        # in this season. Used to gate relationship participants.
+        _season_role_names = {item["role_name"] for item in top_roles}
+
         priority_relationship_items: List[dict] = []
         seen_relationship_ids = set()
         for pair in season_focus.get("priority_relationship_pairs", []):
@@ -1927,6 +1931,9 @@ def build_season_overviews(
                 None,
             )
             if not matched or matched["id"] in seen_relationship_ids:
+                continue
+            # Both participants must have chapter appearances in this season
+            if matched["source_role_name"] not in _season_role_names or matched["target_role_name"] not in _season_role_names:
                 continue
             priority_relationship_items.append(matched)
             seen_relationship_ids.add(matched["id"])
@@ -1954,6 +1961,9 @@ def build_season_overviews(
             if len(priority_relationship_items) >= 4:
                 break
             if item["id"] in seen_relationship_ids:
+                continue
+            # Both participants must have chapter appearances in this season
+            if item["source_role_name"] not in _season_role_names or item["target_role_name"] not in _season_role_names:
                 continue
             priority_relationship_items.append(item)
             seen_relationship_ids.add(item["id"])
@@ -2051,10 +2061,10 @@ def build_season_overviews(
                 "data_provenance": {
                     "priority_roles_source": "season_focus+evidence_gated" if season_focus.get("priority_roles") else "density_ranking",
                     "priority_roles_dropped": _dropped_focus_names,
-                    "priority_relationships_source": "season_focus" if season_focus.get("priority_relationship_pairs") else "score_ranking",
+                    "priority_relationships_source": "season_focus+evidence_gated" if season_focus.get("priority_relationship_pairs") else "score_ranking+evidence_gated",
                     "summary_source": "template_from_data",
                     "story_beats_source": "score_ranking",
-                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped.",
+                    "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season.",
                 },
             }
         )
