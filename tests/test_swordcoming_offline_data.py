@@ -5,6 +5,8 @@ from model.action import Action
 from model.event import Event
 from model.role import Role
 from scripts import build_swordcoming_offline_data
+from scripts.build_chapter_synopses import build_chapter_synopses
+from scripts.build_key_events_index import build_key_events_index
 from scripts.build_season_overview_audit import build_audit
 from scripts.build_swordcoming_writer_insights import build_writer_insights_payload
 from scripts.validate_unified_knowledge import validate_unified_knowledge
@@ -1318,3 +1320,214 @@ def test_build_audit_detects_unbacked_relationship_participant():
     assert rel_audit[0]["target_in_season"] is False
     assert rel_audit[0]["both_in_season"] is False
     assert sa["priority_relationships_both_in_season"] is False
+
+
+# ---------------------------------------------------------------------------
+# Chapter Synopses tests
+# ---------------------------------------------------------------------------
+
+def _make_synopsis_kb_and_upi():
+    """Helper: builds a small KB + UPI suitable for synopsis / key-events tests."""
+    resolver = EntityResolver()
+    resolver.set_book_metadata(book_id="swordcoming", unit_label="章节", progress_label="叙事进度")
+    resolver.set_segment_progress_index(
+        {"1-1": 1, "2-1": 3},
+        {"1-1": "第一季 · 段1", "2-1": "第一季 · 段2"},
+    )
+    resolver.set_manual_overrides({"role_primary_powers": {"陈平安": "泥瓶巷"}})
+
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="主角", power="泥瓶巷",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0,
+        source_sentence="陈平安守夜。",
+    )
+    resolver.add_role(
+        Role(name="宋集薪", alias=[], description="对照", power="大骊",
+             sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1, chunk_index=0,
+        source_sentence="宋集薪讥讽。",
+    )
+    resolver.add_role(
+        Role(name="宁姚", alias=[], description="剑修", power="剑气长城",
+             sentence_indexes_in_segment=[0], juan_index=2, segment_index=1),
+        juan_index=2, segment_index=1, chunk_index=0,
+        source_sentence="宁姚赠剑。",
+    )
+
+    resolver.add_event(
+        Event(name="墙头对话", time=None, location="泥瓶巷",
+              participants=["陈平安", "宋集薪"],
+              description="宋集薪在墙头讥讽陈平安。",
+              significance="建立冲突关系。",
+              juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+    resolver.add_event(
+        Event(name="泥瓶巷守夜", time=None, location="泥瓶巷",
+              participants=["陈平安"],
+              description="陈平安在泥瓶巷独自守夜。",
+              significance="开篇独白。",
+              juan_index=1, segment_index=1),
+        juan_index=1, segment_index=1,
+    )
+    resolver.add_event(
+        Event(name="少女赠剑", time=None, location="小镇",
+              participants=["陈平安", "宁姚"],
+              description="宁姚将飞剑赠予陈平安。",
+              significance="关键转折。",
+              juan_index=2, segment_index=1),
+        juan_index=2, segment_index=1,
+    )
+
+    kb = resolver.build_knowledge_base()
+    upi = {
+        "units": {
+            "1": {
+                "unit_index": 1,
+                "unit_title": "第一章 惊蛰",
+                "season_name": "第一季",
+                "progress_start": 1,
+                "progress_end": 1,
+            },
+            "2": {
+                "unit_index": 2,
+                "unit_title": "第二章 飞剑",
+                "season_name": "第一季",
+                "progress_start": 3,
+                "progress_end": 3,
+            },
+        }
+    }
+    return kb, upi
+
+
+def test_build_chapter_synopses_produces_one_entry_per_unit():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    assert len(synopses) == 2
+    assert synopses[0]["unit_index"] == 1
+    assert synopses[1]["unit_index"] == 2
+
+
+def test_chapter_synopsis_contains_expected_fields():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    for entry in synopses:
+        assert "unit_index" in entry
+        assert "unit_title" in entry
+        assert "season_name" in entry
+        assert "event_count" in entry
+        assert "active_characters" in entry
+        assert "locations" in entry
+        assert "key_developments" in entry
+        assert "synopsis" in entry
+        assert "narrative_function" in entry
+
+
+def test_chapter_synopsis_event_count_matches_kb_events():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    ch1 = synopses[0]
+    # Chapter 1 has 2 events (墙头对话, 泥瓶巷守夜)
+    assert ch1["event_count"] == 2
+    ch2 = synopses[1]
+    # Chapter 2 has 1 event (少女赠剑)
+    assert ch2["event_count"] == 1
+
+
+def test_chapter_synopsis_active_characters_includes_participants():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    ch1_chars = synopses[0]["active_characters"]
+    assert "陈平安" in ch1_chars
+    assert "宋集薪" in ch1_chars
+    ch2_chars = synopses[1]["active_characters"]
+    assert "陈平安" in ch2_chars
+    assert "宁姚" in ch2_chars
+
+
+def test_chapter_synopsis_key_developments_ordered_by_score():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(
+        kb=kb,
+        unit_progress_index=upi,
+        event_type_rules=[{"type": "冲突", "keywords": ["讥讽"]}],
+    )
+    ch1_devs = synopses[0]["key_developments"]
+    # 墙头对话 should score higher (冲突 type + 2 participants) than 泥瓶巷守夜
+    assert len(ch1_devs) >= 1
+    assert "墙头对话" in ch1_devs[0]
+
+
+def test_chapter_synopsis_narrative_function_is_valid_label():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    valid_labels = {"开篇", "过渡", "高潮", "收束"}
+    for entry in synopses:
+        assert entry["narrative_function"] in valid_labels, (
+            f"unit {entry['unit_index']} got unexpected label: {entry['narrative_function']}"
+        )
+
+
+def test_chapter_synopsis_locations_populated():
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    ch1_locs = synopses[0]["locations"]
+    assert "泥瓶巷" in ch1_locs
+
+
+# ---------------------------------------------------------------------------
+# Key Events Index tests
+# ---------------------------------------------------------------------------
+
+def test_build_key_events_index_produces_chapter_records():
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    assert len(chapters) >= 1
+    for ch in chapters:
+        assert "unit_index" in ch
+        assert "key_events" in ch
+        assert len(ch["key_events"]) >= 1
+
+
+def test_key_events_have_importance_tiers():
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    valid_tiers = {"critical", "major", "notable"}
+    for ch in chapters:
+        for ev in ch["key_events"]:
+            assert ev["importance"] in valid_tiers
+
+
+def test_key_events_deduplicates_by_name():
+    """Events with the same name in a chapter should appear only once (highest score)."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    for ch in chapters:
+        names = [ev["name"] for ev in ch["key_events"]]
+        assert len(names) == len(set(names)), f"Duplicate event names in unit {ch['unit_index']}"
+
+
+def test_key_events_respects_min_score():
+    kb, upi = _make_synopsis_kb_and_upi()
+    # With a very high min_score, nothing should qualify
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=100)
+    assert len(chapters) == 0
+
+
+def test_key_events_respects_max_events_per_chapter():
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(
+        kb=kb, unit_progress_index=upi, min_score=0, max_events_per_chapter=1,
+    )
+    for ch in chapters:
+        assert len(ch["key_events"]) <= 1
+
+
+def test_key_events_sorted_by_score_descending():
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    for ch in chapters:
+        scores = [ev["score"] for ev in ch["key_events"]]
+        assert scores == sorted(scores, reverse=True)

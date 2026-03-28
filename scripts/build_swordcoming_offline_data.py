@@ -24,6 +24,8 @@ from model.event import Event
 from model.location import Location
 from model.role import Role
 from scripts.character_quality import audit_role_name, is_pseudo_role_name
+from scripts.build_chapter_synopses import build_chapter_synopses_file
+from scripts.build_key_events_index import build_key_events_index_file
 from scripts.build_season_overview_audit import build_audit
 from scripts.build_swordcoming_writer_insights import build_writer_insights_file
 from scripts.validate_unified_knowledge import validate_unified_knowledge
@@ -32,6 +34,8 @@ from scripts.validate_unified_knowledge import validate_unified_knowledge
 DEFAULT_SYNC_FILES = [
     "book_config.json",
     "chapter_index.json",
+    "chapter_synopses.json",
+    "key_events_index.json",
     "unit_progress_index.json",
     "unified_knowledge.json",
     "writer_insights.json",
@@ -1034,6 +1038,8 @@ def build_offline_data(
     sync_output: bool = False,
     public_data_dir: Optional[Path] = None,
     max_units: Optional[int] = None,
+    synopses_output: Optional[Path] = None,
+    key_events_output: Optional[Path] = None,
 ) -> dict:
     book = load_json(book_path)
     core_cast = load_json(core_cast_path)
@@ -1145,6 +1151,24 @@ def build_offline_data(
     if not audit.get("all_seasons_template_names_backed"):
         raise ValueError("Season overview audit FAILED: some template-injected role names lack chapter evidence")
 
+    # --- Chapter synopses ---
+    _synopses_path = synopses_output or (kb_output.parent / "chapter_synopses.json")
+    chapter_synopses = build_chapter_synopses_file(
+        kb=kb,
+        unit_progress_index_path=unit_progress_index_path,
+        core_cast_path=core_cast_path,
+        output_path=_synopses_path,
+    )
+
+    # --- Key events index ---
+    _key_events_path = key_events_output or (kb_output.parent / "key_events_index.json")
+    key_events_chapters = build_key_events_index_file(
+        kb=kb,
+        unit_progress_index_path=unit_progress_index_path,
+        core_cast_path=core_cast_path,
+        output_path=_key_events_path,
+    )
+
     if sync_output and public_data_dir is not None:
         sync_public_files(book_path.parent, public_data_dir, DEFAULT_SYNC_FILES)
 
@@ -1171,6 +1195,9 @@ def build_offline_data(
         "audit_roles_evidence_backed": audit.get("all_seasons_roles_evidence_backed", False),
         "audit_beats_in_range": audit.get("all_seasons_beats_in_range", False),
         "audit_beats_unique_names": audit.get("all_seasons_beats_unique_names", False),
+        "chapter_synopses_count": len(chapter_synopses),
+        "key_events_chapters": len(key_events_chapters),
+        "key_events_total": sum(len(ch["key_events"]) for ch in key_events_chapters),
     }
 
 
@@ -1186,6 +1213,8 @@ def main() -> int:
     parser.add_argument("--manual-overrides", default="data/swordcoming_manual_overrides.json", help="Manual overrides path.")
     parser.add_argument("--no-sync", action="store_true", help="Skip syncing output files into visualization/public/data.")
     parser.add_argument("--public-data-dir", default="visualization/public/data", help="Vite public/data directory.")
+    parser.add_argument("--synopses-output", default="data/chapter_synopses.json", help="Chapter synopses output path.")
+    parser.add_argument("--key-events-output", default="data/key_events_index.json", help="Key events index output path.")
     parser.add_argument("--max-units", type=int, default=None, help="Optional limit for quick iteration.")
     args = parser.parse_args()
 
@@ -1201,6 +1230,8 @@ def main() -> int:
         sync_output=not args.no_sync,
         public_data_dir=Path(args.public_data_dir),
         max_units=args.max_units,
+        synopses_output=Path(args.synopses_output),
+        key_events_output=Path(args.key_events_output),
     )
 
     print("Built Sword Coming offline data:")
