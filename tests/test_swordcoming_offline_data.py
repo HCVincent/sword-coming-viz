@@ -2102,3 +2102,93 @@ def test_provenance_expanded_fields():
         assert "selected_from_season_focus" in prov
         assert "beat_first_occurrence_count" in prov
         assert "anchor_first_occurrence_count" in prov
+
+
+# ---------------------------------------------------------------------------
+# P1 regression: fallback provenance alignment
+# ---------------------------------------------------------------------------
+
+
+def test_choose_summary_sentences_indexed_returns_original_indexes():
+    """_choose_summary_sentences_indexed must return correct (index, text) pairs."""
+    sentences = [
+        "无关句子A。",
+        "陈平安在泥瓶巷守夜。",
+        "无关句子B。",
+        "宋集薪在墙头讥讽。",
+        "无关句子C。",
+    ]
+    sentence_characters = [[], ["陈平安"], [], ["宋集薪"], []]
+    sentence_locations = [[], ["泥瓶巷"], [], ["墙头"], []]
+
+    indexed = build_swordcoming_offline_data._choose_summary_sentences_indexed(
+        sentences, sentence_characters, sentence_locations, limit=2
+    )
+    assert len(indexed) == 2
+    # The two prioritised sentences should be at original indexes 1 and 3
+    assert indexed[0] == (1, "陈平安在泥瓶巷守夜。")
+    assert indexed[1] == (3, "宋集薪在墙头讥讽。")
+
+
+def test_choose_summary_sentences_indexed_fallback():
+    """When no sentence mentions characters/locations, plain sentences are returned."""
+    sentences = ["甲。", "乙。", "丙。"]
+    sentence_characters = [[], [], []]
+    sentence_locations = [[], [], []]
+
+    indexed = build_swordcoming_offline_data._choose_summary_sentences_indexed(
+        sentences, sentence_characters, sentence_locations, limit=2
+    )
+    assert len(indexed) == 2
+    assert indexed[0] == (0, "甲。")
+    assert indexed[1] == (1, "乙。")
+
+
+def test_choose_summary_sentences_wrapper_unchanged():
+    """choose_summary_sentences (public wrapper) should return the same texts as before."""
+    sentences = ["无关。", "陈平安出发。", "到达泥瓶巷。"]
+    sentence_characters = [[], ["陈平安"], []]
+    sentence_locations = [[], [], ["泥瓶巷"]]
+
+    result = build_swordcoming_offline_data.choose_summary_sentences(
+        sentences, sentence_characters, sentence_locations, limit=2
+    )
+    assert result == ["陈平安出发。", "到达泥瓶巷。"]
+
+
+def test_fallback_event_evidence_indexes_match_excerpt():
+    """Non-rule event: evidence_sentence_indexes must cover only the chosen
+    summary sentences, not the entire segment."""
+    unit = {"unit_title": "第一卷笼中雀 第一章 惊蛰", "juan_index": 1}
+    sentences = [
+        "无关句子。",
+        "陈平安独自守夜。",
+        "无关句子。",
+        "无关句子。",
+        "宋集薪在墙头讥讽。",
+    ]
+    segment = {
+        "segment_index": 1,
+        "segment_start_time": "惊蛰",
+        "sentences": sentences,
+    }
+    sentence_characters = [[], ["陈平安"], [], [], ["宋集薪"]]
+    sentence_locations = [[], [], [], [], ["墙头"]]
+
+    event = build_swordcoming_offline_data.build_event(
+        unit=unit,
+        segment=segment,
+        sentences=sentences,
+        sentence_characters=sentence_characters,
+        sentence_locations=sentence_locations,
+        relation_actions=[],
+        event_rules=[],          # no rules → forces fallback path
+        event_type_rules=[],
+    )
+    assert event is not None
+    # Indexes must be a small subset, NOT range(5)
+    assert len(event.sentence_indexes_in_segment) <= 2
+    assert event.sentence_indexes_in_segment != list(range(len(sentences)))
+    # Each index must correspond to a sentence whose text appears in the excerpt
+    for idx in event.sentence_indexes_in_segment:
+        assert sentences[idx] in event.evidence_excerpt or sentences[idx][:20] in event.evidence_excerpt

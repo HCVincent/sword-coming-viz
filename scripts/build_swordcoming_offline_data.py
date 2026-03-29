@@ -584,25 +584,46 @@ def mine_character_candidates(
     return mined_characters
 
 
+def _choose_summary_sentences_indexed(
+    sentences: Sequence[str],
+    sentence_characters: Sequence[Sequence[str]],
+    sentence_locations: Sequence[Sequence[str]],
+    limit: int = 3,
+) -> List[Tuple[int, str]]:
+    """Return up to *limit* (original_index, sentence) pairs.
+
+    Sentences that mention characters or locations are prioritised;
+    plain non-empty sentences serve as fallback.
+    """
+    prioritized: List[Tuple[int, str]] = []
+    fallback: List[Tuple[int, str]] = []
+
+    for idx, (sentence, characters, locations) in enumerate(
+        zip(sentences, sentence_characters, sentence_locations)
+    ):
+        if characters or locations:
+            prioritized.append((idx, sentence))
+        elif sentence:
+            fallback.append((idx, sentence))
+
+    selected = prioritized[:limit]
+    if len(selected) < limit:
+        selected.extend(fallback[: limit - len(selected)])
+    return selected
+
+
 def choose_summary_sentences(
     sentences: Sequence[str],
     sentence_characters: Sequence[Sequence[str]],
     sentence_locations: Sequence[Sequence[str]],
     limit: int = 3,
 ) -> List[str]:
-    prioritized: List[str] = []
-    fallback: List[str] = []
-
-    for sentence, characters, locations in zip(sentences, sentence_characters, sentence_locations):
-        if characters or locations:
-            prioritized.append(sentence)
-        elif sentence:
-            fallback.append(sentence)
-
-    selected = prioritized[:limit]
-    if len(selected) < limit:
-        selected.extend(fallback[: limit - len(selected)])
-    return selected
+    return [
+        text
+        for _, text in _choose_summary_sentences_indexed(
+            sentences, sentence_characters, sentence_locations, limit=limit
+        )
+    ]
 
 
 def classify_relation_action(sentence: str, relation_keywords: Sequence[dict]) -> Optional[str]:
@@ -883,12 +904,12 @@ def build_event(
         # Synthesise a lightweight evidence excerpt from the segment's
         # most informative sentences so every event carries source-text
         # provenance, not only rule-matched ones.
-        summary_sents = choose_summary_sentences(
+        indexed_sents = _choose_summary_sentences_indexed(
             sentences, sentence_characters, sentence_locations, limit=2
         )
-        evidence_excerpt = " ".join(summary_sents)[:80].rstrip()
+        evidence_excerpt = " ".join(text for _, text in indexed_sents)[:80].rstrip()
         matched_keywords = []
-        evidence_sentence_indexes = list(range(len(sentences)))
+        evidence_sentence_indexes = [idx for idx, _ in indexed_sents]
         matched_rule_name = ""
 
     return Event(

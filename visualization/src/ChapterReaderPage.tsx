@@ -841,7 +841,7 @@ export default function ChapterReaderPage() {
                                 ? synopsis.key_development_events.map((kd, index) => (
                                     <li key={kd.event_id || index}>
                                       {kd.display_text}
-                                      {kd.evidence_excerpt ? (
+                                      {kd.evidence_excerpt && !kd.display_text?.includes(kd.evidence_excerpt) ? (
                                         <span className="reader-synopsis-evidence"> — {kd.evidence_excerpt}</span>
                                       ) : null}
                                     </li>
@@ -923,7 +923,7 @@ export default function ChapterReaderPage() {
                             <p className="reader-keyevents-desc">
                               {evt.display_summary || evt.description}
                             </p>
-                            {evt.evidence_excerpt ? (
+                            {evt.evidence_excerpt && !(evt.display_summary || evt.description)?.includes(evt.evidence_excerpt) ? (
                               <p className="reader-keyevents-evidence">{evt.evidence_excerpt}</p>
                             ) : null}
                             {evt.selection_reason ? (
