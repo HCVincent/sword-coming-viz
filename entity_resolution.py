@@ -660,18 +660,31 @@ class EntityResolver:
         # Prefer longer, more detailed descriptions
         return max(descriptions, key=lambda d: len(d) if d else 0)
     
+    # Generic / category-level labels that should not be used as a role's
+    # primary power when a more specific alternative exists.
+    GENERIC_POWERS: set[str] = {
+        '山上', '山下', '山水', '江湖', '道家', '武道', '未归类',
+    }
+
     def _select_primary_power(self, powers: List[str]) -> Optional[str]:
-        """Select the most common power affiliation."""
+        """Select the most common *specific* power affiliation.
+
+        Prefers the most-frequent non-generic label.  Falls back to a
+        generic label only when every occurrence is generic.
+        """
         if not powers:
             return None
-        # Count occurrences
-        power_counts = defaultdict(int)
+        power_counts: Dict[str, int] = defaultdict(int)
         for p in powers:
             if p:
                 power_counts[p] += 1
         if not power_counts:
             return None
-        return max(power_counts, key=power_counts.get)
+        # Try non-generic first
+        concrete = {k: v for k, v in power_counts.items() if k not in self.GENERIC_POWERS}
+        if concrete:
+            return max(concrete, key=concrete.get)  # type: ignore[arg-type]
+        return max(power_counts, key=power_counts.get)  # type: ignore[arg-type]
     
     def resolve_roles(self) -> Dict[str, UnifiedRole]:
         """Resolve all roles into unified entities."""

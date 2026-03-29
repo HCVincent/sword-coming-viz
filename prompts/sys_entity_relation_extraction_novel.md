@@ -17,6 +17,7 @@ Process Chinese fantasy novel chapters and extract structured entity-relation da
 - Do not use generic titles as aliases: `先生`, `掌教`, `皇帝`, `道人`, `少年`, `少女`, `公子`, `老前辈`.
 - Preserve original descriptive wording when available.
 - `power` should capture the most relevant camp, sect, dynasty, lineage, or faction.
+- Do NOT use vague category labels such as `山上`, `山下`, `武道`, `江湖`, `道家`, `山水`. Always use the most specific sect, school, kingdom, or organization name (e.g. `正阳山`, `落魄山`, `大骊`, `龙虎山`).
 - Record `sentence_indexes_in_segment`.
 
 2. **Location Identification**

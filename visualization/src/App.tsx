@@ -83,11 +83,18 @@ function toTimelineEvent(event: UnifiedEvent): TimelineEventUnified {
   };
 }
 
+const GENERIC_POWER_LABELS = new Set(['山上', '山下', '山水', '江湖', '道家', '武道', '未归类']);
+
+function resolveDisplayPowerFromRole(role: { primary_power: string | null; powers?: string[] }): string | null {
+  const candidates = [role.primary_power, ...(role.powers ?? [])].map((v) => (v ?? '').trim()).filter(Boolean);
+  return candidates.find((v) => !GENERIC_POWER_LABELS.has(v)) ?? null;
+}
+
 function toRoleNode(role: UnifiedKnowledgeBase['roles'][string]): RoleNodeUnified {
   return {
     id: role.id,
     name: role.canonical_name,
-    power: role.primary_power,
+    power: resolveDisplayPowerFromRole(role) ?? role.primary_power,
     description: role.description,
     appearances: role.total_mentions,
     units: role.units_appeared && role.units_appeared.length > 0 ? role.units_appeared : role.juans_appeared,
