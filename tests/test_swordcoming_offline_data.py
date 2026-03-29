@@ -2242,3 +2242,18 @@ def test_display_source_description_has_no_evidence():
                 assert not kd.get("evidence_excerpt"), (
                     f"evidence_excerpt should be empty when display_source is description"
                 )
+
+
+def test_default_sync_files_includes_audit():
+    """DEFAULT_SYNC_FILES must contain season_overview_audit.json so it is
+    mirrored into visualization/public/data during every pipeline rebuild."""
+    from scripts.build_swordcoming_offline_data import DEFAULT_SYNC_FILES
+    assert "season_overview_audit.json" in DEFAULT_SYNC_FILES
+
+
+def test_sync_lists_match_between_pipeline_and_standalone():
+    """The canonical sync list in the pipeline and the standalone
+    sync_visualization_data.py helper must declare the same set of files."""
+    from scripts.build_swordcoming_offline_data import DEFAULT_SYNC_FILES
+    from scripts.sync_visualization_data import DEFAULT_FILES
+    assert set(DEFAULT_SYNC_FILES) == set(DEFAULT_FILES)

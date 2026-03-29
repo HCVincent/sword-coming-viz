@@ -5,12 +5,13 @@ from pathlib import Path
 
 DEFAULT_FILES = [
     "book_config.json",
+    "chapter_index.json",
+    "chapter_synopses.json",
+    "key_events_index.json",
     "unit_progress_index.json",
     "unified_knowledge.json",
     "writer_insights.json",
     "swordcoming_book.json",
-    "chapter_synopses.json",
-    "key_events_index.json",
     "season_overview_audit.json",
 ]
 

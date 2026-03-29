@@ -40,6 +40,7 @@ DEFAULT_SYNC_FILES = [
     "unified_knowledge.json",
     "writer_insights.json",
     "swordcoming_book.json",
+    "season_overview_audit.json",
 ]
 
 SYMMETRIC_ACTIONS = {"对话", "会见", "冲突", "同行"}
