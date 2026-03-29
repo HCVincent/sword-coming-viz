@@ -653,12 +653,53 @@ class EntityResolver:
                 key = self._canonical_relation_key(a, b)
                 self.relation_pairs[key].append(action)
     
-    def _select_best_description(self, descriptions: List[str]) -> str:
-        """Select the most informative description."""
-        if not descriptions:
-            return ""
-        # Prefer longer, more detailed descriptions
-        return max(descriptions, key=lambda d: len(d) if d else 0)
+    EDITORIAL_DESCRIPTION_PATTERNS: tuple[str, ...] = (
+        '适合补强',
+        '适合补足',
+        '适合扩展',
+        '适合增强',
+        '可补足',
+        '可补强',
+        '可扩展',
+        '可增强',
+        '能补足',
+        '能扩展',
+        '能增强',
+        '前三季叙事中多次出现',
+        '山上线',
+        '山上势力',
+        '山上人物',
+        '山上支线',
+        '山上女性',
+        '山上强者',
+    )
+
+    def _looks_editorial_description(self, text: str) -> bool:
+        normalized = (text or '').strip()
+        if not normalized:
+            return False
+        return any(pattern in normalized for pattern in self.EDITORIAL_DESCRIPTION_PATTERNS)
+
+    def _select_best_description(self, descriptions: List[str], original_descriptions: Optional[List[str]] = None) -> str:
+        """Select the most informative end-user-facing description.
+
+        Prefer non-editorial descriptions; if all candidates look editorial,
+        fall back to in-book original descriptions when available.
+        """
+        cleaned = [d.strip() for d in descriptions if d and d.strip()]
+        cleaned_original = [d.strip() for d in (original_descriptions or []) if d and d.strip()]
+
+        if not cleaned:
+            return max(cleaned_original, key=len) if cleaned_original else ''
+
+        non_editorial = [d for d in cleaned if not self._looks_editorial_description(d)]
+        if non_editorial:
+            return max(non_editorial, key=len)
+
+        if cleaned_original:
+            return max(cleaned_original, key=len)
+
+        return max(cleaned, key=len)
     
     # Generic / category-level labels that should not be used as a role's
     # primary power when a more specific alternative exists.
@@ -732,7 +773,7 @@ class EntityResolver:
                 id=canonical_name,
                 canonical_name=canonical_name,
                 all_names=all_names,
-                description=self._select_best_description(all_descriptions),
+                description=self._select_best_description(all_descriptions, unique_original),
                 original_descriptions=unique_original[:10],  # Keep top 10
                 powers=list(dict.fromkeys(all_powers)),  # Unique, preserve order
                 primary_power=self._select_primary_power(all_powers),

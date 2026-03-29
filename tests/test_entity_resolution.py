@@ -392,5 +392,41 @@ class TestClassificationMethods:
         assert resolver._is_organization_name("") is False
 
 
+class TestDescriptionSelection:
+    """Test filtering of editorial/meta descriptions."""
+
+    def test_select_best_description_prefers_original_when_editorial_only(self):
+        resolver = EntityResolver()
+        descriptions = [
+            "山上人物，适合补强高位修士群像。",
+            "前三季叙事中多次出现，常与陈平安同场，推动相关支线发展。",
+        ]
+        original_descriptions = [
+            "陆舫是鸟瞰峰山主，佩剑大椿，修为精深。",
+        ]
+
+        selected = resolver._select_best_description(descriptions, original_descriptions)
+        assert selected == "陆舫是鸟瞰峰山主，佩剑大椿，修为精深。"
+
+    def test_select_best_description_keeps_non_editorial(self):
+        resolver = EntityResolver()
+        descriptions = [
+            "山上支线人物，适合补足修士群像。",
+            "风雪庙剑修，常与问剑、对峙相关。",
+        ]
+
+        selected = resolver._select_best_description(descriptions, [])
+        assert selected == "风雪庙剑修，常与问剑、对峙相关。"
+
+    def test_select_best_description_falls_back_when_no_original(self):
+        resolver = EntityResolver()
+        descriptions = [
+            "山上人物，适合扩展外围修士节点。",
+        ]
+
+        selected = resolver._select_best_description(descriptions, [])
+        assert selected == "山上人物，适合扩展外围修士节点。"
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
