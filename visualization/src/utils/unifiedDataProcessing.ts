@@ -107,7 +107,7 @@ function toRoleNode(role: UnifiedRole, unitRange?: [number, number], isIsolated:
   return {
     id: role.id,
     name: role.canonical_name,
-    power: resolveDisplayPower(role) ?? role.primary_power,
+    power: resolveDisplayPower(role),
     description: role.description,
     appearances: countRoleMentionsInUnitRange(role, unitRange),
     units: getRoleUnits(role),

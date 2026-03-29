@@ -94,7 +94,7 @@ function toRoleNode(role: UnifiedKnowledgeBase['roles'][string]): RoleNodeUnifie
   return {
     id: role.id,
     name: role.canonical_name,
-    power: resolveDisplayPowerFromRole(role) ?? role.primary_power,
+    power: resolveDisplayPowerFromRole(role),
     description: role.description,
     appearances: role.total_mentions,
     units: role.units_appeared && role.units_appeared.length > 0 ? role.units_appeared : role.juans_appeared,
