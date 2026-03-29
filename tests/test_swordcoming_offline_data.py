@@ -2192,3 +2192,53 @@ def test_fallback_event_evidence_indexes_match_excerpt():
     # Each index must correspond to a sentence whose text appears in the excerpt
     for idx in event.sentence_indexes_in_segment:
         assert sentences[idx] in event.evidence_excerpt or sentences[idx][:20] in event.evidence_excerpt
+
+
+# ---------------------------------------------------------------------------
+# display_source regression tests
+# ---------------------------------------------------------------------------
+
+
+def test_chapter_synopsis_key_development_events_have_display_source():
+    """Every key_development_event must carry a valid display_source field."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    for syn in synopses:
+        for kd in syn.get("key_development_events", []):
+            assert "display_source" in kd, f"missing display_source on {kd.get('name')}"
+            assert kd["display_source"] in ("evidence", "description", "name")
+
+
+def test_key_events_index_entries_have_display_source():
+    """Every key event must carry a valid display_source field."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    chapters = build_key_events_index(kb=kb, unit_progress_index=upi, min_score=0)
+    for ch in chapters:
+        for evt in ch["key_events"]:
+            assert "display_source" in evt, f"missing display_source on {evt.get('name')}"
+            assert evt["display_source"] in ("evidence", "description", "name")
+
+
+def test_display_source_evidence_means_display_text_from_evidence():
+    """When display_source == 'evidence', display_text must embed the evidence."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    for syn in synopses:
+        for kd in syn.get("key_development_events", []):
+            if kd["display_source"] == "evidence" and kd.get("evidence_excerpt"):
+                prefix = f"{kd['name']}："
+                assert kd["display_text"].startswith(prefix), (
+                    f"display_text should start with '{prefix}' when source is evidence"
+                )
+
+
+def test_display_source_description_has_no_evidence():
+    """When display_source == 'description', evidence_excerpt should be empty."""
+    kb, upi = _make_synopsis_kb_and_upi()
+    synopses = build_chapter_synopses(kb=kb, unit_progress_index=upi)
+    for syn in synopses:
+        for kd in syn.get("key_development_events", []):
+            if kd["display_source"] == "description":
+                assert not kd.get("evidence_excerpt"), (
+                    f"evidence_excerpt should be empty when display_source is description"
+                )

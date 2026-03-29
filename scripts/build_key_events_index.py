@@ -202,10 +202,13 @@ def build_key_events_index(
             desc = ref.get("description") or ""
             if evidence:
                 display_summary = f"{ref['name']}：{evidence}"[:100]
+                display_source = "evidence"
             elif desc:
                 display_summary = f"{ref['name']}：{desc}"[:100]
+                display_source = "description"
             else:
                 display_summary = ref["name"][:100]
+                display_source = "name"
 
             # Determine selection reason
             reasons: List[str] = []
@@ -233,6 +236,7 @@ def build_key_events_index(
                 "involved_characters": ref["participants"],
                 # New card-granularity fields
                 "display_summary": display_summary,
+                "display_source": display_source,
                 "evidence_excerpt": evidence,
                 "matched_rule_name": ref.get("matched_rule_name", ""),
                 "name_occurrence_count": ref.get("name_occurrence_count", 1),

@@ -168,6 +168,39 @@ function chapterButtonLabel(unit: ChapterIndexUnit) {
   return `${unit.unit_index}. ${unit.chapter_title}`;
 }
 
+/**
+ * Decide whether to render evidence_excerpt as a separate line/paragraph.
+ *
+ * When `displaySource` is available (new data), the decision is deterministic:
+ * - "evidence" → the primary text was already built from the evidence → skip.
+ * - "description" | "name" → evidence is new info → show it.
+ *
+ * For old data without `displaySource`, fall back to normalised containment
+ * checks that handle truncation.
+ */
+function shouldShowEvidence(
+  primaryText: string | undefined,
+  evidenceExcerpt: string | undefined,
+  displaySource: string | undefined,
+): boolean {
+  if (!evidenceExcerpt) return false;
+  // Deterministic path for new data
+  if (displaySource === 'evidence') return false;
+  if (displaySource === 'description' || displaySource === 'name') return true;
+  // Fallback path for old data without display_source
+  if (!primaryText) return true;
+  const norm = (s: string) => s.replace(/\s+/g, ' ').replace(/[：:\u2014\u2013\-]/g, '').trim();
+  const np = norm(primaryText);
+  const ne = norm(evidenceExcerpt);
+  if (np.includes(ne)) return false;
+  // After stripping the "事件名：" prefix the remaining body may be a truncated
+  // prefix of the evidence – if it is long enough, treat it as already shown.
+  const colonIdx = primaryText.indexOf('：');
+  const body = colonIdx >= 0 ? norm(primaryText.slice(colonIdx + 1)) : np;
+  if (body.length >= 12 && ne.startsWith(body)) return false;
+  return true;
+}
+
 export default function ChapterReaderPage() {
   const navigate = useNavigate();
   const { unitIndex: unitIndexParam } = useParams();
@@ -841,7 +874,7 @@ export default function ChapterReaderPage() {
                                 ? synopsis.key_development_events.map((kd, index) => (
                                     <li key={kd.event_id || index}>
                                       {kd.display_text}
-                                      {kd.evidence_excerpt && !kd.display_text?.includes(kd.evidence_excerpt) ? (
+                                      {shouldShowEvidence(kd.display_text, kd.evidence_excerpt, kd.display_source) ? (
                                         <span className="reader-synopsis-evidence"> — {kd.evidence_excerpt}</span>
                                       ) : null}
                                     </li>
@@ -923,7 +956,7 @@ export default function ChapterReaderPage() {
                             <p className="reader-keyevents-desc">
                               {evt.display_summary || evt.description}
                             </p>
-                            {evt.evidence_excerpt && !(evt.display_summary || evt.description)?.includes(evt.evidence_excerpt) ? (
+                            {shouldShowEvidence(evt.display_summary || evt.description, evt.evidence_excerpt, evt.display_source) ? (
                               <p className="reader-keyevents-evidence">{evt.evidence_excerpt}</p>
                             ) : null}
                             {evt.selection_reason ? (

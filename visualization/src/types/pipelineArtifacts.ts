@@ -147,6 +147,7 @@ export interface KeyDevelopmentEvent {
   event_id: string;
   name: string;
   display_text: string;
+  display_source?: 'evidence' | 'description' | 'name';
   evidence_excerpt?: string;
   participants: string[];
   location: string;
@@ -188,6 +189,7 @@ export interface KeyEvent {
   involved_characters: string[];
   // Card-granularity fields (optional for backward compat)
   display_summary?: string;
+  display_source?: 'evidence' | 'description' | 'name';
   evidence_excerpt?: string;
   matched_rule_name?: string;
   name_occurrence_count?: number;

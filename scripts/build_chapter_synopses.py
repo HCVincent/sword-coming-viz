@@ -255,13 +255,16 @@ def build_chapter_synopses(
             # display_text: event name + evidence sentence excerpt, max 100 chars
             if evidence:
                 display_text = f"{name}：{evidence}"[:100]
+                display_source = "evidence"
             else:
                 # Fallback to description truncated
                 display_text = f"{name}：{desc}"[:100] if desc else name[:100]
+                display_source = "description" if desc else "name"
             key_development_events.append({
                 "event_id": ref["event_id"],
                 "name": name,
                 "display_text": display_text,
+                "display_source": display_source,
                 "evidence_excerpt": evidence,
                 "participants": ref.get("participants", []),
                 "location": ref.get("location"),
