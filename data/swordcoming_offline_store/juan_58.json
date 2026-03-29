@@ -98,11 +98,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 1
+        "segment_index": 1,
+        "evidence_excerpt": "飞剑身边站着一个风尘仆仆的中年儒士，双鬓霜白更胜，若是赵繇、宋集薪两位读书种子在场，就会发现短短一旬时光，这位学塾先生的白发已经多了许多。 飞剑剑尖所指，则是沉",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.149389",
+    "extracted_at": "2026-03-29T11:49:33.081759",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -177,11 +180,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 2
+        "segment_index": 2,
+        "evidence_excerpt": "真武山虽然是东宝瓶洲的兵家圣地，可向来一盘散沙，宗门意识并不强烈，身负大神通的修士武夫，更多像是在真武山挂个名而已，真武山的规矩，又是出了名的大而空，谈不上约束",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.149494",
+    "extracted_at": "2026-03-29T11:49:33.081955",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -254,19 +260,21 @@
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十八章 先生 · 段3",
         "sentence_indexes_in_segment": [
-          0,
-          1,
           2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 58,
-        "segment_index": 3
+        "segment_index": 3,
+        "evidence_excerpt": "可是齐先生你偏偏如此藏藏掖掖，怎么，既想着当婊子又想要立贞节牌坊？好处由你齐静春偷偷拿走，恶名却要我正阳山来背？",
+        "matched_keywords": [
+          "齐静春",
+          "齐先生"
+        ],
+        "matched_rule_name": "齐静春现身"
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.149586",
+    "extracted_at": "2026-03-29T11:49:33.082138",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -344,11 +352,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 4
+        "segment_index": 4,
+        "evidence_excerpt": "齐静春脸色如常，缓缓道：“我齐静春，作为负责看管此地风水气运一甲子的儒家门生，有些话还是应该与你解释一下，首先，我与那少女并无瓜葛渊源，只是见她天资极好，‘气冲",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.149704",
+    "extracted_at": "2026-03-29T11:49:33.082350",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -424,11 +435,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 5
+        "segment_index": 5,
+        "evidence_excerpt": "一部梦中杀人的剑经罢了，需要我齐静春谋划将近一甲子，才动手谋夺吗？ 搬山猿作为正阳山的顶层角色，见识过太多伏线千里的阴谋诡计，更领教过许多道貌岸然的高人仙人的厉",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.149807",
+    "extracted_at": "2026-03-29T11:49:33.082543",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -519,7 +533,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 6
+        "segment_index": 6,
+        "evidence_excerpt": "而你不一样，你重伤刘羡阳，坏其大道前程，却故意留其性命，以防自己被我过早驱逐出境，你这种人……” 说到这里，齐静春笑了笑，“哦，差点忘了，你不是人。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -549,7 +566,7 @@
         "segment_index": 6
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.149948",
+    "extracted_at": "2026-03-29T11:49:33.082765",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -608,16 +625,15 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 齐静春在正阳山对话",
         "time": null,
         "location": "正阳山",
         "participants": [
-          "齐静春",
-          "陈平安"
+          "齐静春"
         ],
         "description": "齐静春对于搬山猿的暴怒，浑然不觉，继续说道：“拦下你，是为正阳山好，当初少女差点就要祭出她的本命之物，你来自正阳山，跟剑气剑意打了一千年的交道，难道感受不到那股压力？ “小女娃娃那会儿不过是垂死挣扎，那一点道法神通，齐先生也好意思拿来吓唬人？ 老猿哈哈大笑，故作恍然大悟道：“之前有人说齐静春你的那位恩师，晚节不保，神像一次次位置下降，最后被搬出文庙不说，还给人砸得稀巴烂。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "对应齐静春在叙事中的关键对话节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十八章 先生 · 段7",
         "sentence_indexes_in_segment": [
@@ -629,11 +645,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 7
+        "segment_index": 7,
+        "evidence_excerpt": "齐静春对于搬山猿的暴怒，浑然不觉，继续说道：“拦下你，是为正阳山好，当初少女差点就要祭出她的本命之物，你来自正阳山，跟剑气剑意打了一千年的交道，难道感受不到那股",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150054",
+    "extracted_at": "2026-03-29T11:49:33.082967",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -695,11 +714,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 8
+        "segment_index": 8,
+        "evidence_excerpt": "我当时还不信来着，心想堂堂儒教文庙第四圣，便是万一真有机会见着了传说中的道祖佛陀，也是勉强能够说上几句话的读书人，只是现在看来，从你恩师到你齐静春的这条儒家文脉",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150163",
+    "extracted_at": "2026-03-29T11:49:33.083169",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -776,11 +798,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 9
+        "segment_index": 9,
+        "evidence_excerpt": "齐静春转头望向小镇那边，轻轻叹息一声，重新望向这头搬山猿，问道：“说完了？ 我就站在这规矩之内，你能奈我何？",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150259",
+    "extracted_at": "2026-03-29T11:49:33.083357",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -841,11 +866,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 10
+        "segment_index": 10,
+        "evidence_excerpt": "齐静春微笑道：“你可以试试看。 搬山猿问道：“齐静春，你一定要拦阻我进去？",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150347",
+    "extracted_at": "2026-03-29T11:49:33.083544",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -923,11 +951,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 11
+        "segment_index": 11,
+        "evidence_excerpt": "齐静春答道：“后果之重，一座正阳山承受不起。 齐静春没有故弄玄虚，也没有一气之下就给搬山猿让路，仍是耐着性子点头道：“当真。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150439",
+    "extracted_at": "2026-03-29T11:49:33.083720",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1007,11 +1038,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 12
+        "segment_index": 12,
+        "evidence_excerpt": "搬山猿揉了揉下巴，最后瞥了眼齐静春身后的远处，冷哼道：“算那两个小家伙运气好，转告他们一句，以后别给我碰上！ 搬山猿转身大步离去，背对着齐静春，老猿突然高高抬起",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150546",
+    "extracted_at": "2026-03-29T11:49:33.083927",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1084,19 +1118,21 @@
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十八章 先生 · 段13",
         "sentence_indexes_in_segment": [
-          0,
           1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 58,
-        "segment_index": 13
+        "segment_index": 13,
+        "evidence_excerpt": "当齐静春说出这个字后，与此同时，若是有人恰好抬头，就可以看到天穹之顶，骤然出现一点米粒之光，然后一根极其纤细的金线从天而降，转瞬之间落在小镇内。“齐先生？",
+        "matched_keywords": [
+          "齐静春",
+          "齐先生"
+        ],
+        "matched_rule_name": "齐静春现身"
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.150633",
+    "extracted_at": "2026-03-29T11:49:33.084106",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1173,7 +1209,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 14
+        "segment_index": 14,
+        "evidence_excerpt": "看到那名墨绿色的外乡少女，他有些唏嘘感慨，当初读书种子赵繇对其一见钟情，他就点拨过一句话，将少女形容成无鞘的剑，最伤旁人心神。 少年赵繇到底不知情为何物，不理解",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1203,7 +1242,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.150763",
+    "extracted_at": "2026-03-29T11:49:33.084328",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1316,7 +1355,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 15
+        "segment_index": 15,
+        "evidence_excerpt": "齐静春看到草鞋少年后，笑容就要自然许多，温声打趣道：“接连几场架，打得惊天地泣鬼神了。 陈平安有些难为情。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1346,7 +1388,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.150893",
+    "extracted_at": "2026-03-29T11:49:33.084553",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1403,17 +1445,16 @@
     "locations": [],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 齐静春与刘羡阳对话",
         "time": null,
         "location": null,
         "participants": [
           "齐静春",
-          "陈平安",
           "刘羡阳"
         ],
         "description": "齐静春伸出手掌轻轻下压了两下，笑道：“先听我把话说完，刘羡阳活下来了。 少年身体紧绷，小心翼翼问道：“齐先生，刘羡阳是不是不会死了？ 齐静春点头道：“有人出手相助，刘羡阳性命无忧，毋庸置疑，不过坏消息是他身体遭受重创，以后未必能够像以前那样行动自如。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动齐静春与刘羡阳之间的对话关系。",
         "related_action_indices": [
           0,
           1,
@@ -1429,7 +1470,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 16
+        "segment_index": 16,
+        "evidence_excerpt": "齐静春伸出手掌轻轻下压了两下，笑道：“先听我把话说完，刘羡阳活下来了。 少年身体紧绷，小心翼翼问道：“齐先生，刘羡阳是不是不会死了？",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1444,7 +1488,7 @@
         "action": "对话",
         "context": "齐静春伸出手掌轻轻下压了两下，笑道：“先听我把话说完，刘羡阳活下来了。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 齐静春与刘羡阳对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1464,7 +1508,7 @@
         "action": "对话",
         "context": "少年身体紧绷，小心翼翼问道：“齐先生，刘羡阳是不是不会死了？",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 齐静春与刘羡阳对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1484,7 +1528,7 @@
         "action": "冲突",
         "context": "齐静春点头道：“有人出手相助，刘羡阳性命无忧，毋庸置疑，不过坏消息是他身体遭受重创，以后未必能够像以前那样行动自如。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 齐静春与刘羡阳对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1494,7 +1538,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.151038",
+    "extracted_at": "2026-03-29T11:49:33.084795",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1611,11 +1655,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 17
+        "segment_index": 17,
+        "evidence_excerpt": "陈平安咧嘴一笑。 这些天少年的心神，就像一张弓弦始终被拉伸到满月状态，一刻也没有得到舒缓，在听到刘羡阳活过来之后，这么一松，整个人就后仰倒去，彻底昏死过去。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.151177",
+    "extracted_at": "2026-03-29T11:49:33.085029",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1711,17 +1758,16 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 宁姚与陈平安在泥瓶巷对话",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
-          "齐静春",
-          "陈平安",
-          "宁姚"
+          "宁姚",
+          "陈平安"
         ],
         "description": "这意味着草鞋少年从泥瓶巷开始，到小镇屋顶，再到深山小溪，最后到这荒郊野岭，每次奔跑，都在大幅度持续减寿。 宁姚问道：“齐先生你只需要告诉我，怎么救陈平安！ 齐静春心中叹息。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "在泥瓶巷推动宁姚与陈平安之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -1735,7 +1781,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 18
+        "segment_index": 18,
+        "evidence_excerpt": "这意味着草鞋少年从泥瓶巷开始，到小镇屋顶，再到深山小溪，最后到这荒郊野岭，每次奔跑，都在大幅度持续减寿。 宁姚问道：“齐先生你只需要告诉我，怎么救陈平安！",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1750,7 +1799,7 @@
         "action": "对话",
         "context": "宁姚问道：“齐先生你只需要告诉我，怎么救陈平安！",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 宁姚与陈平安在泥瓶巷对话",
         "location": "泥瓶巷",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -1760,7 +1809,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.151297",
+    "extracted_at": "2026-03-29T11:49:33.085249",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1834,7 +1883,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 19
+        "segment_index": 19,
+        "evidence_excerpt": "少女并非对陈平安没有情感，否则也不会并肩作战到这一步。 但是宁姚丝毫也没有。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1864,7 +1916,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.151429",
+    "extracted_at": "2026-03-29T11:49:33.085471",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1948,15 +2000,17 @@
         ],
         "source": "第一卷笼中雀 第五十八章 先生 · 段20",
         "sentence_indexes_in_segment": [
-          0,
-          1,
           2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 58,
-        "segment_index": 20
+        "segment_index": 20,
+        "evidence_excerpt": "齐静春想起那个头顶莲花冠的年轻道士，心情愈发凝重。宁姚蹲下身，动作轻柔地把陈平安背在身上，问道：“齐先生你倒是说啊，不过事先说好，我觉得杨家铺子的老掌柜，救死扶伤的本事很不咋的，倒是陈平安认识一个铺子老人，挺厉害的。",
+        "matched_keywords": [
+          "齐静春",
+          "齐先生"
+        ],
+        "matched_rule_name": "齐静春现身"
       }
     ],
     "relations": [
@@ -1981,7 +2035,7 @@
         "segment_index": 20
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.151546",
+    "extracted_at": "2026-03-29T11:49:33.085689",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2056,11 +2110,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 21
+        "segment_index": 21,
+        "evidence_excerpt": "宁姚想也不想，大声道：“一人一剑杀光妖族！ 齐静春哭笑不得，有些无奈道：“是修行。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.151654",
+    "extracted_at": "2026-03-29T11:49:33.085881",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2160,7 +2217,7 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 齐静春与陈平安在泥瓶巷剧情推进",
         "time": null,
         "location": "泥瓶巷",
         "participants": [
@@ -2171,7 +2228,7 @@
         ],
         "description": "齐静春指向两人之前所处位置，又点了另外一处，“剑炉可滋养体魄，千秋可壮大神魂，只不过对于陈平安来说，至多是勉强维持一个收支平衡，运气好，说不定小有盈余。 宁姚松了口气，其实她比陈平安好不到哪里去，只是底子要好太多，才不至于昏厥过去，“齐先生，那现在我是带着陈平安去泥瓶巷养伤？ 还是先去刘羡阳那边看看情况？",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "在泥瓶巷推动齐静春与陈平安之间的剧情推进线。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第五十八章 先生 · 段22",
         "sentence_indexes_in_segment": [
@@ -2183,11 +2240,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 22
+        "segment_index": 22,
+        "evidence_excerpt": "齐静春指向两人之前所处位置，又点了另外一处，“剑炉可滋养体魄，千秋可壮大神魂，只不过对于陈平安来说，至多是勉强维持一个收支平衡，运气好，说不定小有盈余。 宁姚松",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.151787",
+    "extracted_at": "2026-03-29T11:49:33.086121",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2292,11 +2352,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 23
+        "segment_index": 23,
+        "evidence_excerpt": "齐静春笑道：“如今已经都可以了。 宁姚想了想，“我背后这家伙，肯定希望睁开第一眼，就能看到刘羡阳，所以我去阮师那边好了。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.151903",
+    "extracted_at": "2026-03-29T11:49:33.086322",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2350,17 +2413,16 @@
     "locations": [],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 宁姚与齐静春对话",
         "time": null,
         "location": null,
         "participants": [
-          "齐静春",
-          "陈平安",
-          "宁姚"
+          "宁姚",
+          "齐静春"
         ],
         "description": "宁姚走着走着，突然问道：“齐先生，作为这座小洞天的主人，你有没有因为近水楼台，收取几个天赋好的弟子？ 齐静春笑着摇头，“没有，只收了个不算弟子的书童。 ”",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动宁姚与齐静春之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -2374,7 +2436,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 24
+        "segment_index": 24,
+        "evidence_excerpt": "宁姚走着走着，突然问道：“齐先生，作为这座小洞天的主人，你有没有因为近水楼台，收取几个天赋好的弟子？ 齐静春笑着摇头，“没有，只收了个不算弟子的书童。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -2389,7 +2454,7 @@
         "action": "对话",
         "context": "宁姚走着走着，突然问道：“齐先生，作为这座小洞天的主人，你有没有因为近水楼台，收取几个天赋好的弟子？",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 宁姚与齐静春对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2399,7 +2464,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.152009",
+    "extracted_at": "2026-03-29T11:49:33.086526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2453,17 +2518,16 @@
     "locations": [],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 宁姚与齐静春对话",
         "time": null,
         "location": null,
         "participants": [
-          "齐静春",
-          "陈平安",
-          "宁姚"
+          "宁姚",
+          "齐静春"
         ],
         "description": "宁姚又问，“齐先生，你在这里，是不是什么事情都知道？ 齐静春笑道：“只要是我想知道的，都可以知道，不过未必全是真相。 以前是为了避嫌，现在回头来看，确实错过了几个好苗子。",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "推动宁姚与齐静春之间的对话关系。",
         "related_action_indices": [
           0
         ],
@@ -2477,7 +2541,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 25
+        "segment_index": 25,
+        "evidence_excerpt": "宁姚又问，“齐先生，你在这里，是不是什么事情都知道？ 齐静春笑道：“只要是我想知道的，都可以知道，不过未必全是真相。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -2492,7 +2559,7 @@
         "action": "对话",
         "context": "以前是为了避嫌，现在回头来看，确实错过了几个好苗子。 ” 宁姚又问，“齐先生，你在这里，是不是什么事情都知道？ ” 齐静春笑道：“只要是我想知道的，都可以知道，不过未必全是真相。 毕竟有些事情，差之毫厘谬以千里。",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 宁姚与齐静春对话",
         "location": null,
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2507,7 +2574,7 @@
         "segment_index": 25
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.152125",
+    "extracted_at": "2026-03-29T11:49:33.086744",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2579,17 +2646,16 @@
     ],
     "events": [
       {
-        "name": "齐静春现身",
+        "name": "第一卷笼中雀 第五十八章 先生 · 宁姚与齐静春在小镇对话",
         "time": null,
         "location": "小镇",
         "participants": [
-          "齐静春",
-          "陈平安",
-          "宁姚"
+          "宁姚",
+          "齐静春"
         ],
         "description": "有句话齐静春没有说，从离开小镇起，他就失去了这份“心镜照彻天地”的神通。 因为有人取走了那块镇圭，那是儒家亚圣之一留在小镇的信物，也是大阵枢纽之一。 宁姚犹豫了一下，仍是忍不住问道：“齐先生，你如今是啥境界，有没有跻身上五境啊？",
         "background": "",
-        "significance": "把陈平安与更高层次的儒家线联系起来。",
+        "significance": "在小镇推动宁姚与齐静春之间的对话线。",
         "related_action_indices": [
           0
         ],
@@ -2603,7 +2669,10 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 26
+        "segment_index": 26,
+        "evidence_excerpt": "有句话齐静春没有说，从离开小镇起，他就失去了这份“心镜照彻天地”的神通。 因为有人取走了那块镇圭，那是儒家亚圣之一留在小镇的信物，也是大阵枢纽之一。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -2618,7 +2687,7 @@
         "action": "对话",
         "context": "宁姚犹豫了一下，仍是忍不住问道：“齐先生，你如今是啥境界，有没有跻身上五境啊？",
         "result": null,
-        "event_name": "齐静春现身",
+        "event_name": "第一卷笼中雀 第五十八章 先生 · 宁姚与齐静春在小镇对话",
         "location": "小镇",
         "is_commentary": false,
         "sentence_indexes_in_segment": [
@@ -2628,7 +2697,7 @@
         "segment_index": 26
       }
     ],
-    "extracted_at": "2026-03-29T01:24:30.152238",
+    "extracted_at": "2026-03-29T11:49:33.086966",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2689,11 +2758,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 27
+        "segment_index": 27,
+        "evidence_excerpt": "齐静春果然不回答。 齐静春有意无意放慢脚步，转头望去。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.152331",
+    "extracted_at": "2026-03-29T11:49:33.087147",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2754,11 +2826,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 28
+        "segment_index": 28,
+        "evidence_excerpt": "齐静春会心一笑，不露声色地悄悄加快脚步。 一起走出很远后，齐静春停下脚步，笑道：“我就不送了。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.152423",
+    "extracted_at": "2026-03-29T11:49:33.087326",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2819,11 +2894,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 29
+        "segment_index": 29,
+        "evidence_excerpt": "齐静春瞬间来到那块斩龙台附近。 齐静春是例外。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.152519",
+    "extracted_at": "2026-03-29T11:49:33.087510",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2883,11 +2961,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 30
+        "segment_index": 30,
+        "evidence_excerpt": "虽然齐静春不过是儒家三学宫七十二书院的书院山主之一，但是齐静春确实不能以常理待之。 静。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.152608",
+    "extracted_at": "2026-03-29T11:49:33.087687",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3013,11 +3094,14 @@
           5
         ],
         "juan_index": 58,
-        "segment_index": 31
+        "segment_index": 31,
+        "evidence_excerpt": "这个面对正阳山搬山猿屡屡挑衅羞辱、却没有任何反应的窝囊读书人，闭上眼睛，默想“静”字第三笔，然后伸出并拢双指，在空中轻轻往下一划。 齐静春一挥袖，两块齐整大石，",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:30.152765",
+    "extracted_at": "2026-03-29T11:49:33.087947",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

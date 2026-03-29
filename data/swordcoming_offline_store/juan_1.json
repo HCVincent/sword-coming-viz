@@ -62,15 +62,15 @@
     ],
     "events": [
       {
-        "name": "惊蛰守夜",
+        "name": "第一卷笼中雀 第一章 惊蛰 · 陈平安在小镇剧情推进",
         "time": null,
-        "location": "泥瓶巷",
+        "location": "小镇",
         "participants": [
           "陈平安"
         ],
         "description": "暮色里，小镇名叫泥瓶巷的僻静地方，有位孤苦伶仃的清瘦少年，此时他正按照习俗，一手持蜡烛，一手持桃枝，照耀房梁、墙壁、木床等处，用桃枝敲敲打打，试图借此驱赶蛇蝎、蜈蚣等，嘴里念念有词，是这座小镇祖祖辈辈传下来的老话：二月二，烛照梁，桃打墙，人间蛇虫无处藏。 小镇的瓷器极负盛名，本朝开国以来，就担当起“奉诏监烧献陵祭器”的重任，有朝廷官员常年驻扎此地，监理官窑事务。 无依无靠的少年，很早就当起了烧瓷的窑匠，起先只能做些杂事粗活，跟着一个脾气糟糕的半路师傅，辛苦熬了几年，刚刚琢磨到一点烧瓷的门道，结果世事无常，小镇突然失去了官窑造办这张护身符，小镇周边数十座形若卧龙的窑炉，一夜之间全部被官府勒令关闭熄火。",
         "background": "",
-        "significance": "奠定陈平安在小镇开篇时的生存处境。",
+        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
         "related_action_indices": [],
         "source": "第一卷笼中雀 第一章 惊蛰 · 段1",
         "sentence_indexes_in_segment": [
@@ -82,11 +82,14 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 1
+        "segment_index": 1,
+        "evidence_excerpt": "暮色里，小镇名叫泥瓶巷的僻静地方，有位孤苦伶仃的清瘦少年，此时他正按照习俗，一手持蜡烛，一手持桃枝，照耀房梁、墙壁、木床等处，用桃枝敲敲打打，试图借此驱赶蛇蝎、",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:29.979253",
+    "extracted_at": "2026-03-29T11:49:32.775690",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -205,15 +208,17 @@
         ],
         "source": "第一卷笼中雀 第一章 惊蛰 · 段2",
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 1,
-        "segment_index": 2
+        "segment_index": 2,
+        "evidence_excerpt": "世世代代都只会烧瓷一事的小镇匠人，既不敢僭越烧制贡品官窑，也不敢将库藏瓷器私自贩卖给百姓，只得纷纷另谋出路，十四岁的陈平安也被扫地出门，回到泥瓶巷后，继续守着这栋早已破败不堪的老宅，差不多是家徒四壁的惨淡场景，便是陈平安想要当败家子，也无从",
+        "matched_keywords": [
+          "泥瓶巷",
+          "陈平安",
+          "惊蛰"
+        ],
+        "matched_rule_name": "惊蛰守夜"
       }
     ],
     "relations": [
@@ -238,7 +243,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-29T01:24:29.979535",
+    "extracted_at": "2026-03-29T11:49:32.776100",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -308,19 +313,21 @@
         "related_action_indices": [],
         "source": "第一卷笼中雀 第一章 惊蛰 · 段3",
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          3
         ],
         "juan_index": 1,
-        "segment_index": 3
+        "segment_index": 3,
+        "evidence_excerpt": "天地间原本万籁寂静，陈平安听到一声刺耳的讥讽笑声，停下脚步，果不其然，看到那个同龄人蹲在墙头上，咧着嘴，毫不掩饰他的鄙夷神色。",
+        "matched_keywords": [
+          "墙头",
+          "陈平安",
+          "讥讽"
+        ],
+        "matched_rule_name": "墙头对话"
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:29.979678",
+    "extracted_at": "2026-03-29T11:49:32.776346",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -432,19 +439,21 @@
         "related_action_indices": [],
         "source": "第一卷笼中雀 第一章 惊蛰 · 段4",
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          1
         ],
         "juan_index": 1,
-        "segment_index": 4
+        "segment_index": 4,
+        "evidence_excerpt": "泥瓶巷家家户户的黄土院墙都很低矮，其实邻居少年完全不用踮起脚跟，就可以看到这边院子的景象，可每次跟陈平安说话，偏偏喜欢蹲在墙头上。",
+        "matched_keywords": [
+          "泥瓶巷",
+          "陈平安",
+          "惊蛰"
+        ],
+        "matched_rule_name": "惊蛰守夜"
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:29.979818",
+    "extracted_at": "2026-03-29T11:49:32.776586",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -522,7 +531,10 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 5
+        "segment_index": 5,
+        "evidence_excerpt": "宋集薪愣了愣，循着声音转头望去，是个眉眼含笑的锦衣少年，站在院外，一张全然陌生的面孔。 老者的视线在陈平安一扫而过，并无停滞，但是在宋集薪和婢女身上，多有停留，",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -552,7 +564,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-29T01:24:29.979980",
+    "extracted_at": "2026-03-29T11:49:32.776839",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -612,11 +624,14 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 6
+        "segment_index": 6,
+        "evidence_excerpt": "宋集薪翻了个白眼，伸出一根手指，晃了晃，“白银一万两！ 那少年微笑道：“那你说个价。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:29.980083",
+    "extracted_at": "2026-03-29T11:49:32.777039",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -677,11 +692,14 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 7
+        "segment_index": 7,
+        "evidence_excerpt": "宋集薪见那少年不像是开玩笑的样子，连忙改口道：“是黄金万两！ 宋集薪脸色阴沉。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:29.980178",
+    "extracted_at": "2026-03-29T11:49:32.777222",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -760,7 +778,10 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 8
+        "segment_index": 8,
+        "evidence_excerpt": "锦衣少年不再理睬宋集薪，偏移视线，望向陈平安，“今天多亏了你，我才能买到那条鲤鱼，买回去后，我越看越欢喜，想着一定要当面跟你道一声谢，于是就让吴爷爷带我连夜来找",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -790,7 +811,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-29T01:24:29.980328",
+    "extracted_at": "2026-03-29T11:49:32.777468",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -861,15 +882,17 @@
         ],
         "source": "第一卷笼中雀 第一章 惊蛰 · 段9",
         "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
+          2
         ],
         "juan_index": 1,
-        "segment_index": 9
+        "segment_index": 9,
+        "evidence_excerpt": "死死盯住那对爷孙愈行愈远的背影，宋集薪收回恶狠狠的眼神后，跳下墙头，似乎记起什么，对陈平安说道：“你还记得正月里的那条四脚吗？",
+        "matched_keywords": [
+          "墙头",
+          "陈平安",
+          "宋集薪"
+        ],
+        "matched_rule_name": "墙头对话"
       }
     ],
     "relations": [
@@ -894,7 +917,7 @@
         "segment_index": 9
       }
     ],
-    "extracted_at": "2026-03-29T01:24:29.980461",
+    "extracted_at": "2026-03-29T11:49:32.777707",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1000,7 +1023,10 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 10
+        "segment_index": 10,
+        "evidence_excerpt": "按照这座小镇传承数百年的风俗，如果有蛇类往自家屋子钻，是好兆头，主人绝对不要将其驱逐打杀。 宋集薪在正月初一的时候，坐在门槛上晒太阳，然后就有只俗称四脚蛇的小玩",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1025,7 +1051,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-29T01:24:29.980633",
+    "extracted_at": "2026-03-29T11:49:32.777981",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1100,11 +1126,14 @@
           5
         ],
         "juan_index": 1,
-        "segment_index": 11
+        "segment_index": 11,
+        "evidence_excerpt": "陈平安叹了口气，“路上小心。 宋集薪半真半假道：“有些物件我肯定搬不走，你可别趁我家没人，就肆无忌惮地偷东西。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-29T01:24:29.980753",
+    "extracted_at": "2026-03-29T11:49:32.778257",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1180,7 +1209,10 @@
           4
         ],
         "juan_index": 1,
-        "segment_index": 12
+        "segment_index": 12,
+        "evidence_excerpt": "宋集薪蓦然哈哈大笑，用手指点了点陈平安，嬉皮笑脸道：“胆小如鼠，难怪寒门无贵子，莫说是这辈子贫贱任人欺，说不定下辈子也逃不掉。 陈平安默不作声。",
+        "matched_keywords": [],
+        "matched_rule_name": ""
       }
     ],
     "relations": [
@@ -1205,7 +1237,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-29T01:24:29.980874",
+    "extracted_at": "2026-03-29T11:49:32.778480",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

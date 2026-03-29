@@ -874,10 +874,22 @@ def build_event(
     )
 
     # Build provenance from the match result
-    evidence_excerpt = match_result.evidence_excerpt if match_result else ""
-    matched_keywords = match_result.matched_keywords if match_result else []
-    evidence_sentence_indexes = match_result.evidence_sentence_indexes if match_result else list(range(len(sentences)))
-    matched_rule_name = match_result.matched_rule_name if match_result else ""
+    if match_result:
+        evidence_excerpt = match_result.evidence_excerpt
+        matched_keywords = match_result.matched_keywords
+        evidence_sentence_indexes = match_result.evidence_sentence_indexes
+        matched_rule_name = match_result.matched_rule_name
+    else:
+        # Synthesise a lightweight evidence excerpt from the segment's
+        # most informative sentences so every event carries source-text
+        # provenance, not only rule-matched ones.
+        summary_sents = choose_summary_sentences(
+            sentences, sentence_characters, sentence_locations, limit=2
+        )
+        evidence_excerpt = " ".join(summary_sents)[:80].rstrip()
+        matched_keywords = []
+        evidence_sentence_indexes = list(range(len(sentences)))
+        matched_rule_name = ""
 
     return Event(
         name=name,

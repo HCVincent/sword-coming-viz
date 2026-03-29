@@ -1,6 +1,6 @@
 {
-  "version": "season-overview-audit-v2",
-  "generated_at": "2026-03-29T01:29:06.006487",
+  "version": "season-overview-audit-v3",
+  "generated_at": "2026-03-29T11:49:38.399878",
   "total_seasons": 3,
   "all_seasons_roles_evidence_backed": true,
   "all_seasons_beats_in_range": true,
@@ -9,6 +9,14 @@
   "cross_season_beat_overlap": [],
   "cross_season_anchor_overlap": [],
   "no_cross_season_overlap": true,
+  "adjacent_season_failures": [],
+  "no_adjacent_season_failures": true,
+  "card_granularity": {
+    "chapter_synopsis_too_long_count": 0,
+    "key_event_summary_too_long_count": 0,
+    "missing_evidence_excerpt_count": 0,
+    "high_frequency_event_name_hotspots": []
+  },
   "season_audits": [
     {
       "season_name": "第一季",
@@ -21,35 +29,35 @@
           "role_name": "陈平安",
           "in_season_top_roles": true,
           "unit_appearance_count": 75,
-          "event_count": 740,
+          "event_count": 748,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "宋集薪",
           "in_season_top_roles": true,
           "unit_appearance_count": 62,
-          "event_count": 274,
+          "event_count": 276,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "齐静春",
           "in_season_top_roles": true,
           "unit_appearance_count": 58,
-          "event_count": 245,
+          "event_count": 252,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "宁姚",
           "in_season_top_roles": true,
           "unit_appearance_count": 41,
-          "event_count": 207,
+          "event_count": 211,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "刘羡阳",
           "in_season_top_roles": true,
           "unit_appearance_count": 51,
-          "event_count": 214,
+          "event_count": 216,
           "evidence_status": "chapter_backed"
         },
         {
@@ -63,14 +71,14 @@
           "role_name": "阮邛",
           "in_season_top_roles": true,
           "unit_appearance_count": 43,
-          "event_count": 161,
+          "event_count": 163,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "阮秀",
           "in_season_top_roles": false,
           "unit_appearance_count": 19,
-          "event_count": 77,
+          "event_count": 80,
           "evidence_status": "chapter_backed"
         }
       ],
@@ -160,6 +168,19 @@
           "context": "anchor_event"
         },
         {
+          "event_id": "第一卷笼中雀 第五十八章 先生 · 齐静春与陈平安在泥瓶巷剧情推进@58",
+          "name": "第一卷笼中雀 第五十八章 先生 · 齐静春与陈平安在泥瓶巷剧情推进",
+          "unit_index": 58,
+          "season_name": "第一季",
+          "in_season_range": true,
+          "source_unit_titles": [
+            "第一卷笼中雀 第五十八章 先生"
+          ],
+          "has_description": true,
+          "has_significance": true,
+          "context": "anchor_event"
+        },
+        {
           "event_id": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在正阳山冲突@51",
           "name": "第一卷笼中雀 第五十一章 对峙 · 宁姚与陈平安在正阳山冲突",
           "unit_index": 51,
@@ -180,19 +201,6 @@
           "in_season_range": true,
           "source_unit_titles": [
             "第一卷笼中雀 第二十八章 财迷"
-          ],
-          "has_description": true,
-          "has_significance": true,
-          "context": "anchor_event"
-        },
-        {
-          "event_id": "第一卷笼中雀 第三十一章 敲山 · 宋集薪与陈平安在泥瓶巷迁移@31",
-          "name": "第一卷笼中雀 第三十一章 敲山 · 宋集薪与陈平安在泥瓶巷迁移",
-          "unit_index": 31,
-          "season_name": "第一季",
-          "in_season_range": true,
-          "source_unit_titles": [
-            "第一卷笼中雀 第三十一章 敲山"
           ],
           "has_description": true,
           "has_significance": true,
@@ -242,8 +250,15 @@
         "priority_roles_dropped": [],
         "priority_relationships_source": "season_focus+evidence_gated",
         "summary_source": "template_from_data",
-        "story_beats_source": "score_ranking+cross_season_dedup",
-        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty."
+        "story_beats_source": "score_ranking+top5_within_5pts+cross_season_dedup",
+        "story_beat_name_overlap_with_previous": [],
+        "anchor_name_overlap_with_previous": [],
+        "beat_first_occurrence_count": 3,
+        "anchor_first_occurrence_count": 4,
+        "frequency_penalty_applied": true,
+        "fallback_used": false,
+        "selected_from_season_focus": true,
+        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup, frequency penalty, and top-5-within-5pts candidate window with first-occurrence preference."
       }
     },
     {
@@ -257,56 +272,56 @@
           "role_name": "陈平安",
           "in_season_top_roles": true,
           "unit_appearance_count": 109,
-          "event_count": 944,
+          "event_count": 962,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "李宝瓶",
           "in_season_top_roles": true,
           "unit_appearance_count": 77,
-          "event_count": 213,
+          "event_count": 230,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "齐静春",
           "in_season_top_roles": true,
           "unit_appearance_count": 71,
-          "event_count": 167,
+          "event_count": 169,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "阿良",
           "in_season_top_roles": true,
           "unit_appearance_count": 62,
-          "event_count": 289,
+          "event_count": 283,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "崔瀺",
           "in_season_top_roles": true,
           "unit_appearance_count": 60,
-          "event_count": 362,
+          "event_count": 360,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "林守一",
           "in_season_top_roles": true,
           "unit_appearance_count": 65,
-          "event_count": 159,
+          "event_count": 183,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "李槐",
           "in_season_top_roles": true,
           "unit_appearance_count": 65,
-          "event_count": 201,
+          "event_count": 231,
           "evidence_status": "chapter_backed"
         },
         {
           "role_name": "谢谢",
           "in_season_top_roles": false,
           "unit_appearance_count": 29,
-          "event_count": 69,
+          "event_count": 75,
           "evidence_status": "chapter_backed"
         }
       ],
@@ -350,12 +365,12 @@
       "story_beats_audit": [
         {
           "beat_type": "opening",
-          "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与阮邛冲突",
-          "unit_index": 93,
+          "event_name": "第二卷山水郎 第八十六章 同道中人 · 崔瀺与齐静春在大骊对话",
+          "unit_index": 86,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第二卷山水郎 第九十三章 墙上有个字"
+            "第二卷山水郎 第八十六章 同道中人"
           ]
         },
         {
@@ -439,8 +454,8 @@
       "must_keep_scenes_audit": [
         {
           "label": "开场必保留戏",
-          "event_name": "第二卷山水郎 第九十三章 墙上有个字 · 陈平安与阮邛冲突",
-          "unit_index": 93,
+          "event_name": "第二卷山水郎 第八十六章 同道中人 · 崔瀺与齐静春在大骊对话",
+          "unit_index": 86,
           "in_season_range": true
         },
         {
@@ -479,8 +494,15 @@
         "priority_roles_dropped": [],
         "priority_relationships_source": "season_focus+evidence_gated",
         "summary_source": "template_from_data",
-        "story_beats_source": "score_ranking+cross_season_dedup",
-        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty."
+        "story_beats_source": "score_ranking+top5_within_5pts+cross_season_dedup",
+        "story_beat_name_overlap_with_previous": [],
+        "anchor_name_overlap_with_previous": [],
+        "beat_first_occurrence_count": 3,
+        "anchor_first_occurrence_count": 3,
+        "frequency_penalty_applied": true,
+        "fallback_used": false,
+        "selected_from_season_focus": true,
+        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup, frequency penalty, and top-5-within-5pts candidate window with first-occurrence preference."
       }
     },
     {
@@ -494,7 +516,7 @@
           "role_name": "陈平安",
           "in_season_top_roles": true,
           "unit_appearance_count": 121,
-          "event_count": 1439,
+          "event_count": 1422,
           "evidence_status": "chapter_backed"
         },
         {
@@ -607,12 +629,12 @@
         },
         {
           "beat_type": "payoff",
-          "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与刘羡阳对话",
-          "unit_index": 308,
+          "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与崔瀺指点",
+          "unit_index": 307,
           "in_season_range": true,
           "name_is_duplicate": false,
           "source_unit_titles": [
-            "第五卷道观道 第三百零七章 眼底脚下"
+            "第五卷道观道 第三百零六章 老僧不爱说佛法"
           ]
         }
       ],
@@ -688,8 +710,8 @@
         },
         {
           "label": "收束必保留戏",
-          "event_name": "第五卷道观道 第三百零七章 眼底脚下 · 陈平安与刘羡阳对话",
-          "unit_index": 308,
+          "event_name": "第五卷道观道 第三百零六章 老僧不爱说佛法 · 陈平安与崔瀺指点",
+          "unit_index": 307,
           "in_season_range": true
         }
       ],
@@ -715,8 +737,15 @@
         "priority_roles_dropped": [],
         "priority_relationships_source": "season_focus+evidence_gated",
         "summary_source": "template_from_data",
-        "story_beats_source": "score_ranking+cross_season_dedup",
-        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup and frequency penalty."
+        "story_beats_source": "score_ranking+top5_within_5pts+cross_season_dedup",
+        "story_beat_name_overlap_with_previous": [],
+        "anchor_name_overlap_with_previous": [],
+        "beat_first_occurrence_count": 3,
+        "anchor_first_occurrence_count": 4,
+        "frequency_penalty_applied": true,
+        "fallback_used": false,
+        "selected_from_season_focus": true,
+        "note": "summary/spotlight/adaptation_hooks are template-generated from ranked data, not manually verified against source text. priority_roles are evidence-gated: season_focus names without in-season chapter appearances are dropped. priority_relationships are evidence-gated: both participants must have chapter appearances in the season. story_beats and anchor_events apply cross-season name dedup, frequency penalty, and top-5-within-5pts candidate window with first-occurrence preference."
       }
     }
   ]
