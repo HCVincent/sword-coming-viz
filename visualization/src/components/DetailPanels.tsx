@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { type ReactNode, useState } from 'react';
 import type { ChapterIndex } from '../types/pipelineArtifacts';
 import type {
   RoleLinkUnified,
@@ -35,6 +35,80 @@ function formatUnitSpan(units: number[] | undefined, unitLabel: string): string 
   const start = sorted[0];
   const end = sorted[sorted.length - 1];
   return start === end ? `${unitLabel}${start}` : `${unitLabel}${start}-${end}`;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Shared paginated "related events" section                         */
+/* ------------------------------------------------------------------ */
+
+const EVENTS_PAGE_SIZE = 10;
+
+function RelatedEventsSection(props: {
+  events: TimelineEventUnified[];
+  chapterIndex: ChapterIndex | null;
+  onEventClick?: (event: TimelineEventUnified) => void;
+}) {
+  const { events, chapterIndex, onEventClick } = props;
+  const [page, setPage] = useState(0);
+
+  const total = events.length;
+  const totalPages = Math.max(1, Math.ceil(total / EVENTS_PAGE_SIZE));
+  const safePage = Math.min(page, totalPages - 1);
+  const start = safePage * EVENTS_PAGE_SIZE;
+  const pageEvents = events.slice(start, start + EVENTS_PAGE_SIZE);
+
+  return (
+    <section className="detail-section">
+      <h3 className="detail-heading">相关事件</h3>
+
+      {/* pagination controls */}
+      {total > EVENTS_PAGE_SIZE && (
+        <div className="flex items-center justify-between text-xs mb-2">
+          <span className="status-note">
+            第 {start + 1}–{Math.min(start + EVENTS_PAGE_SIZE, total)} 条 / 共 {total} 条
+          </span>
+          <div className="flex gap-1">
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage === 0} onClick={() => setPage(0)}>
+              首页
+            </button>
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage === 0} onClick={() => setPage(safePage - 1)}>
+              上一页
+            </button>
+            <button
+              type="button"
+              className="outline-button text-xs px-1.5 py-0.5"
+              disabled={safePage >= totalPages - 1}
+              onClick={() => setPage(safePage + 1)}
+            >
+              下一页
+            </button>
+            <button
+              type="button"
+              className="outline-button text-xs px-1.5 py-0.5"
+              disabled={safePage >= totalPages - 1}
+              onClick={() => setPage(totalPages - 1)}
+            >
+              末页
+            </button>
+          </div>
+        </div>
+      )}
+
+      <div className="info-list max-h-56 overflow-y-auto pr-1">
+        {pageEvents.map((event) => (
+          <button
+            key={event.id}
+            type="button"
+            className="detail-card text-left hover:border-[var(--accent-deep)]"
+            onClick={() => onEventClick?.(event)}
+          >
+            <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
+            <div className="status-note mt-2">{formatEventContextLabel(event, chapterIndex)}</div>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 function ModalShell(props: {
@@ -312,24 +386,7 @@ export function RoleDetail({
       )}
 
       {relatedEvents && relatedEvents.length > 0 && (
-        <section className="detail-section">
-          <h3 className="detail-heading">相关事件</h3>
-          <div className="info-list">
-            {relatedEvents.slice(0, 10).map((event) => (
-              <button
-                key={event.id}
-                type="button"
-                className="detail-card text-left hover:border-[var(--accent-deep)]"
-                onClick={() => {
-                  onEventClick?.(event);
-                }}
-              >
-                <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
-                <div className="status-note mt-2">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
-              </button>
-            ))}
-          </div>
-        </section>
+        <RelatedEventsSection events={relatedEvents} chapterIndex={chapterIndex} onEventClick={onEventClick} />
       )}
 
       {renderJumpSection(
@@ -472,22 +529,7 @@ export function LocationDetail({
       )}
 
       {relatedEvents.length > 0 && (
-        <section className="detail-section">
-          <h3 className="detail-heading">相关事件</h3>
-          <div className="info-list max-h-56 overflow-y-auto pr-1">
-            {relatedEvents.map((event) => (
-              <button
-                key={event.id}
-                type="button"
-                className="detail-card text-left hover:border-[var(--accent-deep)]"
-                onClick={() => onEventClick?.(event)}
-              >
-                <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
-                <div className="status-note mt-2">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
-              </button>
-            ))}
-          </div>
-        </section>
+        <RelatedEventsSection events={relatedEvents} chapterIndex={chapterIndex} onEventClick={onEventClick} />
       )}
 
       {renderJumpSection('原文定位', sourceChapterTargets, sourceChapterTargets.length > 0 ? `可跳到该地点在原文中出现的相关${unitLabel}。` : null)}
@@ -656,24 +698,7 @@ export function RelationDetail({
       </section>
 
       {relatedEvents && relatedEvents.length > 0 && (
-        <section className="detail-section">
-          <h3 className="detail-heading">相关事件</h3>
-          <div className="info-list max-h-56 overflow-y-auto pr-1">
-            {relatedEvents.slice(0, 8).map((event) => (
-              <button
-                key={event.id}
-                type="button"
-                className="detail-card text-left hover:border-[var(--accent-deep)]"
-                onClick={() => {
-                  onEventClick?.(event);
-                }}
-              >
-                <div className="font-semibold text-[var(--text-primary)]">{event.name}</div>
-                <div className="status-note mt-2">{event.progressLabel ?? `进度 ${event.progressStart ?? '未知'}`}</div>
-              </button>
-            ))}
-          </div>
-        </section>
+        <RelatedEventsSection events={relatedEvents} chapterIndex={chapterIndex} onEventClick={onEventClick} />
       )}
 
       {allUnits.length > 0 && (
