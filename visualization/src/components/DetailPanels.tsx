@@ -1,4 +1,4 @@
-import { type ReactNode, useState } from 'react';
+import { type ReactNode, useMemo, useState } from 'react';
 import type { ChapterIndex } from '../types/pipelineArtifacts';
 import type {
   RoleLinkUnified,
@@ -50,24 +50,50 @@ function RelatedEventsSection(props: {
 }) {
   const { events, chapterIndex, onEventClick } = props;
   const [page, setPage] = useState(0);
+  const [ascending, setAscending] = useState(true);
+  const [jumpInput, setJumpInput] = useState('');
 
-  const total = events.length;
+  const sortedEvents = useMemo(
+    () => (ascending ? events : [...events].reverse()),
+    [events, ascending],
+  );
+
+  const total = sortedEvents.length;
   const totalPages = Math.max(1, Math.ceil(total / EVENTS_PAGE_SIZE));
   const safePage = Math.min(page, totalPages - 1);
   const start = safePage * EVENTS_PAGE_SIZE;
-  const pageEvents = events.slice(start, start + EVENTS_PAGE_SIZE);
+  const pageEvents = sortedEvents.slice(start, start + EVENTS_PAGE_SIZE);
+
+  function handleJump() {
+    const n = Number.parseInt(jumpInput, 10);
+    if (Number.isFinite(n) && n >= 1 && n <= totalPages) {
+      setPage(n - 1);
+    }
+    setJumpInput('');
+  }
 
   return (
     <section className="detail-section">
-      <h3 className="detail-heading">相关事件</h3>
+      <div className="flex items-center justify-between mb-1">
+        <h3 className="detail-heading mb-0">相关事件</h3>
+        {total > 1 && (
+          <button
+            type="button"
+            className="outline-button text-xs px-1.5 py-0.5"
+            onClick={() => { setAscending((v) => !v); setPage(0); }}
+          >
+            {ascending ? '正序 ↑' : '倒序 ↓'}
+          </button>
+        )}
+      </div>
 
       {/* pagination controls */}
       {total > EVENTS_PAGE_SIZE && (
-        <div className="flex items-center justify-between text-xs mb-2">
+        <div className="flex items-center justify-between text-xs mb-2 flex-wrap gap-y-1">
           <span className="status-note">
             第 {start + 1}–{Math.min(start + EVENTS_PAGE_SIZE, total)} 条 / 共 {total} 条
           </span>
-          <div className="flex gap-1">
+          <div className="flex items-center gap-1">
             <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage === 0} onClick={() => setPage(0)}>
               首页
             </button>
@@ -89,6 +115,20 @@ function RelatedEventsSection(props: {
               onClick={() => setPage(totalPages - 1)}
             >
               末页
+            </button>
+            <span className="text-[var(--text-muted)] mx-0.5">|</span>
+            <input
+              type="text"
+              inputMode="numeric"
+              className="w-10 text-center text-xs rounded border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-primary)] px-1 py-0.5"
+              placeholder={`${safePage + 1}`}
+              value={jumpInput}
+              onChange={(e) => setJumpInput(e.target.value)}
+              onKeyDown={(e) => { if (e.key === 'Enter') handleJump(); }}
+            />
+            <span className="text-[var(--text-muted)]">/ {totalPages}</span>
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" onClick={handleJump}>
+              跳转
             </button>
           </div>
         </div>
