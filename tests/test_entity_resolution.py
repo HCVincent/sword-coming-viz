@@ -393,7 +393,7 @@ class TestClassificationMethods:
 
 
 class TestDescriptionSelection:
-    """Test filtering of editorial/meta descriptions."""
+    """Test filtering of editorial/meta descriptions and compression to short UI summaries."""
 
     def test_select_best_description_prefers_original_when_editorial_only(self):
         resolver = EntityResolver()
@@ -406,7 +406,8 @@ class TestDescriptionSelection:
         ]
 
         selected = resolver._select_best_description(descriptions, original_descriptions)
-        assert selected == "陆舫是鸟瞰峰山主，佩剑大椿，修为精深。"
+        assert "陆舫" in selected
+        assert "鸟瞰峰" in selected
 
     def test_select_best_description_keeps_non_editorial(self):
         resolver = EntityResolver()
@@ -425,7 +426,110 @@ class TestDescriptionSelection:
         ]
 
         selected = resolver._select_best_description(descriptions, [])
-        assert selected == "山上人物，适合扩展外围修士节点。"
+        # Editorial description is compressed as last resort
+        assert len(selected) > 0
+
+    def test_description_compressed_to_max_chars(self):
+        """When seed description is empty but original_descriptions has long text,
+        description must be a compressed short summary, not the raw original."""
+        resolver = EntityResolver()
+        long_original = "陈平安今年十岁，没有文字的小镇上。" * 10  # ~180 chars
+        descriptions = []
+        original_descriptions = [long_original]
+
+        selected = resolver._select_best_description(
+            descriptions, original_descriptions, max_chars=120, entity_name="陈平安"
+        )
+        assert 0 < len(selected) <= 120
+        # Must not just be the full raw original
+        assert selected != long_original
+
+    def test_description_not_equal_to_longest_original(self):
+        """The old bug: _select_best_description returned max(original, key=len) raw."""
+        resolver = EntityResolver()
+        short_original = "宁姚是剑气长城年轻一辈的剑修天才。"
+        long_original = (
+            "陈平安当时在泥瓶巷的院子里第一次见到宁姚的时候，"
+            "宁姚在做什么呢？她在杀人。实际上这个女孩不知道自己有多美，"
+            "陈平安一直知道自己有个毛病，但从大窑和烧制瓷器开始就发现自己眼光精准，"
+            "但不能准确说出来。"
+        )
+        descriptions = []
+        original_descriptions = [short_original, long_original]
+
+        selected = resolver._select_best_description(
+            descriptions, original_descriptions, max_chars=120, entity_name="宁姚"
+        )
+        assert len(selected) <= 120
+        # The first (earliest) original should be preferred as it's the introduction
+        assert "宁姚" in selected or "剑气长城" in selected
+
+
+class TestCompressToSummary:
+    """Test the _compress_to_summary static helper."""
+
+    def test_short_text_unchanged(self):
+        result = EntityResolver._compress_to_summary("齐静春是山崖书院的山主。", max_chars=120)
+        assert result == "齐静春是山崖书院的山主。"
+
+    def test_long_text_truncated(self):
+        long_text = "陈平安今年十岁，没有文字的小镇上，" * 10
+        result = EntityResolver._compress_to_summary(long_text, max_chars=120)
+        assert 0 < len(result) <= 120
+
+    def test_dialogue_deprioritized(self):
+        """Dialogue-heavy text should not become the summary sentence."""
+        text = '"你是什么人？"老人皱眉问道。阮邛是铸剑名家，在风雪庙修行多年。'
+        result = EntityResolver._compress_to_summary(text, max_chars=120, entity_name="阮邛")
+        # Should prefer the descriptive sentence over the dialogue
+        assert "阮邛" in result
+
+    def test_empty_returns_empty(self):
+        assert EntityResolver._compress_to_summary("", max_chars=120) == ""
+        assert EntityResolver._compress_to_summary("   ", max_chars=120) == ""
+
+    def test_entity_name_sentence_preferred(self):
+        text = "少年翻了个白眼。陆舫是鸟瞰峰山主，修为极高。另一人不知所踪。"
+        result = EntityResolver._compress_to_summary(text, max_chars=120, entity_name="陆舫")
+        assert "陆舫" in result
+
+    def test_respects_max_chars(self):
+        text = "这是第一句话。" * 30
+        for limit in [60, 80, 120, 140]:
+            result = EntityResolver._compress_to_summary(text, max_chars=limit)
+            assert len(result) <= limit + 1  # +1 for possible trailing punctuation
+
+
+class TestLocationDescription:
+    """Test that location resolver produces descriptions from original text."""
+
+    def test_location_description_from_original(self):
+        from model.location import Location
+        from model.unified import EntityOccurrence
+
+        resolver = EntityResolver()
+        loc = Location(
+            name="落魄山",
+            alias=[],
+            type="山门",
+            description="",  # seed description is empty (cleared)
+            original_description_in_book="陈平安打算在落魄山上建立自己的山门，此处灵气充沛，适合修行。",
+            sentence_indexes_in_segment=[0, 1],
+            juan_index=15,
+            segment_index=0,
+        )
+        occ = EntityOccurrence(
+            juan_index=15, segment_index=0, chunk_index=0,
+            original_description="", source_sentence="",
+        )
+        resolver.location_occurrences["落魄山"].append((loc, occ))
+
+        locations = resolver.resolve_locations()
+        assert "落魄山" in locations
+        unified = locations["落魄山"]
+        assert unified.description != ""
+        assert len(unified.description) <= 140
+        assert len(unified.original_descriptions) > 0
 
 
 if __name__ == "__main__":

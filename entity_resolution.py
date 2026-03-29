@@ -679,26 +679,146 @@ class EntityResolver:
             return False
         return any(pattern in normalized for pattern in self.EDITORIAL_DESCRIPTION_PATTERNS)
 
-    def _select_best_description(self, descriptions: List[str], original_descriptions: Optional[List[str]] = None) -> str:
-        """Select the most informative end-user-facing description.
+    # ------------------------------------------------------------------
+    # Original-text → short UI summary compression
+    # ------------------------------------------------------------------
 
-        Prefer non-editorial descriptions; if all candidates look editorial,
-        fall back to in-book original descriptions when available.
+    # Sentence-ending punctuation used for splitting Chinese prose.
+    _SENTENCE_DELIMITERS_RE = re.compile(r'(?<=[。！？；])\s*')
+
+    # Patterns that indicate a sentence is mostly dialogue or sound-effect
+    # and should be deprioritised for a descriptive summary.
+    _DIALOGUE_RE = re.compile(r'^["「『]|[""」』]$|^\S{0,4}道[：:]')
+    _ACTION_ONLY_RE = re.compile(
+        r'^[\u4e00-\u9fff]{1,4}(了|着|地|得)[，。]'  # very short action opener
+    )
+
+    @classmethod
+    def _split_sentences(cls, text: str) -> List[str]:
+        """Split Chinese prose into individual sentences."""
+        parts = cls._SENTENCE_DELIMITERS_RE.split(text.strip())
+        return [s.strip() for s in parts if s.strip()]
+
+    @classmethod
+    def _is_descriptive_sentence(cls, sentence: str, entity_name: str = '') -> bool:
+        """Return True if *sentence* reads as descriptive rather than pure dialogue/action."""
+        if cls._DIALOGUE_RE.search(sentence):
+            return False
+        if cls._ACTION_ONLY_RE.match(sentence):
+            return False
+        # Prefer sentences that mention the entity itself or identity keywords.
+        if entity_name and entity_name in sentence:
+            return True
+        # Identity / role-describing keywords
+        if re.search(r'是|为|乃|号称|被称|身份|出身|师承|弟子|掌教|城主|山主|门主|宗主|国师', sentence):
+            return True
+        return True  # default: accept
+
+    @classmethod
+    def _compress_to_summary(
+        cls,
+        text: str,
+        max_chars: int = 120,
+        entity_name: str = '',
+    ) -> str:
+        """Compress a (possibly long) original text excerpt into a short UI summary.
+
+        Strategy:
+        1. Split into sentences.
+        2. Prefer descriptive, non-dialogue sentences that mention the entity or identity info.
+        3. Accumulate sentences up to *max_chars*, breaking at sentence boundaries.
+        4. If even the first qualifying sentence exceeds the limit, truncate at the
+           last full-stop / semicolon within the limit.
+        """
+        if not text or not text.strip():
+            return ''
+
+        sentences = cls._split_sentences(text)
+        if not sentences:
+            return ''
+
+        # Rank: descriptive sentences that mention entity first, then other descriptive, then rest.
+        def _score(s: str) -> int:
+            score = 0
+            if cls._DIALOGUE_RE.search(s):
+                score -= 10
+            if entity_name and entity_name in s:
+                score += 5
+            if re.search(r'是|为|乃|号称|被称|身份|出身|师承|弟子|掌教|城主|山主|门主|宗主|国师', s):
+                score += 3
+            return score
+
+        ranked = sorted(enumerate(sentences), key=lambda t: (-_score(t[1]), t[0]))
+
+        # Pick the single best sentence as seed, then try to append neighbours.
+        best_idx, best_sent = ranked[0]
+        if len(best_sent) <= max_chars:
+            # Try to append immediately following sentences (in original order)
+            result = best_sent
+            for s in sentences[best_idx + 1:]:
+                candidate = result + s
+                if len(candidate) > max_chars:
+                    break
+                result = candidate
+            return result
+
+        # Best sentence itself exceeds limit — truncate gracefully.
+        truncated = best_sent[:max_chars]
+        # Try to end at the last clause boundary.
+        for sep in ('。', '；', '，', '、'):
+            pos = truncated.rfind(sep)
+            if pos > max_chars // 3:
+                return truncated[:pos + 1]
+        return truncated + '…'
+
+    def _select_best_description(
+        self,
+        descriptions: List[str],
+        original_descriptions: Optional[List[str]] = None,
+        *,
+        max_chars: int = 120,
+        entity_name: str = '',
+    ) -> str:
+        """Select and compress the most informative end-user-facing description.
+
+        1. If there are non-editorial seed descriptions that are already short
+           enough, prefer them as-is (legacy path for any future curated summaries).
+        2. Otherwise compress the best original (in-book) text into a short summary.
+        3. As last resort, compress any available candidate.
         """
         cleaned = [d.strip() for d in descriptions if d and d.strip()]
         cleaned_original = [d.strip() for d in (original_descriptions or []) if d and d.strip()]
 
-        if not cleaned:
-            return max(cleaned_original, key=len) if cleaned_original else ''
-
+        # 1. Non-editorial seed descriptions that are already short.
         non_editorial = [d for d in cleaned if not self._looks_editorial_description(d)]
-        if non_editorial:
-            return max(non_editorial, key=len)
+        short_non_editorial = [d for d in non_editorial if len(d) <= max_chars]
+        if short_non_editorial:
+            return max(short_non_editorial, key=len)
 
+        # 2. Compress from original in-book text (pick the earliest, which is
+        #    usually the character/location introduction).
         if cleaned_original:
-            return max(cleaned_original, key=len)
+            # Try the first (earliest) original; if bad, try the longest.
+            for candidate in [cleaned_original[0], max(cleaned_original, key=len)]:
+                summary = self._compress_to_summary(candidate, max_chars=max_chars, entity_name=entity_name)
+                if summary:
+                    return summary
 
-        return max(cleaned, key=len)
+        # 3. Compress from any remaining non-editorial description (may be long).
+        if non_editorial:
+            summary = self._compress_to_summary(
+                max(non_editorial, key=len), max_chars=max_chars, entity_name=entity_name,
+            )
+            if summary:
+                return summary
+
+        # 4. Last resort: editorial description (compressed).
+        if cleaned:
+            return self._compress_to_summary(
+                max(cleaned, key=len), max_chars=max_chars, entity_name=entity_name,
+            )
+
+        return ''
     
     # Generic / category-level labels that should not be used as a role's
     # primary power when a more specific alternative exists.
@@ -772,7 +892,10 @@ class EntityResolver:
                 id=canonical_name,
                 canonical_name=canonical_name,
                 all_names=all_names,
-                description=self._select_best_description(all_descriptions, unique_original),
+                description=self._select_best_description(
+                    all_descriptions, unique_original,
+                    max_chars=120, entity_name=canonical_name,
+                ),
                 original_descriptions=unique_original[:10],  # Keep top 10
                 powers=list(dict.fromkeys(all_powers)),  # Unique, preserve order
                 primary_power=self._select_primary_power(all_powers),
@@ -803,6 +926,7 @@ class EntityResolver:
             all_names: Set[str] = set()
             all_types: List[str] = []
             all_descriptions: List[str] = []
+            all_original_descriptions: List[str] = []
             all_modern_names: List[str] = []
             coordinates = None
             associated_entities: Set[str] = set()
@@ -817,6 +941,8 @@ class EntityResolver:
                         all_types.append(location.type)
                     if location.description:
                         all_descriptions.append(location.description)
+                    if hasattr(location, 'original_description_in_book') and location.original_description_in_book:
+                        all_original_descriptions.append(location.original_description_in_book)
                     if location.modern_name:
                         all_modern_names.append(location.modern_name)
                     if location.coordinates and not coordinates:
@@ -826,6 +952,9 @@ class EntityResolver:
                     for alias in location.alias:
                         all_names.add(alias)
             
+            # Remove duplicates from original descriptions
+            unique_original = list(dict.fromkeys(all_original_descriptions))
+
             # Select most common type
             type_counts = defaultdict(int)
             for t in all_types:
@@ -837,7 +966,11 @@ class EntityResolver:
                 canonical_name=canonical_name,
                 all_names=all_names,
                 location_type=location_type,
-                description=self._select_best_description(all_descriptions),
+                description=self._select_best_description(
+                    all_descriptions, unique_original,
+                    max_chars=140, entity_name=canonical_name,
+                ),
+                original_descriptions=unique_original[:10],
                 modern_name=all_modern_names[0] if all_modern_names else "",
                 coordinates=coordinates,
                 associated_entities=associated_entities,

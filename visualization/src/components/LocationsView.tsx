@@ -27,6 +27,7 @@ export function LocationsView({ locations, onLocationClick }: LocationsViewProps
       if (loc.modern_name?.toLowerCase().includes(query)) return true;
       if (loc.all_names?.some((name) => name.toLowerCase().includes(query))) return true;
       if (loc.description?.toLowerCase().includes(query)) return true;
+      if (loc.original_descriptions?.some((d) => d.toLowerCase().includes(query))) return true;
       return false;
     });
   }, [locations, searchQuery]);

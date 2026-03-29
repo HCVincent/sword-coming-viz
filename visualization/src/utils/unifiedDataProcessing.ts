@@ -354,6 +354,7 @@ export function searchUnifiedKnowledgeBase(
     }
 
     if (location.description.includes(query)) score += 10;
+    if (location.original_descriptions?.some((d) => d.includes(query))) score += 8;
     if (location.modern_name.includes(query)) score += 20;
 
     if (score > 0) {

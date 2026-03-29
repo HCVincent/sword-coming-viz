@@ -975,12 +975,14 @@ def build_segment_chunk(
         config = location_config[name]
         indexes = [index for index, names in enumerate(sentence_locations) if name in names]
         associated = unique_names(character for index in indexes for character in sentence_characters[index])
+        loc_description = " ".join(sentences[index] for index in indexes[:2])
         locations.append(
             Location(
                 name=name,
                 alias=[alias for alias in config.get("aliases", []) if alias != name],
                 type=str(config.get("type", "")),
                 description=str(config.get("description", "")),
+                original_description_in_book=loc_description,
                 modern_name=str(config.get("modern_name", "")),
                 coordinates=None,
                 related_entities=associated,

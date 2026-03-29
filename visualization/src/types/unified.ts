@@ -36,6 +36,7 @@ export interface UnifiedLocation {
   all_names: string[];
   location_type: string;
   description: string;
+  original_descriptions?: string[];
   modern_name: string;
   coordinates: [number, number] | null;
   associated_entities: string[];

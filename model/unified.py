@@ -181,6 +181,10 @@ class UnifiedLocation(BaseModel):
     
     location_type: str = Field(default="", description="国家、城市、地区、山川等")
     description: str = ""
+    original_descriptions: List[str] = Field(
+        default_factory=list,
+        description="All unique original descriptions from the book"
+    )
     modern_name: str = ""
     coordinates: Optional[tuple[float, float]] = None
     

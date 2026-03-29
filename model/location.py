@@ -28,6 +28,11 @@ class Location(BaseModel):
         default="",
         description="地点的描述，包括地理位置、历史意义等"
     )
+
+    original_description_in_book: str = Field(
+        default="",
+        description="从原文中提取的描述句，用于追溯"
+    )
     
     modern_name: str = Field(
         default="",
@@ -49,7 +54,7 @@ class Location(BaseModel):
         description="地点在文本段落中出现的句子索引列表"
     )
 
-    @field_validator('type', 'description', 'modern_name', mode='before')
+    @field_validator('type', 'description', 'original_description_in_book', 'modern_name', mode='before')
     @classmethod
     def empty_string_if_none(cls, v):
         if v is None:
