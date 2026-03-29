@@ -276,7 +276,6 @@ export function calculateUnifiedPowerDistribution(
 
   for (const role of Object.values(kb.roles)) {
     const displayPower = resolveDisplayPower(role);
-    if (!displayPower) continue;
     const units = getRoleUnits(role);
     if (!inUnitRange(units, unitRange)) continue;
 
@@ -290,10 +289,11 @@ export function calculateUnifiedPowerDistribution(
       if (!relatedEvent) continue;
     }
 
-    const entry = distribution.get(displayPower) ?? { count: 0, roles: [] };
+    const bucket = displayPower ?? '其他';
+    const entry = distribution.get(bucket) ?? { count: 0, roles: [] };
     entry.count += 1;
     entry.roles.push(role.id);
-    distribution.set(displayPower, entry);
+    distribution.set(bucket, entry);
   }
 
   return Array.from(distribution.entries())

@@ -5,6 +5,7 @@ export { FilterControls } from './FilterControls';
 export {
   EventDetail,
   RoleDetail,
+  RoleListModal,
   LocationList,
   LocationDetail,
   RelationDetail,

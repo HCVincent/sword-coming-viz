@@ -862,3 +862,105 @@ export function NetworkRoleRelationsDetail({
     </ModalShell>
   );
 }
+
+/* ------------------------------------------------------------------ */
+/*  Role list modal – used by stat rows & faction bar clicks          */
+/* ------------------------------------------------------------------ */
+
+const ROLE_LIST_PAGE_SIZE = 20;
+
+interface RoleListModalProps {
+  title: string;
+  subtitle?: string | null;
+  roles: RoleNodeUnified[];
+  onClose: () => void;
+  onRoleClick: (roleName: string) => void;
+}
+
+export function RoleListModal({ title, subtitle, roles, onClose, onRoleClick }: RoleListModalProps) {
+  const [search, setSearch] = useState('');
+  const [page, setPage] = useState(0);
+
+  const filtered = useMemo(() => {
+    if (!search.trim()) return roles;
+    const q = search.trim().toLowerCase();
+    return roles.filter(
+      (role) =>
+        role.name.toLowerCase().includes(q) ||
+        role.aliases.some((alias) => alias.toLowerCase().includes(q)) ||
+        (role.power ?? '').toLowerCase().includes(q)
+    );
+  }, [roles, search]);
+
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / ROLE_LIST_PAGE_SIZE));
+  const safePage = Math.min(page, totalPages - 1);
+  const start = safePage * ROLE_LIST_PAGE_SIZE;
+  const pageRoles = filtered.slice(start, start + ROLE_LIST_PAGE_SIZE);
+
+  return (
+    <ModalShell title={title} subtitle={subtitle} onClose={onClose} wide>
+      {/* search + counter */}
+      <div className="flex items-center gap-3 mb-4 flex-wrap">
+        <input
+          type="text"
+          className="flex-1 min-w-[10rem] rounded border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-primary)] text-sm px-3 py-1.5"
+          placeholder="搜索人物名 / 别名 / 阵营…"
+          value={search}
+          onChange={(e) => { setSearch(e.target.value); setPage(0); }}
+        />
+        <span className="status-note whitespace-nowrap">
+          共 {total} 人{search.trim() ? ` (全部 ${roles.length})` : ''}
+        </span>
+      </div>
+
+      {/* pagination */}
+      {total > ROLE_LIST_PAGE_SIZE && (
+        <div className="flex items-center justify-between text-xs mb-3 flex-wrap gap-y-1">
+          <span className="status-note">
+            第 {start + 1}–{Math.min(start + ROLE_LIST_PAGE_SIZE, total)} / 共 {total} 人
+          </span>
+          <div className="flex gap-1">
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage === 0} onClick={() => setPage(0)}>
+              首页
+            </button>
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage === 0} onClick={() => setPage(safePage - 1)}>
+              上一页
+            </button>
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage >= totalPages - 1} onClick={() => setPage(safePage + 1)}>
+              下一页
+            </button>
+            <button type="button" className="outline-button text-xs px-1.5 py-0.5" disabled={safePage >= totalPages - 1} onClick={() => setPage(totalPages - 1)}>
+              末页
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* role grid */}
+      <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 max-h-[60vh] overflow-y-auto pr-1">
+        {pageRoles.map((role) => (
+          <button
+            key={role.id}
+            type="button"
+            className="detail-card text-left hover:border-[var(--accent-deep)]"
+            onClick={() => onRoleClick(role.name)}
+          >
+            <div className="flex items-start justify-between gap-2">
+              <span className="font-semibold text-[var(--accent-deep)]">{role.name}</span>
+              {role.power && <span className="pill-chip pill-chip--strong text-[10px] shrink-0">{role.power}</span>}
+            </div>
+            {role.aliases.length > 0 && (
+              <p className="status-note mt-1 truncate" title={role.aliases.join('、')}>
+                别名：{role.aliases.join('、')}
+              </p>
+            )}
+            <p className="status-note mt-1">出现 {role.appearances} 次</p>
+          </button>
+        ))}
+      </div>
+
+      {total === 0 && <div className="empty-state">没有匹配的人物。</div>}
+    </ModalShell>
+  );
+}

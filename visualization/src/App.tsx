@@ -15,6 +15,7 @@ import {
   PowerChart,
   RelationDetail,
   RoleDetail,
+  RoleListModal,
   Timeline,
   WriterArcsView,
 } from './components';
@@ -48,12 +49,19 @@ interface RoleRelationGroup {
   earliestProgress: number | null;
 }
 
+interface RoleListConfig {
+  title: string;
+  subtitle?: string;
+  roleIds: string[];
+}
+
 type ModalHistoryEntry =
   | { kind: 'eventDetail'; tab: TabType; focusRoleId: string | null; event: TimelineEventUnified }
   | { kind: 'roleDetail'; tab: TabType; focusRoleId: string | null; role: RoleNodeUnified }
   | { kind: 'networkRoleRelations'; tab: TabType; focusRoleId: string | null; role: RoleNodeUnified }
   | { kind: 'locationDetail'; tab: TabType; focusRoleId: string | null; location: UnifiedLocation }
-  | { kind: 'relationDetail'; tab: TabType; focusRoleId: string | null; relationPair: SelectedRelationPair };
+  | { kind: 'relationDetail'; tab: TabType; focusRoleId: string | null; relationPair: SelectedRelationPair }
+  | { kind: 'roleList'; tab: TabType; focusRoleId: string | null; config: RoleListConfig };
 
 function toTimelineEvent(event: UnifiedEvent): TimelineEventUnified {
   const units = event.source_units && event.source_units.length > 0 ? event.source_units : event.source_juans;
@@ -140,6 +148,7 @@ function App() {
   const [selectedRole, setSelectedRole] = useState<RoleNodeUnified | null>(null);
   const [selectedLocation, setSelectedLocation] = useState<UnifiedLocation | null>(null);
   const [selectedRelationPair, setSelectedRelationPair] = useState<SelectedRelationPair | null>(null);
+  const [roleListConfig, setRoleListConfig] = useState<RoleListConfig | null>(null);
   const [focusNodeId, setFocusNodeId] = useState<string | null>(null);
   const [modalHistory, setModalHistory] = useState<ModalHistoryEntry[]>([]);
 
@@ -193,9 +202,13 @@ function App() {
     setSelectedRole(null);
     setSelectedLocation(null);
     setSelectedRelationPair(null);
+    setRoleListConfig(null);
   }, []);
 
   const currentModalEntry = useMemo<ModalHistoryEntry | null>(() => {
+    if (roleListConfig) {
+      return { kind: 'roleList', tab: activeTab, focusRoleId: focusNodeId, config: roleListConfig };
+    }
     if (selectedRelationPair) {
       return { kind: 'relationDetail', tab: activeTab, focusRoleId: focusNodeId, relationPair: selectedRelationPair };
     }
@@ -211,7 +224,7 @@ function App() {
       return { kind: 'eventDetail', tab: activeTab, focusRoleId: focusNodeId, event: selectedEvent };
     }
     return null;
-  }, [activeTab, focusNodeId, selectedEvent, selectedLocation, selectedRelationPair, selectedRole]);
+  }, [activeTab, focusNodeId, roleListConfig, selectedEvent, selectedLocation, selectedRelationPair, selectedRole]);
 
   const selectionFromModalEntry = useCallback((entry: ModalHistoryEntry | null) => {
     if (!entry) return undefined;
@@ -229,6 +242,8 @@ function App() {
           sourceId: entry.relationPair.sourceId,
           targetId: entry.relationPair.targetId,
         };
+      case 'roleList':
+        return undefined;
     }
   }, []);
 
@@ -251,6 +266,9 @@ function App() {
           return;
         case 'relationDetail':
           setSelectedRelationPair(entry.relationPair);
+          return;
+        case 'roleList':
+          setRoleListConfig(entry.config);
           return;
       }
     },
@@ -557,6 +575,16 @@ function App() {
     [activeTab, clearModalSelections, currentModalEntry, focusNodeId, kb, progressRange, resolveTimelineEventById, searchParams, setSearchParams, unitRange]
   );
 
+  const openRoleList = useCallback(
+    (config: RoleListConfig) => {
+      if (currentModalEntry) setModalHistory((prev) => [...prev, currentModalEntry]);
+      else setModalHistory([]);
+      clearModalSelections();
+      setRoleListConfig(config);
+    },
+    [clearModalSelections, currentModalEntry]
+  );
+
   const handleFocusNode = useCallback(
     (entityName: string, options?: { pushCurrent?: boolean }) => {
       const roleId = resolveRoleId(kb, entityName);
@@ -695,6 +723,12 @@ function App() {
     }
     return selectedRole.relatedEntities;
   }, [selectedRole, selectedRoleRelationGroups]);
+
+  const roleListRoles = useMemo<RoleNodeUnified[]>(() => {
+    if (!roleListConfig || !kb) return [];
+    const idSet = new Set(roleListConfig.roleIds);
+    return roles.filter((role) => idSet.has(role.id));
+  }, [kb, roleListConfig, roles]);
 
   const unitLabel = bookConfig?.unit_label ?? kb?.unit_label ?? '章节';
   const progressLabel = bookConfig?.progress_label ?? kb?.progress_label ?? '叙事进度';
@@ -1115,15 +1149,15 @@ function App() {
                     <h2 className="section-title">当前数据密度</h2>
                     <p className="section-subtitle">左侧保持原有范围筛选逻辑，只把信息组织成更适合连续决策的控制台。</p>
                     <div className="stats-list mt-6">
-                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('network')}>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => openRoleList({ title: '全部人物', roleIds: roles.map((r) => r.id) })}>
                         <span>人物总数</span>
                         <strong>{totalRoleCount}</strong>
                       </button>
-                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('network')}>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => openRoleList({ title: '关系网人物', subtitle: '至少有一条关系边的人物', roleIds: networkNodes.map((r) => r.id) })}>
                         <span>关系网人物</span>
                         <strong>{linkedRoleCount}</strong>
                       </button>
-                      <button type="button" className="stats-row stats-row--clickable" onClick={() => switchTab('network')}>
+                      <button type="button" className="stats-row stats-row--clickable" onClick={() => openRoleList({ title: '孤立人物', subtitle: '当前范围内没有关系边的人物', roleIds: isolatedNodes.map((r) => r.id) })}>
                         <span>孤立人物</span>
                         <strong>{isolatedRoleCount}</strong>
                       </button>
@@ -1404,7 +1438,13 @@ function App() {
                       />
                     )}
 
-                    {activeTab === 'power' && <PowerChart bookConfig={bookConfig} data={powerDistribution} />}
+                    {activeTab === 'power' && (
+                      <PowerChart
+                        bookConfig={bookConfig}
+                        data={powerDistribution}
+                        onPowerClick={(power) => openRoleList({ title: `${power.power} 阵营人物`, subtitle: `共 ${power.count} 人`, roleIds: power.roles })}
+                      />
+                    )}
 
                     {activeTab === 'locations' && (
                       <LocationsView
@@ -1641,6 +1681,16 @@ function App() {
           chapterIndex={chapterIndex}
           kb={kb}
           availableRoleIds={availableRoleIds}
+        />
+      )}
+
+      {roleListConfig && (
+        <RoleListModal
+          title={roleListConfig.title}
+          subtitle={roleListConfig.subtitle}
+          roles={roleListRoles}
+          onClose={closeActiveModal}
+          onRoleClick={(roleName) => openRoleDetail(roleName, activeTab, { pushCurrent: true })}
         />
       )}
     </div>
