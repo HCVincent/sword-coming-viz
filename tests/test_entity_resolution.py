@@ -9,6 +9,7 @@ Tests cover:
 """
 
 import pytest
+from model.location import Location
 from model.role import Role
 from model.polity import Polity
 from model.school import School
@@ -463,6 +464,30 @@ class TestDescriptionSelection:
         assert len(selected) <= 120
         # The first (earliest) original should be preferred as it's the introduction
         assert "宁姚" in selected or "剑气长城" in selected
+
+    def test_location_original_descriptions_not_empty_when_seed_description_empty(self):
+        resolver = EntityResolver()
+        resolver.add_location(
+            Location(
+                name="泥瓶巷",
+                alias=[],
+                type="街巷",
+                description="",
+                original_description_in_book="泥瓶巷是小镇最偏僻的老巷弄之一，陈平安久居于此。",
+                related_entities=["陈平安"],
+                sentence_indexes_in_segment=[0],
+                juan_index=1,
+                segment_index=1,
+            ),
+            juan_index=1,
+            segment_index=1,
+            chunk_index=0,
+        )
+
+        locations = resolver.resolve_locations()
+        assert "泥瓶巷" in locations
+        assert locations["泥瓶巷"].original_descriptions
+        assert "泥瓶巷" in locations["泥瓶巷"].original_descriptions[0]
 
 
 class TestCompressToSummary:

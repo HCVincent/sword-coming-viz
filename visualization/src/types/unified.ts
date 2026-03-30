@@ -15,6 +15,7 @@ export interface UnifiedRole {
   canonical_name: string;
   all_names: string[];
   description: string;
+  display_summary?: string;
   original_descriptions: string[];
   powers: string[];
   primary_power: string | null;
@@ -36,6 +37,7 @@ export interface UnifiedLocation {
   all_names: string[];
   location_type: string;
   description: string;
+  display_summary?: string;
   original_descriptions?: string[];
   modern_name: string;
   coordinates: [number, number] | null;
@@ -182,6 +184,8 @@ export interface RoleNodeUnified {
   name: string;
   power: string | null;
   description: string;
+  displaySummary?: string;
+  originalDescriptions?: string[];
   appearances: number;
   units: number[];
   aliases: string[];

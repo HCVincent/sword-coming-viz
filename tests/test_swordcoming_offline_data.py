@@ -1,15 +1,219 @@
 import json
+from pathlib import Path
+
+import pytest
 
 from entity_resolution import EntityResolver
 from model.action import Action
 from model.event import Event
+from model.location import Location
 from model.role import Role
 from scripts import build_swordcoming_offline_data
+from scripts.build_entity_summary_inputs import build_entity_summary_inputs
 from scripts.build_chapter_synopses import build_chapter_synopses
 from scripts.build_key_events_index import build_key_events_index
 from scripts.build_season_overview_audit import build_audit
 from scripts.build_swordcoming_writer_insights import build_writer_insights_payload
 from scripts.validate_unified_knowledge import validate_unified_knowledge
+
+
+def _write_minimal_summary_artifact_from_inputs(inputs_path: Path, output_path: Path) -> None:
+    payload = json.loads(inputs_path.read_text(encoding="utf-8"))
+    summaries = []
+    for role in payload.get("roles", []):
+        summaries.append(
+            {
+                "entity_type": "role",
+                "entity_id": role["entity_id"],
+                "display_summary": f"{role['canonical_name']}是前三季叙事中的核心人物概述。",
+                "summary_keywords": role.get("all_names", [])[:3],
+                "evidence_excerpt_ids": role.get("evidence_excerpt_ids", [])[:3],
+                "generated_from_input_hash": role["input_hash"],
+                "generator": "local-agent",
+                "generated_at": "2026-03-30T00:00:00",
+            }
+        )
+    for location in payload.get("locations", []):
+        summaries.append(
+            {
+                "entity_type": "location",
+                "entity_id": location["entity_id"],
+                "display_summary": f"{location['canonical_name']}是前三季叙事中的关键地点概述。",
+                "summary_keywords": location.get("all_names", [])[:3],
+                "evidence_excerpt_ids": location.get("evidence_excerpt_ids", [])[:3],
+                "generated_from_input_hash": location["input_hash"],
+                "generator": "local-agent",
+                "generated_at": "2026-03-30T00:00:00",
+            }
+        )
+    output_path.write_text(
+        json.dumps(
+            {
+                "version": "entity-display-summaries-v1",
+                "generated_at": "2026-03-30T00:00:00",
+                "generator": "local-agent",
+                "summaries": summaries,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+
+def test_build_entity_summary_inputs_samples_early_middle_late():
+    resolver = EntityResolver()
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="", original_description_in_book="陈平安在泥瓶巷第一次守夜，仍是孤苦少年。", power="泥瓶巷", sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1,
+        segment_index=1,
+        chunk_index=0,
+        source_sentence="陈平安在泥瓶巷第一次守夜，仍是孤苦少年。",
+    )
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="", original_description_in_book="陈平安与宁姚同行，开始接触更大的山上世界。", power="泥瓶巷", sentence_indexes_in_segment=[0], juan_index=30, segment_index=1),
+        juan_index=30,
+        segment_index=1,
+        chunk_index=0,
+        source_sentence="陈平安与宁姚同行，开始接触更大的山上世界。",
+    )
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="", original_description_in_book="陈平安在落魄山立住脚跟，也开始承担更多关系与因果。", power="落魄山", sentence_indexes_in_segment=[0], juan_index=60, segment_index=1),
+        juan_index=60,
+        segment_index=1,
+        chunk_index=0,
+        source_sentence="陈平安在落魄山立住脚跟，也开始承担更多关系与因果。",
+    )
+    kb = resolver.build_knowledge_base()
+
+    payload = build_entity_summary_inputs(kb=kb)
+    role_pack = payload["roles"][0]
+    phases = {item["phase"] for item in role_pack["representative_original_excerpts"]}
+    assert phases == {"early", "middle", "late"}
+
+
+def test_build_offline_data_generates_entity_summary_inputs_and_applies_display_summaries(tmp_path):
+    book_path = tmp_path / "book.json"
+    core_cast_path = tmp_path / "core_cast.json"
+    store_dir = tmp_path / "store"
+    kb_output = tmp_path / "unified_knowledge.json"
+    writer_output = tmp_path / "writer_insights.json"
+    unit_progress_path = tmp_path / "unit_progress_index.json"
+    book_config_path = tmp_path / "book_config.json"
+    manual_overrides_path = tmp_path / "manual_overrides.json"
+    summary_artifact_path = tmp_path / "entity_display_summaries.json"
+
+    book_path.write_text(
+        json.dumps(
+            [
+                {
+                    "juan_index": 1,
+                    "unit_title": "第一卷笼中雀 第一章 惊蛰",
+                    "segments": [
+                        {
+                            "segment_index": 1,
+                            "segment_start_time": "第一卷笼中雀 第一章 惊蛰",
+                            "sentences": [
+                                "陈平安在泥瓶巷守夜。",
+                                "宋集薪在墙头讥讽陈平安。",
+                            ],
+                        }
+                    ],
+                }
+            ],
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    core_cast_path.write_text(
+        json.dumps(
+            {
+                "characters": [
+                    {"name": "陈平安", "aliases": [], "power": "泥瓶巷", "description": ""},
+                    {"name": "宋集薪", "aliases": [], "power": "大骊", "description": ""},
+                ],
+                "locations": [
+                    {"name": "泥瓶巷", "aliases": [], "type": "街巷", "description": ""}
+                ],
+                "relation_keywords": [{"action": "讥讽", "keywords": ["讥讽"]}],
+                "event_rules": [],
+                "event_type_rules": [{"type": "对话", "keywords": ["讥讽"]}],
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    unit_progress_path.write_text(
+        json.dumps(
+            {
+                "book_id": "swordcoming",
+                "unit_label": "章节",
+                "progress_label": "叙事进度",
+                "segments": {"1-1": {"progress_index": 1, "progress_label": "第一季 · 段1"}},
+                "units": {"1": {"unit_index": 1, "unit_title": "第一卷笼中雀 第一章 惊蛰", "season_name": "第一季", "progress_start": 1, "progress_end": 1}},
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    book_config_path.write_text(
+        json.dumps({"book_id": "swordcoming", "unit_label": "章节", "progress_label": "叙事进度", "title": "剑来"}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    manual_overrides_path.write_text(
+        json.dumps({"version": "v1", "blocked_aliases": [], "role_aliases": {}, "role_primary_powers": {"陈平安": "泥瓶巷"}}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(FileNotFoundError):
+        build_swordcoming_offline_data.build_offline_data(
+            book_path=book_path,
+            core_cast_path=core_cast_path,
+            store_dir=store_dir,
+            kb_output=kb_output,
+            writer_output=writer_output,
+            unit_progress_index_path=unit_progress_path,
+            book_config_path=book_config_path,
+            manual_overrides_path=manual_overrides_path,
+            sync_output=False,
+        )
+
+    build_swordcoming_offline_data.build_offline_data(
+        book_path=book_path,
+        core_cast_path=core_cast_path,
+        store_dir=store_dir,
+        kb_output=kb_output,
+        writer_output=writer_output,
+        unit_progress_index_path=unit_progress_path,
+        book_config_path=book_config_path,
+        manual_overrides_path=manual_overrides_path,
+        sync_output=False,
+        skip_summary_check=True,
+    )
+    inputs_path = tmp_path / "entity_summary_inputs.json"
+    assert inputs_path.exists()
+
+    _write_minimal_summary_artifact_from_inputs(inputs_path, summary_artifact_path)
+    stats = build_swordcoming_offline_data.build_offline_data(
+        book_path=book_path,
+        core_cast_path=core_cast_path,
+        store_dir=store_dir,
+        kb_output=kb_output,
+        writer_output=writer_output,
+        unit_progress_index_path=unit_progress_path,
+        book_config_path=book_config_path,
+        manual_overrides_path=manual_overrides_path,
+        sync_output=False,
+    )
+    payload = json.loads(kb_output.read_text(encoding="utf-8"))
+    assert payload["roles"]["陈平安"]["display_summary"]
+    assert payload["roles"]["陈平安"]["description"] == payload["roles"]["陈平安"]["display_summary"]
+    assert payload["locations"]["泥瓶巷"]["display_summary"]
+    assert stats["entity_summary_role_coverage"] == len(payload["roles"])
+    assert stats["entity_summary_location_coverage"] == len(payload["locations"])
 
 
 def test_build_segment_chunk_extracts_core_entities_locations_and_relations():
@@ -378,6 +582,7 @@ def test_build_offline_data_generates_utf8_knowledge_base(tmp_path):
         manual_overrides_path=manual_overrides_path,
         synopses_output=synopses_output,
         key_events_output=key_events_output,
+        skip_summary_check=True,
     )
 
     payload = json.loads(kb_output.read_text(encoding="utf-8"))
@@ -568,6 +773,7 @@ def test_build_offline_data_includes_curated_extra_seed_characters(tmp_path):
         book_config_path=book_config_path,
         manual_overrides_path=manual_overrides_path,
         sync_output=False,
+        skip_summary_check=True,
     )
 
     payload = json.loads(kb_output.read_text(encoding="utf-8"))

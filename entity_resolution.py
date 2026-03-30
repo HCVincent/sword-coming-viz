@@ -9,6 +9,7 @@ This module provides the core logic for:
 
 import json
 import re
+import warnings
 from collections import defaultdict
 from typing import Dict, List, Set, Optional, Tuple
 from pathlib import Path
@@ -1493,6 +1494,13 @@ def _apply_role_overrides(entity: dict, overrides: dict) -> dict:
     primary_powers = overrides.get("role_primary_powers", {})
     type_overrides = overrides.get("entity_type_overrides", {})
     description_overrides = overrides.get("role_descriptions", {})
+
+    if isinstance(description_overrides, dict) and description_overrides:
+        warnings.warn(
+            "manual_overrides.role_descriptions is deprecated and must not be used as the final summary mechanism",
+            DeprecationWarning,
+            stacklevel=2,
+        )
 
     if isinstance(role_aliases, dict) and name in role_aliases:
         existing = list(entity.get("alias", []))

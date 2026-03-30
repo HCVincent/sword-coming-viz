@@ -43,6 +43,20 @@ class UnifiedRole(BaseModel):
         default="",
         description="Best description, selected from the most detailed occurrence"
     )
+
+    # AI-generated display summary (post-resolve, tri-season overview)
+    display_summary: str = Field(
+        default="",
+        description="AI-generated 1-2 sentence display summary based on unified facts"
+    )
+    summary_source: str = Field(
+        default="",
+        description="Summary generator source, e.g. local-agent"
+    )
+    summary_version: str = Field(
+        default="",
+        description="Summary schema/version marker"
+    )
     
     # All original descriptions for reference
     original_descriptions: List[str] = Field(
@@ -181,6 +195,18 @@ class UnifiedLocation(BaseModel):
     
     location_type: str = Field(default="", description="国家、城市、地区、山川等")
     description: str = ""
+    display_summary: str = Field(
+        default="",
+        description="AI-generated 1-2 sentence display summary based on unified facts"
+    )
+    summary_source: str = Field(
+        default="",
+        description="Summary generator source, e.g. local-agent"
+    )
+    summary_version: str = Field(
+        default="",
+        description="Summary schema/version marker"
+    )
     original_descriptions: List[str] = Field(
         default_factory=list,
         description="All unique original descriptions from the book"

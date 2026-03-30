@@ -26,8 +26,9 @@ export function LocationsView({ locations, onLocationClick }: LocationsViewProps
       if (loc.canonical_name.toLowerCase().includes(query)) return true;
       if (loc.modern_name?.toLowerCase().includes(query)) return true;
       if (loc.all_names?.some((name) => name.toLowerCase().includes(query))) return true;
-      if (loc.description?.toLowerCase().includes(query)) return true;
+      if (loc.display_summary?.toLowerCase().includes(query)) return true;
       if (loc.original_descriptions?.some((d) => d.toLowerCase().includes(query))) return true;
+      if (loc.description?.toLowerCase().includes(query)) return true;
       return false;
     });
   }, [locations, searchQuery]);
@@ -73,7 +74,7 @@ export function LocationsView({ locations, onLocationClick }: LocationsViewProps
               </div>
             </div>
 
-            {loc.description && <p className="detail-text mt-3">{loc.description}</p>}
+            {(loc.display_summary || loc.description) && <p className="detail-text mt-3">{loc.display_summary || loc.description}</p>}
 
             <div className="dashboard-meta-row mt-4">
               <span className="dashboard-pill">关联人物 {loc.associated_entities?.length ?? 0}</span>

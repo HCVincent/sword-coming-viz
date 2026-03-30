@@ -6,6 +6,7 @@ from pathlib import Path
 DEFAULT_FILES = [
     "book_config.json",
     "chapter_index.json",
+    "entity_summary_inputs.json",
     "chapter_synopses.json",
     "key_events_index.json",
     "unit_progress_index.json",

@@ -12,7 +12,7 @@ interface PowerChartProps {
 export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const chartTitle = `${bookConfig?.title ?? '文本'}阵营分布`;
+  const chartTitle = `${bookConfig?.title ?? '文本'}所属势力分布`;
 
   useEffect(() => {
     if (!svgRef.current || !containerRef.current || data.length === 0) return;
@@ -111,13 +111,13 @@ export function PowerChart({ bookConfig, data, onPowerClick }: PowerChartProps) 
     <div ref={containerRef} className="view-shell">
       <div className="view-header">
         <div>
-          <h3 className="view-title">阵营分布</h3>
-          <p className="view-copy">用当前范围内的角色提及次数和阵营归属，快速看出这一段文本由哪些势力主导。</p>
+          <h3 className="view-title">所属势力分布</h3>
+          <p className="view-copy">用当前范围内的角色提及次数和所属势力归属，快速看出这一段文本由哪些势力主导。</p>
         </div>
-        <div className="float-stat">前 {Math.min(data.length, 10)} 个阵营</div>
+        <div className="float-stat">前 {Math.min(data.length, 10)} 个所属势力</div>
       </div>
       {data.length === 0 ? (
-        <div className="empty-state">当前范围暂时没有阵营分布数据。</div>
+        <div className="empty-state">当前范围暂时没有所属势力分布数据。</div>
       ) : (
         <svg ref={svgRef} className="w-full" />
       )}

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -24,6 +25,7 @@ from model.event import Event
 from model.location import Location
 from model.role import Role
 from scripts.character_quality import audit_role_name, is_pseudo_role_name
+from scripts.build_entity_summary_inputs import build_entity_summary_inputs
 from scripts.build_chapter_synopses import build_chapter_synopses_file
 from scripts.build_key_events_index import build_key_events_index_file
 from scripts.build_season_overview_audit import build_audit
@@ -34,6 +36,7 @@ from scripts.validate_unified_knowledge import validate_unified_knowledge
 DEFAULT_SYNC_FILES = [
     "book_config.json",
     "chapter_index.json",
+    "entity_summary_inputs.json",
     "chapter_synopses.json",
     "key_events_index.json",
     "unit_progress_index.json",
@@ -1163,6 +1166,77 @@ def sync_public_files(source_dir: Path, target_dir: Path, files: Sequence[str]) 
             print(f"Copied {source} -> {target_dir / name}")
 
 
+def _load_summary_artifact(path: Path) -> dict:
+    if not path.exists():
+        raise FileNotFoundError(f"Summary artifact missing: {path}")
+    return load_json(path)
+
+
+def _index_summary_inputs(payload: dict) -> Dict[Tuple[str, str], dict]:
+    indexed: Dict[Tuple[str, str], dict] = {}
+    for entity_type in ("roles", "locations"):
+        singular = entity_type[:-1]
+        for item in payload.get(entity_type, []):
+            indexed[(singular, str(item.get("entity_id", "")))] = item
+    return indexed
+
+
+def _index_summary_outputs(payload: dict) -> Dict[Tuple[str, str], dict]:
+    entries = payload.get("summaries", payload if isinstance(payload, list) else [])
+    indexed: Dict[Tuple[str, str], dict] = {}
+    for item in entries:
+        indexed[(str(item.get("entity_type", "")), str(item.get("entity_id", "")))] = item
+    return indexed
+
+
+def _apply_display_summaries_to_kb(
+    *,
+    kb: Any,
+    summary_inputs: dict,
+    summary_outputs: dict,
+    skip_summary_check: bool,
+) -> Dict[str, int]:
+    input_index = _index_summary_inputs(summary_inputs)
+    output_index = _index_summary_outputs(summary_outputs)
+    coverage = {"roles": 0, "locations": 0}
+    missing: List[str] = []
+    stale: List[str] = []
+
+    for entity_type, registry in (("role", kb.roles), ("location", kb.locations)):
+        plural = f"{entity_type}s"
+        for entity_id, entity in registry.items():
+            summary_input = input_index.get((entity_type, entity_id))
+            if not summary_input:
+                missing.append(f"missing input:{entity_type}:{entity_id}")
+                continue
+            summary_output = output_index.get((entity_type, entity_id))
+            if not summary_output:
+                missing.append(f"missing summary:{entity_type}:{entity_id}")
+                continue
+            expected_hash = str(summary_input.get("input_hash", ""))
+            actual_hash = str(summary_output.get("generated_from_input_hash", ""))
+            if expected_hash != actual_hash:
+                stale.append(f"stale summary:{entity_type}:{entity_id}")
+                continue
+
+            display_summary = str(summary_output.get("display_summary", "")).strip()
+            if display_summary:
+                entity.display_summary = display_summary
+                entity.summary_source = str(summary_output.get("generator", "local-agent"))
+                entity.summary_version = str(summary_outputs.get("version", "entity-display-summaries-v1"))
+                entity.description = display_summary
+                coverage[plural] += 1
+
+    if not skip_summary_check and (missing or stale):
+        problems = [*missing[:10], *stale[:10]]
+        raise ValueError(
+            "Entity display summaries are missing or stale. Regenerate data/entity_display_summaries.json via local agent. "
+            f"Examples: {problems}"
+        )
+
+    return coverage
+
+
 def build_offline_data(
     book_path: Path,
     core_cast_path: Path,
@@ -1177,6 +1251,7 @@ def build_offline_data(
     max_units: Optional[int] = None,
     synopses_output: Optional[Path] = None,
     key_events_output: Optional[Path] = None,
+    skip_summary_check: bool = False,
 ) -> dict:
     book = load_json(book_path)
     core_cast = load_json(core_cast_path)
@@ -1257,6 +1332,30 @@ def build_offline_data(
             print(f"  - {role_id}: {'；'.join(reasons)}")
         if len(pruned_roles) > 20:
             print(f"  ... and {len(pruned_roles) - 20} more")
+
+    summary_inputs_output = kb_output.parent / "entity_summary_inputs.json"
+    summary_inputs_payload = build_entity_summary_inputs(kb=kb)
+    summary_inputs_output.write_text(
+        json.dumps(summary_inputs_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Entity summary inputs -> {summary_inputs_output}")
+
+    summary_artifact_path = kb_output.parent / "entity_display_summaries.json"
+    summary_coverage = {"roles": 0, "locations": 0}
+    if summary_artifact_path.exists():
+        summary_outputs_payload = _load_summary_artifact(summary_artifact_path)
+        summary_coverage = _apply_display_summaries_to_kb(
+            kb=kb,
+            summary_inputs=summary_inputs_payload,
+            summary_outputs=summary_outputs_payload,
+            skip_summary_check=skip_summary_check,
+        )
+    elif not skip_summary_check:
+        raise FileNotFoundError(
+            f"Summary artifact missing: {summary_artifact_path}. Generate it from entity_summary_inputs.json via local agent."
+        )
+
     save_unified_knowledge_base(kb, str(kb_output))
 
     suspicious = validate_unified_knowledge(kb_output)
@@ -1324,6 +1423,10 @@ def build_offline_data(
         "mined_roles": len(mined_characters),
         "augmented_role_seeds": len(augmented_characters),
         "pruned_suspicious_roles": len(pruned_roles),
+        "entity_summary_role_inputs": len(summary_inputs_payload.get("roles", [])),
+        "entity_summary_location_inputs": len(summary_inputs_payload.get("locations", [])),
+        "entity_summary_role_coverage": summary_coverage["roles"],
+        "entity_summary_location_coverage": summary_coverage["locations"],
         "writer_character_arcs": writer_payload["summary"]["character_arc_count"],
         "writer_season_overviews": writer_payload["summary"]["season_overview_count"],
         "writer_curated_relationships": writer_payload["summary"]["curated_relationship_count"],
@@ -1348,10 +1451,12 @@ def main() -> int:
     parser.add_argument("--unit-progress-index", default="data/unit_progress_index.json", help="Unit progress index path.")
     parser.add_argument("--book-config", default="data/book_config.json", help="Book config path.")
     parser.add_argument("--manual-overrides", default="data/swordcoming_manual_overrides.json", help="Manual overrides path.")
+    parser.add_argument("--sync", action="store_true", help="Explicitly enable syncing output files into visualization/public/data.")
     parser.add_argument("--no-sync", action="store_true", help="Skip syncing output files into visualization/public/data.")
     parser.add_argument("--public-data-dir", default="visualization/public/data", help="Vite public/data directory.")
     parser.add_argument("--synopses-output", default="data/chapter_synopses.json", help="Chapter synopses output path.")
     parser.add_argument("--key-events-output", default="data/key_events_index.json", help="Key events index output path.")
+    parser.add_argument("--skip-summary-check", action="store_true", help="Skip entity_display_summaries freshness validation.")
     parser.add_argument("--max-units", type=int, default=None, help="Optional limit for quick iteration.")
     args = parser.parse_args()
 
@@ -1364,11 +1469,12 @@ def main() -> int:
         unit_progress_index_path=Path(args.unit_progress_index),
         book_config_path=Path(args.book_config),
         manual_overrides_path=Path(args.manual_overrides),
-        sync_output=not args.no_sync,
+        sync_output=args.sync or not args.no_sync,
         public_data_dir=Path(args.public_data_dir),
         max_units=args.max_units,
         synopses_output=Path(args.synopses_output),
         key_events_output=Path(args.key_events_output),
+        skip_summary_check=args.skip_summary_check,
     )
 
     print("Built Sword Coming offline data:")

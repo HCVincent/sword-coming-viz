@@ -392,7 +392,7 @@ export function RoleDetail({
 
       {role.power && (
         <section className="detail-section">
-          <h3 className="detail-heading">阵营</h3>
+          <h3 className="detail-heading">所属势力</h3>
           <div className="chip-wrap">
             <span className="pill-chip pill-chip--strong">{role.power}</span>
           </div>
@@ -401,7 +401,7 @@ export function RoleDetail({
 
       <section className="detail-section">
         <h3 className="detail-heading">简介</h3>
-        <p className="detail-text">{role.description || '暂无描述。'}</p>
+        <p className="detail-text">{role.displaySummary || role.description || '暂无描述。'}</p>
       </section>
 
       {visibleRelatedRoleNames.length > 0 && (
@@ -485,7 +485,7 @@ export function LocationList({ locations, onLocationClick }: LocationListProps) 
               {location.location_type ? <span className="pill-chip pill-chip--strong">{location.location_type}</span> : null}
             </div>
             {location.modern_name ? <p className="status-note mt-2">现代地名：{location.modern_name}</p> : null}
-            {location.description ? <p className="detail-text mt-2">{location.description}</p> : null}
+              {location.display_summary || location.description ? <p className="detail-text mt-2">{location.display_summary || location.description}</p> : null}
           </button>
         ))}
       </div>
@@ -543,10 +543,10 @@ export function LocationDetail({
         </section>
       )}
 
-      {location.description && (
+      {(location.display_summary || location.description) && (
         <section className="detail-section">
           <h3 className="detail-heading">描述</h3>
-          <p className="detail-text">{location.description}</p>
+          <p className="detail-text">{location.display_summary || location.description}</p>
         </section>
       )}
 
@@ -888,6 +888,8 @@ export function RoleListModal({ title, subtitle, roles, onClose, onRoleClick }: 
       (role) =>
         role.name.toLowerCase().includes(q) ||
         role.aliases.some((alias) => alias.toLowerCase().includes(q)) ||
+        (role.displaySummary ?? '').toLowerCase().includes(q) ||
+        (role.originalDescriptions ?? []).some((item) => item.toLowerCase().includes(q)) ||
         (role.power ?? '').toLowerCase().includes(q)
     );
   }, [roles, search]);
@@ -905,7 +907,7 @@ export function RoleListModal({ title, subtitle, roles, onClose, onRoleClick }: 
         <input
           type="text"
           className="flex-1 min-w-[10rem] rounded border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-primary)] text-sm px-3 py-1.5"
-          placeholder="搜索人物名 / 别名 / 阵营…"
+          placeholder="搜索人物名 / 别名 / 所属势力 / 简介 / 原文摘录…"
           value={search}
           onChange={(e) => { setSearch(e.target.value); setPage(0); }}
         />

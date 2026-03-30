@@ -96,6 +96,8 @@ function toRoleNode(role: UnifiedKnowledgeBase['roles'][string]): RoleNodeUnifie
     name: role.canonical_name,
     power: resolveDisplayPowerFromRole(role),
     description: role.description,
+    displaySummary: role.display_summary,
+    originalDescriptions: role.original_descriptions,
     appearances: role.total_mentions,
     units: role.units_appeared && role.units_appeared.length > 0 ? role.units_appeared : role.juans_appeared,
     aliases: Array.from(role.all_names || []).filter((name) => name !== role.canonical_name),
@@ -866,7 +868,7 @@ function App() {
   const tabs: { id: TabType; label: string; icon: string }[] = [
     { id: 'timeline', label: '时间轴', icon: '📜' },
     { id: 'network', label: '关系网络', icon: '🕸️' },
-    { id: 'power', label: '阵营分布', icon: '📊' },
+    { id: 'power', label: '所属势力分布', icon: '📊' },
     { id: 'locations', label: '地点', icon: '📍' },
     { id: 'writerArcs', label: '角色弧光', icon: '🎭' },
     { id: 'conflicts', label: '冲突链', icon: '⚔️' },
@@ -1449,7 +1451,7 @@ function App() {
                       <PowerChart
                         bookConfig={bookConfig}
                         data={powerDistribution}
-                        onPowerClick={(power) => openRoleList({ title: `${power.power} 阵营人物`, subtitle: `共 ${power.count} 人`, roleIds: power.roles })}
+                        onPowerClick={(power) => openRoleList({ title: `${power.power} 所属势力人物`, subtitle: `共 ${power.count} 人`, roleIds: power.roles })}
                       />
                     )}
 
