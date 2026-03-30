@@ -37,6 +37,18 @@ function formatUnitSpan(units: number[] | undefined, unitLabel: string): string 
   return start === end ? `${unitLabel}${start}` : `${unitLabel}${start}-${end}`;
 }
 
+function getRoleIntroText(role: RoleNodeUnified): { identity: string; long: string } {
+  const identity = (role.identitySummary || role.displaySummary || '').trim();
+  const long = (role.longDescription || role.displaySummary || role.description || '暂无描述。').trim();
+  return { identity, long };
+}
+
+function getLocationIntroText(location: UnifiedLocation): { identity: string; long: string } {
+  const identity = (location.identity_summary || location.display_summary || '').trim();
+  const long = (location.long_description || location.display_summary || location.description || '暂无描述。').trim();
+  return { identity, long };
+}
+
 /* ------------------------------------------------------------------ */
 /*  Shared paginated "related events" section                         */
 /* ------------------------------------------------------------------ */
@@ -372,6 +384,7 @@ export function RoleDetail({
 
   const unitLabel = kb?.unit_label ?? '章节';
   const sourceChapterTargets = getJumpTargetsByUnits(chapterIndex, role.units, 10);
+  const intro = getRoleIntroText(role);
   const visibleRelatedRoleNames =
     relatedRoleNames && relatedRoleNames.length > 0 ? relatedRoleNames : role.relatedEntities;
 
@@ -401,7 +414,8 @@ export function RoleDetail({
 
       <section className="detail-section">
         <h3 className="detail-heading">简介</h3>
-        <p className="detail-text">{role.displaySummary || role.description || '暂无描述。'}</p>
+        {intro.identity ? <p className="detail-text">{intro.identity}</p> : null}
+        <p className="detail-text mt-2 whitespace-pre-line">{intro.long}</p>
       </section>
 
       {visibleRelatedRoleNames.length > 0 && (
@@ -524,6 +538,7 @@ export function LocationDetail({
 
   const unitLabel = kb?.unit_label ?? '章节';
   const units = location.units_appeared ?? location.juans_appeared ?? [];
+  const intro = getLocationIntroText(location);
   const sourceChapterTargets = getJumpTargetsByUnits(chapterIndex, units, 8);
 
   return (
@@ -543,10 +558,11 @@ export function LocationDetail({
         </section>
       )}
 
-      {(location.display_summary || location.description) && (
+      {(intro.identity || intro.long) && (
         <section className="detail-section">
           <h3 className="detail-heading">描述</h3>
-          <p className="detail-text">{location.display_summary || location.description}</p>
+          {intro.identity ? <p className="detail-text">{intro.identity}</p> : null}
+          <p className="detail-text mt-2 whitespace-pre-line">{intro.long}</p>
         </section>
       )}
 

@@ -97,6 +97,9 @@ function toRoleNode(role: UnifiedKnowledgeBase['roles'][string]): RoleNodeUnifie
     power: resolveDisplayPowerFromRole(role),
     description: role.description,
     displaySummary: role.display_summary,
+    identitySummary: role.identity_summary,
+    longDescription: role.long_description,
+    profileVersion: role.profile_version,
     originalDescriptions: role.original_descriptions,
     appearances: role.total_mentions,
     units: role.units_appeared && role.units_appeared.length > 0 ? role.units_appeared : role.juans_appeared,
@@ -1038,7 +1041,13 @@ function App() {
             {spotlightArc && (
               <div className="hero-side-panel">
                 <span className="hero-side-kicker">主角主线</span>
-                <strong className="hero-side-value">{spotlightArc.role_name}</strong>
+                <button
+                  type="button"
+                  className="hero-side-value text-left hover:underline"
+                  onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}
+                >
+                  {spotlightArc.role_name}
+                </button>
                 <p className="hero-side-copy">{spotlightArc.summary}</p>
                 {spotlightHasCurrentContent ? (
                   <div className="hero-meta mt-4">
@@ -1269,7 +1278,13 @@ function App() {
                     {spotlightArc ? (
                       <>
                         <div className="dashboard-stat-display">
-                          <strong>{spotlightArc.role_name}</strong>
+                          <button
+                            type="button"
+                            className="text-left font-bold hover:underline"
+                            onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}
+                          >
+                            {spotlightArc.role_name}
+                          </button>
                           <span>当前重点人物</span>
                         </div>
                         <p className="dashboard-copy">{spotlightArc.summary}</p>
@@ -1613,7 +1628,7 @@ function App() {
         event={selectedEvent}
         onClose={closeActiveModal}
         onBack={modalBackHandler}
-        onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
+        onEntityClick={(entityName) => openRoleDetail(entityName, activeTab, { pushCurrent: true })}
         onLocationClick={(locationName) => openLocationDetail(locationName, activeTab, { pushCurrent: true })}
         chapterIndex={chapterIndex}
         kb={kb}
@@ -1639,7 +1654,7 @@ function App() {
           role={selectedRole}
           onClose={closeActiveModal}
           onBack={modalBackHandler}
-          onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
+          onEntityClick={(entityName) => openRoleDetail(entityName, activeTab, { pushCurrent: true })}
           onEventClick={(event) => openEventDetail(event.id, activeTab, { pushCurrent: true })}
           chapterIndex={chapterIndex}
           relatedRoleNames={selectedRoleRelatedNames}
@@ -1663,7 +1678,7 @@ function App() {
           relatedActions={[]}
           onClose={closeActiveModal}
           onBack={modalBackHandler}
-          onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
+          onEntityClick={(entityName) => openRoleDetail(entityName, activeTab, { pushCurrent: true })}
           onEventClick={(event) => openEventDetail(event.id, activeTab, { pushCurrent: true })}
           chapterIndex={chapterIndex}
           kb={kb}
@@ -1678,7 +1693,7 @@ function App() {
           targetName={selectedRelationPair.targetName}
           onClose={closeActiveModal}
           onBack={modalBackHandler}
-          onEntityClick={(entityName) => handleFocusNode(entityName, { pushCurrent: true })}
+          onEntityClick={(entityName) => openRoleDetail(entityName, activeTab, { pushCurrent: true })}
           onEventClick={(event) => openEventDetail(event.id, activeTab, { pushCurrent: true })}
           relatedEvents={timelineEvents.filter((event) => {
             const sourceRole = kb?.roles?.[selectedRelationPair.sourceId];

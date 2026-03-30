@@ -1291,6 +1291,8 @@ def _apply_display_summaries_to_kb(
             display_summary = str(summary_output.get("display_summary", "")).strip()
             if display_summary:
                 entity.display_summary = display_summary
+                entity.identity_summary = str(summary_output.get("identity_summary", "")).strip()
+                entity.long_description = str(summary_output.get("long_description", "")).strip()
                 entity.summary_source = str(summary_output.get("generator", "local-agent"))
                 entity.summary_version = str(summary_outputs.get("version", "entity-profiles-v1"))
                 entity.profile_version = str(summary_output.get("profile_version", summary_outputs.get("profile_version", "role-location-profile-v1")))

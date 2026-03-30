@@ -347,6 +347,7 @@ def build_entity_profile_inputs(
     for role in role_items:
         excerpts, excerpt_ids = _select_representative_excerpts(role.occurrences)
         top_locations = _role_top_locations(role, all_events)
+        weighted_related_entities = _weighted_related_entities(role, kb)
         turning_points = _select_turning_points(role, all_events)
         payload = {
             "entity_type": "role",
@@ -360,8 +361,10 @@ def build_entity_profile_inputs(
             "last_appearance_juan": role.last_appearance_juan,
             "appearance_span": _appearance_span_payload(sorted(role.units_appeared or role.juans_appeared)),
             "total_mentions": role.total_mentions,
-            "top_related_entities": _weighted_related_entities(role, kb),
+            "top_related_entities": weighted_related_entities,
+            "top_related_entities_weighted": weighted_related_entities,
             "top_locations": top_locations,
+            "top_locations_weighted": top_locations,
             "representative_events": _role_representative_events(role, all_events),
             "turning_point_candidates": turning_points,
             "phase_arc_candidates": _build_phase_arc_candidates(role, all_events),

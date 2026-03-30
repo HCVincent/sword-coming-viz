@@ -47,11 +47,19 @@ class UnifiedRole(BaseModel):
     # AI-generated display summary (post-resolve, tri-season overview)
     display_summary: str = Field(
         default="",
-        description="AI-generated 1-2 sentence display summary based on unified facts"
+        description="AI-generated 2-4 sentence display summary, 100-220 chars"
+    )
+    identity_summary: str = Field(
+        default="",
+        description="One-sentence identity definition, 40-90 chars"
+    )
+    long_description: str = Field(
+        default="",
+        description="Full prose character/location introduction, 2-4 paragraphs, 180-420 chars"
     )
     summary_source: str = Field(
         default="",
-        description="Summary generator source, e.g. local-agent"
+        description="Summary generator source, e.g. local-agent-reviewed"
     )
     summary_version: str = Field(
         default="",
@@ -201,11 +209,19 @@ class UnifiedLocation(BaseModel):
     description: str = ""
     display_summary: str = Field(
         default="",
-        description="AI-generated 1-2 sentence display summary based on unified facts"
+        description="AI-generated 2-4 sentence display summary, 100-220 chars"
+    )
+    identity_summary: str = Field(
+        default="",
+        description="One-sentence identity definition, 40-90 chars"
+    )
+    long_description: str = Field(
+        default="",
+        description="Full prose location introduction, 2-4 paragraphs, 180-420 chars"
     )
     summary_source: str = Field(
         default="",
-        description="Summary generator source, e.g. local-agent"
+        description="Summary generator source, e.g. local-agent-reviewed"
     )
     summary_version: str = Field(
         default="",

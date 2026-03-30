@@ -259,6 +259,23 @@ def test_generate_entity_profiles_avoids_legacy_template_opening():
                     {"phase": "early", "display_name": "陈平安与宁姚在泥瓶巷相识"},
                     {"phase": "late", "display_name": "陈平安在落魄山立住脚跟"},
                 ],
+                "first_appearance_juan": 1,
+                "last_appearance_juan": 328,
+                "appearance_span": {"first_unit": 1, "last_unit": 328, "unit_count": 128},
+                "representative_original_excerpts": [
+                    {
+                        "phase": "early",
+                        "text": "陈平安在泥瓶巷守夜，家境困顿却始终保持谨慎与克制。",
+                    },
+                    {
+                        "phase": "middle",
+                        "text": "陈平安与宁姚同行后，开始接触更复杂的山上人事与规则。",
+                    },
+                ],
+                "original_descriptions": [
+                    "陈平安在泥瓶巷守夜，家境困顿却始终保持谨慎与克制。",
+                    "陈平安与宁姚同行后，开始接触更复杂的山上人事与规则。",
+                ],
                 "evidence_excerpt_ids": [],
                 "input_hash": "hash-role",
             }
@@ -266,9 +283,34 @@ def test_generate_entity_profiles_avoids_legacy_template_opening():
         "locations": [],
     }
     payload = build_entity_profiles(inputs_payload)
-    summary = payload["profiles"][0]["display_summary"]
-    assert not summary.startswith("陈平安是前三季中")
-    assert "关系紧密" not in summary
+    profile = payload["profiles"][0]
+    summary = profile["display_summary"]
+    identity = profile["identity_summary"]
+    long_description = profile["long_description"]
+
+    assert identity
+    assert long_description
+    assert len(identity) >= 40
+    assert len(identity) <= 90
+    assert len(summary) >= 100
+    assert len(summary) <= 220
+
+    compact_long = long_description.replace("\n", "")
+    assert len(compact_long) >= 180
+    assert len(compact_long) <= 420
+    assert "\n\n" in long_description
+
+    forbidden_patterns = [
+        "从小镇一线展开",
+        "牵引最能定义",
+        "关键转折集中在",
+        "人物阶段变化大致可见于",
+    ]
+    for pattern in forbidden_patterns:
+        assert pattern not in summary
+        assert pattern not in long_description
+
+    assert long_description != inputs_payload["roles"][0]["original_descriptions"][0]
 
 
 def test_build_segment_chunk_extracts_core_entities_locations_and_relations():
