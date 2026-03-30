@@ -10,6 +10,10 @@ import type {
   UnifiedRole,
 } from '../types/unified';
 
+function getEventDisplayName(event: UnifiedKnowledgeBase['events'][string]): string {
+  return event.display_name || event.name;
+}
+
 const GENERIC_POWER_LABELS = new Set(['山上', '山下', '山水', '江湖', '道家', '武道', '未归类']);
 
 function getRoleUnits(role: UnifiedRole): number[] {
@@ -223,7 +227,7 @@ export function unifiedEventsToTimeline(
 
     events.push({
       id: event.id,
-      name: event.name,
+      name: getEventDisplayName(event),
       timeText: event.time_text ?? event.time,
       timeNumeric: event.time_start,
       progressStart: event.progress_start ?? null,
@@ -371,8 +375,9 @@ export function searchUnifiedKnowledgeBase(
   for (const event of Object.values(kb.events)) {
     let score = 0;
 
-    if (event.name === query) score += 100;
-    else if (event.name.includes(query)) score += 50;
+    const eventName = getEventDisplayName(event);
+    if (eventName === query) score += 100;
+    else if (eventName.includes(query)) score += 50;
 
     if (event.description.includes(query)) score += 10;
 
@@ -380,7 +385,7 @@ export function searchUnifiedKnowledgeBase(
       results.push({
         type: 'event',
         id: event.id,
-        name: event.name,
+        name: eventName,
         description: event.description,
         score,
       });

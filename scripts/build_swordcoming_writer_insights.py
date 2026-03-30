@@ -50,6 +50,14 @@ def get_event_units(event: UnifiedEvent) -> List[int]:
     return sorted(event.source_units or event.source_juans)
 
 
+def event_display_name(event: UnifiedEvent) -> str:
+    return (event.display_name or event.name or "").strip()
+
+
+def ref_display_name(event_ref: dict) -> str:
+    return str(event_ref.get("display_name") or event_ref.get("name") or "").strip()
+
+
 def get_relation_units(relation: UnifiedRelation) -> List[int]:
     return sorted(relation.source_units or relation.source_juans)
 
@@ -96,6 +104,7 @@ def classify_event_type(event: UnifiedEvent, rules: Sequence[dict]) -> str:
     text = " ".join(
         part
         for part in [
+            event_display_name(event),
             event.name,
             event.description,
             event.significance,
@@ -380,7 +389,10 @@ def make_event_ref(
 
     return {
         "event_id": event.id,
-        "name": event.name,
+        "name": event_display_name(event),
+        "display_name": event_display_name(event),
+        "raw_name": event.name,
+        "pattern_key": event.pattern_key or event.name,
         "event_type": event_type,
         "unit_index": unit_index,
         "unit_title": meta.get("unit_title"),
@@ -441,6 +453,7 @@ def event_score(
             haystack = " ".join(
                 [
                     str(event_ref.get("name", "")),
+                    str(event_ref.get("raw_name", "")),
                     str(event_ref.get("description", "")),
                     str(event_ref.get("significance", "")),
                     str(event_ref.get("location", "")),
@@ -470,6 +483,7 @@ def event_ref_haystack(event_ref: dict) -> str:
         str(part)
         for part in [
             event_ref.get("name", ""),
+            event_ref.get("raw_name", ""),
             event_ref.get("description", ""),
             event_ref.get("significance", ""),
             event_ref.get("location", ""),
@@ -500,6 +514,7 @@ def classify_phase(
         texts.extend(
             [
                 str(event_ref.get("name", "")),
+                str(event_ref.get("raw_name", "")),
                 str(event_ref.get("event_type", "")),
                 str(event_ref.get("description", "")),
                 str(event_ref.get("significance", "")),
@@ -938,7 +953,7 @@ def build_curated_relationships(
                     if not keywords:
                         score += 1
                     for keyword in keywords:
-                        if keyword in str(ref.get("name", "")):
+                        if keyword in str(ref.get("name", "")) or keyword in str(ref.get("raw_name", "")):
                             score += 3
                         elif keyword in haystack:
                             score += 1
@@ -1161,7 +1176,7 @@ def find_events_for_pattern(
         haystack = " ".join(
             part
             for part in [
-                event_ref.get("name") or "",
+                event_ref.get("name") or event_ref.get("raw_name") or "",
                 event_ref.get("description") or "",
                 event_ref.get("significance") or "",
                 event_ref.get("location") or "",

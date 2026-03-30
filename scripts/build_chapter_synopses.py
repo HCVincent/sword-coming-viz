@@ -41,10 +41,15 @@ def _get_event_units(event: UnifiedEvent) -> List[int]:
     return sorted(event.source_units or event.source_juans)
 
 
+def _event_display_name(event: UnifiedEvent) -> str:
+    return (event.display_name or event.name or "").strip()
+
+
 def _classify_event_type(event: UnifiedEvent, rules: Sequence[dict]) -> str:
     text = " ".join(
         part
         for part in [
+            _event_display_name(event),
             event.name,
             event.description,
             event.significance,
@@ -178,7 +183,7 @@ def build_chapter_synopses(
     name_counts: Dict[str, int] = {}
     name_first_unit: Dict[str, int] = {}
     for event in kb.events.values():
-        n = event.name
+        n = event.pattern_key or event.name
         name_counts[n] = name_counts.get(n, 0) + 1
         first_u = min(event.source_units or event.source_juans, default=None)
         if first_u is not None:
@@ -192,7 +197,8 @@ def build_chapter_synopses(
         event_type = _classify_event_type(event, event_type_rules)
         ref = {
             "event_id": event.id,
-            "name": event.name,
+            "name": _event_display_name(event),
+            "pattern_key": event.pattern_key or event.name,
             "event_type": event_type,
             "location": event.location,
             "participants": sorted(event.participants),
@@ -201,12 +207,12 @@ def build_chapter_synopses(
             # Provenance / occurrence metadata
             "evidence_excerpt": getattr(event, "evidence_excerpt", "") or "",
             "matched_rule_name": getattr(event, "matched_rule_name", "") or "",
-            "name_occurrence_count": name_counts.get(event.name, 1),
-            "first_occurrence_unit": name_first_unit.get(event.name),
+            "name_occurrence_count": name_counts.get(event.pattern_key or event.name, 1),
+            "first_occurrence_unit": name_first_unit.get(event.pattern_key or event.name),
         }
         for uid in _get_event_units(event):
             ref_copy = dict(ref)
-            ref_copy["is_first_occurrence"] = (uid == name_first_unit.get(event.name))
+            ref_copy["is_first_occurrence"] = (uid == name_first_unit.get(event.pattern_key or event.name))
             events_by_unit[uid].append(ref_copy)
 
     # Group roles by unit
@@ -243,9 +249,10 @@ def build_chapter_synopses(
         key_development_events: List[dict] = []
         for ref in scored_events:
             name = ref["name"]
-            if name in seen_names:
+            dedup_key = str(ref.get("pattern_key") or name)
+            if dedup_key in seen_names:
                 continue
-            seen_names.add(name)
+            seen_names.add(dedup_key)
             desc = ref.get("description") or ref.get("significance") or ""
             text = f"{name}：{desc}" if desc else name
             key_developments.append(text)

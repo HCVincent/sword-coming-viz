@@ -54,6 +54,10 @@ export interface UnifiedLocation {
 export interface UnifiedEvent {
   id: string;
   name: string;
+  pattern_key?: string;
+  display_name?: string;
+  title_source?: string;
+  grounding_excerpt_ids?: string[];
   time: string | null;
   time_text?: string | null;
   time_start: number | null;

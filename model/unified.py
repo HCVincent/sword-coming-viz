@@ -57,6 +57,10 @@ class UnifiedRole(BaseModel):
         default="",
         description="Summary schema/version marker"
     )
+    profile_version: str = Field(
+        default="",
+        description="Entity profile schema/version marker"
+    )
     
     # All original descriptions for reference
     original_descriptions: List[str] = Field(
@@ -207,6 +211,10 @@ class UnifiedLocation(BaseModel):
         default="",
         description="Summary schema/version marker"
     )
+    profile_version: str = Field(
+        default="",
+        description="Entity profile schema/version marker"
+    )
     original_descriptions: List[str] = Field(
         default_factory=list,
         description="All unique original descriptions from the book"
@@ -239,6 +247,24 @@ class UnifiedEvent(BaseModel):
     
     id: str
     name: str
+
+    # --- Display-title layer (pattern_key / display_name split) ---
+    pattern_key: str = Field(
+        default="",
+        description="Rule-label or recurring-pattern name, e.g. '墙头对话'. Used for dedup/clustering, never shown on UI."
+    )
+    display_name: str = Field(
+        default="",
+        description="Grounded, human-readable event title shown on UI and in summaries. Falls back to `name` when empty."
+    )
+    title_source: str = Field(
+        default="",
+        description="How display_name was determined: 'catalog' | 'unique' | 'legacy'"
+    )
+    grounding_excerpt_ids: List[str] = Field(
+        default_factory=list,
+        description="Excerpt IDs that ground the display_name back to source text."
+    )
     
     time: Optional[str] = None
     time_text: Optional[str] = Field(

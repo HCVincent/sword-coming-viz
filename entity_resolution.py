@@ -1200,6 +1200,9 @@ class EntityResolver:
             unified = UnifiedEvent(
                 id=event_key,
                 name=event_name,
+                pattern_key=event_name,
+                display_name=event_name,
+                title_source="legacy",
                 time=time_str,
                 time_text=time_str,
                 time_start=time_numeric,

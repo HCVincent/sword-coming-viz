@@ -42,9 +42,10 @@ def _audit_event_refs(
     for ev in event_refs:
         uid = ev.get("unit_index")
         in_range = _in_range(uid, unit_range)
+        display_name = ev.get("display_name") or ev.get("name")
         results.append({
             "event_id": ev.get("event_id"),
-            "name": ev.get("name"),
+            "name": display_name,
             "unit_index": uid,
             "season_name": ev.get("season_name"),
             "in_season_range": in_range,
@@ -119,7 +120,7 @@ def build_audit(wi: dict, upi: dict, chapter_synopses: list | None = None, key_e
             if ev:
                 uid = ev.get("unit_index")
                 in_range = _in_range(uid, ur)
-                name = ev.get("name", "")
+                name = ev.get("display_name") or ev.get("name", "")
                 beat_audits.append({
                     "beat_type": beat.get("beat_type"),
                     "event_name": name,
@@ -150,7 +151,7 @@ def build_audit(wi: dict, upi: dict, chapter_synopses: list | None = None, key_e
                 uid = ev.get("unit_index")
                 scene_audits.append({
                     "label": sc.get("label"),
-                    "event_name": ev.get("name"),
+                    "event_name": ev.get("display_name") or ev.get("name"),
                     "unit_index": uid,
                     "in_season_range": _in_range(uid, ur),
                 })
@@ -294,7 +295,7 @@ def build_audit(wi: dict, upi: dict, chapter_synopses: list | None = None, key_e
                 noc = ke.get("name_occurrence_count", 1)
                 if noc > 12:
                     _high_freq_hotspots.append({
-                        "event_name": ke.get("name", ""),
+                        "event_name": ke.get("display_name") or ke.get("name", ""),
                         "name_occurrence_count": noc,
                         "unit_index": ch.get("unit_index"),
                     })

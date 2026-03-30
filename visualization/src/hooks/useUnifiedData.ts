@@ -155,9 +155,10 @@ export function useUnifiedSearch(
 
     for (const event of Object.values(kb.events)) {
       let score = 0;
+      const eventName = event.display_name || event.name;
 
-      if (event.name === query) score += 100;
-      else if (event.name.includes(query)) score += 50;
+      if (eventName === query) score += 100;
+      else if (eventName.includes(query)) score += 50;
 
       if (event.description.includes(query)) score += 10;
 
@@ -165,7 +166,7 @@ export function useUnifiedSearch(
         results.push({
           type: 'event',
           id: event.id,
-          name: event.name,
+          name: eventName,
           description: event.description,
           score,
         });

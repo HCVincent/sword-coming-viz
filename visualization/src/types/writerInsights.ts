@@ -1,6 +1,9 @@
 export interface WriterInsightEventRef {
   event_id: string;
   name: string;
+  display_name?: string;
+  raw_name?: string;
+  pattern_key?: string;
   event_type: string;
   unit_index: number | null;
   unit_title?: string | null;

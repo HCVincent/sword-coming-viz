@@ -67,7 +67,7 @@ function toTimelineEvent(event: UnifiedEvent): TimelineEventUnified {
   const units = event.source_units && event.source_units.length > 0 ? event.source_units : event.source_juans;
   return {
     id: event.id,
-    name: event.name,
+    name: event.display_name || event.name,
     timeText: event.time_text ?? event.time,
     timeNumeric: event.time_start,
     progressStart: event.progress_start ?? null,
@@ -108,7 +108,7 @@ function toRoleNode(role: UnifiedKnowledgeBase['roles'][string]): RoleNodeUnifie
 function insightEventToTimeline(ref: WriterInsightEventRef): TimelineEventUnified {
   return {
     id: ref.event_id,
-    name: ref.name,
+    name: ref.display_name || ref.name,
     timeText: null,
     timeNumeric: null,
     progressStart: ref.progress_start,

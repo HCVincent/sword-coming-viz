@@ -10,6 +10,9 @@ from model.location import Location
 from model.role import Role
 from scripts import build_swordcoming_offline_data
 from scripts.build_entity_summary_inputs import build_entity_summary_inputs
+from scripts.build_event_display_inputs import build_event_display_inputs
+from scripts.generate_entity_profiles import build_entity_profiles
+from scripts.generate_event_display_catalog import build_event_display_catalog
 from scripts.build_chapter_synopses import build_chapter_synopses
 from scripts.build_key_events_index import build_key_events_index
 from scripts.build_season_overview_audit import build_audit
@@ -19,44 +22,9 @@ from scripts.validate_unified_knowledge import validate_unified_knowledge
 
 def _write_minimal_summary_artifact_from_inputs(inputs_path: Path, output_path: Path) -> None:
     payload = json.loads(inputs_path.read_text(encoding="utf-8"))
-    summaries = []
-    for role in payload.get("roles", []):
-        summaries.append(
-            {
-                "entity_type": "role",
-                "entity_id": role["entity_id"],
-                "display_summary": f"{role['canonical_name']}是前三季叙事中的核心人物概述。",
-                "summary_keywords": role.get("all_names", [])[:3],
-                "evidence_excerpt_ids": role.get("evidence_excerpt_ids", [])[:3],
-                "generated_from_input_hash": role["input_hash"],
-                "generator": "local-agent",
-                "generated_at": "2026-03-30T00:00:00",
-            }
-        )
-    for location in payload.get("locations", []):
-        summaries.append(
-            {
-                "entity_type": "location",
-                "entity_id": location["entity_id"],
-                "display_summary": f"{location['canonical_name']}是前三季叙事中的关键地点概述。",
-                "summary_keywords": location.get("all_names", [])[:3],
-                "evidence_excerpt_ids": location.get("evidence_excerpt_ids", [])[:3],
-                "generated_from_input_hash": location["input_hash"],
-                "generator": "local-agent",
-                "generated_at": "2026-03-30T00:00:00",
-            }
-        )
+    generated = build_entity_profiles(payload)
     output_path.write_text(
-        json.dumps(
-            {
-                "version": "entity-display-summaries-v1",
-                "generated_at": "2026-03-30T00:00:00",
-                "generator": "local-agent",
-                "summaries": summaries,
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
+        json.dumps(generated, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
@@ -101,7 +69,7 @@ def test_build_offline_data_generates_entity_summary_inputs_and_applies_display_
     unit_progress_path = tmp_path / "unit_progress_index.json"
     book_config_path = tmp_path / "book_config.json"
     manual_overrides_path = tmp_path / "manual_overrides.json"
-    summary_artifact_path = tmp_path / "entity_display_summaries.json"
+    summary_artifact_path = tmp_path / "entity_profiles.json"
 
     book_path.write_text(
         json.dumps(
@@ -193,7 +161,7 @@ def test_build_offline_data_generates_entity_summary_inputs_and_applies_display_
         sync_output=False,
         skip_summary_check=True,
     )
-    inputs_path = tmp_path / "entity_summary_inputs.json"
+    inputs_path = tmp_path / "entity_profile_inputs.json"
     assert inputs_path.exists()
 
     _write_minimal_summary_artifact_from_inputs(inputs_path, summary_artifact_path)
@@ -214,6 +182,93 @@ def test_build_offline_data_generates_entity_summary_inputs_and_applies_display_
     assert payload["locations"]["泥瓶巷"]["display_summary"]
     assert stats["entity_summary_role_coverage"] == len(payload["roles"])
     assert stats["entity_summary_location_coverage"] == len(payload["locations"])
+
+
+def test_build_entity_summary_inputs_uses_weighted_relations_and_deduped_turning_points():
+    resolver = EntityResolver()
+    resolver.add_role(
+        Role(name="陈平安", alias=[], description="", original_description_in_book="陈平安在泥瓶巷守夜。", power="泥瓶巷", sentence_indexes_in_segment=[0], juan_index=1, segment_index=1),
+        juan_index=1,
+        segment_index=1,
+        chunk_index=0,
+        source_sentence="陈平安在泥瓶巷守夜。",
+    )
+    for name, power, juan in [("宁姚", "剑气长城", 2), ("崔瀺", "大骊", 3), ("丁婴", "未归类", 4)]:
+        resolver.add_role(
+            Role(name=name, alias=[], description="", original_description_in_book=f"{name}出场。", power=power, sentence_indexes_in_segment=[0], juan_index=juan, segment_index=1),
+            juan_index=juan,
+            segment_index=1,
+            chunk_index=0,
+            source_sentence=f"{name}出场。",
+        )
+
+    for _ in range(5):
+        resolver.add_relation(Action(from_roles=["陈平安"], to_roles=["崔瀺"], action="交谈", context="多次交谈", sentence_indexes_in_segment=[0], juan_index=3, segment_index=1))
+    for _ in range(3):
+        resolver.add_relation(Action(from_roles=["陈平安"], to_roles=["宁姚"], action="同行", context="一同前行", sentence_indexes_in_segment=[0], juan_index=2, segment_index=1))
+    resolver.add_relation(Action(from_roles=["陈平安"], to_roles=["丁婴"], action="相遇", context="短暂相遇", sentence_indexes_in_segment=[0], juan_index=4, segment_index=1))
+
+    for juan, label in [(1, "墙头对话"), (2, "墙头对话"), (6, "墙头对话"), (8, "宁姚离开")]:
+        resolver.add_event(
+            Event(name=label, time=None, location="泥瓶巷", participants=["陈平安", "宁姚"], description=f"{label}节点", significance="重要", sentence_indexes_in_segment=[0], juan_index=juan, segment_index=1),
+            juan_index=juan,
+            segment_index=1,
+        )
+
+    kb = resolver.build_knowledge_base()
+    role = kb.roles["陈平安"]
+    payload = build_entity_summary_inputs(kb=kb)
+    role_pack = next(item for item in payload["roles"] if item["entity_id"] == role.id)
+
+    assert role_pack["top_related_entities"][:3] == ["崔瀺", "宁姚", "丁婴"]
+    turning_point_pattern_keys = [item["pattern_key"] for item in role_pack["turning_point_candidates"]]
+    assert len(turning_point_pattern_keys) == len(set(turning_point_pattern_keys))
+
+
+def test_event_display_catalog_grounds_recurring_pattern_names():
+    resolver = EntityResolver()
+    for juan, participant in [(1, "宋集薪"), (2, "刘羡阳")]:
+        resolver.add_event(
+            Event(name="墙头对话", time=None, location="泥瓶巷", participants=["陈平安", participant], description="少年在墙头说话。", significance="关系建立", sentence_indexes_in_segment=[0], juan_index=juan, segment_index=1),
+            juan_index=juan,
+            segment_index=1,
+        )
+    kb = resolver.build_knowledge_base()
+    inputs_payload = build_event_display_inputs(kb=kb)
+    catalog = build_event_display_catalog(inputs_payload)
+
+    assert catalog["entries"]
+    for entry in catalog["entries"]:
+        assert entry["display_name"] != entry["pattern_key"]
+
+
+def test_generate_entity_profiles_avoids_legacy_template_opening():
+    inputs_payload = {
+        "roles": [
+            {
+                "entity_id": "陈平安",
+                "canonical_name": "陈平安",
+                "primary_power": "泥瓶巷",
+                "top_locations": ["泥瓶巷", "落魄山"],
+                "top_related_entities": ["宁姚", "崔瀺", "齐静春"],
+                "turning_point_candidates": [
+                    {"display_name": "陈平安与宁姚在泥瓶巷相识"},
+                    {"display_name": "陈平安在落魄山立住脚跟"},
+                ],
+                "phase_arc_candidates": [
+                    {"phase": "early", "display_name": "陈平安与宁姚在泥瓶巷相识"},
+                    {"phase": "late", "display_name": "陈平安在落魄山立住脚跟"},
+                ],
+                "evidence_excerpt_ids": [],
+                "input_hash": "hash-role",
+            }
+        ],
+        "locations": [],
+    }
+    payload = build_entity_profiles(inputs_payload)
+    summary = payload["profiles"][0]["display_summary"]
+    assert not summary.startswith("陈平安是前三季中")
+    assert "关系紧密" not in summary
 
 
 def test_build_segment_chunk_extracts_core_entities_locations_and_relations():

@@ -25,7 +25,8 @@ from model.event import Event
 from model.location import Location
 from model.role import Role
 from scripts.character_quality import audit_role_name, is_pseudo_role_name
-from scripts.build_entity_summary_inputs import build_entity_summary_inputs
+from scripts.build_entity_profile_inputs import build_entity_profile_inputs
+from scripts.build_event_display_inputs import build_event_display_inputs
 from scripts.build_chapter_synopses import build_chapter_synopses_file
 from scripts.build_key_events_index import build_key_events_index_file
 from scripts.build_season_overview_audit import build_audit
@@ -36,7 +37,10 @@ from scripts.validate_unified_knowledge import validate_unified_knowledge
 DEFAULT_SYNC_FILES = [
     "book_config.json",
     "chapter_index.json",
-    "entity_summary_inputs.json",
+    "entity_profile_inputs.json",
+    "entity_profiles.json",
+    "event_display_inputs.json",
+    "event_display_catalog.json",
     "chapter_synopses.json",
     "key_events_index.json",
     "unit_progress_index.json",
@@ -1172,6 +1176,71 @@ def _load_summary_artifact(path: Path) -> dict:
     return load_json(path)
 
 
+def _index_event_display_inputs(payload: dict) -> Dict[str, dict]:
+    return {
+        str(item.get("event_id", "")): item
+        for item in payload.get("packs", [])
+        if str(item.get("event_id", ""))
+    }
+
+
+def _index_event_display_outputs(payload: dict) -> Dict[str, dict]:
+    entries = payload.get("entries", payload if isinstance(payload, list) else [])
+    return {
+        str(item.get("event_id", "")): item
+        for item in entries
+        if str(item.get("event_id", ""))
+    }
+
+
+def _apply_event_display_catalog_to_kb(
+    *,
+    kb: Any,
+    event_inputs: dict,
+    event_outputs: dict,
+    skip_summary_check: bool,
+) -> Dict[str, int]:
+    input_index = _index_event_display_inputs(event_inputs)
+    output_index = _index_event_display_outputs(event_outputs)
+    coverage = {"catalog_applied": 0, "unique_fallback": 0}
+    missing: List[str] = []
+    stale: List[str] = []
+
+    for event_id, event in kb.events.items():
+        event_input = input_index.get(event_id)
+        if not event_input:
+            event.display_name = event.display_name or event.name
+            event.title_source = event.title_source or "unique"
+            coverage["unique_fallback"] += 1
+            continue
+
+        event_output = output_index.get(event_id)
+        if not event_output:
+            missing.append(f"missing event catalog:{event_id}")
+            continue
+        expected_hash = str(event_input.get("input_hash", ""))
+        actual_hash = str(event_output.get("generated_from_input_hash", ""))
+        if expected_hash != actual_hash:
+            stale.append(f"stale event catalog:{event_id}")
+            continue
+
+        display_name = str(event_output.get("display_name", "")).strip() or event.name
+        event.display_name = display_name
+        event.pattern_key = event.pattern_key or event.name
+        event.title_source = "catalog"
+        event.grounding_excerpt_ids = list(event_input.get("grounding_excerpt_ids", []))[:4]
+        coverage["catalog_applied"] += 1
+
+    if not skip_summary_check and (missing or stale):
+        problems = [*missing[:10], *stale[:10]]
+        raise ValueError(
+            "Event display catalog is missing or stale. Regenerate data/event_display_catalog.json from event_display_inputs.json. "
+            f"Examples: {problems}"
+        )
+
+    return coverage
+
+
 def _index_summary_inputs(payload: dict) -> Dict[Tuple[str, str], dict]:
     indexed: Dict[Tuple[str, str], dict] = {}
     for entity_type in ("roles", "locations"):
@@ -1182,7 +1251,7 @@ def _index_summary_inputs(payload: dict) -> Dict[Tuple[str, str], dict]:
 
 
 def _index_summary_outputs(payload: dict) -> Dict[Tuple[str, str], dict]:
-    entries = payload.get("summaries", payload if isinstance(payload, list) else [])
+    entries = payload.get("profiles", payload.get("summaries", payload if isinstance(payload, list) else []))
     indexed: Dict[Tuple[str, str], dict] = {}
     for item in entries:
         indexed[(str(item.get("entity_type", "")), str(item.get("entity_id", "")))] = item
@@ -1223,14 +1292,15 @@ def _apply_display_summaries_to_kb(
             if display_summary:
                 entity.display_summary = display_summary
                 entity.summary_source = str(summary_output.get("generator", "local-agent"))
-                entity.summary_version = str(summary_outputs.get("version", "entity-display-summaries-v1"))
+                entity.summary_version = str(summary_outputs.get("version", "entity-profiles-v1"))
+                entity.profile_version = str(summary_output.get("profile_version", summary_outputs.get("profile_version", "role-location-profile-v1")))
                 entity.description = display_summary
                 coverage[plural] += 1
 
     if not skip_summary_check and (missing or stale):
         problems = [*missing[:10], *stale[:10]]
         raise ValueError(
-            "Entity display summaries are missing or stale. Regenerate data/entity_display_summaries.json via local agent. "
+            "Entity profiles are missing or stale. Regenerate data/entity_profiles.json from entity_profile_inputs.json. "
             f"Examples: {problems}"
         )
 
@@ -1333,15 +1403,38 @@ def build_offline_data(
         if len(pruned_roles) > 20:
             print(f"  ... and {len(pruned_roles) - 20} more")
 
-    summary_inputs_output = kb_output.parent / "entity_summary_inputs.json"
-    summary_inputs_payload = build_entity_summary_inputs(kb=kb)
-    summary_inputs_output.write_text(
+    event_display_inputs_output = kb_output.parent / "event_display_inputs.json"
+    event_display_inputs_payload = build_event_display_inputs(kb=kb)
+    event_display_inputs_output.write_text(
+        json.dumps(event_display_inputs_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Event display inputs -> {event_display_inputs_output}")
+
+    event_display_catalog_path = kb_output.parent / "event_display_catalog.json"
+    event_display_coverage = {"catalog_applied": 0, "unique_fallback": 0}
+    if event_display_catalog_path.exists():
+        event_display_catalog_payload = _load_summary_artifact(event_display_catalog_path)
+        event_display_coverage = _apply_event_display_catalog_to_kb(
+            kb=kb,
+            event_inputs=event_display_inputs_payload,
+            event_outputs=event_display_catalog_payload,
+            skip_summary_check=skip_summary_check,
+        )
+    elif not skip_summary_check and event_display_inputs_payload.get("total_event_packs", 0) > 0:
+        raise FileNotFoundError(
+            f"Event display catalog missing: {event_display_catalog_path}. Generate it from event_display_inputs.json via local agent."
+        )
+
+    profile_inputs_output = kb_output.parent / "entity_profile_inputs.json"
+    summary_inputs_payload = build_entity_profile_inputs(kb=kb)
+    profile_inputs_output.write_text(
         json.dumps(summary_inputs_payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    print(f"Entity summary inputs -> {summary_inputs_output}")
+    print(f"Entity profile inputs -> {profile_inputs_output}")
 
-    summary_artifact_path = kb_output.parent / "entity_display_summaries.json"
+    summary_artifact_path = kb_output.parent / "entity_profiles.json"
     summary_coverage = {"roles": 0, "locations": 0}
     if summary_artifact_path.exists():
         summary_outputs_payload = _load_summary_artifact(summary_artifact_path)
@@ -1353,7 +1446,7 @@ def build_offline_data(
         )
     elif not skip_summary_check:
         raise FileNotFoundError(
-            f"Summary artifact missing: {summary_artifact_path}. Generate it from entity_summary_inputs.json via local agent."
+            f"Profile artifact missing: {summary_artifact_path}. Generate it from entity_profile_inputs.json via local agent."
         )
 
     save_unified_knowledge_base(kb, str(kb_output))
@@ -1423,6 +1516,12 @@ def build_offline_data(
         "mined_roles": len(mined_characters),
         "augmented_role_seeds": len(augmented_characters),
         "pruned_suspicious_roles": len(pruned_roles),
+        "event_display_catalog_applied": event_display_coverage["catalog_applied"],
+        "event_display_unique_fallback": event_display_coverage["unique_fallback"],
+        "entity_profile_role_inputs": len(summary_inputs_payload.get("roles", [])),
+        "entity_profile_location_inputs": len(summary_inputs_payload.get("locations", [])),
+        "entity_profile_role_coverage": summary_coverage["roles"],
+        "entity_profile_location_coverage": summary_coverage["locations"],
         "entity_summary_role_inputs": len(summary_inputs_payload.get("roles", [])),
         "entity_summary_location_inputs": len(summary_inputs_payload.get("locations", [])),
         "entity_summary_role_coverage": summary_coverage["roles"],

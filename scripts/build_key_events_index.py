@@ -45,10 +45,15 @@ def _get_event_units(event: UnifiedEvent) -> List[int]:
     return sorted(event.source_units or event.source_juans)
 
 
+def _event_display_name(event: UnifiedEvent) -> str:
+    return (event.display_name or event.name or "").strip()
+
+
 def _classify_event_type(event: UnifiedEvent, rules: Sequence[dict]) -> str:
     text = " ".join(
         part
         for part in [
+            _event_display_name(event),
             event.name,
             event.description,
             event.significance,
@@ -139,7 +144,7 @@ def build_key_events_index(
     name_counts: Dict[str, int] = {}
     name_first_unit: Dict[str, int] = {}
     for event in kb.events.values():
-        n = event.name
+        n = event.pattern_key or event.name
         name_counts[n] = name_counts.get(n, 0) + 1
         first_u = min(event.source_units or event.source_juans, default=None)
         if first_u is not None:
@@ -156,7 +161,8 @@ def build_key_events_index(
         noc = name_counts.get(event.name, 1)
         ref = {
             "event_id": event.id,
-            "name": event.name,
+            "name": _event_display_name(event),
+            "pattern_key": event.pattern_key or event.name,
             "event_type": event_type,
             "location": event.location,
             "participants": sorted(event.participants),
@@ -165,7 +171,7 @@ def build_key_events_index(
             "evidence_excerpt": evidence_excerpt,
             "matched_rule_name": matched_rule_name,
             "name_occurrence_count": noc,
-            "first_occurrence_unit": name_first_unit.get(event.name),
+            "first_occurrence_unit": name_first_unit.get(event.pattern_key or event.name),
         }
         ref["score"] = _event_score(ref)
         # Scoring adjustments for card selection
@@ -177,7 +183,7 @@ def build_key_events_index(
             ref["score"] -= min(noc - 8, 10)  # soft penalty for high-freq names
         for uid in _get_event_units(event):
             ref_copy = dict(ref)
-            ref_copy["is_first_occurrence"] = (uid == name_first_unit.get(event.name))
+            ref_copy["is_first_occurrence"] = (uid == name_first_unit.get(event.pattern_key or event.name))
             events_by_unit[uid].append(ref_copy)
 
     chapters: List[dict] = []
@@ -191,11 +197,12 @@ def build_key_events_index(
         seen_names: set[str] = set()
         selected: List[dict] = []
         for ref in ranked:
-            if ref["name"] in seen_names:
+            dedup_key = str(ref.get("pattern_key") or ref["name"])
+            if dedup_key in seen_names:
                 continue
             if ref["score"] < min_score:
                 continue
-            seen_names.add(ref["name"])
+            seen_names.add(dedup_key)
 
             # Build display_summary: evidence_excerpt first, then description truncated
             evidence = ref.get("evidence_excerpt") or ""
