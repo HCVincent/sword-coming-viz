@@ -1264,10 +1264,11 @@ def _apply_display_summaries_to_kb(
     summary_inputs: dict,
     summary_outputs: dict,
     skip_summary_check: bool,
+    require_fresh_entity_profiles: bool,
 ) -> Dict[str, int]:
     input_index = _index_summary_inputs(summary_inputs)
     output_index = _index_summary_outputs(summary_outputs)
-    coverage = {"roles": 0, "locations": 0}
+    coverage = {"roles": 0, "locations": 0, "missing": 0, "stale": 0}
     missing: List[str] = []
     stale: List[str] = []
 
@@ -1299,10 +1300,20 @@ def _apply_display_summaries_to_kb(
                 entity.description = display_summary
                 coverage[plural] += 1
 
-    if not skip_summary_check and (missing or stale):
+    coverage["missing"] = len(missing)
+    coverage["stale"] = len(stale)
+
+    if not skip_summary_check and require_fresh_entity_profiles and (missing or stale):
         problems = [*missing[:10], *stale[:10]]
         raise ValueError(
             "Entity profiles are missing or stale. Regenerate data/entity_profiles.json from entity_profile_inputs.json. "
+            f"Examples: {problems}"
+        )
+    if not skip_summary_check and not require_fresh_entity_profiles and (missing or stale):
+        problems = [*missing[:10], *stale[:10]]
+        print(
+            "WARNING: Entity profiles are missing or stale. "
+            "Run scripts/generate_entity_profiles_via_gemini.py --changed-only to refresh. "
             f"Examples: {problems}"
         )
 
@@ -1324,6 +1335,7 @@ def build_offline_data(
     synopses_output: Optional[Path] = None,
     key_events_output: Optional[Path] = None,
     skip_summary_check: bool = False,
+    require_fresh_entity_profiles: bool = False,
 ) -> dict:
     book = load_json(book_path)
     core_cast = load_json(core_cast_path)
@@ -1437,7 +1449,7 @@ def build_offline_data(
     print(f"Entity profile inputs -> {profile_inputs_output}")
 
     summary_artifact_path = kb_output.parent / "entity_profiles.json"
-    summary_coverage = {"roles": 0, "locations": 0}
+    summary_coverage = {"roles": 0, "locations": 0, "missing": 0, "stale": 0}
     if summary_artifact_path.exists():
         summary_outputs_payload = _load_summary_artifact(summary_artifact_path)
         summary_coverage = _apply_display_summaries_to_kb(
@@ -1445,10 +1457,17 @@ def build_offline_data(
             summary_inputs=summary_inputs_payload,
             summary_outputs=summary_outputs_payload,
             skip_summary_check=skip_summary_check,
+            require_fresh_entity_profiles=require_fresh_entity_profiles,
+        )
+    elif not skip_summary_check and require_fresh_entity_profiles:
+        raise FileNotFoundError(
+            f"Profile artifact missing: {summary_artifact_path}. Generate it from entity_profile_inputs.json via Gemini script."
         )
     elif not skip_summary_check:
-        raise FileNotFoundError(
-            f"Profile artifact missing: {summary_artifact_path}. Generate it from entity_profile_inputs.json via local agent."
+        print(
+            "WARNING: Profile artifact missing. "
+            "Offline build will continue without fresh entity dossier fields. "
+            f"Missing file: {summary_artifact_path}"
         )
 
     save_unified_knowledge_base(kb, str(kb_output))
@@ -1524,6 +1543,8 @@ def build_offline_data(
         "entity_profile_location_inputs": len(summary_inputs_payload.get("locations", [])),
         "entity_profile_role_coverage": summary_coverage["roles"],
         "entity_profile_location_coverage": summary_coverage["locations"],
+        "entity_profile_missing": summary_coverage["missing"],
+        "entity_profile_stale": summary_coverage["stale"],
         "entity_summary_role_inputs": len(summary_inputs_payload.get("roles", [])),
         "entity_summary_location_inputs": len(summary_inputs_payload.get("locations", [])),
         "entity_summary_role_coverage": summary_coverage["roles"],
@@ -1558,6 +1579,11 @@ def main() -> int:
     parser.add_argument("--synopses-output", default="data/chapter_synopses.json", help="Chapter synopses output path.")
     parser.add_argument("--key-events-output", default="data/key_events_index.json", help="Key events index output path.")
     parser.add_argument("--skip-summary-check", action="store_true", help="Skip entity_display_summaries freshness validation.")
+    parser.add_argument(
+        "--require-fresh-entity-profiles",
+        action="store_true",
+        help="Fail build when data/entity_profiles.json is missing or stale against entity_profile_inputs.json.",
+    )
     parser.add_argument("--max-units", type=int, default=None, help="Optional limit for quick iteration.")
     args = parser.parse_args()
 
@@ -1576,6 +1602,7 @@ def main() -> int:
         synopses_output=Path(args.synopses_output),
         key_events_output=Path(args.key_events_output),
         skip_summary_check=args.skip_summary_check,
+        require_fresh_entity_profiles=args.require_fresh_entity_profiles,
     )
 
     print("Built Sword Coming offline data:")
