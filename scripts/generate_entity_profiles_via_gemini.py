@@ -566,14 +566,14 @@ def _heartbeat_loop(
     checkpoint_mgr: CheckpointManager,
     total: int,
     start_time: float,
-    running_count: threading.local,
+    running_count: List[int],
 ) -> None:
     """Background thread printing periodic progress."""
     while not stop_event.wait(timeout=HEARTBEAT_INTERVAL):
         elapsed = time.monotonic() - start_time
         gen = checkpoint_mgr.generated_count
         fail = checkpoint_mgr.failed_count
-        running = getattr(running_count, "value", 0)
+        running = running_count[0]
         print(
             f"  Progress: {gen + fail}/{total} | success={gen} | failed={fail}"
             f" | running={running} | elapsed={elapsed:.0f}s"
@@ -758,8 +758,7 @@ def main() -> int:
 
     # ── Heartbeat thread ─────────────────────────────────────────────────
     stop_heartbeat = threading.Event()
-    running_counter = threading.local()
-    running_counter.value = 0
+    running_counter: List[int] = [0]
     _running_lock = threading.Lock()
 
     heartbeat_thread = threading.Thread(
@@ -798,7 +797,7 @@ def main() -> int:
         with ThreadPoolExecutor(max_workers=max_concurrency) as pool:
             future_map = {pool.submit(_task, item): item for item in candidates}
             with _running_lock:
-                running_counter.value = len(future_map)
+                running_counter[0] = len(future_map)
 
             for future in as_completed(future_map):
                 item = future_map[future]
@@ -821,7 +820,7 @@ def main() -> int:
                     print(f"  ✗ {key[0]}:{key[1]} -> {exc}")
                 finally:
                     with _running_lock:
-                        running_counter.value = max(0, running_counter.value - 1)
+                        running_counter[0] = max(0, running_counter[0] - 1)
     except KeyboardInterrupt:
         checkpoint_mgr.flush()
         print("\nInterrupted. Checkpoint saved.")

@@ -1,4 +1,6 @@
 import json
+import threading
+import time
 import types
 from pathlib import Path
 
@@ -8,6 +10,7 @@ from scripts import build_swordcoming_offline_data
 from scripts.generate_entity_profiles_via_gemini import (
     CheckpointManager,
     _best_profile,
+    _heartbeat_loop,
     _load_checkpoint_profiles,
     _load_failures,
     choose_candidates,
@@ -492,3 +495,104 @@ class TestFormalOutputOnlyOnFullSuccess:
         # Verify checkpoint exists but formal does not
         assert checkpoint_path.exists()
         assert not formal_path.exists()
+
+
+class TestHeartbeatRunningCount:
+    """Verify the heartbeat thread can read running_counter set by another thread."""
+
+    def test_running_counter_visible_across_threads(self):
+        """running_counter (List[int]) must be readable from the heartbeat thread."""
+        inputs = _two_entity_inputs_payload()
+        mgr = CheckpointManager(
+            checkpoint_path=Path("dummy.json"),
+            existing_profiles={},
+            inputs_payload=inputs,
+            model_name="test-model",
+        )
+
+        running_counter: list = [0]
+        observed_values: list = []
+        stop_event = threading.Event()
+
+        def _capture_loop(
+            *,
+            stop_event: threading.Event,
+            checkpoint_mgr: CheckpointManager,
+            total: int,
+            start_time: float,
+            running_count: list,
+        ) -> None:
+            """Minimal heartbeat that just captures running_count snapshots."""
+            while not stop_event.wait(timeout=0.01):
+                observed_values.append(running_count[0])
+
+        t = threading.Thread(
+            target=_capture_loop,
+            kwargs={
+                "stop_event": stop_event,
+                "checkpoint_mgr": mgr,
+                "total": 3,
+                "start_time": time.monotonic(),
+                "running_count": running_counter,
+            },
+            daemon=True,
+        )
+        t.start()
+
+        # Simulate main thread setting running_counter
+        running_counter[0] = 5
+        time.sleep(0.05)
+        running_counter[0] = 3
+        time.sleep(0.05)
+
+        stop_event.set()
+        t.join(timeout=1.0)
+
+        # The observer thread must have seen the values written by the main thread
+        assert any(v == 5 for v in observed_values), (
+            f"Heartbeat thread never observed running=5; saw {set(observed_values)}"
+        )
+        assert any(v == 3 for v in observed_values), (
+            f"Heartbeat thread never observed running=3; saw {set(observed_values)}"
+        )
+
+    def test_real_heartbeat_loop_reads_shared_counter(self, capsys):
+        """_heartbeat_loop itself reads the shared List[int] counter correctly."""
+        inputs = _two_entity_inputs_payload()
+        mgr = CheckpointManager(
+            checkpoint_path=Path("dummy.json"),
+            existing_profiles={},
+            inputs_payload=inputs,
+            model_name="test-model",
+        )
+
+        running_counter: list = [7]
+        stop_event = threading.Event()
+
+        # Use a very short heartbeat interval via monkeypatching the wait
+        import scripts.generate_entity_profiles_via_gemini as mod
+        original_interval = mod.HEARTBEAT_INTERVAL
+        mod.HEARTBEAT_INTERVAL = 0.02
+        try:
+            t = threading.Thread(
+                target=_heartbeat_loop,
+                kwargs={
+                    "stop_event": stop_event,
+                    "checkpoint_mgr": mgr,
+                    "total": 10,
+                    "start_time": time.monotonic(),
+                    "running_count": running_counter,
+                },
+                daemon=True,
+            )
+            t.start()
+            time.sleep(0.1)
+            stop_event.set()
+            t.join(timeout=1.0)
+        finally:
+            mod.HEARTBEAT_INTERVAL = original_interval
+
+        captured = capsys.readouterr().out
+        assert "running=7" in captured, (
+            f"_heartbeat_loop did not print running=7; output was: {captured!r}"
+        )
