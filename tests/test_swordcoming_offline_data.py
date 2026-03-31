@@ -147,6 +147,7 @@ def test_build_offline_data_generates_entity_summary_inputs_and_applies_display_
             book_config_path=book_config_path,
             manual_overrides_path=manual_overrides_path,
             sync_output=False,
+            require_fresh_entity_profiles=True,
         )
 
     build_swordcoming_offline_data.build_offline_data(

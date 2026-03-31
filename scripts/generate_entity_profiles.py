@@ -10,7 +10,7 @@ from typing import Any, Iterable, List, Sequence
 
 
 OUTPUT_VERSION = "entity-profiles-v1"
-GENERATOR_NAME = "local-agent-reviewed"
+GENERATOR_NAME = "local-template-fallback"
 PROFILE_VERSION = "role-location-profile-v1"
 
 
