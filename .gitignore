@@ -8,6 +8,15 @@
 *.db
 *.bak
 
+# Runtime packet directories (Gemini intermediate outputs, not canonical data)
+data/_runtime/
+data/relation_profile_packets/
+data/entity_profile_packets/
+data/event_dossier_packets/
+
+# Gemini audit reports (transient quality-gate artifacts)
+data/role_name_audit_report.json
+
 # Local editor settings
 .vscode/
 

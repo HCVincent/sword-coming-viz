@@ -154,7 +154,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.259670",
+    "extracted_at": "2026-03-31T18:14:45.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -262,7 +262,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.259891",
+    "extracted_at": "2026-03-31T18:14:45.283651",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -430,7 +430,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.260182",
+    "extracted_at": "2026-03-31T18:14:45.284654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -573,7 +573,7 @@
         "segment_index": 4
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.260441",
+    "extracted_at": "2026-03-31T18:14:45.284654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -664,7 +664,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.260655",
+    "extracted_at": "2026-03-31T18:14:45.284654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -727,7 +727,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.260841",
+    "extracted_at": "2026-03-31T18:14:45.284654",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -748,19 +748,6 @@
       "我知道除了报恩，你自己就看好陈平安，但你肯定不清楚，我一开始就看好这个少年了，比谁都更早一些，只是这其中涉及大道内幕，不好跟你细说。"
     ],
     "entities": [
-      {
-        "entity_type": "person",
-        "name": "沙哑",
-        "alias": [],
-        "original_description_in_book": "阴神沙哑笑道：“确实如此。",
-        "description": "前三季叙事中多次出现，常与朱鹿、傅玉同场，推动相关支线发展。",
-        "power": "正阳山",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 135,
-        "segment_index": 7
-      },
       {
         "entity_type": "person",
         "name": "崔瀺",
@@ -811,32 +798,59 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十五章 振衣 · 沙哑与崔瀺在大骊对话",
+        "name": "第二卷山水郎 第一百三十五章 振衣 · 崔瀺与陈平安在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "沙哑",
           "崔瀺",
           "陈平安"
         ],
-        "description": "阴神沙哑笑道：“确实如此。 阴神沉默许久，却始终没有返回大骊的意思。 少年崔瀺问道：“怎么，还有话说？",
+        "description": "阴神沉默许久，却始终没有返回大骊的意思。 少年崔瀺问道：“怎么，还有话说？ 我知道除了报恩，你自己就看好陈平安，但你肯定不清楚，我一开始就看好这个少年了，比谁都更早一些，只是这其中涉及大道内幕，不好跟你细说。",
         "background": "",
-        "significance": "在大骊推动沙哑与崔瀺之间的对话线。",
-        "related_action_indices": [],
+        "significance": "在大骊推动崔瀺与陈平安之间的对话线。",
+        "related_action_indices": [
+          0
+        ],
         "source": "第二卷山水郎 第一百三十五章 振衣 · 段7",
         "sentence_indexes_in_segment": [
-          1,
-          3
+          3,
+          4
         ],
         "juan_index": 135,
         "segment_index": 7,
-        "evidence_excerpt": "阴神沙哑笑道：“确实如此。 阴神沉默许久，却始终没有返回大骊的意思。",
+        "evidence_excerpt": "阴神沉默许久，却始终没有返回大骊的意思。 少年崔瀺问道：“怎么，还有话说？",
         "matched_keywords": [],
         "matched_rule_name": ""
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.261038",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "崔瀺"
+        ],
+        "to_roles": [
+          "陈平安"
+        ],
+        "action": "对话",
+        "context": "” 阴神沙哑笑道：“确实如此。 ” 阴神沉默许久，却始终没有返回大骊的意思。 少年崔瀺问道：“怎么，还有话说？ 我知道除了报恩，你自己就看好陈平安，但你肯定不清楚，我一开始就看好这个少年了，比谁都更早一些，只是这其中涉及大道内幕，不好跟你细说。",
+        "result": null,
+        "event_name": "第二卷山水郎 第一百三十五章 振衣 · 崔瀺与陈平安在大骊对话",
+        "location": "大骊",
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 135,
+        "segment_index": 7
+      }
+    ],
+    "extracted_at": "2026-03-31T18:14:45.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -962,7 +976,7 @@
         "segment_index": 8
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.261256",
+    "extracted_at": "2026-03-31T18:14:45.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1045,7 +1059,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.261460",
+    "extracted_at": "2026-03-31T18:14:45.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1148,7 +1162,7 @@
         "segment_index": 10
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.261674",
+    "extracted_at": "2026-03-31T18:14:45.285658",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1209,7 +1223,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.261860",
+    "extracted_at": "2026-03-31T18:14:45.286661",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1314,7 +1328,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.262069",
+    "extracted_at": "2026-03-31T18:14:45.286661",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

@@ -78,7 +78,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.223083",
+    "extracted_at": "2026-03-31T18:14:45.241505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -198,7 +198,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.223286",
+    "extracted_at": "2026-03-31T18:14:45.241505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -277,7 +277,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.223485",
+    "extracted_at": "2026-03-31T18:14:45.241505",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -300,19 +300,6 @@
     "entities": [
       {
         "entity_type": "person",
-        "name": "沙哑",
-        "alias": [],
-        "original_description_in_book": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。",
-        "description": "前三季叙事中多次出现，常与朱鹿、傅玉同场，推动相关支线发展。",
-        "power": "正阳山",
-        "sentence_indexes_in_segment": [
-          3
-        ],
-        "juan_index": 130,
-        "segment_index": 8
-      },
-      {
-        "entity_type": "person",
         "name": "陈平安",
         "alias": [],
         "original_description_in_book": "陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。",
@@ -328,59 +315,30 @@
     "locations": [],
     "events": [
       {
-        "name": "第二卷山水郎 第一百三十章 山水少年 · 沙哑与陈平安对话",
+        "name": "第二卷山水郎 第一百三十章 山水少年 · 陈平安剧情推进",
         "time": null,
         "location": null,
         "participants": [
-          "沙哑",
           "陈平安"
         ],
-        "description": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。 陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。 ”",
+        "description": "陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。 ” 小姑娘一手捂嘴偷着笑。",
         "background": "",
-        "significance": "推动沙哑与陈平安之间的对话关系。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应陈平安在叙事中的关键剧情推进节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百三十章 山水少年 · 段8",
         "sentence_indexes_in_segment": [
-          3,
-          5
+          5,
+          0
         ],
         "juan_index": 130,
         "segment_index": 8,
-        "evidence_excerpt": "人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。 陈平安实在不知如何安慰",
+        "evidence_excerpt": "陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。 ”",
         "matched_keywords": [],
         "matched_rule_name": ""
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "沙哑"
-        ],
-        "to_roles": [
-          "陈平安"
-        ],
-        "action": "对话",
-        "context": "” 小姑娘一手捂嘴偷着笑。 小跛子也跟着笑起来。 人迹罕至处，那尊阴神露出真身，不过依然面容模糊，黑烟缭绕身躯，阴气森森，他沙哑开口：“没能护住你们，还害得你们被掳去女鬼府邸，对不住了。 ” 陈平安实在不知如何安慰人，憋了半天才憋出一句，“尽力就好。",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百三十章 山水少年 · 沙哑与陈平安对话",
-        "location": null,
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 130,
-        "segment_index": 8
-      }
-    ],
-    "extracted_at": "2026-03-31T15:08:58.224138",
+    "relations": [],
+    "extracted_at": "2026-03-31T18:14:45.242508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -441,7 +399,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.224329",
+    "extracted_at": "2026-03-31T18:14:45.242508",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -616,7 +574,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.224699",
+    "extracted_at": "2026-03-31T18:14:45.243512",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -892,7 +850,7 @@
         "segment_index": 12
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.224991",
+    "extracted_at": "2026-03-31T18:14:45.243512",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1071,7 +1029,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.225231",
+    "extracted_at": "2026-03-31T18:14:45.243512",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1183,7 +1141,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.225442",
+    "extracted_at": "2026-03-31T18:14:45.243512",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1317,7 +1275,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.225653",
+    "extracted_at": "2026-03-31T18:14:45.244515",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1416,7 +1374,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.225868",
+    "extracted_at": "2026-03-31T18:14:45.244515",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1538,7 +1496,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.226092",
+    "extracted_at": "2026-03-31T18:14:45.244515",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1653,7 +1611,7 @@
         "segment_index": 18
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.226298",
+    "extracted_at": "2026-03-31T18:14:45.245519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1757,7 +1715,7 @@
         "segment_index": 19
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.226548",
+    "extracted_at": "2026-03-31T18:14:45.245519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1886,7 +1844,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.226816",
+    "extracted_at": "2026-03-31T18:14:45.245519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2015,7 +1973,7 @@
         "segment_index": 21
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.227019",
+    "extracted_at": "2026-03-31T18:14:45.245519",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2128,7 +2086,7 @@
         "segment_index": 22
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.227255",
+    "extracted_at": "2026-03-31T18:14:45.246522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2189,7 +2147,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.227449",
+    "extracted_at": "2026-03-31T18:14:45.246522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2284,7 +2242,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.227663",
+    "extracted_at": "2026-03-31T18:14:45.246522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2360,7 +2318,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.227856",
+    "extracted_at": "2026-03-31T18:14:45.246522",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2464,7 +2422,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.228071",
+    "extracted_at": "2026-03-31T18:14:45.247526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2567,7 +2525,7 @@
         "segment_index": 27
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.228275",
+    "extracted_at": "2026-03-31T18:14:45.247526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2661,7 +2619,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.228479",
+    "extracted_at": "2026-03-31T18:14:45.247526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2737,7 +2695,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.228674",
+    "extracted_at": "2026-03-31T18:14:45.247526",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2829,7 +2787,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.228883",
+    "extracted_at": "2026-03-31T18:14:45.248529",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2932,7 +2890,7 @@
         "segment_index": 31
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.229078",
+    "extracted_at": "2026-03-31T18:14:45.248529",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3032,7 +2990,7 @@
         "segment_index": 32
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.229277",
+    "extracted_at": "2026-03-31T18:14:45.248529",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3150,7 +3108,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.229515",
+    "extracted_at": "2026-03-31T18:14:45.248529",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3279,7 +3237,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.229742",
+    "extracted_at": "2026-03-31T18:14:45.249533",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -3357,7 +3315,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.229985",
+    "extracted_at": "2026-03-31T18:14:45.249533",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

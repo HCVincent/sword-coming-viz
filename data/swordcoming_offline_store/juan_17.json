@@ -140,7 +140,7 @@
         "segment_index": 1
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.550898",
+    "extracted_at": "2026-03-31T18:14:44.417594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -247,7 +247,7 @@
         "segment_index": 2
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.551155",
+    "extracted_at": "2026-03-31T18:14:44.417594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -353,7 +353,7 @@
         "segment_index": 3
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.551427",
+    "extracted_at": "2026-03-31T18:14:44.417594",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -432,7 +432,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.551684",
+    "extracted_at": "2026-03-31T18:14:44.418597",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -537,7 +537,7 @@
         "segment_index": 5
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.551882",
+    "extracted_at": "2026-03-31T18:14:44.418597",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -598,7 +598,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.552071",
+    "extracted_at": "2026-03-31T18:14:44.418597",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -724,7 +724,7 @@
         "segment_index": 7
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.552391",
+    "extracted_at": "2026-03-31T18:14:44.418597",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -774,19 +774,6 @@
         ],
         "juan_index": 17,
         "segment_index": 8
-      },
-      {
-        "entity_type": "person",
-        "name": "沙哑",
-        "alias": [],
-        "original_description_in_book": "宋集薪大口喘气，眼神炙热，沙哑笑着。",
-        "description": "前三季叙事中多次出现，常与朱鹿、傅玉同场，推动相关支线发展。",
-        "power": "正阳山",
-        "sentence_indexes_in_segment": [
-          1
-        ],
-        "juan_index": 17,
-        "segment_index": 8
       }
     ],
     "locations": [],
@@ -797,13 +784,14 @@
         "location": null,
         "participants": [
           "苻南华",
-          "宋集薪",
-          "沙哑"
+          "宋集薪"
         ],
         "description": "苻南华差点就要忍不住将这头狼崽子，敲死算了，但是最后关头，步步登天、证道长生的大诱惑，仍是压过了个人好恶，于是他停下手指动作，放过了少年一马。 宋集薪大口喘气，眼神炙热，沙哑笑着。 苻南华对此百思不得其解，少年眼中似乎没有什么恨意，苻南华倒是没觉得这是一件值得惊悚的事情，修行路上，光怪陆离，多的是怪胎奇人，只是疑惑问道：“你在笑什么？",
         "background": "",
         "significance": "推动苻南华与宋集薪之间的对话关系。",
-        "related_action_indices": [],
+        "related_action_indices": [
+          0
+        ],
         "source": "第一卷笼中雀 第十七章 不平则鸣 · 段8",
         "sentence_indexes_in_segment": [
           0,
@@ -816,8 +804,34 @@
         "matched_rule_name": ""
       }
     ],
-    "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.552645",
+    "relations": [
+      {
+        "time": null,
+        "from_roles": [
+          "苻南华"
+        ],
+        "to_roles": [
+          "宋集薪"
+        ],
+        "action": "对话",
+        "context": "苻南华差点就要忍不住将这头狼崽子，敲死算了，但是最后关头，步步登天、证道长生的大诱惑，仍是压过了个人好恶，于是他停下手指动作，放过了少年一马。 宋集薪大口喘气，眼神炙热，沙哑笑着。 苻南华对此百思不得其解，少年眼中似乎没有什么恨意，苻南华倒是没觉得这是一件值得惊悚的事情，修行路上，光怪陆离，多的是怪胎奇人，只是疑惑问道：“你在笑什么？ ” 宋集薪呼吸越来越平稳，瘫靠在椅背上，抹去额头汗水，眼神熠熠道：“我一想到不久的将来，自己也能够拥有你这样的本事，弹指杀人，就无比的开心。 ”",
+        "result": null,
+        "event_name": "第一卷笼中雀 第十七章 不平则鸣 · 苻南华与宋集薪对话",
+        "location": null,
+        "is_commentary": false,
+        "sentence_indexes_in_segment": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "juan_index": 17,
+        "segment_index": 8
+      }
+    ],
+    "extracted_at": "2026-03-31T18:14:44.419601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -931,7 +945,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.552900",
+    "extracted_at": "2026-03-31T18:14:44.419601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1009,7 +1023,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.553103",
+    "extracted_at": "2026-03-31T18:14:44.419601",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1115,7 +1129,7 @@
         "segment_index": 11
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.553336",
+    "extracted_at": "2026-03-31T18:14:44.420604",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1211,7 +1225,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.553585",
+    "extracted_at": "2026-03-31T18:14:44.420604",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1317,7 +1331,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.553796",
+    "extracted_at": "2026-03-31T18:14:44.420604",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1473,7 +1487,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.554019",
+    "extracted_at": "2026-03-31T18:14:44.420604",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1535,7 +1549,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.554215",
+    "extracted_at": "2026-03-31T18:14:44.421608",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1596,7 +1610,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.554412",
+    "extracted_at": "2026-03-31T18:14:44.421608",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1657,7 +1671,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.554596",
+    "extracted_at": "2026-03-31T18:14:44.421608",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1718,7 +1732,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.554794",
+    "extracted_at": "2026-03-31T18:14:44.421608",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1779,7 +1793,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.554994",
+    "extracted_at": "2026-03-31T18:14:44.422611",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1857,7 +1871,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.555209",
+    "extracted_at": "2026-03-31T18:14:44.422611",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1934,7 +1948,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.555420",
+    "extracted_at": "2026-03-31T18:14:44.422611",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2013,7 +2027,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.555603",
+    "extracted_at": "2026-03-31T18:14:44.422611",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2074,7 +2088,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.555952",
+    "extracted_at": "2026-03-31T18:14:44.423615",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2135,7 +2149,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.556262",
+    "extracted_at": "2026-03-31T18:14:44.423615",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2212,7 +2226,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.556595",
+    "extracted_at": "2026-03-31T18:14:44.424618",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2273,7 +2287,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.556761",
+    "extracted_at": "2026-03-31T18:14:44.424618",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2334,7 +2348,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.556933",
+    "extracted_at": "2026-03-31T18:14:44.424618",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2395,7 +2409,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.557135",
+    "extracted_at": "2026-03-31T18:14:44.424618",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2456,7 +2470,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.557307",
+    "extracted_at": "2026-03-31T18:14:44.425622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2559,7 +2573,7 @@
         "segment_index": 33
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.557502",
+    "extracted_at": "2026-03-31T18:14:44.425622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2662,7 +2676,7 @@
         "segment_index": 34
       }
     ],
-    "extracted_at": "2026-03-31T15:08:57.557710",
+    "extracted_at": "2026-03-31T18:14:44.425622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2739,7 +2753,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:57.557903",
+    "extracted_at": "2026-03-31T18:14:44.425622",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,

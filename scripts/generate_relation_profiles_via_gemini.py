@@ -413,7 +413,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--input", default="data/relation_profile_inputs.json")
     p.add_argument("--output", default="data/relation_profiles.json")
     p.add_argument("--checkpoint", default="data/relation_profiles.checkpoint.json")
-    p.add_argument("--packets-dir", default="data/relation_profile_packets")
+    p.add_argument("--packets-dir", default="data/_runtime/relation_profile_packets")
     p.add_argument("--failures-output", default="data/relation_profile_generation_failures.json")
     p.add_argument("--sys-prompt", default="prompts/sys_relation_profile_gemini.md")
     p.add_argument("--rewrite-prompt", default="prompts/user_relation_profile_gemini.md")

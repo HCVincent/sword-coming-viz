@@ -412,7 +412,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--input", default="data/event_dossier_inputs.json")
     p.add_argument("--output", default="data/event_dossiers.json")
     p.add_argument("--checkpoint", default="data/event_dossiers.checkpoint.json")
-    p.add_argument("--packets-dir", default="data/event_dossier_packets")
+    p.add_argument("--packets-dir", default="data/_runtime/event_dossier_packets")
     p.add_argument("--failures-output", default="data/event_dossier_generation_failures.json")
     p.add_argument("--sys-prompt", default="prompts/sys_event_dossier_gemini.md")
     p.add_argument("--rewrite-prompt", default="prompts/user_event_dossier_gemini.md")

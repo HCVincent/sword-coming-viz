@@ -591,7 +591,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--packets-dir",
-        default="data/entity_profile_packets",
+        default="data/_runtime/entity_profile_packets",
         help="Directory for single-entity packet files",
     )
     parser.add_argument(

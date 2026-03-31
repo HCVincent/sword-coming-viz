@@ -274,3 +274,27 @@ class TestEventParticipantFiltering:
         )
         packet = result["events"][0]
         assert set(packet["participants"]) == {"陈平安", "宁姚"}
+
+
+# ── Gemini boundary audit prompt construction ──
+
+
+class TestGeminiBoundaryAuditPrompt:
+    """Test that the audit script's prompt builder works without calling Gemini."""
+
+    def test_prompt_includes_all_role_names(self):
+        from scripts.audit_role_names_via_gemini import _build_user_prompt
+
+        names = ["陈平安", "宁姚", "齐静春"]
+        prompt = _build_user_prompt(names)
+        for name in names:
+            assert name in prompt
+        assert "3 个角色名" in prompt
+
+    def test_prompt_numbering(self):
+        from scripts.audit_role_names_via_gemini import _build_user_prompt
+
+        names = ["甲", "乙"]
+        prompt = _build_user_prompt(names)
+        assert "1. 甲" in prompt
+        assert "2. 乙" in prompt

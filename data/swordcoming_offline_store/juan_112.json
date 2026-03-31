@@ -54,7 +54,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.117031",
+    "extracted_at": "2026-03-31T18:14:45.114064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -117,7 +117,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.117337",
+    "extracted_at": "2026-03-31T18:14:45.114064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -181,7 +181,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.117632",
+    "extracted_at": "2026-03-31T18:14:45.114064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -244,7 +244,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.117978",
+    "extracted_at": "2026-03-31T18:14:45.114064",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -305,7 +305,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.118269",
+    "extracted_at": "2026-03-31T18:14:45.115067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -366,7 +366,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.118465",
+    "extracted_at": "2026-03-31T18:14:45.115067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -427,7 +427,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.118652",
+    "extracted_at": "2026-03-31T18:14:45.115067",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -539,7 +539,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.119070",
+    "extracted_at": "2026-03-31T18:14:45.116071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -569,19 +569,6 @@
         "power": "剑气长城",
         "sentence_indexes_in_segment": [
           1
-        ],
-        "juan_index": 112,
-        "segment_index": 10
-      },
-      {
-        "entity_type": "person",
-        "name": "沙哑",
-        "alias": [],
-        "original_description_in_book": "那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
-        "description": "前三季叙事中多次出现，常与朱鹿、傅玉同场，推动相关支线发展。",
-        "power": "正阳山",
-        "sentence_indexes_in_segment": [
-          5
         ],
         "juan_index": 112,
         "segment_index": 10
@@ -615,9 +602,7 @@
         "original_description_in_book": "那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
         "modern_name": "",
         "coordinates": null,
-        "related_entities": [
-          "沙哑"
-        ],
+        "related_entities": [],
         "sentence_indexes_in_segment": [
           5
         ],
@@ -627,19 +612,16 @@
     ],
     "events": [
       {
-        "name": "第二卷山水郎 第一百一十二章 强者 · 阿良与沙哑在大骊对话",
+        "name": "第二卷山水郎 第一百一十二章 强者 · 阿良在大骊对话",
         "time": null,
         "location": "大骊",
         "participants": [
-          "阿良",
-          "沙哑"
+          "阿良"
         ],
         "description": "阿良笑道：“那我就把这些孩子交给你了，最少护送到大骊野夫关之后，之后就看他们自己的造化吧。 那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？ 这尊所谓的阴神点了点头。",
         "background": "",
-        "significance": "在大骊推动阿良与沙哑之间的对话线。",
-        "related_action_indices": [
-          0
-        ],
+        "significance": "对应阿良在叙事中的关键对话节点。",
+        "related_action_indices": [],
         "source": "第二卷山水郎 第一百一十二章 强者 · 段10",
         "sentence_indexes_in_segment": [
           1,
@@ -652,34 +634,8 @@
         "matched_rule_name": ""
       }
     ],
-    "relations": [
-      {
-        "time": null,
-        "from_roles": [
-          "阿良"
-        ],
-        "to_roles": [
-          "沙哑"
-        ],
-        "action": "对话",
-        "context": "这尊所谓的阴神点了点头。 阿良笑道：“那我就把这些孩子交给你了，最少护送到大骊野夫关之后，之后就看他们自己的造化吧。 总这么老母鸡护崽子，终究不是个事。 千人之诺诺，不如一士之谔谔，我相信你。 ” 那尊阴神用地地道道的小镇方言，沙哑开口问道：“前辈，为何愿意相信一个来历不明的阴物？",
-        "result": null,
-        "event_name": "第二卷山水郎 第一百一十二章 强者 · 阿良与沙哑在大骊对话",
-        "location": "大骊",
-        "is_commentary": false,
-        "sentence_indexes_in_segment": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "juan_index": 112,
-        "segment_index": 10
-      }
-    ],
-    "extracted_at": "2026-03-31T15:08:58.119306",
+    "relations": [],
+    "extracted_at": "2026-03-31T18:14:45.116071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -741,7 +697,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.119495",
+    "extracted_at": "2026-03-31T18:14:45.116071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -847,7 +803,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.119721",
+    "extracted_at": "2026-03-31T18:14:45.116071",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -990,7 +946,7 @@
         "segment_index": 13
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.119957",
+    "extracted_at": "2026-03-31T18:14:45.117074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1089,7 +1045,7 @@
         "segment_index": 14
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.120167",
+    "extracted_at": "2026-03-31T18:14:45.117074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1202,7 +1158,7 @@
         "segment_index": 15
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.120424",
+    "extracted_at": "2026-03-31T18:14:45.117074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1306,7 +1262,7 @@
         "segment_index": 16
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.120722",
+    "extracted_at": "2026-03-31T18:14:45.117074",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1425,7 +1381,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.120944",
+    "extracted_at": "2026-03-31T18:14:45.118078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1508,7 +1464,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.121180",
+    "extracted_at": "2026-03-31T18:14:45.118078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1604,7 +1560,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.121414",
+    "extracted_at": "2026-03-31T18:14:45.118078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1713,7 +1669,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.121631",
+    "extracted_at": "2026-03-31T18:14:45.118078",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1788,7 +1744,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.121832",
+    "extracted_at": "2026-03-31T18:14:45.119081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1903,7 +1859,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.122054",
+    "extracted_at": "2026-03-31T18:14:45.119081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -1966,7 +1922,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.122252",
+    "extracted_at": "2026-03-31T18:14:45.119081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2091,7 +2047,7 @@
         "segment_index": 24
       }
     ],
-    "extracted_at": "2026-03-31T15:08:58.122479",
+    "extracted_at": "2026-03-31T18:14:45.119081",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2153,7 +2109,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.122665",
+    "extracted_at": "2026-03-31T18:14:45.120085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
@@ -2263,7 +2219,7 @@
       }
     ],
     "relations": [],
-    "extracted_at": "2026-03-31T15:08:58.122836",
+    "extracted_at": "2026-03-31T18:14:45.120085",
     "model_name": "offline-rules-v2",
     "prompt_tokens": 0,
     "completion_tokens": 0,
