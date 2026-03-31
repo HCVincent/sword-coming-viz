@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Collection, List
+from typing import Any, Collection, Dict, List
 
 DEFAULT_BLOCKED_TITLED_ROLES = {
     "白衣少年",
@@ -87,6 +87,64 @@ SUSPICIOUS_ROLE_SUFFIXES = (
     "开口",
 )
 
+ALLOWED_SPECIAL_RESOLUTIONS = {"keep_as_canonical", "merge_to_canonical"}
+
+
+def build_allowed_special_designator_map(
+    entries: Collection[Any] | None = None,
+) -> Dict[str, Dict[str, str]]:
+    """Normalize special stable-designator allowlist entries.
+
+    The allowlist exists to preserve *stable, unambiguous role designators*
+    such as 杨老头 / 火龙真人 that should survive noise filtering even though
+    they are not always身份证式本名.
+    """
+    allowed: Dict[str, Dict[str, str]] = {}
+    if not entries:
+        return allowed
+
+    for raw in entries:
+        if isinstance(raw, str):
+            name = raw.strip()
+            if not name:
+                continue
+            allowed[name] = {
+                "name": name,
+                "resolution": "keep_as_canonical",
+                "canonical_target": name,
+                "kind": "honorific",
+            }
+            continue
+
+        if not isinstance(raw, dict):
+            continue
+
+        name = str(raw.get("name", "")).strip()
+        if not name:
+            continue
+
+        resolution = str(raw.get("resolution", "keep_as_canonical")).strip() or "keep_as_canonical"
+        if resolution not in ALLOWED_SPECIAL_RESOLUTIONS:
+            resolution = "keep_as_canonical"
+
+        canonical_target = str(raw.get("canonical_target", "")).strip() or name
+        kind = str(raw.get("kind", "honorific")).strip() or "honorific"
+
+        allowed[name] = {
+            "name": name,
+            "resolution": resolution,
+            "canonical_target": canonical_target,
+            "kind": kind,
+        }
+
+    return allowed
+
+
+def build_allowed_special_designator_names(
+    entries: Collection[Any] | None = None,
+) -> set[str]:
+    return set(build_allowed_special_designator_map(entries).keys())
+
 
 def build_blocked_role_name_set(extra_blocked: Collection[str] | None = None) -> set[str]:
     blocked = set(DEFAULT_BLOCKED_TITLED_ROLES)
@@ -100,6 +158,7 @@ def audit_role_name(
     blocked_names: Collection[str] | None = None,
     *,
     canonical_roles: Collection[str] | None = None,
+    allowed_names: Collection[str] | None = None,
 ) -> List[str]:
     """Return a list of reasons why *name* looks like a pseudo-role.
 
@@ -112,6 +171,10 @@ def audit_role_name(
     """
     candidate = str(name).strip()
     if not candidate:
+        return []
+
+    allowed = {str(item).strip() for item in (allowed_names or []) if str(item).strip()}
+    if candidate in allowed:
         return []
 
     reasons: List[str] = []
@@ -164,5 +227,13 @@ def is_pseudo_role_name(
     blocked_names: Collection[str] | None = None,
     *,
     canonical_roles: Collection[str] | None = None,
+    allowed_names: Collection[str] | None = None,
 ) -> bool:
-    return bool(audit_role_name(name, blocked_names=blocked_names, canonical_roles=canonical_roles))
+    return bool(
+        audit_role_name(
+            name,
+            blocked_names=blocked_names,
+            canonical_roles=canonical_roles,
+            allowed_names=allowed_names,
+        )
+    )

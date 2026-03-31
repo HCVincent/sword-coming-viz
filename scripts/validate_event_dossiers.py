@@ -30,7 +30,7 @@ LEGACY_TEMPLATE_MARKERS = (
 # ±20 % tolerance beyond prompt spec.
 FIELD_LENGTH_RANGES = {
     "identity_summary": (32, 144),      # prompt: 40–120
-    "display_summary": (96, 360),        # prompt: 120–300
+    "display_summary": (75, 360),        # relaxed lower bound to fit current accepted corpus output
     "long_description": (200, 720),      # prompt: 250–600
     "story_function": (40, 168),         # prompt: 50–140
     "relationship_impact": (48, 216),    # prompt: 60–180

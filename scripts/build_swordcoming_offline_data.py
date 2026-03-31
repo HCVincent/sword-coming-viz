@@ -24,7 +24,11 @@ from model.action import Action
 from model.event import Event
 from model.location import Location
 from model.role import Role
-from scripts.character_quality import audit_role_name, is_pseudo_role_name
+from scripts.character_quality import (
+    audit_role_name,
+    build_allowed_special_designator_names,
+    is_pseudo_role_name,
+)
 from scripts.build_entity_profile_inputs import build_entity_profile_inputs
 from scripts.build_relation_profile_inputs import build_relation_profile_inputs
 from scripts.build_event_dossier_inputs import build_event_dossier_inputs
@@ -350,6 +354,7 @@ def normalize_mined_candidate(
     raw_name: str,
     *,
     blocked_names: set[str],
+    allowed_names: set[str] | None = None,
     known_names: set[str],
     location_names: set[str],
     sentence_text: str = "",
@@ -357,18 +362,23 @@ def normalize_mined_candidate(
     match_start: int = -1,
     match_end: int = -1,
 ) -> Optional[str]:
+    allowed_names = allowed_names or set()
     candidate = trim_candidate_noise(raw_name)
     if len(candidate) < 2 or len(candidate) > 4:
         return None
     if not all_cjk(candidate):
         return None
-    if candidate in blocked_names or candidate in known_names or candidate in location_names:
+    if candidate in known_names or candidate in location_names:
+        return None
+    if candidate in allowed_names:
+        return candidate
+    if candidate in blocked_names:
         return None
     if candidate in NON_PERSON_CANDIDATES:
         return None
     if any(part in candidate for part in NON_PERSON_SUBSTRINGS):
         return None
-    if is_pseudo_role_name(candidate, blocked_names=blocked_names):
+    if is_pseudo_role_name(candidate, blocked_names=blocked_names, allowed_names=allowed_names):
         return None
     if any(known == candidate or known.startswith(candidate) or candidate.startswith(known) for known in known_names):
         return None
@@ -390,8 +400,10 @@ def audit_mined_candidate(
     *,
     evidence_item: dict,
     blocked_names: set[str],
+    allowed_names: set[str] | None = None,
 ) -> List[str]:
-    reasons = audit_role_name(candidate, blocked_names=blocked_names)
+    allowed_names = allowed_names or set()
+    reasons = audit_role_name(candidate, blocked_names=blocked_names, allowed_names=allowed_names)
     intro_hits = int(evidence_item["pattern_hits"].get("intro", 0))
     dialogue_hits = int(evidence_item["pattern_hits"].get("dialogue", 0))
     unit_count = len(evidence_item["units"])
@@ -475,6 +487,9 @@ def mine_character_candidates(
         for name in manual_overrides.get("blocked_aliases", [])
         if str(name).strip()
     }
+    allowed_names = build_allowed_special_designator_names(
+        manual_overrides.get("allowed_special_designators", [])
+    )
 
     for item in seed_characters:
         known_names.update(unique_names(item.get("aliases", [])))
@@ -505,6 +520,7 @@ def mine_character_candidates(
                         candidate = normalize_mined_candidate(
                             raw_name,
                             blocked_names=blocked_names,
+                            allowed_names=allowed_names,
                             known_names=known_names,
                             location_names=location_names,
                             sentence_text=sentence_text,
@@ -542,7 +558,12 @@ def mine_character_candidates(
         unit_count = len(item["units"])
         co_character_count = len(item["co_characters"])
         co_location_count = len(item["co_locations"])
-        audit_reasons = audit_mined_candidate(candidate, evidence_item=item, blocked_names=blocked_names)
+        audit_reasons = audit_mined_candidate(
+            candidate,
+            evidence_item=item,
+            blocked_names=blocked_names,
+            allowed_names=allowed_names,
+        )
         if audit_reasons:
             rejected_audits.append((candidate, audit_reasons))
             continue
@@ -1126,10 +1147,23 @@ def write_store(chunks_by_juan: Dict[int, Dict[str, dict]], store_dir: Path) -> 
     (store_dir / "metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def prune_suspicious_roles_from_knowledge_base(kb: Any, blocked_names: set[str]) -> List[Tuple[str, List[str]]]:
+def prune_suspicious_roles_from_knowledge_base(
+    kb: Any,
+    blocked_names: set[str],
+    *,
+    allowed_names: set[str],
+) -> List[Tuple[str, List[str]]]:
     canonical_roles = set(kb.roles.keys())
     suspicious_roles = [
-        (role_id, audit_role_name(role.canonical_name, blocked_names=blocked_names, canonical_roles=canonical_roles))
+        (
+            role_id,
+            audit_role_name(
+                role.canonical_name,
+                blocked_names=blocked_names,
+                canonical_roles=canonical_roles,
+                allowed_names=allowed_names,
+            ),
+        )
         for role_id, role in kb.roles.items()
     ]
     suspicious_roles = [(role_id, reasons) for role_id, reasons in suspicious_roles if reasons]
@@ -1146,7 +1180,13 @@ def prune_suspicious_roles_from_knowledge_base(kb: Any, blocked_names: set[str])
     kb.name_to_role_id = {
         name: role_id
         for name, role_id in kb.name_to_role_id.items()
-        if role_id not in blocked_role_ids and not is_pseudo_role_name(name, blocked_names=blocked_names, canonical_roles=canonical_roles)
+        if role_id not in blocked_role_ids
+        and not is_pseudo_role_name(
+            name,
+            blocked_names=blocked_names,
+            canonical_roles=canonical_roles,
+            allowed_names=allowed_names,
+        )
     }
     kb.power_to_roles = {
         power: [role_id for role_id in role_ids if role_id not in blocked_role_ids]
@@ -1540,7 +1580,14 @@ def build_offline_data(
         for name in manual_overrides.get("blocked_aliases", [])
         if str(name).strip()
     }
-    pruned_roles = prune_suspicious_roles_from_knowledge_base(kb, blocked_role_names)
+    allowed_role_names = build_allowed_special_designator_names(
+        manual_overrides.get("allowed_special_designators", [])
+    )
+    pruned_roles = prune_suspicious_roles_from_knowledge_base(
+        kb,
+        blocked_role_names,
+        allowed_names=allowed_role_names,
+    )
     if pruned_roles:
         print("Pruned suspicious roles from unified knowledge base:")
         for role_id, reasons in pruned_roles[:20]:

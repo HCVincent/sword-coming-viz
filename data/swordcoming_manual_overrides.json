@@ -35,6 +35,50 @@
     "沙哑",
     "俞真意冷"
   ],
+  "allowed_special_designators": [
+    {
+      "name": "刘太守",
+      "resolution": "keep_as_canonical",
+      "canonical_target": "刘太守",
+      "kind": "official_title"
+    },
+    {
+      "name": "大骊皇帝",
+      "resolution": "keep_as_canonical",
+      "canonical_target": "大骊皇帝",
+      "kind": "official_title"
+    },
+    {
+      "name": "杨老头",
+      "resolution": "keep_as_canonical",
+      "canonical_target": "杨老头",
+      "kind": "honorific"
+    },
+    {
+      "name": "于夫人",
+      "resolution": "keep_as_canonical",
+      "canonical_target": "于夫人",
+      "kind": "honorific"
+    },
+    {
+      "name": "桂夫人",
+      "resolution": "keep_as_canonical",
+      "canonical_target": "桂夫人",
+      "kind": "honorific"
+    },
+    {
+      "name": "桂姨",
+      "resolution": "merge_to_canonical",
+      "canonical_target": "桂夫人",
+      "kind": "kinship_title"
+    },
+    {
+      "name": "火龙真人",
+      "resolution": "keep_as_canonical",
+      "canonical_target": "火龙真人",
+      "kind": "daohao"
+    }
+  ],
   "role_aliases": {
     "宋集薪": ["宋睦"],
     "陆沉": ["莲花冠道人"],
@@ -44,7 +88,8 @@
     "阮邛": ["阮师"],
     "魏檗": ["魏山君"],
     "郑大风": ["郑掌柜"],
-    "暖树": ["陈暖树"]
+    "暖树": ["陈暖树"],
+    "桂夫人": ["桂姨"]
   },
   "role_primary_powers": {
     "陈平安": "泥瓶巷",
@@ -128,6 +173,7 @@
     "魏山君": "魏檗",
     "郑掌柜": "郑大风",
     "陈暖树": "暖树",
+    "桂姨": "桂夫人",
     "俞真意冷": "俞真意"
   },
   "entity_type_overrides": {

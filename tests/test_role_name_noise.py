@@ -14,6 +14,8 @@ import pytest
 
 from scripts.character_quality import (
     audit_role_name,
+    build_allowed_special_designator_map,
+    build_allowed_special_designator_names,
     is_pseudo_role_name,
     VOICE_DESCRIPTOR_NAMES,
     CONCAT_ACTION_SUFFIXES,
@@ -126,6 +128,47 @@ class TestGenericRoleNames:
         for name in ("女子", "男子"):
             reasons = audit_role_name(name, blocked_names=[name])
             assert reasons, f"{name} should be flagged when explicitly blocked"
+
+
+class TestStableSpecialDesignators:
+    """Stable single-target designators must survive noise filtering."""
+
+    SPECIALS = [
+        {
+            "name": "杨老头",
+            "resolution": "keep_as_canonical",
+            "canonical_target": "杨老头",
+            "kind": "honorific",
+        },
+        {
+            "name": "桂姨",
+            "resolution": "merge_to_canonical",
+            "canonical_target": "桂夫人",
+            "kind": "kinship_title",
+        },
+    ]
+
+    def test_allowed_special_designator_helpers(self):
+        allowed_map = build_allowed_special_designator_map(self.SPECIALS)
+        allowed_names = build_allowed_special_designator_names(self.SPECIALS)
+        assert allowed_map["杨老头"]["resolution"] == "keep_as_canonical"
+        assert allowed_map["桂姨"]["canonical_target"] == "桂夫人"
+        assert allowed_names == {"杨老头", "桂姨"}
+
+    def test_allowlist_beats_blocklist_for_stable_designator(self):
+        reasons = audit_role_name(
+            "杨老头",
+            blocked_names=["杨老头"],
+            allowed_names={"杨老头"},
+        )
+        assert reasons == []
+
+    def test_allowlist_beats_pseudo_name_gate(self):
+        assert not is_pseudo_role_name(
+            "杨老头",
+            blocked_names=["杨老头"],
+            allowed_names={"杨老头"},
+        )
 
 
 # -------------------------------------------------------------------------
@@ -289,7 +332,7 @@ class TestGeminiBoundaryAuditPrompt:
         prompt = _build_user_prompt(names)
         for name in names:
             assert name in prompt
-        assert "3 个角色名" in prompt
+        assert "3 个角色指称" in prompt
 
     def test_prompt_numbering(self):
         from scripts.audit_role_names_via_gemini import _build_user_prompt
@@ -298,3 +341,61 @@ class TestGeminiBoundaryAuditPrompt:
         prompt = _build_user_prompt(names)
         assert "1. 甲" in prompt
         assert "2. 乙" in prompt
+
+    def test_prompt_mentions_stable_designators(self):
+        from scripts.audit_role_names_via_gemini import _build_user_prompt
+
+        prompt = _build_user_prompt(
+            ["杨老头", "桂姨"],
+            {
+                "杨老头": {
+                    "name": "杨老头",
+                    "resolution": "keep_as_canonical",
+                    "canonical_target": "杨老头",
+                    "kind": "honorific",
+                },
+                "桂姨": {
+                    "name": "桂姨",
+                    "resolution": "merge_to_canonical",
+                    "canonical_target": "桂夫人",
+                    "kind": "kinship_title",
+                },
+            },
+        )
+        assert "稳定且单义的角色指称" in prompt
+        assert "杨老头" in prompt
+        assert "桂姨" in prompt
+        assert "桂夫人" in prompt
+
+    def test_postprocess_preserves_allowed_special_designators(self):
+        from scripts.audit_role_names_via_gemini import _postprocess_audit_results
+
+        allowed_map = build_allowed_special_designator_map(
+            [
+                {
+                    "name": "杨老头",
+                    "resolution": "keep_as_canonical",
+                    "canonical_target": "杨老头",
+                    "kind": "honorific",
+                },
+                {
+                    "name": "桂姨",
+                    "resolution": "merge_to_canonical",
+                    "canonical_target": "桂夫人",
+                    "kind": "kinship_title",
+                },
+            ]
+        )
+        processed = _postprocess_audit_results(
+            [
+                {"name": "杨老头", "verdict": "noise", "reason": "称谓"},
+                {"name": "桂姨", "verdict": "noise", "reason": "像称呼"},
+                {"name": "沙哑", "verdict": "noise", "reason": "语音描写词"},
+            ],
+            allowed_special_designators=allowed_map,
+        )
+        by_name = {item["name"]: item for item in processed}
+        assert by_name["杨老头"]["verdict"] == "stable_designator"
+        assert by_name["桂姨"]["verdict"] == "alias_of"
+        assert by_name["桂姨"]["canonical_target"] == "桂夫人"
+        assert by_name["沙哑"]["verdict"] == "noise"
