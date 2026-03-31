@@ -11,9 +11,24 @@ from typing import Dict, Iterable, List, Tuple
 
 LEGACY_TEMPLATE_MARKERS = (
     "在现有三季材料里",
+    "在已导入文本中",
+    "在现有材料里",
     "人物关系上",
     "从阶段走势看",
 )
+
+# Length ranges (in characters) for profile fields.
+# Using generous ±20% tolerance beyond the prompt-specified range
+# to avoid rejecting profiles that are only slightly out of spec.
+FIELD_LENGTH_RANGES = {
+    "identity_summary": (60, 200),
+    "display_summary": (150, 550),
+    "long_description": (280, 1050),
+    "story_function": (60, 230),
+    "phase_arc": (0, 330),          # 0 lower bound: may legitimately be empty
+}
+RELATIONSHIP_CLUSTER_ITEM_RANGE = (20, 150)
+RELATIONSHIP_CLUSTER_COUNT_RANGE = (1, 10)
 
 
 def _load_json(path: Path) -> dict:
@@ -74,6 +89,32 @@ def validate_entity_profiles(*, inputs_payload: dict, profiles_payload: dict) ->
             problems.append(f"{entity_type}:{entity_id} generator must be gemini-api")
         if not model_name:
             problems.append(f"{entity_type}:{entity_id} model must not be empty")
+
+        # ── Field length checks ──────────────────────────────────────────
+        for field_name, (lo, hi) in FIELD_LENGTH_RANGES.items():
+            text = _normalize_text(profile.get(field_name, ""))
+            length = len(text)
+            if length and (length < lo or length > hi):
+                problems.append(
+                    f"{entity_type}:{entity_id} {field_name} length {length} "
+                    f"outside range [{lo}, {hi}]"
+                )
+
+        clusters = list(profile.get("relationship_clusters", []))
+        cl_lo, cl_hi = RELATIONSHIP_CLUSTER_COUNT_RANGE
+        if clusters and (len(clusters) < cl_lo or len(clusters) > cl_hi):
+            problems.append(
+                f"{entity_type}:{entity_id} relationship_clusters count {len(clusters)} "
+                f"outside range [{cl_lo}, {cl_hi}]"
+            )
+        item_lo, item_hi = RELATIONSHIP_CLUSTER_ITEM_RANGE
+        for idx, item in enumerate(clusters):
+            item_len = len(_normalize_text(str(item)))
+            if item_len and (item_len < item_lo or item_len > item_hi):
+                problems.append(
+                    f"{entity_type}:{entity_id} relationship_clusters[{idx}] length {item_len} "
+                    f"outside range [{item_lo}, {item_hi}]"
+                )
 
         long_description = str(profile.get("long_description", "")).strip()
         original_descriptions = source_input.get("original_descriptions", [])
