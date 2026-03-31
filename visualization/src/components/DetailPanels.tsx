@@ -284,6 +284,28 @@ export function EventDetail({ event, onClose, onBack, onEntityClick, onLocationC
         </section>
       )}
 
+      {event.identitySummary && (
+        <section className="detail-section">
+          <h3 className="detail-heading">简介</h3>
+          <p className="detail-text">{event.identitySummary}</p>
+          {event.longDescription && <p className="detail-text mt-2 whitespace-pre-line">{event.longDescription}</p>}
+        </section>
+      )}
+
+      {event.storyFunction && (
+        <section className="detail-section">
+          <h3 className="detail-heading">叙事功能</h3>
+          <p className="detail-text">{event.storyFunction}</p>
+        </section>
+      )}
+
+      {event.relationshipImpact && (
+        <section className="detail-section">
+          <h3 className="detail-heading">关系影响</h3>
+          <p className="detail-text">{event.relationshipImpact}</p>
+        </section>
+      )}
+
       {event.timeText && (
         <section className="detail-section">
           <h3 className="detail-heading">原文时间</h3>
@@ -713,6 +735,39 @@ export function RelationDetail({
         </div>
       </section>
 
+      {relations[0]?.identitySummary && (
+        <section className="detail-section">
+          <h3 className="detail-heading">关系简介</h3>
+          <p className="detail-text">{relations[0].identitySummary}</p>
+          {relations[0].longDescription && <p className="detail-text mt-2 whitespace-pre-line">{relations[0].longDescription}</p>}
+        </section>
+      )}
+
+      {relations[0]?.storyFunction && (
+        <section className="detail-section">
+          <h3 className="detail-heading">叙事功能</h3>
+          <p className="detail-text">{relations[0].storyFunction}</p>
+        </section>
+      )}
+
+      {relations[0]?.phaseArc && (
+        <section className="detail-section">
+          <h3 className="detail-heading">阶段走势</h3>
+          <p className="detail-text">{relations[0].phaseArc}</p>
+        </section>
+      )}
+
+      {relations[0]?.interactionPatterns && relations[0].interactionPatterns.length > 0 && (
+        <section className="detail-section">
+          <h3 className="detail-heading">互动模式</h3>
+          <div className="info-list">
+            {relations[0].interactionPatterns.map((pattern, i) => (
+              <div key={i} className="subtle-card detail-text">{pattern}</div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {renderJumpSection(
         '原文定位',
         primaryJumpTarget ? [primaryJumpTarget, ...sourceChapterTargets.filter((item) => item.unitIndex !== primaryJumpTarget.unitIndex)] : sourceChapterTargets,
@@ -862,6 +917,10 @@ export function NetworkRoleRelationsDetail({
                     </span>
                   ))}
                 </div>
+              )}
+
+              {group.relations[0]?.displaySummary && (
+                <p className="detail-text mt-3 text-sm">{group.relations[0].displaySummary}</p>
               )}
 
               {group.sourceUnits.length > 0 && (

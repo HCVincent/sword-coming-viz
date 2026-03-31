@@ -82,6 +82,14 @@ export interface UnifiedEvent {
   source_units?: number[];
   source_segments: string[];
   action_count: number;
+  // Dossier fields (Top 500 events only)
+  identity_summary?: string;
+  display_summary_dossier?: string;
+  long_description?: string;
+  story_function?: string;
+  relationship_impact?: string;
+  dossier_source?: string;
+  dossier_version?: string;
   created_at: string;
   updated_at: string;
 }
@@ -105,6 +113,15 @@ export interface UnifiedRelation {
   contexts: string[];
   source_juans: number[];
   source_units?: number[];
+  // Dossier fields
+  identity_summary?: string;
+  display_summary?: string;
+  long_description?: string;
+  story_function?: string;
+  phase_arc?: string;
+  interaction_patterns?: string[];
+  summary_source?: string;
+  profile_version?: string;
   created_at: string;
   updated_at: string;
 }
@@ -218,6 +235,13 @@ export interface RoleLinkUnified {
   actionTypes: string[];
   contexts: string[];
   sourceUnits: number[];
+  // Relation dossier
+  identitySummary?: string;
+  displaySummary?: string;
+  longDescription?: string;
+  storyFunction?: string;
+  phaseArc?: string;
+  interactionPatterns?: string[];
 }
 
 export interface TimelineEventUnified {
@@ -235,6 +259,12 @@ export interface TimelineEventUnified {
   type: 'event';
   significance: string;
   background: string;
+  // Event dossier (Top 500 only)
+  identitySummary?: string;
+  displaySummaryDossier?: string;
+  longDescription?: string;
+  storyFunction?: string;
+  relationshipImpact?: string;
 }
 
 export interface PowerDistributionUnified {

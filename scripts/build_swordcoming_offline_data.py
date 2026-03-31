@@ -26,6 +26,8 @@ from model.location import Location
 from model.role import Role
 from scripts.character_quality import audit_role_name, is_pseudo_role_name
 from scripts.build_entity_profile_inputs import build_entity_profile_inputs
+from scripts.build_relation_profile_inputs import build_relation_profile_inputs
+from scripts.build_event_dossier_inputs import build_event_dossier_inputs
 from scripts.build_event_display_inputs import build_event_display_inputs
 from scripts.build_chapter_synopses import build_chapter_synopses_file
 from scripts.build_key_events_index import build_key_events_index_file
@@ -39,6 +41,10 @@ DEFAULT_SYNC_FILES = [
     "chapter_index.json",
     "entity_profile_inputs.json",
     "entity_profiles.json",
+    "relation_profile_inputs.json",
+    "relation_profiles.json",
+    "event_dossier_inputs.json",
+    "event_dossiers.json",
     "event_display_inputs.json",
     "event_display_catalog.json",
     "chapter_synopses.json",
@@ -1320,6 +1326,130 @@ def _apply_display_summaries_to_kb(
     return coverage
 
 
+def _apply_relation_profiles_to_kb(
+    *,
+    kb: Any,
+    relation_inputs: dict,
+    relation_outputs: dict,
+    skip_summary_check: bool,
+) -> Dict[str, int]:
+    """Merge relation dossier fields onto KB relations."""
+    input_index: Dict[str, dict] = {
+        str(item.get("relation_id", "")).strip(): item
+        for item in relation_inputs.get("relations", [])
+        if str(item.get("relation_id", "")).strip()
+    }
+    output_index: Dict[str, dict] = {
+        str(item.get("relation_id", "")).strip(): item
+        for item in relation_outputs.get("profiles", [])
+        if str(item.get("relation_id", "")).strip()
+    }
+    coverage = {"applied": 0, "missing": 0, "stale": 0}
+    missing: List[str] = []
+    stale: List[str] = []
+
+    for relation_id, relation in kb.relations.items():
+        rel_input = input_index.get(relation_id)
+        if not rel_input:
+            continue  # not all relations may have input packets
+        rel_output = output_index.get(relation_id)
+        if not rel_output:
+            missing.append(f"missing:{relation_id}")
+            continue
+        expected_hash = str(rel_input.get("input_hash", ""))
+        actual_hash = str(rel_output.get("generated_from_input_hash", ""))
+        if expected_hash != actual_hash:
+            stale.append(f"stale:{relation_id}")
+            continue
+
+        display_summary = str(rel_output.get("display_summary", "")).strip()
+        if display_summary:
+            relation.display_summary = display_summary
+            relation.identity_summary = str(rel_output.get("identity_summary", "")).strip()
+            relation.long_description = str(rel_output.get("long_description", "")).strip()
+            relation.story_function = str(rel_output.get("story_function", "")).strip()
+            relation.phase_arc = str(rel_output.get("phase_arc", "")).strip()
+            relation.interaction_patterns = list(rel_output.get("interaction_patterns", []))
+            relation.summary_source = str(rel_output.get("generator", "gemini-api"))
+            relation.profile_version = str(rel_output.get("profile_version", "relation-profile-v1"))
+            coverage["applied"] += 1
+
+    coverage["missing"] = len(missing)
+    coverage["stale"] = len(stale)
+
+    if not skip_summary_check and (missing or stale):
+        problems = [*missing[:10], *stale[:10]]
+        print(
+            "WARNING: Relation profiles are missing or stale. "
+            "Run scripts/generate_relation_profiles_via_gemini.py --changed-only to refresh. "
+            f"Examples: {problems}"
+        )
+
+    return coverage
+
+
+def _apply_event_dossiers_to_kb(
+    *,
+    kb: Any,
+    event_inputs: dict,
+    event_outputs: dict,
+    skip_summary_check: bool,
+) -> Dict[str, int]:
+    """Merge event dossier fields onto KB events (Top 500)."""
+    input_index: Dict[str, dict] = {
+        str(item.get("event_id", "")).strip(): item
+        for item in event_inputs.get("events", [])
+        if str(item.get("event_id", "")).strip()
+    }
+    output_index: Dict[str, dict] = {
+        str(item.get("event_id", "")).strip(): item
+        for item in event_outputs.get("dossiers", [])
+        if str(item.get("event_id", "")).strip()
+    }
+    coverage = {"applied": 0, "missing": 0, "stale": 0}
+    missing: List[str] = []
+    stale: List[str] = []
+
+    for event_id in input_index:
+        event = kb.events.get(event_id)
+        if not event:
+            continue
+        evt_input = input_index[event_id]
+        evt_output = output_index.get(event_id)
+        if not evt_output:
+            missing.append(f"missing:{event_id}")
+            continue
+        expected_hash = str(evt_input.get("input_hash", ""))
+        actual_hash = str(evt_output.get("generated_from_input_hash", ""))
+        if expected_hash != actual_hash:
+            stale.append(f"stale:{event_id}")
+            continue
+
+        display_summary = str(evt_output.get("display_summary", "")).strip()
+        if display_summary:
+            event.display_summary_dossier = display_summary
+            event.identity_summary = str(evt_output.get("identity_summary", "")).strip()
+            event.long_description = str(evt_output.get("long_description", "")).strip()
+            event.story_function = str(evt_output.get("story_function", "")).strip()
+            event.relationship_impact = str(evt_output.get("relationship_impact", "")).strip()
+            event.dossier_source = str(evt_output.get("generator", "gemini-api"))
+            event.dossier_version = str(evt_output.get("dossier_version", "event-dossier-v1"))
+            coverage["applied"] += 1
+
+    coverage["missing"] = len(missing)
+    coverage["stale"] = len(stale)
+
+    if not skip_summary_check and (missing or stale):
+        problems = [*missing[:10], *stale[:10]]
+        print(
+            "WARNING: Event dossiers are missing or stale. "
+            "Run scripts/generate_event_dossiers_via_gemini.py --changed-only to refresh. "
+            f"Examples: {problems}"
+        )
+
+    return coverage
+
+
 def build_offline_data(
     book_path: Path,
     core_cast_path: Path,
@@ -1470,6 +1600,60 @@ def build_offline_data(
             f"Missing file: {summary_artifact_path}"
         )
 
+    # --- Relation profiles ---
+    relation_inputs_output = kb_output.parent / "relation_profile_inputs.json"
+    relation_inputs_payload = build_relation_profile_inputs(kb=kb)
+    relation_inputs_output.write_text(
+        json.dumps(relation_inputs_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Relation profile inputs -> {relation_inputs_output}")
+
+    relation_profiles_path = kb_output.parent / "relation_profiles.json"
+    relation_coverage = {"applied": 0, "missing": 0, "stale": 0}
+    if relation_profiles_path.exists():
+        relation_outputs_payload = _load_summary_artifact(relation_profiles_path)
+        relation_coverage = _apply_relation_profiles_to_kb(
+            kb=kb,
+            relation_inputs=relation_inputs_payload,
+            relation_outputs=relation_outputs_payload,
+            skip_summary_check=skip_summary_check,
+        )
+    elif not skip_summary_check:
+        print(
+            "WARNING: Relation profiles missing. "
+            "Offline build will continue without relation dossier fields. "
+            f"Missing file: {relation_profiles_path}"
+        )
+
+    # --- Event dossiers (Top 500) – inputs built after writer_insights are available ---
+    # (placeholder: event dossier inputs require writer_insights + key_events_index,
+    #  which are built after save. We apply event dossiers if their inputs were
+    #  pre-built from a prior run.)
+    event_dossier_inputs_path = kb_output.parent / "event_dossier_inputs.json"
+    event_dossier_outputs_path = kb_output.parent / "event_dossiers.json"
+    event_dossier_coverage = {"applied": 0, "missing": 0, "stale": 0}
+    if event_dossier_inputs_path.exists() and event_dossier_outputs_path.exists():
+        event_dossier_inputs_payload = _load_summary_artifact(event_dossier_inputs_path)
+        event_dossier_outputs_payload = _load_summary_artifact(event_dossier_outputs_path)
+        event_dossier_coverage = _apply_event_dossiers_to_kb(
+            kb=kb,
+            event_inputs=event_dossier_inputs_payload,
+            event_outputs=event_dossier_outputs_payload,
+            skip_summary_check=skip_summary_check,
+        )
+    elif event_dossier_outputs_path.exists() and not event_dossier_inputs_path.exists():
+        print(
+            "WARNING: Event dossier outputs exist but inputs are missing. "
+            "Run scripts/build_event_dossier_inputs.py to rebuild inputs, then regenerate."
+        )
+    elif not skip_summary_check and not event_dossier_outputs_path.exists():
+        print(
+            "WARNING: Event dossiers missing. "
+            "Offline build will continue without event dossier fields. "
+            f"Missing file: {event_dossier_outputs_path}"
+        )
+
     save_unified_knowledge_base(kb, str(kb_output))
 
     suspicious = validate_unified_knowledge(kb_output)
@@ -1519,6 +1703,19 @@ def build_offline_data(
         output_path=_key_events_path,
     )
 
+    # --- Rebuild event dossier inputs (needs writer_insights + key_events_index) ---
+    event_dossier_inputs_output = kb_output.parent / "event_dossier_inputs.json"
+    event_dossier_inputs_rebuilt = build_event_dossier_inputs(
+        kb=kb,
+        writer_insights=writer_payload,
+        key_events_index={"chapters": key_events_chapters},
+    )
+    event_dossier_inputs_output.write_text(
+        json.dumps(event_dossier_inputs_rebuilt, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Event dossier inputs -> {event_dossier_inputs_output} ({event_dossier_inputs_rebuilt['total_selected']} events)")
+
     if sync_output and public_data_dir is not None:
         sync_public_files(book_path.parent, public_data_dir, DEFAULT_SYNC_FILES)
 
@@ -1560,6 +1757,14 @@ def build_offline_data(
         "chapter_synopses_count": len(chapter_synopses),
         "key_events_chapters": len(key_events_chapters),
         "key_events_total": sum(len(ch["key_events"]) for ch in key_events_chapters),
+        "relation_profile_inputs": relation_inputs_payload.get("total_relations", 0),
+        "relation_profile_applied": relation_coverage["applied"],
+        "relation_profile_missing": relation_coverage["missing"],
+        "relation_profile_stale": relation_coverage["stale"],
+        "event_dossier_inputs": event_dossier_inputs_rebuilt.get("total_selected", 0),
+        "event_dossier_applied": event_dossier_coverage["applied"],
+        "event_dossier_missing": event_dossier_coverage["missing"],
+        "event_dossier_stale": event_dossier_coverage["stale"],
     }
 
 

@@ -363,6 +363,30 @@ class UnifiedEvent(BaseModel):
         default=True,
         description="Whether this is the first event_id for this name by unit order."
     )
+
+    # --- Dossier fields (populated by event dossier pipeline, Top 500 only) ---
+    identity_summary: str = Field(
+        default="",
+        description="One-sentence event identity, 40-120 chars"
+    )
+    display_summary_dossier: str = Field(
+        default="",
+        description="2-3 sentence reader-facing event summary, 120-300 chars"
+    )
+    long_description: str = Field(
+        default="",
+        description="3-5 paragraph event essay, 250-600 chars"
+    )
+    story_function: str = Field(
+        default="",
+        description="Narrative function of this event, 50-140 chars"
+    )
+    relationship_impact: str = Field(
+        default="",
+        description="Impact on participant relationships, 60-180 chars"
+    )
+    dossier_source: str = Field(default="", description="Dossier generator source")
+    dossier_version: str = Field(default="", description="Dossier schema/version marker")
     
     created_at: str = Field(default_factory=lambda: datetime.now().isoformat())
     updated_at: str = Field(default_factory=lambda: datetime.now().isoformat())
@@ -430,6 +454,34 @@ class UnifiedRelation(BaseModel):
     # Source tracking
     source_juans: Set[int] = Field(default_factory=set)
     source_units: Set[int] = Field(default_factory=set)
+
+    # --- Dossier fields (populated by relation profile pipeline) ---
+    identity_summary: str = Field(
+        default="",
+        description="One-sentence relation identity, 60-140 chars"
+    )
+    display_summary: str = Field(
+        default="",
+        description="2-3 sentence reader-facing relation summary, 160-360 chars"
+    )
+    long_description: str = Field(
+        default="",
+        description="3-5 paragraph relation essay, 300-700 chars"
+    )
+    story_function: str = Field(
+        default="",
+        description="Narrative function of this relation, 60-160 chars"
+    )
+    phase_arc: str = Field(
+        default="",
+        description="Phase progression and key turning points, 100-220 chars"
+    )
+    interaction_patterns: List[str] = Field(
+        default_factory=list,
+        description="2-4 归纳 sentences on interaction patterns, each 30-80 chars"
+    )
+    summary_source: str = Field(default="", description="Dossier generator source")
+    profile_version: str = Field(default="", description="Dossier schema/version marker")
     
     created_at: str = Field(default_factory=lambda: datetime.now().isoformat())
     updated_at: str = Field(default_factory=lambda: datetime.now().isoformat())

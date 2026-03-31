@@ -188,6 +188,13 @@ export function unifiedNetworkGraphData(
       actionTypes: relation.action_types,
       contexts: relation.contexts,
       sourceUnits,
+      // Relation dossier pass-through
+      identitySummary: relation.identity_summary,
+      displaySummary: relation.display_summary,
+      longDescription: relation.long_description,
+      storyFunction: relation.story_function,
+      phaseArc: relation.phase_arc,
+      interactionPatterns: relation.interaction_patterns,
     });
   }
 
@@ -245,6 +252,12 @@ export function unifiedEventsToTimeline(
       type: 'event',
       significance: event.significance,
       background: event.background,
+      // Event dossier pass-through (Top 500 only)
+      identitySummary: event.identity_summary,
+      displaySummaryDossier: event.display_summary_dossier,
+      longDescription: event.long_description,
+      storyFunction: event.story_function,
+      relationshipImpact: event.relationship_impact,
     });
   }
 
