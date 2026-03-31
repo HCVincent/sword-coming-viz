@@ -31,6 +31,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from model.unified import UnifiedEvent, UnifiedKnowledgeBase
+from scripts.character_quality import is_pseudo_role_name
 
 INPUTS_VERSION = "event-dossier-inputs-v1"
 TOP_N = 500
@@ -246,13 +247,22 @@ def _build_event_packet(
     *,
     source_membership: Dict[str, Set[str]],
     event_score: int,
+    canonical_role_ids: Set[str] | None = None,
 ) -> dict:
-    """Build a Gemini-consumable packet for one event."""
+    """Build a Gemini-consumable packet for one event.
+
+    If *canonical_role_ids* is given, only participants present in that set
+    are included – this strips noisy pseudo-names from the packet.
+    """
     eid = event.id
     units = _event_units(event)
     reference_sources = sorted(
         s for s, ids in source_membership.items() if eid in ids
     )
+
+    participants = list(event.participants)
+    if canonical_role_ids is not None:
+        participants = [p for p in participants if p in canonical_role_ids]
 
     payload: dict = {
         "event_id": eid,
@@ -260,7 +270,7 @@ def _build_event_packet(
         "display_name": _event_display_name(event),
         "pattern_key": event.pattern_key or "",
         "location": event.location,
-        "participants": list(event.participants),
+        "participants": participants,
         "description": event.description,
         "significance": event.significance or "",
         "background": event.background or "",
@@ -292,6 +302,7 @@ def build_event_dossier_inputs(
         kb.events, source_membership, top_n=top_n,
     )
 
+    canonical_role_ids: Set[str] = set(kb.roles.keys())
     event_packets: List[dict] = []
     for eid in selected_ids:
         event = kb.events.get(eid)
@@ -302,6 +313,7 @@ def build_event_dossier_inputs(
             event,
             source_membership=source_membership,
             event_score=score,
+            canonical_role_ids=canonical_role_ids,
         )
         event_packets.append(packet)
 

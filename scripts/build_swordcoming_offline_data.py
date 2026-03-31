@@ -1127,8 +1127,9 @@ def write_store(chunks_by_juan: Dict[int, Dict[str, dict]], store_dir: Path) -> 
 
 
 def prune_suspicious_roles_from_knowledge_base(kb: Any, blocked_names: set[str]) -> List[Tuple[str, List[str]]]:
+    canonical_roles = set(kb.roles.keys())
     suspicious_roles = [
-        (role_id, audit_role_name(role.canonical_name, blocked_names=blocked_names))
+        (role_id, audit_role_name(role.canonical_name, blocked_names=blocked_names, canonical_roles=canonical_roles))
         for role_id, role in kb.roles.items()
     ]
     suspicious_roles = [(role_id, reasons) for role_id, reasons in suspicious_roles if reasons]
@@ -1145,7 +1146,7 @@ def prune_suspicious_roles_from_knowledge_base(kb: Any, blocked_names: set[str])
     kb.name_to_role_id = {
         name: role_id
         for name, role_id in kb.name_to_role_id.items()
-        if role_id not in blocked_role_ids and not is_pseudo_role_name(name, blocked_names=blocked_names)
+        if role_id not in blocked_role_ids and not is_pseudo_role_name(name, blocked_names=blocked_names, canonical_roles=canonical_roles)
     }
     kb.power_to_roles = {
         power: [role_id for role_id in role_ids if role_id not in blocked_role_ids]

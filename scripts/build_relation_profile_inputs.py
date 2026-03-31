@@ -204,10 +204,18 @@ def build_relation_profile_inputs(
 ) -> dict:
     all_events = list(kb.events.values())
     relation_inputs: List[dict] = []
+    canonical_role_ids: set[str] = set(kb.roles.keys())
+    skipped_non_canonical = 0
 
     for relation in sorted(kb.relations.values(), key=lambda r: (-r.interaction_count, r.id)):
         source_name = relation.from_entity
         target_name = relation.to_entity
+
+        # Canonical endpoint gate: both endpoints must be known roles
+        if source_name not in canonical_role_ids or target_name not in canonical_role_ids:
+            skipped_non_canonical += 1
+            continue
+
         source_units = sorted(relation.source_units or relation.source_juans)
 
         # Core fields
@@ -238,6 +246,7 @@ def build_relation_profile_inputs(
         "generated_at": datetime.now().isoformat(),
         "book_id": kb.book_id,
         "total_relations": len(relation_inputs),
+        "skipped_non_canonical": skipped_non_canonical,
         "relations": relation_inputs,
     }
 

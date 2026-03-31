@@ -22,6 +22,22 @@ SUSPICIOUS_ROLE_EXACT_NAMES = {
     "后笑眯眯",
 }
 
+# Voice / sound / manner descriptors that are never character names.
+# These arise from speech-tag extraction: "嗓音沙哑" → spurious entity "沙哑".
+VOICE_DESCRIPTOR_NAMES: set[str] = {
+    "沙哑", "嗓音", "低沉", "清脆", "尖锐", "浑厚", "嘶哑",
+    "沉闷", "洪亮", "颤抖", "嘹亮", "凄厉", "凄凉",
+}
+
+# Single-char action / adjective suffixes that may be concatenated onto a real
+# character name during extraction. E.g. "俞真意" + "冷" → "俞真意冷".
+# Detection: if candidate[-1] is in this set **and** candidate[:-1] is a known
+# canonical role name, the candidate is a concatenation artefact.
+CONCAT_ACTION_SUFFIXES: set[str] = {
+    "冷", "道", "笑", "怒", "叹", "惊", "急", "悲", "喜",
+    "恨", "嗔", "疑", "哭", "骂", "忧", "愁", "慌", "愣",
+}
+
 SUSPICIOUS_ROLE_PREFIXES = (
     "尽管",
     "然后",
@@ -79,7 +95,21 @@ def build_blocked_role_name_set(extra_blocked: Collection[str] | None = None) ->
     return blocked
 
 
-def audit_role_name(name: str, blocked_names: Collection[str] | None = None) -> List[str]:
+def audit_role_name(
+    name: str,
+    blocked_names: Collection[str] | None = None,
+    *,
+    canonical_roles: Collection[str] | None = None,
+) -> List[str]:
+    """Return a list of reasons why *name* looks like a pseudo-role.
+
+    Parameters
+    ----------
+    canonical_roles:
+        Known-good canonical role names.  When supplied, enables
+        *name+action-suffix concatenation* detection (e.g. 俞真意冷 =
+        俞真意 + 冷).
+    """
     candidate = str(name).strip()
     if not candidate:
         return []
@@ -93,6 +123,19 @@ def audit_role_name(name: str, blocked_names: Collection[str] | None = None) -> 
         reasons.append("称谓型角色")
     if candidate in SUSPICIOUS_ROLE_EXACT_NAMES:
         reasons.append("明显伪角色")
+
+    # Voice / sound descriptor check
+    if candidate in VOICE_DESCRIPTOR_NAMES:
+        reasons.append(f"语音描写词:{candidate}")
+
+    # Name + single-char action/adjective concatenation check
+    if (
+        canonical_roles
+        and len(candidate) >= 3
+        and candidate[-1] in CONCAT_ACTION_SUFFIXES
+        and candidate[:-1] in canonical_roles
+    ):
+        reasons.append(f"人名粘连:{candidate[:-1]}+{candidate[-1]}")
 
     prefix_hit = next(
         (prefix for prefix in SUSPICIOUS_ROLE_PREFIXES if candidate.startswith(prefix) and len(candidate) > len(prefix)),
@@ -116,5 +159,10 @@ def audit_role_name(name: str, blocked_names: Collection[str] | None = None) -> 
     return deduped
 
 
-def is_pseudo_role_name(name: str, blocked_names: Collection[str] | None = None) -> bool:
-    return bool(audit_role_name(name, blocked_names=blocked_names))
+def is_pseudo_role_name(
+    name: str,
+    blocked_names: Collection[str] | None = None,
+    *,
+    canonical_roles: Collection[str] | None = None,
+) -> bool:
+    return bool(audit_role_name(name, blocked_names=blocked_names, canonical_roles=canonical_roles))
