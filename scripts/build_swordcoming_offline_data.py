@@ -1674,34 +1674,19 @@ def build_offline_data(
             f"Missing file: {relation_profiles_path}"
         )
 
-    # --- Event dossiers (Top 500) – inputs built after writer_insights are available ---
-    # (placeholder: event dossier inputs require writer_insights + key_events_index,
-    #  which are built after save. We apply event dossiers if their inputs were
-    #  pre-built from a prior run.)
-    event_dossier_inputs_path = kb_output.parent / "event_dossier_inputs.json"
+    # --- Event dossiers (Top 500) ---
+    # Event dossier inputs depend on writer_insights + key_events_index, which
+    # are built further below.  We defer ALL event dossier work (input rebuild
+    # + apply) until after those artefacts exist so that:
+    #   1. The inputs are built from THIS run's KB / writer / key-events.
+    #   2. Dossiers are matched against the freshly rebuilt inputs (not stale
+    #      ones left over on disk from a prior run).
+    #   3. unified_knowledge.json is saved exactly ONCE, after every apply.
     event_dossier_outputs_path = kb_output.parent / "event_dossiers.json"
     event_dossier_coverage = {"applied": 0, "missing": 0, "stale": 0}
-    if event_dossier_inputs_path.exists() and event_dossier_outputs_path.exists():
-        event_dossier_inputs_payload = _load_summary_artifact(event_dossier_inputs_path)
-        event_dossier_outputs_payload = _load_summary_artifact(event_dossier_outputs_path)
-        event_dossier_coverage = _apply_event_dossiers_to_kb(
-            kb=kb,
-            event_inputs=event_dossier_inputs_payload,
-            event_outputs=event_dossier_outputs_payload,
-            skip_summary_check=skip_summary_check,
-        )
-    elif event_dossier_outputs_path.exists() and not event_dossier_inputs_path.exists():
-        print(
-            "WARNING: Event dossier outputs exist but inputs are missing. "
-            "Run scripts/build_event_dossier_inputs.py to rebuild inputs, then regenerate."
-        )
-    elif not skip_summary_check and not event_dossier_outputs_path.exists():
-        print(
-            "WARNING: Event dossiers missing. "
-            "Offline build will continue without event dossier fields. "
-            f"Missing file: {event_dossier_outputs_path}"
-        )
 
+    # First save: contains entity profiles + relation profiles but NOT event
+    # dossiers yet.  We will re-save after event dossier apply below.
     save_unified_knowledge_base(kb, str(kb_output))
 
     suspicious = validate_unified_knowledge(kb_output)
@@ -1764,8 +1749,8 @@ def build_offline_data(
     )
     print(f"Event dossier inputs -> {event_dossier_inputs_output} ({event_dossier_inputs_rebuilt['total_selected']} events)")
 
-    # Re-apply event dossiers against the freshly rebuilt Top 500 inputs so
-    # the synced KB reflects the latest event selection from this same run.
+    # Apply event dossiers against the freshly rebuilt inputs (single
+    # authoritative apply – never uses stale inputs from a prior run).
     if event_dossier_outputs_path.exists():
         event_dossier_outputs_payload = _load_summary_artifact(event_dossier_outputs_path)
         event_dossier_coverage = _apply_event_dossiers_to_kb(
@@ -1774,7 +1759,15 @@ def build_offline_data(
             event_outputs=event_dossier_outputs_payload,
             skip_summary_check=skip_summary_check,
         )
-        save_unified_knowledge_base(kb, str(kb_output))
+    elif not skip_summary_check:
+        print(
+            "WARNING: Event dossiers missing. "
+            "Offline build will continue without event dossier fields. "
+            f"Missing file: {event_dossier_outputs_path}"
+        )
+
+    # Final save: all profiles (entity, relation, event dossier) applied.
+    save_unified_knowledge_base(kb, str(kb_output))
 
     if sync_output and public_data_dir is not None:
         sync_public_files(book_path.parent, public_data_dir, DEFAULT_SYNC_FILES)

@@ -260,7 +260,7 @@ def _build_event_packet(
         s for s, ids in source_membership.items() if eid in ids
     )
 
-    participants = list(event.participants)
+    participants = sorted(event.participants)
     if canonical_role_ids is not None:
         participants = [p for p in participants if p in canonical_role_ids]
 
