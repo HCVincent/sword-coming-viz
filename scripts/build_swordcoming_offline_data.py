@@ -58,6 +58,7 @@ DEFAULT_SYNC_FILES = [
     "writer_insights.json",
     "swordcoming_book.json",
     "season_overview_audit.json",
+    "narrative_units.json",
 ]
 
 SYMMETRIC_ACTIONS = {"对话", "会见", "冲突", "同行"}

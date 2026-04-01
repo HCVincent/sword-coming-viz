@@ -6,6 +6,8 @@ import type {
   ChapterSynopsis,
   KeyEventsChapter,
   KeyEventsIndexPayload,
+  NarrativeUnit,
+  NarrativeUnitsPayload,
   UnitProgressIndex,
 } from '../types/pipelineArtifacts';
 
@@ -155,4 +157,34 @@ export function useKeyEventsIndex() {
   }, []);
 
   return { keyEventsMap, loading, error };
+}
+
+export function useNarrativeUnits() {
+  const [narrativeUnits, setNarrativeUnits] = useState<NarrativeUnit[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}data/narrative_units.json`);
+        if (!response.ok) {
+          // Not yet generated — treat as empty, not an error
+          setNarrativeUnits([]);
+          return;
+        }
+        const data = (await response.json()) as NarrativeUnitsPayload;
+        setNarrativeUnits(data.units ?? []);
+      } catch (err) {
+        console.error('Error loading narrative units:', err);
+        setNarrativeUnits([]);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    load();
+  }, []);
+
+  return { narrativeUnits, loading, error };
 }

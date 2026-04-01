@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { useBookConfig, useChapterIndex, useUnitProgressIndex } from './hooks/useBookArtifacts';
+import { useBookConfig, useChapterIndex, useNarrativeUnits, useUnitProgressIndex } from './hooks/useBookArtifacts';
 import { useUnifiedKnowledgeBase, useUnifiedVisualizationData } from './hooks/useUnifiedData';
 import { useFilteredWriterInsights, useWriterInsights } from './hooks/useWriterInsights';
 import {
@@ -10,6 +10,7 @@ import {
   ForeshadowingView,
   LocationDetail,
   LocationsView,
+  NarrativeTimeline,
   NetworkGraph,
   NetworkRoleRelationsDetail,
   PowerChart,
@@ -144,6 +145,7 @@ function App() {
   const { bookConfig } = useBookConfig();
   const { chapterIndex } = useChapterIndex();
   const { unitProgressIndex } = useUnitProgressIndex();
+  const { narrativeUnits } = useNarrativeUnits();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const maxUnit = unitProgressIndex?.total_units ?? 328;
@@ -870,6 +872,7 @@ function App() {
 
   const tabs: { id: TabType; label: string; icon: string }[] = [
     { id: 'timeline', label: '时间轴', icon: '📜' },
+    { id: 'narrativeUnits', label: '剧情单元', icon: '🎬' },
     { id: 'network', label: '关系网络', icon: '🕸️' },
     { id: 'power', label: '所属势力分布', icon: '📊' },
     { id: 'locations', label: '地点', icon: '📍' },
@@ -1443,6 +1446,15 @@ function App() {
                         chapterIndex={chapterIndex}
                         events={timelineEvents}
                         onEventClick={(event) => openEventDetail(event.id, 'timeline')}
+                      />
+                    )}
+
+                    {activeTab === 'narrativeUnits' && (
+                      <NarrativeTimeline
+                        units={narrativeUnits}
+                        unitRange={unitRange}
+                        onRoleClick={(roleName) => openRoleDetail(roleName, 'narrativeUnits')}
+                        onEventClick={(eventId) => openEventDetail(eventId, 'narrativeUnits')}
                       />
                     )}
 

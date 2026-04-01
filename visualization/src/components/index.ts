@@ -1,4 +1,5 @@
 export { Timeline } from './Timeline';
+export { NarrativeTimeline } from './NarrativeTimeline';
 export { NetworkGraph } from './NetworkGraph';
 export { PowerChart } from './PowerChart';
 export { FilterControls } from './FilterControls';

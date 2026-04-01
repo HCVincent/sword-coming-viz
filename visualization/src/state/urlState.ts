@@ -1,5 +1,6 @@
 export type TabType =
   | 'timeline'
+  | 'narrativeUnits'
   | 'network'
   | 'power'
   | 'locations'
@@ -42,6 +43,7 @@ function clampUnit(value: number, maxUnit: number): number {
 function parseTab(value: string | null): TabType {
   if (
     value === 'timeline' ||
+    value === 'narrativeUnits' ||
     value === 'network' ||
     value === 'power' ||
     value === 'locations' ||

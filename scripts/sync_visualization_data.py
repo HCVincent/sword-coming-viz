@@ -21,6 +21,7 @@ DEFAULT_FILES = [
     "writer_insights.json",
     "swordcoming_book.json",
     "season_overview_audit.json",
+    "narrative_units.json",
 ]
 
 
