@@ -99,14 +99,14 @@ export interface BookConfig {
   progress_label: string;
   has_geo_coordinates: boolean;
   default_tab?:
-    | 'timeline'
-    | 'network'
-    | 'power'
-    | 'locations'
-    | 'map'
-    | 'writerArcs'
-    | 'conflicts'
-    | 'foreshadowing';
+  | 'timeline'
+  | 'network'
+  | 'power'
+  | 'locations'
+  | 'map'
+  | 'writerArcs'
+  | 'conflicts'
+  | 'foreshadowing';
   quick_filters: BookQuickFilter[];
 }
 

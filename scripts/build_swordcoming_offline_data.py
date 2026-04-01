@@ -38,6 +38,11 @@ from scripts.build_key_events_index import build_key_events_index_file
 from scripts.build_season_overview_audit import build_audit
 from scripts.build_swordcoming_writer_insights import build_writer_insights_file
 from scripts.validate_unified_knowledge import validate_unified_knowledge
+from scripts.build_chapter_structure_inputs import build_chapter_structure_inputs
+from scripts.build_narrative_unit_boundaries import (
+    build_narrative_unit_boundaries,
+    validate_boundaries,
+)
 
 
 DEFAULT_SYNC_FILES = [
@@ -1737,6 +1742,37 @@ def build_offline_data(
         output_path=_key_events_path,
     )
 
+    # --- Chapter structure inputs + narrative unit boundaries ---
+    chapter_structure_inputs_output = kb_output.parent / "chapter_structure_inputs.json"
+    chapter_structure_payload = build_chapter_structure_inputs(
+        chapter_synopses={"book_id": kb.book_id, "chapters": chapter_synopses},
+        unit_progress_index=load_json(unit_progress_index_path),
+        key_events_index={"chapters": key_events_chapters},
+        writer_insights=writer_payload,
+    )
+    chapter_structure_inputs_output.write_text(
+        json.dumps(chapter_structure_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Chapter structure inputs -> {chapter_structure_inputs_output} ({chapter_structure_payload['total_chapters']} chapters)")
+
+    narrative_unit_boundaries_output = kb_output.parent / "narrative_unit_boundaries.json"
+    narrative_boundaries_payload = build_narrative_unit_boundaries(
+        chapter_structure_inputs=chapter_structure_payload,
+    )
+    boundary_errors = validate_boundaries(narrative_boundaries_payload)
+    if boundary_errors:
+        for err in boundary_errors:
+            print(f"BOUNDARY VALIDATION ERROR: {err}")
+        raise ValueError(
+            f"Narrative unit boundaries have {len(boundary_errors)} validation errors. See above."
+        )
+    narrative_unit_boundaries_output.write_text(
+        json.dumps(narrative_boundaries_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Narrative unit boundaries -> {narrative_unit_boundaries_output} ({narrative_boundaries_payload['total_units']} units)")
+
     # --- Rebuild event dossier inputs (needs writer_insights + key_events_index) ---
     event_dossier_inputs_output = kb_output.parent / "event_dossier_inputs.json"
     event_dossier_inputs_rebuilt = build_event_dossier_inputs(
@@ -1819,6 +1855,7 @@ def build_offline_data(
         "event_dossier_applied": event_dossier_coverage["applied"],
         "event_dossier_missing": event_dossier_coverage["missing"],
         "event_dossier_stale": event_dossier_coverage["stale"],
+        "narrative_unit_boundaries": narrative_boundaries_payload.get("total_units", 0),
     }
 
 

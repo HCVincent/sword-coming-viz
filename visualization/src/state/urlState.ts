@@ -16,10 +16,10 @@ export interface UrlGlobalContext {
   unitRange: [number, number];
   progressRange: [number | null, number | null];
   selection?:
-    | { type: 'event'; id: string }
-    | { type: 'role'; id: string }
-    | { type: 'location'; id: string }
-    | { type: 'relationPair'; sourceId: string; targetId: string };
+  | { type: 'event'; id: string }
+  | { type: 'role'; id: string }
+  | { type: 'location'; id: string }
+  | { type: 'relationPair'; sourceId: string; targetId: string };
   focusRoleId?: string;
 }
 
