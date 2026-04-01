@@ -169,15 +169,18 @@ export function useNarrativeUnits() {
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}data/narrative_units.json`);
         if (!response.ok) {
-          // Not yet generated — treat as empty, not an error
+          // Not yet generated – treat as empty, not an error
           setNarrativeUnits([]);
+          setError(null);
           return;
         }
         const data = (await response.json()) as NarrativeUnitsPayload;
         setNarrativeUnits(data.units ?? []);
+        setError(null);
       } catch (err) {
         console.error('Error loading narrative units:', err);
         setNarrativeUnits([]);
+        setError(err instanceof Error ? err.message : '读取剧情单元时发生未知错误');
       } finally {
         setLoading(false);
       }
