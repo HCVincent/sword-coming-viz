@@ -1764,6 +1764,18 @@ def build_offline_data(
     )
     print(f"Event dossier inputs -> {event_dossier_inputs_output} ({event_dossier_inputs_rebuilt['total_selected']} events)")
 
+    # Re-apply event dossiers against the freshly rebuilt Top 500 inputs so
+    # the synced KB reflects the latest event selection from this same run.
+    if event_dossier_outputs_path.exists():
+        event_dossier_outputs_payload = _load_summary_artifact(event_dossier_outputs_path)
+        event_dossier_coverage = _apply_event_dossiers_to_kb(
+            kb=kb,
+            event_inputs=event_dossier_inputs_rebuilt,
+            event_outputs=event_dossier_outputs_payload,
+            skip_summary_check=skip_summary_check,
+        )
+        save_unified_knowledge_base(kb, str(kb_output))
+
     if sync_output and public_data_dir is not None:
         sync_public_files(book_path.parent, public_data_dir, DEFAULT_SYNC_FILES)
 

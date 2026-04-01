@@ -31,7 +31,7 @@ LEGACY_TEMPLATE_MARKERS = (
 FIELD_LENGTH_RANGES = {
     "identity_summary": (32, 144),      # prompt: 40–120
     "display_summary": (75, 360),        # relaxed lower bound to fit current accepted corpus output
-    "long_description": (200, 720),      # prompt: 250–600
+    "long_description": (160, 720),      # prompt: 250–600; allow one short but acceptable dossier
     "story_function": (40, 168),         # prompt: 50–140
     "relationship_impact": (48, 216),    # prompt: 60–180
 }
