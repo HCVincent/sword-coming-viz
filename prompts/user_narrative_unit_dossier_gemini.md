@@ -19,9 +19,18 @@ Check and fix every issue below:
    pressure, or story direction.
 6. `stakes` must state what would be at risk or what the story would lose if
    this unit unfolded differently.
-7. Avoid stock openings such as "这一剧情单元讲述了", "在这几章中", or "从叙事角度看".
+7. Avoid stock openings such as "这一剧情单元讲述了", "在这几章中", or
+   "从叙事角度看".
 8. Do not invent facts beyond the packet.
 9. Do not let `display_summary` and `long_summary` become near-duplicates.
+10. If the current title is too abstract, rewrite it with a concrete anchor from
+    the packet: a main role, a place, or the specific situational force driving
+    the turn.
+11. If `dramatic_function` sounds correct but too general, rewrite it so a
+    director or screenwriter can tell whose line is being advanced and what
+    exact dramatic pressure is being established, released, or reversed.
+12. Prefer specificity over grandeur. The goal is not a poetic slogan; it is a
+    useful structural label for adaptation work.
 
 ## Output Requirement
 

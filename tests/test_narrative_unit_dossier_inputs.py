@@ -1,8 +1,13 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 from scripts.build_narrative_unit_dossier_inputs import build_narrative_unit_dossier_inputs
+from scripts.generate_narrative_units_via_gemini import (
+    _load_audit_unit_ids,
+    choose_audit_candidates,
+)
 from scripts.validate_narrative_units import validate_narrative_units
 
 
@@ -253,3 +258,57 @@ def test_validate_narrative_units_rejects_chapter_title_reuse_and_empty_structur
     assert any("dramatic_function must not be empty" in item for item in problems)
     assert any("what_changes must not be empty" in item for item in problems)
     assert any("stakes must not be empty" in item for item in problems)
+
+
+def test_load_audit_unit_ids_filters_by_severity(tmp_path: Path) -> None:
+    audit_path = tmp_path / "audit.json"
+    audit_path.write_text(
+        json.dumps(
+            {
+                "findings": [
+                    {"unit_id": "nu-001", "severity": "medium"},
+                    {"unit_id": "nu-002", "severity": "low"},
+                    {"unit_id": "nu-003", "severity": "high"},
+                ]
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
+    unit_ids = _load_audit_unit_ids(
+        audit_path=audit_path,
+        severities={"medium", "high"},
+    )
+    assert unit_ids == ["nu-001", "nu-003"]
+
+
+def test_choose_audit_candidates_respects_order_from_inputs(tmp_path: Path) -> None:
+    audit_path = tmp_path / "audit.json"
+    audit_path.write_text(
+        json.dumps(
+            {
+                "findings": [
+                    {"unit_id": "nu-003", "severity": "medium"},
+                    {"unit_id": "nu-001", "severity": "high"},
+                ]
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
+    inputs_payload = {
+        "units": [
+            {"unit_id": "nu-001", "input_hash": "a"},
+            {"unit_id": "nu-002", "input_hash": "b"},
+            {"unit_id": "nu-003", "input_hash": "c"},
+        ]
+    }
+
+    chosen = choose_audit_candidates(
+        inputs_payload=inputs_payload,
+        audit_path=audit_path,
+        severities={"high", "medium"},
+    )
+    assert [item["unit_id"] for item in chosen] == ["nu-001", "nu-003"]

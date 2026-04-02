@@ -24,7 +24,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
@@ -419,6 +419,49 @@ def choose_failure_candidates(*, failures: List[dict], inputs_payload: dict) -> 
     return [item for item in iter_input_units(inputs_payload) if _unit_key(item) in fail_ids]
 
 
+def _load_audit_unit_ids(
+    *,
+    audit_path: Path,
+    severities: Set[str],
+    max_count: Optional[int] = None,
+) -> List[str]:
+    payload = _load_json(audit_path)
+    findings = payload.get("findings", []) or []
+    unit_ids: List[str] = []
+    seen: Set[str] = set()
+    for finding in findings:
+        if not isinstance(finding, dict):
+            continue
+        severity = str(finding.get("severity", "")).strip().lower()
+        if severities and severity not in severities:
+            continue
+        unit_id = str(finding.get("unit_id", "")).strip()
+        if not unit_id or unit_id in seen:
+            continue
+        seen.add(unit_id)
+        unit_ids.append(unit_id)
+        if max_count is not None and len(unit_ids) >= max_count:
+            break
+    return unit_ids
+
+
+def choose_audit_candidates(
+    *,
+    inputs_payload: dict,
+    audit_path: Path,
+    severities: Set[str],
+    max_count: Optional[int] = None,
+) -> List[dict]:
+    audit_ids = set(
+        _load_audit_unit_ids(
+            audit_path=audit_path,
+            severities=severities,
+            max_count=max_count,
+        )
+    )
+    return [item for item in iter_input_units(inputs_payload) if _unit_key(item) in audit_ids]
+
+
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Generate narrative_units.json via Gemini API.")
     p.add_argument("--input", default="data/narrative_unit_dossier_inputs.json")
@@ -435,6 +478,13 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--retry-failures", action="store_true")
     p.add_argument("--failures-input", default=None)
+    p.add_argument("--audit-file", default=None, help="Narrative unit quality audit JSON for targeted reruns")
+    p.add_argument(
+        "--audit-severities",
+        default="high,medium",
+        help="Comma-separated severities to rerun from --audit-file (default: high,medium)",
+    )
+    p.add_argument("--audit-limit", type=int, default=None, help="Optional cap when selecting from --audit-file")
     p.add_argument("--public-data-dir", default="visualization/public/data")
     p.add_argument("--no-sync", action="store_true")
     return p.parse_args()
@@ -448,6 +498,12 @@ def main() -> int:
     failures_path = Path(args.failures_output)
     failures_input_path = Path(args.failures_input) if args.failures_input else failures_path
     changed_only = not args.all
+    audit_path = Path(args.audit_file) if args.audit_file else None
+    audit_severities = {
+        token.strip().lower()
+        for token in str(args.audit_severities or "").split(",")
+        if token.strip()
+    }
 
     inputs_payload = _load_json(input_path)
 
@@ -467,6 +523,14 @@ def main() -> int:
             return 0
         candidates = choose_failure_candidates(failures=prior, inputs_payload=inputs_payload)
         src = "retry-failures"
+    elif audit_path:
+        candidates = choose_audit_candidates(
+            inputs_payload=inputs_payload,
+            audit_path=audit_path,
+            severities=audit_severities,
+            max_count=args.audit_limit,
+        )
+        src = "audit-file"
     else:
         candidates = choose_candidates(
             inputs_payload=inputs_payload,
