@@ -1443,6 +1443,15 @@ def _apply_event_dossiers_to_kb(
     skip_summary_check: bool,
 ) -> Dict[str, int]:
     """Merge event dossier fields onto KB events (Top 500)."""
+    event_index: Dict[str, Any] = {}
+    for key, event in kb.events.items():
+        key_text = str(key).strip()
+        if key_text and key_text not in event_index:
+            event_index[key_text] = event
+        event_id = str(getattr(event, "id", "")).strip()
+        if event_id:
+            event_index[event_id] = event
+
     input_index: Dict[str, dict] = {
         str(item.get("event_id", "")).strip(): item
         for item in event_inputs.get("events", [])
@@ -1458,7 +1467,7 @@ def _apply_event_dossiers_to_kb(
     stale: List[str] = []
 
     for event_id in input_index:
-        event = kb.events.get(event_id)
+        event = event_index.get(event_id)
         if not event:
             continue
         evt_input = input_index[event_id]

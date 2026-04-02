@@ -24,6 +24,7 @@ from scripts.build_event_dossier_inputs import (
     _score_event,
     build_event_dossier_inputs,
 )
+from scripts.build_swordcoming_offline_data import _apply_event_dossiers_to_kb
 
 
 # ---------------------------------------------------------------------------
@@ -263,3 +264,48 @@ class TestFieldSorting:
             event_score=score,
         )
         assert packet["reference_sources"] == sorted(packet["reference_sources"])
+
+
+# ---------------------------------------------------------------------------
+# Test: dossier merge uses internal event.id when dict key differs
+# ---------------------------------------------------------------------------
+
+
+class TestEventDossierMerge:
+    def test_merge_uses_internal_event_id_when_dict_key_differs(self):
+        event = _event("惊蛰守夜@1", {"陈平安"})
+        kb = _make_kb(events={"惊蛰守夜": event})
+        event_inputs = {
+            "events": [
+                {
+                    "event_id": "惊蛰守夜@1",
+                    "input_hash": "hash-1",
+                }
+            ]
+        }
+        event_outputs = {
+            "dossiers": [
+                {
+                    "event_id": "惊蛰守夜@1",
+                    "generated_from_input_hash": "hash-1",
+                    "identity_summary": "这是一个夜晚节点。",
+                    "display_summary": "陈平安在小镇夜里经历的重要守夜节点。",
+                    "long_description": "长描述",
+                    "story_function": "结构作用",
+                    "relationship_impact": "关系影响",
+                    "generator": "gemini-api",
+                    "dossier_version": "event-dossier-v1",
+                }
+            ]
+        }
+
+        coverage = _apply_event_dossiers_to_kb(
+            kb=kb,
+            event_inputs=event_inputs,
+            event_outputs=event_outputs,
+            skip_summary_check=True,
+        )
+
+        assert coverage["applied"] == 1
+        assert kb.events["惊蛰守夜"].display_summary_dossier == "陈平安在小镇夜里经历的重要守夜节点。"
+        assert kb.events["惊蛰守夜"].identity_summary == "这是一个夜晚节点。"
