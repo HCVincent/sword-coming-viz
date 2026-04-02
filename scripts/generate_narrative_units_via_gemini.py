@@ -88,13 +88,17 @@ def build_unit_packet(item: dict) -> dict:
         "season_name": item.get("season_name", ""),
         "start_unit_index": item.get("start_unit_index"),
         "end_unit_index": item.get("end_unit_index"),
+        "source_unit_indexes": item.get("source_unit_indexes", []),
         "chapter_titles": item.get("chapter_titles", []),
         "main_roles": item.get("main_roles", []),
         "main_locations": item.get("main_locations", []),
+        "progress_start": item.get("progress_start"),
+        "progress_end": item.get("progress_end"),
         "source_event_ids": item.get("source_event_ids", []),
         "chapter_synopses": item.get("chapter_synopses", []),
         "key_events": item.get("key_events", []),
         "event_dossier_summaries": item.get("event_dossier_summaries", []),
+        "writer_refs": item.get("writer_refs", []),
         "input_hash": item.get("input_hash"),
     }
 
@@ -117,6 +121,9 @@ def _coerce_unit_dossier(raw: dict, *, packet: dict, model_name: str) -> dict:
         "season_name": packet.get("season_name", ""),
         "start_unit_index": packet.get("start_unit_index"),
         "end_unit_index": packet.get("end_unit_index"),
+        "source_unit_indexes": packet.get("source_unit_indexes", []),
+        "progress_start": packet.get("progress_start"),
+        "progress_end": packet.get("progress_end"),
         "source_event_ids": packet.get("source_event_ids", []),
         "main_roles": packet.get("main_roles", []),
         "main_locations": packet.get("main_locations", []),
@@ -135,11 +142,12 @@ def _coerce_unit_dossier(raw: dict, *, packet: dict, model_name: str) -> dict:
 def _build_draft_user_prompt(packet: dict) -> str:
     packet_json = json.dumps(packet, ensure_ascii=False, indent=2)
     return (
-        "请基于以下 narrative unit packet 生成一份剧情单元 dossier 初稿。"
-        "严格输出 JSON，不要输出 markdown 代码围栏。\n\n"
-        "输出字段必须包含：unit_id, title, display_summary, long_summary, "
-        "dramatic_function, what_changes, stakes。\n\n"
-        "narrative unit packet:\n"
+        "Generate a first-draft dossier for the following narrative unit packet. "
+        "Return valid JSON only, with no markdown fence. "
+        "The JSON must contain unit_id, title, display_summary, long_summary, "
+        "dramatic_function, what_changes, and stakes. "
+        "Write all prose fields in Simplified Chinese.\n\n"
+        "Narrative unit packet:\n"
         f"{packet_json}"
     )
 
@@ -201,7 +209,20 @@ def _merge_units(
             continue
         dossier = newly_generated.get(uid) or existing_dossiers.get(uid)
         if dossier:
-            ordered.append(dossier)
+            # Backfill structural passthrough fields from authoritative inputs so
+            # existing fresh dossiers can be rewritten without another API call.
+            enriched = dict(dossier)
+            enriched.setdefault("unit_index", item.get("unit_index"))
+            enriched.setdefault("season_name", item.get("season_name", ""))
+            enriched.setdefault("start_unit_index", item.get("start_unit_index"))
+            enriched.setdefault("end_unit_index", item.get("end_unit_index"))
+            enriched.setdefault("source_unit_indexes", item.get("source_unit_indexes", []))
+            enriched.setdefault("progress_start", item.get("progress_start"))
+            enriched.setdefault("progress_end", item.get("progress_end"))
+            enriched.setdefault("source_event_ids", item.get("source_event_ids", []))
+            enriched.setdefault("main_roles", item.get("main_roles", []))
+            enriched.setdefault("main_locations", item.get("main_locations", []))
+            ordered.append(enriched)
     return ordered
 
 

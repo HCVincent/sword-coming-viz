@@ -1,35 +1,36 @@
-# 剧情单元 Dossier 自检与重写提示词
+# Narrative Unit Dossier Rewrite Pass
 
-你刚刚为《剑来》已导入章节范围内的一个剧情单元生成了一份 dossier 初稿。现在请对照以下质量规则进行自检，并输出重写后的最终版本。
+You already wrote a first draft dossier for one narrative unit in "Sword Coming".
+Now rewrite it so it reads like a precise story-doctor note for adaptation work.
 
-## 自检规则
+Write all output prose in Simplified Chinese.
 
-逐条检查，如违反则在重写中修正：
+## Rewrite Rules
 
-1. **字数**：
-   - `title`：6–16 字？
-   - `display_summary`：120–300 字？
-   - `long_summary`：300–800 字，3–6 段？
-   - `dramatic_function`：50–180 字？
-   - `what_changes`：80–200 字？
-   - `stakes`：40–120 字？
-2. **标题独创**：`title` 是否直接复用了某个章节标题？如果是，必须改写为概括核心冲突或转折的短语。
-3. **禁止模板骨架**：是否用了"此段剧情讲述了"、"在这几章中"、"从叙事角度看"这类固定过渡？如果超过两处使用同类骨架，必须打散重组。
-4. **禁止事件罗列**：`long_summary` 是否只是按顺序串联 raw event 摘要？如果是，必须改为有观点的评述。
-5. **覆盖度**：是否覆盖了核心事件、角色抉择、戏剧冲突、结构位置中的至少三类？
-6. **语料越界**：是否包含 packet 中未提供的信息？
-7. **dramatic_function**：是否明确说明了结构作用？不能是泛泛的"推动剧情发展"。
-8. **what_changes**：是否具体说明了不可逆转的变化？
-9. **stakes**：是否指向了一个具体的"如果不这样做/决策不同会怎样"的反事实？
+Check and fix every issue below:
 
-## 输出要求
+1. The title must not reuse a chapter title.
+2. `display_summary` must give a fast structural read, not an event list.
+3. `long_summary` must feel like a judgment about the unit's dramatic work, not
+   a chapter recap.
+4. `dramatic_function` must clearly state what this unit does in the overall
+   structure. Do not use vague phrases like "推动剧情发展" or "承上启下".
+5. `what_changes` must state what materially shifts for character, relationship,
+   pressure, or story direction.
+6. `stakes` must state what would be at risk or what the story would lose if
+   this unit unfolded differently.
+7. Avoid stock openings such as "这一剧情单元讲述了", "在这几章中", or "从叙事角度看".
+8. Do not invent facts beyond the packet.
+9. Do not let `display_summary` and `long_summary` become near-duplicates.
 
-直接返回修正后的完整 JSON，格式与初稿相同。不要附加 markdown 代码围栏、不要附加解释。如果初稿已全部合格，原样返回即可。
+## Output Requirement
 
-## 初稿
+Return the corrected final JSON only. No markdown fence. No explanation.
+
+## Draft
 
 {draft_json}
 
-## 原始输入 Packet
+## Source Packet
 
 {packet_json}

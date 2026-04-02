@@ -43,6 +43,9 @@ from scripts.build_narrative_unit_boundaries import (
     build_narrative_unit_boundaries,
     validate_boundaries,
 )
+from scripts.build_narrative_unit_dossier_inputs import (
+    build_narrative_unit_dossier_inputs_file,
+)
 
 
 DEFAULT_SYNC_FILES = [
@@ -1812,6 +1815,21 @@ def build_offline_data(
             f"Missing file: {event_dossier_outputs_path}"
         )
 
+    narrative_unit_dossier_inputs_output = kb_output.parent / "narrative_unit_dossier_inputs.json"
+    narrative_unit_dossier_inputs_payload = build_narrative_unit_dossier_inputs_file(
+        boundaries_path=narrative_unit_boundaries_output,
+        chapter_synopses_path=_synopses_path,
+        key_events_index_path=_key_events_path,
+        writer_insights_path=writer_output,
+        event_dossiers_path=event_dossier_outputs_path,
+        output_path=narrative_unit_dossier_inputs_output,
+    )
+    print(
+        "Narrative unit dossier inputs -> "
+        f"{narrative_unit_dossier_inputs_output} "
+        f"({narrative_unit_dossier_inputs_payload['total_units']} units)"
+    )
+
     # Final save: all profiles (entity, relation, event dossier) applied.
     save_unified_knowledge_base(kb, str(kb_output))
 
@@ -1865,6 +1883,7 @@ def build_offline_data(
         "event_dossier_missing": event_dossier_coverage["missing"],
         "event_dossier_stale": event_dossier_coverage["stale"],
         "narrative_unit_boundaries": narrative_boundaries_payload.get("total_units", 0),
+        "narrative_unit_dossier_inputs": narrative_unit_dossier_inputs_payload.get("total_units", 0),
     }
 
 

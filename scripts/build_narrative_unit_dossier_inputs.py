@@ -17,7 +17,7 @@ import json
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Set
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
@@ -71,6 +71,119 @@ def _index_key_events(key_events_index: dict) -> Dict[int, List[dict]]:
     return result
 
 
+def _unit_range_overlaps(unit_indexes: Set[int], *, start: int | None, end: int | None) -> bool:
+    if start is None and end is None:
+        return False
+    lo = int(start if start is not None else end)
+    hi = int(end if end is not None else start)
+    return any(lo <= idx <= hi for idx in unit_indexes)
+
+
+def _collect_writer_refs(
+    *,
+    writer_insights: dict,
+    source_unit_indexes: List[int],
+    source_event_ids: List[str],
+    main_roles: List[str],
+) -> List[dict]:
+    """Collect concise writer-insight references relevant to one narrative unit."""
+    unit_index_set = set(source_unit_indexes)
+    source_event_set = set(source_event_ids)
+    main_role_set = set(main_roles)
+    refs: List[dict] = []
+    seen: Set[tuple[str, str]] = set()
+
+    def _push(kind: str, label: str, summary: str = "", event_ids: List[str] | None = None) -> None:
+        clean_label = str(label or "").strip()
+        if not clean_label:
+            return
+        key = (kind, clean_label)
+        if key in seen:
+            return
+        seen.add(key)
+        refs.append(
+            {
+                "type": kind,
+                "label": clean_label,
+                "summary": str(summary or "").strip(),
+                "event_ids": list(event_ids or []),
+            }
+        )
+
+    for overview in writer_insights.get("season_overviews") or []:
+        if not isinstance(overview, dict):
+            continue
+        for beat in overview.get("story_beats") or []:
+            if not isinstance(beat, dict):
+                continue
+            event = beat.get("event") or {}
+            eid = str(event.get("event_id", "")).strip()
+            if eid and eid in source_event_set:
+                _push("story_beat", beat.get("beat_name", ""), beat.get("description", ""), [eid])
+        for event in overview.get("anchor_events") or []:
+            if not isinstance(event, dict):
+                continue
+            eid = str(event.get("event_id", "")).strip()
+            if eid and eid in source_event_set:
+                _push(
+                    "anchor_event",
+                    event.get("event_name", "") or event.get("name", ""),
+                    event.get("selection_reason", ""),
+                    [eid],
+                )
+
+    for arc in writer_insights.get("character_arcs") or []:
+        if not isinstance(arc, dict):
+            continue
+        role_name = str(arc.get("role_name", "")).strip()
+        if role_name and role_name in main_role_set:
+            _push("character_arc", role_name, arc.get("summary", ""))
+
+    for chain in writer_insights.get("conflict_chains") or []:
+        if not isinstance(chain, dict):
+            continue
+        beats = chain.get("beats") or []
+        beat_ids = [
+            str(beat.get("event_id", "")).strip()
+            for beat in beats
+            if isinstance(beat, dict) and str(beat.get("event_id", "")).strip()
+        ]
+        unit_span = chain.get("unit_span") or []
+        if source_event_set.intersection(beat_ids) or _unit_range_overlaps(
+            unit_index_set,
+            start=unit_span[0] if len(unit_span) >= 1 else None,
+            end=unit_span[-1] if len(unit_span) >= 2 else None,
+        ):
+            label = str(chain.get("title", "")).strip() or (
+                f"{chain.get('source_role_name', '')}/{chain.get('target_role_name', '')}"
+            )
+            _push(
+                "conflict_chain",
+                label,
+                chain.get("summary", ""),
+                list(source_event_set.intersection(beat_ids))[:4],
+            )
+
+    for thread in writer_insights.get("foreshadowing_threads") or []:
+        if not isinstance(thread, dict):
+            continue
+        clue_ids = [
+            str(event.get("event_id", "")).strip()
+            for event in (thread.get("clue_events") or [])
+            if isinstance(event, dict) and str(event.get("event_id", "")).strip()
+        ]
+        payoff_ids = [
+            str(event.get("event_id", "")).strip()
+            for event in (thread.get("payoff_events") or [])
+            if isinstance(event, dict) and str(event.get("event_id", "")).strip()
+        ]
+        related = list(source_event_set.intersection(clue_ids + payoff_ids))
+        if related:
+            _push("foreshadowing", thread.get("label", ""), thread.get("summary", ""), related[:4])
+
+    return refs
+
+
 def build_narrative_unit_dossier_inputs(
     *,
     boundaries: dict,
@@ -89,6 +202,8 @@ def build_narrative_unit_dossier_inputs(
     for unit in units:
         unit_id = unit.get("unit_id", "")
         source_indexes = unit.get("source_unit_indexes") or []
+        main_roles = unit.get("main_roles") or []
+        main_locations = unit.get("main_locations") or []
 
         # Gather chapter synopses
         unit_synopses: List[dict] = []
@@ -133,6 +248,13 @@ def build_narrative_unit_dossier_inputs(
                     "story_function": doss.get("story_function", ""),
                 })
 
+        writer_refs = _collect_writer_refs(
+            writer_insights=writer_insights,
+            source_unit_indexes=source_indexes,
+            source_event_ids=source_eids,
+            main_roles=main_roles,
+        )
+
         payload: dict = {
             "unit_id": unit_id,
             "unit_index": unit.get("unit_index"),
@@ -141,13 +263,14 @@ def build_narrative_unit_dossier_inputs(
             "end_unit_index": unit.get("end_unit_index"),
             "source_unit_indexes": source_indexes,
             "chapter_titles": unit.get("chapter_titles") or [],
-            "main_roles": unit.get("main_roles") or [],
-            "main_locations": unit.get("main_locations") or [],
+            "main_roles": main_roles,
+            "main_locations": main_locations,
             "progress_start": unit.get("progress_start"),
             "progress_end": unit.get("progress_end"),
             "chapter_synopses": unit_synopses,
             "key_events": unit_key_events,
             "event_dossier_summaries": event_dossier_summaries,
+            "writer_refs": writer_refs,
             "source_event_ids": source_eids,
         }
         payload["input_hash"] = _hash_payload(payload)
