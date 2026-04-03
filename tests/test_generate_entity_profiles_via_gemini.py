@@ -10,6 +10,7 @@ from scripts import build_swordcoming_offline_data
 from scripts.generate_entity_profiles_via_gemini import (
     CheckpointManager,
     _best_profile,
+    _coerce_profile,
     _heartbeat_loop,
     _load_checkpoint_profiles,
     _load_failures,
@@ -93,6 +94,34 @@ def test_changed_only_skips_unchanged_entities():
 
     ids = {(item["entity_type"], item["entity_id"]) for item in candidates}
     assert ids == {("location", "泥瓶巷")}
+
+
+def test_coerce_profile_uses_packet_identity_when_model_echoes_alias():
+    packet = {
+        "entity_type": "role",
+        "entity_id": "桂夫人",
+        "input_hash": "hash-gui",
+        "evidence_excerpt_ids": ["1-1-1-0"],
+    }
+    raw = {
+        "entity_type": "role",
+        "entity_id": "桂姨",
+        "identity_summary": "身份简介",
+        "display_summary": "展示简介",
+        "long_description": "长描述",
+        "story_function": "结构功能",
+        "phase_arc": "阶段变化",
+        "relationship_clusters": ["关系簇"],
+        "major_locations": ["老龙城"],
+        "turning_points": ["关键节点"],
+        "evidence_excerpt_ids": ["1-1-1-0"],
+    }
+
+    profile = _coerce_profile(raw, packet=packet, model_name="gemini-test")
+
+    assert profile["entity_type"] == "role"
+    assert profile["entity_id"] == "桂夫人"
+    assert profile["generated_from_input_hash"] == "hash-gui"
 
 
 def test_validate_entity_profiles_flags_excerpt_copy_and_template_marker():

@@ -21,8 +21,8 @@ LEGACY_TEMPLATE_MARKERS = (
 # Using generous ±20% tolerance beyond the prompt-specified range
 # to avoid rejecting profiles that are only slightly out of spec.
 FIELD_LENGTH_RANGES = {
-    "identity_summary": (60, 200),
-    "display_summary": (150, 550),
+    "identity_summary": (55, 200),
+    "display_summary": (80, 550),
     "long_description": (280, 1050),
     "story_function": (60, 230),
     "phase_arc": (0, 330),          # 0 lower bound: may legitimately be empty

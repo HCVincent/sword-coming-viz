@@ -228,8 +228,10 @@ def _extract_text_from_response(response: Any) -> str:
 
 
 def _coerce_profile(raw: dict, *, packet: dict, model_name: str) -> dict:
-    entity_type = _normalize_entity_type(raw.get("entity_type") or packet.get("entity_type") or "")
-    entity_id = str(raw.get("entity_id") or packet.get("entity_id") or "").strip()
+    # Trust the authoritative packet identity so alias-like model echoes
+    # (for example 桂姨 instead of 桂夫人) cannot drift the profile key.
+    entity_type = _normalize_entity_type(packet.get("entity_type") or raw.get("entity_type") or "")
+    entity_id = str(packet.get("entity_id") or raw.get("entity_id") or "").strip()
     if not entity_type or not entity_id:
         raise ValueError("Model response missing entity_type/entity_id")
 
