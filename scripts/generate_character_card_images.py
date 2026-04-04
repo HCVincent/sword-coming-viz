@@ -47,11 +47,14 @@ def _build_prompt(profile: dict) -> str:
     """Build the full image prompt from a visual profile entry."""
     base = profile.get("image_prompt_base", "")
     constraints = profile.get("negative_constraints", [])
-    neg_text = " ".join(f"Do NOT include: {c}." for c in constraints[:3]) if constraints else ""
-    # Append style notes
+    neg_text = " ".join(f"Do NOT include: {c}." for c in constraints[:5]) if constraints else ""
+    # Era-enforcing style block
     style = (
         "Style: cinematic concept art, realistic, muted tones, Chinese historical fantasy, "
         "character portrait, Databank-style character card. "
+        "Pre-modern setting — all clothing, accessories, and materials must look authentically "
+        "ancient / pre-industrial: hand-woven cotton, linen, silk, leather, iron, wood, bamboo. "
+        "No modern tailoring, no zippers, no modern shoes, no modern hairstyles or makeup. "
         "No text overlays, no watermarks, no borders, no background clutter. "
         "Clean background with soft gradient. Upper body / bust framing."
     )

@@ -1079,7 +1079,7 @@ function App() {
                     )}
                   </div>
                   <div className="character-card-body">
-                    <h3 className="character-card-name">{char.card_title}</h3>
+                    <h3 className="character-card-name">{char.canonical_name}</h3>
                     <p className="character-card-hook">{char.visual_hook}</p>
                     {char.power && <span className="character-card-tag">{char.power}</span>}
                   </div>

@@ -59,7 +59,7 @@ class TestGenerateCharacterCardImagesScript:
         assert mod is not None
 
     def test_build_prompt(self):
-        """_build_prompt should include base prompt and style notes."""
+        """_build_prompt should include base prompt, style notes, and era constraints."""
         import importlib.util
         spec = importlib.util.spec_from_file_location(
             "generate_character_card_images",
@@ -78,6 +78,9 @@ class TestGenerateCharacterCardImagesScript:
         assert "cinematic concept art" in prompt
         assert "Do NOT include" in prompt
         assert "No anime style" in prompt
+        # Era constraints must be present
+        assert "pre-modern" in prompt.lower() or "pre-industrial" in prompt.lower()
+        assert "No modern tailoring" in prompt or "no modern" in prompt.lower()
 
     def test_build_prompt_no_constraints(self):
         """_build_prompt should work without negative constraints."""
@@ -97,6 +100,30 @@ class TestGenerateCharacterCardImagesScript:
         prompt = mod._build_prompt(profile)
         assert "A scholar in robes" in prompt
         assert "Do NOT include" not in prompt
+        # Era constraints must still be present even with no negative_constraints
+        assert "pre-modern" in prompt.lower() or "pre-industrial" in prompt.lower()
+
+    def test_build_prompt_uses_up_to_five_constraints(self):
+        """_build_prompt should include up to 5 negative constraints."""
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "generate_character_card_images",
+            str(Path(__file__).resolve().parents[1] / "scripts" / "generate_character_card_images.py"),
+        )
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+
+        profile = {
+            "role_id": "test",
+            "image_prompt_base": "A warrior.",
+            "negative_constraints": [
+                "No anime", "No wings", "No modern clothes",
+                "No halo", "No tattoos", "No sixth item",
+            ],
+        }
+        prompt = mod._build_prompt(profile)
+        assert "No tattoos" in prompt  # 5th constraint included
+        assert "No sixth item" not in prompt  # 6th constraint excluded
 
 
 class TestBookConfigOverviewSummary:
@@ -111,3 +138,34 @@ class TestBookConfigOverviewSummary:
         assert "book_overview_summary" in config
         assert isinstance(config["book_overview_summary"], str)
         assert len(config["book_overview_summary"]) >= 20
+
+
+class TestVisualProfilePromptEraConstraints:
+    """Validate that prompt files enforce pre-modern era constraints."""
+
+    PROMPTS_DIR = Path(__file__).resolve().parents[1] / "prompts"
+
+    def test_sys_prompt_has_era_section(self):
+        text = (self.PROMPTS_DIR / "sys_character_visual_profile.md").read_text(encoding="utf-8")
+        assert "前现代" in text
+        assert "时代感全局禁止项" in text
+        assert "现代裁剪感服装" in text
+        assert "拉链" in text
+
+    def test_sys_prompt_requires_multi_phase_timeline(self):
+        text = (self.PROMPTS_DIR / "sys_character_visual_profile.md").read_text(encoding="utf-8")
+        assert "2-4 个阶段" in text
+        assert "visual_delta" in text
+
+    def test_sys_prompt_requires_min_3_negative_constraints(self):
+        text = (self.PROMPTS_DIR / "sys_character_visual_profile.md").read_text(encoding="utf-8")
+        assert "至少 3 条" in text
+
+    def test_sys_prompt_requires_pre_modern_in_image_prompt(self):
+        text = (self.PROMPTS_DIR / "sys_character_visual_profile.md").read_text(encoding="utf-8")
+        assert "pre-modern" in text
+
+    def test_user_prompt_requires_multi_phase(self):
+        text = (self.PROMPTS_DIR / "user_character_visual_profile.md").read_text(encoding="utf-8")
+        assert "2-4 个阶段" in text
+        assert "visual_delta" in text

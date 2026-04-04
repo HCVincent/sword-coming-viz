@@ -82,7 +82,7 @@ class CharacterVisualProfile(BaseModel):
         description="供图像生成模型直接使用的基础英文提示词"
     )
     image_style_notes: str = Field(
-        default="写实倾向、影视概念设定感、非二游模板、非网文封面夸饰。同一套镜头语言和材质系统。",
+        default="写实倾向、影视概念设定感、非二游模板、非网文封面夸饰。同一套镜头语言和材质系统。前现代汉语奇幻世界，所有材质和工艺必须符合古代水平。",
         description="首页卡图统一风格约束"
     )
     appearance_timeline: List[AppearanceTimelineEntry] = Field(

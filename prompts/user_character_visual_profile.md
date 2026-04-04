@@ -39,7 +39,10 @@
 ## 要求
 请严格按照系统指令中的 JSON schema 输出该角色的形象档案。确保：
 1. `visual_hook` ≤ 20 字
-2. `image_prompt_base` 为英文，50-80 词
-3. `negative_constraints` 至少 2 条
+2. `image_prompt_base` 为英文，50-80 词，必须包含 `pre-modern` 时代限定
+3. `negative_constraints` 至少 3 条，必须包含年龄错位约束和时代感约束
 4. `appearance_timeline` 至少 1 条初始阶段（`use_as_default_card = true`）
 5. 所有外观描述忠于原文设定
+6. `initial_appearance` 紧贴原文首出场情境，不写空泛的设定句
+7. `appearance_details.clothing_and_materials` 必须写明材质
+8. 如果上面的阶段弧线、转折点、角色弧线能支持明显视觉变化，`appearance_timeline` 必须生成 2-4 个阶段，每个阶段的 `visual_delta` 必须具体可视化
