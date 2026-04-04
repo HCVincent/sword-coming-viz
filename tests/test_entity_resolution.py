@@ -9,6 +9,8 @@ Tests cover:
 """
 
 import pytest
+from model.action import Action
+from model.event import Event
 from model.location import Location
 from model.role import Role
 from model.polity import Polity
@@ -555,6 +557,120 @@ class TestLocationDescription:
         assert unified.description != ""
         assert len(unified.description) <= 140
         assert len(unified.original_descriptions) > 0
+
+
+class TestCanonicalizedRoleReferences:
+    """Alias references in events/relations should resolve to canonical roles."""
+
+    @staticmethod
+    def _make_resolver():
+        resolver = EntityResolver()
+        resolver.set_manual_overrides(
+            {
+                "allowed_special_designators": [
+                    {
+                        "name": "桂夫人",
+                        "resolution": "keep_as_canonical",
+                        "canonical_target": "桂夫人",
+                        "kind": "honorific",
+                    },
+                    {
+                        "name": "桂姨",
+                        "resolution": "merge_to_canonical",
+                        "canonical_target": "桂夫人",
+                        "kind": "kinship_title",
+                    },
+                ],
+                "canonical_role_names": {"桂姨": "桂夫人"},
+                "role_aliases": {"桂夫人": ["桂姨"]},
+            }
+        )
+        return resolver
+
+    def test_resolve_events_canonicalizes_alias_participants(self):
+        resolver = self._make_resolver()
+        resolver.add_event(
+            Event(
+                name="桂姨与陈平安相见",
+                participants=["桂姨", "陈平安"],
+                description="桂姨与陈平安在桂花岛相见。",
+                juan_index=1,
+                segment_index=0,
+            ),
+            juan_index=1,
+            segment_index=0,
+        )
+
+        events = resolver.resolve_events()
+        event = next(iter(events.values()))
+        assert "桂姨" not in event.participants
+        assert "桂夫人" in event.participants
+        assert "陈平安" in event.participants
+
+    def test_resolve_relations_canonicalizes_alias_endpoints(self):
+        resolver = self._make_resolver()
+        resolver.add_relation(
+            Action(
+                from_roles=["桂姨"],
+                to_roles=["陈平安"],
+                action="对话",
+                context="桂姨与陈平安交谈。",
+                juan_index=1,
+                segment_index=0,
+            )
+        )
+
+        relations = resolver.resolve_relations()
+        relation = next(iter(relations.values()))
+        assert "桂姨" not in {relation.from_entity, relation.to_entity}
+        assert {"桂夫人", "陈平安"} == {relation.from_entity, relation.to_entity}
+
+    def test_build_knowledge_base_preserves_alias_index_but_canonicalizes_outputs(self):
+        resolver = self._make_resolver()
+        resolver.add_role(
+            Role(name="桂姨", description="老龙城女主人"),
+            juan_index=1,
+            segment_index=0,
+            chunk_index=0,
+        )
+        resolver.add_role(
+            Role(name="陈平安", description="泥瓶巷少年"),
+            juan_index=1,
+            segment_index=0,
+            chunk_index=0,
+        )
+        resolver.add_event(
+            Event(
+                name="桂姨与陈平安相见",
+                participants=["桂姨", "陈平安"],
+                description="桂姨与陈平安在桂花岛相见。",
+                juan_index=1,
+                segment_index=0,
+            ),
+            juan_index=1,
+            segment_index=0,
+        )
+        resolver.add_relation(
+            Action(
+                from_roles=["桂姨"],
+                to_roles=["陈平安"],
+                action="对话",
+                context="桂姨与陈平安交谈。",
+                juan_index=1,
+                segment_index=0,
+            )
+        )
+
+        kb = resolver.build_knowledge_base()
+        event = next(iter(kb.events.values()))
+        relation = next(iter(kb.relations.values()))
+
+        assert kb.name_to_role_id["桂姨"] == "桂夫人"
+        assert "桂姨" in kb.roles["桂夫人"].all_names
+        assert "桂姨" not in event.participants
+        assert "桂夫人" in event.participants
+        assert "桂姨" not in {relation.from_entity, relation.to_entity}
+        assert {"桂夫人", "陈平安"} == {relation.from_entity, relation.to_entity}
 
 
 if __name__ == "__main__":

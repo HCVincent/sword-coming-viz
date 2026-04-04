@@ -451,6 +451,29 @@ class EntityResolver:
         # Could add more normalization rules specific to Chinese historical names
         return name
 
+    def _canonicalize_role_reference(self, name: str) -> Optional[str]:
+        """Map a role reference onto its canonical role name when possible.
+
+        This is used for *references* carried by events/relations, not for
+        building the role merge graph itself.
+
+        Returns:
+        - canonical target for ``merge`` names
+        - normalized original name for ``keep`` names
+        - ``None`` for blocked/noise names
+        """
+        normalized = self._normalize_name(name)
+        if not normalized:
+            return None
+
+        classification = self._classify_name(normalized)
+        if classification["decision"] == "block":
+            return None
+        if classification["decision"] == "merge" and classification["canonical_target"]:
+            target = self._normalize_name(classification["canonical_target"])
+            return target or normalized
+        return normalized
+
     def _select_preferred_role_name(self, name_group: Set[str]) -> str:
         # --- Priority 1: classification-driven canonical_target ---
         # If any name in the group classifies as "merge" with a canonical_target,
@@ -747,13 +770,17 @@ class EntityResolver:
         if action.is_commentary:
             return
 
+        seen_pair_keys: Set[str] = set()
         for from_role in action.from_roles:
             for to_role in action.to_roles:
-                a = self._normalize_name(from_role)
-                b = self._normalize_name(to_role)
+                a = self._canonicalize_role_reference(from_role)
+                b = self._canonicalize_role_reference(to_role)
                 if not a or not b or a == b:
                     continue
                 key = self._canonical_relation_key(a, b)
+                if key in seen_pair_keys:
+                    continue
+                seen_pair_keys.add(key)
                 self.relation_pairs[key].append(action)
     
     EDITORIAL_DESCRIPTION_PATTERNS: tuple[str, ...] = (
@@ -1262,7 +1289,10 @@ class EntityResolver:
             _best_prov_key: tuple[int, int] = (10**9, 0)  # (juan_idx, -match_kw_count)
 
             for event, juan_idx, seg_idx in occurrences:
-                all_participants.update(event.participants)
+                for participant in event.participants:
+                    canonical_participant = self._canonicalize_role_reference(participant)
+                    if canonical_participant:
+                        all_participants.add(canonical_participant)
                 source_juans.add(juan_idx)
                 source_segments.append(f"{juan_idx}-{seg_idx}")
                 if event.description:
@@ -1368,9 +1398,18 @@ class EntityResolver:
     def resolve_relations(self) -> Dict[str, UnifiedRelation]:
         """Aggregate relations between entity pairs."""
         unified_relations: Dict[str, UnifiedRelation] = {}
-        
+
+        canonical_buckets: Dict[str, List[Action]] = defaultdict(list)
         for pair_key, actions in self.relation_pairs.items():
-            # pair_key is always "<min_name>-><max_name>" (canonical order)
+            raw_from_entity, raw_to_entity = pair_key.split("->")
+            from_entity = self._canonicalize_role_reference(raw_from_entity)
+            to_entity = self._canonicalize_role_reference(raw_to_entity)
+            if not from_entity or not to_entity or from_entity == to_entity:
+                continue
+            canonical_key = self._canonical_relation_key(from_entity, to_entity)
+            canonical_buckets[canonical_key].extend(actions)
+
+        for pair_key, actions in canonical_buckets.items():
             from_entity, to_entity = pair_key.split("->")
             
             action_types: List[str] = []
