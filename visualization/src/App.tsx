@@ -868,6 +868,31 @@ function App() {
     return map;
   }, [timelineEvents]);
 
+  const chapterTitleMap = useMemo(() => {
+    const map = new Map<number, string>();
+    for (const unit of chapterIndex?.units ?? []) {
+      map.set(unit.unit_index, unit.title || unit.chapter_title || `第 ${unit.unit_index} 章`);
+    }
+    return map;
+  }, [chapterIndex]);
+
+  const filteredNarrativeUnits = useMemo(() => {
+    const [minUnit, maxUnit] = unitRange;
+    const [minProgress, maxProgress] = progressRange;
+
+    return narrativeUnits.filter((unit) => {
+      const overlapsUnitRange = unit.start_unit_index <= maxUnit && unit.end_unit_index >= minUnit;
+      if (!overlapsUnitRange) return false;
+
+      if (minProgress == null && maxProgress == null) return true;
+      if (unit.progress_start == null || unit.progress_end == null) return true;
+
+      const effectiveMinProgress = minProgress ?? Number.NEGATIVE_INFINITY;
+      const effectiveMaxProgress = maxProgress ?? Number.POSITIVE_INFINITY;
+      return unit.progress_end >= effectiveMinProgress && unit.progress_start <= effectiveMaxProgress;
+    });
+  }, [narrativeUnits, progressRange, unitRange]);
+
   const entryCards = useMemo(
     () => [
       { id: 'writerArcs' as const, label: '角色弧光', icon: '🎭', copy: '按季整理角色线、锚点事件和可改编线索。' },
@@ -978,7 +1003,7 @@ function App() {
             <p className="hero-subtitle">
               {subtitle}
               <br />
-              这一版保留原有时间轴、人物网、地点、冲突链与伏笔分析，只把首屏整理成更容易先看全局、再细看人物的阅读页。
+              这一版把剧情单元放到最前面，先帮你判断每一段戏在整体结构中的作用，再沿关键事件、人物关系和地点往下细看。
             </p>
 
             <div className="hero-meta">
@@ -1012,10 +1037,10 @@ function App() {
                 className="hero-action-primary"
                 onClick={() => switchTab('narrativeUnits')}
               >
-                开始阅读剧情
+                进入剧情单元
               </button>
               <button type="button" className="hero-action-secondary" onClick={() => switchTab('timeline')}>
-                看时间轴
+                查看证据时间轴
               </button>
             </div>
           </div>
@@ -1024,15 +1049,15 @@ function App() {
             <div className="hero-side-panel">
               <span className="hero-side-kicker">当前概况</span>
               <strong className="hero-side-value">
-                {narrativeUnits.length} 个剧情单元 / {timelineEvents.length} 条事件
+                {filteredNarrativeUnits.length} 个剧情单元 / {timelineEvents.length} 条事件
               </strong>
               <p className="hero-side-copy">
-                当前筛选范围内保留 {totalRoleCount} 位人物、{locations.length} 个地点、{roleLinks.length} 条关系，可从剧情单元入手阅读。
+                当前筛选范围内保留 {totalRoleCount} 位人物、{locations.length} 个地点、{roleLinks.length} 条关系，适合先按剧情单元把握结构，再回到事件证据核对细节。
               </p>
               <div className="hero-stat-grid">
                 <div className="hero-stat">
                   <span className="hero-stat-label">剧情单元</span>
-                  <strong className="hero-stat-value">{narrativeUnits.length}</strong>
+                  <strong className="hero-stat-value">{filteredNarrativeUnits.length}</strong>
                 </div>
                 <div className="hero-stat">
                   <span className="hero-stat-label">关系网人物</span>
@@ -1220,11 +1245,11 @@ function App() {
                   <div>
                     <p className="section-kicker">全局概览</p>
                     <h2 className="section-title">全局概览</h2>
-                    <p className="section-subtitle">快速了解当前范围的主要数据分布，再到下方工作台细看。</p>
+                    <p className="section-subtitle">先抓住这一段故事的结构分布，再进入下方工作台细看人物、关系与关键事件。</p>
                   </div>
                   <div className="view-toolbar">
                     <button type="button" className="ghost-button" onClick={() => switchTab('narrativeUnits')}>
-                      看剧情单元
+                      进入剧情单元
                     </button>
                     <button type="button" className="outline-button" onClick={() => switchTab('network')}>
                       进关系网
@@ -1235,7 +1260,7 @@ function App() {
                 <dl className="metric-grid">
                   <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('narrativeUnits')}>
                     <dt>剧情单元</dt>
-                    <dd>{narrativeUnits.length}</dd>
+                    <dd>{filteredNarrativeUnits.length}</dd>
                   </button>
                   <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('timeline')}>
                     <dt>剧情事件</dt>
@@ -1461,6 +1486,8 @@ function App() {
                       <NarrativeTimeline
                         units={narrativeUnits}
                         unitRange={unitRange}
+                        progressRange={progressRange}
+                        chapterTitleMap={chapterTitleMap}
                         eventTitleMap={eventTitleMap}
                         onRoleClick={(roleName) => openRoleDetail(roleName, 'narrativeUnits')}
                         onEventClick={(eventId) => openEventDetail(eventId, 'narrativeUnits')}

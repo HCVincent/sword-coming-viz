@@ -249,6 +249,7 @@ export interface NarrativeUnit {
   season_name: string;
   start_unit_index: number;
   end_unit_index: number;
+  source_unit_indexes?: number[];
   // Dossier fields (present after Gemini generation)
   title?: string;
   display_summary?: string;

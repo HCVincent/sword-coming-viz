@@ -4,20 +4,41 @@ import type { NarrativeUnit } from '../types/pipelineArtifacts';
 interface NarrativeTimelineProps {
   units: NarrativeUnit[];
   unitRange: [number, number];
+  progressRange?: [number | null, number | null];
+  chapterTitleMap?: Map<number, string>;
   eventTitleMap?: Map<string, string>;
   onRoleClick?: (roleName: string) => void;
   onEventClick?: (eventId: string) => void;
 }
 
-export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick, onEventClick }: NarrativeTimelineProps) {
+export function NarrativeTimeline({
+  units,
+  unitRange,
+  progressRange,
+  chapterTitleMap,
+  eventTitleMap,
+  onRoleClick,
+  onEventClick,
+}: NarrativeTimelineProps) {
   const [selectedUnit, setSelectedUnit] = useState<NarrativeUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [autoSelectionArmed, setAutoSelectionArmed] = useState(true);
 
   const filteredUnits = useMemo(() => {
     const [minUnit, maxUnit] = unitRange;
+    const [minProgress, maxProgress] = progressRange ?? [null, null];
     const inRange = units.filter(
-      (u) =>
-        u.start_unit_index <= maxUnit && u.end_unit_index >= minUnit,
+      (u) => {
+        const overlapsUnitRange = u.start_unit_index <= maxUnit && u.end_unit_index >= minUnit;
+        if (!overlapsUnitRange) return false;
+
+        if (minProgress == null && maxProgress == null) return true;
+        if (u.progress_start == null || u.progress_end == null) return true;
+
+        const effectiveMinProgress = minProgress ?? Number.NEGATIVE_INFINITY;
+        const effectiveMaxProgress = maxProgress ?? Number.POSITIVE_INFINITY;
+        return u.progress_end >= effectiveMinProgress && u.progress_start <= effectiveMaxProgress;
+      },
     );
     if (!searchQuery) return inRange;
     const query = searchQuery.toLowerCase();
@@ -29,7 +50,7 @@ export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick
         u.main_locations.some((l) => l.toLowerCase().includes(query)) ||
         u.season_name.toLowerCase().includes(query),
     );
-  }, [units, unitRange, searchQuery]);
+  }, [progressRange, searchQuery, unitRange, units]);
 
   // Group by season
   const bySeason = useMemo(() => {
@@ -45,16 +66,48 @@ export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick
     }));
   }, [filteredUnits]);
 
-  // Auto-select first unit when list changes and nothing is selected
+  // Auto-select on first load or when the current selection falls out of the filtered list.
+  // Preserve an explicit close while results remain visible.
   useEffect(() => {
-    if (!selectedUnit && filteredUnits.length > 0) {
+    if (filteredUnits.length === 0) {
+      if (selectedUnit) {
+        setSelectedUnit(null);
+      }
+      if (!autoSelectionArmed) {
+        setAutoSelectionArmed(true);
+      }
+      return;
+    }
+
+    const selectedStillVisible =
+      selectedUnit != null && filteredUnits.some((u) => u.unit_id === selectedUnit.unit_id);
+
+    if (selectedUnit && !selectedStillVisible) {
+      setSelectedUnit(filteredUnits[0]);
+      setAutoSelectionArmed(true);
+      return;
+    }
+
+    if (!selectedUnit && autoSelectionArmed) {
       setSelectedUnit(filteredUnits[0]);
     }
-    // If the currently selected unit is no longer in the filtered list, deselect
-    if (selectedUnit && !filteredUnits.some((u) => u.unit_id === selectedUnit.unit_id)) {
-      setSelectedUnit(filteredUnits[0] ?? null);
+  }, [autoSelectionArmed, filteredUnits, selectedUnit]);
+
+  const handleSelectUnit = (unit: NarrativeUnit) => {
+    if (selectedUnit?.unit_id === unit.unit_id) {
+      setSelectedUnit(null);
+      setAutoSelectionArmed(false);
+      return;
     }
-  }, [filteredUnits, selectedUnit]);
+
+    setSelectedUnit(unit);
+    setAutoSelectionArmed(true);
+  };
+
+  const handleCloseDetail = () => {
+    setSelectedUnit(null);
+    setAutoSelectionArmed(false);
+  };
 
   return (
     <div className="view-shell">
@@ -62,7 +115,7 @@ export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick
         <div>
           <h3 className="view-title">剧情单元时间轴</h3>
           <p className="view-copy">
-            按剧情结构把章节分组，每个单元代表一段有完整起承转合的叙事。
+            先把这一段故事读成结构，再往下看人物、地点和关键事件，适合先建立整体判断。
           </p>
         </div>
         <div className="view-toolbar">
@@ -116,7 +169,7 @@ export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick
                                 ? 'bg-[rgba(230,194,139,0.18)]'
                                 : 'hover:bg-[rgba(255,252,247,0.8)]'
                             }`}
-                            onClick={() => setSelectedUnit(isSelected ? null : unit)}
+                            onClick={() => handleSelectUnit(unit)}
                           >
                             <div
                               className={`relative z-10 mt-1 h-4 w-4 shrink-0 rounded-full transition-transform ${
@@ -158,8 +211,9 @@ export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick
             {selectedUnit ? (
               <NarrativeUnitDetail
                 unit={selectedUnit}
+                chapterTitleMap={chapterTitleMap}
                 eventTitleMap={eventTitleMap}
-                onClose={() => setSelectedUnit(null)}
+                onClose={handleCloseDetail}
                 onRoleClick={onRoleClick}
                 onEventClick={onEventClick}
               />
@@ -181,17 +235,28 @@ export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick
 
 interface NarrativeUnitDetailProps {
   unit: NarrativeUnit;
+  chapterTitleMap?: Map<number, string>;
   eventTitleMap?: Map<string, string>;
   onClose: () => void;
   onRoleClick?: (roleName: string) => void;
   onEventClick?: (eventId: string) => void;
 }
 
-function NarrativeUnitDetail({ unit, eventTitleMap, onClose, onRoleClick, onEventClick }: NarrativeUnitDetailProps) {
+function NarrativeUnitDetail({
+  unit,
+  chapterTitleMap,
+  eventTitleMap,
+  onClose,
+  onRoleClick,
+  onEventClick,
+}: NarrativeUnitDetailProps) {
   const chapterRange =
     unit.start_unit_index === unit.end_unit_index
       ? `第 ${unit.start_unit_index} 章`
       : `第 ${unit.start_unit_index}–${unit.end_unit_index} 章`;
+  const sourceChapters = (unit.source_unit_indexes ?? []).map(
+    (unitIndex: number) => chapterTitleMap?.get(unitIndex) ?? `第 ${unitIndex} 章`
+  );
 
   return (
     <div className="flex flex-col gap-4 p-1">
@@ -202,9 +267,6 @@ function NarrativeUnitDetail({ unit, eventTitleMap, onClose, onRoleClick, onEven
             <span className="tag-pill">{unit.season_name}</span>
             <span className="tag-pill">{chapterRange}</span>
           </div>
-          {unit.dramatic_function && (
-            <p className="view-copy mt-1 text-[var(--accent-deep)] font-medium">{unit.dramatic_function}</p>
-          )}
         </div>
         <button type="button" className="modal-close shrink-0" onClick={onClose}>
           ×
@@ -213,29 +275,36 @@ function NarrativeUnitDetail({ unit, eventTitleMap, onClose, onRoleClick, onEven
 
       {unit.display_summary && (
         <div>
-          <p className="section-kicker">概要</p>
+          <p className="section-kicker">这段戏在讲什么</p>
           <p className="detail-text">{unit.display_summary}</p>
         </div>
       )}
 
-      {unit.long_summary && (
+      {unit.dramatic_function && (
         <div>
-          <p className="section-kicker">详细评述</p>
-          <p className="detail-text whitespace-pre-line">{unit.long_summary}</p>
+          <p className="section-kicker">这段戏的结构作用</p>
+          <p className="detail-text">{unit.dramatic_function}</p>
         </div>
       )}
 
       {unit.what_changes && (
         <div>
-          <p className="section-kicker">经此段后发生的变化</p>
+          <p className="section-kicker">这一段之后变了什么</p>
           <p className="detail-text">{unit.what_changes}</p>
         </div>
       )}
 
       {unit.stakes && (
         <div>
-          <p className="section-kicker">关键赌注</p>
+          <p className="section-kicker">这一段的风险与代价</p>
           <p className="detail-text italic">{unit.stakes}</p>
+        </div>
+      )}
+
+      {unit.long_summary && (
+        <div>
+          <p className="section-kicker">细部评述</p>
+          <p className="detail-text whitespace-pre-line">{unit.long_summary}</p>
         </div>
       )}
 
@@ -270,9 +339,22 @@ function NarrativeUnitDetail({ unit, eventTitleMap, onClose, onRoleClick, onEven
         </div>
       )}
 
+      {sourceChapters.length > 0 && (
+        <div>
+          <p className="section-kicker">涉及章节</p>
+          <div className="mt-2 space-y-1 max-h-[160px] overflow-y-auto pr-1">
+            {sourceChapters.map((chapterTitle: string, index: number) => (
+              <p key={`${unit.unit_id}-chapter-${index}`} className="text-sm text-[var(--text-secondary)]">
+                {chapterTitle}
+              </p>
+            ))}
+          </div>
+        </div>
+      )}
+
       {unit.source_event_ids && unit.source_event_ids.length > 0 && (
         <div>
-          <p className="section-kicker">关键事件（{unit.source_event_ids.length}）</p>
+          <p className="section-kicker">可下钻的关键事件（{unit.source_event_ids.length}）</p>
           <div className="mt-2 space-y-1 max-h-[180px] overflow-y-auto pr-1">
             {unit.source_event_ids.slice(0, 20).map((eid) => (
               <button
