@@ -276,3 +276,64 @@ export interface NarrativeUnitsPayload {
   dossier_version: string;
   units: NarrativeUnit[];
 }
+
+/* ── Character Visual Profiles ── */
+
+export interface AppearanceDetails {
+  age_and_build: string;
+  facial_features: string;
+  hair: string;
+  clothing_and_materials: string;
+  color_palette: string;
+  signature_items: string;
+  aura_and_camera_feel: string;
+}
+
+export interface AppearanceTimelineEntry {
+  phase_label: string;
+  range_hint: string;
+  change_summary: string;
+  visual_delta: string;
+  use_as_default_card: boolean;
+}
+
+export interface CharacterVisualProfile {
+  role_id: string;
+  canonical_name: string;
+  card_title: string;
+  visual_hook: string;
+  initial_appearance: string;
+  appearance_details: AppearanceDetails;
+  negative_constraints: string[];
+  image_prompt_base: string;
+  image_style_notes: string;
+  appearance_timeline: AppearanceTimelineEntry[];
+}
+
+export interface CharacterVisualProfilesPayload {
+  version: string;
+  generated_at: string;
+  generator: string;
+  model: string;
+  roster_version: string;
+  profiles: CharacterVisualProfile[];
+}
+
+/* ── High-Value Role Roster ── */
+
+export interface HighValueRoleEntry {
+  role_id: string;
+  canonical_name: string;
+  rank: number;
+  selection_score: number;
+  has_entity_profile: boolean;
+  in_core_cast: boolean;
+}
+
+export interface HighValueRoleRoster {
+  version: string;
+  generated_at: string;
+  roster_size: number;
+  selection_criteria: string;
+  roles: HighValueRoleEntry[];
+}

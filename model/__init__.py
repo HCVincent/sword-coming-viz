@@ -19,6 +19,12 @@ from .unified import (
     UnifiedKnowledgeBase,
     EntityOccurrence,
 )
+from .visual_profile import (
+    AppearanceDetails,
+    AppearanceTimelineEntry,
+    CharacterVisualProfile,
+    CharacterVisualProfilesPayload,
+)
 
 __all__ = [
     # Raw extraction models
@@ -41,5 +47,10 @@ __all__ = [
     "UnifiedRelation",
     "UnifiedKnowledgeBase",
     "EntityOccurrence",
+    # Visual profile models
+    "AppearanceDetails",
+    "AppearanceTimelineEntry",
+    "CharacterVisualProfile",
+    "CharacterVisualProfilesPayload",
 ]
 

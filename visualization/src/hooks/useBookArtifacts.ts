@@ -9,6 +9,9 @@ import type {
   NarrativeUnit,
   NarrativeUnitsPayload,
   UnitProgressIndex,
+  CharacterVisualProfile,
+  CharacterVisualProfilesPayload,
+  HighValueRoleRoster,
 } from '../types/pipelineArtifacts';
 
 export function useUnitProgressIndex() {
@@ -190,4 +193,56 @@ export function useNarrativeUnits() {
   }, []);
 
   return { narrativeUnits, loading, error };
+}
+
+export function useCharacterVisualProfiles() {
+  const [profiles, setProfiles] = useState<CharacterVisualProfile[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}data/character_visual_profiles.json`);
+        if (!response.ok) {
+          setProfiles([]);
+          return;
+        }
+        const data = (await response.json()) as CharacterVisualProfilesPayload;
+        setProfiles(data.profiles ?? []);
+      } catch {
+        setProfiles([]);
+      } finally {
+        setLoading(false);
+      }
+    }
+    load();
+  }, []);
+
+  return { visualProfiles: profiles, loading };
+}
+
+export function useHighValueRoster() {
+  const [roster, setRoster] = useState<HighValueRoleRoster | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}data/high_value_role_roster.json`);
+        if (!response.ok) {
+          setRoster(null);
+          return;
+        }
+        const data = (await response.json()) as HighValueRoleRoster;
+        setRoster(data);
+      } catch {
+        setRoster(null);
+      } finally {
+        setLoading(false);
+      }
+    }
+    load();
+  }, []);
+
+  return { roster, loading };
 }

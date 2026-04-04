@@ -22,6 +22,8 @@ DEFAULT_FILES = [
     "swordcoming_book.json",
     "season_overview_audit.json",
     "narrative_units.json",
+    "high_value_role_roster.json",
+    "character_visual_profiles.json",
 ]
 
 

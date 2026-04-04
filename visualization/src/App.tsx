@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { useBookConfig, useChapterIndex, useNarrativeUnits, useUnitProgressIndex } from './hooks/useBookArtifacts';
+import { useBookConfig, useChapterIndex, useNarrativeUnits, useUnitProgressIndex, useCharacterVisualProfiles, useHighValueRoster } from './hooks/useBookArtifacts';
 import { useUnifiedKnowledgeBase, useUnifiedVisualizationData } from './hooks/useUnifiedData';
 import { useFilteredWriterInsights, useWriterInsights } from './hooks/useWriterInsights';
 import {
@@ -145,6 +145,8 @@ function App() {
   const { chapterIndex } = useChapterIndex();
   const { unitProgressIndex } = useUnitProgressIndex();
   const { narrativeUnits } = useNarrativeUnits();
+  const { visualProfiles } = useCharacterVisualProfiles();
+  const { roster } = useHighValueRoster();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const maxUnit = unitProgressIndex?.total_units ?? 328;
@@ -823,6 +825,34 @@ function App() {
     });
   }, [narrativeUnits, progressRange, unitRange]);
 
+  /* Featured character cards: visual profiles ordered by roster rank */
+  const featuredCharacters = useMemo(() => {
+    if (!visualProfiles.length || !roster) return [];
+    const profileMap = new Map(visualProfiles.map((p) => [p.role_id, p]));
+    return roster.roles
+      .filter((r) => profileMap.has(r.role_id))
+      .map((r) => ({
+        ...profileMap.get(r.role_id)!,
+        rank: r.rank,
+        power: roles.find((n) => n.id === r.role_id)?.power ?? null,
+      }));
+  }, [visualProfiles, roster, roles]);
+
+  /* Featured events: events with dossiers in current range, sorted by richness */
+  const featuredEvents = useMemo(() => {
+    return [...timelineEvents]
+      .filter((e) => e.identitySummary || e.storyFunction)
+      .sort((a, b) => {
+        // Prefer events with more participants → more narratively central
+        const pA = a.participants?.length ?? 0;
+        const pB = b.participants?.length ?? 0;
+        if (pB !== pA) return pB - pA;
+        // Then by progress order
+        return (a.progressStart ?? 0) - (b.progressStart ?? 0);
+      })
+      .slice(0, 8);
+  }, [timelineEvents]);
+
   const tabs: { id: TabType; label: string; icon: string }[] = [
     { id: 'narrativeUnits', label: '剧情单元', icon: '🎬' },
     { id: 'timeline', label: '时间轴', icon: '📜' },
@@ -933,10 +963,12 @@ function App() {
                 className="hero-action-primary"
                 onClick={() => switchTab('narrativeUnits')}
               >
-                开始阅读剧情
+                进入剧情单元
               </button>
-              <button type="button" className="hero-action-secondary" onClick={() => switchTab('timeline')}>
-                查看证据时间轴
+              <button type="button" className="hero-action-secondary" onClick={() => {
+                document.getElementById('character-card-band')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}>
+                浏览角色卡
               </button>
             </div>
           </div>
@@ -966,7 +998,49 @@ function App() {
       </header>
 
       {/* ═══════════════════════════════════════════════════════════════
-          LAYER 2 — Story Gateway
+          LAYER 2 — Core Character Card Band (Databank)
+          "先看人物"：首批高价值角色卡，图像主导、入口清晰
+          ═══════════════════════════════════════════════════════════════ */}
+      {featuredCharacters.length > 0 && (
+        <section id="character-card-band" className="databank-band databank-band--characters">
+          <div className="shell-container">
+            <div className="databank-band-header">
+              <div>
+                <p className="section-kicker">核心人物</p>
+                <h2 className="section-title">角色档案</h2>
+                <p className="section-subtitle">首批 {featuredCharacters.length} 位高价值角色。点击卡片查看完整人物档案。</p>
+              </div>
+              <button type="button" className="ink-button" onClick={() => switchTab('writerArcs')}>
+                查看全部角色弧光
+              </button>
+            </div>
+            <div className="databank-card-scroll">
+              {featuredCharacters.map((char) => (
+                <button
+                  key={char.role_id}
+                  type="button"
+                  className="character-card"
+                  onClick={() => openRoleDetail(char.role_id, activeTab)}
+                >
+                  <div className="character-card-visual">
+                    <div className="character-card-placeholder">
+                      <span className="character-card-initial">{char.canonical_name[0]}</span>
+                    </div>
+                  </div>
+                  <div className="character-card-body">
+                    <h3 className="character-card-name">{char.card_title}</h3>
+                    <p className="character-card-hook">{char.visual_hook}</p>
+                    {char.power && <span className="character-card-tag">{char.power}</span>}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ═══════════════════════════════════════════════════════════════
+          LAYER 3 — Story Gateway
           Answers: "从哪里开始看最省力" + shows narrative unit previews
           ═══════════════════════════════════════════════════════════════ */}
       <section className="story-gateway">
@@ -1050,7 +1124,55 @@ function App() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          LAYER 3 — Secondary Entries (推荐进入 + 分析工具)
+          LAYER 4 — High-Value Event Card Band
+          事件卡作为辅助入口，首期用现有 dossier 文字卡
+          ═══════════════════════════════════════════════════════════════ */}
+      {featuredEvents.length > 0 && (
+        <section className="databank-band databank-band--events">
+          <div className="shell-container">
+            <div className="databank-band-header">
+              <div>
+                <p className="section-kicker">高价值事件</p>
+                <h2 className="section-title">关键事件档案</h2>
+                <p className="section-subtitle">当前范围内叙事密度最高的事件，点击查看完整事件档案。</p>
+              </div>
+              <button type="button" className="ink-button" onClick={() => switchTab('timeline')}>
+                查看完整时间轴
+              </button>
+            </div>
+            <div className="databank-card-scroll">
+              {featuredEvents.map((evt) => (
+                <button
+                  key={evt.id}
+                  type="button"
+                  className="event-card"
+                  onClick={() => openEventDetail(evt.id, activeTab, { fallbackEvent: evt })}
+                >
+                  <div className="event-card-header">
+                    {evt.progressLabel && <span className="tag-pill text-xs">{evt.progressLabel}</span>}
+                    {evt.location && <span className="event-card-location">📍 {evt.location}</span>}
+                  </div>
+                  <h3 className="event-card-title">{evt.name}</h3>
+                  {evt.identitySummary && (
+                    <p className="event-card-summary">{evt.identitySummary}</p>
+                  )}
+                  <div className="event-card-meta">
+                    {evt.participants.slice(0, 3).map((p) => (
+                      <span key={p} className="dashboard-pill">{p}</span>
+                    ))}
+                    {evt.participants.length > 3 && (
+                      <span className="dashboard-pill">+{evt.participants.length - 3}</span>
+                    )}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ═══════════════════════════════════════════════════════════════
+          LAYER 5 — Analysis Tools (demoted)
           ═══════════════════════════════════════════════════════════════ */}
       <section className="story-entries" ref={dashboardRef}>
         <div className="shell-container">
