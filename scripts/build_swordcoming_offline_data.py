@@ -69,6 +69,7 @@ DEFAULT_SYNC_FILES = [
     "narrative_units.json",
     "high_value_role_roster.json",
     "character_visual_profiles.json",
+    "character_card_images.json",
 ]
 
 SYMMETRIC_ACTIONS = {"对话", "会见", "冲突", "同行"}

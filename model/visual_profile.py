@@ -1,6 +1,6 @@
-"""Pydantic models for Character Visual Profiles.
+"""Pydantic models for Character Visual Profiles (角色形象档案).
 
-These models describe the visual bible for characters — structured descriptions
+These models describe the visual profile for characters — structured descriptions
 designed for image generation, storyboarding, and the homepage Databank-style
 character cards.  They live alongside (not inside) the existing entity_profiles
 and unified_knowledge data.

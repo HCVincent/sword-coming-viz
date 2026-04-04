@@ -21,6 +21,7 @@ export interface UrlGlobalContext {
   | { type: 'location'; id: string }
   | { type: 'relationPair'; sourceId: string; targetId: string };
   focusRoleId?: string;
+  narrativeUnitId?: string;
 }
 
 const DEFAULT_CONTEXT: UrlGlobalContext = {
@@ -83,6 +84,7 @@ export function parseUrlGlobalContext(params: URLSearchParams, maxUnit: number):
   }
 
   const focusRoleId = params.get('focus') || undefined;
+  const narrativeUnitId = params.get('nuId') || undefined;
 
   return {
     tab,
@@ -90,12 +92,13 @@ export function parseUrlGlobalContext(params: URLSearchParams, maxUnit: number):
     progressRange,
     selection,
     focusRoleId,
+    narrativeUnitId,
   };
 }
 
 export function writeUrlGlobalContext(
   params: URLSearchParams,
-  ctx: Pick<UrlGlobalContext, 'tab' | 'unitRange' | 'progressRange' | 'selection' | 'focusRoleId'>
+  ctx: Pick<UrlGlobalContext, 'tab' | 'unitRange' | 'progressRange' | 'selection' | 'focusRoleId' | 'narrativeUnitId'>
 ) {
   const next = new URLSearchParams(params);
 
@@ -124,6 +127,9 @@ export function writeUrlGlobalContext(
       next.set('selId', ctx.selection.id);
     }
   }
+
+  if (ctx.narrativeUnitId) next.set('nuId', ctx.narrativeUnitId);
+  else next.delete('nuId');
 
   return next;
 }

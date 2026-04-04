@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { useBookConfig, useChapterIndex, useNarrativeUnits, useUnitProgressIndex, useCharacterVisualProfiles, useHighValueRoster } from './hooks/useBookArtifacts';
+import { useBookConfig, useChapterIndex, useNarrativeUnits, useUnitProgressIndex, useCharacterVisualProfiles, useHighValueRoster, useCharacterCardImages } from './hooks/useBookArtifacts';
 import { useUnifiedKnowledgeBase, useUnifiedVisualizationData } from './hooks/useUnifiedData';
 import { useFilteredWriterInsights, useWriterInsights } from './hooks/useWriterInsights';
 import {
@@ -147,6 +147,7 @@ function App() {
   const { narrativeUnits } = useNarrativeUnits();
   const { visualProfiles } = useCharacterVisualProfiles();
   const { roster } = useHighValueRoster();
+  const { cardImageMap } = useCharacterCardImages();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const maxUnit = unitProgressIndex?.total_units ?? 328;
@@ -165,6 +166,7 @@ function App() {
   const [selectedRelationPair, setSelectedRelationPair] = useState<SelectedRelationPair | null>(null);
   const [roleListConfig, setRoleListConfig] = useState<RoleListConfig | null>(null);
   const [focusNodeId, setFocusNodeId] = useState<string | null>(null);
+  const [pendingNarrativeUnitId, setPendingNarrativeUnitId] = useState<string | null>(null);
   const [modalHistory, setModalHistory] = useState<ModalHistoryEntry[]>([]);
 
   const {
@@ -349,6 +351,9 @@ function App() {
       prev[0] === ctx.progressRange[0] && prev[1] === ctx.progressRange[1] ? prev : ctx.progressRange
     );
     setFocusNodeId(ctx.focusRoleId ?? null);
+    if (ctx.narrativeUnitId) {
+      setPendingNarrativeUnitId(ctx.narrativeUnitId);
+    }
 
     if (ctx.tab === 'map') {
       const next = writeUrlGlobalContext(searchParams, {
@@ -513,6 +518,27 @@ function App() {
         progressRange,
         focusRoleId: focusNodeId ?? undefined,
         selection: undefined,
+      });
+      next.delete('mapLoc');
+      setSearchParams(next, { replace: false });
+      workbenchRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    },
+    [clearModalSelections, focusNodeId, progressRange, searchParams, setSearchParams, unitRange]
+  );
+
+  const switchTabToUnit = useCallback(
+    (unitId: string) => {
+      setPendingNarrativeUnitId(unitId);
+      setActiveTab('narrativeUnits');
+      clearModalSelections();
+      setModalHistory([]);
+      const next = writeUrlGlobalContext(searchParams, {
+        tab: 'narrativeUnits',
+        unitRange,
+        progressRange,
+        focusRoleId: focusNodeId ?? undefined,
+        selection: undefined,
+        narrativeUnitId: unitId,
       });
       next.delete('mapLoc');
       setSearchParams(next, { replace: false });
@@ -792,6 +818,12 @@ function App() {
     return seasonOverviews.length === 1 ? seasonOverviews[0] : null;
   }, [currentSeasonNames, seasonOverviews]);
 
+  const heroSummary = useMemo(() => {
+    if (currentSeasonOverview?.summary) return currentSeasonOverview.summary;
+    if (bookConfig?.book_overview_summary) return bookConfig.book_overview_summary;
+    return subtitle;
+  }, [bookConfig?.book_overview_summary, currentSeasonOverview?.summary, subtitle]);
+
   const eventTitleMap = useMemo(() => {
     const map = new Map<string, string>();
     for (const event of timelineEvents) {
@@ -831,12 +863,16 @@ function App() {
     const profileMap = new Map(visualProfiles.map((p) => [p.role_id, p]));
     return roster.roles
       .filter((r) => profileMap.has(r.role_id))
-      .map((r) => ({
-        ...profileMap.get(r.role_id)!,
-        rank: r.rank,
-        power: roles.find((n) => n.id === r.role_id)?.power ?? null,
-      }));
-  }, [visualProfiles, roster, roles]);
+      .map((r) => {
+        const cardImage = cardImageMap.get(r.role_id);
+        return {
+          ...profileMap.get(r.role_id)!,
+          rank: r.rank,
+          power: roles.find((n) => n.id === r.role_id)?.power ?? null,
+          cardImageFile: cardImage?.file_name ?? null,
+        };
+      });
+  }, [visualProfiles, roster, roles, cardImageMap]);
 
   /* Featured events: events with dossiers in current range, sorted by richness */
   const featuredEvents = useMemo(() => {
@@ -929,11 +965,7 @@ function App() {
             <h1 className="hero-title">{title}</h1>
 
             {/* Current season synopsis — the core "what is this story about" block */}
-            {currentSeasonOverview ? (
-              <p className="story-synopsis-text">{currentSeasonOverview.summary}</p>
-            ) : (
-              <p className="story-synopsis-text">{subtitle}</p>
-            )}
+            <p className="story-synopsis-text">{heroSummary}</p>
 
             <div className="story-hero-range">
               <span className="hero-chip">
@@ -1023,9 +1055,18 @@ function App() {
                   onClick={() => openRoleDetail(char.role_id, activeTab)}
                 >
                   <div className="character-card-visual">
-                    <div className="character-card-placeholder">
-                      <span className="character-card-initial">{char.canonical_name[0]}</span>
-                    </div>
+                    {char.cardImageFile ? (
+                      <img
+                        className="character-card-img"
+                        src={`${import.meta.env.BASE_URL}generated/character_cards/${char.cardImageFile}`}
+                        alt={char.canonical_name}
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="character-card-placeholder">
+                        <span className="character-card-initial">{char.canonical_name[0]}</span>
+                      </div>
+                    )}
                   </div>
                   <div className="character-card-body">
                     <h3 className="character-card-name">{char.card_title}</h3>
@@ -1069,7 +1110,7 @@ function App() {
                   key={unit.unit_id}
                   type="button"
                   className="gateway-unit-card"
-                  onClick={() => switchTab('narrativeUnits')}
+                  onClick={() => switchTabToUnit(unit.unit_id)}
                 >
                   <div className="gateway-unit-header">
                     <span className="gateway-unit-season">{unit.season_name}</span>
@@ -1398,6 +1439,7 @@ function App() {
                         progressRange={progressRange}
                         chapterTitleMap={chapterTitleMap}
                         eventTitleMap={eventTitleMap}
+                        initialUnitId={pendingNarrativeUnitId}
                         onRoleClick={(roleName) => openRoleDetail(roleName, 'narrativeUnits')}
                         onEventClick={(eventId) => openEventDetail(eventId, 'narrativeUnits')}
                       />

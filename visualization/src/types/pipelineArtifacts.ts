@@ -95,6 +95,7 @@ export interface BookConfig {
   book_id: string;
   title: string;
   subtitle?: string;
+  book_overview_summary?: string;
   unit_label: string;
   progress_label: string;
   has_geo_coordinates: boolean;
@@ -336,4 +337,21 @@ export interface HighValueRoleRoster {
   roster_size: number;
   selection_criteria: string;
   roles: HighValueRoleEntry[];
+}
+
+/* ── Character Card Images ── */
+
+export interface CharacterCardImageEntry {
+  role_id: string;
+  file_name: string;
+  prompt_used: string;
+  aspect_ratio: string;
+  generated_at: string;
+}
+
+export interface CharacterCardImagesPayload {
+  version: string;
+  generated_at: string;
+  model: string;
+  images: CharacterCardImageEntry[];
 }

@@ -39,7 +39,7 @@ from model.visual_profile import (
     CharacterVisualProfilesPayload,
 )
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.1-flash-lite-preview"
 OUTPUT_PATH = PROJECT_ROOT / "data" / "character_visual_profiles.json"
 MAX_RETRIES = 2
 CALL_DELAY = 2.0  # seconds between API calls to avoid rate limiting

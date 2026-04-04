@@ -11,6 +11,8 @@ import type {
   UnitProgressIndex,
   CharacterVisualProfile,
   CharacterVisualProfilesPayload,
+  CharacterCardImageEntry,
+  CharacterCardImagesPayload,
   HighValueRoleRoster,
 } from '../types/pipelineArtifacts';
 
@@ -245,4 +247,34 @@ export function useHighValueRoster() {
   }, []);
 
   return { roster, loading };
+}
+
+export function useCharacterCardImages() {
+  const [imageMap, setImageMap] = useState<Map<string, CharacterCardImageEntry>>(new Map());
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}data/character_card_images.json`);
+        if (!response.ok) {
+          setImageMap(new Map());
+          return;
+        }
+        const data = (await response.json()) as CharacterCardImagesPayload;
+        const map = new Map<string, CharacterCardImageEntry>();
+        for (const entry of data.images ?? []) {
+          map.set(entry.role_id, entry);
+        }
+        setImageMap(map);
+      } catch {
+        setImageMap(new Map());
+      } finally {
+        setLoading(false);
+      }
+    }
+    load();
+  }, []);
+
+  return { cardImageMap: imageMap, loading };
 }

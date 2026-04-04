@@ -7,6 +7,7 @@ interface NarrativeTimelineProps {
   progressRange?: [number | null, number | null];
   chapterTitleMap?: Map<number, string>;
   eventTitleMap?: Map<string, string>;
+  initialUnitId?: string | null;
   onRoleClick?: (roleName: string) => void;
   onEventClick?: (eventId: string) => void;
 }
@@ -17,6 +18,7 @@ export function NarrativeTimeline({
   progressRange,
   chapterTitleMap,
   eventTitleMap,
+  initialUnitId,
   onRoleClick,
   onEventClick,
 }: NarrativeTimelineProps) {
@@ -67,6 +69,7 @@ export function NarrativeTimeline({
   }, [filteredUnits]);
 
   // Auto-select on first load or when the current selection falls out of the filtered list.
+  // If initialUnitId is provided, prefer it on first render.
   // Preserve an explicit close while results remain visible.
   useEffect(() => {
     if (filteredUnits.length === 0) {
@@ -89,9 +92,14 @@ export function NarrativeTimeline({
     }
 
     if (!selectedUnit && autoSelectionArmed) {
-      setSelectedUnit(filteredUnits[0]);
+      if (initialUnitId) {
+        const target = filteredUnits.find((u) => u.unit_id === initialUnitId);
+        setSelectedUnit(target ?? filteredUnits[0]);
+      } else {
+        setSelectedUnit(filteredUnits[0]);
+      }
     }
-  }, [autoSelectionArmed, filteredUnits, selectedUnit]);
+  }, [autoSelectionArmed, filteredUnits, initialUnitId, selectedUnit]);
 
   const handleSelectUnit = (unit: NarrativeUnit) => {
     if (selectedUnit?.unit_id === unit.unit_id) {

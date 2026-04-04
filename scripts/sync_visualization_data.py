@@ -24,6 +24,7 @@ DEFAULT_FILES = [
     "narrative_units.json",
     "high_value_role_roster.json",
     "character_visual_profiles.json",
+    "character_card_images.json",
 ]
 
 
