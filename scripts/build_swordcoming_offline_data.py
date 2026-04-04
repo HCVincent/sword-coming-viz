@@ -1321,6 +1321,7 @@ def _apply_display_summaries_to_kb(
     summary_outputs: dict,
     skip_summary_check: bool,
     require_fresh_entity_profiles: bool,
+    force_apply: bool = False,
 ) -> Dict[str, int]:
     input_index = _index_summary_inputs(summary_inputs)
     output_index = _index_summary_outputs(summary_outputs)
@@ -1341,7 +1342,7 @@ def _apply_display_summaries_to_kb(
                 continue
             expected_hash = str(summary_input.get("input_hash", ""))
             actual_hash = str(summary_output.get("generated_from_input_hash", ""))
-            if expected_hash != actual_hash:
+            if expected_hash != actual_hash and not force_apply:
                 stale.append(f"stale summary:{entity_type}:{entity_id}")
                 continue
 
@@ -1382,6 +1383,7 @@ def _apply_relation_profiles_to_kb(
     relation_inputs: dict,
     relation_outputs: dict,
     skip_summary_check: bool,
+    force_apply: bool = False,
 ) -> Dict[str, int]:
     """Merge relation dossier fields onto KB relations."""
     input_index: Dict[str, dict] = {
@@ -1408,7 +1410,7 @@ def _apply_relation_profiles_to_kb(
             continue
         expected_hash = str(rel_input.get("input_hash", ""))
         actual_hash = str(rel_output.get("generated_from_input_hash", ""))
-        if expected_hash != actual_hash:
+        if expected_hash != actual_hash and not force_apply:
             stale.append(f"stale:{relation_id}")
             continue
 
@@ -1444,6 +1446,7 @@ def _apply_event_dossiers_to_kb(
     event_inputs: dict,
     event_outputs: dict,
     skip_summary_check: bool,
+    force_apply: bool = False,
 ) -> Dict[str, int]:
     """Merge event dossier fields onto KB events (Top 500)."""
     event_index: Dict[str, Any] = {}
@@ -1480,7 +1483,7 @@ def _apply_event_dossiers_to_kb(
             continue
         expected_hash = str(evt_input.get("input_hash", ""))
         actual_hash = str(evt_output.get("generated_from_input_hash", ""))
-        if expected_hash != actual_hash:
+        if expected_hash != actual_hash and not force_apply:
             stale.append(f"stale:{event_id}")
             continue
 
@@ -1497,6 +1500,27 @@ def _apply_event_dossiers_to_kb(
 
     coverage["missing"] = len(missing)
     coverage["stale"] = len(stale)
+
+    # When force_apply is on, also try to apply dossiers whose event_id exists
+    # in the output but was dropped from the rebuilt input_index (ID drift from
+    # upstream KB changes).  Match directly against the KB event index.
+    if force_apply:
+        for event_id, evt_output in output_index.items():
+            if event_id in input_index:
+                continue  # already handled above
+            event = event_index.get(event_id)
+            if not event:
+                continue
+            display_summary = str(evt_output.get("display_summary", "")).strip()
+            if display_summary:
+                event.display_summary_dossier = display_summary
+                event.identity_summary = str(evt_output.get("identity_summary", "")).strip()
+                event.long_description = str(evt_output.get("long_description", "")).strip()
+                event.story_function = str(evt_output.get("story_function", "")).strip()
+                event.relationship_impact = str(evt_output.get("relationship_impact", "")).strip()
+                event.dossier_source = str(evt_output.get("generator", "gemini-api"))
+                event.dossier_version = str(evt_output.get("dossier_version", "event-dossier-v1"))
+                coverage["applied"] += 1
 
     if not skip_summary_check and (missing or stale):
         problems = [*missing[:10], *stale[:10]]
@@ -1525,6 +1549,7 @@ def build_offline_data(
     key_events_output: Optional[Path] = None,
     skip_summary_check: bool = False,
     require_fresh_entity_profiles: bool = False,
+    force_apply: bool = False,
 ) -> dict:
     book = load_json(book_path)
     core_cast = load_json(core_cast_path)
@@ -1654,6 +1679,7 @@ def build_offline_data(
             summary_outputs=summary_outputs_payload,
             skip_summary_check=skip_summary_check,
             require_fresh_entity_profiles=require_fresh_entity_profiles,
+            force_apply=force_apply,
         )
     elif not skip_summary_check and require_fresh_entity_profiles:
         raise FileNotFoundError(
@@ -1684,6 +1710,7 @@ def build_offline_data(
             relation_inputs=relation_inputs_payload,
             relation_outputs=relation_outputs_payload,
             skip_summary_check=skip_summary_check,
+            force_apply=force_apply,
         )
     elif not skip_summary_check:
         print(
@@ -1807,6 +1834,7 @@ def build_offline_data(
             event_inputs=event_dossier_inputs_rebuilt,
             event_outputs=event_dossier_outputs_payload,
             skip_summary_check=skip_summary_check,
+            force_apply=force_apply,
         )
     elif not skip_summary_check:
         print(
@@ -1909,6 +1937,12 @@ def main() -> int:
         help="Fail build when data/entity_profiles.json is missing or stale against entity_profile_inputs.json.",
     )
     parser.add_argument("--max-units", type=int, default=None, help="Optional limit for quick iteration.")
+    parser.add_argument(
+        "--force-apply",
+        action="store_true",
+        help="Bypass input-hash freshness checks when applying entity profiles, relation profiles, and event dossiers. "
+             "Use after upstream changes (e.g. entity resolution fixes) that alter KB shape without invalidating profile content.",
+    )
     args = parser.parse_args()
 
     stats = build_offline_data(
@@ -1927,6 +1961,7 @@ def main() -> int:
         key_events_output=Path(args.key_events_output),
         skip_summary_check=args.skip_summary_check,
         require_fresh_entity_profiles=args.require_fresh_entity_profiles,
+        force_apply=args.force_apply,
     )
 
     print("Built Sword Coming offline data:")
