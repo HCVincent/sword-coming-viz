@@ -16,6 +16,8 @@ from scripts.character_quality import (
     audit_role_name,
     is_pseudo_role_name,
     classify_role_name,
+    classify_role_name_detailed,
+    NameClassification,
     build_allowed_special_designator_map,
     build_allowed_special_designator_names,
     _detect_generic_designator_variant,
@@ -277,8 +279,8 @@ class TestClassifyRoleNamePrecedence:
         )
         assert result == "allow"
 
-    def test_桂姨_is_allowed_via_asd(self):
-        """桂姨 is in ASD as merge_to_canonical — so classify returns 'allow'."""
+    def test_桂姨_is_merge_via_asd(self):
+        """桂姨 is in ASD as merge_to_canonical — classify returns 'merge'."""
         result = classify_role_name(
             "桂姨",
             allowed_special_designators=self.ASD,
@@ -286,7 +288,41 @@ class TestClassifyRoleNamePrecedence:
             role_aliases=ROLE_ALIASES,
             blocked_names=BLOCKED_ALIASES,
         )
-        assert result == "allow"
+        assert result == "merge"
+
+    def test_桂姨_detailed_gives_canonical_target(self):
+        """classify_role_name_detailed returns merge + canonical_target=桂夫人."""
+        result = classify_role_name_detailed(
+            "桂姨",
+            allowed_special_designators=self.ASD,
+            canonical_role_names=CANONICAL_ROLE_NAMES,
+            role_aliases=ROLE_ALIASES,
+            blocked_names=BLOCKED_ALIASES,
+        )
+        assert result["decision"] == "merge"
+        assert result["canonical_target"] == "桂夫人"
+
+    def test_keep_as_canonical_gives_keep(self):
+        """杨老头 (keep_as_canonical) → decision=keep, canonical_target=None."""
+        result = classify_role_name_detailed(
+            "杨老头",
+            allowed_special_designators=self.ASD,
+            blocked_names=BLOCKED_ALIASES,
+        )
+        assert result["decision"] == "keep"
+        assert result["canonical_target"] is None
+
+    def test_宋睦_detailed_merge_target(self):
+        """宋睦 via canonical_role_names → merge to 宋集薪."""
+        result = classify_role_name_detailed(
+            "宋睦",
+            allowed_special_designators=self.ASD,
+            canonical_role_names=CANONICAL_ROLE_NAMES,
+            role_aliases=ROLE_ALIASES,
+            blocked_names=BLOCKED_ALIASES,
+        )
+        assert result["decision"] == "merge"
+        assert result["canonical_target"] == "宋集薪"
 
 
 # =====================================================================
@@ -498,3 +534,168 @@ class TestEntityResolution_ClassifyIntegration:
         resolver.add_role(role, juan_index=1, segment_index=0, chunk_index=0)
         roles = resolver.resolve_roles()
         assert "火龙真人" in roles
+
+
+# =====================================================================
+# 7. merge_to_canonical entity resolution
+# =====================================================================
+
+class TestMergeToCanonicalResolution:
+    """桂姨 (merge_to_canonical → 桂夫人) must produce a single unified role."""
+
+    @staticmethod
+    def _make_resolver():
+        from entity_resolution import EntityResolver
+        resolver = EntityResolver()
+        resolver.set_manual_overrides({
+            "blocked_aliases": BLOCKED_ALIASES,
+            "allowed_special_designators": ALLOWED_SPECIAL_DESIGNATORS,
+            "canonical_role_names": CANONICAL_ROLE_NAMES,
+            "role_aliases": ROLE_ALIASES,
+        })
+        return resolver
+
+    def test_only_alias_produces_canonical_target(self):
+        """Only 桂姨 appears → unified role id must be 桂夫人."""
+        resolver = self._make_resolver()
+        role = Role(name="桂姨", description="老龙城女主人")
+        resolver.add_role(role, juan_index=1, segment_index=0, chunk_index=0)
+        roles = resolver.resolve_roles()
+        assert "桂姨" not in roles, "桂姨 must not survive as an independent role id"
+        assert "桂夫人" in roles, "桂夫人 must be the canonical role id"
+        assert "桂姨" in roles["桂夫人"].all_names
+        assert "桂夫人" in roles["桂夫人"].all_names
+
+    def test_alias_and_canonical_coexist_single_role(self):
+        """桂姨 + 桂夫人 both appear → exactly 1 unified role."""
+        resolver = self._make_resolver()
+        r1 = Role(name="桂姨", description="老龙城女主人")
+        r2 = Role(name="桂夫人", description="桂花巷主人")
+        resolver.add_role(r1, juan_index=1, segment_index=0, chunk_index=0)
+        resolver.add_role(r2, juan_index=2, segment_index=0, chunk_index=0)
+        roles = resolver.resolve_roles()
+        assert len(roles) == 1, f"Expected 1 unified role, got {len(roles)}: {list(roles.keys())}"
+        assert "桂夫人" in roles
+        assert "桂姨" in roles["桂夫人"].all_names
+
+    def test_keep_as_canonical_not_merged_elsewhere(self):
+        """杨老头 (keep_as_canonical) stays as its own entity."""
+        resolver = self._make_resolver()
+        role = Role(name="杨老头", description="杨氏老掌柜")
+        resolver.add_role(role, juan_index=1, segment_index=0, chunk_index=0)
+        roles = resolver.resolve_roles()
+        assert "杨老头" in roles
+        assert roles["杨老头"].canonical_name == "杨老头"
+
+    def test_宋睦_merges_to_宋集薪_via_canonical_role_names(self):
+        """宋睦 in canonical_role_names → merges to 宋集薪."""
+        resolver = self._make_resolver()
+        r1 = Role(name="宋睦", description="原名")
+        resolver.add_role(r1, juan_index=1, segment_index=0, chunk_index=0)
+        roles = resolver.resolve_roles()
+        assert "宋睦" not in roles, "宋睦 must not be an independent role id"
+        assert "宋集薪" in roles
+        assert "宋睦" in roles["宋集薪"].all_names
+
+    def test_齐先生_merges_to_齐静春(self):
+        """齐先生 in role_aliases → merges to 齐静春."""
+        resolver = self._make_resolver()
+        r1 = Role(name="齐先生", description="书院山长")
+        resolver.add_role(r1, juan_index=1, segment_index=0, chunk_index=0)
+        roles = resolver.resolve_roles()
+        assert "齐先生" not in roles
+        assert "齐静春" in roles
+        assert "齐先生" in roles["齐静春"].all_names
+
+
+# =====================================================================
+# 8. Alias sticky / concat noise detection with expanded ref set
+# =====================================================================
+
+class TestAliasStickyNoiseDetection:
+    """Concat detection must catch alias+action-suffix patterns."""
+
+    # Build a canonical_roles set that includes aliases (matching the new behavior)
+    FULL_CANONICAL_ROLES = {
+        "陈平安", "宁姚", "俞真意", "齐静春", "宋集薪", "崔瀺",
+        # aliases that are now in the expanded set:
+        "宋睦", "齐先生", "大骊国师", "桂姨", "桂夫人",
+        "杨老头", "杨掌柜", "火龙真人", "刘太守",
+    }
+
+    def test_宋睦笑_flagged(self):
+        """宋睦 + 笑 → concat noise."""
+        reasons = audit_role_name(
+            "宋睦笑",
+            blocked_names=BLOCKED_ALIASES,
+            canonical_roles=self.FULL_CANONICAL_ROLES,
+        )
+        assert any("人名粘连" in r for r in reasons), f"宋睦笑 should be caught: {reasons}"
+
+    def test_齐先生道_flagged(self):
+        """齐先生 + 道 → concat noise."""
+        reasons = audit_role_name(
+            "齐先生道",
+            blocked_names=BLOCKED_ALIASES,
+            canonical_roles=self.FULL_CANONICAL_ROLES,
+        )
+        assert any("人名粘连" in r for r in reasons), f"齐先生道 should be caught: {reasons}"
+
+    def test_桂姨笑_flagged(self):
+        """桂姨 + 笑 → concat noise."""
+        reasons = audit_role_name(
+            "桂姨笑",
+            blocked_names=BLOCKED_ALIASES,
+            canonical_roles=self.FULL_CANONICAL_ROLES,
+            allowed_names=ALLOWED_NAMES,
+        )
+        assert any("人名粘连" in r for r in reasons), f"桂姨笑 should be caught: {reasons}"
+
+    def test_杨老头_not_flagged_as_sticky(self):
+        """杨老头 is a real name, not a concat artefact."""
+        reasons = audit_role_name(
+            "杨老头",
+            blocked_names=BLOCKED_ALIASES,
+            canonical_roles=self.FULL_CANONICAL_ROLES,
+            allowed_names=ALLOWED_NAMES,
+        )
+        assert reasons == [], f"杨老头 should not be flagged: {reasons}"
+
+    def test_entity_resolution_catches_宋睦笑(self):
+        """Stage C resolver must filter 宋睦笑 as concat noise."""
+        from entity_resolution import EntityResolver
+        resolver = EntityResolver()
+        resolver.set_manual_overrides({
+            "blocked_aliases": BLOCKED_ALIASES,
+            "allowed_special_designators": ALLOWED_SPECIAL_DESIGNATORS,
+            "canonical_role_names": CANONICAL_ROLE_NAMES,
+            "role_aliases": ROLE_ALIASES,
+        })
+        role = Role(name="宋睦笑", description="test concat")
+        resolver.add_role(role, juan_index=1, segment_index=0, chunk_index=0)
+        roles = resolver.resolve_roles()
+        assert "宋睦笑" not in roles, "宋睦笑 should be blocked as concat noise"
+
+    def test_stage_b_filter_catches_齐先生道(self):
+        """Stage B filter must remove 齐先生道."""
+        from extraction_filter import filter_extraction_noise
+
+        # Build a canonical_role_set that includes aliases (matching new behavior)
+        ext = EntityRelationExtraction(
+            entities=[
+                Role(name="齐先生道", description="concat noise"),
+                Role(name="陈平安", description="主角"),
+            ],
+            events=[],
+            locations=[],
+            relations=[],
+        )
+        result = filter_extraction_noise(
+            ext,
+            blocked_aliases=BLOCKED_ALIASES,
+            allowed_special_names=ALLOWED_NAMES,
+            canonical_role_set=self.FULL_CANONICAL_ROLES,
+        )
+        names = [e.name for e in result.entities]
+        assert "齐先生道" not in names, "齐先生道 should be filtered"
+        assert "陈平安" in names

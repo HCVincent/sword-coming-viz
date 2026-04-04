@@ -31,6 +31,8 @@ from scripts.character_quality import (
     audit_role_name,
     is_pseudo_role_name,
     classify_role_name,
+    classify_role_name_detailed,
+    NameClassification,
     build_allowed_special_designator_map,
     build_allowed_special_designator_names,
 )
@@ -214,21 +216,36 @@ class EntityResolver:
             if isinstance(overrides, dict) and isinstance(overrides.get("role_aliases"), dict)
             else {}
         )
-        # Build canonical role set for concat detection
+        # Build canonical role set for concat detection — must include ALL
+        # known stable designations: canonical names, alias keys, alias values,
+        # ASD names and their canonical_targets.
         self._canonical_role_set: set[str] = set()
         for v in self._canonical_role_names.values():
             if v:
                 self._canonical_role_set.add(str(v))
-        for k in self._role_aliases:
+        for k in self._canonical_role_names:
             if k:
                 self._canonical_role_set.add(str(k))
+        for k, aliases in self._role_aliases.items():
+            if k:
+                self._canonical_role_set.add(str(k))
+            for a in aliases:
+                if a:
+                    self._canonical_role_set.add(str(a))
+        for asd_name, asd_entry in self._allowed_special_designators.items():
+            if asd_name:
+                self._canonical_role_set.add(asd_name)
+            target = asd_entry.get("canonical_target", "")
+            if target:
+                self._canonical_role_set.add(str(target))
 
-    def _classify_name(self, name: str) -> str:
-        """Classify a name using the unified allow > merge > block precedence.
+    def _classify_name(self, name: str) -> NameClassification:
+        """Classify a name using the unified keep > merge > block precedence.
 
-        Returns ``"allow"``, ``"merge"``, or ``"block"``.
+        Returns a :class:`NameClassification` with ``decision`` and
+        ``canonical_target``.
         """
-        return classify_role_name(
+        return classify_role_name_detailed(
             name,
             allowed_special_designators=self._allowed_special_designators,
             canonical_role_names=self._canonical_role_names,
@@ -405,7 +422,7 @@ class EntityResolver:
         
         # Use character_quality classification for the alias
         classification = self._classify_name(alias_norm)
-        if classification == "block":
+        if classification["decision"] == "block":
             return False
         
         # Also block via the legacy set for any terms not yet in character_quality
@@ -435,6 +452,20 @@ class EntityResolver:
         return name
 
     def _select_preferred_role_name(self, name_group: Set[str]) -> str:
+        # --- Priority 1: classification-driven canonical_target ---
+        # If any name in the group classifies as "merge" with a canonical_target,
+        # that target is the preferred name (even if it wasn't seen as a primary
+        # name in the raw extractions).
+        for candidate in name_group:
+            cls = self._classify_name(candidate)
+            if cls["decision"] == "merge" and cls["canonical_target"]:
+                target = cls["canonical_target"]
+                # The target itself must not be blocked
+                target_cls = self._classify_name(target)
+                if target_cls["decision"] != "block":
+                    return target
+
+        # --- Priority 2: manual canonical_role_names overrides ---
         overrides = self.manual_overrides.get("canonical_role_names", {}) if isinstance(self.manual_overrides, dict) else {}
         if isinstance(overrides, dict):
             for candidate in name_group:
@@ -446,6 +477,7 @@ class EntityResolver:
             if preferred_values:
                 return sorted(preferred_values, key=lambda value: (len(value), value))[0]
 
+        # --- Priority 3: mention-count heuristic ---
         def primary_name_mentions(candidate: str) -> int:
             return sum(
                 1
@@ -568,18 +600,26 @@ class EntityResolver:
             self.add_organization(organization, juan_index, segment_index, chunk_index, source_sentence)
             return
         
-        # Skip if the primary name itself is blocked by character_quality rules
-        # Uses allow > merge > block precedence:
-        #   allowed_special_designators → keep
-        #   canonical/aliases → allow merging
-        #   pseudo/generic/noise → record occurrence but don't merge
+        # Classify the primary name using keep > merge > block precedence:
+        #   keep → enter merge graph as-is
+        #   merge → enter merge graph AND union with canonical_target
+        #   block → record occurrence but don't enter merge graph
         name_classification = self._classify_name(name)
-        if name_classification == "block":
+        if name_classification["decision"] == "block":
             # Still record the occurrence but don't merge
             self.role_occurrences[name].append((role, occurrence))
             return
         
         self.role_occurrences[name].append((role, occurrence))
+
+        # If the name should merge into a canonical target, union them now
+        if name_classification["decision"] == "merge" and name_classification["canonical_target"]:
+            target = name_classification["canonical_target"]
+            self._union(name, target)
+            # Ensure the canonical target has an entry in role_occurrences
+            # so it can be found by _select_preferred_role_name later
+            if target not in self.role_occurrences:
+                self.role_occurrences[target]  # creates defaultdict entry
         
         # Union name with valid aliases only
         for alias in role.alias:
@@ -676,7 +716,7 @@ class EntityResolver:
         for alias in location.alias:
             alias_norm = self._normalize_name(alias)
             # For locations, we still block generic terms but allow country names
-            if alias_norm and alias_norm not in self.BLOCKED_ALIASES and self._classify_name(alias_norm) != "block":
+            if alias_norm and alias_norm not in self.BLOCKED_ALIASES and self._classify_name(alias_norm)["decision"] != "block":
                 self._union(name, alias_norm)
                 self.location_occurrences[alias_norm].append((location, occurrence))
     
@@ -923,7 +963,7 @@ class EntityResolver:
             canonical_name = self._select_preferred_role_name(name_group)
             # Use character_quality classification: block pseudo-roles from
             # becoming unified entities, but allow special designators through
-            if self._classify_name(canonical_name) == "block":
+            if self._classify_name(canonical_name)["decision"] == "block":
                 continue
             # Collect all occurrences for this entity group
             all_occurrences: List[EntityOccurrence] = []
@@ -949,6 +989,11 @@ class EntityResolver:
                     for alias in role.alias:
                         all_names.add(alias)
             
+            # Ensure the canonical_name itself is in all_names, even when
+            # it was injected by a merge_to_canonical classification and
+            # never appeared as a raw primary name in any chunk.
+            all_names.add(canonical_name)
+
             # Remove duplicates from original descriptions
             unique_original = list(dict.fromkeys(all_original_descriptions))
             

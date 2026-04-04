@@ -59,13 +59,40 @@ def load_filter_context(
         manual_overrides.get("allowed_special_designators", [])
     )
 
+    # Build the full known-name set for concat/sticky detection.
+    # Must include canonical names, alias keys, alias values, ASD names
+    # and their canonical_targets.
     canonical_role_set: set[str] = set()
     for c in core_cast_characters:
         if c.get("name"):
             canonical_role_set.add(c["name"])
-    for v in (manual_overrides.get("canonical_role_names", {}) or {}).values():
+        for a in c.get("aliases", []):
+            if a:
+                canonical_role_set.add(str(a))
+    crn = manual_overrides.get("canonical_role_names", {}) or {}
+    for k, v in crn.items():
+        if k:
+            canonical_role_set.add(str(k))
         if v:
             canonical_role_set.add(str(v))
+    ra = manual_overrides.get("role_aliases", {}) or {}
+    for k, aliases in ra.items():
+        if k:
+            canonical_role_set.add(str(k))
+        for a in aliases:
+            if a:
+                canonical_role_set.add(str(a))
+    asd_entries = manual_overrides.get("allowed_special_designators", []) or []
+    for entry in asd_entries:
+        if isinstance(entry, dict):
+            n = entry.get("name", "")
+            if n:
+                canonical_role_set.add(str(n))
+            t = entry.get("canonical_target", "")
+            if t:
+                canonical_role_set.add(str(t))
+        elif isinstance(entry, str) and entry.strip():
+            canonical_role_set.add(entry.strip())
 
     return {
         "blocked_aliases": blocked_aliases,

@@ -14,7 +14,7 @@ resolution) to apply a single, consistent set of rules.
 from __future__ import annotations
 
 import re
-from typing import Any, Collection, Dict, List, Literal, Optional
+from typing import Any, Collection, Dict, List, Literal, Optional, TypedDict
 
 DEFAULT_BLOCKED_TITLED_ROLES = {
     "白衣少年",
@@ -182,6 +182,22 @@ def _detect_generic_designator_variant(candidate: str) -> Optional[str]:
 ALLOWED_SPECIAL_RESOLUTIONS = {"keep_as_canonical", "merge_to_canonical"}
 
 
+class NameClassification(TypedDict):
+    """Structured result from :func:`classify_role_name_detailed`.
+
+    ``decision``
+        ``"keep"`` – use the name as-is as a canonical name.
+        ``"merge"`` – merge into the entity identified by *canonical_target*.
+        ``"block"`` – pseudo-role / noise; exclude from the person graph.
+
+    ``canonical_target``
+        The canonical name to merge into when ``decision == "merge"``.
+        ``None`` for ``keep`` and ``block``.
+    """
+    decision: Literal["keep", "merge", "block"]
+    canonical_target: Optional[str]
+
+
 def build_allowed_special_designator_map(
     entries: Collection[Any] | None = None,
 ) -> Dict[str, Dict[str, str]]:
@@ -340,6 +356,84 @@ def is_pseudo_role_name(
 # Unified classify_role_name — single entry-point for allow > merge > block
 # ---------------------------------------------------------------------------
 
+def classify_role_name_detailed(
+    name: str,
+    *,
+    allowed_special_designators: Dict[str, Dict[str, str]] | None = None,
+    canonical_role_names: Dict[str, str] | None = None,
+    role_aliases: Dict[str, list[str]] | None = None,
+    blocked_names: Collection[str] | None = None,
+    canonical_roles: Collection[str] | None = None,
+    allowed_names: Collection[str] | None = None,
+) -> NameClassification:
+    """Classify a role name and return a structured :class:`NameClassification`.
+
+    Precedence: **allowed_special_designators > canonical/aliases > noise > unknown**.
+
+    ``decision`` values:
+    - ``"keep"``  – use the name as-is as a canonical identity.
+    - ``"merge"`` – merge this name into *canonical_target*.
+    - ``"block"`` – pseudo-role / noise; exclude from the person graph.
+
+    ``canonical_target``:
+    - Set for ``merge`` decisions (the target canonical name).
+    - ``None`` for ``keep`` and ``block``.
+    """
+    candidate = str(name).strip()
+    if not candidate:
+        return NameClassification(decision="block", canonical_target=None)
+
+    # --- 1. Allowed special designators (highest priority) ---
+    asd = allowed_special_designators or {}
+    if candidate in asd:
+        entry = asd[candidate]
+        resolution = entry.get("resolution", "keep_as_canonical")
+        target = entry.get("canonical_target", candidate)
+        if resolution == "merge_to_canonical" and target != candidate:
+            return NameClassification(decision="merge", canonical_target=target)
+        return NameClassification(decision="keep", canonical_target=None)
+
+    # Build a merged allowed_names set from the explicit param + ASD keys
+    merged_allowed = set(asd.keys())
+    if allowed_names:
+        merged_allowed.update(str(n).strip() for n in allowed_names if str(n).strip())
+
+    # --- 2. Known canonical or alias → merge / keep ---
+    _canonical = canonical_role_names or {}
+    _aliases = role_aliases or {}
+
+    # name is a known alias that maps to a canonical name
+    if candidate in _canonical:
+        return NameClassification(decision="merge", canonical_target=_canonical[candidate])
+
+    # name is the canonical target of some alias mapping → keep
+    canonical_targets = set(_canonical.values())
+    if candidate in canonical_targets:
+        return NameClassification(decision="keep", canonical_target=None)
+
+    # name is the main name in role_aliases dict (i.e. canonical) → keep
+    if candidate in _aliases:
+        return NameClassification(decision="keep", canonical_target=None)
+
+    # name appears as an alias value → merge to the canonical key
+    for _canon, _alias_list in _aliases.items():
+        if candidate in _alias_list:
+            return NameClassification(decision="merge", canonical_target=_canon)
+
+    # --- 3. Pseudo-role / noise detection → block ---
+    reasons = audit_role_name(
+        candidate,
+        blocked_names=blocked_names,
+        canonical_roles=canonical_roles,
+        allowed_names=merged_allowed,
+    )
+    if reasons:
+        return NameClassification(decision="block", canonical_target=None)
+
+    # --- 4. Unknown name: benefit of the doubt → keep ---
+    return NameClassification(decision="keep", canonical_target=None)
+
+
 def classify_role_name(
     name: str,
     *,
@@ -350,64 +444,22 @@ def classify_role_name(
     canonical_roles: Collection[str] | None = None,
     allowed_names: Collection[str] | None = None,
 ) -> Literal["allow", "merge", "block"]:
-    """Classify a role name with strict precedence: **allow > merge > block**.
+    """Legacy compatibility wrapper around :func:`classify_role_name_detailed`.
 
-    Returns
-    -------
-    ``"allow"``
-        The name is in the special-designator allowlist (keep as canonical
-        or merge to a specific canonical target).  Stage C should keep it.
-    ``"merge"``
-        The name appears in ``canonical_role_names`` or ``role_aliases`` as
-        a known alias.  Stage C should merge it into the canonical entity.
-    ``"block"``
-        The name is a pseudo-role (generic designator, noise, blocked, etc.).
-        Stage C should exclude it from the person entity graph.
-
-    If none of the above applies the name is treated as a regular name and
-    ``"allow"`` is returned (benefit of the doubt for unknown names).
+    Maps the new three-valued *decision* to the old three-valued return:
+    - ``keep`` → ``"allow"``
+    - ``merge`` → ``"merge"``
+    - ``block`` → ``"block"``
     """
-    candidate = str(name).strip()
-    if not candidate:
-        return "block"
-
-    # --- 1. Allowed special designators (highest priority) ---
-    asd = allowed_special_designators or {}
-    if candidate in asd:
-        return "allow"
-
-    # Build a merged allowed_names set from the explicit param + ASD keys
-    merged_allowed = set(asd.keys())
-    if allowed_names:
-        merged_allowed.update(str(n).strip() for n in allowed_names if str(n).strip())
-
-    # --- 2. Known canonical or alias → merge ---
-    _canonical = canonical_role_names or {}
-    _aliases = role_aliases or {}
-    # name is a known alias that maps to a canonical name
-    if candidate in _canonical:
-        return "merge"
-    # name is the canonical target of some alias mapping
-    canonical_targets = set(_canonical.values())
-    if candidate in canonical_targets:
-        return "allow"
-    # name is the main name in role_aliases dict (i.e. canonical)
-    if candidate in _aliases:
-        return "allow"
-    # name appears as an alias value
-    for _canon, _alias_list in _aliases.items():
-        if candidate in _alias_list:
-            return "merge"
-
-    # --- 3. Pseudo-role / noise detection → block ---
-    reasons = audit_role_name(
-        candidate,
+    result = classify_role_name_detailed(
+        name,
+        allowed_special_designators=allowed_special_designators,
+        canonical_role_names=canonical_role_names,
+        role_aliases=role_aliases,
         blocked_names=blocked_names,
         canonical_roles=canonical_roles,
-        allowed_names=merged_allowed,
+        allowed_names=allowed_names,
     )
-    if reasons:
-        return "block"
-
-    # --- 4. Unknown name: benefit of the doubt → allow ---
-    return "allow"
+    if result["decision"] == "keep":
+        return "allow"
+    return result["decision"]  # "merge" or "block"
