@@ -1,5 +1,5 @@
 import { type ReactNode, useMemo, useState } from 'react';
-import type { ChapterIndex } from '../types/pipelineArtifacts';
+import type { ChapterIndex, CharacterVisualProfile } from '../types/pipelineArtifacts';
 import type {
   RoleLinkUnified,
   RoleNodeUnified,
@@ -379,6 +379,8 @@ export function EventDetail({ event, onClose, onBack, onEntityClick, onLocationC
 
 interface RoleDetailProps {
   role: RoleNodeUnified | null;
+  visualProfile?: CharacterVisualProfile | null;
+  cardImageFile?: string | null;
   onClose: () => void;
   onBack?: () => void;
   onEntityClick?: (entityName: string) => void;
@@ -392,6 +394,8 @@ interface RoleDetailProps {
 
 export function RoleDetail({
   role,
+  visualProfile,
+  cardImageFile,
   onClose,
   onBack,
   onEntityClick,
@@ -409,6 +413,7 @@ export function RoleDetail({
   const intro = getRoleIntroText(role);
   const visibleRelatedRoleNames =
     relatedRoleNames && relatedRoleNames.length > 0 ? relatedRoleNames : role.relatedEntities;
+  const appearanceDetails = visualProfile?.appearance_details;
 
   return (
     <ModalShell title={role.name} onClose={onClose} onBack={onBack}>
@@ -439,6 +444,104 @@ export function RoleDetail({
         {intro.identity ? <p className="detail-text">{intro.identity}</p> : null}
         <p className="detail-text mt-2 whitespace-pre-line">{intro.long}</p>
       </section>
+
+      {visualProfile && (
+        <section className="detail-section">
+          <h3 className="detail-heading">角色形象档案</h3>
+          {cardImageFile ? (
+            <div className="detail-portrait-card">
+              <div className="character-card-visual detail-portrait-visual">
+                <img
+                  className="character-card-img"
+                  src={`${import.meta.env.BASE_URL}generated/character_cards/${cardImageFile}`}
+                  alt={visualProfile.canonical_name}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          ) : null}
+
+          {visualProfile.visual_hook ? (
+            <p className="detail-text detail-text--emphasis mt-3">{visualProfile.visual_hook}</p>
+          ) : null}
+
+          {visualProfile.initial_appearance ? (
+            <div className="info-list mt-3">
+              <div className="info-row info-row--stacked">
+                <span>初始形象</span>
+                <p className="detail-text mt-2 whitespace-pre-line">{visualProfile.initial_appearance}</p>
+              </div>
+            </div>
+          ) : null}
+
+          {appearanceDetails ? (
+            <div className="info-list mt-4">
+              <div className="info-row info-row--stacked">
+                <span>年龄与体态</span>
+                <p className="detail-text mt-2">{appearanceDetails.age_and_build}</p>
+              </div>
+              <div className="info-row info-row--stacked">
+                <span>面部特征</span>
+                <p className="detail-text mt-2">{appearanceDetails.facial_features}</p>
+              </div>
+              <div className="info-row info-row--stacked">
+                <span>发型与发色</span>
+                <p className="detail-text mt-2">{appearanceDetails.hair}</p>
+              </div>
+              <div className="info-row info-row--stacked">
+                <span>服饰与材质</span>
+                <p className="detail-text mt-2">{appearanceDetails.clothing_and_materials}</p>
+              </div>
+              <div className="info-row info-row--stacked">
+                <span>配色方向</span>
+                <p className="detail-text mt-2">{appearanceDetails.color_palette}</p>
+              </div>
+              {appearanceDetails.signature_items ? (
+                <div className="info-row info-row--stacked">
+                  <span>标志器物</span>
+                  <p className="detail-text mt-2">{appearanceDetails.signature_items}</p>
+                </div>
+              ) : null}
+              <div className="info-row info-row--stacked">
+                <span>气质与镜头感</span>
+                <p className="detail-text mt-2">{appearanceDetails.aura_and_camera_feel}</p>
+              </div>
+            </div>
+          ) : null}
+
+          {visualProfile.negative_constraints.length > 0 && (
+            <div className="mt-4">
+              <h4 className="detail-subheading">视觉边界</h4>
+              <div className="chip-wrap">
+                {visualProfile.negative_constraints.map((constraint) => (
+                  <span key={constraint} className="pill-chip pill-chip--muted">
+                    {constraint}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {visualProfile.appearance_timeline.length > 0 && (
+            <div className="mt-4">
+              <h4 className="detail-subheading">形象变化</h4>
+              <div className="info-list">
+                {visualProfile.appearance_timeline.map((entry) => (
+                  <div key={`${entry.phase_label}-${entry.range_hint}`} className="info-row info-row--stacked">
+                    <span>
+                      {entry.phase_label}
+                      {entry.use_as_default_card ? ' · 默认卡图阶段' : ''}
+                    </span>
+                    <p className="status-note mt-2">{entry.range_hint}</p>
+                    <p className="detail-text mt-2">{entry.change_summary}</p>
+                    <p className="detail-text mt-2 whitespace-pre-line">{entry.visual_delta}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       {visibleRelatedRoleNames.length > 0 && (
         <section className="detail-section">

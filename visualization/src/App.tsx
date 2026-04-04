@@ -874,6 +874,16 @@ function App() {
       });
   }, [visualProfiles, roster, roles, cardImageMap]);
 
+  const selectedRoleVisualProfile = useMemo(() => {
+    if (!selectedRole) return null;
+    return visualProfiles.find((profile) => profile.role_id === selectedRole.id) ?? null;
+  }, [selectedRole, visualProfiles]);
+
+  const selectedRoleCardImageFile = useMemo(() => {
+    if (!selectedRole) return null;
+    return cardImageMap.get(selectedRole.id)?.file_name ?? null;
+  }, [cardImageMap, selectedRole]);
+
   /* Featured events: events with dossiers in current range, sorted by richness */
   const featuredEvents = useMemo(() => {
     return [...timelineEvents]
@@ -1651,6 +1661,8 @@ function App() {
       ) : (
         <RoleDetail
           role={selectedRole}
+          visualProfile={selectedRoleVisualProfile}
+          cardImageFile={selectedRoleCardImageFile}
           onClose={closeActiveModal}
           onBack={modalBackHandler}
           onEntityClick={(entityName) => openRoleDetail(entityName, activeTab, { pushCurrent: true })}

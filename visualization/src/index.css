@@ -946,6 +946,11 @@ button:focus-visible {
   font-size: 0.92rem;
 }
 
+.info-row--stacked {
+  flex-direction: column;
+  align-items: stretch;
+}
+
 .info-row strong {
   color: var(--text-primary);
 }
@@ -1272,6 +1277,33 @@ button:focus-visible {
   color: var(--text-secondary);
   line-height: 1.8;
   font-size: 0.94rem;
+}
+
+.detail-text--emphasis {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.detail-subheading {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.detail-portrait-card {
+  max-width: 220px;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(57, 88, 99, 0.12);
+  background: rgba(248, 252, 252, 0.86);
+  box-shadow: var(--shadow-card);
+}
+
+.detail-portrait-visual {
+  aspect-ratio: 3 / 4;
 }
 
 .chip-wrap {
