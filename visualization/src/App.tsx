@@ -30,7 +30,6 @@ import type {
   UnifiedLocation,
 } from './types/unified';
 import type { WriterInsightEventRef } from './types/writerInsights';
-import { toChineseRelationshipKind } from './utils/writerInsightText';
 
 interface SelectedRelationPair {
   sourceId: string;
@@ -779,22 +778,6 @@ function App() {
     [characterArcs, spotlightArcInRange, spotlightRoleName, writerInsights?.character_arcs]
   );
 
-  const spotlightHasCurrentContent = Boolean(
-    spotlightArcInRange &&
-      (spotlightArcInRange.key_events.length > 0 || spotlightArcInRange.relationship_phases.length > 0)
-  );
-
-  const spotlightCounterparts = useMemo(() => {
-    if (!spotlightArc) return [];
-    const seen = new Set<string>();
-    return spotlightArc.relationship_phases.filter((phase) => {
-      const key = phase.counterpart_id || phase.counterpart_name;
-      if (!key || seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  }, [spotlightArc]);
-
   const currentSeasonOverview = useMemo(() => {
     if (seasonOverviews.length === 0) return null;
     if (currentSeasonNames.length === 1) {
@@ -806,59 +789,6 @@ function App() {
     }
     return seasonOverviews.length === 1 ? seasonOverviews[0] : null;
   }, [currentSeasonNames, seasonOverviews]);
-
-  const dashboardRoles = useMemo(
-    () => {
-      const preferredRoles =
-        currentSeasonOverview?.priority_roles.length
-          ? currentSeasonOverview.priority_roles
-          : currentSeasonOverview?.top_roles ?? [];
-
-      if (preferredRoles.length > 0) {
-        const roleByName = new Map(roles.map((role) => [role.name, role]));
-        return preferredRoles
-          .map((item) => {
-            const inRange = roleByName.get(item.role_name);
-            if (inRange) return inRange;
-
-            const roleId = resolveRoleId(kb, item.role_name);
-            const role = roleId ? kb?.roles?.[roleId] : null;
-            return role ? toRoleNode(role) : null;
-          })
-          .filter((role): role is RoleNodeUnified => Boolean(role))
-          .slice(0, 8);
-      }
-
-      return [...roles]
-        .sort((a, b) => b.appearances - a.appearances || a.name.localeCompare(b.name, 'zh-CN'))
-        .slice(0, 8);
-    },
-    [currentSeasonOverview, kb, roles]
-  );
-
-  const dashboardLocations = useMemo(
-    () =>
-      [...locations]
-        .sort(
-          (a, b) =>
-            (b.total_mentions ?? 0) - (a.total_mentions ?? 0) ||
-            (b.associated_events?.length ?? 0) - (a.associated_events?.length ?? 0)
-        )
-        .slice(0, 5),
-    [locations]
-  );
-
-  const dashboardRelationships = useMemo(() => {
-    const preferredRelationships = currentSeasonOverview?.priority_relationships ?? [];
-    if (preferredRelationships.length > 0) {
-      const relationshipById = new Map(curatedRelationships.map((item) => [item.id, item]));
-      return preferredRelationships
-        .map((item) => relationshipById.get(item.relationship_id))
-        .filter((relationship): relationship is (typeof curatedRelationships)[number] => Boolean(relationship))
-        .slice(0, 4);
-    }
-    return curatedRelationships.slice(0, 4);
-  }, [curatedRelationships, currentSeasonOverview]);
 
   const eventTitleMap = useMemo(() => {
     const map = new Map<string, string>();
@@ -893,16 +823,6 @@ function App() {
     });
   }, [narrativeUnits, progressRange, unitRange]);
 
-  const entryCards = useMemo(
-    () => [
-      { id: 'writerArcs' as const, label: '角色弧光', icon: '🎭', copy: '按季整理角色线、锚点事件和可改编线索。' },
-      { id: 'conflicts' as const, label: '冲突链', icon: '⚔️', copy: '把关系变化压成对立、试探、转折和落点。' },
-      { id: 'foreshadowing' as const, label: '伏笔回收', icon: '🪶', copy: '追踪前段埋线与后段兑现，方便抓改编回收。' },
-      { id: 'network' as const, label: '人物关系网', icon: '🕸️', copy: '进入人物互动图谱，聚焦主线与支线关系群。' },
-    ],
-    []
-  );
-
   const tabs: { id: TabType; label: string; icon: string }[] = [
     { id: 'narrativeUnits', label: '剧情单元', icon: '🎬' },
     { id: 'timeline', label: '时间轴', icon: '📜' },
@@ -917,33 +837,6 @@ function App() {
   const modalBackHandler = modalHistory.length > 0 ? restorePreviousModal : undefined;
   const loading = kbLoading || writerLoading;
   const error = kbError ?? writerError;
-
-  const applySeasonOverview = useCallback(
-    (seasonName: string) => {
-      const matched =
-        seasonOverviews.find((item) => item.season_name === seasonName) ??
-        writerInsights?.season_overviews.find((item) => item.season_name === seasonName);
-      if (!matched) return;
-      setUnitRange(matched.unit_range);
-      setProgressRange(matched.progress_range);
-      setActiveTab('writerArcs');
-      setSelectedEvent(null);
-      setSelectedRole(null);
-      setSelectedLocation(null);
-      setSelectedRelationPair(null);
-      const next = writeUrlGlobalContext(searchParams, {
-        tab: 'writerArcs',
-        unitRange: matched.unit_range,
-        progressRange: matched.progress_range,
-        focusRoleId: undefined,
-        selection: undefined,
-      });
-      next.delete('mapLoc');
-      setSearchParams(next, { replace: false });
-      workbenchRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    },
-    [searchParams, seasonOverviews, setSearchParams, writerInsights?.season_overviews]
-  );
 
   const applyQuickFilter = useCallback(
     (unitRangeValue: [number, number], progressRangeValue: [number, number]) => {
@@ -995,26 +888,29 @@ function App() {
 
   return (
     <div className="app-shell">
+      {/* ═══════════════════════════════════════════════════════════════
+          LAYER 1 — Story Synopsis Hero
+          Answers: "这部作品讲什么" + "当前范围讲到哪"
+          ═══════════════════════════════════════════════════════════════ */}
       <header className="hero-shell">
-        <div className="shell-container hero-grid">
-          <div className="hero-copy">
-            <p className="hero-kicker">剑来内容总览</p>
+        <div className="shell-container story-hero">
+          <div className="story-hero-main">
+            <p className="hero-kicker">{currentSeasonLabel}</p>
             <h1 className="hero-title">{title}</h1>
-            <p className="hero-subtitle">
-              {subtitle}
-              <br />
-              这一版把剧情单元放到最前面，先帮你判断每一段戏在整体结构中的作用，再沿关键事件、人物关系和地点往下细看。
-            </p>
 
-            <div className="hero-meta">
+            {/* Current season synopsis — the core "what is this story about" block */}
+            {currentSeasonOverview ? (
+              <p className="story-synopsis-text">{currentSeasonOverview.summary}</p>
+            ) : (
+              <p className="story-synopsis-text">{subtitle}</p>
+            )}
+
+            <div className="story-hero-range">
               <span className="hero-chip">
-                当前范围 <strong>{currentSeasonLabel}</strong>
+                {unitLabel} <strong>{unitRange[0]}–{unitRange[1]}</strong>
               </span>
               <span className="hero-chip">
-                {unitLabel} <strong>{unitRange[0]} - {unitRange[1]}</strong>
-              </span>
-              <span className="hero-chip">
-                {progressLabel} <strong>{progressRange[0] ?? '不限'} - {progressRange[1] ?? '不限'}</strong>
+                {progressLabel} <strong>{progressRange[0] ?? '不限'}–{progressRange[1] ?? '不限'}</strong>
               </span>
             </div>
 
@@ -1037,7 +933,7 @@ function App() {
                 className="hero-action-primary"
                 onClick={() => switchTab('narrativeUnits')}
               >
-                进入剧情单元
+                开始阅读剧情
               </button>
               <button type="button" className="hero-action-secondary" onClick={() => switchTab('timeline')}>
                 查看证据时间轴
@@ -1045,68 +941,167 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-side">
-            <div className="hero-side-panel">
-              <span className="hero-side-kicker">当前概况</span>
-              <strong className="hero-side-value">
-                {filteredNarrativeUnits.length} 个剧情单元 / {timelineEvents.length} 条事件
-              </strong>
-              <p className="hero-side-copy">
-                当前筛选范围内保留 {totalRoleCount} 位人物、{locations.length} 个地点、{roleLinks.length} 条关系，适合先按剧情单元把握结构，再回到事件证据核对细节。
-              </p>
-              <div className="hero-stat-grid">
-                <div className="hero-stat">
-                  <span className="hero-stat-label">剧情单元</span>
-                  <strong className="hero-stat-value">{filteredNarrativeUnits.length}</strong>
-                </div>
-                <div className="hero-stat">
-                  <span className="hero-stat-label">关系网人物</span>
-                  <strong className="hero-stat-value">{linkedRoleCount}</strong>
-                </div>
-                <div className="hero-stat">
-                  <span className="hero-stat-label">角色弧光</span>
-                  <strong className="hero-stat-value">{characterArcs.length}</strong>
-                </div>
-                <div className="hero-stat">
-                  <span className="hero-stat-label">冲突链</span>
-                  <strong className="hero-stat-value">{conflictChains.length}</strong>
-                </div>
+          {/* Compact stats — secondary, not visual center */}
+          <div className="story-hero-aside">
+            <div className="story-stat-strip">
+              <div className="story-stat-item">
+                <span className="story-stat-value">{filteredNarrativeUnits.length}</span>
+                <span className="story-stat-label">剧情单元</span>
+              </div>
+              <div className="story-stat-item">
+                <span className="story-stat-value">{timelineEvents.length}</span>
+                <span className="story-stat-label">事件</span>
+              </div>
+              <div className="story-stat-item">
+                <span className="story-stat-value">{totalRoleCount}</span>
+                <span className="story-stat-label">人物</span>
+              </div>
+              <div className="story-stat-item">
+                <span className="story-stat-value">{locations.length}</span>
+                <span className="story-stat-label">地点</span>
               </div>
             </div>
-
-            {spotlightArc && (
-              <div className="hero-side-panel">
-                <span className="hero-side-kicker">主角主线</span>
-                <button
-                  type="button"
-                  className="hero-side-value text-left hover:underline"
-                  onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}
-                >
-                  {spotlightArc.role_name}
-                </button>
-                <p className="hero-side-copy">{spotlightArc.summary}</p>
-                {spotlightHasCurrentContent ? (
-                  <div className="hero-meta mt-4">
-                    {spotlightArc.key_locations.slice(0, 3).map((location) => (
-                      <button
-                        key={location}
-                        type="button"
-                        className="hero-chip"
-                        onClick={() => openLocationDetail(location, 'locations')}
-                      >
-                        {location}
-                      </button>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="status-note mt-4">当前范围内暂时没有整理好的陈平安片段，可先看下方关系和季别概览。</p>
-                )}
-              </div>
-            )}
           </div>
         </div>
       </header>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          LAYER 2 — Story Gateway
+          Answers: "从哪里开始看最省力" + shows narrative unit previews
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="story-gateway">
+        <div className="shell-container">
+          <div className="gateway-header">
+            <div>
+              <p className="section-kicker">从这里开始</p>
+              <h2 className="section-title">剧情阅读入口</h2>
+              <p className="section-subtitle">
+                每个单元对应一段有完整起承转合的叙事结构，从摘要、关键角色到事件证据，一路顺着往下看。
+              </p>
+            </div>
+            <button type="button" className="ink-button" onClick={() => switchTab('narrativeUnits')}>
+              查看全部 {filteredNarrativeUnits.length} 个单元
+            </button>
+          </div>
+
+          <div className="gateway-unit-grid">
+            {filteredNarrativeUnits.slice(0, 4).map((unit) => {
+              const chapterRange =
+                unit.start_unit_index === unit.end_unit_index
+                  ? `第 ${unit.start_unit_index} 章`
+                  : `第 ${unit.start_unit_index}–${unit.end_unit_index} 章`;
+              return (
+                <button
+                  key={unit.unit_id}
+                  type="button"
+                  className="gateway-unit-card"
+                  onClick={() => switchTab('narrativeUnits')}
+                >
+                  <div className="gateway-unit-header">
+                    <span className="gateway-unit-season">{unit.season_name}</span>
+                    <span className="tag-pill text-xs">{chapterRange}</span>
+                  </div>
+                  <h3 className="gateway-unit-title">{unit.title || chapterRange}</h3>
+                  {unit.display_summary && (
+                    <p className="gateway-unit-summary">{unit.display_summary}</p>
+                  )}
+                  <div className="gateway-unit-meta">
+                    {unit.main_roles.slice(0, 3).map((role) => (
+                      <span key={role} className="dashboard-pill">{role}</span>
+                    ))}
+                    {unit.main_roles.length > 3 && (
+                      <span className="dashboard-pill">+{unit.main_roles.length - 3}</span>
+                    )}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Spotlight arc — condensed, story-focused */}
+          {spotlightArc && (
+            <div className="gateway-spotlight">
+              <div className="gateway-spotlight-inner">
+                <p className="section-kicker">主角主线</p>
+                <div className="gateway-spotlight-content">
+                  <div className="gateway-spotlight-text">
+                    <button
+                      type="button"
+                      className="gateway-spotlight-name"
+                      onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}
+                    >
+                      {spotlightArc.role_name}
+                    </button>
+                    <p className="gateway-spotlight-summary">{spotlightArc.summary}</p>
+                  </div>
+                  <div className="gateway-spotlight-actions">
+                    <button type="button" className="outline-button" onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}>
+                      角色弧光
+                    </button>
+                    <button type="button" className="ghost-button" onClick={() => handleFocusNode(spotlightArc.role_name)}>
+                      关系网聚焦
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          LAYER 3 — Secondary Entries (推荐进入 + 分析工具)
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="story-entries" ref={dashboardRef}>
+        <div className="shell-container">
+          <p className="section-kicker">继续探索</p>
+          <h2 className="section-title">更多分析视角</h2>
+          <p className="section-subtitle">读完剧情单元之后，可以从这里进入角色弧光、冲突链、时间轴等分析视图。</p>
+
+          <div className="entry-card-grid">
+            <button type="button" className="entry-card entry-card--primary" onClick={() => switchTab('writerArcs')}>
+              <span className="entry-card-icon">🎭</span>
+              <h3 className="entry-card-title">角色弧光</h3>
+              <p className="entry-card-copy">按季整理主角的成长线、关系变化与锚点事件，适合判断改编切入点。</p>
+              <span className="entry-card-stat">{characterArcs.length} 条弧光</span>
+            </button>
+            <button type="button" className="entry-card entry-card--primary" onClick={() => switchTab('timeline')}>
+              <span className="entry-card-icon">📜</span>
+              <h3 className="entry-card-title">证据时间轴</h3>
+              <p className="entry-card-copy">全部 {timelineEvents.length} 条事件按叙事进度排列，细查每一段的时间与场景。</p>
+              <span className="entry-card-stat">{timelineEvents.length} 条事件</span>
+            </button>
+            <button type="button" className="entry-card" onClick={() => switchTab('conflicts')}>
+              <span className="entry-card-icon">⚔️</span>
+              <h3 className="entry-card-title">冲突链</h3>
+              <p className="entry-card-copy">把关系变化压成对立、试探、转折和落点。</p>
+              <span className="entry-card-stat">{conflictChains.length} 条链</span>
+            </button>
+            <button type="button" className="entry-card" onClick={() => switchTab('foreshadowing')}>
+              <span className="entry-card-icon">🪶</span>
+              <h3 className="entry-card-title">伏笔回收</h3>
+              <p className="entry-card-copy">追踪前段埋线与后段兑现，方便抓改编回收。</p>
+              <span className="entry-card-stat">{foreshadowingThreads.length} 条线</span>
+            </button>
+            <button type="button" className="entry-card" onClick={() => switchTab('network')}>
+              <span className="entry-card-icon">🕸️</span>
+              <h3 className="entry-card-title">人物关系网</h3>
+              <p className="entry-card-copy">进入人物互动图谱，聚焦主线与支线关系群。</p>
+              <span className="entry-card-stat">{linkedRoleCount} 人有关系</span>
+            </button>
+            <button type="button" className="entry-card" onClick={() => switchTab('locations')}>
+              <span className="entry-card-icon">📍</span>
+              <h3 className="entry-card-title">地点</h3>
+              <p className="entry-card-copy">按出现频率整理场景地点，快速定位故事发生的空间。</p>
+              <span className="entry-card-stat">{locations.length} 个地点</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          WORKBENCH — Tab-based analysis views (unchanged)
+          ═══════════════════════════════════════════════════════════════ */}
       <main className="page-section">
         <div className="shell-container page-layout">
           <aside className="control-column">
@@ -1239,222 +1234,14 @@ function App() {
           </aside>
 
           <section className="workbench-shell">
-            <section ref={dashboardRef} className="paper-panel-strong">
-              <div className="panel-inner">
-                <div className="view-header">
-                  <div>
-                    <p className="section-kicker">全局概览</p>
-                    <h2 className="section-title">全局概览</h2>
-                    <p className="section-subtitle">先抓住这一段故事的结构分布，再进入下方工作台细看人物、关系与关键事件。</p>
-                  </div>
-                  <div className="view-toolbar">
-                    <button type="button" className="ghost-button" onClick={() => switchTab('narrativeUnits')}>
-                      进入剧情单元
-                    </button>
-                    <button type="button" className="outline-button" onClick={() => switchTab('network')}>
-                      进关系网
-                    </button>
-                  </div>
-                </div>
-
-                <dl className="metric-grid">
-                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('narrativeUnits')}>
-                    <dt>剧情单元</dt>
-                    <dd>{filteredNarrativeUnits.length}</dd>
-                  </button>
-                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('timeline')}>
-                    <dt>剧情事件</dt>
-                    <dd>{timelineEvents.length}</dd>
-                  </button>
-                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('network')}>
-                    <dt>人物密度</dt>
-                    <dd>{totalRoleCount}</dd>
-                  </button>
-                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('writerArcs')}>
-                    <dt>可改编线索</dt>
-                    <dd>{seasonOverviews.length + curatedRelationships.length}</dd>
-                  </button>
-                </dl>
-
-                <div className="dashboard-grid mt-6">
-                  <article className="dashboard-card lg:col-span-8">
-                    <p className="dashboard-eyebrow">分季查看</p>
-                    <h3 className="dashboard-title">分季概览</h3>
-                    <p className="dashboard-copy">每张季别卡都会把范围、主线摘要和三拍结构列出来，点卡后会同步筛选并跳到角色弧光页。</p>
-                    <div className="masonry-two mt-5">
-                      {(seasonOverviews.length > 0 ? seasonOverviews : writerInsights?.season_overviews ?? [])
-                        .slice(0, 3)
-                        .map((overview) => (
-                          <button
-                            key={overview.season_name}
-                            type="button"
-                            className="dashboard-card dashboard-card--clickable text-left"
-                            onClick={() => applySeasonOverview(overview.season_name)}
-                          >
-                            <p className="dashboard-eyebrow">{overview.season_name}</p>
-                            <h4 className="dashboard-title">
-                              {unitLabel} {overview.unit_range[0]} - {overview.unit_range[1]}
-                            </h4>
-                            <p className="dashboard-copy">{overview.summary}</p>
-                            <div className="dashboard-meta-row">
-                              {overview.story_beats.slice(0, 3).map((beat) => (
-                                <span key={`${overview.season_name}-${beat.beat_type}`} className="dashboard-pill">
-                                  {beat.label}
-                                </span>
-                              ))}
-                            </div>
-                          </button>
-                        ))}
-                    </div>
-                  </article>
-
-                  <article className="dashboard-card lg:col-span-4">
-                    <p className="dashboard-eyebrow">主角主线</p>
-                    <h3 className="dashboard-title">主角主线</h3>
-                    {spotlightArc ? (
-                      <>
-                        <div className="dashboard-stat-display">
-                          <button
-                            type="button"
-                            className="text-left font-bold hover:underline"
-                            onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}
-                          >
-                            {spotlightArc.role_name}
-                          </button>
-                          <span>当前重点人物</span>
-                        </div>
-                        <p className="dashboard-copy">{spotlightArc.summary}</p>
-                        {spotlightHasCurrentContent ? (
-                          <div className="dashboard-meta-row">
-                            {spotlightCounterparts.slice(0, 4).map((phase) => (
-                              <button
-                                key={`${spotlightArc.role_id}-${phase.relation_id}-${phase.counterpart_id}`}
-                                type="button"
-                                className="dashboard-pill"
-                                onClick={() => openRoleDetail(phase.counterpart_name, 'writerArcs')}
-                              >
-                                {phase.counterpart_name}
-                              </button>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="empty-state mt-4">当前范围内暂无已整理的陈平安片段。</div>
-                        )}
-                        <div className="dashboard-meta-row">
-                          <button type="button" className="ink-button" onClick={() => openRoleDetail(spotlightArc.role_name, 'writerArcs')}>
-                            查看角色弧光
-                          </button>
-                          <button type="button" className="outline-button" onClick={() => handleFocusNode(spotlightArc.role_name)}>
-                            聚焦关系网
-                          </button>
-                        </div>
-                      </>
-                    ) : (
-                      <div className="empty-state mt-5">当前范围内暂时没有可展示的主角弧光。</div>
-                    )}
-                  </article>
-
-                  <article className="dashboard-card lg:col-span-5">
-                    <p className="dashboard-eyebrow">重点关系</p>
-                    <h3 className="dashboard-title">优先关系</h3>
-                    <div className="insight-list mt-5">
-                      {dashboardRelationships.length > 0 ? (
-                        dashboardRelationships.map((relationship) => (
-                          <button
-                              key={relationship.id}
-                              type="button"
-                              className="detail-card text-left"
-                              onClick={() => handleLinkClick(relationship.source_role_id, relationship.target_role_id)}
-                            >
-                            <div className="flex flex-wrap items-center justify-between gap-3">
-                              <strong className="text-lg font-semibold text-[var(--accent-deep)]">{relationship.title}</strong>
-                              <span className="tag-pill">{toChineseRelationshipKind(relationship.kind)}</span>
-                            </div>
-                            <p className="dashboard-copy mt-2">{relationship.summary}</p>
-                            <div className="dashboard-meta-row">
-                              {relationship.phase_labels.slice(0, 3).map((phase) => (
-                                <span key={`${relationship.id}-${phase}`} className="dashboard-pill">
-                                  {phase}
-                                </span>
-                              ))}
-                            </div>
-                          </button>
-                        ))
-                      ) : (
-                        <div className="empty-state">当前范围内还没有人工优先关系卡。</div>
-                      )}
-                    </div>
-                  </article>
-
-                  <article className="dashboard-card lg:col-span-3">
-                    <p className="dashboard-eyebrow">关键人物</p>
-                    <h3 className="dashboard-title">关键人物</h3>
-                    <div className="dashboard-stat-row">
-                      {dashboardRoles.map((role) => (
-                        <div key={role.id} className="dashboard-stat-line">
-                          <button type="button" className="text-left text-[var(--accent-deep)] hover:underline" onClick={() => openRoleDetail(role.name, 'writerArcs')}>
-                            {role.name}
-                          </button>
-                          <strong>{role.appearances}</strong>
-                        </div>
-                      ))}
-                    </div>
-                  </article>
-
-                  <article className="dashboard-card lg:col-span-4">
-                    <p className="dashboard-eyebrow">重点场景</p>
-                    <h3 className="dashboard-title">关键地点</h3>
-                    <div className="dashboard-stat-row">
-                      {dashboardLocations.map((location) => (
-                        <div key={location.id} className="dashboard-stat-line">
-                          <button
-                            type="button"
-                            className="text-left text-[var(--accent-deep)] hover:underline"
-                            onClick={() => openLocationDetail(location.canonical_name, 'locations')}
-                          >
-                            {location.canonical_name}
-                          </button>
-                          <strong>{location.total_mentions}</strong>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="dashboard-meta-row">
-                      <button type="button" className="outline-button" onClick={() => switchTab('locations')}>
-                        进入地点页
-                      </button>
-                    </div>
-                  </article>
-
-                  <article className="dashboard-card lg:col-span-12">
-                    <p className="dashboard-eyebrow">继续细看</p>
-                    <h3 className="dashboard-title">继续细看</h3>
-                    <div className="metric-grid mt-5">
-                      {entryCards.map((entry) => (
-                        <button
-                          key={entry.id}
-                          type="button"
-                          className="dashboard-card dashboard-card--clickable text-left"
-                          onClick={() => switchTab(entry.id)}
-                        >
-                          <p className="dashboard-eyebrow">{entry.icon} {entry.label}</p>
-                          <h4 className="dashboard-title">{tabs.find((tab) => tab.id === entry.id)?.label}</h4>
-                          <p className="dashboard-copy">{entry.copy}</p>
-                        </button>
-                      ))}
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </section>
             <section ref={workbenchRef} className="paper-panel">
               <div className="panel-inner">
                 <div className="view-header">
                   <div>
-                    <p className="section-kicker">详细分析</p>
-                    <h2 className="section-title">详细分析</h2>
-                    <p className="section-subtitle">这里保留原有全部视图能力，只把层级、样式和进入路径整理得更清楚。</p>
+                    <p className="section-kicker">工作台</p>
+                    <h2 className="section-title">{tabs.find((tab) => tab.id === activeTab)?.label}</h2>
                   </div>
-                  <div className="float-stat">当前标签：{tabs.find((tab) => tab.id === activeTab)?.label}</div>
+                  <div className="float-stat">当前范围：{currentSeasonLabel}</div>
                 </div>
 
                 <div className="tab-rail">

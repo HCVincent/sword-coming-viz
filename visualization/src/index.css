@@ -2185,7 +2185,297 @@ button:focus-visible {
   background: rgba(40, 80, 95, 0.54);
 }
 
+/* ═══════════════════════════════════════════════════════════
+   Story-first homepage layout
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Layer 1: Story Hero ── */
+.story-hero {
+  display: grid;
+  gap: 28px;
+  align-items: end;
+}
+
+.story-hero-main {
+  max-width: 760px;
+  animation: rise-in 0.6s ease-out both;
+}
+
+.story-synopsis-text {
+  margin: 16px 0 0;
+  max-width: 42rem;
+  color: rgba(234, 242, 243, 0.92);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.story-hero-range {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.story-hero-aside {
+  animation: rise-in 0.68s ease-out both;
+}
+
+.story-stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: var(--radius-panel);
+  border: 1px solid rgba(214, 230, 233, 0.14);
+  background: rgba(248, 252, 251, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.story-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 56px;
+  flex: 1;
+}
+
+.story-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f2fbfb;
+  line-height: 1;
+}
+
+.story-stat-label {
+  color: rgba(227, 239, 241, 0.7);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+/* ── Layer 2: Story Gateway ── */
+.story-gateway {
+  padding: 36px 0 28px;
+}
+
+.gateway-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.gateway-unit-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.gateway-unit-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 22px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line-soft);
+  background:
+    linear-gradient(180deg, rgba(249, 252, 252, 0.96), rgba(240, 247, 247, 0.88));
+  box-shadow: var(--shadow-card);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.gateway-unit-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(94, 128, 144, 0.32);
+  box-shadow: 0 18px 38px rgba(21, 41, 51, 0.12);
+}
+
+.gateway-unit-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gateway-unit-season {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.gateway-unit-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.gateway-unit-summary {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.gateway-unit-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+/* Spotlight bar */
+.gateway-spotlight {
+  margin-top: 24px;
+}
+
+.gateway-spotlight-inner {
+  padding: 20px 22px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line-soft);
+  background: rgba(248, 252, 251, 0.88);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-card);
+}
+
+.gateway-spotlight-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.gateway-spotlight-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.gateway-spotlight-name {
+  display: inline;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  cursor: pointer;
+}
+
+.gateway-spotlight-name:hover {
+  text-decoration: underline;
+}
+
+.gateway-spotlight-summary {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.gateway-spotlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* ── Layer 3: Secondary entries ── */
+.story-entries {
+  padding: 28px 0 36px;
+  background:
+    linear-gradient(180deg, rgba(236, 244, 244, 0.4), transparent 100%);
+}
+
+.entry-card-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.entry-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line-soft);
+  background: rgba(249, 252, 252, 0.92);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(94, 128, 144, 0.28);
+  box-shadow: 0 14px 30px rgba(21, 41, 51, 0.1);
+}
+
+.entry-card--primary {
+  border-color: rgba(94, 128, 144, 0.22);
+  background:
+    linear-gradient(180deg, rgba(249, 252, 252, 0.96), rgba(238, 246, 246, 0.9));
+  box-shadow: var(--shadow-card);
+}
+
+.entry-card-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.entry-card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.entry-card-copy {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.entry-card-stat {
+  margin-top: auto;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+
 @media (min-width: 1024px) {
+  .story-hero {
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  }
+
+  .gateway-unit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .entry-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .hero-grid {
     grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.8fr);
   }
@@ -2248,8 +2538,14 @@ button:focus-visible {
   .metric-grid,
   .dashboard-grid,
   .masonry-two,
-  .control-grid--two {
+  .control-grid--two,
+  .gateway-unit-grid,
+  .entry-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .story-stat-strip {
+    gap: 12px;
   }
 
   .panel-inner,
