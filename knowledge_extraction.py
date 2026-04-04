@@ -86,6 +86,40 @@ from tqdm import tqdm
 from model.extraction import ExtractionResult, EntityRelationExtraction
 from knowledge_store import KnowledgeStore, ChunkExtraction
 from swordcoming_pipeline.llm_json import extract_json_from_response
+from extraction_filter import filter_extraction_noise, load_filter_context
+
+# ---------------------------------------------------------------------------
+# Load core cast & manual overrides for known_characters injection + filtering
+# ---------------------------------------------------------------------------
+CORE_CAST_PATH = Path(
+    os.getenv("CORE_CAST_PATH", "data/swordcoming_core_cast.json")
+)
+MANUAL_OVERRIDES_PATH = Path(
+    os.getenv("MANUAL_OVERRIDES_PATH", "data/swordcoming_manual_overrides.json")
+)
+CORE_CAST_TOP_N = int(os.getenv("CORE_CAST_TOP_N", "50"))
+
+_filter_ctx = load_filter_context(
+    core_cast_path=CORE_CAST_PATH,
+    manual_overrides_path=MANUAL_OVERRIDES_PATH,
+    core_cast_top_n=CORE_CAST_TOP_N,
+)
+known_characters_payload = _filter_ctx["known_characters_payload"]
+_blocked_aliases = _filter_ctx["blocked_aliases"]
+_allowed_special_names = _filter_ctx["allowed_special_names"]
+_canonical_role_set = _filter_ctx["canonical_role_set"]
+print(f"Loaded {len(known_characters_payload)} core cast characters for known_characters injection")
+
+
+def _filter_chunk(extraction: EntityRelationExtraction) -> EntityRelationExtraction:
+    """Apply Stage B exit filter using pre-loaded context."""
+    return filter_extraction_noise(
+        extraction,
+        blocked_aliases=_blocked_aliases,
+        allowed_special_names=_allowed_special_names,
+        canonical_role_set=_canonical_role_set,
+    )
+
 
 # Initialize Knowledge Store
 store = KnowledgeStore()
@@ -133,6 +167,7 @@ def process_chunk(chunk_info):
         "segment_start_time": segment_data['segment_start_time'],
         "context_sentences": indexed_context_sentences,
         "target_sentences": indexed_target_sentences,
+        "known_characters": known_characters_payload,
         "note": f"Processing sentences {chunk_start} to {chunk_end - 1} of {total_sentences}."
     }
     
@@ -170,6 +205,9 @@ def process_chunk(chunk_info):
                 raise e
 
             llm_extraction = EntityRelationExtraction(**er_data)
+            
+            # --- Stage B exit filter: remove pseudo-role noise ---
+            llm_extraction = _filter_chunk(llm_extraction)
             
             # Post-process to add context info
             for entity in llm_extraction.entities:

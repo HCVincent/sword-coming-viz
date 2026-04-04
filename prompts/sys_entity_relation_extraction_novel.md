@@ -15,6 +15,8 @@ Process Chinese fantasy novel chapters and extract structured entity-relation da
   - `school`: philosophical schools only when clearly ideological
 - Record aliases only when they uniquely identify the same entity.
 - Do not use generic titles as aliases: `先生`, `掌教`, `皇帝`, `道人`, `少年`, `少女`, `公子`, `老前辈`.
+- **Generic designators must NOT be used as the `name` field.** Examples of prohibited names: `少年`, `少女`, `道人`, `老人`, `白衣少年`, `穿草鞋的少年`, `那个老头`, `身旁的道人`, `中年儒士`. If you can identify the real character from context (especially by consulting `known_characters` in the input), use the real character name as `name` and place the descriptive phrase in `alias`. If you genuinely cannot determine the real identity, **skip that entity entirely** — do not create an entity with a generic designator as its name.
+- When the input includes a `known_characters` field, use it as a reference to resolve generic references back to real character names. For example, if context says "那个少年" and `known_characters` lists `陈平安` as a character active in this chapter, and the context supports this identification, use `陈平安` as the `name`.
 - Preserve original descriptive wording when available.
 - `power` should capture the most relevant camp, sect, dynasty, lineage, or faction.
 - Do NOT use vague category labels such as `山上`, `山下`, `武道`, `江湖`, `道家`, `山水`. Always use the most specific sect, school, kingdom, or organization name (e.g. `正阳山`, `落魄山`, `大骊`, `龙虎山`).

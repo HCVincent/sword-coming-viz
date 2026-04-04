@@ -27,6 +27,13 @@ from model.unified import (
     UnifiedLocation, UnifiedEvent, UnifiedRelation,
     UnifiedKnowledgeBase, EntityOccurrence
 )
+from scripts.character_quality import (
+    audit_role_name,
+    is_pseudo_role_name,
+    classify_role_name,
+    build_allowed_special_designator_map,
+    build_allowed_special_designator_names,
+)
 
 
 class EntityResolver:
@@ -127,6 +134,14 @@ class EntityResolver:
         }
         self.manual_overrides: Dict[str, object] = {}
         self.blocked_aliases: Set[str] = set(self.BLOCKED_ALIASES)
+
+        # character_quality classification helpers (populated by set_manual_overrides)
+        self._allowed_special_designators: Dict[str, Dict[str, str]] = {}
+        self._allowed_special_names: set[str] = set()
+        self._canonical_role_names: Dict[str, str] = {}
+        self._role_aliases: Dict[str, list] = {}
+        self._canonical_role_set: set[str] = set()
+
         # Union-Find structure for entity grouping
         self.parent: Dict[str, str] = {}
 
@@ -183,6 +198,45 @@ class EntityResolver:
             self.blocked_aliases = set(self.BLOCKED_ALIASES).union(
                 {str(item).strip() for item in blocked if str(item).strip()}
             )
+
+        # Pre-compute character_quality classification helpers
+        self._allowed_special_designators = build_allowed_special_designator_map(
+            overrides.get("allowed_special_designators", []) if isinstance(overrides, dict) else []
+        )
+        self._allowed_special_names = set(self._allowed_special_designators.keys())
+        self._canonical_role_names: Dict[str, str] = (
+            dict(overrides.get("canonical_role_names", {}))
+            if isinstance(overrides, dict) and isinstance(overrides.get("canonical_role_names"), dict)
+            else {}
+        )
+        self._role_aliases: Dict[str, list] = (
+            dict(overrides.get("role_aliases", {}))
+            if isinstance(overrides, dict) and isinstance(overrides.get("role_aliases"), dict)
+            else {}
+        )
+        # Build canonical role set for concat detection
+        self._canonical_role_set: set[str] = set()
+        for v in self._canonical_role_names.values():
+            if v:
+                self._canonical_role_set.add(str(v))
+        for k in self._role_aliases:
+            if k:
+                self._canonical_role_set.add(str(k))
+
+    def _classify_name(self, name: str) -> str:
+        """Classify a name using the unified allow > merge > block precedence.
+
+        Returns ``"allow"``, ``"merge"``, or ``"block"``.
+        """
+        return classify_role_name(
+            name,
+            allowed_special_designators=self._allowed_special_designators,
+            canonical_role_names=self._canonical_role_names,
+            role_aliases=self._role_aliases,
+            blocked_names=list(self.blocked_aliases),
+            canonical_roles=self._canonical_role_set,
+            allowed_names=self._allowed_special_names,
+        )
     
     def _find(self, x: str) -> str:
         """Union-Find: find root with path compression."""
@@ -344,13 +398,17 @@ class EntityResolver:
         """
         Check if an alias is valid for merging with a person entity.
         
-        Filters out:
-        - Generic/ambiguous terms (大王, 臣, etc.)
-        - Country names when the entity appears to be a person
+        Uses the unified allow > merge > block precedence from character_quality.
+        Also filters out country names when the entity appears to be a person.
         """
         alias_norm = alias.strip()
         
-        # Block generic terms
+        # Use character_quality classification for the alias
+        classification = self._classify_name(alias_norm)
+        if classification == "block":
+            return False
+        
+        # Also block via the legacy set for any terms not yet in character_quality
         if alias_norm in self.blocked_aliases:
             return False
         
@@ -510,9 +568,13 @@ class EntityResolver:
             self.add_organization(organization, juan_index, segment_index, chunk_index, source_sentence)
             return
         
-        # Skip if the primary name itself is a blocked/generic term
-        # These entities should not participate in merging at all
-        if name in self.blocked_aliases:
+        # Skip if the primary name itself is blocked by character_quality rules
+        # Uses allow > merge > block precedence:
+        #   allowed_special_designators → keep
+        #   canonical/aliases → allow merging
+        #   pseudo/generic/noise → record occurrence but don't merge
+        name_classification = self._classify_name(name)
+        if name_classification == "block":
             # Still record the occurrence but don't merge
             self.role_occurrences[name].append((role, occurrence))
             return
@@ -614,7 +676,7 @@ class EntityResolver:
         for alias in location.alias:
             alias_norm = self._normalize_name(alias)
             # For locations, we still block generic terms but allow country names
-            if alias_norm and alias_norm not in self.BLOCKED_ALIASES:
+            if alias_norm and alias_norm not in self.BLOCKED_ALIASES and self._classify_name(alias_norm) != "block":
                 self._union(name, alias_norm)
                 self.location_occurrences[alias_norm].append((location, occurrence))
     
@@ -859,7 +921,9 @@ class EntityResolver:
         
         for _, name_group in groups.items():
             canonical_name = self._select_preferred_role_name(name_group)
-            if canonical_name in self.blocked_aliases:
+            # Use character_quality classification: block pseudo-roles from
+            # becoming unified entities, but allow special designators through
+            if self._classify_name(canonical_name) == "block":
                 continue
             # Collect all occurrences for this entity group
             all_occurrences: List[EntityOccurrence] = []
