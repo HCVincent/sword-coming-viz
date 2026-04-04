@@ -24,7 +24,7 @@ export interface UrlGlobalContext {
 }
 
 const DEFAULT_CONTEXT: UrlGlobalContext = {
-  tab: 'timeline',
+  tab: 'narrativeUnits',
   unitRange: [1, 1],
   progressRange: [null, null],
 };

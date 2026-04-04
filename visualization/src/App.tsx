@@ -154,7 +154,7 @@ function App() {
 
   const [unitRange, setUnitRange] = useState<[number, number]>([1, maxUnit]);
   const [progressRange, setProgressRange] = useState<[number | null, number | null]>([null, null]);
-  const [activeTab, setActiveTab] = useState<TabType>('timeline');
+  const [activeTab, setActiveTab] = useState<TabType>('narrativeUnits');
   const [syncUnitProgress, setSyncUnitProgress] = useState(true);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
 
@@ -860,6 +860,14 @@ function App() {
     return curatedRelationships.slice(0, 4);
   }, [curatedRelationships, currentSeasonOverview]);
 
+  const eventTitleMap = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const event of timelineEvents) {
+      if (event.name) map.set(event.id, event.name);
+    }
+    return map;
+  }, [timelineEvents]);
+
   const entryCards = useMemo(
     () => [
       { id: 'writerArcs' as const, label: '角色弧光', icon: '🎭', copy: '按季整理角色线、锚点事件和可改编线索。' },
@@ -871,8 +879,8 @@ function App() {
   );
 
   const tabs: { id: TabType; label: string; icon: string }[] = [
-    { id: 'timeline', label: '时间轴', icon: '📜' },
     { id: 'narrativeUnits', label: '剧情单元', icon: '🎬' },
+    { id: 'timeline', label: '时间轴', icon: '📜' },
     { id: 'network', label: '关系网络', icon: '🕸️' },
     { id: 'power', label: '所属势力分布', icon: '📊' },
     { id: 'locations', label: '地点', icon: '📍' },
@@ -1002,12 +1010,12 @@ function App() {
               <button
                 type="button"
                 className="hero-action-primary"
-                onClick={() => dashboardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                onClick={() => switchTab('narrativeUnits')}
               >
-                先看全局
+                开始阅读剧情
               </button>
-              <button type="button" className="hero-action-secondary" onClick={() => switchTab('writerArcs')}>
-                看角色弧光
+              <button type="button" className="hero-action-secondary" onClick={() => switchTab('timeline')}>
+                看时间轴
               </button>
             </div>
           </div>
@@ -1016,19 +1024,19 @@ function App() {
             <div className="hero-side-panel">
               <span className="hero-side-kicker">当前概况</span>
               <strong className="hero-side-value">
-                {timelineEvents.length} 条事件 / {roleLinks.length} 条关系
+                {narrativeUnits.length} 个剧情单元 / {timelineEvents.length} 条事件
               </strong>
               <p className="hero-side-copy">
-                当前筛选范围内保留 {totalRoleCount} 位人物、{locations.length} 个地点，适合先看整体分布，再到下方继续细看。
+                当前筛选范围内保留 {totalRoleCount} 位人物、{locations.length} 个地点、{roleLinks.length} 条关系，可从剧情单元入手阅读。
               </p>
               <div className="hero-stat-grid">
                 <div className="hero-stat">
-                  <span className="hero-stat-label">关系网人物</span>
-                  <strong className="hero-stat-value">{linkedRoleCount}</strong>
+                  <span className="hero-stat-label">剧情单元</span>
+                  <strong className="hero-stat-value">{narrativeUnits.length}</strong>
                 </div>
                 <div className="hero-stat">
-                  <span className="hero-stat-label">孤立人物</span>
-                  <strong className="hero-stat-value">{isolatedRoleCount}</strong>
+                  <span className="hero-stat-label">关系网人物</span>
+                  <strong className="hero-stat-value">{linkedRoleCount}</strong>
                 </div>
                 <div className="hero-stat">
                   <span className="hero-stat-label">角色弧光</span>
@@ -1210,13 +1218,13 @@ function App() {
               <div className="panel-inner">
                 <div className="view-header">
                   <div>
-                    <p className="section-kicker">先看全局</p>
-                    <h2 className="section-title">先看全局</h2>
-                    <p className="section-subtitle">先在这里看清这一段主要人物、关系和地点，再往下继续细看。</p>
+                    <p className="section-kicker">全局概览</p>
+                    <h2 className="section-title">全局概览</h2>
+                    <p className="section-subtitle">快速了解当前范围的主要数据分布，再到下方工作台细看。</p>
                   </div>
                   <div className="view-toolbar">
-                    <button type="button" className="ghost-button" onClick={() => switchTab('timeline')}>
-                      看时间轴
+                    <button type="button" className="ghost-button" onClick={() => switchTab('narrativeUnits')}>
+                      看剧情单元
                     </button>
                     <button type="button" className="outline-button" onClick={() => switchTab('network')}>
                       进关系网
@@ -1225,9 +1233,9 @@ function App() {
                 </div>
 
                 <dl className="metric-grid">
-                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('writerArcs')}>
-                    <dt>当前季别</dt>
-                    <dd>{currentSeasonLabel}</dd>
+                  <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('narrativeUnits')}>
+                    <dt>剧情单元</dt>
+                    <dd>{narrativeUnits.length}</dd>
                   </button>
                   <button type="button" className="metric-card metric-card--clickable" onClick={() => switchTab('timeline')}>
                     <dt>剧情事件</dt>
@@ -1453,6 +1461,7 @@ function App() {
                       <NarrativeTimeline
                         units={narrativeUnits}
                         unitRange={unitRange}
+                        eventTitleMap={eventTitleMap}
                         onRoleClick={(roleName) => openRoleDetail(roleName, 'narrativeUnits')}
                         onEventClick={(eventId) => openEventDetail(eventId, 'narrativeUnits')}
                       />

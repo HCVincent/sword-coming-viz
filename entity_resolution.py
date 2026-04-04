@@ -1574,6 +1574,37 @@ class EntityResolver:
         unit_to_organizations = dict(juan_to_organizations)
         unit_to_events = dict(juan_to_events)
         
+        # --- Normalize alias → canonical in event participants ---
+        for event in events.values():
+            event.participants = {
+                name_to_role_id.get(p, p) for p in event.participants
+            }
+
+        # --- Normalize alias → canonical in relation endpoints ---
+        normalized_relations: Dict[str, UnifiedRelation] = {}
+        for rel_key, rel in relations.items():
+            canonical_from = name_to_role_id.get(rel.from_entity, rel.from_entity)
+            canonical_to = name_to_role_id.get(rel.to_entity, rel.to_entity)
+            if canonical_from != rel.from_entity or canonical_to != rel.to_entity:
+                # Re-key with canonical names (stable ordering)
+                new_key = f"{min(canonical_from, canonical_to)}->{max(canonical_from, canonical_to)}"
+                rel = rel.model_copy(update={
+                    "id": new_key,
+                    "from_entity": min(canonical_from, canonical_to),
+                    "to_entity": max(canonical_from, canonical_to),
+                })
+                # If new_key already exists, merge interaction counts
+                if new_key in normalized_relations:
+                    existing = normalized_relations[new_key]
+                    existing.interaction_count += rel.interaction_count
+                    existing.action_types = list(dict.fromkeys([*existing.action_types, *rel.action_types]))
+                    existing.contexts = (existing.contexts or [])[:3] + (rel.contexts or [])[:2]
+                    existing.source_juans = existing.source_juans | rel.source_juans
+                    existing.source_units = existing.source_units | rel.source_units
+                    continue
+            normalized_relations[rel.id] = rel
+        relations = normalized_relations
+
         # Update related entities based on relations
         for rel in relations.values():
             from_id = name_to_role_id.get(rel.from_entity)

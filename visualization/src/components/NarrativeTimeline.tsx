@@ -1,14 +1,15 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { NarrativeUnit } from '../types/pipelineArtifacts';
 
 interface NarrativeTimelineProps {
   units: NarrativeUnit[];
   unitRange: [number, number];
+  eventTitleMap?: Map<string, string>;
   onRoleClick?: (roleName: string) => void;
   onEventClick?: (eventId: string) => void;
 }
 
-export function NarrativeTimeline({ units, unitRange, onRoleClick, onEventClick }: NarrativeTimelineProps) {
+export function NarrativeTimeline({ units, unitRange, eventTitleMap, onRoleClick, onEventClick }: NarrativeTimelineProps) {
   const [selectedUnit, setSelectedUnit] = useState<NarrativeUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -44,7 +45,16 @@ export function NarrativeTimeline({ units, unitRange, onRoleClick, onEventClick 
     }));
   }, [filteredUnits]);
 
-  const hasDossiers = units.some((u) => u.title);
+  // Auto-select first unit when list changes and nothing is selected
+  useEffect(() => {
+    if (!selectedUnit && filteredUnits.length > 0) {
+      setSelectedUnit(filteredUnits[0]);
+    }
+    // If the currently selected unit is no longer in the filtered list, deselect
+    if (selectedUnit && !filteredUnits.some((u) => u.unit_id === selectedUnit.unit_id)) {
+      setSelectedUnit(filteredUnits[0] ?? null);
+    }
+  }, [filteredUnits, selectedUnit]);
 
   return (
     <div className="view-shell">
@@ -53,9 +63,6 @@ export function NarrativeTimeline({ units, unitRange, onRoleClick, onEventClick 
           <h3 className="view-title">剧情单元时间轴</h3>
           <p className="view-copy">
             按剧情结构把章节分组，每个单元代表一段有完整起承转合的叙事。
-            {!hasDossiers && (
-              <span className="ml-2 text-[var(--text-muted)]">（剧情单元档案尚未生成，显示结构信息）</span>
-            )}
           </p>
         </div>
         <div className="view-toolbar">
@@ -151,6 +158,7 @@ export function NarrativeTimeline({ units, unitRange, onRoleClick, onEventClick 
             {selectedUnit ? (
               <NarrativeUnitDetail
                 unit={selectedUnit}
+                eventTitleMap={eventTitleMap}
                 onClose={() => setSelectedUnit(null)}
                 onRoleClick={onRoleClick}
                 onEventClick={onEventClick}
@@ -173,12 +181,13 @@ export function NarrativeTimeline({ units, unitRange, onRoleClick, onEventClick 
 
 interface NarrativeUnitDetailProps {
   unit: NarrativeUnit;
+  eventTitleMap?: Map<string, string>;
   onClose: () => void;
   onRoleClick?: (roleName: string) => void;
   onEventClick?: (eventId: string) => void;
 }
 
-function NarrativeUnitDetail({ unit, onClose, onRoleClick, onEventClick }: NarrativeUnitDetailProps) {
+function NarrativeUnitDetail({ unit, eventTitleMap, onClose, onRoleClick, onEventClick }: NarrativeUnitDetailProps) {
   const chapterRange =
     unit.start_unit_index === unit.end_unit_index
       ? `第 ${unit.start_unit_index} 章`
@@ -272,7 +281,7 @@ function NarrativeUnitDetail({ unit, onClose, onRoleClick, onEventClick }: Narra
                 className="w-full text-left text-sm text-[var(--accent-deep)] hover:underline truncate"
                 onClick={() => onEventClick?.(eid)}
               >
-                {eid}
+                {eventTitleMap?.get(eid) ?? eid}
               </button>
             ))}
             {unit.source_event_ids.length > 20 && (

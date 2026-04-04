@@ -100,6 +100,7 @@ export interface BookConfig {
   has_geo_coordinates: boolean;
   default_tab?:
   | 'timeline'
+  | 'narrativeUnits'
   | 'network'
   | 'power'
   | 'locations'
